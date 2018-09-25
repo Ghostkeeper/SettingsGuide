@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "support_interface_density",
+    "name" : "Support Interface Density"
+  },
+  "data" :
+  {
+    "description" : "The density of interface of the support structure.",
+    "img_description" : "",
+    "hints" : "",
+    "notes" : ""
+  }
+}

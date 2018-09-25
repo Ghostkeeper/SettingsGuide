@@ -1,0 +1,13 @@
+{
+  "general" :
+  {
+    "id" : "retract_at_layer_change",
+    "name" : "Retract at Layer Change"
+  },
+  "data" :
+  {
+    "description": "This setting forces the printer to retract the filament before it starts printing the next layer.",
+    "img_description" : "",
+    "hints" : ""
+  }
+}

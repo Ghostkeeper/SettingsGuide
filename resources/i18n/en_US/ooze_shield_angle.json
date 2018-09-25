@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "ooze_shield_angle",
+    "name" : "Ooze Shield Angle"
+  },
+  "data" :
+  {
+    "description" : "This setting prevents the shield from collapsing.",
+    "img_description" : "This image shows an ooze shield settings.",
+    "hints" : "With 0 degrees being vertical, and 90 degrees being horizontal. A smaller angle leads to less failed ooze shields, but more material.",
+    "notes" : ""
+  }
+}

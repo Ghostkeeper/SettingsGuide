@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "support_z_distance",
+    "name" : "Support Z Distance"
+  },
+  "data" :
+  {
+    "description" : "Distance from the top/bottom of the support structure to the print. This gap provides clearance to remove the supports after the model is printed. This value is rounded up to a multiple of the layer height.",
+    "img_description" : "The model on the left side with normal settings and on the right side the model with Support Z Distance setting.",
+    "hints" : "A small distance between the support structure and parts of the model is necessary in order to remove the supports easily after the model has been printed. A low value creates a smoother surface, but can also make it more difficult to remove the support properly.",
+    "notes" : ""
+  }
+}

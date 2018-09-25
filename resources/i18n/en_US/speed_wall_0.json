@@ -1,0 +1,18 @@
+{
+  "general" :
+  {
+    "id" : "speed_wall_0",
+    "name" : "Outer Wall Speed",
+    "images" :
+    {
+	   "1" : "speed_print_img1.png"
+    }
+  },
+  "data" :
+  {
+    "description" : "The speed at which the outer walls are printed. Printing the outer wall slower usually results in a better surface finish.",
+    "img_description" : "This image shows the visualization of the different print speeds per model feature.",
+    "hints" : "",
+    "notes" : ""
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "general" :
+  {
+    "id" : "prime_tower_size",
+    "name" : "Prime Tower Size",
+    "images" :
+    {
+	   "1" : "prime_tower_enable_img1.png"
+    }
+  },
+  "data" :
+  {
+    "description" : "The width of the prime tower.",
+    "img_description" : "This image shows a rectangle shape of prime tower",
+    "hints" : "The size in the X/Y direction of the prime tower. A larger footprint creates a more stable prime tower",
+    "notes" : ""
+  }
+}

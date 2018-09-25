@@ -1,0 +1,19 @@
+{
+  "general" :
+  {
+    "id" : "raft_base_thickness",
+    "name" : "Raft Base Thickness",
+    "images" :
+    {
+	   "1" : "raft_margin_img1.png",
+       "2" : "raft_margin_img2.png"
+    }
+  },
+  "data" :
+  {
+    "description" : "Layer thickness of the base raft layer. This should be a thick layer which sticks firmly to the printer build plate.",
+    "img_description" : "A visualization of the raft settings in Cura.",
+    "hints" : "",
+    "notes" : ""
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "general" :
+  {
+    "id" : "multiple_mesh_overlap",
+    "name" : "Merged Meshes Overlap"
+  },
+  "data" :
+  {
+    "description" : "This setting creates an overlap where merged models meet. The result is a slight over-extrusion on the joining areas, which can improve adhesion between the two parts. Keep this setting low, between 0.0-0.2mm, to prevent too much over-extrusion.",
+    "img_description" : "",
+    "hints" : "",
+    "notes" : ""
+  }
+}
+
+
+

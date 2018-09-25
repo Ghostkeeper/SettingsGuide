@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "acceleration_ironing",
+    "name" : "Ironing Acceleration"
+  },
+  "data" :
+  {
+    "description" : "The acceleration of ironing can be adjusted to fine-tune the process.",
+    "img_description" : "",
+    "hints" : "- The ironing acceleration is significantly slower than the print acceleration, to ensure to the layer gets a smooth surface.",
+    "notes" : ""
+  }
+}

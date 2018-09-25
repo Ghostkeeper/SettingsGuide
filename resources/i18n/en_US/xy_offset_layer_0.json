@@ -1,0 +1,17 @@
+{
+  "general" :
+  {
+    "id" : "xy_offset_layer_0",
+    "name" : "Initial Layer Horizontal Expansion"
+  },
+  "data" :
+  {
+    "description" : "This feature has the exact same effect as horizontal expansion, except that it is only applied to the layer printed on the build plate. This may help in overcoming over extrusion on the first layer, increasing the dimensional accuracy. A value of half the line width is advised.",
+    "img_description" : "The model on the left has an initial layer horizontal expansion of -0.2 mm, the right model has the setting set to 0mm.",
+    "hints" : "- Bolt and screw holes on the initial layer have a better dimensional accuracy with a negative value for this setting.\n- A positive value increases the width of the initial layer, instead of shrinking it.",
+    "notes" : "Note: This will not work with a brim selected as build plate adhesion, because it will simply stick to the model."
+  }
+}
+
+
+

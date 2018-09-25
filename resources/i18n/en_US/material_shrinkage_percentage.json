@@ -1,0 +1,13 @@
+{
+  "general" :
+  {
+    "id" : "material_shrinkage_percentage",
+    "name" : "Shrinkage Ratio"
+  },
+  "data" :
+  {
+    "description" : "Shrinkage ratio in percentage.",
+    "img_description" : "",
+    "hints" : ""
+  }
+}

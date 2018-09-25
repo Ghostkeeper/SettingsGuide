@@ -1,0 +1,17 @@
+{
+  "general" :
+  {
+    "id" : "prime_tower_position_y",
+    "name" : "Prime Tower Y Position",
+    "images" :
+    {
+	   "1" : "prime_tower_enable_img1.png"
+    }
+  },
+  "data" :
+  {
+    "description" : "The y coordinate of the position of the prime tower.",
+    "img_description" : "This image shows a rectangle shape of prime tower",
+    "hints" : ""
+  }
+}

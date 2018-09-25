@@ -1,0 +1,18 @@
+{
+  "general" :
+  {
+    "id" : "support_tower_roof_angle",
+    "name" : "Tower Roof Angle",
+    "images" :
+    {
+       "1" : "support_use_towers_img1.png"
+    }
+  },
+  "data" :
+  {
+    "description": "This setting defines the angle of a rooftop of a tower.",
+    "img_description" : "This image shows the support tower and its settings.",
+    "hints" : "- A higher value results in pointed tower roofs, a lower value results in flattened tower roofs.",
+    "notes" : ""
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "general" :
+  {
+    "id" : "cool_lift_head",
+    "name" : "Lift Head",
+    "images" :
+    {
+	   "1" : "cool_fan_speed_img1.png"
+    }
+  },
+  "data" :
+  {
+    "description": "By enabling this setting you allow the print head to move away from the print during printing, while at the minimum speed, but when it has not yet reached the minimum layer time. The print head will wait until the minimum layer time has passed and will then move back to the print to continue. This gives the printed material enough time to cool down while at the minimum speed.",
+    "img_description" : "An overview of common cooling settings combinations, projected onto a pyramid model.",
+    "hints" : ""
+  }
+}

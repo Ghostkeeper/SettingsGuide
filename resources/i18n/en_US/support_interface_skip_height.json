@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id": "support_interface_skip_height",
+    "name": "Support Interface Resolution"
+  },
+  "data" :
+  {
+    "description" : "The resolution checked in the Z-direction determines where support interface is printed.",
+    "img_description" : "",
+    "hints" : "",
+    "notes" : ""
+  }
+}

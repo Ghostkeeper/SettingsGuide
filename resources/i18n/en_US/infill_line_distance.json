@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "infill_line_distance",
+    "name" : "Infill Line Distance"
+  },
+  "data" :
+  {
+    "description" : "Instead of setting the infill density as a percentage, it is also possible to set the line distance. This determines the distance between each infill line, which has the same effect as changing the infill density.",
+    "img_description" : "The model on the left has a bigger infill line distance than the model on the right.",
+    "hints" : "- Setting the line distance gives an indication on the distance that flat top layers on top of infill have to bridge.",
+    "notes" : ""
+  }
+}

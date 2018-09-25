@@ -1,0 +1,13 @@
+{
+  "general" :
+  {
+    "id" : "retraction_prime_speed",
+    "name" : "Retraction Prime Speed"
+  },
+  "data" :
+  {
+    "description": "This setting changes to the speed in millimeters per second, at which the material is primed. It inerhits the value of 'Retraction speed'.",
+    "img_description" : "",
+    "hints" : "- A high-speed prime minimizes oozing, but can cause material grinding.\n- A low-speed prime has an increased chance of oozing, but will protect the material."
+  }
+}

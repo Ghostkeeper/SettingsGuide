@@ -1,0 +1,18 @@
+{
+  "general" :
+  {
+    "id" : "support_xy_distance_overhang",
+    "name" : "Minimum Support X/Y Distance",
+    "images" :
+    {
+	   "1" : "support_xy_overrides_z_img2.png"
+    }
+  },
+  "data" :
+  {
+    "description" : "Distance of the support structure from the overhang in the X/Y directions.",
+    "img_description" : "The image shows the Minimum Support X/Y Distance",
+    "hints" : "- When the \"Z overrides the X/Y-distance\" priority, the X/Y-distance may force the support to hit the model. To ensure a safe distance, the minimum support X/Y-distance should be kept at all times.",
+    "notes" : ""
+  }
+}

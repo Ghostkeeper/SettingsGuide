@@ -1,0 +1,13 @@
+{
+  "general" :
+  {
+    "id" : "material_surface_energy",
+    "name" : "Surface Energy"
+  },
+  "data" :
+  {
+    "description" : "Surface Energy.",
+    "img_description" : "",
+    "hints" : ""
+  }
+}

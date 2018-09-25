@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "wall_thickness",
+    "name" : "Wall thickness"
+  },
+  "data" :
+  {
+    "description" : "This setting adjusts the thickness of walls of the model. Ultimaker Cura rounds the wall thickness to a multiplication of the line width. In general, a wall thickness of two or three times the line width is sufficient. A higher value will create a sturdier model and decreases the chance of leaks, while a lower value can significantly decrease the print time and filament costs.",
+    "img_description" : "The model on the left has 3 walls, the model on the right has two walls.",
+    "hints" : "- Example: A value of 1 mm, results in three walls of 0,35mm = 1,05mm wall. The model on the left has three walls, the model on the right has a single wall.",
+    "notes" : "Note: Printing with a single wall greatly increases the chance of infill showing through the wall, decreasing model quality."
+  }
+}

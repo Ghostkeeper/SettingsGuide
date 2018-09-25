@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "wall_0_inset",
+    "name" : "Outer Wall Inset"
+  },
+  "data" :
+  {
+    "description" : "This setting compensates the position for the outer wall, if the line width chosen is smaller than the nozzle.",
+    "img_description" : "",
+    "hints" : "- Example: A line width of 0.35 with a 0.40mm nozzle leaves a gap of 0.05mm on both sides of the actual printed line. A compensation of 0.025 is set to compensate for the outermost part.",
+    "notes" : ""
+  }
+}

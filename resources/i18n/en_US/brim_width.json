@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "brim_width",
+    "name" : "Brim Width"
+  },
+  "data" :
+  {
+    "description" : "This setting adjusts the width of the brim in millimeters.",
+    "img_description" : "This image shows a brim adhesion type.",
+    "hints" : "A larger brim enhances adhesion to the build plate, but also reduces the effective print area.",
+    "notes" : ""
+  }
+}

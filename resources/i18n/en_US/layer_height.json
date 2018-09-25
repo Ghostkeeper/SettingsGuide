@@ -1,0 +1,16 @@
+{
+  "general" :
+  {
+    "id" : "layer_height",
+    "name" : "Layer height"
+  },
+  "data" :
+  {
+    "description" : "The layer height is one of the most frequently changed settings. It is the thickness of one printed layer in millimeters. With a thinner layer height you can increase the quality of the print, leading to a smoother surface and more detail visible in the Z-direction (height) of the model. On the other hand, by using thicker layers you can decrease the print time substantially.",
+	    
+	"img_description" : "The model on the left as a smaller layer height than the model on the right.",
+    
+	"hints" : "- The recommended mode allows the user to easily choose a layer height compatible with the current print core and material configuration. The number of available layer heights options differ per configuration. The custom mode allows the user to completely customize the layer height. \n- In the custom mode, choose a layer height close to your desired custom layer height. The profile contains layer height dependent settings, like temperatures, to ensure a high-quality print.",
+	"notes" : "Note: In the custom mode, choose a layer height close to your desired custom layer height. The profile contains layer height dependent settings, like temperatures, to ensure a high-quality print."
+  }
+}

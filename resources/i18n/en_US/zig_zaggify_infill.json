@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "zig_zaggify_infill",
+    "name" : "Connect Infill Lines"
+  },
+  "data" :
+  {
+    "description" : "This setting connects the ends where the infill pattern meets the inner wall using a line which follows the shape of the inner wall.",
+    "img_description" : "The image on the left does not have connected infill, the right one has connected infill enabled.",
+    "hints" : "- Enable this setting to increase adhesion between the infill and the inner walls.\n- Enable this setting to reduce infill showing through the walls.",
+    "notes" : ""
+  }
+}

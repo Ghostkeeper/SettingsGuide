@@ -1,0 +1,17 @@
+{
+  "general" :
+  {
+    "id" : "ironing_pattern",
+    "name" : "Ironing Pattern"
+  },
+  "data" :
+  {
+    "description" : "This setting will change the pattern when ironing is applied.",
+    "img_description" : ".",
+    "hints" : "- This setting is useful when you want a different model finish than the current top/bottom pattern.",
+    "notes" : ""
+  }
+}
+
+
+

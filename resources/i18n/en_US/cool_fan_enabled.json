@@ -1,0 +1,13 @@
+{
+  "general" :
+  {
+    "id" : "cool_fan_enabled",
+    "name" : "Enable Print Cooling"
+  },
+  "data" :
+  {
+    "description" : "With this setting you can enable or disable the print head fans during printing.",
+    "img_description" : "",
+    "hints" : "- For layers with a short layer time, and those with bridges/overhangs, cooling will increase the print quality.\n- The print head fans ensure that the material is cooled properly before the next layer is printed.\n- "
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "general" :
+  {
+    "id" : "speed_wall_x",
+    "name" : "Inner Wall Speed",
+    "images" :
+    {
+	   "1" : "speed_print_img1.png"
+    }
+  },
+  "data" :
+  {
+    "description" : "The speed at which all inner walls are printed. Printing the inner wall faster than the outer wall will reduce printing time. It works well to set this in between the outer wall speed and the infill speed.",
+    "img_description" : "This image shows the visualization of the different print speeds per model feature.",
+    "hints" : "",
+    "notes" : ""
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "general" :
+  {
+    "id" : "speed_support_bottom",
+    "name" : "Support Floor Speed",
+    "images" :
+    {
+	   "1" : "speed_print_img1.png"
+    }
+  },
+  "data" :
+  {
+    "description" : "The speed at which the floor of support is printed. Printing it at lower speed can improve adhesion of support on top of your model.",
+    "img_description" : "This image shows the visualization of the different print speeds per model feature.",
+    "hints" : "",
+    "notes" : ""
+  }
+}

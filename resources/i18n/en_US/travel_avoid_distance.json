@@ -1,0 +1,13 @@
+{
+  "general" :
+  {
+    "id" : "travel_avoid_distance",
+    "name" : "Travel Avoid Distance"
+  },
+  "data" :
+  {
+    "description" : "This setting defines the distance (in mm) between the nozzle and the print when avoid already printed parts is enabled. A greater avoid distance means a reduced chance of contact with the printed model, however a large avoid distance will significantly affect the length of the travel moves, impacting the print time, and chance of oozing.",
+    "img_description" : "",
+    "hints" : ""
+  }
+}

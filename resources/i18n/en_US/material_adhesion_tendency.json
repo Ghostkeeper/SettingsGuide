@@ -1,0 +1,13 @@
+{
+  "general" :
+  {
+    "id" : "material_adhesion_tendency",
+    "name" : "Adhesion Tendency"
+  },
+  "data" :
+  {
+    "description" : "Surface adhesion tendency.",
+    "img_description" : "",
+    "hints" : ""
+  }
+}

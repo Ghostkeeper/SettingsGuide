@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id": "material_standby_temperature",
+    "name": "Standby Temperature"
+  },
+  "data" :
+  {
+    "description" : "This refers to the temperature of the nozzle when it is in standby mode, while the active nozzle is printing.",
+    "img_description" : "",
+    "hints" : "- The standby temperature is low enough to protect the filament from degrading or clogging, but is high enough to quickly continue printing.",
+    "notes" : ""
+  }
+}

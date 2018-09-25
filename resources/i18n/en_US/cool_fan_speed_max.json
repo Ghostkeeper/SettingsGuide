@@ -1,0 +1,17 @@
+{
+  "general" :
+  {
+    "id" : "cool_fan_speed_max",
+    "name" : "Maximum Fan Speed",
+    "images" :
+    {
+	   "1" : "cool_fan_speed_img1.png"
+    }
+  },
+  "data" :
+  {
+    "description": "The speed at which the fan spins on the minimum layer time. The fan speed gradually increases between the regular fan speed and maximum fan speed after the threshold is hit.",
+    "img_description" : "An overview of common cooling settings combinations, projected onto a pyramid model.",
+    "hints" : ""
+  }
+}

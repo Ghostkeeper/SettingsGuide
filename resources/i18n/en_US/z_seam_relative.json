@@ -1,0 +1,17 @@
+{
+  "general" :
+  {
+    "id" : "z_seam_relative",
+    "name" : "Z Seam Relative"
+  },
+  "data" :
+  {
+    "description" : "The Z seam location can be calculated from an absolute position, the front right corner by default. The other option is relative, which will set it relative to every individual objects' center position.",
+    "img_description" : "The left image has relative Z-seam disabled, with X-Y values 120/165 (The center of an Ultimaker S5). The right image has relative Z-seam enabled, all seams face the same direction, X/Y values 0/100 (right from the models).",
+    "hints" : "- When loading multiple models on the build plate, a relative seam location allows to put it in the same corner for every object.",
+    "notes" : "Note: The default value of Z seam X and Z seam Y location is half the build plate width and a high Y value. This places the seam at the center back of the models by default."
+  }
+}
+
+
+

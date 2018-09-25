@@ -1,0 +1,17 @@
+{
+  "general" :
+  {
+    "id" : "mold_enabled",
+    "name" : "Mold"
+  },
+  "data" :
+  {
+    "description" : "The selected model will be printed in negative, with a wall surrounding it, so you can use the finished print as a mold for other materials",
+    "img_description" : "This model is sliced normally and with the mold option enabled",
+    "hints" : "",
+    "notes" : ""
+  }
+}
+
+
+

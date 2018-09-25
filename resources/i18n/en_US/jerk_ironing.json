@@ -1,0 +1,17 @@
+{
+  "general" :
+  {
+    "id" : "jerk_ironing",
+    "name" : "Ironing Jerk"
+  },
+  "data" :
+  {
+    "description" : "The jerk of ironing can be adjusted to fine-tune the process.",
+    "img_description" : "",
+    "hints" : "- The ironing jerk is significantly slower than the print jerk, to ensure to the layer gets a smooth surface.",
+    "notes" : ""
+  }
+}
+
+
+

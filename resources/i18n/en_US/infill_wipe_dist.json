@@ -1,0 +1,18 @@
+{
+  "general" :
+  {
+    "id" : "infill_wipe_dist",
+    "name" : "Infill Wipe Distance",
+    "images" :
+    {
+       "1" : "infill_overlap_img1.png"
+    }
+  },
+  "data" :
+  {
+    "description" : "This setting instructs the printer to stop extruding at the end of printing the infill before it starts printing the walls. The printer will still ooze a little bit of filament due to the pressure in the nozzle, but by stopping the extrusion early, you'll reduce over extrusion on the shell.",	
+    "img_description" : "A visualisation of the infill overlap and wipe distance.",
+    "hints" : "- Infill wiping is only done at the end of infill lines, when infill lines are connected these will barely occur.",
+    "notes" : ""
+  }
+}

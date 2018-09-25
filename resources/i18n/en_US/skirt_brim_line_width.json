@@ -1,0 +1,13 @@
+{
+  "general" :
+  {
+    "id" : "skirt_brim_line_width",
+    "name" : "Skirt/Brim Line Width"
+  },
+  "data" :
+  {
+    "description" : "Width of a single skirt or brim line.",
+    "img_description" : "This image shows the brim on the initial layer.",
+    "hints" : "- A slightly increased brim line width may help with build plate adhesion."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "general" :
+  {
+    "id" : "retraction_extra_prime_amount",
+    "name" : "Retraction Extra Prime Amount"
+  },
+  "data" :
+  {
+    "description": "This is the extra amount of material that is extruded after a retraction to compensate for oozed material after a travel move. This setting can be useful, especially with flexible filaments as these require extra pressure to print properly.",
+    "img_description" : "",
+    "hints" : "- By increasing the retraction extra prime amount, more pressure is added which helps compensate for the material.\n- Increasing this setting too much might lead to blobs on the model surface due to over-extrusion."
+  }
+}

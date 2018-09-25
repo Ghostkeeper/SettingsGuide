@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "top_thickness",
+    "name" : "Top Thickness"
+  },
+  "data" :
+  {
+    "description": "The thickness of the top layers in the print. This value divided by the layer height defines the number of top layers.",
+    "img_description" : "This image shows all parts affected by the top thickness setting.",
+    "hints" : "- With the top thickness you can set the thickness of the solid printed top layers of the print. A higher value ensures all gaps on the top layers close completely. On the other hand, this can also increase the print time and the amount of filament used.\n- Ensure that you have enough top layers in your model to prevent holes and pillowing.",
+    "notes" : ""
+  }
+}             

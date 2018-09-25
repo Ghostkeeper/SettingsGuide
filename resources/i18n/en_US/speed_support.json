@@ -1,0 +1,18 @@
+{
+  "general" :
+  {
+    "id" : "speed_support",
+    "name" : "Support Speed",
+    "images" :
+    {
+	   "1" : "speed_print_img1.png"
+    }
+  },
+  "data" :
+  {
+    "description" : "The speed at which the support structure is printed. Printing support at higher speeds can greatly reduce printing time. The surface quality of the support structure is not important since it is removed after printing.",
+    "img_description" : "This image shows the visualization of the different print speeds per model feature.",
+    "hints" : "",
+    "notes" : ""
+  }
+}

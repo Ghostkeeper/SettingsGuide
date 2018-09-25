@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "bottom_thickness",
+    "name" : "Bottom Thickness"
+  },
+  "data" :
+  {
+    "description": "With the bottom thickness you can set the thickness of the solidly printed bottom layers of the print. A higher value ensures all gaps on the bottom layers are closed completely. However, this can also increase the print time and amount of filament used.",
+    "img_description" : "This image shows all parts affected by the bottom thickness setting.",
+    "hints" : "- With the bottom thickness you can set the thickness of the solid printed bottom layers of the print. A higher value ensures all gaps on the bottom layers close completely. On the other hand, this can also increase the print time and the amount of filament used.",
+    "notes" : ""
+  }
+}             

@@ -1,0 +1,17 @@
+{
+  "general" :
+  {
+    "id" : "mold_roof_height",
+    "name" : "Mold Roof Height"
+  },
+  "data" :
+  {
+    "description" : "This setting specifies the height of the mold above the horizontal parts in your model.",
+    "img_description" : "",
+    "hints" : "",
+    "notes" : ""
+  }
+}
+
+
+

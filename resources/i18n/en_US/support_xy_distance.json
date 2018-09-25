@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "support_xy_distance",
+    "name" : "Support X/Y Distance"
+  },
+  "data" :
+  {
+    "description" : "Under this setting you can adjust the distance between the support structure and the model in the X and Y directions. A higher value reduces the chance of the support structure hitting the model. However, this also creates a larger distance between model and support structure, which may result in smaller overhangs not being fully supported.",
+    "img_description" : "The image shows the X/Y distance between support structure wall and model wall. The model on the left has a support X/Y distance of 0.7mm, while the one on the right has one of 0.3mm",
+    "hints" : "",
+    "notes" : ""
+  }
+}

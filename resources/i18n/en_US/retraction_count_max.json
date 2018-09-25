@@ -1,0 +1,13 @@
+{
+  "general" :
+  {
+    "id" : "retraction_count_max",
+    "name" : "Maximum Retraction Count"
+  },
+  "data" :
+  {
+    "description": "The maximum retraction count sets the maximum number of retractions on a certain length of filament (see minimum extrusion distance window). All retractions above this value will be ignored.",
+    "img_description" : "This image illustrates a cross section of the feeder, with the 'maximum retraction count' indicated.",
+    "hints" : "- The benefit of maximizing the amount of retractions is that it decreases the possibility of grinding.\n- However, for models with a lot of holes (e.g. a voronoi print), this can lead to stringing if the value is too low."
+  }
+}

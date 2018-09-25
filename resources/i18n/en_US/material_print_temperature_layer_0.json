@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "material_print_temperature_layer_0",
+    "name" : "Printing Temperature Initial Layer"
+  },
+  "data" :
+  {
+    "description" : "This is the printing temperature of the layer that adheres to the build plate.",
+    "img_description" : "",
+    "hints" : "- Printing at a slightly warmer temperature increases the adhesion between the build plate and the model.",
+    "notes" : ""
+  }
+}

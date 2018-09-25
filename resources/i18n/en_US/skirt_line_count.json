@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "skirt_line_count",
+    "name" : "Skirt Line Count"
+  },
+  "data" :
+  {
+    "description" : "The number of skirt lines printed around the model.",
+    "img_description" : "This image shows a skirt adhesion type.",
+    "hints" : "Multiple skirt lines help to prime your extrusion better for small models. Setting this to 0 will disable the skirt.",
+    "notes" : ""
+  }
+}

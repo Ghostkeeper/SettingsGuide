@@ -1,0 +1,17 @@
+{
+  "general" :
+  {
+    "id" : "cool_min_layer_time_fan_speed_max",
+    "name" : "Regular/Maximum Fan Speed Threshold",
+    "images" :
+    {
+	   "1" : "cool_fan_speed_img1.png"
+    }
+  },
+  "data" :
+  {
+    "description": "The layer time which sets the threshold between regular fan speed and maximum fan speed. Layers that print slower than this time use regular fan speed. For faster layers the fan speed gradually increases towards the maximum fan speed.",
+    "img_description" : "An overview of common cooling settings combinations, projected onto a pyramid model.",
+    "hints" : ""
+  }
+}

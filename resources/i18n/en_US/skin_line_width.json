@@ -1,0 +1,16 @@
+{
+  "general" :
+  {
+    "id" : "skin_line_width",
+    "name" : "Top/Bottom Line Width"
+  },
+  "data" :
+  {
+    "description" : "The line width with which the top and bottom layers are printed.",
+    "img_description" : "This image shows all top and bottom lines affected by this setting. The walls and infill have been hidden to capture this screenshot.",
+    "hints" : "- An increase in line width increases the print speed and reduces surface finish.\n- A decrease in line width increases surface finish and decreases the chance of small gaps.",
+    "notes" : ""
+  }
+}
+
+

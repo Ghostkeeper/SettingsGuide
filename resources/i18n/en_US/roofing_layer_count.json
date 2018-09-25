@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "roofing_layer_count",
+    "name" : "Top Surface Skin Layers"
+  },
+  "data" :
+  {
+    "description": "This setting defines how many layers of all top skin layers will be affected by the setting. Two or three layers are often enough to have an improved surface quality.",
+    "img_description" : "The walls are hidden to show the top surface layers. The left model has a single top surface layer while the right one has four.",
+    "hints" : "- Use a few surface layers to ensure color and material mixing does not occur in the visible layers.",
+    "notes" : ""
+  }
+}

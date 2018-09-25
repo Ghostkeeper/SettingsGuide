@@ -1,0 +1,13 @@
+{
+  "general" :
+  {
+    "id" : "infill_sparse_density",
+    "name" : "Infill Density"
+  },
+  "data" :
+  {
+    "description" : "The infill density defines the amount of plastic used on the inside of the print. A higher infill density means that there is more plastic on the inside of your print, leading to a stronger object.",
+    "img_description" : "The model on the left has a lighter infill density than the model on the right.",
+    "hints" : "- An infill density around 20% is used for models with a visual purpose, higher densities can be used for end-use parts."
+  }
+}

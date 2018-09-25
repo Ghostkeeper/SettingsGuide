@@ -1,0 +1,13 @@
+{
+  "general" :
+  {
+    "id" : "wall_0_extruder_nr",
+    "name" : "Outer Wall Extruder"
+  },
+  "data" :
+  {
+    "description" : "The extruder train used for printing the outer walls. This is used by multi-extrusion machines.",
+    "img_description" : "This model has highlighted details by using the outer wall extruder set to print with the second extruder, which contains black material.",
+    "hints" : "- Printing the outer walls with a different color highlights details in the 3D model."
+  }
+}

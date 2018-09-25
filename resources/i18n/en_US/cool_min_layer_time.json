@@ -1,0 +1,17 @@
+{
+  "general" :
+  {
+    "id" : "cool_min_layer_time",
+    "name" : "Minimum Layer Time",
+    "images" :
+    {
+	   "1" : "cool_fan_speed_img1.png"
+    }
+  },
+  "data" :
+  {
+    "description" : "The minimum layer time determines the time it should take to print one layer. If a layer would normally take less time than the set value, the printer slows down, so that the minimum layer time is reached. This allows the printed material to cool down properly before printing the next layer.",
+    "img_description" : "An overview of common cooling settings combinations, projected onto a pyramid model",
+    "hints" : ""
+  }
+}

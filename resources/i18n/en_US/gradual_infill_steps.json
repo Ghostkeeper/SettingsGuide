@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "gradual_infill_steps",
+    "name" : "Gradual Infill Steps"
+  },
+  "data" :
+  {
+    "description" : "Gradual infill reduces the amount of infill used by decreasing the infill percentage in the lower layers. Every gradual infill step divides the infill percentage by a factor two. The result is a dense infill near the top layers, which is essential, and a reduced print time.",	
+    "img_description" : "The image on the left is printed with normal infill, the image on the right has two gradual infill steps.",
+    "hints" : "- Example: Starting with an infill percentage of 20% and two gradual infill steps, reduces the infill to 10% and 5% respectively.",
+    "notes" : "Note: The infill density divides by two for every gradual infill step used. Be careful not to reduce the infill too much."
+  }
+}

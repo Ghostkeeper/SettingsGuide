@@ -1,0 +1,13 @@
+{
+  "general" :
+  {
+    "id" : "prime_tower_enable",
+    "name" : "Enable Prime Tower"
+  },
+  "data" :
+  {
+    "description" : "Print a tower next to the print which serves to prime the material after each nozzle switch.",
+    "img_description" : "This image shows a rectangle shape of prime tower",
+    "hints" : "A prime tower is an additional print that's created on the build plate to help prepare the nozzle before printing the next layer. It reduces oozing, under extrusion and enhances overall printing quality."
+  }
+}

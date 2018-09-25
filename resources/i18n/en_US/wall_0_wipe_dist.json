@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "wall_0_wipe_dist",
+    "name" : "Outer Wall Wipe Distance"
+  },
+  "data" :
+  {
+    "description" : "At the end of every outer wall, a short path is traveled without extrusion. This results in a reduced seam when traveling from the outer wall to other parts of the 3D print. It is visible in the layer view by short travel moves right over the outer wall.",
+    "img_description" : "The blue colored travel moves show the wipe distance in the bottom right corner of the model, and one loop on the top layer on the left side.",
+    "hints" : "- A large outer wall wipe distance may lead to under extrusion at the end of the print path.",
+    "notes" : ""
+  }
+}

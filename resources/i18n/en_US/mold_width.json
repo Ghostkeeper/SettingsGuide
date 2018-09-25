@@ -1,0 +1,17 @@
+{
+  "general" :
+  {
+    "id" : "mold_width",
+    "name" : "Minimal Mold Width"
+  },
+  "data" :
+  {
+    "description" : "This setting specifies the minimum width of the mold.",
+    "img_description" : "",
+    "hints" : "",
+    "notes" : ""
+  }
+}
+
+
+

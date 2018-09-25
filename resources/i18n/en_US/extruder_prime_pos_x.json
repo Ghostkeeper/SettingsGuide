@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "extruder_prime_pos_x",
+    "name" : "Extruder Prime X Position"
+  },
+  "data" :
+  {
+    "description" : "The X coordinate of the position where the nozzle primes at the start of printing.",
+    "img_description" : "",
+    "hints" : "",
+    "notes" : ""
+  }
+}

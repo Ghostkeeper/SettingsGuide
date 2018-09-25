@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "z_seam_type",
+    "name" : "Z Seam Alignment"
+  },
+  "data" :
+  {
+    "description" : "This setting allows you to choose where each new layer in the Z direction starts and affects where the seam of the model will be. This is useful for models with consecutive equal layers as the seam can be visible. By changing the Z-seam alignment you can decrease the visibility of the seam.",
+    "img_description" : "",
+    "hints" : "- User specified: Set a coordinate for the X and Y direction of the Z-seam. This coordinate is absolute by default. Example: X 100, Y 200 will move the seam to the center back of the model.\n- Shortest: The next layer starts at the endpoint of the previous layer. This is the fastest way of printing, but also creates the most visible seam.\n- Random: The next layer starts at a random point of the previous layer, which eliminates the chance of a seam. Print time will increase due to the necessary travel moves.\n- Sharpest corner: This puts the seam in the sharpest inward or outward corner of the model, when available. This is the best method to completely hide the seam.",
+    "notes" : ""
+  }
+}

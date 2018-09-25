@@ -1,0 +1,18 @@
+{
+  "general" :
+  {
+    "id" : "prime_tower_min_volume",
+    "name" : "Prime Tower Minimum Volume",
+    "images" :
+    {
+	   "1" : "prime_tower_enable_img1.png"
+    }
+  },
+  "data" :
+  {
+    "description" : "The volume of the prime tower. The volume must be enough for the nozzle to prime properly.",
+    "img_description" : "This image shows a rectangle shape of prime tower",
+    "hints" : "",
+    "notes" : ""
+  }
+}

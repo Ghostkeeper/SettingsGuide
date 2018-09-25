@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "max_feedrate_z_override",
+    "name" : "Maximum Z Speed"
+  },
+  "data" :
+  {
+    "description" : "This setting changes the speed for all build plate moves during the print. This includes all layer changes and Z-hops. Normally the Z-speed is set at its maximum and capped by the firmware of the machine.",
+    "img_description" : "",
+    "hints" : "",
+    "notes" : ""
+  }
+}

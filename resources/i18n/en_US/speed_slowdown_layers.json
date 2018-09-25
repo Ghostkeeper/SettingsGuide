@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "speed_slowdown_layers",
+    "name" : "Number of Slower Layers"
+  },
+  "data" :
+  {
+    "description" : "This setting defines the number of layers it takes to reach the print speed from the bottom layer of the print. The speed will incline linearly over the number of layers specified, based on the initial layer speed and print speed. A higher value decreases the chance of warping, but can also increase the print time significantly.",
+    "img_description" : "This image illustrates a model in which the number of slower layers is set to four, which means that after the fourth layer the set print speed settings will be used",
+    "hints" : "",
+    "notes" : ""
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "general" :
+  {
+    "id" : "acceleration_enabled",
+    "name" : "Enable Acceleration Control"
+  },
+  "data" :
+  {
+    "description" : "Acceleration is a very important part in printing. Just like a car, the print head needs to accelerate to get to the speeds as explained above. The acceleration reduces the speeds set in the firmware, making the print a little slower, but more accurate. Disable the setting to get the maximum acceleration.",
+    "img_description" : "This is a theoretical image that shows the difference between speed, acceleration and jerk",
+    "hints" : "",
+    "notes" : ""
+  }
+}

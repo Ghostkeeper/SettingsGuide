@@ -1,0 +1,17 @@
+{
+  "general" :
+  {
+    "id" : "prime_tower_flow",
+    "name" : "Prime Tower Flow"
+  },
+  "data" :
+  {
+    "description" : "The overall flow of the prime tower. This is set to 100% by default.",
+    "img_description" : "",
+    "hints" : "",
+    "notes" : ""
+  }
+}
+
+
+
