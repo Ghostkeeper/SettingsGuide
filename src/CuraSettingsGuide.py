@@ -158,7 +158,7 @@ class CuraSettingsGuide(Extension, QObject):
 
                 # Overwrite images
                 if "images" in general:
-                    Logger.log("d", "Overwrite images for setting: %s", file_base_name) # TODO this message only for developing
+                    #Logger.log("d", "Overwrite images for setting: %s", file_base_name) # TODO this message only for developing
                     custom_path = "file:///" + images_path
                     self._settings_data[file_id]["images"] = []
                     sorted_images = sorted(general["images"].items())
