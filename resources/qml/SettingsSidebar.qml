@@ -62,10 +62,10 @@ Rectangle
     // This is a tricky of assigning because of Loader asynchronous, we need perform check only after the Item is onCompleted:
     property var onCompleteItemCallBack: function(setting_item)
     {
-        // Can e selected only one item
+        // Can be selected only one item
         if (setting_item.setting_item_key == last_setting_id && setting_item.isSelected == false)
         {
-            //we need keep track of selected item to able unselect it
+            //we need to keep track of selected item to be able unselect it
             listViewLastSelectedItem = setting_item
             setting_item.showHighlightArea()
         }
@@ -75,14 +75,15 @@ Rectangle
     function checkSelectedSettingItemStatus ()
     {
         // Check maximum 10 times
-        if (listViewLastSelectedItem == null && checkCounter < 10)
+         if (contents.currentItem.item == null && checkCounter < 10)
         {
              checkSelectedSettingItemStatusTimer.restart()
              checkCounter++
         }
         else
         {
-            listViewLastSelectedItem.showHighlightArea()
+            listViewLastSelectedItem = contents.currentItem.item
+            contents.currentItem.item.showHighlightArea()
         }
     }
 
