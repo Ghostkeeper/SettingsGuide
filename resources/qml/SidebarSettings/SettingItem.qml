@@ -7,6 +7,7 @@ import QtQuick.Controls 2.0
 
 import UM 1.1 as UM
 import Cura 1.0 as Cura
+import GuideTheme 1.0 as GuideThemeNS
 
 //import "."
 
@@ -74,7 +75,7 @@ Rectangle {
             anchors.fill: parent;
             anchors.leftMargin : 22
             anchors.rightMargin : 22
-            border.color: UM.Theme.getColor("action_button_active_border")
+            border.color: GuideThemeNS.Colors.getColor("action_button_active_border")
             border.width: 1
         }
 
@@ -86,7 +87,7 @@ Rectangle {
             anchors.leftMargin : 22
             anchors.rightMargin : 22
             opacity: 0.0
-            color: UM.Theme.getColor("primary")
+            color: GuideThemeNS.Colors.getColor("primary")
         }
 
         Label
@@ -101,7 +102,7 @@ Rectangle {
             elide: Text.ElideMiddle;
             renderType: Text.NativeRendering
 
-            color: UM.Theme.getColor("setting_control_text");
+            color: GuideThemeNS.Colors.getColor("setting_control_text");
             opacity: (definition.visible) ? 1 : 0.5
             // emphasize the setting if it has a value in the user or quality profile
             font: base.doQualityUserSettingEmphasis && base.stackLevel != undefined && base.stackLevel <= 1 ? UM.Theme.getFont("default_italic") : UM.Theme.getFont("default")

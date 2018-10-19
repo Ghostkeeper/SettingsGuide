@@ -8,7 +8,7 @@ import UM 1.2 as UM
 import Cura 1.0 as Cura
 
 import CuraSettingsGuide 1.0 as CuraSettingsGuideNS
-
+import GuideTheme 1.0 as GuideThemeNS
 
 Rectangle
 {
@@ -120,15 +120,15 @@ Rectangle
         {
             if (hoverMouseArea.containsMouse || clearFilterButton.containsMouse)
             {
-                return UM.Theme.getColor("setting_control_border_highlight");
+                return GuideThemeNS.Colors.getColor("setting_control_border_highlight");
             }
             else
             {
-                return UM.Theme.getColor("setting_control_border");
+                return GuideThemeNS.Colors.getColor("setting_control_border");
             }
         }
 
-        color: UM.Theme.getColor("setting_control")
+        color: GuideThemeNS.Colors.getColor("setting_control")
 
         anchors
         {
@@ -164,8 +164,8 @@ Rectangle
 
             style: TextFieldStyle
             {
-                textColor: UM.Theme.getColor("setting_control_text");
-                placeholderTextColor: UM.Theme.getColor("setting_control_text")
+                textColor: GuideThemeNS.Colors.getColor("setting_control_text");
+                placeholderTextColor: GuideThemeNS.Colors.getColor("setting_control_text")
                 font: UM.Theme.getFont("default");
                 background: Item {}
             }
@@ -256,8 +256,8 @@ Rectangle
             anchors.right: parent.right
             anchors.rightMargin: UM.Theme.getSize("default_margin").width
 
-            color: UM.Theme.getColor("setting_control_button")
-            hoverColor: UM.Theme.getColor("setting_control_button_hover")
+            color: GuideThemeNS.Colors.getColor("setting_control_button")
+            hoverColor: GuideThemeNS.Colors.getColor("setting_control_button_hover")
 
             onClicked:
             {
@@ -277,9 +277,7 @@ Rectangle
         anchors.left: parent.left;
         anchors.topMargin: filterContainer.visible ? UM.Theme.getSize("sidebar_margin").height : 0
         Behavior on anchors.topMargin { NumberAnimation { duration: 100 } }
-
-        Behavior on anchors.topMargin { NumberAnimation { duration: 100 } }
-        style: UM.Theme.styles.scrollview;
+        style: scrollview_settings_guide
         flickableItem.flickableDirection: Flickable.VerticalFlick;
         __wheelAreaScrollSpeed: 75; // Scroll three lines in one scroll event
 
@@ -370,6 +368,31 @@ Rectangle
             {
                 id: provider
                 containerStackId: Cura.MachineManager.activeMachineId
+            }
+        }
+    }
+
+    property Component scrollview_settings_guide: Component
+    {
+        ScrollViewStyle {
+            decrementControl: Item { }
+            incrementControl: Item { }
+
+            transientScrollBars: false
+
+            scrollBarBackground: Rectangle {
+                implicitWidth: UM.Theme.getSize("scrollbar").width
+                radius: Math.round(implicitWidth / 2)
+                color: GuideThemeNS.Colors.getColor("scrollbar_background");
+            }
+
+            handle: Rectangle {
+                id: scrollViewHandle
+                implicitWidth: UM.Theme.getSize("scrollbar").width;
+                radius: Math.round(implicitWidth / 2)
+
+                color: styleData.pressed ? GuideThemeNS.Colors.getColor("scrollbar_handle_down") : styleData.hovered ? GuideThemeNS.Colors.getColor("scrollbar_handle_hover") : GuideThemeNS.Colors.getColor("scrollbar_handle");
+                Behavior on color { ColorAnimation { duration: 50; } }
             }
         }
     }

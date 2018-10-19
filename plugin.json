@@ -1,7 +1,7 @@
 {
     "name": "Cura Settings Guide",
     "author": "Aleksei Sasin and Terri-Ann dela Cruz",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "api": 5,
     "description": "The plugin provides information about settings in Cura application"
 }

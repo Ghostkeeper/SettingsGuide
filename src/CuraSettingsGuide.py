@@ -9,7 +9,7 @@ import re
 from typing import Dict, Optional
 
 from PyQt5.QtCore import QObject, pyqtSlot, pyqtProperty, pyqtSignal
-from PyQt5.QtQml import qmlRegisterType
+from PyQt5.QtQml import qmlRegisterType, qmlRegisterSingletonType
 
 from UM.Extension import Extension
 from UM.Application import Application
@@ -21,6 +21,7 @@ from cura.API import CuraAPI
 
 from .MenuItemHandler import MenuItemHandler
 from .SettingsModel import SettingsModel
+from . import GuideTheme
 
 i18n_catalog = i18nCatalog("cura")
 
@@ -45,6 +46,8 @@ class CuraSettingsGuide(Extension, QObject):
         self._descriptions_path = os.path.join(plugin_path, os.path.join("resources", "i18n", "en_US"))
 
         qmlRegisterType(SettingsModel, "CuraSettingsGuide", 1, 0, "SettingsModel")
+        qmlRegisterSingletonType(GuideTheme.GuideTheme, "GuideTheme", 1, 0, "Colors", GuideTheme.createTheme)
+
         self._loadDescriptionAndImages()
 
         self.initPluginVersion()
@@ -84,6 +87,7 @@ class CuraSettingsGuide(Extension, QObject):
         self._selected_setting_data = {}  # Display welcome page
         self.settingItemChanged.emit()
         self._dialog.show()
+
 
     def startWelcomeGuideAndSelectSetting(self, setting_key: str) -> None:
         if not self._dialog:

@@ -8,6 +8,7 @@ import QtQuick.Controls.Styles 1.4
 
 import UM 1.2 as UM
 import Cura 1.0 as Cura
+import GuideTheme 1.0 as GuideThemeNS
 
 Window
 {
@@ -23,7 +24,7 @@ Window
     minimumHeight: height
     maximumHeight: minimumHeight
 
-    color: UM.Theme.getColor("viewport_background")
+    color: GuideThemeNS.Colors.getColor("viewport_background")
 
     UM.I18nCatalog
     {

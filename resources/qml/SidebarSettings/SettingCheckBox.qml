@@ -6,6 +6,7 @@ import QtQuick.Layouts 1.2
 import QtQuick.Controls 2.0
 
 import UM 1.2 as UM
+import GuideTheme 1.0 as GuideThemeNS
 
 SettingItem
 {
@@ -34,13 +35,13 @@ SettingItem
             {
                 if(!enabled)
                 {
-                    return UM.Theme.getColor("setting_control_disabled")
+                    return GuideThemeNS.Colors.getColor("setting_control_disabled")
                 }
                 if(control.containsMouse || control.activeFocus)
                 {
-                    return UM.Theme.getColor("setting_control_highlight")
+                    return GuideThemeNS.Colors.getColor("setting_control_highlight")
                 }
-                return UM.Theme.getColor("setting_control")
+                return GuideThemeNS.Colors.getColor("setting_control")
             }
 
             border.width: UM.Theme.getSize("default_lining").width
@@ -48,13 +49,13 @@ SettingItem
             {
                 if(!enabled)
                 {
-                    return UM.Theme.getColor("setting_control_disabled_border")
+                    return GuideThemeNS.Colors.getColor("setting_control_disabled_border")
                 }
                 if(control.containsMouse || control.activeFocus)
                 {
-                    return UM.Theme.getColor("setting_control_border_highlight")
+                    return GuideThemeNS.Colors.getColor("setting_control_border_highlight")
                 }
-                return UM.Theme.getColor("setting_control_border")
+                return GuideThemeNS.Colors.getColor("setting_control_border")
             }
         }
     }

@@ -5,6 +5,7 @@ import QtQuick 2.7
 import QtQuick.Controls 2.0
 
 import UM 1.1 as UM
+import GuideTheme 1.0 as GuideThemeNS
 
 SettingItem
 {
@@ -19,12 +20,12 @@ SettingItem
         border.width: Math.round(UM.Theme.getSize("default_lining").width)
         border.color:
         {
-            return UM.Theme.getColor("setting_control_disabled_border")
+            return GuideThemeNS.Colors.getColor("setting_control_disabled_border")
         }
 
         color:
         {
-            return UM.Theme.getColor("setting_control_disabled")
+            return GuideThemeNS.Colors.getColor("setting_control_disabled")
         }
 
         Label
@@ -35,7 +36,7 @@ SettingItem
 
             text: definition.unit
             renderType: Text.NativeRendering
-            color: UM.Theme.getColor("setting_unit")
+            color: GuideThemeNS.Colors.getColor("setting_unit")
             font: UM.Theme.getFont("default")
         }
     }

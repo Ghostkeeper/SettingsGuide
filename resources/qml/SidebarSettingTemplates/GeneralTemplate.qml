@@ -6,7 +6,7 @@ import QtQuick.Controls 1.4
 import QtQuick.Layouts 1.3
 
 import UM 1.1 as UM
-
+import GuideTheme 1.0 as GuideThemeNS
 
 Rectangle
 {
@@ -42,7 +42,7 @@ Rectangle
     }
     width: parent ? parent.width : 0
 
-    color: UM.Theme.getColor("viewport_background")
+    color: GuideThemeNS.Colors.getColor("viewport_background")
 
     ScrollView
     {
@@ -147,7 +147,7 @@ Rectangle
                                 // Show border only for gif images, because they have animation
                                 return gridImage.is_gif_image ? 1: 0
                             }
-                            border.color: UM.Theme.getColor("setting_control_border")
+                            border.color: GuideThemeNS.Colors.getColor("setting_control_border")
                             color: "transparent"
                             anchors.margins: -5
 
@@ -160,10 +160,10 @@ Rectangle
                                 onHoveredChanged:
                                 {
                                     if (containsMouse) {
-                                        border_rectangle.border.color = UM.Theme.getColor("setting_control_border_highlight")
+                                        border_rectangle.border.color = GuideThemeNS.Colors.getColor("setting_control_border_highlight")
                                         border_rectangle.border.width = 2
                                     } else {
-                                        border_rectangle.border.color = UM.Theme.getColor("setting_control_border")
+                                        border_rectangle.border.color = GuideThemeNS.Colors.getColor("setting_control_border")
                                         gridImage.updateBorder()
                                     }
                                 }
@@ -172,7 +172,7 @@ Rectangle
                                     zoom_image.source = setting_images[index]
                                     zoom_image_background.visible = true
                                     border_rectangle_mouse_area.hoverEnabled = false
-                                    border_rectangle.border.color = UM.Theme.getColor("setting_control_border")
+                                    border_rectangle.border.color = GuideThemeNS.Colors.getColor("setting_control_border")
                                     gridImage.updateBorder()
 
                                     // After zooming don't change the border color of an image on hover
@@ -292,7 +292,7 @@ Rectangle
         }
 
         z: 1
-        color: UM.Theme.getColor("viewport_background")
+        color: GuideThemeNS.Colors.getColor("viewport_background")
         opacity: 0.9
         visible: false
 

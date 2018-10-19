@@ -6,6 +6,7 @@ import QtQuick.Controls 2.0
 
 import UM 1.1 as UM
 import Cura 1.0 as Cura
+import GuideTheme 1.0 as GuideThemeNS
 
 SettingItem
 {
@@ -29,7 +30,7 @@ SettingItem
             sourceSize.width: width + 5 * screenScaleFactor
             sourceSize.height: width + 5 * screenScaleFactor
 
-            color: UM.Theme.getColor("setting_control_text");
+            color: GuideThemeNS.Colors.getColor("setting_control_text");
         }
 
         property string color: "#fff"
@@ -40,26 +41,26 @@ SettingItem
             {
                 if (!enabled)
                 {
-                    return UM.Theme.getColor("setting_control_disabled");
+                    return GuideThemeNS.Colors.getColor("setting_control_disabled");
                 }
                 if (control.hovered || base.activeFocus)
                 {
-                    return UM.Theme.getColor("setting_control_highlight");
+                    return GuideThemeNS.Colors.getColor("setting_control_highlight");
                 }
-                return UM.Theme.getColor("setting_control");
+                return GuideThemeNS.Colors.getColor("setting_control");
             }
             border.width: UM.Theme.getSize("default_lining").width
             border.color:
             {
                 if (!enabled)
                 {
-                    return UM.Theme.getColor("setting_control_disabled_border")
+                    return GuideThemeNS.Colors.getColor("setting_control_disabled_border")
                 }
                 if (control.hovered || control.activeFocus)
                 {
-                    return UM.Theme.getColor("setting_control_border_highlight")
+                    return GuideThemeNS.Colors.getColor("setting_control_border_highlight")
                 }
-                return UM.Theme.getColor("setting_control_border")
+                return GuideThemeNS.Colors.getColor("setting_control_border")
             }
         }
 
@@ -74,7 +75,7 @@ SettingItem
             text: control.currentText
             renderType: Text.NativeRendering
             font: UM.Theme.getFont("default")
-            color: enabled ? UM.Theme.getColor("setting_control_text") : UM.Theme.getColor("setting_control_disabled_text")
+            color: enabled ? GuideThemeNS.Colors.getColor("setting_control_text") : GuideThemeNS.Colors.getColor("setting_control_disabled_text")
 
             elide: Text.ElideLeft
             verticalAlignment: Text.AlignVCenter
@@ -90,7 +91,7 @@ SettingItem
                 anchors.margins: Math.round(UM.Theme.getSize("default_margin").width / 4)
 
                 border.width: UM.Theme.getSize("default_lining").width
-                border.color: enabled ? UM.Theme.getColor("setting_control_border") : UM.Theme.getColor("setting_control_disabled_border")
+                border.color: enabled ? GuideThemeNS.Colors.getColor("setting_control_border") : GuideThemeNS.Colors.getColor("setting_control_disabled_border")
                 radius: Math.round(width / 2)
 
                 color: control.color
@@ -113,8 +114,8 @@ SettingItem
             }
 
             background: Rectangle {
-                color: UM.Theme.getColor("setting_control")
-                border.color: UM.Theme.getColor("setting_control_border")
+                color: GuideThemeNS.Colors.getColor("setting_control")
+                border.color: GuideThemeNS.Colors.getColor("setting_control_border")
             }
         }
 
@@ -131,9 +132,9 @@ SettingItem
                 color:
                 {
                     if (model.enabled) {
-                        UM.Theme.getColor("setting_control_text")
+                        GuideThemeNS.Colors.getColor("setting_control_text")
                     } else {
-                        UM.Theme.getColor("action_button_disabled_text");
+                        GuideThemeNS.Colors.getColor("action_button_disabled_text");
                     }
                 }
                 font: UM.Theme.getFont("default")
@@ -152,7 +153,7 @@ SettingItem
                     anchors.margins: Math.round(UM.Theme.getSize("default_margin").width / 4)
 
                     border.width: UM.Theme.getSize("default_lining").width
-                    border.color: enabled ? UM.Theme.getColor("setting_control_border") : UM.Theme.getColor("setting_control_disabled_border")
+                    border.color: enabled ? GuideThemeNS.Colors.getColor("setting_control_border") : GuideThemeNS.Colors.getColor("setting_control_disabled_border")
                     radius: Math.round(width / 2)
 
                     color: control.model.getItem(index).color
@@ -161,8 +162,8 @@ SettingItem
 
             background: Rectangle
             {
-                color: parent.highlighted ? UM.Theme.getColor("setting_control_highlight") : "transparent"
-                border.color: parent.highlighted ? UM.Theme.getColor("setting_control_border_highlight") : "transparent"
+                color: parent.highlighted ? GuideThemeNS.Colors.getColor("setting_control_highlight") : "transparent"
+                border.color: parent.highlighted ? GuideThemeNS.Colors.getColor("setting_control_border_highlight") : "transparent"
             }
         }
     }

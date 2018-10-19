@@ -6,6 +6,7 @@ import QtQuick.Controls 2.0
 
 import UM 1.1 as UM
 import Cura 1.0 as Cura
+import GuideTheme 1.0 as GuideThemeNS
 
 Button
 {
@@ -21,15 +22,15 @@ Button
             if (base.color) {
                 return base.color;
             } else if (!base.enabled) {
-                return UM.Theme.getColor("setting_category_disabled");
+                return GuideThemeNS.Colors.getColor("setting_category_disabled");
             } else if (base.hovered && base.checkable && base.checked) {
-                return UM.Theme.getColor("setting_category_active_hover");
+                return GuideThemeNS.Colors.getColor("setting_category_active_hover");
             } else if (base.pressed || (base.checkable && base.checked)) {
-                return UM.Theme.getColor("setting_category_active");
+                return GuideThemeNS.Colors.getColor("setting_category_active");
             } else if (base.hovered) {
-                return UM.Theme.getColor("setting_category_hover");
+                return GuideThemeNS.Colors.getColor("setting_category_hover");
             } else {
-                return UM.Theme.getColor("setting_category");
+                return GuideThemeNS.Colors.getColor("setting_category");
             }
         }
         Behavior on color { ColorAnimation { duration: 50; } }
@@ -40,15 +41,15 @@ Button
             anchors.bottom: parent.bottom
             color: {
                 if (!base.enabled) {
-                    return UM.Theme.getColor("setting_category_disabled_border");
+                    return GuideThemeNS.Colors.getColor("setting_category_disabled_border");
                 } else if ((base.hovered || base.activeFocus) && base.checkable && base.checked) {
-                    return UM.Theme.getColor("setting_category_active_hover_border");
+                    return GuideThemeNS.Colors.getColor("setting_category_active_hover_border");
                 } else if (base.pressed || (base.checkable && base.checked)) {
-                    return UM.Theme.getColor("setting_category_active_border");
+                    return GuideThemeNS.Colors.getColor("setting_category_active_border");
                 } else if (base.hovered || base.activeFocus) {
-                    return UM.Theme.getColor("setting_category_hover_border");
+                    return GuideThemeNS.Colors.getColor("setting_category_hover_border");
                 } else {
-                    return UM.Theme.getColor("setting_category_border");
+                    return GuideThemeNS.Colors.getColor("setting_category_border");
                 }
             }
         }
@@ -81,15 +82,15 @@ Button
             color:
             {
                 if (!base.enabled) {
-                    return UM.Theme.getColor("setting_category_disabled_text");
+                    return GuideThemeNS.Colors.getColor("setting_category_disabled_text");
                 } else if ((base.hovered || base.activeFocus) && base.checkable && base.checked) {
-                    return UM.Theme.getColor("setting_category_active_hover_text");
+                    return GuideThemeNS.Colors.getColor("setting_category_active_hover_text");
                 } else if (base.pressed || (base.checkable && base.checked)) {
-                    return UM.Theme.getColor("setting_category_active_text");
+                    return GuideThemeNS.Colors.getColor("setting_category_active_text");
                 } else if (base.hovered || base.activeFocus) {
-                    return UM.Theme.getColor("setting_category_hover_text");
+                    return GuideThemeNS.Colors.getColor("setting_category_hover_text");
                 } else {
-                    return UM.Theme.getColor("setting_category_text");
+                    return GuideThemeNS.Colors.getColor("setting_category_text");
                 }
             }
             fontSizeMode: Text.HorizontalFit
@@ -108,15 +109,15 @@ Button
             color:
             {
                 if (!base.enabled) {
-                    return UM.Theme.getColor("setting_category_disabled_text");
+                    return GuideThemeNS.Colors.getColor("setting_category_disabled_text");
                 } else if ((base.hovered || base.activeFocus) && base.checkable && base.checked) {
-                    return UM.Theme.getColor("setting_category_active_hover_text");
+                    return GuideThemeNS.Colors.getColor("setting_category_active_hover_text");
                 } else if (base.pressed || (base.checkable && base.checked)) {
-                    return UM.Theme.getColor("setting_category_active_text");
+                    return GuideThemeNS.Colors.getColor("setting_category_active_text");
                 } else if (base.hovered || base.activeFocus) {
-                    return UM.Theme.getColor("setting_category_hover_text");
+                    return GuideThemeNS.Colors.getColor("setting_category_hover_text");
                 } else {
-                    return UM.Theme.getColor("setting_category_text");
+                    return GuideThemeNS.Colors.getColor("setting_category_text");
                 }
             }
             source: base.checked ? UM.Theme.getIcon("arrow_bottom") : UM.Theme.getIcon("arrow_left")
@@ -132,15 +133,15 @@ Button
         color:
         {
             if (!base.enabled) {
-                return UM.Theme.getColor("setting_category_disabled_text");
+                return GuideThemeNS.Colors.getColor("setting_category_disabled_text");
             } else if((base.hovered || base.activeFocus) && base.checkable && base.checked) {
-                return UM.Theme.getColor("setting_category_active_hover_text");
+                return GuideThemeNS.Colors.getColor("setting_category_active_hover_text");
             } else if(base.pressed || (base.checkable && base.checked)) {
-                return UM.Theme.getColor("setting_category_active_text");
+                return GuideThemeNS.Colors.getColor("setting_category_active_text");
             } else if(base.hovered || base.activeFocus) {
-                return UM.Theme.getColor("setting_category_hover_text");
+                return GuideThemeNS.Colors.getColor("setting_category_hover_text");
             } else {
-                return UM.Theme.getColor("setting_category_text");
+                return GuideThemeNS.Colors.getColor("setting_category_text");
             }
         }
         source: UM.Theme.getIcon(definition.icon)
