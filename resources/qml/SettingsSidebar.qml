@@ -30,7 +30,7 @@ Rectangle
 
         var temp_index = contents.model.getIndex(setting_id)
 
-        // If returned value is -1, then ListView with settings is not yet ready, call one more time same function with small delay
+        // If returned value is -1, then ListView with settings is not yet ready, call one more time same function with a small delay
         if (temp_index == -1 && first_start == true)
         {
             first_start = false
