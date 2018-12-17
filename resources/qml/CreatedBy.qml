@@ -8,7 +8,7 @@ import GuideTheme 1.0 as GuideThemeNS
 Rectangle
 {
     id: emptyTemplate
-    color: GuideThemeNS.Colors.getColor("viewport_background")
+    color: GuideThemeNS.Theme.getColor("viewport_background")
 
     Image
     {

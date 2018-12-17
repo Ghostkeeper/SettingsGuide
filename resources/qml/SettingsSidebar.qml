@@ -13,7 +13,7 @@ import GuideTheme 1.0 as GuideThemeNS
 Rectangle
 {
     id: rightSideItem
-    width: UM.Theme.getSize("sidebar").width;
+    width: GuideThemeNS.Theme.getSize("sidebar").width;
 
     property var listViewLastSelectedItem: undefined // keeps reference to the last item in the list. After item change
                                                      // in the list, the previous selection should be removed
@@ -116,31 +116,31 @@ Rectangle
     {
         id: filterContainer
 
-        border.width: Math.round(UM.Theme.getSize("default_lining").width)
+        border.width: Math.round(GuideThemeNS.Theme.getSize("default_lining").width)
         border.color:
         {
             if (hoverMouseArea.containsMouse || clearFilterButton.containsMouse)
             {
-                return GuideThemeNS.Colors.getColor("setting_control_border_highlight");
+                return GuideThemeNS.Theme.getColor("setting_control_border_highlight");
             }
             else
             {
-                return GuideThemeNS.Colors.getColor("setting_control_border");
+                return GuideThemeNS.Theme.getColor("setting_control_border");
             }
         }
 
-        color: GuideThemeNS.Colors.getColor("setting_control")
+        color: GuideThemeNS.Theme.getColor("setting_control")
 
         anchors
         {
             top: parent.top
-            topMargin: UM.Theme.getSize("sidebar_margin").height
+            topMargin: GuideThemeNS.Theme.getSize("sidebar_margin").height
             left: parent.left
-            leftMargin: UM.Theme.getSize("sidebar_margin").width
+            leftMargin: GuideThemeNS.Theme.getSize("sidebar_margin").width
             right: parent.right
-            rightMargin: Math.floor(UM.Theme.getSize("default_margin").width / 2)
+            rightMargin: Math.floor(GuideThemeNS.Theme.getSize("default_margin").width / 2)
         }
-        height: UM.Theme.getSize("setting_control").height
+        height: GuideThemeNS.Theme.getSize("setting_control").height
         width: rightSideItem.width
         Behavior on height { NumberAnimation { duration: 100 } }
 
@@ -159,15 +159,15 @@ Rectangle
             height: parent.height
             anchors.left: filterContainer.left
             anchors.right: filterContainer.right
-            anchors.rightMargin: Math.round(UM.Theme.getSize("sidebar_margin").width)
+            anchors.rightMargin: Math.round(GuideThemeNS.Theme.getSize("sidebar_margin").width)
 
             placeholderText: catalog.i18nc("@label:textbox", "Search...")
 
             style: TextFieldStyle
             {
-                textColor: GuideThemeNS.Colors.getColor("setting_control_text");
-                placeholderTextColor: GuideThemeNS.Colors.getColor("setting_control_text")
-                font: UM.Theme.getFont("default");
+                textColor: GuideThemeNS.Theme.getColor("setting_control_text");
+                placeholderTextColor: GuideThemeNS.Theme.getColor("setting_control_text")
+                font: GuideThemeNS.Theme.getFont("default");
                 background: Item {}
             }
 
@@ -255,10 +255,10 @@ Rectangle
 
             anchors.verticalCenter: parent.verticalCenter
             anchors.right: parent.right
-            anchors.rightMargin: UM.Theme.getSize("default_margin").width
+            anchors.rightMargin: GuideThemeNS.Theme.getSize("default_margin").width
 
-            color: GuideThemeNS.Colors.getColor("setting_control_button")
-            hoverColor: GuideThemeNS.Colors.getColor("setting_control_button_hover")
+            color: GuideThemeNS.Theme.getColor("setting_control_button")
+            hoverColor: GuideThemeNS.Theme.getColor("setting_control_button_hover")
 
             onClicked:
             {
@@ -276,7 +276,7 @@ Rectangle
         anchors.bottom: parent.bottom;
         anchors.right: parent.right;
         anchors.left: parent.left;
-        anchors.topMargin: filterContainer.visible ? UM.Theme.getSize("sidebar_margin").height : 0
+        anchors.topMargin: filterContainer.visible ? GuideThemeNS.Theme.getSize("sidebar_margin").height : 0
         Behavior on anchors.topMargin { NumberAnimation { duration: 100 } }
         style: scrollview_settings_guide
         flickableItem.flickableDirection: Flickable.VerticalFlick;
@@ -285,7 +285,7 @@ Rectangle
         ListView
         {
             id: contents
-            spacing: Math.round(UM.Theme.getSize("default_lining").height);
+            spacing: Math.round(GuideThemeNS.Theme.getSize("default_lining").height);
             cacheBuffer: 1000000;   // Set a large cache to effectively just cache every list item.
 
             height: parent.height
@@ -305,7 +305,7 @@ Rectangle
                 id: settingLoader
 
                 width: parent.width
-                height: model.type != undefined ? UM.Theme.getSize("section").height : 0;
+                height: model.type != undefined ? GuideThemeNS.Theme.getSize("section").height : 0;
 
                 property var definition: model
                 property var settingDefinitionsModel: definitionsModel
@@ -382,17 +382,17 @@ Rectangle
             transientScrollBars: false
 
             scrollBarBackground: Rectangle {
-                implicitWidth: UM.Theme.getSize("scrollbar").width
+                implicitWidth: GuideThemeNS.Theme.getSize("scrollbar").width
                 radius: Math.round(implicitWidth / 2)
-                color: GuideThemeNS.Colors.getColor("scrollbar_background");
+                color: GuideThemeNS.Theme.getColor("scrollbar_background");
             }
 
             handle: Rectangle {
                 id: scrollViewHandle
-                implicitWidth: UM.Theme.getSize("scrollbar").width;
+                implicitWidth: GuideThemeNS.Theme.getSize("scrollbar").width;
                 radius: Math.round(implicitWidth / 2)
 
-                color: styleData.pressed ? GuideThemeNS.Colors.getColor("scrollbar_handle_down") : styleData.hovered ? GuideThemeNS.Colors.getColor("scrollbar_handle_hover") : GuideThemeNS.Colors.getColor("scrollbar_handle");
+                color: styleData.pressed ? GuideThemeNS.Theme.getColor("scrollbar_handle_down") : styleData.hovered ? GuideThemeNS.Theme.getColor("scrollbar_handle_hover") : GuideThemeNS.Theme.getColor("scrollbar_handle");
                 Behavior on color { ColorAnimation { duration: 50; } }
             }
         }

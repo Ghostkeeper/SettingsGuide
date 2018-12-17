@@ -14,8 +14,8 @@ SettingItem
         anchors.fill: parent
         text: propertyProvider.properties.value + " " + unit
         renderType: Text.NativeRendering
-        font: UM.Theme.getFont("default")
-        color: GuideThemeNS.Colors.getColor("text")
+        font: GuideThemeNS.Theme.getFont("default")
+        color: GuideThemeNS.Theme.getColor("text")
         verticalAlignment: Text.AlignVCenter
     }
 }

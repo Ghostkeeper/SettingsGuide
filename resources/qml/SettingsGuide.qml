@@ -24,7 +24,7 @@ Window
     minimumHeight: height
     maximumHeight: minimumHeight
 
-    color: GuideThemeNS.Colors.getColor("viewport_background")
+    color: GuideThemeNS.Theme.getColor("viewport_background")
 
     UM.I18nCatalog
     {
@@ -89,7 +89,7 @@ Window
         Rectangle
         {
             id: rightSideItem
-            width: UM.Theme.getSize("sidebar").width;
+            width: GuideThemeNS.Theme.getSize("sidebar").width;
             border.color: "black"
             border.width: 1
 

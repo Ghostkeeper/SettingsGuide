@@ -36,27 +36,27 @@ SettingItem
             {
                 if(!enabled)
                 {
-                    return GuideThemeNS.Colors.getColor("setting_control_disabled")
+                    return GuideThemeNS.Theme.getColor("setting_control_disabled")
                 }
                 if(control.containsMouse || control.activeFocus)
                 {
-                    return GuideThemeNS.Colors.getColor("setting_control_highlight")
+                    return GuideThemeNS.Theme.getColor("setting_control_highlight")
                 }
-                return GuideThemeNS.Colors.getColor("setting_control")
+                return GuideThemeNS.Theme.getColor("setting_control")
             }
 
-            border.width: UM.Theme.getSize("default_lining").width
+            border.width: GuideThemeNS.Theme.getSize("default_lining").width
             border.color:
             {
                 if(!enabled)
                 {
-                    return GuideThemeNS.Colors.getColor("setting_control_disabled_border")
+                    return GuideThemeNS.Theme.getColor("setting_control_disabled_border")
                 }
                 if(control.containsMouse || control.activeFocus)
                 {
-                    return GuideThemeNS.Colors.getColor("setting_control_border_highlight")
+                    return GuideThemeNS.Theme.getColor("setting_control_border_highlight")
                 }
-                return GuideThemeNS.Colors.getColor("setting_control_border")
+                return GuideThemeNS.Theme.getColor("setting_control_border")
             }
         }
     }

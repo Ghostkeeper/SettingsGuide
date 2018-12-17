@@ -42,7 +42,7 @@ Rectangle
     }
     width: parent ? parent.width : 0
 
-    color: GuideThemeNS.Colors.getColor("viewport_background")
+    color: GuideThemeNS.Theme.getColor("viewport_background")
 
     ScrollView
     {
@@ -78,7 +78,7 @@ Rectangle
                 anchors.topMargin: 20 * screenScaleFactor
 
                 text: general_template.setting_name
-                font: UM.Theme.getFont("large")
+                font: GuideThemeNS.Theme.getFont("large")
                 renderType: Text.NativeRendering
             }
 
@@ -91,7 +91,7 @@ Rectangle
                 text: general_template.setting_description
                 width: rect_scroll.width
                 wrapMode: Text.WordWrap
-                font: UM.Theme.getFont("default")
+                font: GuideThemeNS.Theme.getFont("default")
                 renderType: Text.NativeRendering
             }
 
@@ -147,7 +147,7 @@ Rectangle
                                 // Show border only for gif images, because they have animation
                                 return gridImage.is_gif_image ? 1: 0
                             }
-                            border.color: GuideThemeNS.Colors.getColor("setting_control_border")
+                            border.color: GuideThemeNS.Theme.getColor("setting_control_border")
                             color: "transparent"
                             anchors.margins: -5
 
@@ -160,10 +160,10 @@ Rectangle
                                 onHoveredChanged:
                                 {
                                     if (containsMouse) {
-                                        border_rectangle.border.color = GuideThemeNS.Colors.getColor("setting_control_border_highlight")
+                                        border_rectangle.border.color = GuideThemeNS.Theme.getColor("setting_control_border_highlight")
                                         border_rectangle.border.width = 2
                                     } else {
-                                        border_rectangle.border.color = GuideThemeNS.Colors.getColor("setting_control_border")
+                                        border_rectangle.border.color = GuideThemeNS.Theme.getColor("setting_control_border")
                                         gridImage.updateBorder()
                                     }
                                 }
@@ -172,7 +172,7 @@ Rectangle
                                     zoom_image.source = setting_images[index]
                                     zoom_image_background.visible = true
                                     border_rectangle_mouse_area.hoverEnabled = false
-                                    border_rectangle.border.color = GuideThemeNS.Colors.getColor("setting_control_border")
+                                    border_rectangle.border.color = GuideThemeNS.Theme.getColor("setting_control_border")
                                     gridImage.updateBorder()
 
                                     // After zooming don't change the border color of an image on hover
@@ -227,7 +227,7 @@ Rectangle
 
                 width: rect_scroll.width
                 text: general_template.setting_img_description
-                font: UM.Theme.getFont("default_italic")
+                font: GuideThemeNS.Theme.getFont("default_italic")
                 renderType: Text.NativeRendering
                 wrapMode: Text.WordWrap
             }
@@ -247,7 +247,7 @@ Rectangle
 
                 text: CuraSettingsGuide.parseStylingList(general_template.setting_hints)
                 width: rect_scroll.width
-                font: UM.Theme.getFont("default")
+                font: GuideThemeNS.Theme.getFont("default")
                 renderType: Text.NativeRendering
                 wrapMode: Text.WordWrap
                 textFormat: Text.RichText
@@ -272,7 +272,7 @@ Rectangle
 
                 text: general_template.setting_notes
                 width: rect_scroll.width
-                font: UM.Theme.getFont("default_bold")
+                font: GuideThemeNS.Theme.getFont("default_bold")
                 renderType: Text.NativeRendering
                 wrapMode: Text.WordWrap
             }
@@ -292,7 +292,7 @@ Rectangle
         }
 
         z: 1
-        color: GuideThemeNS.Colors.getColor("viewport_background")
+        color: GuideThemeNS.Theme.getColor("viewport_background")
         opacity: 0.9
         visible: false
 

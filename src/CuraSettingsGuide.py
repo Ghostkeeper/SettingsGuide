@@ -46,7 +46,7 @@ class CuraSettingsGuide(Extension, QObject):
         self._descriptions_path = os.path.join(plugin_path, os.path.join("resources", "i18n", "en_US"))
 
         qmlRegisterType(SettingsModel, "CuraSettingsGuide", 1, 0, "SettingsModel")
-        qmlRegisterSingletonType(GuideTheme.GuideTheme, "GuideTheme", 1, 0, "Colors", GuideTheme.createTheme)
+        qmlRegisterSingletonType(GuideTheme.GuideTheme, "GuideTheme", 1, 0, "Theme", GuideTheme.createTheme)
 
         self._loadDescriptionAndImages()
 

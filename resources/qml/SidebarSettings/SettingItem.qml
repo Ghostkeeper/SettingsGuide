@@ -14,7 +14,7 @@ import GuideTheme 1.0 as GuideThemeNS
 Rectangle {
     id: base;
 
-    height: UM.Theme.getSize("section").height
+    height: GuideThemeNS.Theme.getSize("section").height
 
     property alias contents: controlContainer.children
     property alias hovered: mouse.containsMouse
@@ -75,7 +75,7 @@ Rectangle {
             anchors.fill: parent;
             anchors.leftMargin : 22
             anchors.rightMargin : 22
-            border.color: GuideThemeNS.Colors.getColor("action_button_active_border")
+            border.color: GuideThemeNS.Theme.getColor("action_button_active_border")
             border.width: 1
         }
 
@@ -87,7 +87,7 @@ Rectangle {
             anchors.leftMargin : 22
             anchors.rightMargin : 22
             opacity: 0.0
-            color: GuideThemeNS.Colors.getColor("primary")
+            color: GuideThemeNS.Theme.getColor("primary")
         }
 
         Label
@@ -95,17 +95,17 @@ Rectangle {
             id: label;
 
             anchors.left: parent.left;
-            anchors.leftMargin: doDepthIndentation ? Math.round((UM.Theme.getSize("section_icon_column").width + 5) + ((definition.depth - 1) * UM.Theme.getSize("setting_control_depth_margin").width)) : 0
+            anchors.leftMargin: doDepthIndentation ? Math.round((GuideThemeNS.Theme.getSize("section_icon_column").width + 5) + ((definition.depth - 1) * GuideThemeNS.Theme.getSize("setting_control_depth_margin").width)) : 0
             anchors.verticalCenter: parent.verticalCenter
 
             text: definition.label
             elide: Text.ElideMiddle;
             renderType: Text.NativeRendering
 
-            color: GuideThemeNS.Colors.getColor("setting_control_text");
+            color: GuideThemeNS.Theme.getColor("setting_control_text");
             opacity: (definition.visible) ? 1 : 0.5
             // emphasize the setting if it has a value in the user or quality profile
-            font: base.doQualityUserSettingEmphasis && base.stackLevel != undefined && base.stackLevel <= 1 ? UM.Theme.getFont("default_italic") : UM.Theme.getFont("default")
+            font: base.doQualityUserSettingEmphasis && base.stackLevel != undefined && base.stackLevel <= 1 ? GuideThemeNS.Theme.getFont("default_italic") : GuideThemeNS.Theme.getFont("default")
         }
 
         Item
@@ -115,10 +115,10 @@ Rectangle {
             enabled: propertyProvider.isValueUsed
 
             anchors.right: parent.right;
-            anchors.rightMargin: UM.Theme.getSize("sidebar_margin").width
+            anchors.rightMargin: GuideThemeNS.Theme.getSize("sidebar_margin").width
             anchors.verticalCenter: parent.verticalCenter;
-            width: UM.Theme.getSize("setting_control").width;
-            height: UM.Theme.getSize("setting_control").height
+            width: GuideThemeNS.Theme.getSize("setting_control").width;
+            height: GuideThemeNS.Theme.getSize("setting_control").height
         }
 
         onEntered:

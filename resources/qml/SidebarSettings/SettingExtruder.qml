@@ -25,12 +25,12 @@ SettingItem
             y: control.topPadding + Math.round((control.availableHeight - height) / 2)
 
             source: UM.Theme.getIcon("arrow_bottom")
-            width: UM.Theme.getSize("standard_arrow").width
-            height: UM.Theme.getSize("standard_arrow").height
+            width: GuideThemeNS.Theme.getSize("standard_arrow").width
+            height: GuideThemeNS.Theme.getSize("standard_arrow").height
             sourceSize.width: width + 5 * screenScaleFactor
             sourceSize.height: width + 5 * screenScaleFactor
 
-            color: GuideThemeNS.Colors.getColor("setting_control_text");
+            color: GuideThemeNS.Theme.getColor("setting_control_text");
         }
 
         property string color: "#fff"
@@ -41,26 +41,26 @@ SettingItem
             {
                 if (!enabled)
                 {
-                    return GuideThemeNS.Colors.getColor("setting_control_disabled");
+                    return GuideThemeNS.Theme.getColor("setting_control_disabled");
                 }
                 if (control.hovered || base.activeFocus)
                 {
-                    return GuideThemeNS.Colors.getColor("setting_control_highlight");
+                    return GuideThemeNS.Theme.getColor("setting_control_highlight");
                 }
-                return GuideThemeNS.Colors.getColor("setting_control");
+                return GuideThemeNS.Theme.getColor("setting_control");
             }
-            border.width: UM.Theme.getSize("default_lining").width
+            border.width: GuideThemeNS.Theme.getSize("default_lining").width
             border.color:
             {
                 if (!enabled)
                 {
-                    return GuideThemeNS.Colors.getColor("setting_control_disabled_border")
+                    return GuideThemeNS.Theme.getColor("setting_control_disabled_border")
                 }
                 if (control.hovered || control.activeFocus)
                 {
-                    return GuideThemeNS.Colors.getColor("setting_control_border_highlight")
+                    return GuideThemeNS.Theme.getColor("setting_control_border_highlight")
                 }
-                return GuideThemeNS.Colors.getColor("setting_control_border")
+                return GuideThemeNS.Theme.getColor("setting_control_border")
             }
         }
 
@@ -68,14 +68,14 @@ SettingItem
         {
             anchors.verticalCenter: parent.verticalCenter
             anchors.left: parent.left
-            anchors.leftMargin: UM.Theme.getSize("setting_unit_margin").width
+            anchors.leftMargin: GuideThemeNS.Theme.getSize("setting_unit_margin").width
             anchors.right: downArrow.left
-            rightPadding: swatch.width + UM.Theme.getSize("setting_unit_margin").width
+            rightPadding: swatch.width + GuideThemeNS.Theme.getSize("setting_unit_margin").width
 
             text: control.currentText
             renderType: Text.NativeRendering
-            font: UM.Theme.getFont("default")
-            color: enabled ? GuideThemeNS.Colors.getColor("setting_control_text") : GuideThemeNS.Colors.getColor("setting_control_disabled_text")
+            font: GuideThemeNS.Theme.getFont("default")
+            color: enabled ? GuideThemeNS.Theme.getColor("setting_control_text") : GuideThemeNS.Theme.getColor("setting_control_disabled_text")
 
             elide: Text.ElideLeft
             verticalAlignment: Text.AlignVCenter
@@ -83,15 +83,15 @@ SettingItem
             background: Rectangle
             {
                 id: swatch
-                height: Math.round(UM.Theme.getSize("setting_control").height / 2)
+                height: Math.round(GuideThemeNS.Theme.getSize("setting_control").height / 2)
                 width: height
 
                 anchors.right: parent.right
                 anchors.verticalCenter: parent.verticalCenter
-                anchors.margins: Math.round(UM.Theme.getSize("default_margin").width / 4)
+                anchors.margins: Math.round(GuideThemeNS.Theme.getSize("default_margin").width / 4)
 
-                border.width: UM.Theme.getSize("default_lining").width
-                border.color: enabled ? GuideThemeNS.Colors.getColor("setting_control_border") : GuideThemeNS.Colors.getColor("setting_control_disabled_border")
+                border.width: GuideThemeNS.Theme.getSize("default_lining").width
+                border.color: enabled ? GuideThemeNS.Theme.getColor("setting_control_border") : GuideThemeNS.Theme.getColor("setting_control_disabled_border")
                 radius: Math.round(width / 2)
 
                 color: control.color
@@ -99,10 +99,10 @@ SettingItem
         }
 
         popup: Popup {
-            y: control.height - UM.Theme.getSize("default_lining").height
+            y: control.height - GuideThemeNS.Theme.getSize("default_lining").height
             width: control.width
             implicitHeight: contentItem.implicitHeight
-            padding: UM.Theme.getSize("default_lining").width
+            padding: GuideThemeNS.Theme.getSize("default_lining").width
 
             contentItem: ListView {
                 clip: true
@@ -114,14 +114,14 @@ SettingItem
             }
 
             background: Rectangle {
-                color: GuideThemeNS.Colors.getColor("setting_control")
-                border.color: GuideThemeNS.Colors.getColor("setting_control_border")
+                color: GuideThemeNS.Theme.getColor("setting_control")
+                border.color: GuideThemeNS.Theme.getColor("setting_control_border")
             }
         }
 
         delegate: ItemDelegate
         {
-            width: control.width - 2 * UM.Theme.getSize("default_lining").width
+            width: control.width - 2 * GuideThemeNS.Theme.getSize("default_lining").width
             height: control.height
             highlighted: control.highlightedIndex == index
 
@@ -132,28 +132,28 @@ SettingItem
                 color:
                 {
                     if (model.enabled) {
-                        GuideThemeNS.Colors.getColor("setting_control_text")
+                        GuideThemeNS.Theme.getColor("setting_control_text")
                     } else {
-                        GuideThemeNS.Colors.getColor("action_button_disabled_text");
+                        GuideThemeNS.Theme.getColor("action_button_disabled_text");
                     }
                 }
-                font: UM.Theme.getFont("default")
+                font: GuideThemeNS.Theme.getFont("default")
                 elide: Text.ElideRight
                 verticalAlignment: Text.AlignVCenter
-                rightPadding: swatch.width + UM.Theme.getSize("setting_unit_margin").width
+                rightPadding: swatch.width + GuideThemeNS.Theme.getSize("setting_unit_margin").width
 
                 background: Rectangle
                 {
                     id: swatch
-                    height: Math.round(UM.Theme.getSize("setting_control").height / 2)
+                    height: Math.round(GuideThemeNS.Theme.getSize("setting_control").height / 2)
                     width: height
 
                     anchors.right: parent.right
                     anchors.verticalCenter: parent.verticalCenter
-                    anchors.margins: Math.round(UM.Theme.getSize("default_margin").width / 4)
+                    anchors.margins: Math.round(GuideThemeNS.Theme.getSize("default_margin").width / 4)
 
-                    border.width: UM.Theme.getSize("default_lining").width
-                    border.color: enabled ? GuideThemeNS.Colors.getColor("setting_control_border") : GuideThemeNS.Colors.getColor("setting_control_disabled_border")
+                    border.width: GuideThemeNS.Theme.getSize("default_lining").width
+                    border.color: enabled ? GuideThemeNS.Theme.getColor("setting_control_border") : GuideThemeNS.Theme.getColor("setting_control_disabled_border")
                     radius: Math.round(width / 2)
 
                     color: control.model.getItem(index).color
@@ -162,8 +162,8 @@ SettingItem
 
             background: Rectangle
             {
-                color: parent.highlighted ? GuideThemeNS.Colors.getColor("setting_control_highlight") : "transparent"
-                border.color: parent.highlighted ? GuideThemeNS.Colors.getColor("setting_control_border_highlight") : "transparent"
+                color: parent.highlighted ? GuideThemeNS.Theme.getColor("setting_control_highlight") : "transparent"
+                border.color: parent.highlighted ? GuideThemeNS.Theme.getColor("setting_control_border_highlight") : "transparent"
             }
         }
     }
