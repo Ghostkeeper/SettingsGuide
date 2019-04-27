@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "expand_skins_expand_distance",
-    "name" : "Skin Expand Distance"
-  },
-  "data" :
-  {
-    "description": "The skin (top and bottom layers) in a model is printed to reach the minimum thickness set in the print profile. However, some models need denser internal geometry to add strength. This setting slightly adds skin horizontally, where infill would normally be printed.",
-    "img_description" : "The right image shows the solid model, the center image without skin expansion, the right image with skin expand distance enabled.",
-    "hints" : "- Adding skin on weak places in the model increases print time slightly.",
-    "notes" : ""
-  }
-}             
+	"general" :
+	{
+		"id" : "expand_skins_expand_distance",
+		"name" : "Skin Expand Distance"
+	},
+	"data" :
+	{
+		"description": "The skin (top and bottom layers) in a model is printed to reach the minimum thickness set in the print profile. However, some models need denser internal geometry to add strength. This setting slightly adds skin horizontally, where infill would normally be printed.",
+		"img_description" : "The right image shows the solid model, the center image without skin expansion, the right image with skin expand distance enabled.",
+		"hints" : "- Adding skin on weak places in the model increases print time slightly.",
+		"notes" : ""
+	}
+}						 

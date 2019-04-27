@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "travel_compensate_overlapping_walls_enabled",
-    "name" : "Compensate Wall Overlaps"
-  },
-  "data" :
-  {
-    "description" : "With this setting the extrusion on printed parts is reduced where the print head has to go over a thin area twice. This way all walls are printed without the part being over extruded. The setting can be enabled for the outer or the inner walls separately.",
-    "img_description" : "This image illustrates a thin wall being printed with overlapping wall compensation enabled.",
-    "hints" : "- With this option enabled, print paths stay unaffected. Only the extrusion rate over the printed path is affected.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "travel_compensate_overlapping_walls_enabled",
+		"name" : "Compensate Wall Overlaps"
+	},
+	"data" :
+	{
+		"description" : "With this setting the extrusion on printed parts is reduced where the print head has to go over a thin area twice. This way all walls are printed without the part being over extruded. The setting can be enabled for the outer or the inner walls separately.",
+		"img_description" : "This image illustrates a thin wall being printed with overlapping wall compensation enabled.",
+		"hints" : "- With this option enabled, print paths stay unaffected. Only the extrusion rate over the printed path is affected.",
+		"notes" : ""
+	}
 }

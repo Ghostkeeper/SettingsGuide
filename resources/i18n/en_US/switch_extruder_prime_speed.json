@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id": "switch_extruder_prime_speed",
-    "name": "Nozzle Switch Prime Speed"
-  },
-  "data" :
-  {
-    "description" : "This refers to the speed of the prime when the nozzle switches to standby mode. This setting is automatically calculated by 'Nozzle switch retraction speed'.",
-    "img_description" : "",
-    "hints" : "- A higher prime speed results in a better print, but has a higher chance of causing filament grinding.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id": "switch_extruder_prime_speed",
+		"name": "Nozzle Switch Prime Speed"
+	},
+	"data" :
+	{
+		"description" : "This refers to the speed of the prime when the nozzle switches to standby mode. This setting is automatically calculated by 'Nozzle switch retraction speed'.",
+		"img_description" : "",
+		"hints" : "- A higher prime speed results in a better print, but has a higher chance of causing filament grinding.",
+		"notes" : ""
+	}
 }

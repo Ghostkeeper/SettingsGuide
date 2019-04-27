@@ -1,16 +1,16 @@
 {
-  "general" :
-  {
-    "id" : "magic_spiralize",
-    "name" : "Spiralize Outer Contour"
-  },
-  "data" :
-  {
-    "description" : "Typically, the Z-stage moves up by the layer height after printing a complete layer. Spiralize mode smooths out the Z move over the edge. This means that the Z-stage will gradually move down over the whole print, like a spiral. Solid objects are turned into single-walled prints with a solid bottom by using this option, which is perfect for printing items like vases, for example.",
-    "img_description" : "",
-    "hints" : "",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "magic_spiralize",
+		"name" : "Spiralize Outer Contour"
+	},
+	"data" :
+	{
+		"description" : "Typically, the Z-stage moves up by the layer height after printing a complete layer. Spiralize mode smooths out the Z move over the edge. This means that the Z-stage will gradually move down over the whole print, like a spiral. Solid objects are turned into single-walled prints with a solid bottom by using this option, which is perfect for printing items like vases, for example.",
+		"img_description" : "",
+		"hints" : "",
+		"notes" : ""
+	}
 }
 
 

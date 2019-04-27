@@ -1,17 +1,17 @@
 {
-  "general" :
-  {
-    "id" : "cool_fan_full_at_height",
-    "name" : "Regular Fan Speed at Height",
-    "images" :
-    {
-	   "1" : "cool_fan_speed_img1.png"
-    }
-  },
-  "data" :
-  {
-    "description": "This is the height at which the fans will increase to full speed. In the layers below, the fan speed will gradually increase from zero to regular fan speed.",
-    "img_description" : "An overview of common cooling settings combinations, projected onto a pyramid model.",
-    "hints" : "- It’s also possible to change this parameter by adjusting the layer number at which the fans should be on full speed. \n- Using a higher value increases the adhesion to the bed, but can also lead to oozing and a reduced print quality. Printing with the fans on full from a height of 0.5 mm is usually sufficient."
-  }
+	"general" :
+	{
+		"id" : "cool_fan_full_at_height",
+		"name" : "Regular Fan Speed at Height",
+		"images" :
+		{
+			"1" : "cool_fan_speed_img1.png"
+		}
+	},
+	"data" :
+	{
+		"description": "This is the height at which the fans will increase to full speed. In the layers below, the fan speed will gradually increase from zero to regular fan speed.",
+		"img_description" : "An overview of common cooling settings combinations, projected onto a pyramid model.",
+		"hints" : "- It’s also possible to change this parameter by adjusting the layer number at which the fans should be on full speed. \n- Using a higher value increases the adhesion to the bed, but can also lead to oozing and a reduced print quality. Printing with the fans on full from a height of 0.5 mm is usually sufficient."
+	}
 }

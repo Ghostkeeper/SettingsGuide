@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "infill_overlap",
-    "name" : "Infill Overlap Percentage"
-  },
-  "data" :
-  {
-    "description" : "With this setting you can control the amount of overlap between the infill and walls, which can be set as a percentage. The default value in Ultimaker Cura will be sufficient overlap for most cases.",
-    "img_description" : "A visualisation of the infill overlap and wipe distance.",
-    "hints" : "- A higher value usually results in better bonding between the infill and walls. However, it might also reduce the visual quality of the print, as a value that is too high could lead to over extrusion.",
-    "notes" : "Note: If a high value is set, the infill will show through the walls in the final print result."
-  }
+	"general" :
+	{
+		"id" : "infill_overlap",
+		"name" : "Infill Overlap Percentage"
+	},
+	"data" :
+	{
+		"description" : "With this setting you can control the amount of overlap between the infill and walls, which can be set as a percentage. The default value in Ultimaker Cura will be sufficient overlap for most cases.",
+		"img_description" : "A visualisation of the infill overlap and wipe distance.",
+		"hints" : "- A higher value usually results in better bonding between the infill and walls. However, it might also reduce the visual quality of the print, as a value that is too high could lead to over extrusion.",
+		"notes" : "Note: If a high value is set, the infill will show through the walls in the final print result."
+	}
 }

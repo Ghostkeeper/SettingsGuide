@@ -1,16 +1,16 @@
 {
-  "general" :
-  {
-    "id" : "infill_extruder_nr",
-    "name" : "Infill Extruder"
-  },
-  "data" :
-  {
-    "description" : "The extruder train used for printing infill material. This is used by multi-extrusion machines.",
-    "img_description" : "This model will be printed with an AA 0.4mm silver PLA core and an AA 0.8mm blue PLA core for the infill material.",
-    "hints" : "- Printing the infill with an extruder with a bigger nozzle size can increase print speed without quality loss.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "infill_extruder_nr",
+		"name" : "Infill Extruder"
+	},
+	"data" :
+	{
+		"description" : "The extruder train used for printing infill material. This is used by multi-extrusion machines.",
+		"img_description" : "This model will be printed with an AA 0.4mm silver PLA core and an AA 0.8mm blue PLA core for the infill material.",
+		"hints" : "- Printing the infill with an extruder with a bigger nozzle size can increase print speed without quality loss.",
+		"notes" : ""
+	}
 }
 
 

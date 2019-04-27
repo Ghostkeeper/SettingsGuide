@@ -1,19 +1,19 @@
 {
-  "general" :
-  {
-    "id" : "layer_0_z_overlap",
-    "name" : "Initial Layer Z Overlap",
-    "images" :
-    {
-	   "1" : "raft_margin_img1.png",
-       "2" : "raft_margin_img2.png"
-    }
-  },
-  "data" :
-  {
-    "description" : "This setting lowers all layers of the model, except the initial layer, to compress the initial layer against the raft.",
-    "img_description" : "A visualization of the raft settings in Cura.",
-    "hints" : "",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "layer_0_z_overlap",
+		"name" : "Initial Layer Z Overlap",
+		"images" :
+		{
+			"1" : "raft_margin_img1.png",
+			"2" : "raft_margin_img2.png"
+		}
+	},
+	"data" :
+	{
+		"description" : "This setting lowers all layers of the model, except the initial layer, to compress the initial layer against the raft.",
+		"img_description" : "A visualization of the raft settings in Cura.",
+		"hints" : "",
+		"notes" : ""
+	}
 }

@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "material_final_print_temperature",
-    "name" : "Final Printing Temperature"
-  },
-  "data" :
-  {
-    "description" : "This setting is only used in dual extrusion machines. When switching nozzles, the inactive nozzle has to cool down. Just before the nozzle switch, the nozzle is allowed to cool down to this temperature while continuing to extrude.",
-    "img_description" : "",
-    "hints" : "- This setting prevents excessive oozing when the nozzle is in standby mode.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "material_final_print_temperature",
+		"name" : "Final Printing Temperature"
+	},
+	"data" :
+	{
+		"description" : "This setting is only used in dual extrusion machines. When switching nozzles, the inactive nozzle has to cool down. Just before the nozzle switch, the nozzle is allowed to cool down to this temperature while continuing to extrude.",
+		"img_description" : "",
+		"hints" : "- This setting prevents excessive oozing when the nozzle is in standby mode.",
+		"notes" : ""
+	}
 }

@@ -1,17 +1,17 @@
 {
-  "general" :
-  {
-    "id" : "cool_fan_full_layer",
-    "name" : "Regular Fan Speed at Layer",
-    "images" :
-    {
-	   "1" : "cool_fan_speed_img1.png"
-    }
-  },
-  "data" :
-  {
-    "description": "The layer at which the fans spin on regular fan speed. If regular fan speed at height is set, this value is calculated and rounded to a whole number.",
-    "img_description" : "An overview of common cooling settings combinations, projected onto a pyramid model.",
-    "hints" : ""
-  }
+	"general" :
+	{
+		"id" : "cool_fan_full_layer",
+		"name" : "Regular Fan Speed at Layer",
+		"images" :
+		{
+			"1" : "cool_fan_speed_img1.png"
+		}
+	},
+	"data" :
+	{
+		"description": "The layer at which the fans spin on regular fan speed. If regular fan speed at height is set, this value is calculated and rounded to a whole number.",
+		"img_description" : "An overview of common cooling settings combinations, projected onto a pyramid model.",
+		"hints" : ""
+	}
 }

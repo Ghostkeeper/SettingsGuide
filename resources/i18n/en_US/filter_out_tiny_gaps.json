@@ -1,16 +1,16 @@
 {
-  "general" :
-  {
-    "id" : "filter_out_tiny_gaps",
-    "name" : "Filter Out Tiny Gaps"
-  },
-  "data" :
-  {
-    "description" : "Some gaps between walls are so small that the extra travel path is not worth the extra extrusion to compensate for it. Enable this feature to fill those minuscule gaps anyway, if needed.",
-    "img_description" : "The model on the left has filter out tiny gaps disabled, the right model has the setting enabled.",
-    "hints" : "- Tiny gaps are never bigger than two times the nozzle diameter surface.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "filter_out_tiny_gaps",
+		"name" : "Filter Out Tiny Gaps"
+	},
+	"data" :
+	{
+		"description" : "Some gaps between walls are so small that the extra travel path is not worth the extra extrusion to compensate for it. Enable this feature to fill those minuscule gaps anyway, if needed.",
+		"img_description" : "The model on the left has filter out tiny gaps disabled, the right model has the setting enabled.",
+		"hints" : "- Tiny gaps are never bigger than two times the nozzle diameter surface.",
+		"notes" : ""
+	}
 }
 
 

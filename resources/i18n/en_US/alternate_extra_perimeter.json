@@ -1,16 +1,16 @@
 {
-  "general" :
-  {
-    "id" : "alternate_extra_perimeter",
-    "name" : "Alternate Extra Wall"
-  },
-  "data" :
-  {
-    "description" : "This setting adds an extra wall every other layer. This way the infill gets caught between the walls, resulting in stronger prints.",
-    "img_description" : "This image shows the walls affected when changing this setting.",
-    "hints" : "- Example: If you set the wall line count to two walls and enable alternate extra wall, it will print two walls on even numbered layers and three walls on odd numbered layers.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "alternate_extra_perimeter",
+		"name" : "Alternate Extra Wall"
+	},
+	"data" :
+	{
+		"description" : "This setting adds an extra wall every other layer. This way the infill gets caught between the walls, resulting in stronger prints.",
+		"img_description" : "This image shows the walls affected when changing this setting.",
+		"hints" : "- Example: If you set the wall line count to two walls and enable alternate extra wall, it will print two walls on even numbered layers and three walls on odd numbered layers.",
+		"notes" : ""
+	}
 }
 
 

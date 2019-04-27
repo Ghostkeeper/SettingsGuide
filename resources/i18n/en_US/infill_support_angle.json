@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "infill_support_angle",
-    "name" : "Infill Overhang Angle"
-  },
-  "data" :
-  {
-    "description" : "This setting adjusts the overhang angle used to calculate whether infill support should be printed. ",
-    "img_description" : "The image on the left has a infill support angle of 40°, the right one of 55°.",
-    "hints" : "- A value of 0° will act like normal infill and support everything.\n- A value of 90° will remove all infill material.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "infill_support_angle",
+		"name" : "Infill Overhang Angle"
+	},
+	"data" :
+	{
+		"description" : "This setting adjusts the overhang angle used to calculate whether infill support should be printed. ",
+		"img_description" : "The image on the left has a infill support angle of 40°, the right one of 55°.",
+		"hints" : "- A value of 0° will act like normal infill and support everything.\n- A value of 90° will remove all infill material.",
+		"notes" : ""
+	}
 }

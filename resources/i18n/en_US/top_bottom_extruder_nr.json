@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "top_bottom_extruder_nr",
-    "name" : "Top/Bottom Extruder"
-  },
-  "data" :
-  {
-    "description": "This setting defines which extruder should print the top and bottom layers. Different colors or nozzle sizes can be used for the second extruder.",
-    "img_description" : "This model shows the top and bottom layers are printed with the other extruder.",
-    "hints" : "- This setting affects all top and bottom layers of the print.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "top_bottom_extruder_nr",
+		"name" : "Top/Bottom Extruder"
+	},
+	"data" :
+	{
+		"description": "This setting defines which extruder should print the top and bottom layers. Different colors or nozzle sizes can be used for the second extruder.",
+		"img_description" : "This model shows the top and bottom layers are printed with the other extruder.",
+		"hints" : "- This setting affects all top and bottom layers of the print.",
+		"notes" : ""
+	}
 }

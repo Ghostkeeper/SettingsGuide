@@ -1,13 +1,13 @@
 {
-  "general" :
-  {
-    "id" : "retraction_min_travel",
-    "name" : "Retraction Minimum Travel"
-  },
-  "data" :
-  {
-    "description": "This setting determines the minimum distance the print head must travel before a retraction move is initiated. ",
-    "img_description" : "The left model is allowed to retract, while the right model is not allowed to retract (in blue). The short distance between the railing bars prevents the retraction due to the minimum travel distance set.",
-    "hints" : "- With retraction-intensive models, you could increase the value, which decreases the number of retractions and reduces the possibility of grinding.\n- However, the value must not be set too high as this might lead to stringing and cause ugly “blobs” to form on the print."
-  }
+	"general" :
+	{
+		"id" : "retraction_min_travel",
+		"name" : "Retraction Minimum Travel"
+	},
+	"data" :
+	{
+		"description": "This setting determines the minimum distance the print head must travel before a retraction move is initiated. ",
+		"img_description" : "The left model is allowed to retract, while the right model is not allowed to retract (in blue). The short distance between the railing bars prevents the retraction due to the minimum travel distance set.",
+		"hints" : "- With retraction-intensive models, you could increase the value, which decreases the number of retractions and reduces the possibility of grinding.\n- However, the value must not be set too high as this might lead to stringing and cause ugly “blobs” to form on the print."
+	}
 }

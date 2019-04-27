@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id": "switch_extruder_retraction_speeds",
-    "name": "Nozzle Switch Retraction Speed"
-  },
-  "data" :
-  {
-    "description" : "This refers to the speed of the retraction when the nozzle switches to standby mode. This setting controls both the 'Nozzle switch retract speed' and the 'Nozzle switch prime speed'.",
-    "img_description" : "",
-    "hints" : "- A higher retraction speed results in a better print, but has a higher chance of causing filament grinding.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id": "switch_extruder_retraction_speeds",
+		"name": "Nozzle Switch Retraction Speed"
+	},
+	"data" :
+	{
+		"description" : "This refers to the speed of the retraction when the nozzle switches to standby mode. This setting controls both the 'Nozzle switch retract speed' and the 'Nozzle switch prime speed'.",
+		"img_description" : "",
+		"hints" : "- A higher retraction speed results in a better print, but has a higher chance of causing filament grinding.",
+		"notes" : ""
+	}
 }

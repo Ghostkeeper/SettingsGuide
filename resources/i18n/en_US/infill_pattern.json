@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "infill_pattern",
-    "name" : "Infill Pattern"
-  },
-  "data" :
-  {
-    "description" : "Ultimaker Cura allows you to change the pattern of the printed infill structure, which is beneficial in some use cases. For example:\n- Strong 2D infills are used for everyday prints.\n- Quick 2D infills are used for quick, but slightly weaker models.\n- 3D infills are used to make the object equally strong in all directions.\n- 3D concentric infills are used for flexible materials.",	
-    "img_description" : "The infill patterns above are displayed in the order of the list below.",
-    "hints" : "- Grid: Strong 2D infill\n- Lines: Quick 2D infill\n- Triangles: Strong 2D\n- infill\n- Tri-hexagon: Strong 2D infill\n- Cubic: Strong 3D infill\n- Cubic (subdivision): Strong 3D infill (this saves material compared to Cubic)\n- Octet: Strong 3D infill\n- Quarter cubic: Strong 3D infill\n- Concentric: Flexible 3D infill\n- Concentric 3D : Flexible 3D infill\n- Zig-zag: A grid shaped infill, printing continuously in one diagonal direction\n- Cross: Flexible 3D infill\n- Cross 3D: Flexible 3D infill",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "infill_pattern",
+		"name" : "Infill Pattern"
+	},
+	"data" :
+	{
+		"description" : "Ultimaker Cura allows you to change the pattern of the printed infill structure, which is beneficial in some use cases. For example:\n- Strong 2D infills are used for everyday prints.\n- Quick 2D infills are used for quick, but slightly weaker models.\n- 3D infills are used to make the object equally strong in all directions.\n- 3D concentric infills are used for flexible materials.",	
+		"img_description" : "The infill patterns above are displayed in the order of the list below.",
+		"hints" : "- Grid: Strong 2D infill\n- Lines: Quick 2D infill\n- Triangles: Strong 2D\n- infill\n- Tri-hexagon: Strong 2D infill\n- Cubic: Strong 3D infill\n- Cubic (subdivision): Strong 3D infill (this saves material compared to Cubic)\n- Octet: Strong 3D infill\n- Quarter cubic: Strong 3D infill\n- Concentric: Flexible 3D infill\n- Concentric 3D : Flexible 3D infill\n- Zig-zag: A grid shaped infill, printing continuously in one diagonal direction\n- Cross: Flexible 3D infill\n- Cross 3D: Flexible 3D infill",
+		"notes" : ""
+	}
 }

@@ -1,16 +1,16 @@
 {
-  "general" :
-  {
-    "id" : "skin_outline_count",
-    "name" : "Extra Skin Wall Count"
-  },
-  "data" :
-  {
-    "description" : "By using this setting, the outermost part of the top/bottom pattern will be replaced by a number of concentric lines. Using one or two lines can improve roofs that start on infill material and ensure that they come out sturdier and with a smoother surface.",
-    "img_description" : "This image shows the extra skin wall count printed in a star shape on top of infill.",
-    "hints" : "- This setting also prevents zig zag patterns at narrow overhangs, preventing vibrations of the printhead.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "skin_outline_count",
+		"name" : "Extra Skin Wall Count"
+	},
+	"data" :
+	{
+		"description" : "By using this setting, the outermost part of the top/bottom pattern will be replaced by a number of concentric lines. Using one or two lines can improve roofs that start on infill material and ensure that they come out sturdier and with a smoother surface.",
+		"img_description" : "This image shows the extra skin wall count printed in a star shape on top of infill.",
+		"hints" : "- This setting also prevents zig zag patterns at narrow overhangs, preventing vibrations of the printhead.",
+		"notes" : ""
+	}
 }
 
 

@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "travel_compensate_overlapping_walls_x_enabled",
-    "name" : "Compensate Inner Wall Overlaps"
-  },
-  "data" :
-  {
-    "description" : "This is a child setting of the 'Compensate wall overlaps' setting. Only the inner walls are affected when changing this setting.",
-    "img_description" : "The model on the left has compensate inner wall overlaps disabled, the right model has the setting enabled.",
-    "hints" : "- With this option enabled, the inner walls in printed models will be compensated when necessary.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "travel_compensate_overlapping_walls_x_enabled",
+		"name" : "Compensate Inner Wall Overlaps"
+	},
+	"data" :
+	{
+		"description" : "This is a child setting of the 'Compensate wall overlaps' setting. Only the inner walls are affected when changing this setting.",
+		"img_description" : "The model on the left has compensate inner wall overlaps disabled, the right model has the setting enabled.",
+		"hints" : "- With this option enabled, the inner walls in printed models will be compensated when necessary.",
+		"notes" : ""
+	}
 }

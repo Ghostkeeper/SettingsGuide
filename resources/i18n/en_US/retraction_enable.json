@@ -1,13 +1,13 @@
 {
-  "general" :
-  {
-    "id" : "retraction_enable",
-    "name" : "Enable Retraction"
-  },
-  "data" :
-  {
-    "description": "Retraction is used at the places in a print where the printer has to do a travel move between two printed parts. Without retraction, extruded material will hang between the parts. ",
-    "img_description" : "The left image has retractions disabled (blue travel moves), the right image has retractions enabled (purple travel moves).",
-    "hints" : "- By using retraction, “stringing” (thin threads of plastic in between the printed parts) is prevented, resulting in a much cleaner model.\n- Exercise caution when using flexible materials or models that require a lot of retractions as it may lead to grinding of the filament."
-  }
+	"general" :
+	{
+		"id" : "retraction_enable",
+		"name" : "Enable Retraction"
+	},
+	"data" :
+	{
+		"description": "Retraction is used at the places in a print where the printer has to do a travel move between two printed parts. Without retraction, extruded material will hang between the parts. ",
+		"img_description" : "The left image has retractions disabled (blue travel moves), the right image has retractions enabled (purple travel moves).",
+		"hints" : "- By using retraction, “stringing” (thin threads of plastic in between the printed parts) is prevented, resulting in a much cleaner model.\n- Exercise caution when using flexible materials or models that require a lot of retractions as it may lead to grinding of the filament."
+	}
 }

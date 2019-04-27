@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "z_seam_y",
-    "name" : "Z Seam Y"
-  },
-  "data" :
-  {
-    "description" : "This setting defines the Y coordinate of the Z-seam when the 'Z seam alignment' is set to 'user specified'.",
-    "img_description" : "The left model has the seam on the front, the Y-value is zero. The right model has the seam on the back, the Y-value is 230.",
-    "hints" : "- The coordinates are calculated absolute or relative depending on the preference of the user.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "z_seam_y",
+		"name" : "Z Seam Y"
+	},
+	"data" :
+	{
+		"description" : "This setting defines the Y coordinate of the Z-seam when the 'Z seam alignment' is set to 'user specified'.",
+		"img_description" : "The left model has the seam on the front, the Y-value is zero. The right model has the seam on the back, the Y-value is 230.",
+		"hints" : "- The coordinates are calculated absolute or relative depending on the preference of the user.",
+		"notes" : ""
+	}
 }

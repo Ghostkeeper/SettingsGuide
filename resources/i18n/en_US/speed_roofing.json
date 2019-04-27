@@ -1,18 +1,18 @@
 {
-  "general" :
-  {
-    "id" : "speed_roofing",
-    "name" : "Top Surface Skin Speed",
-    "images" :
-    {
-	   "1" : "speed_print_img1.png"
-    }
-  },
-  "data" :
-  {
-    "description" : "The speed at which top surface skin layers are printed.",
-    "img_description" : "This image shows the visualization of the different print speeds per model feature.",
-    "hints" : "",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "speed_roofing",
+		"name" : "Top Surface Skin Speed",
+		"images" :
+		{
+			"1" : "speed_print_img1.png"
+		}
+	},
+	"data" :
+	{
+		"description" : "The speed at which top surface skin layers are printed.",
+		"img_description" : "This image shows the visualization of the different print speeds per model feature.",
+		"hints" : "",
+		"notes" : ""
+	}
 }

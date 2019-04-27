@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "skirt_brim_speed",
-    "name" : "Skirt/Brim Speed"
-  },
-  "data" :
-  {
-    "description" : "It is possible to adjust the speed at which the skirt or brim is printed. Usually, this is similar to the initial layer speed.",
-    "img_description" : "",
-    "hints" : "",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "skirt_brim_speed",
+		"name" : "Skirt/Brim Speed"
+	},
+	"data" :
+	{
+		"description" : "It is possible to adjust the speed at which the skirt or brim is printed. Usually, this is similar to the initial layer speed.",
+		"img_description" : "",
+		"hints" : "",
+		"notes" : ""
+	}
 }

@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "infill_offset_y",
-    "name" : "Infill Y Offset"
-  },
-  "data" :
-  {
-    "description" : "The infill patterns are centered on the loaded 3D model. This setting allows to shift the center of the pattern on the Y axis.",	
-    "img_description" : "The image on the left has no infill offset, the right one has a y offset of 10mm, the infill is moved 10mm up.",
-    "hints" : "- A positive value moves the infill pattern up, a negative value moves it down.\n- With some 3D models, moving the infill pattern could lead to beneficial results.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "infill_offset_y",
+		"name" : "Infill Y Offset"
+	},
+	"data" :
+	{
+		"description" : "The infill patterns are centered on the loaded 3D model. This setting allows to shift the center of the pattern on the Y axis.",	
+		"img_description" : "The image on the left has no infill offset, the right one has a y offset of 10mm, the infill is moved 10mm up.",
+		"hints" : "- A positive value moves the infill pattern up, a negative value moves it down.\n- With some 3D models, moving the infill pattern could lead to beneficial results.",
+		"notes" : ""
+	}
 }

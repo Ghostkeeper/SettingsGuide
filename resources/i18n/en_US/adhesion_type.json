@@ -1,13 +1,13 @@
 {
-  "general" :
-  {
-    "id" : "adhesion_type",
-    "name" : "Build Plate Adhesion Type"
-  },
-  "data" :
-  {
-    "description" : "There are three types of build plate adhesion: skirt, brim and raft. You can also easily disable the adhesion types by setting it to None.",
-    "img_description" : "This model has the build plate adhesion types from left to right: skirt, brim and raft.",
-    "hints" : "Different options that help to improve both priming your extrusion and adhesion to the build plate:\n- Brim adds a single layer flat area around the base of your model to prevent warping. The brim is connected to the model and will thus make the bottom surface area bigger. This means that it can better stick to the build plate and in case of warping the corners of the model are less likely to curl up because of the brim attached to it. Materials that have a high potential for shrinkage (e.g. ABS) can benefit from using a brim. Models that have a very big base or very thin parts at the bottom will also stick better to the build plate with a brim.\n- A raft adds a thick grid with a roof between the model and the build plate. This can be useful when the bottom surface of a model is not completely flat or has little adhesion to the build plate. A raft ensures that the model will stick better to the build plate.\n- Skirt is a line printed around the model, but not connected to the model. This helps prime the extrusion nozzle and can be an additional check for bed leveling before the print begins."
-  }
+	"general" :
+	{
+		"id" : "adhesion_type",
+		"name" : "Build Plate Adhesion Type"
+	},
+	"data" :
+	{
+		"description" : "There are three types of build plate adhesion: skirt, brim and raft. You can also easily disable the adhesion types by setting it to None.",
+		"img_description" : "This model has the build plate adhesion types from left to right: skirt, brim and raft.",
+		"hints" : "Different options that help to improve both priming your extrusion and adhesion to the build plate:\n- Brim adds a single layer flat area around the base of your model to prevent warping. The brim is connected to the model and will thus make the bottom surface area bigger. This means that it can better stick to the build plate and in case of warping the corners of the model are less likely to curl up because of the brim attached to it. Materials that have a high potential for shrinkage (e.g. ABS) can benefit from using a brim. Models that have a very big base or very thin parts at the bottom will also stick better to the build plate with a brim.\n- A raft adds a thick grid with a roof between the model and the build plate. This can be useful when the bottom surface of a model is not completely flat or has little adhesion to the build plate. A raft ensures that the model will stick better to the build plate.\n- Skirt is a line printed around the model, but not connected to the model. This helps prime the extrusion nozzle and can be an additional check for bed leveling before the print begins."
+	}
 }

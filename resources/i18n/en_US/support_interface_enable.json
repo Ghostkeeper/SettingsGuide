@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "support_interface_enable",
-    "name" : "Enable Support Interface"
-  },
-  "data" :
-  {
-    "description" : "A support interface generates a dense skin on the roof and floor of the support structure on which the model is printed. Doing this supports the bottom layer of the print better, leading to a more even surface. It is important to remember that a support roof is more difficult to remove than regular support, so post-processing may require more work, specifically when using non-soluble supports.",
-    "img_description" : "This model is sliced in two different ways: the example in the middle has the support interface enabled, while the right example has the support interface disabled.",
-    "hints" : "",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "support_interface_enable",
+		"name" : "Enable Support Interface"
+	},
+	"data" :
+	{
+		"description" : "A support interface generates a dense skin on the roof and floor of the support structure on which the model is printed. Doing this supports the bottom layer of the print better, leading to a more even surface. It is important to remember that a support roof is more difficult to remove than regular support, so post-processing may require more work, specifically when using non-soluble supports.",
+		"img_description" : "This model is sliced in two different ways: the example in the middle has the support interface enabled, while the right example has the support interface disabled.",
+		"hints" : "",
+		"notes" : ""
+	}
 }

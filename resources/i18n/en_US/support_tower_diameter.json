@@ -1,18 +1,18 @@
 {
-  "general" :
-  {
-    "id" : "support_tower_diameter",
-    "name" : "Tower Diameter",
-    "images" :
-    {
-	   "1" : "support_use_towers_img1.png"
-    }
-  },
-  "data" :
-  {
-    "description" : "This setting defines the diameter of a special tower.",
-    "img_description" : "This image shows the support tower and its settings.",
-    "hints" : "",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "support_tower_diameter",
+		"name" : "Tower Diameter",
+		"images" :
+		{
+			"1" : "support_use_towers_img1.png"
+		}
+	},
+	"data" :
+	{
+		"description" : "This setting defines the diameter of a special tower.",
+		"img_description" : "This image shows the support tower and its settings.",
+		"hints" : "",
+		"notes" : ""
+	}
 }

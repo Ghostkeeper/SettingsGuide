@@ -1,16 +1,16 @@
 {
-  "general" :
-  {
-    "id" : "wall_line_count",
-    "name" : "Wall Line Count"
-  },
-  "data" :
-  {
-    "description" : "The wall line count represents the number of walls in a print. This can be set instead of setting a thickness in millimeter of the walls. ",
-    "img_description" : "The model on the left has 3 walls, the model on the right has two walls.",
-    "hints" : "- When you set the wall line count, the wall thickness is calculated and will grey out.\n- Check the wall thickness when changing nozzle size, because the wall line count does not automatically change when set manually.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "wall_line_count",
+		"name" : "Wall Line Count"
+	},
+	"data" :
+	{
+		"description" : "The wall line count represents the number of walls in a print. This can be set instead of setting a thickness in millimeter of the walls. ",
+		"img_description" : "The model on the left has 3 walls, the model on the right has two walls.",
+		"hints" : "- When you set the wall line count, the wall thickness is calculated and will grey out.\n- Check the wall thickness when changing nozzle size, because the wall line count does not automatically change when set manually.",
+		"notes" : ""
+	}
 }
 
 

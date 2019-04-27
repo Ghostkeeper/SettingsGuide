@@ -11,7 +11,6 @@
 - Perform transparency optimization, fuzz 3-10%.
 - Save GIF
 
-
 # Validate settings and prepare plugin for making Cura Plugin Package
 1. Run python script 'optimizer.py' in DoNotIncludeToPackage, before it define file 'fdmprinter.def.json' location
 2. The script will create a new folder resources/images_opt . This folder has all resized and optimized settings images

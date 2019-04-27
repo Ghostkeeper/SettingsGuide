@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id": "support_interface_height",
-    "name": "Support Interface Thickness"
-  },
-  "data" :
-  {
-    "description" : "The thickness of the support interface(s).",
-    "img_description" : "",
-    "hints" : "",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id": "support_interface_height",
+		"name": "Support Interface Thickness"
+	},
+	"data" :
+	{
+		"description" : "The thickness of the support interface(s).",
+		"img_description" : "",
+		"hints" : "",
+		"notes" : ""
+	}
 }

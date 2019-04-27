@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "initial_layer_line_width_factor",
-    "name" : "Initial Layer Line Width"
-  },
-  "data" :
-  {
-    "description" : "The initial layer line width is set as a percentage of all lines printed on the initial layer. ",
-    "img_description" : "The model on the left has a 100% initial line width, the image on the right has a 135% initial line width. ",
-    "hints" : "- This setting affects all line widths; skin, walls, adhesion, support and the prime tower. The factor is multiplied to whatever the line widths of these individual settings are.\n- The slightly increased initial layer line width improves adhesion to the build plate.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "initial_layer_line_width_factor",
+		"name" : "Initial Layer Line Width"
+	},
+	"data" :
+	{
+		"description" : "The initial layer line width is set as a percentage of all lines printed on the initial layer. ",
+		"img_description" : "The model on the left has a 100% initial line width, the image on the right has a 135% initial line width. ",
+		"hints" : "- This setting affects all line widths; skin, walls, adhesion, support and the prime tower. The factor is multiplied to whatever the line widths of these individual settings are.\n- The slightly increased initial layer line width improves adhesion to the build plate.",
+		"notes" : ""
+	}
 }

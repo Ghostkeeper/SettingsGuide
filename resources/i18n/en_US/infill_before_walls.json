@@ -1,13 +1,13 @@
 {
-  "general" :
-  {
-    "id" : "infill_before_walls",
-    "name" : "Infill Before Walls"
-  },
-  "data" :
-  {
-    "description" : "With this setting enabled, infill will be printed before the walls. This results in better overhangs because the walls will stick to the already printed infill.",
-    "img_description" : "The left animation shows infill before walls, the right one walls before infill.",
-    "hints" : "- Printing in this order can also have a disadvantage: If the infill is printed before the walls, there is a chance that the infill will be visible through the walls, resulting in a rougher surface finish."
-  }
+	"general" :
+	{
+		"id" : "infill_before_walls",
+		"name" : "Infill Before Walls"
+	},
+	"data" :
+	{
+		"description" : "With this setting enabled, infill will be printed before the walls. This results in better overhangs because the walls will stick to the already printed infill.",
+		"img_description" : "The left animation shows infill before walls, the right one walls before infill.",
+		"hints" : "- Printing in this order can also have a disadvantage: If the infill is printed before the walls, there is a chance that the infill will be visible through the walls, resulting in a rougher surface finish."
+	}
 }

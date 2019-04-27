@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "top_bottom_pattern",
-    "name" : "Top/Bottom Pattern"
-  },
-  "data" :
-  {
-    "description": "This setting allows you to choose from different printing patterns for the top and bottom layers.",
-    "img_description" : "Lines, zig zag, concentric and 'line direction' with custom value [90]",
-    "hints" : "- Concentric: The pattern is printed from the outside to the center of the print.\n- Lines: A diagonally printed pattern with travel moves on the shell of the model.\n- Zig-zag: A diagonally printed pattern with connections on the shell of the model.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "top_bottom_pattern",
+		"name" : "Top/Bottom Pattern"
+	},
+	"data" :
+	{
+		"description": "This setting allows you to choose from different printing patterns for the top and bottom layers.",
+		"img_description" : "Lines, zig zag, concentric and 'line direction' with custom value [90]",
+		"hints" : "- Concentric: The pattern is printed from the outside to the center of the print.\n- Lines: A diagonally printed pattern with travel moves on the shell of the model.\n- Zig-zag: A diagonally printed pattern with connections on the shell of the model.",
+		"notes" : ""
+	}
 }

@@ -1,18 +1,18 @@
 {
-  "general" :
-  {
-    "id" : "support_minimal_diameter",
-    "name" : "Minimum Diameter",
-    "images" :
-    {
-	   "1" : "support_use_towers_img1.png"
-    }
-  },
-  "data" :
-  {
-    "description" : "Minimum diameter in the X/Y directions of a small area which is to be supported by a specialized support tower.",
-    "img_description" : "This image shows the support tower and its settings.",
-    "hints" : "",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "support_minimal_diameter",
+		"name" : "Minimum Diameter",
+		"images" :
+		{
+			"1" : "support_use_towers_img1.png"
+		}
+	},
+	"data" :
+	{
+		"description" : "Minimum diameter in the X/Y directions of a small area which is to be supported by a specialized support tower.",
+		"img_description" : "This image shows the support tower and its settings.",
+		"hints" : "",
+		"notes" : ""
+	}
 }

@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "support_infill_rate",
-    "name" : "Support Density"
-  },
-  "data" :
-  {
-    "description" : "This defines the density of support structures. A higher value will lead to stronger support, but these will be more difficult to remove and take more time to print.",
-    "img_description" : "This model has triangle support with three different densities: 15 %, 30 % and 45 %",
-    "hints" : "A higher value results in better overhangs, but the supports are harder to remove.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "support_infill_rate",
+		"name" : "Support Density"
+	},
+	"data" :
+	{
+		"description" : "This defines the density of support structures. A higher value will lead to stronger support, but these will be more difficult to remove and take more time to print.",
+		"img_description" : "This model has triangle support with three different densities: 15 %, 30 % and 45 %",
+		"hints" : "A higher value results in better overhangs, but the supports are harder to remove.",
+		"notes" : ""
+	}
 }

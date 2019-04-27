@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "material_flow_layer_0",
-    "name" : "Initial Layer Flow"
-  },
-  "data" :
-  {
-    "description" : "The initial layer flow is the amount of material that needs to be extruded on the initial layer over a specific amount of time and is based on the filament diameter and print speed. The flow is always set to 100%, which means that the extruded amount of filament will match the calculated amount.",
-    "img_description" : "",
-    "hints" : "- This setting is not usually changed, as the calculation is done automatically, but it can be useful when printing with experimental materials which need better build plate adhesion.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "material_flow_layer_0",
+		"name" : "Initial Layer Flow"
+	},
+	"data" :
+	{
+		"description" : "The initial layer flow is the amount of material that needs to be extruded on the initial layer over a specific amount of time and is based on the filament diameter and print speed. The flow is always set to 100%, which means that the extruded amount of filament will match the calculated amount.",
+		"img_description" : "",
+		"hints" : "- This setting is not usually changed, as the calculation is done automatically, but it can be useful when printing with experimental materials which need better build plate adhesion.",
+		"notes" : ""
+	}
 }

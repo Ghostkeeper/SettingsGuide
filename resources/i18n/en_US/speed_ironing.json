@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "speed_ironing",
-    "name" : "Ironing Speed"
-  },
-  "data" :
-  {
-    "description" : "The speed of ironing can be adjusted to fine-tune the process.",
-    "img_description" : "",
-    "hints" : "The ironing speed is significantly slower than the print speed, to ensure to layers melt together.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "speed_ironing",
+		"name" : "Ironing Speed"
+	},
+	"data" :
+	{
+		"description" : "The speed of ironing can be adjusted to fine-tune the process.",
+		"img_description" : "",
+		"hints" : "The ironing speed is significantly slower than the print speed, to ensure to layers melt together.",
+		"notes" : ""
+	}
 }

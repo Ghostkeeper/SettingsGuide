@@ -1,17 +1,17 @@
 {
-  "general" :
-  {
-    "id" : "cool_fan_speed_min",
-    "name" : "Regular Fan Speed",
-    "images" :
-    {
-	   "1" : "cool_fan_speed_img1.png"
-    }
-  },
-  "data" :
-  {
-    "description": "The speed at which the fan spins before hitting a threshold. When a layer prints faster than the threshold, the speed gradually increases towards the maximum fan speed.",
-    "img_description" : "An overview of common cooling settings combinations, projected onto a pyramid model.",
-    "hints" : ""
-  }
+	"general" :
+	{
+		"id" : "cool_fan_speed_min",
+		"name" : "Regular Fan Speed",
+		"images" :
+		{
+			"1" : "cool_fan_speed_img1.png"
+		}
+	},
+	"data" :
+	{
+		"description": "The speed at which the fan spins before hitting a threshold. When a layer prints faster than the threshold, the speed gradually increases towards the maximum fan speed.",
+		"img_description" : "An overview of common cooling settings combinations, projected onto a pyramid model.",
+		"hints" : ""
+	}
 }

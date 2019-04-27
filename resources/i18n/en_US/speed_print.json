@@ -1,13 +1,13 @@
 {
-  "general" :
-  {
-    "id" : "speed_print",
-    "name" : "Print Speed"
-  },
-  "data" :
-  {
-    "description" : "The print speed defines the speed (in mm/s) at which the print head moves while printing. Based on this setting, Ultimaker Cura calculates the extrusion flow.",
-    "img_description" : "This image shows the visualization of the different print speeds per model feature.",
-    "hints" : "- A higher print speed will lead to a shorter print time. Keep in mind that increasing the print speed means that you may have to increase the temperature as well to ensure the filament is properly melted.\n- Although you can choose one overall print speed for the complete print, it is also possible to use different print speeds for specific parts of the print."
-  }
+	"general" :
+	{
+		"id" : "speed_print",
+		"name" : "Print Speed"
+	},
+	"data" :
+	{
+		"description" : "The print speed defines the speed (in mm/s) at which the print head moves while printing. Based on this setting, Ultimaker Cura calculates the extrusion flow.",
+		"img_description" : "This image shows the visualization of the different print speeds per model feature.",
+		"hints" : "- A higher print speed will lead to a shorter print time. Keep in mind that increasing the print speed means that you may have to increase the temperature as well to ensure the filament is properly melted.\n- Although you can choose one overall print speed for the complete print, it is also possible to use different print speeds for specific parts of the print."
+	}
 }

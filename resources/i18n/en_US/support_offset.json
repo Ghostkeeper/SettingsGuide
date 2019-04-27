@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "support_offset",
-    "name" : "Support Horizontal Expansion"
-  },
-  "data" :
-  {
-    "description" : "By using horizontal expansion, an offset can be applied to support structures in the X and Y direction. High values will expand the support areas, resulting in sturdier support. Very thin support areas can be removed completely by using a negative value. The right side support of the model below can easily be printed, although the supported area is very thin.",
-    "img_description" : "The model on the left has horizontal expansion disabled which saves material and decreases print time. The model on the right has horizontal expansion enabled, which increases the strength of the structure",
-    "hints" : "",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "support_offset",
+		"name" : "Support Horizontal Expansion"
+	},
+	"data" :
+	{
+		"description" : "By using horizontal expansion, an offset can be applied to support structures in the X and Y direction. High values will expand the support areas, resulting in sturdier support. Very thin support areas can be removed completely by using a negative value. The right side support of the model below can easily be printed, although the supported area is very thin.",
+		"img_description" : "The model on the left has horizontal expansion disabled which saves material and decreases print time. The model on the right has horizontal expansion enabled, which increases the strength of the structure",
+		"hints" : "",
+		"notes" : ""
+	}
 }

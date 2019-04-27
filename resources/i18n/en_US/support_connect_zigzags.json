@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "support_connect_zigzags",
-    "name" : "Connect Support ZigZags"
-  },
-  "data" :
-  {
-    "description" : "When a zig-zag support pattern has been selected, this setting becomes visible. It connects the end of zig-zags, which strengthens the support structure and increases adhesion to the build plate by the support structure.",
-    "img_description" : "",
-    "hints" : "",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "support_connect_zigzags",
+		"name" : "Connect Support ZigZags"
+	},
+	"data" :
+	{
+		"description" : "When a zig-zag support pattern has been selected, this setting becomes visible. It connects the end of zig-zags, which strengthens the support structure and increases adhesion to the build plate by the support structure.",
+		"img_description" : "",
+		"hints" : "",
+		"notes" : ""
+	}
 }

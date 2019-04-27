@@ -11,13 +11,13 @@ i18n_catalog = i18nCatalog("cura")
 
 
 def getMetaData():
-    return {
-        "view": {
-            "name": i18n_catalog.i18nc("@item:inmenu", "Cura Settings Guide"),
-            "weight": 0
-        }
-    }
+	return {
+		"view": {
+			"name": i18n_catalog.i18nc("@item:inmenu", "Cura Settings Guide"),
+			"weight": 0
+		}
+	}
 
 
 def register(app):
-    return {"extension": CuraSettingsGuide.CuraSettingsGuide()}
+	return {"extension": CuraSettingsGuide.CuraSettingsGuide()}

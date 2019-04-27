@@ -4,13 +4,11 @@
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
-
 class MenuItemHandler:
+	def __init__(self, plugin_controller) -> None:
+		self._plugin_controller = plugin_controller
 
-    def __init__(self, plugin_controller) -> None:
-        self._plugin_controller = plugin_controller
-
-    def sidebarMenuItemOnClickHander(self, kwargs) -> None:
-        if "key" in kwargs:
-            setting_key = kwargs["key"]
-            self._plugin_controller.startWelcomeGuideAndSelectSetting(setting_key)
+	def sidebarMenuItemOnClickHander(self, kwargs) -> None:
+		if "key" in kwargs:
+			setting_key = kwargs["key"]
+			self._plugin_controller.startWelcomeGuideAndSelectSetting(setting_key)

@@ -1,18 +1,18 @@
 {
-  "general" :
-  {
-    "id" : "brim_line_count",
-    "name" : "Brim Line Count",
-    "images" :
-    {
-	   "1" : "brim_width_img1.png"
-    }
-  },
-  "data" :
-  {
-    "description" : "This setting overrides the 'brim width', setting the width by the number of printed lines.",
-    "img_description" : "This image shows a brim adhesion type.",
-    "hints" : "More brim lines enhance adhesion to the build plate, but also reduces the effective print area.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "brim_line_count",
+		"name" : "Brim Line Count",
+		"images" :
+		{
+			"1" : "brim_width_img1.png"
+		}
+	},
+	"data" :
+	{
+		"description" : "This setting overrides the 'brim width', setting the width by the number of printed lines.",
+		"img_description" : "This image shows a brim adhesion type.",
+		"hints" : "More brim lines enhance adhesion to the build plate, but also reduces the effective print area.",
+		"notes" : ""
+	}
 }

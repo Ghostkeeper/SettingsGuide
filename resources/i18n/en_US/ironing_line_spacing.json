@@ -1,16 +1,16 @@
 {
-  "general" :
-  {
-    "id" : "ironing_line_spacing",
-    "name" : "Ironing Line Spacing"
-  },
-  "data" :
-  {
-    "description" : "This setting changes the space between every printed ironing line.",
-    "img_description" : "This model has ironing applied to it, the space between the ironing lines is increased to 0.3mm.",
-    "hints" : "- The spacing between ironing lines is significantly smaller than the nozzle size.\n- Increasing the line space reduces ironing time, but decreases the smoothing effect.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "ironing_line_spacing",
+		"name" : "Ironing Line Spacing"
+	},
+	"data" :
+	{
+		"description" : "This setting changes the space between every printed ironing line.",
+		"img_description" : "This model has ironing applied to it, the space between the ironing lines is increased to 0.3mm.",
+		"hints" : "- The spacing between ironing lines is significantly smaller than the nozzle size.\n- Increasing the line space reduces ironing time, but decreases the smoothing effect.",
+		"notes" : ""
+	}
 }
 
 

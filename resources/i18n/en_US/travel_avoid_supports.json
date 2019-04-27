@@ -1,13 +1,13 @@
 {
-  "general" :
-  {
-    "id" : "travel_avoid_supports",
-    "name" : "Avoid Supports When Traveling"
-  },
-  "data" :
-  {
-    "description" : "The nozzle avoids already printed supports when traveling. This option is only available when combing is enabled.",
-    "img_description" : "",
-    "hints" : ""
-  }
+	"general" :
+	{
+		"id" : "travel_avoid_supports",
+		"name" : "Avoid Supports When Traveling"
+	},
+	"data" :
+	{
+		"description" : "The nozzle avoids already printed supports when traveling. This option is only available when combing is enabled.",
+		"img_description" : "",
+		"hints" : ""
+	}
 }

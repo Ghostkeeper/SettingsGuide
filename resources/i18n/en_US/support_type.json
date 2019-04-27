@@ -1,13 +1,13 @@
 {
-  "general" :
-  {
-    "id" : "support_type",
-    "name" : "Support Placement"
-  },
-  "data" :
-  {
-    "description" : "This setting defines where the support structure is printed.",
-    "img_description" : "This model of a chair has support touching build plate on the left and support everywhere on the right.",
-    "hints" : ""
-  }
+	"general" :
+	{
+		"id" : "support_type",
+		"name" : "Support Placement"
+	},
+	"data" :
+	{
+		"description" : "This setting defines where the support structure is printed.",
+		"img_description" : "This model of a chair has support touching build plate on the left and support everywhere on the right.",
+		"hints" : ""
+	}
 }

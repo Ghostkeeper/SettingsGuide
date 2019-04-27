@@ -1,13 +1,13 @@
 {
-  "general" :
-  {
-    "id" : "cool_fan_speed",
-    "name" : "Fan Speed"
-  },
-  "data" :
-  {
-    "description" : "The speed at which the print cooling fans spin.",
-    "img_description" : "An overview of common cooling settings combinations, projected onto a pyramid model",
-    "hints" : "When the print head fans are enabled, you can adjust certain parameters. One of these is the fan speed – the speed at which the fans spin. A higher speed allows for better cooling and reduces oozing, but can also increase the shrinkage of the material. This is why the speed may be different for different materials. The preset material profiles on the Ultimaker already contain the default values for Ultimaker materials."
-  }
+	"general" :
+	{
+		"id" : "cool_fan_speed",
+		"name" : "Fan Speed"
+	},
+	"data" :
+	{
+		"description" : "The speed at which the print cooling fans spin.",
+		"img_description" : "An overview of common cooling settings combinations, projected onto a pyramid model",
+		"hints" : "When the print head fans are enabled, you can adjust certain parameters. One of these is the fan speed – the speed at which the fans spin. A higher speed allows for better cooling and reduces oozing, but can also increase the shrinkage of the material. This is why the speed may be different for different materials. The preset material profiles on the Ultimaker already contain the default values for Ultimaker materials."
+	}
 }

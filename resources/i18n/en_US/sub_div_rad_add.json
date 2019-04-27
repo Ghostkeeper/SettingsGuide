@@ -1,14 +1,14 @@
 {
-  "general" :
-  {
-    "id" : "sub_div_rad_add",
-    "name" : "Cubic Subdivision Shell"
-  },
-  "data" :
-  {
-    "description" : "An addition to the radius from the center of each cube to check for the boundary of the model, as to decide whether this cube should be subdivided. This is calculated in all directions; X, Y and Z.",
-    "img_description" : "The image on the left has a positive subdivision shell of 0.6mm, the right one a negative cubic subdivision shell of -2mm.",
-    "hints" : "- This value represents the distance between one infill cube to the outer wall of the model.\n- A positive value ensures no cubes along the outer wall will be subdivided.\n- A negative value allows the cubes to subdivide at the edge of the outer walls.",
-    "notes" : ""
-  }
+	"general" :
+	{
+		"id" : "sub_div_rad_add",
+		"name" : "Cubic Subdivision Shell"
+	},
+	"data" :
+	{
+		"description" : "An addition to the radius from the center of each cube to check for the boundary of the model, as to decide whether this cube should be subdivided. This is calculated in all directions; X, Y and Z.",
+		"img_description" : "The image on the left has a positive subdivision shell of 0.6mm, the right one a negative cubic subdivision shell of -2mm.",
+		"hints" : "- This value represents the distance between one infill cube to the outer wall of the model.\n- A positive value ensures no cubes along the outer wall will be subdivided.\n- A negative value allows the cubes to subdivide at the edge of the outer walls.",
+		"notes" : ""
+	}
 }

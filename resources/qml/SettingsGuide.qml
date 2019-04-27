@@ -1,5 +1,8 @@
-// Copyright (c) 2018 Ultimaker B.V.
-// Toolbox is released under the terms of the LGPLv3 or higher.
+//Copyright (C) 2018 Ultimaker B.V.
+//Copyright (C) 2019 Ghostkeeper
+//This plug-in is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+//This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
+//You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
 import QtQuick 2.7
 import QtQuick.Window 2.2
@@ -12,221 +15,221 @@ import GuideTheme 1.0 as GuideThemeNS
 
 Window
 {
-    id: settingsGuideBase
-    title: catalog.i18nc("@title", "Cura Settings Guide") + " (" + CuraSettingsGuide.getPluginpluginVersion() + ")"
-    modality: Qt.ApplicationModal
-    flags: Qt.Dialog | Qt.CustomizeWindowHint | Qt.WindowTitleHint | Qt.WindowCloseButtonHint
+	id: settingsGuideBase
+	title: catalog.i18nc("@title", "Cura Settings Guide") + " (" + CuraSettingsGuide.getPluginpluginVersion() + ")"
+	modality: Qt.ApplicationModal
+	flags: Qt.Dialog | Qt.CustomizeWindowHint | Qt.WindowTitleHint | Qt.WindowCloseButtonHint
 
-    width: 1200 * screenScaleFactor
-    height: 640 * screenScaleFactor
-    minimumWidth: width
-    maximumWidth: minimumWidth
-    minimumHeight: height
-    maximumHeight: minimumHeight
+	width: 1200 * screenScaleFactor
+	height: 640 * screenScaleFactor
+	minimumWidth: width
+	maximumWidth: minimumWidth
+	minimumHeight: height
+	maximumHeight: minimumHeight
 
-    color: GuideThemeNS.Theme.getColor("viewport_background")
+	color: GuideThemeNS.Theme.getColor("viewport_background")
 
-    UM.I18nCatalog
-    {
-        id: catalog
-        name:"cura"
-    }
+	UM.I18nCatalog
+	{
+		id: catalog
+		name:"cura"
+	}
 
-    //Display icon in the middle of the window
-    Item
-    {
-        id: icon_item
-        width: parent.width - rightSideItem.width
-        height: parent.height
+	//Display icon in the middle of the window
+	Item
+	{
+		id: icon_item
+		width: parent.width - rightSideItem.width
+		height: parent.height
 
-        anchors
-        {
-            leftMargin: 20
-            rightMargin: 20
-        }
+		anchors
+		{
+			leftMargin: 20
+			rightMargin: 20
+		}
 
-        Image
-        {
-            id: welcome_icon
-            source: Qt.resolvedUrl("../icons/icon.png")
-            width: 300
-            height: 300
+		Image
+		{
+			id: welcome_icon
+			source: Qt.resolvedUrl("../icons/icon.png")
+			width: 300
+			height: 300
 
-            anchors.horizontalCenter: icon_item.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
-            opacity: 0.5
-        }
+			anchors.horizontalCenter: icon_item.horizontalCenter
+			anchors.verticalCenter: parent.verticalCenter
+			opacity: 0.5
+		}
 
-        Label
-        {
-            id: versionLabel
-            anchors.top : welcome_icon.bottom
-            anchors.topMargin: -60
-            anchors.left: welcome_icon.right
-            font.pixelSize: 22
-            font.italic: true
-            color: "#959596"
+		Label
+		{
+			id: versionLabel
+			anchors.top : welcome_icon.bottom
+			anchors.topMargin: -60
+			anchors.left: welcome_icon.right
+			font.pixelSize: 22
+			font.italic: true
+			color: "#959596"
 
-            text: "V(" + CuraSettingsGuide.getPluginpluginVersion() + ")"
-        }
-    }
+			text: "V(" + CuraSettingsGuide.getPluginpluginVersion() + ")"
+		}
+	}
 
-    Item
-    {
-        id: globalItem
-        anchors.fill: parent
+	Item
+	{
+		id: globalItem
+		anchors.fill: parent
 
-        focus: true
-        // Handle escape button press hier because in loader they will be not accepted
-        Keys.onEscapePressed:
-        {
-            if (typeof pageLoader.loaderEscpaPressHandler === "function")
-            {
-                pageLoader.loaderEscpaPressHandler()
-            }
-        }
+		focus: true
+		// Handle escape button press hier because in loader they will be not accepted
+		Keys.onEscapePressed:
+		{
+			if (typeof pageLoader.loaderEscpaPressHandler === "function")
+			{
+				pageLoader.loaderEscpaPressHandler()
+			}
+		}
 
-        Rectangle
-        {
-            id: rightSideItem
-            width: GuideThemeNS.Theme.getSize("sidebar").width;
-            border.color: "black"
-            border.width: 1
+		Rectangle
+		{
+			id: rightSideItem
+			width: GuideThemeNS.Theme.getSize("sidebar").width;
+			border.color: "black"
+			border.width: 1
 
-            anchors
-            {
-                top: globalItem.top
-                right: parent.right
-                bottom: globalItem.bottom
-                topMargin: 0
-                bottomMargin: 0
-                rightMargin: 0
-                leftMargin: 0
-            }
+			anchors
+			{
+				top: globalItem.top
+				right: parent.right
+				bottom: globalItem.bottom
+				topMargin: 0
+				bottomMargin: 0
+				rightMargin: 0
+				leftMargin: 0
+			}
 
-            SettingsSidebar
-            {
-                id: settingsSidebar
-                anchors.fill: parent
-                anchors.leftMargin: 1
-            }
-        }
+			SettingsSidebar
+			{
+				id: settingsSidebar
+				anchors.fill: parent
+				anchors.leftMargin: 1
+			}
+		}
 
 
-        // Here we show our help images with hints and descriptions, and etc..
-        Loader
-        {
-            id: pageLoader
+		// Here we show our help images with hints and descriptions, and etc..
+		Loader
+		{
+			id: pageLoader
 
-            // Every template might subscribe for this property which will be triggered for after "Escape" button click
-            property var loaderEscpaPressHandler: ""
+			// Every template might subscribe for this property which will be triggered for after "Escape" button click
+			property var loaderEscpaPressHandler: ""
 
-            property var loaderData: undefined // The object which is holds all information for the Loader Item
-            property var loaderCallBack: undefined // The function cann be triggered for performating actions in Loader Item
-            anchors
-            {
-                left: parent.left
-                right: rightSideItem.left
-                top: parent.top
-                bottom: parent.bottom
-            }
-        }
+			property var loaderData: undefined // The object which is holds all information for the Loader Item
+			property var loaderCallBack: undefined // The function cann be triggered for performating actions in Loader Item
+			anchors
+			{
+				left: parent.left
+				right: rightSideItem.left
+				top: parent.top
+				bottom: parent.bottom
+			}
+		}
 
-        // This timer is only for calling 'CallBack' function with delay because Loader source element might be
-        // loaded also with delay
-        Timer
-        {
-            id: loaderSourceChangeTimer;
-            interval: 100;
-            repeat: false;
-            onTriggered:
-            {
-                if (typeof pageLoader.loaderCallBack === "function")
-                {
-                    pageLoader.loaderCallBack()
-                }
-            }
-        }
-    }
+		// This timer is only for calling 'CallBack' function with delay because Loader source element might be
+		// loaded also with delay
+		Timer
+		{
+			id: loaderSourceChangeTimer;
+			interval: 100;
+			repeat: false;
+			onTriggered:
+			{
+				if (typeof pageLoader.loaderCallBack === "function")
+				{
+					pageLoader.loaderCallBack()
+				}
+			}
+		}
+	}
 
-    function callSettingItemChanged()
-    {
-        var data = CuraSettingsGuide.selectedSettingData
-        var template = "";
+	function callSettingItemChanged()
+	{
+		var data = CuraSettingsGuide.selectedSettingData
+		var template = "";
 
-        var setting_id = data["details"] != undefined ? data["details"]["general"]["id"] : undefined
-        var setting_template =  data["details"] != undefined ? data["details"]["general"]["template"] : undefined
+		var setting_id = data["details"] != undefined ? data["details"]["general"]["id"] : undefined
+		var setting_template =  data["details"] != undefined ? data["details"]["general"]["template"] : undefined
 
-        var isCreatedBy = false
-        if (setting_id != undefined && setting_id.toLowerCase() == "createdby")
-        {
-            isCreatedBy = true
-        }
+		var isCreatedBy = false
+		if (setting_id != undefined && setting_id.toLowerCase() == "createdby")
+		{
+			isCreatedBy = true
+		}
 
-        // Selected setting uses general template
-        if (setting_id != undefined && setting_template == undefined)
-        {
-            template = 1
-        }
-        // Selected setting has a different template
-        else if (setting_id != undefined && !isCreatedBy && setting_template != undefined)
-        {
-            template = 2
-        }
-        // Special view which shows created by Template
-        else if (isCreatedBy == true)
-        {
-            template = 99
-        }
-        // Show welcome page
-        else
-        {
-            template = -1
-        }
+		// Selected setting uses general template
+		if (setting_id != undefined && setting_template == undefined)
+		{
+			template = 1
+		}
+		// Selected setting has a different template
+		else if (setting_id != undefined && !isCreatedBy && setting_template != undefined)
+		{
+			template = 2
+		}
+		// Special view which shows created by Template
+		else if (isCreatedBy == true)
+		{
+			template = 99
+		}
+		// Show welcome page
+		else
+		{
+			template = -1
+		}
 
-        var template_path = ""
-        switch (template)
-        {
-            case 1:
-                template_path = Qt.resolvedUrl("SidebarSettingTemplates/GeneralTemplate.qml");
-                break
-            case 2:
-                template_path = Qt.resolvedUrl("SidebarSettingTemplates/" + setting_template);
-                break
-            case 99:
-                template_path = Qt.resolvedUrl("CreatedBy.qml");
-                break
-        }
+		var template_path = ""
+		switch (template)
+		{
+			case 1:
+				template_path = Qt.resolvedUrl("SidebarSettingTemplates/GeneralTemplate.qml");
+				break
+			case 2:
+				template_path = Qt.resolvedUrl("SidebarSettingTemplates/" + setting_template);
+				break
+			case 99:
+				template_path = Qt.resolvedUrl("CreatedBy.qml");
+				break
+		}
 
-        if (template_path != "")
-        {
-            pageLoader.loaderData = data
-            icon_item.visible = false
-            pageLoader.source = "" // for some reason if don't do this then QT will not unload the previous source properly
-            pageLoader.source = template_path
+		if (template_path != "")
+		{
+			pageLoader.loaderData = data
+			icon_item.visible = false
+			pageLoader.source = "" // for some reason if don't do this then QT will not unload the previous source properly
+			pageLoader.source = template_path
 
-            if (!isCreatedBy)
-                settingsSidebar.setSelectedItemInSettingListView(setting_id)
-        }
-        else
-        {
-            icon_item.visible = true
-            pageLoader.source = ""
-            settingsSidebar.resetSelectedItemInSettingListView()
-        }
+			if (!isCreatedBy)
+				settingsSidebar.setSelectedItemInSettingListView(setting_id)
+		}
+		else
+		{
+			icon_item.visible = true
+			pageLoader.source = ""
+			settingsSidebar.resetSelectedItemInSettingListView()
+		}
 
-        // Call Timer to trigger call back function
-        loaderSourceChangeTimer.restart()
+		// Call Timer to trigger call back function
+		loaderSourceChangeTimer.restart()
 
-    }
+	}
 
-    // After selecting the setting show proper template of the setting's guide
-    Connections
-    {
-        target: CuraSettingsGuide
-        onSettingItemChanged:
-        {
-            callSettingItemChanged()
-        }
-    }
+	// After selecting the setting show proper template of the setting's guide
+	Connections
+	{
+		target: CuraSettingsGuide
+		onSettingItemChanged:
+		{
+			callSettingItemChanged()
+		}
+	}
 }
