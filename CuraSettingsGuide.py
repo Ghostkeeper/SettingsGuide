@@ -1,5 +1,8 @@
-# Copyright (c) 2018 Aleksei Sasin
-# The plugin is released under the terms of the LGPLv3 or higher.
+#Copyright (C) 2018 Aleksei Sasin
+#Copyright (C) 2019 Ghostkeeper
+#This plug-in is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
+#You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
 import base64
 import json
@@ -19,9 +22,9 @@ from UM.i18n import i18nCatalog
 
 from cura.API import CuraAPI
 
-from .MenuItemHandler import MenuItemHandler
-from .SettingsModel import SettingsModel
-from . import GuideTheme
+import MenuItemHandler
+import SettingsModel
+import GuideTheme
 
 i18n_catalog = i18nCatalog("cura")
 
@@ -45,7 +48,7 @@ class CuraSettingsGuide(Extension, QObject):
         self._images_path = os.path.join(plugin_path, os.path.join("resources", "images"))
         self._descriptions_path = os.path.join(plugin_path, os.path.join("resources", "i18n", "en_US"))
 
-        qmlRegisterType(SettingsModel, "CuraSettingsGuide", 1, 0, "SettingsModel")
+        qmlRegisterType(SettingsModel.SettingsModel, "CuraSettingsGuide", 1, 0, "SettingsModel")
         qmlRegisterSingletonType(GuideTheme.GuideTheme, "GuideTheme", 1, 0, "Theme", GuideTheme.createTheme)
 
         self._loadDescriptionAndImages()
@@ -61,7 +64,7 @@ class CuraSettingsGuide(Extension, QObject):
             "name": "Setting Guide",
             "icon_name": "help-contents",
             "actions": menu_actions,
-            "menu_item": MenuItemHandler(self)
+            "menu_item": MenuItemHandler.MenuItemHandler(self)
         }
         api = CuraAPI()
         api.interface.settings.addContextMenuItem(data)
