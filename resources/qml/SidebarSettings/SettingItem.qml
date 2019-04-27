@@ -15,7 +15,7 @@ import GuideTheme 1.0 as GuideThemeNS
 //import "."
 
 Rectangle {
-	id: base;
+	id: base
 
 	height: GuideThemeNS.Theme.getSize("section").height
 
@@ -37,25 +37,25 @@ Rectangle {
 	property string setting_item_key: definition.key
 
 	function showHighlightArea() {
-		isSelected = true
-		highlightRectangle.opacity = 0.1
-		selectRectangle.visible = true
-		selectImage.visible = true
+		isSelected = true;
+		highlightRectangle.opacity = 0.1;
+		selectRectangle.visible = true;
+		selectImage.visible = true;
 	}
 
 	function hideHighlightArea() {
-		isSelected = false
-		highlightRectangle.opacity = 0.0
-		selectRectangle.visible = false
-		selectImage.visible = false
+		isSelected = false;
+		highlightRectangle.opacity = 0.0;
+		selectRectangle.visible = false;
+		selectImage.visible = false;
 	}
 
 
 	MouseArea {
-		id: mouse;
-		anchors.fill: parent;
-		acceptedButtons: Qt.RightButton;
-		hoverEnabled: true;
+		id: mouse
+		anchors.fill: parent
+		acceptedButtons: Qt.RightButton
+		hoverEnabled: true
 
 		Image {
 			id: selectImage
@@ -71,7 +71,7 @@ Rectangle {
 			z: 1
 			color: "transparent"
 			visible: false
-			anchors.fill: parent;
+			anchors.fill: parent
 			anchors.leftMargin : 22
 			anchors.rightMargin : 22
 			border.color: GuideThemeNS.Theme.getColor("action_button_active_border")
@@ -81,7 +81,7 @@ Rectangle {
 		Rectangle {
 			id: highlightRectangle
 			z: 1
-			anchors.fill: parent;
+			anchors.fill: parent
 			anchors.leftMargin : 22
 			anchors.rightMargin : 22
 			opacity: 0.0
@@ -89,31 +89,31 @@ Rectangle {
 		}
 
 		Label {
-			id: label;
+			id: label
 
-			anchors.left: parent.left;
+			anchors.left: parent.left
 			anchors.leftMargin: doDepthIndentation ? Math.round((GuideThemeNS.Theme.getSize("section_icon_column").width + 5) + ((definition.depth - 1) * GuideThemeNS.Theme.getSize("setting_control_depth_margin").width)) : 0
 			anchors.verticalCenter: parent.verticalCenter
 
 			text: definition.label
-			elide: Text.ElideMiddle;
+			elide: Text.ElideMiddle
 			renderType: Text.NativeRendering
 
-			color: GuideThemeNS.Theme.getColor("setting_control_text");
+			color: GuideThemeNS.Theme.getColor("setting_control_text")
 			opacity: (definition.visible) ? 1 : 0.5
 			// emphasize the setting if it has a value in the user or quality profile
 			font: base.doQualityUserSettingEmphasis && base.stackLevel != undefined && base.stackLevel <= 1 ? GuideThemeNS.Theme.getFont("default_italic") : GuideThemeNS.Theme.getFont("default")
 		}
 
 		Item {
-			id: controlContainer;
+			id: controlContainer
 
 			enabled: propertyProvider.isValueUsed
 
-			anchors.right: parent.right;
+			anchors.right: parent.right
 			anchors.rightMargin: GuideThemeNS.Theme.getSize("sidebar_margin").width
-			anchors.verticalCenter: parent.verticalCenter;
-			width: GuideThemeNS.Theme.getSize("setting_control").width;
+			anchors.verticalCenter: parent.verticalCenter
+			width: GuideThemeNS.Theme.getSize("setting_control").width
 			height: GuideThemeNS.Theme.getSize("setting_control").height
 		}
 

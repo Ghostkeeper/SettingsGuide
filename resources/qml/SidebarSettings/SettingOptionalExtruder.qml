@@ -28,8 +28,6 @@ SettingItem {
 
 		property string color: "#fff"
 
-
-
 		indicator: UM.RecolorImage {
 			id: downArrow
 			x: control.width - width - control.rightPadding
@@ -41,7 +39,7 @@ SettingItem {
 			sourceSize.width: width + 5 * screenScaleFactor
 			sourceSize.height: width + 5 * screenScaleFactor
 
-			color: GuideThemeNS.Theme.getColor("setting_control_text");
+			color: GuideThemeNS.Theme.getColor("setting_control_text")
 		}
 
 		background: Rectangle {
@@ -57,12 +55,12 @@ SettingItem {
 			border.width: GuideThemeNS.Theme.getSize("default_lining").width
 			border.color: {
 				if (!enabled) {
-					return GuideThemeNS.Theme.getColor("setting_control_disabled_border")
+					return GuideThemeNS.Theme.getColor("setting_control_disabled_border");
 				}
 				if (control.hovered || control.activeFocus) {
-					return GuideThemeNS.Theme.getColor("setting_control_border_highlight")
+					return GuideThemeNS.Theme.getColor("setting_control_border_highlight");
 				}
-				return GuideThemeNS.Theme.getColor("setting_control_border")
+				return GuideThemeNS.Theme.getColor("setting_control_border");
 			}
 		}
 
@@ -129,7 +127,7 @@ SettingItem {
 				renderType: Text.NativeRendering
 				color: {
 					if (model.enabled) {
-						GuideThemeNS.Theme.getColor("setting_control_text")
+						GuideThemeNS.Theme.getColor("setting_control_text");
 					} else {
 						GuideThemeNS.Theme.getColor("action_button_disabled_text");
 					}

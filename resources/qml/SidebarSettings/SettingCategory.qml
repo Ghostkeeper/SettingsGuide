@@ -76,8 +76,8 @@ Button {
 			anchors {
 				left: parent.left
 				leftMargin: 2 * GuideThemeNS.Theme.getSize("default_margin").width + GuideThemeNS.Theme.getSize("section_icon").width
-				right: parent.right;
-				verticalCenter: parent.verticalCenter;
+				right: parent.right
+				verticalCenter: parent.verticalCenter
 			}
 			text: definition.label
 			renderType: Text.NativeRendering
@@ -143,8 +143,8 @@ Button {
 			}
 		}
 		source: UM.Theme.getIcon(definition.icon)
-		width: GuideThemeNS.Theme.getSize("section_icon").width;
-		height: GuideThemeNS.Theme.getSize("section_icon").height;
+		width: GuideThemeNS.Theme.getSize("section_icon").width
+		height: GuideThemeNS.Theme.getSize("section_icon").height
 		sourceSize.width: width + 15 * screenScaleFactor
 		sourceSize.height: width + 15 * screenScaleFactor
 	}
@@ -169,10 +169,10 @@ Button {
 	}
 
 	Keys.onTabPressed: {
-		base.setActiveFocusToNextSetting(true)
+		base.setActiveFocusToNextSetting(true);
 	}
 	Keys.onBacktabPressed: {
-		base.setActiveFocusToNextSetting(false)
+		base.setActiveFocusToNextSetting(false);
 	}
 
 //	UM.SimpleButton

@@ -17,22 +17,22 @@ Rectangle {
 	Image {
 		id: author
 		width: {
-			var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400)
-			var new_value = sourceSize.width
+			var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400);
+			var new_value = sourceSize.width;
 			if(ratio > 1) {
-				new_value = sourceSize.width / ratio
+				new_value = sourceSize.width / ratio;
 			}
 
-			return new_value * screenScaleFactor
+			return new_value * screenScaleFactor;
 		}
 		height: {
-			var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400)
-			var new_value = sourceSize.height
+			var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400);
+			var new_value = sourceSize.height;
 			if(ratio > 1) {
-				new_value = sourceSize.height / ratio
+				new_value = sourceSize.height / ratio;
 			}
 
-			return new_value * screenScaleFactor
+			return new_value * screenScaleFactor;
 		}
 		anchors.horizontalCenter: parent.horizontalCenter
 		anchors.verticalCenter: parent.verticalCenter

@@ -76,13 +76,13 @@ Window {
 		// Handle escape button press hier because in loader they will be not accepted
 		Keys.onEscapePressed: {
 			if (typeof pageLoader.loaderEscpaPressHandler === "function") {
-				pageLoader.loaderEscpaPressHandler()
+				pageLoader.loaderEscpaPressHandler();
 			}
 		}
 
 		Rectangle {
 			id: rightSideItem
-			width: GuideThemeNS.Theme.getSize("sidebar").width;
+			width: GuideThemeNS.Theme.getSize("sidebar").width
 			border.color: "black"
 			border.width: 1
 
@@ -124,77 +124,77 @@ Window {
 		// This timer is only for calling 'CallBack' function with delay because Loader source element might be
 		// loaded also with delay
 		Timer {
-			id: loaderSourceChangeTimer;
-			interval: 100;
-			repeat: false;
+			id: loaderSourceChangeTimer
+			interval: 100
+			repeat: false
 			onTriggered: {
 				if (typeof pageLoader.loaderCallBack === "function") {
-					pageLoader.loaderCallBack()
+					pageLoader.loaderCallBack();
 				}
 			}
 		}
 	}
 
 	function callSettingItemChanged() {
-		var data = CuraSettingsGuide.selectedSettingData
+		var data = CuraSettingsGuide.selectedSettingData;
 		var template = "";
 
-		var setting_id = data["details"] != undefined ? data["details"]["general"]["id"] : undefined
-		var setting_template =  data["details"] != undefined ? data["details"]["general"]["template"] : undefined
+		var setting_id = data["details"] != undefined ? data["details"]["general"]["id"] : undefined;
+		var setting_template =  data["details"] != undefined ? data["details"]["general"]["template"] : undefined;
 
 		var isCreatedBy = false
 		if (setting_id != undefined && setting_id.toLowerCase() == "createdby") {
-			isCreatedBy = true
+			isCreatedBy = true;
 		}
 
 		// Selected setting uses general template
 		if (setting_id != undefined && setting_template == undefined) {
-			template = 1
+			template = 1;
 		}
 		// Selected setting has a different template
 		else if (setting_id != undefined && !isCreatedBy && setting_template != undefined) {
-			template = 2
+			template = 2;
 		}
 		// Special view which shows created by Template
 		else if (isCreatedBy == true) {
-			template = 99
+			template = 99;
 		}
 		// Show welcome page
 		else {
-			template = -1
+			template = -1;
 		}
 
-		var template_path = ""
+		var template_path = "";
 		switch (template) {
 			case 1:
 				template_path = Qt.resolvedUrl("SidebarSettingTemplates/GeneralTemplate.qml");
-				break
+				break;
 			case 2:
 				template_path = Qt.resolvedUrl("SidebarSettingTemplates/" + setting_template);
-				break
+				break;
 			case 99:
 				template_path = Qt.resolvedUrl("CreatedBy.qml");
-				break
+				break;
 		}
 
 		if (template_path != "") {
-			pageLoader.loaderData = data
-			icon_item.visible = false
-			pageLoader.source = "" // for some reason if don't do this then QT will not unload the previous source properly
-			pageLoader.source = template_path
+			pageLoader.loaderData = data;
+			icon_item.visible = false;
+			pageLoader.source = ""; // for some reason if don't do this then QT will not unload the previous source properly
+			pageLoader.source = template_path;
 
 			if (!isCreatedBy) {
-				settingsSidebar.setSelectedItemInSettingListView(setting_id)
+				settingsSidebar.setSelectedItemInSettingListView(setting_id);
 			}
 		}
 		else {
-			icon_item.visible = true
-			pageLoader.source = ""
-			settingsSidebar.resetSelectedItemInSettingListView()
+			icon_item.visible = true;
+			pageLoader.source = "";
+			settingsSidebar.resetSelectedItemInSettingListView();
 		}
 
 		// Call Timer to trigger call back function
-		loaderSourceChangeTimer.restart()
+		loaderSourceChangeTimer.restart();
 
 	}
 
@@ -202,7 +202,7 @@ Window {
 	Connections {
 		target: CuraSettingsGuide
 		onSettingItemChanged: {
-			callSettingItemChanged()
+			callSettingItemChanged();
 		}
 	}
 }

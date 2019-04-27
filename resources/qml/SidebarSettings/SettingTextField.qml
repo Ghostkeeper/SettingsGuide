@@ -20,11 +20,11 @@ SettingItem {
 
 		border.width: Math.round(GuideThemeNS.Theme.getSize("default_lining").width)
 		border.color: {
-			return GuideThemeNS.Theme.getColor("setting_control_disabled_border")
+			return GuideThemeNS.Theme.getColor("setting_control_disabled_border");
 		}
 
 		color: {
-			return GuideThemeNS.Theme.getColor("setting_control_disabled")
+			return GuideThemeNS.Theme.getColor("setting_control_disabled");
 		}
 
 		Label {
