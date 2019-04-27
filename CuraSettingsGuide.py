@@ -44,8 +44,8 @@ class CuraSettingsGuide(Extension, QObject):
         self._os_platform = platform.system()  # type: str
 
         plugin_path = os.path.dirname(__file__)
-        self._images_path = os.path.join(plugin_path, os.path.join("resources", "images"))
-        self._descriptions_path = os.path.join(plugin_path, os.path.join("resources", "i18n", "en_US"))
+        self._images_path = os.path.join(plugin_path, "resources", "images")
+        self._descriptions_path = os.path.join(plugin_path, "resources", "i18n", "en_US")
 
         qmlRegisterType(SettingsModel.SettingsModel, "CuraSettingsGuide", 1, 0, "SettingsModel")
         qmlRegisterSingletonType(GuideTheme.GuideTheme, "GuideTheme", 1, 0, "Theme", GuideTheme.createTheme)
@@ -191,7 +191,7 @@ class CuraSettingsGuide(Extension, QObject):
     @pyqtSlot(result = "QByteArray")
     def getCreatedByImage(self) -> Optional["QByteArray"]:
         plugin_path = PluginRegistry.getInstance().getPluginPath(self.getPluginId())
-        images_path = os.path.join(plugin_path, os.path.join("resources", "icons", "createdBy.data"))
+        images_path = os.path.join(plugin_path, "resources", "icons", "createdBy.data")
 
         with open(images_path, "rb") as f:
             data = f.read()
