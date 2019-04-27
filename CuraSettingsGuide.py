@@ -22,9 +22,9 @@ from UM.i18n import i18nCatalog
 
 from cura.API import CuraAPI
 
-import MenuItemHandler
-import SettingsModel
-import GuideTheme
+from . import MenuItemHandler
+from . import SettingsModel
+from . import GuideTheme
 
 i18n_catalog = i18nCatalog("cura")
 
