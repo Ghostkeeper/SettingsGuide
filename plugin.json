@@ -1,7 +1,8 @@
 {
     "name": "Cura Settings Guide",
-    "author": "Aleksei Sasin and Terri-Ann dela Cruz",
+    "author": "Ghostkeeper, Aleksei Sasin, Terri-Ann dela Cruz",
     "version": "1.0.1",
     "api": 5,
+	"supported_sdk_versions": ["5.0.0", "6.0.0"],
     "description": "The plugin provides information about settings in Cura application"
 }
