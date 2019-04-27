@@ -44,7 +44,7 @@ class CuraSettingsGuide(Extension, QObject):
         self._os_platform = platform.system()  # type: str
         self._plugin_version = None  # type: Optional[str]
 
-        plugin_path = self._getPluginPath()
+        plugin_path = os.path.dirname(__file__)
         self._images_path = os.path.join(plugin_path, os.path.join("resources", "images"))
         self._descriptions_path = os.path.join(plugin_path, os.path.join("resources", "i18n", "en_US"))
 
@@ -177,13 +177,6 @@ class CuraSettingsGuide(Extension, QObject):
                 Logger.logException("w", "Error while reading file: %s" % file)
                 continue
 
-    def _getPluginPath(self) -> str:
-        plugin_file_path = os.path.dirname(os.path.abspath(__file__))
-        path_records = os.path.split(plugin_file_path)
-        global_path = path_records[:-1]
-        path = os.path.join(*global_path)
-        return path
-
     @pyqtSlot(str)
     def setSelectedSetting(self, setting_key: str)-> None:
         # self._settings_data = {}
@@ -214,7 +207,7 @@ class CuraSettingsGuide(Extension, QObject):
 
     @pyqtSlot(result = "QByteArray")
     def getCreatedByImage(self) -> Optional["QByteArray"]:
-        plugin_path = self._getPluginPath()
+        plugin_path = PluginRegistry.getInstance().getPluginPath(self.getPluginId())
         images_path = os.path.join(plugin_path, os.path.join("resources", "icons", "createdBy.data"))
 
         with open(images_path, "rb") as f:
