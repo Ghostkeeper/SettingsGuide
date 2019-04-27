@@ -42,7 +42,6 @@ class CuraSettingsGuide(Extension, QObject):
         self._settings_data = {}  # type: Dict[str, dict]
         self._selected_setting_data = {}  #
         self._os_platform = platform.system()  # type: str
-        self._plugin_version = None  # type: Optional[str]
 
         plugin_path = os.path.dirname(__file__)
         self._images_path = os.path.join(plugin_path, os.path.join("resources", "images"))
@@ -52,8 +51,6 @@ class CuraSettingsGuide(Extension, QObject):
         qmlRegisterSingletonType(GuideTheme.GuideTheme, "GuideTheme", 1, 0, "Theme", GuideTheme.createTheme)
 
         self._loadDescriptionAndImages()
-
-        self.initPluginVersion()
 
         self.initializeHelpSidebarHelpButton()
 
@@ -68,20 +65,6 @@ class CuraSettingsGuide(Extension, QObject):
         }
         api = CuraAPI()
         api.interface.settings.addContextMenuItem(data)
-
-    def initPluginVersion(self)-> None:
-        self._plugin_version = "Unknown"
-        try:
-            splitted_path = os.path.split(os.path.dirname(os.path.abspath(__file__)))
-            path = splitted_path[0]
-            plugin_file_path = os.path.join(path, "plugin.json")
-
-            with open(plugin_file_path, "r", encoding = "utf-8") as plugin_file:
-                plugin_info = json.load(plugin_file)
-                self._plugin_version = plugin_info["version"]
-        except:
-            # The actual version info is not critical to have so we can continue
-            Logger.logException("w", "Cannot retrieve plugin version from plugin.json file")
 
     def startWelcomeGuide(self) -> None:
         if not self._dialog:
@@ -199,7 +182,7 @@ class CuraSettingsGuide(Extension, QObject):
 
     @pyqtSlot(result = str)
     def getPluginpluginVersion(self) -> str:
-        return self._plugin_version
+        return self._version
 
     @pyqtProperty("QVariantMap", notify = settingItemChanged)
     def selectedSettingData(self) -> Optional["QVariantMap"]:
