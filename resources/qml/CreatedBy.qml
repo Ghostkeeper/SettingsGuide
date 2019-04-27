@@ -40,7 +40,7 @@ Rectangle {
 	}
 
 	Text {
-		text: "Created By: Terri-Ann dela Cruz and Aleksei Sasin"
+		text: "Created By: Ghostkeeper, Terri-Ann dela Cruz and Aleksei Sasin"
 		color: "black"
 		font.pixelSize: 20
 		anchors.horizontalCenter: parent.horizontalCenter
