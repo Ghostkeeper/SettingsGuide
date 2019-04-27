@@ -12,8 +12,6 @@ import UM 1.1 as UM
 import Cura 1.0 as Cura
 import GuideTheme 1.0 as GuideThemeNS
 
-//import "."
-
 Rectangle {
 	id: base
 
@@ -24,11 +22,6 @@ Rectangle {
 	property var doDepthIndentation: true
 	property var doQualityUserSettingEmphasis: true
 
-
-	// Create properties to put property provider stuff in (bindings break in qt 5.5.1 otherwise)
-	//property var state: propertyProvider.properties.state
-	// There is no resolve property if there is only one stack.
-	//property var resolve: Cura.MachineManager.activeStackId != Cura.MachineManager.activeMachineId ? propertyProvider.properties.resolve : "None"
 	property var stackLevels: propertyProvider.stackLevels
 	property var stackLevel: stackLevels[0]
 

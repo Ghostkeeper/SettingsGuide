@@ -13,7 +13,6 @@ import GuideTheme 1.0 as GuideThemeNS
 
 SettingItem {
 	id: base
-	//property var focusItem: control
 
 	contents: MouseArea {
 		id: control

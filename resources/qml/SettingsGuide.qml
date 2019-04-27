@@ -73,7 +73,7 @@ Window {
 		anchors.fill: parent
 
 		focus: true
-		// Handle escape button press hier because in loader they will be not accepted
+		//Handle escape button press here because in loader they will be not accepted.
 		Keys.onEscapePressed: {
 			if (typeof pageLoader.loaderEscpaPressHandler === "function") {
 				pageLoader.loaderEscpaPressHandler();

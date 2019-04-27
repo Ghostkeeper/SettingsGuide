@@ -20,7 +20,6 @@ Rectangle {
 		font.pixelSize: 80
 		anchors.horizontalCenter: parent.horizontalCenter
 		anchors.verticalCenter: parent.verticalCenter
-		//rotation: -45
 		opacity: 0.3
 	}
 }
