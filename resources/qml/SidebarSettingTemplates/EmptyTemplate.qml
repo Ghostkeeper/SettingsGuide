@@ -10,13 +10,11 @@ import QtQuick.Layouts 1.3
 import UM 1.2 as UM
 import GuideTheme 1.0 as GuideThemeNS
 
-Rectangle
-{
+Rectangle {
 	id: empty_template
 	color: GuideThemeNS.Theme.getColor("viewport_background")
 
-	Text
-	{
+	Text {
 		text: "EMPTY"
 		color: "black"
 		font.pixelSize: 80

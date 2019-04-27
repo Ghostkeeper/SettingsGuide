@@ -10,30 +10,27 @@ import QtQuick.Layouts 1.3
 import UM 1.2 as UM
 import GuideTheme 1.0 as GuideThemeNS
 
-Rectangle
-{
+Rectangle {
 	id: emptyTemplate
 	color: GuideThemeNS.Theme.getColor("viewport_background")
 
-	Image
-	{
+	Image {
 		id: author
-		width:
-		{
+		width: {
 			var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400)
 			var new_value = sourceSize.width
-			if(ratio > 1)
-				new_value =  sourceSize.width / ratio
+			if(ratio > 1) {
+				new_value = sourceSize.width / ratio
+			}
 
 			return new_value * screenScaleFactor
-
 		}
-		height:
-		{
+		height: {
 			var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400)
 			var new_value = sourceSize.height
-			if(ratio > 1)
-				new_value =  sourceSize.height / ratio
+			if(ratio > 1) {
+				new_value = sourceSize.height / ratio
+			}
 
 			return new_value * screenScaleFactor
 		}
@@ -42,8 +39,7 @@ Rectangle
 		source: "data:image/png;base64," + CuraSettingsGuide.getCreatedByImage()
 	}
 
-	Text
-	{
+	Text {
 		text: "Created By: Terri-Ann dela Cruz and Aleksei Sasin"
 		color: "black"
 		font.pixelSize: 20

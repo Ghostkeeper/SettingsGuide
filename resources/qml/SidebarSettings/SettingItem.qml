@@ -36,16 +36,14 @@ Rectangle {
 	property bool isSelected: false
 	property string setting_item_key: definition.key
 
-	function showHighlightArea()
-	{
+	function showHighlightArea() {
 		isSelected = true
 		highlightRectangle.opacity = 0.1
 		selectRectangle.visible = true
 		selectImage.visible = true
 	}
 
-	function hideHighlightArea()
-	{
+	function hideHighlightArea() {
 		isSelected = false
 		highlightRectangle.opacity = 0.0
 		selectRectangle.visible = false
@@ -53,8 +51,7 @@ Rectangle {
 	}
 
 
-	MouseArea
-	{
+	MouseArea {
 		id: mouse;
 		anchors.fill: parent;
 		acceptedButtons: Qt.RightButton;
@@ -69,8 +66,7 @@ Rectangle {
 			source: Qt.resolvedUrl("../../icons/arrow.png")
 		}
 
-		Rectangle
-		{
+		Rectangle {
 			id: selectRectangle
 			z: 1
 			color: "transparent"
@@ -82,8 +78,7 @@ Rectangle {
 			border.width: 1
 		}
 
-		Rectangle
-		{
+		Rectangle {
 			id: highlightRectangle
 			z: 1
 			anchors.fill: parent;
@@ -93,8 +88,7 @@ Rectangle {
 			color: GuideThemeNS.Theme.getColor("primary")
 		}
 
-		Label
-		{
+		Label {
 			id: label;
 
 			anchors.left: parent.left;
@@ -111,8 +105,7 @@ Rectangle {
 			font: base.doQualityUserSettingEmphasis && base.stackLevel != undefined && base.stackLevel <= 1 ? GuideThemeNS.Theme.getFont("default_italic") : GuideThemeNS.Theme.getFont("default")
 		}
 
-		Item
-		{
+		Item {
 			id: controlContainer;
 
 			enabled: propertyProvider.isValueUsed
@@ -124,22 +117,24 @@ Rectangle {
 			height: GuideThemeNS.Theme.getSize("setting_control").height
 		}
 
-		onEntered:
-		{
-			if(!isSelected)
+		onEntered: {
+			if(!isSelected) {
 				highlightRectangle.opacity = 0.1
+			}
 		}
-		onExited:
-		{
-			if(!isSelected)
+		onExited: {
+			if(!isSelected) {
 				highlightRectangle.opacity = 0.0
+			}
 		}
 	}
 
-	UM.I18nCatalog { id: catalog; name: "cura" }
+	UM.I18nCatalog {
+		id: catalog
+		name: "cura"
+	}
 
-	Component.onCompleted:
-	{
+	Component.onCompleted: {
 		onCompleteItemCallBack(base)
 	}
 }

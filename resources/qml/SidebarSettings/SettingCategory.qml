@@ -11,15 +11,13 @@ import UM 1.1 as UM
 import Cura 1.0 as Cura
 import GuideTheme 1.0 as GuideThemeNS
 
-Button
-{
+Button {
 	id: base
 	anchors.left: parent.left
 	anchors.right: parent.right
 	anchors.leftMargin: GuideThemeNS.Theme.getSize("sidebar_margin").width
 	anchors.rightMargin: GuideThemeNS.Theme.getSize("sidebar_margin").width
-	background: Rectangle
-	{
+	background: Rectangle {
 		implicitHeight: GuideThemeNS.Theme.getSize("section").height
 		color: {
 			if (base.color) {
@@ -36,9 +34,12 @@ Button
 				return GuideThemeNS.Theme.getColor("setting_category");
 			}
 		}
-		Behavior on color { ColorAnimation { duration: 50; } }
-		Rectangle
-		{
+		Behavior on color {
+			ColorAnimation {
+				duration: 50
+			}
+		}
+		Rectangle {
 			height: GuideThemeNS.Theme.getSize("default_lining").height
 			width: parent.width
 			anchors.bottom: parent.bottom
@@ -72,8 +73,7 @@ Button
 		anchors.left: parent.left
 
 		Label {
-			anchors
-			{
+			anchors {
 				left: parent.left
 				leftMargin: 2 * GuideThemeNS.Theme.getSize("default_margin").width + GuideThemeNS.Theme.getSize("section_icon").width
 				right: parent.right;
@@ -82,8 +82,7 @@ Button
 			text: definition.label
 			renderType: Text.NativeRendering
 			font: GuideThemeNS.Theme.getFont("setting_category")
-			color:
-			{
+			color: {
 				if (!base.enabled) {
 					return GuideThemeNS.Theme.getColor("setting_category_disabled_text");
 				} else if ((base.hovered || base.activeFocus) && base.checkable && base.checked) {
@@ -99,8 +98,7 @@ Button
 			fontSizeMode: Text.HorizontalFit
 			minimumPointSize: 8
 		}
-		UM.RecolorImage
-		{
+		UM.RecolorImage {
 			id: category_arrow
 			anchors.verticalCenter: parent.verticalCenter
 			anchors.right: parent.right
@@ -109,8 +107,7 @@ Button
 			height: GuideThemeNS.Theme.getSize("standard_arrow").height
 			sourceSize.width: width
 			sourceSize.height: width
-			color:
-			{
+			color: {
 				if (!base.enabled) {
 					return GuideThemeNS.Theme.getColor("setting_category_disabled_text");
 				} else if ((base.hovered || base.activeFocus) && base.checkable && base.checked) {
@@ -127,14 +124,12 @@ Button
 		}
 	}
 
-	UM.RecolorImage
-	{
+	UM.RecolorImage {
 		id: icon
 		anchors.verticalCenter: parent.verticalCenter
 		anchors.left: parent.left
 		anchors.leftMargin: GuideThemeNS.Theme.getSize("default_margin").width
-		color:
-		{
+		color: {
 			if (!base.enabled) {
 				return GuideThemeNS.Theme.getColor("setting_category_disabled_text");
 			} else if((base.hovered || base.activeFocus) && base.checkable && base.checked) {
@@ -157,8 +152,7 @@ Button
 	checkable: true
 	checked: definition.expanded
 
-	onClicked:
-	{
+	onClicked: {
 		if (definition.expanded) {
 			settingDefinitionsModel.collapse(definition.key);
 		} else {
@@ -168,20 +162,16 @@ Button
 		//NB: This must be set AFTER collapsing/expanding the category so that the scroll position is correct.
 		forceActiveFocus();
 	}
-	onActiveFocusChanged:
-	{
-		if(activeFocus)
-		{
+	onActiveFocusChanged: {
+		if(activeFocus) {
 			base.focusReceived();
 		}
 	}
 
-	Keys.onTabPressed:
-	{
+	Keys.onTabPressed: {
 		base.setActiveFocusToNextSetting(true)
 	}
-	Keys.onBacktabPressed:
-	{
+	Keys.onBacktabPressed: {
 		base.setActiveFocusToNextSetting(false)
 	}
 

@@ -11,18 +11,15 @@ import UM 1.1 as UM
 import Cura 1.0 as Cura
 import GuideTheme 1.0 as GuideThemeNS
 
-SettingItem
-{
+SettingItem {
 	id: base
 	property var focusItem: control
 
-	contents: ComboBox
-	{
+	contents: ComboBox {
 		id: control
 		anchors.fill: parent
 
-		indicator: UM.RecolorImage
-		{
+		indicator: UM.RecolorImage {
 			id: downArrow
 			x: control.width - width - control.rightPadding
 			y: control.topPadding + Math.round((control.availableHeight - height) / 2)
@@ -38,37 +35,29 @@ SettingItem
 
 		property string color: "#fff"
 
-		background: Rectangle
-		{
-			color:
-			{
-				if (!enabled)
-				{
+		background: Rectangle {
+			color: {
+				if (!enabled) {
 					return GuideThemeNS.Theme.getColor("setting_control_disabled");
 				}
-				if (control.hovered || base.activeFocus)
-				{
+				if (control.hovered || base.activeFocus) {
 					return GuideThemeNS.Theme.getColor("setting_control_highlight");
 				}
 				return GuideThemeNS.Theme.getColor("setting_control");
 			}
 			border.width: GuideThemeNS.Theme.getSize("default_lining").width
-			border.color:
-			{
-				if (!enabled)
-				{
+			border.color: {
+				if (!enabled) {
 					return GuideThemeNS.Theme.getColor("setting_control_disabled_border")
 				}
-				if (control.hovered || control.activeFocus)
-				{
+				if (control.hovered || control.activeFocus) {
 					return GuideThemeNS.Theme.getColor("setting_control_border_highlight")
 				}
 				return GuideThemeNS.Theme.getColor("setting_control_border")
 			}
 		}
 
-		contentItem: Label
-		{
+		contentItem: Label {
 			anchors.verticalCenter: parent.verticalCenter
 			anchors.left: parent.left
 			anchors.leftMargin: GuideThemeNS.Theme.getSize("setting_unit_margin").width
@@ -83,8 +72,7 @@ SettingItem
 			elide: Text.ElideLeft
 			verticalAlignment: Text.AlignVCenter
 
-			background: Rectangle
-			{
+			background: Rectangle {
 				id: swatch
 				height: Math.round(GuideThemeNS.Theme.getSize("setting_control").height / 2)
 				width: height
@@ -113,7 +101,7 @@ SettingItem
 				model: control.popup.visible ? control.delegateModel : null
 				currentIndex: control.highlightedIndex
 
-				ScrollIndicator.vertical: ScrollIndicator { }
+				ScrollIndicator.vertical: ScrollIndicator {}
 			}
 
 			background: Rectangle {
@@ -122,18 +110,15 @@ SettingItem
 			}
 		}
 
-		delegate: ItemDelegate
-		{
+		delegate: ItemDelegate {
 			width: control.width - 2 * GuideThemeNS.Theme.getSize("default_lining").width
 			height: control.height
 			highlighted: control.highlightedIndex == index
 
-			contentItem: Label
-			{
+			contentItem: Label {
 				text: model.name
 				renderType: Text.NativeRendering
-				color:
-				{
+				color: {
 					if (model.enabled) {
 						GuideThemeNS.Theme.getColor("setting_control_text")
 					} else {
@@ -145,8 +130,7 @@ SettingItem
 				verticalAlignment: Text.AlignVCenter
 				rightPadding: swatch.width + GuideThemeNS.Theme.getSize("setting_unit_margin").width
 
-				background: Rectangle
-				{
+				background: Rectangle {
 					id: swatch
 					height: Math.round(GuideThemeNS.Theme.getSize("setting_control").height / 2)
 					width: height
@@ -163,8 +147,7 @@ SettingItem
 				}
 			}
 
-			background: Rectangle
-			{
+			background: Rectangle {
 				color: parent.highlighted ? GuideThemeNS.Theme.getColor("setting_control_highlight") : "transparent"
 				border.color: parent.highlighted ? GuideThemeNS.Theme.getColor("setting_control_border_highlight") : "transparent"
 			}

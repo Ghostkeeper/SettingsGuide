@@ -11,8 +11,7 @@ import QtQuick.Layouts 1.3
 import UM 1.1 as UM
 import GuideTheme 1.0 as GuideThemeNS
 
-Rectangle
-{
+Rectangle {
 	id: general_template
 
 	property var setting_data: loaderData
@@ -38,8 +37,7 @@ Rectangle
 		return setting_data["images"] != undefined ? setting_data["images"] : ""
 	}
 
-	anchors
-	{
+	anchors {
 		left:  parent ? parent.left : undefined
 		right: parent ? parent.right : undefined
 	}
@@ -47,16 +45,14 @@ Rectangle
 
 	color: GuideThemeNS.Theme.getColor("viewport_background")
 
-	ScrollView
-	{
+	ScrollView {
 		id: page_scroll_view
 		frameVisible: false
 		width: parent.width
 		height: parent.height
 		style: UM.Theme.styles.scrollview
 
-		anchors
-		{
+		anchors {
 			left:  parent ? parent.left : undefined
 			right: parent ? parent.right : undefined
 		}
@@ -64,8 +60,7 @@ Rectangle
 		flickableItem.anchors.leftMargin: 20
 		flickableItem.anchors.rightMargin: 20
 
-		Item
-		{
+		Item {
 			property bool is_grid_images_visible: setting_images.length > 0
 
 			id: rect_scroll
@@ -73,8 +68,7 @@ Rectangle
 			width: general_template.width - 50
 			height: rect_scroll.childrenRect.height
 
-			Label
-			{
+			Label {
 				id: title
 
 				anchors.top: parent.top
@@ -85,8 +79,7 @@ Rectangle
 				renderType: Text.NativeRendering
 			}
 
-			Label
-			{
+			Label {
 				id: description
 				anchors.top: title.bottom
 				anchors.topMargin: 20 * screenScaleFactor
@@ -98,13 +91,12 @@ Rectangle
 				renderType: Text.NativeRendering
 			}
 
-			GridLayout
-			{
+			GridLayout {
 				property var selectedMouseArea: undefined
-				function enableHoverForBorder()
-				{
-					if (selectedMouseArea != undefined)
+				function enableHoverForBorder() {
+					if (selectedMouseArea != undefined) {
 						selectedMouseArea.hoverEnabled = true
+					}
 				}
 
 				id: images_grid
@@ -119,12 +111,10 @@ Rectangle
 
 				visible: rect_scroll.is_grid_images_visible
 
-				Repeater
-				{
+				Repeater {
 					id: animationRepeater
 					model: setting_images.length
-					AnimatedImage
-					{
+					AnimatedImage {
 						id: gridImage
 						source: setting_images[index]
 
@@ -134,16 +124,15 @@ Rectangle
 
 						property var is_gif_image: setting_images[index].split('.').pop() == "gif"
 
-						property var updateBorder: function()
-						{
-							if (gridImage.is_gif_image)
+						property var updateBorder: function() {
+							if (gridImage.is_gif_image) {
 								border_rectangle.border.width = 1
-							else
+							} else {
 								border_rectangle.border.width = 0
+							}
 						}
 
-						Rectangle
-						{
+						Rectangle {
 							id: border_rectangle
 							anchors.fill: parent
 							border.width: {
@@ -154,14 +143,12 @@ Rectangle
 							color: "transparent"
 							anchors.margins: -5
 
-							MouseArea
-							{
+							MouseArea {
 								id: border_rectangle_mouse_area
 								hoverEnabled: true
 								anchors.fill: parent
 								cursorShape: Qt.PointingHandCursor
-								onHoveredChanged:
-								{
+								onHoveredChanged: {
 									if (containsMouse) {
 										border_rectangle.border.color = GuideThemeNS.Theme.getColor("setting_control_border_highlight")
 										border_rectangle.border.width = 2
@@ -184,28 +171,27 @@ Rectangle
 							}
 						}
 
-						Layout.preferredWidth:
-						{
+						Layout.preferredWidth: {
 							var ratio = Math.max( sourceSize.width / 350, sourceSize.height / 200)
 							var new_value = sourceSize.width
-							if (ratio > 1)
-								new_value =  sourceSize.width / ratio
+							if (ratio > 1) {
+								new_value = sourceSize.width / ratio
+							}
 
 							return new_value * screenScaleFactor
 						}
-						Layout.preferredHeight:
-						{
+						Layout.preferredHeight: {
 							var ratio = Math.max( sourceSize.width / 350, sourceSize.height / 200)
 							var new_value = sourceSize.height
-							if (ratio > 1)
-								new_value =  sourceSize.height / ratio
+							if (ratio > 1) {
+								new_value = sourceSize.height / ratio
+							}
 
 							return new_value * screenScaleFactor
 						}
 
 						// Only gif files can have animation
-						Image
-						{
+						Image {
 							id: play_icon
 							source: Qt.resolvedUrl("../../icons/play_icon.png")
 							anchors.horizontalCenter: parent.horizontalCenter
@@ -220,8 +206,7 @@ Rectangle
 				}
 			}
 
-			Label
-			{
+			Label {
 				id: img_description
 				anchors.top: images_grid.bottom
 				anchors.topMargin: 20 * screenScaleFactor
@@ -235,13 +220,10 @@ Rectangle
 				wrapMode: Text.WordWrap
 			}
 
-			Label
-			{
+			Label {
 				id: hints
-				anchors.top:
-				{
-					if (rect_scroll.is_grid_images_visible)
-					{
+				anchors.top: {
+					if (rect_scroll.is_grid_images_visible) {
 						return img_description.bottom
 					}
 					return description.bottom
@@ -256,17 +238,12 @@ Rectangle
 				textFormat: Text.RichText
 			}
 
-			Label
-			{
+			Label {
 				id: notes
-				anchors.top:
-				{
-					if (general_template.setting_hints.length > 0)
-					{
+				anchors.top: {
+					if (general_template.setting_hints.length > 0) {
 						return hints.bottom
-					}
-					else
-					{
+					} else {
 						return description.bottom
 					}
 
@@ -288,8 +265,7 @@ Rectangle
 		width: general_template.width
 		height: general_template.height
 
-		anchors
-		{
+		anchors {
 			left: general_template.left
 			right: general_template.right
 		}
@@ -314,25 +290,24 @@ Rectangle
 		}
 	}
 
-	AnimatedImage
-	{
+	AnimatedImage {
 		id: zoom_image
-		width:
-		{
+		width: {
 			var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400)
 			var new_value = sourceSize.width
-			if (ratio > 1)
-				new_value =  sourceSize.width / ratio
+			if (ratio > 1) {
+				new_value = sourceSize.width / ratio
+			}
 
 			return new_value * screenScaleFactor
 
 		}
-		height:
-		{
+		height: {
 			var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400)
 			var new_value = sourceSize.height
-			if (ratio > 1)
-				new_value =  sourceSize.height / ratio
+			if (ratio > 1) {
+				new_value = sourceSize.height / ratio
+			}
 
 			return new_value * screenScaleFactor
 		}
@@ -342,13 +317,10 @@ Rectangle
 		y: (parent.height - height) / 2
 	}
 
-	Component.onCompleted:
-	{
+	Component.onCompleted: {
 		// Assign it here, otherwise the property is not know for the Item
-		loaderCallBack = function(args)
-		{
-			if (zoom_image != null && zoom_image.source != "")
-			{
+		loaderCallBack = function(args) {
+			if (zoom_image != null && zoom_image.source != "") {
 				zoom_image.source = ""
 				zoom_image_background.visible = false
 			}

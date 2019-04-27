@@ -10,29 +10,24 @@ import QtQuick.Controls 2.0
 import UM 1.1 as UM
 import GuideTheme 1.0 as GuideThemeNS
 
-SettingItem
-{
+SettingItem {
 	id: base
 
-	contents: Rectangle
-	{
+	contents: Rectangle {
 		id: control
 
 		anchors.fill: parent
 
 		border.width: Math.round(GuideThemeNS.Theme.getSize("default_lining").width)
-		border.color:
-		{
+		border.color: {
 			return GuideThemeNS.Theme.getColor("setting_control_disabled_border")
 		}
 
-		color:
-		{
+		color: {
 			return GuideThemeNS.Theme.getColor("setting_control_disabled")
 		}
 
-		Label
-		{
+		Label {
 			anchors.right: parent.right
 			anchors.rightMargin: Math.round(GuideThemeNS.Theme.getSize("setting_unit_margin").width)
 			anchors.verticalCenter: parent.verticalCenter

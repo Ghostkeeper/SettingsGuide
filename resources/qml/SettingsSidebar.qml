@@ -15,8 +15,7 @@ import Cura 1.0 as Cura
 import CuraSettingsGuide 1.0 as CuraSettingsGuideNS
 import GuideTheme 1.0 as GuideThemeNS
 
-Rectangle
-{
+Rectangle {
 	id: rightSideItem
 	width: GuideThemeNS.Theme.getSize("sidebar").width;
 
@@ -26,18 +25,15 @@ Rectangle
 	property var temp_setting_id: ""
 
 	// The function hides highlighted area from previous item and highlights a new selected item
-	function setSelectedItemInSettingListView(setting_id)
-	{
-		if (listViewLastSelectedItem != undefined)
-		{
+	function setSelectedItemInSettingListView(setting_id) {
+		if (listViewLastSelectedItem != undefined) {
 			listViewLastSelectedItem.hideHighlightArea()
 		}
 
 		var temp_index = contents.model.getIndex(setting_id)
 
 		// If returned value is -1, then ListView with settings is not yet ready, call one more time same function with a small delay
-		if (temp_index == -1 && first_start == true)
-		{
+		if (temp_index == -1 && first_start == true) {
 			first_start = false
 			temp_setting_id = setting_id
 			checkSelectedItemForInitialStartTimer.restart()
@@ -52,10 +48,8 @@ Rectangle
 		checkSelectedSettingItemStatus()
 	}
 
-	function resetSelectedItemInSettingListView()
-	{
-		if (listViewLastSelectedItem != undefined)
-		{
+	function resetSelectedItemInSettingListView() {
+		if (listViewLastSelectedItem != undefined) {
 			listViewLastSelectedItem.hideHighlightArea()
 			listViewLastSelectedItem = undefined
 		}
@@ -65,11 +59,9 @@ Rectangle
 
 	// After collapsing and expanding the selected item needs to be highilghted again.
 	// This is a tricky of assigning because of Loader asynchronous, we need perform check only after the Item is onCompleted:
-	property var onCompleteItemCallBack: function(setting_item)
-	{
+	property var onCompleteItemCallBack: function(setting_item) {
 		// Can be selected only one item
-		if (setting_item.setting_item_key == last_setting_id && setting_item.isSelected == false)
-		{
+		if (setting_item.setting_item_key == last_setting_id && setting_item.isSelected == false) {
 			//we need to keep track of selected item to be able unselect it
 			listViewLastSelectedItem = setting_item
 			setting_item.showHighlightArea()
@@ -77,28 +69,23 @@ Rectangle
 	}
 
 	property int checkCounter: 0
-	function checkSelectedSettingItemStatus ()
-	{
+	function checkSelectedSettingItemStatus() {
 		// Check maximum 10 times
-		 if (contents.currentItem.item == null && checkCounter < 10)
-		{
+		 if (contents.currentItem.item == null && checkCounter < 10) {
 			 checkSelectedSettingItemStatusTimer.restart()
 			 checkCounter++
 		}
-		else
-		{
+		else {
 			listViewLastSelectedItem = contents.currentItem.item
 			contents.currentItem.item.showHighlightArea()
 		}
 	}
 
-	function checkSelectedItemForInitialStart()
-	{
+	function checkSelectedItemForInitialStart() {
 		setSelectedItemInSettingListView(temp_setting_id)
 	}
 
-	Timer
-	{
+	Timer {
 		id: checkSelectedSettingItemStatusTimer
 		onTriggered: checkSelectedSettingItemStatus()
 		interval: 500
@@ -106,8 +93,7 @@ Rectangle
 		repeat: false
 	}
 
-	Timer
-	{
+	Timer {
 		id: checkSelectedItemForInitialStartTimer
 		onTriggered: checkSelectedItemForInitialStart()
 		interval: 1000
@@ -117,27 +103,22 @@ Rectangle
 
 	property bool findingSettings
 
-	Rectangle
-	{
+	Rectangle {
 		id: filterContainer
 
 		border.width: Math.round(GuideThemeNS.Theme.getSize("default_lining").width)
-		border.color:
-		{
-			if (hoverMouseArea.containsMouse || clearFilterButton.containsMouse)
-			{
+		border.color: {
+			if (hoverMouseArea.containsMouse || clearFilterButton.containsMouse) {
 				return GuideThemeNS.Theme.getColor("setting_control_border_highlight");
 			}
-			else
-			{
+			else {
 				return GuideThemeNS.Theme.getColor("setting_control_border");
 			}
 		}
 
 		color: GuideThemeNS.Theme.getColor("setting_control")
 
-		anchors
-		{
+		anchors {
 			top: parent.top
 			topMargin: GuideThemeNS.Theme.getSize("sidebar_margin").height
 			left: parent.left
@@ -147,10 +128,13 @@ Rectangle
 		}
 		height: GuideThemeNS.Theme.getSize("setting_control").height
 		width: rightSideItem.width
-		Behavior on height { NumberAnimation { duration: 100 } }
+		Behavior on height {
+			NumberAnimation {
+				duration: 100
+			}
+		}
 
-		Timer
-		{
+		Timer {
 			id: settingsSearchTimer
 			onTriggered: filter.editingFinished()
 			interval: 500
@@ -158,8 +142,7 @@ Rectangle
 			repeat: false
 		}
 
-		TextField
-		{
+		TextField {
 			id: filter;
 			height: parent.height
 			anchors.left: filterContainer.left
@@ -168,8 +151,7 @@ Rectangle
 
 			placeholderText: catalog.i18nc("@label:textbox", "Search...")
 
-			style: TextFieldStyle
-			{
+			style: TextFieldStyle {
 				textColor: GuideThemeNS.Theme.getColor("setting_control_text");
 				placeholderTextColor: GuideThemeNS.Theme.getColor("setting_control_text")
 				font: GuideThemeNS.Theme.getFont("default");
@@ -179,23 +161,19 @@ Rectangle
 			property var expandedCategories
 			property bool lastFindingSettings: false
 
-			onTextChanged:
-			{
+			onTextChanged: {
 				settingsSearchTimer.restart()
 			}
 
 			property var temp_model: ""
-			onEditingFinished:
-			{
+			onEditingFinished: {
 
-				if (text.toLowerCase() == "createdby")
-				{
+				if (text.toLowerCase() == "createdby") {
 					temp_model = contents.model
 					contents.model = createdBy
 					return
 				}
-				if (temp_model != "")
-				{
+				if (temp_model != "") {
 					contents.model = temp_model
 					temp_model = ""
 				}
@@ -203,32 +181,26 @@ Rectangle
 				definitionsModel.filter = {"i18n_label": "*" + text};
 
 				findingSettings = (text.length > 0);
-				if (findingSettings != lastFindingSettings)
-				{
+				if (findingSettings != lastFindingSettings) {
 					updateDefinitionModel();
 					lastFindingSettings = findingSettings;
 				}
 			}
 
-			Keys.onEscapePressed:
-			{
+			Keys.onEscapePressed: {
 				filter.text = "";
 			}
 
-			function updateDefinitionModel()
-			{
-				if (findingSettings)
-				{
+			function updateDefinitionModel() {
+				if (findingSettings) {
 					expandedCategories = definitionsModel.expanded.slice();
 					definitionsModel.expanded = [""]; // keep categories closed while to prevent render while making settings visible one by one
 					definitionsModel.showAncestors = true;
 					definitionsModel.showAll = true;
 					definitionsModel.expanded = ["*"];
 				}
-				else
-				{
-					if (expandedCategories)
-					{
+				else {
+					if (expandedCategories) {
 						definitionsModel.expanded = expandedCategories;
 					}
 					definitionsModel.showAncestors = false;
@@ -238,10 +210,17 @@ Rectangle
 		}
 
 		// Custom Item which is used only for createdBy setting
-		ListModel {id: createdBy; ListElement {type: "createdBy"; key: "createdBy"; label: "Created By"; depth: 2}}
+		ListModel {
+			id: createdBy;
+			ListElement {
+				type: "createdBy";
+				key: "createdBy";
+				label: "Created By";
+				depth: 2
+			}
+		}
 
-		MouseArea
-		{
+		MouseArea {
 			id: hoverMouseArea
 			anchors.fill: parent
 			hoverEnabled: true
@@ -249,8 +228,7 @@ Rectangle
 			cursorShape: Qt.IBeamCursor
 		}
 
-		UM.SimpleButton
-		{
+		UM.SimpleButton {
 			id: clearFilterButton
 			iconSource: UM.Theme.getIcon("cross1")
 			visible: findingSettings
@@ -265,16 +243,14 @@ Rectangle
 			color: GuideThemeNS.Theme.getColor("setting_control_button")
 			hoverColor: GuideThemeNS.Theme.getColor("setting_control_button_hover")
 
-			onClicked:
-			{
+			onClicked: {
 				filter.text = "";
 				filter.forceActiveFocus();
 			}
 		}
 	}
 
-	ScrollView
-	{
+	ScrollView {
 		id: scrollView
 
 		anchors.top: filterContainer.bottom;
@@ -282,13 +258,16 @@ Rectangle
 		anchors.right: parent.right;
 		anchors.left: parent.left;
 		anchors.topMargin: filterContainer.visible ? GuideThemeNS.Theme.getSize("sidebar_margin").height : 0
-		Behavior on anchors.topMargin { NumberAnimation { duration: 100 } }
+		Behavior on anchors.topMargin {
+			NumberAnimation {
+				duration: 100
+			}
+		}
 		style: scrollview_settings_guide
 		flickableItem.flickableDirection: Flickable.VerticalFlick;
 		__wheelAreaScrollSpeed: 75; // Scroll three lines in one scroll event
 
-		ListView
-		{
+		ListView {
 			id: contents
 			spacing: Math.round(GuideThemeNS.Theme.getSize("default_lining").height);
 			cacheBuffer: 1000000;   // Set a large cache to effectively just cache every list item.
@@ -296,8 +275,7 @@ Rectangle
 			height: parent.height
 			currentIndex: -1
 
-			model: CuraSettingsGuideNS.SettingsModel
-			{
+			model: CuraSettingsGuideNS.SettingsModel {
 				id: definitionsModel;
 				containerId: Cura.MachineManager.activeDefinitionId
 				showAll: true
@@ -305,8 +283,7 @@ Rectangle
 				expanded: CuraApplication.expandedCategories
 			}
 
-			delegate:Loader
-			{
+			delegate: Loader {
 				id: settingLoader
 
 				width: parent.width
@@ -324,10 +301,8 @@ Rectangle
 				asynchronous: model.type != "enum" && model.type != "extruder" && model.type != "optional_extruder"
 				active: model.type != undefined
 
-				source:
-				{
-					switch (model.type)
-					{
+				source: {
+					switch (model.type) {
 						case "int":
 							return Qt.resolvedUrl("SidebarSettings/SettingTextField.qml")
 						case "[int]":
@@ -351,38 +326,33 @@ Rectangle
 					}
 				}
 
-				MouseArea
-				{
+				MouseArea {
 					id: mouse_area1
 					anchors.fill: parent
 					propagateComposedEvents: true
 					hoverEnabled: true
-					onClicked:
-					{
+					onClicked: {
 						rightSideItem.last_setting_id = model.key
 						CuraSettingsGuide.setSelectedSetting(model.key)
 					}
 				}
 			}
-			UM.SettingPropertyProvider
-			{
+			UM.SettingPropertyProvider {
 				id: inheritStackProvider
 				containerStackId: Cura.MachineManager.activeMachineId
 			}
 
-			UM.SettingPropertyProvider
-			{
+			UM.SettingPropertyProvider {
 				id: provider
 				containerStackId: Cura.MachineManager.activeMachineId
 			}
 		}
 	}
 
-	property Component scrollview_settings_guide: Component
-	{
+	property Component scrollview_settings_guide: Component {
 		ScrollViewStyle {
-			decrementControl: Item { }
-			incrementControl: Item { }
+			decrementControl: Item {}
+			incrementControl: Item {}
 
 			transientScrollBars: false
 

@@ -10,10 +10,8 @@ import QtQuick.Controls 2.0
 import UM 1.2 as UM
 import GuideTheme 1.0 as GuideThemeNS
 
-SettingItem
-{
-	contents: Label
-	{
+SettingItem {
+	contents: Label {
 		anchors.fill: parent
 		text: propertyProvider.properties.value + " " + unit
 		renderType: Text.NativeRendering
