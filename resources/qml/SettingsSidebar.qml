@@ -13,11 +13,10 @@ import UM 1.2 as UM
 import Cura 1.0 as Cura
 
 import CuraSettingsGuide 1.0 as CuraSettingsGuideNS
-import GuideTheme 1.0 as GuideThemeNS
 
 Rectangle {
 	id: rightSideItem
-	width: GuideThemeNS.Theme.getSize("sidebar").width
+	width: UM.Theme.getSize("print_setup_widget").width
 
 	property var listViewLastSelectedItem: undefined // keeps reference to the last item in the list. After item change
 	                                                 // in the list, the previous selection should be removed
@@ -106,27 +105,27 @@ Rectangle {
 	Rectangle {
 		id: filterContainer
 
-		border.width: Math.round(GuideThemeNS.Theme.getSize("default_lining").width)
+		border.width: Math.round(UM.Theme.getSize("default_lining").width)
 		border.color: {
 			if (hoverMouseArea.containsMouse || clearFilterButton.containsMouse) {
-				return GuideThemeNS.Theme.getColor("setting_control_border_highlight");
+				return UM.Theme.getColor("setting_control_border_highlight");
 			}
 			else {
-				return GuideThemeNS.Theme.getColor("setting_control_border");
+				return UM.Theme.getColor("setting_control_border");
 			}
 		}
 
-		color: GuideThemeNS.Theme.getColor("setting_control")
+		color: UM.Theme.getColor("setting_control")
 
 		anchors {
 			top: parent.top
-			topMargin: GuideThemeNS.Theme.getSize("sidebar_margin").height
+			topMargin: UM.Theme.getSize("default_margin").height
 			left: parent.left
-			leftMargin: GuideThemeNS.Theme.getSize("sidebar_margin").width
+			leftMargin: UM.Theme.getSize("default_margin").width
 			right: parent.right
-			rightMargin: Math.floor(GuideThemeNS.Theme.getSize("default_margin").width / 2)
+			rightMargin: Math.floor(UM.Theme.getSize("default_margin").width / 2)
 		}
-		height: GuideThemeNS.Theme.getSize("setting_control").height
+		height: UM.Theme.getSize("setting_control").height
 		width: rightSideItem.width
 		Behavior on height {
 			NumberAnimation {
@@ -147,14 +146,14 @@ Rectangle {
 			height: parent.height
 			anchors.left: filterContainer.left
 			anchors.right: filterContainer.right
-			anchors.rightMargin: Math.round(GuideThemeNS.Theme.getSize("sidebar_margin").width)
+			anchors.rightMargin: Math.round(UM.Theme.getSize("default_margin").width)
 
 			placeholderText: catalog.i18nc("@label:textbox", "Search...")
 
 			style: TextFieldStyle {
-				textColor: GuideThemeNS.Theme.getColor("setting_control_text")
-				placeholderTextColor: GuideThemeNS.Theme.getColor("setting_control_text")
-				font: GuideThemeNS.Theme.getFont("default");
+				textColor: UM.Theme.getColor("setting_control_text")
+				placeholderTextColor: UM.Theme.getColor("setting_control_text")
+				font: UM.Theme.getFont("default");
 				background: Item {}
 			}
 
@@ -237,10 +236,10 @@ Rectangle {
 
 			anchors.verticalCenter: parent.verticalCenter
 			anchors.right: parent.right
-			anchors.rightMargin: GuideThemeNS.Theme.getSize("default_margin").width
+			anchors.rightMargin: UM.Theme.getSize("default_margin").width
 
-			color: GuideThemeNS.Theme.getColor("setting_control_button")
-			hoverColor: GuideThemeNS.Theme.getColor("setting_control_button_hover")
+			color: UM.Theme.getColor("setting_control_button")
+			hoverColor: UM.Theme.getColor("setting_control_button_hover")
 
 			onClicked: {
 				filter.text = "";
@@ -256,7 +255,7 @@ Rectangle {
 		anchors.bottom: parent.bottom
 		anchors.right: parent.right
 		anchors.left: parent.left
-		anchors.topMargin: filterContainer.visible ? GuideThemeNS.Theme.getSize("sidebar_margin").height : 0
+		anchors.topMargin: filterContainer.visible ? UM.Theme.getSize("default_margin").height : 0
 		Behavior on anchors.topMargin {
 			NumberAnimation {
 				duration: 100
@@ -268,7 +267,7 @@ Rectangle {
 
 		ListView {
 			id: contents
-			spacing: Math.round(GuideThemeNS.Theme.getSize("default_lining").height)
+			spacing: Math.round(UM.Theme.getSize("default_lining").height)
 			cacheBuffer: 1000000 //Set a large cache to effectively just cache every list item.
 
 			height: parent.height
@@ -286,7 +285,7 @@ Rectangle {
 				id: settingLoader
 
 				width: parent.width
-				height: model.type != undefined ? GuideThemeNS.Theme.getSize("section").height : 0
+				height: model.type != undefined ? UM.Theme.getSize("section").height : 0
 
 				property var definition: model
 				property var settingDefinitionsModel: definitionsModel
@@ -356,17 +355,17 @@ Rectangle {
 			transientScrollBars: false
 
 			scrollBarBackground: Rectangle {
-				implicitWidth: GuideThemeNS.Theme.getSize("scrollbar").width
+				implicitWidth: UM.Theme.getSize("scrollbar").width
 				radius: Math.round(implicitWidth / 2)
-				color: GuideThemeNS.Theme.getColor("scrollbar_background")
+				color: UM.Theme.getColor("scrollbar_background")
 			}
 
 			handle: Rectangle {
 				id: scrollViewHandle
-				implicitWidth: GuideThemeNS.Theme.getSize("scrollbar").width
+				implicitWidth: UM.Theme.getSize("scrollbar").width
 				radius: Math.round(implicitWidth / 2)
 
-				color: styleData.pressed ? GuideThemeNS.Theme.getColor("scrollbar_handle_down") : styleData.hovered ? GuideThemeNS.Theme.getColor("scrollbar_handle_hover") : GuideThemeNS.Theme.getColor("scrollbar_handle");
+				color: styleData.pressed ? UM.Theme.getColor("scrollbar_handle_down") : styleData.hovered ? UM.Theme.getColor("scrollbar_handle_hover") : UM.Theme.getColor("scrollbar_handle");
 				Behavior on color {
 					ColorAnimation {
 						duration: 50

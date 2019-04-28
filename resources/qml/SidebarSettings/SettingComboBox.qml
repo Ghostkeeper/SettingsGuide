@@ -9,7 +9,6 @@ import QtQuick.Layouts 1.2
 import QtQuick.Controls 2.0
 
 import UM 1.2 as UM
-import GuideTheme 1.0 as GuideThemeNS
 
 SettingItem {
 	id: base
@@ -32,23 +31,23 @@ SettingItem {
 
 			color: {
 				if(!enabled) {
-					return GuideThemeNS.Theme.getColor("setting_control_disabled");
+					return UM.Theme.getColor("setting_control_disabled");
 				}
 				if(control.containsMouse || control.activeFocus) {
-					return GuideThemeNS.Theme.getColor("setting_control_highlight");
+					return UM.Theme.getColor("setting_control_highlight");
 				}
-				return GuideThemeNS.Theme.getColor("setting_control");
+				return UM.Theme.getColor("setting_control");
 			}
 
-			border.width: GuideThemeNS.Theme.getSize("default_lining").width
+			border.width: UM.Theme.getSize("default_lining").width
 			border.color: {
 				if(!enabled) {
-					return GuideThemeNS.Theme.getColor("setting_control_disabled_border");
+					return UM.Theme.getColor("setting_control_disabled_border");
 				}
 				if(control.containsMouse || control.activeFocus) {
-					return GuideThemeNS.Theme.getColor("setting_control_border_highlight");
+					return UM.Theme.getColor("setting_control_border_highlight");
 				}
-				return GuideThemeNS.Theme.getColor("setting_control_border");
+				return UM.Theme.getColor("setting_control_border");
 			}
 		}
 	}

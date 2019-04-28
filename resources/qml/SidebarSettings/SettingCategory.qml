@@ -9,29 +9,28 @@ import QtQuick.Controls 2.0
 
 import UM 1.1 as UM
 import Cura 1.0 as Cura
-import GuideTheme 1.0 as GuideThemeNS
 
 Button {
 	id: base
 	anchors.left: parent.left
 	anchors.right: parent.right
-	anchors.leftMargin: GuideThemeNS.Theme.getSize("sidebar_margin").width
-	anchors.rightMargin: GuideThemeNS.Theme.getSize("sidebar_margin").width
+	anchors.leftMargin: UM.Theme.getSize("default_margin").width
+	anchors.rightMargin: UM.Theme.getSize("default_margin").width
 	background: Rectangle {
-		implicitHeight: GuideThemeNS.Theme.getSize("section").height
+		implicitHeight: UM.Theme.getSize("section").height
 		color: {
 			if (base.color) {
 				return base.color;
 			} else if (!base.enabled) {
-				return GuideThemeNS.Theme.getColor("setting_category_disabled");
+				return UM.Theme.getColor("setting_category_disabled");
 			} else if (base.hovered && base.checkable && base.checked) {
-				return GuideThemeNS.Theme.getColor("setting_category_active_hover");
+				return UM.Theme.getColor("setting_category_active_hover");
 			} else if (base.pressed || (base.checkable && base.checked)) {
-				return GuideThemeNS.Theme.getColor("setting_category_active");
+				return UM.Theme.getColor("setting_category_active");
 			} else if (base.hovered) {
-				return GuideThemeNS.Theme.getColor("setting_category_hover");
+				return UM.Theme.getColor("setting_category_hover");
 			} else {
-				return GuideThemeNS.Theme.getColor("setting_category");
+				return UM.Theme.getColor("setting_category");
 			}
 		}
 		Behavior on color {
@@ -40,20 +39,20 @@ Button {
 			}
 		}
 		Rectangle {
-			height: GuideThemeNS.Theme.getSize("default_lining").height
+			height: UM.Theme.getSize("default_lining").height
 			width: parent.width
 			anchors.bottom: parent.bottom
 			color: {
 				if (!base.enabled) {
-					return GuideThemeNS.Theme.getColor("setting_category_disabled_border");
+					return UM.Theme.getColor("setting_category_disabled_border");
 				} else if ((base.hovered || base.activeFocus) && base.checkable && base.checked) {
-					return GuideThemeNS.Theme.getColor("setting_category_active_hover_border");
+					return UM.Theme.getColor("setting_category_active_hover_border");
 				} else if (base.pressed || (base.checkable && base.checked)) {
-					return GuideThemeNS.Theme.getColor("setting_category_active_border");
+					return UM.Theme.getColor("setting_category_active_border");
 				} else if (base.hovered || base.activeFocus) {
-					return GuideThemeNS.Theme.getColor("setting_category_hover_border");
+					return UM.Theme.getColor("setting_category_hover_border");
 				} else {
-					return GuideThemeNS.Theme.getColor("setting_category_border");
+					return UM.Theme.getColor("setting_category_border");
 				}
 			}
 		}
@@ -75,24 +74,24 @@ Button {
 		Label {
 			anchors {
 				left: parent.left
-				leftMargin: 2 * GuideThemeNS.Theme.getSize("default_margin").width + GuideThemeNS.Theme.getSize("section_icon").width
+				leftMargin: 2 * UM.Theme.getSize("default_margin").width + UM.Theme.getSize("section_icon").width
 				right: parent.right
 				verticalCenter: parent.verticalCenter
 			}
 			text: definition.label
 			renderType: Text.NativeRendering
-			font: GuideThemeNS.Theme.getFont("setting_category")
+			font: UM.Theme.getFont("default_bold")
 			color: {
 				if (!base.enabled) {
-					return GuideThemeNS.Theme.getColor("setting_category_disabled_text");
+					return UM.Theme.getColor("setting_category_disabled_text");
 				} else if ((base.hovered || base.activeFocus) && base.checkable && base.checked) {
-					return GuideThemeNS.Theme.getColor("setting_category_active_hover_text");
+					return UM.Theme.getColor("setting_category_active_hover_text");
 				} else if (base.pressed || (base.checkable && base.checked)) {
-					return GuideThemeNS.Theme.getColor("setting_category_active_text");
+					return UM.Theme.getColor("setting_category_active_text");
 				} else if (base.hovered || base.activeFocus) {
-					return GuideThemeNS.Theme.getColor("setting_category_hover_text");
+					return UM.Theme.getColor("setting_category_hover_text");
 				} else {
-					return GuideThemeNS.Theme.getColor("setting_category_text");
+					return UM.Theme.getColor("setting_category_text");
 				}
 			}
 			fontSizeMode: Text.HorizontalFit
@@ -102,22 +101,22 @@ Button {
 			id: category_arrow
 			anchors.verticalCenter: parent.verticalCenter
 			anchors.right: parent.right
-			anchors.rightMargin: GuideThemeNS.Theme.getSize("default_margin").width
-			width: GuideThemeNS.Theme.getSize("standard_arrow").width
-			height: GuideThemeNS.Theme.getSize("standard_arrow").height
+			anchors.rightMargin: UM.Theme.getSize("default_margin").width
+			width: UM.Theme.getSize("standard_arrow").width
+			height: UM.Theme.getSize("standard_arrow").height
 			sourceSize.width: width
 			sourceSize.height: width
 			color: {
 				if (!base.enabled) {
-					return GuideThemeNS.Theme.getColor("setting_category_disabled_text");
+					return UM.Theme.getColor("setting_category_disabled_text");
 				} else if ((base.hovered || base.activeFocus) && base.checkable && base.checked) {
-					return GuideThemeNS.Theme.getColor("setting_category_active_hover_text");
+					return UM.Theme.getColor("setting_category_active_hover_text");
 				} else if (base.pressed || (base.checkable && base.checked)) {
-					return GuideThemeNS.Theme.getColor("setting_category_active_text");
+					return UM.Theme.getColor("setting_category_active_text");
 				} else if (base.hovered || base.activeFocus) {
-					return GuideThemeNS.Theme.getColor("setting_category_hover_text");
+					return UM.Theme.getColor("setting_category_hover_text");
 				} else {
-					return GuideThemeNS.Theme.getColor("setting_category_text");
+					return UM.Theme.getColor("setting_category_text");
 				}
 			}
 			source: base.checked ? UM.Theme.getIcon("arrow_bottom") : UM.Theme.getIcon("arrow_left")
@@ -128,23 +127,23 @@ Button {
 		id: icon
 		anchors.verticalCenter: parent.verticalCenter
 		anchors.left: parent.left
-		anchors.leftMargin: GuideThemeNS.Theme.getSize("default_margin").width
+		anchors.leftMargin: UM.Theme.getSize("default_margin").width
 		color: {
 			if (!base.enabled) {
-				return GuideThemeNS.Theme.getColor("setting_category_disabled_text");
+				return UM.Theme.getColor("setting_category_disabled_text");
 			} else if((base.hovered || base.activeFocus) && base.checkable && base.checked) {
-				return GuideThemeNS.Theme.getColor("setting_category_active_hover_text");
+				return UM.Theme.getColor("setting_category_active_hover_text");
 			} else if(base.pressed || (base.checkable && base.checked)) {
-				return GuideThemeNS.Theme.getColor("setting_category_active_text");
+				return UM.Theme.getColor("setting_category_active_text");
 			} else if(base.hovered || base.activeFocus) {
-				return GuideThemeNS.Theme.getColor("setting_category_hover_text");
+				return UM.Theme.getColor("setting_category_hover_text");
 			} else {
-				return GuideThemeNS.Theme.getColor("setting_category_text");
+				return UM.Theme.getColor("setting_category_text");
 			}
 		}
 		source: UM.Theme.getIcon(definition.icon)
-		width: GuideThemeNS.Theme.getSize("section_icon").width
-		height: GuideThemeNS.Theme.getSize("section_icon").height
+		width: UM.Theme.getSize("section_icon").width
+		height: UM.Theme.getSize("section_icon").height
 		sourceSize.width: width + 15 * screenScaleFactor
 		sourceSize.height: width + 15 * screenScaleFactor
 	}

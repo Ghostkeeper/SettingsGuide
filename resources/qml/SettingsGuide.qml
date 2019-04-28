@@ -11,7 +11,6 @@ import QtQuick.Controls.Styles 1.4
 
 import UM 1.2 as UM
 import Cura 1.0 as Cura
-import GuideTheme 1.0 as GuideThemeNS
 
 Window {
 	id: settingsGuideBase
@@ -26,7 +25,7 @@ Window {
 	minimumHeight: height
 	maximumHeight: minimumHeight
 
-	color: GuideThemeNS.Theme.getColor("viewport_background")
+	color: UM.Theme.getColor("main_background")
 
 	UM.I18nCatalog {
 		id: catalog
@@ -82,7 +81,7 @@ Window {
 
 		Rectangle {
 			id: rightSideItem
-			width: GuideThemeNS.Theme.getSize("sidebar").width
+			width: UM.Theme.getSize("print_setup_widget").width
 			border.color: "black"
 			border.width: 1
 

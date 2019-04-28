@@ -24,7 +24,6 @@ from cura.API import CuraAPI
 
 from . import MenuItemHandler
 from . import SettingsModel
-from . import GuideTheme
 
 i18n_catalog = i18nCatalog("cura")
 
@@ -48,7 +47,6 @@ class CuraSettingsGuide(Extension, QObject):
 		self._descriptions_path = os.path.join(plugin_path, "resources", "i18n", "en_US")
 
 		qmlRegisterType(SettingsModel.SettingsModel, "CuraSettingsGuide", 1, 0, "SettingsModel")
-		qmlRegisterSingletonType(GuideTheme.GuideTheme, "GuideTheme", 1, 0, "Theme", GuideTheme.createTheme)
 
 		self._loadDescriptionAndImages()
 

@@ -8,11 +8,10 @@ import QtQuick.Controls 1.4
 import QtQuick.Layouts 1.3
 
 import UM 1.2 as UM
-import GuideTheme 1.0 as GuideThemeNS
 
 Rectangle {
 	id: emptyTemplate
-	color: GuideThemeNS.Theme.getColor("viewport_background")
+	color: UM.Theme.getColor("main_background")
 
 	Image {
 		id: author

@@ -10,12 +10,11 @@ import QtQuick.Controls 2.0
 
 import UM 1.1 as UM
 import Cura 1.0 as Cura
-import GuideTheme 1.0 as GuideThemeNS
 
 Rectangle {
 	id: base
 
-	height: GuideThemeNS.Theme.getSize("section").height
+	height: UM.Theme.getSize("section").height
 
 	property alias contents: controlContainer.children
 	property alias hovered: mouse.containsMouse
@@ -65,9 +64,9 @@ Rectangle {
 			color: "transparent"
 			visible: false
 			anchors.fill: parent
-			anchors.leftMargin : 22
-			anchors.rightMargin : 22
-			border.color: GuideThemeNS.Theme.getColor("action_button_active_border")
+			anchors.leftMargin : UM.Theme.getSize("default_margin").width * 2 //One margin for the settings list, one for the indent.
+			anchors.rightMargin : UM.Theme.getSize("default_margin").width
+			border.color: UM.Theme.getColor("action_button_active_border")
 			border.width: 1
 		}
 
@@ -75,27 +74,27 @@ Rectangle {
 			id: highlightRectangle
 			z: 1
 			anchors.fill: parent
-			anchors.leftMargin : 22
-			anchors.rightMargin : 22
+			anchors.leftMargin : UM.Theme.getSize("default_margin").width * 2 //One margin for the settings list, one for the indent.
+			anchors.rightMargin : UM.Theme.getSize("default_margin").width
 			opacity: 0.0
-			color: GuideThemeNS.Theme.getColor("primary")
+			color: UM.Theme.getColor("primary")
 		}
 
 		Label {
 			id: label
 
 			anchors.left: parent.left
-			anchors.leftMargin: doDepthIndentation ? Math.round((GuideThemeNS.Theme.getSize("section_icon_column").width + 5) + ((definition.depth - 1) * GuideThemeNS.Theme.getSize("setting_control_depth_margin").width)) : 0
+			anchors.leftMargin: doDepthIndentation ? Math.round((UM.Theme.getSize("section_icon_column").width + 5) + ((definition.depth - 1) * UM.Theme.getSize("setting_control_depth_margin").width)) : 0
 			anchors.verticalCenter: parent.verticalCenter
 
 			text: definition.label
 			elide: Text.ElideMiddle
 			renderType: Text.NativeRendering
 
-			color: GuideThemeNS.Theme.getColor("setting_control_text")
+			color: UM.Theme.getColor("setting_control_text")
 			opacity: (definition.visible) ? 1 : 0.5
 			// emphasize the setting if it has a value in the user or quality profile
-			font: base.doQualityUserSettingEmphasis && base.stackLevel != undefined && base.stackLevel <= 1 ? GuideThemeNS.Theme.getFont("default_italic") : GuideThemeNS.Theme.getFont("default")
+			font: base.doQualityUserSettingEmphasis && base.stackLevel != undefined && base.stackLevel <= 1 ? UM.Theme.getFont("default_italic") : UM.Theme.getFont("default")
 		}
 
 		Item {
@@ -104,20 +103,20 @@ Rectangle {
 			enabled: propertyProvider.isValueUsed
 
 			anchors.right: parent.right
-			anchors.rightMargin: GuideThemeNS.Theme.getSize("sidebar_margin").width
+			anchors.rightMargin: UM.Theme.getSize("default_margin").width
 			anchors.verticalCenter: parent.verticalCenter
-			width: GuideThemeNS.Theme.getSize("setting_control").width
-			height: GuideThemeNS.Theme.getSize("setting_control").height
+			width: UM.Theme.getSize("setting_control").width
+			height: UM.Theme.getSize("setting_control").height
 		}
 
 		onEntered: {
 			if(!isSelected) {
-				highlightRectangle.opacity = 0.1
+				highlightRectangle.opacity = 0.1;
 			}
 		}
 		onExited: {
 			if(!isSelected) {
-				highlightRectangle.opacity = 0.0
+				highlightRectangle.opacity = 0.0;
 			}
 		}
 	}
@@ -128,6 +127,6 @@ Rectangle {
 	}
 
 	Component.onCompleted: {
-		onCompleteItemCallBack(base)
+		onCompleteItemCallBack(base);
 	}
 }
