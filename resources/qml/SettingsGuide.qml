@@ -63,7 +63,7 @@ Window {
 			font.italic: true
 			color: "#959596"
 
-			text: "V(" + CuraSettingsGuide.getPluginpluginVersion() + ")"
+			text: "v" + CuraSettingsGuide.getPluginpluginVersion()
 		}
 	}
 
