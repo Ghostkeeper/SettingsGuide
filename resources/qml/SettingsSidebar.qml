@@ -14,7 +14,7 @@ import Cura 1.0 as Cura
 
 import CuraSettingsGuide 1.0 as CuraSettingsGuideNS
 
-Rectangle {
+Item {
 	id: rightSideItem
 	width: UM.Theme.getSize("print_setup_widget").width
 

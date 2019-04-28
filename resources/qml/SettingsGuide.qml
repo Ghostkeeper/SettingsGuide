@@ -82,8 +82,9 @@ Window {
 		Rectangle {
 			id: rightSideItem
 			width: UM.Theme.getSize("print_setup_widget").width
-			border.color: "black"
+			border.color: UM.Theme.getColor("lining")
 			border.width: 1
+			color: "transparent"
 
 			anchors {
 				top: globalItem.top

@@ -15,7 +15,7 @@ Rectangle {
 
 	Text {
 		text: "EMPTY"
-		color: "black"
+		color: UM.Theme.getColor("text")
 		font.pixelSize: 80
 		anchors.horizontalCenter: parent.horizontalCenter
 		anchors.verticalCenter: parent.verticalCenter

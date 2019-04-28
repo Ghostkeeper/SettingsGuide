@@ -11,7 +11,7 @@ import QtQuick.Controls 2.0
 import UM 1.1 as UM
 import Cura 1.0 as Cura
 
-Rectangle {
+Item {
 	id: base
 
 	height: UM.Theme.getSize("section").height

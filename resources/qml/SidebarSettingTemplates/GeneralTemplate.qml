@@ -74,6 +74,7 @@ Rectangle {
 
 				text: general_template.setting_name
 				font: UM.Theme.getFont("large")
+				color: UM.Theme.getColor("text")
 				renderType: Text.NativeRendering
 			}
 
@@ -86,6 +87,7 @@ Rectangle {
 				width: rect_scroll.width
 				wrapMode: Text.WordWrap
 				font: UM.Theme.getFont("default")
+				color: UM.Theme.getColor("text")
 				renderType: Text.NativeRendering
 			}
 
@@ -214,6 +216,7 @@ Rectangle {
 				width: rect_scroll.width
 				text: general_template.setting_img_description
 				font: UM.Theme.getFont("default_italic")
+				color: UM.Theme.getColor("text")
 				renderType: Text.NativeRendering
 				wrapMode: Text.WordWrap
 			}
@@ -231,6 +234,7 @@ Rectangle {
 				text: CuraSettingsGuide.parseStylingList(general_template.setting_hints)
 				width: rect_scroll.width
 				font: UM.Theme.getFont("default")
+				color: UM.Theme.getColor("text")
 				renderType: Text.NativeRendering
 				wrapMode: Text.WordWrap
 				textFormat: Text.RichText
@@ -251,6 +255,7 @@ Rectangle {
 				text: general_template.setting_notes
 				width: rect_scroll.width
 				font: UM.Theme.getFont("default_bold")
+				color: UM.Theme.getColor("text")
 				renderType: Text.NativeRendering
 				wrapMode: Text.WordWrap
 			}
