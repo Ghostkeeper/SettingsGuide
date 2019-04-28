@@ -231,7 +231,7 @@ Rectangle {
 				}
 				anchors.topMargin:20 * screenScaleFactor
 
-				text: CuraSettingsGuide.parseStylingList(general_template.setting_hints)
+				text: manager.parseStylingList(general_template.setting_hints)
 				width: rect_scroll.width
 				font: UM.Theme.getFont("default")
 				color: UM.Theme.getColor("text")
