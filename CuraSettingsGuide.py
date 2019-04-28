@@ -42,7 +42,7 @@ class CuraSettingsGuide(Extension, QObject):
 
 		plugin_path = os.path.dirname(__file__)
 		self._images_path = os.path.join(plugin_path, "resources", "images")
-		self._descriptions_path = os.path.join(plugin_path, "resources", "i18n", "en_US")
+		self._descriptions_path = os.path.join(plugin_path, "resources", "descriptions")
 
 		self._loadDescriptionAndImages()
 
@@ -150,15 +150,12 @@ class CuraSettingsGuide(Extension, QObject):
 						image_path = os.path.join(custom_path, image_name)
 						self._settings_data[file_id]["images"].append(image_path)
 
-			except Exception as e:
+			except Exception:
 				Logger.logException("w", "Error while reading file: %s" % file)
 				continue
 
 	@pyqtSlot(str)
 	def setSelectedSetting(self, setting_key: str) -> None:
-		# self._settings_data = {}
-		# self._loadDescriptionAndImages() Only for developing the plugin
-
 		return_value = {"details": {"general": {"id": setting_key,
 												"template": "EmptyTemplate.qml"}
 									}
