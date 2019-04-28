@@ -14,7 +14,7 @@ import Cura 1.0 as Cura
 
 Window {
 	id: settingsGuideBase
-	title: catalog.i18nc("@title", "Cura Settings Guide") + " (" + CuraSettingsGuide.getPluginpluginVersion() + ")"
+	title: catalog.i18nc("@title", "Cura Settings Guide") + " (" + manager.getPluginpluginVersion() + ")"
 	modality: Qt.ApplicationModal
 	flags: Qt.Dialog | Qt.CustomizeWindowHint | Qt.WindowTitleHint | Qt.WindowCloseButtonHint
 
@@ -63,7 +63,7 @@ Window {
 			font.italic: true
 			color: "#959596"
 
-			text: "v" + CuraSettingsGuide.getPluginpluginVersion()
+			text: "v" + manager.getPluginpluginVersion()
 		}
 	}
 
@@ -136,7 +136,7 @@ Window {
 	}
 
 	function callSettingItemChanged() {
-		var data = CuraSettingsGuide.selectedSettingData;
+		var data = manager.selectedSettingData;
 		var template = "";
 
 		var setting_id = data["details"] != undefined ? data["details"]["general"]["id"] : undefined;
@@ -200,7 +200,7 @@ Window {
 
 	// After selecting the setting show proper template of the setting's guide
 	Connections {
-		target: CuraSettingsGuide
+		target: manager
 		onSettingItemChanged: {
 			callSettingItemChanged();
 		}

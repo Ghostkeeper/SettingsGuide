@@ -12,7 +12,7 @@ import re
 from typing import Dict, Optional
 
 from PyQt5.QtCore import QObject, pyqtSlot, pyqtProperty, pyqtSignal
-from PyQt5.QtQml import qmlRegisterType, qmlRegisterSingletonType
+from PyQt5.QtQml import qmlRegisterType
 
 from UM.Extension import Extension
 from UM.Application import Application
@@ -23,14 +23,12 @@ from UM.i18n import i18nCatalog
 from cura.API import CuraAPI
 
 from . import MenuItemHandler
-from . import SettingsModel
 
 i18n_catalog = i18nCatalog("cura")
 
 
 ## The class is entry point for the Cura Settings Guide, it sets all required resources and has manager role.
 class CuraSettingsGuide(Extension, QObject):
-
 	def __init__(self, parent = None) -> None:
 		QObject.__init__(self, parent)
 		Extension.__init__(self)
@@ -45,8 +43,6 @@ class CuraSettingsGuide(Extension, QObject):
 		plugin_path = os.path.dirname(__file__)
 		self._images_path = os.path.join(plugin_path, "resources", "images")
 		self._descriptions_path = os.path.join(plugin_path, "resources", "i18n", "en_US")
-
-		qmlRegisterType(SettingsModel.SettingsModel, "CuraSettingsGuide", 1, 0, "SettingsModel")
 
 		self._loadDescriptionAndImages()
 
@@ -83,7 +79,7 @@ class CuraSettingsGuide(Extension, QObject):
 	def _createDialog(self, qml_name: str) -> Optional["QObject"]:
 		Logger.log("d", "Settings Guide: Create dialog from QML [%s]", qml_name)
 		path = os.path.join(PluginRegistry.getInstance().getPluginPath(self.getPluginId()), "resources", "qml", qml_name)
-		dialog = Application.getInstance().createQmlComponent(path, {"CuraSettingsGuide": self})
+		dialog = Application.getInstance().createQmlComponent(path, {"manager": self})
 		return dialog
 
 	def _loadDescriptionAndImages(self) -> None:
@@ -159,7 +155,7 @@ class CuraSettingsGuide(Extension, QObject):
 				continue
 
 	@pyqtSlot(str)
-	def setSelectedSetting(self, setting_key: str)-> None:
+	def setSelectedSetting(self, setting_key: str) -> None:
 		# self._settings_data = {}
 		# self._loadDescriptionAndImages() Only for developing the plugin
 

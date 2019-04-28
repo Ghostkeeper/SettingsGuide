@@ -12,8 +12,6 @@ import QtQuick.Layouts 1.2
 import UM 1.2 as UM
 import Cura 1.0 as Cura
 
-import CuraSettingsGuide 1.0 as CuraSettingsGuideNS
-
 Item {
 	id: rightSideItem
 	width: UM.Theme.getSize("print_setup_widget").width
@@ -273,7 +271,7 @@ Item {
 			height: parent.height
 			currentIndex: -1
 
-			model: CuraSettingsGuideNS.SettingsModel {
+			model: UM.SettingDefinitionsModel {
 				id: definitionsModel
 				containerId: Cura.MachineManager.activeDefinitionId
 				showAll: true
@@ -331,7 +329,7 @@ Item {
 					hoverEnabled: true
 					onClicked: {
 						rightSideItem.last_setting_id = model.key;
-						CuraSettingsGuide.setSelectedSetting(model.key);
+						manager.setSelectedSetting(model.key);
 					}
 				}
 			}
