@@ -1,0 +1,16 @@
+{
+    "author": {
+        "author_id": "Ghostkeeper",
+        "display_name": "Ghostkeeper",
+        "email": "rubend@tutanota.com",
+        "website": "https://github.com/Ghostkeeper"
+    },
+    "description": "Allows reading SVG image files and lets the printer draw the outlines directly.",
+    "display_name": "SVG Toolpath Reader",
+    "package_id": "SVGToolpathReader",
+    "package_type": "plugin",
+    "package_version": "${SVGTOOLPATHREADER_VERSION_MAJOR}.${SVGTOOLPATHREADER_VERSION_MINOR}.${SVGTOOLPATHREADER_VERSION_PATCH}",
+    "sdk_version": 5,
+    "sdk_version_semver": "${sdk_version}",
+    "website": "https://github.com/Ghostkeeper/SVGToolpathReader"
+}
