@@ -68,6 +68,8 @@ set(installed_paths_resources_qml_SidebarSettingTemplates "")
 foreach(f IN LISTS installed_files_resources_qml_SidebarSettingTemplates)
 	list(APPEND installed_paths_resources_qml_SidebarSettingTemplates ${CMAKE_CURRENT_SOURCE_DIR}/resources/qml/SidebarSettingTemplates/${f})
 endforeach()
+file(GLOB installed_paths_resources_descriptions ${CMAKE_CURRENT_SOURCE_DIR}/resources/descriptions/*)
+file(GLOB installed_paths_resources_images ${CMAKE_CURRENT_SOURCE_DIR}/resources/images/*)
 
 #Find out where to install this thing.
 if(WIN32)
@@ -95,6 +97,8 @@ install(FILES ${installed_paths_resources_icons} DESTINATION SettingsGuide/resou
 install(FILES ${installed_paths_resources_qml} DESTINATION SettingsGuide/resources/qml)
 install(FILES ${installed_paths_resources_qml_SidebarSettings} DESTINATION SettingsGuide/resources/qml/SidebarSettings)
 install(FILES ${installed_paths_resources_qml_SidebarSettingTemplates} DESTINATION SettingsGuide/resources/qml/SidebarSettingTemplates)
+install(FILES ${installed_paths_resources_descriptions} DESTINATION SettingsGuide/resources/descriptions)
+install(FILES ${installed_paths_resources_images} DESTINATION SettingsGuide/resources/images)
 
 #Packing this into a .curapackage file.
 add_custom_target(pack COMMAND "") #Packs for all supported SDK versions.
@@ -104,6 +108,8 @@ foreach(sdk_version ${SETTINGSGUIDE_SUPPORTED_SDKS})
 	file(COPY ${installed_paths_resources_qml} DESTINATION pack${sdk_version}/files/plugins/SettingsGuide/resources/qml)
 	file(COPY ${installed_paths_resources_qml_SidebarSettings} DESTINATION pack${sdk_version}/files/plugins/SettingsGuide/resources/qml/SidebarSettings)
 	file(COPY ${installed_paths_resources_qml_SidebarSettingTemplates} DESTINATION pack${sdk_version}/files/plugins/SettingsGuide/resources/qml/SidebarSettingTemplates)
+	file(COPY ${installed_paths_resources_descriptions} DESTINATION pack${sdk_version}/files/plugins/SettingsGuide/resources/descriptions)
+	file(COPY ${installed_paths_resources_images} DESTINATION pack${sdk_version}/files/plugins/SettingsGuide/resources/images)
 	file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/cmake/[Content_Types].xml" DESTINATION pack${sdk_version})
 	file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/cmake/_rels" DESTINATION pack${sdk_version})
 	configure_file("${CMAKE_CURRENT_SOURCE_DIR}/cmake/package.json.in" pack${sdk_version}/package.json)
