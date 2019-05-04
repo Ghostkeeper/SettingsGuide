@@ -316,7 +316,7 @@ Item {
 						case "category":
 							return Qt.resolvedUrl("SidebarSettings/SettingCategory.qml");
 						case "optional_extruder":
-							return Qt.resolvedUrl("SidebarSettings/SettingOptionalExtruder.qml");
+							return Qt.resolvedUrl("SidebarSettings/SettingExtruder.qml");
 						default:
 							return Qt.resolvedUrl("SidebarSettings/SettingUnknown.qml");
 					}
