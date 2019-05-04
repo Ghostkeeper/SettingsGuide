@@ -39,12 +39,11 @@ Rectangle {
 	}
 
 	Text {
-		text: "Created By: Ghostkeeper, Terri-Ann dela Cruz and Aleksei Sasin"
-		color: "black"
+		text: "Created By: Terri-Ann dela Cruz, Aleksei Sasin and Ghostkeeper"
+		color: UM.Theme.getColor("text")
 		font.pixelSize: 20
 		anchors.horizontalCenter: parent.horizontalCenter
 		anchors.top: author.bottom
 		anchors.topMargin: 20
-		opacity: 0.7
 	}
 }
