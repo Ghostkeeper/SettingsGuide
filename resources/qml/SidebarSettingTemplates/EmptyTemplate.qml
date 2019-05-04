@@ -9,9 +9,8 @@ import QtQuick.Layouts 1.3
 
 import UM 1.2 as UM
 
-Rectangle {
+Item {
 	id: empty_template
-	color: UM.Theme.getColor("viewport_background")
 
 	Text {
 		text: "EMPTY"

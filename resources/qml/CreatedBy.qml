@@ -9,10 +9,7 @@ import QtQuick.Layouts 1.3
 
 import UM 1.2 as UM
 
-Rectangle {
-	id: emptyTemplate
-	color: UM.Theme.getColor("main_background")
-
+Item {
 	Item {
 		anchors.centerIn: parent
 		width: childrenRect.width

@@ -10,7 +10,7 @@ import QtQuick.Layouts 1.3
 
 import UM 1.1 as UM
 
-Rectangle {
+Item {
 	id: general_template
 
 	property var setting_data: loaderData
@@ -40,8 +40,6 @@ Rectangle {
 		right: parent ? parent.right : undefined
 	}
 	width: parent ? parent.width : 0
-
-	color: UM.Theme.getColor("viewport_background")
 
 	ScrollView {
 		id: page_scroll_view
