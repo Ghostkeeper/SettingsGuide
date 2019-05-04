@@ -16,24 +16,8 @@ Item {
 		height: childrenRect.height
 		Image {
 			id: author
-			width: {
-				var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400);
-				var new_value = sourceSize.width;
-				if(ratio > 1) {
-					new_value = sourceSize.width / ratio;
-				}
-
-				return new_value * screenScaleFactor;
-			}
-			height: {
-				var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400);
-				var new_value = sourceSize.height;
-				if(ratio > 1) {
-					new_value = sourceSize.height / ratio;
-				}
-
-				return new_value * screenScaleFactor;
-			}
+			width: 500 * screenScaleFactor
+			fillMode: Image.PreserveAspectFit
 			source: "../icons/created_by.jpg"
 		}
 
