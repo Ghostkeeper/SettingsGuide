@@ -58,13 +58,8 @@ Button {
 		}
 	}
 
-	signal showTooltip(string text)
-	signal hideTooltip()
-	signal contextMenuRequested()
-	signal showAllHiddenInheritedSettings(string category_id)
 	signal focusReceived()
 	signal setActiveFocusToNextSetting(bool forward)
-
 	property var focusItem: base
 
 	contentItem: Item {
