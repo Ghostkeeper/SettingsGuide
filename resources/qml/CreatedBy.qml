@@ -13,37 +13,40 @@ Rectangle {
 	id: emptyTemplate
 	color: UM.Theme.getColor("main_background")
 
-	Image {
-		id: author
-		width: {
-			var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400);
-			var new_value = sourceSize.width;
-			if(ratio > 1) {
-				new_value = sourceSize.width / ratio;
+	Item {
+		anchors.centerIn: parent
+		width: childrenRect.width
+		height: childrenRect.height
+		Image {
+			id: author
+			width: {
+				var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400);
+				var new_value = sourceSize.width;
+				if(ratio > 1) {
+					new_value = sourceSize.width / ratio;
+				}
+
+				return new_value * screenScaleFactor;
 			}
+			height: {
+				var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400);
+				var new_value = sourceSize.height;
+				if(ratio > 1) {
+					new_value = sourceSize.height / ratio;
+				}
 
-			return new_value * screenScaleFactor;
-		}
-		height: {
-			var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400);
-			var new_value = sourceSize.height;
-			if(ratio > 1) {
-				new_value = sourceSize.height / ratio;
+				return new_value * screenScaleFactor;
 			}
-
-			return new_value * screenScaleFactor;
+			source: "../icons/created_by.jpg"
 		}
-		anchors.horizontalCenter: parent.horizontalCenter
-		anchors.verticalCenter: parent.verticalCenter
-		source: "../icons/created_by.jpg"
-	}
 
-	Text {
-		text: "Created By: Terri-Ann dela Cruz, Aleksei Sasin and Ghostkeeper"
-		color: UM.Theme.getColor("text")
-		font.pixelSize: 20
-		anchors.horizontalCenter: parent.horizontalCenter
-		anchors.top: author.bottom
-		anchors.topMargin: 20
+		Text {
+			text: "Created By: Terri-Ann dela Cruz, Aleksei Sasin and Ghostkeeper"
+			color: UM.Theme.getColor("text")
+			font.pixelSize: 20
+			anchors.horizontalCenter: author.horizontalCenter
+			anchors.top: author.bottom
+			anchors.topMargin: 20
+		}
 	}
 }
