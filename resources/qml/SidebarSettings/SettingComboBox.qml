@@ -12,43 +12,11 @@ import UM 1.2 as UM
 
 SettingItem {
 	id: base
-	property var focusItem: control
 
-	contents: MouseArea {
-		id: control
+	contents: Rectangle {
 		anchors.fill: parent
-		hoverEnabled: true
-
-		property bool checked: false
-
-		Rectangle {
-			anchors {
-				top: parent.top
-				bottom: parent.bottom
-				left: parent.left
-			}
-			width: height
-
-			color: {
-				if(!enabled) {
-					return UM.Theme.getColor("setting_control_disabled");
-				}
-				if(control.containsMouse || control.activeFocus) {
-					return UM.Theme.getColor("setting_control_highlight");
-				}
-				return UM.Theme.getColor("setting_control");
-			}
-
-			border.width: UM.Theme.getSize("default_lining").width
-			border.color: {
-				if(!enabled) {
-					return UM.Theme.getColor("setting_control_disabled_border");
-				}
-				if(control.containsMouse || control.activeFocus) {
-					return UM.Theme.getColor("setting_control_border_highlight");
-				}
-				return UM.Theme.getColor("setting_control_border");
-			}
-		}
+		color: UM.Theme.getColor("setting_control_disabled")
+		border.width: UM.Theme.getSize("default_lining").width
+		border.color: UM.Theme.getColor("setting_control_disabled_border")
 	}
 }
