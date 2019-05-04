@@ -14,8 +14,7 @@ SettingItem {
 	id: base
 
 	contents: Rectangle {
-		anchors
-		{
+		anchors {
 			top: parent.top
 			bottom: parent.bottom
 			left: parent.left

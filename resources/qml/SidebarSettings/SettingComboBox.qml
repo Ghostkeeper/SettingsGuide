@@ -18,5 +18,23 @@ SettingItem {
 		color: UM.Theme.getColor("setting_control_disabled")
 		border.width: UM.Theme.getSize("default_lining").width
 		border.color: UM.Theme.getColor("setting_control_disabled_border")
+
+		UM.RecolorImage
+        {
+			id: downArrow
+			anchors {
+	            right: parent.right
+                rightMargin: UM.Theme.getSize("default_margin").width
+				verticalCenter: parent.verticalCenter
+			}
+
+			source: UM.Theme.getIcon("arrow_bottom")
+			width: UM.Theme.getSize("standard_arrow").width
+			height: UM.Theme.getSize("standard_arrow").height
+			sourceSize.width: width + 5 * screenScaleFactor
+			sourceSize.height: width + 5 * screenScaleFactor
+
+			color: UM.Theme.getColor("setting_control_button")
+		}
 	}
 }
