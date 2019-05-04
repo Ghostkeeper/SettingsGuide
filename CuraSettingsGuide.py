@@ -4,7 +4,6 @@
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
-import base64
 import json
 import os
 import platform
@@ -12,7 +11,6 @@ import re
 from typing import Dict, Optional
 
 from PyQt5.QtCore import QObject, pyqtSlot, pyqtProperty, pyqtSignal
-from PyQt5.QtQml import qmlRegisterType
 
 from UM.Extension import Extension
 from UM.Application import Application
@@ -178,18 +176,6 @@ class CuraSettingsGuide(Extension, QObject):
 	@pyqtProperty("QVariantMap", notify = settingItemChanged)
 	def selectedSettingData(self) -> Optional["QVariantMap"]:
 		return self._selected_setting_data
-
-	@pyqtSlot(result = "QByteArray")
-	def getCreatedByImage(self) -> Optional["QByteArray"]:
-		plugin_path = PluginRegistry.getInstance().getPluginPath(self.getPluginId())
-		images_path = os.path.join(plugin_path, "resources", "icons", "createdBy.data")
-
-		with open(images_path, "rb") as f:
-			data = f.read()
-			image_64_decoded = base64.b64decode(data)
-			image_64_encoded = base64.b64encode(image_64_decoded)
-
-		return image_64_encoded
 
 	replacement_patterns = {
 		re.compile(r"^-\s+(.*)"): "<li>\\1</li>\n",

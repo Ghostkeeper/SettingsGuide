@@ -35,7 +35,7 @@ Rectangle {
 		}
 		anchors.horizontalCenter: parent.horizontalCenter
 		anchors.verticalCenter: parent.verticalCenter
-		source: "data:image/png;base64," + CuraSettingsGuide.getCreatedByImage()
+		source: "../icons/created_by.jpg"
 	}
 
 	Text {
