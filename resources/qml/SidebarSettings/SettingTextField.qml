@@ -10,21 +10,12 @@ import QtQuick.Controls 2.0
 import UM 1.1 as UM
 
 SettingItem {
-	id: base
-
 	contents: Rectangle {
-		id: control
-
 		anchors.fill: parent
 
+		color: UM.Theme.getColor("setting_control_disabled")
 		border.width: Math.round(UM.Theme.getSize("default_lining").width)
-		border.color: {
-			return UM.Theme.getColor("setting_control_disabled_border");
-		}
-
-		color: {
-			return UM.Theme.getColor("setting_control_disabled");
-		}
+		border.color: UM.Theme.getColor("setting_control_disabled_border")
 
 		Label {
 			anchors.right: parent.right
