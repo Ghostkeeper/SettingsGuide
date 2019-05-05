@@ -125,11 +125,6 @@ Item {
 		}
 		height: UM.Theme.getSize("setting_control").height
 		width: rightSideItem.width
-		Behavior on height {
-			NumberAnimation {
-				duration: 100
-			}
-		}
 
 		Timer {
 			id: settingsSearchTimer
@@ -140,13 +135,13 @@ Item {
 		}
 
 		TextField {
-			id: filter;
+			id: filter
 			height: parent.height
 			anchors.left: filterContainer.left
 			anchors.right: filterContainer.right
 			anchors.rightMargin: Math.round(UM.Theme.getSize("default_margin").width)
 
-			placeholderText: catalog.i18nc("@label:textbox", "Search...")
+			placeholderText: "Search..."
 
 			style: TextFieldStyle {
 				textColor: UM.Theme.getColor("setting_control_text")
@@ -367,5 +362,10 @@ Item {
 				}
 			}
 		}
+	}
+
+	UM.I18nCatalog {
+		id: catalog
+		name: "cura"
 	}
 }

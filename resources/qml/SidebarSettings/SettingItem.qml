@@ -121,11 +121,6 @@ Item {
 		}
 	}
 
-	UM.I18nCatalog {
-		id: catalog
-		name: "cura"
-	}
-
 	Component.onCompleted: {
 		onCompleteItemCallBack(base);
 	}
