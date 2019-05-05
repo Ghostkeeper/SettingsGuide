@@ -89,8 +89,4 @@ Item {
 			height: UM.Theme.getSize("setting_control").height
 		}
 	}
-
-	Component.onCompleted: {
-		onCompleteItemCallBack(base);
-	}
 }
