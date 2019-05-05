@@ -12,7 +12,6 @@ import Cura 1.0 as Cura
 
 SettingItem {
 	id: base
-	property var focusItem: control
 
 	contents: Rectangle {
 		anchors.fill: parent
