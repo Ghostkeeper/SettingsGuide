@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Support Interface Line Width"
-	},
-	"data" :
-	{
-		"description" : "Width of a single support interface line. Support consists of support infill and a support interface. The support line width can be adjusted separately.",
-		"img_description" : "This image shows the support interface structure of a single layer.",
-		"hints" : "- The support interface line width is slightly smaller than the support line width to increase adhesion between the supports and the printed model.",
-		"notes" : ""
+		"description": "Width of a single support interface line. Support consists of support infill and a support interface. The support line width can be adjusted separately.",
+		"img_description": "This image shows the support interface structure of a single layer.",
+		"hints": "- The support interface line width is slightly smaller than the support line width to increase adhesion between the supports and the printed model.",
+		"notes": ""
 	}
 }

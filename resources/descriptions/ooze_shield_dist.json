@@ -1,17 +1,16 @@
 {
-	"general" :
+	"general":
 	{
-		"name" : "Ooze Shield Distance",
-		"images" :
+		"images":
 		{
-			"1" : "ooze_shield_angle_img1.png"
+			"1": "ooze_shield_angle_img1.png"
 		}
 	},
-	"data" :
+	"data":
 	{
-		"description" : "Distance of the ooze shield from the print, in the X/Y directions.",
-		"img_description" : "This image illustrates an ooze shield settings.",
-		"hints" : "The distance between the ooze shield and the model. This is used to prevent the shield from merging with the model.",
-		"notes" : ""
+		"description": "Distance of the ooze shield from the print, in the X/Y directions.",
+		"img_description": "This image illustrates an ooze shield settings.",
+		"hints": "The distance between the ooze shield and the model. This is used to prevent the shield from merging with the model.",
+		"notes": ""
 	}
 }

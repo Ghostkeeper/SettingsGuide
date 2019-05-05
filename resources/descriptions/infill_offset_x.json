@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Infill X Offset"
-	},
-	"data" :
-	{
-		"description" : "The infill patterns are centered on the loaded 3D model. This setting allows to shift the center of the pattern on the X axis.",	
-		"img_description" : "The image on the left has no infill offset, the right one has a x offset of 10mm, the infill is moved 10mm to the right.",
-		"hints" : "- A positive value moves the infill pattern to the right, a negative value moves it to the left.\n- With some 3D models, moving the infill pattern could lead to beneficial results.",
-		"notes" : ""
+		"description": "The infill patterns are centered on the loaded 3D model. This setting allows to shift the center of the pattern on the X axis.",
+		"img_description": "The image on the left has no infill offset, the right one has a x offset of 10mm, the infill is moved 10mm to the right.",
+		"hints": "- A positive value moves the infill pattern to the right, a negative value moves it to the left.\n- With some 3D models, moving the infill pattern could lead to beneficial results.",
+		"notes": ""
 	}
 }

@@ -1,12 +1,8 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Shrinkage Ratio"
-	},
-	"data" :
-	{
-		"description" : "Shrinkage ratio in percentage.",
-		"img_description" : "",
-		"hints" : ""
+		"description": "Shrinkage ratio in percentage.",
+		"img_description": "",
+		"hints": ""
 	}
 }

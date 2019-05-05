@@ -8,7 +8,8 @@ import QtQuick 2.7
 import QtQuick.Controls 1.4
 import QtQuick.Layouts 1.3
 
-import UM 1.1 as UM
+import UM 1.3 as UM
+import Cura 1.0 as Cura
 
 Item {
 	id: general_template
@@ -16,9 +17,6 @@ Item {
 	property var setting_data: loaderData
 
 	// Check for undefined, because after switching loader object the qml still tries to read this data
-	property var setting_name: {
-		return setting_data["details"]["general"]["name"] != undefined ? setting_data["details"]["general"]["name"]: "";
-	}
 	property var setting_description: {
 		return setting_data["details"]["data"] != undefined ? setting_data["details"]["data"]["description"]: "";
 	}
@@ -70,7 +68,7 @@ Item {
 				anchors.top: parent.top
 				anchors.topMargin: 20 * screenScaleFactor
 
-				text: general_template.setting_name
+				text: selectedSettingName.properties.label
 				font: UM.Theme.getFont("large")
 				color: UM.Theme.getColor("text")
 				renderType: Text.NativeRendering
@@ -315,6 +313,13 @@ Item {
 		z: 1
 		x: (parent.width - width) / 2
 		y: (parent.height - height) / 2
+	}
+
+	UM.SettingPropertyProvider {
+		id: selectedSettingName
+		containerStack: Cura.MachineManager.activeMachine
+		key: settingsGuideBase.selectedSettingId
+		watchedProperties: [ "label" ]
 	}
 
 	Component.onCompleted: {

@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Outer Wall Line Width"
-	},
-	"data" :
-	{
-		"description" : "Width of the outermost wall line.",
-		"img_description" : "This image shows only the outer walls are affected when changing this setting.",
-		"hints" : "- Decrease the outer wall line width slightly to allow sharper detail on the model.",
-		"notes" : ""
+		"description": "Width of the outermost wall line.",
+		"img_description": "This image shows only the outer walls are affected when changing this setting.",
+		"hints": "- Decrease the outer wall line width slightly to allow sharper detail on the model.",
+		"notes": ""
 	}
 }

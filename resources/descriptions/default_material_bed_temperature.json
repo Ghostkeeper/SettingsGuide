@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Default Build Plate Temperature"
-	},
-	"data" :
-	{
-		"description" : "This setting defines the heated bed temperature during the printing process. Each material has an ideal build plate temperature, which is set here. When printing with two different materials, the temperature will be an average of the two.",
-		"img_description" : "",
-		"hints" : "- This setting controls the build plate temperature and the build plate temperature of the initial layer.\n- The build plate temperature has been tested to have the ideal adhesion capacity. It is uncommon to change this setting.",
-		"notes" : ""
+		"description": "This setting defines the heated bed temperature during the printing process. Each material has an ideal build plate temperature, which is set here. When printing with two different materials, the temperature will be an average of the two.",
+		"img_description": "",
+		"hints": "- This setting controls the build plate temperature and the build plate temperature of the initial layer.\n- The build plate temperature has been tested to have the ideal adhesion capacity. It is uncommon to change this setting.",
+		"notes": ""
 	}
 }

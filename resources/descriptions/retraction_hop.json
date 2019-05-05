@@ -1,16 +1,15 @@
 {
-	"general" :
+	"general":
 	{
-		"name" : "Z Hop Height",
-		"images" :
+		"images":
 		{
-			"1" : "retraction_hop_enabled_img1.png"
+			"1": "retraction_hop_enabled_img1.png"
 		}
 	},
-	"data" :
+	"data":
 	{
 		"description": "This setting specifies the height (in mm) at which all Z-hop moves are performed during the print.",
-		"img_description" : "This image illustrates the path of the extruder when the setting is enabled.",
-		"hints" : ""
+		"img_description": "This image illustrates the path of the extruder when the setting is enabled.",
+		"hints": ""
 	}
 }

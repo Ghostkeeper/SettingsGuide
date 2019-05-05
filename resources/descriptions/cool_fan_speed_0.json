@@ -1,16 +1,15 @@
 {
-	"general" :
+	"general":
 	{
-		"name" : "Initial Fan Speed",
-		"images" :
+		"images":
 		{
-			"1" : "cool_fan_speed_img1.png"
+			"1": "cool_fan_speed_img1.png"
 		}
 	},
-	"data" :
+	"data":
 	{
 		"description": "This controls the fan speed on the initial layer only, which adheres to the build plate. The speed then changes back to the regular fan speed, which is achieved once it reaches the height setting for the regular fan speed.",
-		"img_description" : "An overview of common cooling settings combinations, projected onto a pyramid model.",
-		"hints" : ""
+		"img_description": "An overview of common cooling settings combinations, projected onto a pyramid model.",
+		"hints": ""
 	}
 }

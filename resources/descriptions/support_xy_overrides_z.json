@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Support Distance Priority"
-	},
-	"data" :
-	{
-		"description" : "Whether the Support X/Y Distance overrides the Support Z Distance or vice versa. When X/Y overrides Z the X/Y distance can push away the support from the model, influencing the actual Z distance to the overhang.",
-		"img_description" : "The image shows the priority when X/Y overrides Z, and when Z override X/Y.",
-		"hints" : "- After the launch of Ultimaker PVA, the support Z-distance was set to 0. This introduced a scenario where the X/Y-distance would offset the PVA from the model, decreasing the support quality. The support distance priority ensures that the PVA aligns with the model perfectly. ",
-		"notes" : ""
+		"description": "Whether the Support X/Y Distance overrides the Support Z Distance or vice versa. When X/Y overrides Z the X/Y distance can push away the support from the model, influencing the actual Z distance to the overhang.",
+		"img_description": "The image shows the priority when X/Y overrides Z, and when Z override X/Y.",
+		"hints": "- After the launch of Ultimaker PVA, the support Z-distance was set to 0. This introduced a scenario where the X/Y-distance would offset the PVA from the model, decreasing the support quality. The support distance priority ensures that the PVA aligns with the model perfectly. ",
+		"notes": ""
 	}
 }

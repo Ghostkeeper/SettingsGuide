@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Prime Tower Speed"
-	},
-	"data" :
-	{
-		"description" : "The speed at which the prime tower is printed. Printing the prime tower slower can make it more stable when the adhesion between the different filaments is suboptimal.",
-		"img_description" : "",
-		"hints" : "",
-		"notes" : ""
+		"description": "The speed at which the prime tower is printed. Printing the prime tower slower can make it more stable when the adhesion between the different filaments is suboptimal.",
+		"img_description": "",
+		"hints": "",
+		"notes": ""
 	}
 }

@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Travel Speed"
-	},
-	"data" :
-	{
-		"description" : "This is the speed at which the print head moves when it’s not extruding. A higher travel speed decreases the chance of filament oozing from the nozzle, resulting in a cleaner object. However, higher speed could also cause the nozzle to hit a previously printed part, which may damage the print due to the heated nozzle. This can be prevented by using Z-hop when retracting.",
-		"img_description" : "",
-		"hints" : "The travel speed for the initial layer differs from the rest of the print to ensure proper adhesion with the build plate.",
-		"notes" : ""
+		"description": "This is the speed at which the print head moves when it’s not extruding. A higher travel speed decreases the chance of filament oozing from the nozzle, resulting in a cleaner object. However, higher speed could also cause the nozzle to hit a previously printed part, which may damage the print due to the heated nozzle. This can be prevented by using Z-hop when retracting.",
+		"img_description": "",
+		"hints": "The travel speed for the initial layer differs from the rest of the print to ensure proper adhesion with the build plate.",
+		"notes": ""
 	}
 }

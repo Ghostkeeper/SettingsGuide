@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Wall Line Width"
-	},
-	"data" :
-	{
-		"description" : "The width of a single wall line. The line width of the inner and outer walls can be adjusted separately.",
-		"img_description" : "This image shows the walls affected when changing this setting.",
-		"hints" : "- The outer and inner wall line widths are calculated automatically from this setting.",
-		"notes" : ""
+		"description": "The width of a single wall line. The line width of the inner and outer walls can be adjusted separately.",
+		"img_description": "This image shows the walls affected when changing this setting.",
+		"hints": "- The outer and inner wall line widths are calculated automatically from this setting.",
+		"notes": ""
 	}
 }

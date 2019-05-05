@@ -1,13 +1,9 @@
 {
-	"general" :
-	{
-		"name" : "Top Surface Skin Extruder"
-	},
-	"data" :
+	"data":
 	{
 		"description": "The extruder can be set for the top surface skin layers. The second extruder may contain a different print core or material.",
-		"img_description" : "This model will be printed with only the top surface layers in a different color.",
-		"hints" : "- Use this feature to get a different top surface finish while printing.",
-		"notes" : ""
+		"img_description": "This model will be printed with only the top surface layers in a different color.",
+		"hints": "- Use this feature to get a different top surface finish while printing.",
+		"notes": ""
 	}
 }

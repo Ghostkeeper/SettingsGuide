@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Compensate Outer Wall Overlaps"
-	},
-	"data" :
-	{
-		"description" : "This is a child setting of the 'Compensate wall overlaps' setting. Only the outer walls are affected when changing this setting.",
-		"img_description" : "The model on the left has compensate outer walls overlaps disabled, the right model has the setting enabled.",
-		"hints" : "- With this option enabled, the outer walls in printed models will be compensated when necessary to prevent over-extrusion.",
-		"notes" : ""
+		"description": "This is a child setting of the 'Compensate wall overlaps' setting. Only the outer walls are affected when changing this setting.",
+		"img_description": "The model on the left has compensate outer walls overlaps disabled, the right model has the setting enabled.",
+		"hints": "- With this option enabled, the outer walls in printed models will be compensated when necessary to prevent over-extrusion.",
+		"notes": ""
 	}
 }

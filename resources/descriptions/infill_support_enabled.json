@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Infill Support"
-	},
-	"data" :
-	{
-		"description" : " When enabled, infill will be generated only where it is needed, using a specialized support generation algorithm for the internal support structures of a part.",
-		"img_description" : "The image on the left has a regular infill structure, the right one has support infill enabled.",
-		"hints" : "- This setting reduces infill to only the essential parts. This reduces print time and the strength of the model",
-		"notes" : ""
+		"description": " When enabled, infill will be generated only where it is needed, using a specialized support generation algorithm for the internal support structures of a part.",
+		"img_description": "The image on the left has a regular infill structure, the right one has support infill enabled.",
+		"hints": "- This setting reduces infill to only the essential parts. This reduces print time and the strength of the model",
+		"notes": ""
 	}
 }

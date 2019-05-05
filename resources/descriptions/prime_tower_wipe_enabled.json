@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Wipe Inactive Nozzle on Prime Tower"
-	},
-	"data" :
-	{
-		"description" : "After printing the prime tower with the active nozzle, the inactive nozzle wipes itself off on the tower. This cleans the nozzle to reduce the chance of oozing on the printed model.",
-		"img_description" : "",
-		"hints" : "",
-		"notes" : ""
+		"description": "After printing the prime tower with the active nozzle, the inactive nozzle wipes itself off on the tower. This cleans the nozzle to reduce the chance of oozing on the printed model.",
+		"img_description": "",
+		"hints": "",
+		"notes": ""
 	}
 }

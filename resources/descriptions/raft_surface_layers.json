@@ -1,18 +1,17 @@
 {
-	"general" :
+	"general":
 	{
-		"name" : "Raft Top Layers",
-		"images" :
+		"images":
 		{
-			"1" : "raft_margin_img1.png",
-			"2" : "raft_margin_img2.png"
+			"1": "raft_margin_img1.png",
+			"2": "raft_margin_img2.png"
 		}
 	},
-	"data" :
+	"data":
 	{
-		"description" : "The number of top layers on top of the 2nd raft layer. These are fully filled layers that the model sits on. 2 layers result in a smoother top surface than 1.",
-		"img_description" : "A visualization of the raft settings in Cura.",
-		"hints" : "",
-		"notes" : ""
+		"description": "The number of top layers on top of the 2nd raft layer. These are fully filled layers that the model sits on. 2 layers result in a smoother top surface than 1.",
+		"img_description": "A visualization of the raft settings in Cura.",
+		"hints": "",
+		"notes": ""
 	}
 }

@@ -1,13 +1,9 @@
 {
-	"general" :
-	{
-		"name" : "Bottom Pattern Initial Layer"
-	},
-	"data" :
+	"data":
 	{
 		"description": "This refers to the pattern of the layer that is printed directly onto the build plate. It can be changed separately. Use this feature to get models with specific bottom visuals.",
-		"img_description" : "This animation shows the initial layer has a concentric pattern, while the remaining layers have a lines pattern.",
-		"hints" : "- This setting only affects the layer that is printed directly on the build plate.",
-		"notes" : ""
+		"img_description": "This animation shows the initial layer has a concentric pattern, while the remaining layers have a lines pattern.",
+		"hints": "- This setting only affects the layer that is printed directly on the build plate.",
+		"notes": ""
 	}
 }

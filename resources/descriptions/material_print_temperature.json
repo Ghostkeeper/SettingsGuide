@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Printing Temperature"
-	},
-	"data" :
-	{
-		"description" : "This refers to the temperature of the nozzle while printing, including the adapted extrusion rate. Each printing profile has a slightly different printing temperature to create the best print result.",
-		"img_description" : "",
-		"hints" : "- In general, the temperature slightly increases when the extrusion rate rises and decreases when the extrusion rate lowers.",
-		"notes" : ""
+		"description": "This refers to the temperature of the nozzle while printing, including the adapted extrusion rate. Each printing profile has a slightly different printing temperature to create the best print result.",
+		"img_description": "",
+		"hints": "- In general, the temperature slightly increases when the extrusion rate rises and decreases when the extrusion rate lowers.",
+		"notes": ""
 	}
 }

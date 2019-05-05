@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Extensive Stitching"
-	},
-	"data" :
-	{
-		"description" : "When polygons are missing in the shell of the model, Ultimaker Cura won’t be able to slice the model correctly. In this instance, you will see faults in the shell and/or infill in the layers view. By enabling “Extensive stitching” holes in the shell will be closed so that it can be sliced as expected.",
-		"img_description" : "",
-		"hints" : "",
-		"notes" : ""
+		"description": "When polygons are missing in the shell of the model, Ultimaker Cura won’t be able to slice the model correctly. In this instance, you will see faults in the shell and/or infill in the layers view. By enabling “Extensive stitching” holes in the shell will be closed so that it can be sliced as expected.",
+		"img_description": "",
+		"hints": "",
+		"notes": ""
 	}
 }

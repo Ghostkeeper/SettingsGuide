@@ -1,13 +1,9 @@
 {
-	"general" :
-	{
-		"name" : "Top/Bottom Line Directions"
-	},
-	"data" :
+	"data":
 	{
 		"description": "This setting allows you to change the direction in which the top and bottom skin lines are printed. Normally, they print in a diagonal direction. This is the fastest and uses both the X- and Y-motors. Changing the direction can have a visual effect.",
-		"img_description" : "This animation shows the lines pattern with a 0, 120 and 240 degree direction alternating [0,120,240].",
-		"hints" : "- Multiple numbers can be entered to change the line direction for each layer. For example: [90,0] this creates a horizontal-vertical direction.",
-		"notes" : ""
+		"img_description": "This animation shows the lines pattern with a 0, 120 and 240 degree direction alternating [0,120,240].",
+		"hints": "- Multiple numbers can be entered to change the line direction for each layer. For example: [90,0] this creates a horizontal-vertical direction.",
+		"notes": ""
 	}
 }

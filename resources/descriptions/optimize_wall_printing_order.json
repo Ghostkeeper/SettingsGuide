@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Optimize Wall Printing Order"
-	},
-	"data" :
-	{
-		"description" : "This setting optimizes the order in which walls are printed to reduce the number of retractions and the distance travelled. Most parts will benefit from this being enabled but some may actually take longer so please compare the print time estimates with and without optimization. ",
-		"img_description" : "These animations show the difference with on the left optimisation enabled and right disabled. The left animation prints all connected inner walls first, the right one prints the inner walls one by one.",
-		"hints" : "- The initial layer is not optimized when choosing brim as build plate adhesion type.",
-		"notes" : ""
+		"description": "This setting optimizes the order in which walls are printed to reduce the number of retractions and the distance travelled. Most parts will benefit from this being enabled but some may actually take longer so please compare the print time estimates with and without optimization. ",
+		"img_description": "These animations show the difference with on the left optimisation enabled and right disabled. The left animation prints all connected inner walls first, the right one prints the inner walls one by one.",
+		"hints": "- The initial layer is not optimized when choosing brim as build plate adhesion type.",
+		"notes": ""
 	}
 }

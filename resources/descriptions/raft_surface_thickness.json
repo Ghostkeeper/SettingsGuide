@@ -1,18 +1,17 @@
 {
-	"general" :
+	"general":
 	{
-		"name" : "Raft Top Layer Thickness",
-		"images" :
+		"images":
 		{
-			"1" : "raft_margin_img1.png",
-			"2" : "raft_margin_img2.png"
+			"1": "raft_margin_img1.png",
+			"2": "raft_margin_img2.png"
 		}
 	},
-	"data" :
+	"data":
 	{
-		"description" : "Layer thickness of the top raft layers.",
-		"img_description" : "A visualization of the raft settings in Cura.",
-		"hints" : "",
-		"notes" : ""
+		"description": "Layer thickness of the top raft layers.",
+		"img_description": "A visualization of the raft settings in Cura.",
+		"hints": "",
+		"notes": ""
 	}
 }

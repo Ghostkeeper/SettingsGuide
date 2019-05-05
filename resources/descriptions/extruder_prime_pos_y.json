@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Extruder Prime Y Position"
-	},
-	"data" :
-	{
-		"description" : "The Y coordinate of the position where the nozzle primes at the start of printing.",
-		"img_description" : "",
-		"hints" : "",
-		"notes" : ""
+		"description": "The Y coordinate of the position where the nozzle primes at the start of printing.",
+		"img_description": "",
+		"hints": "",
+		"notes": ""
 	}
 }

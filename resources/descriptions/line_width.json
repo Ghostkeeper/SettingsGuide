@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name": "Line Width"
-	},
-	"data" :
-	{
-		"description" : "Line width defines the width of a single printed line, which should be close to the nozzle size. Based on the line width, the extrusion rate is adjusted, which means that it will automatically calculate how much material must be extruded.",
-		"img_description" : "The exact same model with line widths of 0.25, 0.4 and 0.8 nozzles.",
-		"hints" : "- Increasing the line width too much might lead to under extrusion or holes in the print surface.\n- Decreasing the line width too much might lead to oozing.",
-		"notes" : "Note: Ensure to always keep the line width close to the nozzle's diameter, maximum + or - 25% is advised."
+		"description": "Line width defines the width of a single printed line, which should be close to the nozzle size. Based on the line width, the extrusion rate is adjusted, which means that it will automatically calculate how much material must be extruded.",
+		"img_description": "The exact same model with line widths of 0.25, 0.4 and 0.8 nozzles.",
+		"hints": "- Increasing the line width too much might lead to under extrusion or holes in the print surface.\n- Decreasing the line width too much might lead to oozing.",
+		"notes": "Note: Ensure to always keep the line width close to the nozzle's diameter, maximum + or - 25% is advised."
 	}
 }

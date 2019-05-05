@@ -1,12 +1,8 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Support Overhang Angle"
-	},
-	"data" :
-	{
-		"description" : "The overhang angle influences how much support material is added. A smaller angle leads to more support. For example, at a value of 0° all overhangs are supported, while at 90° no support material is added.",
-		"img_description" : "The model on the left is shown in the solid mode. The red areas indicate the overhang area that needs support. The model in the middle has an overhang angle of 70°, while the model on the right has an overhang angle of 45°.",
-		"hints" : ""
+		"description": "The overhang angle influences how much support material is added. A smaller angle leads to more support. For example, at a value of 0° all overhangs are supported, while at 90° no support material is added.",
+		"img_description": "The model on the left is shown in the solid mode. The red areas indicate the overhang area that needs support. The model in the middle has an overhang angle of 70°, while the model on the right has an overhang angle of 45°.",
+		"hints": ""
 	}
 }

@@ -1,12 +1,8 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Enable Prime Blob"
-	},
-	"data" :
-	{
-		"description" : "This setting is for dual extrusion machines only. The printer normally starts with a blob of material, to prime the nozzle. Disable this setting to use the skirt or brim to prime the nozzle instead.",
-		"img_description" : "",
-		"hints" : ""
+		"description": "This setting is for dual extrusion machines only. The printer normally starts with a blob of material, to prime the nozzle. Disable this setting to use the skirt or brim to prime the nozzle instead.",
+		"img_description": "",
+		"hints": ""
 	}
 }

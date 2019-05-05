@@ -1,16 +1,15 @@
 {
-	"general" :
+	"general":
 	{
-		"name" : "Bottom Layers",
-		"images" :
+		"images":
 		{
-			"1" : "bottom_thickness_img1.png"
+			"1": "bottom_thickness_img1.png"
 		}
 	},
-	"data" :
+	"data":
 	{
-		"description" : "The number of bottom layers in the print. When calculated by the bottom thickness, this value is rounded to a whole number.",
-		"img_description" : "This image shows all parts affected by the bottom layers setting.",
-		"hints" : "- Instead of setting a height in millimeters for the bottom layers, you can set a specific number of layers. The resulting height in millimeter will be calculated automatically depending on the layer height set.\n- Example: Number of bottom layers 12 * 0.1mm layer height = 1.2mm bottom layer thickness."
+		"description": "The number of bottom layers in the print. When calculated by the bottom thickness, this value is rounded to a whole number.",
+		"img_description": "This image shows all parts affected by the bottom layers setting.",
+		"hints": "- Instead of setting a height in millimeters for the bottom layers, you can set a specific number of layers. The resulting height in millimeter will be calculated automatically depending on the layer height set.\n- Example: Number of bottom layers 12 * 0.1mm layer height = 1.2mm bottom layer thickness."
 	}
 }

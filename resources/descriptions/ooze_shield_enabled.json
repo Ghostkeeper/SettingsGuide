@@ -1,16 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Enable Ooze Shield"
-	},
-	"data" :
-	{
-		"description" : "The ooze shield is a separately printed one-layer wide wall, which catches ooze from incoming nozzles before each layer is printed.",
-		"img_description" : "This image shows a model which is printed with the ooze shield enabled. The ooze shield needs to be removed after the print finishes, revealing the underlying model",
-		"hints" : "",
-		"notes" : ""
+		"description": "The ooze shield is a separately printed one-layer wide wall, which catches ooze from incoming nozzles before each layer is printed.",
+		"img_description": "This image shows a model which is printed with the ooze shield enabled. The ooze shield needs to be removed after the print finishes, revealing the underlying model",
+		"hints": "",
+		"notes": ""
 	}
 }
-
-
-

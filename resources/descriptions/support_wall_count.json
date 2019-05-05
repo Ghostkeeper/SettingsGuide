@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Support Wall Line Count"
-	},
-	"data" :
-	{
-		"description" : "The number of walls with which to surround support infill. Adding a wall can make support print more reliably and can support overhangs better, but increases print time and material used.",
-		"img_description" : "The model on the left has 0 Support Wall Line Count. The model on the right has 4 Support Wall Line Count.",
-		"hints" : "",
-		"notes" : ""
+		"description": "The number of walls with which to surround support infill. Adding a wall can make support print more reliably and can support overhangs better, but increases print time and material used.",
+		"img_description": "The model on the left has 0 Support Wall Line Count. The model on the right has 4 Support Wall Line Count.",
+		"hints": "",
+		"notes": ""
 	}
 }

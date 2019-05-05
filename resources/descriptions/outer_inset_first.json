@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Outer Before Inner Walls"
-	},
-	"data" :
-	{
-		"description" : "This setting determines which walls are printed first, the outer or the inner walls.",
-		"img_description" : "This image shows the walls affected when changing this setting.",
-		"hints" : "- When enabled, the outer walls are printed first and X-Y dimensions are more exact.\n- When enabled, the overhang quality is slightly decreased.",
-		"notes" : ""
+		"description": "This setting determines which walls are printed first, the outer or the inner walls.",
+		"img_description": "This image shows the walls affected when changing this setting.",
+		"hints": "- When enabled, the outer walls are printed first and X-Y dimensions are more exact.\n- When enabled, the overhang quality is slightly decreased.",
+		"notes": ""
 	}
 }

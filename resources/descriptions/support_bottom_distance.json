@@ -1,17 +1,16 @@
 {
-	"general" :
+	"general":
 	{
-		"name" : "Support Bottom Distance",
-		"images" :
+		"images":
 		{
-			"1" : "support_top_distance_img1.png"
+			"1": "support_top_distance_img1.png"
 		}
 	},
-	"data" :
+	"data":
 	{
-		"description" : "This setting defines the distance between the bottom of the support and top parts of the model.",
-		"img_description" : "This image illustrates the settings of the top/bottom support.",
-		"hints" : "",
-		"notes" : ""
+		"description": "This setting defines the distance between the bottom of the support and top parts of the model.",
+		"img_description": "This image illustrates the settings of the top/bottom support.",
+		"hints": "",
+		"notes": ""
 	}
 }

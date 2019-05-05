@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Combing Mode"
-	},
-	"data" :
-	{
-		"description" : "Combing will reduce the chance of defects on outer surfaces of the print by recalculating all nozzle travel moves to stay within the perimeter of the print. This results in greater travel distances, but with a reduced need for material retraction.",
-		"img_description" : "Combing enabled (left) has unretracted travel moves within the print’s boundaries. Combing disabled (right) has retracted travel moves which move outside the print’s boundaries.",
-		"hints" : "- If combing is disabled, the material will retract and the print head will move in a straight line to the next point.",
-		"notes" : ""
+		"description": "Combing will reduce the chance of defects on outer surfaces of the print by recalculating all nozzle travel moves to stay within the perimeter of the print. This results in greater travel distances, but with a reduced need for material retraction.",
+		"img_description": "Combing enabled (left) has unretracted travel moves within the print’s boundaries. Combing disabled (right) has retracted travel moves which move outside the print’s boundaries.",
+		"hints": "- If combing is disabled, the material will retract and the print head will move in a straight line to the next point.",
+		"notes": ""
 	}
 }

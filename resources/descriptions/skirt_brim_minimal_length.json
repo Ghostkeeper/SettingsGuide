@@ -1,17 +1,16 @@
 {
-	"general" :
+	"general":
 	{
-		"name" : "Skirt/Brim Minimum Length",
-		"images" :
+		"images":
 		{
-			"1" : "skirt_line_count_img1.png"
+			"1": "skirt_line_count_img1.png"
 		}
 	},
-	"data" :
+	"data":
 	{
-		"description" : "The total length of the skirt/brim.",
-		"img_description" : "This image shows a skirt adhesion type.",
-		"hints" : "The minimum length of the skirt or brim. If this length is not reached by all skirt or brim lines together, more skirt or brim lines will be added until the minimum length is reached. Note: If the line count is set to 0 this is ignored.",
-		"notes" : ""
+		"description": "The total length of the skirt/brim.",
+		"img_description": "This image shows a skirt adhesion type.",
+		"hints": "The minimum length of the skirt or brim. If this length is not reached by all skirt or brim lines together, more skirt or brim lines will be added until the minimum length is reached. Note: If the line count is set to 0 this is ignored.",
+		"notes": ""
 	}
 }

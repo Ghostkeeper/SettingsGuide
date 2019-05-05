@@ -32,6 +32,8 @@ Window {
 		name: "cura"
 	}
 
+	property alias selectedSettingId: settingsSidebar.selectedSettingId
+
 	//Display icon in the middle of the window
 	Item {
 		id: icon_item
@@ -139,7 +141,10 @@ Window {
 		var data = manager.selectedSettingData;
 		var template = "";
 
-		var setting_template =  data["details"] != undefined ? data["details"]["general"]["template"] : undefined;
+		var setting_template = undefined;
+		if(data["details"] != undefined && data["details"]["general"] != undefined) {
+			var setting_template = data["details"]["general"]["template"];
+		}
 
 		var isCreatedBy = false
 		if (settingsSidebar.selectedSettingId != "" && settingsSidebar.selectedSettingId.toLowerCase() == "createdby") {

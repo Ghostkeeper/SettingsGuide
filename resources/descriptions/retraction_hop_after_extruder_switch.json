@@ -1,12 +1,8 @@
 {
-	"general" :
-	{
-		"name" : "Z Hop After Extruder Switch"
-	},
-	"data" :
+	"data":
 	{
 		"description": "This feature will trigger a Z-hop when the nozzle moves to the switch bay, reducing the chance that oozed material will come in to contact with the printed model.",
-		"img_description" : "",
-		"hints" : ""
+		"img_description": "",
+		"hints": ""
 	}
 }

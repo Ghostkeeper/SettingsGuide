@@ -1,16 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Iron Only Highest Layer"
-	},
-	"data" :
-	{
-		"description" : "This setting will apply ironing only to the very last printed layer of the complete printing process.",
-		"img_description" : "This image shows that ironing is only applied to the highest layer in the model.",
-		"hints" : "- This setting is useful when you want to prevent ironing to happen on every single layer it applies to.",
-		"notes" : ""
+		"description": "This setting will apply ironing only to the very last printed layer of the complete printing process.",
+		"img_description": "This image shows that ironing is only applied to the highest layer in the model.",
+		"hints": "- This setting is useful when you want to prevent ironing to happen on every single layer it applies to.",
+		"notes": ""
 	}
 }
-
-
-

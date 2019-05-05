@@ -1,12 +1,8 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Enable Jerk Control"
-	},
-	"data" :
-	{
-		"description" : "Jerk defines the speed of the print head before performing a hard stop. The jerk settings reduce the speeds set in the firmware, making the print a little slower, but more accurate. Disable the setting to get the maximum jerk.",
-		"img_description" : "",
-		"hints" : ""
+		"description": "Jerk defines the speed of the print head before performing a hard stop. The jerk settings reduce the speeds set in the firmware, making the print a little slower, but more accurate. Disable the setting to get the maximum jerk.",
+		"img_description": "",
+		"hints": ""
 	}
 }

@@ -1,12 +1,8 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Inner Wall Extruder"
-	},
-	"data" :
-	{
-		"description" : "The extruder train used for printing the inner walls. This is used by multi-extrusion machines.",
-		"img_description" : "This model is printed with a white material and the inner wall extruder set to print the second extruder, which contained black material.",
-		"hints" : "- Printing the inner wall in a different color leaves a subtle imprint in the printed model."
+		"description": "The extruder train used for printing the inner walls. This is used by multi-extrusion machines.",
+		"img_description": "This model is printed with a white material and the inner wall extruder set to print the second extruder, which contained black material.",
+		"hints": "- Printing the inner wall in a different color leaves a subtle imprint in the printed model."
 	}
 }

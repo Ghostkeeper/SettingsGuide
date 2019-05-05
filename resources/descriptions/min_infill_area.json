@@ -1,11 +1,7 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Minimum Infill Area"
-	},
-	"data" :
-	{
-		"description" : "This setting allows small areas on a single layer to be printed with skin (solid) instead of infill.",
-		"img_description" : "The left image represents the solid model, the center image does not have a minimum infill area set, the right image has a minimum infill area set that is bigger than the surface of the 'feet' of the model."
+		"description": "This setting allows small areas on a single layer to be printed with skin (solid) instead of infill.",
+		"img_description": "The left image represents the solid model, the center image does not have a minimum infill area set, the right image has a minimum infill area set that is bigger than the surface of the 'feet' of the model."
 	}
 }

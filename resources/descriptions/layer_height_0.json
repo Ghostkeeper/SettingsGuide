@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Initial Layer height"
-	},
-	"data" :
-	{
-		"description" : "This setting defines the height of the first layer of your print. The initial layer height is usually thicker than the layer height to create a stronger adhesion with the build plate.",
-		"img_description" : "The image on the left has a thinner initial layer than the image on the right.",
-		"hints" : "- When the model has a lot of detail on the first layer, it might have a decreased quality because of the thicker layer. This limitation can be compensated for with the 'initial layer horizontal expansion' setting, which is found under the Shell category.\n- The initial layer line width and print speed also affect the adhesion to the build plate.",
-		"notes" : "Note: Automatic bed leveling works best with the initial layer height of the default profiles, be careful when adjusting it."
+		"description": "This setting defines the height of the first layer of your print. The initial layer height is usually thicker than the layer height to create a stronger adhesion with the build plate.",
+		"img_description": "The image on the left has a thinner initial layer than the image on the right.",
+		"hints": "- When the model has a lot of detail on the first layer, it might have a decreased quality because of the thicker layer. This limitation can be compensated for with the 'initial layer horizontal expansion' setting, which is found under the Shell category.\n- The initial layer line width and print speed also affect the adhesion to the build plate.",
+		"notes": "Note: Automatic bed leveling works best with the initial layer height of the default profiles, be careful when adjusting it."
 	}
 }

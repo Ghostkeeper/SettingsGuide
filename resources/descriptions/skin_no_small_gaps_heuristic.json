@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Ignore Small Z Gaps"
-	},
-	"data" :
-	{
-		"description" : "Small gaps (10-20 micron) between the layers in the Z-direction of a model can be 'fixed' by using this setting. Disabling it will ensure the layers will fuse together by printing infill between the bottom and top of the gap.",
-		"img_description" : "",
-		"hints" : "- If you disable this setting, it won't fill the gap and will simply print the bottom and top as they appear in the model.\n- This setting is disabled by default because the chance is extremely small this occurs, but the slice time is quite long.",
-		"notes" : "The chance of these kind of gaps is extremely small (<0.1%), only disable the setting if you feel this could solve issues similar to the description."
+		"description": "Small gaps (10-20 micron) between the layers in the Z-direction of a model can be 'fixed' by using this setting. Disabling it will ensure the layers will fuse together by printing infill between the bottom and top of the gap.",
+		"img_description": "",
+		"hints": "- If you disable this setting, it won't fill the gap and will simply print the bottom and top as they appear in the model.\n- This setting is disabled by default because the chance is extremely small this occurs, but the slice time is quite long.",
+		"notes": "The chance of these kind of gaps is extremely small (<0.1%), only disable the setting if you feel this could solve issues similar to the description."
 	}
 }

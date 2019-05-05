@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Gradual Infill Step Height"
-	},
-	"data" :
-	{
-		"description" : "Gradual infill step height is the height at which the infill should be reduced, as calculated from the top layers. This way the top layers can easily be closed, without the use of extra infill in the print.",	
-		"img_description" : "The left image has a gradual infill step height of 2mm, the right one of 6mm.",
-		"hints" : "- Reduce the gradual infill step height to reduce the amount of infill the most.\n- Ensure to check the layer view and estimate whether the top layers will close or not.",
-		"notes" : ""
+		"description": "Gradual infill step height is the height at which the infill should be reduced, as calculated from the top layers. This way the top layers can easily be closed, without the use of extra infill in the print.",
+		"img_description": "The left image has a gradual infill step height of 2mm, the right one of 6mm.",
+		"hints": "- Reduce the gradual infill step height to reduce the amount of infill the most.\n- Ensure to check the layer view and estimate whether the top layers will close or not.",
+		"notes": ""
 	}
 }

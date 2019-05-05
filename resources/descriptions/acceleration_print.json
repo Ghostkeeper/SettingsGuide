@@ -1,17 +1,16 @@
 {
-	"general" :
+	"general":
 	{
-		"name" : "Print Acceleration",
-		"images" :
+		"images":
 		{
-			"1" : "acceleration_enabled_img1.png"
+			"1": "acceleration_enabled_img1.png"
 		}
 	},
-	"data" :
+	"data":
 	{
-		"description" : "The acceleration with which printing happens.",
-		"img_description" : "This is a theoretical image that shows the difference between speed, acceleration and jerk.",
-		"hints" : "",
-		"notes" : ""
+		"description": "The acceleration with which printing happens.",
+		"img_description": "This is a theoretical image that shows the difference between speed, acceleration and jerk.",
+		"hints": "",
+		"notes": ""
 	}
 }

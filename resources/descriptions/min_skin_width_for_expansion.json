@@ -1,18 +1,17 @@
 {
-	"general" :
+	"general":
 	{
-		"name" : "Minimum Skin Width for Expansion",
-		"images" :
+		"images":
 		{
-			"1" : "max_skin_angle_for_expansion_img1.png",
-			"2" : "max_skin_angle_for_expansion_img2.png"
+			"1": "max_skin_angle_for_expansion_img1.png",
+			"2": "max_skin_angle_for_expansion_img2.png"
 		}
 	},
-	"data" :
+	"data":
 	{
 		"description": "This parameter prevents small skin (top and bottom) areas from expanding. It is specifically used when targeting only the strength of large, flat surfaces of the model.",
-		"img_description" : "The image on the left has a maximum skin width for expansion of 0mm, it is allowed to expand anywhere but on vertical pieces. The image on the right has a width of 2.75mm, all overhang and inverted overhang beyond this width do not expand.",
-		"hints" : "- This setting is calculated as the minimum distance between two walls, meaning thin but long areas might also be affected.",
-		"notes" : ""
+		"img_description": "The image on the left has a maximum skin width for expansion of 0mm, it is allowed to expand anywhere but on vertical pieces. The image on the right has a width of 2.75mm, all overhang and inverted overhang beyond this width do not expand.",
+		"hints": "- This setting is calculated as the minimum distance between two walls, meaning thin but long areas might also be affected.",
+		"notes": ""
 	}
 }

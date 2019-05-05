@@ -1,13 +1,9 @@
 {
-	"general" :
-	{
-		"name" : "Skin Removal Width"
-	},
-	"data" :
+	"data":
 	{
 		"description": "The skin (top and bottom layers) in a model is printed to reach the minimum thickness set in the print profile. However, some models need a lighter internal geometry. This setting removes the skin horizontally slightly, where infill would normally be printed.",
-		"img_description" : "The right image shows the solid model, the center image without skin removal, the right image with skin removal enabled.",
-		"hints" : "- Removing skin in unnecessary places, reduces print time slightly.",
-		"notes" : ""
+		"img_description": "The right image shows the solid model, the center image without skin removal, the right image with skin removal enabled.",
+		"hints": "- Removing skin in unnecessary places, reduces print time slightly.",
+		"notes": ""
 	}
 }

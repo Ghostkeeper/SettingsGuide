@@ -1,13 +1,9 @@
 {
-	"general" :
-	{
-		"name" : "Maximum Skin Angle for Expansion"
-	},
-	"data" :
+	"data":
 	{
 		"description": "Since skin is present throughout the model, it is unnecessary to expand all of the areas. Rather, only the areas below the angle specified here will be expanded. In that way, flat surfaces with protruding elements will be strengthened, without affecting the rest of the model. ",
-		"img_description" : "The image on the left has a maximum skin angle for expansion of 90°, it is allowed to expand anywhere but on vertical pieces. The image on the right has an angle of 20°, all overhang and inverted overhang beyond this angle do not expand.",
-		"hints" : "- For this setting, 0° is horizontal (and does not expand anything), while 90° is vertical, and expands all skin areas.",
-		"notes" : ""
+		"img_description": "The image on the left has a maximum skin angle for expansion of 90°, it is allowed to expand anywhere but on vertical pieces. The image on the right has an angle of 20°, all overhang and inverted overhang beyond this angle do not expand.",
+		"hints": "- For this setting, 0° is horizontal (and does not expand anything), while 90° is vertical, and expands all skin areas.",
+		"notes": ""
 	}
 }

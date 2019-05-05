@@ -120,7 +120,7 @@ class CuraSettingsGuide(Extension, QObject):
 			try:
 				with open(file_path, "r", encoding = "utf-8") as f:
 					json_data = json.load(f)
-					general = json_data["general"]
+					general = json_data.get("general", {})
 
 				file_id = file_base_name
 				

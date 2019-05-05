@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Z Hop Only Over Printed Parts"
-	},
-	"data" :
-	{
-		"description" : "The 'Travel' category includes the option 'Avoid printed parts'. When this is enabled, the nozzle will avoid these parts when possible in order to reduce scratching the model’s surface. When there is no way to avoid the part, the printer will perform a Z-hop when traveling over the part.",
-		"img_description" : "",
-		"hints" : "",
-		"notes" : ""
+		"description": "The 'Travel' category includes the option 'Avoid printed parts'. When this is enabled, the nozzle will avoid these parts when possible in order to reduce scratching the model’s surface. When there is no way to avoid the part, the printer will perform a Z-hop when traveling over the part.",
+		"img_description": "",
+		"hints": "",
+		"notes": ""
 	}
 }

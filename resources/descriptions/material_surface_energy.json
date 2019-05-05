@@ -1,12 +1,8 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Surface Energy"
-	},
-	"data" :
-	{
-		"description" : "Surface Energy.",
-		"img_description" : "",
-		"hints" : ""
+		"description": "Surface Energy.",
+		"img_description": "",
+		"hints": ""
 	}
 }

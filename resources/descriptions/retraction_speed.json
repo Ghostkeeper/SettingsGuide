@@ -1,12 +1,8 @@
 {
-	"general" :
-	{
-		"name" : "Retraction Speed"
-	},
-	"data" :
+	"data":
 	{
 		"description": "This setting changes to the speed in millimeters per second, at which the material is retracted and primed. ",
-		"img_description" : "",
-		"hints" : "- A high-speed retraction minimizes oozing, but can cause material grinding.\n- A low-speed retraction has an increased chance of oozing, but will protect the material."
+		"img_description": "",
+		"hints": "- A high-speed retraction minimizes oozing, but can cause material grinding.\n- A low-speed retraction has an increased chance of oozing, but will protect the material."
 	}
 }

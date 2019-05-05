@@ -1,16 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Keep Disconnected Faces"
-	},
-	"data" :
-	{
-		"description" : "Models that contain holes on corners are ignored by Ultimaker Cura. It’s impossible to know how the missing geometry should look. With this option enabled, Ultimaker Cura connects all neighbouring geometry to close the model.",
-		"img_description" : "This model is missing geometry that connects to multiple neighbouring polygons. Without knowing this should be a cube, Ultimaker Cura cannot connect the faces, and therefore produces nothing. From left to right: solid model, x-ray view, and “Keep disconnected faces” enabled.",
-		"hints" : "",
-		"notes" : ""
+		"description": "Models that contain holes on corners are ignored by Ultimaker Cura. It’s impossible to know how the missing geometry should look. With this option enabled, Ultimaker Cura connects all neighbouring geometry to close the model.",
+		"img_description": "This model is missing geometry that connects to multiple neighbouring polygons. Without knowing this should be a cube, Ultimaker Cura cannot connect the faces, and therefore produces nothing. From left to right: solid model, x-ray view, and “Keep disconnected faces” enabled.",
+		"hints": "",
+		"notes": ""
 	}
 }
-
-
-

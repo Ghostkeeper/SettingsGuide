@@ -1,12 +1,8 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Adhesion Tendency"
-	},
-	"data" :
-	{
-		"description" : "Surface adhesion tendency.",
-		"img_description" : "",
-		"hints" : ""
+		"description": "Surface adhesion tendency.",
+		"img_description": "",
+		"hints": ""
 	}
 }

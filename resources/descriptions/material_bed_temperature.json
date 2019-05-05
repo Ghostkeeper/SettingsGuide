@@ -1,12 +1,8 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Build Plate Temperature"
-	},
-	"data" :
-	{
-		"description" : "The temperature used for the heated build plate. If this is 0°, the bed temperature will not be adjusted.",
-		"img_description" : "",
-		"hints" : "- This setting inerhits the value of 'Default build plate temperature'."
+		"description": "The temperature used for the heated build plate. If this is 0°, the bed temperature will not be adjusted.",
+		"img_description": "",
+		"hints": "- This setting inerhits the value of 'Default build plate temperature'."
 	}
 }

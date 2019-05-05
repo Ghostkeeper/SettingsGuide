@@ -1,16 +1,15 @@
 {
-	"general" :
+	"general":
 	{
-		"name" : "Prime Tower X Position",
-		"images" :
+		"images":
 		{
-			"1" : "prime_tower_enable_img1.png"
+			"1": "prime_tower_enable_img1.png"
 		}
 	},
-	"data" :
+	"data":
 	{
-		"description" : "The x coordinate of the position of the prime tower.",
-		"img_description" : "This image shows a rectangle shape of prime tower",
-		"hints" : ""
+		"description": "The x coordinate of the position of the prime tower.",
+		"img_description": "This image shows a rectangle shape of prime tower",
+		"hints": ""
 	}
 }

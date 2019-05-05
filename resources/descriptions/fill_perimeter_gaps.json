@@ -1,14 +1,10 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Fill Gaps Between Walls"
-	},
-	"data" :
-	{
-		"description" : "For fine details, the printer might need to print areas that are thinner than the nozzle size. This can happen between the outer and inner walls where the model ends in sharp corners. This option allows these gaps to be filled after printing both walls. The illustration shows a droplet which has to be printed.",
-		"img_description" : "The model on the left has fill gaps disabled, the right model has the setting enabled.",
-		"hints" : "- Note: See how the fill gaps option influences the travel moves. The printer has to come back to the gap at later times to fill it.",
-		"notes" : ""
+		"description": "For fine details, the printer might need to print areas that are thinner than the nozzle size. This can happen between the outer and inner walls where the model ends in sharp corners. This option allows these gaps to be filled after printing both walls. The illustration shows a droplet which has to be printed.",
+		"img_description": "The model on the left has fill gaps disabled, the right model has the setting enabled.",
+		"hints": "- Note: See how the fill gaps option influences the travel moves. The printer has to come back to the gap at later times to fill it.",
+		"notes": ""
 	}
 }
 

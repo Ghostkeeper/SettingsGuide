@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Initial Printing Temperature"
-	},
-	"data" :
-	{
-		"description" : "This setting is only used in dual extrusion machines. When switching nozzles, the inactive nozzle cools down to the standby temperature. During the warm up, the nozzle is allowed to start printing when this temperature is reached.",
-		"img_description" : "",
-		"hints" : "- The temperature is slightly lower than the printing temperature since the filament already obtained heat from the nozzle for a longer period of time.",
-		"notes" : ""
+		"description": "This setting is only used in dual extrusion machines. When switching nozzles, the inactive nozzle cools down to the standby temperature. During the warm up, the nozzle is allowed to start printing when this temperature is reached.",
+		"img_description": "",
+		"hints": "- The temperature is slightly lower than the printing temperature since the filament already obtained heat from the nozzle for a longer period of time.",
+		"notes": ""
 	}
 }

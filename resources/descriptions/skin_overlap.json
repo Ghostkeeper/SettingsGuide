@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Skin Overlap Percentage"
-	},
-	"data" :
-	{
-		"description" : "With this setting you can control the amount of overlap between the skin and walls, which can be set as a percentage.",
-		"img_description" : "This model has the following skin overlap percentages to demonstrate the effect, from left to right; -20%, 0% and 20%.",
-		"hints" : "- A slight overlap between the skin and walls will ensure that all holes on the bottom and the top layers close.",
-		"notes" : ""
+		"description": "With this setting you can control the amount of overlap between the skin and walls, which can be set as a percentage.",
+		"img_description": "This model has the following skin overlap percentages to demonstrate the effect, from left to right; -20%, 0% and 20%.",
+		"hints": "- A slight overlap between the skin and walls will ensure that all holes on the bottom and the top layers close.",
+		"notes": ""
 	}
 }

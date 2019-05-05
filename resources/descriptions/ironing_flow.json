@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Ironing Flow"
-	},
-	"data" :
-	{
-		"description" : "While ironing, this percentage of material is extruded on top of the last layer.",
-		"img_description" : "This model has ironing applied to it, the flow of the ironing applied is increased to 20%.",
-		"hints" : "- There is always a little extrusion needed when ironing. This prevents oozing and ensures the tiny gaps on the top layers are filled.",
-		"notes" : "Note: Do not increase the ironing flow without increasing the 'ironing line spacing', as this will result in over-extrusion."
+		"description": "While ironing, this percentage of material is extruded on top of the last layer.",
+		"img_description": "This model has ironing applied to it, the flow of the ironing applied is increased to 20%.",
+		"hints": "- There is always a little extrusion needed when ironing. This prevents oozing and ensures the tiny gaps on the top layers are filled.",
+		"notes": "Note: Do not increase the ironing flow without increasing the 'ironing line spacing', as this will result in over-extrusion."
 	}
 }

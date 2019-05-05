@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Prime Tower Line Width"
-	},
-	"data" :
-	{
-		"description" : "The width of a single prime tower line.",
-		"img_description" : "This image shows the prime tower lines affected when changing this setting.",
-		"hints" : "- The prime tower line width can be set separately per extruder, this allows combinations of different sized print cores.\n- The prime tower line width has no significant effect on the prime tower strength. This can be set with the 'prime tower thickness'.",
-		"notes" : ""
+		"description": "The width of a single prime tower line.",
+		"img_description": "This image shows the prime tower lines affected when changing this setting.",
+		"hints": "- The prime tower line width can be set separately per extruder, this allows combinations of different sized print cores.\n- The prime tower line width has no significant effect on the prime tower strength. This can be set with the 'prime tower thickness'.",
+		"notes": ""
 	}
 }

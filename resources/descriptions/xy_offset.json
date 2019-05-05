@@ -1,12 +1,8 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Horizontal Expansion"
-	},
-	"data" :
-	{
-		"description" : "Horizontal expansion will be beneficial if the tolerance of the print is important. Due to a slight deformation of plastics, the actual dimensions of the print may not completely correspond with the dimensions of the digital model. By adjusting the horizontal expansion value you can compensate for this slight deviation. ",
-		"img_description" : "This model with a screwhole has been expanded -0.1mm, 0mm, +0.1mm.",
-		"hints" : "- A higher value will increase the X/Y size of the model, while a negative value decreases the X/Y size."
+		"description": "Horizontal expansion will be beneficial if the tolerance of the print is important. Due to a slight deformation of plastics, the actual dimensions of the print may not completely correspond with the dimensions of the digital model. By adjusting the horizontal expansion value you can compensate for this slight deviation. ",
+		"img_description": "This model with a screwhole has been expanded -0.1mm, 0mm, +0.1mm.",
+		"hints": "- A higher value will increase the X/Y size of the model, while a negative value decreases the X/Y size."
 	}
 }

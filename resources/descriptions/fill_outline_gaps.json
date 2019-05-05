@@ -1,16 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Print Thin Walls"
-	},
-	"data" :
-	{
-		"description" : "This setting allows walls to be printed that are thinner than the nozzle size. Since the nozzle cannot physically do this, the paths might still be over extruded if enabled, however, they will not be completely removed.",
-		"img_description" : "This image shows thin walls as text, correctly displayed with the setting enabled and completely removed with the setting disabled.",
-		"hints" : "- This setting is only valuable when the 3D model has fine details in the X and Y direction.",
-		"notes" : ""
+		"description": "This setting allows walls to be printed that are thinner than the nozzle size. Since the nozzle cannot physically do this, the paths might still be over extruded if enabled, however, they will not be completely removed.",
+		"img_description": "This image shows thin walls as text, correctly displayed with the setting enabled and completely removed with the setting disabled.",
+		"hints": "- This setting is only valuable when the 3D model has fine details in the X and Y direction.",
+		"notes": ""
 	}
 }
-
-
-

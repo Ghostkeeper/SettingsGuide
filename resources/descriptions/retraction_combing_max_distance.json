@@ -1,12 +1,8 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Max Comb Distance With No Retract"
-	},
-	"data" :
-	{
-		"description" : "When non-zero, combing travel moves that are longer than this distance will use retraction.",
-		"img_description" : "",
-		"hints" : ""
+		"description": "When non-zero, combing travel moves that are longer than this distance will use retraction.",
+		"img_description": "",
+		"hints": ""
 	}
 }

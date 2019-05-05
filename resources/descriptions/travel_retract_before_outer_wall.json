@@ -1,12 +1,8 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Retract Before Outer Wall"
-	},
-	"data" :
-	{
-		"description" : "Always retract when moving to start an outer wall.",
-		"img_description" : "",
-		"hints" : ""
+		"description": "Always retract when moving to start an outer wall.",
+		"img_description": "",
+		"hints": ""
 	}
 }

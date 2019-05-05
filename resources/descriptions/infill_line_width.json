@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Infill Line Width"
-	},
-	"data" :
-	{
-		"description" : "The width of a single printed infill line.",
-		"img_description" : "This image shows the infill of a single layer.",
-		"hints" : "- The line width of infill is printed slightly thicker to increase print speed.",
-		"notes" : ""
+		"description": "The width of a single printed infill line.",
+		"img_description": "This image shows the infill of a single layer.",
+		"hints": "- The line width of infill is printed slightly thicker to increase print speed.",
+		"notes": ""
 	}
 }

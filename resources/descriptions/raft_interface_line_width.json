@@ -1,18 +1,17 @@
 {
-	"general" :
+	"general":
 	{
-		"name" : "Raft Middle Line Width",
-		"images" :
+		"images":
 		{
-			"1" : "raft_margin_img1.png",
-			"2" : "raft_margin_img2.png"
+			"1": "raft_margin_img1.png",
+			"2": "raft_margin_img2.png"
 		}
 	},
-	"data" :
+	"data":
 	{
-		"description" : "Width of the lines in the middle raft layer. Making the second layer extrude more causes the lines to stick to the build plate.",
-		"img_description" : "A visualization of the raft settings in Cura.",
-		"hints" : "",
-		"notes" : ""
+		"description": "Width of the lines in the middle raft layer. Making the second layer extrude more causes the lines to stick to the build plate.",
+		"img_description": "A visualization of the raft settings in Cura.",
+		"hints": "",
+		"notes": ""
 	}
 }

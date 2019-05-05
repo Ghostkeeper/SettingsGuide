@@ -1,14 +1,10 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Union Overlapping Volumes"
-	},
-	"data" :
-	{
-		"description" : "If a model contains two volumes that interfere (as if they were placed through each other), this setting allows you to fix that. Union overlapping volumes will recognize these interferences and try to slice it as one volume.",
-		"img_description" : "These two cubes overlap and produce invalid geometry by default. From left to right: solid view, x-ray view, “Union overlapping volumes” disabled, and with “Union overlapping volumes” enabled",
-		"hints" : "",
-		"notes" : ""
+		"description": "If a model contains two volumes that interfere (as if they were placed through each other), this setting allows you to fix that. Union overlapping volumes will recognize these interferences and try to slice it as one volume.",
+		"img_description": "These two cubes overlap and produce invalid geometry by default. From left to right: solid view, x-ray view, “Union overlapping volumes” disabled, and with “Union overlapping volumes” enabled",
+		"hints": "",
+		"notes": ""
 	}
 }
 

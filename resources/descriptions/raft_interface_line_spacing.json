@@ -1,18 +1,17 @@
 {
-	"general" :
+	"general":
 	{
-		"name" : "Raft Middle Spacing",
-		"images" :
+		"images":
 		{
-			"1" : "raft_margin_img1.png",
-			"2" : "raft_margin_img2.png"
+			"1": "raft_margin_img1.png",
+			"2": "raft_margin_img2.png"
 		}
 	},
-	"data" :
+	"data":
 	{
-		"description" : "The distance between the raft lines for the middle raft layer. The spacing of the middle should be quite wide, while being dense enough to support the top raft layers.",
-		"img_description" : "A visualization of the raft settings in Cura.",
-		"hints" : "",
-		"notes" : ""
+		"description": "The distance between the raft lines for the middle raft layer. The spacing of the middle should be quite wide, while being dense enough to support the top raft layers.",
+		"img_description": "A visualization of the raft settings in Cura.",
+		"hints": "",
+		"notes": ""
 	}
 }

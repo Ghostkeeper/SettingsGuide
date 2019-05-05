@@ -1,16 +1,15 @@
 {
-	"general" :
+	"general":
 	{
-		"name" : "Minimum Extrusion Distance Window",
-		"images" :
+		"images":
 		{
-			"1" : "retraction_count_max_img1.png"
+			"1": "retraction_count_max_img1.png"
 		}
 	},
-	"data" :
+	"data":
 	{
 		"description": "This is the length of filament over which the maximum retraction count is enforced. This value protects the number of retractions on the same piece of filament.",
-		"img_description" : "This image illustrates a cross section of the feeder, with the 'Minimum extrusion distance window' indicated.",
-		"hints" : "- Example: If you set the maximum retraction count to 25 and the minimum extrusion distance window to 1.0 mm, it will do a maximum of 25 retractions per 1.0 mm extruded filament."
+		"img_description": "This image illustrates a cross section of the feeder, with the 'Minimum extrusion distance window' indicated.",
+		"hints": "- Example: If you set the maximum retraction count to 25 and the minimum extrusion distance window to 1.0 mm, it will do a maximum of 25 retractions per 1.0 mm extruded filament."
 	}
 }

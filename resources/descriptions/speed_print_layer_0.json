@@ -1,13 +1,9 @@
 {
-	"general" :
+	"data":
 	{
-		"name" : "Initial Layer Print Speed"
-	},
-	"data" :
-	{
-		"description" : "The speed of printing for the initial layer. A lower value is advised to improve adhesion to the build plate.",
-		"img_description" : "",
-		"hints" : "",
-		"notes" : ""
+		"description": "The speed of printing for the initial layer. A lower value is advised to improve adhesion to the build plate.",
+		"img_description": "",
+		"hints": "",
+		"notes": ""
 	}
 }
