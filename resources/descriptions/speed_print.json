@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "speed_print",
 		"name" : "Print Speed"
 	},
 	"data" :

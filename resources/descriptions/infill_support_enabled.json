@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "infill_support_enabled",
 		"name" : "Infill Support"
 	},
 	"data" :

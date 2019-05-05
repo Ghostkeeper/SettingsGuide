@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "outer_inset_first",
 		"name" : "Outer Before Inner Walls"
 	},
 	"data" :
@@ -12,6 +11,3 @@
 		"notes" : ""
 	}
 }
-
-
-

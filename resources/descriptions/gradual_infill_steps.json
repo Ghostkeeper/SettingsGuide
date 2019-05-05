@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "gradual_infill_steps",
 		"name" : "Gradual Infill Steps"
 	},
 	"data" :

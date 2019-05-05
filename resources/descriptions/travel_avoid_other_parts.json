@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "travel_avoid_other_parts",
 		"name" : "Avoid Printed Parts When Traveling"
 	},
 	"data" :

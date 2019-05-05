@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "default_material_bed_temperature",
 		"name" : "Default Build Plate Temperature"
 	},
 	"data" :

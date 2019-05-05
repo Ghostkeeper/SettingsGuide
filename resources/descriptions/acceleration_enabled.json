@@ -1,7 +1,6 @@
 {
 	"general":
 	{
-		"id": "acceleration_enabled",
 		"name": "Enable Acceleration Control"
 	},
 	"data":

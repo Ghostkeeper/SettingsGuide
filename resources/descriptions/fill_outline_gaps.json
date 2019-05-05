@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "fill_outline_gaps",
 		"name" : "Print Thin Walls"
 	},
 	"data" :

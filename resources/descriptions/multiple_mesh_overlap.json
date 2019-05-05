@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "multiple_mesh_overlap",
 		"name" : "Merged Meshes Overlap"
 	},
 	"data" :

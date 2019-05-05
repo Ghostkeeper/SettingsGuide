@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "ironing_enabled",
 		"name" : "Enable Ironing"
 	},
 	"data" :

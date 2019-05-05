@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "optimize_wall_printing_order",
 		"name" : "Optimize Wall Printing Order"
 	},
 	"data" :
@@ -12,6 +11,3 @@
 		"notes" : ""
 	}
 }
-
-
-

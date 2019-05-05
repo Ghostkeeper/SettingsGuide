@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "speed_slowdown_layers",
 		"name" : "Number of Slower Layers"
 	},
 	"data" :

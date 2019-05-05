@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "max_feedrate_z_override",
 		"name" : "Maximum Z Speed"
 	},
 	"data" :

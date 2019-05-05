@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "travel_compensate_overlapping_walls_enabled",
 		"name" : "Compensate Wall Overlaps"
 	},
 	"data" :

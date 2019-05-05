@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "support_xy_distance_overhang",
 		"name" : "Minimum Support X/Y Distance",
 		"images" :
 		{

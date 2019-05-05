@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "raft_margin",
 		"name" : "Raft Extra Margin"
 	},
 	"data" :

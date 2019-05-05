@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id": "switch_extruder_prime_speed",
 		"name": "Nozzle Switch Prime Speed"
 	},
 	"data" :

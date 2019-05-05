@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "cool_min_layer_time",
 		"name" : "Minimum Layer Time",
 		"images" :
 		{

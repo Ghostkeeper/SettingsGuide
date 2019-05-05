@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "wall_line_count",
 		"name" : "Wall Line Count"
 	},
 	"data" :
@@ -12,6 +11,3 @@
 		"notes" : ""
 	}
 }
-
-
-

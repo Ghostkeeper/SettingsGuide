@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "cool_fan_speed_min",
 		"name" : "Regular Fan Speed",
 		"images" :
 		{

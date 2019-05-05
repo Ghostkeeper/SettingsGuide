@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "infill_sparse_density",
 		"name" : "Infill Density"
 	},
 	"data" :

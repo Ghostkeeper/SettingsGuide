@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "fill_perimeter_gaps",
 		"name" : "Fill Gaps Between Walls"
 	},
 	"data" :

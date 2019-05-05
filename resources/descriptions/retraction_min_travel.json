@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "retraction_min_travel",
 		"name" : "Retraction Minimum Travel"
 	},
 	"data" :

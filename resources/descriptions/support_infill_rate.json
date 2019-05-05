@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "support_infill_rate",
 		"name" : "Support Density"
 	},
 	"data" :

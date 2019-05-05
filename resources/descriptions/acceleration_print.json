@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "acceleration_print",
 		"name" : "Print Acceleration",
 		"images" :
 		{

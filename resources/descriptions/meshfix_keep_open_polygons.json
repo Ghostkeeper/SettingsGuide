@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "meshfix_keep_open_polygons",
 		"name" : "Keep Disconnected Faces"
 	},
 	"data" :

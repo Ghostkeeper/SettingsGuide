@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id": "material_standby_temperature",
 		"name": "Standby Temperature"
 	},
 	"data" :

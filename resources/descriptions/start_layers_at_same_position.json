@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "start_layers_at_same_position",
 		"name" : "Start Layers with the Same Part"
 	},
 	"data" :

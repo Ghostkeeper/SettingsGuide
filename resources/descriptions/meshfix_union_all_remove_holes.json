@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "meshfix_union_all_remove_holes",
 		"name" : "Remove All Holes"
 	},
 	"data" :

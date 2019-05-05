@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "travel_retract_before_outer_wall",
 		"name" : "Retract Before Outer Wall"
 	},
 	"data" :

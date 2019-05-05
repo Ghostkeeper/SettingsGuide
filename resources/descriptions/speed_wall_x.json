@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "speed_wall_x",
 		"name" : "Inner Wall Speed",
 		"images" :
 		{

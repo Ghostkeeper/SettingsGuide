@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "cool_min_layer_time_fan_speed_max",
 		"name" : "Regular/Maximum Fan Speed Threshold",
 		"images" :
 		{

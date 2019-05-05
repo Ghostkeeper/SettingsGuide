@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "cool_fan_enabled",
 		"name" : "Enable Print Cooling"
 	},
 	"data" :

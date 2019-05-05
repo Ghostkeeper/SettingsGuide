@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "adhesion_extruder_nr",
 		"name" : "Build Plate Adhesion Extruder"
 	},
 	"data" :

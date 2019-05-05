@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "infill_line_distance",
 		"name" : "Infill Line Distance"
 	},
 	"data" :

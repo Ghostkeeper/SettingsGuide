@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "skin_outline_count",
 		"name" : "Extra Skin Wall Count"
 	},
 	"data" :
@@ -12,6 +11,3 @@
 		"notes" : ""
 	}
 }
-
-
-

@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "material_bed_temperature",
 		"name" : "Build Plate Temperature"
 	},
 	"data" :

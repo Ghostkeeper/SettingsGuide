@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "infill_overlap_mm",
 		"name" : "Infill Overlap",
 		"images" :
 		{

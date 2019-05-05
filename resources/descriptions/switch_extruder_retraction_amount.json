@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id": "switch_extruder_retraction_amount",
 		"name": "Nozzle Switch Retraction Distance"
 	},
 	"data" :

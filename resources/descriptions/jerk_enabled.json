@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "jerk_enabled",
 		"name" : "Enable Jerk Control"
 	},
 	"data" :

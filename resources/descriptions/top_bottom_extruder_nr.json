@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "top_bottom_extruder_nr",
 		"name" : "Top/Bottom Extruder"
 	},
 	"data" :

@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "sub_div_rad_add",
 		"name" : "Cubic Subdivision Shell"
 	},
 	"data" :

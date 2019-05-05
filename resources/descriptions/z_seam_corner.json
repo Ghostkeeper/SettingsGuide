@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "z_seam_corner",
 		"name" : "Seam Corner Preference"
 	},
 	"data" :
@@ -12,6 +11,3 @@
 		"notes" : ""
 	}
 }
-
-
-

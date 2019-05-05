@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "retraction_combing_max_distance",
 		"name" : "Max Comb Distance With No Retract"
 	},
 	"data" :

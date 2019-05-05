@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "wall_line_width_x",
 		"name" : "Inner Wall(s) Line Width"
 	},
 	"data" :

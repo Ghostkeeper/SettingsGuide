@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "infill_support_angle",
 		"name" : "Infill Overhang Angle"
 	},
 	"data" :

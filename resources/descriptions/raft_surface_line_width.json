@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "raft_surface_line_width",
 		"name" : "Raft Top Line Width",
 		"images" :
 		{

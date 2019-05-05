@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "material_final_print_temperature",
 		"name" : "Final Printing Temperature"
 	},
 	"data" :

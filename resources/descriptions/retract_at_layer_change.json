@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "retract_at_layer_change",
 		"name" : "Retract at Layer Change"
 	},
 	"data" :

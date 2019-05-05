@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "raft_surface_line_spacing",
 		"name" : "Raft Top Spacing",
 		"images" :
 		{

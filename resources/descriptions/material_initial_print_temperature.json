@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "material_initial_print_temperature",
 		"name" : "Initial Printing Temperature"
 	},
 	"data" :

@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "retraction_hop",
 		"name" : "Z Hop Height",
 		"images" :
 		{

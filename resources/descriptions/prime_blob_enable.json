@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "prime_blob_enable",
 		"name" : "Enable Prime Blob"
 	},
 	"data" :

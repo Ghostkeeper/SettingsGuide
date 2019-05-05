@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "retraction_hop_enabled",
 		"name" : "Z Hop When Retracted"
 	},
 	"data" :

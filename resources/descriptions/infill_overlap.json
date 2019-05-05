@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "infill_overlap",
 		"name" : "Infill Overlap Percentage"
 	},
 	"data" :

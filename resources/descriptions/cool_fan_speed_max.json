@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "cool_fan_speed_max",
 		"name" : "Maximum Fan Speed",
 		"images" :
 		{

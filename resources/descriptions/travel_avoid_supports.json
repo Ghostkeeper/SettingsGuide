@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "travel_avoid_supports",
 		"name" : "Avoid Supports When Traveling"
 	},
 	"data" :

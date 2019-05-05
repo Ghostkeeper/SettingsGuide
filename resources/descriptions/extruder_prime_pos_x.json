@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "extruder_prime_pos_x",
 		"name" : "Extruder Prime X Position"
 	},
 	"data" :

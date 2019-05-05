@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "raft_surface_thickness",
 		"name" : "Raft Top Layer Thickness",
 		"images" :
 		{

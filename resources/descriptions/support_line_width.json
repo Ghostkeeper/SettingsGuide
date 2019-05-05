@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "support_line_width",
 		"name" : "Support Line Width"
 	},
 	"data" :
@@ -12,6 +11,3 @@
 		"notes": "Note: Be careful when increasing the support line width when using PVA material, as it might clog the nozzle."
 	}
 }
-
-
-

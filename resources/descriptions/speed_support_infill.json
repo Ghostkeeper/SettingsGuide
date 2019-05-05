@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "speed_support_infill",
 		"name" : "Support Infill Speed",
 		"images" :
 		{

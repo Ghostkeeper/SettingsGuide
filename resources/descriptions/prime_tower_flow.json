@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "prime_tower_flow",
 		"name" : "Prime Tower Flow"
 	},
 	"data" :
@@ -12,6 +11,3 @@
 		"notes" : ""
 	}
 }
-
-
-

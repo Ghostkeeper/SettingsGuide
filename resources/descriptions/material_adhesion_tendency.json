@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "material_adhesion_tendency",
 		"name" : "Adhesion Tendency"
 	},
 	"data" :

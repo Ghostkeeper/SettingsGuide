@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "support_minimal_diameter",
 		"name" : "Minimum Diameter",
 		"images" :
 		{

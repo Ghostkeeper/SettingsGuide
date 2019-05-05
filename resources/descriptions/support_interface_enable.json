@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "support_interface_enable",
 		"name" : "Enable Support Interface"
 	},
 	"data" :

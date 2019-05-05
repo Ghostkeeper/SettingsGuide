@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "raft_base_line_width",
 		"name" : "Raft Base Line Width",
 		"images" :
 		{

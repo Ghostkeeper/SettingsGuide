@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "infill_before_walls",
 		"name" : "Infill Before Walls"
 	},
 	"data" :

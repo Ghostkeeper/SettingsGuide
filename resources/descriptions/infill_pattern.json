@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "infill_pattern",
 		"name" : "Infill Pattern"
 	},
 	"data" :

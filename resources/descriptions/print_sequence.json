@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "print_sequence",
 		"name" : "Print sequence"
 	},
 	"data" :
@@ -12,6 +11,3 @@
 		"notes" : ""
 	}
 }
-
-
-

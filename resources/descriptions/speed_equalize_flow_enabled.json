@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "speed_equalize_flow_enabled",
 		"name" : "Equalize Filament Flow"
 	},
 	"data" :

@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "zig_zaggify_infill",
 		"name" : "Connect Infill Lines"
 	},
 	"data" :

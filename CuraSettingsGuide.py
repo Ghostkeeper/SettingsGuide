@@ -122,11 +122,6 @@ class CuraSettingsGuide(Extension, QObject):
 					json_data = json.load(f)
 					general = json_data["general"]
 
-				if general["id"] != file_base_name:
-					Logger.log("d", "Setting's filename [%s] does not match to its id [%s]",
-							   file_base_name, general["id"])
-					continue
-
 				file_id = file_base_name
 				
 				#The key is not yet added, no images for this setting

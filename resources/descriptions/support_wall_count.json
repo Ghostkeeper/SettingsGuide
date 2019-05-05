@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "support_wall_count",
 		"name" : "Support Wall Line Count"
 	},
 	"data" :

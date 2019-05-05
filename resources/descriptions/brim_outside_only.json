@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "brim_outside_only",
 		"name" : "Brim Only on Outside",
 		"images" :
 		{

@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "retraction_enable",
 		"name" : "Enable Retraction"
 	},
 	"data" :

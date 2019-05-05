@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "infill_angles",
 		"name" : "Infill Line Directions"
 	},
 	"data" :

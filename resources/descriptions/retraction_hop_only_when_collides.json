@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "retraction_hop_only_when_collides",
 		"name" : "Z Hop Only Over Printed Parts"
 	},
 	"data" :

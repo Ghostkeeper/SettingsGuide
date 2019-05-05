@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "skin_overlap",
 		"name" : "Skin Overlap Percentage"
 	},
 	"data" :
@@ -12,5 +11,3 @@
 		"notes" : ""
 	}
 }
-
-

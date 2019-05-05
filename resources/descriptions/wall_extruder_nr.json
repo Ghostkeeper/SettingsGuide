@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "wall_extruder_nr",
 		"name" : "Wall Extruder"
 	},
 	"data" :

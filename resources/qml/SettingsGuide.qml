@@ -139,20 +139,19 @@ Window {
 		var data = manager.selectedSettingData;
 		var template = "";
 
-		var setting_id = data["details"] != undefined ? data["details"]["general"]["id"] : undefined;
 		var setting_template =  data["details"] != undefined ? data["details"]["general"]["template"] : undefined;
 
 		var isCreatedBy = false
-		if (setting_id != undefined && setting_id.toLowerCase() == "createdby") {
+		if (settingsSidebar.selectedSettingId != "" && settingsSidebar.selectedSettingId.toLowerCase() == "createdby") {
 			isCreatedBy = true;
 		}
 
 		// Selected setting uses general template
-		if (setting_id != undefined && setting_template == undefined) {
+		if (settingsSidebar.selectedSettingId != "" && setting_template == undefined) {
 			template = 1;
 		}
 		// Selected setting has a different template
-		else if (setting_id != undefined && !isCreatedBy && setting_template != undefined) {
+		else if (settingsSidebar.selectedSettingId != "" && !isCreatedBy && setting_template != undefined) {
 			template = 2;
 		}
 		// Special view which shows created by Template
@@ -182,10 +181,6 @@ Window {
 			icon_item.visible = false;
 			pageLoader.source = ""; // for some reason if don't do this then QT will not unload the previous source properly
 			pageLoader.source = template_path;
-
-			if (!isCreatedBy) {
-				settingsSidebar.setSelectedItemInSettingListView(setting_id);
-			}
 		}
 		else {
 			icon_item.visible = true;

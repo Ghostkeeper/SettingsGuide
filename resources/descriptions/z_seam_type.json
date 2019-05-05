@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "z_seam_type",
 		"name" : "Z Seam Alignment"
 	},
 	"data" :

@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "raft_interface_line_spacing",
 		"name" : "Raft Middle Spacing",
 		"images" :
 		{

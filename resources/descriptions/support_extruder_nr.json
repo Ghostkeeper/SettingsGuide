@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "support_extruder_nr",
 		"name" : "Support Extruder"
 	},
 	"data" :

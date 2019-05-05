@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "filter_out_tiny_gaps",
 		"name" : "Filter Out Tiny Gaps"
 	},
 	"data" :

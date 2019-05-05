@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "speed_wall",
 		"name" : "Wall Speed",
 		"images" :
 		{

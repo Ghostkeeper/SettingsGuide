@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "support_xy_overrides_z",
 		"name" : "Support Distance Priority"
 	},
 	"data" :

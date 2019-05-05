@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "infill_extruder_nr",
 		"name" : "Infill Extruder"
 	},
 	"data" :

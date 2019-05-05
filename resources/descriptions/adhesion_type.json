@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "adhesion_type",
 		"name" : "Build Plate Adhesion Type"
 	},
 	"data" :

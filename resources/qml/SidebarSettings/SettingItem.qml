@@ -17,7 +17,7 @@ Item {
 	height: UM.Theme.getSize("section").height
 
 	property alias contents: controlContainer.children
-	property bool isSelected: rightSideItem.selectedSettingId == definition.key
+	property bool isSelected: settingsSidebar.selectedSettingId == definition.key
 
 	MouseArea {
 		id: mouse
@@ -25,7 +25,7 @@ Item {
 		acceptedButtons: Qt.LeftButton
 		hoverEnabled: true
 		onClicked: {
-			rightSideItem.selectedSettingId = definition.key;
+			settingsSidebar.selectedSettingId = definition.key;
 			manager.setSelectedSetting(definition.key);
 		}
 

@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "material_shrinkage_percentage",
 		"name" : "Shrinkage Ratio"
 	},
 	"data" :

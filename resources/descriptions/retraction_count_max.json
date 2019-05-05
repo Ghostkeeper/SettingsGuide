@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "retraction_count_max",
 		"name" : "Maximum Retraction Count"
 	},
 	"data" :

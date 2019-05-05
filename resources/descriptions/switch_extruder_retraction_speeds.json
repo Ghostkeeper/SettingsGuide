@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id": "switch_extruder_retraction_speeds",
 		"name": "Nozzle Switch Retraction Speed"
 	},
 	"data" :

@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "prime_tower_enable",
 		"name" : "Enable Prime Tower"
 	},
 	"data" :

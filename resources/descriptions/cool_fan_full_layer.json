@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "cool_fan_full_layer",
 		"name" : "Regular Fan Speed at Layer",
 		"images" :
 		{

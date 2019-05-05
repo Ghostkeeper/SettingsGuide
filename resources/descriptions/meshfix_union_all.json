@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "meshfix_union_all",
 		"name" : "Union Overlapping Volumes"
 	},
 	"data" :

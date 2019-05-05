@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "retraction_hop_after_extruder_switch",
 		"name" : "Z Hop After Extruder Switch"
 	},
 	"data" :

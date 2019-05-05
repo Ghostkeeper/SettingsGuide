@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "skin_no_small_gaps_heuristic",
 		"name" : "Ignore Small Z Gaps"
 	},
 	"data" :

@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "material_flow",
 		"name" : "Flow"
 	},
 	"data" :

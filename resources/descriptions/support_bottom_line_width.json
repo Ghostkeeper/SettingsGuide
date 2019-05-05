@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "support_bottom_line_width",
 		"name" : "Support Floor Line Width"
 	},
 	"data" :
@@ -12,6 +11,3 @@
 		"notes" : ""
 	}
 }
-
-
-

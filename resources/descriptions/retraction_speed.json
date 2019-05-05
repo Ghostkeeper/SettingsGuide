@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "retraction_speed",
 		"name" : "Retraction Speed"
 	},
 	"data" :

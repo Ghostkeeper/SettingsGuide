@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "infill_line_width",
 		"name" : "Infill Line Width"
 	},
 	"data" :

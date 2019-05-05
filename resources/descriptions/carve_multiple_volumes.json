@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "carve_multiple_volumes",
 		"name" : "Remove Mesh Intersection"
 	},
 	"data" :

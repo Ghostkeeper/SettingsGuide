@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "raft_base_thickness",
 		"name" : "Raft Base Thickness",
 		"images" :
 		{

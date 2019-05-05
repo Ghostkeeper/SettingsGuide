@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "z_seam_relative",
 		"name" : "Z Seam Relative"
 	},
 	"data" :
@@ -12,6 +11,3 @@
 		"notes" : "Note: The default value of Z seam X and Z seam Y location is half the build plate width and a high Y value. This places the seam at the center back of the models by default."
 	}
 }
-
-
-

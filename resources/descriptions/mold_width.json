@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "mold_width",
 		"name" : "Minimal Mold Width"
 	},
 	"data" :

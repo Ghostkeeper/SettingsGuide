@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "infill_sparse_thickness",
 		"name" : "Infill Layer Thickness"
 	},
 	"data" :

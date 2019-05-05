@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "material_extrusion_cool_down_speed",
 		"name" : "Extrusion Cool Down Speed Modifier"
 	},
 	"data" :

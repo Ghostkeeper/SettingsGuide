@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "prime_tower_wipe_enabled",
 		"name" : "Wipe Inactive Nozzle on Prime Tower"
 	},
 	"data" :
@@ -12,6 +11,3 @@
 		"notes" : ""
 	}
 }
-
-
-

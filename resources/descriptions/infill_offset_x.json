@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "infill_offset_x",
 		"name" : "Infill X Offset"
 	},
 	"data" :

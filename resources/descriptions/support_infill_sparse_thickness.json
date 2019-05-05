@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "support_infill_sparse_thickness",
 		"name" : "Support Infill Layer Thickness"
 	},
 	"data" :
@@ -12,6 +11,3 @@
 		"notes" : ""
 	}
 }
-
-
-

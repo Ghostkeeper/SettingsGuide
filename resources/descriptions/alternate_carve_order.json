@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "alternate_carve_order",
 		"name" : "Alternate Mesh Removal"
 	},
 	"data" :

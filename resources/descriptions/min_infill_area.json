@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "min_infill_area",
 		"name" : "Minimum Infill Area"
 	},
 	"data" :

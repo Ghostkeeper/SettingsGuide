@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "material_surface_energy",
 		"name" : "Surface Energy"
 	},
 	"data" :

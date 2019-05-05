@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "retraction_extrusion_window",
 		"name" : "Minimum Extrusion Distance Window",
 		"images" :
 		{

@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "material_print_temperature_layer_0",
 		"name" : "Printing Temperature Initial Layer"
 	},
 	"data" :

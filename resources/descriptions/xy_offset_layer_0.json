@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "xy_offset_layer_0",
 		"name" : "Initial Layer Horizontal Expansion"
 	},
 	"data" :
@@ -12,6 +11,3 @@
 		"notes" : "Note: This will not work with a brim selected as build plate adhesion, because it will simply stick to the model."
 	}
 }
-
-
-

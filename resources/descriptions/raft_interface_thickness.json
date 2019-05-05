@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "raft_interface_thickness",
 		"name" : "Raft Middle Thickness",
 		"images" :
 		{

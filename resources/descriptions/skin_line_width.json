@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "skin_line_width",
 		"name" : "Top/Bottom Line Width"
 	},
 	"data" :
@@ -12,5 +11,3 @@
 		"notes" : ""
 	}
 }
-
-

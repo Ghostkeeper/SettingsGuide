@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "speed_infill",
 		"name" : "Infill Speed",
 		"images" :
 		{

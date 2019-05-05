@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "raft_interface_line_width",
 		"name" : "Raft Middle Line Width",
 		"images" :
 		{

@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "material_bed_temperature_layer_0",
 		"name" : "Build Plate Temperature Initial Layer"
 	},
 	"data" :

@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "support_enable",
 		"name" : "Generate Support"
 	},
 	"data" :

@@ -1,7 +1,6 @@
 {
 	"general" :
 	{
-		"id" : "wall_thickness",
 		"name" : "Wall thickness"
 	},
 	"data" :
