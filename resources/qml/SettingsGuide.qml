@@ -185,7 +185,7 @@ Window {
 		else {
 			icon_item.visible = true;
 			pageLoader.source = "";
-			settingsSidebar.resetSelectedItemInSettingListView();
+			settingsSidebar.selectedSettingId = "";
 		}
 
 		// Call Timer to trigger call back function
