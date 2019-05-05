@@ -17,14 +17,6 @@ Item {
 	height: UM.Theme.getSize("section").height
 
 	property alias contents: controlContainer.children
-	property alias hovered: mouse.containsMouse
-	property var doDepthIndentation: true
-	property var doQualityUserSettingEmphasis: true
-
-	property var stackLevels: propertyProvider.stackLevels
-	property var stackLevel: stackLevels[0]
-
-
 	property bool isSelected: false
 	property string setting_item_key: definition.key
 
@@ -84,7 +76,7 @@ Item {
 			id: label
 
 			anchors.left: parent.left
-			anchors.leftMargin: doDepthIndentation ? Math.round((UM.Theme.getSize("section_icon_column").width + 5) + ((definition.depth - 1) * UM.Theme.getSize("setting_control_depth_margin").width)) : 0
+			anchors.leftMargin: Math.round((UM.Theme.getSize("section_icon_column").width + 5) + ((definition.depth - 1) * UM.Theme.getSize("setting_control_depth_margin").width))
 			anchors.verticalCenter: parent.verticalCenter
 
 			text: definition.label
@@ -93,8 +85,7 @@ Item {
 
 			color: UM.Theme.getColor("setting_control_text")
 			opacity: (definition.visible) ? 1 : 0.5
-			// emphasize the setting if it has a value in the user or quality profile
-			font: base.doQualityUserSettingEmphasis && base.stackLevel != undefined && base.stackLevel <= 1 ? UM.Theme.getFont("default_italic") : UM.Theme.getFont("default")
+			font: UM.Theme.getFont("default")
 		}
 
 		Item {
