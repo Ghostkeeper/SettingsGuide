@@ -17,35 +17,23 @@ Item {
 	height: UM.Theme.getSize("section").height
 
 	property alias contents: controlContainer.children
-	property bool isSelected: false
-	property string setting_item_key: definition.key
-
-	function showHighlightArea() {
-		isSelected = true;
-		highlightRectangle.opacity = 0.1;
-		selectRectangle.visible = true;
-		selectImage.visible = true;
-	}
-
-	function hideHighlightArea() {
-		isSelected = false;
-		highlightRectangle.opacity = 0.0;
-		selectRectangle.visible = false;
-		selectImage.visible = false;
-	}
-
+	property bool isSelected: rightSideItem.selectedSettingId == definition.key
 
 	MouseArea {
 		id: mouse
 		anchors.fill: parent
-		acceptedButtons: Qt.RightButton
+		acceptedButtons: Qt.LeftButton
 		hoverEnabled: true
+		onClicked: {
+			rightSideItem.selectedSettingId = definition.key;
+			manager.setSelectedSetting(definition.key);
+		}
 
 		Image {
 			id: selectImage
 			height: 20
 			width: 20
-			visible: false
+			visible: base.isSelected
 			anchors.verticalCenter: parent.verticalCenter
 			source: Qt.resolvedUrl("../../icons/arrow.png")
 		}
@@ -54,7 +42,7 @@ Item {
 			id: selectRectangle
 			z: 1
 			color: "transparent"
-			visible: false
+			visible: base.isSelected
 			anchors.fill: parent
 			anchors.leftMargin : UM.Theme.getSize("default_margin").width * 2 //One margin for the settings list, one for the indent.
 			anchors.rightMargin : UM.Theme.getSize("default_margin").width
@@ -68,8 +56,9 @@ Item {
 			anchors.fill: parent
 			anchors.leftMargin : UM.Theme.getSize("default_margin").width * 2 //One margin for the settings list, one for the indent.
 			anchors.rightMargin : UM.Theme.getSize("default_margin").width
-			opacity: 0.0
+			visible: mouse.containsMouse || base.isSelected
 			color: UM.Theme.getColor("primary")
+			opacity: 0.1
 		}
 
 		Label {
@@ -98,17 +87,6 @@ Item {
 			anchors.verticalCenter: parent.verticalCenter
 			width: UM.Theme.getSize("setting_control").width
 			height: UM.Theme.getSize("setting_control").height
-		}
-
-		onEntered: {
-			if(!isSelected) {
-				highlightRectangle.opacity = 0.1;
-			}
-		}
-		onExited: {
-			if(!isSelected) {
-				highlightRectangle.opacity = 0.0;
-			}
 		}
 	}
 

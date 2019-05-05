@@ -15,90 +15,7 @@ import Cura 1.0 as Cura
 Item {
 	id: rightSideItem
 	width: UM.Theme.getSize("print_setup_widget").width
-
-	property var listViewLastSelectedItem: undefined // keeps reference to the last item in the list. After item change
-	                                                 // in the list, the previous selection should be removed
-	property var first_start: true
-	property var temp_setting_id: ""
-
-	// The function hides highlighted area from previous item and highlights a new selected item
-	function setSelectedItemInSettingListView(setting_id) {
-		if (listViewLastSelectedItem != undefined) {
-			listViewLastSelectedItem.hideHighlightArea();
-		}
-
-		var temp_index = contents.model.getIndex(setting_id);
-
-		// If returned value is -1, then ListView with settings is not yet ready, call one more time same function with a small delay
-		if (temp_index == -1 && first_start == true) {
-			first_start = false;
-			temp_setting_id = setting_id;
-			checkSelectedItemForInitialStartTimer.restart();
-			return;
-		}
-
-		contents.currentIndex = temp_index;
-		listViewLastSelectedItem = contents.currentItem.item;
-
-		// Need to check because at first the items in Listview might be not initialized,
-		// for this reason is used timer
-		checkSelectedSettingItemStatus();
-	}
-
-	function resetSelectedItemInSettingListView() {
-		if (listViewLastSelectedItem != undefined) {
-			listViewLastSelectedItem.hideHighlightArea();
-			listViewLastSelectedItem = undefined;
-		}
-	}
-
-	property var last_setting_id: ""
-
-	// After collapsing and expanding the selected item needs to be highilghted again.
-	// This is a tricky of assigning because of Loader asynchronous, we need perform check only after the Item is onCompleted:
-	property var onCompleteItemCallBack: function(setting_item) {
-		// Can be selected only one item
-		if (setting_item.setting_item_key == last_setting_id && setting_item.isSelected == false) {
-			//we need to keep track of selected item to be able unselect it
-			listViewLastSelectedItem = setting_item;
-			setting_item.showHighlightArea();
-		}
-	}
-
-	property int checkCounter: 0
-	function checkSelectedSettingItemStatus() {
-		// Check maximum 10 times
-		if (contents.currentItem.item == null && checkCounter < 10) {
-			checkSelectedSettingItemStatusTimer.restart();
-			checkCounter++;
-		}
-		else {
-			listViewLastSelectedItem = contents.currentItem.item;
-			contents.currentItem.item.showHighlightArea();
-		}
-	}
-
-	function checkSelectedItemForInitialStart() {
-		setSelectedItemInSettingListView(temp_setting_id);
-	}
-
-	Timer {
-		id: checkSelectedSettingItemStatusTimer
-		onTriggered: checkSelectedSettingItemStatus()
-		interval: 500
-		running: false
-		repeat: false
-	}
-
-	Timer {
-		id: checkSelectedItemForInitialStartTimer
-		onTriggered: checkSelectedItemForInitialStart()
-		interval: 1000
-		running: false
-		repeat: false
-	}
-
-	property bool findingSettings
+	property var selectedSettingId: "" //The ID of the setting that got selected.
 
 	Rectangle {
 		id: filterContainer
@@ -311,16 +228,6 @@ Item {
 							return Qt.resolvedUrl("SidebarSettings/SettingExtruder.qml");
 						default:
 							return Qt.resolvedUrl("SidebarSettings/SettingUnknown.qml");
-					}
-				}
-
-				MouseArea {
-					anchors.fill: parent
-					propagateComposedEvents: true
-					hoverEnabled: true
-					onClicked: {
-						rightSideItem.last_setting_id = model.key;
-						manager.setSelectedSetting(model.key);
 					}
 				}
 			}

@@ -29,7 +29,7 @@ Window {
 
 	UM.I18nCatalog {
 		id: catalog
-		name:"cura"
+		name: "cura"
 	}
 
 	//Display icon in the middle of the window
