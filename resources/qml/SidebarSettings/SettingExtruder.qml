@@ -11,8 +11,6 @@ import UM 1.1 as UM
 import Cura 1.0 as Cura
 
 SettingItem {
-	id: base
-
 	contents: Rectangle {
 		anchors.fill: parent
 		color: UM.Theme.getColor("setting_control_disabled")
@@ -37,7 +35,6 @@ SettingItem {
 			color: UM.Theme.getColor("setting_control_button")
 		}
 		Rectangle {
-			id: swatch
 			height: Math.round(UM.Theme.getSize("setting_control").height / 2)
 			width: height
 
