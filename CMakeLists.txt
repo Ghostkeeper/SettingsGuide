@@ -39,7 +39,6 @@ set(installed_files_resources_qml_SidebarSettings
 	SettingComboBox.qml
 	SettingExtruder.qml
 	SettingItem.qml
-	SettingOptionalExtruder.qml
 	SettingTextField.qml
 	SettingUnknown.qml
 )
