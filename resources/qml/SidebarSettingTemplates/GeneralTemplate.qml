@@ -189,7 +189,7 @@ Item {
 						// Only gif files can have animation
 						Image {
 							id: play_icon
-							source: Qt.resolvedUrl("../../icons/play_icon.png")
+							source: Qt.resolvedUrl("../../icons/play.svg")
 							anchors.horizontalCenter: parent.horizontalCenter
 							anchors.verticalCenter: parent.verticalCenter
 							opacity: 0.7
