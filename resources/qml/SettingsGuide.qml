@@ -63,7 +63,7 @@ Window {
 			anchors.left: welcome_icon.right
 			font.pixelSize: 22
 			font.italic: true
-			color: "#959596"
+			color: UM.Theme.getColor("text")
 
 			text: "v" + manager.getPluginpluginVersion()
 		}
