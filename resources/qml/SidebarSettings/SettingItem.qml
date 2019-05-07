@@ -35,7 +35,7 @@ Item {
 			width: 20
 			visible: base.isSelected
 			anchors.verticalCenter: parent.verticalCenter
-			source: Qt.resolvedUrl("../../icons/arrow.png")
+			source: Qt.resolvedUrl("../../icons/arrow.svg")
 		}
 
 		Rectangle {

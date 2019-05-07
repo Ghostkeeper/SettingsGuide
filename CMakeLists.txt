@@ -23,7 +23,7 @@ set(installed_files
 	README.md
 )
 set(installed_files_resources_icons
-	arrow.png
+	arrow.svg
 	createdBy.data
 	icon.png
 	play_icon.png
