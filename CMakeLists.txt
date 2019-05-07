@@ -24,7 +24,7 @@ set(installed_files
 )
 set(installed_files_resources_icons
 	arrow.svg
-	createdBy.data
+	created_by.jpg
 	icon.svg
 	play.svg
 )
