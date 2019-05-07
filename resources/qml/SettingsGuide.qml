@@ -47,7 +47,7 @@ Window {
 
 		Image {
 			id: welcome_icon
-			source: Qt.resolvedUrl("../icons/icon.png")
+			source: Qt.resolvedUrl("../icons/icon.svg")
 			width: 300
 			height: 300
 

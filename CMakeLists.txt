@@ -25,7 +25,7 @@ set(installed_files
 set(installed_files_resources_icons
 	arrow.svg
 	createdBy.data
-	icon.png
+	icon.svg
 	play.svg
 )
 set(installed_files_resources_qml
