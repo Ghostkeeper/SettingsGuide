@@ -149,14 +149,15 @@ class CuraSettingsGuide(Extension, QObject):
 
 	@pyqtSlot(str)
 	def setSelectedSetting(self, setting_key: str) -> None:
-		return_value = {"details": {"general": {"id": setting_key,
-												"template": "EmptyTemplate.qml"}
-									}
-						}
-		if setting_key != "":
-			return_value = self._settings_data.get(setting_key, return_value)
-
-		self._selected_setting_data = return_value
+		default = {
+			"details": {
+				"general": {
+					"id": setting_key,
+					"template": "EmptyTemplate.qml"
+				}
+			}
+		}
+		self._selected_setting_data = self._settings_data.get(setting_key, default)
 		self.settingItemChanged.emit()
 
 	settingItemChanged = pyqtSignal()
