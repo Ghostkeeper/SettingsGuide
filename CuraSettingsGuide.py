@@ -47,7 +47,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self.initializeHelpSidebarHelpButton()
 
 	def initializeHelpSidebarHelpButton(self) -> None:
-		menu_actions = ["sidebarMenuItemOnClickHander"]
+		menu_actions = ["sidebarMenuItemOnClickHandler"]
 
 		data = {
 			"name": "Setting Guide",
