@@ -154,10 +154,7 @@ class CuraSettingsGuide(Extension, QObject):
 									}
 						}
 		if setting_key != "":
-			for key, value in self._settings_data.items():
-				if key == setting_key:
-					return_value = value
-					break
+			return_value = self._settings_data.get(setting_key, return_value)
 
 		self._selected_setting_data = return_value
 		self.settingItemChanged.emit()
