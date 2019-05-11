@@ -32,8 +32,6 @@ Window {
 		name: "cura"
 	}
 
-	property alias selectedSettingId: settingsSidebar.selectedSettingId
-
 	//Display icon in the middle of the window
 	Item {
 		id: icon_item
@@ -147,16 +145,16 @@ Window {
 		}
 
 		var isCreatedBy = false
-		if (settingsSidebar.selectedSettingId != "" && settingsSidebar.selectedSettingId.toLowerCase() == "createdby") {
+		if (manager.selectedSettingId != "" && manager.selectedSettingId.toLowerCase() == "createdby") {
 			isCreatedBy = true;
 		}
 
 		// Selected setting uses general template
-		if (settingsSidebar.selectedSettingId != "" && setting_template == undefined) {
+		if (manager.selectedSettingId != "" && setting_template == undefined) {
 			template = 1;
 		}
 		// Selected setting has a different template
-		else if (settingsSidebar.selectedSettingId != "" && !isCreatedBy && setting_template != undefined) {
+		else if (manager.selectedSettingId != "" && !isCreatedBy && setting_template != undefined) {
 			template = 2;
 		}
 		// Special view which shows created by Template
@@ -190,7 +188,6 @@ Window {
 		else {
 			icon_item.visible = true;
 			pageLoader.source = "";
-			settingsSidebar.selectedSettingId = "";
 		}
 
 		// Call Timer to trigger call back function

@@ -318,7 +318,7 @@ Item {
 	UM.SettingPropertyProvider {
 		id: selectedSettingName
 		containerStack: Cura.MachineManager.activeMachine
-		key: settingsGuideBase.selectedSettingId
+		key: manager.selectedSettingId
 		watchedProperties: [ "label" ]
 	}
 

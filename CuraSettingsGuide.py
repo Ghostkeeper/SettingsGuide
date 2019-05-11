@@ -7,18 +7,16 @@
 import json
 import os
 import platform
+from PyQt5.QtCore import QObject, pyqtSlot, pyqtProperty, pyqtSignal
 import re
 from typing import Dict, Optional
 
-from PyQt5.QtCore import QObject, pyqtSlot, pyqtProperty, pyqtSignal
-
+from cura.API import CuraAPI
 from UM.Extension import Extension
 from UM.Application import Application
 from UM.Logger import Logger
 from UM.PluginRegistry import PluginRegistry
 from UM.i18n import i18nCatalog
-
-from cura.API import CuraAPI
 
 from . import MenuItemHandler
 
@@ -62,8 +60,7 @@ class CuraSettingsGuide(Extension, QObject):
 		if not self._dialog:
 			self._dialog = self._createDialog("SettingsGuide.qml")
 
-		self._selected_setting_id = "" #Display welcome page.
-		self.settingItemChanged.emit()
+		self.setSelectedSettingId("") #Display welcome page.
 		self._dialog.show()
 
 
@@ -72,7 +69,7 @@ class CuraSettingsGuide(Extension, QObject):
 			self._dialog = self._createDialog("SettingsGuide.qml")
 
 		self._dialog.show()
-		self.setSelectedSetting(setting_key)
+		self.setSelectedSettingId(setting_key)
 
 	def _createDialog(self, qml_name: str) -> Optional["QObject"]:
 		Logger.log("d", "Settings Guide: Create dialog from QML [%s]", qml_name)
@@ -146,19 +143,23 @@ class CuraSettingsGuide(Extension, QObject):
 				Logger.logException("w", "Error while reading file: %s" % file)
 				continue
 
-	@pyqtSlot(str)
-	def setSelectedSetting(self, setting_key: str) -> None:
-		self._selected_setting_id = setting_key
-		self.settingItemChanged.emit()
-
 	settingItemChanged = pyqtSignal()
 
 	@pyqtSlot(result = str)
 	def getPluginpluginVersion(self) -> str:
 		return self._version
 
-	@pyqtProperty("QVariantMap", notify = settingItemChanged)
-	def selectedSettingData(self) -> Optional["QVariantMap"]:
+	@pyqtSlot(str)
+	def setSelectedSettingId(self, setting_key: str) -> None:
+		self._selected_setting_id = setting_key
+		self.settingItemChanged.emit()
+
+	@pyqtProperty(str, fset=setSelectedSettingId, notify=settingItemChanged)
+	def selectedSettingId(self) -> str:
+		return self._selected_setting_id
+
+	@pyqtProperty("QVariantMap", notify=settingItemChanged)
+	def selectedSettingData(self) -> Dict[str, Dict[str, Dict[str, str]]]:
 		return self._settings_data.get(self._selected_setting_id, {
 			"details": {
 				"general": {

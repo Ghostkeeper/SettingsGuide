@@ -15,7 +15,6 @@ import Cura 1.0 as Cura
 Item {
 	id: rightSideItem
 	width: UM.Theme.getSize("print_setup_widget").width
-	property var selectedSettingId: "" //The ID of the setting that got selected.
 
 	Rectangle {
 		id: filterContainer
