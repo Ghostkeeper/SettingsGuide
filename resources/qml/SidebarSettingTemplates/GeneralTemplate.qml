@@ -244,7 +244,6 @@ Item {
 					} else {
 						return description.bottom;
 					}
-
 				}
 				anchors.topMargin: 20 * screenScaleFactor
 
@@ -258,8 +257,7 @@ Item {
 		}
 	}
 	// Image zoom has own background and Animation Image
-	Rectangle
-	{
+	Rectangle {
 		id: zoom_image_background
 		width: general_template.width
 		height: general_template.height

@@ -8,7 +8,7 @@ import json
 import os
 from PyQt5.QtCore import QObject, pyqtSlot, pyqtProperty, pyqtSignal
 import re
-from typing import Dict, Optional
+from typing import Dict, List, Optional, Union
 
 from cura.API import CuraAPI
 from UM.Extension import Extension
@@ -24,19 +24,15 @@ i18n_catalog = i18nCatalog("cura")
 
 ## The class is entry point for the Cura Settings Guide, it sets all required resources and has manager role.
 class CuraSettingsGuide(Extension, QObject):
-	def __init__(self, parent = None) -> None:
+	def __init__(self, parent=None) -> None:
 		QObject.__init__(self, parent)
 		Extension.__init__(self)
 
 		self.addMenuItem("Settings Guide", self.startWelcomeGuide)
+		self._dialog = None #Cached instance of the dialogue window.
 
-		self._dialog = None
-		self._settings_data = {}  # type: Dict[str, dict]
-		self._selected_setting_id = ""
-
-		plugin_path = os.path.dirname(__file__)
-		self._images_path = os.path.join(plugin_path, "resources", "images")
-		self._descriptions_path = os.path.join(plugin_path, "resources", "descriptions")
+		self._settings_data = {} #type: Dict[str, Dict[str, Union[List[str], Dict[str, str]]]] #The data loaded from the JSON files containing descriptions about settings.
+		self._selected_setting_id = "" #Which setting is currently shown for the user. Empty string indicates it's the welcome screen.
 
 		self._loadDescriptionAndImages()
 
@@ -51,8 +47,7 @@ class CuraSettingsGuide(Extension, QObject):
 			"actions": menu_actions,
 			"menu_item": MenuItemHandler.MenuItemHandler(self)
 		}
-		api = CuraAPI()
-		api.interface.settings.addContextMenuItem(data)
+		CuraAPI().interface.settings.addContextMenuItem(data)
 
 	def startWelcomeGuide(self) -> None:
 		if not self._dialog:
@@ -76,11 +71,15 @@ class CuraSettingsGuide(Extension, QObject):
 		return dialog
 
 	def _loadDescriptionAndImages(self) -> None:
+		plugin_path = os.path.dirname(__file__)
+		images_path = os.path.join(plugin_path, "resources", "images")
+		descriptions_path = os.path.join(plugin_path, "resources", "descriptions")
+
 		#Load images paths and add its IDs to the dictionary.
-		self._populateImagesPaths(self._images_path)
+		self._populateImagesPaths(images_path)
 
 		#Load settings descriptions.
-		self._populateSettingsDetails(self._descriptions_path, self._images_path)
+		self._populateSettingsDetails(descriptions_path, images_path)
 
 	def _populateImagesPaths(self, images_path: str) -> None:
 		#Load images paths.
@@ -157,7 +156,7 @@ class CuraSettingsGuide(Extension, QObject):
 		return self._selected_setting_id
 
 	@pyqtProperty("QVariantMap", notify=settingItemChanged)
-	def selectedSettingData(self) -> Dict[str, Dict[str, Dict[str, str]]]:
+	def selectedSettingData(self) -> Dict[str, Dict[str, Union[List[str], Dict[str, str]]]]:
 		return self._settings_data.get(self._selected_setting_id, {
 			"details": {
 				"general": {
