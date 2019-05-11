@@ -1,19 +1,25 @@
-# CuraSettingsGuidePlugin
+Settings Guide
+====
+This Cura plug-in provides additional explanations with pictures and animations for many Cura settings.
 
-- GIF Guidelines
-- Prepare Ultimaker Cura: White background, remove build plate.
-- Prefered capture application: Giphy Capture
-- Configure 640 * 480px record area
-- Save as: Pixel size: 640px, frame rate 10fps
-- Upload to exgif.com Gif, for optimization:
-- IF timelapse applicable: Decrease length to ± 5seconds.
-- Perform Lossy compression, 75-125.
-- Perform transparency optimization, fuzz 3-10%.
-- Save GIF
+![Example](example.png)
 
-# Validate settings and prepare plugin for making Cura Plugin Package
-1. Run python script 'optimizer.py' in DoNotIncludeToPackage, before it define file 'fdmprinter.def.json' location
-2. The script will create a new folder resources/images_opt . This folder has all resized and optimized settings images
-3. Delete 'resources/images' folder
-4. Rename resources/images_opt to resources/images
-5. Now you can create Cura Plugin package
+Installation
+----
+You can install this plug-in in several ways.
+1. **Marketplace:** In Cura, go to the Marketplace and find the Settings Guide in the list. Click it, then click on "install" and restart Cura.
+2. **From package:** Go to the [releases](https://github.com/Ghostkeeper/SettingsGuide/releases) page and download the latest release. Select the SDK version that fits your version of Cura:
+
+    |Cura version|SDK|
+    |------------|---|
+    |4.0         |6  |
+
+    Drag that package file onto the Cura window, then restart Cura.
+3. **Building packages:** Download the latest source code [from Github](https://github.com/Ghostkeeper/SettingsGuide/archive/master.zip), then in a terminal run `cmake . && make pack` to create a .curapackage file for each supported SDK version. Similar to the previous option, select the SDK version that fits your version of Cura and drag it onto the Cura window, then restart Cura.
+4. **From source:** Download the latest source code [from Github](https://github.com/Ghostkeeper/SettingsGuide/archive/master.zip). In Cura, click on "Help", "Show configuration folder". Navigate to the "plugins" subfolder and unpack the .zip file from Github there. Rename the folder to "SettingsGuide2" (removing any suffix that Github added such as "-master"). Restart Cura.
+
+Usage
+----
+To use this plug-in, right click on a setting you'd like to know more about. Then click "Settings Guide".
+
+Alternatively, click on "Extensions" in the application menu, then click on "Settings Guide".
