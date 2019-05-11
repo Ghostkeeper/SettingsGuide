@@ -35,7 +35,7 @@ class CuraSettingsGuide(Extension, QObject):
 
 		self._dialog = None
 		self._settings_data = {}  # type: Dict[str, dict]
-		self._selected_setting_data = {}  #
+		self._selected_setting_id = ""
 		self._os_platform = platform.system()  # type: str
 
 		plugin_path = os.path.dirname(__file__)
@@ -62,7 +62,7 @@ class CuraSettingsGuide(Extension, QObject):
 		if not self._dialog:
 			self._dialog = self._createDialog("SettingsGuide.qml")
 
-		self._selected_setting_data = {}  # Display welcome page
+		self._selected_setting_id = "" #Display welcome page.
 		self.settingItemChanged.emit()
 		self._dialog.show()
 
@@ -81,14 +81,14 @@ class CuraSettingsGuide(Extension, QObject):
 		return dialog
 
 	def _loadDescriptionAndImages(self) -> None:
-		# Load images paths and add it's ids to the dictionary
+		#Load images paths and add its IDs to the dictionary.
 		self._populateImagesPaths(self._images_path)
 
-		# Load settings descriptions
+		#Load settings descriptions.
 		self._populateSettingsDetails(self._descriptions_path, self._images_path)
 
 	def _populateImagesPaths(self, images_path: str) -> None:
-		# Load images paths
+		#Load images paths.
 		images_files = os.listdir(images_path)
 		images_files = sorted(images_files)
 
@@ -118,24 +118,23 @@ class CuraSettingsGuide(Extension, QObject):
 				continue
 
 			try:
-				with open(file_path, "r", encoding = "utf-8") as f:
+				with open(file_path, "r", encoding="utf-8") as f:
 					json_data = json.load(f)
 					general = json_data.get("general", {})
 
 				file_id = file_base_name
 				
-				#The key is not yet added, no images for this setting
+				#The key is not yet added, no images for this setting.
 				if file_id not in self._settings_data.keys():
 					self._settings_data[file_id] = {}
 					self._settings_data[file_id]["details"] = json_data
 
-				#Images already added to the list
+				#Images already added to the list.
 				if "details" not in self._settings_data[file_id]:
 					self._settings_data[file_id]["details"] = json_data
 
-				# Overwrite images
+				#Overwrite images.
 				if "images" in general:
-					#Logger.log("d", "Overwrite images for setting: %s", file_base_name) # TODO this message only for developing
 					custom_path = "file:///" + images_path
 					self._settings_data[file_id]["images"] = []
 					sorted_images = sorted(general["images"].items())
@@ -149,15 +148,7 @@ class CuraSettingsGuide(Extension, QObject):
 
 	@pyqtSlot(str)
 	def setSelectedSetting(self, setting_key: str) -> None:
-		default = {
-			"details": {
-				"general": {
-					"id": setting_key,
-					"template": "EmptyTemplate.qml"
-				}
-			}
-		}
-		self._selected_setting_data = self._settings_data.get(setting_key, default)
+		self._selected_setting_id = setting_key
 		self.settingItemChanged.emit()
 
 	settingItemChanged = pyqtSignal()
@@ -168,7 +159,14 @@ class CuraSettingsGuide(Extension, QObject):
 
 	@pyqtProperty("QVariantMap", notify = settingItemChanged)
 	def selectedSettingData(self) -> Optional["QVariantMap"]:
-		return self._selected_setting_data
+		return self._settings_data.get(self._selected_setting_id, {
+			"details": {
+				"general": {
+					"id": self._selected_setting_id,
+					"template": "EmptyTemplate.qml"
+				}
+			}
+		})
 
 	replacement_patterns = {
 		re.compile(r"^-\s+(.*)"): "<li>\\1</li>\n",
