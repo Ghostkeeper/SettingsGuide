@@ -6,7 +6,6 @@
 
 import json
 import os
-import platform
 from PyQt5.QtCore import QObject, pyqtSlot, pyqtProperty, pyqtSignal
 import re
 from typing import Dict, Optional
@@ -34,7 +33,6 @@ class CuraSettingsGuide(Extension, QObject):
 		self._dialog = None
 		self._settings_data = {}  # type: Dict[str, dict]
 		self._selected_setting_id = ""
-		self._os_platform = platform.system()  # type: str
 
 		plugin_path = os.path.dirname(__file__)
 		self._images_path = os.path.join(plugin_path, "resources", "images")
@@ -68,8 +66,8 @@ class CuraSettingsGuide(Extension, QObject):
 		if not self._dialog:
 			self._dialog = self._createDialog("SettingsGuide.qml")
 
-		self._dialog.show()
 		self.setSelectedSettingId(setting_key)
+		self._dialog.show()
 
 	def _createDialog(self, qml_name: str) -> Optional["QObject"]:
 		Logger.log("d", "Settings Guide: Create dialog from QML [%s]", qml_name)
