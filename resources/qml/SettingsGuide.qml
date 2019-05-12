@@ -39,15 +39,15 @@ Window {
 		height: parent.height
 
 		anchors {
-			leftMargin: 20
-			rightMargin: 20
+			leftMargin: 20 * screenScaleFactor
+			rightMargin: 20 * screenScaleFactor
 		}
 
 		Image {
 			id: welcome_icon
 			source: Qt.resolvedUrl("../icons/icon.svg")
-			width: 300
-			height: 300
+			width: 300 * screenScaleFactor
+			height: 300 * screenScaleFactor
 
 			anchors.horizontalCenter: icon_item.horizontalCenter
 			anchors.verticalCenter: parent.verticalCenter
@@ -57,9 +57,9 @@ Window {
 		Label {
 			id: versionLabel
 			anchors.top : welcome_icon.bottom
-			anchors.topMargin: -60
+			anchors.topMargin: -60 * screenScaleFactor
 			anchors.left: welcome_icon.right
-			font.pixelSize: 22
+			font.pixelSize: 22 * screenScaleFactor
 			font.italic: true
 			color: UM.Theme.getColor("text")
 
@@ -92,7 +92,7 @@ Window {
 			SettingsSidebar {
 				id: settingsSidebar
 				anchors.fill: parent
-				anchors.leftMargin: 1
+				anchors.leftMargin: 1 * screenScaleFactor
 			}
 		}
 
