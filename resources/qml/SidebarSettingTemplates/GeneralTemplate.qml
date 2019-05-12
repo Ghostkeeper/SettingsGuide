@@ -156,7 +156,6 @@ Item {
 
 								onClicked: {
 									zoom_image.source = setting_images[index];
-									zoom_image_background.visible = true;
 									border_rectangle_mouse_area.hoverEnabled = false;
 									border_rectangle.border.color = UM.Theme.getColor("setting_control_border");
 									gridImage.updateBorder();
@@ -261,6 +260,7 @@ Item {
 		id: zoom_image_background
 		width: general_template.width
 		height: general_template.height
+		visible: zoom_image.source != "" //Use single "=" because we want to allow comparison with undefined.
 
 		anchors {
 			left: general_template.left
@@ -270,7 +270,6 @@ Item {
 		z: 1
 		color: UM.Theme.getColor("viewport_background")
 		opacity: 0.9
-		visible: false
 
 		MouseArea {
 			anchors.fill: parent
@@ -279,8 +278,6 @@ Item {
 
 			onClicked: {
 				zoom_image.source = "";
-				zoom_image_background.visible = false;
-
 				images_grid.enableHoverForBorder();
 			}
 		}
@@ -307,7 +304,6 @@ Item {
 		target: manager
 		onSettingItemChanged: {
 			zoom_image.source = "";
-			zoom_image_background.visible = false;
 		}
 	}
 }
