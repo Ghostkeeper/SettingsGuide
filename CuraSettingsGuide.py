@@ -42,7 +42,7 @@ class CuraSettingsGuide(Extension, QObject):
 		menu_actions = ["sidebarMenuItemOnClickHandler"]
 
 		data = {
-			"name": "Setting Guide",
+			"name": "Settings Guide",
 			"icon_name": "help-contents",
 			"actions": menu_actions,
 			"menu_item": MenuItemHandler.MenuItemHandler(self)
