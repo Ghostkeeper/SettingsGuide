@@ -102,7 +102,7 @@ Window {
 		Loader {
 			id: pageLoader
 
-			property var loaderData: undefined //The object which holds all information for the Loader Item.
+			property var loaderData: manager.selectedSettingData //The object which holds all information for the Loader Item.
 			property var loaderCallBack: undefined //The function can be triggered to perform actions in Loader Item.
 			anchors {
 				left: parent.left
@@ -154,7 +154,6 @@ Window {
 		}
 
 		if (template_path != "") {
-			pageLoader.loaderData = data;
 			pageLoader.source = ""; // for some reason if don't do this then QT will not unload the previous source properly
 			pageLoader.source = template_path;
 		}
