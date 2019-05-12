@@ -273,7 +273,6 @@ Item {
 		visible: false
 
 		MouseArea {
-			property var is_open: false
 			anchors.fill: parent
 
 			cursorShape: Qt.ArrowCursor
