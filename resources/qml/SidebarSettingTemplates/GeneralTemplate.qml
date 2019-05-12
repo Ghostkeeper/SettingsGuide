@@ -302,9 +302,10 @@ Item {
 		watchedProperties: [ "label" ]
 	}
 
-	Component.onCompleted: {
-		// Assign it here, otherwise the property is not know for the Item
-		if (zoom_image.source != "") {
+	//When switching settings, unzoom the image.
+	Connections {
+		target: manager
+		onSettingItemChanged: {
 			zoom_image.source = "";
 			zoom_image_background.visible = false;
 		}

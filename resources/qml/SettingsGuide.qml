@@ -109,53 +109,19 @@ Window {
 				top: parent.top
 				bottom: parent.bottom
 			}
-		}
-	}
 
-	function callSettingItemChanged() {
-		var data = manager.selectedSettingData;
-
-		var setting_template = undefined;
-		if(data["details"] != undefined && data["details"]["general"] != undefined) {
-			var setting_template = data["details"]["general"]["template"];
-		}
-
-		var isCreatedBy = false
-		if (manager.selectedSettingId != "" && manager.selectedSettingId.toLowerCase() == "createdby") {
-			isCreatedBy = true;
-		}
-
-		// Selected setting uses general template
-		var template_path = "";
-		if (manager.selectedSettingId != "" && setting_template == undefined) {
-			template_path = Qt.resolvedUrl("SidebarSettingTemplates/GeneralTemplate.qml");
-		}
-		// Selected setting has a different template
-		else if (manager.selectedSettingId != "" && !isCreatedBy && setting_template != undefined) {
-			template_path = Qt.resolvedUrl("SidebarSettingTemplates/" + setting_template);
-		}
-		// Special view which shows created by Template
-		else if (isCreatedBy == true) {
-			template_path = Qt.resolvedUrl("CreatedBy.qml");
-		}
-
-		if (template_path != "") {
-			pageLoader.source = ""; // for some reason if don't do this then QT will not unload the previous source properly
-			pageLoader.source = template_path;
-		}
-		else {
-			pageLoader.source = "";
-		}
-
-		// Call Timer to trigger call back function
-		loaderSourceChangeTimer.restart();
-	}
-
-	// After selecting the setting show proper template of the setting's guide
-	Connections {
-		target: manager
-		onSettingItemChanged: {
-			callSettingItemChanged();
+			source: {
+				if(manager.selectedSettingId === "") {
+					return "";
+				}
+				if(manager.selectedSettingId.toLowerCase() === "createdby") {
+					return Qt.resolvedUrl("CreatedBy.qml");
+				}
+				if(manager.selectedSettingData["details"] != undefined && manager.selectedSettingData["details"]["general"] != undefined && manager.selectedSettingData["details"]["general"]["template"] != undefined) {
+					return Qt.resolvedUrl("SidebarSettingTemplates/" + manager.selectedSettingData["details"]["general"]["template"]);
+				}
+				return Qt.resolvedUrl("SidebarSettingTemplates/GeneralTemplate.qml");
+			}
 		}
 	}
 }
