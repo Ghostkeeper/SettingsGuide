@@ -70,14 +70,7 @@ Window {
 	Item {
 		id: globalItem
 		anchors.fill: parent
-
 		focus: true
-		//Handle escape button press here because in loader they will be not accepted.
-		Keys.onEscapePressed: {
-			if (typeof pageLoader.loaderEscpaPressHandler === "function") {
-				pageLoader.loaderEscpaPressHandler();
-			}
-		}
 
 		Rectangle {
 			id: rightSideItem
@@ -107,9 +100,6 @@ Window {
 		// Here we show our help images with hints and descriptions, and etc..
 		Loader {
 			id: pageLoader
-
-			// Every template might subscribe for this property which will be triggered for after "Escape" button click
-			property var loaderEscpaPressHandler: ""
 
 			property var loaderData: undefined // The object which is holds all information for the Loader Item
 			property var loaderCallBack: undefined // The function cann be triggered for performating actions in Loader Item
