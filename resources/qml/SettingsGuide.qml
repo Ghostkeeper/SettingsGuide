@@ -103,25 +103,11 @@ Window {
 			id: pageLoader
 
 			property var loaderData: manager.selectedSettingData //The object which holds all information for the Loader Item.
-			property var loaderCallBack: undefined //The function can be triggered to perform actions in Loader Item.
 			anchors {
 				left: parent.left
 				right: rightSideItem.left
 				top: parent.top
 				bottom: parent.bottom
-			}
-		}
-
-		// This timer is only for calling 'CallBack' function with delay because Loader source element might be
-		// loaded also with delay
-		Timer {
-			id: loaderSourceChangeTimer
-			interval: 100
-			repeat: false
-			onTriggered: {
-				if (typeof pageLoader.loaderCallBack === "function") {
-					pageLoader.loaderCallBack();
-				}
 			}
 		}
 	}

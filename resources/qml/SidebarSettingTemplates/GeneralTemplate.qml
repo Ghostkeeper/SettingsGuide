@@ -322,11 +322,9 @@ Item {
 
 	Component.onCompleted: {
 		// Assign it here, otherwise the property is not know for the Item
-		loaderCallBack = function(args) {
-			if (zoom_image != null && zoom_image.source != "") {
-				zoom_image.source = "";
-				zoom_image_background.visible = false;
-			}
+		if (zoom_image.source != "") {
+			zoom_image.source = "";
+			zoom_image_background.visible = false;
 		}
 	}
 }
