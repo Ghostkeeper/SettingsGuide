@@ -288,28 +288,11 @@ Item {
 
 	AnimatedImage {
 		id: zoom_image
-		width: {
-			var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400);
-			var new_value = sourceSize.width;
-			if (ratio > 1) {
-				new_value = sourceSize.width / ratio;
-			}
-
-			return new_value * screenScaleFactor;
-		}
-		height: {
-			var ratio = Math.max( sourceSize.width / 700, sourceSize.height / 400);
-			var new_value = sourceSize.height;
-			if (ratio > 1) {
-				new_value = sourceSize.height / ratio;
-			}
-
-			return new_value * screenScaleFactor;
-		}
-
-		z: 1
-		x: (parent.width - width) / 2
-		y: (parent.height - height) / 2
+		z: 1 //Display on top of other content.
+		anchors.centerIn: parent
+		width: parent.width * 2 / 3
+		height: parent.height * 2 / 3
+		fillMode: Image.PreserveAspectFit
 	}
 
 	UM.SettingPropertyProvider {
