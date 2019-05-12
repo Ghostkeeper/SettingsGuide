@@ -101,8 +101,8 @@ Window {
 		Loader {
 			id: pageLoader
 
-			property var loaderData: undefined // The object which is holds all information for the Loader Item
-			property var loaderCallBack: undefined // The function cann be triggered for performating actions in Loader Item
+			property var loaderData: undefined //The object which holds all information for the Loader Item.
+			property var loaderCallBack: undefined //The function can be triggered to perform actions in Loader Item.
 			anchors {
 				left: parent.left
 				right: rightSideItem.left
@@ -182,7 +182,6 @@ Window {
 
 		// Call Timer to trigger call back function
 		loaderSourceChangeTimer.restart();
-
 	}
 
 	// After selecting the setting show proper template of the setting's guide
