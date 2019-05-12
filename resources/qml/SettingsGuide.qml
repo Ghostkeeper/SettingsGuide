@@ -37,6 +37,7 @@ Window {
 		id: icon_item
 		width: parent.width - rightSideItem.width
 		height: parent.height
+		visible: manager.selectedSettingId === ""
 
 		anchors {
 			leftMargin: 20 * screenScaleFactor
@@ -154,12 +155,10 @@ Window {
 
 		if (template_path != "") {
 			pageLoader.loaderData = data;
-			icon_item.visible = false;
 			pageLoader.source = ""; // for some reason if don't do this then QT will not unload the previous source properly
 			pageLoader.source = template_path;
 		}
 		else {
-			icon_item.visible = true;
 			pageLoader.source = "";
 		}
 
