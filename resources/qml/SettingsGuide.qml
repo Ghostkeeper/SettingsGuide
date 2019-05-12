@@ -127,7 +127,6 @@ Window {
 
 	function callSettingItemChanged() {
 		var data = manager.selectedSettingData;
-		var template = "";
 
 		var setting_template = undefined;
 		if(data["details"] != undefined && data["details"]["general"] != undefined) {
@@ -140,33 +139,17 @@ Window {
 		}
 
 		// Selected setting uses general template
+		var template_path = "";
 		if (manager.selectedSettingId != "" && setting_template == undefined) {
-			template = 1;
+			template_path = Qt.resolvedUrl("SidebarSettingTemplates/GeneralTemplate.qml");
 		}
 		// Selected setting has a different template
 		else if (manager.selectedSettingId != "" && !isCreatedBy && setting_template != undefined) {
-			template = 2;
+			template_path = Qt.resolvedUrl("SidebarSettingTemplates/" + setting_template);
 		}
 		// Special view which shows created by Template
 		else if (isCreatedBy == true) {
-			template = 99;
-		}
-		// Show welcome page
-		else {
-			template = -1;
-		}
-
-		var template_path = "";
-		switch (template) {
-			case 1:
-				template_path = Qt.resolvedUrl("SidebarSettingTemplates/GeneralTemplate.qml");
-				break;
-			case 2:
-				template_path = Qt.resolvedUrl("SidebarSettingTemplates/" + setting_template);
-				break;
-			case 99:
-				template_path = Qt.resolvedUrl("CreatedBy.qml");
-				break;
+			template_path = Qt.resolvedUrl("CreatedBy.qml");
 		}
 
 		if (template_path != "") {
