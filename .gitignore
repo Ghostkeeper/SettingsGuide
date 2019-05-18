@@ -1,31 +1,5 @@
-# Compiled and generated things.
-build
+#Compiled and generated things.
 *.pyc
 __pycache__
-*.mo
-docs/html
-*.log
-resources/images_opt/
-
-LC_MESSAGES
-.cache
 *.qmlc
 *.qmlc.*
-.mypy_cache
-
-#MacOS
-.DS_Store
-
-# Editors and IDEs.
-*kdev*
-*.kate-swp
-*.lprof
-*~
-*.qm
-.idea
-cura.desktop
-
-# Eclipse+PyDev
-.project
-.pydevproject
-.settings
