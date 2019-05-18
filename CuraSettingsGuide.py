@@ -21,10 +21,28 @@ from . import MenuItemHandler
 
 i18n_catalog = i18nCatalog("cura")
 
-
-## The class is entry point for the Cura Settings Guide, it sets all required resources and has manager role.
 class CuraSettingsGuide(Extension, QObject):
+	"""
+	The main manager and entry point for the Cura Settings Guide.
+
+	This adds a menu item to the extensions menu and to the context menu of
+	every setting. It creates a dialogue window to display the guide in, and
+	makes the menu items open said dialogue window.
+
+	This class is also exposed to the QML code, which can use it to request the
+	descriptions and metadata about the settings.
+	"""
+
 	def __init__(self, parent=None) -> None:
+		"""
+		Executed during registration of the plug-in.
+
+		This adds a menu item to the extensions menu and the context menu of the
+		settings. It also loads the descriptions and setting metadata from the
+		resources.
+		:param parent: The parent QObject this is located in. Unused by this
+		particular object.
+		"""
 		QObject.__init__(self, parent)
 		Extension.__init__(self)
 
@@ -39,6 +57,10 @@ class CuraSettingsGuide(Extension, QObject):
 		self.initializeHelpSidebarHelpButton()
 
 	def initializeHelpSidebarHelpButton(self) -> None:
+		"""
+		Add menu item to the context menus of settings that opens the guide of
+		that setting.
+		"""
 		menu_actions = ["sidebarMenuItemOnClickHandler"]
 
 		data = {
@@ -50,6 +72,9 @@ class CuraSettingsGuide(Extension, QObject):
 		CuraAPI().interface.settings.addContextMenuItem(data)
 
 	def startWelcomeGuide(self) -> None:
+		"""
+		Opens the guide in the welcome page.
+		"""
 		if not self._dialog:
 			self._dialog = self._createDialog("SettingsGuide.qml")
 
@@ -58,6 +83,10 @@ class CuraSettingsGuide(Extension, QObject):
 
 
 	def startWelcomeGuideAndSelectSetting(self, setting_key: str) -> None:
+		"""
+		Opens the guide and immediately selects a certain setting.
+		:param setting_key: The key of the setting to show the guide of.
+		"""
 		if not self._dialog:
 			self._dialog = self._createDialog("SettingsGuide.qml")
 
@@ -65,12 +94,21 @@ class CuraSettingsGuide(Extension, QObject):
 		self._dialog.show()
 
 	def _createDialog(self, qml_name: str) -> Optional["QObject"]:
+		"""
+		Creates an instance of the QML item for the dialogue window of the
+		guide.
+		:param qml_name: The filename of the QML to create.
+		:return: The QML instance.
+		"""
 		Logger.log("d", "Settings Guide: Create dialog from QML [%s]", qml_name)
 		path = os.path.join(PluginRegistry.getInstance().getPluginPath(self.getPluginId()), "resources", "qml", qml_name)
 		dialog = Application.getInstance().createQmlComponent(path, {"manager": self})
 		return dialog
 
 	def _loadDescriptionAndImages(self) -> None:
+		"""
+		Load all descriptions and image paths.
+		"""
 		plugin_path = os.path.dirname(__file__)
 		images_path = os.path.join(plugin_path, "resources", "images")
 		descriptions_path = os.path.join(plugin_path, "resources", "descriptions")
@@ -82,7 +120,10 @@ class CuraSettingsGuide(Extension, QObject):
 		self._populateSettingsDetails(descriptions_path, images_path)
 
 	def _populateImagesPaths(self, images_path: str) -> None:
-		#Load images paths.
+		"""
+		Load all image paths from a directory, and convert them to QURLs.
+		:param images_path: Directory to load all images from.
+		"""
 		images_files = os.listdir(images_path)
 		images_files = sorted(images_files)
 
@@ -100,6 +141,12 @@ class CuraSettingsGuide(Extension, QObject):
 			self._settings_data[file_id]["images"].append(image_path)
 
 	def _populateSettingsDetails(self, descriptions_path: str, images_path: str) -> None:
+		"""
+		Load all setting descriptions and store them in memory.
+		:param descriptions_path: The path of the directory to find the setting
+		descriptions.
+		:param images_path: The path of the directory to find the images.
+		"""
 		description_files = os.listdir(descriptions_path)
 		for file in description_files:
 			file_path = os.path.join(descriptions_path, file)
@@ -142,21 +189,54 @@ class CuraSettingsGuide(Extension, QObject):
 
 	settingItemChanged = pyqtSignal()
 
-	@pyqtSlot(result = str)
+	@pyqtSlot(result=str)
 	def getPluginpluginVersion(self) -> str:
+		"""
+		Get the version number of this plug-in.
+
+		This setting version is a semantic version number in three parts
+		("1.2.3").
+		:return: The version number of this plug-in.
+		"""
 		return self._version
 
 	@pyqtSlot(str)
 	def setSelectedSettingId(self, setting_key: str) -> None:
+		"""
+		Show the description of a certain setting in the guide dialogue.
+		:param setting_key: The key of the setting to display.
+		"""
 		self._selected_setting_id = setting_key
 		self.settingItemChanged.emit()
 
 	@pyqtProperty(str, fset=setSelectedSettingId, notify=settingItemChanged)
 	def selectedSettingId(self) -> str:
+		"""
+		Returns the setting key of the setting that is currently selected.
+
+		If no setting has been selected, an empty string is returned.
+		:return: The setting key of the setting that is currently selected.
+		"""
 		return self._selected_setting_id
 
 	@pyqtProperty("QVariantMap", notify=settingItemChanged)
 	def selectedSettingData(self) -> Dict[str, Dict[str, Union[List[str], Dict[str, str]]]]:
+		"""
+		Returns the setting data of the currently selected setting.
+
+		This setting data is a dictionary with the data to show in the guide. It
+		is a dictionary containing the following fields:
+		* general/id: The ID of the currently selected setting.
+		* general/template: The template file to display for this setting. If
+		  this is missing, the general template is assumed.
+		* general/images: A list of images to display for this setting.
+		* data/description: An extensive description of the current setting.
+		* data/img_description: An underscript under the images.
+		* data/hints: Hints on how to use the setting better.
+		* data/notes: Extra points of attention to beware of when using the
+		  setting.
+		:return: The setting data of the currently selected setting.
+		"""
 		return self._settings_data.get(self._selected_setting_id, {
 			"details": {
 				"general": {
@@ -170,8 +250,14 @@ class CuraSettingsGuide(Extension, QObject):
 		re.compile(r"^-\s+(.*)"): "<li>\\1</li>\n",
 	}
 
-	@pyqtSlot(str, result = str)
-	def parseStylingList(self, check_text: str)-> str:
+	@pyqtSlot(str, result=str)
+	def parseStylingList(self, check_text: str) -> str:
+		"""
+		Transform the mark-up in the setting description to the HTML subset that
+		Qt supports.
+		:param check_text: The original text.
+		:return: A transformed text that Qt can display.
+		"""
 		contents = ""
 		block_open = ""
 
