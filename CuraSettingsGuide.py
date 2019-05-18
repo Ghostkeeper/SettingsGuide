@@ -189,8 +189,8 @@ class CuraSettingsGuide(Extension, QObject):
 
 	settingItemChanged = pyqtSignal()
 
-	@pyqtSlot(result=str)
-	def getPluginpluginVersion(self) -> str:
+	@pyqtProperty(str, constant=True)
+	def pluginVersion(self) -> str:
 		"""
 		Get the version number of this plug-in.
 

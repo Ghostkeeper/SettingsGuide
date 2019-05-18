@@ -14,7 +14,7 @@ import Cura 1.0 as Cura
 
 Window {
 	id: settingsGuideBase
-	title: catalog.i18nc("@title", "Cura Settings Guide") + " (" + manager.getPluginpluginVersion() + ")"
+	title: catalog.i18nc("@title", "Cura Settings Guide") + " (" + manager.pluginVersion + ")"
 	modality: Qt.ApplicationModal
 	flags: Qt.Dialog | Qt.CustomizeWindowHint | Qt.WindowTitleHint | Qt.WindowCloseButtonHint
 
@@ -64,7 +64,7 @@ Window {
 			font.italic: true
 			color: UM.Theme.getColor("text")
 
-			text: "v" + manager.getPluginpluginVersion()
+			text: "v" + manager.pluginVersion
 		}
 	}
 
