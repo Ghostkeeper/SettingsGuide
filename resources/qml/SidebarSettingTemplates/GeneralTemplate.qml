@@ -5,7 +5,7 @@
 //You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
 import QtQuick 2.7
-import QtQuick.Controls 1.4
+import QtQuick.Controls 2.3
 import QtQuick.Layouts 1.3
 
 import UM 1.3 as UM
@@ -33,40 +33,20 @@ Item {
 		return setting_data["images"] != undefined ? setting_data["images"] : "";
 	}
 
-	anchors {
-		left: parent ? parent.left : undefined
-		right: parent ? parent.right : undefined
-	}
-	width: parent ? parent.width : 0
-
 	ScrollView {
 		id: page_scroll_view
-		frameVisible: false
-		width: parent.width
-		height: parent.height
-		style: UM.Theme.styles.scrollview
+		anchors.fill: parent
 
-		anchors {
-			left:  parent ? parent.left : undefined
-			right: parent ? parent.right : undefined
-		}
-
-		flickableItem.anchors.leftMargin: 20
-		flickableItem.anchors.rightMargin: 20
-
-		Item {
+		Column {
+			spacing: UM.Theme.getSize("default_margin").height
+			padding: UM.Theme.getSize("wide_margin").width
 			property bool is_grid_images_visible: setting_images.length > 0
-
 			id: rect_scroll
 
-			width: general_template.width - 50
-			height: rect_scroll.childrenRect.height
+			width: general_template.width
 
 			Label {
 				id: title
-
-				anchors.top: parent.top
-				anchors.topMargin: 20 * screenScaleFactor
 
 				text: selectedSettingName.properties.label
 				font: UM.Theme.getFont("large")
@@ -76,11 +56,9 @@ Item {
 
 			Label {
 				id: description
-				anchors.top: title.bottom
-				anchors.topMargin: 20 * screenScaleFactor
 
 				text: general_template.setting_description
-				width: rect_scroll.width
+				width: parent.width - parent.padding * 2
 				wrapMode: Text.WordWrap
 				font: UM.Theme.getFont("default")
 				color: UM.Theme.getColor("text")
@@ -98,10 +76,8 @@ Item {
 				id: images_grid
 				columns: 3
 				rows: 2
-				columnSpacing: 20
-				rowSpacing: 20
-				anchors.top: description.bottom
-				anchors.topMargin: 20 * screenScaleFactor
+				columnSpacing: 20 * screenScaleFactor
+				rowSpacing: 20 * screenScaleFactor
 
 				x: (rect_scroll.width - width) / 2 // set center position
 
@@ -203,12 +179,8 @@ Item {
 
 			Label {
 				id: img_description
-				anchors.top: images_grid.bottom
-				anchors.topMargin: 20 * screenScaleFactor
-				anchors.left: parent.left
-				anchors.leftMargin: 20 * screenScaleFactor
 
-				width: rect_scroll.width
+				width: parent.width - parent.padding * 2
 				text: general_template.setting_img_description
 				font: UM.Theme.getFont("default_italic")
 				color: UM.Theme.getColor("text")
@@ -218,16 +190,9 @@ Item {
 
 			Label {
 				id: hints
-				anchors.top: {
-					if (rect_scroll.is_grid_images_visible) {
-						return img_description.bottom;
-					}
-					return description.bottom;
-				}
-				anchors.topMargin:20 * screenScaleFactor
 
 				text: manager.parseStylingList(general_template.setting_hints)
-				width: rect_scroll.width
+				width: parent.width - parent.padding * 2
 				font: UM.Theme.getFont("default")
 				color: UM.Theme.getColor("text")
 				renderType: Text.NativeRendering
@@ -237,17 +202,9 @@ Item {
 
 			Label {
 				id: notes
-				anchors.top: {
-					if (general_template.setting_hints.length > 0) {
-						return hints.bottom;
-					} else {
-						return description.bottom;
-					}
-				}
-				anchors.topMargin: 20 * screenScaleFactor
 
 				text: general_template.setting_notes
-				width: rect_scroll.width
+				width: parent.width - parent.padding * 2
 				font: UM.Theme.getFont("default_bold")
 				color: UM.Theme.getColor("text")
 				renderType: Text.NativeRendering
