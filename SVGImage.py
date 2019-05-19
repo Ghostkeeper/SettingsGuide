@@ -28,8 +28,6 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 		self._svg_item = None
 		self._source = PyQt5.QtCore.QUrl("")
 		self._style_options = PyQt5.QtWidgets.QStyleOptionGraphicsItem() #Defaults.
-		self._desired_width = 0
-		self._desired_height = 0
 
 	sourceChanged = PyQt5.QtCore.pyqtSignal()
 
@@ -43,16 +41,15 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 
 		self._source = source
 		self._svg_item = PyQt5.QtSvg.QGraphicsSvgItem(self._source.toLocalFile())
-
-		super().setWidth(self._svg_item.renderer().defaultSize().width())
-		super().setHeight(self._svg_item.renderer().defaultSize().height())
-		if self._desired_width == 0 or self._desired_height == 0:
-			self.setScale(0)
-		else:
-			width_scale = self._desired_width / self.width
-			height_scale = self._desired_height / self.height
-			scale = min(width_scale, height_scale)
-			self.setScale(scale)
+		if self.defaultSize.width() != 0 and self.defaultSize.height() != 0 and self.width != 0 and self.height != 0:
+			scale_x = self.width / self.defaultSize.width()
+			scale_y = self.height / self.defaultSize.height()
+			viewbox = self._svg_item.renderer().viewBox()
+			view_x = viewbox.x() / scale_x
+			view_y = viewbox.y() / scale_y
+			view_w = viewbox.width() / scale_x
+			view_h = viewbox.height() / scale_y
+			self._svg_item.renderer().setViewBox(PyQt5.QtCore.QRectF(view_x, view_y, view_w, view_h))
 
 		self._svg_item.renderer().repaintNeeded.connect(self.update)
 
@@ -91,35 +88,37 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 	def setWidth(self, width: float) -> None:
 		"""
 		Changes the width of the image.
-
-		The width is changed through changing the scale, due to how the SVG
-		renderer works.
 		:param width: The new width.
 		"""
-		self._desired_width = width
-		if self._desired_height == 0:
-			self.setScale(0)
+		super().setWidth(width)
+		if self.defaultSize.width() <= 0 or self.defaultSize.height() <= 0 or self.height <= 0 or width <= 0:
 			return
-		width_scale = self._desired_width / self.defaultSize.width()
-		height_scale = self._desired_height / self.defaultSize.height()
-		self.setScale(min(width_scale, height_scale))
+		scale_x = width / self.defaultSize.width()
+		scale_y = self.height / self.defaultSize.height()
+		viewbox = self._svg_item.renderer().viewBox()
+		view_x = viewbox.x() / scale_x
+		view_y = viewbox.y() / scale_y
+		view_w = viewbox.width() / scale_x
+		view_h = viewbox.height() / scale_y
+		self._svg_item.renderer().setViewBox(PyQt5.QtCore.QRectF(view_x, view_y, view_w, view_h))
 		self.sizeChanged.emit()
 
 	def setHeight(self, height: float) -> None:
 		"""
 		Changes the height of the image.
-
-		The height is changed through changing the scale, due to how the SVG
-		renderer works.
 		:param height: The new height.
 		"""
-		self._desired_height = height
-		if self._desired_width == 0:
-			self.setScale(0)
+		super().setHeight(height)
+		if self.defaultSize.width() <= 0 or self.defaultSize.height() <= 0 or self.width <= 0 or height <= 0:
 			return
-		width_scale = self._desired_width / self.defaultSize.width()
-		height_scale = self._desired_height / self.defaultSize.height()
-		self.setScale(min(width_scale, height_scale))
+		scale_x = self.width / self.defaultSize.width()
+		scale_y = height / self.defaultSize.height()
+		viewbox = self._svg_item.renderer().viewBox()
+		view_x = viewbox.x() / scale_x
+		view_y = viewbox.y() / scale_y
+		view_w = viewbox.width() / scale_x
+		view_h = viewbox.height() / scale_y
+		self._svg_item.renderer().setViewBox(PyQt5.QtCore.QRectF(view_x, view_y, view_w, view_h))
 		self.sizeChanged.emit()
 
 	@PyQt5.QtCore.pyqtProperty(float, fset=setWidth, notify=sizeChanged)
@@ -131,7 +130,7 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 		width.
 		:return: The current width.
 		"""
-		return self._desired_width
+		return super().width()
 
 	@PyQt5.QtCore.pyqtProperty(float, fset=setHeight, notify=sizeChanged)
 	def height(self):
@@ -142,4 +141,4 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 		height.
 		:return: The current height.
 		"""
-		return self._desired_height
+		return super().height()
