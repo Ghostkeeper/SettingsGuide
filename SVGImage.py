@@ -46,7 +46,7 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 
 		self.sourceChanged.emit()
 
-	@PyQt5.QtCore.pyqtProperty(PyQt5.QtCore.QUrl, fset=setSource)
+	@PyQt5.QtCore.pyqtProperty(PyQt5.QtCore.QUrl, fset=setSource, notify=sourceChanged)
 	def source(self) -> PyQt5.QtCore.QUrl:
 		"""
 		Returns the current source SVG image that is being displayed.
@@ -54,7 +54,7 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 		"""
 		return self._source
 
-	def paint(self, painter) -> None:
+	def paint(self, painter: PyQt5.QtGui.QPainter) -> None:
 		"""
 		Updates the image.
 
