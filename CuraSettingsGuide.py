@@ -7,6 +7,7 @@
 import json
 import os
 from PyQt5.QtCore import QObject, pyqtSlot, pyqtProperty, pyqtSignal
+import PyQt5.QtQml
 import re
 from typing import Dict, List, Optional, Union
 
@@ -17,7 +18,7 @@ from UM.Logger import Logger
 from UM.PluginRegistry import PluginRegistry
 from UM.i18n import i18nCatalog
 
-from . import MenuItemHandler
+from . import MenuItemHandler, SVGImage
 
 i18n_catalog = i18nCatalog("cura")
 
@@ -55,6 +56,8 @@ class CuraSettingsGuide(Extension, QObject):
 		self._loadDescriptionAndImages()
 
 		self.initializeHelpSidebarHelpButton()
+
+		PyQt5.QtQml.qmlRegisterType(SVGImage.SVGImage, "SettingsGuide", 1, 0, "SVGImage")
 
 	def initializeHelpSidebarHelpButton(self) -> None:
 		"""
