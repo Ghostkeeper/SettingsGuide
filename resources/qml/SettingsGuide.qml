@@ -20,10 +20,6 @@ Window {
 
 	width: 1200 * screenScaleFactor
 	height: 640 * screenScaleFactor
-	minimumWidth: width
-	maximumWidth: minimumWidth
-	minimumHeight: height
-	maximumHeight: minimumHeight
 
 	color: UM.Theme.getColor("main_background")
 
@@ -50,15 +46,13 @@ Window {
 			width: 300 * screenScaleFactor
 			height: 300 * screenScaleFactor
 
-			anchors.horizontalCenter: icon_item.horizontalCenter
-			anchors.verticalCenter: parent.verticalCenter
+			anchors.centerIn: parent
 			opacity: 0.5
 		}
 
 		Label {
 			id: versionLabel
-			anchors.top : welcome_icon.bottom
-			anchors.topMargin: -60 * screenScaleFactor
+			anchors.bottom: welcome_icon.bottom
 			anchors.left: welcome_icon.right
 			font.pixelSize: 22 * screenScaleFactor
 			font.italic: true
