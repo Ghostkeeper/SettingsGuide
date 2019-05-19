@@ -28,6 +28,8 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 		self._svg_item = None
 		self._source = PyQt5.QtCore.QUrl("")
 		self._style_options = PyQt5.QtWidgets.QStyleOptionGraphicsItem() #Defaults.
+		self._desired_width = 0
+		self._desired_height = 0
 
 	sourceChanged = PyQt5.QtCore.pyqtSignal()
 
@@ -40,8 +42,18 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 			self._svg_item.renderer().repaintNeeded.disconnect(self.update)
 
 		self._source = source
-
 		self._svg_item = PyQt5.QtSvg.QGraphicsSvgItem(self._source.toLocalFile())
+
+		super().setWidth(self._svg_item.renderer().defaultSize().width())
+		super().setHeight(self._svg_item.renderer().defaultSize().height())
+		if self._desired_width == 0 or self._desired_height == 0:
+			self.setScale(0)
+		else:
+			width_scale = self._desired_width / self.width
+			height_scale = self._desired_height / self.height
+			scale = min(width_scale, height_scale)
+			self.setScale(scale)
+
 		self._svg_item.renderer().repaintNeeded.connect(self.update)
 
 		self.sourceChanged.emit()
@@ -63,3 +75,71 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 		"""
 		if self._svg_item is not None:
 			self._svg_item.paint(painter, self._style_options)
+
+	@PyQt5.QtCore.pyqtProperty(PyQt5.QtCore.QSize, notify=sourceChanged)
+	def defaultSize(self) -> PyQt5.QtCore.QSize:
+		"""
+		Returns the size of the actual image in the SVG file.
+		:return: The size of the image in the SVG file.
+		"""
+		if self._svg_item is None:
+			return PyQt5.QtCore.QSize(0, 0)
+		return self._svg_item.renderer().defaultSize()
+
+	sizeChanged = PyQt5.QtCore.pyqtSignal()
+
+	def setWidth(self, width: float) -> None:
+		"""
+		Changes the width of the image.
+
+		The width is changed through changing the scale, due to how the SVG
+		renderer works.
+		:param width: The new width.
+		"""
+		self._desired_width = width
+		if self._desired_height == 0:
+			self.setScale(0)
+			return
+		width_scale = self._desired_width / self.defaultSize.width()
+		height_scale = self._desired_height / self.defaultSize.height()
+		self.setScale(min(width_scale, height_scale))
+		self.sizeChanged.emit()
+
+	def setHeight(self, height: float) -> None:
+		"""
+		Changes the height of the image.
+
+		The height is changed through changing the scale, due to how the SVG
+		renderer works.
+		:param height: The new height.
+		"""
+		self._desired_height = height
+		if self._desired_width == 0:
+			self.setScale(0)
+			return
+		width_scale = self._desired_width / self.defaultSize.width()
+		height_scale = self._desired_height / self.defaultSize.height()
+		self.setScale(min(width_scale, height_scale))
+		self.sizeChanged.emit()
+
+	@PyQt5.QtCore.pyqtProperty(float, fset=setWidth, notify=sizeChanged)
+	def width(self) -> float:
+		"""
+		Gets the current width.
+
+		Due to the fixed-ratio scaling, the image might appear smaller than this
+		width.
+		:return: The current width.
+		"""
+		return self._desired_width
+
+	@PyQt5.QtCore.pyqtProperty(float, fset=setHeight, notify=sizeChanged)
+	def height(self):
+		"""
+		Gets the current height.
+
+		Due to the fixed-ratio scaling, the image might appear smaller than this
+		height.
+		:return: The current height.
+		"""
+		return self._desired_height
