@@ -10,6 +10,7 @@ import QtQuick.Layouts 1.3
 
 import UM 1.3 as UM
 import Cura 1.0 as Cura
+import SettingsGuide 1.0 as SettingsGuide //For SVGImage.
 
 Item {
 	id: general_template
@@ -119,7 +120,7 @@ Item {
 							opacity: 0.7
 							width: 50 * screenScaleFactor
 							height: 50 * screenScaleFactor
-							visible: modelData.split('.').pop() == "gif" //Only show this for GIF images.
+							visible: modelData.split('.').pop() === "gif" //Only show this for GIF images.
 						}
 					}
 				}
@@ -183,6 +184,15 @@ Item {
 			height: parent.height * 2 / 3
 			fillMode: Image.PreserveAspectFit
 			onStatusChanged: playing = (status == AnimatedImage.Ready)
+			visible: !svg_image.visible
+		}
+		SettingsGuide.SVGImage {
+			id: svg_image
+			source: general_template.zoomed_image
+			anchors.centerIn: parent
+			width: parent.width * 2 / 3
+			height: parent.height * 2 / 3
+			visible: general_template.zoomed_image.split('.').pop() === "svg"
 		}
 	}
 
