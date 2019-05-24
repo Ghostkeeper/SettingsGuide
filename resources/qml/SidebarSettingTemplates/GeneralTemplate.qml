@@ -15,6 +15,7 @@ Item {
 	id: general_template
 
 	property var setting_data: loaderData
+	property string zoomed_image: ""
 
 	// Check for undefined, because after switching loader object the qml still tries to read this data
 	property var setting_description: {
@@ -108,7 +109,7 @@ Item {
 								anchors.fill: parent
 								hoverEnabled: true
 								cursorShape: Qt.PointingHandCursor
-								onClicked: zoom_image.source = modelData;
+								onClicked: general_template.zoomed_image = modelData;
 							}
 						}
 
@@ -163,7 +164,7 @@ Item {
 	//Zoomed in version of an image, shown only when you click an image.
 	Rectangle {
 		anchors.fill: parent
-		visible: zoom_image.source != "" //Use single "=" because we want to allow comparison with undefined for the initial state.
+		visible: general_template.zoomed_image !== ""
 		z: 1 //On top of the general description.
 		color: UM.Theme.getColor("viewport_background")
 		opacity: 0.9
@@ -171,12 +172,12 @@ Item {
 		//Allow reverting zoom level.
 		MouseArea {
 			anchors.fill: parent
-			onClicked: zoom_image.source = "";
+			onClicked: general_template.zoomed_image = ""
 			hoverEnabled: true //Catch hover events so that hovering over images behind the overlay doesn't have an effect.
 		}
 
 		AnimatedImage {
-			id: zoom_image
+			source: general_template.zoomed_image
 			anchors.centerIn: parent
 			width: parent.width * 2 / 3
 			height: parent.height * 2 / 3
@@ -195,8 +196,6 @@ Item {
 	//When switching settings, unzoom the image.
 	Connections {
 		target: manager
-		onSettingItemChanged: {
-			zoom_image.source = "";
-		}
+		onSettingItemChanged: general_template.zoomed_image = ""
 	}
 }
