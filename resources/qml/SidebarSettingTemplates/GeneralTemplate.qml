@@ -172,6 +172,7 @@ Item {
 		MouseArea {
 			anchors.fill: parent
 			onClicked: zoom_image.source = "";
+			hoverEnabled: true //Catch hover events so that hovering over images behind the overlay doesn't have an effect.
 		}
 
 		AnimatedImage {
