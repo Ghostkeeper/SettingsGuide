@@ -40,10 +40,9 @@ Item {
 		Column {
 			spacing: UM.Theme.getSize("default_margin").height
 			padding: UM.Theme.getSize("wide_margin").width
-			property bool is_grid_images_visible: setting_images.length > 0
 			id: rect_scroll
 
-			width: general_template.width
+			width: general_template.width //Can't use parent.width since it is a ScrollView of infinite dimensions.
 
 			Label {
 				id: title
@@ -66,112 +65,60 @@ Item {
 			}
 
 			GridLayout {
-				property var selectedMouseArea: undefined
-				function enableHoverForBorder() {
-					if (selectedMouseArea != undefined) {
-						selectedMouseArea.hoverEnabled = true;
-					}
-				}
-
 				id: images_grid
-				columns: 3
-				rows: 2
-				columnSpacing: 20 * screenScaleFactor
-				rowSpacing: 20 * screenScaleFactor
-
-				x: (rect_scroll.width - width) / 2 // set center position
-
-				visible: rect_scroll.is_grid_images_visible
+				columns: 6
+				columnSpacing: UM.Theme.getSize("default_margin").width
+				rowSpacing: UM.Theme.getSize("default_margin").height
+				visible: setting_images.length > 0
+				width: parent.width - parent.padding * 2
+				height: 200 * screenScaleFactor + Math.floor((setting_images.length - 1) / 3) * 200 * screenScaleFactor + Math.max(Math.floor((setting_images.length - 1) / 3), 0) * rowSpacing
 
 				Repeater {
-					id: animationRepeater
-					model: setting_images.length
-					AnimatedImage {
-						id: gridImage
-						source: setting_images[index]
+					model: setting_images
+					Image {
+						source: modelData
+						fillMode: Image.PreserveAspectFit
 
-						// Some gif animations have a black first frame, for this reason start from 1
-						currentFrame: setting_images[index].split('.').pop() == "gif" ? 1 : 0
-						playing: false
-
-						property var is_gif_image: setting_images[index].split('.').pop() == "gif"
-
-						property var updateBorder: function() {
-							if (gridImage.is_gif_image) {
-								border_rectangle.border.width = 1;
+						Layout.preferredWidth: (parent.width - parent.columnSpacing * 2) / 3
+						Layout.fillWidth: true
+						Layout.preferredHeight: 200
+						Layout.columnSpan: {
+							if(index == setting_images.length - 1) {
+								return 6 / ((index % 3) + 1); //2 columns if it's the 3rd item, 3 if it's the 2nd item or 6 if it's the 1st item on the row.
+							} else if(index == setting_images.length - 2 && index % 3 == 0) { //If the second-to-last item is 1st on the row, both last items get 3 columns.
+								return 3;
 							} else {
-								border_rectangle.border.width = 0;
+								return 2;
 							}
 						}
 
+						//Border.
 						Rectangle {
-							id: border_rectangle
-							anchors.fill: parent
-							border.width: {
-								// Show border only for gif images, because they have animation
-								return gridImage.is_gif_image ? 1 : 0;
+							anchors {
+								fill: parent
+								margins: -UM.Theme.getSize("thick_lining").width
 							}
-							border.color: UM.Theme.getColor("setting_control_border")
 							color: "transparent"
-							anchors.margins: -5
+							border.width: image_mouse_area.containsMouse ? UM.Theme.getSize("thick_lining").width : 0
+							border.color: UM.Theme.getColor("primary_hover")
 
+							//Clickable area.
 							MouseArea {
-								id: border_rectangle_mouse_area
-								hoverEnabled: true
+								id: image_mouse_area
 								anchors.fill: parent
+								hoverEnabled: true
 								cursorShape: Qt.PointingHandCursor
-								onHoveredChanged: {
-									if (containsMouse) {
-										border_rectangle.border.color = UM.Theme.getColor("setting_control_border_highlight");
-										border_rectangle.border.width = 2;
-									} else {
-										border_rectangle.border.color = UM.Theme.getColor("setting_control_border");
-										gridImage.updateBorder();
-									}
-								}
-
-								onClicked: {
-									zoom_image.source = setting_images[index];
-									border_rectangle_mouse_area.hoverEnabled = false;
-									border_rectangle.border.color = UM.Theme.getColor("setting_control_border");
-									gridImage.updateBorder();
-
-									// After zooming don't change the border color of an image on hover
-									images_grid.selectedMouseArea = border_rectangle_mouse_area;
-								}
+								onClicked: zoom_image.source = modelData;
 							}
 						}
 
-						Layout.preferredWidth: {
-							var ratio = Math.max( sourceSize.width / 350, sourceSize.height / 200);
-							var new_value = sourceSize.width;
-							if (ratio > 1) {
-								new_value = sourceSize.width / ratio;
-							}
-
-							return new_value * screenScaleFactor;
-						}
-						Layout.preferredHeight: {
-							var ratio = Math.max( sourceSize.width / 350, sourceSize.height / 200);
-							var new_value = sourceSize.height;
-							if (ratio > 1) {
-								new_value = sourceSize.height / ratio;
-							}
-
-							return new_value * screenScaleFactor;
-						}
-
-						// Only gif files can have animation
 						Image {
-							id: play_icon
 							source: Qt.resolvedUrl("../../icons/play.svg")
-							anchors.horizontalCenter: parent.horizontalCenter
-							anchors.verticalCenter: parent.verticalCenter
+							anchors.centerIn: parent
 							opacity: 0.7
 							width: 50 * screenScaleFactor
 							height: 50 * screenScaleFactor
-							// Do not show play button for rest image extensions
-							visible: setting_images[index].split('.').pop() == "gif"
+							visible: modelData.split('.').pop() == "gif" //Only show this for GIF images.
 						}
 					}
 				}
@@ -212,41 +159,29 @@ Item {
 			}
 		}
 	}
-	// Image zoom has own background and Animation Image
+
+	//Zoomed in version of an image, shown only when you click an image.
 	Rectangle {
-		id: zoom_image_background
-		width: general_template.width
-		height: general_template.height
-		visible: zoom_image.source != "" //Use single "=" because we want to allow comparison with undefined.
-
-		anchors {
-			left: general_template.left
-			right: general_template.right
-		}
-
-		z: 1
+		anchors.fill: parent
+		visible: zoom_image.source != "" //Use single "=" because we want to allow comparison with undefined for the initial state.
+		z: 1 //On top of the general description.
 		color: UM.Theme.getColor("viewport_background")
 		opacity: 0.9
 
+		//Allow reverting zoom level.
 		MouseArea {
 			anchors.fill: parent
-
-			cursorShape: Qt.ArrowCursor
-
-			onClicked: {
-				zoom_image.source = "";
-				images_grid.enableHoverForBorder();
-			}
+			onClicked: zoom_image.source = "";
 		}
-	}
 
-	AnimatedImage {
-		id: zoom_image
-		z: 1 //Display on top of other content.
-		anchors.centerIn: parent
-		width: parent.width * 2 / 3
-		height: parent.height * 2 / 3
-		fillMode: Image.PreserveAspectFit
+		AnimatedImage {
+			id: zoom_image
+			anchors.centerIn: parent
+			width: parent.width * 2 / 3
+			height: parent.height * 2 / 3
+			fillMode: Image.PreserveAspectFit
+			onStatusChanged: playing = (status == AnimatedImage.Ready)
+		}
 	}
 
 	UM.SettingPropertyProvider {
