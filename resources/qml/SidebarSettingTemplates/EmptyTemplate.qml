@@ -10,8 +10,6 @@ import QtQuick.Layouts 1.3
 import UM 1.2 as UM
 
 Item {
-	id: empty_template
-
 	Text {
 		text: "EMPTY"
 		color: UM.Theme.getColor("text")
