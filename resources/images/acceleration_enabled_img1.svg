@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<style>
+		.axis_labels { font: 8pt sans-serif; }
+	</style>
+
+	<!-- Nozzle. TODO: Animate. Default position needs to be 10,20. -->
+	<polygon points="-4,-20 -4,-10 -7,-10 -7,-6 -1,0 1,0 7,-6 7,-10 4,-10 4,-20" fill="grey" />
+
+	<!-- V-T curve. -->
+	<polyline points="10,70 29,51 86,51 105,70 105,80 124,99 181,99 200,80" stroke="red" stroke-width="1" fill="none" />
+
+	<!-- Axes of V-t graph (on top of everything). -->
+	<g stroke="black" stroke-width="1">
+		<line x1="10" y1="50" x2="10" y2="100" />
+		<line x1="10" y1="75" x2="200" y2="75" />
+	</g>
+	<g text-anchor="middle" class="axis_labels">
+		<text x="5" y="60">V</text>
+		<text x="195" y="74">t</text>
+	</g>
+</svg>
