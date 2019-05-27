@@ -52,6 +52,7 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 			self._svg_item.renderer().setViewBox(PyQt5.QtCore.QRectF(view_x, view_y, view_w, view_h))
 
 		self._svg_item.renderer().repaintNeeded.connect(self.update)
+		self.update()
 
 		self.sourceChanged.emit()
 
