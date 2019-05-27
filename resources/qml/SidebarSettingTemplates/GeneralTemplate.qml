@@ -163,12 +163,16 @@ Item {
 	}
 
 	//Zoomed in version of an image, shown only when you click an image.
-	Rectangle {
+	Item {
 		anchors.fill: parent
 		visible: general_template.zoomed_image !== ""
 		z: 1 //On top of the general description.
-		color: UM.Theme.getColor("viewport_background")
-		opacity: 0.9
+
+		Rectangle {
+			anchors.fill: parent
+			color: UM.Theme.getColor("viewport_background")
+			opacity: 0.9
+		}
 
 		//Allow reverting zoom level.
 		MouseArea {
