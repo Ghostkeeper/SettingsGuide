@@ -21,7 +21,7 @@ Item {
 
 		border.width: Math.round(UM.Theme.getSize("default_lining").width)
 		border.color: {
-			if (hoverMouseArea.containsMouse || clearFilterButton.containsMouse) {
+			if(hoverMouseArea.containsMouse || clearFilterButton.containsMouse) {
 				return UM.Theme.getColor("setting_control_border_highlight");
 			}
 			else {
@@ -67,7 +67,6 @@ Item {
 			}
 
 			property var expandedCategories
-			property bool lastFindingSettings: false
 
 			onTextChanged: {
 				settingsSearchTimer.restart();
@@ -75,23 +74,17 @@ Item {
 
 			property var temp_model: ""
 			onEditingFinished: {
-				if (text.toLowerCase() == "createdby") {
+				if(text.toLowerCase() == "createdby") {
 					temp_model = contents.model;
 					contents.model = createdBy;
 					return;
 				}
-				if (temp_model != "") {
+				if(temp_model != "") {
 					contents.model = temp_model;
 					temp_model = "";
 				}
 
 				definitionsModel.filter = {"i18n_label": "*" + text};
-
-				findingSettings = (text.length > 0);
-				if (findingSettings != lastFindingSettings) {
-					updateDefinitionModel();
-					lastFindingSettings = findingSettings;
-				}
 			}
 
 			Keys.onEscapePressed: {
@@ -99,7 +92,7 @@ Item {
 			}
 
 			function updateDefinitionModel() {
-				if (findingSettings) {
+				if(text.length > 0) {
 					expandedCategories = definitionsModel.expanded.slice();
 					definitionsModel.expanded = [""]; // keep categories closed while to prevent render while making settings visible one by one
 					definitionsModel.showAncestors = true;
@@ -107,7 +100,7 @@ Item {
 					definitionsModel.expanded = ["*"];
 				}
 				else {
-					if (expandedCategories) {
+					if(expandedCategories) {
 						definitionsModel.expanded = expandedCategories;
 					}
 					definitionsModel.showAncestors = false;
