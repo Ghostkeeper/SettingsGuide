@@ -3,6 +3,7 @@
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
+import enum #To implement fillMode.
 import PyQt5.QtCore #For QUrl.
 import PyQt5.QtGui #An image to display the graphic.
 import PyQt5.QtQuick
@@ -18,6 +19,24 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 	of both worlds.
 	"""
 
+	class FillMode(enum.IntEnum):
+		"""
+		The different fill modes available.
+
+		This mirrors the fill modes in QML in the Image object. However that
+		object is not exposed to Python by PyQt (as far as I know) so that data
+		is mirrored here. This data was obtained by setting the fillMode
+		property of SVGImage to different values from the Image.fillMode enum
+		and logging the integer parameter provided to setFillMode.
+		"""
+		Stretch = 0
+		PreserveAspectFit = 1
+		PreserveAspectCrop = 2
+		Tile = 3
+		TileVertically = 4
+		TileHorizontally = 5
+		Pad = 6
+
 	def __init__(self, parent=None) -> None:
 		"""
 		Initialises with out any SVG image. The image is set with setSource().
@@ -28,6 +47,7 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 		self._svg_item = None
 		self._source = PyQt5.QtCore.QUrl("")
 		self._style_options = PyQt5.QtWidgets.QStyleOptionGraphicsItem() #Defaults.
+		self._fill_mode = self.FillMode.Stretch
 
 	sourceChanged = PyQt5.QtCore.pyqtSignal()
 
@@ -138,3 +158,22 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 		:return: The current height.
 		"""
 		return super().height()
+
+	fillModeChanged = PyQt5.QtCore.pyqtSignal()
+
+	def setFillMode(self, fill_mode: FillMode) -> None:
+		"""
+		Changes the way in which the image fills the space allotted for the
+		image.
+		:param fill_mode: The new fill mode to use.
+		"""
+		self._fill_mode = fill_mode
+		self.resize(self.width, self.height)
+
+	@PyQt5.QtCore.pyqtProperty(int, fset=setFillMode, notify=fillModeChanged)
+	def fillMode(self):
+		"""
+		Returns the current fill mode to fill the allotted area for the image.
+		:return: The current fill mode to fill the allotted area for the image.
+		"""
+		return self._fill_mode
