@@ -197,6 +197,7 @@ Item {
 			width: parent.width * 2 / 3
 			height: parent.height * 2 / 3
 			visible: general_template.zoomed_image.split('.').pop() === "svg"
+			fillMode: Image.PreserveAspectFit
 		}
 	}
 
