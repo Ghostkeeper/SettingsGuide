@@ -113,6 +113,18 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 			return
 		scale_x = width / self.defaultSize.width()
 		scale_y = height / self.defaultSize.height()
+		if self._fill_mode == self.FillMode.Stretch or self._fill_mode == self.FillMode.Tile or self._fill_mode == self.FillMode.TileHorizontally or self._fill_mode == self.FillMode.TileVertically:
+			#Tile is not supported.
+			pass
+		elif self._fill_mode == self.FillMode.PreserveAspectCrop:
+			scale_x = max(scale_x, scale_y)
+			scale_y = scale_x
+		elif self._fill_mode == self.FillMode.PreserveAspectFit:
+			scale_x = min(scale_x, scale_y)
+			scale_y = scale_x
+		elif self._fill_mode == self.FillMode.Pad:
+			scale_x = 1
+			scale_y = 1
 		viewbox = self._svg_item.renderer().viewBox()
 		view_x = viewbox.x() / scale_x
 		view_y = viewbox.y() / scale_y
