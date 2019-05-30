@@ -41,15 +41,7 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 
 		self._source = source
 		self._svg_item = PyQt5.QtSvg.QGraphicsSvgItem(self._source.toLocalFile())
-		if self.defaultSize.width() != 0 and self.defaultSize.height() != 0 and self.width != 0 and self.height != 0:
-			scale_x = self.width / self.defaultSize.width()
-			scale_y = self.height / self.defaultSize.height()
-			viewbox = self._svg_item.renderer().viewBox()
-			view_x = viewbox.x() / scale_x
-			view_y = viewbox.y() / scale_y
-			view_w = viewbox.width() / scale_x
-			view_h = viewbox.height() / scale_y
-			self._svg_item.renderer().setViewBox(PyQt5.QtCore.QRectF(view_x, view_y, view_w, view_h))
+		self.resize(self.width, self.height)
 
 		self._svg_item.renderer().repaintNeeded.connect(self.update)
 		self.update()
@@ -86,33 +78,20 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 
 	sizeChanged = PyQt5.QtCore.pyqtSignal()
 
-	def setWidth(self, width: float) -> None:
+	def resize(self, width: float, height: float) -> None:
 		"""
-		Changes the width of the image.
-		:param width: The new width.
+		Resizes the image to a certain size.
+
+		The actual size of the drawn image depends on the fillMode property. It
+		may be smaller than the desired width and height.
+		:param width: The new width of the drawing area.
+		:param height: The new height of the drawing area.
 		"""
-		super().setWidth(width)
-		if self.defaultSize.width() <= 0 or self.defaultSize.height() <= 0 or self.height <= 0 or width <= 0:
+		if self.defaultSize.width() <= 0 or self.defaultSize.height() <= 0: #Can't rescale to infinite ratio to fill the desired area. Leave it at 0.
+			return
+		if width <= 0 or height <= 0: #Invalid parameters. Don't give an error though because it'll get called from QML which can't handle the Python errors.
 			return
 		scale_x = width / self.defaultSize.width()
-		scale_y = self.height / self.defaultSize.height()
-		viewbox = self._svg_item.renderer().viewBox()
-		view_x = viewbox.x() / scale_x
-		view_y = viewbox.y() / scale_y
-		view_w = viewbox.width() / scale_x
-		view_h = viewbox.height() / scale_y
-		self._svg_item.renderer().setViewBox(PyQt5.QtCore.QRectF(view_x, view_y, view_w, view_h))
-		self.sizeChanged.emit()
-
-	def setHeight(self, height: float) -> None:
-		"""
-		Changes the height of the image.
-		:param height: The new height.
-		"""
-		super().setHeight(height)
-		if self.defaultSize.width() <= 0 or self.defaultSize.height() <= 0 or self.width <= 0 or height <= 0:
-			return
-		scale_x = self.width / self.defaultSize.width()
 		scale_y = height / self.defaultSize.height()
 		viewbox = self._svg_item.renderer().viewBox()
 		view_x = viewbox.x() / scale_x
@@ -121,6 +100,22 @@ class SVGImage(PyQt5.QtQuick.QQuickPaintedItem):
 		view_h = viewbox.height() / scale_y
 		self._svg_item.renderer().setViewBox(PyQt5.QtCore.QRectF(view_x, view_y, view_w, view_h))
 		self.sizeChanged.emit()
+
+	def setWidth(self, width: float) -> None:
+		"""
+		Changes the width of the image.
+		:param width: The new width.
+		"""
+		super().setWidth(width)
+		self.resize(width, self.height)
+
+	def setHeight(self, height: float) -> None:
+		"""
+		Changes the height of the image.
+		:param height: The new height.
+		"""
+		super().setHeight(height)
+		self.resize(self.width, height)
 
 	@PyQt5.QtCore.pyqtProperty(float, fset=setWidth, notify=sizeChanged)
 	def width(self) -> float:
