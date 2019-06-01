@@ -1,43 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
-	<style>
-		.nozzle {
-			fill: grey;
-			animation: nozzle_motion 10s infinite;
-		}
-		@keyframes nozzle_motion {
-			0% {
-				transform: translateX(10px);
-				animation-timing-function: cubic-bezier(0, 0, 0.6, 0.1);
-			}
-			10% {
-				transform: translateX(35.714px);
-				animation-timing-function: linear;
-			}
-			40% {
-				transform: translateX(164.286px);
-				animation-timing-function: cubic-bezier(0.4, 0.9, 1, 1);
-			}
-			50% {
-				transform: translateX(190px);
-				animation-timing-function: cubic-bezier(0, 0, 0.6, 0.1);
-			}
-			60% {
-				transform: translateX(164.286px);
-				animation-timing-function: linear;
-			}
-			90% {
-				transform: translateX(35.714px);
-				animation-timing-function: cubic-bezier(0.4, 0.9, 1, 1);
-			}
-			100% {
-				transform: translateX(10px);
-			}
-		}
-	</style>
-
 	<!-- Nozzle. -->
-	<polygon points="-4,0 -4,10 -7,10 -7,14 -1,20 1,20 7,14 7,10 4,10 4,0" class="nozzle" />
+	<polygon points="6,0 6,10 3,10 3,14 9,20 11,20 17,14 17,10 14,10 14,0" fill="grey">
+		<animateMotion path="M0,0 h180" dur="10s" calcMode="spline" repeatCount="indefinite"
+			keyPoints="0;0.1429;0.8571;1;0.8571;0.1429;0"
+			keyTimes="0;0.1;0.4;0.5;0.6;0.9;1"
+			keySplines="0 0 0.6 0.1;0 0 1 1;0.4 0.9 1 1;0 0 0.6 0.1;0 0 1 1;0.4 0.9 1 1" />
+	</polygon>
 
 	<!-- V-T curve. -->
 	<polyline points="10,70 29,51 86,51 105,70 105,80 124,99 181,99 200,80" stroke="red" stroke-width="1" fill="none" stroke-dasharray="231.48">
