@@ -4,40 +4,6 @@
 		.axis_labels {
 			font: 8pt sans-serif;
 		}
-		.vt_curve {
-			stroke: red;
-			stroke-width: 1;
-			stroke-dasharray: 231.48;
-			stroke-dashoffset: 231.48;
-			fill: none;
-			animation: vt_curve_progress 10s linear infinite;
-		}
-		@keyframes vt_curve_progress {
-			0% {
-				stroke-dashoffset: 231.48;
-			}
-			10% {
-				stroke-dashoffset: 204.61;
-			}
-			40% {
-				stroke-dashoffset: 147.61;
-			}
-			50% {
-				stroke-dashoffset: 120.74;
-			}
-			50.01% {
-				stroke-dashoffset: 110.74;
-			}
-			60% {
-				stroke-dashoffset: 83.87;
-			}
-			90% {
-				stroke-dashoffset: 26.87;
-			}
-			100% {
-				stroke-dashoffset: 0;
-			}
-		}
 		.nozzle {
 			fill: grey;
 			animation: nozzle_motion 10s infinite;
@@ -77,7 +43,14 @@
 	<polygon points="-4,0 -4,10 -7,10 -7,14 -1,20 1,20 7,14 7,10 4,10 4,0" class="nozzle" />
 
 	<!-- V-T curve. -->
-	<polyline points="10,70 29,51 86,51 105,70 105,80 124,99 181,99 200,80" class="vt_curve" />
+	<polyline points="10,70 29,51 86,51 105,70 105,80 124,99 181,99 200,80" stroke="red" stroke-width="1" fill="none" stroke-dasharray="231.48">
+		<animate id="curve_accelforth" attributeName="stroke-dashoffset" from="231.48" to="204.61" begin="0;curve_decelback.end" dur="1s" />
+		<animate id="curve_coastforth" attributeName="stroke-dashoffset" from="204.61" to="147.61" begin="curve_accelforth.end" dur="3s" />
+		<animate id="curve_decelforth" attributeName="stroke-dashoffset" from="147.61" to="120.74" begin="curve_coastforth.end" dur="1s" />
+		<animate id="curve_accelback" attributeName="stroke-dashoffset" from="110.74" to="83.87" begin="curve_decelforth.end" dur="1s" />
+		<animate id="curve_coastback" attributeName="stroke-dashoffset" from="83.87" to="26.87" begin="curve_accelback.end" dur="3s" />
+		<animate id="curve_decelback" attributeName="stroke-dashoffset" from="26.87" to="0" begin="curve_coastback.end" dur="1s" />
+	</polyline>
 
 	<!-- Axes of V-t graph (on top of everything). -->
 	<g stroke="black" stroke-width="1">
