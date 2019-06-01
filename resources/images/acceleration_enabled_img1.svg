@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
 	<style>
-		.axis_labels {
-			font: 8pt sans-serif;
-		}
 		.nozzle {
 			fill: grey;
 			animation: nozzle_motion 10s infinite;
@@ -57,7 +54,7 @@
 		<line x1="10" y1="50" x2="10" y2="100" />
 		<line x1="10" y1="75" x2="200" y2="75" />
 	</g>
-	<g text-anchor="middle" class="axis_labels">
+	<g text-anchor="middle" font-family="sans-serif" font-size="8pt">
 		<text x="5" y="60">V</text>
 		<text x="195" y="74">t</text>
 	</g>
