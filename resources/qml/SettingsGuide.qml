@@ -20,6 +20,8 @@ Window {
 
 	width: 1200 * screenScaleFactor
 	height: 640 * screenScaleFactor
+	minimumWidth: 800 * screenScaleFactor
+	minimumHeight: 400 * screenScaleFactor
 
 	color: UM.Theme.getColor("main_background")
 
