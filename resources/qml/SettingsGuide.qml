@@ -15,7 +15,7 @@ import Cura 1.0 as Cura
 Window {
 	id: settingsGuideBase
 	title: catalog.i18nc("@title", "Cura Settings Guide") + " (" + manager.pluginVersion + ")"
-	modality: Qt.ApplicationModal
+	modality: Qt.NonModal
 	flags: Qt.Dialog | Qt.CustomizeWindowHint | Qt.WindowTitleHint | Qt.WindowCloseButtonHint
 
 	width: 1200 * screenScaleFactor
