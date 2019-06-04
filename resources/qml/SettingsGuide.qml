@@ -49,7 +49,6 @@ Window {
 			height: 300 * screenScaleFactor
 
 			anchors.centerIn: parent
-			opacity: 0.5
 		}
 
 		Label {
