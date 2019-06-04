@@ -38,8 +38,8 @@ Window {
 		visible: manager.selectedSettingId === ""
 
 		anchors {
-			leftMargin: 20 * screenScaleFactor
-			rightMargin: 20 * screenScaleFactor
+			leftMargin: UM.Theme.getSize("wide_margin").width
+			rightMargin: UM.Theme.getSize("wide_margin").width
 		}
 
 		Image {
@@ -72,23 +72,18 @@ Window {
 			id: rightSideItem
 			width: UM.Theme.getSize("print_setup_widget").width
 			border.color: UM.Theme.getColor("lining")
-			border.width: 1
+			border.width: UM.Theme.getSize("default_lining").width
 			color: "transparent"
 
 			anchors {
 				top: globalItem.top
 				right: parent.right
 				bottom: globalItem.bottom
-				topMargin: 0
-				bottomMargin: 0
-				rightMargin: 0
-				leftMargin: 0
 			}
 
 			SettingsSidebar {
 				id: settingsSidebar
 				anchors.fill: parent
-				anchors.leftMargin: 1 * screenScaleFactor
 			}
 		}
 
