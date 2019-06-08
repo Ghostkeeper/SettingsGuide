@@ -10,7 +10,6 @@ import QtQuick.Layouts 1.3
 
 import UM 1.3 as UM
 import Cura 1.0 as Cura
-import SettingsGuide 1.0 as SettingsGuide //For SVGImage.
 
 Item {
 	id: general_template
@@ -196,16 +195,6 @@ Item {
 				height: zoom_layer.height * 2 / 3
 				fillMode: Image.PreserveAspectFit
 				onStatusChanged: playing = (status == AnimatedImage.Ready)
-				visible: !svg_image.visible
-			}
-			SettingsGuide.SVGImage {
-				id: svg_image
-				source: general_template.zoomed_image
-				anchors.centerIn: parent
-				width: zoom_layer.width * 2 / 3
-				height: zoom_layer.height * 2 / 3
-				visible: general_template.zoomed_image.split('.').pop() === "svg"
-				fillMode: Image.PreserveAspectFit
 			}
 		}
 	}
