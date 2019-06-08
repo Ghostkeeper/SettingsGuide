@@ -76,30 +76,27 @@ Item {
 
 				Repeater {
 					model: setting_images
-					Image {
-						source: modelData
-						fillMode: Image.PreserveAspectFit
 
+					Item {
 						Layout.preferredWidth: (parent.width - parent.columnSpacing * 2) / 3
 						Layout.fillWidth: true
 						Layout.preferredHeight: 200
 						Layout.columnSpan: {
 							if(index == setting_images.length - 1) {
 								return 6 / ((index % 3) + 1); //2 columns if it's the 3rd item, 3 if it's the 2nd item or 6 if it's the 1st item on the row.
-							} else if(index == setting_images.length - 2 && index % 3 == 0) { //If the second-to-last item is 1st on the row, both last items get 3 columns.
-								return 3;
+							} else if(index == setting_images.length - 2 && index % 3 == 0) {
+								return 3; //If the second-to-last item is 1st on the row, both last items get 3 columns.
 							} else {
-								return 2;
+								return 2; //Normal image width.
 							}
 						}
 
-						//Border.
+						//Border and background.
 						Rectangle {
-							anchors {
-								fill: parent
-								margins: -UM.Theme.getSize("thick_lining").width
-							}
-							color: "transparent"
+							anchors.centerIn: parent
+							width: thumbnail.paintedWidth + border.width * 2
+							height: thumbnail.paintedHeight + border.width * 2
+							color: "white" //Always white regardless of theme in order to provide a fixed background for the image.
 							border.width: image_mouse_area.containsMouse ? UM.Theme.getSize("thick_lining").width : 0
 							border.color: UM.Theme.getColor("primary_hover")
 
@@ -111,6 +108,13 @@ Item {
 								cursorShape: Qt.PointingHandCursor
 								onClicked: general_template.zoomed_image = modelData;
 							}
+						}
+
+						Image {
+							id: thumbnail
+							source: modelData
+							fillMode: Image.PreserveAspectFit
+							anchors.fill: parent
 						}
 
 						Image {
