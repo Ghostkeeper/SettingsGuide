@@ -164,6 +164,7 @@ Item {
 
 	//Zoomed in version of an image, shown only when you click an image.
 	Item {
+		id: zoom_layer
 		anchors.fill: parent
 		visible: general_template.zoomed_image !== ""
 		z: 1 //On top of the general description.
@@ -181,23 +182,31 @@ Item {
 			hoverEnabled: true //Catch hover events so that hovering over images behind the overlay doesn't have an effect.
 		}
 
-		AnimatedImage {
-			source: general_template.zoomed_image
+		Rectangle {
+			width: zoom_image.paintedWidth
+			height: zoom_image.paintedHeight
+			color: "white" //Always white regardless of theme, to serve as background to the image.
 			anchors.centerIn: parent
-			width: parent.width * 2 / 3
-			height: parent.height * 2 / 3
-			fillMode: Image.PreserveAspectFit
-			onStatusChanged: playing = (status == AnimatedImage.Ready)
-			visible: !svg_image.visible
-		}
-		SettingsGuide.SVGImage {
-			id: svg_image
-			source: general_template.zoomed_image
-			anchors.centerIn: parent
-			width: parent.width * 2 / 3
-			height: parent.height * 2 / 3
-			visible: general_template.zoomed_image.split('.').pop() === "svg"
-			fillMode: Image.PreserveAspectFit
+
+			AnimatedImage {
+				id: zoom_image
+				source: general_template.zoomed_image
+				anchors.centerIn: parent
+				width: zoom_layer.width * 2 / 3
+				height: zoom_layer.height * 2 / 3
+				fillMode: Image.PreserveAspectFit
+				onStatusChanged: playing = (status == AnimatedImage.Ready)
+				visible: !svg_image.visible
+			}
+			SettingsGuide.SVGImage {
+				id: svg_image
+				source: general_template.zoomed_image
+				anchors.centerIn: parent
+				width: zoom_layer.width * 2 / 3
+				height: zoom_layer.height * 2 / 3
+				visible: general_template.zoomed_image.split('.').pop() === "svg"
+				fillMode: Image.PreserveAspectFit
+			}
 		}
 	}
 
