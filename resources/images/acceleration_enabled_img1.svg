@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <svg width="2000" height="500" xmlns="http://www.w3.org/2000/svg">
 	<defs>
-		<marker id="arrowForward" markerWidth="5" markerHeight="5" refX="0" refY="1.5" orient="auto" markerUnits="strokeWidth">
-			<polygon points="0,0 0,3 5,1.5" />
-		</marker>
-		<marker id="arrowBackward" markerWidth="5" markerHeight="5" refX="5" refY="1.5" orient="auto" markerUnits="strokeWidth">
-			<polygon points="5,0 0,1.5 5,3" />
-		</marker>
+		<polygon id="arrowUp" points="-10,0 10,0 0,-25" fill="black" stroke-width="0" />
+		<polygon id="arrowDown" points="10,0 -10,0 0,25" fill="black" stroke-width="0" />
 	</defs>
 
 	<!-- Explanations. -->
 	<g stroke="black" stroke-width="5" fill="none">
 		<line x1="150" y1="150" x2="250" y2="150" /> <!-- Acceleration straight line. -->
 		<path d="M200,150 a50,50 0 0 0 -15,-35" /> <!-- Acceleration arc indicating the slope. -->
-		<line x1="600" y1="40" x2="600" y2="220" marker-start="url(#arrowBackward)" marker-end="url(#arrowForward)" /> <!-- Speed span. -->
+		<line x1="600" y1="40" x2="600" y2="220" /> <!-- Speed span. -->
+		<use href="#arrowUp" x="600" y="40" />
+		<use href="#arrowDown" x="600" y="220" />
 		<line x1="1050" y1="200" x2="1150" y2="100" /> <!-- Jerk upper line. -->
 		<line x1="1050" y1="300" x2="1150" y2="200" /> <!-- Jerk lower line. -->
-		<line x1="1140" y1="135" x2="1140" y2="185" marker-start="url(#arrowBackward)" marker-end="url(#arrowForward)" /> <!-- Jerk span. -->
+		<line x1="1140" y1="135" x2="1140" y2="185" /> <!-- Jerk span. -->
+		<use href="#arrowUp" x="1140" y="135" />
+		<use href="#arrowDown" x="1140" y="185" />
 	</g>
 	<g font-family="sans-serif" font-size="40pt">
 		<text x="210" y="140">Acceleration</text>
