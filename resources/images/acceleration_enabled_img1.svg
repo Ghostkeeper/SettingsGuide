@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
-	<!-- Nozzle. -->
-	<polygon points="6,0 6,10 3,10 3,14 9,20 11,20 17,14 17,10 14,10 14,0" fill="grey">
-		<animateMotion path="M0,0 h180" dur="10s" calcMode="spline" repeatCount="indefinite"
-			keyPoints="0;0.1429;0.8571;1;0.8571;0.1429;0"
-			keyTimes="0;0.1;0.4;0.5;0.6;0.9;1"
-			keySplines="0 0 0.6 0.1;0 0 1 1;0.4 0.9 1 1;0 0 0.6 0.1;0 0 1 1;0.4 0.9 1 1" />
-	</polygon>
-
 	<!-- V-T curve. -->
-	<polyline points="10,70 29,51 86,51 105,70 105,80 124,99 181,99 200,80" stroke="red" stroke-width="1" fill="none" stroke-dasharray="231.48">
-		<animate id="curve_accelforth" attributeName="stroke-dashoffset" from="231.48" to="204.61" begin="0;curve_decelback.end" dur="1s" />
-		<animate id="curve_coastforth" attributeName="stroke-dashoffset" from="204.61" to="147.61" begin="curve_accelforth.end" dur="3s" />
-		<animate id="curve_decelforth" attributeName="stroke-dashoffset" from="147.61" to="120.74" begin="curve_coastforth.end" dur="1s" />
-		<animate id="curve_accelback" attributeName="stroke-dashoffset" from="110.74" to="83.87" begin="curve_decelforth.end" dur="1s" />
-		<animate id="curve_coastback" attributeName="stroke-dashoffset" from="83.87" to="26.87" begin="curve_accelback.end" dur="3s" />
-		<animate id="curve_decelback" attributeName="stroke-dashoffset" from="26.87" to="0" begin="curve_coastback.end" dur="1s" />
-	</polyline>
+	<polyline points="10,70 29,51 86,51 105,70 105,80 124,99 181,99 200,80" stroke="red" stroke-width="1" fill="none" />
 
 	<!-- Axes of V-t graph (on top of everything). -->
 	<g stroke="black" stroke-width="1">
