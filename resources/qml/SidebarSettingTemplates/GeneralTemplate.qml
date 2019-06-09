@@ -114,6 +114,7 @@ Item {
 							id: thumbnail
 							source: modelData
 							fillMode: Image.PreserveAspectFit
+							mipmap: true
 							anchors.fill: parent
 						}
 
@@ -198,6 +199,7 @@ Item {
 				width: zoom_layer.width * 2 / 3
 				height: zoom_layer.height * 2 / 3
 				fillMode: Image.PreserveAspectFit
+				mipmap: true
 				onStatusChanged: playing = (status == AnimatedImage.Ready)
 			}
 		}
