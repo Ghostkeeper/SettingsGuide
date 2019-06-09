@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<svg width="200" height="50" xmlns="http://www.w3.org/2000/svg">
+<svg width="2000" height="500" xmlns="http://www.w3.org/2000/svg">
 	<!-- V-T curve. -->
-	<polyline points="10,20 29,1 86,1 105,20 105,30 124,49 181,49 200,30" stroke="red" stroke-width="1" fill="none" />
+	<polyline points="100,200 290,10 860,10 1050,200 1050,300 1240,490 1810,490 2010,290" stroke="red" stroke-width="10" fill="none" />
 
 	<!-- Axes of V-t graph (on top of everything). -->
-	<g stroke="black" stroke-width="1">
-		<line x1="10" y1="0" x2="10" y2="50" />
-		<line x1="10" y1="25" x2="200" y2="25" />
+	<g stroke="black" stroke-width="10">
+		<line x1="100" y1="0" x2="100" y2="500" />
+		<line x1="100" y1="250" x2="2000" y2="250" />
 	</g>
-	<g text-anchor="middle" font-family="sans-serif" font-size="8pt">
-		<text x="5" y="10">V</text>
-		<text x="195" y="24">t</text>
+	<g text-anchor="middle" font-family="sans-serif" font-size="80pt">
+		<text x="50" y="100">V</text>
+		<text x="1950" y="240">t</text>
 	</g>
 </svg>
