@@ -16,7 +16,6 @@ Window {
 	id: settingsGuideBase
 	title: catalog.i18nc("@title", "Cura Settings Guide") + " (" + manager.pluginVersion + ")"
 	modality: Qt.NonModal
-	flags: Qt.Dialog | Qt.CustomizeWindowHint | Qt.WindowTitleHint | Qt.WindowCloseButtonHint
 
 	width: 1200 * screenScaleFactor
 	height: 640 * screenScaleFactor
