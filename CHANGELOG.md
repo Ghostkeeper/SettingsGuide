@@ -1,3 +1,38 @@
+1.3.0 - Hillity Usability
+===
+This release adds many tiny quality-of-life features and improves the quality of images while further reducing download size.
+
+New Features
+----
+* Improved performance of switching selected settings.
+* The dialogue can now be resized. Implements [#2](https://github.com/Ghostkeeper/SettingsGuide/issues/2). The dialogue can also be maximised and minimised.
+* The dialogue is no longer modal, allowing you to use Cura while the dialogue is open.
+* The image thumbnails grid has been reworked. It uses more of the page width if available and should be more reliable.
+* The zoomed image is now always 2/3rds of the window size regardless of window size and screen resolution. Fixes [#5](https://github.com/Ghostkeeper/SettingsGuide/issues/5).
+* All image thumbnails and zoomed images now have a white background, in order to improve usability in dark themes. Implements [#4](https://github.com/Ghostkeeper/SettingsGuide/issues/4).
+* Quality of image downscaling is improved, producing softer borders and fewer Moiré patterns.
+* All layer view screenshots have their colour depth slightly reduced. The difference is imperceptible, but the file size of the download is reduced significantly.
+* Improved installation instructions in the Readme.
+* Removed slight transparency of zoomed images.
+* Removed slight transparency of the logo.
+
+Bug Fixes
+----
+* The categories are now properly hidden if necessary while searching for settings.
+* Fixed a typo in the entry in the Extensions menu of Cura.
+* The dialogue now scales properly on high DPI screens such as Apple's Retina displays.
+* The theme of the Settings Guide should match the active theme of Cura itself more closely, if it changes any sizes or colours.
+
+Setting Descriptions
+----
+* Prefer Retract: Added description.
+* Connect Top/Bottom Polygons: Added description and preview image.
+* Minimum Wall Flow: Added description and preview image.
+* Layer Height: Rewritten description and hints.
+* Enable Acceleration Control: Corrected graph depicting relation of jerk, acceleration and speed. Improved description and added hints.
+* Print Acceleration: Corrected graph depicting relation of jerk, acceleration and speed. Improved description and added hints.
+* Initial Layer Bottom Pattern: Added hints and improved description.
+
 1.2.1
 ====
 
