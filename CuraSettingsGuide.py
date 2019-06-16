@@ -77,6 +77,9 @@ class CuraSettingsGuide(Extension, QObject):
 		"""
 		if not self._dialog:
 			self._dialog = self._createDialog("SettingsGuide.qml")
+			if not self._dialog:
+				Logger.log("e", "Unable to create settings guide dialogue.")
+				return
 
 		self.setSelectedSettingId("") #Display welcome page.
 		self._dialog.show()
@@ -89,6 +92,9 @@ class CuraSettingsGuide(Extension, QObject):
 		"""
 		if not self._dialog:
 			self._dialog = self._createDialog("SettingsGuide.qml")
+			if not self._dialog:
+				Logger.log("e", "Unable to create settings guide dialogue.")
+				return
 
 		self.setSelectedSettingId(setting_key)
 		self._dialog.show()
