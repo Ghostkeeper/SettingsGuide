@@ -86,31 +86,8 @@ Window {
 			}
 		}
 
-
-		// Here we show our help images with hints and descriptions, and etc..
-		Loader {
-			id: pageLoader
-
-			property var loaderData: manager.selectedSettingData //The object which holds all information for the Loader Item.
-			anchors {
-				left: parent.left
-				right: rightSideItem.left
-				top: parent.top
-				bottom: parent.bottom
-			}
-
-			source: {
-				if(manager.selectedSettingId === "") {
-					return "";
-				}
-				if(manager.selectedSettingId.toLowerCase() === "createdby") {
-					return Qt.resolvedUrl("CreatedBy.qml");
-				}
-				if(manager.selectedSettingData["details"] != undefined && manager.selectedSettingData["details"]["general"] != undefined && manager.selectedSettingData["details"]["general"]["template"] != undefined) {
-					return Qt.resolvedUrl("SidebarSettingTemplates/" + manager.selectedSettingData["details"]["general"]["template"]);
-				}
-				return Qt.resolvedUrl("SidebarSettingTemplates/GeneralTemplate.qml");
-			}
+		Text {
+			text: manager.selectedSettingDescription
 		}
 	}
 }
