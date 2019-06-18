@@ -125,7 +125,6 @@ class CuraSettingsGuide(Extension, QObject):
 				markdown_str = f.read()
 			rich_text = mistune.markdown(markdown_str)
 			self.descriptions[setting_id] = rich_text
-			Logger.log("d", "----------------------loaded description for {setting_id}: {rich_text}".format(setting_id=setting_id, rich_text=rich_text))
 
 	@pyqtProperty(str, constant=True)
 	def pluginVersion(self) -> str:
