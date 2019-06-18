@@ -14,6 +14,16 @@ set(SETTINGSGUIDE_VERSION_MINOR 3 CACHE STRING "The minor version number, indica
 set(SETTINGSGUIDE_VERSION_PATCH 0 CACHE STRING "The patch version number, indicating an incremental improvement without compatibility break.")
 set(SETTINGSGUIDE_SUPPORTED_SDKS "6.0.0" CACHE STRING "List of supported Cura SDK versions.")
 
+#Make sure we have Mistune.
+include(ExternalProject)
+ExternalProject_Add(Mistune
+	GIT_REPOSITORY https://github.com/lepture/mistune.git
+	GIT_TAG v0.8.4
+	CONFIGURE_COMMAND ""
+	BUILD_COMMAND ""
+	INSTALL_COMMAND ""
+)
+
 #Installation.
 configure_file("${CMAKE_CURRENT_SOURCE_DIR}/plugin.json.in" plugin.json)
 set(installed_files
@@ -99,6 +109,7 @@ install(FILES ${installed_paths_resources_qml_SidebarSettings} DESTINATION ${SET
 install(FILES ${installed_paths_resources_qml_SidebarSettingTemplates} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettingTemplates)
 install(FILES ${installed_paths_resources_descriptions} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/descriptions)
 install(FILES ${installed_paths_resources_images} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/images)
+install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune DESTINATION ${SETTINGSGUIDE_PLUGIN_ID})
 
 #Packing this into a .curapackage file.
 add_custom_target(pack COMMAND "") #Packs for all supported SDK versions.
@@ -112,6 +123,7 @@ foreach(sdk_version ${SETTINGSGUIDE_SUPPORTED_SDKS})
 	file(COPY ${installed_paths_resources_images} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/images)
 	file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/cmake/[Content_Types].xml" DESTINATION pack${sdk_version})
 	file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/cmake/_rels" DESTINATION pack${sdk_version})
+	file(COPY "${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune" DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID})
 	configure_file("${CMAKE_CURRENT_SOURCE_DIR}/cmake/package.json.in" pack${sdk_version}/package.json)
 	set(packaged_files
 		package.json
