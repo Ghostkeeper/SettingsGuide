@@ -41,6 +41,8 @@ set(installed_files_resources_icons
 )
 set(installed_files_resources_qml
 	CreatedBy.qml
+	DescriptionImages.qml
+	DescriptionText.qml
 	SettingsGuide.qml
 	SettingsSidebar.qml
 )

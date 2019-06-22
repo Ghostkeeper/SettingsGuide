@@ -5,8 +5,9 @@
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
 import os
-from PyQt5.QtCore import QObject, pyqtSlot, pyqtProperty, pyqtSignal
-from typing import Dict, Optional
+import re #To get images from the descriptions.
+from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl
+from typing import Dict, List, Optional, Tuple, Union
 
 from cura.API import CuraAPI
 from UM.Extension import Extension
@@ -48,7 +49,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self.addMenuItem("Settings Guide", self.startWelcomeGuide)
 		self._dialog = None #Cached instance of the dialogue window.
 
-		self.descriptions = {} #type: Dict[str, str] #The descriptions for each setting. Key: setting ID, value: QML rich text being displayed for that setting.
+		self.descriptions = {} #type: Dict[str, List[List[str, str]]] #The descriptions for each setting. Key: setting ID, value: Lists of items in each description.
 		self._settings_data = {} #TEMP! Just to not crash.
 		self._selected_setting_id = "" #Which setting is currently shown for the user. Empty string indicates it's the welcome screen.
 
@@ -115,7 +116,9 @@ class CuraSettingsGuide(Extension, QObject):
 		"""
 		Load all the descriptions for all settings.
 		"""
+		find_images = re.compile(r"!\[(.*)\]\((.+)\)")
 		descriptions_path = os.path.join(os.path.dirname(__file__), "resources", "descriptions")
+		images_path = os.path.join(os.path.dirname(__file__), "resources", "images")
 		for file_name in os.listdir(descriptions_path):
 			file_path = os.path.join(descriptions_path, file_name)
 			setting_id, extension = os.path.splitext(file_name)
@@ -123,8 +126,27 @@ class CuraSettingsGuide(Extension, QObject):
 				continue
 			with open(file_path, encoding="utf-8") as f:
 				markdown_str = f.read()
-			rich_text = mistune.markdown(markdown_str)
-			self.descriptions[setting_id] = rich_text
+
+			text_parts = find_images.split(markdown_str)
+			image_description = None
+			parts = [] #type: List[List[str]] #List of items in the description. Each item starts with a type ID, and then a variable number of data items.
+			for index, part in enumerate(text_parts):
+				#The parts of the regex split alternate between text, image description and image URL.
+				if index % 3 == 0:
+					part = part.strip()
+					if part:
+						rich_text = mistune.markdown(part)
+						parts.append(["rich_text", rich_text])
+				elif index % 3 == 1:
+					image_description = mistune.markdown(part)
+				else: #if index % 3 == 2:
+					if image_description is not None:
+						if parts[-1][0] != "images": #List of images
+							parts.append(["images"])
+						image_url = os.path.join(images_path, part)
+						parts[-1].append(QUrl.fromLocalFile(image_url).toString() + "|" + image_description)
+						image_description = None
+			self.descriptions[setting_id] = parts
 
 	@pyqtProperty(str, constant=True)
 	def pluginVersion(self) -> str:
@@ -158,8 +180,8 @@ class CuraSettingsGuide(Extension, QObject):
 		"""
 		return self._selected_setting_id
 
-	@pyqtProperty(str, notify=settingItemChanged)
-	def selectedSettingDescription(self) -> str:
+	@pyqtProperty("QVariantList", notify=settingItemChanged)
+	def selectedSettingDescription(self) -> List[List[str]]:
 		"""
 		Returns the description of the currently selected setting.
 
@@ -167,4 +189,4 @@ class CuraSettingsGuide(Extension, QObject):
 		Markdown files in the setting description files.
 		:return: The description of the currently selected setting.
 		"""
-		return self.descriptions.get(self._selected_setting_id, "There is no description for this setting.")
+		return self.descriptions.get(self._selected_setting_id, [["rich_text", "There is no description for this setting."]])

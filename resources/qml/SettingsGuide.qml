@@ -94,6 +94,7 @@ Window {
 				bottom: parent.bottom
 			}
 			Column {
+				id: content_column
 				anchors {
 					left: parent.left
 					leftMargin: UM.Theme.getSize("wide_margin").width
@@ -110,13 +111,23 @@ Window {
 					renderType: Text.NativeRendering
 					font: UM.Theme.getFont("large")
 				}
-				Text {
-					text: manager.selectedSettingDescription
-					width: parent.width
-					wrapMode: Text.Wrap
-					renderType: Text.NativeRendering
-					font: UM.Theme.getFont("default")
+
+				Repeater {
+					model: manager.selectedSettingDescription
+					delegate: Component {
+						Loader {
+							source: switch(modelData[0]) {
+								case "rich_text": return "DescriptionText.qml";
+								case "images": return "DescriptionImages.qml";
+							}
+							width: content_column.width
+							onLoaded: {
+								item.description_data = modelData.slice(1);
+							}
+						}
+					}
 				}
+
 				Item {
 					/* The scrollview's dimensions depend on the content height,
 					but since we move the contents down with a margin, the
