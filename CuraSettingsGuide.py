@@ -134,7 +134,7 @@ class CuraSettingsGuide(Extension, QObject):
 				#The parts of the regex split alternate between text, image description and image URL.
 				if index % 3 == 0:
 					part = part.strip()
-					if part:
+					if part or index == 0:
 						rich_text = mistune.markdown(part)
 						parts.append(["rich_text", rich_text])
 				elif index % 3 == 1:
