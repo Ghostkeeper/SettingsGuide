@@ -4,6 +4,7 @@
 //You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
 import QtQuick 2.7
+import UM 1.3 as UM
 
 Text {
 	property var description_data
