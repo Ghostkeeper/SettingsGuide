@@ -54,7 +54,6 @@ class CuraSettingsGuide(Extension, QObject):
 		self._container_stack = None #Stack that provides not only the normal settings but also the extra pages added by this guide.
 
 		self.descriptions = {} #type: Dict[str, List[List[str, str]]] #The descriptions for each setting. Key: setting ID, value: Lists of items in each description.
-		self._settings_data = {} #TEMP! Just to not crash.
 		self._selected_setting_id = "" #Which setting is currently shown for the user. Empty string indicates it's the welcome screen.
 
 		self._loadDescriptions()
