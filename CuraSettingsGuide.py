@@ -10,6 +10,7 @@ from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl
 from typing import Dict, List, Optional
 
 from cura.API import CuraAPI
+from cura.CuraApplication import CuraApplication #To get the setting version to load the correct definition file.
 from UM.Application import Application
 from UM.Extension import Extension
 from UM.Logger import Logger
@@ -80,7 +81,8 @@ class CuraSettingsGuide(Extension, QObject):
 		Do all the things necessary to start using the guide.
 		"""
 		#Load a special definition container that also contains extra entries for the guide entries that are not settings.
-		with open(os.path.join(os.path.dirname(__file__), "resources", "settings_guide_definitions.def.json")) as f:
+		settings_guide_filename = "settings_guide_definitions_{n}.def.json".format(n=DefinitionContainer.Version * 1000000 + CuraApplication.SettingVersion)
+		with open(os.path.join(os.path.dirname(__file__), "resources", settings_guide_filename)) as f:
 			definitions_serialised = f.read()
 		definition_container = DefinitionContainer("settings_guide_definitions")
 		definition_container.deserialize(definitions_serialised)
