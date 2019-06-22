@@ -6,8 +6,7 @@
 
 import QtQuick 2.7
 import QtQuick.Window 2.2
-import QtQuick.Controls 1.4
-import QtQuick.Controls.Styles 1.4
+import QtQuick.Controls 2.3
 
 import UM 1.2 as UM
 import Cura 1.0 as Cura
@@ -86,8 +85,19 @@ Window {
 			}
 		}
 
-		Text {
-			text: manager.selectedSettingDescription
+		ScrollView {
+			id: description_scroll
+			anchors {
+				left: parent.left
+				right: rightSideItem.left
+				top: parent.top
+				bottom: parent.bottom
+			}
+			Text {
+				text: manager.selectedSettingDescription
+				width: description_scroll.width
+				wrapMode: Text.Wrap
+			}
 		}
 	}
 }
