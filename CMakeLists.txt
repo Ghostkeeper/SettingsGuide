@@ -35,12 +35,13 @@ set(installed_files
 )
 set(installed_files_resources_icons
 	arrow.svg
-	created_by.jpg
 	icon.svg
 	play.svg
 )
+set(installed_files_resources
+	settings_guide_definitions.def.json
+)
 set(installed_files_resources_qml
-	CreatedBy.qml
 	DescriptionImages.qml
 	DescriptionText.qml
 	SettingsGuide.qml
@@ -60,6 +61,10 @@ foreach(f IN LISTS installed_files)
 	list(APPEND installed_paths ${CMAKE_CURRENT_SOURCE_DIR}/${f})
 endforeach()
 list(APPEND installed_paths ${CMAKE_CURRENT_BINARY_DIR}/plugin.json)
+set(installed_paths_resources "")
+foreach(f IN LISTS installed_files_resources)
+	list(APPEND installed_paths_resources ${CMAKE_CURRENT_SOURCE_DIR}/resources/${f})
+endforeach()
 set(installed_paths_resources_icons "")
 foreach(f IN LISTS installed_files_resources_icons)
 	list(APPEND installed_paths_resources_icons ${CMAKE_CURRENT_SOURCE_DIR}/resources/icons/${f})
@@ -97,6 +102,7 @@ if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
 	set(CMAKE_INSTALL_PREFIX "${cura_directory}/${latest_version}/plugins" CACHE PATH "Location of the Cura plug-ins folder to install this plug-in to." FORCE)
 endif()
 install(FILES ${installed_paths} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID})
+install(FILES ${installed_paths_resources} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources)
 install(FILES ${installed_paths_resources_icons} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/icons)
 install(FILES ${installed_paths_resources_qml} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml)
 install(FILES ${installed_paths_resources_qml_SidebarSettings} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings)
@@ -108,6 +114,7 @@ install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune DESTINA
 add_custom_target(pack COMMAND "") #Packs for all supported SDK versions.
 foreach(sdk_version ${SETTINGSGUIDE_SUPPORTED_SDKS})
 	file(COPY ${installed_paths} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID})
+	file(COPY ${installed_paths_resources} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/icons)
 	file(COPY ${installed_paths_resources_icons} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/icons)
 	file(COPY ${installed_paths_resources_qml} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml)
 	file(COPY ${installed_paths_resources_qml_SidebarSettings} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings)

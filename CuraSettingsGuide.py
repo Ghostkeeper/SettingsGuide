@@ -7,14 +7,17 @@
 import os
 import re #To get images from the descriptions.
 from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl
-from typing import Dict, List, Optional, Tuple, Union
+from typing import Dict, List, Optional
 
 from cura.API import CuraAPI
-from UM.Extension import Extension
 from UM.Application import Application
+from UM.Extension import Extension
 from UM.Logger import Logger
 from UM.PluginRegistry import PluginRegistry
 from UM.i18n import i18nCatalog
+from UM.Settings.ContainerRegistry import ContainerRegistry #To register the non-setting entries.
+from UM.Settings.ContainerStack import ContainerStack #To get the names of non-setting entries.
+from UM.Settings.DefinitionContainer import DefinitionContainer #To register the non-setting entries.
 
 from . import MenuItemHandler
 from .Mistune import mistune #To parse the Markdown files.
@@ -48,6 +51,7 @@ class CuraSettingsGuide(Extension, QObject):
 
 		self.addMenuItem("Settings Guide", self.startWelcomeGuide)
 		self._dialog = None #Cached instance of the dialogue window.
+		self._container_stack = None #Stack that provides not only the normal settings but also the extra pages added by this guide.
 
 		self.descriptions = {} #type: Dict[str, List[List[str, str]]] #The descriptions for each setting. Key: setting ID, value: Lists of items in each description.
 		self._settings_data = {} #TEMP! Just to not crash.
@@ -72,31 +76,39 @@ class CuraSettingsGuide(Extension, QObject):
 		}
 		CuraAPI().interface.settings.addContextMenuItem(data)
 
-	def startWelcomeGuide(self) -> None:
+	def load_window(self):
 		"""
-		Opens the guide in the welcome page.
+		Do all the things necessary to start using the guide.
 		"""
+		#Load a special definition container that also contains extra entries for the guide entries that are not settings.
+		with open(os.path.join(os.path.dirname(__file__), "resources", "settings_guide_definitions.def.json")) as f:
+			definitions_serialised = f.read()
+		definition_container = DefinitionContainer("settings_guide_definitions")
+		definition_container.deserialize(definitions_serialised)
+		ContainerRegistry.getInstance().addContainer(definition_container)
+		self._container_stack = ContainerStack("settings_guide_stack")
+		self._container_stack.addContainer(definition_container)
+		ContainerRegistry.getInstance().addContainer(self._container_stack)
+
 		if not self._dialog:
 			self._dialog = self._createDialog("SettingsGuide.qml")
 			if not self._dialog:
 				Logger.log("e", "Unable to create settings guide dialogue.")
-				return
 
+	def startWelcomeGuide(self) -> None:
+		"""
+		Opens the guide in the welcome page.
+		"""
+		self.load_window()
 		self.setSelectedSettingId("") #Display welcome page.
 		self._dialog.show()
-
 
 	def startWelcomeGuideAndSelectSetting(self, setting_key: str) -> None:
 		"""
 		Opens the guide and immediately selects a certain setting.
 		:param setting_key: The key of the setting to show the guide of.
 		"""
-		if not self._dialog:
-			self._dialog = self._createDialog("SettingsGuide.qml")
-			if not self._dialog:
-				Logger.log("e", "Unable to create settings guide dialogue.")
-				return
-
+		self.load_window()
 		self.setSelectedSettingId(setting_key)
 		self._dialog.show()
 
@@ -147,6 +159,10 @@ class CuraSettingsGuide(Extension, QObject):
 						parts[-1].append(QUrl.fromLocalFile(image_url).toString() + "|" + image_description)
 						image_description = None
 			self.descriptions[setting_id] = parts
+
+	@pyqtProperty(QObject, constant=True)
+	def containerStack(self) -> Optional[ContainerStack]:
+		return self._container_stack
 
 	@pyqtProperty(str, constant=True)
 	def pluginVersion(self) -> str:

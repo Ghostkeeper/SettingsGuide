@@ -191,7 +191,7 @@ Window {
 
 	UM.SettingPropertyProvider {
 		id: selectedSettingName
-		containerStack: Cura.MachineManager.activeMachine
+		containerStack: manager.containerStack
 		key: manager.selectedSettingId
 		watchedProperties: ["label"]
 	}
