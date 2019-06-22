@@ -93,12 +93,47 @@ Window {
 				top: parent.top
 				bottom: parent.bottom
 			}
-			Text {
-				text: manager.selectedSettingDescription
-				width: description_scroll.width
-				wrapMode: Text.Wrap
-				renderType: Text.NativeRendering
+			Column {
+				anchors {
+					left: parent.left
+					leftMargin: UM.Theme.getSize("wide_margin").width
+					top: parent.top
+					topMargin: UM.Theme.getSize("wide_margin").height
+				}
+				width: description_scroll.width - UM.Theme.getSize("wide_margin").width * 2
+				spacing: UM.Theme.getSize("wide_margin").height
+
+				Text {
+					text: selectedSettingName.properties.label
+					width: parent.width
+					wrapMode: Text.Wrap
+					renderType: Text.NativeRendering
+					font: UM.Theme.getFont("large")
+				}
+				Text {
+					text: manager.selectedSettingDescription
+					width: parent.width
+					wrapMode: Text.Wrap
+					renderType: Text.NativeRendering
+					font: UM.Theme.getFont("default")
+				}
+				Item {
+					/* The scrollview's dimensions depend on the content height,
+					but since we move the contents down with a margin, the
+					bottom part of the column is not visible. So we add some
+					content at the bottom to adjust the total height of the
+					column and all the actual content is still visible. */
+					width: parent.width
+					height: UM.Theme.getSize("wide_margin").height
+				}
 			}
 		}
+	}
+
+	UM.SettingPropertyProvider {
+		id: selectedSettingName
+		containerStack: Cura.MachineManager.activeMachine
+		key: manager.selectedSettingId
+		watchedProperties: ["label"]
 	}
 }
