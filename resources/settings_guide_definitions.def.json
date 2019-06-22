@@ -15,6 +15,7 @@
 			"label": "About",
 			"type": "category",
 			"description": "About this plug-in",
+			"icon": "info",
 			"children": {
 				"created_by": {
 					"label": "Created By",
