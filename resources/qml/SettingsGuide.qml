@@ -23,6 +23,8 @@ Window {
 
 	color: UM.Theme.getColor("main_background")
 
+	property string zoomed_image
+
 	UM.I18nCatalog {
 		id: catalog
 		name: "cura"
@@ -136,6 +138,50 @@ Window {
 					column and all the actual content is still visible. */
 					width: parent.width
 					height: UM.Theme.getSize("wide_margin").height
+				}
+			}
+		}
+
+		//Zoomed in version of an image, shown only when you click an image.
+		Item {
+			id: zoom_layer
+			anchors {
+				left: parent.left
+				right: rightSideItem.left
+				top: parent.top
+				bottom: parent.bottom
+			}
+			visible: settingsGuideBase.zoomed_image !== ""
+			z: 1 //On top of the general description.
+
+			Rectangle {
+				anchors.fill: parent
+				color: UM.Theme.getColor("viewport_background")
+				opacity: 0.9
+			}
+
+			//Allow reverting zoom level.
+			MouseArea {
+				anchors.fill: parent
+				onClicked: settingsGuideBase.zoomed_image = ""
+				hoverEnabled: true //Catch hover events so that hovering over images behind the overlay doesn't have an effect.
+			}
+
+			Rectangle {
+				width: zoom_image.paintedWidth
+				height: zoom_image.paintedHeight
+				color: "white" //Always white regardless of theme, to serve as background to the image.
+				anchors.centerIn: parent
+
+				AnimatedImage {
+					id: zoom_image
+					source: settingsGuideBase.zoomed_image
+					anchors.centerIn: parent
+					width: zoom_layer.width * 2 / 3
+					height: zoom_layer.height * 2 / 3
+					fillMode: Image.PreserveAspectFit
+					mipmap: true
+					onStatusChanged: playing = (status == AnimatedImage.Ready)
 				}
 			}
 		}

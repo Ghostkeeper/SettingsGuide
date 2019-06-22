@@ -48,7 +48,7 @@ GridLayout {
 					anchors.fill: parent
 					hoverEnabled: true
 					cursorShape: Qt.PointingHandCursor
-					onClicked: general_template.zoomed_image = modelData.substring(0, modelData.indexOf("|"));
+					onClicked: settingsGuideBase.zoomed_image = modelData.substring(0, modelData.indexOf("|"));
 				}
 			}
 
