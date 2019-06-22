@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "When Ultimaker Cura detects overlapping meshes, it normally removes one of the meshes completely. With this option, the meshes are alternatively printed layer by layer, creating a woven mix of the two.",
-		"img_description": "",
-		"hints": "",
-		"notes": ""
-	}
-}
