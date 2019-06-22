@@ -97,6 +97,7 @@ Window {
 				text: manager.selectedSettingDescription
 				width: description_scroll.width
 				wrapMode: Text.Wrap
+				renderType: Text.NativeRendering
 			}
 		}
 	}
