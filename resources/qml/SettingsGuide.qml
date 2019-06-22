@@ -109,7 +109,7 @@ Window {
 				spacing: UM.Theme.getSize("wide_margin").height
 
 				Text {
-					text: selectedSettingName.properties.label
+					text: selectedSettingName.properties.label ? selectedSettingName.properties.label : ""
 					width: parent.width
 					wrapMode: Text.Wrap
 					renderType: Text.NativeRendering
