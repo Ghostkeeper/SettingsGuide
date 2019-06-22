@@ -33,40 +33,63 @@ GridLayout {
 				}
 			}
 
-			//Border and background.
-			Rectangle {
-				anchors.centerIn: parent
-				width: thumbnail.paintedWidth + border.width * 2
-				height: thumbnail.paintedHeight + border.width * 2
-				color: "white" //Always white regardless of theme in order to provide a fixed background for the image.
-				border.width: image_mouse_area.containsMouse ? UM.Theme.getSize("thick_lining").width : 0
-				border.color: UM.Theme.getColor("primary_hover")
-
-				//Clickable area.
-				MouseArea {
-					id: image_mouse_area
-					anchors.fill: parent
-					hoverEnabled: true
-					cursorShape: Qt.PointingHandCursor
-					onClicked: settingsGuideBase.zoomed_image = modelData.substring(0, modelData.indexOf("|"));
+			Text {
+				id: image_description
+				text: modelData.substring(modelData.indexOf("|") + 1)
+				wrapMode: Text.Wrap
+				font: UM.Theme.getFont("default_italic")
+				renderType: Text.NativeRendering
+				horizontalAlignment: Text.AlignHCenter
+				anchors {
+					left: parent.left
+					right: parent.right
+					bottom: parent.bottom
 				}
 			}
 
-			Image {
-				id: thumbnail
-				source: modelData.substring(0, modelData.indexOf("|"))
-				fillMode: Image.PreserveAspectFit
-				mipmap: true
-				anchors.fill: parent
-			}
+			Item {
+				anchors {
+					left: parent.left
+					right: parent.right
+					top: parent.top
+					bottom: parent.bottom
+					bottomMargin: image_description.contentHeight
+				}
+				//Border and background.
+				Rectangle {
+					anchors.centerIn: parent
+					width: thumbnail.paintedWidth + border.width * 2
+					height: thumbnail.paintedHeight + border.width * 2
+					color: "white" //Always white regardless of theme in order to provide a fixed background for the image.
+					border.width: image_mouse_area.containsMouse ? UM.Theme.getSize("thick_lining").width : 0
+					border.color: UM.Theme.getColor("primary_hover")
 
-			Image {
-				source: Qt.resolvedUrl("../icons/play.svg")
-				anchors.centerIn: parent
-				opacity: 0.7
-				width: 50 * screenScaleFactor
-				height: 50 * screenScaleFactor
-				visible: modelData.split('.').pop() === "gif" //Only show this for GIF images.
+					//Clickable area.
+					MouseArea {
+						id: image_mouse_area
+						anchors.fill: parent
+						hoverEnabled: true
+						cursorShape: Qt.PointingHandCursor
+						onClicked: settingsGuideBase.zoomed_image = modelData.substring(0, modelData.indexOf("|"));
+					}
+				}
+
+				Image {
+					id: thumbnail
+					source: modelData.substring(0, modelData.indexOf("|"))
+					fillMode: Image.PreserveAspectFit
+					mipmap: true
+					anchors.fill: parent
+				}
+
+				Image {
+					source: Qt.resolvedUrl("../icons/play.svg")
+					anchors.centerIn: parent
+					opacity: 0.7
+					width: 50 * screenScaleFactor
+					height: 50 * screenScaleFactor
+					visible: modelData.split('.').pop() === "gif" //Only show this for GIF images.
+				}
 			}
 		}
 	}
