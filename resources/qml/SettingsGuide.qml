@@ -95,6 +95,8 @@ Window {
 				top: parent.top
 				bottom: parent.bottom
 			}
+			visible: manager.selectedSettingId !== ""
+
 			Column {
 				id: content_column
 				anchors {
