@@ -88,7 +88,7 @@ GridLayout {
 					opacity: 0.7
 					width: 50 * screenScaleFactor
 					height: 50 * screenScaleFactor
-					visible: modelData.split('.').pop() === "gif" //Only show this for GIF images.
+					visible: modelData.substring(0, modelData.indexOf("|")).split('.').pop() === "gif" //Only show this for animations.
 				}
 			}
 		}
