@@ -7,13 +7,7 @@
 from . import CuraSettingsGuide
 
 def getMetaData():
-	return {
-		"view": {
-			"name": "Cura Settings Guide",
-			"weight": 0
-		}
-	}
-
+	return {}
 
 def register(app):
 	return {"extension": CuraSettingsGuide.CuraSettingsGuide()}
