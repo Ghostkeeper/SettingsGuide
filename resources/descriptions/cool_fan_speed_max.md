@@ -1,0 +1,3 @@
+The speed at which the fans in the print head will spin when the layer is printed at minimum layer time.
+![Which fan speed is used where](cool_fan_speed.svg)
+If printing a layer takes somewhere between the Regular/Maximum Fan Speed Threshold and the Minimum Layer Time settings, then the fan speed will be interpolated between the Regular Fan Speed and the Maximum Fan Speed. Once the Minimum Layer Time is reached, the Maximum Fan Speed will also be reached. This way the print will be cooled maximally to cool it down as quickly as possible before the next layer gets put on top.
