@@ -1,0 +1,29 @@
+{
+	"name": "Settings Guide",
+	"version": 2,
+	"inherits": "fdmprinter",
+	"metadata": {
+		"type": "machine",
+		"author": "Ghostkeeper",
+		"manufacturer": "Ghostkeeper",
+		"setting_version": 7,
+		"visible": false,
+		"position": 0
+	},
+	"settings": {
+		"about": {
+			"label": "About",
+			"type": "category",
+			"description": "About this plug-in",
+			"icon": "info",
+			"children": {
+				"created_by": {
+					"label": "Created By",
+					"description": "The authors of this plug-in.",
+					"type": "str",
+					"default_value": ""
+				}
+			}
+		}
+	}
+}

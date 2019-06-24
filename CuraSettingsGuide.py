@@ -4,20 +4,24 @@
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
-import json
 import os
-from PyQt5.QtCore import QObject, pyqtSlot, pyqtProperty, pyqtSignal
-import re
-from typing import Dict, List, Optional, Union
+import re #To get images from the descriptions.
+from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl
+from typing import Dict, List, Optional
 
 from cura.API import CuraAPI
-from UM.Extension import Extension
+from cura.CuraApplication import CuraApplication #To get the setting version to load the correct definition file.
 from UM.Application import Application
+from UM.Extension import Extension
 from UM.Logger import Logger
 from UM.PluginRegistry import PluginRegistry
 from UM.i18n import i18nCatalog
+from UM.Settings.ContainerRegistry import ContainerRegistry #To register the non-setting entries.
+from UM.Settings.ContainerStack import ContainerStack #To get the names of non-setting entries.
+from UM.Settings.DefinitionContainer import DefinitionContainer #To register the non-setting entries.
 
 from . import MenuItemHandler
+from .Mistune import mistune #To parse the Markdown files.
 
 i18n_catalog = i18nCatalog("cura")
 
@@ -48,11 +52,12 @@ class CuraSettingsGuide(Extension, QObject):
 
 		self.addMenuItem("Settings Guide", self.startWelcomeGuide)
 		self._dialog = None #Cached instance of the dialogue window.
+		self._container_stack = None #Stack that provides not only the normal settings but also the extra pages added by this guide.
 
-		self._settings_data = {} #type: Dict[str, Dict[str, Union[List[str], Dict[str, str]]]] #The data loaded from the JSON files containing descriptions about settings.
+		self.descriptions = {} #type: Dict[str, List[List[str, str]]] #The descriptions for each setting. Key: setting ID, value: Lists of items in each description.
 		self._selected_setting_id = "" #Which setting is currently shown for the user. Empty string indicates it's the welcome screen.
 
-		self._loadDescriptionAndImages()
+		self._loadDescriptions()
 
 		self.initializeHelpSidebarHelpButton()
 
@@ -71,31 +76,40 @@ class CuraSettingsGuide(Extension, QObject):
 		}
 		CuraAPI().interface.settings.addContextMenuItem(data)
 
-	def startWelcomeGuide(self) -> None:
+	def load_window(self):
 		"""
-		Opens the guide in the welcome page.
+		Do all the things necessary to start using the guide.
 		"""
+		#Load a special definition container that also contains extra entries for the guide entries that are not settings.
+		settings_guide_filename = "settings_guide_definitions_{n}.def.json".format(n=DefinitionContainer.Version * 1000000 + CuraApplication.SettingVersion)
+		with open(os.path.join(os.path.dirname(__file__), "resources", settings_guide_filename)) as f:
+			definitions_serialised = f.read()
+		definition_container = DefinitionContainer("settings_guide_definitions")
+		definition_container.deserialize(definitions_serialised)
+		ContainerRegistry.getInstance().addContainer(definition_container)
+		self._container_stack = ContainerStack("settings_guide_stack")
+		self._container_stack.addContainer(definition_container)
+		ContainerRegistry.getInstance().addContainer(self._container_stack)
+
 		if not self._dialog:
 			self._dialog = self._createDialog("SettingsGuide.qml")
 			if not self._dialog:
 				Logger.log("e", "Unable to create settings guide dialogue.")
-				return
 
+	def startWelcomeGuide(self) -> None:
+		"""
+		Opens the guide in the welcome page.
+		"""
+		self.load_window()
 		self.setSelectedSettingId("") #Display welcome page.
 		self._dialog.show()
-
 
 	def startWelcomeGuideAndSelectSetting(self, setting_key: str) -> None:
 		"""
 		Opens the guide and immediately selects a certain setting.
 		:param setting_key: The key of the setting to show the guide of.
 		"""
-		if not self._dialog:
-			self._dialog = self._createDialog("SettingsGuide.qml")
-			if not self._dialog:
-				Logger.log("e", "Unable to create settings guide dialogue.")
-				return
-
+		self.load_window()
 		self.setSelectedSettingId(setting_key)
 		self._dialog.show()
 
@@ -111,89 +125,45 @@ class CuraSettingsGuide(Extension, QObject):
 		dialog = Application.getInstance().createQmlComponent(path, {"manager": self})
 		return dialog
 
-	def _loadDescriptionAndImages(self) -> None:
+	def _loadDescriptions(self) -> None:
 		"""
-		Load all descriptions and image paths.
+		Load all the descriptions for all settings.
 		"""
-		plugin_path = os.path.dirname(__file__)
-		images_path = os.path.join(plugin_path, "resources", "images")
-		descriptions_path = os.path.join(plugin_path, "resources", "descriptions")
-
-		#Load images paths and add its IDs to the dictionary.
-		self._populateImagesPaths(images_path)
-
-		#Load settings descriptions.
-		self._populateSettingsDetails(descriptions_path, images_path)
-
-	def _populateImagesPaths(self, images_path: str) -> None:
-		"""
-		Load all image paths from a directory, and convert them to QURLs.
-		:param images_path: Directory to load all images from.
-		"""
-		images_files = os.listdir(images_path)
-		images_files = sorted(images_files)
-
-		custom_path = "file:///" + images_path
-
-		for file in images_files:
-			file_name_parts = file.split("_")
-			file_id = file_name_parts[:-1]
-			file_id = "_".join(file_id)
-			if file_id not in self._settings_data.keys():
-				self._settings_data[file_id] = {}
-				self._settings_data[file_id]["images"] = []
-
-			image_path = os.path.join(custom_path, file)
-			self._settings_data[file_id]["images"].append(image_path)
-
-	def _populateSettingsDetails(self, descriptions_path: str, images_path: str) -> None:
-		"""
-		Load all setting descriptions and store them in memory.
-		:param descriptions_path: The path of the directory to find the setting
-		descriptions.
-		:param images_path: The path of the directory to find the images.
-		"""
-		description_files = os.listdir(descriptions_path)
-		for file in description_files:
-			file_path = os.path.join(descriptions_path, file)
-
-			file_name_parts = os.path.splitext(file)
-			file_base_name = file_name_parts[0]  # base name which is also the setting id
-			file_extension = file_name_parts[-1]
-
-			if not file_extension == ".json":
+		find_images = re.compile(r"!\[(.*)\]\((.+)\)")
+		descriptions_path = os.path.join(os.path.dirname(__file__), "resources", "descriptions")
+		images_path = os.path.join(os.path.dirname(__file__), "resources", "images")
+		for file_name in os.listdir(descriptions_path):
+			file_path = os.path.join(descriptions_path, file_name)
+			setting_id, extension = os.path.splitext(file_name)
+			if extension != ".md":
 				continue
+			with open(file_path, encoding="utf-8") as f:
+				markdown_str = f.read()
 
-			try:
-				with open(file_path, "r", encoding="utf-8") as f:
-					json_data = json.load(f)
-					general = json_data.get("general", {})
+			text_parts = find_images.split(markdown_str)
+			image_description = None
+			parts = [] #type: List[List[str]] #List of items in the description. Each item starts with a type ID, and then a variable number of data items.
+			for index, part in enumerate(text_parts):
+				#The parts of the regex split alternate between text, image description and image URL.
+				if index % 3 == 0:
+					part = part.strip()
+					if part or index == 0:
+						rich_text = mistune.markdown(part)
+						parts.append(["rich_text", rich_text])
+				elif index % 3 == 1:
+					image_description = mistune.markdown(part)
+				else: #if index % 3 == 2:
+					if image_description is not None:
+						if parts[-1][0] != "images": #List of images
+							parts.append(["images"])
+						image_url = os.path.join(images_path, part)
+						parts[-1].append(QUrl.fromLocalFile(image_url).toString() + "|" + image_description)
+						image_description = None
+			self.descriptions[setting_id] = parts
 
-				file_id = file_base_name
-				
-				#The key is not yet added, no images for this setting.
-				if file_id not in self._settings_data.keys():
-					self._settings_data[file_id] = {}
-					self._settings_data[file_id]["details"] = json_data
-
-				#Images already added to the list.
-				if "details" not in self._settings_data[file_id]:
-					self._settings_data[file_id]["details"] = json_data
-
-				#Overwrite images.
-				if "images" in general:
-					custom_path = "file:///" + images_path
-					self._settings_data[file_id]["images"] = []
-					sorted_images = sorted(general["images"].items())
-					for key, image_name in sorted_images:
-						image_path = os.path.join(custom_path, image_name)
-						self._settings_data[file_id]["images"].append(image_path)
-
-			except Exception:
-				Logger.logException("w", "Error while reading file: %s" % file)
-				continue
-
-	settingItemChanged = pyqtSignal()
+	@pyqtProperty(QObject, constant=True)
+	def containerStack(self) -> Optional[ContainerStack]:
+		return self._container_stack
 
 	@pyqtProperty(str, constant=True)
 	def pluginVersion(self) -> str:
@@ -205,6 +175,8 @@ class CuraSettingsGuide(Extension, QObject):
 		:return: The version number of this plug-in.
 		"""
 		return self._version
+
+	settingItemChanged = pyqtSignal()
 
 	@pyqtSlot(str)
 	def setSelectedSettingId(self, setting_key: str) -> None:
@@ -225,65 +197,13 @@ class CuraSettingsGuide(Extension, QObject):
 		"""
 		return self._selected_setting_id
 
-	@pyqtProperty("QVariantMap", notify=settingItemChanged)
-	def selectedSettingData(self) -> Dict[str, Dict[str, Union[List[str], Dict[str, str]]]]:
+	@pyqtProperty("QVariantList", notify=settingItemChanged)
+	def selectedSettingDescription(self) -> List[List[str]]:
 		"""
-		Returns the setting data of the currently selected setting.
+		Returns the description of the currently selected setting.
 
-		This setting data is a dictionary with the data to show in the guide. It
-		is a dictionary containing the following fields:
-		* general/id: The ID of the currently selected setting.
-		* general/template: The template file to display for this setting. If
-		  this is missing, the general template is assumed.
-		* general/images: A list of images to display for this setting.
-		* data/description: An extensive description of the current setting.
-		* data/img_description: An underscript under the images.
-		* data/hints: Hints on how to use the setting better.
-		* data/notes: Extra points of attention to beware of when using the
-		  setting.
-		:return: The setting data of the currently selected setting.
+		This setting data is a rich text document, properly formatted from the
+		Markdown files in the setting description files.
+		:return: The description of the currently selected setting.
 		"""
-		return self._settings_data.get(self._selected_setting_id, {
-			"details": {
-				"general": {
-					"id": self._selected_setting_id,
-					"template": "EmptyTemplate.qml"
-				}
-			}
-		})
-
-	replacement_patterns = {
-		re.compile(r"^-\s+(.*)"): "<li>\\1</li>\n",
-	}
-
-	@pyqtSlot(str, result=str)
-	def parseStylingList(self, check_text: str) -> str:
-		"""
-		Transform the mark-up in the setting description to the HTML subset that
-		Qt supports.
-		:param check_text: The original text.
-		:return: A transformed text that Qt can display.
-		"""
-		contents = ""
-		block_open = ""
-
-		for line in check_text.split("\n"):
-			if not block_open:
-				if line.startswith("-"):
-					block_open = "ul"
-					contents += "<{}>".format(block_open)
-
-			if line == "" and block_open:
-				contents += "</{}>\n".format(block_open)
-
-			for search, replace in self.replacement_patterns.items():
-				line = search.sub(replace, line)
-
-			contents += line
-
-		if block_open:
-			contents += "</{}>\n".format(block_open)
-		else:
-			contents = check_text
-
-		return contents
+		return self.descriptions.get(self._selected_setting_id, [["rich_text", "There is no description for this setting."]])

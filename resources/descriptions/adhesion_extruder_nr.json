@@ -1,8 +1,0 @@
-{
-	"data":
-	{
-		"description": "This setting determines which extruder prints the selected build plate adhesion method (skirt/brim/raft). This setting is only available in dual extrusion machines.",
-		"img_description": "",
-		"hints": ""
-	}
-}

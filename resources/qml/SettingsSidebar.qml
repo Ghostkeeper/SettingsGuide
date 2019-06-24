@@ -74,11 +74,6 @@ Item {
 
 			property var temp_model: ""
 			onEditingFinished: {
-				if(text.toLowerCase() == "createdby") {
-					temp_model = contents.model;
-					contents.model = createdBy;
-					return;
-				}
 				if(temp_model != "") {
 					contents.model = temp_model;
 					temp_model = "";
@@ -106,17 +101,6 @@ Item {
 					definitionsModel.showAncestors = false;
 					definitionsModel.showAll = true;
 				}
-			}
-		}
-
-		// Custom Item which is used only for createdBy setting
-		ListModel {
-			id: createdBy
-			ListElement {
-				type: "createdBy"
-				key: "createdBy"
-				label: "Created By"
-				depth: 2
 			}
 		}
 
@@ -177,7 +161,7 @@ Item {
 
 			model: UM.SettingDefinitionsModel {
 				id: definitionsModel
-				containerId: Cura.MachineManager.activeDefinitionId
+				containerId: "settings_guide_definitions"
 				showAll: true
 				exclude: ["machine_settings", "command_line_settings", "infill_mesh", "infill_mesh_order", "cutting_mesh", "support_mesh", "anti_overhang_mesh"] // TODO: infill_mesh settigns are excluded hardcoded, but should be based on the fact that settable_globally, settable_per_meshgroup and settable_per_extruder are false.
 				expanded: CuraApplication.expandedCategories

@@ -6,8 +6,7 @@
 
 import QtQuick 2.7
 import QtQuick.Window 2.2
-import QtQuick.Controls 1.4
-import QtQuick.Controls.Styles 1.4
+import QtQuick.Controls 2.3
 
 import UM 1.2 as UM
 import Cura 1.0 as Cura
@@ -23,6 +22,8 @@ Window {
 	minimumHeight: 400 * screenScaleFactor
 
 	color: UM.Theme.getColor("main_background")
+
+	property string zoomed_image
 
 	UM.I18nCatalog {
 		id: catalog
@@ -86,31 +87,112 @@ Window {
 			}
 		}
 
-
-		// Here we show our help images with hints and descriptions, and etc..
-		Loader {
-			id: pageLoader
-
-			property var loaderData: manager.selectedSettingData //The object which holds all information for the Loader Item.
+		ScrollView {
+			id: description_scroll
 			anchors {
 				left: parent.left
 				right: rightSideItem.left
 				top: parent.top
 				bottom: parent.bottom
 			}
+			visible: manager.selectedSettingId !== ""
 
-			source: {
-				if(manager.selectedSettingId === "") {
-					return "";
+			Column {
+				id: content_column
+				anchors {
+					left: parent.left
+					leftMargin: UM.Theme.getSize("wide_margin").width
+					top: parent.top
+					topMargin: UM.Theme.getSize("wide_margin").height
 				}
-				if(manager.selectedSettingId.toLowerCase() === "createdby") {
-					return Qt.resolvedUrl("CreatedBy.qml");
+				width: description_scroll.width - UM.Theme.getSize("wide_margin").width * 2
+				spacing: UM.Theme.getSize("wide_margin").height
+
+				Text {
+					text: selectedSettingName.properties.label ? selectedSettingName.properties.label : ""
+					width: parent.width
+					wrapMode: Text.Wrap
+					renderType: Text.NativeRendering
+					font: UM.Theme.getFont("large")
 				}
-				if(manager.selectedSettingData["details"] != undefined && manager.selectedSettingData["details"]["general"] != undefined && manager.selectedSettingData["details"]["general"]["template"] != undefined) {
-					return Qt.resolvedUrl("SidebarSettingTemplates/" + manager.selectedSettingData["details"]["general"]["template"]);
+
+				Repeater {
+					model: manager.selectedSettingDescription
+					delegate: Component {
+						Loader {
+							source: switch(modelData[0]) {
+								case "rich_text": return "DescriptionText.qml";
+								case "images": return "DescriptionImages.qml";
+							}
+							width: content_column.width
+							onLoaded: {
+								item.description_data = modelData.slice(1);
+							}
+						}
+					}
 				}
-				return Qt.resolvedUrl("SidebarSettingTemplates/GeneralTemplate.qml");
+
+				Item {
+					/* The scrollview's dimensions depend on the content height,
+					but since we move the contents down with a margin, the
+					bottom part of the column is not visible. So we add some
+					content at the bottom to adjust the total height of the
+					column and all the actual content is still visible. */
+					width: parent.width
+					height: UM.Theme.getSize("wide_margin").height
+				}
 			}
 		}
+
+		//Zoomed in version of an image, shown only when you click an image.
+		Item {
+			id: zoom_layer
+			anchors {
+				left: parent.left
+				right: rightSideItem.left
+				top: parent.top
+				bottom: parent.bottom
+			}
+			visible: settingsGuideBase.zoomed_image !== ""
+			z: 1 //On top of the general description.
+
+			Rectangle {
+				anchors.fill: parent
+				color: UM.Theme.getColor("viewport_background")
+				opacity: 0.9
+			}
+
+			//Allow reverting zoom level.
+			MouseArea {
+				anchors.fill: parent
+				onClicked: settingsGuideBase.zoomed_image = ""
+				hoverEnabled: true //Catch hover events so that hovering over images behind the overlay doesn't have an effect.
+			}
+
+			Rectangle {
+				width: zoom_image.paintedWidth
+				height: zoom_image.paintedHeight
+				color: "white" //Always white regardless of theme, to serve as background to the image.
+				anchors.centerIn: parent
+
+				AnimatedImage {
+					id: zoom_image
+					source: settingsGuideBase.zoomed_image
+					anchors.centerIn: parent
+					width: zoom_layer.width * 2 / 3
+					height: zoom_layer.height * 2 / 3
+					fillMode: Image.PreserveAspectFit
+					mipmap: true
+					onStatusChanged: playing = (status == AnimatedImage.Ready)
+				}
+			}
+		}
+	}
+
+	UM.SettingPropertyProvider {
+		id: selectedSettingName
+		containerStack: manager.containerStack
+		key: manager.selectedSettingId
+		watchedProperties: ["label"]
 	}
 }

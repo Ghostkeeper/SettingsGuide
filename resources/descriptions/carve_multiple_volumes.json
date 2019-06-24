@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "Ultimaker Cura detects if meshes loaded on the build plate overlap. If they do, Ultimaker Cura partly removes one of the meshes to prevent extruding double on those parts.",
-		"img_description": "",
-		"hints": "",
-		"notes": ""
-	}
-}

@@ -14,6 +14,16 @@ set(SETTINGSGUIDE_VERSION_MINOR 3 CACHE STRING "The minor version number, indica
 set(SETTINGSGUIDE_VERSION_PATCH 0 CACHE STRING "The patch version number, indicating an incremental improvement without compatibility break.")
 set(SETTINGSGUIDE_SUPPORTED_SDKS "6.0.0" CACHE STRING "List of supported Cura SDK versions.")
 
+#Make sure we have Mistune.
+include(ExternalProject)
+ExternalProject_Add(Mistune
+	GIT_REPOSITORY https://github.com/lepture/mistune.git
+	GIT_TAG v0.8.4
+	CONFIGURE_COMMAND ""
+	BUILD_COMMAND ""
+	INSTALL_COMMAND ""
+)
+
 #Installation.
 configure_file("${CMAKE_CURRENT_SOURCE_DIR}/plugin.json.in" plugin.json)
 set(installed_files
@@ -25,12 +35,17 @@ set(installed_files
 )
 set(installed_files_resources_icons
 	arrow.svg
-	created_by.jpg
 	icon.svg
 	play.svg
 )
+set(installed_files_resources
+	settings_guide_definitions_2000006.def.json
+	settings_guide_definitions_2000007.def.json
+	settings_guide_definitions_2000008.def.json
+)
 set(installed_files_resources_qml
-	CreatedBy.qml
+	DescriptionImages.qml
+	DescriptionText.qml
 	SettingsGuide.qml
 	SettingsSidebar.qml
 )
@@ -43,15 +58,15 @@ set(installed_files_resources_qml_SidebarSettings
 	SettingTextField.qml
 	SettingUnknown.qml
 )
-set(installed_files_resources_qml_SidebarSettingTemplates
-	EmptyTemplate.qml
-	GeneralTemplate.qml
-)
 set(installed_paths "")
 foreach(f IN LISTS installed_files)
 	list(APPEND installed_paths ${CMAKE_CURRENT_SOURCE_DIR}/${f})
 endforeach()
 list(APPEND installed_paths ${CMAKE_CURRENT_BINARY_DIR}/plugin.json)
+set(installed_paths_resources "")
+foreach(f IN LISTS installed_files_resources)
+	list(APPEND installed_paths_resources ${CMAKE_CURRENT_SOURCE_DIR}/resources/${f})
+endforeach()
 set(installed_paths_resources_icons "")
 foreach(f IN LISTS installed_files_resources_icons)
 	list(APPEND installed_paths_resources_icons ${CMAKE_CURRENT_SOURCE_DIR}/resources/icons/${f})
@@ -63,10 +78,6 @@ endforeach()
 set(installed_paths_resources_qml_SidebarSettings "")
 foreach(f IN LISTS installed_files_resources_qml_SidebarSettings)
 	list(APPEND installed_paths_resources_qml_SidebarSettings ${CMAKE_CURRENT_SOURCE_DIR}/resources/qml/SidebarSettings/${f})
-endforeach()
-set(installed_paths_resources_qml_SidebarSettingTemplates "")
-foreach(f IN LISTS installed_files_resources_qml_SidebarSettingTemplates)
-	list(APPEND installed_paths_resources_qml_SidebarSettingTemplates ${CMAKE_CURRENT_SOURCE_DIR}/resources/qml/SidebarSettingTemplates/${f})
 endforeach()
 file(GLOB installed_paths_resources_descriptions ${CMAKE_CURRENT_SOURCE_DIR}/resources/descriptions/*)
 file(GLOB installed_paths_resources_images ${CMAKE_CURRENT_SOURCE_DIR}/resources/images/*)
@@ -93,25 +104,27 @@ if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
 	set(CMAKE_INSTALL_PREFIX "${cura_directory}/${latest_version}/plugins" CACHE PATH "Location of the Cura plug-ins folder to install this plug-in to." FORCE)
 endif()
 install(FILES ${installed_paths} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID})
+install(FILES ${installed_paths_resources} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources)
 install(FILES ${installed_paths_resources_icons} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/icons)
 install(FILES ${installed_paths_resources_qml} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml)
 install(FILES ${installed_paths_resources_qml_SidebarSettings} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings)
-install(FILES ${installed_paths_resources_qml_SidebarSettingTemplates} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettingTemplates)
 install(FILES ${installed_paths_resources_descriptions} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/descriptions)
 install(FILES ${installed_paths_resources_images} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/images)
+install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune DESTINATION ${SETTINGSGUIDE_PLUGIN_ID})
 
 #Packing this into a .curapackage file.
 add_custom_target(pack COMMAND "") #Packs for all supported SDK versions.
 foreach(sdk_version ${SETTINGSGUIDE_SUPPORTED_SDKS})
 	file(COPY ${installed_paths} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID})
+	file(COPY ${installed_paths_resources} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/icons)
 	file(COPY ${installed_paths_resources_icons} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/icons)
 	file(COPY ${installed_paths_resources_qml} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml)
 	file(COPY ${installed_paths_resources_qml_SidebarSettings} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings)
-	file(COPY ${installed_paths_resources_qml_SidebarSettingTemplates} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettingTemplates)
 	file(COPY ${installed_paths_resources_descriptions} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/descriptions)
 	file(COPY ${installed_paths_resources_images} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/images)
 	file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/cmake/[Content_Types].xml" DESTINATION pack${sdk_version})
 	file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/cmake/_rels" DESTINATION pack${sdk_version})
+	file(COPY "${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune" DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID})
 	configure_file("${CMAKE_CURRENT_SOURCE_DIR}/cmake/package.json.in" pack${sdk_version}/package.json)
 	set(packaged_files
 		package.json
