@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "This is the printing temperature of the materials as found in the materials panel, without any extrusion rate corrections applied to it.",
-		"img_description": "",
-		"hints": "- Change this setting here to apply it to a single print.\n- Change the setting in the materials panel to apply it to all models printed with the current material type.",
-		"notes": ""
-	}
-}
