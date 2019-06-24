@@ -135,6 +135,7 @@
 	<!-- Markers depicting events. -->
 	<g font-family="sans-serif" font-size="50px">
 		<g text-anchor="end">
+			<text x="570" y="818">Initial Fan Speed</text>
 			<text x="570" y="615">Regular Fan Speed</text>
 			<text x="570" y="245">Maximum Fan Speed</text>
 		</g>
