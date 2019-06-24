@@ -1,0 +1,2 @@
+This setting determines the printing time of the layer at which it is so short that the fan speed will start increasing towards the Maximum Fan Speed. Layers that take longer to print than this will use the Regular Fan Speed. Layers that take shorter to print will have their fan speed interpolated between the Regular and the Maximum Fan Speed settings, up towards the Minimum Layer Time where the fan speed will be at the Maximum Fan Speed.
+![Which fan speed is used where](cool_fan_speed.svg)
