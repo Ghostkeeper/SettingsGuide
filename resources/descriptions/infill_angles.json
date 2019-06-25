@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "The infill lines usually print at a 45 degree angle. At this angle, both the X- and Y-motor work together to obtain maximum acceleration and jerk on the layer without losing quality.",
-		"img_description": "The left image has the default diagonal infill direction, the right one has a custom [0,90] infill line direction.",
-		"hints": "- If the lines need to be printed in a different direction, you can set it here at 0 degrees for vertical and 90 degrees for horizontal.\n- For example: [0,90] results in a horizontal-vertical top/bottom pattern.",
-		"notes": ""
-	}
-}
