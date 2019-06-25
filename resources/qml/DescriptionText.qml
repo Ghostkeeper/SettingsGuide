@@ -12,4 +12,5 @@ Text {
 	wrapMode: Text.Wrap
 	renderType: Text.NativeRendering
 	font: UM.Theme.getFont("default")
+	color: UM.Theme.getColor("text")
 }

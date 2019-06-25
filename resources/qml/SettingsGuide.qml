@@ -114,6 +114,7 @@ Window {
 					wrapMode: Text.Wrap
 					renderType: Text.NativeRendering
 					font: UM.Theme.getFont("large")
+					color: UM.Theme.getColor("text")
 				}
 
 				Repeater {

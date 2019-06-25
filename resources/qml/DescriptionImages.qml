@@ -38,6 +38,7 @@ GridLayout {
 				text: modelData.substring(modelData.indexOf("|") + 1)
 				wrapMode: Text.Wrap
 				font: UM.Theme.getFont("default_italic")
+				color: UM.Theme.getColor("text")
 				renderType: Text.NativeRendering
 				horizontalAlignment: Text.AlignHCenter
 				anchors {
