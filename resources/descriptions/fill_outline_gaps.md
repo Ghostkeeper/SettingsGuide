@@ -6,3 +6,5 @@ If this setting is enabled, Cura will make an attempt at printing these pieces a
 The tiny pieces are filled with extremely thin lines. These lines are then combined if they are adjacent to one another and not too long. This works for many cases, but in some cases it produces a tiny zig zag, significantly increasing printing time.
 
 It is advisable, before resorting to this setting, to try adjusting the outer wall line width slightly. If your part is slightly thinner than one line width, it might give a better result if you reduce the outer wall line width of your entire print such that the thin parts print normally. However reducing the line width too far will cause the material to flow unreliably, leading to underextrusion.
+
+**This will only attempt to print pieces that are thin in the horizontal plane. For thin pieces in the Z direction, see the Slicing Tolerance setting or increase the layer height.**
