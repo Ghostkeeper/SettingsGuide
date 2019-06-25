@@ -50,18 +50,18 @@
 
 	<!-- Legend. -->
 	<g stroke-width="10" stroke="black">
-		<rect x="1350" y="5" width="100" height="100" fill="red" />
-		<rect x="1350" y="155" width="100" height="100" fill="lime" />
-		<rect x="1350" y="305" width="100" height="100" fill="orange" />
-		<rect x="1350" y="455" width="100" height="100" />
-		<rect x="1350" y="605" width="100" height="100" fill="blue" />
+		<rect x="1350" y="55" width="100" height="100" fill="red" />
+		<rect x="1350" y="205" width="100" height="100" fill="lime" />
+		<rect x="1350" y="355" width="100" height="100" fill="orange" />
+		<rect x="1350" y="505" width="100" height="100" />
+		<rect x="1350" y="655" width="100" height="100" fill="blue" />
 	</g>
 	<!-- Legend text. -->
 	<g font-family="sans-serif" font-size="100px">
-		<text x="1500" y="90">Outer Wall</text>
-		<text x="1500" y="240">Inner Wall</text>
-		<text x="1500" y="390">Infill</text>
-		<text x="1500" y="540">Overlap</text>
-		<text x="1500" y="690">Wipe</text>
+		<text x="1500" y="140">Outer Wall</text>
+		<text x="1500" y="290">Inner Wall</text>
+		<text x="1500" y="440">Infill</text>
+		<text x="1500" y="590">Overlap</text>
+		<text x="1500" y="740">Wipe</text>
 	</g>
 </svg>
