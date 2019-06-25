@@ -1,0 +1,3 @@
+Filling gaps between walls introduces extra travel moves. If the gaps are extremely small, the material will typically not get enough time to flow out the nozzle very well. If this setting is enabled, the printer will not bother to fill some of the smallest gaps.
+
+Gaps smaller than 2 square outer wall line widths count as "tiny" gaps. For instance, if your Outer Wall Line Width setting is set to 0.4mm, gaps with an area of 0.4mm * 0.4mm * 2 = 0.32mm^2 will no longer get filled.
