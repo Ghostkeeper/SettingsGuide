@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "Since the layer height of the infill is not important for visual quality, you can use thicker layers on the infill to reduce the print time. When adjusting this setting, always make sure that it is a multiple of the layer height, otherwise Ultimaker Cura will round it up to a multiple of the layer height.",
-		"img_description": "The image on the left has a infill layer thickness of 0.1, the image on the right has a double infill layer thickness of 0.2mm",
-		"hints": "- Example: Print with an infill thickness of 0.2 mm while the layer height is 0.1 mm. The printer will print the walls for two layers, and then print one thicker infill layer.",
-		"notes": "Note: Increasing the infill layer thickness too much might lead to unstable infill and under-extrusion."
-	}
-}
