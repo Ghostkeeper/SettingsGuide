@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "Ironing is applied to an offset of the outer edge of the model in the X-Y direction.",
-		"img_description": "This model has ironing applied to it, the ironing inset distance from the outer edge of the model is increased to 1.2mm.",
-		"hints": "- Keeping distance from the model's edges while ironing, prevents over-extrusion on the edges.",
-		"notes": ""
-	}
-}
