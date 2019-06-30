@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "Ironing is a technique where the nozzle travels over the top-most layer after printing it, to iron the top layers to a smooth surface. The child settings for ironing can be adjusted to get the desired surface finish.",
-		"img_description": "The left image has ironing disabled, the right image has ironing enabled.",
-		"hints": "- Using ironing on models with a lot of top surface detail might not work properly.",
-		"notes": ""
-	}
-}
