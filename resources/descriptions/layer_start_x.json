@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "The X coordinate of the position near where to find the part to start printing each layer.\n\nThis setting defines the position closest to these coordinates to start the next layer. The setting is normally set to the far-right corner because that is where the Ultimaker 3's switching bay is located.",
-		"img_description": "",
-		"hints": "",
-		"notes": "This is a different setting than the Z-seam. The z-seam alignment setting only adjusts the start position of the outer wall, where this setting normally starts at the infill."
-	}
-}
