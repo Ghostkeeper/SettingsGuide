@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "This setting defines if retractions between support structures have to be limited.",
-		"img_description": "",
-		"hints": "- Enable this feature to reduce the number of retractions between supports, reducing the stress on the filament.\n- Disable this feature to retract between all supports, reducing oozing and strengthening the support material.",
-		"notes": "Be careful when disabling this setting if printing challenging support materials, like PVA. The stress on the material might cause clogging and material grinding."
-	}
-}
