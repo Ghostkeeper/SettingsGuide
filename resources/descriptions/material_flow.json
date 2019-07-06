@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "The flow is the amount of material that needs to be extruded over a specific amount of time and is based on the filament diameter and print speed. The flow is always set to 100%, which means that the extruded amount of filament will match the calculated amount.",
-		"img_description": "",
-		"hints": "- This setting is not usually changed, as the calculation is done automatically, but it can be useful when printing with experimental materials.",
-		"notes": "It is not advised to increase the flow to compensate for under extrusion. This will only work temporarily and won’t solve the underlying cause."
-	}
-}
