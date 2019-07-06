@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "In surface mode, the printer will only print the X-Y surface of the mesh (walls), instead of the solid model. Top and bottom, infill, and supports are not generated in this mode. This was previously called “Only follow mesh surface”. In addition to the “surface mode” and “normal”, a “both” mode has now been added. This ensures all closed volumes are printed as normal, and all loose geometry is printed as a single wall.",
-		"img_description": "This mode prints a shell quickly and efficiently. It is often used to print quick rings and other single-shelled models",
-		"hints": "There are a few parameter options available:\n- The \"Normal\" print mode only prints enclosed volumes.\n- The \"Surface\" prints a single wall tracing the mesh surface with no infill and no top/bottom skin.\n- The \"Both\" prints enclosed volumes like normal and any remaining polygons as surfaces.",
-		"notes": ""
-	}
-}
