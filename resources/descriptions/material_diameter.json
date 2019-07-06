@@ -1,8 +1,0 @@
-{
-	"data":
-	{
-		"description": "This setting defines the diameter of the filament in order for Ultimaker Cura to calculate the extrusion rate correctly. All Ultimaker filaments have a diameter of 2.85 mm, but you might need to change this setting when using filament from other suppliers.",
-		"img_description": "",
-		"hints": "- Filaments with a diameter of 1.75mm do not work with Ultimaker machines.\n- When using 3rd party material, it is advised to change the material profile in the preferences panel instead."
-	}
-}
