@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "The temperature change here indicates how much faster the nozzle cools down when extruding. The extra heat lost by extruding hot filament is compensated by this value.",
-		"img_description": "",
-		"hints": "- This setting depends on nozzle design and material type used.",
-		"notes": ""
-	}
-}
