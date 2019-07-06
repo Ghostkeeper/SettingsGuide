@@ -1,8 +1,0 @@
-{
-	"data":
-	{
-		"description": "This is the temperature of the build plate when printing the first layer. A slightly warmer build plate during the layer reduces the chance of warping.",
-		"img_description": "",
-		"hints": "- This setting inerhits the value of 'Default build plate temperature'."
-	}
-}
