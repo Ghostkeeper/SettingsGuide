@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "Solid models that contain unnecessary holes on the inside can be repaired by enabling the “Remove all holes” setting. Ultimaker Cura then closes the holes for slicing and makes sure the inside is printed correctly.",
-		"img_description": "This cube is hollow and will take longer to print than just making it solid, because of the extra walls. From left to right: solid view, x-ray view, “Remove holes disabled”, and “Remove holes enabled.",
-		"hints": "",
-		"notes": ""
-	}
-}
