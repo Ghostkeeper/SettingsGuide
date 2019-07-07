@@ -54,7 +54,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self._dialog = None #Cached instance of the dialogue window.
 		self._container_stack = None #Stack that provides not only the normal settings but also the extra pages added by this guide.
 
-		self.descriptions = {} #type: Dict[str, List[List[str, str]]] #The descriptions for each setting. Key: setting ID, value: Lists of items in each description.
+		self.descriptions = {} #type: Dict[str, List[List[str]]]] #The descriptions for each setting. Key: setting ID, value: Lists of items in each description.
 		self._selected_setting_id = "" #Which setting is currently shown for the user. Empty string indicates it's the welcome screen.
 
 		self._loadDescriptions()
@@ -160,6 +160,15 @@ class CuraSettingsGuide(Extension, QObject):
 						parts[-1].append(QUrl.fromLocalFile(image_url).toString() + "|" + image_description)
 						image_description = None
 			self.descriptions[setting_id] = parts
+
+	@pyqtProperty("QVariantMap", constant=True)
+	def allDescriptions(self) -> Dict[str, List[List[str]]]:
+		"""
+		Get a mapping of all descriptions. The keys will be the IDs of the
+		pages.
+		:return: A mapping from page IDs to description strings.
+		"""
+		return self.descriptions
 
 	@pyqtProperty(QObject, constant=True)
 	def containerStack(self) -> Optional[ContainerStack]:

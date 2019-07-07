@@ -13,4 +13,12 @@ Text {
 	renderType: Text.NativeRendering
 	font: UM.Theme.getFont("default")
 	color: UM.Theme.getColor("text")
+
+	onLinkActivated: {
+		if(link in manager.allDescriptions) {
+			manager.setSelectedSettingId(link);
+		} else {
+			Qt.openUrlExternally(link);
+		}
+	}
 }
