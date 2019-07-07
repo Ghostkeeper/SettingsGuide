@@ -57,7 +57,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self.descriptions = {} #type: Dict[str, List[List[str]]]] #The descriptions for each setting. Key: setting ID, value: Lists of items in each description.
 		self._selected_setting_id = "" #Which setting is currently shown for the user. Empty string indicates it's the welcome screen.
 
-		self._loadDescriptions()
+		CuraApplication.getInstance().engineCreatedSignal.connect(self._loadDescriptions)
 
 		self.initializeHelpSidebarHelpButton()
 
