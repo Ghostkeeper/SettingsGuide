@@ -21,4 +21,11 @@ Text {
 			Qt.openUrlExternally(link);
 		}
 	}
+
+	//Use a different cursor when hovering over a link.
+	MouseArea {
+		anchors.fill: parent
+		cursorShape: parent.hoveredLink ? Qt.PointingHandCursor : Qt.ArrowCursor
+		acceptedButtons: Qt.NoButton //Don't capture button clicks. We want the link to do that.
+	}
 }
