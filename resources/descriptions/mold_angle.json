@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "This is the maximum angle the mold may make outside of the model. That way, there is no support needed on the outside of the mold.",
-		"img_description": "",
-		"hints": "",
-		"notes": ""
-	}
-}
