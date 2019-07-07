@@ -12,7 +12,7 @@ The grid infill pattern creates two perpendicular sets of lines. Together this f
 Lines
 ----
 ![Lines](infill_pattern_lines.png)
-The lines pattern creates parallel lines. By default, the lines pattern alternates its direction perpendicularly from layer to layer, which makes it look like the grid pattern at first glance. However this can be altered with the Infill Line Directions setting.
+The lines pattern creates parallel lines. By default, the lines pattern alternates its direction perpendicularly from layer to layer, which makes it look like the grid pattern at first glance. However this can be altered with the [Infill Line Directions](infill_angles) setting.
 * The best pattern for a smooth top surface together with zigzag, since the distance between the lines is smallest.
 * Tends to be weak in the vertical direction, because the layers only have small points in which they bond together.
 * Will be extremely weak in the horizontal direction, except in the one direction that the lines are oriented. But even in that direction, it is not resistant to shear so it will fail fairly quickly under load.

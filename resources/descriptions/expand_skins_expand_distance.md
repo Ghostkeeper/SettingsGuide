@@ -5,4 +5,4 @@ Make the solid layers on the top and bottom of your print wider or thinner in a 
 * If your model has a horizontal surface next to a steep wall, increasing this setting can improve adhesion between the walls of the steep surface and the skin, because the skin will be printed directly touching those walls.
 * Setting this setting to a negative value will reduce the width of the top and bottom layers, replacing it with infill. This can save some printing time, at the cost of strength.
 
-**Due to technical limitations, you can't reduce this setting negatively below the value of Skin Removal Width. Increase the Skin Removal Width setting in order to remove more skin.**
+**Due to technical limitations, you can't reduce this setting negatively below the value of [Skin Removal Width](skin_preshrink). Increase the Skin Removal Width setting in order to remove more skin.**

@@ -5,4 +5,4 @@ Make the solid layers on the bottom of your print wider or thinner in a horizont
 * If you have a bottom side that is not directly on the build plate there will be walls beneath the skin. This will enhance the adhesion between the bottom layers and its nearby walls because the bottom layers will be printed directly on top of the walls.
 * Setting this setting to a negative value will reduce the width of the bottom layers, replacing it with infill. This can save some printing time, at the cost of strength.
 
-**Due to technical limitations, you can't reduce this setting negatively below the value of Bottom Skin Removal Width. Increase the Bottom Skin Removal Width setting in order to remove more skin.** 
+**Due to technical limitations, you can't reduce this setting negatively below the value of [Bottom Skin Removal Width](bottom_skin_preshrink). Increase the Bottom Skin Removal Width setting in order to remove more skin.** 
