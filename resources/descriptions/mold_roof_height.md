@@ -1,0 +1,3 @@
+This setting specifies how thick the horizontal parts of your mould will become. These horizontal parts will be placed on top of the mould, and beneath it.
+
+There will not be a horizontal part at the highest point of your model, so that you can pour the material in. There will also not be a horizontal part beneath the model, because the build plate itself serves to close the mould there. If a horizontal part beneath the model is desired, the raft can be used to that end.
