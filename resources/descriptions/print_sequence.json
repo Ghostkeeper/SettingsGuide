@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "When multiple models are placed on the build plate, you can define the sequence in which they should be printed.",
-		"img_description": "",
-		"hints": "There are two options:\n- All at once: All objects will be printed at the same time, which means that it will print one layer of each object before moving onto the next layer.\n- One at a time: Objects will be printed one by one. This mode can only be used if the models are smaller than the gantry height, which is the distance between the build plate and lowest print head shaft",
-		"notes": ""
-	}
-}
