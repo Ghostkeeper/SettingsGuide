@@ -1,1 +1,7 @@
+#Mark Markdown files as detectable by Linguist so that Github displays it.
 *.md linguist-detectable=true
+
+#Don't export Git-specific files.
+.gitattributes export-ignore
+.gitignore export-ignore
+contributing.md export-ignore
