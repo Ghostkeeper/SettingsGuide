@@ -1,8 +1,0 @@
-{
-	"data":
-	{
-		"description": "This is the distance in millimeters that the material is retracted from the nozzle. The setting is dependant on the material type and hardware configuration, such as the length of the bowden tubes.",
-		"img_description": "",
-		"hints": "- A long retraction creates more stress on the material, takes time and minimizes oozing.\n- A short retraction has an increased chance of oozing, but keeps the material secure and print time shorter."
-	}
-}
