@@ -1,8 +1,0 @@
-{
-	"data":
-	{
-		"description": "When non-zero, combing travel moves that are longer than this distance will use retraction.",
-		"img_description": "",
-		"hints": ""
-	}
-}
