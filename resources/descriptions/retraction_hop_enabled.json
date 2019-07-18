@@ -1,8 +1,0 @@
-{
-	"data":
-	{
-		"description": "With this setting, the build plate will move down by the set value when a retraction is performed, allowing the print head to travel over the print without the nozzle touching it. This prevents the nozzle from hitting the object or leaving “blobs” or scratches on the print surface.",
-		"img_description": "The image shows Z-hop retraction",
-		"hints": "Whenever a retraction is done, the build plate is lowered to create clearance between the nozzle and the print. It prevents the nozzle from hitting the print during travel moves, reducing the chance to knock the print from the build plate. Please note that for prints with lots of retractions/travel moves, this can increase the print time."
-	}
-}
