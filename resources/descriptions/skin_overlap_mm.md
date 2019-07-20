@@ -1,7 +1,5 @@
 This setting makes the skin overlap a bit with the adjacent structures. This makes the skin adhere better to those structures.
 
-The overlap in this setting is expressed as a percentage of the average line width between the skin lines and the innermost wall lines.
-
 ![No overlap](skin_overlap_none.png)
 ![Some overlap](skin_overlap_20.png)
 
