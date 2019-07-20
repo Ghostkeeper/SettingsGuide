@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "With this setting, you can specify the speed for the first layer of the print. By default a low speed is used for the bottom layer, so that the material adheres well to the build plate on the first layer.",
-		"img_description": "",
-		"hints": "",
-		"notes": ""
-	}
-}
