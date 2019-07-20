@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "The speed of printing for the initial layer. A lower value is advised to improve adhesion to the build plate.",
-		"img_description": "",
-		"hints": "",
-		"notes": ""
-	}
-}
