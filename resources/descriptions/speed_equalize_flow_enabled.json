@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "This setting allows thin walls to be printed at a higher speed than normal. That way, the extrusion is lowered on the printed part, making it equal to the volume it should extrude.",
-		"img_description": "",
-		"hints": "",
-		"notes": ""
-	}
-}
