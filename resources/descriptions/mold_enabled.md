@@ -1,6 +1,8 @@
 Instead of printing the model itself, this feature causes the printer to create a negative of the model, a mould, that you could cast a different material in to create your model. This mould has several specific properties that make it both workable to cast with and printable with FDM printing.
+
 ![A model that you'd want to cast](mold_enabled_shell.png)
 ![The mould for that model](mold_enabled_mould.png)
+
 Cura's mould generation will create a hollow with the exact shape that you want to cast. Around this hollow, a shell will be generated with a certain width, configurable through the [Minimal Mold Width](mold_width) setting. Above and below the mould, a skin will be generated with a certain height, configurable through the [Mold Roof Height](mold_roof_height) setting. However this skin will not be generated at the very top of the model so that you can pour the casting material in there. It will also not be generated at the very bottom of the model. You're meant to keep it on the build plate while it's being cast.
 
 Designing Your Mould

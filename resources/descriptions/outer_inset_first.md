@@ -1,4 +1,5 @@
 This setting determines which walls are printed first, the outer or the inner walls.
+
 ![The inner wall is printed first](outer_inset_first_disabled.gif)
 ![The outer wall is printed first](outer_inset_first_enabled.gif)
 
