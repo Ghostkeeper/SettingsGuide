@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "With this setting, you can specify the travel speed for the first layer over the print. Keep this setting low to keep the nozzle from pulling the print off the build plate, especially when working with detailed bottom surfaces.",
-		"img_description": "",
-		"hints": "",
-		"notes": ""
-	}
-}
