@@ -1,8 +1,0 @@
-{
-	"data":
-	{
-		"description": "In each layer start with printing the object near the same point, so that we don't start a new layer with printing the piece which the previous layer ended with. This makes for better overhangs and small parts, but increases printing time.",
-		"img_description": "",
-		"hints": ""
-	}
-}
