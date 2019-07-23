@@ -19,7 +19,14 @@ Pull requests to the main code (QML, Python) are subject to the following requir
 * The code style is similar to the rest of the code in this repository.
 * Your code will be licensed under AGPL 3.0 like the rest of the code in this repository.
 
-Pull requests to add descriptions for settings or improve current descriptions are also welcome. Please see the existing setting descriptions for examples.
+Pull requests to add descriptions for settings or improve current descriptions are also welcome. In general, articles about settings should hold the following format:
+1. First an explanation of what the setting does directly.
+2. Some pictures with examples, if applicable.
+3. Some more technical details of what the setting does.
+4. The effects of the setting on your print.
+5. Warnings of common mistakes made with this setting or other things that the user should watch out for, if applicable.
+
+This is not set in stone. For some articles (in particular drop-down settings) it makes sense to have a different format.
 
 When taking screenshots of the g-code, these are some instructions to ensure a consistent look throughout the plug-in.
 * Before making a screenshot, remove the build plate shader so that the grid doesn't show up in your screenshot.
