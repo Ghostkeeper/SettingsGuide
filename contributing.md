@@ -10,7 +10,7 @@ Requesting features
 ----
 Feature requests are also welcome in the [issues page](https://github.com/Ghostkeeper/SettingsGuide/issues).
 
-I intend to write descriptions for every setting in Cura, but this is a lot of work. If you'd like to request precedence for certain settings, feel free to ask.
+I intend to write descriptions for every setting in Cura, but this is a lot of work. If you'd like to request priority for certain settings, feel free to ask.
 
 Submitting pull requests
 ----
