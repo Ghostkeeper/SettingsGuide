@@ -27,14 +27,14 @@ When taking screenshots of the g-code, these are some instructions to ensure a c
 * Don't use the compatibility mode of layer view.
 
 In an effort to keep the download size of the plug-in manageable, care needs to be taken with .png images.
-1. If the image is more than 1024 pixels wide or tall, please resize it to 1024 pixels.
+1. Reduce your image to 256 colours. You can use dithering if you think it looks better, but quite often it doesn't look better.
 2. Download [OptiPNG](http://optipng.sourceforge.net/).
 3. Optimize your image by entering this in a terminal: `optipng -o7 -strip all my_image.png`
 
 Animated images are even more prone to having large file sizes. The following steps should guide you to produce space-efficient animations:
-1. Resize your image to 640x480 pixels at the most.
-2. Use at most 256 colours (no multi-part GIFs).
-3. If you have an animation that requires smooth motion, use at most 10fps. If you have an animation that just shows several stages or layers, limit your image to one frame per stage or layer.
+1. Use a smaller resolution, by zooming out in Cura rather than by scaling the pictures down after taking the screenshots.
+2. See if you can reduce the colour depth to 64 or 32 colours without introducing a significant amount of dithering or losing visual detail.
+3. If you have an animation that requires smooth motion, use at most 5fps. If you have an animation that just shows several stages or layers, limit your image to one frame per stage or layer.
 4. Don't create animations of more than 5 seconds.
 5. Download [FlexiGIF](https://create.stephan-brumme.com/flexigif-lossless-gif-lzw-optimization/).
 6. Optimize your image by entering this in a terminal: `flexigif my_image.gif my_image_opt.gif`.
