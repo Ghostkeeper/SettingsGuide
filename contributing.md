@@ -32,6 +32,7 @@ When taking screenshots of the g-code, these are some instructions to ensure a c
 * Before making a screenshot, remove the build plate shader so that the grid doesn't show up in your screenshot.
 * Use the light theme of Cura when taking the screenshot.
 * Don't use the compatibility mode of layer view.
+* Don't collage your screenshots. Use separate images for different effects, each with their own subtitle.
 
 In an effort to keep the download size of the plug-in manageable, care needs to be taken with .png images.
 1. Reduce your image to 256 colours. You can use dithering if you think it looks better, but quite often it doesn't look better.
