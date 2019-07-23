@@ -10,8 +10,7 @@ from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl
 from typing import Dict, List, Optional
 
 from cura.API import CuraAPI
-from cura.CuraApplication import CuraApplication #To get the setting version to load the correct definition file.
-from UM.Application import Application
+from cura.CuraApplication import CuraApplication #To get the setting version to load the correct definition file, and to create QML components.
 from UM.Extension import Extension
 from UM.Logger import Logger
 from UM.PluginRegistry import PluginRegistry
@@ -54,7 +53,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self._dialog = None #Cached instance of the dialogue window.
 		self._container_stack = None #Stack that provides not only the normal settings but also the extra pages added by this guide.
 
-		self.descriptions = {} #type: Dict[str, List[List[str]]]] #The descriptions for each setting. Key: setting ID, value: Lists of items in each description.
+		self.descriptions = {} #type: Dict[str, List[List[str]]] #The descriptions for each setting. Key: setting ID, value: Lists of items in each description.
 		self._selected_setting_id = "" #Which setting is currently shown for the user. Empty string indicates it's the welcome screen.
 
 		CuraApplication.getInstance().engineCreatedSignal.connect(self._loadDescriptions)
@@ -101,6 +100,8 @@ class CuraSettingsGuide(Extension, QObject):
 		Opens the guide in the welcome page.
 		"""
 		self.load_window()
+		if not self._dialog:
+			return
 		self.setSelectedSettingId("") #Display welcome page.
 		self._dialog.show()
 
@@ -110,6 +111,8 @@ class CuraSettingsGuide(Extension, QObject):
 		:param setting_key: The key of the setting to show the guide of.
 		"""
 		self.load_window()
+		if not self._dialog:
+			return
 		self.setSelectedSettingId(setting_key)
 		self._dialog.show()
 
@@ -121,8 +124,11 @@ class CuraSettingsGuide(Extension, QObject):
 		:return: The QML instance.
 		"""
 		Logger.log("d", "Settings Guide: Create dialog from QML [%s]", qml_name)
-		path = os.path.join(PluginRegistry.getInstance().getPluginPath(self.getPluginId()), "resources", "qml", qml_name)
-		dialog = Application.getInstance().createQmlComponent(path, {"manager": self})
+		plugin_path = PluginRegistry.getInstance().getPluginPath(self.getPluginId())
+		if plugin_path is None:
+			plugin_path = os.path.dirname(__file__)
+		path = os.path.join(plugin_path, "resources", "qml", qml_name)
+		dialog = CuraApplication.getInstance().createQmlComponent(path, {"manager": self})
 		return dialog
 
 	def _loadDescriptions(self) -> None:
@@ -183,7 +189,7 @@ class CuraSettingsGuide(Extension, QObject):
 		("1.2.3").
 		:return: The version number of this plug-in.
 		"""
-		return self._version
+		return self.getVersion()
 
 	settingItemChanged = pyqtSignal()
 
