@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "When a zig-zag support pattern has been selected, this setting becomes visible. It connects the end of zig-zags, which strengthens the support structure and increases adhesion to the build plate by the support structure.",
-		"img_description": "",
-		"hints": "",
-		"notes": ""
-	}
-}
