@@ -1,8 +1,0 @@
-{
-	"data":
-	{
-		"description": "This setting defines Extruder Nr which will be used for the support. This is used in multi-extrusion.",
-		"img_description": "",
-		"hints": ""
-	}
-}
