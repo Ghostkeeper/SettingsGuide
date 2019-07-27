@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "When “Support placement type everywhere” is selected, support structures are printed with the model. This structure doesn’t necessarily follow the contours of the model smoothly. Instead, the bottom of the support structure consists of small stair-like steps. Changing the stair step height value affects how big these steps should be. A low value will result in a smoother bottom of the support and more connections between the model and support structure. A higher value makes it easier to remove the support afterwards.",
-		"img_description": "The image illustrates stair step value height differences. The object on the left has a high value stair step height, the model on the right has a lower value",
-		"hints": "",
-		"notes": ""
-	}
-}
