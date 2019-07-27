@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "Width of a single support roof line.",
-		"img_description": "This image shows only the support roofs that carry the model, which are affected when changing this setting.",
-		"hints": "- Decreasing the support roof line width increases the model surface quality slightly, but is not recommended due to the increased print time.",
-		"notes": ""
-	}
-}
