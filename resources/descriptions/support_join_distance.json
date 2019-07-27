@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "Join distance is the maximum distance between support structures in the X/Y directions. When separate structures are closer together than this value, they will merge. Using a high value for this setting will cause support structures will merge sooner. This can help increase the stability and strength of the support, especially when the support structures are very thin. It is important to note that a high value can make the support structures so dense that it is difficult to remove.",
-		"img_description": "This immage illustrates two models. The model on the left has separate supports, while the support join distance value of the right model cause the supports to merge",
-		"hints": "",
-		"notes": ""
-	}
-}
