@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "Width of a single support structure line. Support consists of support infill and a support interface. The interface can be adjusted separately.",
-		"img_description": "This image shows the support structure of a single layer.",
-		"hints": "- Increasing the support line width slightly results in stronger support and decreases print time slightly.",
-		"notes": "Note: Be careful when increasing the support line width when using PVA material, as it might clog the nozzle."
-	}
-}
