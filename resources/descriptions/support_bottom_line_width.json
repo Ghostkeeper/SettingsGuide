@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "The width of a single printed support floor line.",
-		"img_description": "This image shows the support floors which are affected by this setting.",
-		"hints": "- The support floor line width is automatically calculated by the support interface but can be adjusted separately here.",
-		"notes": ""
-	}
-}
