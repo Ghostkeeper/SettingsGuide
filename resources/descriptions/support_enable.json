@@ -1,8 +1,0 @@
-{
-	"data":
-	{
-		"description": "Some models have overhanging parts, which means that parts of the model float mid-air when you would print the model. In this case, you must print a support structure under the model to prevent the plastic from falling down.",
-		"img_description": "",
-		"hints": ""
-	}
-}
