@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "This is the maximum width in the X/Y direction where a stair step appears. When a plane does not change height within these 5 millimeters, the support is handled as regular support.",
-		"img_description": "",
-		"hints": "",
-		"notes": ""
-	}
-}
