@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "The thickness per layer of support infill material. This value should always be a multiple of the layer height and is otherwise rounded.",
-		"img_description": "This image shows an example of support infill layer thickness - note the thicker support layers in purple.",
-		"hints": "- Use this feature to fine tune the height-per-layer of support infill material. \n- Print materials such as PVA at double the normal layer height to save time, e.g. for a print with a 0.15 mm layer height, PVA can be printed with a layer height of 0.3 mm for the majority of the support infill.",
-		"notes": ""
-	}
-}
