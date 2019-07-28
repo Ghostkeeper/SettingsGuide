@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "This is the length of the retraction of the filament when the nozzle goes into standby mode.",
-		"img_description": "",
-		"hints": "- This value is higher than the normal retraction distance, since the nozzle will be in standby for a longer period of time.",
-		"notes": ""
-	}
-}
