@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "By enabling this setting, the print head will avoid printed parts when traveling. When the shortest route from one point to another in the print is obstructed, the print head will move around it. This decreases the possibility of coming into contact with parts of the model that have already been printed, in turn reducing the chance of surface defects or material mixing. To use this setting, you must first enable combing.",
-		"img_description": "The travel moves in both images start and end at the exact same location. Avoid printed parts is enabled for the model on the left, and disabled for the model on the right.",
-		"hints": "",
-		"notes": ""
-	}
-}
