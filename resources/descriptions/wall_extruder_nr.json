@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "The extruder train used for printing all walls. This is used by multi-extrusion machines.",
-		"img_description": "This model is printed with a white material and the wall extruder set to print the second extruder, which contained black material.",
-		"hints": "- Printing the walls with a different material can alter the aesthetics and strength properties of a print.\n- Printing the walls with a different nozzle size can increase print speed.",
-		"notes": ""
-	}
-}
