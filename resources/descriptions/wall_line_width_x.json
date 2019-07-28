@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "Width of a single wall line for all wall lines except the outermost one.",
-		"img_description": "This image shows only the inner walls are affected when changing this setting.",
-		"hints": "- This setting has a slightly lower line width to ensure the infill and outer wall bond well.",
-		"notes": ""
-	}
-}

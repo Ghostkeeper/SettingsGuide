@@ -6,7 +6,7 @@ Reducing the walls to a line width slightly below the nozzle size is known to be
 
 Reducing the wall line width also allows the nozzle to print finer details. Especially the [Outer Wall Line Width](wall_line_width_0) is important for this property.
 
-Increasing the wall line width can reduce printing time. You will need fewer wall lines to get part with similar strength. The strength will still be reduced somewhat because adjacent walls will not fuse together as much.
+Increasing the wall line width can reduce printing time. You will need fewer wall lines to get parts with similar strength. The strength will still be reduced somewhat because adjacent walls will not fuse together as much.
 
 Making lines fit
 ----
