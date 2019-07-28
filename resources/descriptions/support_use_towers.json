@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "By using this setting, support structures are printed as towers, to support tiny overhang areas. Support towers are only printed for support areas that are smaller than the set minimum diameter. All support areas larger than this value will use regular support.",
-		"img_description": "This image shows the support tower and its settings.",
-		"hints": "For stability, support towers have a larger diameter than the region they support. If necessary, the tower diameter can be changed to create either a bigger or smaller support tower. The tower’s diameter decreases near the overhang, forming a roof. By adjusting the tower roof angle you can define how pointy or flat the tower roof should be.",
-		"notes": ""
-	}
-}
