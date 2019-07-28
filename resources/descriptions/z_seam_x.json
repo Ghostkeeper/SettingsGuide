@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "This setting defines the X coordinate of the Z-seam when the 'Z seam alignment' is set to 'user specified'.",
-		"img_description": "The left model has the seam on the left, the X-value is zero. The right model has the seam on the right, the X-value is 300.",
-		"hints": "- The coordinates are calculated absolute or relative depending on the preference of the user.",
-		"notes": ""
-	}
-}
