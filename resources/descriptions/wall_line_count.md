@@ -10,6 +10,6 @@ The number of walls is a major factor in how strong the print will be. Since the
 Increasing the number of walls will:
 * Greatly increase the strength of the print.
 * Reduce the shine-through effect where the infill pattern is visible on the outside.
-* Improve overhangs, because the lines are usually more oriented towards their nearest resting point.
+* Improve overhangs, because the wall lines are usually more oriented towards their nearest resting point.
 * Make the model watertight more easily.
 * Greatly increase the printing time and material usage of the print.
