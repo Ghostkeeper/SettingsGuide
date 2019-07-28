@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "The Z-seam is hidden as much as possible by default. However, for some projects, specifically those that require post-processing, exposing the seam can be necessary for the post-print processing.",
-		"img_description": "",
-		"hints": "- None: The seam will remain on the Z-seam alignment location.\n- Hide seam: The seam will be hidden as much as possible.\n- Expose seam: The seam will be exposed as much as possible.\n- Hide or expose: The seam will be hidden when possible and exposed when there is no other option.",
-		"notes": ""
-	}
-}
