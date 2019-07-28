@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "This determines the pattern that is used to draw the layer that is printed directly onto the build plate. It can be changed separately from other Top/Bottom patterns. Some patterns will adhere to the build plate better than others. You can also use it to get a specific visual effect on the bottom of your print.",
-		"img_description": "This animation shows the initial layer has a concentric pattern, while the remaining layers have a lines pattern.",
-		"hints": "- This setting only affects the layer that is printed directly on the build plate.\n- The concentric pattern tends to adhere better than linear patterns, since the lines do not contract all in one direction.",
-		"notes": ""
-	}
-}
