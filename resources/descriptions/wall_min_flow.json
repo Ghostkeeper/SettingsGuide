@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "Compensating for overlaps in wall lines will reduce the flow rate of some of the walls. This is sometimes problematic, because it can reduce the flow rate arbitrarily low, down to 1% if the walls almost completely overlap. Printing at extremely low flow rates typically doesn't work well. It tends to form a droplet pattern instead of continuously extruding lines. This setting will turn those lines with extremely low flow rate into travel moves, effectively snapping their flow rate to 0%. It will still ooze but prevents those droplets, improving visual quality even though it is technically underextruding.",
-		"img_description": "The first image shows compenstated wall overlaps. Some of those lines have very low frame rate. The second image shows that walls with less than 50% flow rate are turned into travel moves.",
-		"hints": "- Increasing this will cause your walls to be thinner than desired, but prevents blips on the surface.\n- Set this setting to the minimum flow rate that your nozzle can achieve without forming droplets. Typically ths is about 60%.\n- If you are printing at greater layer heights or using thicker wall lines, you may be able to reduce this setting a bit to get greater dimensional accuracy..",
-		"notes": "Note: The nozzle will still follow the path of the wall in order to ooze in the correct location."
-	}
-}
