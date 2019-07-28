@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "With the top/bottom thickness you can set the thickness of the solidly printed top and bottom layers of the print. A higher value ensures all gaps on the top and bottom layers are closed completely. However, this can also increase the print time and amount of filament used.",
-		"img_description": "The model on the left has a top/bottom thickness of 1.4mm, the one on the right is just 0.7mm.",
-		"hints": "- It is advised to always use a multiple of the layer height for the thickness of the top and bottom.",
-		"notes": ""
-	}
-}
