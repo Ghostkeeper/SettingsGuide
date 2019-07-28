@@ -1,9 +1,0 @@
-{
-	"data":
-	{
-		"description": "This refers to the speed of the retraction when the nozzle switches to standby mode. This setting is automatically calculated by 'Nozzle switch retraction speed'.",
-		"img_description": "",
-		"hints": "- A higher retraction speed results in a better print, but has a higher chance of causing filament grinding.",
-		"notes": ""
-	}
-}
