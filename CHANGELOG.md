@@ -1,5 +1,27 @@
+2.0.0 - For Mark(down)
+====
+In this release all setting articles were completely rewritten, and most images re-made in higher resolution.
+
+New Features
+----
+* Articles are now stored in Markdown format, allowing greater flexibility in their layout and structure.
+* All articles are rewritten. They now contain much more information on their behaviour and how you'd use them. On average the articles have about 2.5 times as much information.
+* Almost all images have been re-made in a higher resolution, with better compression techniques to limit installation size.
+* All diagrams have been converted to SVG for better picture quality and easier maintainability.
+* Support for version 4.2.
+* Articles can now link to each other.
+* Articles can now link to the internet.
+* Each image can now have its own subtext.
+* Articles can now be added about other things than settings.
+* An about category is added with information about the plug-in itself.
+
+Bug fixes
+----
+* The plug-in will not load all articles any more during the loading screen, which would slow down Cura's boot sequence.
+* Many corrections have been made to various articles.
+
 1.3.0 - Hillity Usability
-===
+====
 This release adds many tiny quality-of-life features and improves the quality of images while further reducing download size.
 
 New Features
