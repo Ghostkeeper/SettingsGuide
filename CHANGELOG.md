@@ -5,7 +5,7 @@ In this release all setting articles were completely rewritten, and most images 
 New Features
 ----
 * Articles are now stored in Markdown format, allowing greater flexibility in their layout and structure.
-* Support for version 4.2.
+* Support for Cura version 4.2.
 * Articles can now link to each other.
 * Articles can now link to the internet.
 * Each image can now have its own subtext.
