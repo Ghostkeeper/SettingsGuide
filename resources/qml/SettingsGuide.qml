@@ -113,7 +113,7 @@ Window {
 					width: parent.width
 					wrapMode: Text.Wrap
 					renderType: Text.NativeRendering
-					font: UM.Theme.getFont("large")
+					font: UM.Theme.getFont("large_bold")
 					color: UM.Theme.getColor("text")
 				}
 
