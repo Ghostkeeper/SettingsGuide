@@ -39,9 +39,7 @@ set(installed_files_resources_icons
 	play.svg
 )
 set(installed_files_resources
-	settings_guide_definitions_2000006.def.json
-	settings_guide_definitions_2000007.def.json
-	settings_guide_definitions_2000008.def.json
+	settings_guide_definitions.def.json
 )
 set(installed_files_resources_qml
 	DescriptionImages.qml
