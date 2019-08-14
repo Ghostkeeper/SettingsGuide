@@ -1,3 +1,8 @@
+2.0.1 - Bug fixes
+----
+* Fix packaging script.
+* Fix loading the settings list in Cura 4.3 and newer.
+
 2.0.0 - For Mark(down)
 ====
 In this release all setting articles were completely rewritten, and most images re-made in higher resolution.
