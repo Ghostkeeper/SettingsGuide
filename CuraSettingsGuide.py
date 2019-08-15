@@ -80,8 +80,7 @@ class CuraSettingsGuide(Extension, QObject):
 		Do all the things necessary to start using the guide.
 		"""
 		#Load a special definition container that also contains extra entries for the guide entries that are not settings.
-		settings_guide_filename = "settings_guide_definitions_{n}.def.json".format(n=DefinitionContainer.Version * 1000000 + CuraApplication.SettingVersion)
-		with open(os.path.join(os.path.dirname(__file__), "resources", settings_guide_filename)) as f:
+		with open(os.path.join(os.path.dirname(__file__), "resources", "settings_guide_definitions.def.json")) as f:
 			definitions_serialised = f.read()
 		definition_container = DefinitionContainer("settings_guide_definitions")
 		definition_container.deserialize(definitions_serialised)
