@@ -42,14 +42,6 @@ Item {
 		height: UM.Theme.getSize("setting_control").height
 		width: rightSideItem.width
 
-		Timer {
-			id: settingsSearchTimer
-			onTriggered: filter.editingFinished()
-			interval: 500
-			running: false
-			repeat: false
-		}
-
 		TextField {
 			id: filter
 			height: parent.height
@@ -67,10 +59,6 @@ Item {
 			}
 
 			onTextChanged: {
-				settingsSearchTimer.restart();
-			}
-
-			onEditingFinished: {
 				definitionsModel.filter = {"i18n_label": "*" + text};
 			}
 
