@@ -122,7 +122,8 @@ foreach(sdk_version ${SETTINGSGUIDE_SUPPORTED_SDKS})
 	file(COPY ${installed_paths_resources_images} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/images)
 	file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/cmake/[Content_Types].xml" DESTINATION pack${sdk_version})
 	file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/cmake/_rels" DESTINATION pack${sdk_version})
-	file(COPY "${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune" DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID})
+	file(COPY "${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune/mistune.py" DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/Mistune)
+	file(COPY "${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune/LICENSE" DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/Mistune)
 	configure_file("${CMAKE_CURRENT_SOURCE_DIR}/cmake/package.json.in" pack${sdk_version}/package.json)
 	set(packaged_files
 		package.json
