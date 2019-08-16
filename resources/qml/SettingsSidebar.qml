@@ -175,9 +175,6 @@ Item {
 
 				property var definition: model
 				property var settingDefinitionsModel: definitionsModel
-				property var propertyProvider: provider
-				property var globalPropertyProvider: inheritStackProvider
-				property var externalResetHandler: false
 
 				asynchronous: true
 				active: model.type != undefined
