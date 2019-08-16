@@ -7,7 +7,7 @@
 import os
 import re #To get images from the descriptions.
 from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Set
 
 from cura.API import CuraAPI
 from cura.CuraApplication import CuraApplication #To get the setting version to load the correct definition file, and to create QML components.
@@ -55,8 +55,6 @@ class CuraSettingsGuide(Extension, QObject):
 
 		self.descriptions = {} #type: Dict[str, List[List[str]]] #The descriptions for each setting. Key: setting ID, value: Lists of items in each description.
 		self._selected_setting_id = "" #Which setting is currently shown for the user. Empty string indicates it's the welcome screen.
-
-		CuraApplication.getInstance().engineCreatedSignal.connect(self._loadDescriptions)
 
 		self.initializeHelpSidebarHelpButton()
 
@@ -130,21 +128,25 @@ class CuraSettingsGuide(Extension, QObject):
 		dialog = CuraApplication.getInstance().createQmlComponent(path, {"manager": self})
 		return dialog
 
-	def _loadDescriptions(self) -> None:
+	def _getArticle(self, article_id) -> List[List[str]]:
 		"""
-		Load all the descriptions for all settings.
-		"""
-		find_images = re.compile(r"!\[(.*)\]\((.+)\)")
-		descriptions_path = os.path.join(os.path.dirname(__file__), "resources", "descriptions")
-		images_path = os.path.join(os.path.dirname(__file__), "resources", "images")
-		for file_name in os.listdir(descriptions_path):
-			file_path = os.path.join(descriptions_path, file_name)
-			setting_id, extension = os.path.splitext(file_name)
-			if extension != ".md":
-				continue
-			with open(file_path, encoding="utf-8") as f:
-				markdown_str = f.read()
+		Gets the rich text of a specified article.
 
+		This function lazily loads an article from a file. If it's never been
+		loaded before the article gets parsed and stored. Otherwise it'll get
+		taken from the cache.
+		:param article_id: The ID of the article to get.
+		"""
+		if article_id not in self.descriptions:
+			markdown_file = os.path.join(os.path.dirname(__file__), "resources", "descriptions", article_id + ".md")
+			try:
+				with open(markdown_file, encoding="utf-8") as f:
+					markdown_str = f.read()
+			except OSError: #File doesn't exist or is otherwise not readable.
+				markdown_str = "There is no description for this setting."
+
+			images_path = os.path.join(os.path.dirname(__file__), "resources", "images")
+			find_images = re.compile(r"!\[(.*)\]\((.+)\)")
 			text_parts = find_images.split(markdown_str)
 			image_description = None
 			parts = [] #type: List[List[str]] #List of items in the description. Each item starts with a type ID, and then a variable number of data items.
@@ -159,21 +161,26 @@ class CuraSettingsGuide(Extension, QObject):
 					image_description = mistune.markdown(part)
 				else: #if index % 3 == 2:
 					if image_description is not None:
-						if parts[-1][0] != "images": #List of images
+						if parts[-1][0] != "images": #List of images.
 							parts.append(["images"])
 						image_url = os.path.join(images_path, part)
 						parts[-1].append(QUrl.fromLocalFile(image_url).toString() + "|" + image_description)
 						image_description = None
-			self.descriptions[setting_id] = parts
+
+			self.descriptions[article_id] = parts
+
+		return self.descriptions[article_id]
 
 	@pyqtProperty("QVariantMap", constant=True)
-	def allDescriptions(self) -> Dict[str, List[List[str]]]:
+	def allArticleIds(self) -> Dict[str, None]:
 		"""
-		Get a mapping of all descriptions. The keys will be the IDs of the
-		pages.
-		:return: A mapping from page IDs to description strings.
+		Get a set of all article IDs. The article IDs will be in the keys.
+
+		This has to return a dictionary because we want to return a set, but
+		PyQt doesn't support that. So we return a map with empty values.
+		:return: A map with all article IDs as the keys, but no values.
 		"""
-		return self.descriptions
+		return dict.fromkeys(self._container_stack.getAllKeys())
 
 	@pyqtProperty(QObject, constant=True)
 	def containerStack(self) -> Optional[ContainerStack]:
@@ -220,4 +227,4 @@ class CuraSettingsGuide(Extension, QObject):
 		Markdown files in the setting description files.
 		:return: The description of the currently selected setting.
 		"""
-		return self.descriptions.get(self._selected_setting_id, [["rich_text", "There is no description for this setting."]])
+		return self._getArticle(self._selected_setting_id)

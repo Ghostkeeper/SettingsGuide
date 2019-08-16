@@ -15,7 +15,7 @@ Text {
 	color: UM.Theme.getColor("text")
 
 	onLinkActivated: {
-		if(link in manager.allDescriptions) {
+		if(link in manager.allArticleIds) {
 			manager.setSelectedSettingId(link);
 		} else {
 			Qt.openUrlExternally(link);
