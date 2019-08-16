@@ -85,23 +85,6 @@ Item {
 			Keys.onEscapePressed: {
 				filter.text = "";
 			}
-
-			function updateDefinitionModel() {
-				if(text.length > 0) {
-					expandedCategories = definitionsModel.expanded.slice();
-					definitionsModel.expanded = [""]; // keep categories closed while to prevent render while making settings visible one by one
-					definitionsModel.showAncestors = true;
-					definitionsModel.showAll = true;
-					definitionsModel.expanded = ["*"];
-				}
-				else {
-					if(expandedCategories) {
-						definitionsModel.expanded = expandedCategories;
-					}
-					definitionsModel.showAncestors = false;
-					definitionsModel.showAll = true;
-				}
-			}
 		}
 
 		MouseArea {
