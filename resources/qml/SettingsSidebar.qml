@@ -203,7 +203,7 @@ Item {
 						case "optional_extruder":
 							return Qt.resolvedUrl("SidebarSettings/SettingExtruder.qml");
 						default:
-							return Qt.resolvedUrl("SidebarSettings/SettingUnknown.qml");
+							return Qt.resolvedUrl("SidebarSettings/SettingTextField.qml");
 					}
 				}
 			}

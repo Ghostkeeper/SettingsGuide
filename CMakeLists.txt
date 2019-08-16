@@ -54,7 +54,6 @@ set(installed_files_resources_qml_SidebarSettings
 	SettingExtruder.qml
 	SettingItem.qml
 	SettingTextField.qml
-	SettingUnknown.qml
 )
 set(installed_paths "")
 foreach(f IN LISTS installed_files)
