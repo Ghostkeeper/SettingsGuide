@@ -142,11 +142,6 @@ Item {
 		anchors.right: parent.right
 		anchors.left: parent.left
 		anchors.topMargin: filterContainer.visible ? UM.Theme.getSize("default_margin").height : 0
-		Behavior on anchors.topMargin {
-			NumberAnimation {
-				duration: 100
-			}
-		}
 		style: scrollview_settings_guide
 		flickableItem.flickableDirection: Flickable.VerticalFlick
 		__wheelAreaScrollSpeed: 75 // Scroll three lines in one scroll event
@@ -235,11 +230,6 @@ Item {
 				radius: Math.round(implicitWidth / 2)
 
 				color: styleData.pressed ? UM.Theme.getColor("scrollbar_handle_down") : styleData.hovered ? UM.Theme.getColor("scrollbar_handle_hover") : UM.Theme.getColor("scrollbar_handle");
-				Behavior on color {
-					ColorAnimation {
-						duration: 50
-					}
-				}
 			}
 		}
 	}
