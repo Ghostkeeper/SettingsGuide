@@ -205,8 +205,9 @@ class CuraSettingsGuide(Extension, QObject):
 		Show the description of a certain setting in the guide dialogue.
 		:param setting_key: The key of the setting to display.
 		"""
-		self._selected_setting_id = setting_key
-		self.settingItemChanged.emit()
+		if self._selected_setting_id != setting_key:
+			self._selected_setting_id = setting_key
+			self.settingItemChanged.emit()
 
 	@pyqtProperty(str, fset=setSelectedSettingId, notify=settingItemChanged)
 	def selectedSettingId(self) -> str:
