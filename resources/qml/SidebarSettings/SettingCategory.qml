@@ -54,10 +54,6 @@ Button {
 		}
 	}
 
-	signal focusReceived()
-	signal setActiveFocusToNextSetting(bool forward)
-	property var focusItem: base
-
 	contentItem: Item {
 		anchors.fill: parent
 		anchors.left: parent.left
@@ -73,11 +69,11 @@ Button {
 			renderType: Text.NativeRendering
 			font: UM.Theme.getFont("default_bold")
 			color: {
-				if ((base.hovered || base.activeFocus) && base.checkable && base.checked) {
+				if (base.hovered && base.checkable && base.checked) {
 					return UM.Theme.getColor("setting_category_active_hover_text");
 				} else if (base.pressed || (base.checkable && base.checked)) {
 					return UM.Theme.getColor("setting_category_active_text");
-				} else if (base.hovered || base.activeFocus) {
+				} else if (base.hovered) {
 					return UM.Theme.getColor("setting_category_hover_text");
 				} else {
 					return UM.Theme.getColor("setting_category_text");
@@ -96,11 +92,11 @@ Button {
 			sourceSize.width: width
 			sourceSize.height: width
 			color: {
-				if ((base.hovered || base.activeFocus) && base.checkable && base.checked) {
+				if (base.hovered && base.checkable && base.checked) {
 					return UM.Theme.getColor("setting_category_active_hover_text");
 				} else if (base.pressed || (base.checkable && base.checked)) {
 					return UM.Theme.getColor("setting_category_active_text");
-				} else if (base.hovered || base.activeFocus) {
+				} else if (base.hovered) {
 					return UM.Theme.getColor("setting_category_hover_text");
 				} else {
 					return UM.Theme.getColor("setting_category_text");
@@ -116,11 +112,11 @@ Button {
 		anchors.left: parent.left
 		anchors.leftMargin: UM.Theme.getSize("default_margin").width
 		color: {
-			if ((base.hovered || base.activeFocus) && base.checkable && base.checked) {
+			if (base.hovered && base.checkable && base.checked) {
 				return UM.Theme.getColor("setting_category_active_hover_text");
 			} else if(base.pressed || (base.checkable && base.checked)) {
 				return UM.Theme.getColor("setting_category_active_text");
-			} else if(base.hovered || base.activeFocus) {
+			} else if(base.hovered) {
 				return UM.Theme.getColor("setting_category_hover_text");
 			} else {
 				return UM.Theme.getColor("setting_category_text");
@@ -142,20 +138,5 @@ Button {
 		} else {
 			settingDefinitionsModel.expandRecursive(definition.key);
 		}
-		//Set focus so that tab navigation continues from this point on.
-		//NB: This must be set AFTER collapsing/expanding the category so that the scroll position is correct.
-		forceActiveFocus();
-	}
-	onActiveFocusChanged: {
-		if(activeFocus) {
-			base.focusReceived();
-		}
-	}
-
-	Keys.onTabPressed: {
-		base.setActiveFocusToNextSetting(true);
-	}
-	Keys.onBacktabPressed: {
-		base.setActiveFocusToNextSetting(false);
 	}
 }
