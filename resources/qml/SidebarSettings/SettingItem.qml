@@ -34,6 +34,7 @@ Item {
 		hoverEnabled: true
 		onClicked: {
 			manager.selectedSettingId = definition.key;
+			articleList.forceActiveFocus(); //After clicking on any setting, pressing up or down allows keyboard navigation through the list.
 		}
 
 		Label {
