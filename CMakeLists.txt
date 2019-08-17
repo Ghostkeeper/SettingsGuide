@@ -107,7 +107,7 @@ install(FILES ${installed_paths_resources_qml} DESTINATION ${SETTINGSGUIDE_PLUGI
 install(FILES ${installed_paths_resources_qml_SidebarSettings} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings)
 install(FILES ${installed_paths_resources_descriptions} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/descriptions)
 install(FILES ${installed_paths_resources_images} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/images)
-install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune DESTINATION ${SETTINGSGUIDE_PLUGIN_ID})
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune/mistune.py DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/Mistune)
 
 #Packing this into a .curapackage file.
 add_custom_target(pack COMMAND "") #Packs for all supported SDK versions.
