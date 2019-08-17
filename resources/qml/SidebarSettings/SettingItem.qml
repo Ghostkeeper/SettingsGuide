@@ -18,6 +18,15 @@ Item {
 
 	property alias contents: controlContainer.children
 
+	Connections {
+		target: manager
+		onSettingItemChanged: {
+			if(manager.selectedSettingId == definition.key) {
+				articleList.currentIndex = index;
+			}
+		}
+	}
+
 	MouseArea {
 		id: mouse
 		anchors.fill: parent
