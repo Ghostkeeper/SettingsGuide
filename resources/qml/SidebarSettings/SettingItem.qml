@@ -33,7 +33,7 @@ Item {
 		acceptedButtons: Qt.LeftButton
 		hoverEnabled: true
 		onClicked: {
-			articleList.currentIndex = index;
+			manager.selectedSettingId = definition.key;
 		}
 
 		Label {
