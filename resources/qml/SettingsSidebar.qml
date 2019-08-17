@@ -161,7 +161,7 @@ Item {
 			}
 			highlightMoveDuration: 100
 			highlightMoveVelocity: -1
-			onCurrentIndexChanged: {
+			onCurrentIndexChanged: { //If index changed due to keyboard navigation.
 				manager.selectedSettingId = currentItem.definition.key;
 			}
 
@@ -201,10 +201,6 @@ Item {
 							return Qt.resolvedUrl("SidebarSettings/SettingTextField.qml");
 					}
 				}
-			}
-			UM.SettingPropertyProvider {
-				id: inheritStackProvider
-				containerStackId: Cura.MachineManager.activeMachineId
 			}
 
 			UM.SettingPropertyProvider {
