@@ -17,7 +17,6 @@ Item {
 	height: UM.Theme.getSize("section").height
 
 	property alias contents: controlContainer.children
-	property bool isSelected: manager.selectedSettingId == definition.key
 
 	MouseArea {
 		id: mouse
@@ -25,39 +24,7 @@ Item {
 		acceptedButtons: Qt.LeftButton
 		hoverEnabled: true
 		onClicked: {
-			manager.selectedSettingId = definition.key;
-		}
-
-		Image {
-			id: selectImage
-			height: 20
-			width: 20
-			visible: base.isSelected
-			anchors.verticalCenter: parent.verticalCenter
-			source: Qt.resolvedUrl("../../icons/arrow.svg")
-		}
-
-		Rectangle {
-			id: selectRectangle
-			z: 1
-			color: "transparent"
-			visible: base.isSelected
-			anchors.fill: parent
-			anchors.leftMargin : UM.Theme.getSize("default_margin").width * 2 //One margin for the settings list, one for the indent.
-			anchors.rightMargin : UM.Theme.getSize("default_margin").width
-			border.color: UM.Theme.getColor("action_button_active_border")
-			border.width: 1
-		}
-
-		Rectangle {
-			id: highlightRectangle
-			z: 1
-			anchors.fill: parent
-			anchors.leftMargin : UM.Theme.getSize("default_margin").width * 2 //One margin for the settings list, one for the indent.
-			anchors.rightMargin : UM.Theme.getSize("default_margin").width
-			visible: mouse.containsMouse || base.isSelected
-			color: UM.Theme.getColor("primary")
-			opacity: 0.1
+			articleList.currentIndex = index;
 		}
 
 		Label {

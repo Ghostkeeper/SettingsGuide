@@ -110,7 +110,7 @@ Item {
 		__wheelAreaScrollSpeed: 75 // Scroll three lines in one scroll event
 
 		ListView {
-			id: contents
+			id: articleList
 			spacing: Math.round(UM.Theme.getSize("default_lining").height)
 			cacheBuffer: 1000000 //Set a large cache to effectively just cache every list item.
 
@@ -124,6 +124,45 @@ Item {
 				showAncestors: true
 				exclude: ["machine_settings", "command_line_settings", "infill_mesh", "infill_mesh_order", "cutting_mesh", "support_mesh", "anti_overhang_mesh"] // TODO: infill_mesh settigns are excluded hardcoded, but should be based on the fact that settable_globally, settable_per_meshgroup and settable_per_extruder are false.
 				expanded: filter.text === "" ? CuraApplication.expandedCategories : ["*"]
+			}
+
+			focus: true
+			keyNavigationEnabled: true
+			highlight: Item { //Needs a surrounding item that adapts to the full width/height of the current item. ListView does that.
+				Image {
+					id: highlightArrow
+					height: parent.height
+					width: parent.height
+					source: Qt.resolvedUrl("../icons/arrow.svg")
+				}
+				Rectangle {
+					color: UM.Theme.getColor("primary")
+					opacity: 0.1
+					anchors {
+						left: highlightArrow.right
+						top: parent.top
+						bottom: parent.bottom
+						right: parent.right
+						rightMargin: UM.Theme.getSize("scrollbar").width
+					}
+				}
+				Rectangle {
+					color: "transparent"
+					border.color: UM.Theme.getColor("action_button_active_border")
+					border.width: 1
+					anchors {
+						left: highlightArrow.right
+						top: parent.top
+						bottom: parent.bottom
+						right: parent.right
+						rightMargin: UM.Theme.getSize("scrollbar").width
+					}
+				}
+			}
+			highlightMoveDuration: 100
+			highlightMoveVelocity: -1
+			onCurrentIndexChanged: {
+				manager.selectedSettingId = currentItem.definition.key;
 			}
 
 			delegate: Loader {
