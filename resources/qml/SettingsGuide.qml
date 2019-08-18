@@ -88,7 +88,7 @@ Window {
 		}
 
 		ScrollView {
-			id: description_scroll
+			id: article_scroll
 			anchors {
 				left: parent.left
 				right: rightSideItem.left
@@ -105,7 +105,7 @@ Window {
 					top: parent.top
 					topMargin: UM.Theme.getSize("wide_margin").height
 				}
-				width: description_scroll.width - UM.Theme.getSize("wide_margin").width * 2
+				width: article_scroll.width - UM.Theme.getSize("wide_margin").width * 2
 				spacing: UM.Theme.getSize("wide_margin").height
 
 				Text {
@@ -122,12 +122,12 @@ Window {
 					delegate: Component {
 						Loader {
 							source: switch(modelData[0]) {
-								case "rich_text": return "DescriptionText.qml";
-								case "images": return "DescriptionImages.qml";
+								case "rich_text": return "ArticleText.qml";
+								case "images": return "ArticleImages.qml";
 							}
 							width: content_column.width
 							onLoaded: {
-								item.description_data = modelData.slice(1);
+								item.article_data = modelData.slice(1);
 							}
 						}
 					}
@@ -155,7 +155,7 @@ Window {
 				bottom: parent.bottom
 			}
 			visible: settingsGuideBase.zoomed_image !== ""
-			z: 1 //On top of the general description.
+			z: 1 //On top of the general article.
 
 			Rectangle {
 				anchors.fill: parent

@@ -42,8 +42,8 @@ set(installed_files_resources
 	settings_guide_definitions.def.json
 )
 set(installed_files_resources_qml
-	DescriptionImages.qml
-	DescriptionText.qml
+	ArticleImages.qml
+	ArticleText.qml
 	SettingsGuide.qml
 	SettingsSidebar.qml
 )

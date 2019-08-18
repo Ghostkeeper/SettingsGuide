@@ -12,21 +12,21 @@ GridLayout {
 	columns: 6
 	columnSpacing: UM.Theme.getSize("default_margin").width
 	rowSpacing: UM.Theme.getSize("default_margin").height
-	height: 200 * screenScaleFactor + Math.floor((description_data.length - 1) / 3) * 200 * screenScaleFactor + Math.max(Math.floor((description_data.length - 1) / 3), 0) * rowSpacing
+	height: 200 * screenScaleFactor + Math.floor((article_data.length - 1) / 3) * 200 * screenScaleFactor + Math.max(Math.floor((article_data.length - 1) / 3), 0) * rowSpacing
 
-	property var description_data
+	property var article_data
 
 	Repeater {
-		model: images_grid.description_data
+		model: images_grid.article_data
 
 		Item {
 			Layout.preferredWidth: (parent.width - parent.columnSpacing * 2) / 3
 			Layout.fillWidth: true
 			Layout.preferredHeight: 200
 			Layout.columnSpan: {
-				if(index == images_grid.description_data.length - 1) {
+				if(index == images_grid.article_data.length - 1) {
 					return 6 / ((index % 3) + 1); //2 columns if it's the 3rd item, 3 if it's the 2nd item or 6 if it's the 1st item on the row.
-				} else if(index == images_grid.description_data.length - 2 && index % 3 == 0) {
+				} else if(index == images_grid.article_data.length - 2 && index % 3 == 0) {
 					return 3; //If the second-to-last item is 1st on the row, both last items get 3 columns.
 				} else {
 					return 2; //Normal image width.

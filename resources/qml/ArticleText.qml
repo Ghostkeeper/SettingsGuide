@@ -7,8 +7,8 @@ import QtQuick 2.7
 import UM 1.3 as UM
 
 Text {
-	property var description_data
-	text: description_data[0]
+	property var article_data
+	text: article_data[0]
 	wrapMode: Text.Wrap
 	renderType: Text.NativeRendering
 	font: UM.Theme.getFont("default")
