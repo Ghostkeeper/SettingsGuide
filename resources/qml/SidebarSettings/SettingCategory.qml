@@ -19,13 +19,13 @@ Button {
 	background: Rectangle {
 		implicitHeight: UM.Theme.getSize("section").height
 		color: {
-			if (base.color) {
+			if(base.color) {
 				return base.color;
-			} else if (base.hovered && base.checkable && base.checked) {
+			} else if(base.hovered && base.checkable && base.checked) {
 				return UM.Theme.getColor("setting_category_active_hover");
-			} else if (base.pressed || (base.checkable && base.checked)) {
+			} else if(base.pressed || (base.checkable && base.checked)) {
 				return UM.Theme.getColor("setting_category_active");
-			} else if (base.hovered) {
+			} else if(base.hovered) {
 				return UM.Theme.getColor("setting_category_hover");
 			} else {
 				return UM.Theme.getColor("setting_category");
@@ -41,11 +41,11 @@ Button {
 			width: parent.width
 			anchors.bottom: parent.bottom
 			color: {
-				if ((base.hovered || base.activeFocus) && base.checkable && base.checked) {
+				if(base.hovered && base.checkable && base.checked) {
 					return UM.Theme.getColor("setting_category_active_hover_border");
-				} else if (base.pressed || (base.checkable && base.checked)) {
+				} else if(base.pressed || (base.checkable && base.checked)) {
 					return UM.Theme.getColor("setting_category_active_border");
-				} else if (base.hovered || base.activeFocus) {
+				} else if(base.hovered) {
 					return UM.Theme.getColor("setting_category_hover_border");
 				} else {
 					return UM.Theme.getColor("setting_category_border");
@@ -69,11 +69,11 @@ Button {
 			renderType: Text.NativeRendering
 			font: UM.Theme.getFont("default_bold")
 			color: {
-				if (base.hovered && base.checkable && base.checked) {
+				if(base.hovered && base.checkable && base.checked) {
 					return UM.Theme.getColor("setting_category_active_hover_text");
-				} else if (base.pressed || (base.checkable && base.checked)) {
+				} else if(base.pressed || (base.checkable && base.checked)) {
 					return UM.Theme.getColor("setting_category_active_text");
-				} else if (base.hovered) {
+				} else if(base.hovered) {
 					return UM.Theme.getColor("setting_category_hover_text");
 				} else {
 					return UM.Theme.getColor("setting_category_text");
@@ -92,11 +92,11 @@ Button {
 			sourceSize.width: width
 			sourceSize.height: width
 			color: {
-				if (base.hovered && base.checkable && base.checked) {
+				if(base.hovered && base.checkable && base.checked) {
 					return UM.Theme.getColor("setting_category_active_hover_text");
-				} else if (base.pressed || (base.checkable && base.checked)) {
+				} else if(base.pressed || (base.checkable && base.checked)) {
 					return UM.Theme.getColor("setting_category_active_text");
-				} else if (base.hovered) {
+				} else if(base.hovered) {
 					return UM.Theme.getColor("setting_category_hover_text");
 				} else {
 					return UM.Theme.getColor("setting_category_text");
@@ -112,7 +112,7 @@ Button {
 		anchors.left: parent.left
 		anchors.leftMargin: UM.Theme.getSize("default_margin").width
 		color: {
-			if (base.hovered && base.checkable && base.checked) {
+			if(base.hovered && base.checkable && base.checked) {
 				return UM.Theme.getColor("setting_category_active_hover_text");
 			} else if(base.pressed || (base.checkable && base.checked)) {
 				return UM.Theme.getColor("setting_category_active_text");
@@ -133,7 +133,7 @@ Button {
 	checked: definition.expanded
 
 	onClicked: {
-		if (definition.expanded) {
+		if(definition.expanded) {
 			settingDefinitionsModel.collapse(definition.key);
 		} else {
 			settingDefinitionsModel.expandRecursive(definition.key);
