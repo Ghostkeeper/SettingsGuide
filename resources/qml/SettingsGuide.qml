@@ -35,7 +35,7 @@ Window {
 		id: icon_item
 		width: parent.width - rightSideItem.width
 		height: parent.height
-		visible: manager.selectedSettingId === ""
+		visible: manager.selectedArticleId === ""
 
 		anchors {
 			leftMargin: UM.Theme.getSize("wide_margin").width
@@ -95,7 +95,7 @@ Window {
 				top: parent.top
 				bottom: parent.bottom
 			}
-			visible: manager.selectedSettingId !== ""
+			visible: manager.selectedArticleId !== ""
 
 			Column {
 				id: content_column
@@ -109,7 +109,7 @@ Window {
 				spacing: UM.Theme.getSize("wide_margin").height
 
 				Text {
-					text: selectedSettingName.properties.label ? selectedSettingName.properties.label : ""
+					text: selectedArticleName.properties.label ? selectedArticleName.properties.label : ""
 					width: parent.width
 					wrapMode: Text.Wrap
 					renderType: Text.NativeRendering
@@ -118,7 +118,7 @@ Window {
 				}
 
 				Repeater {
-					model: manager.selectedSettingArticle
+					model: manager.selectedArticle
 					delegate: Component {
 						Loader {
 							source: switch(modelData[0]) {
@@ -191,9 +191,9 @@ Window {
 	}
 
 	UM.SettingPropertyProvider {
-		id: selectedSettingName
+		id: selectedArticleName
 		containerStack: manager.containerStack
-		key: manager.selectedSettingId
+		key: manager.selectedArticleId
 		watchedProperties: ["label"]
 	}
 }

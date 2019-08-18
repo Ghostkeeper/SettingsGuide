@@ -170,20 +170,20 @@ Item {
 			highlightMoveVelocity: -1
 			onCurrentIndexChanged: { //If index changed due to keyboard navigation.
 				if(currentIndex < 0) {
-					manager.selectedSettingId = "";
+					manager.selectedArticleId = "";
 				} else {
-					manager.selectedSettingId = currentItem.definition.key;
+					manager.selectedArticleId = currentItem.definition.key;
 				}
 			}
 
 			delegate: Loader {
-				id: settingLoader
+				id: articleLoader
 
 				width: parent.width
 				height: model.type != undefined ? UM.Theme.getSize("section").height : 0
 
 				property var definition: model
-				property var settingDefinitionsModel: definitionsModel
+				property var articleDefinitionsModel: definitionsModel
 
 				asynchronous: true
 				active: model.type != undefined

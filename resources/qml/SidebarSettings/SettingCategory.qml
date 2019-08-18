@@ -134,9 +134,9 @@ Button {
 
 	onClicked: {
 		if(definition.expanded) {
-			settingDefinitionsModel.collapse(definition.key);
+			articleDefinitionsModel.collapse(definition.key);
 		} else {
-			settingDefinitionsModel.expandRecursive(definition.key);
+			articleDefinitionsModel.expandRecursive(definition.key);
 		}
 	}
 }

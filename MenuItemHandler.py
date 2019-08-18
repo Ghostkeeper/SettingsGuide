@@ -10,5 +10,5 @@ class MenuItemHandler:
 
 	def sidebarMenuItemOnClickHandler(self, kwargs) -> None:
 		if "key" in kwargs:
-			setting_key = kwargs["key"]
-			self._plugin_controller.startWelcomeGuideAndSelectSetting(setting_key)
+			article_key = kwargs["key"]
+			self._plugin_controller.startWelcomeGuideAndSelectArticle(article_key)

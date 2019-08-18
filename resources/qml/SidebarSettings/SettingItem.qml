@@ -20,16 +20,16 @@ Item {
 
 	Connections {
 		target: manager
-		onSettingItemChanged: {
-			if(manager.selectedSettingId == definition.key) {
+		onSelectedArticleChanged: {
+			if(manager.selectedArticleId == definition.key) {
 				articleList.currentIndex = index;
 			}
 		}
 	}
 	Component.onCompleted: {
-		//If the selected setting was changed before loading was complete, make sure the index is updated.
+		//If the selected article was changed before loading was complete, make sure the index is updated.
 		//This happens when you open the settings guide for the first time by right-clicking on a setting.
-		if(manager.selectedSettingId == definition.key) {
+		if(manager.selectedArticleId == definition.key) {
 			articleList.currentIndex = index;
 		}
 	}
@@ -40,8 +40,8 @@ Item {
 		acceptedButtons: Qt.LeftButton
 		hoverEnabled: true
 		onClicked: {
-			manager.selectedSettingId = definition.key;
-			articleList.forceActiveFocus(); //After clicking on any setting, pressing up or down allows keyboard navigation through the list.
+			manager.selectedArticleId = definition.key;
+			articleList.forceActiveFocus(); //After clicking on any article, pressing up or down allows keyboard navigation through the list.
 		}
 
 		Rectangle {

@@ -29,11 +29,11 @@ class CuraSettingsGuide(Extension, QObject):
 	The main manager and entry point for the Cura Settings Guide.
 
 	This adds a menu item to the extensions menu and to the context menu of
-	every setting. It creates a dialogue window to display the guide in, and
+	every article. It creates a dialogue window to display the guide in, and
 	makes the menu items open said dialogue window.
 
 	This class is also exposed to the QML code, which can use it to request the
-	articles and metadata about the settings.
+	articles and metadata about the article.
 	"""
 
 	def __init__(self, parent=None) -> None:
@@ -41,8 +41,7 @@ class CuraSettingsGuide(Extension, QObject):
 		Executed during registration of the plug-in.
 
 		This adds a menu item to the extensions menu and the context menu of the
-		settings. It also loads the articles and setting metadata from the
-		resources.
+		settings.
 		:param parent: The parent QObject this is located in. Unused by this
 		particular object.
 		"""
@@ -51,10 +50,10 @@ class CuraSettingsGuide(Extension, QObject):
 
 		self.addMenuItem("Settings Guide", self.startWelcomeGuide)
 		self._dialog = None #Cached instance of the dialogue window.
-		self._container_stack = None #Stack that provides not only the normal settings but also the extra pages added by this guide.
+		self._container_stack = None #Stack that provides not only the normal settings but also the extra articles added by this guide.
 
-		self.articles = {} #type: Dict[str, List[List[str]]] #The articles for each setting. Key: setting ID, value: Lists of items in each article.
-		self._selected_setting_id = "" #Which setting is currently shown for the user. Empty string indicates it's the welcome screen.
+		self.articles = {} #type: Dict[str, List[List[str]]] #All of the articles by key. Key: article ID, value: Lists of items in each article.
+		self._selected_article_id = "" #Which article is currently shown for the user. Empty string indicates it's the welcome screen.
 
 		self.initializeHelpSidebarHelpButton()
 
@@ -99,19 +98,19 @@ class CuraSettingsGuide(Extension, QObject):
 		self.load_window()
 		if not self._dialog:
 			return
-		self.setSelectedSettingId("") #Display welcome page.
+		self.setSelectedArticleId("") #Display welcome page.
 		self._dialog.show()
 
-	def startWelcomeGuideAndSelectSetting(self, setting_key: str) -> None:
+	def startWelcomeGuideAndSelectArticle(self, article_key: str) -> None:
 		"""
-		Opens the guide and immediately selects a certain setting.
-		:param setting_key: The key of the setting to show the guide of.
+		Opens the guide and immediately selects a certain article.
+		:param article_key: The key of the article to show the guide of.
 		"""
 		self.load_window()
 		if not self._dialog:
 			return
 		self.currentArticleReset.emit()
-		self.setSelectedSettingId(setting_key)
+		self.setSelectedArticleId(article_key)
 		self._dialog.show()
 
 	def _createDialog(self, qml_name: str) -> Optional["QObject"]:
@@ -146,7 +145,7 @@ class CuraSettingsGuide(Extension, QObject):
 				with open(markdown_file, encoding="utf-8") as f:
 					markdown_str = f.read()
 			except OSError: #File doesn't exist or is otherwise not readable.
-				markdown_str = "There is no article for this setting."
+				markdown_str = "There is no article on this topic."
 
 			images_path = os.path.join(os.path.dirname(__file__), "resources", "articles")
 			find_images = re.compile(r"!\[(.*)\]\((.+)\)")
@@ -194,41 +193,43 @@ class CuraSettingsGuide(Extension, QObject):
 		"""
 		Get the version number of this plug-in.
 
-		This setting version is a semantic version number in three parts
+		This plug-in version is a semantic version number in three parts
 		("1.2.3").
 		:return: The version number of this plug-in.
 		"""
 		return self.getVersion()
 
-	settingItemChanged = pyqtSignal()
+	selectedArticleChanged = pyqtSignal()
 
 	@pyqtSlot(str)
-	def setSelectedSettingId(self, setting_key: str) -> None:
+	def setSelectedArticleId(self, article_key: str) -> None:
 		"""
-		Show the article of a certain setting in the guide dialogue.
-		:param setting_key: The key of the setting to display.
+		Show a certain article in the dialogue.
+		:param article_key: The key of the article to display.
 		"""
-		if self._selected_setting_id != setting_key:
-			self._selected_setting_id = setting_key
-			self.settingItemChanged.emit()
+		if self._selected_article_id != article_key:
+			self._selected_article_id = article_key
+			self.selectedArticleChanged.emit()
 
-	@pyqtProperty(str, fset=setSelectedSettingId, notify=settingItemChanged)
-	def selectedSettingId(self) -> str:
+	@pyqtProperty(str, fset=setSelectedArticleId, notify=selectedArticleChanged)
+	def selectedArticleId(self) -> str:
 		"""
-		Returns the setting key of the setting that is currently selected.
+		Returns the key of the article that is currently selected.
 
-		If no setting has been selected, an empty string is returned.
-		:return: The setting key of the setting that is currently selected.
+		If no article has been selected (the logo is being shown), an empty
+		string is returned.
+		:return: The key of the article that is currently selected.
 		"""
-		return self._selected_setting_id
+		return self._selected_article_id
 
-	@pyqtProperty("QVariantList", notify=settingItemChanged)
-	def selectedSettingArticle(self) -> List[List[str]]:
+	@pyqtProperty("QVariantList", notify=selectedArticleChanged)
+	def selectedArticle(self) -> List[List[str]]:
 		"""
-		Returns the article of the currently selected setting.
+		Returns the currently selected article.
 
-		This setting data is a rich text document, properly formatted from the
-		Markdown files in the setting article files.
-		:return: The article of the currently selected setting.
+		This article data is a rich text document, properly formatted from the
+		Markdown files in the article directory. Each article is a list of
+		items, some of which are text and some of which are image lists.
+		:return: The the currently selected article.
 		"""
-		return self._getArticle(self._selected_setting_id)
+		return self._getArticle(self._selected_article_id)

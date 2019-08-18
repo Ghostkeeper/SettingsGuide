@@ -16,7 +16,7 @@ Text {
 
 	onLinkActivated: {
 		if(link in manager.allArticleIds) {
-			manager.setSelectedSettingId(link);
+			manager.setSelectedArticleId(link);
 		} else {
 			Qt.openUrlExternally(link);
 		}
