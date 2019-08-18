@@ -148,7 +148,7 @@ class CuraSettingsGuide(Extension, QObject):
 			except OSError: #File doesn't exist or is otherwise not readable.
 				markdown_str = "There is no article for this setting."
 
-			images_path = os.path.join(os.path.dirname(__file__), "resources", "images")
+			images_path = os.path.join(os.path.dirname(__file__), "resources", "articles")
 			find_images = re.compile(r"!\[(.*)\]\((.+)\)")
 			text_parts = find_images.split(markdown_str)
 			image_description = None

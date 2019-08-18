@@ -1,6 +1,6 @@
 This setting causes the support to become slightly wider, expanding horizontally in every direction.
 
-![The support is wider than necessary to support the model](support_offset.png)
+![The support is wider than necessary to support the model](images/support_offset.png)
 
 This setting has multiple uses, depending on the material used for support and the type of model that needs supporting:
 * Increasing this setting will make support wider and thus sturdier. This is useful for tall models with small areas of overhang, since the overhang would otherwise be supported with a very tall, thin pillar of support. With some horizontal expansion, it becomes a very tall but slightly wider pillar of support.

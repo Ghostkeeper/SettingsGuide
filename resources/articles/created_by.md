@@ -1,1 +1,1 @@
-![This guide was created by Aleksei Sasin, Terri-Ann Delacruz and Ghostkeeper](created_by.jpg)
+![This guide was created by Aleksei Sasin, Terri-Ann Delacruz and Ghostkeeper](images/created_by.jpg)

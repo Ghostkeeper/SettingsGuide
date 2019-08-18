@@ -2,7 +2,7 @@ The feeder wheel needs to grip into the filament in order to move it properly. R
 
 The retractions are limited by the combination of [Maximum Retraction Count](retraction_count_max) and this setting. The material is not allowed to be retracted more than the value of the Maximum Retraction Count within a length of filament indicated by this Minimum Extrusion Distance Window setting.
 
-![A certain length of filament along which the number of retractions is limited](retraction_count_max.svg)
+![A certain length of filament along which the number of retractions is limited](images/retraction_count_max.svg)
 
 The length of filament during which the number of retractions is limited is a sliding window. For instance, with a window length of 3mm and a maximum retraction count of 10, this means that a new retraction is allowed as soon as the 10th retraction previous was made farther than 3mm back on the filament.
 

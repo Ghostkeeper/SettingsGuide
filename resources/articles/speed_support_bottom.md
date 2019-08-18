@@ -1,6 +1,6 @@
 This setting configures the speed at which the bottom side of the support is printed, if [Support Floor is enabled](support_bottom_enable).
 
-![Various structures printed at different speeds](speed_difference.png)
+![Various structures printed at different speeds](images/speed_difference.png)
 
 A higher speed can save some printing time.
 

@@ -1,6 +1,6 @@
 This setting configures the speed at which the top and bottom side of the support are printed, if [Support Interface is enabled](support_interface_enable).
 
-![Various structures printed at different speeds](speed_difference.png)
+![Various structures printed at different speeds](images/speed_difference.png)
 
 A higher speed can save some printing time.
 

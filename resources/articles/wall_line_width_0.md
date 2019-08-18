@@ -1,6 +1,6 @@
 The line width for the outer wall can be adjusted separately from the inner walls. This setting indicates how wide the outer wall line will be.
 
-![The contour for the outer wall is much wider than the rest](wall_line_width_0.png)
+![The contour for the outer wall is much wider than the rest](images/wall_line_width_0.png)
 
 Reducing the outer wall to a line width slightly below the nozzle size is known to be beneficial for strength. The nozzle will extrude slightly less material but its opening will overlap with the adjacent inner wall. This causes the material to be pushed aside by the previously-placed wall into its proper location. But that will also cause the plastic to fuse better to the adjacent walls. This allows the outer wall to fuse better to the inner walls, so that they can combine their strength. This greatly improves the strength of the walls.
 

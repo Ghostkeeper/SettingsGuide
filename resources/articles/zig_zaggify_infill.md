@@ -1,7 +1,7 @@
 This setting connects the endpoints of the infill pattern, where the infill meets the inner wall or skin, using a line that follows the edge of the infill area.
 
-![No connected infill lines](zig_zaggify_infill_disabled.png)
-![Connected infill lines](zig_zaggify_infill_enabled.png)
+![No connected infill lines](images/zig_zaggify_infill_disabled.png)
+![Connected infill lines](images/zig_zaggify_infill_enabled.png)
 
 This converts the entire infill pattern into a single or very few lines. Converting it into a single line is not always possible. The starting point of this line is arbitrary, so it might not be the same for every layer, especially if the shape that the infill is contained in is different from layer to layer.
 

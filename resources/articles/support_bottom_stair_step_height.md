@@ -2,7 +2,7 @@ If [Support Placement](support_type) is set to "Everywhere", the support is allo
 
 This setting determines the height of these steps.
 
-![Stair steps forming at the bottom of support](support_bottom_stair_step_height.png)
+![Stair steps forming at the bottom of support](images/support_bottom_stair_step_height.png)
 
 The stair step height is counted by the distance from the surface of the model. This means that if you have a vertical distance set in the [Support Bottom Distance](support_bottom_distance) setting, this gets subtracted from the height and the connection between the model and the support will be greater. Similarly, the [Support Floor](support_bottom_enable) also causes the effect of the stair steps to be reduced.
 

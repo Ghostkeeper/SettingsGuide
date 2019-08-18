@@ -1,7 +1,7 @@
 Make the solid layers on the top of your print wider or thinner in a horizontal direction. Normally the solid layers are only generated below parts where there is air beneath them, but with this setting you can expand it horizontally a bit further, improving strength by making the skin attach better to adjacent walls and closing gaps in the skin.
 
-![How skins (the yellow parts) normally look](expand_skins_expand_distance_original.png)
-![Skins expanded by 1mm](expand_skins_expand_distance_1mm.png)
+![How skins (the yellow parts) normally look](images/expand_skins_expand_distance_original.png)
+![Skins expanded by 1mm](images/expand_skins_expand_distance_1mm.png)
 
 * If you have small holes in the top layers of the skin (holes that are filled with the infill pattern), setting this a bit higher will close them. This allows the printer to continuously print bottom lines, greatly improving strength.
 * If the bottom side of your print is not flat, increasing this setting will cause the skin to be printed beyond the area that is directly above air, above the walls. This will improve adhesion between the skin and the walls, improving strength again.

@@ -5,8 +5,8 @@ This setting is only available when the infill consists of loops that are adjace
 * The infill lines are [multiplied](infill_multiplier) to an even number.
 * There are at least 2 [extra walls around the infill](infill_wall_line_count).
 
-![With multiplied infill lines, there are lots of loops in this infill pattern](connect_infill_polygons_disabled.png)
-![Enabling this setting fuses the loops together](connect_infill_polygons_enabled.png)
+![With multiplied infill lines, there are lots of loops in this infill pattern](images/connect_infill_polygons_disabled.png)
+![Enabling this setting fuses the loops together](images/connect_infill_polygons_enabled.png)
 
 The aim of this function is to prevent travel moves. The final line will be one single loop for every connected part of infill, so there will not be any travel moves. This makes it easier to work with flexible filaments, because those are harder to retract and work best if they can keep flowing through the nozzle.
 

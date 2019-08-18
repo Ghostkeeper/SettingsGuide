@@ -1,6 +1,6 @@
 This setting adjusts the width of the prime tower.
 
-![The width of the prime tower](prime_tower.svg)
+![The width of the prime tower](images/prime_tower.svg)
 
 Making the prime tower wider will cause it to be more stable. This increases the reliability of your print.
 

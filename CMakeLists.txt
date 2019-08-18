@@ -76,8 +76,8 @@ set(installed_paths_resources_qml_SidebarSettings "")
 foreach(f IN LISTS installed_files_resources_qml_SidebarSettings)
 	list(APPEND installed_paths_resources_qml_SidebarSettings ${CMAKE_CURRENT_SOURCE_DIR}/resources/qml/SidebarSettings/${f})
 endforeach()
-file(GLOB installed_paths_resources_articles ${CMAKE_CURRENT_SOURCE_DIR}/resources/articles/*)
-file(GLOB installed_paths_resources_images ${CMAKE_CURRENT_SOURCE_DIR}/resources/images/*)
+file(GLOB installed_paths_resources_articles ${CMAKE_CURRENT_SOURCE_DIR}/resources/articles/*.*)
+file(GLOB installed_paths_resources_articles_images ${CMAKE_CURRENT_SOURCE_DIR}/resources/articles/images/*)
 
 #Find out where to install this thing.
 if(WIN32)
@@ -106,7 +106,7 @@ install(FILES ${installed_paths_resources_icons} DESTINATION ${SETTINGSGUIDE_PLU
 install(FILES ${installed_paths_resources_qml} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml)
 install(FILES ${installed_paths_resources_qml_SidebarSettings} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings)
 install(FILES ${installed_paths_resources_articles} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/articles)
-install(FILES ${installed_paths_resources_images} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/images)
+install(FILES ${installed_paths_resources_articles_images} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/articles/images)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune/mistune.py DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/Mistune)
 
 #Packing this into a .curapackage file.
@@ -118,7 +118,7 @@ foreach(sdk_version ${SETTINGSGUIDE_SUPPORTED_SDKS})
 	file(COPY ${installed_paths_resources_qml} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml)
 	file(COPY ${installed_paths_resources_qml_SidebarSettings} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings)
 	file(COPY ${installed_paths_resources_articles} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/articles)
-	file(COPY ${installed_paths_resources_images} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/images)
+	file(COPY ${installed_paths_resources_articles_images} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/articles/images)
 	file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/cmake/[Content_Types].xml" DESTINATION pack${sdk_version})
 	file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/cmake/_rels" DESTINATION pack${sdk_version})
 	file(COPY "${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune/mistune.py" DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/Mistune)

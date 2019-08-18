@@ -1,7 +1,7 @@
 This is the horizontal width of the lines that the printer will place down. Normally the diameter of the nozzle opening determines how wide your lines will be, but by extruding more or less material, the printer can vary a little bit in how wide the lines will become.
 
-![Very thin lines](line_width_small.png)
-![Very wide lines](line_width_large.png)
+![Very thin lines](images/line_width_small.png)
+![Very wide lines](images/line_width_large.png)
 
 Reducing the line width allows the printer to print more details. In particular it also allows the printer to print thin parts. Line width is one of the most influential settings in your print. Here are some of the effects:
 * Printing thinner lines will allow thinner pieces to be printed, since it can even fit a line in the thinnest parts.
@@ -20,9 +20,9 @@ When printing mechanical objects that need to be thin but strong, you'll regular
 
 Producing clean contours with even lines can make the print stronger and look better. A hallmark skill of any expert Cura user is to be able to tweak the line width such that the desired number of contours fill the print.
 
-![Default line width, where the contours don't fit and some lines are thicker than others](line_width_fit_bad.png)
-![Reducing the line width makes it fit evenly](line_width_fit_good_small.png)
-![Increasing the line width also works](line_width_fit_good_large.png)
+![Default line width, where the contours don't fit and some lines are thicker than others](images/line_width_fit_bad.png)
+![Reducing the line width makes it fit evenly](images/line_width_fit_good_small.png)
+![Increasing the line width also works](images/line_width_fit_good_large.png)
 
 Keeping the flow constant
 ----

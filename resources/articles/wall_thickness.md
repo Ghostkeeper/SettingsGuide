@@ -1,7 +1,7 @@
 This setting determines how thick the wall around the print will be. Ultimately it adjusts the number of inner walls to achieve the desired thickness.
 
-![0.8mm thick walls](wall_thickness_0.8.png)
-![1.6mm thick walls](wall_thickness_1.6.png)
+![0.8mm thick walls](images/wall_thickness_0.8.png)
+![1.6mm thick walls](images/wall_thickness_1.6.png)
 
 The wall thickness must be a multiple of the wall line width. If it is not, it will be rounded to be an exact multiple. Keep in mind though that one of the walls will be an outer wall, and the rest will be inner walls. These walls can have different line widths.
 

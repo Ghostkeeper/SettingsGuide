@@ -1,6 +1,6 @@
 This setting configures the speed at which the print head moves when it's not extruding any material.
 
-![Various structures printed at different speeds](speed_difference.png)
+![Various structures printed at different speeds](images/speed_difference.png)
 
 The travel speed is generally much higher than any other speed setting. Some effects of increasing the travel speed include:
 * A higher travel speed can slightly reduce the print time.

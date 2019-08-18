@@ -2,7 +2,7 @@ With this setting you can choose the pattern that will be used to fill the volum
 
 Lines
 ----
-![Lines](support_pattern_lines.png)
+![Lines](images/support_pattern_lines.png)
 
 The lines pattern draws straight lines. The lines are oriented such that they are never perpendicular to the skin lines it needs to support (by default).
 * Easiest to remove from the model of all patterns. This is very useful if there is an overhang area that is close to the build plate. A knife can be used to cut away the remnants if necessary.
@@ -11,7 +11,7 @@ The lines pattern draws straight lines. The lines are oriented such that they ar
 
 Grid
 ----
-![Grid](support_pattern_grid.png)
+![Grid](images/support_pattern_grid.png)
 
 The grid pattern draws two sets of straight lines perpendicular to each other. They overlap, forming a pattern of squares. By default, one perimeter is drawn around this pattern.
 * Very sturdy, increasing reliably.
@@ -20,7 +20,7 @@ The grid pattern draws two sets of straight lines perpendicular to each other. T
 
 Triangles
 ----
-![Triangles](support_pattern_triangles.png)
+![Triangles](images/support_pattern_triangles.png)
 
 The triangles pattern draws three sets of straight lines in 60 degree angles with one another, forming a pattern of equilateral triangles. By default, one perimeter is drawn around this pattern.
 * The sturdiest of all support patterns.
@@ -29,7 +29,7 @@ The triangles pattern draws three sets of straight lines in 60 degree angles wit
 
 Concentric
 ----
-![Concentric](support_pattern_concentric.png)
+![Concentric](images/support_pattern_concentric.png)
 
 The concentric pattern causes the support to consist of concentric rings spaced evenly from the outside inwards.
 * Lines are close together, providing good support of the overhang areas for a smooth surface, if the lines happen to be oriented perpendicularly.
@@ -40,7 +40,7 @@ The concentric pattern causes the support to consist of concentric rings spaced 
 
 Zigzag
 ----
-![Zigzag](support_pattern_zigzag.png)
+![Zigzag](images/support_pattern_zigzag.png)
 
 The zigzag pattern is like the lines pattern, but the lines are connected on the ends.
 * Fairly sturdy, greatly increasing reliability.
@@ -50,7 +50,7 @@ The zigzag pattern is like the lines pattern, but the lines are connected on the
 
 Cross
 ----
-![Cross](support_pattern_cross.png)
+![Cross](images/support_pattern_cross.png)
 
 The cross pattern draws a fractional pattern throughout the volume with cross-like shapes in it.
 * Easiest to bend of all patterns, since there are no long straight lines in this pattern.
@@ -58,7 +58,7 @@ The cross pattern draws a fractional pattern throughout the volume with cross-li
 
 Gyroid
 ----
-![Gyroid](support_pattern_gyroid.png)
+![Gyroid](images/support_pattern_gyroid.png)
 
 The gyroid pattern is a wavy one, with a curve wiggling back and forth. The curve varies across the layers.
 * Fairly sturdy pattern, increasing reliability.

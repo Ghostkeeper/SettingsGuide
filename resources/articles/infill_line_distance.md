@@ -2,8 +2,8 @@ Instead of setting the [Infill Density](infill_sparse_density) as a percentage, 
 
 Infill Line Distance is a different way of looking at this property than density. The distance between infill lines gives an indication of the distance that the top surface lines have to cross from one infill line to the next. Reducing the Infill Line Distance thus reduces the bridged distance and improves the quality of top surfaces.
 
-![4mm distance between lines, resulting in 20% density](infill_sparse_density_high.png)
-![8mm distance between lines, resulting in 10% density](infill_sparse_density_low.png)
+![4mm distance between lines, resulting in 20% density](images/infill_sparse_density_high.png)
+![8mm distance between lines, resulting in 10% density](images/infill_sparse_density_low.png)
 
 Normally the Infill Line Distance is computed from the desired infill density, depending on the selected infill pattern and line width. The Infill Line Distance is leading.
 

@@ -1,7 +1,7 @@
 If a 3D printer would stop pushing material, the material won't immediately stop flowing from the end of the nozzle. There is some residual material in the nozzle and it'll be pressurised, so it keeps flowing for a while longer. To actually stop the material from flowing, the printer needs to retract the material out of the nozzle opening. This is necessary to make clean travel moves without stringing.
 
-![Retractions disabled](retraction_enable_disabled.png)
-![Retracted travel moves show as a lighter blue](retraction_enable_enabled.png)
+![Retractions disabled](images/retraction_enable_disabled.png)
+![Retracted travel moves show as a lighter blue](images/retraction_enable_enabled.png)
 
 Retractions are done when a travel move is made that is particularly sensitive to stringing. Travel moves that only pass through infill or travel from support to support are normally not retracted. There is also a limit to how often the material can be retracted, through the [Maximum Retraction Count](retraction_count_max) and [Minimum Extrusion Distance Window](retraction_extrusion_window) settings.
 

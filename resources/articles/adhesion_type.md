@@ -1,8 +1,8 @@
 There are three types of build plate adhesion: skirt, brim and raft. You can also easily disable the adhesion types by setting it to None.
 
-![Skirt](adhesion_type_skirt.png)
-![Brim](adhesion_type_brim.png)
-![Raft](adhesion_type_raft.png)
+![Skirt](images/adhesion_type_skirt.png)
+![Brim](images/adhesion_type_brim.png)
+![Raft](images/adhesion_type_raft.png)
 
 Skirt
 ----

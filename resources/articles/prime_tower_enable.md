@@ -1,6 +1,6 @@
 This prints a tower on your build plate with a mix of materials. The tower is meant to be thrown away, but it serves to prime the material after each extruder switch.
 
-![How a prime tower looks, and the dimensions of it](prime_tower.svg)
+![How a prime tower looks, and the dimensions of it](images/prime_tower.svg)
 
 While other extruders are printing, a nozzle will sometimes ooze some material, leaving the nozzle chamber void of material. Priming the material afterwards is essential, or the material won't flow properly yet at the beginning.
 

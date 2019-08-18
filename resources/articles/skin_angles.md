@@ -1,6 +1,6 @@
 This setting allows you to change the direction in which the lines of the top and bottom are printed. You can specify a comma-separated list of angles (in degrees), and the lines will alternate directions per layer.
 
-![Lines pattern with 0°, 60° and 120° angles alternating](skin_angles.gif)
+![Lines pattern with 0°, 60° and 120° angles alternating](images/skin_angles.gif)
 
 By default, the lines pattern prints in the two diagonal directions. For Cartesian gantry systems this is the most accurate, because the printer can use both the X and Y motors to accelerate the nozzle when turning around for the next line.
 

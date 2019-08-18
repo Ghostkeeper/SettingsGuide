@@ -1,6 +1,6 @@
 If your printer has multiple extruders, you can choose to print just the walls with a different extruder.
 
-![The walls are printed in blue, but the rest in orange](wall_extruder_nr.png)
+![The walls are printed in blue, but the rest in orange](images/wall_extruder_nr.png)
 
 Printing the walls with a different extruder can have various purposes:
 * Just a visual effect by printing the outer wall with a different colour.

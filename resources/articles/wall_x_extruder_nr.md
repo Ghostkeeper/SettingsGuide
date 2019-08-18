@@ -1,6 +1,6 @@
 If your printer has multiple extruders, you can choose to print just the inner walls with a different extruder.
 
-![The inner walls are printed in blue, but the rest in orange](wall_x_extruder_nr.png)
+![The inner walls are printed in blue, but the rest in orange](images/wall_x_extruder_nr.png)
 
 It's wise to print the inner walls with the same extruder as either the infill, the skin or the outer walls. There is no real use case for printing the inner walls with a different extruder than the rest, except perhaps for an interesting visual effect. The colour of the inner wall tends to shine through the outer wall slightly.
 

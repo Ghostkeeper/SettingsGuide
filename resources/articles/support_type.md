@@ -1,7 +1,7 @@
 This setting allows you to choose what support can be placed on top of.
 
-![Support is generated for all overhanging surfaces](support_type_everywhere.png)
-![Support is only generated where it can rest on the build plate](support_type_touching_buildplate.png)
+![Support is generated for all overhanging surfaces](images/support_type_everywhere.png)
+![Support is only generated where it can rest on the build plate](images/support_type_touching_buildplate.png)
 
 Placing support everywhere is more reliable for the support. All overhangs that would sag are supported properly. However, the support may rest on top of the model as well, leaving a scar where it touches. This reduces the visual quality and the smoothness of the model's surface after the support is removed.
 

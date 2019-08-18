@@ -1,6 +1,6 @@
 The initial layer is not the only layer that gets printed slower. This setting configures how many layers get printed slower. Over the course of these layers, the printing speed will gradually increase to the normal printing speed.
 
-![The printing speed gradually increases to 50mm/s](speed_slowdown_layers.svg)
+![The printing speed gradually increases to 50mm/s](images/speed_slowdown_layers.svg)
 
 Starting from the initial layer, the speed linearly increases (or decreases) to the ordinary printing speed. This happens separately for the walls, skin, infill and so on, if they are printed at different speeds.
 

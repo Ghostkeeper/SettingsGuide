@@ -2,6 +2,6 @@ If a layer takes very little time to print, the print speed will be reduced such
 
 Enforcing the Minimum Layer Time is important in order to allow the previous layer to solidify before putting the next layer on top of it. Reducing the printing speed helps, because the fans on the print head can blow on the filament longer. Reducing the printing speed too much though is detrimental because the heat from the nozzle can spread out to lower layers and adjacent walls. This may cause the surface to become very messy and causes localised sagging. That is why there is a minimum speed as well. At the end of the layer, the print head will normally move up a bit (unless the [Lift Head](cool_lift_head) setting is disabled), allowing the fan to blow on the filament a bit longer until the Minimum Layer Time has passed. The printer then continues with the next layer.
 
-![Which fan speed is used where](cool_fan_speed.svg)
+![Which fan speed is used where](images/cool_fan_speed.svg)
 
 For example, a very small part may have some layer which takes 3 seconds to print at a normal speed of 30mm/s, but the Minimum Layer Time setting is set to 10 seconds. The printer would then reduce its speed to 9mm/s. However if a Minimum Speed is set to 10mm/s, then the printer would print this layer at 10mm/s and finish after 9 seconds. The printer will then wait for 1 second at the end of the layer before starting with the next.

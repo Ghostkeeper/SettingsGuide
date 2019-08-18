@@ -1,6 +1,6 @@
 A "support interface" is an intermediary structure in between the normal support and the model. This structure can adjust the properties of how support interfaces with the model without affecting the majority of the support much.
 
-![Support interface is shown in a darker shade of blue](support_interface_enable.png)
+![Support interface is shown in a darker shade of blue](images/support_interface_enable.png)
 
 By default the interface layers are denser than the normal support. This achieves a better overhang surface without needing all that much extra material and printing time. However, it will be harder to remove the support.
 
