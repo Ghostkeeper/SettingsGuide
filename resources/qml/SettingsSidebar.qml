@@ -203,6 +203,31 @@ Item {
 				}
 			}
 
+			Keys.onDownPressed: {
+				var originalIndex = articleList.currentIndex; //In case we need to revert because everything below us is a category; we can only know that by going there (until Qt 5.13).
+				if(articleList.currentIndex + 1 < articleList.count - 1) {
+					articleList.currentIndex++;
+				}
+				while(articleList.currentItem.definition.type == "category" && articleList.currentIndex + 1 < articleList.count - 1) {
+					articleList.currentIndex++;
+				}
+				if(articleList.currentItem.definition.type == "category") { //Every item below us is a category.
+					articleList.currentIndex = originalIndex;
+				}
+			}
+			Keys.onUpPressed: {
+				var originalIndex = articleList.currentIndex; //In case we need to revert because everything above us is a category; we can only know that by going there (until Qt 5.13).
+				if(articleList.currentIndex - 1 >= 0) {
+					articleList.currentIndex--;
+				}
+				while(articleList.currentItem.definition.type == "category" && articleList.currentIndex - 1 >= 0) {
+					articleList.currentIndex--;
+				}
+				if(articleList.currentItem.definition.type == "category") { //Every item above us is a category.
+					articleList.currentIndex = originalIndex;
+				}
+			}
+
 			UM.SettingPropertyProvider {
 				id: provider
 				containerStackId: Cura.MachineManager.activeMachineId
