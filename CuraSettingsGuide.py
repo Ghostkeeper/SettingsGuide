@@ -110,6 +110,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self.load_window()
 		if not self._dialog:
 			return
+		self.currentArticleReset.emit()
 		self.setSelectedSettingId(setting_key)
 		self._dialog.show()
 
@@ -127,6 +128,8 @@ class CuraSettingsGuide(Extension, QObject):
 		path = os.path.join(plugin_path, "resources", "qml", qml_name)
 		dialog = CuraApplication.getInstance().createQmlComponent(path, {"manager": self})
 		return dialog
+
+	currentArticleReset = pyqtSignal() #Signal to indicate that the article list should reset its current index.
 
 	def _getArticle(self, article_id) -> List[List[str]]:
 		"""

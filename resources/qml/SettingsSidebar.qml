@@ -117,6 +117,13 @@ Item {
 			height: parent.height
 			currentIndex: -1
 
+			Connections {
+				target: manager
+				onCurrentArticleReset: {
+					articleList.currentIndex = -1;
+				}
+			}
+
 			model: UM.SettingDefinitionsModel {
 				id: definitionsModel
 				containerId: "settings_guide_definitions"
