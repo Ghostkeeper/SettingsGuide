@@ -55,22 +55,13 @@ class CuraSettingsGuide(Extension, QObject):
 		self.articles = {} #type: Dict[str, List[List[str]]] #All of the articles by key. Key: article ID, value: Lists of items in each article.
 		self._selected_article_id = "" #Which article is currently shown for the user. Empty string indicates it's the welcome screen.
 
-		self.initializeHelpSidebarHelpButton()
-
-	def initializeHelpSidebarHelpButton(self) -> None:
-		"""
-		Add menu item to the context menus of settings that opens the guide of
-		that setting.
-		"""
-		menu_actions = ["sidebarMenuItemOnClickHandler"]
-
-		data = {
+		#Add context menu item to the settings list to open the guide for that setting.
+		CuraAPI().interface.settings.addContextMenuItem({
 			"name": "Settings Guide",
 			"icon_name": "help-contents",
-			"actions": menu_actions,
+			"actions": ["sidebarMenuItemOnClickHandler"],
 			"menu_item": MenuItemHandler.MenuItemHandler(self)
-		}
-		CuraAPI().interface.settings.addContextMenuItem(data)
+		})
 
 	def load_window(self):
 		"""
