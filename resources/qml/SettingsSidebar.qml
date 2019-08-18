@@ -16,11 +16,6 @@ Item {
 	id: rightSideItem
 	width: UM.Theme.getSize("print_setup_widget").width
 
-	Label {
-		id: debug
-		text: articleList.currentIndex
-	}
-
 	Rectangle {
 		id: filterContainer
 
