@@ -150,7 +150,7 @@ Item {
 						top: parent.top
 						bottom: parent.bottom
 						right: parent.right
-						rightMargin: UM.Theme.getSize("scrollbar").width
+						rightMargin: UM.Theme.getSize("default_margin").width
 					}
 				}
 				Rectangle {
@@ -162,7 +162,7 @@ Item {
 						top: parent.top
 						bottom: parent.bottom
 						right: parent.right
-						rightMargin: UM.Theme.getSize("scrollbar").width
+						rightMargin: UM.Theme.getSize("default_margin").width
 					}
 				}
 			}
