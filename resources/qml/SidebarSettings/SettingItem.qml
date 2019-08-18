@@ -26,6 +26,13 @@ Item {
 			}
 		}
 	}
+	Component.onCompleted: {
+		//If the selected setting was changed before loading was complete, make sure the index is updated.
+		//This happens when you open the settings guide for the first time by right-clicking on a setting.
+		if(manager.selectedSettingId == definition.key) {
+			articleList.currentIndex = index;
+		}
+	}
 
 	MouseArea {
 		id: mouse
