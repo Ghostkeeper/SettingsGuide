@@ -33,7 +33,7 @@ class CuraSettingsGuide(Extension, QObject):
 	makes the menu items open said dialogue window.
 
 	This class is also exposed to the QML code, which can use it to request the
-	descriptions and metadata about the settings.
+	articles and metadata about the settings.
 	"""
 
 	def __init__(self, parent=None) -> None:
@@ -41,7 +41,7 @@ class CuraSettingsGuide(Extension, QObject):
 		Executed during registration of the plug-in.
 
 		This adds a menu item to the extensions menu and the context menu of the
-		settings. It also loads the descriptions and setting metadata from the
+		settings. It also loads the articles and setting metadata from the
 		resources.
 		:param parent: The parent QObject this is located in. Unused by this
 		particular object.
@@ -53,7 +53,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self._dialog = None #Cached instance of the dialogue window.
 		self._container_stack = None #Stack that provides not only the normal settings but also the extra pages added by this guide.
 
-		self.articles = {} #type: Dict[str, List[List[str]]] #The descriptions for each setting. Key: setting ID, value: Lists of items in each description.
+		self.articles = {} #type: Dict[str, List[List[str]]] #The articles for each setting. Key: setting ID, value: Lists of items in each article.
 		self._selected_setting_id = "" #Which setting is currently shown for the user. Empty string indicates it's the welcome screen.
 
 		self.initializeHelpSidebarHelpButton()
@@ -141,7 +141,7 @@ class CuraSettingsGuide(Extension, QObject):
 		:param article_id: The ID of the article to get.
 		"""
 		if article_id not in self.articles:
-			markdown_file = os.path.join(os.path.dirname(__file__), "resources", "descriptions", article_id + ".md")
+			markdown_file = os.path.join(os.path.dirname(__file__), "resources", "articles", article_id + ".md")
 			try:
 				with open(markdown_file, encoding="utf-8") as f:
 					markdown_str = f.read()
