@@ -44,6 +44,20 @@ Item {
 			articleList.forceActiveFocus(); //After clicking on any setting, pressing up or down allows keyboard navigation through the list.
 		}
 
+		Rectangle {
+			visible: mouse.containsMouse
+			color: UM.Theme.getColor("primary")
+			opacity: 0.1
+			anchors {
+				left: parent.left
+				leftMargin: parent.height //Leave room for the marker icon.
+				right: parent.right
+				rightMargin: UM.Theme.getSize("default_margin").width
+				top: parent.top
+				bottom: parent.bottom
+			}
+		}
+
 		Label {
 			id: label
 
