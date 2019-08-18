@@ -118,7 +118,7 @@ Window {
 				}
 
 				Repeater {
-					model: manager.selectedSettingDescription
+					model: manager.selectedSettingArticle
 					delegate: Component {
 						Loader {
 							source: switch(modelData[0]) {

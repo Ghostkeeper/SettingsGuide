@@ -53,7 +53,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self._dialog = None #Cached instance of the dialogue window.
 		self._container_stack = None #Stack that provides not only the normal settings but also the extra pages added by this guide.
 
-		self.descriptions = {} #type: Dict[str, List[List[str]]] #The descriptions for each setting. Key: setting ID, value: Lists of items in each description.
+		self.articles = {} #type: Dict[str, List[List[str]]] #The descriptions for each setting. Key: setting ID, value: Lists of items in each description.
 		self._selected_setting_id = "" #Which setting is currently shown for the user. Empty string indicates it's the welcome screen.
 
 		self.initializeHelpSidebarHelpButton()
@@ -140,19 +140,19 @@ class CuraSettingsGuide(Extension, QObject):
 		taken from the cache.
 		:param article_id: The ID of the article to get.
 		"""
-		if article_id not in self.descriptions:
+		if article_id not in self.articles:
 			markdown_file = os.path.join(os.path.dirname(__file__), "resources", "descriptions", article_id + ".md")
 			try:
 				with open(markdown_file, encoding="utf-8") as f:
 					markdown_str = f.read()
 			except OSError: #File doesn't exist or is otherwise not readable.
-				markdown_str = "There is no description for this setting."
+				markdown_str = "There is no article for this setting."
 
 			images_path = os.path.join(os.path.dirname(__file__), "resources", "images")
 			find_images = re.compile(r"!\[(.*)\]\((.+)\)")
 			text_parts = find_images.split(markdown_str)
 			image_description = None
-			parts = [] #type: List[List[str]] #List of items in the description. Each item starts with a type ID, and then a variable number of data items.
+			parts = [] #type: List[List[str]] #List of items in the article. Each item starts with a type ID, and then a variable number of data items.
 			for index, part in enumerate(text_parts):
 				#The parts of the regex split alternate between text, image description and image URL.
 				if index % 3 == 0:
@@ -170,9 +170,9 @@ class CuraSettingsGuide(Extension, QObject):
 						parts[-1].append(QUrl.fromLocalFile(image_url).toString() + "|" + image_description)
 						image_description = None
 
-			self.descriptions[article_id] = parts
+			self.articles[article_id] = parts
 
-		return self.descriptions[article_id]
+		return self.articles[article_id]
 
 	@pyqtProperty("QVariantMap", constant=True)
 	def allArticleIds(self) -> Dict[str, None]:
@@ -205,7 +205,7 @@ class CuraSettingsGuide(Extension, QObject):
 	@pyqtSlot(str)
 	def setSelectedSettingId(self, setting_key: str) -> None:
 		"""
-		Show the description of a certain setting in the guide dialogue.
+		Show the article of a certain setting in the guide dialogue.
 		:param setting_key: The key of the setting to display.
 		"""
 		if self._selected_setting_id != setting_key:
@@ -223,12 +223,12 @@ class CuraSettingsGuide(Extension, QObject):
 		return self._selected_setting_id
 
 	@pyqtProperty("QVariantList", notify=settingItemChanged)
-	def selectedSettingDescription(self) -> List[List[str]]:
+	def selectedSettingArticle(self) -> List[List[str]]:
 		"""
-		Returns the description of the currently selected setting.
+		Returns the article of the currently selected setting.
 
 		This setting data is a rich text document, properly formatted from the
-		Markdown files in the setting description files.
-		:return: The description of the currently selected setting.
+		Markdown files in the setting article files.
+		:return: The article of the currently selected setting.
 		"""
 		return self._getArticle(self._selected_setting_id)
