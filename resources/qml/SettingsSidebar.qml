@@ -16,6 +16,11 @@ Item {
 	id: rightSideItem
 	width: UM.Theme.getSize("print_setup_widget").width
 
+	Label {
+		id: debug
+		text: articleList.currentIndex
+	}
+
 	Rectangle {
 		id: filterContainer
 
@@ -225,6 +230,17 @@ Item {
 				}
 				if(articleList.currentItem.definition.type == "category") { //Every item above us is a category.
 					articleList.currentIndex = originalIndex;
+				}
+			}
+			onCountChanged: { //When we collapse categories, make sure that the selected item doesn't rest on a category.
+				while(articleList.currentItem.definition.type == "category" && articleList.currentIndex + 1 < articleList.count - 1) {
+					articleList.currentIndex++;
+				}
+				while(articleList.currentItem.definition.type == "category" && articleList.currentIndex - 1 >= 0) {
+					articleList.currentIndex--;
+				}
+				if(articleList.currentItem.definition.type == "category") { //All categories are collapsed.
+					articleList.currentIndex = -1;
 				}
 			}
 
