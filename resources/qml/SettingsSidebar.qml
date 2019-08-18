@@ -167,7 +167,11 @@ Item {
 			highlightMoveDuration: 100
 			highlightMoveVelocity: -1
 			onCurrentIndexChanged: { //If index changed due to keyboard navigation.
-				manager.selectedSettingId = currentItem.definition.key;
+				if(currentIndex < 0) {
+					manager.selectedSettingId = "";
+				} else {
+					manager.selectedSettingId = currentItem.definition.key;
+				}
 			}
 
 			delegate: Loader {
