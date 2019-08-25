@@ -138,4 +138,4 @@ The gyroid infill pattern produces a wavy pattern that alternates directions.
 * Produces one volume which is completely permeable to fluids, making this a useful pattern for dissolvable materials.
 * Equally strong in all directions, but not very strong. This makes it useful for flexible materials, but the result will be somewhat harder, less squishy, than the Cross (3D) infill patterns.
 * Resistant to shearing.
-* Takes a long time to slice and produces large g-code files.
+* Takes a long time to slice and produces large g-code files. For some printers it may be hard to keep up with the many g-code commands per second, and it may be hard to keep up with over serial connection on low baud rates.
