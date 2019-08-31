@@ -1,3 +1,7 @@
+2.0.2 - The Requirement
+----
+* Categories are now always expanded while a search is active.
+
 2.0.1 - Bug fixes
 ----
 * Fix packaging script.
