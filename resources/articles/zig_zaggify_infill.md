@@ -10,7 +10,7 @@ Connecting the infill has a couple of benefits, but also some downsides:
 * The infill will adhere better to the walls due to increased surface area, which also makes the part stronger.
 * The flow rate will be held more constant, allowing you to print the infill at greater speed without flow problems. This is especially important for materials that are hard to extrude properly.
 * Significantly fewer retractions will be made during the printing of the infill, which prevents the material from grinding.
-* The effect of the [Infill Overlap](infill_overlap) setting is amplified, since a greater part of the infill lines will be made to overlap the walls.
+* The effect of the [Infill Overlap](infill_overlap.md) setting is amplified, since a greater part of the infill lines will be made to overlap the walls.
 * It will take more material to print the infill.
 * Usually it will take more time to print the infill, since travel moves are normally faster than printing infill lines.
 * The infill will typically shine more through the walls, since it gets pushed into a greater portion of the walls.

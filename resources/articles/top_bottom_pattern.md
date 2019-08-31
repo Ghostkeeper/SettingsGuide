@@ -28,4 +28,4 @@ The zigzag pattern is very similar to the lines pattern, but instead of ending t
 * Provides a great surface quality.
 * Very rigid in the directions that the lines are drawn.
 * Keeps the extrusion rate more constant, which improves the consistency of the surface for materials that extrude more difficultly.
-* Doesn't stick as well to the walls as the lines pattern. The effect of the [Skin Overlap](skin_overlap) is reduced. This makes the part weaker and reduces the quality of overhangs.
+* Doesn't stick as well to the walls as the lines pattern. The effect of the [Skin Overlap](skin_overlap.md) is reduced. This makes the part weaker and reduces the quality of overhangs.

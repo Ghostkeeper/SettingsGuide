@@ -1,4 +1,4 @@
-This setting configures the speed at which the top side of the support is printed, if [Support Roofs is enabled](support_interface_enable).
+This setting configures the speed at which the top side of the support is printed, if [Support Roofs is enabled](support_interface_enable.md).
 
 ![Various structures printed at different speeds](images/speed_difference.png)
 

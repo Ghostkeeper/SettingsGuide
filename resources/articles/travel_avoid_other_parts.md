@@ -1,4 +1,4 @@
-By enabling this setting, the print head will try to avoid hitting other objects when travelling around the build volume. It will take a small detour instead. If a detour is possible that doesn't hit any other objects, no retraction is triggered unless the length of the path exceeds the [Max Comb Distance With No Retract](retraction_combing_max_distance) setting.
+By enabling this setting, the print head will try to avoid hitting other objects when travelling around the build volume. It will take a small detour instead. If a detour is possible that doesn't hit any other objects, no retraction is triggered unless the length of the path exceeds the [Max Comb Distance With No Retract](retraction_combing_max_distance.md) setting.
 
 ![When disabled, travel moves can cross through other parts](images/travel_avoid_other_parts_disabled.png)
 ![When enabled, travel moves will avoid other parts](images/travel_avoid_other_parts_enabled.png)

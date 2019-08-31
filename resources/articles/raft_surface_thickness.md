@@ -1,4 +1,4 @@
-This setting adjusts the thickness of the surface layers. This is just the height of one layer, so the total height of the surface layers will be this setting multiplied by the value of the [Raft Top Layers](raft_surface_layers) setting.
+This setting adjusts the thickness of the surface layers. This is just the height of one layer, so the total height of the surface layers will be this setting multiplied by the value of the [Raft Top Layers](raft_surface_layers.md) setting.
 
 ![Dimensions related to the raft](images/raft_dimensions.svg)
 

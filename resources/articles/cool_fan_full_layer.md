@@ -1,4 +1,4 @@
-The fan speed will start at the value of the [Initial Fan Speed](cool_fan_speed_0) setting at the beginning of the print. During the first few layers of the print, as determined by this setting, the fan speed will gradually be increased to the [Regular Fan Speed](cool_fan_speed_min).
+The fan speed will start at the value of the [Initial Fan Speed](cool_fan_speed_0.md) setting at the beginning of the print. During the first few layers of the print, as determined by this setting, the fan speed will gradually be increased to the [Regular Fan Speed](cool_fan_speed_min.md).
 
 ![Which fan speed is used where](images/cool_fan_speed.svg)
 

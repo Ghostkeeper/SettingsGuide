@@ -1,6 +1,6 @@
 The feeder wheel needs to grip into the filament in order to move it properly. Retracting the material often tends to cause the feeder wheel to wear down the filament to the point where it can no longer grip the filament properly. This setting limits the number of retractions within a certain length of filament in order to prevent this grinding.
 
-The setting indicates how often the filament is allowed to be retracted during the length of filament indicated by the [Minimum Extrusion Distance Window](retraction_extrusion_window) setting. Any further retractions during this window will not retract, but just travel without retracting.
+The setting indicates how often the filament is allowed to be retracted during the length of filament indicated by the [Minimum Extrusion Distance Window](retraction_extrusion_window.md) setting. Any further retractions during this window will not retract, but just travel without retracting.
 
 ![Visualisation of retractions during a certain length of filament](images/retraction_count_max.svg)
 

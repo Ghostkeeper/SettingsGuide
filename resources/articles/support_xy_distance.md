@@ -6,7 +6,7 @@ The horizontal distance is meant to prevent the support from hitting the model, 
 
 X/Y versus Z distance
 ----
-Both the X/Y distance and the Z distance should be observed exactly; not more, not less. This is overconstrained, so there must be a preference between the two. This is indicated by the [Support Distance Priority](support_xy_overrides_z) setting. That setting changes the behaviour of this Support X/Y Distance setting.
+Both the X/Y distance and the Z distance should be observed exactly; not more, not less. This is overconstrained, so there must be a preference between the two. This is indicated by the [Support Distance Priority](support_xy_overrides_z.md) setting. That setting changes the behaviour of this Support X/Y Distance setting.
 
 ![X/Y overrides Z](images/support_xy_overrides_z.svg)
 

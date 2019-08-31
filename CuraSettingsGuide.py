@@ -164,16 +164,18 @@ class CuraSettingsGuide(Extension, QObject):
 
 		return self.articles[article_id]
 
-	@pyqtProperty("QVariantMap", constant=True)
-	def allArticleIds(self) -> Dict[str, None]:
+	@pyqtSlot(str, result=bool)
+	def isArticleFile(self, filename: str) -> bool:
 		"""
-		Get a set of all article IDs. The article IDs will be in the keys.
+		Tests whether a file name is the file name of an existing article.
 
-		This has to return a dictionary because we want to return a set, but
-		PyQt doesn't support that. So we return a map with empty values.
-		:return: A map with all article IDs as the keys, but no values.
+		This test is used to determine if a link should refer to a different
+		article or to the internet.
+		:param filename: The file name to test for.
+		:return: True if the file name is the file name of an existing article,
+		or False if it isn't.
 		"""
-		return dict.fromkeys(self._container_stack.getAllKeys())
+		return os.path.exists(os.path.join(os.path.dirname(__file__), "resources", "articles", filename))
 
 	@pyqtProperty(QObject, constant=True)
 	def containerStack(self) -> Optional[ContainerStack]:

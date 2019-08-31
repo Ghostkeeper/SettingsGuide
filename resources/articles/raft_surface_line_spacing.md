@@ -1,4 +1,4 @@
-This setting indicates the spacing between the lines of the top layers of the raft. This is in a way similar to the [Infill Line Distance](infill_line_distance) setting.
+This setting indicates the spacing between the lines of the top layers of the raft. This is in a way similar to the [Infill Line Distance](infill_line_distance.md) setting.
 
 ![Dimensions related to the raft](images/raft_dimensions.svg)
 

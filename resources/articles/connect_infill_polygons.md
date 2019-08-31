@@ -1,9 +1,9 @@
 When the infill consists of closed loops, these closed loops can be fused together to form one single loop. Enabling this will make small connections where polygons are adjacent.
 
 This setting is only available when the infill consists of loops that are adjacent to each other. That means that either:
-* The [infill pattern](infill_pattern) is set to Cross or Cross 3D.
-* The infill lines are [multiplied](infill_multiplier) to an even number.
-* There are at least 2 [extra walls around the infill](infill_wall_line_count).
+* The [infill pattern](infill_pattern.md) is set to Cross or Cross 3D.
+* The infill lines are [multiplied](infill_multiplier.md) to an even number.
+* There are at least 2 [extra walls around the infill](infill_wall_line_count.md).
 
 ![With multiplied infill lines, there are lots of loops in this infill pattern](images/connect_infill_polygons_disabled.png)
 ![Enabling this setting fuses the loops together](images/connect_infill_polygons_enabled.png)

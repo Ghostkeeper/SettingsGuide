@@ -7,4 +7,4 @@ Make the solid layers on the top of your print wider or thinner in a horizontal 
 * If the bottom side of your print is not flat, increasing this setting will cause the skin to be printed beyond the area that is directly above air, above the walls. This will improve adhesion between the skin and the walls, improving strength again.
 * Setting this setting to a negative value will reduce the width of the bottom layers, replacing it with infill. This can save some printing time, at the cost of strength.
 
-**Due to technical limitations, you can't reduce this setting negatively below the value of [Top Skin Removal Width](top_skin_preshrink). Increase the Top Skin Removal Width setting in order to remove more skin.**
+**Due to technical limitations, you can't reduce this setting negatively below the value of [Top Skin Removal Width](top_skin_preshrink.md). Increase the Top Skin Removal Width setting in order to remove more skin.**

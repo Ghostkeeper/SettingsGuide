@@ -1,4 +1,4 @@
-This setting adjusts how far the lines in the base layer of the raft are spaced apart. This is in a way similar to the [Infill Line Distance](infill_line_distance) setting. The main purpose is to adjust how well the raft adheres to the build plate.
+This setting adjusts how far the lines in the base layer of the raft are spaced apart. This is in a way similar to the [Infill Line Distance](infill_line_distance.md) setting. The main purpose is to adjust how well the raft adheres to the build plate.
 
 ![Dimensions related to the raft](images/raft_dimensions.svg)
 

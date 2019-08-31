@@ -1,4 +1,4 @@
-When the seam is placed in a user-specified location according to the [Z Seam Alignment](z_seam_type) setting, you can enter coordinates for where the seam must be located. Normally those coordinates specify some location on the build plate, such as the back of the printer. If this setting is enabled, those coordinates will be taken relative to the position of the model.
+When the seam is placed in a user-specified location according to the [Z Seam Alignment](z_seam_type.md) setting, you can enter coordinates for where the seam must be located. Normally those coordinates specify some location on the build plate, such as the back of the printer. If this setting is enabled, those coordinates will be taken relative to the position of the model.
 
 ![Disabled: The coordinates point to an absolute position in the centre of the build plate, so all the blue striped point towards the middle](images/z_seam_relative_disabled.png)
 ![Enabled: The coordinates are relative to the model so every model will have the blue stripes in the same corner](images/z_seam_relative_enabled.png)

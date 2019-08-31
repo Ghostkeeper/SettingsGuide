@@ -8,4 +8,4 @@ This should typically be printed fairly slowly if there is any overhang in the m
 * Similar to overhang, it will improve the quality of the top surface. The same overhang effect is applied to the way that the top surface rests on the infill.
 * The printer will generally vibrate less. If the build plate vibrates less, the top and bottom will look better.
 
-**This setting has no significant effect on the build plate adhesion. The [Initial Layer Print Speed](speed_print_layer_0) is used for the first few layers.**
+**This setting has no significant effect on the build plate adhesion. The [Initial Layer Print Speed](speed_print_layer_0.md) is used for the first few layers.**

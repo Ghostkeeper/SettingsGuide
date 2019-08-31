@@ -15,8 +15,9 @@ Text {
 	color: UM.Theme.getColor("text")
 
 	onLinkActivated: {
-		if(link in manager.allArticleIds) {
-			manager.setSelectedArticleId(link);
+		if(manager.isArticleFile(link)) {
+			var article_id = link.replace(/\.[^/.]*$/, "")
+			manager.setSelectedArticleId(article_id);
 		} else {
 			Qt.openUrlExternally(link);
 		}

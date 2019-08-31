@@ -3,7 +3,7 @@ With the Top/Bottom Thickness you can adjust how thick of a solid skin is create
 ![Ordinary top/bottom thickness](images/top_bottom_thickness_0.8.png)
 ![Much thicker top and bottom sides](images/top_bottom_thickness_3.png)
 
-This affects both the top and bottom sides of the print. The top and bottom can also be configured individually with the [Top Thickness](top_thickness) and [Bottom Thickness](bottom_thickness) settings.
+This affects both the top and bottom sides of the print. The top and bottom can also be configured individually with the [Top Thickness](top_thickness.md) and [Bottom Thickness](bottom_thickness.md) settings.
 
 If this setting is not a multiple of the layer height, it will get rounded to the nearest multiple. This setting only determines how many top and bottom layers will be generated.
 

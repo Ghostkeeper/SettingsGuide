@@ -4,4 +4,4 @@ When using a brim, a slightly increased line width will improve the adhesion bet
 
 For the skirt, increasing the line width causes it to use more material. However it will allow for good priming in a shorter amount of time, so fewer skirt lines are necessary for small objects.
 
-**The line width of the skirt and brim is also influenced by the [Initial Layer Line Width](initial_layer_line_width_factor) setting.**
+**The line width of the skirt and brim is also influenced by the [Initial Layer Line Width](initial_layer_line_width_factor.md) setting.**
