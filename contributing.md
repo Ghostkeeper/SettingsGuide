@@ -28,7 +28,7 @@ Pull requests to add descriptions for settings or improve current descriptions a
 
 This is not set in stone. For some articles (in particular drop-down settings) it makes sense to have a different format.
 
-When taking screenshots of the g-code, these are some instructions to ensure a consistent look throughout the plug-in.
+When taking screenshots of the g-code in layer view, these are some instructions to ensure a consistent look throughout the plug-in.
 * Before making a screenshot, remove the build plate shader so that the grid doesn't show up in your screenshot.
 * Use the light theme of Cura when taking the screenshot.
 * Don't use the compatibility mode of layer view.
@@ -47,5 +47,14 @@ Animated images are even more prone to having large file sizes. The following st
 5. Download [FlexiGIF](https://create.stephan-brumme.com/flexigif-lossless-gif-lzw-optimization/).
 6. Optimize your image by entering this in a terminal: `flexigif my_image.gif my_image_opt.gif`.
 7. Delete the old image and rename the new `my_image_opt.gif` to have the original file name.
+
+Diagrams should be submitted in SVG format. Also for these there are a number of requirements:
+* The source code of the SVG file will be treated as normal source code during the review, so please make sure that it is readable.
+* The SVG files are rendered with QtSVG, which supports a very [limited subset](https://doc.qt.io/qt-5/svgrendering.html) of the SVG specification. Only the static features of SVG Tiny 1.2.
+* Clipping is not supported.
+* Gradients are not supported.
+* Animations are not supported.
+* Patterns are not supported.
+* The image gets rendered by Qt at a fixed resolution matching the viewport of your image, and then scaled to the resolution that the user needs to display it at. For better quality, the SVG's viewport needs to be very large. Several thousand units is usually fine even for high DPI screens.
 
 It is up to the discretion of the package maintainer to decide whether images are too big or not. A major factor in this decision is whether the image is any bigger than strictly necessary.
