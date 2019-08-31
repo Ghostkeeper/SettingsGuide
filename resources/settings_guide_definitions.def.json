@@ -16,9 +16,9 @@
 			"description": "About this plug-in",
 			"icon": "info",
 			"children": {
-				"created_by": {
-					"label": "Created By",
-					"description": "The authors of this plug-in.",
+				"contributors": {
+					"label": "Contributors",
+					"description": "Everyone that helped in creating this plug-in.",
 					"type": "str",
 					"default_value": ""
 				}
