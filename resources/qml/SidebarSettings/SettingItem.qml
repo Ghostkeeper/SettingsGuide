@@ -59,8 +59,6 @@ Item {
 		}
 
 		Label {
-			id: label
-
 			anchors.left: parent.left
 			anchors.leftMargin: Math.round((UM.Theme.getSize("section_icon_column").width + 5) + ((definition.depth - 1) * UM.Theme.getSize("setting_control_depth_margin").width))
 			anchors.verticalCenter: parent.verticalCenter
