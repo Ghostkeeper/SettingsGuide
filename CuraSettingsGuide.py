@@ -137,7 +137,8 @@ class CuraSettingsGuide(Extension, QObject):
 					markdown_str = f.read()
 			except OSError: #File doesn't exist or is otherwise not readable.
 				if article_id in self._container_stack.getAllKeys():
-					markdown_str = self._container_stack.getProperty(article_id, "description") #Use the setting description as fallback.
+					markdown_str = "*" + self._container_stack.getProperty(article_id, "description") + "*" #Use the setting description as fallback.
+					Logger.log("d", "----------------" + mistune.markdown(markdown_str))
 				else:
 					markdown_str = "There is no article on this topic."
 
@@ -152,6 +153,7 @@ class CuraSettingsGuide(Extension, QObject):
 					part = part.strip()
 					if part or index == 0:
 						rich_text = mistune.markdown(part)
+						rich_text = rich_text.replace("<em>", "<i>").replace("</em>", "</i>")
 						parts.append(["rich_text", rich_text])
 				elif index % 3 == 1:
 					image_description = mistune.markdown(part)
@@ -182,6 +184,12 @@ class CuraSettingsGuide(Extension, QObject):
 
 	@pyqtProperty(QObject, constant=True)
 	def containerStack(self) -> Optional[ContainerStack]:
+		"""
+		The specialised container stack containing setting definitions for all
+		of the articles in the guide.
+		:return: A container stack with extra definitions for all articles in
+		the guide.
+		"""
 		return self._container_stack
 
 	@pyqtProperty(str, constant=True)
