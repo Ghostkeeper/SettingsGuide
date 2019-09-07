@@ -136,7 +136,10 @@ class CuraSettingsGuide(Extension, QObject):
 				with open(markdown_file, encoding="utf-8") as f:
 					markdown_str = f.read()
 			except OSError: #File doesn't exist or is otherwise not readable.
-				markdown_str = "There is no article on this topic."
+				if article_id in self._container_stack.getAllKeys():
+					markdown_str = self._container_stack.getProperty(article_id, "description") #Use the setting description as fallback.
+				else:
+					markdown_str = "There is no article on this topic."
 
 			images_path = os.path.join(os.path.dirname(__file__), "resources", "articles")
 			find_images = re.compile(r"!\[(.*)\]\((.+)\)")
