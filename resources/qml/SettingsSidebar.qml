@@ -169,7 +169,7 @@ Item {
 			highlightMoveDuration: 100
 			highlightMoveVelocity: -1
 			onCurrentIndexChanged: { //If index changed due to keyboard navigation.
-				if(currentIndex < 0) {
+				if(currentIndex < 0 || !currentItem) {
 					manager.selectedArticleId = "";
 				} else {
 					manager.selectedArticleId = currentItem.definition.key;
@@ -239,6 +239,9 @@ Item {
 				}
 			}
 			onCountChanged: { //When we collapse categories, make sure that the selected item doesn't rest on a category.
+				if(!articleList.currentItem) { //Just building up the list so far.
+					return;
+				}
 				while(articleList.currentItem.definition.type == "category" && articleList.currentIndex + 1 < articleList.count - 1) {
 					articleList.currentIndex++;
 				}
