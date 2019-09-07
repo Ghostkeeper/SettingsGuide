@@ -31,6 +31,7 @@ set(installed_files
 	CuraSettingsGuide.py
 	LICENSE.md
 	MenuItemHandler.py
+	QtMarkdownRenderer.py
 	README.md
 )
 set(installed_files_resources_icons

@@ -19,7 +19,8 @@ from UM.Settings.ContainerRegistry import ContainerRegistry #To register the non
 from UM.Settings.ContainerStack import ContainerStack #To get the names of non-setting entries.
 from UM.Settings.DefinitionContainer import DefinitionContainer #To register the non-setting entries.
 
-from . import MenuItemHandler
+from . import MenuItemHandler #To register the context menu item in the settings list.
+from . import QtMarkdownRenderer #To match Mistune's output to Qt's supported HTML subset.
 from .Mistune import mistune #To parse the Markdown files.
 
 i18n_catalog = i18nCatalog("cura")
@@ -51,6 +52,9 @@ class CuraSettingsGuide(Extension, QObject):
 		self.addMenuItem("Settings Guide", self.startWelcomeGuide)
 		self._dialog = None #Cached instance of the dialogue window.
 		self._container_stack = None #Stack that provides not only the normal settings but also the extra articles added by this guide.
+
+		renderer = QtMarkdownRenderer.QtMarkdownRenderer()
+		self._markdown = mistune.Markdown(renderer=renderer) #Renders the Markdown articles into the subset of HTML supported by Qt.
 
 		self.articles = {} #type: Dict[str, List[List[str]]] #All of the articles by key. Key: article ID, value: Lists of items in each article.
 		self._selected_article_id = "" #Which article is currently shown for the user. Empty string indicates it's the welcome screen.
@@ -138,7 +142,6 @@ class CuraSettingsGuide(Extension, QObject):
 			except OSError: #File doesn't exist or is otherwise not readable.
 				if article_id in self._container_stack.getAllKeys():
 					markdown_str = "*" + self._container_stack.getProperty(article_id, "description") + "*" #Use the setting description as fallback.
-					Logger.log("d", "----------------" + mistune.markdown(markdown_str))
 				else:
 					markdown_str = "There is no article on this topic."
 
@@ -152,8 +155,7 @@ class CuraSettingsGuide(Extension, QObject):
 				if index % 3 == 0:
 					part = part.strip()
 					if part or index == 0:
-						rich_text = mistune.markdown(part)
-						rich_text = rich_text.replace("<em>", "<i>").replace("</em>", "</i>")
+						rich_text = self._markdown(part)
 						parts.append(["rich_text", rich_text])
 				elif index % 3 == 1:
 					image_description = mistune.markdown(part)
