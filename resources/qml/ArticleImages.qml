@@ -79,8 +79,9 @@ GridLayout {
 					id: thumbnail
 					source: modelData.substring(0, modelData.indexOf("|"))
 					fillMode: Image.PreserveAspectFit
-					mipmap: true
 					anchors.fill: parent
+					sourceSize.width: width
+					sourceSize.height: height
 				}
 
 				Image {

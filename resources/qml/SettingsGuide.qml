@@ -176,20 +176,33 @@ Window {
 			}
 
 			Rectangle {
-				width: zoom_image.paintedWidth
-				height: zoom_image.paintedHeight
+				width: zoom_image.visible ? zoom_image.paintedWidth : zoom_image_svg.paintedWidth
+				height: zoom_image.visible ? zoom_image.paintedHeight : zoom_image_svg.paintedWidth
 				color: "white" //Always white regardless of theme, to serve as background to the image.
 				anchors.centerIn: parent
 
 				AnimatedImage {
 					id: zoom_image
-					source: settingsGuideBase.zoomed_image
+					source: visible ? settingsGuideBase.zoomed_image : "" //Don't even try to render for SVG.
 					anchors.centerIn: parent
 					width: zoom_layer.width * 2 / 3
 					height: zoom_layer.height * 2 / 3
 					fillMode: Image.PreserveAspectFit
 					mipmap: true
 					onStatusChanged: playing = (status == AnimatedImage.Ready)
+					visible: settingsGuideBase.zoomed_image.split('.').pop() !== "svg" //Only for non-SVG.
+				}
+
+				Image { //Special one for SVG that automatically adjusts sourceSize. sourceSize is not supported for AnimatedImage, and AnimatedImage doesn't support animated SVG anyway.
+					id: zoom_image_svg
+					source: visible ? settingsGuideBase.zoomed_image : "" //Don't even try to render for non-SVG.
+					anchors.centerIn: parent
+					width: zoom_image.width
+					height: zoom_image.height
+					fillMode: Image.PreserveAspectFit
+					sourceSize.width: width
+					sourceSize.height: height
+					visible: !zoom_image.visible //Only for SVG.
 				}
 			}
 		}

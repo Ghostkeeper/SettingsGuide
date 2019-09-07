@@ -55,6 +55,5 @@ Diagrams should be submitted in SVG format. Also for these there are a number of
 * Gradients are not supported.
 * Animations are not supported.
 * Patterns are not supported.
-* The image gets rendered by Qt at a fixed resolution matching the viewport of your image, and then scaled to the resolution that the user needs to display it at. For better quality, the SVG's viewport needs to be very large. Several thousand units is usually fine even for high DPI screens.
 
 It is up to the discretion of the package maintainer to decide whether images are too big or not. A major factor in this decision is whether the image is any bigger than strictly necessary.
