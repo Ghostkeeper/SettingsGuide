@@ -170,6 +170,11 @@ Window {
 				hoverEnabled: true //Catch hover events so that hovering over images behind the overlay doesn't have an effect.
 			}
 
+			Connections {
+				target: manager
+				onSelectedArticleChanged: settingsGuideBase.zoomed_image = ""
+			}
+
 			Rectangle {
 				width: zoom_image.paintedWidth
 				height: zoom_image.paintedHeight
