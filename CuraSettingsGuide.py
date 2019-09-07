@@ -14,7 +14,6 @@ from cura.CuraApplication import CuraApplication #To get the setting version to 
 from UM.Extension import Extension
 from UM.Logger import Logger
 from UM.PluginRegistry import PluginRegistry
-from UM.i18n import i18nCatalog
 from UM.Settings.ContainerRegistry import ContainerRegistry #To register the non-setting entries.
 from UM.Settings.ContainerStack import ContainerStack #To get the names of non-setting entries.
 from UM.Settings.DefinitionContainer import DefinitionContainer #To register the non-setting entries.
@@ -22,8 +21,6 @@ from UM.Settings.DefinitionContainer import DefinitionContainer #To register the
 from . import MenuItemHandler #To register the context menu item in the settings list.
 from . import QtMarkdownRenderer #To match Mistune's output to Qt's supported HTML subset.
 from .Mistune import mistune #To parse the Markdown files.
-
-i18n_catalog = i18nCatalog("cura")
 
 class CuraSettingsGuide(Extension, QObject):
 	"""
