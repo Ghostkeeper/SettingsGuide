@@ -4,16 +4,16 @@
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
-import os
+import os.path #To find the path of the resources.
 import re #To get images from the descriptions.
-from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl
-from typing import Dict, List, Optional, Set
+from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl #To expose data to the GUI.
+from typing import Dict, List, Optional
 
-from cura.API import CuraAPI
+from cura.API import CuraAPI #To register the context menu item in the settings list.
 from cura.CuraApplication import CuraApplication #To get the setting version to load the correct definition file, and to create QML components.
-from UM.Extension import Extension
+from UM.Extension import Extension #We're implementing a Cura extension.
 from UM.Logger import Logger
-from UM.PluginRegistry import PluginRegistry
+from UM.PluginRegistry import PluginRegistry #To find the path of the resources.
 from UM.Settings.ContainerRegistry import ContainerRegistry #To register the non-setting entries.
 from UM.Settings.ContainerStack import ContainerStack #To get the names of non-setting entries.
 from UM.Settings.DefinitionContainer import DefinitionContainer #To register the non-setting entries.
