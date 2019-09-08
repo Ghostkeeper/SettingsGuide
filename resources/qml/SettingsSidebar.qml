@@ -216,10 +216,10 @@ Item {
 
 			Keys.onDownPressed: {
 				var originalIndex = articleList.currentIndex; //In case we need to revert because everything below us is a category; we can only know that by going there (until Qt 5.13).
-				if(articleList.currentIndex + 1 < articleList.count - 1) {
+				if(articleList.currentIndex < articleList.count - 1) {
 					articleList.currentIndex++;
 				}
-				while(articleList.currentItem.definition.type == "category" && articleList.currentIndex + 1 < articleList.count - 1) {
+				while(articleList.currentItem.definition.type == "category" && articleList.currentIndex < articleList.count - 1) {
 					articleList.currentIndex++;
 				}
 				if(articleList.currentItem.definition.type == "category") { //Every item below us is a category.
@@ -228,10 +228,10 @@ Item {
 			}
 			Keys.onUpPressed: {
 				var originalIndex = articleList.currentIndex; //In case we need to revert because everything above us is a category; we can only know that by going there (until Qt 5.13).
-				if(articleList.currentIndex - 1 >= 0) {
+				if(articleList.currentIndex > 0) {
 					articleList.currentIndex--;
 				}
-				while(articleList.currentItem.definition.type == "category" && articleList.currentIndex - 1 >= 0) {
+				while(articleList.currentItem.definition.type == "category" && articleList.currentIndex > 0) {
 					articleList.currentIndex--;
 				}
 				if(articleList.currentItem.definition.type == "category") { //Every item above us is a category.
@@ -242,10 +242,10 @@ Item {
 				if(!articleList.currentItem) { //Just building up the list so far.
 					return;
 				}
-				while(articleList.currentItem.definition.type == "category" && articleList.currentIndex + 1 < articleList.count - 1) {
+				while(articleList.currentItem.definition.type == "category" && articleList.currentIndex < articleList.count - 1) {
 					articleList.currentIndex++;
 				}
-				while(articleList.currentItem.definition.type == "category" && articleList.currentIndex - 1 >= 0) {
+				while(articleList.currentItem.definition.type == "category" && articleList.currentIndex > 0) {
 					articleList.currentIndex--;
 				}
 				if(articleList.currentItem.definition.type == "category") { //All categories are collapsed.
