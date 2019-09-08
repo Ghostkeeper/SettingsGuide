@@ -1,6 +1,6 @@
 For some printers, when a material is retracted for a filament switch, the material needs to be broken off cleanly in order to move it through the feeder without tangling. This setting configures part of the procedure to break it cleanly.
 
-This setting adjusts the speed at which the material is retracted towards the first position in order to stop it from oozing. The material is not yet broken off at this point. The purpose is only to quickly remove the pressure on the nozzle chamber by pulling it inwards.
+This setting adjusts the second position that the material is retracted to in order to stretch the material to a thin thread. This thin thread stretches out of the heated zone in the nozzle, allowing it to cool down and solidify. The thin, hard strand of material can then be broken off in the next stage of the retraction.
 
 ![First, the material is retracted to stop oozing, as per this setting](images/filament_switch_anti_ooze.svg)
 ![Second, the filament is slowly retracted to draw a thin thread that is easy to break and let this thread solidify](images/filament_switch_break_preparation.svg)
