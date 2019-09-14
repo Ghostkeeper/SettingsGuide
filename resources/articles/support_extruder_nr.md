@@ -6,4 +6,4 @@ Using a different type of material tends to make the support easier to remove wi
 
 Also, some materials are designed to print support with. They can be made extremely brittle on purpose, for instance, so that they break off more easily. Some materials dissolve in water or in ethanol, so that you can remove support even if it's printed very closely to the model.
 
-Printing support with a different extruder than the rest of the model requires the printer to switch materials at every layer though, which could increase printing time.
+Printing support with a different extruder than the rest of the model requires the printer to switch materials at every layer though, which could increase printing time. If the support material has a different colour than the build material, the residue of support on the print could be very visible.
