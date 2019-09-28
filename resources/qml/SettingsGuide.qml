@@ -185,8 +185,8 @@ Window {
 					id: zoom_image
 					source: visible ? settingsGuideBase.zoomed_image : "" //Don't even try to render for SVG.
 					anchors.centerIn: parent
-					width: zoom_layer.width * 2 / 3
-					height: zoom_layer.height * 2 / 3
+					width: zoom_layer.width * 3 / 4
+					height: zoom_layer.height * 3 / 4
 					fillMode: Image.PreserveAspectFit
 					mipmap: true
 					onStatusChanged: playing = (status == AnimatedImage.Ready)
