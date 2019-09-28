@@ -11,7 +11,7 @@ Text {
 	text: article_data[0]
 	wrapMode: Text.Wrap
 	renderType: Text.NativeRendering
-	font: UM.Theme.getFont("default")
+	font: UM.Theme.getFont("medium")
 	color: UM.Theme.getColor("text")
 
 	onLinkActivated: {
