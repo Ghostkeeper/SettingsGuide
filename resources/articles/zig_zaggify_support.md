@@ -11,3 +11,5 @@ Connecting the support lines has a couple of benefits, but also some downsides:
 * If retractions are made during support, significantly fewer retractions will be necessary during the printing of support, which prevents the material from grinding.
 * It takes more material to print the support.
 * Usually it will take more time to print the support, since travel moves are normally faster than printing support lines.
+
+The zigzag support pattern is always connected (using a slightly different technique). This setting is not available for the zigzag pattern.
