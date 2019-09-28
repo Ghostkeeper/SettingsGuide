@@ -31,8 +31,25 @@ This is not set in stone. For some articles (in particular drop-down settings) i
 When taking screenshots of the g-code in layer view, these are some instructions to ensure a consistent look throughout the plug-in.
 * Before making a screenshot, remove the build plate shader so that the grid doesn't show up in your screenshot.
 * Use the light theme of Cura when taking the screenshot.
+* Use the perspective camera mode, not orthographic.
 * Don't use the compatibility mode of layer view.
 * Don't collage your screenshots. Use separate images for different effects, each with their own subtitle.
+
+To adjust your Cura installation for easier screenshot making, the theme can be adjusted. In the file `resources/themes/cura-light/theme.json`, replace the two sections starting with `x_axis` with the following:
+```
+        "disabled_axis": [127, 127, 127, 0],
+        "x_axis": [255, 0, 0, 0],
+        "y_axis": [0, 0, 255, 0],
+        "z_axis": [0, 255, 0, 0],
+        "all_axis": [255, 255, 255, 0],
+
+        "viewport_background": [255, 255, 255, 255],
+        "volume_outline": [50, 130, 255, 0],
+        "buildplate": [244, 244, 244, 0],
+        "buildplate_grid": [129, 131, 134, 0],
+        "buildplate_grid_minor": [230, 230, 231, 0],
+```
+To restore your Cura installation on Windows, you can run the installer again. On other platforms, you can just download the application again.
 
 In an effort to keep the download size of the plug-in manageable, care needs to be taken with .png images.
 1. Reduce your image to 256 colours. You can use dithering if you think it looks better, but quite often it doesn't look better.
