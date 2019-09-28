@@ -35,7 +35,7 @@ When taking screenshots of the g-code in layer view, these are some instructions
 * Don't use the compatibility mode of layer view.
 * Don't collage your screenshots. Use separate images for different effects, each with their own subtitle.
 
-To adjust your Cura installation for easier screenshot making, the theme can be adjusted. In the file `resources/themes/cura-light/theme.json`, replace the two sections starting with `x_axis` with the following:
+To adjust your Cura installation for easier screenshot making, the theme can be adjusted. In the file `resources/themes/cura-light/theme.json`, replace the two sections starting with `disabled_axis` with the following:
 ```
         "disabled_axis": [127, 127, 127, 0],
         "x_axis": [255, 0, 0, 0],
