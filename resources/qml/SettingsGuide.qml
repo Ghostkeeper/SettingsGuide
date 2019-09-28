@@ -109,11 +109,11 @@ Window {
 				spacing: UM.Theme.getSize("wide_margin").height
 
 				Text {
-					text: selectedArticleName.properties.label ? selectedArticleName.properties.label : ""
+					text: selectedArticleName.properties.label ? "<h1>" + selectedArticleName.properties.label + "</h1>" : ""
 					width: parent.width
 					wrapMode: Text.Wrap
 					renderType: Text.NativeRendering
-					font: UM.Theme.getFont("large_bold")
+					font: UM.Theme.getFont("medium")
 					color: UM.Theme.getColor("text")
 				}
 
