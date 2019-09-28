@@ -35,7 +35,7 @@ When taking screenshots of the g-code in layer view, these are some instructions
 * Don't use the compatibility mode of layer view.
 * Don't collage your screenshots. Use separate images for different effects, each with their own subtitle.
 
-To adjust your Cura installation for easier screenshot making, the theme can be adjusted. In the file `resources/themes/cura-light/theme.json`, replace the two sections starting with `disabled_axis` with the following:
+To adjust your Cura installation for easier screenshot making, the theme can be adjusted. In the file `resources/themes/cura-light/theme.json`, replace the three sections starting with `disabled_axis` with the following:
 ```
         "disabled_axis": [127, 127, 127, 0],
         "x_axis": [255, 0, 0, 0],
@@ -45,9 +45,13 @@ To adjust your Cura installation for easier screenshot making, the theme can be 
 
         "viewport_background": [255, 255, 255, 255],
         "volume_outline": [50, 130, 255, 0],
-        "buildplate": [244, 244, 244, 0],
-        "buildplate_grid": [129, 131, 134, 0],
-        "buildplate_grid_minor": [230, 230, 231, 0],
+        "buildplate": [255, 255, 255, 0],
+        "buildplate_grid": [255, 255, 255, 0],
+        "buildplate_grid_minor": [255, 255, 255, 0],
+
+        "convex_hull": [255, 255, 255, 0],
+        "disallowed_area": [0, 0, 0, 0],
+        "error_area": [255, 0, 0, 127],
 ```
 To restore your Cura installation on Windows, you can run the installer again. On other platforms, you can just download the application again.
 
