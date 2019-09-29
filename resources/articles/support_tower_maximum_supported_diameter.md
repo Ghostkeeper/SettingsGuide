@@ -1,0 +1,3 @@
+This setting determines which parts of the model get supported with a specialised support tower and which get supported with ordinary support. Any pieces of support that have a smaller diameter than specified in this setting will get supported by a support tower. Any pieces that are wider will get supported with normal support.
+
+The larger this setting, the more towers will get generated. This makes the support more stable but also increases the time and material usage of support.
