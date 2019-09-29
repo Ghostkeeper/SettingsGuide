@@ -1,8 +1,15 @@
-Contributors to this guide include:
-* Aleksei Sasin, programming v1.0.
-* Terri-Ann Delacruz, contributing much of the content of v1.0.
-* Jeroen Stevens, contributing much of the content of v1.0.
-* Ghostkeeper, maintenance and programming of v1.1 and later and rewriting all content.
-* ChrisTerBeke, articles about Adaptive Layer Height.
+This project is maintained by Ghostkeeper.
+
+Programming
+----
+* Ghostkeeper: Writing version v1.1 and later.
+* Asasin: Writing v1.0.
+
+Articles
+----
+* Ghostkeeper: rewriting all content in v2.0 and many articles since.
+* Ellecross: Much of the content of v1.0.
+* Jeroen Stevens: Much of the content of v1.0.
+* ChrisTerBeke: Article about Adaptive Layer Height.
 
 ![](images/created_by.jpg)
