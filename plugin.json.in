@@ -1,6 +1,6 @@
 {
 	"name": "${SETTINGSGUIDE_PLUGIN_NAME}",
-	"author": "Ghostkeeper, Aleksei Sasin, Terri-Ann dela Cruz",
+	"author": "Ghostkeeper",
 	"version": "${SETTINGSGUIDE_VERSION_MAJOR}.${SETTINGSGUIDE_VERSION_MINOR}.${SETTINGSGUIDE_VERSION_PATCH}",
 	"description": "Provides extra information and explanations about settings in Cura, with images and animations.",
 	"api": 6,
