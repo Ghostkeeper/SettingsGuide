@@ -1,0 +1,7 @@
+This setting configures the speed at which the base layer of the raft is printed. The speed of the base layer can be configured separately from the speed of the top and middle layers.
+
+![Where the base layer is located in the raft](images/raft_dimensions_simplified.svg)
+
+Printing the base layer more slowly allows the material to flow out more. This increases the contact area between the raft and the build plate, allowing it to stick better to the build plate. Keeping the material hot for longer will also anneal the plastic, reducing internal stress. Both of these effects reduce warping. The base layer is typically printed slower than the others. Of course, reducing the printing speed of the base layer too much makes the print take longer.
+
+This setting overrides the [initial layer printing speed](speed_print_layer_0.md). However travel moves within the raft are still affected by the [initial layer travel speed](speed_travel_layer_0.md).
