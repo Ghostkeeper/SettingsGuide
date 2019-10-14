@@ -4,6 +4,8 @@ Tree support offers an alternative approach to supporting the model than the ord
 
 Tree support can avoid obstacles when growing towards the overhang areas. If at all possible, the tree will be grown from the build plate upwards to prevent scarring of the surface that the support rests on. If this is not possible, the tree will be resting on the model's surface as close to the overhang as possible to minimise time and material usage. The branches of tree support are limited by the [Tree Support Branch Angle](support_tree_angle.md) so that they don't produce too steep an overhang of themselves. This limits the ability to grow around obstacles and also determines the height at which trunks will start branching out.
 
+Tree support is hollow by default. However the ordinary support settings still apply to the area circumscribed by the tree's branches. In particular, the [Support Density](support_infill_rate.md) can be used to give the support more structural strength. Due to the nature of tree support being greatly jagged, it normally has plenty of strength for its purpose.
+
 Tree support has a number of advantages over normal support, to name a few:
 * Tree support generally uses way less material than ordinary support. Between 25% and 50% of the material usage is typical. This saves a lot of time and cost in material.
 * When printed with the same material as the print, overhang tends to look better when using tree support.
