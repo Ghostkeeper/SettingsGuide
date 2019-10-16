@@ -26,6 +26,6 @@ To get the Exclusive tolerance, Cura will compute cross sections at the top and 
 
 Usage
 ----
-This setting is named after its intended use rather than its functional effect. If you have multiple pieces that need to slide past each other, the theoretical shape of the layers may physically prevent this. In such a case, you can set this setting to Exclusive so that the layers are guaranteed to stay within the bounds of the original volume. Barring warping, sagging and similar deformation effects, this would guarantee that the parts fit within each other and are able to slide past each other.
+This setting is named after its intended use rather than its functional effect. If you have multiple pieces that need to slide past each other, the theoretical shape of the layers may physically prevent exact fits. In such a case, you can set this setting to Exclusive so that the layers are guaranteed to stay within the bounds of the original volume. Barring warping, sagging and similar deformation effects, this would guarantee that the parts fit within each other and are able to slide past each other.
 
 In reality there are always other effects going on that prevent this. In practice, this setting can be used to get slightly more or less tolerance between two sloped surfaces, as can be seen in the above images.
