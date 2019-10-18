@@ -7,7 +7,7 @@ Some printers and printing materials are very sensitive to the environment they 
 The shield is printed on the go as the model is printed. If multiple extruders are involved in the print, the draft shield will be printed using the extruder that starts the layer. This will alternate from layer to layer.
 
 The draft shield has several major effects on the print:
-* It will keep the temperature of the print more constant. This is the intended effect of the draft shield.
+* It will keep the temperature of the print more constant. This is the intended effect of the draft shield. As a result, banding due to temperature shifts in the room should be reduced.
 * Generally the temperature inside the draft shield will be higher than if there is no draft shield. This is because the heat has a harder time escaping and there can be no convective currents rising with the hot air from the print. This has an effect on all aspects of the print. In particular there will be more stringing and sagging.
 * The fans on the print head will become less effective. The shield also disrupts the airflow there. To increase effectiveness of the fans on the print head, the [distance](draft_shield_dist.md) of the draft shield can be increased.
 * The draft shield can double as an [Ooze Shield](ooze_shield_enabled.md). If travel moves are made towards an object that is protected by a draft shield, any ooze left on the nozzle will be wiped off on the shield.
