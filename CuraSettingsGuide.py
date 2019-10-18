@@ -166,6 +166,13 @@ class CuraSettingsGuide(Extension, QObject):
 
 			self.articles[article_id] = parts
 
+			#Load the article into the actual setting description as well.
+			global_stack = CuraApplication.getInstance().getGlobalContainerStack()
+			if global_stack and article_id in global_stack.getAllKeys():
+				complete_article = self._markdown(markdown_str)
+				definition = global_stack.definition.findDefinitions(key=article_id)[0]
+				definition._SettingDefinition__property_values["description"] = complete_article
+
 		return self.articles[article_id]
 
 	@pyqtSlot(str, result=bool)
