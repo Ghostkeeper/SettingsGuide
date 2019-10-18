@@ -3,7 +3,9 @@
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
-from .Mistune import mistune
+from .Mistune import mistune #Extending from this library's renderer.
+import os.path #To fix the source paths for images.
+import PyQt5.QtCore #To fix the source paths for images using QUrl.
 import UM.Qt.Bindings.Theme #To get the correct hyperlink colour from the theme.
 
 class QtMarkdownRenderer(mistune.Renderer):
@@ -48,3 +50,20 @@ class QtMarkdownRenderer(mistune.Renderer):
 		:return: That text in italics.
 		"""
 		return "<i>{text}</i>".format(text=text)
+
+	def image(self, src, title, alt_text):
+		"""
+		Renders an image with a title (normally displayed on hover) and an alt-
+		text that gets displayed if the image is not available.
+		:param src: The path to the image, relative to the "articles" directory.
+		:param title: A text to display with the image. This gets ignored
+		because Qt's Rich Text doesn't support it.
+		:param alt_text: A text to display in case the image can't get loaded.
+		This gets ignored because Qt's Rich Text doesn't support it.
+		:return: HTML for Qt's Rich Text to display the image.
+		"""
+		image_full_path = os.path.join(os.path.dirname(__file__), "resources", "articles", src)
+		image_url = PyQt5.QtCore.QUrl.fromLocalFile(image_full_path).url()
+		margin = UM.Qt.Bindings.Theme.Theme.getInstance().getSize("default_margin").width()
+		width = UM.Qt.Bindings.Theme.Theme.getInstance().getSize("tooltip").width() - margin * 2
+		return "<img src=\"{image_url}\" width=\"{width}\" />".format(image_url=image_url, width=width)
