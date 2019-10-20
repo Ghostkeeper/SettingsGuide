@@ -11,3 +11,5 @@ Both of these applications require very special handling of your infill. These a
 * Set your [infill layer thickness](infill_sparse_thickness.md) to be equal to the layer height.
 * Increase your [printing temperature](material_print_temperature.md) slightly (for the extruder that will print the infill). This allows the material to flow properly out the nozzle and allows for faster extrusion.
 * Set your [infill density](infill_sparse_density.md) to be somewhere between 30% and 60% for flexible materials, or to 99% for casting.
+
+**In Cura's layer view, the infill will show up as very fat lines. This is because Cura assumes that material stays on the same layer and spreads out there. In reality, it will fall down.**
