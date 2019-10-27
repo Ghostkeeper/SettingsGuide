@@ -12,7 +12,5 @@
 
 	<!-- Legend. -->
 	<polygon points="900,175 920,155 910,155 910,85 920,85 900,65 880,85 890,85 890,155 880,155" />
-	<g font-family="sans-serif" font-size="50px">
-		<text x="880" y="130" text-anchor="end">Compensation for falling</text>
-	</g>
+	<text x="880" y="130" text-anchor="end" font-family="sans-serif" font-size="50px">Compensation for falling</text>
 </svg>
