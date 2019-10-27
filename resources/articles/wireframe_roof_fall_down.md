@@ -1,0 +1,3 @@
+While printing the roof of a wire frame for the Wire Printing mode, some lines will be suspended in mid-air. Those lines tend to fall down, sagging their molten matter down before it finally solidifies in place. This setting lets you compensate for this sagging in the roof of the structure. Those lines that would be hanging in mid-air are printed slightly higher so that they solidify approximately in the place that they were intended to end up at.
+
+Tuning this setting is very sensitive to printing temperature and the material being used. Some materials, such as PLA, solidify very quickly, while others take longer. Printing on the cold side makes it solidify faster. Even the ambient room temperature influences the amount of sagging heavily.
