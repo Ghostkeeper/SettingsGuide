@@ -7,5 +7,8 @@ When this setting is enabled though, you can tune that behaviour more precisely 
 * flow rate
 * density (like infill density, but with the skin lines)
 * fan speed
+* for the walls, also coasting
 
 These settings can be adjusted separately for the skin that bridges a gap as well as for the walls. If [Bridge Has Multiple Layers](bridge_enable_more_layers.md) is enabled, they can also be adjusted separately for the second and third layer above the bridged gap. It also allows tweaking which parts of the print are seen as bridging areas, by tuning [what fraction of an area must be over air](bridge_skin_support_threshold.md) and a [minimal width for the walls](bridge_wall_min_length.md).
+
+By enabling the bridging settings you get greater control over how bridges are handled in your print. By tuning the bridging parameters very well, you can improve the quality of your overhangs significantly and improve accuracy in the vertical direction. The only downside is that if you don't adjust the bridge settings to your printer, the print could be made worse just as likely.
