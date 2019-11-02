@@ -1,4 +1,6 @@
-If this setting is enabled, the material will be retracted throughout the wiping procedure.
+If this setting is enabled, the material will be retracted throughout the wiping procedure. This can be configured separately from the [normal retractions](retraction_enable.md).
+
+The wiping procedure makes the nozzle go all the way to the side of the printer, move back and forth there, and then move all the way back. This is essentially a very long travel move. Since this travel move is longer than the average travel moves throughout the print, you may want to have the material retracted during this procedure even if retractions are normally disabled.
 
 Having the material retracted will reduce the amount of material that oozes during the wiping procedure. The material that is oozed during the wiping procedure will normally be wiped off by the brush. However this material is then lost. As a result, there will be some underextrusion just after the wipe has been completed since this material has oozed out instead of being placed in its proper location.
 
