@@ -4,5 +4,5 @@
 	"version": "${SETTINGSGUIDE_VERSION_MAJOR}.${SETTINGSGUIDE_VERSION_MINOR}.${SETTINGSGUIDE_VERSION_PATCH}",
 	"description": "Provides extra information and explanations about settings in Cura, with images and animations.",
 	"api": 6,
-	"supported_sdk_versions": ["6.0.0"]
+	"supported_sdk_versions": ["6.0.0", "7.0.0"]
 }
