@@ -12,10 +12,11 @@ You can install this plug-in in several ways.
 
     |Cura version|SDK|
     |------------|---|
-    |4.0         |6  |
-    |4.1         |6  |
-    |4.2         |6  |
-    |4.3         |6  |
+    |4.0         |6.0|
+    |4.1         |6.0|
+    |4.2         |6.0|
+    |4.3         |6.0|
+    |4.4         |7.0|
 
     Drag that package file onto the Cura window, then restart Cura.
 3. **Building packages:** Download the latest source code [from Github](https://github.com/Ghostkeeper/SettingsGuide/archive/master.zip), then in a terminal run `cmake . && make pack` to create a .curapackage file for each supported SDK version. Similar to the previous option, select the SDK version that fits your version of Cura and drag it onto the Cura window, then restart Cura.
