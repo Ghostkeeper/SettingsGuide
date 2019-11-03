@@ -23,7 +23,7 @@ Bug Fixes
 
 Articles
 ----
-* Added 246 new articles about settings, doubling the amount of articles. This completes the entire settings list.
+* Added 247 new articles about settings, doubling the amount of articles. This completes the entire settings list.
 * The About page is renamed to Contributors and lists all contributors.
 
 2.0.2 - The Requirement
