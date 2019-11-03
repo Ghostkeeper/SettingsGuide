@@ -1,9 +1,37 @@
-2.0.2 - The Requirement
+2.1.0 - Completionist
+====
+In this release the aim was to complete the articles for all of Cura's settings. No more missing links.
+
+New Features
 ----
+* Support for Cura 4.4.
+* Added keyboard navigation with the arrow keys (once focus is in the article list).
+* If an article is missing in a future release of Cura because the plug-in hasn't been updated yet, the setting description is now shown.
+* Links to different articles now also work when viewed on Github.
+* Images now also work when viewed on Github.
+* The selection highlight in the article list is now animating when a different article is shown.
+* The article font is a little bigger than before, for readability.
+
+Bug Fixes
+----
+* SVG images are now rendered at the correct size, improving performance and image quality.
+* Links are now coloured according to the theme, making them easier to read in dark themes.
+* Italic text is now rendered properly.
+* Fixed QML errors in the log when no article is selected.
+* Improved performance of the search bar.
+* The lazy-loading of articles is no longer triggered when the guide opens for the first time, but when opening an article, further reducing performance impact on start-up.
+
+Articles
+----
+* Added 246 new articles about settings, doubling the amount of articles. This completes the entire settings list.
+* The About page is renamed to Contributors and lists all contributors.
+
+2.0.2 - The Requirement
+====
 * Categories are now always expanded while a search is active.
 
-2.0.1 - Bug fixes
-----
+2.0.1 - Bug Fixes
+====
 * Fix packaging script.
 * Fix loading the settings list in Cura 4.3 and newer.
 
@@ -20,7 +48,7 @@ New Features
 * Each image can now have its own subtext.
 * Articles can now be added about other things than settings.
 
-Bug fixes
+Bug Fixes
 ----
 * The plug-in will not load all articles any more during the loading screen, which would slow down Cura's boot sequence.
 
@@ -39,11 +67,11 @@ This release adds many tiny quality-of-life features and improves the quality of
 New Features
 ----
 * Improved performance of switching selected settings.
-* The dialogue can now be resized. Implements [#2](https://github.com/Ghostkeeper/SettingsGuide/issues/2). The dialogue can also be maximised and minimised.
+* The dialogue can now be resized.
 * The dialogue is no longer modal, allowing you to use Cura while the dialogue is open.
 * The image thumbnails grid has been reworked. It uses more of the page width if available and should be more reliable.
-* The zoomed image is now always 2/3rds of the window size regardless of window size and screen resolution. Fixes [#5](https://github.com/Ghostkeeper/SettingsGuide/issues/5).
-* All image thumbnails and zoomed images now have a white background, in order to improve usability in dark themes. Implements [#4](https://github.com/Ghostkeeper/SettingsGuide/issues/4).
+* The zoomed image is now always 2/3rds of the window size regardless of window size and screen resolution.
+* All image thumbnails and zoomed images now have a white background, in order to improve usability in dark themes.
 * Quality of image downscaling is improved, producing softer borders and fewer Moiré patterns.
 * All layer view screenshots have their colour depth slightly reduced. The difference is imperceptible, but the file size of the download is reduced significantly.
 * Improved installation instructions in the Readme.
