@@ -13,6 +13,8 @@ from cura.API import CuraAPI #To register the context menu item in the settings 
 from cura.CuraApplication import CuraApplication #To get the setting version to load the correct definition file, and to create QML components.
 from UM.Extension import Extension #We're implementing a Cura extension.
 from UM.Logger import Logger
+from UM.Job import Job  # To load articles as a background task.
+from UM.JobQueue import JobQueue  # To load articles as a background task.
 from UM.PluginRegistry import PluginRegistry #To find the path of the resources.
 from UM.Settings.ContainerRegistry import ContainerRegistry #To register the non-setting entries.
 from UM.Settings.ContainerStack import ContainerStack #To get the names of non-setting entries.
@@ -63,6 +65,49 @@ class CuraSettingsGuide(Extension, QObject):
 			"actions": ["sidebarMenuItemOnClickHandler"],
 			"menu_item": MenuItemHandler.MenuItemHandler(self)
 		})
+
+		CuraApplication.getInstance().initializationFinished.connect(self.load_all_in_background)
+
+	def load_all_in_background(self):
+		"""
+		Runs the load_all() function as a background task.
+		"""
+		class ArticleLoadJob(Job):
+			"""
+			A background task that loads all articles of the guide.
+			"""
+
+			def __init__(self, guide):
+				"""
+				Creates the background task.
+				:param guide: The CuraSettingsGuide object which has the
+				function to call.
+				"""
+				self.guide = guide
+
+			def run(self):
+				"""
+				Runs the background task.
+
+				Cura will call this function from a different thread.
+				"""
+				self.guide.load_all()
+		JobQueue.getInstance().add(ArticleLoadJob(self))
+
+
+	def load_all(self):
+		"""
+		Pre-cache all articles.
+
+		This is meant to run as a background task. This makes sure all setting
+		descriptions are loaded so that they can load faster next time the
+		article is requested. It also makes sure that the setting description
+		is correctly displayed (after a while).
+		"""
+		self.load_definitions()  # Ensure that we have a list of articles.
+		for article_id in self._container_stack.getAllKeys():
+			self._getArticle(article_id)  # Load articles one by one.
+		Logger.log("i", "Finished loading Settings Guide articles.")
 
 	def load_definitions(self):
 		"""
