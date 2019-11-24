@@ -12,7 +12,7 @@ set(SETTINGSGUIDE_PLUGIN_ID "SettingsGuide2" CACHE STRING "The plug-in ID of the
 set(SETTINGSGUIDE_VERSION_MAJOR 2 CACHE STRING "The major version number, indicating a backward compatibility break.")
 set(SETTINGSGUIDE_VERSION_MINOR 0 CACHE STRING "The minor version number, indicating a forward compatibility break.")
 set(SETTINGSGUIDE_VERSION_PATCH 1 CACHE STRING "The patch version number, indicating an incremental improvement without compatibility break.")
-set(SETTINGSGUIDE_SUPPORTED_SDKS "6.0.0" CACHE STRING "List of supported Cura SDK versions.")
+set(SETTINGSGUIDE_SUPPORTED_SDKS "6.0.0;7.0.0" CACHE STRING "List of supported Cura SDK versions.")
 
 #Make sure we have Mistune.
 include(ExternalProject)

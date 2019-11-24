@@ -1,5 +1,7 @@
 #Mark Markdown files as detectable by Linguist so that Github displays it.
 *.md linguist-detectable=true
+#I hand-write my SVG files as if they are code. They sort of are.
+*.svg linguist-detectable=true
 
 #Don't export Git-specific files.
 .gitattributes export-ignore
