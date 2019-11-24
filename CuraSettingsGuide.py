@@ -64,11 +64,17 @@ class CuraSettingsGuide(Extension, QObject):
 			"menu_item": MenuItemHandler.MenuItemHandler(self)
 		})
 
-	def load_window(self):
+	def load_definitions(self):
 		"""
-		Do all the things necessary to start using the guide.
+		Load all the setting definitions into a custom container stack.
+
+		This container stack also contains extra entries for the articles that
+		are not settings.
+
+		The result is stored in self._container_stack.
 		"""
-		#Load a special definition container that also contains extra entries for the guide entries that are not settings.
+		if self._container_stack:
+			return  # Already done earlier. Don't re-load.
 		with open(os.path.join(os.path.dirname(__file__), "resources", "settings_guide_definitions.def.json")) as f:
 			definitions_serialised = f.read()
 		definition_container = DefinitionContainer("settings_guide_definitions")
@@ -77,6 +83,12 @@ class CuraSettingsGuide(Extension, QObject):
 		self._container_stack = ContainerStack("settings_guide_stack")
 		self._container_stack.addContainer(definition_container)
 		ContainerRegistry.getInstance().addContainer(self._container_stack)
+
+	def load_window(self):
+		"""
+		Do all the things necessary to start using the guide.
+		"""
+		self.load_definitions()
 
 		if not self._dialog:
 			self._dialog = self._createDialog("SettingsGuide.qml")
