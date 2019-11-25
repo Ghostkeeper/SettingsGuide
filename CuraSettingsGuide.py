@@ -5,8 +5,9 @@
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
 import os.path #To find the path of the resources.
-import re #To get images from the descriptions.
+import urllib.parse  # For unquote_plus to create preference keys for forms.
 from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl #To expose data to the GUI.
+import re #To get images from the descriptions.
 from typing import Dict, List, Optional
 
 from cura.API import CuraAPI #To register the context menu item in the settings list.
@@ -200,24 +201,37 @@ class CuraSettingsGuide(Extension, QObject):
 					markdown_str = "There is no article on this topic."
 
 			images_path = os.path.join(os.path.dirname(__file__), "resources", "articles")
+			preferences = CuraApplication.getInstance().getPreferences()
 			find_images = re.compile(r"!\[(.*)\]\((.+)\)")
-			text_parts = find_images.split(markdown_str)
+			find_checkboxes = re.compile(r"\[([/ ])\]\s*(.+)\n")
 			image_description = None
 			parts = [] #type: List[List[str]] #List of items in the article. Each item starts with a type ID, and then a variable number of data items.
-			for index, part in enumerate(text_parts):
+			for index, part_between_images in enumerate(find_images.split(markdown_str)):
 				#The parts of the regex split alternate between text, image description and image URL.
 				if index % 3 == 0:
-					part = part.strip()
-					if part or index == 0:
-						rich_text = self._markdown(part)
-						parts.append(["rich_text", rich_text])
+					part_between_images = part_between_images.strip()
+					if part_between_images or index == 0:
+						parts_between_checkboxes = find_checkboxes.split(part_between_images)
+						checked_state = False
+						for index2, part_between_checkboxes in enumerate(parts_between_checkboxes):
+							# The parts of the regex split alternate between text, checked state and checkbox description.
+							if index2 % 3 == 0:
+								rich_text = self._markdown(part_between_checkboxes)
+								parts.append(["rich_text", rich_text])
+							elif index2 % 3 == 1:
+								checked_state = part_between_checkboxes == "/"
+							else:  # if index2 == 1:
+								preference_key = "settings_guide/" + urllib.parse.quote_plus(part_between_checkboxes).lower()
+								if preference_key not in preferences._preferences:
+									preferences.addPreference(preference_key, checked_state)
+								parts.append(["checkbox", preference_key, part_between_checkboxes])
 				elif index % 3 == 1:
-					image_description = mistune.markdown(part)
+					image_description = mistune.markdown(part_between_images)
 				else: #if index % 3 == 2:
 					if image_description is not None:
 						if parts[-1][0] != "images": #List of images.
 							parts.append(["images"])
-						image_url = os.path.join(images_path, part)
+						image_url = os.path.join(images_path, part_between_images)
 						parts[-1].append(QUrl.fromLocalFile(image_url).toString() + "|" + image_description)
 						image_description = None
 
