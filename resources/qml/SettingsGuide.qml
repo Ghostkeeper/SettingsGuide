@@ -124,6 +124,7 @@ Window {
 							source: switch(modelData[0]) {
 								case "rich_text": return "ArticleText.qml";
 								case "images": return "ArticleImages.qml";
+								case "checkbox": return "ArticleCheckbox.qml";
 							}
 							width: content_column.width
 							onLoaded: {
