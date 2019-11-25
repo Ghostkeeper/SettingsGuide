@@ -67,7 +67,9 @@ class CuraSettingsGuide(Extension, QObject):
 			"menu_item": MenuItemHandler.MenuItemHandler(self)
 		})
 
-		CuraApplication.getInstance().initializationFinished.connect(self.load_all_in_background)
+		application = CuraApplication.getInstance()
+		application.getPreferences().addPreference("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29", False)
+		application.initializationFinished.connect(self.load_all_in_background)
 
 	def load_all_in_background(self):
 		"""
@@ -203,7 +205,7 @@ class CuraSettingsGuide(Extension, QObject):
 			images_path = os.path.join(os.path.dirname(__file__), "resources", "articles")
 			preferences = CuraApplication.getInstance().getPreferences()
 			find_images = re.compile(r"!\[(.*)\]\((.+)\)")
-			find_checkboxes = re.compile(r"\[([/ ])\]\s*(.+)\n")
+			find_checkboxes = re.compile(r"\[ \]\s*(.+)\n")
 			image_description = None
 			parts = [] #type: List[List[str]] #List of items in the article. Each item starts with a type ID, and then a variable number of data items.
 			for index, part_between_images in enumerate(find_images.split(markdown_str)):
@@ -212,18 +214,13 @@ class CuraSettingsGuide(Extension, QObject):
 					part_between_images = part_between_images.strip()
 					if part_between_images or index == 0:
 						parts_between_checkboxes = find_checkboxes.split(part_between_images)
-						checked_state = False
 						for index2, part_between_checkboxes in enumerate(parts_between_checkboxes):
-							# The parts of the regex split alternate between text, checked state and checkbox description.
-							if index2 % 3 == 0:
+							# The parts of the regex split alternate between text and checkbox description.
+							if index2 % 2 == 0:
 								rich_text = self._markdown(part_between_checkboxes)
 								parts.append(["rich_text", rich_text])
-							elif index2 % 3 == 1:
-								checked_state = part_between_checkboxes == "/"
 							else:  # if index2 == 1:
 								preference_key = "settings_guide/" + urllib.parse.quote_plus(part_between_checkboxes).lower()
-								if preference_key not in preferences._preferences:
-									preferences.addPreference(preference_key, checked_state)
 								parts.append(["checkbox", preference_key, part_between_checkboxes])
 				elif index % 3 == 1:
 					image_description = mistune.markdown(part_between_images)
@@ -237,12 +234,13 @@ class CuraSettingsGuide(Extension, QObject):
 
 			self.articles[article_id] = parts
 
-			#Load the article into the actual setting description as well.
-			global_stack = CuraApplication.getInstance().getGlobalContainerStack()
-			if global_stack and article_id in global_stack.getAllKeys():
-				complete_article = self._markdown(markdown_str)
-				definition = global_stack.definition.findDefinitions(key=article_id)[0]
-				definition._SettingDefinition__property_values["description"] = complete_article
+			if preferences.getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
+				#Load the article into the actual setting description as well.
+				global_stack = CuraApplication.getInstance().getGlobalContainerStack()
+				if global_stack and article_id in global_stack.getAllKeys():
+					complete_article = self._markdown(markdown_str)
+					definition = global_stack.definition.findDefinitions(key=article_id)[0]
+					definition._SettingDefinition__property_values["description"] = complete_article
 
 		return self.articles[article_id]
 
