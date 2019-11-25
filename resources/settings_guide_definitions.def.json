@@ -16,6 +16,12 @@
 			"description": "About this plug-in",
 			"icon": "info",
 			"children": {
+				"preferences": {
+					"label": "Preferences",
+					"description": "Adjust the behaviour of this plug-in.",
+					"type": "str",
+					"default_value": ""
+				},
 				"contributors": {
 					"label": "Contributors",
 					"description": "Everyone that helped in creating this plug-in.",
