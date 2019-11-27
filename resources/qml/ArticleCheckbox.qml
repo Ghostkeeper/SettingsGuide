@@ -42,7 +42,7 @@ Row {
 				opacity: checkbox.checked
 				Behavior on opacity {
 					NumberAnimation {
-					duration: 100
+						duration: 100
 					}
 				}
 			}
@@ -51,10 +51,14 @@ Row {
 		contentItem: Text {
 			text: checkbox.text
 			color: UM.Theme.getColor("checkbox_text")
-			font: UM.Theme.getFont("default")
+			font: UM.Theme.getFont("medium")
 			elide: Text.ElideRight
 			renderType: Text.NativeRendering
-			leftPadding: checkbox.indicator.width
+			anchors {
+				left: checkbox.indicator.right
+				leftMargin: UM.Theme.getSize("default_margin").width
+				bottom: checkbox.indicator.bottom
+			}
 		}
 	}
 }
