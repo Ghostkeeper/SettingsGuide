@@ -6,7 +6,7 @@
 
 import os.path #To find the path of the resources.
 import urllib.parse  # For unquote_plus to create preference keys for forms.
-from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl #To expose data to the GUI.
+from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QSizeF, QObject, QUrl  # To expose data to the GUI and adjust the theme.
 import re #To get images from the descriptions.
 from typing import Dict, List, Optional
 
@@ -17,6 +17,7 @@ from UM.Logger import Logger
 from UM.Job import Job  # To load articles as a background task.
 from UM.JobQueue import JobQueue  # To load articles as a background task.
 from UM.PluginRegistry import PluginRegistry #To find the path of the resources.
+from UM.Qt.Bindings.PointingRectangle import PointingRectangle  # To adjust the width of setting tooltips if displaying the articles in them.
 from UM.Settings.ContainerRegistry import ContainerRegistry #To register the non-setting entries.
 from UM.Settings.ContainerStack import ContainerStack #To get the names of non-setting entries.
 from UM.Settings.DefinitionContainer import DefinitionContainer #To register the non-setting entries.
@@ -69,7 +70,19 @@ class CuraSettingsGuide(Extension, QObject):
 
 		application = CuraApplication.getInstance()
 		application.getPreferences().addPreference("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29", False)
+
+		application.initializationFinished.connect(self.adjust_theme)
 		application.initializationFinished.connect(self.load_all_in_background)
+
+	def adjust_theme(self):
+		"""
+		Makes the tooltips wider, if displaying articles in the tooltips.
+		"""
+		if CuraApplication.getInstance().getPreferences().getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
+			main_window = CuraApplication.getInstance()._qml_engine.rootObjects()[0]
+			tooltips = main_window.findChildren(PointingRectangle)  # There are multiple instances of this (currently 3). It's indistinguishable which is the setting tooltip. Collateral damage!
+			for tooltip in tooltips:
+				tooltip.setWidth(tooltip.width() * 2.5)  # About the maximum size that can be displayed with the default screen size.
 
 	def load_all_in_background(self):
 		"""
