@@ -65,5 +65,5 @@ class QtMarkdownRenderer(mistune.Renderer):
 		image_full_path = os.path.join(os.path.dirname(__file__), "resources", "articles", src)
 		image_url = PyQt5.QtCore.QUrl.fromLocalFile(image_full_path).url()
 		margin = UM.Qt.Bindings.Theme.Theme.getInstance().getSize("default_margin").width()
-		width = UM.Qt.Bindings.Theme.Theme.getInstance().getSize("tooltip").width() - margin * 2
+		width = (UM.Qt.Bindings.Theme.Theme.getInstance().getSize("tooltip").width() - margin * 2) * 2.5 / 3  # Fit 3 images in the width. The width was multiplied by 2.5 from the theme.
 		return "<img src=\"{image_url}\" width=\"{width}\" />".format(image_url=image_url, width=width)
