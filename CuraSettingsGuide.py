@@ -218,7 +218,7 @@ class CuraSettingsGuide(Extension, QObject):
 			images_path = os.path.join(os.path.dirname(__file__), "resources", "articles")
 			preferences = CuraApplication.getInstance().getPreferences()
 			find_images = re.compile(r"!\[(.*)\]\((.+)\)")
-			find_checkboxes = re.compile(r"\[ \]\s*(.+)\n")
+			find_checkboxes = re.compile(r"\[ \]\s*(.+)(?:$|\n)")
 			image_description = None
 			parts = [] #type: List[List[str]] #List of items in the article. Each item starts with a type ID, and then a variable number of data items.
 			for index, part_between_images in enumerate(find_images.split(markdown_str)):
