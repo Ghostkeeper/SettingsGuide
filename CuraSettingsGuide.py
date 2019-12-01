@@ -51,16 +51,16 @@ class CuraSettingsGuide(Extension, QObject):
 		Extension.__init__(self)
 
 		self.addMenuItem("Settings Guide", self.startWelcomeGuide)
-		self._dialog = None #Cached instance of the dialogue window.
-		self._container_stack = None #Stack that provides not only the normal settings but also the extra articles added by this guide.
+		self._dialog = None  # Cached instance of the dialogue window.
+		self._container_stack = None  # Stack that provides not only the normal settings but also the extra articles added by this guide.
 
 		renderer = QtMarkdownRenderer.QtMarkdownRenderer()
-		self._markdown = mistune.Markdown(renderer=renderer) #Renders the Markdown articles into the subset of HTML supported by Qt.
+		self._markdown = mistune.Markdown(renderer=renderer)  # Renders the Markdown articles into the subset of HTML supported by Qt.
 
-		self.articles = {} #type: Dict[str, List[List[str]]] #All of the articles by key. Key: article ID, value: Lists of items in each article.
-		self._selected_article_id = "" #Which article is currently shown for the user. Empty string indicates it's the welcome screen.
+		self.articles = {}  # type: Dict[str, List[List[str]]]  # All of the articles by key. Key: article ID, value: Lists of items in each article.
+		self._selected_article_id = ""  # Which article is currently shown for the user. Empty string indicates it's the welcome screen.
 
-		#Add context menu item to the settings list to open the guide for that setting.
+		# Add context menu item to the settings list to open the guide for that setting.
 		CuraAPI().interface.settings.addContextMenuItem({
 			"name": "Settings Guide",
 			"icon_name": "help-contents",
@@ -163,7 +163,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self.load_window()
 		if not self._dialog:
 			return
-		self.setSelectedArticleId("") #Display welcome page.
+		self.setSelectedArticleId("")  # Display welcome page.
 		self._dialog.show()
 
 	def startWelcomeGuideAndSelectArticle(self, article_key: str) -> None:
@@ -209,9 +209,9 @@ class CuraSettingsGuide(Extension, QObject):
 			try:
 				with open(markdown_file, encoding="utf-8") as f:
 					markdown_str = f.read()
-			except OSError: #File doesn't exist or is otherwise not readable.
+			except OSError:  # File doesn't exist or is otherwise not readable.
 				if self._container_stack and article_id in self._container_stack.getAllKeys():
-					markdown_str = "*" + self._container_stack.getProperty(article_id, "description") + "*" #Use the setting description as fallback.
+					markdown_str = "*" + self._container_stack.getProperty(article_id, "description") + "*"  # Use the setting description as fallback.
 				else:
 					markdown_str = "There is no article on this topic."
 
@@ -220,9 +220,9 @@ class CuraSettingsGuide(Extension, QObject):
 			find_images = re.compile(r"!\[(.*)\]\((.+)\)")
 			find_checkboxes = re.compile(r"\[ \]\s*(.+)(?:$|\n)")
 			image_description = None
-			parts = [] #type: List[List[str]] #List of items in the article. Each item starts with a type ID, and then a variable number of data items.
+			parts = []  # type: List[List[str]]  # List of items in the article. Each item starts with a type ID, and then a variable number of data items.
 			for index, part_between_images in enumerate(find_images.split(markdown_str)):
-				#The parts of the regex split alternate between text, image description and image URL.
+				# The parts of the regex split alternate between text, image description and image URL.
 				if index % 3 == 0:
 					part_between_images = part_between_images.strip()
 					if part_between_images or index == 0:
@@ -237,9 +237,9 @@ class CuraSettingsGuide(Extension, QObject):
 								parts.append(["checkbox", preference_key, part_between_checkboxes])
 				elif index % 3 == 1:
 					image_description = mistune.markdown(part_between_images)
-				else: #if index % 3 == 2:
+				else:  # if index % 3 == 2:
 					if image_description is not None:
-						if parts[-1][0] != "images": #List of images.
+						if parts[-1][0] != "images":  # List of images.
 							parts.append(["images"])
 						image_url = os.path.join(images_path, part_between_images)
 						parts[-1].append(QUrl.fromLocalFile(image_url).toString() + "|" + image_description)
@@ -248,7 +248,7 @@ class CuraSettingsGuide(Extension, QObject):
 			self.articles[article_id] = parts
 
 			if preferences.getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
-				#Load the article into the actual setting description as well.
+				# Load the article into the actual setting description as well.
 				global_stack = CuraApplication.getInstance().getGlobalContainerStack()
 				if global_stack and article_id in global_stack.getAllKeys():
 					complete_article = self._markdown(markdown_str)
