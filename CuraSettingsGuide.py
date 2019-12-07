@@ -4,27 +4,27 @@
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
-import os.path #To find the path of the resources.
+import os  # To find the article files and other resources.
 import urllib.parse  # For unquote_plus to create preference keys for forms.
 from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QSizeF, QObject, QUrl  # To expose data to the GUI and adjust the theme.
-import re #To get images from the descriptions.
+import re  # To get images from the descriptions.
 from typing import Dict, List, Optional
 
-from cura.API import CuraAPI #To register the context menu item in the settings list.
-from cura.CuraApplication import CuraApplication #To get the setting version to load the correct definition file, and to create QML components.
-from UM.Extension import Extension #We're implementing a Cura extension.
+from cura.API import CuraAPI  # To register the context menu item in the settings list.
+from cura.CuraApplication import CuraApplication  # To get the setting version to load the correct definition file, and to create QML components.
+from UM.Extension import Extension  # We're implementing a Cura extension.
 from UM.Logger import Logger
 from UM.Job import Job  # To load articles as a background task.
 from UM.JobQueue import JobQueue  # To load articles as a background task.
-from UM.PluginRegistry import PluginRegistry #To find the path of the resources.
+from UM.PluginRegistry import PluginRegistry  # To find the path of the resources.
 from UM.Qt.Bindings.PointingRectangle import PointingRectangle  # To adjust the width of setting tooltips if displaying the articles in them.
-from UM.Settings.ContainerRegistry import ContainerRegistry #To register the non-setting entries.
-from UM.Settings.ContainerStack import ContainerStack #To get the names of non-setting entries.
-from UM.Settings.DefinitionContainer import DefinitionContainer #To register the non-setting entries.
+from UM.Settings.ContainerRegistry import ContainerRegistry  # To register the non-setting entries.
+from UM.Settings.ContainerStack import ContainerStack  # To get the names of non-setting entries.
+from UM.Settings.DefinitionContainer import DefinitionContainer  # To register the non-setting entries.
 
-from . import MenuItemHandler #To register the context menu item in the settings list.
-from . import QtMarkdownRenderer #To match Mistune's output to Qt's supported HTML subset.
-from .Mistune import mistune #To parse the Markdown files.
+from . import MenuItemHandler  # To register the context menu item in the settings list.
+from . import QtMarkdownRenderer  # To match Mistune's output to Qt's supported HTML subset.
+from .Mistune import mistune  # To parse the Markdown files.
 
 class CuraSettingsGuide(Extension, QObject):
 	"""
@@ -58,6 +58,8 @@ class CuraSettingsGuide(Extension, QObject):
 		self._markdown = mistune.Markdown(renderer=renderer)  # Renders the Markdown articles into the subset of HTML supported by Qt.
 
 		self.articles = {}  # type: Dict[str, List[List[str]]]  # All of the articles by key. Key: article ID, value: Lists of items in each article.
+		self.load_definitions()
+		self.article_locations = self.find_articles()
 		self._selected_article_id = ""  # Which article is currently shown for the user. Empty string indicates it's the welcome screen.
 
 		# Add context menu item to the settings list to open the guide for that setting.
@@ -120,7 +122,6 @@ class CuraSettingsGuide(Extension, QObject):
 		article is requested. It also makes sure that the setting description
 		is correctly displayed (after a while).
 		"""
-		self.load_definitions()  # Ensure that we have a list of articles.
 		for article_id in self._container_stack.getAllKeys():
 			self._getArticle(article_id)  # Load articles one by one.
 		Logger.log("i", "Finished loading Settings Guide articles.")
@@ -144,6 +145,20 @@ class CuraSettingsGuide(Extension, QObject):
 		self._container_stack = ContainerStack("settings_guide_stack")
 		self._container_stack.addContainer(definition_container)
 		ContainerRegistry.getInstance().addContainer(self._container_stack)
+
+	def find_articles(self):
+		"""
+		For each article, find where the Markdown file is located.
+		:return: A dictionary mapping article ID to file path.
+		"""
+		result = {}
+		for root, _, files in os.walk(os.path.join(os.path.dirname(__file__), "resources", "articles")):
+			for filename in files:
+				base_name, extension = os.path.splitext(filename)
+				if extension != ".md":
+					continue  # Only interested in article files.
+				result[base_name] = os.path.join(root, filename)
+		return result
 
 	def load_window(self):
 		"""
@@ -201,11 +216,11 @@ class CuraSettingsGuide(Extension, QObject):
 		if article_id in self.articles:
 			return self.articles[article_id]
 
-		markdown_file = os.path.join(os.path.dirname(__file__), "resources", "articles", article_id + ".md")
 		try:
+			markdown_file = self.article_locations[article_id]
 			with open(markdown_file, encoding="utf-8") as f:
 				markdown_str = f.read()
-		except OSError:  # File doesn't exist or is otherwise not readable.
+		except (OSError, KeyError):  # File doesn't exist or is otherwise not readable.
 			if self._container_stack and article_id in self._container_stack.getAllKeys():
 				markdown_str = "*" + self._container_stack.getProperty(article_id, "description") + "*"  # Use the setting description as fallback.
 			else:
