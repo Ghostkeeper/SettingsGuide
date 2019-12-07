@@ -32,7 +32,7 @@ class TestLinks(unittest.TestCase):
 		"""
 		Test if the links to images are correct.
 		"""
-		find_images = re.compile(r"!\[.*\]\((.+)\)")
+		find_images = re.compile(r"!\[.*\]\(([^\)]*)\)")
 		for filename in self.all_articles():
 			with self.subTest():
 				with open(filename) as f:
@@ -45,7 +45,7 @@ class TestLinks(unittest.TestCase):
 		"""
 		Test if the links to other articles are correct.
 		"""
-		find_links = re.compile(r"\[.*\]\((.+)\)")
+		find_links = re.compile(r"\[.*\]\(([^\)]*)\)")
 		for filename in self.all_articles():
 			with self.subTest():
 				with open(filename) as f:
