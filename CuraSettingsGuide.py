@@ -198,56 +198,58 @@ class CuraSettingsGuide(Extension, QObject):
 		taken from the cache.
 		:param article_id: The ID of the article to get.
 		"""
-		if article_id not in self.articles:
-			markdown_file = os.path.join(os.path.dirname(__file__), "resources", "articles", article_id + ".md")
-			try:
-				with open(markdown_file, encoding="utf-8") as f:
-					markdown_str = f.read()
-			except OSError:  # File doesn't exist or is otherwise not readable.
-				if self._container_stack and article_id in self._container_stack.getAllKeys():
-					markdown_str = "*" + self._container_stack.getProperty(article_id, "description") + "*"  # Use the setting description as fallback.
-				else:
-					markdown_str = "There is no article on this topic."
+		if article_id in self.articles:
+			return self.articles[article_id]
 
-			images_path = os.path.join(os.path.dirname(__file__), "resources", "articles")
-			preferences = CuraApplication.getInstance().getPreferences()
-			find_images = re.compile(r"!\[(.*)\]\((.+)\)")
-			find_checkboxes = re.compile(r"\[ \]\s*(.+)(?:$|\n)")
-			image_description = None
-			parts = []  # type: List[List[str]]  # List of items in the article. Each item starts with a type ID, and then a variable number of data items.
-			for index, part_between_images in enumerate(find_images.split(markdown_str)):
-				# The parts of the regex split alternate between text, image description and image URL.
-				if index % 3 == 0:
-					part_between_images = part_between_images.strip()
-					if part_between_images or index == 0:
-						parts_between_checkboxes = find_checkboxes.split(part_between_images)
-						for index2, part_between_checkboxes in enumerate(parts_between_checkboxes):
-							# The parts of the regex split alternate between text and checkbox description.
-							if index2 % 2 == 0:
-								rich_text = self._markdown(part_between_checkboxes)
-								parts.append(["rich_text", rich_text])
-							else:  # if index2 == 1:
-								preference_key = "settings_guide/" + urllib.parse.quote_plus(part_between_checkboxes).lower()
-								parts.append(["checkbox", preference_key, part_between_checkboxes])
-				elif index % 3 == 1:
-					image_description = mistune.markdown(part_between_images)
-				else:  # if index % 3 == 2:
-					if image_description is not None:
-						if parts[-1][0] != "images":  # List of images.
-							parts.append(["images"])
-						image_url = os.path.join(images_path, part_between_images)
-						parts[-1].append(QUrl.fromLocalFile(image_url).toString() + "|" + image_description)
-						image_description = None
+		markdown_file = os.path.join(os.path.dirname(__file__), "resources", "articles", article_id + ".md")
+		try:
+			with open(markdown_file, encoding="utf-8") as f:
+				markdown_str = f.read()
+		except OSError:  # File doesn't exist or is otherwise not readable.
+			if self._container_stack and article_id in self._container_stack.getAllKeys():
+				markdown_str = "*" + self._container_stack.getProperty(article_id, "description") + "*"  # Use the setting description as fallback.
+			else:
+				markdown_str = "There is no article on this topic."
 
-			self.articles[article_id] = parts
+		images_path = os.path.join(os.path.dirname(__file__), "resources", "articles")
+		preferences = CuraApplication.getInstance().getPreferences()
+		find_images = re.compile(r"!\[(.*)\]\((.+)\)")
+		find_checkboxes = re.compile(r"\[ \]\s*(.+)(?:$|\n)")
+		image_description = None
+		parts = []  # type: List[List[str]]  # List of items in the article. Each item starts with a type ID, and then a variable number of data items.
+		for index, part_between_images in enumerate(find_images.split(markdown_str)):
+			# The parts of the regex split alternate between text, image description and image URL.
+			if index % 3 == 0:
+				part_between_images = part_between_images.strip()
+				if part_between_images or index == 0:
+					parts_between_checkboxes = find_checkboxes.split(part_between_images)
+					for index2, part_between_checkboxes in enumerate(parts_between_checkboxes):
+						# The parts of the regex split alternate between text and checkbox description.
+						if index2 % 2 == 0:
+							rich_text = self._markdown(part_between_checkboxes)
+							parts.append(["rich_text", rich_text])
+						else:  # if index2 == 1:
+							preference_key = "settings_guide/" + urllib.parse.quote_plus(part_between_checkboxes).lower()
+							parts.append(["checkbox", preference_key, part_between_checkboxes])
+			elif index % 3 == 1:
+				image_description = mistune.markdown(part_between_images)
+			else:  # if index % 3 == 2:
+				if image_description is not None:
+					if parts[-1][0] != "images":  # List of images.
+						parts.append(["images"])
+					image_url = os.path.join(images_path, part_between_images)
+					parts[-1].append(QUrl.fromLocalFile(image_url).toString() + "|" + image_description)
+					image_description = None
 
-			if preferences.getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
-				# Load the article into the actual setting description as well.
-				global_stack = CuraApplication.getInstance().getGlobalContainerStack()
-				if global_stack and article_id in global_stack.getAllKeys():
-					complete_article = self._markdown(markdown_str)
-					definition = global_stack.definition.findDefinitions(key=article_id)[0]
-					definition._SettingDefinition__property_values["description"] = complete_article
+		self.articles[article_id] = parts
+
+		if preferences.getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
+			# Load the article into the actual setting description as well.
+			global_stack = CuraApplication.getInstance().getGlobalContainerStack()
+			if global_stack and article_id in global_stack.getAllKeys():
+				complete_article = self._markdown(markdown_str)
+				definition = global_stack.definition.findDefinitions(key=article_id)[0]
+				definition._SettingDefinition__property_values["description"] = complete_article
 
 		return self.articles[article_id]
 
