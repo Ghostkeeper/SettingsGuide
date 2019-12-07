@@ -147,14 +147,23 @@ class CuraSettingsGuide(Extension, QObject):
 
 	def load_window(self):
 		"""
-		Do all the things necessary to start using the guide.
+		Create the GUI window for the guide.
+
+		The window's QML element is stored in a field. There can only be one
+		instance at a time.
 		"""
 		self.load_definitions()
 
+		if self._dialog:
+			return  # Dialogue already open.
+		Logger.log("d", "Creating Settings Guide window.")
+		plugin_path = PluginRegistry.getInstance().getPluginPath(self.getPluginId())
+		if plugin_path is None:
+			plugin_path = os.path.dirname(__file__)
+		path = os.path.join(plugin_path, "resources", "qml", "SettingsGuide.qml")
+		self._dialog = CuraApplication.getInstance().createQmlComponent(path, {"manager": self})
 		if not self._dialog:
-			self._dialog = self._createDialog("SettingsGuide.qml")
-			if not self._dialog:
-				Logger.log("e", "Unable to create settings guide dialogue.")
+			Logger.log("e", "Unable to create settings guide dialogue.")
 
 	def startWelcomeGuide(self) -> None:
 		"""
@@ -177,21 +186,6 @@ class CuraSettingsGuide(Extension, QObject):
 		self.currentArticleReset.emit()
 		self.setSelectedArticleId(article_key)
 		self._dialog.show()
-
-	def _createDialog(self, qml_name: str) -> Optional["QObject"]:
-		"""
-		Creates an instance of the QML item for the dialogue window of the
-		guide.
-		:param qml_name: The filename of the QML to create.
-		:return: The QML instance.
-		"""
-		Logger.log("d", "Settings Guide: Create dialog from QML [%s]", qml_name)
-		plugin_path = PluginRegistry.getInstance().getPluginPath(self.getPluginId())
-		if plugin_path is None:
-			plugin_path = os.path.dirname(__file__)
-		path = os.path.join(plugin_path, "resources", "qml", qml_name)
-		dialog = CuraApplication.getInstance().createQmlComponent(path, {"manager": self})
-		return dialog
 
 	currentArticleReset = pyqtSignal() #Signal to indicate that the article list should reset its current index.
 
