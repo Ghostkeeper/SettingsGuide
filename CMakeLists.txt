@@ -24,6 +24,19 @@ ExternalProject_Add(Mistune
 	INSTALL_COMMAND ""
 )
 
+#Tests.
+option(BUILD_TESTS "Build tests to verify correctness of the plug-in." ON)
+if(BUILD_TESTS)
+	find_package(Python3 COMPONENTS Interpreter) #Python is required to run the tests.
+	enable_testing()
+	set(test_packages
+		links.py
+	)
+	foreach(test_case ${test_packages})
+		add_test(${test_case} ${Python3_EXECUTABLE} "${CMAKE_SOURCE_DIR}/test/${test_case}")
+	endforeach()
+endif()
+
 #Installation.
 configure_file("${CMAKE_CURRENT_SOURCE_DIR}/plugin.json.in" plugin.json)
 set(installed_files
