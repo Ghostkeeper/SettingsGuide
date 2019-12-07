@@ -41,5 +41,22 @@ class TestLinks(unittest.TestCase):
 					image_path = os.path.join(os.path.dirname(filename), image_link)
 					assert os.path.exists(image_path), "Article {article_path} refers to image {image_path}, which doesn't exist.".format(article_path=filename, image_path=image_link)
 
+	def test_articles(self):
+		"""
+		Test if the links to other articles are correct.
+		"""
+		find_links = re.compile(r"\[.*\]\((.+)\)")
+		for filename in self.all_articles():
+			with self.subTest():
+				with open(filename) as f:
+					contents = f.read()
+				for link in find_links.findall(contents):
+					if not link.endswith(".md"):
+						continue  # Only find articles.
+					if link.startswith("https://"):
+						continue  # Don't find articles on the internet either.
+					article_path = os.path.join(os.path.dirname(filename), link)
+					assert os.path.exists(article_path), "Article {article_path} refers to article {path}, which doesn't exist.".format(article_path=filename, path=article_path)
+
 if __name__ == "__main__":
 	unittest.main()
