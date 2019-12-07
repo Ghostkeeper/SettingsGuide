@@ -2,7 +2,7 @@ When the support brim is activated, an additional brim will be drawn inside the 
 
 ![The support brim](../images/support_brim_4mm.png)
 
-The support brim is drawn towards the *inside*, unlike the ordinary brim. If the [Build Plate Adhesion Type](adhesion_type.md) is set to Brim, another brim will also be drawn *around* the support.
+The support brim is drawn towards the *inside*, unlike the ordinary brim. If the [Build Plate Adhesion Type](../platform_adhesion/adhesion_type.md) is set to Brim, another brim will also be drawn *around* the support.
 
 The purpose of this brim is to give the support more surface area where it can adhere to the build plate. This can also be achieved by adjusting the [Initial Layer Support Line Distance](support_initial_layer_line_distance.md), but with this feature the adhesion will be concentrated around the edge of the support area, where it is more effective to prevent warping.
 

@@ -1,4 +1,4 @@
-This setting adds a number of contours around the infill areas. This is similar to increasing the [number of walls](wall_line_count.md), but the contours do not go around the skin and the walls will be between the skin and the infill as well. It is also similar to adding [extra skin walls](skin_outline_count.md), but around the infill instead of around the skin.
+This setting adds a number of contours around the infill areas. This is similar to increasing the [number of walls](../shell/wall_line_count.md), but the contours do not go around the skin and the walls will be between the skin and the infill as well. It is also similar to adding [extra skin walls](../shell/skin_outline_count.md), but around the infill instead of around the skin.
 
 These walls are printed with the infill settings.
 

@@ -6,26 +6,26 @@ The layer height is adjusted such that the horizontal distance between the edges
 
 If the model has both shallow surfaces and steep surfaces at the same height, the layer thickness is taken to be the smaller of the layer thicknesses. This sometimes makes the layer height unnecessarily small because there is a horizontal surface next to it. This can be seen in the screenshot above as well halfway the height of the silo on the left.
 
-Adaptive Layers is heavily constrained in order to improve printing quality. The layer height is not allowed to deviate more than a specified [Maximum Variation](adaptive_layer_height_variation.md) from the original [Layer Height](layer_height.md) setting. Between two adjacent layers the difference in layer height may not be more than a certain [Step Size](adaptive_layer_height_variation_step.md). This causes the layer thickness to gradually transition instead of suddenly cutting it in half from one layer to the next.
+Adaptive Layers is heavily constrained in order to improve printing quality. The layer height is not allowed to deviate more than a specified [Maximum Variation](adaptive_layer_height_variation.md) from the original [Layer Height](../resolution/layer_height.md) setting. Between two adjacent layers the difference in layer height may not be more than a certain [Step Size](adaptive_layer_height_variation_step.md). This causes the layer thickness to gradually transition instead of suddenly cutting it in half from one layer to the next.
 
 Adaptive Layers can considerably reduce the printing time without suffering a loss in print quality, or even while improving quality in some cases. The effect of adjusting the layer thickness is immense. In most cases, the printing time will be greatly reduced, due to using thicker layers where the model is vertical. The topography effect is also reduced because the layers are spaced closer together horizontally.
 
 However this feature can introduce a number of problems as well.
 * With changing the layer height, some other settings typically need to be adjusted as well, such as the nozzle temperature. Adaptive Layers will not automatically adjust those as well. This can make the print sub-optimal for e.g. overhangs that would fare better at a lower printing temperature.
 * If the layer height is changed over the entire layer for a small feature somewhere in a small part of the layer, banding will be visible in the rest of the layer.
-* Vertical distances are unintentionally adjusted with this as well. This may have a negative effect on the print quality. For instance, the [Top/Bottom Thickness](top_bottom_thickness.md) will typically become lower because Cura will hold the [Top Layers](top_layers.md) setting as truth, and the layers become thinner. This can cause pillowing. Affected settings that may no longer be correct include:
-  * [Top Thickness](top_thickness.md)
-  * [Bottom Thickness](bottom_thickness.md)
-  * [Maximum Skin Angle for Expansion](max_skin_angle_for_expansion.md)
-  * [Gradual Infill Step Height](gradual_infill_step_height.md)
-  * [Gradual Support Infill Step Height](gradual_support_infill_step_height.md)
-  * [Infill Layer Thickness](infill_sparse_thickness.md)
-  * [Support Infill Layer Thickness](support_infill_sparse_thickness.md)
-  * [Support Z Distance](support_z_distance.md)
-  * [Support Roof Thickness](support_roof_height.md)
-  * [Support Floor Thickness](support_bottom_height.md)
-  * [Support Overhang Angle](support_angle.md)
-  * [Support Stair Step Height](support_bottom_stair_step_height.md)
-  * [Tower Roof Angle](support_tower_roof_angle.md)
-  * [Ooze Shield Angle](ooze_shield_angle.md)
-  * [Maximum Model Angle](conical_overhang_angle.md)
+* Vertical distances are unintentionally adjusted with this as well. This may have a negative effect on the print quality. For instance, the [Top/Bottom Thickness](../shell/top_bottom_thickness.md) will typically become lower because Cura will hold the [Top Layers](../shell/top_layers.md) setting as truth, and the layers become thinner. This can cause pillowing. Affected settings that may no longer be correct include:
+  * [Top Thickness](../shell/top_thickness.md)
+  * [Bottom Thickness](../shell/bottom_thickness.md)
+  * [Maximum Skin Angle for Expansion](../infill/max_skin_angle_for_expansion.md)
+  * [Gradual Infill Step Height](../infill/gradual_infill_step_height.md)
+  * [Gradual Support Infill Step Height](../support/gradual_support_infill_step_height.md)
+  * [Infill Layer Thickness](../infill/infill_sparse_thickness.md)
+  * [Support Infill Layer Thickness](../support/support_infill_sparse_thickness.md)
+  * [Support Z Distance](../support/support_z_distance.md)
+  * [Support Roof Thickness](../support/support_roof_height.md)
+  * [Support Floor Thickness](../support/support_bottom_height.md)
+  * [Support Overhang Angle](../support/support_angle.md)
+  * [Support Stair Step Height](../support/support_bottom_stair_step_height.md)
+  * [Tower Roof Angle](../support/support_tower_roof_angle.md)
+  * [Ooze Shield Angle](../dual/ooze_shield_angle.md)
+  * [Maximum Model Angle](../experimental/conical_overhang_angle.md)

@@ -6,4 +6,4 @@ The goal of this feature is to reduce the visibility of the seam. When the wall 
 
 The seam will still be visible, but the result should be slightly better with a small wipe distance. Increasing this setting too much has no more effect since the nozzle travels beyond the seam, and may cause some underextrusion later as the nozzle chamber empties by oozing on the outer wall.
 
-This effect is basically the opposite of [coasting](coasting_enable.md), which will stop extruding slightly before the contour is finished.
+This effect is basically the opposite of [coasting](../experimental/coasting_enable.md), which will stop extruding slightly before the contour is finished.

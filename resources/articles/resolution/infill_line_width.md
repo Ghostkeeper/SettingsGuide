@@ -4,4 +4,4 @@ The width of every line of infill being drawn. The width of a line can be differ
 
 Making the infill lines wider can make your print stronger and reduce printing time as well. However, increasing it too much can cause great extrusion fluctuations. This will cause underextrusion when printing the infill and overextrusion when printing whatever comes after infill, because the flow through the nozzle cannot adjust fast enough.
 
-**The actual infill lines may come out wider than what this setting says, if you've adjusted the [Infill Layer Thickness](infill_sparse_thickness.md) setting.**
+**The actual infill lines may come out wider than what this setting says, if you've adjusted the [Infill Layer Thickness](../infill/infill_sparse_thickness.md) setting.**

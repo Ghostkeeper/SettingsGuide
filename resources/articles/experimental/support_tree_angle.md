@@ -6,7 +6,7 @@ This setting determines the maximum overhang angle that the branches of tree sup
 Reducing the branch angle will make the branches more vertical. Increasing it will make them go more horizontal. Because the branches are allowed to have greater overhang angles, they can reach farther around obstacles, allowing the support to rest on the build plate more often, rather than on the model. It will also allow the branches to split off at a later point.
 
 The most important effects of increasing the branch angle for tree support include:
-* Reduced scarring, due to less support needing to rest on the model rather than the build plate. If [Support Placement](support_type.md) is set to Touching Buildplate, more of the model can be supported.
+* Reduced scarring, due to less support needing to rest on the model rather than the build plate. If [Support Placement](../support/support_type.md) is set to Touching Buildplate, more of the model can be supported.
 * Reduced printing time and material usage, due to the branches splitting off at higher elevations. The branches are split off just in time to be able to reach all of the overhang.
 * Reduced reliability. If the overhang angle becomes too great, the support will be greatly weakened, increasing the chance that the support breaks or tumbles over.
 

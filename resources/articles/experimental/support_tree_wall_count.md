@@ -6,4 +6,4 @@ More walls will make the support much more sturdy, especially with large [angles
 
 However it will also greatly increase the time and material spent on the support.
 
-This setting works very similar to the [Support Wall Line Count](support_wall_count.md) setting.
+This setting works very similar to the [Support Wall Line Count](../support/support_wall_count.md) setting.

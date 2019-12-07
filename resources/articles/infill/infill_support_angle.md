@@ -1,4 +1,4 @@
-When using infill support, this setting determines the minimum overhang angle of the surface that needs to get supported. This is similar to the [Overhang Angle](support_angle.md) setting for ordinary support.
+When using infill support, this setting determines the minimum overhang angle of the surface that needs to get supported. This is similar to the [Overhang Angle](../support/support_angle.md) setting for ordinary support.
 
 ![A low angle results in more support](../images/infill_support_angle_low.png)
 ![A high angle results in less support](../images/infill_support_angle_high.png)
