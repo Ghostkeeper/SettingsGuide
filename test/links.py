@@ -51,9 +51,7 @@ class TestLinks(unittest.TestCase):
 				with open(filename) as f:
 					contents = f.read()
 				for link in find_links.findall(contents):
-					if not link.endswith(".md"):
-						continue  # Only find articles.
-					if link.startswith("https://"):
+					if link.startswith("https://") or link.startswith("http://"):
 						continue  # Don't find articles on the internet either.
 					article_path = os.path.join(os.path.dirname(filename), link)
 					assert os.path.exists(article_path), "Article {article_path} refers to article {path}, which doesn't exist.".format(article_path=filename, path=article_path)
