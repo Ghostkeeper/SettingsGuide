@@ -1,7 +1,7 @@
 If this setting is enabled, the support structure will no longer be completely vertical on the sides. The support will get a conical shape, getting either smaller or larger towards the bottom.
 
-![The support gets smaller towards the bottom](images/support_conical_enabled.png)
-![The support gets larger towards the bottom](images/support_conical_angle_neg10.png)
+![The support gets smaller towards the bottom](../images/support_conical_enabled.png)
+![The support gets larger towards the bottom](../images/support_conical_angle_neg10.png)
 
 The support itself will slope with a certain [angle](support_conical_angle.md). With negative angles, the support will get larger towards the bottom, making the support significantly more stable. With positive angles, it will get smaller towards the bottom. This saves a lot of material and printing time. To prevent the support from getting unstable, a [minimum width](support_conical_min_width.md) can be defined for the support as well.
 

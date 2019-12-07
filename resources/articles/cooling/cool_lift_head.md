@@ -4,6 +4,6 @@ If this setting is enabled and the print head should move slower than the Minimu
 
 If this setting is disabled, then the print head will wait at the end of the layer instead, with the nozzle touching the print.
 
-![When the minimum layer time is reached, the head may lift up](images/cool_fan_speed.svg)
+![When the minimum layer time is reached, the head may lift up](../images/cool_fan_speed.svg)
 
 The print head will always move up by 3mm. There is no setting to configure this at the moment.

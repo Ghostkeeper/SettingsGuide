@@ -1,7 +1,7 @@
 With some support patterns, the support can become very unstable when thin strips of support are needed. This setting will cause the endpoints of the support lines to be connected together. This gives them more stability. It also makes the support print with more continuous flow. Fewer travel moves will be necessary.
 
-![Disconnected support lines](images/zig_zaggify_support_disabled.png)
-![Connected support lines](images/zig_zaggify_support_enabled.png)
+![Disconnected support lines](../images/zig_zaggify_support_disabled.png)
+![Connected support lines](../images/zig_zaggify_support_enabled.png)
 
 When a support line is drawn, instead of travelling to the next line, a line will be drawn along the border of the support area towards the next line. This converts the entire support pattern into a single or very few lines. Converting it into a single line is not always possible. The starting point of this line is arbitrary, so very often there will be lines hanging in mid-air because in one layer two lines may be connected on one end-point, while on the next layer they are connected on the other side. This makes support somewhat weaker but still stable and it still prevents interruptions in flow. The behaviour of this setting is the same as for [Connect Infill Lines](zig_zaggify_infill.md).
 

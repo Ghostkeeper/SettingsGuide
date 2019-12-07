@@ -1,6 +1,6 @@
 If the [Wire Printing Strategy](wireframe_strategy.md) is set to "Knot", a little upwards and backwards motion will be made at the top of each saw tooth. This setting configures the magnitude of that motion.
 
-![Where the knot is drawn and what its size entails](images/wireframe_top_jump.svg)
+![Where the knot is drawn and what its size entails](../images/wireframe_top_jump.svg)
 
 The motion for this "knot" is a series of travel moves:
 1. First, the nozzle will move upwards by the distance indicated by this setting. At the same time, the nozzle will move backwards by half of this distance.

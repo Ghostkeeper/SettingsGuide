@@ -1,7 +1,7 @@
 In this setting, you can provide an image that specifies the density in various places across the infill. The infill density will vary in certain places depending on the brightness of the image. This only works for the [Cross (3D) pattern](infill_pattern.md), since that pattern is able to adjust its density without chopping up lines, which would result in interrupted flow and reduced strength.
 
-![The infill density varies across the object](images/cross_infill_density_image.png)
-![The image file used to create that pattern](images/cross_infill_density_image_mask.png)
+![The infill density varies across the object](../images/cross_infill_density_image.png)
+![The image file used to create that pattern](../images/cross_infill_density_image_mask.png)
 
 The path to the image is provided as a local path, for instance `C:\Projects\3D Printing\infill_density.png` on Windows or `/home/ghostkeeper/3d_printing/infill_density.png` on Unix. Supported file formats are JPG, PNG, TGA, BMP, PSD, GIF, HDR and PIC. Image is scaled over the object such that it fits the bounding box of the object exactly. The brightness in the image determines the infill density:
 * Where the image is black, the [infill density](infill_sparse_density.md) is used.

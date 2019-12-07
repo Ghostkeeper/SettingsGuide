@@ -1,7 +1,7 @@
 This setting makes the Cubic Subdivision infill pattern start reducing infill a bit more towards the inside, to improve the strength of the print.
 
-![Cubic Subdivision with no additional shell](images/sub_div_rad_add_small.png)
-![Additional shell of 5mm](images/sub_div_rad_add_large.png)
+![Cubic Subdivision with no additional shell](../images/sub_div_rad_add_small.png)
+![Additional shell of 5mm](../images/sub_div_rad_add_large.png)
 
 Cubic Subdivision works by removing the borders between eight adjacent cubes if none of the cubes touch the border of the infill volume. This setting moves that border further inside, preventing the borders between the cubes from being removed.
 

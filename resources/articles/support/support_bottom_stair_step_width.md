@@ -2,6 +2,6 @@ If [Support Placement](support_type.md) is set to "Everywhere", the support is a
 
 This setting determines the maximum width of these steps. The step normally gets a width that follows the model's surface with a given value of [Support Stair Step Height](support_bottom_stair_step_height.md). However if that is too wide, the width gets limited to the Support Stair Step Maximum Width. It then follows the model's surface for the rest of the step.
 
-![Stair steps limited in width, causing support to follow the model](images/support_bottom_stair_step_width.png)
+![Stair steps limited in width, causing support to follow the model](../images/support_bottom_stair_step_width.png)
 
 This setting should normally be set to the maximum distance that can be bridged by the material without compromising the stability of the support lines above it. Lowering the setting causes the support to follow the model more often, making support more stable. Increasing the setting causes the support to adhere to the set value for Support Stair Step Height more often, making support easier to remove from the model.

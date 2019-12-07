@@ -1,6 +1,6 @@
 By increasing this setting, Cura will place down more infill lines directly next to the other infill lines.
 
-![Multiplied by 3](images/infill_multiplier.png)
+![Multiplied by 3](../images/infill_multiplier.png)
 
 This effectively increases the infill density beyond what the [Infill Density](infill_sparse_density.md) setting specifies, but instead of spacing the infill lines out evenly, the lines are placed directly adjacent to each other. Compared to simply increasing the infill density, this may increase the strength of the infill since the infill lines are able to lean on each other for extra rigidity.
 

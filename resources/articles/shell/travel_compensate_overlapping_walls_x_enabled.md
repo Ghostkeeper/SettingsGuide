@@ -1,7 +1,7 @@
 When printing thin parts, opposite walls may come close enough together that they overlap. When printing both walls with their normal line width they would overextrude. This setting prevents that overextrusion by reducing the width of one of the lines, preventing this overextrusion and achieving a better dimensional accuracy.
 
-![All lines are extruded with their full width, creating a part that will be too wide](images/travel_compensate_overlapping_walls_x_enabled_disabled.png)
-![Half of the lines have reduced their width, resulting in a more accurate print](images/travel_compensate_overlapping_walls_x_enabled_enabled.png)
+![All lines are extruded with their full width, creating a part that will be too wide](../images/travel_compensate_overlapping_walls_x_enabled_disabled.png)
+![Half of the lines have reduced their width, resulting in a more accurate print](../images/travel_compensate_overlapping_walls_x_enabled_enabled.png)
 
 This setting applies only to the inner walls. Compensating for overlap in the inner walls is less visible on the outside, as fewer artifacts of the flow rate changes will be visible, but it will nonetheless contribute just as much to reducing the effect of overextrusion, since the inner walls will be pushed less to the outside.
 

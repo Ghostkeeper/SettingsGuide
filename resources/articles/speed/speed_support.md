@@ -1,6 +1,6 @@
 This setting configures the speed at which the support structures are printed.
 
-![Various structures printed at different speeds](images/speed_difference.png)
+![Various structures printed at different speeds](../images/speed_difference.png)
 
 Normally the support doesn't need to be printed very accurately, so it is safe to print the support at a higher speed than the rest of the print. This can save some printing time.
 

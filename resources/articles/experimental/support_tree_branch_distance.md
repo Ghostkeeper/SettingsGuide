@@ -1,7 +1,7 @@
 This setting determines the distance between two adjacent branches where the branches touch the build plate.
 
-![Branches placed 1.4mm apart](images/support_tree_branch_distance_1_4.png)
-![Branches placed 5mm apart](images/support_tree_branch_distance_5.png)
+![Branches placed 1.4mm apart](../images/support_tree_branch_distance_1_4.png)
+![Branches placed 5mm apart](../images/support_tree_branch_distance_5.png)
 
 In order to support the model, tree support will place contact points underneath the model in a staggered grid pattern. This setting essentially determines the size of that grid and thereby how far apart the branches are placed. Due to the alignment of the branches with respect to the (default) direction of the skin lines, the distance that the skin lines need to bridge will most likely be greater than this distance.
 

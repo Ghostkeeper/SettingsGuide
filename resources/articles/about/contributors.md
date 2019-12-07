@@ -12,4 +12,4 @@ Articles
 * Jeroen Stevens: Much of the content of v1.0.
 * ChrisTerBeke: Article about Adaptive Layer Height.
 
-![](images/created_by.jpg)
+![](../images/created_by.jpg)

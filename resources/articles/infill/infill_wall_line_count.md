@@ -2,7 +2,7 @@ This setting adds a number of contours around the infill areas. This is similar 
 
 These walls are printed with the infill settings.
 
-![Two extra walls around the infill](images/infill_wall_line_count.png)
+![Two extra walls around the infill](../images/infill_wall_line_count.png)
 
 Compared to adding extra walls around the skin, this setting greatly increases strength of the model and reduces the visibility of infill through the skin, but also increases printing time and material usage. Whereas extra skin walls will replace material that would've been printed as skin anyway, this setting actually adds material unless the infill density is already 100%.
 

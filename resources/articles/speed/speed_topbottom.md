@@ -1,6 +1,6 @@
 The speed at which the top and bottom side of the model is printed can be configured separately from the normal print speed.
 
-![Various structures printed at different speeds](images/speed_difference.png)
+![Various structures printed at different speeds](../images/speed_difference.png)
 
 This should typically be printed fairly slowly if there is any overhang in the model. If there is not, printing it fast can save a lot of printing time. Printing the top and bottom side of the model slowly will cause the following effects:
 * It increases printing time, sometimes drastically. Since the top and bottom sides have long lines, the speed has the greatest effect on printing time, rather than acceleration and jerk. Top and bottom can be a significant part of the total printing time.

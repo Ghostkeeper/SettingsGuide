@@ -1,6 +1,6 @@
 Adaptive Layers will adjust the layer thickness of your print locally to optimise printing time and quality based on the model's surface features. The layers will be made thinner where there are shallow slopes, or made thicker where the walls are steep. The purpose of this is to print fast where possible but still print detailed where needed.
 
-![With the "layer thickness" colour scheme, you can see it colour thinner layers blue and thicker layers yellow](images/adaptive_layer_height_enabled.png)
+![With the "layer thickness" colour scheme, you can see it colour thinner layers blue and thicker layers yellow](../images/adaptive_layer_height_enabled.png)
 
 The layer height is adjusted such that the horizontal distance between the edges of the layers remains constant. Shallow surfaces cause a big horizontal displacement with a small vertical displacement, so a small vertical displacement is made to keep the horizontal displacement constant. With steep surfaces there is a small horizontal displacement with a large vertical displacement, so a large vertical displacement is made to keep the horizontal displacement constant. As such the topography effect of the layers is kept constant. The maximum distance between two adjacent layers is held at a constant distance of the [Threshold](adaptive_layer_height_threshold.md) setting.
 

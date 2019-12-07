@@ -1,7 +1,7 @@
 While high resolution input may seem better at first, quite often the printer doesn't deal with high resolution g-code very well. Therefore Cura will reduce the resolution of its input during the slicing process. This setting determines the resolution that Cura will hold as maximum.
 
-![Before reducing resolution](images/meshfix_maximum_resolution_0.05.png)
-![After reducing resolution (ad extremum)](images/meshfix_maximum_resolution_1.png)
+![Before reducing resolution](../images/meshfix_maximum_resolution_0.05.png)
+![After reducing resolution (ad extremum)](../images/meshfix_maximum_resolution_1.png)
 
 The printer needs to process the g-code while it's being executed. If the g-code contains many tiny line segments, the print head may race through the motion so fast that the processor of the 3D printer is unable to keep up. This has the effect that the print head will sporadically slow down to allow the CPU to catch up or plainly to wait for the next motion command. This causes the surface to become very rough or even to show small blobs because the flow rate out the nozzle doesn't perfectly match the sporadic movement of the nozzle. Sometimes a lower resolution results in better print quality.
 

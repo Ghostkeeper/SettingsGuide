@@ -1,6 +1,6 @@
 While printing the downward diagonal motion of the saw-tooth pattern for Wire Printing, the material tends to get dragged along a bit. This setting compensates for that effect by transforming the shape of the saw-tooth pattern slightly. The tips of the teeth are brought upwards and back.
 
-![The tips of the saw teeth are moved backwards and up](images/wireframe_drag_along.svg)
+![The tips of the saw teeth are moved backwards and up](../images/wireframe_drag_along.svg)
 
 The tips of the teeth are moved exactly opposite of the diagonal downward motion. As the material gets dragged along, hopefully the tips of the saw-tooth pattern end up in its intended location.
 

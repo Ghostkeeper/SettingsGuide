@@ -2,8 +2,8 @@ Normally, Cura will omit walls that are thinner than the [Outer Wall Line Width]
 
 If this setting is enabled, Cura will make an attempt at printing these pieces anyway. The resulting print will be inaccurate and messy, but it should produce the desired shape somewhat reliably.
 
-![Some parts are too thin to print](images/fill_outline_gaps_disabled.png)
-![With this setting enabled, even thin parts will get printed](images/fill_outline_gaps_enabled.png)
+![Some parts are too thin to print](../images/fill_outline_gaps_disabled.png)
+![With this setting enabled, even thin parts will get printed](../images/fill_outline_gaps_enabled.png)
 
 The tiny pieces are filled with extremely thin lines. These lines are then combined if they are adjacent to one another and not too long. This works for many cases, but in some cases it produces a tiny zig zag, significantly increasing printing time.
 

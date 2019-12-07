@@ -1,7 +1,7 @@
 This setting will transform your model such that it doesn't have any overhang any more. It will place extra material underneath any overhang and print that as if it were part of the model.
 
-![A tower with some overhanging pieces](images/conical_overhang_enabled_disabled.png)
-![The overhang is made printable](images/conical_overhang_enabled_enabled.png)
+![A tower with some overhanging pieces](../images/conical_overhang_enabled_disabled.png)
+![The overhang is made printable](../images/conical_overhang_enabled_enabled.png)
 
 Underneath all overhanging pieces some material is placed that gradually grows smaller further downwards. In many cases the overhang will be sloped towards the object itself. The slope at which the overhang is made to grow towards the object is determined by the [model angle](conical_overhang_angle.md).
 

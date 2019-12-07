@@ -1,7 +1,7 @@
 If the desired layer thickness of one layer is very different from an adjacent layer, there will be a large difference in the flow rate out the nozzle which can cause overextrusion or underextrusion. This setting makes sure that the difference in layer thickness is a gradual change, to prevent that. With this setting you can specify the maximum change in layer thickness between two adjacent layers.
 
-![A large step size allows very sudden changes in layer thickness](images/adaptive_layer_height_variation_step_0_05.png)
-![A small step size requires changes in layer thickness to be smoother](images/adaptive_layer_height_enabled.png)
+![A large step size allows very sudden changes in layer thickness](../images/adaptive_layer_height_variation_step_0_05.png)
+![A small step size requires changes in layer thickness to be smoother](../images/adaptive_layer_height_enabled.png)
 
 Reducing this setting will force the layer thickness to transition more gradually. This has a number of effects on the print:
 * There will be less overextrusion when transitioning to a lower layer thickness, because the flow out the nozzle has some time to adjust to a lower flow rate. This prevents blobs on the surface.

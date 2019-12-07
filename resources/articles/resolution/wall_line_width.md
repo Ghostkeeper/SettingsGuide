@@ -1,6 +1,6 @@
 The line width for the walls can be adjusted separately from the rest of the print. This setting indicates how wide the individual wall lines will be.
 
-![The lines for the walls are much wider than the rest](images/wall_line_width.png)
+![The lines for the walls are much wider than the rest](../images/wall_line_width.png)
 
 Reducing the walls to a line width slightly below the nozzle size is known to be beneficial for strength. The nozzle will extrude slightly less material but its opening will overlap with the adjacent wall lines. This causes the material to be pushed aside by the previously-placed wall into its proper location. But that will also cause the plastic to fuse better to the adjacent walls. This allows the walls to fuse better together so that they can combine their strength. This greatly improves the strength of the walls.
 

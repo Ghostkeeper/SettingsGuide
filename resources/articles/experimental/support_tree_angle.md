@@ -1,7 +1,7 @@
 This setting determines the maximum overhang angle that the branches of tree support are allowed to make. If the angle is increased, the branches can be printed more horizontally, allowing them to reach farther.
 
-![A branch angle of 20°](images/support_tree_angle_20.png)
-![A branch angle of 40°](images/support_tree_angle_40.png)
+![A branch angle of 20°](../images/support_tree_angle_20.png)
+![A branch angle of 40°](../images/support_tree_angle_40.png)
 
 Reducing the branch angle will make the branches more vertical. Increasing it will make them go more horizontal. Because the branches are allowed to have greater overhang angles, they can reach farther around obstacles, allowing the support to rest on the build plate more often, rather than on the model. It will also allow the branches to split off at a later point.
 

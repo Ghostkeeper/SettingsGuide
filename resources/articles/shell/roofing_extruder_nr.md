@@ -1,6 +1,6 @@
 For printers that have multiple extruders, this selects the extruder that will be used to print the top surface.
 
-![This model will be printed with only the top surface layers in a different colour](images/roofing_extruder_nr.png)
+![This model will be printed with only the top surface layers in a different colour](../images/roofing_extruder_nr.png)
 
 This way you can give the top surface a different colour or material. Keep in mind that the extruder of the walls is not adjusted by this setting, so there will still be a rim around the top surface.
 

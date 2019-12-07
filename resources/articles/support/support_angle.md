@@ -2,9 +2,9 @@ The overhang angle influences how much material is placed down to support the pr
 
 **Reducing the value of this setting generates more support.**
 
-![A low overhang angle generates more support](images/support_angle_low.png)
-![A high overhang angle generates less support](images/support_angle_high.png)
-![The supported areas are indicated in red](images/support_angle_prepare_mode.png)
+![A low overhang angle generates more support](../images/support_angle_low.png)
+![A high overhang angle generates less support](../images/support_angle_high.png)
+![The supported areas are indicated in red](../images/support_angle_prepare_mode.png)
 
 Reducing this setting makes the printer support more of the printed part, even surfaces that are steeper and won't sag much during printing. If the support is supporting parts that don't need to be supported, it'll increase the printing time and material usage unnecessarily and also create scars where the support touched the print.
 

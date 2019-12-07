@@ -2,7 +2,7 @@ With the slicing tolerance, you can adjust how to deal with the inaccuracy of su
 
 Middle
 ----
-![Middle](images/slicing_tolerance_middle.svg)
+![Middle](../images/slicing_tolerance_middle.svg)
 
 When using Middle, the layers will stay as close to the original surface as possible. This means that the layers will sometimes protrude outside of the original surface and sometimes dip into the original surface. Overall, the volume of the layers will match the volume of the original mesh very closely.
 
@@ -10,7 +10,7 @@ To get the Middle tolerance, Cura will compute a cross section halfway across ea
 
 Inclusive
 ----
-![Inclusive](images/slicing_tolerance_inclusive.svg)
+![Inclusive](../images/slicing_tolerance_inclusive.svg)
 
 When using Inclusive, the layers will contain *at least* all of the original volume. Where the surface is sloped, the layers will protrude slightly. The total volume of the layers will almost always be more than the volume of the original mesh.
 
@@ -18,7 +18,7 @@ To get the Inclusive tolerance, Cura will compute cross sections at the top and 
 
 Exclusive
 ----
-![Exclusive](images/slicing_tolerance_exclusive.svg)
+![Exclusive](../images/slicing_tolerance_exclusive.svg)
 
 When using Exclusive, the layers will be contained within the original volume. Where the surface is sloped, the layers will be slightly smaller than the original volume. The total volume of the layers will almost always be less than the volume of the original mesh.
 

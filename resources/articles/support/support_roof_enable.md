@@ -1,6 +1,6 @@
 The support roof is an intermediary structure between the support and the model where the model rests on the support. It can be used to provide more or better support for the model without significantly impacting printing time. The support roof is typically printed more densely or slower.
 
-![The support roof is coloured in a darker shade of blue](images/support_roof_enable.png)
+![The support roof is coloured in a darker shade of blue](../images/support_roof_enable.png)
 
 By default the support roof is denser than the normal support. This provides a better quality overhang, since the model doesn't need to bridge large distances. However, it will be much harder to remove the support.
 

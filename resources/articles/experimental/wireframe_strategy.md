@@ -10,7 +10,7 @@ Knot
 ----
 When this strategy is selected, a little upwards and backwards motion will be made at the top of each saw tooth to form a "knot" of material there. The purpose of the knot is to give the horizontal ring on top of it some area to attach to the saw-tooth pattern. The knot will vary a little bit from side to side, so if the horizontal ring is not placed down very accurately there is still a bigger chance that they attach to each other. Also, the knot will make the upward line extend slightly further upwards, causing the horizontal ring to be pushed on top of it. And lastly, the knot will also produce some oozing due to the lack of retraction in this travel move. This produces a blob on which the horizontal ring can rest better.
 
-![Where the knot is drawn and what its size entails](images/wireframe_top_jump.svg)
+![Where the knot is drawn and what its size entails](../images/wireframe_top_jump.svg)
 
 The motion for this "knot" is a series of travel moves:
 1. First, the nozzle will move upwards and backwards slightly.

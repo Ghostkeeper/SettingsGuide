@@ -4,7 +4,7 @@ The seam is where the contour starts and ends printing. Even if the path of the 
 
 User specified
 ----
-![User specified](images/z_seam_type_user.png)
+![User specified](../images/z_seam_type_user.png)
 
 This option allows you to choose a location manually. The seam will be placed in the corner that is closest to the chosen location. This will usually line up the corners very closely together, which allows you to cut away the seam easily. It also allows fine-grained control over where the seam should be.
 
@@ -12,7 +12,7 @@ By default a location in the back of the printer is chosen. The idea is that use
 
 Shortest
 ----
-![Shortest](images/z_seam_type_shortest.png)
+![Shortest](../images/z_seam_type_shortest.png)
 
 This option simply minimises the length of travel moves leading towards the seam, making no effort to place it anywhere in particular. Because the travel path is shorter, you'll save a small measure of time on travel moves. The seam will also be slightly smaller, because less ooze will be placed in the location where the nozzle lands on the contour.
 
@@ -20,12 +20,12 @@ The desired corner preference is still held by picking a corner close to where t
 
 Random
 ----
-![Random](images/z_seam_type_random.png)
+![Random](../images/z_seam_type_random.png)
 
 A random location around the perimeter is chosen for the seam. This random location is changed in every layer, so the seam will get spread out pretty much evenly around the model. Because the seams of different layers don't line up, the seam will hardly be visible. However, the surface will look altogether slightly messier.
 
 Sharpest corner
 ----
-![Sharpest corner](images/z_seam_type_sharpest.png)
+![Sharpest corner](../images/z_seam_type_sharpest.png)
 
 The seam will be placed in the very sharpest corner of the whole contour, according to the corner preference chosen in the [Seam Corner Preference](z_seam_corner.md) setting. This may incur longer travel moves, but ensures that the seam is hidden or exposed maximally according to the preference set for the corners.

@@ -2,8 +2,8 @@
 
 This setting enables creating support structures to support the object while it's being printed. Cura won't enable this support by default, but it will mark the surface of the model red if it thinks that the material there could sag a lot if support is not enabled.
 
-![Marking the model red where support is needed](images/support_enable_prepare_mode.png)
-![Support structure (in cyan) to support the model during printing](images/support_enable.png)
+![Marking the model red where support is needed](../images/support_enable_prepare_mode.png)
+![Support structure (in cyan) to support the model during printing](../images/support_enable.png)
 
 Printing support takes a significant amount of time and material. Where the support touches the model it needs to be broken or cut off later, after the print has completed. This tends to leave a scar on the surface.
 

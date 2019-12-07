@@ -1,6 +1,6 @@
 This setting enables a procedure that gets executed at the end of every layer to wipe off any material from the nozzle tip. If you have a printer with a built-in wiping brush, enabling this setting will cause Cura to instruct the printer to periodically wipe the nozzle off on that brush.
 
-![Visualisation of the movements in the wiping procedure](images/clean_between_layers.svg)
+![Visualisation of the movements in the wiping procedure](../images/clean_between_layers.svg)
 
 This wiping procedure consists of a number of steps:
 1. If [retraction is enabled](wipe_retraction_enable.md), the material is retracted.

@@ -1,7 +1,7 @@
 This setting controls the density of the bottom side of the print where it bridges a gap. At 100% density, the lines are placed directly adjacent. At lower densities, the lines are spaced further apart.
 
-![At 100% density, the lines are placed directly adjacent to one another](images/bridge_skin_density_100.png)
-![At 50% density, there is some spacing between the lines](images/bridge_skin_density_50.png)
+![At 100% density, the lines are placed directly adjacent to one another](../images/bridge_skin_density_100.png)
+![At 50% density, there is some spacing between the lines](../images/bridge_skin_density_50.png)
 
 There are two major effects at play when tuning this setting: Adhesion between lines and cooling.
 

@@ -1,7 +1,7 @@
 With this setting, the overhang angle is configured (in degrees) that is produced to [make the overhang printable](conical_overhang_enabled.md). Increasing this angle allows for greater overhang, causing Cura to modify the model less. Reducing this angle gives the object barely any overhang at all any more.
 
-![A maximum model angle of 50°](images/conical_overhang_enabled_enabled.png)
-![A maximum model angle of 20°](images/conical_overhang_angle_20.png)
+![A maximum model angle of 50°](../images/conical_overhang_enabled_enabled.png)
+![A maximum model angle of 20°](../images/conical_overhang_angle_20.png)
 
 An angle of 90° will leave the model as it was with all of its overhang. The model will not be altered. An angle of 0° will make all slopes completely vertical.
 

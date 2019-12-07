@@ -1,7 +1,7 @@
 The support pattern is normally oriented such that the lines are perpendicular to most things it supports. This way, the distance that the supported material has to bridge is minimised. With this setting, the orientation of the support lines can be customised.
 
-![An angle of 0°](images/support_infill_angle_0.png)
-![Alternating between 30° and 60°](images/support_infill_angles.png)
+![An angle of 0°](../images/support_infill_angle_0.png)
+![Alternating between 30° and 60°](../images/support_infill_angles.png)
 
 This setting allows multiple angles to be entered, separated by commas. When multiple angles are entered, Cura will alternate between these angles over the layers.
 

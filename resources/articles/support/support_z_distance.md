@@ -1,7 +1,7 @@
 This setting indicates the vertical clearance that must be kept between the support and the model, both at the top of the support and the bottom.
 
-![Z distance determines both the top and the bottom sides of support](images/support_top_bottom_distance.svg)
-![A vertical distance between model and support (exaggerated)](images/support_z_distance.png)
+![Z distance determines both the top and the bottom sides of support](../images/support_top_bottom_distance.svg)
+![A vertical distance between model and support (exaggerated)](../images/support_z_distance.png)
 
 This setting is the most influential factor in how well the support adheres to the model.
 

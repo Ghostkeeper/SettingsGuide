@@ -1,7 +1,7 @@
 This setting configures how many solid layers are printed at the top side of the print. These solid layers are printed instead of the infill. They are intended to close the top side.
 
-![12 top layers](images/top_bottom_thickness_0.8.png)
-![50 top layers](images/top_thickness.png)
+![12 top layers](../images/top_bottom_thickness_0.8.png)
+![50 top layers](../images/top_thickness.png)
 
 More top layers will have several effects, beneficial for the quality of the top surface but detrimental to productivity.
 * Your part will be stronger. Having more top layers will mean that a smaller part of your print will get filled with the sparse infill pattern. Instead it gets made completely solid.

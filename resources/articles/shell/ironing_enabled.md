@@ -1,7 +1,7 @@
 Ironing causes the printer to do another pass over the top surface in order to make it extra smooth. This extra pass has a very small line width and prints extra slow.
 
-![A normal print, viewed from the top side](images/ironing_enabled_disabled.png)
-![With ironing enabled, notice the thin lines on top.](images/ironing_enabled_enabled.png)
+![A normal print, viewed from the top side](../images/ironing_enabled_disabled.png)
+![With ironing enabled, notice the thin lines on top.](../images/ironing_enabled_enabled.png)
 
 Ironing will print a line pattern on top of the top surface of your print. This has two major benificial effects:
 * It melts the top surface again by going over it multiple times with a hot nozzle. This is where the name "Ironing" comes from. Because the movement speed is so low and the line width is so small, the nozzle will heat up the surface significantly. The flat part of the nozzle then strokes it smooth.

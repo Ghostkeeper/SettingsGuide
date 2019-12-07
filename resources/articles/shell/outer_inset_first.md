@@ -1,7 +1,7 @@
 This setting determines which walls are printed first, the outer or the inner walls.
 
-![The inner wall is printed first](images/outer_inset_first_disabled.gif)
-![The outer wall is printed first](images/outer_inset_first_enabled.gif)
+![The inner wall is printed first](../images/outer_inset_first_disabled.gif)
+![The outer wall is printed first](../images/outer_inset_first_enabled.gif)
 
 Enabling this setting has a small effect on quality as well as dimensional accuracy:
 * It will improve dimensional accuracy. Adjacent walls generally push each other a bit, especially if the wall line width is smaller than the nozzle size. The wall that gets printed first will have been solidified and then doesn't get pushed as much. Therefore printing the outer wall first will make your outer wall be in a more accurate location.

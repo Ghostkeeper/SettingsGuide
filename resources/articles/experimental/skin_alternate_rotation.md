@@ -1,6 +1,6 @@
 When the top and bottom are printed with the lines or zigzag [pattern](top_bottom_pattern.md), the lines are normally oriented in the diagonal directions, alternating the two directions every later. If this setting is activated, it will alternate in four directions instead: two diagonal directions, vertical and horizontal.
 
-![Alternating four directions](images/skin_alternate_rotation.gif)
+![Alternating four directions](../images/skin_alternate_rotation.gif)
 
 This setting will override the [Top/Bottom Line Directions](skin_angles.md) setting. The behaviour is the same though. In fact, this setting can be emulated completely by entering the angles `[45, 135, 0, 90]`.
 

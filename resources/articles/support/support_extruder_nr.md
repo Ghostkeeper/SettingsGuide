@@ -1,6 +1,6 @@
 If your printer has multiple extruders, this setting allows you to choose which of these extruders is used to print the support structure with.
 
-![The support is printed in a white material, while the model is printed in blue](images/support_extruder_nr.png)
+![The support is printed in a white material, while the model is printed in blue](../images/support_extruder_nr.png)
 
 Using a different type of material tends to make the support easier to remove without compromising the strength of the support. Different material types don't adhere very well to each other, especially if they have different shrinkage rates.
 

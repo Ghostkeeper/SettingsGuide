@@ -1,6 +1,6 @@
 This setting causes the support interface to be expanded in all directions horizontally into the rest of the support.
 
-![The support interface is expanded into the support](images/support_interface_offset.png)
+![The support interface is expanded into the support](../images/support_interface_offset.png)
 
 There are two use cases for this mechanism.
 * If the support interface ends directly at the edge of the overhang that needs to be supported, the build material can sag over the edge. Making the interface expand a bit further will prevent this.

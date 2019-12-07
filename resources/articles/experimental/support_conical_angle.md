@@ -1,8 +1,8 @@
 This setting determines the angle of the slope at which the conical support gets printed.
 
-![An angle of 30 degrees](images/support_conical_enabled.png)
-![An angle of 10 degrees](images/support_conical_angle_10.png)
-![An angle of -10 degrees, causing the base to be wider](images/support_conical_angle_neg10.png)
+![An angle of 30 degrees](../images/support_conical_enabled.png)
+![An angle of 10 degrees](../images/support_conical_angle_10.png)
+![An angle of -10 degrees, causing the base to be wider](../images/support_conical_angle_neg10.png)
 
 The conical support angle is the most major trade-off between the stability of support and how much support is generated.
 

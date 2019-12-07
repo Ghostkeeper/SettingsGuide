@@ -2,9 +2,9 @@ Normally, Cura will create cross sections of all the triangles in your mesh. The
 
 This setting controls what will be done with these unclosed loop. If set to "Normal", they are discarded. If set to "Surface", all of the cross sections are printed as outlines. If set to "Both", the closed outlines are printed normally but the unclosed ones are printed separately as extra walls.
 
-![Normal mode leaves out the single unclosed surface on the right](images/magic_mesh_surface_mode_normal.png)
-![Surface mode only prints the surfaces without treating them as closed volumes](images/magic_mesh_surface_mode_surface.png)
-![Printing both the volumes and the extra unclosed surface on the right](images/magic_mesh_surface_mode_both.png)
+![Normal mode leaves out the single unclosed surface on the right](../images/magic_mesh_surface_mode_normal.png)
+![Surface mode only prints the surfaces without treating them as closed volumes](../images/magic_mesh_surface_mode_surface.png)
+![Printing both the volumes and the extra unclosed surface on the right](../images/magic_mesh_surface_mode_both.png)
 
 The extra surfaces that get printed will only include the vertical surfaces as single lines. There is no filling technique for horizontal surfaces, since the surfaces are not closed polygons. They cannot be filled since there is no inside. There can be no tops, bottoms, infill or supports. Only single lines.
 

@@ -1,7 +1,7 @@
 This setting determines how many contours will be drawn around the print on every layer.
 
-![Two walls](images/wall_thickness_0.8.png)
-![Four walls](images/wall_thickness_1.6.png)
+![Two walls](../images/wall_thickness_0.8.png)
+![Four walls](../images/wall_thickness_1.6.png)
 
 Only one of the walls will be an outer wall, getting printed with the outer wall settings. The rest of the walls will be printed with the inner wall settings.
 

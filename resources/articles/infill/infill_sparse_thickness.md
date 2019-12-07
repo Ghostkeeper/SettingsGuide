@@ -2,7 +2,7 @@ Since the layer height of the infill is not important for visual quality, you ca
 
 In layer view, it will look as if the infill lines have become much wider. When actually printed, the infill lines will drop down further instead of spreading out horizontally.
 
-![Infill Layer Thickness is set to three times the layer height](images/infill_sparse_thickness.png)
+![Infill Layer Thickness is set to three times the layer height](../images/infill_sparse_thickness.png)
 
 The infill layer thickness must be a multiple of the ordinary layer height. If it is not, it will be rounded to the closest layer height.
 

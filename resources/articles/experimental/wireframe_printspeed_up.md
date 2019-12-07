@@ -1,6 +1,6 @@
 This setting specifies how fast the nozzle will move up while making a vertical motion in the saw-tooth pattern. The speed of moving upwards can be configured separately from the rest of the wire printing speed.
 
-![Where the different Wire Printing speeds apply](images/wireframe_printspeed.svg)
+![Where the different Wire Printing speeds apply](../images/wireframe_printspeed.svg)
 
 The upward motion will not have the specified speed for the entire motion. For the lowest bit of the upward motion, as defined by the [Ease Upward](wireframe_up_half_speed.md) setting, the print head will move at half of this speed.
 

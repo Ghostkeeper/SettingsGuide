@@ -1,7 +1,7 @@
 This setting configures how thick the solid top side of the print will be. This solid layer is printed instead of the sparse infill. It is intended to close the top side.
 
-![Ordinary top thickness](images/top_bottom_thickness_0.8.png)
-![Greatly increased thickness](images/top_thickness.png)
+![Ordinary top thickness](../images/top_bottom_thickness_0.8.png)
+![Greatly increased thickness](../images/top_thickness.png)
 
 A thicker top side will have several effects, beneficial for the quality of the top surface but detrimental to productivity.
 * Your part will be stronger. Having a thicker top side will mean that a smaller part of your print will get filled with the sparse infill pattern. Instead it gets made completely solid.

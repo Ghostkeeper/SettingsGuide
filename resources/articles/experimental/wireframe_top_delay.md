@@ -1,6 +1,6 @@
 With this setting, the nozzle will stand still for a moment after printing an upward line.
 
-![The location where the nozzle will pause](images/wireframe_top_delay.svg)
+![The location where the nozzle will pause](../images/wireframe_top_delay.svg)
 
 While the nozzle stands still at the top of the upward line, the upward line gets some time to solidify. This prevents it from being dragged along with the nozzle once it starts moving downwards again.
 

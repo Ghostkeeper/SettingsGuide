@@ -1,7 +1,7 @@
 This setting adds a number of walls around the perimeter of the support.
 
-![No extra walls](images/support_wall_count_0.png)
-![3 extra walls](images/support_wall_count_3.png)
+![No extra walls](../images/support_wall_count_0.png)
+![3 extra walls](../images/support_wall_count_3.png)
 
 The extra walls add strength to the support, reducing the chance that they topple over. It also allows the support to better support the very edges of the overhang area. For models with sharp corners, these edges tend to be problematic because lines end in mid-air there. This setting can make them end on a support line instead.
 

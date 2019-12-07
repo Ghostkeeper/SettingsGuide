@@ -2,7 +2,7 @@ Since the visual quality and resolution of support is not important, you can use
 
 In layer view, it will look as if the support lines have become much wider. When actually printed, the support lines will drop down further instead of spreading out horizontally.
 
-![Support Infill Layer Thickness is set to three times the layer height](images/support_infill_sparse_thickness.png)
+![Support Infill Layer Thickness is set to three times the layer height](../images/support_infill_sparse_thickness.png)
 
 The support infill layer thickness must be a multiple of the ordinary layer height. If it is not, it will be rounded to the closest layer height.
 

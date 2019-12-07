@@ -1,6 +1,6 @@
 Part of the top of the print can be separated out and printed with different settings. This setting determines how big of a part to separate out. How many layers of the top of the print will get separate settings?
 
-![The highest layer of the top is printed slower (blue) than the rest of the skin (green)](images/roofing_layer_count.png)
+![The highest layer of the top is printed slower (blue) than the rest of the skin (green)](../images/roofing_layer_count.png)
 
 Some settings can greatly improve the quality of the top surface of the print, but they can make the print take much longer as they are applied to all skin layers at the top. A similar effect can be achieved by adjusting those settings only for the very top layer or two, but printing the rest of the skin layers faster. This will not have as big a negative effect on the printing time then.
 

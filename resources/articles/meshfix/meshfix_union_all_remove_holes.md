@@ -1,7 +1,7 @@
 Some models, particularly those made for manufacturing techniques like injection moulding, tend to come with internal cavities that are not visible. If this setting is enabled, Cura removes those internal cavities.
 
-![This model has a hole in the centre](images/meshfix_union_all_remove_holes_disabled.png)
-![With this setting enabled, the hole is removed](images/meshfix_union_all_remove_holes_enabled.png)
+![This model has a hole in the centre](../images/meshfix_union_all_remove_holes_disabled.png)
+![With this setting enabled, the hole is removed](../images/meshfix_union_all_remove_holes_enabled.png)
 
 The cavities on the inside might be designed to save on material, but with 3D printing there are some constraints that cause those models to print worse. For instance, 3D printers don't do well with thin walls that aren't a multiple of the line width, and the top skin tends to sag if it is not supported by infill. It is generally better to make a solid mesh and let the slicer decide how to fill it. This mesh fix setting lets you do that without needing to edit the mesh.
 

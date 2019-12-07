@@ -1,7 +1,7 @@
 With this setting, inside corners of the raft can be made smoother. The setting specifies the radius of an arc. All inside corners that are sharper than the specified arc radius will get smoothed to have the arc radius.
 
-![No smoothing](images/raft_smoothing_0mm.png)
-![Radius of 5mm](images/raft_smoothing_5mm.png)
+![No smoothing](../images/raft_smoothing_0mm.png)
+![Radius of 5mm](../images/raft_smoothing_5mm.png)
 
 The technical term for this is a [morphological closing operation](https://en.wikipedia.org/wiki/Closing_\(morphology\)). All holes smaller than the specified radius will be closed. The sharpest inside corners will not be made as sharp any more.
 

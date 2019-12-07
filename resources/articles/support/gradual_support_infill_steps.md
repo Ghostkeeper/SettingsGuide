@@ -2,7 +2,7 @@ Gradual support reduces the amount of support material used, by reducing the sup
 
 This setting indicates in how many steps the support density gets reduced. At every step, the support's density is halved. For example, starting at a density of 20% and two gradual support steps, the support density of the lower parts will be 10% and 5% respectively.
 
-![The support is reduced to lower density in 3 steps](images/gradual_support_infill_step_height_1mm.png)
+![The support is reduced to lower density in 3 steps](../images/gradual_support_infill_step_height_1mm.png)
 
 Increasing the number of steps cause the density to be halved more and more, resulting in lower density support. This saves a lot of material and printing time, but will make the support weaker.
 

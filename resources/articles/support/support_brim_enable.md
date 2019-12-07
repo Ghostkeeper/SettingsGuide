@@ -1,6 +1,6 @@
 When the support brim is activated, an additional brim will be drawn inside the support area on the first layer.
 
-![The support brim](images/support_brim_4mm.png)
+![The support brim](../images/support_brim_4mm.png)
 
 The support brim is drawn towards the *inside*, unlike the ordinary brim. If the [Build Plate Adhesion Type](adhesion_type.md) is set to Brim, another brim will also be drawn *around* the support.
 

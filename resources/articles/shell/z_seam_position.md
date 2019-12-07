@@ -1,9 +1,9 @@
 If the location of the seam is set to "User Specified" in the [Z Seam Alignment](z_seam_type.md) setting, the seam will be placed in the direction specified by this setting.
 
-![The seam is located on the left side](images/z_seam_x_left.png)
-![The seam is located on the back side](images/z_seam_y_back.png)
-![The seam is located on the right side](images/z_seam_x_right.png)
-![The seam is located on the front side](images/z_seam_y_front.png)
+![The seam is located on the left side](../images/z_seam_x_left.png)
+![The seam is located on the back side](../images/z_seam_y_back.png)
+![The seam is located on the right side](../images/z_seam_x_right.png)
+![The seam is located on the front side](../images/z_seam_y_front.png)
 
 Eight ordinal directions are available for the seam's position. It is best to choose a location for the seam that is hard to see in the final object, so it depends heavily on the design of your model. Usually it is best to choose a position of the seam that is in an inside corner, but if such a corner is not available you could also choose a position that is easy to cut away with a knife after printing.
 
