@@ -1,4 +1,4 @@
-Warping is a problem with the final print where the print curls up after printing, leaving the final object deformed.
+Warping is a problem with the final print where the print curls up after printing, leaving the final object deformed. Typically the corners on the bottom side of the print curl upwards, or thin parts of the print become wavy.
 
 Cause
 ----
