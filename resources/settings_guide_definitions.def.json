@@ -10,6 +10,20 @@
 		"position": 0
 	},
 	"settings": {
+		"problems": {
+			"label": "Problems",
+			"type": "category",
+			"description": "Various ways in which a print could fail and how to remedy them using Cura settings.",
+			"icon": "warning",
+			"children": {
+				"warping": {
+					"label": "Warping",
+					"description": "The print curls up due to shrinkage when it cools down.",
+					"type": "str",
+					"default_value": ""
+				}
+			}
+		},
 		"about": {
 			"label": "About",
 			"type": "category",
