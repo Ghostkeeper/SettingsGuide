@@ -21,6 +21,12 @@
 					"description": "The print curls up due to shrinkage when it cools down.",
 					"type": "str",
 					"default_value": ""
+				},
+				"layer_shift": {
+					"label": "Layer Shift",
+					"description": "Layers are not properly stacked on top of each other.",
+					"type": "str",
+					"default_value": ""
 				}
 			}
 		},
