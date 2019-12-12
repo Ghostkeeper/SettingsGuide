@@ -1,5 +1,7 @@
 Warping is a problem with the final print where the print curls up after printing, leaving the final object deformed. Typically the corners on the bottom side of the print curl upwards, or thin parts of the print become wavy.
 
+![The tips are curling up](../images/warping.jpg)
+
 Cause
 ----
 Warping is caused by a combination of effects, but primarily by internal stress due to the nozzle pulling on the molten plastic. While it's in the glass transition, plastic behaves a bit like rubber or gum. If you pull on it the material will stretch, but if you stop pulling it will revert to its original shape. The same happens also during printing. When printing a long line, the nozzle pulls on the line of plastic, which stretches in the length of the line. When the nozzle moves away and stops pulling, the plastic line will contract. This contraction causes a pull on everything attached to it. When enough plastic lines pull in unison, they can warp the print. This is especially common when many lines are parallel, such as in the skin.
