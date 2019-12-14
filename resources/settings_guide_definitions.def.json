@@ -16,6 +16,12 @@
 			"description": "Various ways in which a print could fail and how to remedy them using Cura settings.",
 			"icon": "warning",
 			"children": {
+				"sagging": {
+					"label": "Sagging",
+					"description": "Overhanging areas droop down.",
+					"type": "str",
+					"default_value": ""
+				},
 				"warping": {
 					"label": "Warping",
 					"description": "The print curls up due to shrinkage when it cools down.",
