@@ -216,17 +216,18 @@ class CuraSettingsGuide(Extension, QObject):
 		if article_id in self.articles:
 			return self.articles[article_id]
 
+		images_path = os.path.join(os.path.dirname(__file__), "resources", "articles", "images")
 		try:
 			markdown_file = self.article_locations[article_id]
 			with open(markdown_file, encoding="utf-8") as f:
 				markdown_str = f.read()
+			images_path = os.path.dirname(markdown_file)
 		except (OSError, KeyError):  # File doesn't exist or is otherwise not readable.
 			if self._container_stack and article_id in self._container_stack.getAllKeys():
 				markdown_str = "*" + self._container_stack.getProperty(article_id, "description") + "*"  # Use the setting description as fallback.
 			else:
 				markdown_str = "There is no article on this topic."
 
-		images_path = os.path.join(os.path.dirname(__file__), "resources", "articles")
 		preferences = CuraApplication.getInstance().getPreferences()
 		find_images = re.compile(r"!\[(.*)\]\(([^\)]+)\)")
 		find_checkboxes = re.compile(r"\[ \]\s*([^\)]+)(?:$|\n)")
