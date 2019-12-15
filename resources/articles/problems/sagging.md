@@ -35,3 +35,15 @@ Cura has two techniques to generate support. There is a default "area support" m
 Where support is generated depends largely on the [overhang angle](../support/support_angle.md) specified. Reducing the overhang angle will cause more support to be printed, which reduces sagging in more parts of the print but will also take more time and material and cause more scarring. Where the support is generated can also be fine tuned by adding support blockers to the print or meshes that get printed as support.
 
 Even if the overhang is supported by support, it may still sag a little bit. To allow the support to be removed, a certain [vertical distance](../support/support_z_distance.md) is kept between the model and the support. The model will sag up to this distance before support is effective, so reducing the Z distance will reduce sagging (but make the support harder to remove). Some materials are designed to be removed easier, by not chemically bonding to the build material or by dissolving. Those materials can afford to reduce the Z distance, further reducing sagging, while still making it possible to remove the support afterwards. The print may also sag in between the support lines, so reducing the [distance between the support lines](../support/support_line_distance.md) will reduce sagging as well (but increase printing time and again make it harder to remove support).
+
+Adjusting the model
+----
+If you have the freedom to adjust the model that gets printed, that may result in a much cleaner result than trying to bridge the overhangs or support them. Instead of letting the material sag in the overhangs, design and orient your model such that there are no overhangs.
+
+![This orientation allows printing the object with very little support](../images/support_minimise_overhang.png)
+
+The most basic trick to apply this is to rotate the model. If your printer is capable of printing 45 degree angles without sagging, you can rotate a model with a vertical and a horizontal piece such that they are two 45 degree slopes, slightly reducing quality of the vertical wall, but preventing sagging in the horizontal part. Be careful though to not make the contact area with the build plate too small, or the print might detach from the build plate and be ruined still.
+
+Adding chamfers can also help to reduce the amount of overhangs in the model with relatively little added material. Cura provides an automated method to add chamfers to your model as well, through the [Make Overhang Printable](../experimental/conical_overhang_enabled.md) setting. Adding chamfers essentially adds the support structure to the actual model. They will then be printed seamlessly into the model, which looks nicer. It also saves on material, compared to printing support, since the supporting material brings the forces quickly towards the rest of the model. And in the end, your object will be stronger.
+
+In general, when designing objects for 3D printing, it's best to avoid overhangs at all. If the geometry of the object doesn't allow you to, consider breaking up the model into multiple parts and assembling them afterwards.
