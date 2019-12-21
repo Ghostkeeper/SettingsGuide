@@ -10,8 +10,8 @@
 		"position": 0
 	},
 	"settings": {
-		"problems": {
-			"label": "Problems",
+		"troubleshooting": {
+			"label": "Troubleshooting",
 			"type": "category",
 			"description": "Various ways in which a print could fail and how to remedy them using Cura settings.",
 			"icon": "warning",
