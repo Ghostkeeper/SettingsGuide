@@ -149,6 +149,7 @@ foreach(sdk_version ${SETTINGSGUIDE_SUPPORTED_SDKS})
 		COMMAND ${CMAKE_COMMAND} -E copy_if_different "${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune/LICENSE" files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/Mistune
 		COMMAND ${CMAKE_COMMAND} -E tar cfv ../SettingsGuide${sdk_version}.curapackage --format=zip ${packaged_files}
 		WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/pack${sdk_version}
+		DEPENDS Mistune
 	)
 	add_dependencies(pack pack${sdk_version})
 endforeach()
