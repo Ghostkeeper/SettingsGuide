@@ -122,26 +122,32 @@ install(FILES "${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune/mistune.py
 
 #Packing this into a .curapackage file.
 add_custom_target(pack COMMAND "") #Packs for all supported SDK versions.
+set(packaged_files
+	package.json
+	[Content_Types].xml
+	_rels
+	files
+)
 foreach(sdk_version ${SETTINGSGUIDE_SUPPORTED_SDKS})
-	file(COPY ${installed_paths} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID})
-	file(COPY ${installed_paths_resources} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources)
-	file(COPY ${installed_paths_resources_icons} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/icons)
-	file(COPY ${installed_paths_resources_qml} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml)
-	file(COPY ${installed_paths_resources_qml_SidebarSettings} DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings)
-	file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/resources/articles" DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources)
-	file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/cmake/[Content_Types].xml" DESTINATION pack${sdk_version})
-	file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/cmake/_rels" DESTINATION pack${sdk_version})
-	file(COPY "${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune/mistune.py" DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/Mistune)
-	file(COPY "${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune/LICENSE" DESTINATION pack${sdk_version}/files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/Mistune)
 	configure_file("${CMAKE_CURRENT_SOURCE_DIR}/cmake/package.json.in" pack${sdk_version}/package.json)
-	set(packaged_files
-		package.json
-		[Content_Types].xml
-		_rels
-		files
-	)
 	add_custom_target(pack${sdk_version}
-		COMMAND "${CMAKE_COMMAND}" -E tar cfv ../SettingsGuide${sdk_version}.curapackage --format=zip ${packaged_files}
+		COMMAND ${CMAKE_COMMAND} -E make_directory files/plugins/${SETTINGSGUIDE_PLUGIN_ID}
+		COMMAND ${CMAKE_COMMAND} -E copy_if_different ${installed_paths} files/plugins/${SETTINGSGUIDE_PLUGIN_ID}
+		COMMAND ${CMAKE_COMMAND} -E make_directory files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources
+		COMMAND ${CMAKE_COMMAND} -E copy_if_different ${installed_paths_resources} files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources
+		COMMAND ${CMAKE_COMMAND} -E make_directory files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/icons
+		COMMAND ${CMAKE_COMMAND} -E copy_if_different ${installed_paths_resources_icons} files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/icons
+		COMMAND ${CMAKE_COMMAND} -E make_directory files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml
+		COMMAND ${CMAKE_COMMAND} -E copy_if_different ${installed_paths_resources_qml} files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml
+		COMMAND ${CMAKE_COMMAND} -E make_directory files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings
+		COMMAND ${CMAKE_COMMAND} -E copy_if_different ${installed_paths_resources_qml_SidebarSettings} files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings
+		COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/resources/articles" files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/articles
+		COMMAND ${CMAKE_COMMAND} -E copy_if_different "${CMAKE_CURRENT_SOURCE_DIR}/cmake/[Content_Types].xml" .
+		COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/cmake/_rels" _rels
+		COMMAND ${CMAKE_COMMAND} -E make_directory files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/Mistune
+		COMMAND ${CMAKE_COMMAND} -E copy_if_different "${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune/mistune.py" files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/Mistune
+		COMMAND ${CMAKE_COMMAND} -E copy_if_different "${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune/LICENSE" files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/Mistune
+		COMMAND ${CMAKE_COMMAND} -E tar cfv ../SettingsGuide${sdk_version}.curapackage --format=zip ${packaged_files}
 		WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/pack${sdk_version}
 	)
 	add_dependencies(pack pack${sdk_version})
