@@ -240,10 +240,12 @@ class CuraSettingsGuide(Extension, QObject):
 				if part_between_images or index == 0:
 					parts_between_checkboxes = find_checkboxes.split(part_between_images)
 					for index2, part_between_checkboxes in enumerate(parts_between_checkboxes):
+						part_between_checkboxes = part_between_checkboxes.strip()
 						# The parts of the regex split alternate between text and checkbox description.
 						if index2 % 2 == 0:
-							rich_text = self._markdown(part_between_checkboxes)
-							parts.append(["rich_text", rich_text])
+							if part_between_checkboxes:
+								rich_text = self._markdown(part_between_checkboxes)
+								parts.append(["rich_text", rich_text])
 						else:  # if index2 == 1:
 							preference_key = "settings_guide/" + urllib.parse.quote_plus(part_between_checkboxes).lower()
 							parts.append(["checkbox", preference_key, part_between_checkboxes])
