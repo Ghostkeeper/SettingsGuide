@@ -34,6 +34,12 @@
 					"type": "str",
 					"default_value": ""
 				},
+				"underextrusion": {
+					"label": "Underextrusion",
+					"description": "The printer is not extrusing enough material to make a strong, solid object.",
+					"type": "str",
+					"default_value": ""
+				},
 				"warping": {
 					"label": "Warping",
 					"description": "The print curls up due to shrinkage when it cools down.",
