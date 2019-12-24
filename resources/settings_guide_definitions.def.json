@@ -16,21 +16,27 @@
 			"description": "Various ways in which a print could fail and how to remedy them using Cura settings.",
 			"icon": "warning",
 			"children": {
+				"layer_shift": {
+					"label": "Layer Shift",
+					"description": "Layers are not properly stacked on top of each other.",
+					"type": "str",
+					"default_value": ""
+				},
 				"sagging": {
 					"label": "Sagging",
 					"description": "Overhanging areas droop down.",
 					"type": "str",
 					"default_value": ""
 				},
-				"warping": {
-					"label": "Warping",
-					"description": "The print curls up due to shrinkage when it cools down.",
+				"stringing": {
+					"label": "Stringing",
+					"description": "There are strings of plastic in places where the nozzle travels from one place to another.",
 					"type": "str",
 					"default_value": ""
 				},
-				"layer_shift": {
-					"label": "Layer Shift",
-					"description": "Layers are not properly stacked on top of each other.",
+				"warping": {
+					"label": "Warping",
+					"description": "The print curls up due to shrinkage when it cools down.",
 					"type": "str",
 					"default_value": ""
 				}
