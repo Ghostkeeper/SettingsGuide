@@ -46,6 +46,12 @@
 					"type": "str",
 					"default_value": ""
 				},
+				"unfinished_print": {
+					"label": "Unfinished Print",
+					"description": "The print is only partly completed.",
+					"type": "str",
+					"default_value": ""
+				},
 				"warping": {
 					"label": "Warping",
 					"description": "The print curls up due to shrinkage when it cools down.",
