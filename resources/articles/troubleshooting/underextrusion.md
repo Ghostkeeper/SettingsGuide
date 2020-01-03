@@ -48,7 +48,7 @@ There are two adjustments you can make to fix this: Priming and speed adjustment
 
 Priming the material is to push out a bit of material before the important part of the print starts. Often this is done at the beginning of a print in a separate routine, by printing a small line or droplet of plastic in a corner of the build plate. Alternatively, you can use a [skirt or a brim](../platform_adhesion/adhesion_type.md), which will print a number of lines around the print itself. When the material is flowing properly and all air is out of the nozzle chamber, it'll extrude more consistently.
 
-When the material is retracted, the flow of material is interrupted. When the material is pushed back into the nozzle, it may take a while to get it flowing again. Reducing the [speed at which it pushes back](../material/retraction_prime_speed.md) allows the material to melt better before it's extruded, which helps a bit. Otherwise you can also try to push the material slightly further than before the retraction by [priming a bit more](../material/retraction_extra_prime_amount.md) to compensate for the underextrusion. Tuning this is very finicky though.
+When the material is retracted, the flow of material is interrupted. When the material is pushed back into the nozzle, it may take a while to get it flowing again. Reducing the [speed at which it pushes back](../travel/retraction_prime_speed.md) allows the material to melt better before it's extruded, which helps a bit. Otherwise you can also try to push the material slightly further than before the retraction by [priming a bit more](../travel/retraction_extra_prime_amount.md) to compensate for the underextrusion. Tuning this is very finicky though.
 
 Equalising speeds
 ----
