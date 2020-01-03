@@ -40,6 +40,12 @@
 					"type": "str",
 					"default_value": ""
 				},
+				"topography": {
+					"label": "Topography",
+					"description": "The borders between the layers are visible on the top or bottom side.",
+					"type": "str",
+					"default_value": ""
+				},
 				"underextrusion": {
 					"label": "Underextrusion",
 					"description": "The printer is not extrusing enough material to make a strong, solid object.",
