@@ -34,6 +34,12 @@
 					"type": "str",
 					"default_value": ""
 				},
+				"scarring": {
+					"label": "Scarring",
+					"description": "There are visible lines on the top or bottom side that don't belong to the top/bottom pattern.",
+					"type": "str",
+					"default_value": ""
+				},
 				"stringing": {
 					"label": "Stringing",
 					"description": "There are strings of plastic in places where the nozzle travels from one place to another.",
