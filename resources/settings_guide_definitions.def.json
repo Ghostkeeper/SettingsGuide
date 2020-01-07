@@ -28,6 +28,12 @@
 					"type": "str",
 					"default_value": ""
 				},
+				"missing_parts": {
+					"label": "Missing Parts",
+					"description": "Some parts of the model are missing from the final print.",
+					"type": "str",
+					"default_value": ""
+				},
 				"sagging": {
 					"label": "Sagging",
 					"description": "Overhanging areas droop down.",
