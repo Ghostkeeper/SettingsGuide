@@ -1,5 +1,7 @@
 Sometimes a print doesn't finish completely. There could be a number of reasons why this happens, and some of them can be addressed by adjusting Cura's settings.
 
+![The filament stopped flowing halfway through this print](../images/unfinished_print.jpg)
+
 Printer failures
 ----
 Sometimes the cause of an unfinished print is a printer failure, where the printer is not doing what it's expected to do. There is generally very little that Cura can do about these issues. Here are some common causes.
