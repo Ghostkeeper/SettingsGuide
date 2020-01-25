@@ -22,6 +22,12 @@
 					"type": "str",
 					"default_value": ""
 				},
+				"blobs": {
+					"label": "Blobs",
+					"description": "Small specs on the walls.",
+					"type": "str",
+					"default_value": ""
+				},
 				"layer_shift": {
 					"label": "Layer Shift",
 					"description": "Layers are not properly stacked on top of each other.",
