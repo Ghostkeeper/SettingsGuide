@@ -1,5 +1,5 @@
 #Copyright (C) 2018 Aleksei Sasin
-#Copyright (C) 2019 Ghostkeeper
+#Copyright (C) 2020 Ghostkeeper
 #This plug-in is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
@@ -54,8 +54,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self._dialog = None  # Cached instance of the dialogue window.
 		self._container_stack = None  # Stack that provides not only the normal settings but also the extra articles added by this guide.
 
-		renderer = QtMarkdownRenderer.QtMarkdownRenderer()
-		self._markdown = mistune.Markdown(renderer=renderer)  # Renders the Markdown articles into the subset of HTML supported by Qt.
+		self._markdown_per_folder = {}  # For each directory containing Markdown files, create one renderer that correctly dereferences images relatively.
 
 		self.articles = {}  # type: Dict[str, List[List[str]]]  # All of the articles by key. Key: article ID, value: Lists of items in each article.
 		self.load_definitions()
@@ -228,6 +227,10 @@ class CuraSettingsGuide(Extension, QObject):
 			else:
 				markdown_str = "There is no article on this topic."
 
+		if images_path not in self._markdown_per_folder:
+			renderer = QtMarkdownRenderer.QtMarkdownRenderer(images_path)
+			self._markdown_per_folder[images_path] = mistune.Markdown(renderer=renderer)  # Renders the Markdown articles into the subset of HTML supported by Qt.
+
 		preferences = CuraApplication.getInstance().getPreferences()
 		find_images = re.compile(r"!\[(.*)\]\(([^\)]+)\)")
 		find_checkboxes = re.compile(r"\[ \]\s*([^\n]+)")
@@ -244,7 +247,7 @@ class CuraSettingsGuide(Extension, QObject):
 						# The parts of the regex split alternate between text and checkbox description.
 						if index2 % 2 == 0:
 							if part_between_checkboxes:
-								rich_text = self._markdown(part_between_checkboxes)
+								rich_text = self._markdown_per_folder[images_path](part_between_checkboxes)
 								parts.append(["rich_text", rich_text])
 						else:  # if index2 == 1:
 							preference_key = "settings_guide/" + urllib.parse.quote_plus(part_between_checkboxes).lower()
@@ -265,7 +268,7 @@ class CuraSettingsGuide(Extension, QObject):
 			# Load the article into the actual setting description as well.
 			global_stack = CuraApplication.getInstance().getGlobalContainerStack()
 			if global_stack and article_id in global_stack.getAllKeys():
-				complete_article = self._markdown(markdown_str)
+				complete_article = self._markdown_per_folder[images_path](markdown_str)
 				definition = global_stack.definition.findDefinitions(key=article_id)[0]
 				definition._SettingDefinition__property_values["description"] = complete_article
 

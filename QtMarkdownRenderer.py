@@ -1,4 +1,4 @@
-#Copyright (C) 2019 Ghostkeeper
+#Copyright (C) 2020 Ghostkeeper
 #This plug-in is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
@@ -18,6 +18,15 @@ class QtMarkdownRenderer(mistune.Renderer):
 	can display with its "rich text" rendering. This class makes sure that the
 	supported subset of HTML is used.
 	"""
+
+	def __init__(self, images_path):
+		"""
+		Creates a renderer with a certain relative path for resources.
+		:param images_path: The path to which relative paths should be
+		dereferenced.
+		"""
+		super().__init__()
+		self._images_path = images_path
 
 	def link(self, link, title, text):
 		"""
@@ -62,7 +71,7 @@ class QtMarkdownRenderer(mistune.Renderer):
 		This gets ignored because Qt's Rich Text doesn't support it.
 		:return: HTML for Qt's Rich Text to display the image.
 		"""
-		image_full_path = os.path.join(os.path.dirname(__file__), "resources", "articles", src)
+		image_full_path = os.path.join(self._images_path, src)
 		image_url = PyQt5.QtCore.QUrl.fromLocalFile(image_full_path).url()
 		margin = UM.Qt.Bindings.Theme.Theme.getInstance().getSize("default_margin").width()
 		width = (UM.Qt.Bindings.Theme.Theme.getInstance().getSize("tooltip").width() - margin * 2) * 2.5 / 3  # Fit 3 images in the width. The width was multiplied by 2.5 from the theme.
