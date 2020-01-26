@@ -14,6 +14,10 @@ There are several standards for filament diameters. The most common ones are 1.7
 
 To fix this, first measure the actual diameter of the filament using calipers. It is best to measure this in several spots, in case it varies, and at various angles around the circumference. Take the average of these measurements. This average can be filled into Cura in the Material Management page, as a property of the material. If the diameter can't be edited because it's a built-in material, you may need to duplicate the material first. It should then allow you to edit the diameter.
 
+Extruder calibration
+----
+Sometimes the problem lies in the hardware not matching up with the expectations of the firmware. If the extruder motor is a stepper motor (which is common in 3D printers) then the firmware needs to know how many steps of the motor will result in a certain distance to be moved. The firmware has a setting for this, measuring the accuracy of the feeder in steps per millimetre. If this setting is configured wrongly, the feeder may move too fast or too slow. It is best to adjust this in the firmware if you can. However if that is impossible, the [flow rate](../material/material_flow.md) in Cura can be adjusted to compensate. You should also compensate all of the [retraction distances](../travel/retraction_amount.md) and [speeds](../travel/retraction_speed.md) then.
+
 Directly adjusting flow rate
 ----
 If it's for the rest unknown what is causing this overextrusion, you can also directly adjust the [flow rate](../material/material_flow.md). Reduce the flow rate until your surface appears smooth again. This can compensate for some unknown factor directly.
