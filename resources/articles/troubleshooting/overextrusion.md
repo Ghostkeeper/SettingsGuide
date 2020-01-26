@@ -24,6 +24,8 @@ Cura would normally just draw the contours of the print with a certain line widt
 
 This can be prevented by enabling the [compensation for overlapping walls](../shell/travel_compensate_overlapping_walls_enabled.md). The extrusion of the second line will be reduced such that it extrudes just as much material as necessary to fill up the remaining space of the wall, which prevents overextrusion.
 
+If the walls are overlapping due to the [Outer Wall Inset](../shell/wall_0_inset.md), you can try reducing that inset to prevent overextrusion. You can also try printing the [outer wall first](../shell/outer_inset_first.md). The excess material will then get pushed towards the inside of the model, where it is invisible.
+
 Directly adjusting flow rate
 ----
 If it's for the rest unknown what is causing this overextrusion, you can also directly adjust the [flow rate](../material/material_flow.md). Reduce the flow rate until your surface appears smooth again. This can compensate for some unknown factor directly.
