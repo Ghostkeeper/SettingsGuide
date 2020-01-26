@@ -5,6 +5,7 @@ Non-manifold meshes
 Some meshes have holes in their surface or extra geometry on the inside. This confuses Cura, because it's no longer clear which parts of the volume belong to the inside and which parts don't. Cura takes a cross section of the mesh at each layer and assumes that it will find closed loops. If there are no closed loops or if there is extra surfaces besides these closed loops, these are normally not printed. As a result, if there is a hole in the model, the cross sections will not be closed loops, and the layers where this hole exists will not be printed. Meshes that contain such holes or extra geometry are called [non-manifold](https://en.wikipedia.org/wiki/Manifold) because they could not exist in the real world. 
 
 ![A part with an extra wall inside, where it's ambiguous whether the bottom part is inside or outside of the part](../images/non_manifold_inside.svg)
+![Non-manifold meshes are usually displayed with red parts in X-ray mode](../images/x_ray.png)
 
 If the mesh is not manifold, you can usually see this by going into the Prepare stage and selecting the X-ray view. The X-ray view will colour some parts red if you are looking through an odd number of surfaces, which happens when the mesh is not manifold. This way you can identify problems with your mesh. You will then need to repair those meshes in a CAD or modelling application.
 
