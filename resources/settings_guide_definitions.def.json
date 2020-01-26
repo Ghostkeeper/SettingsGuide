@@ -64,6 +64,12 @@
 					"type": "str",
 					"default_value": ""
 				},
+				"seam": {
+					"label": "Seam",
+					"description": "A surface defect where the contour is started and closed.",
+					"type": "str",
+					"default_value": ""
+				},
 				"stringing": {
 					"label": "Stringing",
 					"description": "There are strings of plastic in places where the nozzle travels from one place to another.",
