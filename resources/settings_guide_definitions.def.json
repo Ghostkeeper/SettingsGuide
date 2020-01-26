@@ -46,6 +46,12 @@
 					"type": "str",
 					"default_value": ""
 				},
+				"overextrusion": {
+					"label": "Overextrusion",
+					"description": "Too much material is being extruded, causing the surface to become irregular and rough.",
+					"type": "str",
+					"default_value": ""
+				},
 				"pillowing": {
 					"label": "Pillowing",
 					"description": "The top side is showing bulges or holes in between the infill lines.",
