@@ -56,6 +56,7 @@ set(installed_files_resources
 	settings_guide_definitions.def.json
 )
 set(installed_files_resources_qml
+	ArticleCheckbox.qml
 	ArticleImages.qml
 	ArticleText.qml
 	SettingsGuide.qml
