@@ -22,6 +22,12 @@
 					"type": "str",
 					"default_value": ""
 				},
+				"bad_overhang": {
+					"label": "Bad Overhang",
+					"description": "The overhanging areas are sagging, coarse or stringy.",
+					"type": "str",
+					"default_value": ""
+				},
 				"blobs": {
 					"label": "Blobs",
 					"description": "Small specs on the walls.",
