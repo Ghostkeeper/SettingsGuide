@@ -62,14 +62,14 @@ class CuraSettingsGuide(Extension, QObject):
 		self._selected_article_id = ""  # Which article is currently shown for the user. Empty string indicates it's the welcome screen.
 
 		# Add context menu item to the settings list to open the guide for that setting.
-		CuraAPI().interface.settings.addContextMenuItem({
+		application = CuraApplication.getInstance()
+		application.getCuraAPI().interface.settings.addContextMenuItem({
 			"name": "Settings Guide",
 			"icon_name": "help-contents",
 			"actions": ["sidebarMenuItemOnClickHandler"],
 			"menu_item": MenuItemHandler.MenuItemHandler(self)
 		})
 
-		application = CuraApplication.getInstance()
 		application.getPreferences().addPreference("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29", False)
 
 		application.initializationFinished.connect(self.adjust_theme)
