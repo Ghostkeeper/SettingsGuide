@@ -14,7 +14,9 @@ Filament grinding
 ----
 The feeder sometimes pushes very hard on the filament to push it through the extruder train. This damages the filament. When the feeder pushes and pulls on the same bit of filament very often, it can damage so much that the feeder can't get any grip on the filament any more. The material will stop flowing then and the rest of the print will be printed in air rather than plastic.
 
-You can see that this is happening during the print by placing a finger at the opening where the filament goes into the feeder. During a print, you should feel it move. If it doesn't move, it's most likely ground the material and doesn't get any grip on it. You can also pull the filament out of the printer and see where it is damaged.
+![The filament has been ground out by the feeder](../images/grinding.jpg)
+
+You can feel that this is happening during the print by placing a finger at the opening where the filament goes into the feeder. During a print, you should feel it move. If it doesn't move, it's most likely ground the material and doesn't get any grip on it. You can also pull the filament out of the printer and see where it is damaged.
 
 To prevent this issue, you can make the following adjustments to Cura's settings:
 * Reduce the [Maximum Retraction Count](../travel/retraction_count_max.md) or increase the [Minimum Extrusion Distance Window](../travel/retraction_extrusion_window.md). This will limit the number of retractions made during the extrusion of a given length of filament. In effect this limits how often the feeder can roll back and forth across each piece of filament.
