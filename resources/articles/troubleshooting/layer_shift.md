@@ -1,5 +1,7 @@
 A layer shift occurs when the layers of a print are not properly stacked up on top of each other. If the print head gets shifted during the printing of a layer for some reason, the printer continues printing with an offset. As a result the top side of the print is shifted in relation to the bottom side.
 
+![A single layer shift due to an obstruction](../images/layer_shift_single.jpg)
+
 Causes
 ----
 Layer shifts come in two flavours.
