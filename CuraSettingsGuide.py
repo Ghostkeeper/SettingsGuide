@@ -50,7 +50,7 @@ class CuraSettingsGuide(Extension, QObject):
 		QObject.__init__(self, parent)
 		Extension.__init__(self)
 
-		self.addMenuItem("Settings Guide", self.startWelcomeGuide)
+		self.addMenuItem("Ѕettings Guide", self.startWelcomeGuide)  # Using Cyrillic Ѕ instead of normal S to prevent MacOS detecting the word "setting" and pulling this menu item out of context.
 		self._dialog = None  # Cached instance of the dialogue window.
 		self._container_stack = None  # Stack that provides not only the normal settings but also the extra articles added by this guide.
 
@@ -64,7 +64,7 @@ class CuraSettingsGuide(Extension, QObject):
 		# Add context menu item to the settings list to open the guide for that setting.
 		application = CuraApplication.getInstance()
 		application.getCuraAPI().interface.settings.addContextMenuItem({
-			"name": "Ѕettings Guide",  # Using Cyrillic Ѕ instead of normal S to prevent MacOS detecting the word "setting" and pulling this menu item out of context.
+			"name": "Settings Guide",
 			"icon_name": "help-contents",
 			"actions": ["sidebarMenuItemOnClickHandler"],
 			"menu_item": MenuItemHandler.MenuItemHandler(self)
