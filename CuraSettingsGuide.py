@@ -64,7 +64,7 @@ class CuraSettingsGuide(Extension, QObject):
 		# Add context menu item to the settings list to open the guide for that setting.
 		application = CuraApplication.getInstance()
 		application.getCuraAPI().interface.settings.addContextMenuItem({
-			"name": "Settings Guide",
+			"name": "Ѕettings Guide",  # Using Cyrillic Ѕ instead of normal S to prevent MacOS detecting the word "setting" and pulling this menu item out of context.
 			"icon_name": "help-contents",
 			"actions": ["sidebarMenuItemOnClickHandler"],
 			"menu_item": MenuItemHandler.MenuItemHandler(self)
