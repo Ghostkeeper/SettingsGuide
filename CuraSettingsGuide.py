@@ -83,7 +83,8 @@ class CuraSettingsGuide(Extension, QObject):
 			main_window = CuraApplication.getInstance()._qml_engine.rootObjects()[0]
 			tooltips = main_window.findChildren(PointingRectangle)  # There are multiple instances of this (currently 3). It's indistinguishable which is the setting tooltip. Collateral damage!
 			for tooltip in tooltips:
-				tooltip.setWidth(tooltip.width() * 2.5)  # About the maximum size that can be displayed with the default screen size.
+				if len(tooltip.childItems()) == 1:  # Filter only on the tooltip from the sidebar, which is the only one with 1 child item.
+					tooltip.setWidth(tooltip.width() * 2.5)  # About the maximum size that can be displayed with the default screen size.
 
 	def load_all_in_background(self):
 		"""
