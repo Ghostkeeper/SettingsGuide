@@ -22,6 +22,12 @@
 					"type": "str",
 					"default_value": ""
 				},
+				"bed_adhesion_problems": {
+					"label": "Bed Adhesion Problems",
+					"description": "The print got loose from the build plate while the print was still going on.",
+					"type": "str",
+					"default_value": ""
+				},
 				"blobs": {
 					"label": "Blobs",
 					"description": "Small specs on the walls.",
