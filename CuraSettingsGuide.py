@@ -4,20 +4,21 @@
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
+import json  # To modify the theme file.
 import os  # To find the article files and other resources.
 import urllib.parse  # For unquote_plus to create preference keys for forms.
-from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QSizeF, QObject, QUrl  # To expose data to the GUI and adjust the theme.
+from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl  # To expose data to the GUI.
 import re  # To get images from the descriptions.
+import shutil  # To copy the theme.
 from typing import Dict, List, Optional
 
-from cura.API import CuraAPI  # To register the context menu item in the settings list.
 from cura.CuraApplication import CuraApplication  # To get the setting version to load the correct definition file, and to create QML components.
 from UM.Extension import Extension  # We're implementing a Cura extension.
 from UM.Logger import Logger
 from UM.Job import Job  # To load articles as a background task.
 from UM.JobQueue import JobQueue  # To load articles as a background task.
 from UM.PluginRegistry import PluginRegistry  # To find the path of the resources.
-from UM.Qt.Bindings.PointingRectangle import PointingRectangle  # To adjust the width of setting tooltips if displaying the articles in them.
+from UM.Resources import Resources  # To find the themes in order to adjust them.
 from UM.Settings.ContainerRegistry import ContainerRegistry  # To register the non-setting entries.
 from UM.Settings.ContainerStack import ContainerStack  # To get the names of non-setting entries.
 from UM.Settings.DefinitionContainer import DefinitionContainer  # To register the non-setting entries.
@@ -72,19 +73,46 @@ class CuraSettingsGuide(Extension, QObject):
 
 		application.getPreferences().addPreference("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29", False)
 
-		application.initializationFinished.connect(self.adjust_theme)
+		self.adjust_theme()
 		application.initializationFinished.connect(self.load_all_in_background)
 
 	def adjust_theme(self):
 		"""
 		Makes the tooltips wider, if displaying articles in the tooltips.
 		"""
-		if CuraApplication.getInstance().getPreferences().getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
-			main_window = CuraApplication.getInstance()._qml_engine.rootObjects()[0]
-			tooltips = main_window.findChildren(PointingRectangle)  # There are multiple instances of this (currently 3). It's indistinguishable which is the setting tooltip. Collateral damage!
-			for tooltip in tooltips:
-				if len(tooltip.childItems()) == 1:  # Filter only on the tooltip from the sidebar, which is the only one with 1 child item.
-					tooltip.setWidth(tooltip.width() * 2.5)  # About the maximum size that can be displayed with the default screen size.
+		application = CuraApplication.getInstance()
+		if application.getPreferences().getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
+			preferences = application.getPreferences()
+			preferences.addPreference("general/theme", application.default_theme)
+			theme_name = preferences.getValue("general/theme")
+			if theme_name.endswith("_settingsguideadjust"):
+				return  # Already adjusted.
+			theme_path = Resources.getPath(Resources.Themes, theme_name)
+
+			# Create a new theme where we can adjust the tooltip.
+			new_theme_name = theme_name + "_settingsguideadjust"
+			new_theme_path = Resources.getStoragePath(Resources.Themes, new_theme_name)
+			try:
+				shutil.copytree(theme_path, new_theme_path)
+			except OSError:  # Already exists. Happens when the user manually adjusted the theme back in the preferences screen.
+				try:
+					os.removedirs(new_theme_path)
+					shutil.copytree(theme_path, new_theme_path)
+				except OSError:
+					pass  # Perhaps no rights?
+
+			# Adjust the tooltip width.
+			with open(os.path.join(theme_path, "theme.json")) as f:
+				adjusted_theme = json.load(f)
+			if "sizes" not in adjusted_theme:
+				adjusted_theme["sizes"] = {}
+			adjusted_theme["sizes"]["tooltip"] = [50.0, 10.0]
+			with open(os.path.join(new_theme_path, "theme.json"), "w") as f:
+				json.dump(adjusted_theme, f)
+
+			# Enable the new theme.
+			preferences.setValue("general/theme", new_theme_name)
+			application.default_theme = new_theme_name
 
 	def load_all_in_background(self):
 		"""
