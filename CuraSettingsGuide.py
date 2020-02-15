@@ -81,8 +81,8 @@ class CuraSettingsGuide(Extension, QObject):
 		Makes the tooltips wider, if displaying articles in the tooltips.
 		"""
 		application = CuraApplication.getInstance()
-		if application.getPreferences().getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
-			preferences = application.getPreferences()
+		preferences = application.getPreferences()
+		if preferences.getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
 			preferences.addPreference("general/theme", application.default_theme)
 			theme_name = preferences.getValue("general/theme")
 			if theme_name.endswith("_settingsguideadjust"):
