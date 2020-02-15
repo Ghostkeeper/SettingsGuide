@@ -1,3 +1,30 @@
+2.2.0 - The Bad One
+====
+This release adds articles on common forms of print failure, including pictures of the actual print results.
+
+New Features
+----
+* Support for Cura 4.5.
+* Articles can optionally be shown in the setting tooltip in the main setting list, instead of Cura's own setting description.
+* Articles can now contain checkboxes, which are stored as preferences for the plug-in.
+* All images are now brute-force RLE optimised, improving loading speed and reducing file size.
+
+Bug Fixes
+----
+* The menu entry now appears under the Extensions header in MacOS as well.
+* Fixed possible bug where image links would break if another closing bracket appears in the same paragraph.
+* Fixed building with CMake if you didn't have Mistune cloned from an earlier build.
+
+Articles
+----
+* Added articles about print problems, their causes and how to fix them with Cura settings.
+* Added pictures of print results for settings where layer view doesn't adequately show the result.
+* Added articles for the new settings in Cura 4.5.
+* A new "article" has been added for Settings Guide preferences.
+* The article files are now subdivided by category, so that they can more easily be found with a browser.
+* Fixed a dozen broken links in various articles.
+* Added pictures for fuzzy skin articles.
+
 2.1.0 - Completionist
 ====
 In this release the aim was to complete the articles for all of Cura's settings. No more missing links.
