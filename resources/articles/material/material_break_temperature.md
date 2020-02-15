@@ -2,7 +2,7 @@ For some printers, when a material is retracted for a filament switch, the mater
 
 This setting adjusts the temperature to cool down to before breaking the filament off. This cooling will occur between the second and the third stage (as shown in the images below). The aim is to allow the filament to harden, which allows the printer to break it off cleanly rather than drawing it out in a long strand which could get caught in the feeder.
 
-![First, the material is retracted to stop oozing, as per this setting](../images/filament_switch_anti_ooze.svg)
+![First, the material is retracted to stop oozing](../images/filament_switch_anti_ooze.svg)
 ![Second, the filament is slowly retracted to draw a thin thread that is easy to break and let this thread solidify](../images/filament_switch_break_preparation.svg)
 ![Third, the filament is quickly retracted further to break off the filament](../images/filament_switch_break.svg)
 

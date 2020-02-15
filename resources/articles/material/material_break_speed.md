@@ -2,7 +2,7 @@ For some printers, when a material is retracted for a filament switch, the mater
 
 This setting adjusts the speed at which the material is retracted to finally break the filament off of the blob that inevitably remains in the nozzle. While the blob in the nozzle cannot be pulled out due to its molten state, the part that does get pulled out should not have a thin thread at its tip, because that could get caught stuck in the feeder. This final retraction breaks the filament, but hopefully it breaks cleanly thanks to the preceding two stages.
 
-![First, the material is retracted to stop oozing, as per this setting](../images/filament_switch_anti_ooze.svg)
+![First, the material is retracted to stop oozing](../images/filament_switch_anti_ooze.svg)
 ![Second, the filament is slowly retracted to draw a thin thread that is easy to break and let this thread solidify](../images/filament_switch_break_preparation.svg)
 ![Third, the filament is quickly retracted further to break off the filament](../images/filament_switch_break.svg)
 
