@@ -1,5 +1,7 @@
 When a print has a big flat top side, there is a danger of scars. This is when there is a clearly visible line on the top side of the print, that doesn't belong to the normal pattern. This line mars the otherwise smooth top surface of the print.
 
+![A diagonal scar across the surface](../images/scarring.jpg)
+
 The scars are created by travel moves that cross the top surface. The hot nozzle scrapes over the surface, cutting away some plastic, slightly melting other plastic, and possibly oozing some extra material in the crevices. The scar is purely visual. There is no significant difference in the strength or accuracy of the print. However if a scar is created on the first layer, the scraping could pull your layer loose from the build plate.
 
 Prevention
