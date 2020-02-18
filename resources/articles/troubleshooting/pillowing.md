@@ -1,5 +1,7 @@
 Pillowing is an effect where small bulges or holes appear in between the infill lines on the top side of the model. It is most often seen on (otherwise) flat top surfaces when printing at high flow rates.
 
+![Severe bulges and small holes in the surface](../images/pillowing.jpg)
+
 Causes
 ----
 Pillowing is a combination of several effects which work together to cause a bulging effect on the top side of the print.
