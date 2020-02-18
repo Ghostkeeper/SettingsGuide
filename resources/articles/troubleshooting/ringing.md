@@ -1,5 +1,7 @@
 Ringing (sometimes called "ghosting") is an effect where ripples appear on otherwise flat surfaces near small details on that surface. The ripples start occurring just after printing the small details.
 
+![Ripples on the surface](../images/ringing.jpg)
+
 Causes
 ----
 Ringing is caused by vibrations in your 3D printer. Trying to prevent ringing is to reduce these vibrations. They are especially pronounced if the print head moves in one of the resonance frequencies of your printer's frame.
