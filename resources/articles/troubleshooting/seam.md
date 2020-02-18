@@ -1,5 +1,7 @@
 The walls of your print are printed as continuous loops, but the printer must start that loop somewhere and close it up nicely. If the loop is not closed nicely, a visible seam will be created. These seams are hard to remove completely, but some things can be done to hide them or reduce their size.
 
+![A long vertical seam on the surface](../images/seam.jpg)
+
 This should not be confused with a "Z seam", which is a seam that is being created while the nozzle moves to the height of the next layer. This movement stops the nozzle for a brief moment, creating a [blob](blobs.md) there. Cura's terminology with the seam settings is historically wrong in this regard, as its so-called "Z seam" settings are really about where to place the normal seam.
 
 Seam placement
