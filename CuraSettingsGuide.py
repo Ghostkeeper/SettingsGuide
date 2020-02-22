@@ -315,7 +315,7 @@ class CuraSettingsGuide(Extension, QObject):
 		:return: True if the file name is the file name of an existing article,
 		or False if it isn't.
 		"""
-		return os.path.exists(os.path.join(os.path.dirname(__file__), "resources", "articles", filename))
+		return os.path.exists(filename)
 
 	@pyqtProperty(QObject, constant=True)
 	def containerStack(self) -> Optional[ContainerStack]:

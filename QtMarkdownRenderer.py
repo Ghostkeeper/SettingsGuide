@@ -43,6 +43,10 @@ class QtMarkdownRenderer(mistune.Renderer):
 		"""
 		link = mistune.escape_link(link)
 		link_colour = UM.Qt.Bindings.Theme.Theme.getInstance().getColor("text_link").name()
+
+		if "://" not in link and link.endswith(".md"):  # Link to a different article.
+			link = os.path.join(self._images_path, link)
+
 		if not title:
 			return "<a href=\"{link}\"><font color=\"{colour}\">{text}</font></a>".format(colour=link_colour, link=link, text=text)
 		title = mistune.escape(title, quote=True)
