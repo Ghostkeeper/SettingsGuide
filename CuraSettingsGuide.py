@@ -58,7 +58,7 @@ class CuraSettingsGuide(Extension, QObject):
 
 		self._markdown_per_folder = {}  # For each directory containing Markdown files, create one renderer that correctly dereferences images relatively.
 
-		self.articles = {}  # type: Dict[str, List[List[str]]]  # All of the articles by key. Key: article ID, value: Lists of items in each article.
+		self.articles = {}  # type: Dict[str, Dict[str, List[List[str]]]]  # All of the articles by key and language. Key: article ID, value: Dict with language as key and lists of items in each article as value.
 		self.load_definitions()
 		self.article_locations = self.find_articles()
 		self._selected_article_id = ""  # Which article is currently shown for the user. Empty string indicates it's the welcome screen.
@@ -177,16 +177,34 @@ class CuraSettingsGuide(Extension, QObject):
 
 	def find_articles(self):
 		"""
-		For each article, find where the Markdown file is located.
-		:return: A dictionary mapping article ID to file path.
+		For each article and language, find where the Markdown file is
+		located.
+		:return: A nested dictionary mapping article ID to language to file
+		path.
 		"""
 		result = {}
+		# Find the English translations first.
 		for root, _, files in os.walk(os.path.join(os.path.dirname(__file__), "resources", "articles")):
 			for filename in files:
 				base_name, extension = os.path.splitext(filename)
 				if extension != ".md":
 					continue  # Only interested in article files.
-				result[base_name] = os.path.join(root, filename)
+				result[base_name] = {"en_US": os.path.join(root, filename)}
+
+		# Find the translated articles in the translations folder.
+		for language in os.listdir(os.path.join(os.path.dirname(__file__), "resources", "translations")):
+			language_path = os.path.join(os.path.dirname(__file__), "resources", "translations", language)
+			if not os.path.isdir(language_path):
+				continue  # Not a translation folder.
+			for root, _, files in os.walk(language_path):
+				for filename in files:
+					base_name, extension = os.path.splitext(filename)
+					if extension != ".md":
+						continue  # Only interested in article files.
+					if base_name not in result:
+						continue  # Translation for an article that doesn't exist in English?
+					result[base_name][language] = os.path.join(root, filename)
+
 		return result
 
 	def load_window(self):
@@ -233,7 +251,7 @@ class CuraSettingsGuide(Extension, QObject):
 
 	currentArticleReset = pyqtSignal() #Signal to indicate that the article list should reset its current index.
 
-	def _getArticle(self, article_id) -> List[List[str]]:
+	def _getArticle(self, article_id, language="en_US") -> List[List[str]]:
 		"""
 		Gets the rich text of a specified article.
 
@@ -241,13 +259,14 @@ class CuraSettingsGuide(Extension, QObject):
 		loaded before the article gets parsed and stored. Otherwise it'll get
 		taken from the cache.
 		:param article_id: The ID of the article to get.
+		:param language: The language to get the article in.
 		"""
-		if article_id in self.articles:
-			return self.articles[article_id]
+		if article_id in self.articles and language in self.articles[article_id]:
+			return self.articles[article_id][language]
 
 		images_path = os.path.join(os.path.dirname(__file__), "resources", "articles", "images")
 		try:
-			markdown_file = self.article_locations[article_id]
+			markdown_file = self.article_locations[article_id][language]
 			with open(markdown_file, encoding="utf-8") as f:
 				markdown_str = f.read()
 			images_path = os.path.dirname(markdown_file)
@@ -292,7 +311,9 @@ class CuraSettingsGuide(Extension, QObject):
 					parts[-1].append(QUrl.fromLocalFile(image_url).toString() + "|" + image_description)
 					image_description = None
 
-		self.articles[article_id] = parts
+		if article_id not in self.articles:
+			self.articles[article_id] = {}
+		self.articles[article_id][language] = parts
 
 		if preferences.getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
 			# Load the article into the actual setting description as well.
@@ -302,7 +323,7 @@ class CuraSettingsGuide(Extension, QObject):
 				definition = global_stack.definition.findDefinitions(key=article_id)[0]
 				definition._SettingDefinition__property_values["description"] = complete_article
 
-		return self.articles[article_id]
+		return self.articles[article_id][language]
 
 	@pyqtSlot(str, result=bool)
 	def isArticleFile(self, filename: str) -> bool:
