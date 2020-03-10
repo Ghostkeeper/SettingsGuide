@@ -1,7 +1,7 @@
 The 3D printer puts down plastic in layers. The layer height is the thickness of these layers in millimetres. It is the most important factor in both the visual quality of your final print and the printing time.
 
 ![0.1mm layer height](../images/layer_height_0.1.png)
-![0.2mm layer height](../images/layer_height_0.3.png)
+![0.3mm layer height](../images/layer_height_0.3.png)
 
 Layer height is the single most important setting to affect the overall quality and conversely the printing time. These are just some of the effects:
 * Having thinner layers will increase the visual quality of the print. Since the layers are thinner, the stair stepping effect at the layer's borders will be reduced. Also, the layers will be closer together and so the creases in between the layers will be smaller, leading to an overall smoother finish.
