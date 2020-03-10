@@ -1,7 +1,7 @@
 De 3D printer legt plastic neer in laagjes. De laaghoogte bepaalt hoe dik deze lagen zijn, in millimeter. Het is de belangrijkste factor voor zowel de visuele kwaliteit van de uiteindelijke print als de printtijd.
 
-![0.1mm laaghoogte](../../../articles/images/layer_height_0.1.png)
-![0.3mm laaghoogte](../../../articles/images/layer_height_0.3.png)
+![0,1mm laaghoogte](../../../articles/images/layer_height_0.1.png)
+![0,3mm laaghoogte](../../../articles/images/layer_height_0.3.png)
 
 De laaghoogte is de allerbelangrijkste instelling om de afweging te bepalen tussen de algemene kwaliteit en de printtijd. Het heeft verregaande effecten op de print. Hier zijn enkele effecten:
 * Dunnere laagjes geven een betere visuele kwaliteit voor de print. Omdat de laagjes dunner zijn wordt het topografieeffect minder zichtbaar. Tevens zijn de laagjes dichter bij elkaar, waardoor het oppervlakte gladder wordt.
