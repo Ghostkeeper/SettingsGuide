@@ -65,6 +65,7 @@ class CuraSettingsGuide(Extension, QObject):
 
 		# Add context menu item to the settings list to open the guide for that setting.
 		application = CuraApplication.getInstance()
+		self._selected_language = application.getPreferences().getValue("general/language")
 		application.getCuraAPI().interface.settings.addContextMenuItem({
 			"name": "Settings Guide",
 			"icon_name": "help-contents",
@@ -266,6 +267,8 @@ class CuraSettingsGuide(Extension, QObject):
 
 		images_path = os.path.join(os.path.dirname(__file__), "resources", "articles", "images")
 		try:
+			if language not in self.article_locations[article_id]:
+				language = "en_US"  # Fall back to English if the preferred language is not available.
 			markdown_file = self.article_locations[article_id][language]
 			with open(markdown_file, encoding="utf-8") as f:
 				markdown_str = f.read()
@@ -392,4 +395,4 @@ class CuraSettingsGuide(Extension, QObject):
 		items, some of which are text and some of which are image lists.
 		:return: The the currently selected article.
 		"""
-		return self._getArticle(self._selected_article_id)
+		return self._getArticle(self._selected_article_id, self._selected_language)
