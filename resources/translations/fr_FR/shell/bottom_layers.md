@@ -1,6 +1,5 @@
 Avec ce paramètre, vous pouvez définir le nombre de couches inférieures solides de l'impression. Une valeur plus élevée garantit que tous les espaces sur les couches inférieures sont complètement fermés. Cependant, cela peut également augmenter le temps d'impression et la quantité de filament utilisée.
 
-
 ![12 bottom layers](../../../articles/images/top_bottom_thickness_0.8.png)
 ![50 bottom layers](../../../articles/images/bottom_thickness.png)
 
