@@ -1,7 +1,7 @@
 Ce paramètre détermine l'épaisseur du mur autour de l'impression. Enfin, il permet d'ajuster le nombre de parois intérieures pour obtenir l'épaisseur souhaitée.
 
-![Parois de 0,8mm d'épaisseur](../../../articles/images/épaisseur_paroi_0,8.png)
-![murs de 1,6 mm d'épaisseur](../../../articles/images/épaisseur_mur_1.6.png)
+![Parois de 0,8mm d'épaisseur](../../../articles/images/wall_thickness_0.8.png)
+![murs de 1,6 mm d'épaisseur](../../../articles/images/wall_thickness_1.6.png)
 
 L'épaisseur de la paroi doit être un multiple de la largeur de la ligne de paroi. Si elle ne l'est pas, elle sera arrondie pour être un multiple exact. Gardez cependant à l'esprit qu'une des parois sera une paroi extérieure, et le reste sera une paroi intérieure. Ces murs peuvent avoir des largeurs de ligne différentes.
 
