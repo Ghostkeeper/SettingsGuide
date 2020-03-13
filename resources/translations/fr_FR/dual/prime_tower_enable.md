@@ -1,11 +1,11 @@
-This prints a tower on your build plate with a mix of materials. The tower is meant to be thrown away, but it serves to prime the material after each extruder switch.
+Ce système imprime une tour sur votre plaque de construction avec un mélange de matériaux. La tour est destinée à être jetée, mais elle sert à amorcer le matériau après chaque changement d'extrudeuse.
 
-![How a prime tower looks, and the dimensions of it](../../../articles/images/prime_tower.svg)
+![Comment se présente une tour d'amorçage, et ses dimensions](../../../articles/images/prime_tower.svg)
 
-While other extruders are printing, a nozzle will sometimes ooze some material, leaving the nozzle chamber void of material. Priming the material afterwards is essential, or the material won't flow properly yet at the beginning.
+Pendant que d'autres extrudeuses impriment, il arrive qu'une buse suinte de la matière, laissant la chambre de la buse vide de matière. Il est essentiel d'amorcer le matériau par la suite, sinon le matériau ne s'écoulera pas encore correctement au début.
 
-The prime tower consists of an outer shell which is completely printed with one extruder, every layer. This is necessary in order to guarantee stability of the tower, but will sometimes require extra extruder switches for some prints. All other extruders will print loops inside this shell, dumping their material inside the tower, preferably along the walls on the inside. These extruders don't need to prime if they happen to start on the layer, because they will not go in stand-by then.
+La tour d'amorçage est constituée d'une enveloppe extérieure qui est entièrement imprimée avec une extrudeuse, chaque couche. Cela est nécessaire pour garantir la stabilité de la tour, mais il faudra parfois recourir à des interrupteurs d'extrudeuse supplémentaires pour certaines impressions. Toutes les autres extrudeuses imprimeront des boucles à l'intérieur de cette enveloppe, en déversant leur matériau à l'intérieur de la tour, de préférence le long des parois intérieures. Ces extrudeuses n'ont pas besoin d'amorçage si elles démarrent sur la couche, car elles ne se mettront pas en veille à ce moment-là.
 
-In addition to priming, the nozzle will also make a movement inside the tower to wipe off any material from the nozzle that accumulated during stand-by. This prevents the ooze from sticking to the print. This is why the prime tower is also sometimes called a *wipe tower*.
+En plus de l'amorçage, la buse effectuera également un mouvement à l'intérieur de la tour pour essuyer tout matériau de la buse qui s'est accumulé pendant la mise en veille. Cela empêche le suintement de coller à l'impression. C'est pourquoi la tour d'amorçage est aussi parfois appelée *tour d'essuyage*.
 
-The disadvantages of the prime tower are that it takes some extra time to print and takes away some space on the build plate.
+Les inconvénients de la tour d'impression sont qu'elle prend un peu plus de temps pour imprimer et qu'elle prend de la place sur la plaque de montage.
