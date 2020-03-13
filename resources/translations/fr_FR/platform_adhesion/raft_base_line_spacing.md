@@ -1,8 +1,8 @@
-This setting adjusts how far the lines in the base layer of the raft are spaced apart. This is in a way similar to the [Infill Line Distance](../infill/infill_line_distance.md) setting. The main purpose is to adjust how well the raft adheres to the build plate.
+Ce réglage permet d'ajuster l'espacement des lignes de la couche de base du radeau. Ce réglage est similaire à celui de [Infill Line Distance](../infill/infill_line_distance.md). Le but principal est d'ajuster la façon dont le radeau adhère à la plaque de construction.
 
-![Dimensions related to the raft](../../../articles/images/raft_dimensions.svg)
+![Dimensions relatives au radeau](../../../articles/images/raft_dimensions.svg)
 
-Reducing the spacing between the lines of the base layers will have a few effects:
-* A smaller spacing will improve adhesion of the raft to the build plate, because there will be more surface with which the raft can stick.
-* The raft will be slightly stiffer.
-* It will take longer to print the initial layer of the raft. This layer is printed very slowly, so the effect is larger than with the other raft layers.
+La réduction de l'espacement entre les lignes des couches de base aura quelques effets :
+* Un espacement plus petit améliorera l'adhérence du radeau à la plaque de construction, car il y aura plus de surface avec laquelle le radeau pourra coller.
+* Le radeau sera légèrement plus rigide.
+* Il faudra plus de temps pour imprimer la couche initiale du radeau. Cette couche est imprimée très lentement, de sorte que l'effet est plus important qu'avec les autres couches du radeau.
