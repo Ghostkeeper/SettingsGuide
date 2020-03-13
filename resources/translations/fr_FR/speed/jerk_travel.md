@@ -1,5 +1,5 @@
-This setting determines the speed at which the nozzle can go through corners while travelling across the build volume. This can be configured separately from when the nozzle is extruding material.
+Ce réglage détermine la vitesse à laquelle la buse peut passer dans les virages tout en traversant le volume de construction. Cette vitesse peut être configurée séparément de celle de la buse lorsqu'il s'agit d'extruder de la matière.
 
-Since the nozzle is not extruding any material during this time, it doesn't matter much that the printer is vibrating. If you've configured Cura to [avoid printed parts when travelling](../travel/travel_avoid_other_parts.md), then keeping a sufficient [distance](../travel/travel_avoid_distance.md) will prevent the nozzle from hitting your print even if it vibrates a bit. It's therefore useful to set the jerk very high during the travel moves to save on printing time.
+Comme la buse n'extrude aucun matériau pendant ce temps, il importe peu que l'imprimante vibre. Si vous avez configuré Cura pour [éviter les pièces imprimées pendant le déplacement](../travel/travel_avoid_other_parts.md), alors le fait de garder une [distance](../travel/travel_avoid_distance.md) suffisante empêchera la buse de frapper votre impression même si elle vibre un peu. Il est donc utile de régler la secousse à un niveau très élevé pendant les déplacements pour gagner du temps d'impression.
 
-Setting the jerk too high can cause the motors to skip though, which can cause a layer shift to appear.
+Un réglage trop élevé de la secousse peut faire sauter les moteurs, ce qui peut entraîner un décalage de couche.
