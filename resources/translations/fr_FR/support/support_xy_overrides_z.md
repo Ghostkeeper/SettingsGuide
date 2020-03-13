@@ -1,15 +1,15 @@
-Both the [X/Y distance](support_xy_distance.md) and the [Z distance](support_z_distance.md) of support should be observed exactly; not more, not less. This is overconstrained, so there must be a preference between the two. This setting determines that preference.
+La [distance X/Y](support_xy_distance.md) et la [distance Z](support_z_distance.md) de support doivent être observées exactement ; ni plus, ni moins. Cette méthode est trop contraignante, il doit donc y avoir une préférence entre les deux. Ce paramètre détermine cette préférence.
 
-X/Y overrides Z
+X/Y prioritaire sur Z
 ----
-![X/Y overrides Z](../../../articles/images/support_xy_overrides_z.svg)
+![X/Y prioritaire sur Z](../../../articles/images/support_xy_overrides_z.svg)
 
-If the X/Y distance overrides the Z distance, then the X/Y distance is always kept constant, even if that means that the Z distance is greater than desired. The Z distance is still held as a minimum distance though, so if the overhang is very horizontal, the Z distance still kicks in, making the X/Y distance greater than desired.
+Si la distance X/Y est supérieure à la distance Z, alors la distance X/Y est toujours maintenue constante, même si cela signifie que la distance Z est supérieure à celle souhaitée. La distance Z est toujours maintenue comme une distance minimale, de sorte que si le surplomb est très horizontal, la distance Z s'applique toujours, rendant la distance X/Y plus grande que désirée.
 
-Z overrides X/Y
+Z prioritaire sur X/Y
 ----
-![Z overrides X/Y](../../../articles/images/support_z_overrides_xy.svg)
+![Z prioritaire sur X/Y](../../../articles/images/support_z_overrides_xy.svg)
 
-If the Z distance overrides the X/Y distance, then the Z distance is always kept constant, even if that means that the X/Y distance is smaller than desired. The X/Y distance then only gets any influence over the print in locations where the Z distance does not come into play, so not at the top of the support structures but only at the sides.
+Si la distance Z est supérieure à la distance X/Y, alors la distance Z est toujours maintenue constante, même si cela signifie que la distance X/Y est plus petite que souhaitée. La distance X/Y n'a alors d'influence sur l'impression qu'aux endroits où la distance Z n'entre pas en jeu, donc pas au sommet des structures de support mais seulement sur les côtés.
 
-A minimum X/Y distance is still observed though. If the overhang is very vertical, the X/Y distance would become so small that the support may fuse to the sides of the model. The [Minimum X/Y Distance](support_xy_distance_overhang.md) prevents that.
+Une distance X/Y minimale est cependant toujours respectée. Si le surplomb est très vertical, la distance X/Y deviendrait si petite que le support pourrait fusionner avec les côtés du modèle. La [distance X/Y minimale](support_xy_distance_overhang.md) permet d'éviter cela.
