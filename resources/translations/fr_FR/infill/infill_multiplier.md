@@ -1,14 +1,14 @@
-By increasing this setting, Cura will place down more infill lines directly next to the other infill lines.
+En augmentant ce paramètre, Cura placera davantage de lignes de remplissage directement à côté des autres lignes de remplissage.
 
-![Multiplied by 3](../../../articles/images/infill_multiplier.png)
+![Multiplié par 3](../../../articles/images/infill_multiplier.png)
 
-This effectively increases the infill density beyond what the [Infill Density](infill_sparse_density.md) setting specifies, but instead of spacing the infill lines out evenly, the lines are placed directly adjacent to each other. Compared to simply increasing the infill density, this may increase the strength of the infill since the infill lines are able to lean on each other for extra rigidity.
+Cela augmente effectivement la densité de remplissage au-delà de ce que le paramètre [Infill Density](infill_sparse_density.md) spécifie, mais au lieu d'espacer les lignes de remplissage de manière égale, les lignes sont placées directement les unes à côté des autres. Par rapport à une simple augmentation de la densité de remplissage, cela peut augmenter la résistance du remplissage puisque les lignes de remplissage peuvent s'appuyer les unes sur les autres pour plus de rigidité.
 
-When an odd multiplier is set, the original infill lines will remain in place but additional infill lines will loop around in the holes of the infill pattern. When an even multiplier is set, the original infill lines are removed and the loops are placed directly in their place.
+Lorsqu'un multiplicateur impair est défini, les lignes de remplissage d'origine restent en place, mais des lignes de remplissage supplémentaires s'enroulent autour des trous du modèle de remplissage. Lorsqu'un multiplicateur pair est défini, les lignes de remplissage d'origine sont retirées et les boucles sont placées directement à leur place.
 
-Compared to the alternative of increasing the infill density by the same multiplier, this will have a couple of effects on your print.
-* The infill becomes more rigid overall, similar to increasing the infill line width, because the infill lines are able to lean on each other when presented with shearing forces.
-* The infill will shine more through the skin, reducing the surface quality.
-* The gaps between infill lines are larger, since the lines are bunched together more. This makes the skin sag more and allows for pillowing.
+Par rapport à l'alternative consistant à augmenter la densité de remplissage par le même multiplicateur, cela aura quelques effets sur votre impression.
+* Le remplissage devient plus rigide dans l'ensemble, tout comme l'augmentation de la largeur de la ligne de remplissage, car les lignes de remplissage peuvent s'appuyer les unes sur les autres lorsqu'elles sont soumises à des forces de cisaillement.
+* Le remplissage brillera davantage à travers la peau, ce qui réduira la qualité de la surface.
+* Les espaces entre les lignes de remplissage sont plus grands, car les lignes sont plus serrées les unes contre les autres. La peau s'affaisse donc davantage et permet de s'affaisser.
 
-**This setting has no effect if the infill density is 100% or higher.**
+**Ce réglage n'a aucun effet si la densité de remplissage est de 100 % ou plus.
