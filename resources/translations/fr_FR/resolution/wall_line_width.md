@@ -1,19 +1,21 @@
-The line width for the walls can be adjusted separately from the rest of the print. This setting indicates how wide the individual wall lines will be.
+La largeur des lignes des murs peut être ajustée séparément du reste de l'impression. Ce réglage indique la largeur des lignes individuelles des murs.
 
-![The lines for the walls are much wider than the rest](../../../articles/images/wall_line_width.png)
+![Les lignes pour les murs sont beaucoup plus larges que le reste](../../../articles/images/wall_line_width.png)
 
-Reducing the walls to a line width slightly below the nozzle size is known to be beneficial for strength. The nozzle will extrude slightly less material but its opening will overlap with the adjacent wall lines. This causes the material to be pushed aside by the previously-placed wall into its proper location. But that will also cause the plastic to fuse better to the adjacent walls. This allows the walls to fuse better together so that they can combine their strength. This greatly improves the strength of the walls.
+On sait que la réduction des parois à une largeur de ligne légèrement inférieure à la taille de la buse est bénéfique pour la résistance. La buse extrudera un peu moins de matière, mais son ouverture chevauchera les lignes de paroi adjacentes. Le matériau est alors repoussé par la paroi précédemment placée à son emplacement correct. Mais cela permet également au plastique de mieux fusionner avec les parois adjacentes. Cela permet aux murs de mieux fusionner entre eux afin qu'ils puissent combiner leur force. Cela améliore considérablement la résistance des murs.
 
-Reducing the wall line width also allows the nozzle to print finer details. Especially the [Outer Wall Line Width](wall_line_width_0.md) is important for this property.
+La réduction de la largeur de la ligne de paroi permet également à la buse d'imprimer des détails plus fins. La [Largeur de la ligne de paroi extérieure](wall_line_width_0.md) est particulièrement importante pour cette propriété.
 
-Increasing the wall line width can reduce printing time. You will need fewer wall lines to get parts with similar strength. The strength will still be reduced somewhat because adjacent walls will not fuse together as much.
+L'augmentation de la largeur de la ligne de paroi peut réduire le temps d'impression. Vous aurez besoin de moins de lignes de paroi pour obtenir des pièces de force similaire. La résistance sera tout de même quelque peu réduite car les murs adjacents ne fusionneront pas autant entre eux.
 
-Making lines fit
+Ajustement des lignes
 ----
-When printing thin parts, adjusting the wall line width is an important tool to get accurate and strong parts. Cura will only ever draw complete contours, so if a contour doesn't fit a gap will fall into the walls, which greatly compromises the strength and accuracy of the part.
+Lors de l'impression de pièces fines, le réglage de la largeur de la ligne de paroi est un outil important pour obtenir des pièces précises et solides. Cura ne dessine jamais que des contours complets, donc si un contour n'est pas adapté, un espace va tomber dans les parois, ce qui compromet grandement la résistance et la précision de la pièce.
 
-Cura will attempt to fill such gaps between walls if [Fill Gaps Between Walls](../shell/fill_perimeter_gaps.md) is enabled, but that technique is less than ideal for arbitrary shapes and often takes a lot of printing time. When two walls overlap, the [Compensate Wall Overlaps](../shell/travel_compensate_overlapping_walls_enabled.md) feature will reduce the wall line width to make sure that the part is dimensionally accurate, but this incurs flow changes which reduce the quality and strength of the print as well.
+Cura tentera de combler ces espaces entre les murs si [Remplir les espaces entre les murs](../shell/fill_perimeter_gaps.md) est activé, mais cette technique est loin d'être idéale pour les formes arbitraires et prend souvent beaucoup de temps d'impression. Lorsque deux murs se chevauchent, la fonction [Compenser les chevauchements de murs](../shell/travel_compensate_overlapping_walls_enabled.md) réduit la largeur de la ligne de mur pour s'assurer que la pièce est dimensionnellement précise, mais cela entraîne des changements de flux qui réduisent également la qualité et la résistance de l'impression.
 
-For an ideal fit you want the part to be an exact multiple of the wall line width so that the walls fit precisely within the part. If you know how wide your part is, this can easily be done by adjusting the width of the walls. First you see how many contours you want to fit such that the lines still have a reasonable width. Then you can see how much you need to adjust the wall line width to make the lines fit properly. Keep in mind that you can adjust the [Outer Wall Line Width](wall_line_width_0.md) and [Inner Wall Line Width](wall_line_width_x.md) separately. Count carefully how many times each type of wall will be drawn to predict the effect of changing the wall line width.
+Pour un ajustement idéal, il faut que la pièce soit un multiple exact de la largeur de la ligne de paroi afin que les parois s'adaptent précisément à la pièce. Si vous connaissez la largeur de votre pièce, cela peut facilement se faire en ajustant la largeur des parois. Vous voyez d'abord combien de contours vous voulez ajuster de manière à ce que les lignes aient encore une largeur raisonnable. Ensuite, vous pouvez voir de combien vous devez ajuster la largeur des lignes des murs pour que les lignes s'ajustent correctement. Gardez à l'esprit que vous pouvez ajuster la [Largeur de la ligne de mur extérieure](wall_line_width_0.md) et la [Largeur de la ligne de mur intérieure](wall_line_width_x.md) séparément. Comptez soigneusement le nombre de fois que chaque type de mur sera dessiné pour prévoir l'effet de la modification de la largeur de la ligne de mur.
 
-Fitting wall lines is an important skill for 3D printing that distinguishes expert 3D printer operators from the rest. Some practice is required.
+L'ajustement des lignes de mur est une compétence importante pour l'impression 3D qui distingue les opérateurs experts d'imprimantes 3D des autres. Une certaine pratique est nécessaire.
+
+
