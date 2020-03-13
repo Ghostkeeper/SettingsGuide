@@ -1,10 +1,10 @@
-Cura needs to know where the inside of the model is in order to fill it with material. If the surface of your model is not precisely closed or has internal walls, it may be ambiguous where the inside of the model is.
+Cura doit savoir où se trouve l'intérieur du modèle afin de le remplir de matériau. Si la surface de votre modèle n'est pas précisément fermée ou comporte des parois internes, il peut être ambigu de savoir où se trouve l'intérieur du modèle.
 
-A common case of the model not being manifold, is when an extra piece of the model is attached to an otherwise closed part. This is common when editing meshes with CAD software that was not designed for manufacturing (but only for digital rendering) such as Blender or SketchUp. You can see an example of this in the images below.
+Un cas fréquent de modèle non multiple est celui où une pièce supplémentaire du modèle est fixée à une partie par ailleurs fermée. Ce cas est fréquent lorsque l'on édite des maillages avec un logiciel de CAO qui n'a pas été conçu pour la fabrication (mais seulement pour le rendu numérique) comme Blender ou SketchUp. Vous pouvez en voir un exemple dans les images ci-dessous.
 
-![The mesh looks normal on the outside](../../../articles/images/meshfix_extensive_stitching_shell.png)
-![X-ray view reveals an extra surface on the inside](../../../articles/images/meshfix_extensive_stitching_xray.png)
-![With this setting disabled, only the properly closed volume gets printed](../../../articles/images/meshfix_extensive_stitching_disabled.png)
-![With this setting enabled, the extra piece gets attached properly](../../../articles/images/meshfix_extensive_stitching_enabled.png)
+![Le maillage semble normal à l'extérieur](../../../articles/images/meshfix_extensive_stitching_shell.png)
+![La vue aux rayons X révèle une surface supplémentaire à l'intérieur](../../../articles/images/meshfix_extensive_stitching_xray.png)
+![Avec ce paramètre désactivé, seul le volume correctement fermé est imprimé](../../../articles/images/meshfix_extensive_stitching_disabled.png)
+![Avec ce paramètre activé, la pièce supplémentaire est attachée correctement](../../../articles/images/meshfix_extensive_stitching_enabled.png)
 
-This setting causes Cura to make a better attempt at closing gaps in the mesh if it is not properly watertight. This increases the chances of a good print, but increases slicing time and may sometimes connect the wrong surfaces together.
+Ce réglage permet à Cura de mieux tenter de combler les lacunes de la maille si elle n'est pas correctement étanche. Cela augmente les chances d'obtenir une bonne impression, mais augmente le temps de découpe et peut parfois relier les mauvaises surfaces entre elles.
