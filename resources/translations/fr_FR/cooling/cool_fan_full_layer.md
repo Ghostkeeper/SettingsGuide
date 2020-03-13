@@ -1,7 +1,6 @@
-The fan speed will start at the value of the [Initial Fan Speed](cool_fan_speed_0.md) setting at the beginning of the print. During the first few layers of the print, as determined by this setting, the fan speed will gradually be increased to the [Regular Fan Speed](cool_fan_speed_min.md).
+La vitesse du ventilateur commence à la valeur du paramètre [Initial Fan Speed](cool_fan_speed_0.md) au début de l'impression. Au cours des premières couches de l'impression, comme déterminé par ce paramètre, la vitesse du ventilateur sera progressivement augmentée jusqu'à la [vitesse normale du ventilateur] (cool_fan_speed_min.md).
+![Quelle vitesse de ventilateur est utilisée où](../../../articles/images/cool_fan_speed.svg)
 
-![Which fan speed is used where](../../../articles/images/cool_fan_speed.svg)
-
-* Increasing this setting can improve bed adhesion.
-* Reduce this setting if you find issues with elephant feet or oozing.
-* If your build plate is heated to a high temperature, you might need to reduce this setting in order to prevent elephant feet or oozing.
+* L'augmentation de ce paramètre peut améliorer l'adhérence au lit.
+* Réduisez ce réglage si vous constatez des problèmes de pattes d'éléphant ou de suintement.
+* Si votre plaque de construction est chauffée à une température élevée, vous devrez peut-être réduire ce réglage afin d'éviter les pattes d'éléphant ou les suintements.
