@@ -1,10 +1,10 @@
-If this setting is enabled, the nozzle will be lifted above the print slightly when the nozzle needs to travel from one place to another. The aim of this is that the nozzle goes over the print instead of hitting the previously printed parts with the nozzle.
+Si ce réglage est activé, la buse sera légèrement soulevée au-dessus de l'impression lorsque la buse doit se déplacer d'un endroit à l'autre. L'objectif est que la buse passe au-dessus de l'impression au lieu de frapper les parties précédemment imprimées avec la buse.
 
-![Moving up when Z hops are enabled](../../../articles/images/retraction_hop_enabled.svg)
+![Déplacement vers le haut lorsque les sauts Z sont activés](../../../articles/images/retraction_hop_enabled.svg)
 
-Whenever a retraction is done, the nozzle is raised (or the build plate lowered) to create clearance between the nozzle and the print. This has several advantages:
-* It prevents the nozzle from hitting the print during travel moves. When the nozzle hits the print it leaves a visible scar, so it should improve the visual quality of the walls of the print.
-* If the material oozes out of the nozzle during travel moves, the ooze gets deposited where the nozzle lands after the travel move, which is often in the infill where it's not visible. This reduces blobs on the surface.
-* Blobs on the surface have a chance to knock over your print, so enabling this setting can improve reliability.
+Chaque fois qu'un retrait est effectué, la buse est relevée (ou la plaque de montage abaissée) pour créer un espace entre la buse et l'impression. Cela présente plusieurs avantages :
+* Il empêche la buse de heurter l'impression pendant les déplacements. Lorsque la buse frappe l'impression, elle laisse une cicatrice visible, ce qui devrait améliorer la qualité visuelle des parois de l'impression.
+* Si la matière suinte de la buse pendant les déplacements, l'exsudat se dépose à l'endroit où la buse se pose après le déplacement, souvent dans le remplissage où il n'est pas visible. Cela permet de réduire les taches à la surface.
+* Les taches à la surface ont une chance de faire tomber votre impression, donc activer ce paramètre peut améliorer la fiabilité.
 
-However, moving the nozzle up and down all the time takes a bit more time, so your print will take longer to complete. It can also wear down the Z axis of the printer faster, depending on the printer's design.
+Cependant, le déplacement de la buse de haut en bas prend un peu plus de temps, de sorte que votre impression sera plus longue à réaliser. L'axe Z de l'imprimante peut également s'user plus rapidement, selon la conception de l'imprimante.
