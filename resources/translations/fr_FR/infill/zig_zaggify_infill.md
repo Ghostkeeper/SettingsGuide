@@ -1,16 +1,16 @@
-This setting connects the endpoints of the infill pattern, where the infill meets the inner wall or skin, using a line that follows the edge of the infill area.
+Thirelie les points d'extrémité du modèle de remplissage, où le remplissage rencontre la paroi intérieure ou la peau, à l'aide d'une ligne qui suit le bord de la zone de remplissage.
 
-![No connected infill lines](../../../articles/images/zig_zaggify_infill_disabled.png)
-![Connected infill lines](../../../articles/images/zig_zaggify_infill_enabled.png)
+![Aucune ligne de remplissage connectée](../../../articles/images/zig_zaggify_infill_disabled.png)
+![Lignes de remplissage connectées](../../../articles/images/zig_zaggify_infill_enabled.png)
 
-This converts the entire infill pattern into a single or very few lines. Converting it into a single line is not always possible. The starting point of this line is arbitrary, so it might not be the same for every layer, especially if the shape that the infill is contained in is different from layer to layer.
+Cela permet de convertir l'ensemble du schéma de remplissage en une seule ligne ou en très peu de lignes. La conversion en une seule ligne n'est pas toujours possible. Le point de départ de cette ligne est arbitraire, il peut donc ne pas être le même pour chaque couche, surtout si la forme du remplissage est différente d'une couche à l'autre.
 
-Connecting the infill has a couple of benefits, but also some downsides:
-* Your part will be stronger in the end, since there is practically half a contour extra.
-* The infill will adhere better to the walls due to increased surface area, which also makes the part stronger.
-* The flow rate will be held more constant, allowing you to print the infill at greater speed without flow problems. This is especially important for materials that are hard to extrude properly.
-* Significantly fewer retractions will be made during the printing of the infill, which prevents the material from grinding.
-* The effect of the [Infill Overlap](infill_overlap.md) setting is amplified, since a greater part of the infill lines will be made to overlap the walls.
-* It will take more material to print the infill.
-* Usually it will take more time to print the infill, since travel moves are normally faster than printing infill lines.
-* The infill will typically shine more through the walls, since it gets pushed into a greater portion of the walls.
+Le raccordement du remplissage présente quelques avantages, mais aussi quelques inconvénients :
+* Votre pièce sera plus solide au final, puisqu'il y a pratiquement un demi-contour en plus.
+* Le matériau de remplissage adhère mieux aux parois grâce à l'augmentation de la surface, ce qui rend la pièce plus résistante.
+* Le débit sera maintenu plus constant, ce qui vous permettra d'imprimer le remplissage à une plus grande vitesse sans problème d'écoulement. Ceci est particulièrement important pour les matériaux qui sont difficiles à extruder correctement.
+* Le nombre de retraits effectués pendant l'impression est nettement inférieur, ce qui empêche le matériau de se broyer.
+* L'effet du paramètre [Recouvrement du remplissage](infill_overlap.md) est amplifié, car une plus grande partie des lignes de remplissage chevauchent les parois.
+* Il faudra plus de matière pour imprimer le remplissage.
+* Il faut généralement plus de temps pour imprimer le remplissage, car les déplacements sont normalement plus rapides que l'impression des lignes de remplissage.
+* Le remplissage brillera généralement plus à travers les murs, car il sera poussé dans une plus grande partie des murs.
