@@ -1,7 +1,7 @@
-This setting configures the speed at which the main support structures are printed. That is, all of the support aside from the roof and floor.
+Ce paramètre configure la vitesse à laquelle les principales structures de support sont imprimées. C'est-à-dire tous les supports, à l'exception du toit et du sol.
 
-![Various structures printed at different speeds](../../../articles/images/speed_difference.png)
+![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)
 
-Normally the support doesn't need to be printed very accurately, so it is safe to print the support at a higher speed than the rest of the print. This can save some printing time.
+Normalement, le support n'a pas besoin d'être imprimé avec une grande précision, il est donc possible d'imprimer le support à une vitesse plus élevée que le reste de l'impression. Cela peut permettre de gagner du temps d'impression.
 
-Increasing the speed too much causes a difference in flow rate between the support and the rest of the print though, which causes overextrusion when switching from support to the print and underextrusion when switching from the print to support.
+Cependant, une vitesse trop élevée entraîne une différence de débit entre le support et le reste de l'impression, ce qui provoque une surextrusion lors du passage du support à l'impression et une sous-extrusion lors du passage de l'impression au support.
