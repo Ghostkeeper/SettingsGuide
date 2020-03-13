@@ -1,5 +1,5 @@
-This setting adjusts the width of the brim in millimeters.
+Ce réglage permet d'ajuster la largeur du bord en millimètres.
 
-![The dimensions of the brim](../../../articles/images/brim_width.svg)
+![Les dimensions du bord](../../../articles/images/brim_width.svg)
 
-A wider brim will improve adhesion to the build plate, by increasing the surface area of your print. However, it will reduce the effective print area.
+Un bord plus large améliorera l'adhérence à la plaque de construction, en augmentant la surface de votre impression. Toutefois, il réduira la surface d'impression effective.
