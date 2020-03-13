@@ -1,10 +1,10 @@
-This setting makes the Cubic Subdivision infill pattern start reducing infill a bit more towards the inside, to improve the strength of the print.
+Ce réglage fait que le motif de remplissage de la subdivision cubique commence à réduire un peu plus le remplissage vers l'intérieur, pour améliorer la résistance de l'impression.
 
-![Cubic Subdivision with no additional shell](../../../articles/images/sub_div_rad_add_small.png)
-![Additional shell of 5mm](../../../articles/images/sub_div_rad_add_large.png)
+![Cubic Subdivision sans coquille supplémentaire](../../../articles/images/sub_div_rad_add_small.png)
+![Coque supplémentaire de 5mm](../../../articles/images/sub_div_rad_add_large.png)
 
-Cubic Subdivision works by removing the borders between eight adjacent cubes if none of the cubes touch the border of the infill volume. This setting moves that border further inside, preventing the borders between the cubes from being removed.
+Le Cubic Subdivision fonctionne en supprimant les frontières entre huit cubes adjacents si aucun des cubes ne touche la frontière du volume de remplissage. Ce réglage déplace cette frontière plus à l'intérieur, empêchant ainsi la suppression des frontières entre les cubes.
 
-Effectively, this causes the Cubic Subdivision pattern to draw the maximum density more often. This increases the strength of the object, but also increases the amount of time and material it takes to print it. In the extreme, increasing this setting enough will eventually cause the Cubic Subdivision pattern to be the same as the simple Cubic pattern.
+En fait, cela permet au modèle de subdivision cubique de dessiner la densité maximale plus souvent. Cela augmente la résistance de l'objet, mais aussi le temps et le matériel nécessaires pour l'imprimer. À l'extrême, en augmentant suffisamment ce paramètre, le schéma de subdivision cubique finira par être le même que le schéma cubique simple.
 
-You can also set this to a negative number. This causes the borders between cubes to be removed more often, effectively reducing the amount of infill around the edges.
+Vous pouvez également régler ce paramètre sur un nombre négatif. Cela permet d'enlever plus souvent les bordures entre les cubes, réduisant ainsi la quantité de remplissage sur les bords.
