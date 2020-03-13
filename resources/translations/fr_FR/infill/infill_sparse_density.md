@@ -1,13 +1,13 @@
-This setting configures the density of the volume inside the print, which is a major factor in the strength of the final print as well as the top surface quality. The greater the infill density, the closer the infill lines will be placed together. You can even go above 100% density, but that will result in overextrusion.
+Ce paramètre configure la densité du volume à l'intérieur de l'impression, qui est un facteur majeur de la solidité de l'impression finale ainsi que de la qualité de la surface supérieure. Plus la densité de remplissage est élevée, plus les lignes de remplissage seront rapprochées. Vous pouvez même dépasser la densité de 100 %, mais cela entraînera une surextrusion.
 
-![20% density](../../../articles/images/infill_sparse_density_high.png)
-![10% density](../../../articles/images/infill_sparse_density_low.png)
+![20% de densité](../../../articles/images/infill_sparse_density_high.png)
+![10% de densité](../../../articles/images/infill_sparse_density_low.png)
 
-Different densities work better with different infill patterns. Infill patterns with lots of corners and lots of crossings will not work well at great infill densities. Corners are a problem because the filament tends to drag along with the corner, creating air pockets in the outside of the corner where the material should've been deposited. Crossings are an even greater problem, because when one line crosses another its flow will get interrupted, causing underextrusion right after the crossing.
+Des densités différentes fonctionnent mieux avec des modèles de remplissage différents. Les modèles de remplissage avec beaucoup de coins et de croisements ne fonctionneront pas bien avec de grandes densités de remplissage. Les coins posent un problème car le filament a tendance à traîner avec le coin, créant des poches d'air à l'extérieur du coin où le matériau aurait dû être déposé. Les croisements sont un problème encore plus important, car lorsqu'une ligne en croise une autre, son flux est interrompu, ce qui provoque une sous-extrusion juste après le croisement.
 
-Increasing the infill density (by reducing the line distance) has a big effect on your print, namely:
-* Your print will be stronger.
-* The top surface will be supported better, making it smoother and more water tight.
-* Reduced pillowing because the pockets of heat will be smaller.
-* Your print will require more material and as a result will be heavier.
-* It takes longer to print.
+Augmenter la densité de remplissage (en réduisant la distance entre les lignes) a un effet important sur votre impression, à savoir :
+* Votre impression sera plus forte.
+* La surface supérieure sera mieux soutenue, ce qui la rendra plus lisse et plus étanche.
+* L'oreiller sera réduit car les poches de chaleur seront plus petites.
+* Votre tirage nécessitera plus de matière et sera donc plus lourd.
+* Il faut plus de temps pour imprimer.
