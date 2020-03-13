@@ -1,5 +1,5 @@
-This setting configures the width of the lines with which the lowest layer of the raft is being drawn.
+Ce paramètre configure la largeur des lignes avec lesquelles la couche la plus basse du radeau est dessinée.
 
-![Dimensions related to the raft](../../../articles/images/raft_dimensions.svg)
+![Dimensions relatives au radeau](../../../articles/images/raft_dimensions.svg)
 
-The lines of the base layer of the raft should be very thick. Thicker lines will cause the material to be pushed very hard on the build plate, which improves adhesion. The lines can be a bit wider than the nozzle size, but there is a limit to how far the material can flow sideways with small nozzles.
+Les lignes de la couche de base du radeau doivent être très épaisses. Des lignes plus épaisses feront que le matériau sera poussé très fort sur la plaque de construction, ce qui améliorera l'adhérence. Les lignes peuvent être un peu plus larges que la taille des buses, mais il y a une limite à la distance sur laquelle le matériau peut s'écouler latéralement avec de petites buses.
