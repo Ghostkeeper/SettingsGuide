@@ -1,7 +1,7 @@
-This setting causes the support roof to be expanded in all directions horizontally into the rest of the support.
+Ce réglage provoque l'expansion du toit de soutien dans toutes les directions horizontalement dans le reste du support.
 
-There are two use cases for this mechanism.
-* If the support roof ends directly at the edge of the overhang that needs to be supported, the build material can sag over the edge. Making the roof expand a bit further will prevent this.
-* Some materials typically used to print support with extrude badly at low flow rates or need some time to get going. Small areas of support roof don't jive well with those materials. This setting can literally make the areas larger so that there is more space to extrude these materials.
+Il existe deux cas d'utilisation de ce mécanisme.
+* Si le toit de soutien se termine directement au bord du surplomb qui doit être soutenu, le matériau de construction peut s'affaisser par-dessus le bord. Pour éviter cela, il faut faire en sorte que le toit s'étende un peu plus.
+* Certains matériaux généralement utilisés pour imprimer le support avec l'extrusion sont mal extrudés à faible débit ou ont besoin d'un certain temps pour se mettre en route. De petites surfaces de support de toit ne s'accordent pas bien avec ces matériaux. Ce réglage peut littéralement agrandir les zones afin qu'il y ait plus d'espace pour extruder ces matériaux.
 
-Due to technical limitations, the support roof cannot be expanded beyond the support itself.
+En raison de limitations techniques, le toit de soutien ne peut pas être étendu au-delà du support lui-même.
