@@ -1,13 +1,13 @@
-Since the visual quality and resolution of support is not important, you can use thicker layers for the support to reduce printing time. This setting configures how thick the layers will be that the support is printed with.
+La qualité visuelle et la résolution du support n'étant pas importantes, vous pouvez utiliser des couches plus épaisses pour le support afin de réduire le temps d'impression. Ce paramètre permet de configurer l'épaisseur des couches avec lesquelles le support sera imprimé.
 
-In layer view, it will look as if the support lines have become much wider. When actually printed, the support lines will drop down further instead of spreading out horizontally.
+En vue par couches, on aura l'impression que les lignes du support sont devenues beaucoup plus larges. Lorsqu'elles seront imprimées, les lignes de support descendront davantage au lieu de s'étendre horizontalement.
 
-![Support Infill Layer Thickness is set to three times the layer height](../../../articles/images/support_infill_sparse_thickness.png)
+![L'épaisseur de la couche de remplissage du support est définie à trois fois la hauteur de la couche](../../../articles/images/support_infill_sparse_thickness.png)
 
-The support infill layer thickness must be a multiple of the ordinary layer height. If it is not, it will be rounded to the closest layer height.
+L'épaisseur de la couche de remplissage du support doit être un multiple de la hauteur de la couche ordinaire. Si elle ne l'est pas, elle sera arrondie à la hauteur de couche la plus proche.
 
-This setting does not apply to the support roof or floor, only to the main structure of the support.
+Ce réglage ne s'applique pas au toit ou au plancher du support, mais uniquement à la structure principale du support.
 
-This setting is particularly useful when printing the support with a different material as the rest of the print, and even more when that material is hard to extrude, such as PVA. Because the support is not extruded on every layer, the printer won't need to switch extruders as often, saving a lot of time. Because more material is extruded on layers that are printed, materials that take some time to get the flow starting will be printed more reliably.
+Ce réglage est particulièrement utile lorsque le support est imprimé avec un matériau différent du reste de l'impression, et encore plus lorsque ce matériau est difficile à extruder, comme le PVA. Comme le support n'est pas extrudé sur chaque couche, l'imprimante n'aura pas besoin de changer d'extrudeuse aussi souvent, ce qui permet de gagner beaucoup de temps. Étant donné que davantage de matériau est extrudé sur les couches qui sont imprimées, les matériaux qui mettent un certain temps à démarrer le flux seront imprimés de manière plus fiable.
 
-Be careful with increasing this too much. When switching to and from support, the flow rate through the nozzle needs to accelerate and decelerate significantly. There is some delay on this, so it'll extrude too little at the beginning of the support and too much after the end of the support.
+Faites attention à ne pas trop augmenter ce débit. Lors du changement de support, le débit à travers la buse doit être accéléré et décéléré de manière significative. Il y a un certain retard sur ce point, de sorte que le débit sera trop faible au début du support et trop important après la fin du support.
