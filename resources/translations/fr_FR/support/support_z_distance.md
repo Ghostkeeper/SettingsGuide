@@ -1,12 +1,12 @@
-This setting indicates the vertical clearance that must be kept between the support and the model, both at the top of the support and the bottom.
+Ce réglage indique la distance verticale qui doit être maintenue entre le support et le modèle, tant en haut qu'en bas du support.
 
-![Z distance determines both the top and the bottom sides of support](../../../articles/images/support_top_bottom_distance.svg)
-![A vertical distance between model and support (exaggerated)](../../../articles/images/support_z_distance.png)
+![La distance Z détermine à la fois le côté supérieur et le côté inférieur du support](../../../articles/images/support_top_bottom_distance.svg)
+![Une distance verticale entre le modèle et le support (exagérée)](../../../articles/images/support_z_distance.png)
 
-This setting is the most influential factor in how well the support adheres to the model.
+Ce cadre est le facteur le plus influent dans la mesure où le soutien adhère au modèle.
 
-If this setting is reduced, the support will stick better to the model. This makes overhangs look better since they are not allowed to sag as much. It will also improve the stability of the support, because it is firmly positioned on top of the model at the bottom side of the support.
+Si ce paramètre est réduit, le soutien adhérera mieux au modèle. Les surplombs ont ainsi une meilleure apparence puisqu'ils ne sont pas autorisés à s'affaisser autant. Cela améliorera également la stabilité du support, car il est fermement positionné sur le modèle, sur le côté inférieur du support.
 
-If this setting is increased, the support will be easier to remove. It won't leave as much of a scar on the surface where the support was supporting the model. On the other hand, the model won't be supported as well. This reduces the surface quality of the overhangs.
+Si ce réglage est augmenté, le support sera plus facile à retirer. Il ne laissera pas autant de cicatrice sur la surface où le support soutenait le modèle. D'autre part, le modèle ne sera pas aussi bien supporté. Cela réduit la qualité de la surface des porte-à-faux.
 
-As a general rule, the better the support material sticks to the build material, the greater this setting must be. If you're using a different material to print the support, the Z distance can be lowered considerably since two different materials tend to separate more easily after solidifying. If you're using a material with good layer bonding, the setting must be increased a bit. Printing hotter or with thicker lines also increases bonding, and thus also require increasing this setting.
+En règle générale, plus le matériau de support adhère bien au matériau de construction, plus ce réglage doit être important. Si vous utilisez un matériau différent pour imprimer le support, la distance Z peut être considérablement réduite car deux matériaux différents ont tendance à se séparer plus facilement après la solidification. Si vous utilisez un matériau avec une bonne adhérence des couches, il faut augmenter un peu le réglage. L'impression à chaud ou avec des lignes plus épaisses augmente également l'adhérence, et nécessite donc aussi d'augmenter ce réglage.
