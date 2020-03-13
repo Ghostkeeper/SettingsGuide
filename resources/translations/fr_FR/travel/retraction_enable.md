@@ -1,15 +1,17 @@
-If a 3D printer would stop pushing material, the material won't immediately stop flowing from the end of the nozzle. There is some residual material in the nozzle and it'll be pressurised, so it keeps flowing for a while longer. To actually stop the material from flowing, the printer needs to retract the material out of the nozzle opening. This is necessary to make clean travel moves without stringing.
+Si une imprimante 3D arrêtait de pousser le matériau, le matériau ne cesserait pas immédiatement de couler par l'extrémité de la buse. Il y a des résidus de matière dans la buse et elle est pressurisée, ce qui fait qu'elle continue à couler pendant un certain temps encore. Pour empêcher le matériau de s'écouler, l'imprimante doit le retirer de l'ouverture de la buse. Cela est nécessaire pour effectuer des mouvements de déplacement propres sans fil.
 
-![Retractions disabled](../../../articles/images/retraction_enable_disabled.png)
-![Retracted travel moves show as a lighter blue](../../../articles/images/retraction_enable_enabled.png)
+![Rétractations désactivées](../../../articles/images/retraction_enable_disabled.png)
+![Les mouvements de déplacement rétractés apparaissent en bleu plus clair](../../../articles/images/retraction_enable_enabled.png)
 
-Retractions are done when a travel move is made that is particularly sensitive to stringing. Travel moves that only pass through infill or travel from support to support are normally not retracted. There is also a limit to how often the material can be retracted, through the [Maximum Retraction Count](retraction_count_max.md) and [Minimum Extrusion Distance Window](retraction_extrusion_window.md) settings.
+Les rétractions sont effectuées lors d'un déplacement particulièrement sensible à la ficelle. Les mouvements de déplacement qui ne font que passer par un remplissage ou un déplacement de support à support ne sont normalement pas rétractés. Il existe également une limite à la fréquence de rétraction du matériau, par le biais des paramètres [Maximum Retraction Count](retraction_count_max.md) et [Minimum Extrusion Distance Window](retraction_extrusion_window.md).
 
-Retracting has significant advantages, but also some disadvantages:
-* It'll reduce stringing significantly. No more wiring between different parts of the print.
-* It will significantly reduce the amount and size of blobs on the surface where the nozzle enters the perimeter of a part.
-* It takes a bit of time to retract.
-* The material flow gets interrupted when a retraction happens. This has negative consequences for dimensional accuracy, banding and underextrusion.
-* The filament could wear down when too many retractions happen, preventing the feeder from gripping the material.
+La rétraction présente des avantages importants, mais aussi des inconvénients :
+* Il réduit considérablement le nombre de cordes. Plus de câblage entre les différentes parties de l'impression.
+* Cela réduira de manière significative la quantité et la taille des taches sur la surface où la buse pénètre dans le périmètre d'une pièce.
+* Il faut un peu de temps pour se rétracter.
+* Le flux de matière est interrompu lorsqu'il y a rétraction. Cela a des conséquences négatives sur la précision dimensionnelle, le banderolage et la sous-extrusion.
+* Le filament peut s'user quand il y a trop de rétractions, ce qui empêche le dispositif d'alimentation de saisir le matériau.
 
-**Flexible materials are harder to retract, because pulling on the filament makes the filament stretch instead of pulling it out of the nozzle. It may be very time consuming and relatively ineffective to enable retraction with such materials.**
+**Les matériaux flexibles sont plus difficiles à rétracter, car le fait de tirer sur le filament le fait s'étirer au lieu de le sortir de la buse. Il peut être très long et relativement inefficace de permettre la rétraction avec de tels matériaux.**
+
+
