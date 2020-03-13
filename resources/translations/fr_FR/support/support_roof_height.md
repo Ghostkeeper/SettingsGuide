@@ -1,5 +1,5 @@
-This setting defines how thick the support roof is, where the model rests on the support.
+Ce réglage définit l'épaisseur du toit de soutien, l'endroit où le modèle repose sur le support.
 
-A thicker roof reduces the savings that would be made by using a support roof rather than printing all of the support at increased density.
+Un toit plus épais réduit les économies qui seraient réalisées en utilisant un toit de support plutôt que d'imprimer tout le support à une densité accrue.
 
-However it increases the effectiveness of the roof as well. As the sparser support infill gets bridged by the lines of the roof, the roof lines sag a bit. By building multiple roof layers, this sagging can be reduced, which makes the surface of the support roof more even. This in turn makes the overhanging surface more even.
+Cependant, cela augmente également l'efficacité du toit. Lorsque le support de remplissage plus épars est ponté par les lignes du toit, les lignes du toit s'affaissent un peu. En construisant plusieurs couches de toit, cet affaissement peut être réduit, ce qui rend la surface du toit de soutien plus régulière. La surface en surplomb est ainsi plus régulière..
