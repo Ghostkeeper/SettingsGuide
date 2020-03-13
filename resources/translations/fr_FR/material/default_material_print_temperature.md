@@ -1,3 +1,3 @@
-This setting defines the printing temperature that is ideal for the material. Changing the printing temperature in the material manager will actually change this temperature. The actual printing temperature may still vary for different quality profiles. It is uncommon to need to change this setting unless you are using an uncommon material.
+Ce réglage définit la température d'impression idéale pour le matériau. Le fait de modifier la température d'impression dans le gestionnaire de matériaux modifiera en fait cette température. La température d'impression réelle peut toujours varier pour différents profils de qualité. Il est rare de devoir modifier ce paramètre, sauf si vous utilisez un matériau peu courant.
 
-This setting is translated through to the other temperature settings that define the extrusion temperatures at various stages during the printing process.
+Ce paramètre est transposé aux autres paramètres de température qui définissent les températures d'extrusion à différentes étapes du processus d'impression.
