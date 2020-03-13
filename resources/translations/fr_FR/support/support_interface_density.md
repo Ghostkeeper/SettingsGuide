@@ -1,3 +1,3 @@
-This setting specifies how dense the interface between support and the model will be.
+Ce paramètre précise la densité de l'interface entre le support et le modèle.
 
-Increasing the density of the support interface allows you to achieve a nice surface finish at the overhangs, just as if the entire support was printed with a great density, without needing all that much extra printing time and material. However it will still be harder to remove the support from the model after printing, because the contact area is still increased.
+Augmenter la densité de l'interface du support permet d'obtenir une belle finition de surface au niveau des débords, comme si l'ensemble du support était imprimé avec une grande densité, sans avoir besoin de beaucoup de temps et de matériel d'impression supplémentaires. Cependant, il sera toujours plus difficile de retirer le support du modèle après l'impression, car la surface de contact est toujours augmentée.
