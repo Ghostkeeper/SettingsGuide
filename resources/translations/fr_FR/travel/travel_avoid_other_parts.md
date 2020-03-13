@@ -1,12 +1,12 @@
-By enabling this setting, the print head will try to avoid hitting other objects when travelling around the build volume. It will take a small detour instead. If a detour is possible that doesn't hit any other objects, no retraction is triggered unless the length of the path exceeds the [Max Comb Distance With No Retract](retraction_combing_max_distance.md) setting.
+En activant ce paramètre, la tête d'impression essaiera d'éviter de heurter d'autres objets lors de ses déplacements dans le volume de construction. Elle fera plutôt un petit détour. Si un détour est possible et qu'il ne touche aucun autre objet, aucune rétraction n'est déclenchée à moins que la longueur du trajet ne dépasse le paramètre [Distance maximale du peigne sans rétraction](retraction_combing_max_distance.md).
 
-![When disabled, travel moves can cross through other parts](../../../articles/images/travel_avoid_other_parts_disabled.png)
-![When enabled, travel moves will avoid other parts](../../../articles/images/travel_avoid_other_parts_enabled.png)
+![Lorsque ce paramètre est désactivé, les mouvements de déplacement peuvent traverser d'autres parties](../../../articles/images/travel_avoid_other_parts_disabled.png)
+![Lorsque cette option est activée, les déplacements évitent les autres parties](../../../articles/images/travel_avoid_other_parts_enabled.png)
 
-Aside from avoiding other parts, the travel moves will also try to stay near the walls as shortly as possible. This means that when exiting or entering a part through a wall, it will exit or enter it perpendicular to the wall.
+En plus d'éviter d'autres parties, les déplacements tenteront également de rester près des murs le plus rapidement possible. Cela signifie que lorsqu'il sort ou entre dans une pièce à travers un mur, il la sortira ou l'entrera perpendiculairement au mur.
 
-This setting tends to improve the surface quality of the print, because the nozzle will not cross through the walls as often. Crossing through the walls leaves a scar in the wall, so that should be avoided.
+Ce réglage tend à améliorer la qualité de la surface de l'impression, car la buse ne traversera pas les murs aussi souvent. Le passage à travers les murs laisse une cicatrice dans le mur, ce qui doit être évité.
 
-However, this setting does increase the amount of oozing, since more travel moves will be made without retracting and the travel moves will be longer. With materials that ooze a lot, it may be advisable to disable avoiding other parts.
+Toutefois, ce réglage augmente le suintement, car il y aura plus de déplacements sans rétraction et les déplacements seront plus longs. Avec des matériaux qui suintent beaucoup, il peut être conseillé de désactiver le fait d'éviter d'autres parties.
 
-Printing time could be slightly increased because the travel moves are longer, but usually this is completely offset by the reduction in the number of retractions that this causes.
+Le temps d'impression peut être légèrement augmenté car les déplacements sont plus longs, mais cela est généralement compensé par la réduction du nombre de retraits que cela entraîne.
