@@ -1,5 +1,5 @@
-This setting configures the fan speed while printing the base layer of the raft. The fan speed while printing the base layer can be configured separately from the middle and top layers.
+Ce réglage permet de configurer la vitesse du ventilateur lors de l'impression de la couche de base du radeau. La vitesse du ventilateur lors de l'impression de la couche de base peut être configurée séparément de celle des couches intermédiaire et supérieure.
 
-![Where the base layer is located in the raft](../../../articles/images/raft_dimensions_simplified.svg)
+[Où se trouve la couche de base dans le radeau](../../../articles/images/raft_dimensions_simplified.svg)
 
-Configuring the fan speed for the base layer separately is useful since reducing the fan speed can improve bed adhesion and reduce warping. Increasing the fan speed can improve the smoothness of the surface of the raft, but that is not a concern for the base layer. Because of this, it's useful to set the fan speed a bit lower than in the top layers.
+Il est utile de configurer séparément la vitesse du ventilateur pour la couche de base, car la réduction de la vitesse du ventilateur peut améliorer l'adhérence du lit et réduire le gauchissement. L'augmentation de la vitesse du ventilateur peut améliorer la douceur de la surface du radeau, mais cela n'est pas un problème pour la couche de base. C'est pourquoi il est utile de régler la vitesse du ventilateur un peu plus bas que dans les couches supérieures.
