@@ -1,6 +1,6 @@
-If the infill overlaps a bit with the walls, it will adhere better to the walls, causing the part to be much stronger. This setting controls how much the infill overlaps the walls.
+Si le remblai chevauche un peu les murs, il adhérera mieux aux parois, ce qui rendra la pièce beaucoup plus solide. Ce réglage permet de contrôler le degré de chevauchement entre le remblai et les murs.
 
-![A visualisation of the infill overlap and wipe distance](../../../articles/images/infill_overlap.svg)
+![Une visualisation du chevauchement des remplissages et de la distance d'essuyage](../../../articles/images/infill_overlap.svg)
 
-* Increasing the overlap causes the infill to bond better to the walls, resulting in a stronger part.
-* However, it will also cause the infill to shine through the walls, resulting in a pattern on the surface of the print. This reduces the visual surface quality.
+* L'augmentation du chevauchement fait que le remblai adhère mieux aux murs, ce qui donne une partie plus solide.
+* Cependant, cela fera également briller le remplissage à travers les murs, ce qui donnera un motif à la surface de l'impression. Cela réduit la qualité visuelle de la surface.
