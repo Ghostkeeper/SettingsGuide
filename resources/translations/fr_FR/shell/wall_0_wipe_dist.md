@@ -1,9 +1,9 @@
-With this setting, at the end of every outer wall, the nozzle will travel slightly further without extrusion, wiping the contour closed.
+Avec ce réglage, à l'extrémité de chaque paroi extérieure, la buse se déplacera légèrement plus loin sans extrusion, essuyant le contour fermé.
 
-![A small travel move after completing the outer wall](../../../articles/images/wall_0_wipe_dist.png)
+![Un petit mouvement de déplacement après avoir terminé la paroi extérieure](../../../articles/images/wall_0_wipe_dist.png)
 
-The goal of this feature is to reduce the visibility of the seam. When the wall is completed normally the bead is still slightly behind the nozzle. This little travel move connects the bead with the start of the contour, so that the seam is closed.
+Le but de cette caractéristique est de réduire la visibilité de la couture. Lorsque la paroi est terminée, le bourrelet se trouve normalement encore légèrement derrière la buse. Ce petit mouvement de translation relie le bourrelet au début du contour, de sorte que la couture est fermée.
 
-The seam will still be visible, but the result should be slightly better with a small wipe distance. Increasing this setting too much has no more effect since the nozzle travels beyond the seam, and may cause some underextrusion later as the nozzle chamber empties by oozing on the outer wall.
+La couture sera toujours visible, mais le résultat devrait être légèrement meilleur avec une petite distance d'essuyage. Une augmentation trop importante de ce réglage n'a plus d'effet puisque la buse se déplace au-delà du joint, et peut provoquer une certaine sous-extrusion plus tard, lorsque la chambre de la buse se vide en suintant sur la paroi extérieure.
 
-This effect is basically the opposite of [coasting](../experimental/coasting_enable.md), which will stop extruding slightly before the contour is finished.
+Cet effet est essentiellement l'opposé de [coasting](../experimental/coasting_enable.md), qui s'arrêtera d'extruder légèrement avant que le contour ne soit terminé.
