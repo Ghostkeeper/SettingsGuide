@@ -1,13 +1,13 @@
-The overhang angle influences how much material is placed down to support the print. The angle indicates the minimum angle that gets supported.
+L'angle de surplomb influence la quantité de matière placée pour soutenir l'impression. L'angle indique l'angle minimum qui est supporté.
 
-**Reducing the value of this setting generates more support.**
+**Réduire la valeur de ce paramètre génère plus de support.**
 
-![A low overhang angle generates more support](../../../articles/images/support_angle_low.png)
-![A high overhang angle generates less support](../../../articles/images/support_angle_high.png)
-![The supported areas are indicated in red](../../../articles/images/support_angle_prepare_mode.png)
+![Un angle de surplomb bas génère plus de support](../../../articles/images/support_angle_low.png)
+!([Un angle de surplomb élevé génère moins de support](../../../articles/images/support_angle_high.png)
+![Les zones prises en charge sont indiquées en rouge](../../../articles/images/support_angle_prepare_mode.png)
 
-Reducing this setting makes the printer support more of the printed part, even surfaces that are steeper and won't sag much during printing. If the support is supporting parts that don't need to be supported, it'll increase the printing time and material usage unnecessarily and also create scars where the support touched the print.
+En réduisant ce paramètre, l'imprimante prend en charge une plus grande partie de la partie imprimée, même les surfaces qui sont plus raides et qui ne s'affaissent pas beaucoup pendant l'impression. Si le support supporte des parties qui n'ont pas besoin d'être soutenues, cela augmentera inutilement le temps d'impression et l'utilisation de matériel et créera également des cicatrices là où le support a touché l'impression.
 
-However reducing the support angle is sometimes necessary to prevent the material from sagging too much. It generally improves the dimensional accuracy of the final part and makes the overhangs look better too.
+Cependant, il est parfois nécessaire de réduire l'angle du support pour éviter que le matériau ne s'affaisse trop. Cela améliore généralement la précision dimensionnelle de la pièce finale et permet également d'améliorer l'aspect des débords.
 
-Whenever working with support, it's a good idea to preview what the support looks like in the Preview stage. There you can see where it will actually generate support. Adjusting this setting is then one of the tools at your disposal to filter where precisely it will generate support.
+Lorsque l'on travaille avec un support, il est bon de prévisualiser l'aspect du support lors de la phase de prévisualisation. Vous pourrez alors voir où il va réellement générer du support. Le réglage de ce paramètre est alors l'un des outils à votre disposition pour filtrer l'endroit précis où il va générer du soutien.
