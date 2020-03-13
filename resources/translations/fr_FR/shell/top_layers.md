@@ -1,11 +1,11 @@
-This setting configures how many solid layers are printed at the top side of the print. These solid layers are printed instead of the infill. They are intended to close the top side.
+Ce paramètre permet de configurer le nombre de couches solides imprimées sur la face supérieure de l'impression. Ces couches solides sont imprimées à la place du remplissage. Elles sont destinées à fermer la face supérieure.
 
-![12 top layers](../../../articles/images/top_bottom_thickness_0.8.png)
-![50 top layers](../../../articles/images/top_thickness.png)
+![12 couches supérieures](../../../articles/images/top_bottom_thickness_0.8.png)
+![50 couches supérieures](../../../articles/images/top_thickness.png)
 
-More top layers will have several effects, beneficial for the quality of the top surface but detrimental to productivity.
-* Your part will be stronger. Having more top layers will mean that a smaller part of your print will get filled with the sparse infill pattern. Instead it gets made completely solid.
-* The top surface will be smoother. Any pillowing and sagging in the top skin will get smoothed out in the layers put on top.
-* It's more likely that your model will be water tight. More layers on the top side will be able to block water or other fluids from getting in, since more layers are filled completely.
-* Your print will use more material, since more layers are filled completely.
-* Your print will take longer, since more material must be placed down and these layers are normally printed more slowly than the infill.
+Un plus grand nombre de couches supérieures aura plusieurs effets, bénéfiques pour la qualité de la surface supérieure mais préjudiciables à la productivité.
+* Votre pièce sera plus solide. Plus de couches supérieures signifie qu'une plus petite partie de votre impression sera remplie par le motif de remplissage épars. Au lieu de cela, elle sera rendue complètement solide.
+* La surface supérieure sera plus lisse. Les coussins et les affaissements de la peau supérieure seront aplanis dans les couches supérieures.
+* Il est plus probable que votre modèle soit étanche. Plus de couches sur la face supérieure pourront empêcher l'eau ou d'autres fluides de pénétrer, car plus de couches sont remplies complètement.
+* Votre impression utilisera plus de matière, car plus de couches sont remplies complètement.
+* Votre impression prendra plus de temps, car il faut placer plus de matériau et ces couches sont normalement imprimées plus lentement que le remplissage.
