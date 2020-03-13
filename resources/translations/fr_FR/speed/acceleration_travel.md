@@ -1,5 +1,5 @@
-This setting controls how fast the nozzle accelerates into different directions while travelling across the build volume. The acceleration during travelling can be set to a different rate than while material is extruded.
+Ce réglage contrôle la vitesse à laquelle la buse accélère dans différentes directions tout en se déplaçant dans le volume de construction. L'accélération pendant le déplacement peut être réglée à un taux différent de celui de l'extrusion.
 
-Travel moves are often extremely fast and can be quite long, straight lines. This allows the nozzle to reach great speeds and this makes acceleration a big factor in the printing time. Since the printer is not extruding any material during these moves, any vibrations of the printer don't have any real effect on the print. As a result, the travel acceleration should be set pretty high to save on printing time.
+Les déplacements sont souvent extrêmement rapides et peuvent être des lignes droites assez longues. Cela permet à la buse d'atteindre de grandes vitesses et cela fait de l'accélération un facteur important dans le temps d'impression. Comme l'imprimante n'extrude aucun matériau pendant ces déplacements, les vibrations de l'imprimante n'ont pas d'effet réel sur l'impression. Par conséquent, l'accélération du déplacement doit être réglée assez haut pour gagner du temps d'impression.
 
-Setting the acceleration too high can cause the motors to lose some steps, which can cause layer shifts to appear.
+Un réglage trop élevé de l'accélération peut entraîner une perte de pas des moteurs, ce qui peut provoquer l'apparition de décalages de couches.
