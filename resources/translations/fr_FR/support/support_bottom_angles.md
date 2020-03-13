@@ -1,8 +1,8 @@
-The support floor is normally oriented to be as perpendicular as possible to the support above it and the model below. If the orientation of the top surface lines or the support lines has been customised, it is a good idea to customise the orientation of the support floor lines as well. This setting allows you to customise the orientation of the support floor lines.
+Le plancher de support est normalement orienté de manière à être aussi perpendiculaire que possible au support situé au-dessus et au modèle situé en dessous. Si l'orientation des lignes de la surface supérieure ou des lignes de support a été personnalisée, il est conseillé de personnaliser également l'orientation des lignes du plancher de support. Ce paramètre vous permet de personnaliser l'orientation des lignes du plancher de soutien.
 
-![Both the roof and floor angled at 0° and 90°](../../../articles/images/support_interface_angles_0.png)
-![Both the roof and floor angled at 45° and 135°](../../../articles/images/support_interface_angles_45.png)
+![Le toit et le plancher sont tous deux inclinés à 0° et 90°](../../../articles/images/support_interface_angles_0.png)
+![Le toit et le plancher sont inclinés à 45° et 135°](../../../articles/images/support_interface_angles_45.png)
 
-Multiple angles can be filled in for this setting, separated by commas. Cura will alternate these angles across the layers.
+Plusieurs angles peuvent être remplis pour ce paramètre, séparés par des virgules. Cura fera alterner ces angles entre les couches.
 
-The support floor lines will ideally be oriented to be perpendicular to the model lines that they rest on as well as to the support lines that rest on them. Orienting them perpendicularly reduces the distance that these lines have to bridge and thus reduces sagging and improves the stability of the support.
+Les lignes du plancher de support seront idéalement orientées pour être perpendiculaires aux lignes du modèle sur lesquelles elles reposent ainsi qu'aux lignes de support qui reposent sur elles. En les orientant perpendiculairement, on réduit la distance que ces lignes doivent franchir, ce qui réduit l'affaissement et améliore la stabilité du support.
