@@ -1,12 +1,12 @@
-Normally, Cura will omit walls that are thinner than the [Outer Wall Line Width](../resolution/wall_line_width_0.md), discarding them as being too small to print.
+Normalement, Cura omet les murs plus minces que la [Largeur de la ligne extérieure du mur](../resolution/wall_line_width_0.md), les rejetant comme étant trop petits pour être imprimés.
 
-If this setting is enabled, Cura will make an attempt at printing these pieces anyway. The resulting print will be inaccurate and messy, but it should produce the desired shape somewhat reliably.
+Si ce paramètre est activé, Cura essaiera quand même d'imprimer ces pièces. L'impression résultante sera imprécise et désordonnée, mais elle devrait produire la forme souhaitée de manière assez fiable.
 
-![Some parts are too thin to print](../../../articles/images/fill_outline_gaps_disabled.png)
-![With this setting enabled, even thin parts will get printed](../../../articles/images/fill_outline_gaps_enabled.png)
+![Certaines pièces sont trop fines pour être imprimées](../../../articles/images/fill_outline_gaps_disabled.png)
+![Avec ce paramètre activé, même les parties fines seront imprimées](../../../articles/images/fill_outline_gaps_enabled.png)
 
-The tiny pieces are filled with extremely thin lines. These lines are then combined if they are adjacent to one another and not too long. This works for many cases, but in some cases it produces a tiny zig zag, significantly increasing printing time.
+Les minuscules morceaux sont remplis de lignes extrêmement fines. Ces lignes sont ensuite combinées si elles sont adjacentes les unes aux autres et pas trop longues. Cela fonctionne dans de nombreux cas, mais dans certains cas, cela produit un minuscule zigzag, ce qui augmente considérablement le temps d'impression.
 
-It is advisable, before resorting to this setting, to try adjusting the outer wall line width slightly. If your part is slightly thinner than one line width, it might give a better result if you reduce the outer wall line width of your entire print such that the thin parts print normally. However reducing the line width too far will cause the material to flow unreliably, leading to underextrusion.
+Il est conseillé, avant de recourir à ce réglage, d'essayer d'ajuster légèrement la largeur des lignes de la paroi extérieure. Si votre pièce est légèrement plus fine qu'une largeur de ligne, vous obtiendrez peut-être un meilleur résultat si vous réduisez la largeur de ligne de la paroi extérieure de toute votre impression de manière à ce que les parties fines s'impriment normalement. Cependant, si vous réduisez trop la largeur de ligne, le matériau ne s'écoulera pas de manière fiable, ce qui entraînera une sous-extrusion.
 
-**This will only attempt to print pieces that are thin in the horizontal plane. For thin pieces in the Z direction, see the [Slicing Tolerance](../experimental/slicing_tolerance.md) setting or increase the layer height.**
+**Cela ne permettra d'imprimer que les pièces fines dans le plan horizontal. Pour les pièces minces dans la direction Z, voir le réglage [Tolérance de tranchage](../expérimental/tranchage_tolérance.md) ou augmenter la hauteur de la couche.**
