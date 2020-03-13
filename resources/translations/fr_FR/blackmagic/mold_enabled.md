@@ -1,39 +1,39 @@
-Instead of printing the model itself, this feature causes the printer to create a negative of the model, a mould, that you could cast a different material in to create your model. This mould has several specific properties that make it both workable to cast with and printable with FDM printing.
+Au lieu d'imprimer le modèle lui-même, cette fonction amène l'imprimeur à créer un négatif du modèle, un moule, dans lequel vous pourriez couler un matériau différent pour créer votre modèle. Ce moule possède plusieurs propriétés spécifiques qui le rendent à la fois utilisable pour le moulage et imprimable avec l'impression FDM.
 
-![A model that you'd want to cast](../../../articles/images/mold_enabled_shell.png)
-![The mould for that model](../../../articles/images/mold_enabled_mould.png)
+![Un modèle que vous voudriez mouler](../../../articles/images/mold_enabled_shell.png)
+![Le moule pour ce modèle](../../../articles/images/mold_enabled_mould.png)
 
-Cura's mould generation will create a hollow with the exact shape that you want to cast. Around this hollow, a shell will be generated with a certain width, configurable through the [Minimal Mold Width](mold_width.md) setting. Above and below the mould, a skin will be generated with a certain height, configurable through the [Mold Roof Height](mold_roof_height.md) setting. However this skin will not be generated at the very top of the model so that you can pour the casting material in there. It will also not be generated at the very bottom of the model. You're meant to keep it on the build plate while it's being cast.
+La génération de moules de Cura créera un creux ayant la forme exacte que vous voulez mouler. Autour de ce creux, une coquille sera générée avec une certaine largeur, configurable grâce au paramètre [Minimal Mold Width](mold_width.md). Au-dessus et en dessous du moule, une peau sera générée avec une certaine hauteur, configurable grâce au paramètre [Mold Roof Height](mold_roof_height.md). Toutefois, cette peau ne sera pas générée tout en haut du modèle afin que vous puissiez y verser le matériau de moulage. Elle ne sera pas non plus générée tout en bas du modèle. Vous devez la garder sur la plaque de construction pendant le moulage.
 
-Designing Your Mould
+Conception de votre moule
 ----
-Cura's mould generation is not perfect. A couple of things are missing. Here are some tips to fix them.
-* Cura doesn't create sprues for all of the local maxima in your model. You need to add vertical rods to your model wherever you need a sprue.
-* Cura doesn't allow for extra material to be cast in case your material shrinks while cooling down. You'd need to add additional sprues even to the highest point of your model if you are using a material that shrinks a lot.
-* Cura's mould is always in one piece. For many shapes this means that the mould needs to be destroyed in order to remove it. Moulds can be destroyed in various ways; just by sheer force or by heating it up if the material inside allows for that, or by using a material like PVA that dissolves in water.
-* Cura won't allow for putting in rods or wires to reinforce the mould. To enable that, put in extra bars in your model so that Cura will leave cavities for them, and insert the rod or wire afterwards.
-* Undercuts in your mold are generated without warning. If your cast needs a lot of undercuts, you will need some sprues or other channels to get the material to properly flow in there and to get the air out. Also, be aware that your mould might need to be destroyed in order to get the cast out once it's solidified.
+La génération de moisissures de Cura n'est pas parfaite. Il manque quelques éléments. Voici quelques conseils pour les corriger.
+* Cura ne crée pas de carottes pour tous les maxima locaux de votre modèle. Vous devez ajouter des tiges verticales à votre modèle partout où vous avez besoin d'une carotte.
+* Cura ne permet pas de couler du matériau supplémentaire au cas où votre matériau se rétracterait en refroidissant. Vous devez ajouter des tiges supplémentaires même au point le plus élevé de votre modèle si vous utilisez un matériau qui rétrécit beaucoup.
+* Le moule de Cura est toujours en une seule pièce. Pour de nombreuses formes, cela signifie que le moule doit être détruit pour pouvoir être enlevé. Les moules peuvent être détruits de différentes manières : par la force pure ou en les chauffant si le matériau à l'intérieur le permet, ou en utilisant un matériau comme le PVA qui se dissout dans l'eau.
+* Cura ne permet pas de mettre des tiges ou des fils pour renforcer le moule. Pour ce faire, placez des barres supplémentaires dans votre modèle afin que Cura leur laisse des cavités, et insérez ensuite la tige ou le fil.
+* Les contre-dépouilles dans votre moule sont générées sans avertissement. Si votre moule a besoin de beaucoup de contre-dépouilles, vous aurez besoin de quelques carottes ou d'autres canaux pour que le matériau y pénètre correctement et que l'air en sorte. Sachez également que votre moule peut avoir besoin d'être détruit afin de pouvoir sortir le moulage une fois qu'il est solidifié.
 
-Materials to Print the Mould With
+Matériaux pour imprimer le moule
 ----
-The ideal mould is:
-* very stiff
-* resistant to high temperatures
-* chemically inert so that it doesn't bind to your casting material
-* don't shrink
+Le moule idéal est :
+* très rigide
+* résistant aux températures élevées
+* chimiquement inerte afin qu'il ne se lie pas à votre matériau de moulage
+* ne pas rétrécir
 
-Additionally, some moulds need to be destroyed in order to get the model out. To this end, you could choose a brittle material or a material that can be dissolved using water or other chemicals, such as PVA.
+De plus, certains moules doivent être détruits pour pouvoir sortir le modèle. Pour ce faire, vous pouvez choisir un matériau fragile ou un matériau qui peut être dissous à l'aide d'eau ou d'autres produits chimiques, comme le PVA.
 
-Materials to Cast With
+Matériaux à utiliser pour le moulage
 ----
-When choosing a material to cast, keep in mind that FDM printing can only work with thermoplastics. Thermoplastics are plastics that inherently become soft at high temperatures. This is not compatible with casting materials that are hot when casting. Some materials that are generally incompatible with 3D printed moulds:
-* **Metals**, which need to be heated above the melting point of the plastics in order to be liquid enough to cast. The heat mass of the metal will cause your mold to melt.
-* **Plastics that bind** to the plastic that the mould is made of. You couldn't separate the mould from the model after casting. You can spray some mould release in, but if the material is too similar it will still bind permanently to the mould.
-* **Materials that shrink** too much after solidifying. Materials that shrink before solidifying are okay as long as you have sufficiently long sprues to allow new material to fill the cavity when that happens.
-* **Epoxy resin** is not appropriate because while the resin is cold while it is being cast, the chemical reaction from the two components releases enough heat to melt the plastic. Epoxy also tends to stick very well to plastics.
+Lorsque vous choisissez un matériau à couler, gardez à l'esprit que l'impression FDM ne peut fonctionner qu'avec des thermoplastiques. Les thermoplastiques sont des plastiques qui deviennent intrinsèquement mous à haute température. Cela n'est pas compatible avec les matériaux de moulage qui sont chauds au moment du moulage. Certains matériaux sont généralement incompatibles avec les moules imprimés en 3D :
+* **Les métaux**, qui doivent être chauffés au-dessus du point de fusion des plastiques afin d'être suffisamment liquides pour être moulés. La masse thermique du métal fera fondre votre moule.
+* **Plastiques qui se lient** au plastique dont le moule est fait. Vous ne pouvez pas séparer le moule du modèle après le moulage. Vous pouvez vaporiser un peu de démoulant, mais si le matériau est trop semblable, il se liera toujours au moule de façon permanente.
+* **Matériaux qui rétrécissent** trop après s'être solidifiés. Les matériaux qui se rétractent avant de se solidifier sont acceptables à condition que vous ayez des carottes suffisamment longues pour permettre au nouveau matériau de remplir la cavité lorsque cela se produit.
+* **La résine époxy** n'est pas appropriée parce que lorsque la résine est froide pendant le moulage, la réaction chimique des deux composants dégage assez de chaleur pour faire fondre le plastique. L'époxy a également tendance à très bien adhérer aux plastiques.
 
-Some materials that are more appropriate to cast with:
-* **Silicone**. Silicone does not bind to plastics, so it is easy to remove. Silicone is also very flexible and this makes it lenient to undercuts. What's more, silicones are thermoset and heat resistant, so you can also consider melting the mould off after it's been set. Some special tooling is needed to cast silicone though. In particular, you'll need a vacuum chamber to pump out the gas bubbles from the silicone.
-* **Sand**. Sand is an industry standard for making a negative of something since it is very heat resistant but doesn't need to be heated in order to be cast. After casting it, you can bind it with concrete or glue in order to prevent it from falling apart. You can then use it to make another negative out of a more heat-resistant material.
-* **Wax**. For making custom candles or figurines, you can cast a model in wax. Wax has a low melting temperature, so it won't melt the mould. It also doesn't bind to plastics, making it easier to release from the mould. Wax is very malleable and easy to modify after releasing it from the mould. If making a custom candle from this, don't forget to insert a wick before it's set.
-* **Chocolate**, as a special customised treat or gift. To cast chocolate, melt it to just above its melting point, then cast it, vibrate it a bit to get the air bubbles out, and put it in the freezer immediately. You can even put the mould in a bath of cold water inside the freezer to subtract the heat faster. After five minutes, remove the chocolate carefully from the mould.
+Certains matériaux sont plus appropriés pour le coulage :
+* **Silicone**. Le silicone ne se lie pas aux plastiques, il est donc facile à enlever. Le silicone est également très flexible, ce qui le rend indulgent pour les contre-dépouilles. De plus, les silicones sont thermodurcissables et résistants à la chaleur, vous pouvez donc envisager de faire fondre le moule après qu'il ait été durci. Il faut cependant un outillage spécial pour couler le silicone. Vous aurez notamment besoin d'une chambre à vide pour pomper les bulles de gaz du silicone.
+* **Sable**. Le sable est une norme industrielle pour la fabrication d'un négatif de quelque chose car il est très résistant à la chaleur mais n'a pas besoin d'être chauffé pour être coulé. Après l'avoir coulé, vous pouvez le lier avec du béton ou de la colle afin d'éviter qu'il ne se désagrège. Vous pouvez ensuite l'utiliser pour réaliser un autre négatif à partir d'un matériau plus résistant à la chaleur.
+* **Cire**. Pour fabriquer des bougies ou des figurines sur mesure, vous pouvez couler un modèle en cire. La cire a une faible température de fusion, elle ne fond pas le moule. Elle ne lie pas non plus la cire.
+* **Chocolat**, comme une gâterie ou un cadeau spécial personnalisé. Pour couler le chocolat, faites-le fondre juste au-dessus de son point de fusion, puis coulez-le, faites-le vibrer un peu pour faire sortir les bulles d'air et mettez-le immédiatement au congélateur. Vous pouvez même mettre le moule dans un bain d'eau froide à l'intérieur du congélateur pour en soustraire la chaleur plus rapidement. Au bout de cinq minutes, retirez soigneusement le chocolat du moule.
