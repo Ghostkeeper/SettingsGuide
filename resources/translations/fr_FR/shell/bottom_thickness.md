@@ -1,8 +1,8 @@
-With this setting you can set the thickness of the solid bottom layers of the print. A higher value ensures all gaps on the bottom layers are closed completely. However, this can also increase the print time and amount of filament used.
+Avec ce réglage, vous pouvez définir l'épaisseur des couches inférieures solides de l'impression. Une valeur plus élevée permet de s'assurer que tous les espaces des couches inférieures sont complètement fermés. Cependant, cela peut également augmenter la durée de l'impression et la quantité de filament utilisée.
 
-![Ordinary bottom thickness](../../../articles/images/top_bottom_thickness_0.8.png)
-![Much thicker bottom side](../../../articles/images/bottom_thickness.png)
+![Épaisseur du fond ordinaire](../../../articles/images/top_bottom_thickness_0.8.png)
+![face inférieure beaucoup plus épaisse](../../../articles/images/bottom_thickness.png)
 
-* Increase to improve strength.
-* Increase to close gaps on the bottom side of your print.
-* Reduce to shorten printing time and material usage.
+* Augmenter pour améliorer la force.
+* Augmentez pour combler les espaces en bas de votre impression.
+* Réduire pour raccourcir le temps d'impression et l'utilisation du matériel.
