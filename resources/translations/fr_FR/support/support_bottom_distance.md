@@ -1,7 +1,7 @@
-With this setting you can adjust the distance between the bottom side of the support and the model, where the support rests on the model.
+Ce paramètre vous permet de régler la distance entre le côté inférieur du support et le modèle, où le support repose sur le modèle.
 
-![The bottom distance between the dark blue model and the light blue support](../../../articles/images/support_top_bottom_distance.svg)
+![La distance inférieure entre le modèle bleu foncé et le support bleu clair](../../../articles/images/support_top_bottom_distance.svg)
 
-If the support is simply printed on top of the model, they will be stuck on there very strongly. It's better to keep some distance. That way, it's easier to break the support off and it will leave less of a scar on your print. Increasing the distance too much will make the support unstable though.
+Si le support est simplement imprimé sur le dessus du modèle, ils y seront collés très fortement. Il est préférable de garder une certaine distance. De cette façon, il est plus facile de casser le support et cela laissera moins de cicatrice sur votre empreinte. Cependant, si vous augmentez trop la distance, le support sera instable.
 
-If your support material is soluble, this distance can be left very low. There is no trouble to break it off then, nor does it leave any scars.
+Si votre support est soluble, cette distance peut être laissée très faible. Il n'y a alors aucun problème pour le rompre et il ne laisse pas de cicatrice.
