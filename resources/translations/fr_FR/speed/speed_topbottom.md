@@ -1,11 +1,11 @@
-The speed at which the top and bottom side of the model is printed can be configured separately from the normal print speed.
+La vitesse à laquelle les faces supérieure et inférieure du modèle sont imprimées peut être configurée séparément de la vitesse d'impression normale.
 
-![Various structures printed at different speeds](../../../articles/images/speed_difference.png)
+![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)
 
-This should typically be printed fairly slowly if there is any overhang in the model. If there is not, printing it fast can save a lot of printing time. Printing the top and bottom side of the model slowly will cause the following effects:
-* It increases printing time, sometimes drastically. Since the top and bottom sides have long lines, the speed has the greatest effect on printing time, rather than acceleration and jerk. Top and bottom can be a significant part of the total printing time.
-* It will improve the quality of overhang, if there is overhang that is very flat. Overhang that is still sloped steeply is not affected much, since the skin in that overhang is not exposed then. Printing overhang more slowly keeps the tension on the strings of filament, allowing it to cool down longer.
-* Similar to overhang, it will improve the quality of the top surface. The same overhang effect is applied to the way that the top surface rests on the infill.
-* The printer will generally vibrate less. If the build plate vibrates less, the top and bottom will look better.
+En règle générale, il faut imprimer assez lentement si le modèle présente un quelconque débordement. Dans le cas contraire, une impression rapide peut faire gagner beaucoup de temps. L'impression lente des faces supérieure et inférieure de la maquette aura les effets suivants
+* Elle augmente le temps d'impression, parfois de manière drastique. Comme les côtés supérieur et inférieur ont de longues lignes, la vitesse a le plus grand effet sur le temps d'impression, plutôt que l'accélération et les secousses. Le haut et le bas peuvent représenter une part importante du temps total d'impression.
+* Elle améliore la qualité du débord, s'il y a un débord très plat. Un surplomb qui est encore très incliné n'est pas beaucoup affecté, puisque la peau de ce surplomb n'est pas exposée à ce moment-là. En imprimant le surplomb plus lentement, on maintient la tension sur les fils de filaments, ce qui permet de les refroidir plus longtemps.
+* Semblable au surplomb, il améliore la qualité de la surface supérieure. Le même effet de surplomb est appliqué à la façon dont la surface supérieure repose sur le remblai.
+* L'imprimante vibre généralement moins. Si la plaque de construction vibre moins, le dessus et le dessous auront meilleure allure.
 
-**This setting has no significant effect on the build plate adhesion. The [Initial Layer Print Speed](speed_print_layer_0.md) is used for the first few layers.**
+**Ce réglage n'a pas d'effet significatif sur l'adhérence de la plaque de montage. La [Vitesse d'impression de la couche initiale](speed_print_layer_0.md) est utilisée pour les premières couches.**
