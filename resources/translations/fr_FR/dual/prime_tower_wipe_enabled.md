@@ -1,3 +1,3 @@
-If this is activated, the printer will wipe off the previous nozzle after priming the next one in the prime tower.
+Si cette fonction est activée, l'imprimante essuie la buse précédente après avoir amorcé la suivante dans la tour d'amorçage.
 
-After a nozzle goes on stand-by, it'll still be quite hot for a while. While it is hot, some material tends to ooze out. While priming the next nozzle in the prime tower, it'll have had the chance to cool down a bit so oozing has slowed down. This setting causes the ooze that dribbled out to be wiped off in the middle of the prime tower, so that it doesn't end up on the side of your printed model.
+Lorsqu'une buse est mise en veille, elle reste encore assez chaude pendant un certain temps. Pendant qu'elle est chaude, certains matériaux ont tendance à suinter. En amorçant la buse suivante dans la tour d'amorçage, elle aura eu la chance de refroidir un peu, ce qui aura permis de ralentir le suintement. Ce réglage permet d'essuyer le suintement qui s'est écoulé au milieu de la tour d'amorçage, afin qu'il ne se retrouve pas sur le côté de votre modèle imprimé.
