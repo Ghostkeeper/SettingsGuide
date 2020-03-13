@@ -1,11 +1,11 @@
-This setting defines the rate at which the support structures are filled with material. At great infill rates, the support lines will be placed very close together. At low infill rates, the lines will be placed further apart.
+Ce paramètre définit le rythme auquel les structures de soutien sont remplies de matériel. En cas de taux de remplissage élevé, les lignes de support seront placées très près les unes des autres. Pour les faibles taux de remplissage, les lignes seront placées plus loin les unes des autres.
 
-![Low support density](../../../articles/images/support_infill_rate_low.png)
-![High support density](../../../articles/images/support_infill_rate_high.png)
+![Faible densité de support](../../../articles/images/support_infill_rate_low.png)
+![Haute densité de support](../../../articles/images/support_infill_rate_high.png)
 
-Increasing the density of support has some positive and negative effects. Here are some of the effects that need to be weighed off:
-* Since the distance between the support lines is smaller, the surface resting on top of this support will sag less.
-* The support will be stronger, improving reliability of the print.
-* It's harder to remove the support due to the increased adhesion surface.
-* It will take more material to print the support.
-* The print will take longer to complete.
+L'augmentation de la densité de l'aide a des effets positifs et négatifs. Voici quelques-uns de ces effets qu'il convient de soupeser :
+* Comme la distance entre les lignes de support est plus faible, la surface reposant sur ce support s'affaissera moins.
+* Le support sera plus solide, ce qui améliorera la fiabilité de l'impression.
+* Il est plus difficile de retirer le support en raison de la surface d'adhérence accrue.
+* Il faudra plus de matière pour imprimer le support.
+* L'impression sera plus longue à réaliser.
