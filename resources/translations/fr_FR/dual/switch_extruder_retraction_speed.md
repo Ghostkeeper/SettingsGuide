@@ -1,3 +1,3 @@
-While a nozzle is on stand-by, the material is kept out of the heat zone to protect it from degrading. This setting configures how fast the material is retracted from the nozzle chamber when switching to a different extruder.
+Lorsqu'une buse est en attente, le matériau est maintenu hors de la zone de chaleur pour le protéger de la dégradation. Ce réglage permet de configurer la vitesse à laquelle la matière est retirée de la chambre de la buse lors du passage à une autre extrudeuse.
 
-Since the retraction for the extruder switch is longer, this setting can be configured separately from the speed of ordinary retractions. Increasing the setting can reduce oozing, but has a chance of grinding the filament which may cause the feeder to lose grip on the filament.
+Étant donné que la rétraction pour le commutateur de l'extrudeuse est plus longue, ce réglage peut être configuré séparément de la vitesse des rétractions ordinaires. Augmenter le réglage peut réduire le suintement, mais a une chance de broyer le filament, ce qui peut faire perdre à l'alimentateur sa prise sur le filament.
