@@ -1,7 +1,7 @@
 Avec l'épaisseur supérieure/inférieure, vous pouvez ajuster l'épaisseur de la peau solide créée sur les côtés supérieur et inférieur de votre impression.
 
-![Épaisseur ordinaire du haut/bas](../../../articles/images/épaisseur_du_haut/bas_0.8.png)
-![Côtés supérieur et inférieur beaucoup plus épais] (../../../articles/images/top_bottom_thickness_3.png)
+![Épaisseur ordinaire du haut/bas](../../../articles/images/top_bottom_thickness_0.8.png)
+![Côtés supérieur et inférieur beaucoup plus épais](../../../articles/images/top_bottom_thickness_3.png)
 
 Cela concerne à la fois les faces supérieure et inférieure de l'impression. Le haut et le bas peuvent également être configurés individuellement avec les paramètres [Top Thickness](top_thickness.md) et [Bottom Thickness](bottom_thickness.md).
 
