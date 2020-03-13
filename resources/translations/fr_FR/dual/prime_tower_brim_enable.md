@@ -1,9 +1,9 @@
-The prime tower brim is an additional brim, similar to the brim option in the [Build Plate Adhesion Type](../platform_adhesion/adhesion_type.md). This brim can be enabled and disabled separately from the ordinary adhesion. When activated, an additional brim will be printed around the prime tower. This brim is a flat disc around the prime tower of just one layer that improves the adhesion of the prime tower to the build plate.
+Le bord principal de la tour est un bord supplémentaire, similaire à l'option de bord dans le [Build Plate Adhesion Type](../platform_adhesion/adhesion_type.md). Ce bord peut être activé et désactivé séparément de l'adhésion ordinaire. Lorsqu'il est activé, un bord supplémentaire sera imprimé autour de la tour principale. Ce bord est un disque plat autour de la tour de base d'une seule couche qui améliore l'adhérence de la tour de base à la plaque de construction.
 
-![The adhesion is set to skirt, but there is still a brim around the prime tower](../../../articles/images/prime_tower_brim_enable.png)
+![L'adhésion est réglée sur la jupe, mais il y a toujours un bord autour de la tour primaire](../../../articles/images/prime_tower_brim_enable.png)
 
-Enabling the prime tower brim will give the prime tower more surface area to connect to the build plate. Because the prime tower can get pretty tall and slim, it may topple over for very tall prints. This prime tower brim is meant to prevent that at a small cost of printing time, material and space on the build plate.
+L'activation du bord de la tour principale donnera à celle-ci plus de surface pour se connecter à la plaque de construction. Comme la tour principale peut devenir assez haute et mince, elle peut basculer pour les très grandes empreintes. Le bord de la tour d'impression est destiné à éviter cela, pour un coût minime en termes de temps d'impression, de matériel et d'espace sur la plaque de montage.
 
-The prime tower brim will get the width defined in the [Brim Width](../platform_adhesion/brim_width.md) setting. If the Build Plate Adhesion Type is set to Brim, this setting effectively doubles the width of the brim around the prime tower.
+Le bord de la tour d'impression aura la largeur définie dans le paramètre [Brim Width](../platform_adhesion/brim_width.md). Si le type d'adhérence de la plaque de construction est défini sur le bord, ce paramètre double effectivement la largeur du bord autour de la tour principale.
 
-The prime tower brim cannot be combined with a raft.
+Le bord de la tour principale ne peut pas être combiné avec un radeau.
