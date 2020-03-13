@@ -1,7 +1,7 @@
-The support floor is an intermediary structure between the support and the model where the support rests on the model. It can be used to provide a more stable base for the support or to make the support easier to remove from the print, leaving fewer scars.
+Le plancher de soutien est une structure intermédiaire entre le soutien et le modèle où le soutien repose sur le modèle. Il peut être utilisé pour fournir une base plus stable au support ou pour rendre le support plus facile à retirer de l'empreinte, en laissant moins de cicatrices.
 
-![The support floor is coloured in a darker shade of blue](../../../articles/images/support_bottom_enable.png)
+![Le sol du support est coloré dans une teinte de bleu plus foncée](../../../articles/images/support_bottom_enable.png)
 
-The support floor can be printed more slowly to get more stable support, or using a different material that is easier to remove from the model. This way, not all of the support needs to be printed with this material or these settings, which can save a lot of printing time.
+Le plancher de support peut être imprimé plus lentement pour obtenir un support plus stable, ou en utilisant un matériau différent plus facile à retirer du modèle. De cette façon, il n'est pas nécessaire d'imprimer tout le support avec ce matériau ou ces réglages, ce qui peut faire gagner beaucoup de temps d'impression.
 
-**The support floor is not generated where the support rests on the build plate.**
+**Le plancher de support n'est pas généré là où le support repose sur la plaque de construction.**
