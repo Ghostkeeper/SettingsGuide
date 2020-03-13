@@ -1,7 +1,7 @@
-This setting determines the speed at which the nozzle can go through corners while printing the skirt or brim. This can be configured separately from the rest of the initial layer.
+Ce réglage détermine la vitesse à laquelle la buse peut passer dans les coins tout en imprimant la jupe ou le bord. Cette vitesse peut être configurée séparément du reste de la couche initiale.
 
-When the nozzle is going through corners, the print head will not only vibrate horizontally, but the build plate can also vibrate vertically. This vibration causes the adhesion between the skirt or brim and the build plate to be less consistent. Reducing the jerk during the printing of the skirt or the brim can reduce the chance of the print letting go of the build plate.
+Lorsque la buse passe dans les coins, la tête d'impression ne vibre pas seulement horizontalement, mais la plaque de construction peut également vibrer verticalement. Cette vibration rend l'adhérence entre la jupe ou le bord et la plaque de montage moins uniforme. La réduction des secousses pendant l'impression de la jupe ou du bord peut réduire le risque que l'impression ne se détache de la plaque de montage.
 
-That said, the adhesion between the skirt and the build plate is not very important. If the skirt lets go, the print will likely still succeed. Also, there are not usually very sharp corners during the printing of the skirt or brim that could cause any vibrations. The effect of adjusting this setting will be very small.
+Cela dit, l'adhérence entre la jupe et la plaque de montage n'est pas très importante. Si la jupe se détache, l'impression réussira probablement quand même. En outre, les coins de la jupe ou du bord ne sont généralement pas très nets pendant l'impression, ce qui peut provoquer des vibrations. L'effet du réglage de ce paramètre sera très faible.
 
-Even though the skirt and brim are always part of the initial layer, the [Initial Layer Print Jerk](jerk_print_layer_0.md) has no effect on them. This setting overrides the Initial Layer Print Jerk.
+Même si la jupe et le bord font toujours partie de la couche initiale, le [Couche initiale Impression saccadée](jerk_print_layer_0.md) n'a aucun effet sur eux. Ce paramètre a priorité sur l'erreur d'impression du calque initial.
