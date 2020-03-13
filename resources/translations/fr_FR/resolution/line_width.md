@@ -1,31 +1,31 @@
-This is the horizontal width of the lines that the printer will place down. Normally the diameter of the nozzle opening determines how wide your lines will be, but by extruding more or less material, the printer can vary a little bit in how wide the lines will become.
+Il s'agit de la largeur horizontale des lignes que l'imprimante va placer vers le bas. Normalement, le diamètre de l'ouverture de la buse détermine la largeur des lignes, mais en extrudant plus ou moins de matière, l'imprimante peut faire varier légèrement la largeur des lignes.
 
-![Very thin lines](../../../articles/images/line_width_small.png)
-![Very wide lines](../../../articles/images/line_width_large.png)
+![Lignes très fines](../../../articles/images/line_width_small.png)
+![Lignes très larges](../../../articles/images/line_width_large.png)
 
-Reducing the line width allows the printer to print more details. In particular it also allows the printer to print thin parts. Line width is one of the most influential settings in your print. Here are some of the effects:
-* Printing thinner lines will allow thinner pieces to be printed, since it can even fit a line in the thinnest parts.
-* Adjusting the line width to an even multiple of the thickness of your print can make the object stronger and make the material flow better.
-* A smaller line width will make your top surface look smoother.
-* Printing lines slightly smaller than your nozzle size tends to improve strength. It allows the nozzle to fuse adjacent lines together when it makes a second pass slightly over the previous line.
-* Printing lines that are too wide will lead to underextrusion. The printer will attempt to extrude more material, enough to fill the desired width of the line. That material will attempt to flow in whichever direction it can. However at some point the back pressure will become too great such that the material will no longer flow all the way to the side of the very wide lines. This then leaves gaps between the lines.
-* Printing lines that are too small will also lead to underextrusion. If the material doesn't flow fast enough through the nozzle, the surface tension of the material will cause it to coagulate into small droplets, making the extrusion uneven and leaving gaps in between the droplets.
-* Printing thinner lines will considerably increase the printing time.
+La réduction de la largeur de la ligne permet à l'imprimante d'imprimer plus de détails. En particulier, cela permet également à l'imprimante d'imprimer des parties fines. La largeur de ligne est l'un des paramètres les plus influents de votre impression. En voici quelques effets :
+* L'impression de lignes plus fines permet d'imprimer des pièces plus fines, puisqu'elle peut même faire tenir une ligne dans les parties les plus fines.
+* Le fait d'ajuster la largeur de la ligne à un multiple pair de l'épaisseur de votre impression peut rendre l'objet plus solide et améliorer le flux de matière.
+* Une largeur de ligne plus petite rendra votre surface supérieure plus lisse.
+* Des lignes d'impression légèrement plus petites que la taille de votre buse ont tendance à améliorer la résistance. Cela permet à la buse de fusionner les lignes adjacentes entre elles lorsqu'elle effectue un second passage légèrement supérieur à la ligne précédente.
+* Les lignes d'impression trop larges entraînent une sous-extrusion. L'imprimante tentera d'extruder plus de matière, suffisamment pour remplir la largeur de ligne souhaitée. Ce matériau tentera de s'écouler dans n'importe quelle direction. Toutefois, à un moment donné, la contre-pression devient trop importante, de sorte que le matériau ne s'écoule plus jusqu'au bord des lignes très larges. Cela laisse alors des espaces entre les lignes.
+* Les lignes d'impression trop petites entraînent également une sous-extrusion. Si le matériau ne s'écoule pas assez rapidement à travers la buse, la tension superficielle du matériau le fera coaguler en petites gouttelettes, ce qui rendra l'extrusion inégale et laissera des espaces entre les gouttelettes.
+* L'impression de lignes plus fines augmentera considérablement le temps d'impression.
 
-*It's not advisable to reduce the line width below 60% of the nozzle size or above 150%. Both may fail to extrude enough material.*
+*Il n'est pas conseillé de réduire la largeur des lignes en dessous de 60% de la taille de la buse ou au-dessus de 150%. Dans les deux cas, il se peut que le matériau ne soit pas suffisamment extrudé.*
 
-Adjusting line widths to fit enough walls
+Ajuster la largeur des lignes pour qu'elles s'adaptent à un nombre suffisant de parois
 ----
-When printing mechanical objects that need to be thin but strong, you'll regularly run into the problem that your piece is not a clean even multiple of the line width. If it's not an even multiple, Cura will normally reduce the flow of some of the lines due to the [Compensate Wall Overlaps](../shell/travel_compensate_overlapping_walls_enabled.md) setting. This changes the flow rate through the nozzle which is detrimental to visual quality. If it is a clean multiple of the line width but not an even number, one of the walls will get reduced to 0.
+Lorsque vous imprimez des objets mécaniques qui doivent être minces mais solides, vous vous heurtez régulièrement au problème que votre pièce n'est pas un multiple net et régulier de la largeur de la ligne. Si ce n'est pas un multiple pair, Cura réduira normalement le flux de certaines lignes en raison du paramètre [Compenser les chevauchements de murs](../shell/travel_compensate_walls_overlapping_enabled.md). Cela modifie le débit à travers la buse, ce qui nuit à la qualité visuelle. S'il s'agit d'un multiple net de la largeur de la ligne mais pas d'un nombre pair, l'une des parois sera réduite à 0.
 
-Producing clean contours with even lines can make the print stronger and look better. A hallmark skill of any expert Cura user is to be able to tweak the line width such that the desired number of contours fill the print.
+La production de contours nets avec des lignes paires peut rendre l'impression plus forte et plus belle. L'une des compétences principales de tout utilisateur expert de Cura est de pouvoir modifier la largeur de la ligne de manière à ce que le nombre de contours souhaité remplisse l'impression.
 
-![Default line width, where the contours don't fit and some lines are thicker than others](../../../articles/images/line_width_fit_bad.png)
-![Reducing the line width makes it fit evenly](../../../articles/images/line_width_fit_good_small.png)
-![Increasing the line width also works](../../../articles/images/line_width_fit_good_large.png)
+![Largeur de ligne par défaut, lorsque les contours ne sont pas ajustés et que certaines lignes sont plus épaisses que d'autres](../../../articles/images/line_width_fit_bad.png)
+![Réduire la largeur de la ligne permet de l'ajuster uniformément](../../../articles/images/line_width_fit_good_small.png)
+![Augmenter la largeur de la ligne fonctionne également](../../../articles/images/line_width_fit_good_large.png)
 
-Keeping the flow constant
+Maintenir le flux constant
 ----
-Great fluctuations in flow are sometimes problematic for FDM printers. The nozzle chamber keeps some material under pressure, which causes the actual flow rate out the nozzle to be delayed. It'll take a while for the flow rate to increase or decrease. Printers with a Bowden system to feed the filament also have springiness in the Bowden tube, which makes the effect much worse. As a result of this, you'll get underextrusion when switching to a higher flow rate and overextrusion when switching to a lower flow rate. Therefore it is a good idea to keep the flow rate as constant as possible.
+Les grandes fluctuations de débit sont parfois problématiques pour les imprimantes FDM. La chambre de la buse maintient une partie du matériau sous pression, ce qui retarde le débit réel à la sortie de la buse. Il faut un certain temps pour que le débit augmente ou diminue. Les imprimantes équipées d'un système Bowden pour alimenter le filament ont également un effet de ressort dans le tube Bowden, ce qui aggrave encore l'effet. Par conséquent, vous obtiendrez une sous-extrusion lorsque vous passerez à un débit plus élevé et une surextrusion lorsque vous passerez à un débit plus faible. C'est pourquoi il est bon de maintenir le débit aussi constant que possible.
 
-Line width influences the flow rate greatly. It is advisable to keep the widths of the lines close together and close to the size of the nozzle. If adjusting the line width significantly, you could consider adjusting the printing speed as well to keep the flow rate more constant. This will improve your print's dimensional accuracy.
+La largeur de la ligne influence grandement le débit. Il est conseillé de garder les largeurs des lignes proches les unes des autres et proches de la taille de la buse. Si la largeur de la ligne est importante, vous pouvez aussi envisager d'ajuster la vitesse d'impression afin de maintenir le débit plus constant. Cela permettra d'améliorer la précision dimensionnelle de votre impression.
