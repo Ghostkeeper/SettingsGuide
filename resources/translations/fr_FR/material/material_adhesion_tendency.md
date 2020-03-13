@@ -1,5 +1,5 @@
-This is a descriptive setting, describing a property of the material being used to print. It describes how well the material tends to adhere to itself, mainly how strong the inter-layer adhesion can be.
+Il s'agit d'un cadre descriptif, décrivant une propriété du matériel utilisé pour l'impression. Il décrit la façon dont le matériau tend à adhérer à lui-même, principalement la force de l'adhésion entre les couches.
 
-Currently the only effect of this setting is in the prime tower to determine which material will get used to print the strong outer shell that keeps the tower up. The material with the greatest adhesion tendency will be used to print the outermost shell of the prime tower.
+Actuellement, le seul effet de ce réglage se situe dans la tour principale pour déterminer quel matériau sera utilisé pour imprimer l'enveloppe extérieure solide qui maintient la tour en place. Le matériau ayant la plus forte tendance à l'adhésion sera utilisé pour imprimer l'enveloppe extérieure de la tour principale.
 
-*There is no unit to this setting. It is meant to be a relative property only.*
+*Il n'y a pas d'unité pour ce réglage. Il s'agit d'une propriété relative uniquement.*
