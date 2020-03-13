@@ -1,5 +1,5 @@
-This setting causes the outer wall to be moved slightly more towards the inside.
+Ce réglage fait que la paroi extérieure est déplacée légèrement plus vers l'intérieur.
 
-The aim of this setting is to improve dimensional accuracy when using a line width smaller than the nozzle size. When the outer wall is printed with a smaller line than the nozzle size, the material can flow outward more than the desired line width, making the print wider than desired. Moving the outer wall slightly inside causes the nozzle to overlap with the inner walls, forcing the material in the location adjacent to the inner wall. This only works when printing the outer wall after the inner walls.
+Le but de ce réglage est d'améliorer la précision dimensionnelle lors de l'utilisation d'une largeur de ligne inférieure à la taille de la buse. Lorsque la paroi extérieure est imprimée avec une ligne plus petite que la taille de la buse, le matériau peut s'écouler vers l'extérieur plus que la largeur de ligne souhaitée, ce qui rend l'impression plus large que souhaité. En déplaçant légèrement la paroi extérieure vers l'intérieur, la buse chevauche les parois intérieures, forçant le matériau à se placer à l'endroit adjacent à la paroi intérieure. Cela ne fonctionne que lorsque l'impression de la paroi extérieure se fait après celle des parois intérieures.
 
-Printing the outer wall more towards the inside can also increase the adhesion between the outer wall and the inner walls. This adhesion is very important to the strength of the part.
+L'impression de la paroi extérieure plus vers l'intérieur peut également augmenter l'adhérence entre la paroi extérieure et les parois intérieures. Cette adhérence est très importante pour la résistance de la pièce.
