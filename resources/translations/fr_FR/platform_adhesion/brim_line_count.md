@@ -1,7 +1,7 @@
-Controls how many perimeters are being drawn around the base of your print.
+Contrôle le nombre de périmètres tracés autour de la base de votre empreinte.
 
-![This brim has 8 lines.](../../../articles/images/brim_width.svg)
+![Ce bord a 8 lignes.](../../../articles/images/brim_width.svg)
 
-More brim lines will improve adhesion to the build plate, by increasing the surface area of your print. However, it will reduce the effective print area.
+Un plus grand nombre de lignes de bord améliorera l'adhérence à la plaque de construction, en augmentant la surface de votre impression. Toutefois, cela réduira la surface d'impression effective.
 
-**This setting overrides the [Brim Width](brim_width.md) setting.**
+**Ce paramètre remplace le paramètre [Brim Width](brim_width.md).**
