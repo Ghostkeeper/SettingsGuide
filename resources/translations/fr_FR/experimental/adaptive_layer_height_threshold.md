@@ -1,0 +1,7 @@
+This setting configures how far apart (horizontally) the borders of the layers should be placed on any slope. The layer height is adjusted such that the desired displacement is reached. When trying to prevent the topography effect, this setting essentially configures how far the topographic contours are spaced apart from one another.
+
+Reducing this setting will cause the layers to be thinner overall, because the horizontal edges of the layers have to be placed closer together. Increasing this setting will cause the layers to be thicker, because the edges of the layers can be spaced further apart. The thickness of the layers will stay within the range defined by the [Layer Height](layer_height.md) and [Variation](adaptive_layer_height_variation.md) settings though.
+
+Reduce this setting to reduce the topography effect on the top or bottom sides of your print. This will cause the print to take longer though. Increase this setting to reduce the print time.
+
+It is almost always better to adjust the Layer Height setting instead of this setting and adjust the rest of the settings accordingly. Start from a profile that has a layer height that you need in order to reduce the topography effect to acceptable levels. Then allow some variation around that layer thickness with Adaptive Layers. This makes sure that the rest of your print settings are properly adjusted for the layer thickness you're actually going to be printed at. With this setting you can slightly weight Adaptive Layers to choose more from either the bottom or the top of the allowed range.
