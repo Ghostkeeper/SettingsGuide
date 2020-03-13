@@ -1,7 +1,7 @@
-Some overhanging parts of the model are very small. The support that would be generated would topple over easily. Instead, Cura generates towers for these pieces that are wider, so they won't topple over.
+Certaines parties en surplomb de la maquette sont très petites. Le soutien qui serait généré s'effondrerait facilement. Au lieu de cela, Cura génère des tours pour ces pièces qui sont plus larges, afin qu'elles ne s'effondrent pas.
 
-This setting configures how wide those towers are.
+Ce réglage permet de configurer la largeur de ces tours.
 
-![The width of the support tower](../../../articles/images/support_use_towers.svg)
+![La largeur de la tour de support](../../../articles/images/support_use_towers.svg)
 
-Wider towers take slightly longer to print and consume more material, but they also make the support more sturdy which ultimately improves the reliability of the print.
+Les tours plus larges prennent un peu plus de temps à imprimer et consomment plus de matériel, mais elles rendent également le support plus solide, ce qui améliore en fin de compte la fiabilité de l'impression.
