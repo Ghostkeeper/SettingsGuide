@@ -1,5 +1,5 @@
-This setting adds an extra wall every other layer. This way the infill gets wedged vertically between the walls, resulting in stronger prints.
+Ce réglage ajoute un mur supplémentaire une couche sur deux. De cette façon, le remplissage est coincé verticalement entre les murs, ce qui donne des impressions plus fortes.
 
-For example, if you set the wall line count to two walls and enable alternate extra wall, it will print two walls on even numbered layers and three walls on odd numbered layers.
+Par exemple, si vous réglez le nombre de lignes de mur à deux murs et que vous activez l'option "mur supplémentaire alterné", deux murs seront imprimés sur les couches paires et trois murs sur les couches impaires.
 
-![This image shows the walls affected when changing this setting.](../../../articles/images/alternate_extra_perimeter.gif)
+![Cette image montre les murs affectés lorsque vous modifiez ce paramètre.](../../../articles/images/alternate_extra_perimeter.gif)
