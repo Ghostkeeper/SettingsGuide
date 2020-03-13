@@ -1,11 +1,11 @@
-If your printer has multiple extruders, you can choose to print just the outer wall with a different extruder.
+Si votre imprimante possède plusieurs extrudeuses, vous pouvez choisir de n'imprimer que la paroi extérieure avec une autre extrudeuse.
 
-![The outer wall is printed in blue, but the rest in orange](../../../articles/images/wall_0_extruder_nr.png)
+![La paroi extérieure est imprimée en bleu, mais le reste en orange](../../../articles/images/wall_0_extruder_nr.png)
 
-Printing the outer wall with a different extruder can have various purposes:
-* Just a visual effect by printing the outer wall with a different colour.
-* The outer wall can be printed with a material that achieves better detail but has undesirable strength-properties for the infill.
-* The outer wall can be printed with a flexible material to get a softer texture on your print, and to get more friction / grip.
-* The outer wall can be printed with a material with a lower friction coefficient, to allow moving parts to slide more easily over the surface.
+L'impression de la paroi extérieure avec une autre extrudeuse peut avoir plusieurs objectifs :
+* Un simple effet visuel en imprimant la paroi extérieure avec une couleur différente.
+* La paroi extérieure peut être imprimée avec un matériau qui permet d'obtenir de meilleurs détails mais qui présente des propriétés de résistance indésirables pour le remplissage.
+* La paroi extérieure peut être imprimée avec un matériau flexible pour obtenir une texture plus douce sur votre impression, et pour obtenir plus de friction / adhérence.
+* La paroi extérieure peut être imprimée avec un matériau ayant un coefficient de frottement plus faible, pour permettre aux pièces mobiles de glisser plus facilement sur la surface.
 
-**One wall is usually not enough to cover a large colour change completely. You can expect the colour of the inner wall to shine through a bit.**
+**Une seule paroi ne suffit généralement pas pour couvrir complètement un grand changement de couleur. Vous pouvez vous attendre à ce que la couleur de la paroi intérieure brille un peu.**
