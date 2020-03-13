@@ -1,9 +1,9 @@
-This setting causes the support interface to be expanded in all directions horizontally into the rest of the support.
+Ce réglage entraîne l'extension de l'interface du support dans toutes les directions horizontalement dans le reste du support.
 
-![The support interface is expanded into the support](../../../articles/images/support_interface_offset.png)
+![L'interface de support est étendue dans le support](../../../articles/images/support_interface_offset.png)
 
-There are two use cases for this mechanism.
-* If the support interface ends directly at the edge of the overhang that needs to be supported, the build material can sag over the edge. Making the interface expand a bit further will prevent this.
-* Some materials typically used to print support with extrude badly at low flow rates or need some time to get going. Small areas of support interface don't jive well with those materials. This setting can literally make the areas larger so that there is more space to extrude these materials.
+Il existe deux cas d'utilisation de ce mécanisme.
+* Si l'interface de support se termine directement au bord du surplomb qui doit être soutenu, le matériau de construction peut s'affaisser par-dessus le bord. Pour éviter cela, il faut faire en sorte que l'interface se développe un peu plus.
+* Certains matériaux typiquement utilisés pour imprimer le support avec extrusion mal à faible débit ou ont besoin d'un certain temps pour se mettre en route. De petites zones de l'interface du support ne s'accordent pas bien avec ces matériaux. Ce réglage peut littéralement agrandir les zones afin qu'il y ait plus d'espace pour extruder ces matériaux.
 
-Due to technical limitations, the support interface cannot be expanded beyond the support itself.
+En raison de limitations techniques, l'interface de support ne peut pas être étendue au-delà du support lui-même.
