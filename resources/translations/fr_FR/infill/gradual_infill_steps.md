@@ -1,8 +1,8 @@
-Gradual infill reduces the amount of infill used, by reducing the infill density in the lower layers. This saves on printing time and material, while not reducing surface quality much. The primary purpose of infill when printing for visual quality is to support the top surface. This feature focuses the infill to that purpose only.
+Le remplissage graduel réduit la quantité de matériaux de remplissage utilisés, en réduisant la densité de remplissage dans les couches inférieures. Cela permet d'économiser du temps et du matériel d'impression, tout en ne réduisant pas beaucoup la qualité de la surface. L'objectif principal du remplissage lors de l'impression pour une qualité visuelle est de soutenir la surface supérieure. Cette caractéristique permet de concentrer le remplissage dans ce seul but.
 
-This setting indicates in how many steps the infill density gets reduced. At every step, the infill density is halved. For example, starting with an infill percentage of 20% and two gradual infill steps, the infill density of the lower parts will be 10% and 5%, respectively.
+Ce paramètre indique en combien d'étapes la densité de remplissage est réduite. À chaque étape, la densité de remplissage est réduite de moitié. Par exemple, en commençant par un pourcentage de remplissage de 20 % et deux étapes de remplissage graduel, la densité de remplissage des parties inférieures sera de 10 % et 5 %, respectivement.
 
-![Normal infill](../../../articles/images/gradual_infill_disabled.png)
-![3 gradual infill steps](../../../articles/images/gradual_infill_step_height_large.png)
+![Remplissage normal](../../../articles/images/gradual_infill_disabled.png)
+![3 étapes de remplissage progressif](../../../articles/images/gradual_infill_step_height_large.png)
 
-**The "Gradual Infill" checkmark in Recommended Mode sets this setting to 5 steps and increases infill density to 90%. This causes a very high density at the top (90%) and a very low density at the bottom of your print (2.8%).**
+**La coche "Remplissage graduel" dans le mode recommandé définit ce paramètre sur 5 étapes et augmente la densité de remplissage à 90 %. Cela entraîne une densité très élevée en haut (90 %) et une densité très faible en bas de votre impression (2,8 %).**
