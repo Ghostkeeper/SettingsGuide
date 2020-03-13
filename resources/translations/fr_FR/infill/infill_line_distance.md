@@ -1,15 +1,15 @@
-Instead of setting the [Infill Density](infill_sparse_density.md) as a percentage, it is also possible to configure infill density by setting the distance between adjacent infill lines. A greater distance between infill lines will result in a lower infill density overall.
+Au lieu de définir la [Densité de remplissage](infill_sparse_density.md) en pourcentage, il est également possible de configurer la densité de remplissage en définissant la distance entre les lignes de remplissage adjacentes. Une distance plus grande entre les lignes de remplissage entraînera une densité de remplissage globale plus faible.
 
-Infill Line Distance is a different way of looking at this property than density. The distance between infill lines gives an indication of the distance that the top surface lines have to cross from one infill line to the next. Reducing the Infill Line Distance thus reduces the bridged distance and improves the quality of top surfaces.
+La distance entre les lignes de remplissage est une façon différente de considérer cette propriété que la densité. La distance entre les lignes de remplissage donne une indication de la distance que les lignes de surface supérieure doivent parcourir d'une ligne de remplissage à l'autre. La réduction de la distance entre les lignes de remplissage permet donc de réduire la distance de pontage et d'améliorer la qualité des surfaces supérieures.
 
-![4mm distance between lines, resulting in 20% density](../../../articles/images/infill_sparse_density_high.png)
-![8mm distance between lines, resulting in 10% density](../../../articles/images/infill_sparse_density_low.png)
+![4mm de distance entre les lignes, ce qui donne une densité de 20%](../../../articles/images/infill_sparse_density_high.png)
+![8mm de distance entre les lignes, ce qui donne une densité de 10%](../../../articles/images/infill_sparse_density_low.png)
 
-Normally the Infill Line Distance is computed from the desired infill density, depending on the selected infill pattern and line width. The Infill Line Distance is leading.
+Normalement, la distance de la ligne de remplissage est calculée à partir de la densité de remplissage souhaitée, en fonction du modèle de remplissage sélectionné et de la largeur de la ligne. La distance de la ligne de remplissage est en tête.
 
-Increasing the infill density (by reducing the line distance) has a big effect on your print, namely:
-* Your print will be stronger.
-* The top surface will be supported better, making it smoother and more water tight.
-* Reduced pillowing because the pockets of heat will be smaller.
-* Your print will require more material and as a result will be heavier.
-* It takes longer to print.
+L'augmentation de la densité de remplissage (en réduisant la distance entre les lignes) a un effet important sur votre impression, à savoir :
+* Votre impression sera plus forte.
+* La surface supérieure sera mieux soutenue, ce qui la rendra plus lisse et plus étanche.
+* L'oreiller sera réduit car les poches de chaleur seront plus petites.
+* Votre tirage nécessitera plus de matière et sera donc plus lourd.
+* Il faut plus de temps pour imprimer.
