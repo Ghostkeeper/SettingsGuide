@@ -1,13 +1,13 @@
-Spiralize Outer Contour is a trick.
+Spiralize Outer Contour est une astuce.
 
-When printing layer by layer, the nozzle normally needs to move from one layer to the next. This movement causes the nozzle to stand almost still for a fraction of a second, which leaves a seam on the surface called the Z seam. This setting is meant to prevent that and more.
+Lors de l'impression couche par couche, la buse doit normalement se déplacer d'une couche à l'autre. Ce mouvement fait que la buse reste presque immobile pendant une fraction de seconde, ce qui laisse une couture sur la surface appelée la couture Z. Ce réglage est destiné à empêcher cela et bien plus encore.
 
-When spiralising the model, the model will not get any infill or any tops. It will only get one wall and a bottom. Crucially, if [Smooth Spiralized Contours](smooth_spiralized_contours.md) is enabled, height of the nozzle will gradually be increased over the coarse of a layer. This way a spiral is created following the contour of the model. There will be no movement moving from one layer to another, because the nozzle has already gradually moved towards the next layer.
+Lors de la mise en spirale du modèle, le modèle n'obtiendra aucun remplissage ni aucun sommet. Il n'aura qu'une paroi et un fond. Il est essentiel que si [Smooth Spiralized Contours](smooth_spiralized_contours.md) est activé, la hauteur de la buse sera progressivement augmentée sur la grossièreté d'une couche. De cette façon, une spirale est créée en suivant le contour du modèle. Il n'y aura aucun mouvement d'une couche à l'autre, car la buse s'est déjà déplacée progressivement vers la couche suivante. 
 
-Spiralize mode is common among many slicers. It is also known as "vase mode" sometimes, because it is a good way to print vases. Some other properties include:
-* Prints extremely fast.
-* The surface becomes very smooth.
-* It will not be very strong.
-* It is difficult to get the print to be water tight if it has any size. For that, it's advisable to have at least 2 walls.
+Le mode spirale est courant chez de nombreux trancheurs.  Il est aussi parfois appelé "mode vase", car c'est un bon moyen d'imprimer des vases.  Parmi les autres propriétés, on peut citer 
+* Imprime extrêmement rapidement. 
+* La surface devient très lisse. 
+* Elle ne sera pas très résistante. 
+* Il est difficile de rendre l'impression étanche si elle a une taille quelconque.  Pour cela, il est conseillé d'avoir au moins 2 murs. 
 
-*Spiralize will not work well with prints with many horizontal surfaces. It doesn't handle overhangs at all, and doesn't print top surfaces so nothing will be able to lean on a horizontal surface. It also doesn't work well when there are multiple parts on a layer.*
+*La spiralisation ne fonctionnera pas bien avec des impressions ayant beaucoup de surfaces horizontales.  Il ne gère pas du tout les surplombs et n'imprime pas les surfaces supérieures, donc rien ne pourra s'appuyer sur une surface horizontale.  Il ne fonctionne pas non plus bien lorsqu'il y a plusieurs parties sur une couche.* 
