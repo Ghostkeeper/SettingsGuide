@@ -1,9 +1,9 @@
-The widths of the lines of support interface can be configured separately from the widths of the rest of the support lines.
+La largeur de l'interface des lignes de support peut être configurée séparément de la largeur du reste des lignes de support.
 
-![The support interface lines are wider than the rest of the support lines](../../../articles/images/support_roof_line_width.png)
+! [Les lignes de l'interface de support sont plus larges que le reste des lignes de support](../../../articles/images/support_roof_line_width.png)
 
-Printing the support interface with slightly thinner lines is often advantageous for the quality of the overhanging surface that it supports, purely through having a smoother top surface above the support interface. Yet it doesn't necessarily increase the adhesion between the support interface and the model, so the support will not necessarily be harder to remove.
+L'impression de l'interface de support avec des lignes légèrement plus fines est souvent avantageuse pour la qualité de la surface en surplomb qu'elle supporte, du seul fait qu'elle présente une surface supérieure plus lisse au-dessus de l'interface de support. Cependant, cela n'augmente pas nécessairement l'adhérence entre l'interface du support et le modèle, de sorte que le support ne sera pas nécessairement plus difficile à enlever.
 
-Similarly, the support floor will stick more evenly, reducing the scarring where the support was resting on the model without making support any weaker.
+De même, le plancher du support adhérera plus uniformément, ce qui réduira les cicatrices à l'endroit où le support reposait sur le modèle sans pour autant affaiblir le support.
 
-However, printing the interface lines too thin will cause uneven extrusion, which reduces the supporting effect of the interface, causing a worse overhang quality and less stable support. It may also introduce a great change in the flow rate through the nozzle, causing overextrusion when it starts printing support interface and underextrusion when printing whatever comes after the support interface.
+Toutefois, l'impression de lignes d'interface trop fines entraînera une extrusion inégale, ce qui réduit l'effet de soutien de l'interface, entraînant une moins bonne qualité de surplomb et un support moins stable. Cela peut également introduire un grand changement dans le débit à travers la buse, provoquant une surextrusion lorsqu'elle commence à imprimer l'interface du support et une sous-extrusion lorsqu'elle imprime ce qui vient après l'interface du support.
