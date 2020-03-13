@@ -1,8 +1,8 @@
-If your model has holes in the initial layer on the build plate, this setting will prevent a brim from being printed along the inside of the hole.
+Si votre modèle comporte des trous dans la couche initiale de la plaque de construction, ce réglage empêchera l'impression d'un bord le long de l'intérieur du trou.
 
-![Brim printed everywhere](../../../articles/images/brim_outside_only_original.png)
-![Brim only on the outside](../../../articles/images/brim_outside_only_enabled.png)
+![Bord imprimé partout](../../../articles/images/brim_outside_original.png)
+![Bord seulement à l'extérieur](../../../articles/images/brim_outside_only_enabled.png)
 
-The brim on the inside typically adds very little extra adhesion strength between the print and the build plate and has no effect on preventing shrinking. Removing the brim on the inside may save you some time after the print is completed, because you won't need to remove the brim from the inside holes.
+Le bord intérieur n'ajoute généralement que très peu de force d'adhérence supplémentaire entre l'impression et la plaque de montage et n'a aucun effet sur la prévention du rétrécissement. Le retrait du bord intérieur peut vous faire gagner du temps une fois l'impression terminée, car vous n'aurez pas besoin de retirer le bord des trous intérieurs.
 
-**If there is another object inside the hole, the brim cannot be removed due to technical limitations.**
+**S'il y a un autre objet à l'intérieur du trou, le bord ne peut pas être enlevé en raison de limitations techniques.
