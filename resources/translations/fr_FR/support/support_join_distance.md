@@ -1,8 +1,8 @@
-Thin pieces of support are generally not desirable. They are prone to topple over, which can ruin the print. When multiple pieces of support are adjacent to one another, they can be joined together, forming one piece of support that is much sturdier.
+Les supports minces ne sont généralement pas souhaitables. Ils ont tendance à basculer, ce qui peut ruiner l'impression. Lorsque plusieurs pièces de support sont adjacentes, elles peuvent être assemblées pour former une seule pièce de support beaucoup plus solide.
 
-![Two pieces of support are close together](../../../articles/images/support_join_distance_low.png)
-![With sufficient join distance, they are merged together](../../../articles/images/support_join_distance_high.png)
+![Deux pièces de support sont proches l'une de l'autre](../../../articles/images/support_join_distance_low.png)
+![Avec une distance de jointure suffisante, ils sont fusionnés ensemble](../../../articles/images/support_join_distance_high.png)
 
-Joining support pieces together makes the support more sturdy and reliable. It also tends to reduce printing time, depending on the pattern. Many patterns require an extra wall to be printed around the complete perimeter or part of the perimeter, and joining two support pieces together reduces that perimeter.
+L'assemblage des pièces de support rend le support plus solide et plus fiable. Cela tend également à réduire le temps d'impression, en fonction du motif. De nombreux motifs nécessitent l'impression d'un mur supplémentaire sur tout le périmètre ou une partie du périmètre, et l'assemblage de deux pièces de support réduit ce périmètre.
 
-Increasing this setting too much can cause support pieces that are very far away to be joined together. This can increase printing time and material usage.
+Si l'on augmente trop ce paramètre, on risque d'assembler des pièces de support très éloignées les unes des autres. Cela peut augmenter le temps d'impression et l'utilisation du matériel.
