@@ -1,9 +1,9 @@
-This setting configures the movement rate at which the vertical movements are made in a Z Hop. The horizontal movements of a Z Hop are unaffected, since those are configured by the [Travel Speed](speed_travel.md).
+Ce paramètre configure la vitesse de déplacement à laquelle les mouvements verticaux sont effectués dans un Z Hop. Les mouvements horizontaux d'un Z Hop ne sont pas affectés, puisqu'ils sont configurés par la [Vitesse de déplacement](speed_travel.md).
 
-![The vertical movement is made at the Z Hop Speed](../../../articles/images/speed_z_hop.svg)
+![Le mouvement vertical est effectué à la vitesse du Z Hop](../../../articles/images/speed_z_hop.svg)
 
-For most printers, the Z axis is built to be sturdy but slow. Increasing the Z Hop Speed will test the limits of the Z movement, which can cause the Z motor to skip some steps. As a result, the nozzle could end up at a different height after the Z hop. Reducing this speed reduces the chances of that happening.
+Pour la plupart des imprimantes, l'axe Z est construit pour être robuste mais lent. L'augmentation de la vitesse de saut de l'axe Z permet de tester les limites du mouvement de l'axe Z, ce qui peut faire sauter certaines étapes au moteur de l'axe Z. Par conséquent, la buse pourrait se retrouver à une hauteur différente après le saut en Z. Réduire cette vitesse réduit les chances que cela se produise.
 
-On the other hand, a greater Z Hop Speed will make the nozzle move away from the printed surface more quickly. This can reduce the size of blobs.
+D'autre part, une vitesse de saut Z plus élevée fera que la buse s'éloignera plus rapidement de la surface imprimée. Cela peut réduire la taille des taches.
 
-Due to low Z-axis acceleration rates, it is uncommon that the desired Z Hop Speed is reached unless the Z Hop height is very high or the speed very low.
+En raison des faibles taux d'accélération sur l'axe Z, il est rare que la vitesse de saut en Z souhaitée soit atteinte, à moins que la hauteur du saut en Z soit très élevée ou la vitesse très faible.
