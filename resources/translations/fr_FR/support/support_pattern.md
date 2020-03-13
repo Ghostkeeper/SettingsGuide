@@ -1,68 +1,70 @@
-With this setting you can choose the pattern that will be used to fill the volume of the support structure. Different patterns have different strengths and weaknesses.
+Avec ce paramètre, vous pouvez choisir le modèle qui sera utilisé pour remplir le volume de la structure de soutien. Les différents modèles ont des forces et des faiblesses différentes.
 
-Lines
+Lignes
 ----
-![Lines](../../../articles/images/support_pattern_lines.png)
+![Lignes](../../../articles/images/support_pattern_lines.png)
 
-The lines pattern draws straight lines. The lines are oriented such that they are never perpendicular to the skin lines it needs to support (by default).
-* Easiest to remove from the model of all patterns. This is very useful if there is an overhang area that is close to the build plate. A knife can be used to cut away the remnants if necessary.
-* Provides the best overhang quality of all patterns together with Zigzag. The lines are very close together and oriented such that they are not perpendicular to the skin.
-* Tends to be unstable, since the lines are prone to topple over.
+Le schéma des lignes trace des lignes droites. Les lignes sont orientées de telle sorte qu'elles ne sont jamais perpendiculaires aux lignes de la peau qu'elle doit supporter (par défaut).
+* Le plus facile à supprimer du modèle de tous les motifs. Ceci est très utile s'il y a une zone en surplomb qui est proche de la plaque de construction. Un couteau peut être utilisé pour couper les restes si nécessaire.
+* Offre la meilleure qualité de surplomb de tous les modèles avec le zigzag. Les lignes sont très proches les unes des autres et orientées de telle sorte qu'elles ne sont pas perpendiculaires à la peau.
+* Les lignes ont tendance à être instables, car elles ont tendance à basculer.
 
-Grid
+Grille
 ----
-![Grid](../../../articles/images/support_pattern_grid.png)
+![Grille](../../../articles/images/support_pattern_grid.png)
 
-The grid pattern draws two sets of straight lines perpendicular to each other. They overlap, forming a pattern of squares. By default, one perimeter is drawn around this pattern.
-* Very sturdy, increasing reliably.
-* Provides a mediocre overhang quality, since the lines are fairly far apart.
-* Can be hard to remove, since the support will not flex much.
+Le quadrillage dessine deux ensembles de lignes droites perpendiculaires entre elles. Elles se chevauchent, formant un motif de carrés. Par défaut, un périmètre est dessiné autour de ce motif.
+* Très robuste, augmentant de manière fiable.
+* Offre une qualité de surplomb médiocre, car les lignes sont assez éloignées les unes des autres.
+* Peut être difficile à enlever, car le support ne fléchit pas beaucoup.
 
 Triangles
 ----
 ![Triangles](../../../articles/images/support_pattern_triangles.png)
 
-The triangles pattern draws three sets of straight lines in 60 degree angles with one another, forming a pattern of equilateral triangles. By default, one perimeter is drawn around this pattern.
-* The sturdiest of all support patterns.
-* Provides bad overhang quality, since the lines are very far apart.
-* Can be hard to remove, since the support will not flex at all in any direction.
+Le motif des triangles dessine trois ensembles de lignes droites formant des angles de 60 degrés entre elles, formant un motif de triangles équilatéraux. Par défaut, un périmètre est dessiné autour de ce motif.
+* Le plus solide de tous les modèles de support.
+* Il offre une mauvaise qualité de surplomb, car les lignes sont très éloignées les unes des autres.
+* Peut être difficile à enlever, car le support ne fléchira pas du tout dans aucune direction.
 
-Concentric
+Concentrique
 ----
-![Concentric](../../../articles/images/support_pattern_concentric.png)
+![Concentrique](../../../articles/images/support_pattern_concentric.png)
 
-The concentric pattern causes the support to consist of concentric rings spaced evenly from the outside inwards.
-* Lines are close together, providing good support of the overhang areas for a smooth surface, if the lines happen to be oriented perpendicularly.
-* Fairly sturdy, since the loops individually have a large width to stand on.
-* Easy to remove, since the support structure will bend inwards easily.
-* Often ends up parallel to the walls it needs to support. This leads to worse overhang quality, since some walls don't get supported at all.
-* Sometimes leads to support being suspended in mid-air.
+Le motif concentrique fait que le support est constitué d'anneaux concentriques régulièrement espacés de l'extérieur vers l'intérieur.
+* Les lignes sont rapprochées les unes des autres, ce qui permet de bien soutenir les zones en surplomb pour obtenir une surface lisse, si les lignes sont orientées perpendiculairement.
+* Assez solide, car les boucles ont individuellement une grande largeur pour se tenir debout.
+* Facile à enlever, car la structure de support se plie facilement vers l'intérieur.
+* Souvent, elle finit par être parallèle aux murs qu'elle doit soutenir. Cela entraîne une détérioration de la qualité du porte-à-faux, car certains murs ne sont pas du tout soutenus.
+* Parfois, le support est suspendu en l'air.
 
 Zigzag
 ----
 ![Zigzag](../../../articles/images/support_pattern_zigzag.png)
 
-The zigzag pattern is like the lines pattern, but the lines are connected on the ends.
-* Fairly sturdy, greatly increasing reliability.
-* Provides the best overhang quality of all patterns together with Lines. The lines are very close together and oriented such that they are not perpendicular to the skin.
-* Easy to remove. The support structure bends inwards, and when pulling on it, the support will pull off in strips.
-* Almost always draws the support in a single line, minimising the need for retractions or travel moves.
+Le motif en zigzag est comme le motif en lignes, mais les lignes sont reliées aux extrémités.
+* Assez robuste, ce qui augmente considérablement la fiabilité.
+* Offre la meilleure qualité de surplomb de tous les modèles avec les lignes. Les lignes sont très proches les unes des autres et orientées de telle sorte qu'elles ne sont pas perpendiculaires à la peau.
+* Facile à enlever. La structure de support se plie vers l'intérieur, et en tirant dessus, le support se détache en bandes.
+* Il tire presque toujours le support en une seule ligne, ce qui minimise le besoin de rétractions ou de déplacements.
 
-Cross
+Croix
 ----
-![Cross](../../../articles/images/support_pattern_cross.png)
+! [Croix](../../../articles/images/support_pattern_cross.png)
 
-The cross pattern draws a fractional pattern throughout the volume with cross-like shapes in it.
-* Easiest to bend of all patterns, since there are no long straight lines in this pattern.
-* Almost always draws the support in a single line, minimising the need for retractions or travel moves.
+Le motif en croix dessine un motif fractionnaire dans tout le volume avec des formes en croix.
+* Le plus facile à plier de tous les motifs, car il n'y a pas de longues lignes droites dans ce motif.
+* Le support est presque toujours dessiné en une seule ligne, ce qui minimise le besoin de rétractions ou de déplacements.
 
-Gyroid
+Gyroïde
 ----
-![Gyroid](../../../articles/images/support_pattern_gyroid.png)
+![Gyroïde](../../../articles/images/support_pattern_gyroid.png)
 
-The gyroid pattern is a wavy one, with a curve wiggling back and forth. The curve varies across the layers.
-* Fairly sturdy pattern, increasing reliability.
-* The air between the support is a single volume. When printing with soluble support materials, this allows the solvent (water, ethanol or otherwise) to protrude to all the innards of the support structure, even if there is a brim underneath. This allows it to dissolve the support faster.
-* Supports all lines in the overhang evenly, regardless of their directions.
+Le motif gyroscopique est ondulé, avec une courbe qui se déplace d'avant en arrière. La courbe varie d'une couche à l'autre.
+* Modèle assez robuste, ce qui augmente la fiabilité.
+* L'air entre le support est un volume unique. Lors de l'impression avec des matériaux de support solubles, cela permet au solvant (eau, éthanol ou autre) de dépasser à l'intérieur de la structure de support, même s'il y a un rebord en dessous. Cela lui permet de dissoudre le support plus rapidement.
+* Supporte toutes les lignes du surplomb de manière égale, quelle que soit leur direction.
 
-**This pattern is new in Cura 4.1.**
+**Ce modèle est nouveau dans Cura 4.1.**
+
+
