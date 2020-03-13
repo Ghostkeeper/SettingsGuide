@@ -50,7 +50,7 @@ Le motif en zigzag est comme le motif en lignes, mais les lignes sont reliées a
 
 Croix
 ----
-! [Croix](../../../articles/images/support_pattern_cross.png)
+![Croix](../../../articles/images/support_pattern_cross.png)
 
 Le motif en croix dessine un motif fractionnaire dans tout le volume avec des formes en croix.
 * Le plus facile à plier de tous les motifs, car il n'y a pas de longues lignes droites dans ce motif.
