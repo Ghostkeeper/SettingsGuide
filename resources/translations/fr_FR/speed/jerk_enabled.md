@@ -1,22 +1,23 @@
-Jerk determines the speed at which the nozzle can go through corners. If jerk control is enabled, Cura will take control of how much jerk to apply during various parts of the print. If it's disabled, the printer firmware will choose a jerk value. The printer's jerk value is typically fairly high as to give more control to the slicer, but it may have more information about its own hardware than Cura has. 
+Jerk détermine la vitesse à laquelle la buse peut passer dans les virages. Si le contrôle des secousses est activé, Cura prend le contrôle de la quantité de secousse à appliquer pendant les différentes parties de l'impression. S'il est désactivé, le microprogramme de l'imprimante choisira une valeur de secousse. Cette valeur est généralement assez élevée pour donner plus de contrôle à la trancheuse, mais l'imprimante peut avoir plus d'informations sur son propre matériel que Cura n'en a. 
 
-![The relation between velocity, acceleration and jerk](../../../articles/images/velocity_acceleration_jerk.svg)
+![La relation entre la vitesse, l'accélération et la saccade](../../../articles/images/velocity_acceleration_jerk.svg)
 
-**Jerk in 3D printing is not the same as jerk in physics.** The term "jerk" was introduced by Marlin. It was designed there as a workaround for the inherent problem in trying to perfectly follow a path. Since the nozzle is not allowed to deviate from the path (in theory), the nozzle would need to decelerate to 0mm/s in every corner. This would ruin your print, because decelerating to 0mm/s would cause a blob in every corner. It is not allowed to make curves to shortcut the corner, nor can it overshoot. Instead, Marlin allows for an instantaneous change in the velocity vector in every corner. The magnitude of this change in the velocity vector is coined "jerk".
+**Le terme "jerk" a été introduit par Marlin. Il y a été conçu comme une solution de contournement du problème inhérent à la tentative de suivre parfaitement un chemin. Comme la buse ne peut pas s'écarter de la trajectoire (en théorie), il faudrait qu'elle décélère à 0 mm/s dans chaque coin. Cela ruinerait votre impression, car la décélération à 0 mm/s provoquerait une tache dans chaque coin. Il n'est pas permis de faire des courbes pour raccourcir le coin, ni de le dépasser. Au lieu de cela, Marlin permet un changement instantané du vecteur vitesse dans chaque coin. L'ampleur de ce changement du vecteur vitesse est appelée "saccade".
 
-So jerk is the maximum instantaneous change in velocity, applied at every corner of the motion.
+Ainsi, le jerk est le changement instantané maximum de la vitesse, appliqué à chaque coin du mouvement.
 
-Firmware that is not based on Marlin, such as the Sailfish firmware family, will ignore changes in jerk. This setting will not have any effect then.
+Les microprogrammes qui ne sont pas basés sur Marlin, comme la famille de microprogrammes Sailfish, ignorent les changements de jerk. Ce réglage n'aura alors aucun effet.
 
-Example mathematics of jerk
+Exemple de mathématiques de la saccade
 ----
-As an example, take a very simple print: First move 100mm to the right, then move 100mm down. The printing speed is set to 50mm/s. Acceleration is set to 1000mm/s^2. Jerk is set to 10mm/s. This is what will happen:
-1. At the start of a print, Marlin takes half of the jerk value to start, so it will theoretically accelerate to 5mm/s instantaneously.
-2. At an acceleration of 1000mm/s^2, it will take 0.045s to accelerate from 5mm/s to the maximum velocity of 50mm/s. During this time, the nozzle will cover 1.2375mm.
-3. The nozzle cruises for a while at 50mm/s, the maximum printing velocity.
-4. Marlin will calculate at which speed the nozzle may go through the corner: The nozzle will make a 90 degree corner, first going to the right, then going downwards. To limit this velocity change, it's going to go into the corner at cos(90/2) * (10/2)mm/s going to the right, and exit at cos(90/2) * (10/2)mm/s going down. So it'll go through the corner at about 7.07mm/s.
-5. It will take 0.043s to decelerate from a speed of 50mm/s to 7.07mm/s.
-6. The corner is made with an instantaneous velocity change. The magnitude of the difference between the vectors [7.07, 0] and [0, 7.07] is exactly 10mm/s, so it can make this corner instantaneously.
-7. It will take 0.043s to accelerate from 7.07mm/s to 50mm/s.
-8. The nozzle cruises for a while again at 50mm/s, the maximum printing velocity.
-9. Towards the end of the print, the nozzle will decelerate from 50mm/s to 0mm/s in 0.05s.
+Prenons par exemple une impression très simple : Déplacez-vous d'abord de 100 mm vers la droite, puis de 100 mm vers le bas. La vitesse d'impression est fixée à 50 mm/s. L'accélération est fixée à 1000mm/s^2. La vitesse de Jerk est réglée à 10mm/s. Voici ce qui va se passer :
+1. Au début d'une impression, Marlin prend la moitié de la valeur de la saccade pour démarrer, donc il va théoriquement accélérer à 5mm/s instantanément.
+2. A une accélération de 1000mm/s^2, il faudra 0,045s pour passer de 5mm/s à la vitesse maximale de 50mm/s. Pendant ce temps, la buse couvrira 1,2375 mm.
+3. La buse se déplace pendant un certain temps à 50mm/s, la vitesse maximale d'impression.
+4. Marlin calculera à quelle vitesse la buse peut passer dans le virage : La buse va faire un virage à 90 degrés, d'abord vers la droite, puis vers le bas. Pour limiter ce changement de vitesse, elle va entrer dans le coin à cos(90/2) * (10/2)mm/s en allant vers la droite, et sortir à cos(90/2) * (10/2)mm/s en descendant. Il va donc traverser le virage à environ 7,07 mm/s.
+5. Il faudra 0,043s pour passer d'une vitesse de 50mm/s à 7,07mm/s.
+6. Le virage se fait avec un changement de vitesse instantané. L'amplitude de la différence entre les vecteurs [7,07, 0] et [0, 7,07] est d'exactement 10 mm/s, ce qui permet de réaliser ce virage instantanément.
+7. Il faudra 0,043s pour passer de 7,07mm/s à 50mm/s.
+8. La buse se déplace de nouveau pendant un certain temps à 50 mm/s, la vitesse d'impression maximale.
+9. Vers la fin de l'impression, la buse décélère de 50mm/s à 0mm/s en 0,05s.
+
