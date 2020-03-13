@@ -1,7 +1,7 @@
-Compensating for overlaps in wall lines will reduce the flow rate of some of the walls. If this flow rate gets below the value of the [Minimum Wall Flow](wall_min_flow.md) setting, a travel move is made instead of the wall line.
+La compensation des chevauchements des lignes de mur réduira le débit de certains des murs. Si ce débit devient inférieur à la valeur du paramètre [Minimum Wall Flow](wall_min_flow.md), un déplacement est effectué à la place de la ligne de mur.
 
-If this setting is enabled, the filament will be retracted during that travel move.
+Si ce paramètre est activé, le filament sera rétracté pendant ce mouvement de déplacement.
 
-The intended effect of this setting is to reduce oozing on the walls. The intent of the Minimum Wall Flow setting is to reduce the ooze from extremely thin walls which doesn't look nice. That can be improved even further by enabling this setting.
+Ce réglage a pour but de réduire le suintement sur les parois. Le but de ce réglage est de réduire le suintement sur les parois extrêmement fines, ce qui n'est pas très joli. Il est possible d'améliorer encore ce résultat en activant ce réglage.
 
-However retracting on the outer walls causes the nozzle to pause momentarily while the filament is retracted. This leaves a blob on the surface where the retraction was made. It also increases printing time and wears down the filament faster.
+Cependant, la rétraction sur les parois extérieures provoque une pause momentanée de la buse pendant que le filament est rétracté. Cela laisse une tache sur la surface où la rétraction a été faite. Cela augmente également le temps d'impression et use le filament plus rapidement.
