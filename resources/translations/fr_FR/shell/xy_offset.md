@@ -1,11 +1,11 @@
-This setting causes the entire model to be slightly wider or slimmer. It is a compensating measure for dimensional inaccuracies of the printing process.
+Ce réglage fait que l'ensemble du modèle est légèrement plus large ou plus mince. Il s'agit d'une mesure de compensation des inexactitudes dimensionnelles du processus d'impression.
 
-![The original model](../../../articles/images/xy_offset_neutral.png)
-![Horizontally expanded, the screw holes are smaller now](../../../articles/images/xy_offset_wider.png)
-![A negative value shrinks the model, making the screw holes wider](../../../articles/images/xy_offset_slimmer.png)
+![Le modèle original](../../../articles/images/xy_offset_neutral.png)
+![Exposé horizontalement, les trous de vis sont maintenant plus petits](../../../articles/images/xy_offset_wider.png)
+![Une valeur négative rétrécit le modèle, rendant les trous de vis plus larges](../../../articles/images/xy_offset_slimmer.png)
 
-A positive value will make the print fatter. This reduces the size of cavities. A negative value will make the print slimmer and increases the size of cavities.
+Une valeur positive fera grossir l'empreinte. Cela permet de réduire la taille des cavités. Une valeur négative rendra l'empreinte plus fine et augmentera la taille des cavités.
 
-If the tolerance of a print is important, this setting can be very useful. Due to a slight deformation of plastics, the actual dimensions of the print may not completely correspond with the dimensions of the digital model. Gain errors can be compensated for by simply scaling the model on the build plate with the scale tool, but offset errors due to the print method can be compensated for with this setting.
+Si la tolérance d'une empreinte est importante, ce paramètre peut être très utile. En raison d'une légère déformation des plastiques, les dimensions réelles de l'impression peuvent ne pas correspondre complètement aux dimensions du modèle numérique. Les erreurs de gain peuvent être compensées en mettant simplement à l'échelle le modèle sur la plaque de construction avec l'outil de mise à l'échelle, mais les erreurs de décalage dues à la méthode d'impression peuvent être compensées avec ce réglage.
 
-If you know that your printer always prints too wide due to some overextrusion or inaccuracy in its movement, you can also compensate for that with this setting.
+Si vous savez que votre imprimante imprime toujours trop large en raison d'une surextrusion ou d'une imprécision dans son mouvement, vous pouvez également compenser cela avec ce réglage.
