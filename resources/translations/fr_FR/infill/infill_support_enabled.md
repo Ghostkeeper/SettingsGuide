@@ -1,8 +1,8 @@
-When enabled, this treats infill as support. Infill will then only generate where it is needed in order to support the top surface. It behaves as if the model is hollow and generates support inside it, but this support is generated using the infill settings.
+Lorsqu'il est activé, ce système traite l'appoint comme un soutien. Le remblai ne sera alors généré que là où il est nécessaire pour soutenir la surface supérieure. Il se comporte comme si le modèle était creux et génère un support à l'intérieur de celui-ci, mais ce support est généré en utilisant les paramètres de remplissage.
 
-![Normal infill](../../../articles/images/infill_support_enabled_disabled.png)
-![Infill support enabled](../../../articles/images/infill_support_angle_low.png)
+![Remplissage normal](../../../articles/images/infill_support_enabled_disabled.png)
+![Support de remplissage activé](../../../articles/images/infill_support_angle_low.png)
 
-* This saves a lot of material on infill at very little visual cost.
-* The top surfaces may sag a bit more with this enabled.
-* However, the horizontal strength of the infill may be decimated. In many cases, there will be no infill behind the walls, if the walls are part of a steep slope.
+* Cela permet d'économiser beaucoup de matériel de remplissage à un coût visuel très faible.
+* Les surfaces supérieures peuvent s'affaisser un peu plus lorsque cette fonction est activée.
+* Cependant, la résistance horizontale du remblai peut être décimée. Dans de nombreux cas, il n'y aura pas de remplissage derrière les murs, si les murs font partie d'une pente raide.
