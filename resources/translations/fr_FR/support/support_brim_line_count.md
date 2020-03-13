@@ -1,6 +1,6 @@
-This setting adjusts the number of contours that will be drawn inside the support area for the support brim. With more lines, the brim will become wider.
+Ce paramètre ajuste le nombre de contours qui seront dessinés à l'intérieur de la zone de soutien pour le bord de soutien. Plus le nombre de lignes est important, plus le bord sera large.
 
-![5 brim lines](../../../articles/images/support_brim_2mm.png)
-![10 brim lines](../../../articles/images/support_brim_4mm.png)
+![5 lignes de bord](../../../articles/images/support_brim_2mm.png)
+![10 lignes de bord](../../../articles/images/support_brim_4mm.png)
 
-More brim lines will increase the adhesion of the support to the build plate and reduce warping of support. As a result, the support will stand more sturdily, which improves reliability of the print.
+Un plus grand nombre de lignes de bordure augmentera l'adhérence du support à la plaque de construction et réduira le gauchissement du support. Par conséquent, le support sera plus solide, ce qui améliorera la fiabilité de l'impression.
