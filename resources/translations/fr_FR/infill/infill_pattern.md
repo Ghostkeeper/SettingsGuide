@@ -1,141 +1,144 @@
-The infill pattern defines a structure that is used to fill the volume of the object. Various patterns are available, each of which has their own advantages. Some are specialised for very specific applications.
+Le modèle de remplissage définit une structure qui est utilisée pour remplir le volume de l'objet. Il existe plusieurs modèles, chacun ayant ses propres avantages. Certains sont spécialisés pour des applications très spécifiques.
 
-Grid
+Grille
 ----
-![Grid](../../../articles/images/infill_pattern_grid.png)
+![Grille](../../../articles/images/infill_pattern_grid.png)
 
-The grid infill pattern creates two perpendicular sets of lines. Together this forms a pattern of squares.
-* Strongest pattern in the vertical direction.
-* Fairly strong in the two directions of the lines.
-* Not so strong in the diagonal.
-* Very good at supporting the top surface. Your surface will look very smooth.
+La grille de remplissage crée deux ensembles de lignes perpendiculaires. Ensemble, ils forment un motif de carrés.
+* Le motif le plus fort dans la direction verticale.
+* Assez fort dans les deux directions des lignes.
+* Pas si fort dans la diagonale.
+* Très bon support de la surface supérieure. Votre surface aura l'air très lisse.
 
-Lines
+Lignes
 ----
 ![Lines](../../../articles/images/infill_pattern_lines.png)
 
-The lines pattern creates parallel lines. By default, the lines pattern alternates its direction perpendicularly from layer to layer, which makes it look like the grid pattern at first glance. However this can be altered with the [Infill Line Directions](infill_angles.md) setting.
-* The best pattern for a smooth top surface together with zigzag, since the distance between the lines is smallest.
-* Tends to be weak in the vertical direction, because the layers only have small points in which they bond together.
-* Will be extremely weak in the horizontal direction, except in the one direction that the lines are oriented. But even in that direction, it is not resistant to shear so it will fail fairly quickly under load.
+Le motif des lignes crée des lignes parallèles. Par défaut, le motif de lignes alterne sa direction perpendiculairement d'une couche à l'autre, ce qui le fait ressembler au motif de grille à première vue. Cependant, il est possible de modifier cette apparence avec le paramètre [Infill Line Directions](infill_angles.md).
+* Le meilleur motif pour une surface supérieure lisse en même temps que le zigzag, puisque la distance entre les lignes est la plus petite.
+* Tend à être faible dans la direction verticale, car les couches n'ont que de petits points de liaison entre elles.
+* Sera extrêmement faible dans la direction horizontale, sauf dans la seule direction où les lignes sont orientées. Mais même dans cette direction, il n'est pas résistant au cisaillement, de sorte qu'il cède assez rapidement sous la charge.
 
 Triangles
 ----
 ![Triangles](../../../articles/images/infill_pattern_triangles.png)
 
-The triangles pattern creates three sets of lines in three different directions. Together this forms a pattern of triangles.
-* Very resistant to shear.
-* Approximately equal strength in every horizontal direction.
-* Top lines have to bridge fairly long, requiring many top skin layers to get an even top surface.
-* Flow gets significantly interrupted at intersections, resulting in relatively low strength at high infill rates.
+Le motif des triangles crée trois ensembles de lignes dans trois directions différentes. L'ensemble forme un motif de triangles.
+* Très résistant au cisaillement.
+* La force est à peu près égale dans chaque direction horizontale.
+* Les lignes supérieures doivent être assez longues, ce qui nécessite de nombreuses couches de peau pour obtenir une surface supérieure uniforme.
+* L'écoulement est considérablement interrompu aux intersections, ce qui entraîne une résistance relativement faible à des taux de remplissage élevés.
 
 Tri-hexagon
 ----
 ![Tri-hexagon](../../../articles/images/infill_pattern_trihexagon.png)
 
-The tri-hexagon pattern creates three sets of lines in three different directions, just like the triangles pattern, but offset from each other so that they don't all intersect in the same position.
-* Strongest pattern in the horizontal direction.
-* Approximately equal strength in every horizontal direction.
-* Very resistant to shear.
-* Top lines have to bridge very long, requiring many top skin layers to get an even top surface.
+Le modèle tri-hexagone crée trois ensembles de lignes dans trois directions différentes, tout comme le modèle triangulaire, mais décalées les unes par rapport aux autres afin qu'elles ne se croisent pas toutes dans la même position.
+* Le motif le plus fort dans la direction horizontale.
+* La force est à peu près égale dans toutes les directions horizontales.
+* Très résistant au cisaillement.
+* Les lignes supérieures doivent être très longues, ce qui nécessite de nombreuses couches de peau supérieures pour obtenir une surface supérieure uniforme.
 
-Cubic
+Cubique
 ----
 ![Cubic](../../../articles/images/infill_pattern_cubic.png)
 
-The cubic pattern creates cubes, a 3-dimensional pattern. The cubes are oriented standing on a corner, which allows printing them without overhanging internal surfaces.
-* Approximately equal strength in every direction, including the vertical direction.
-* Fairly strong in every direction.
-* Reduced effect of pillowing, since it doesn't produce long vertical pockets of hot air.
+Le motif cubique crée des cubes, un motif tridimensionnel. Les cubes sont orientés debout sur un coin, ce qui permet de les imprimer sans déborder les surfaces internes.
+* Force approximativement égale dans toutes les directions, y compris la direction verticale.
+* Assez forte dans toutes les directions.
+* Effet réduit de l'oreiller, puisqu'il ne produit pas de longues poches verticales d'air chaud.
 
-Cubic Subdivision
+Subdivision cubique
 ----
-![Cubic subdivision](../../../articles/images/infill_pattern_cubic_subdivision.png)
+![Subdivision cubique](../../../articles/images/infill_pattern_cubic_subdivision.png)
 
-The cubic subdivision pattern creates cubes, a 3-dimensional pattern. The cubes are oriented standing on a corner, which allows printing them without overhanging internal surfaces. However this pattern will produce bigger cubes towards the inside of the volume, which saves on material. It leaves out the infill lines in places where they are least useful.
+Le modèle de subdivision cubique crée des cubes, un modèle tridimensionnel. Les cubes sont orientés debout sur un coin, ce qui permet de les imprimer sans déborder les surfaces internes. Cependant, ce motif produit des cubes plus grands vers l'intérieur du volume, ce qui permet d'économiser de la matière. Il laisse de côté les lignes de remplissage aux endroits où elles sont les moins utiles.
 
-This pattern may produce infill densities that are lower than desired. It is advisable to increase the infill density drastically when using this pattern. The optimisation works best at high infill rates.
+Ce motif peut produire des densités de remplissage inférieures à celles souhaitées. Il est conseillé d'augmenter considérablement la densité de remplissage lors de l'utilisation de ce modèle. L'optimisation fonctionne mieux à des taux de remplissage élevés.
 
-Algorithmically, this pattern is generated by creating one giant cube around the entire volume, then subdividing this cube into 8 sub-cubes when it hits any walls. This is then recursed, so the sub-cubes that hit any walls are subdivided again and again. This repeats until the infill line distance is reached.
-* Strongest pattern by weight and printing time.
-* Approximately equal strength in every direction, including the vertical direction.
-* Concentrates infill in thin pieces.
-* Reduced effect of pillowing, since it doesn't produce long vertical pockets of hot air.
-* If using increased infill density, the infill doesn't shine through walls much, producing a better surface quality for equal printing time.
-* Introduces retractions, which doesn't work well with flexible or runny materials.
-* Takes longer to slice.
+Algorithmiquement, ce modèle est généré en créant un cube géant autour du volume entier, puis en subdivisant ce cube en 8 sous-cubes lorsqu'il touche un mur quelconque. Cette opération est ensuite répétée, de sorte que les sous-cubes qui touchent un mur quelconque sont subdivisés encore et encore. Cela se répète jusqu'à ce que la distance de la ligne de remplissage soit atteinte.
+* Le motif le plus fort en fonction du poids et du temps d'impression.
+* La force est à peu près égale dans toutes les directions, y compris la direction verticale.
+* Concentre le remplissage en fines pièces.
+* L'effet de l'oreiller est réduit, car il ne produit pas de longues poches verticales d'air chaud.
+* Si l'on utilise une densité de remplissage accrue, le remplissage ne brille pas beaucoup à travers les murs, ce qui produit une meilleure qualité de surface pour un temps d'impression égal.
+* Introduit des rétractions, ce qui ne fonctionne pas bien avec des matériaux flexibles ou coulants.
+* Prend plus de temps à découper.
 
 Octet
 ----
 ![Octet](../../../articles/images/infill_pattern_octet.png)
 
-The octet pattern creates a combination of regular tetrahedra and cubes, a 3-dimensional pattern. Every so often, multiple infill lines will be placed adjacent to each other.
-* Creates a strong internal frame where multiple parallel lines touch. Load is quickly dissipated towards this internal frame.
-* Strong on models with a medium thickness of about a centimetre.
-* Reduced effect of pillowing, since it doesn't produce long vertical pockets of hot air.
-* Results in a very long bridging distance for top skin, which reduces top surface quality.
+Le motif en octuor crée une combinaison de tétraèdres et de cubes réguliers, un motif tridimensionnel. De temps en temps, plusieurs lignes de remplissage sont placées l'une à côté de l'autre.
+* Crée un cadre interne solide où plusieurs lignes parallèles se touchent. La charge est rapidement dissipée vers ce cadre interne.
+* Fort sur les modèles d'une épaisseur moyenne d'environ un centimètre.
+* Effet réduit de l'oreiller, puisqu'il ne produit pas de longues poches verticales d'air chaud.
+* Il en résulte une très longue distance de pontage pour la peau supérieure, ce qui réduit la surface supérieure qu
 
-Quarter Cubic
+
+Quart de cube
 ----
-![Quarter Cubic](../../../articles/images/infill_pattern_quarter_cubic.png)
+![Quart cubique](../../../articles/images/infill_pattern_quarter_cubic.png)
 
-The quarter cubic pattern creates a 3-dimensional tesselation consisting of tetrahedra and truncated tetrahedra. Every so often, multiple infill lines will be placed adjacent to each other.
-* Creates two disjunct internal frames, similar to octet, where multiple parallel lines touch. Load is quickly dissipated towards this internal frame. The frames are oriented in two different directions, making them weaker individually but reducing the distance to distribute the load to these frames.
-* Strong on models with a low thickness of a few millimetres.
-* Reduced effect of pillowing, since it doesn't produce long vertical pockets of hot air.
-* Results in a very long bridging distance for top skin, which reduces top surface quality.
+Le motif en quart de cube crée une tesselation tridimensionnelle composée de tétraèdres et de tétraèdres tronqués. De temps en temps, plusieurs lignes de remplissage sont placées l'une à côté de l'autre.
+* Crée deux cadres internes disjoints, semblables à un octet, où de multiples lignes parallèles se touchent. La charge est rapidement dissipée vers ce cadre interne. Les cadres sont orientés dans deux directions différentes, ce qui les rend plus faibles individuellement mais réduit la distance pour répartir la charge sur ces cadres.
+* Fort sur les modèles de faible épaisseur de quelques millimètres.
+* Effet réduit de l'oreiller, car il ne produit pas de longues poches verticales d'air chaud.
+* Résulte en une très longue distance de pontage pour la peau supérieure, ce qui réduit la qualité de la surface supérieure.
 
-Concentric
+Concentré
 ----
-![Concentric](../../../articles/images/infill_pattern_concentric.png)
+![Concentrique](../../../articles/images/infill_pattern_concentric.png)
 
-The concentric pattern creates rings parallel to the walls.
-* The strongest infill pattern when using 100% infill, since not only will no lines intersect, but the lines are also oriented in a way that the non-isotropic strength of lines will distribute the load.
-* Produces the most flexible prints, with a very weak and even strength in all horizontal directions.
-* Stronger in the vertical direction than in the horizontal direction.
-* With 100% infill density, the material could clump up in the middle, reducing reliability of printing round shapes where the concentric circles come together in one point.
-* With some shapes, some of the infill lines could hang in mid-air, adding no additional strength for the cost of material and printing time.
-* When not using 100% infill, this is the weakest infill pattern in the horizontal direction. It adds no strength at all.
+Le motif concentrique crée des anneaux parallèles aux parois.
+* Le motif de remplissage le plus fort lorsque l'on utilise un remplissage à 100%, car non seulement aucune ligne ne se croise, mais les lignes sont également orientées de telle sorte que la force non isotrope des lignes répartit la charge.
+* Produit les impressions les plus flexibles, avec une force très faible et régulière dans toutes les directions horizontales.
+* Plus forte dans la direction verticale que dans la direction horizontale.
+* Avec une densité de remplissage de 100 %, le matériau pourrait s'agglutiner au milieu, ce qui réduirait la fiabilité de l'impression de formes rondes où les cercles concentriques se rejoignent en un point.
+* Avec certaines formes, certaines des lignes de remplissage pourraient pendre en l'air, n'ajoutant aucune résistance supplémentaire pour le coût du matériau et le temps d'impression.
+* Lorsqu'on n'utilise pas un remplissage à 100%, c'est le motif de remplissage le plus faible dans le sens horizontal. Il n'ajoute aucune résistance.
 
 Zigzag
 ----
 ![Zigzag](../../../articles/images/infill_pattern_zigzag.png)
 
-The zigzag infill pattern causes the nozzle to draw lines in a zig-zag fashion. This is like lines, but the lines are connected in one long line, which prevents flow interruptions.
-* The second-strongest infill pattern when using 100% infill. However, it prints more reliably than concentric infill with round shapes.
-* The best pattern for a smooth top surface together with zigzag, since the distance between the lines is smallest.
-* Tends to be fairly weak in the vertical direction, since the layers only have small points in which they bond together.
-* Will be extremely weak in the horizontal direction, except in the one direction that the lines are oriented. But even in that direction, it is not resistant to shear so it will fail fairly quickly under load. 
+Le motif de remplissage en zigzag fait que la buse dessine des lignes en zigzag. C'est comme des lignes, mais les lignes sont reliées en une longue ligne, ce qui évite les interruptions de débit.
+* Le deuxième modèle de remplissage le plus fort est celui qui utilise un remplissage à 100%. Cependant, il est plus fiable que les remplissages concentriques de formes rondes.
+* Le meilleur motif pour une surface supérieure lisse avec zigzag, puisque la distance entre les lignes est la plus petite.
+* Tend à être assez faible dans le sens vertical, car les couches n'ont que de petits points de liaison entre elles.
+* Sera extrêmement faible dans la direction horizontale, sauf dans la seule direction où les lignes sont orientées. Mais même dans cette direction, il n'est pas résistant au cisaillement, de sorte qu'il cède assez rapidement sous la charge. 
 
 Cross
 ----
-![Cross](../../../articles/images/infill_pattern_cross.png)
+![Croix](../../../articles/images/infill_pattern_cross.png)
 
-The cross infill pattern produces a space-filling curve that produces something that looks like crosses along the inside of the volume.
-* Evenly squishy in all horizontal directions, making this useful for printing soft and flexible objects.
-* Produces no long straight lines in the horizontal direction, making this evenly squishy along the entire perimeter. There are no strong spots.
-* Produces no retractions at all, making this easier to print with flexible materials.
-* Will be stronger in the vertical direction than in the horizontal direction.
-* Takes a long time to slice.
-* Will be very weak in all horizontal directions.
+Le modèle de remplissage en croix produit une courbe de remplissage de l'espace qui produit quelque chose qui ressemble à des croix le long de l'intérieur du volume.
+* La courbe est uniformément sinueuse dans toutes les directions horizontales, ce qui la rend utile pour imprimer des objets souples et flexibles.
+* Ne produit pas de longues lignes droites dans la direction horizontale, ce qui rend ce motif uniformément courbé sur tout le périmètre. Il n'y a pas de points forts.
+* Ne produit aucune rétraction, ce qui facilite l'impression avec des matériaux souples.
+* Sera plus fort dans le sens vertical que dans le sens horizontal.
+* Prend beaucoup de temps à découper.
+* Sera très faible dans toutes les directions horizontales.
 
-Cross 3D
+Croix 3D
 ----
 ![Cross 3D](../../../articles/images/infill_pattern_cross_3d.png)
 
-The cross 3D infill pattern produces a space-filling curve that produces something that looks like crosses along the inside of the volume. This pattern pulses along the Z axis in order to make it weaker in the vertical direction.
-* Approximately evenly squishy in all directions, horizontal and vertical, making this the most useful pattern for printing soft and flexible objects.
-* Produces no long straight lines, making this evenly squishy along the entire surface.
-* Produces no retractions at all, making this easier to print with flexible materials.
-* Takes a long time to slice.
-* Will be very weak in all directions. 
+Le modèle de remplissage en 3D croisé produit une courbe de remplissage de l'espace qui produit quelque chose qui ressemble à des croix le long de l'intérieur du volume. Ce motif pulse le long de l'axe Z afin de l'affaiblir dans le sens vertical.
+* Ce motif est donc le plus utile pour l'impression d'objets souples et flexibles.
+* Il ne produit pas de longues lignes droites, ce qui le rend uniformément sinueux sur toute la surface.
+* Ne produit aucune rétraction, ce qui facilite l'impression avec des matériaux souples.
+* Prend beaucoup de temps à découper.
+* Sera très faible dans toutes les directions. 
 
-Gyroid
+Gyroïde
 ----
-![Gyroid](../../../articles/images/infill_pattern_gyroid.png)
+![Gyroïde](../../../articles/images/infill_pattern_gyroid.png)
 
-The gyroid infill pattern produces a wavy pattern that alternates directions.
-* Produces one volume which is completely permeable to fluids, making this a useful pattern for dissolvable materials.
-* Equally strong in all directions, but not very strong. This makes it useful for flexible materials, but the result will be somewhat harder, less squishy, than the Cross (3D) infill patterns.
-* Resistant to shearing.
-* Takes a long time to slice and produces large g-code files. For some printers it may be hard to keep up with the many g-code commands per second, and it may be hard to keep up with over serial connection on low baud rates.
+Le motif de remplissage gyroïde produit un motif ondulé qui alterne les directions.
+* Produit un volume qui est complètement perméable aux fluides, ce qui en fait un modèle utile pour les matériaux dissolvables.
+* Egalement fort dans toutes les directions, mais pas très fort. Cela le rend utile pour les matériaux souples, mais le résultat sera un peu plus dur, moins écrasant, que les motifs de remplissage en croix (3D).
+* Résistant au cisaillement.
+* Prend beaucoup de temps à découper et produit de gros fichiers g-code. Pour certaines imprimantes, il peut être difficile de suivre les nombreuses commandes g-code par seconde, et il peut être difficile de suivre une connexion en série à faible débit en bauds.
+
+
