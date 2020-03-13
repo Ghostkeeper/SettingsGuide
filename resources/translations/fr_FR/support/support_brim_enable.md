@@ -1,9 +1,9 @@
-When the support brim is activated, an additional brim will be drawn inside the support area on the first layer.
+Lorsque le bord de soutien est activé, un bord supplémentaire sera dessiné à l'intérieur de la zone de soutien sur la première couche.
 
-![The support brim](../../../articles/images/support_brim_4mm.png)
+![Le bord de support](../../../articles/images/support_brim_4mm.png)
 
-The support brim is drawn towards the *inside*, unlike the ordinary brim. If the [Build Plate Adhesion Type](../platform_adhesion/adhesion_type.md) is set to Brim, another brim will also be drawn *around* the support.
+Le bord de soutien est attiré vers l'"intérieur", contrairement au bord ordinaire. Si le [Build Plate Adhesion Type](../platform_adhesion/adhesion_type.md) est réglé sur Bord, un autre bord sera également dessiné *autour* du support.
 
-The purpose of this brim is to give the support more surface area where it can adhere to the build plate. This can also be achieved by adjusting the [Initial Layer Support Line Distance](support_initial_layer_line_distance.md), but with this feature the adhesion will be concentrated around the edge of the support area, where it is more effective to prevent warping.
+Le but de ce bord est de donner au support plus de surface où il peut adhérer à la plaque de construction. Cela peut également être réalisé en ajustant la [Distance de la ligne de support de la couche initiale](support_initial_layer_line_distance.md), mais avec cette caractéristique, l'adhésion sera concentrée autour du bord de la zone de support, où elle est plus efficace pour empêcher le gauchissement.
 
-A support brim will also slightly increase the printing duration and material cost, but since it's only on the first layer this is very minimal. It does significantly make the support stronger, so for the zigzag support pattern it may become harder to break off.
+Un bord de support augmentera aussi légèrement la durée d'impression et le coût du matériau, mais comme il ne se trouve que sur la première couche, cela est très minime. Il renforce considérablement le support, de sorte que pour le motif de support en zigzag, il peut devenir plus difficile à casser.
