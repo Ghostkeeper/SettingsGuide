@@ -1,8 +1,8 @@
-This setting is only available when printing with a raft. It lowers all layers of the model, except the initial layer. This compresses the first layer harder onto the raft.
+Ce réglage n'est disponible que pour les impressions avec un radeau. Il abaisse toutes les couches du modèle, sauf la couche initiale. La première couche est ainsi comprimée plus fortement sur le radeau.
 
-![Dimensions that make up a raft](../../../articles/images/raft_dimensions.svg)
+![Dimensions qui composent un radeau](../../../articles/images/raft_dimensions.svg)
 
-The intent of this setting is to make up for the air gap in the raft. However the initial layer will have had some time to cool down further away from the raft, preventing it from sticking too much to the raft. Afterwards, the first layer will get pressed down onto the raft by the second layer, so that the print will still be stable.
-* Increasing the overlap may give you stronger adhesion to the raft, which increases reliability.
-* This setting affects your dimensional accuracy in the vertical direction.
-* This setting may cause overextrusion if it is set very high.
+Le but de ce réglage est de combler le vide d'air dans le radeau. Cependant, la couche initiale aura eu le temps de se refroidir plus loin du radeau, ce qui l'empêchera de trop coller au radeau. Ensuite, la première couche sera pressée sur le radeau par la deuxième couche, de sorte que l'impression sera toujours stable.
+* En augmentant le chevauchement, vous pouvez obtenir une plus forte adhérence au radeau, ce qui augmente la fiabilité.
+* Ce réglage affecte votre précision dimensionnelle dans le sens vertical.
+* Ce réglage peut provoquer une surextrusion s'il est réglé très haut.
