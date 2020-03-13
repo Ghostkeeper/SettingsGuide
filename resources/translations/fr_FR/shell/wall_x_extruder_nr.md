@@ -1,7 +1,7 @@
-If your printer has multiple extruders, you can choose to print just the inner walls with a different extruder.
+Si votre imprimante possède plusieurs extrudeuses, vous pouvez choisir de n'imprimer que les parois intérieures avec une autre extrudeuse.
 
-![The inner walls are printed in blue, but the rest in orange](../../../articles/images/wall_x_extruder_nr.png)
+![Les parois intérieures sont imprimées en bleu, mais le reste en orange](../../../articles/images/wall_x_extruder_nr.png)
 
-It's wise to print the inner walls with the same extruder as either the infill, the skin or the outer walls. There is no real use case for printing the inner walls with a different extruder than the rest, except perhaps for an interesting visual effect. The colour of the inner wall tends to shine through the outer wall slightly.
+Il est sage d'imprimer les parois intérieures avec la même extrudeuse que le remplissage, la peau ou les parois extérieures. Il n'y a pas vraiment de raison d'imprimer les parois intérieures avec une autre extrudeuse que le reste, sauf peut-être pour un effet visuel intéressant. La couleur de la paroi intérieure a tendance à briller légèrement à travers la paroi extérieure.
 
-Printing the inner walls with the same extruder as the infill, skin or the outer wall allows it to bind better to those structures. This creates a stronger part. When adjusting the extruder of those other structures, keep in mind what you'd like to bind the inner walls to.
+L'impression des parois intérieures avec la même extrudeuse que le remblai, la peau ou la paroi extérieure permet de mieux les fixer à ces structures. Cela crée une pièce plus solide. Lorsque vous réglez l'extrudeuse de ces autres structures, gardez à l'esprit ce à quoi vous souhaitez fixer les parois intérieures.
