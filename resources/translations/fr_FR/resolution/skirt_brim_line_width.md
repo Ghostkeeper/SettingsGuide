@@ -1,7 +1,7 @@
-This setting configures the width of a single skirt or brim line (whichever is active).
+Ce paramètre permet de configurer la largeur d'une seule jupe ou d'une seule ligne de bordure (celle qui est active).
 
-When using a brim, a slightly increased line width will improve the adhesion between the brim and the build plate. This is because the nozzle will extrude the material with more force, so that the brim gets pushed harder on to the build plate. The brim does not need to look pretty, so it's useful to have the brim line width as high as can feasibly be printed.
+Lorsque vous utilisez un bord, une largeur de ligne légèrement augmentée améliorera l'adhérence entre le bord et la plaque de construction. En effet, la buse va extruder le matériau avec plus de force, de sorte que le bord sera poussé plus fortement sur la plaque de montage. Le bord n'a pas besoin d'être joli, il est donc utile d'avoir une largeur de ligne de bord aussi élevée que possible.
 
-For the skirt, increasing the line width causes it to use more material. However it will allow for good priming in a shorter amount of time, so fewer skirt lines are necessary for small objects.
+Pour la jupe, l'augmentation de la largeur du trait entraîne l'utilisation d'une plus grande quantité de matériau. Cependant, cela permet un bon amorçage en un temps plus court, de sorte que moins de lignes de jupe sont nécessaires pour les petits objets.
 
-**The line width of the skirt and brim is also influenced by the [Initial Layer Line Width](initial_layer_line_width_factor.md) setting.**
+**La largeur de la ligne de la jupe et du bord est également influencée par le paramètre [Largeur de la ligne de la couche initiale](initial_layer_line_width_factor.md).**
