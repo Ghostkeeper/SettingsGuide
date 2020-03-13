@@ -1,14 +1,14 @@
-This setting controls the density of the bottom side of the print where it bridges a gap. At 100% density, the lines are placed directly adjacent. At lower densities, the lines are spaced further apart.
+Ce paramètre contrôle la densité de la face inférieure de l'impression lorsqu'elle comble un vide. À une densité de 100 %, les lignes sont placées directement à côté. À des densités plus faibles, les lignes sont plus espacées.
 
-![At 100% density, the lines are placed directly adjacent to one another](../../../articles/images/bridge_skin_density_100.png)
-![At 50% density, there is some spacing between the lines](../../../articles/images/bridge_skin_density_50.png)
+![À une densité de 100 %, les lignes sont placées directement les unes à côté des autres](../../../articles/images/bridge_skin_density_100.png)
+![A une densité de 50%, il y a un certain espacement entre les lignes](../../../articles/images/bridge_skin_density_50.png)
 
-There are two major effects at play when tuning this setting: Adhesion between lines and cooling.
+Deux effets majeurs entrent en jeu lors du réglage de ce paramètre : L'adhérence entre les lignes et le refroidissement.
 
-When spacing the skin lines directly adjacent to each other, they will stick to one another. This will make the bottom side of the bridged gap look nicer, since the surface will be continuous instead of stringing. Additionally, the second line can lean on the first line a bit while bridging, which makes the bridge sag a bit less.
+Lorsque les lignes de la peau sont directement adjacentes, elles adhèrent les unes aux autres. Cela rendra le côté inférieur de l'espace ponté plus joli, puisque la surface sera continue au lieu d'être en cordon. En outre, la deuxième ligne peut s'appuyer un peu sur la première ligne pendant le pontage, ce qui réduit un peu l'affaissement du pont.
 
-However there is another effect and that is cooling. When the lines are spaced further apart, they will be able to cool down faster and then won't sag as much either. Of course, this only applies when the fan is turned on, so for high temperature materials this strategy is not going to work.
+Mais il y a un autre effet, c'est le refroidissement. Lorsque les lignes sont plus espacées, elles peuvent se refroidir plus rapidement et ne s'affaissent pas autant non plus. Bien sûr, cela ne s'applique que lorsque le ventilateur est en marche, donc pour les matériaux à haute température, cette stratégie ne va pas fonctionner.
 
-Which of these effects is stronger depends on the viscosity of the material, how fast it solidifies and on the fan speed. Some tuning is always required.
+Lequel de ces effets est le plus fort dépend de la viscosité du matériau, de la vitesse à laquelle il se solidifie et de la vitesse du ventilateur. Un certain réglage est toujours nécessaire.
 
-**If the [Bridge Skin Flow](bridge_skin_material_flow.md) is less than 100%, there will also be some spacing between the lines even if the density is 100%, because the lines will be thinner then.**
+**Si le [débit de la peau du pont] (débit du matériau de la peau du pont) est inférieur à 100 %, il y aura également un certain espacement entre les lignes même si la densité est de 100 %, car les lignes seront alors plus fines.
