@@ -1,5 +1,5 @@
-If this setting is enabled for an object, and that object is a support mesh, then the support mesh will get supported with support as well. Instead of just printing the mesh's volume as support, the support mesh will get support printed beneath it as well.
+Si ce paramètre est activé pour un objet, et que cet objet est une maille de support, alors la maille de support sera également supportée par le support. Au lieu de simplement imprimer le volume de la maille comme support, la maille de support sera également imprimée avec un support en dessous.
 
-If the support mesh is printed just as normal support, you have full control over how the support gets shaped. This is ideal for support that gets modelled separately in CAD software or by specialised applications like [MeshMixer](http://www.meshmixer.com/). However when using more low-tech solutions like simple cubes as support meshes, it may be easier to just cause them to be dropped down to the build plate so that the support is stable.
+Si la maille de support est imprimée comme un support normal, vous avez un contrôle total sur la forme du support. C'est idéal pour les supports qui sont modélisés séparément dans les logiciels de CAO ou par des applications spécialisées comme [MeshMixer](http://www.meshmixer.com/). Toutefois, lorsque l'on utilise des solutions moins techniques, comme de simples cubes comme mailles de support, il peut être plus facile de les faire tomber sur la plaque de construction pour que le support soit stable.
 
-**This setting is only available in the per-object settings.** It does not appear in the normal settings list.
+**Ce paramètre n'est disponible que dans les paramètres par objet ** Il n'apparaît pas dans la liste des paramètres normaux.**
