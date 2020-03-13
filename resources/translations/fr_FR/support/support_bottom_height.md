@@ -1,5 +1,5 @@
-This setting defines how thick the support floor is, where the support rests on the model.
+Ce paramètre définit l'épaisseur du plancher de support, l'endroit où le support repose sur le modèle.
 
-A thicker support floor increases the effectiveness of the support floor. There will be more material to separate the main support body from the model. If the support floor is printed with a material that detaches easily from the model, there is less chance of the rest of the support still touching the model to leave a scar.
+Un plancher de support plus épais augmente l'efficacité du plancher de support. Il y aura davantage de matériau pour séparer le corps principal du support du modèle. Si le plancher de soutien est imprimé avec un matériau qui se détache facilement du modèle, il y a moins de chances que le reste du support touche encore le modèle pour laisser une cicatrice.
 
-However a thicker support floor will also make more of the support use the more expensive material or slower printing technique. This can make the print take longer to complete or use more expensive materials.
+Toutefois, un sol de soutien plus épais fera également en sorte qu'une plus grande partie du support utilisera le matériau plus coûteux ou une technique d'impression plus lente. L'impression peut donc être plus longue à réaliser ou utiliser des matériaux plus coûteux.
