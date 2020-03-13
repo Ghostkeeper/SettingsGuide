@@ -1,8 +1,8 @@
-If the location of the seam is set to "User Specified" in the [Z Seam Alignment](z_seam_type.md) setting, the seam is placed close to the location specified with the Z Seam X and [Z Seam Y](z_seam_y.md) settings.
+Si l'emplacement de la couture est défini sur "Spécifié par l'utilisateur" dans le paramètre [Alignement de la couture Z](z_seam_type.md), la couture est placée près de l'emplacement spécifié avec les paramètres Z Seam X et [Z Seam Y](z_seam_y.md).
 
-![The seam is located on the left side](../../../articles/images/z_seam_x_left.png)
-![The seam is located on the right side](../../../articles/images/z_seam_x_right.png)
+![La couture est située sur le côté gauche](../../../articles/images/z_seam_x_left.png)
+![La couture est située sur le côté droit](../../../articles/images/z_seam_x_right.png)
 
-This setting indicates an absolute position on the build plate if [Z Seam Relative](z_seam_relative.md) is disabled, or a position relative to the centre of the model if Z Seam Relative is enabled.
+Ce paramètre indique une position absolue sur la plaque de construction si [Z Seam Relative](z_seam_relative.md) est désactivé, ou une position relative au centre du modèle si Z Seam Relative est activé.
 
-It is useful to choose a location for the seam that is hardly visible in the application of your print. If no such location is available or some post-processing can be done after the print, you can opt to place the seam in a location where it can easily be cut off with a knife or sanded down.
+Il est utile de choisir un emplacement pour la couture qui soit à peine visible dans l'application de votre impression. Si un tel emplacement n'est pas disponible ou si un post-traitement peut être effectué après l'impression, vous pouvez choisir de placer la couture à un endroit où elle peut être facilement coupée au couteau ou poncée.
