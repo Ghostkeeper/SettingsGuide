@@ -1,8 +1,8 @@
-This setting makes the skin overlap a bit with the adjacent structures. This makes the skin adhere better to those structures.
+Ce réglage fait que la peau chevauche un peu les structures adjacentes. La peau adhère ainsi mieux à ces structures.
 
-![No overlap](../../../articles/images/skin_overlap_none.png)
-![Some overlap](../../../articles/images/skin_overlap_20.png)
+![Pas de chevauchement](../../../articles/images/skin_overlap_none.png)
+![Un peu de chevauchements](../../../articles/images/skin_overlap_20.png)
 
-This overlap technically produces overextrusion, but the amount of overextrusion is small enough that it won't be visible. It will have a significant influence on the strength though, because the skin can adhere better to the walls and infill. After all, these structures only add to the strength of the model if they have something to hold on to.
+Ce chevauchement produit techniquement une surextrusion, mais la quantité de surextrusion est suffisamment faible pour qu'elle ne soit pas visible. Elle aura cependant une influence significative sur la résistance, car la peau peut mieux adhérer aux parois et au remplissage. Après tout, ces structures n'ajoutent à la solidité du modèle que si elles ont quelque chose à quoi s'accrocher.
 
-Having a bit of overlap can also help to reduce the occurrence of gaps in the skin.
+Le fait d'avoir un peu de chevauchement peut également aider à réduire l'apparition de lacunes dans la peau.
