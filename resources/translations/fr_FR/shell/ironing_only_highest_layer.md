@@ -1,5 +1,5 @@
-If this setting is enabled, ironing will only be applied to the very highest layer of the object. If your model has all sorts of top surfaces but only the highest is visible or only the highest needs to be smooth, then this setting enables you to save a lot of printing time.
+Si ce paramètre est activé, le repassage ne sera appliqué que sur la couche la plus haute de l'objet. Si votre modèle présente toutes sortes de surfaces supérieures mais que seule la plus haute est visible ou que seule la plus haute doit être lisse, ce réglage vous permet de gagner beaucoup de temps d'impression.
 
-![The semicircle in the lower layer does not get ironed](../../../articles/images/ironing_only_highest_layer.png)
+![Le demi-cercle de la couche inférieure ne sera pas repassé](../../../articles/images/ironing_only_highest_layer.png)
 
-**If there are multiple objects in a print, the highest layer of every object will get ironed. This includes every part of a multi-extrusion print.**
+**Si une impression comporte plusieurs objets, la couche la plus élevée de chaque objet sera repassée. Cela inclut chaque partie d'une impression à plusieurs extrusions.**
