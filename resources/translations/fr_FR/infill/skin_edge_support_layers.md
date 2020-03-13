@@ -1,11 +1,11 @@
-When printing concave shapes, there will be some top skin that ends somewhere halfway through the infill. This setting adds an extra line through the infill to support the edge of the skin, so that it sags a little bit less.
+Lors de l'impression de formes concaves, il y aura une peau supérieure qui se terminera quelque part à mi-chemin du remplissage. Ce réglage ajoute une ligne supplémentaire à travers le remplissage pour soutenir le bord de la peau, de sorte qu'elle s'affaisse un peu moins.
 
-![A perimeter is drawn through the infill under the edge of the skin](../../../articles/images/skin_edge_support_thickness.png)
+![Un périmètre est tracé à travers le remplissage sous le bord de la peau](../../../articles/images/skin_edge_support_thickness.png)
 
-A single line through the gaps in the infill will still sag, so the line may be drawn on multiple layers underneath the edge of the skin that needs supporting. This setting configures the number of layers through which this line will get drawn underneath the edge of the skin. Alternatively you can adjust the [thickness](skin_edge_support_thickness.md) of the layers through which the line gets drawn.
+Une seule ligne à travers les interstices du remplissage s'affaissera toujours, de sorte que la ligne peut être tracée sur plusieurs couches sous le bord de la peau qui a besoin d'être soutenue. Ce paramètre permet de configurer le nombre de couches à travers lesquelles cette ligne sera tracée sous le bord de la peau. Vous pouvez également ajuster l'[épaisseur](skin_edge_support_thickness.md) des couches à travers lesquelles la ligne est tracée.
 
-Increasing the number of layers will generally have the following effects on the print:
-* The edge of the skin will get supported better, leading to a more smooth top side because the skin can bridge completely from one side to the other.
-* It takes slightly longer to print, and will use more material.
+L'augmentation du nombre de calques aura généralement les effets suivants sur l'impression :
+* Le bord de la peau sera mieux supporté, ce qui donnera une face supérieure plus lisse car la peau peut passer complètement d'un côté à l'autre.
+* L'impression prend un peu plus de temps et utilise plus de matière.
 
-If the infill rate is high, this setting will hardly have any effect on the top surface and could cause [overextrusion](../troubleshooting/overextrusion.md) in the infill. It is best left at 0 layers then.
+Si le taux de remplissage est élevé, ce réglage n'aura pratiquement aucun effet sur la surface supérieure et pourrait provoquer une [surextrusion](../troubleshooting/overextrusion.md) dans le remplissage. Il est donc préférable de laisser la couche 0.
