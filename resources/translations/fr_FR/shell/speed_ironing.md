@@ -1,3 +1,3 @@
-Since ironing behaves widely different with different materials, this setting allows you to control how fast the nozzle moves during ironing.
+Comme le repassage se comporte de manière très différente selon les matériaux, ce réglage permet de contrôler la vitesse à laquelle la buse se déplace pendant le repassage.
 
-The ironing speed is normally significantly slower than the speed at which the skin is printed. This allows the top surface lines to fuse together. However it will also increase the total printing time quite significantly, especially if the line width of ironing is low.
+La vitesse de repassage est normalement beaucoup plus lente que la vitesse à laquelle la peau est imprimée. Cela permet aux lignes de la surface supérieure de fusionner ensemble. Cependant, cela augmente également le temps total d'impression de manière assez significative, surtout si la largeur de la ligne de repassage est faible.
