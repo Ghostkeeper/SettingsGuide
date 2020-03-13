@@ -1,21 +1,23 @@
-3D printers with fused-filament fabrication work by placing a string of molten plastic in the correct locations. If this plastic is not supported, it will sag down, because it gets pushed out the nozzle with significant force and because of gravity. Unless the model is beneath it to support the new layer, it will need to be supported by an additional support structure, that is removed and discarded after printing the model.
+Les imprimantes 3D avec fabrication de filaments fondus fonctionnent en plaçant un cordon de plastique fondu aux bons endroits. Si ce plastique n'est pas soutenu, il va s'affaisser, car il est poussé hors de la buse avec une force importante et à cause de la gravité. À moins que le modèle ne se trouve en dessous pour soutenir la nouvelle couche, il devra être soutenu par une structure de support supplémentaire, qui sera enlevée et jetée après l'impression du modèle.
 
-This setting enables creating support structures to support the object while it's being printed. Cura won't enable this support by default, but it will mark the surface of the model red if it thinks that the material there could sag a lot if support is not enabled.
+Ce réglage permet de créer des structures de support pour soutenir l'objet pendant l'impression. Cura n'activera pas ce support par défaut, mais il marquera la surface du modèle en rouge s'il pense que le matériau qui s'y trouve pourrait beaucoup s'affaisser si le support n'est pas activé.
 
-![Marking the model red where support is needed](../../../articles/images/support_enable_prepare_mode.png)
-![Support structure (in cyan) to support the model during printing](../../../articles/images/support_enable.png)
+![Marquer le modèle en rouge là où le support est nécessaire](../../../articles/images/support_enable_prepare_mode.png)
+![Structure de support (en cyan) pour soutenir le modèle pendant l'impression](../../../articles/images/support_enable.png)
 
-Printing support takes a significant amount of time and material. Where the support touches the model it needs to be broken or cut off later, after the print has completed. This tends to leave a scar on the surface.
+L'impression d'un support prend beaucoup de temps et de matériel. Lorsque le support touche le modèle, il doit être cassé ou coupé plus tard, une fois l'impression terminée. Cela a tendance à laisser une cicatrice sur la surface.
 
-However support is sometimes completely necessary. For instance, if the model has a piece that points down towards the build plate, this piece would otherwise just hang in mid-air.
+Cependant, le support est parfois complètement nécessaire. Par exemple, si le modèle comporte un morceau qui pointe vers le bas en direction de la plaque de construction, ce morceau serait sinon simplement suspendu en l'air.
 
-Design for preventing support
+Conception pour empêcher le support
 ----
 
-While it is sometimes necessary, printing support should be prevented if at all possible. There are numerous techniques to prevent having to print support. This is a large part of model design for 3D printing. Here are a couple of techniques by which your 3D model can be altered to prevent needing support.
-* Orient your model such that there are no flat surfaces higher than the build plate.
-* Avoid designing overhangs as much as possible.
-* If there is a surface just above your build plate, pull it down to the build plate.
-* Small ledges can be supported with a 45 degree angle slope, transferring the overhang into the model.
-* Larger overhangs can be bridged if they are supported on both sides. Cura will automatically orient the lines of the bottom side of that overhang such that they go in a straight line over the bridge. During the printing of these lines, the nozzle will keep tension on the bead such that it doesn't droop down. This then gives it enough time to solidify so that it can hold up on its own.
-* If there is a gap in the overhang, a sacrificial bridge can be designed in. This is one layer in which the gap is closed. This allows for good bridging, such that the second layer can build the proper walls of the gap on top. After printing, the gap can be opened with a knife, since it's only one layer thick.
+Bien que cela soit parfois nécessaire, il convient d'éviter autant que possible les supports d'impression. Il existe de nombreuses techniques pour éviter d'avoir à imprimer un support. Il s'agit d'une grande partie de la conception des modèles pour l'impression en 3D. Voici quelques techniques permettant de modifier votre modèle 3D pour éviter d'avoir besoin d'un support.
+* Orientez votre modèle de manière à ce qu'il n'y ait pas de surfaces planes plus hautes que la plaque de construction.
+* Évitez autant que possible de concevoir des surplombs.
+* S'il y a une surface juste au-dessus de votre plaque de construction, tirez-la vers le bas jusqu'à la plaque de construction.
+* Les petits rebords peuvent être soutenus avec une inclinaison de 45 degrés, ce qui permet de transférer le surplomb dans le modèle.
+* Les plus grands surplombs peuvent être franchis s'ils sont soutenus des deux côtés. Cura orientera automatiquement les lignes du côté inférieur de ce surplomb de manière à ce qu'elles passent en ligne droite au-dessus du pont. Pendant l'impression de ces lignes, la buse maintiendra la tension sur le bourrelet de manière à ce qu'il ne s'affaisse pas. Cela lui donne ensuite suffisamment de temps pour se solidifier afin qu'il puisse tenir tout seul.
+* S'il y a un vide dans le surplomb, un pont sacrificiel peut être conçu. Il s'agit d'une couche dans laquelle la brèche est fermée. Cela permet de construire un bon pont, de sorte que la deuxième couche peut construire les murs appropriés de l'espace sur le dessus. Après l'impression, la fente peut être ouverte avec un couteau, puisqu'elle n'a qu'une seule couche d'épaisseur.
+
+
