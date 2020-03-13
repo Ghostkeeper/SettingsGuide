@@ -1,7 +1,7 @@
-This setting determines how much spacing the ooze shield must keep (at minimum) from your object. Some small distance must be kept to prevent the ooze shield or the blobs on it from sticking to your model.
+Ce paramètre détermine la distance que le bouclier anti-fuite doit garder (au minimum) par rapport à votre objet. Une petite distance doit être respectée pour éviter que la plaque de suintement ou les taches qu'elle porte ne collent à votre modèle.
 
-![A horizontal distance is kept between the shield and the model](../../../articles/images/ooze_shield.svg)
+![Une distance horizontale est maintenue entre le bouclier et le modèle](../../../articles/images/ooze_shield.svg)
 
-Put the ooze shield as close to the model as possible without hitting the model. The closer the shield is to your model, the less time there is between the shield and the model for the nozzle to ooze further.
+Placez le bouclier de suintement aussi près que possible du modèle sans frapper celui-ci. Plus le bouclier est proche de votre modèle, moins il y a de temps entre le bouclier et le modèle pour que la buse suinte davantage.
 
-Sometimes the shield will have a greater distance to the model, because the shield must also maintain a certain overhang angle in order to not collapse.
+Parfois, le bouclier sera plus éloigné du modèle, car le bouclier doit également maintenir un certain angle de surplomb pour ne pas s'effondrer.
