@@ -1,12 +1,12 @@
-For printers that have multiple extruders, this selects the extruder that will be used to print the top surface.
+Pour les imprimeurs qui disposent de plusieurs extrudeuses, cela permet de sélectionner l'extrudeuse qui sera utilisée pour imprimer la surface supérieure.
 
-![This model will be printed with only the top surface layers in a different colour](../../../articles/images/roofing_extruder_nr.png)
+![Ce modèle sera imprimé avec uniquement les couches de la surface supérieure dans une couleur différente](../../../articles/images/roofing_extruder_nr.png)
 
-This way you can give the top surface a different colour or material. Keep in mind that the extruder of the walls is not adjusted by this setting, so there will still be a rim around the top surface.
+Ainsi, vous pouvez donner à la surface supérieure une couleur ou un matériau différent. N'oubliez pas que l'extrudeuse des parois n'est pas réglée par ce réglage, de sorte qu'il y aura toujours un rebord autour de la surface supérieure.
 
-Other than giving the top surface a different colour, you could also use this to print the top surface with a different material. This can give a variety of effects:
-* Print the top surface and outer wall in PLA while printing the rest with a more rigid material to get a strong object that also looks good.
-* Print the top surface with TPU but the rest with a harder material to achieve a soft, high-friction gripping surface.
-* Print the top surface with a material that is more slippery than the stronger material you need for the insides of the model, if something needs to slide over the surface.
+Outre le fait de donner à la surface supérieure une couleur différente, vous pouvez également l'utiliser pour imprimer la surface supérieure avec un matériau différent. Cela peut donner divers effets :
+* Imprimez la surface supérieure et la paroi extérieure en PLA tout en imprimant le reste avec un matériau plus rigide pour obtenir un objet solide qui a également un bel aspect.
+* Imprimer la surface supérieure avec du TPU mais le reste avec un matériau plus dur pour obtenir une surface de préhension douce et à haut frottement.
+* Imprimez la surface supérieure avec un matériau plus glissant que le matériau plus résistant dont vous avez besoin pour l'intérieur du modèle, si quelque chose doit glisser sur la surface.
 
-**If the material for the top surface doesn't stick well to the material below it, it tends to let go after printing. Be especially careful with materials with high shrinkage ratios.**
+**Si le matériau de la surface supérieure n'adhère pas bien au matériau inférieur, il a tendance à se détacher après l'impression. Soyez particulièrement prudent avec les matériaux ayant un taux de rétrécissement élevé.**
