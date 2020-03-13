@@ -1,7 +1,7 @@
-Small areas of overhanging surfaces produce small pillars of support. These pillars are prone to topple over. Instead of those small pillars, Cura can generate specialised towers that are wider and more sturdy, to prevent the support from falling over.
+De petites surfaces en surplomb produisent de petits piliers de soutien. Ces piliers ont tendance à basculer. Au lieu de ces petits piliers, Cura peut générer des tours spécialisées, plus larges et plus robustes, pour éviter que le support ne se renverse.
 
-![A tower supports the sword which would otherwise have a very small overhanging area](../../../articles/images/support_use_towers.svg)
+![Une tour soutient l'épée qui, autrement, aurait une très petite surface en surplomb](../../../articles/images/support_use_towers.svg)
 
-Overhang areas smaller than the [Minimum Tower-Supported Diameter](support_minimal_diameter.md) will get supported by such a tower instead of the normal support structure. These towers are wider so that they won't topple over. Near the top of the tower, the tower will get more narrow towards the width of the overhanging surface that actually needs support.
+Les zones en surplomb plus petites que le [diamètre minimum de la tour](support_minimal_diameter.md) seront soutenues par une telle tour au lieu de la structure de soutien normale. Ces tours sont plus larges afin de ne pas s'effondrer. Près du sommet de la tour, la tour deviendra plus étroite vers la largeur de la surface en surplomb qui a réellement besoin d'être soutenue.
 
-These towers have a larger diameter than the region they support. This makes the towers more stable than regular support, but also requires more material, printing time and space on your build plate.
+Ces tours ont un diamètre plus grand que la région qu'elles supportent. Cela rend les tours plus stables que le support habituel, mais nécessite également plus de matériel, de temps d'impression et d'espace sur votre plaque de construction.
