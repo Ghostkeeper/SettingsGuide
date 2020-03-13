@@ -1,11 +1,11 @@
-The top and bottom side of the object can be printed with a different extruder than the rest of the model, if desired. With this setting you can choose which extruder will be used for the top and bottom sides.
+Les faces supérieure et inférieure de l'objet peuvent être imprimées avec une extrudeuse différente du reste du modèle, si on le souhaite. Ce paramètre vous permet de choisir l'extrudeuse qui sera utilisée pour les faces supérieure et inférieure.
 
-![The top and bottom of this object are printed in red](../../../articles/images/top_bottom_extruder_nr.png)
+![Le haut et le bas de cet objet sont imprimés en rouge](../../../articles/images/top_bottom_extruder_nr.png)
 
-This setting does not influence the walls, which are printed next to the top and bottom and will be visible from the top and bottom of your print.
+Ce réglage n'a aucune influence sur les murs, qui sont imprimés à côté du haut et du bas et seront visibles du haut et du bas de votre impression.
 
-Example use cases of printing the top and bottom with a different extruder include:
-* Printing them in a different colour for a visual effect.
-* Printing them with a softer material, which gives the model a soft touch and increases friction so that you can hold on to it more easily.
-* Printing them with a hard material to give the model more horizontal strength while still retaining the nice visual quality of your other material on the walls.
-* Printing them with a material with a low friction coefficient so that other objects may slide more easily over the surface, when moving parts are involved in your final design.
+Voici quelques exemples de cas d'utilisation où le haut et le bas sont imprimés avec une autre extrudeuse :
+* L'impression dans une couleur différente pour un effet visuel.
+* L'impression avec un matériau plus doux, qui donne au modèle un toucher doux et augmente la friction afin que vous puissiez le tenir plus facilement.
+* L'impression avec un matériau dur pour donner au modèle une plus grande résistance horizontale tout en conservant la belle qualité visuelle de votre autre matériau sur les murs.
+* Les imprimer avec un matériau à faible coefficient de frottement pour que les autres objets puissent glisser plus facilement sur la surface, lorsque des pièces mobiles sont impliquées dans votre conception finale.
