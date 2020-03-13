@@ -1,10 +1,10 @@
-This setting will remove very thin strips of skin, replacing them with infill instead.
+Ce réglage permet d'enlever de très fines bandes de peau et de les remplacer par du remplissage.
 
-The skin will only be removed if there is infill next to it, so it won't normally remove the skin at the very top or bottom of your print, even if that is very thin.
+La peau ne sera enlevée que s'il y a un remplissage à côté, de sorte que la peau ne sera normalement pas enlevée tout en haut ou tout en bas de votre empreinte, même si elle est très fine.
 
-![Not removing any skin](../../../articles/images/skin_preshrink_original.png)
-![Thin strips are removed](../../../articles/images/skin_preshrink_shrunk.png)
+![Ne pas enlever la peau](../../../articles/images/skin_preshrink_original.png)
+![Les bandes minces sont supprimées](../../../articles/images/skin_preshrink_shrunk.png)
 
-Skin will normally get generated anywhere that is vertically close to the top or bottom of the object. This is not necessary everywhere. Vertical walls are usually strong enough, so while there should normally be skin next to vertical the vertical walls, this setting allows you to omit that. This saves on printing time and material.
+La peau est normalement générée à tout endroit qui se trouve verticalement près du haut ou du bas de l'objet. Cela n'est pas nécessaire partout. Les murs verticaux sont généralement assez solides, donc alors qu'il devrait normalement y avoir de la peau à côté des murs verticaux, ce réglage vous permet de l'omettre. Cela permet d'économiser du temps et du matériel d'impression.
 
-If the setting is increased too much, gaps can appear in the top and bottom surface where infill gets exposed. In particular, take good care with models that have thin ledges that should get a thin strip of skin.
+Si le réglage est trop élevé, des espaces peuvent apparaître sur les surfaces supérieure et inférieure où le remplissage est exposé. Faites particulièrement attention aux modèles qui ont des rebords fins qui devraient avoir une fine bande de peau.
