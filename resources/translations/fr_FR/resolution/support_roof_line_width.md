@@ -1,7 +1,7 @@
-The widths of the lines of support roof can be configured separately from the widths of the rest of the support lines.
+La largeur des lignes de soutien du toit peut être configurée séparément de la largeur du reste des lignes de soutien.
 
-![The support roof lines are wider than the rest of the support lines](../../../articles/images/support_roof_line_width.png)
+![Les lignes de toit de soutien sont plus larges que le reste des lignes de soutien](../../../articles/images/support_roof_line_width.png)
 
-Printing the support roof with slightly thinner lines is often advantageous for the quality of the overhanging surface that it supports, purely through having a smoother top surface above the support interface. Yet it doesn't necessarily increase the adhesion between the support interface and the model, so the support will not necessarily be harder to remove.
+L'impression du toit du support avec des lignes légèrement plus fines est souvent avantageuse pour la qualité de la surface en surplomb qu'il supporte, du seul fait qu'il a une surface supérieure plus lisse au-dessus de l'interface du support. Cependant, cela n'augmente pas nécessairement l'adhérence entre l'interface du support et le modèle, de sorte que le support ne sera pas nécessairement plus difficile à enlever.
 
-However, printing the roof lines too thin will cause uneven extrusion, which reduces the supporting effect of the roof, causing a worse overhang quality. It may also introduce a great change in the flow rate through the nozzle, causing overextrusion when it starts printing support roof and underextrusion when printing whatever comes after the support roof.
+Cependant, l'impression de lignes de toit trop fines entraînera une extrusion inégale, ce qui réduit l'effet de support du toit, entraînant une moins bonne qualité du porte-à-faux. Cela peut également introduire un grand changement dans le débit à travers la buse, provoquant une surextrusion lorsqu'elle commence à imprimer le toit de support et une sous-extrusion lorsqu'elle imprime ce qui vient après le toit de support.
