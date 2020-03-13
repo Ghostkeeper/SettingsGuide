@@ -1,9 +1,9 @@
-Normally, Cura doesn't bother to make the nozzle avoid support structures as well when [avoiding other parts](travel_avoid_other_parts.md). With this setting, Cura will avoid hitting support structures while travelling.
+Normalement, Cura ne se donne pas la peine de faire en sorte que la buse évite les structures de support également lorsqu'elle [évite d'autres parties](travel_avoid_other_parts.md). Avec ce réglage, Cura évitera de heurter les structures de support pendant le voyage.
 
-Support doesn't need to be pretty, so it's not a problem if a blob ends up on support. In fact, this may prevent the blob from appearing on the wall. Also, a scar in the support is not a problem for its function. However, if the material oozes a lot and the blob from that ooze is applied on the same location on the support in every layer, then this blob can build up big, eventually causing the nozzle to knock over the support structure. In that case, avoiding support when travelling may be beneficial.
+Le support n'a pas besoin d'être joli, donc ce n'est pas un problème si une tache finit sur le support. En fait, cela peut éviter que la tache n'apparaisse sur le mur. De plus, une cicatrice dans le support n'est pas un problème pour sa fonction. Cependant, si le matériau suinte beaucoup et que la goutte de ce suintement est appliquée au même endroit sur le support à chaque couche, alors cette goutte peut s'accumuler et finir par faire tomber la buse sur la structure du support. Dans ce cas, il peut être avantageux d'éviter le support lors des déplacements.
 
-Some advantages and disadvantages of enabling this setting include:
-* Greater reliability because there is a lower chance to knock over support by hitting the same blob repeatedly.
-* Slightly longer travel moves and more oozing as a result.
-* The ooze will not get wiped off on the support, but ends up on the wall of the part that the nozzle travels to.
-* There might not be any path that avoids support as well, in which case the printer will resort to a retraction and travelling in a straight line, which incurs extra time and might leave extra scars on the walls.
+Voici quelques avantages et inconvénients de ce réglage :
+* Une plus grande fiabilité, car il y a moins de risques de renverser le support en frappant la même goutte de manière répétée.
+* Les déplacements sont légèrement plus longs, ce qui entraîne un suintement plus important.
+* Le suintement ne s'essuie pas sur le support, mais finit sur la paroi de la pièce vers laquelle la buse se déplace.
+* Dans ce cas, l'imprimante se rétracte et se déplace en ligne droite, ce qui prend plus de temps et peut laisser des cicatrices supplémentaires sur les murs.
