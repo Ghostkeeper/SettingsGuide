@@ -1,5 +1,5 @@
-Similar to the [Make Overhang Printable](../experimental/conical_overhang_enabled.md) feature, this setting modifies the shape of moulds such that it can be printed without support. Only the outside shape of the mould is modified, so the shape of your cast will not be affected.
+Semblable à la fonction [Make Overhang Printable](../experimental/conical_overhang_enabled.md), ce paramètre modifie la forme des moules de manière à ce qu'elle puisse être imprimée sans support. Seule la forme extérieure du moule est modifiée, de sorte que la forme de votre moulage ne sera pas affectée.
 
-![An angle of 40 degrees allows the bottom side of this mould to print without needing any support](../../../articles/images/mold_angle.png)
+![Un angle de 40 degrés permet d'imprimer la face inférieure de ce moule sans avoir besoin de support](../../../articles/images/mold_angle.png)
 
-For some shapes, modifying the outside shape of the mould is not enough to make it print properly. It'll still need support. You can achieve a similar effect by enabling [Conical Support](../experimental/support_conical_enabled.md).
+Pour certaines formes, il ne suffit pas de modifier la forme extérieure du moule pour qu'il s'imprime correctement. Il faudra quand même lui apporter un soutien. Vous pouvez obtenir un effet similaire en activant [Conical Support](../experimental/support_conical_enabled.md).
