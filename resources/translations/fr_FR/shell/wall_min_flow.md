@@ -1,12 +1,12 @@
-Compensating for overlaps in wall lines will reduce the flow rate of some of the walls. This can be problematic, because it can reduce the flow rate arbitrarily low, down to 1% if the walls almost completely overlap. Printing at extremely low flow rates doesn't work well. It tends to form a droplet pattern instead of continuously extruding lines.
+La compensation des chevauchements des lignes de mur réduira le débit de certains des murs. Cela peut être problématique, car cela peut réduire le débit arbitrairement faible, jusqu'à 1 % si les parois se chevauchent presque complètement. L'impression à des débits extrêmement faibles ne fonctionne pas bien. Elle a tendance à former un motif de gouttelettes au lieu de lignes d'extrusion continues.
 
-This setting will turn those lines with extremely low flow rate into travel moves, effectively snapping their flow rate to 0%. Material will still ooze out as with normal travel moves, but will not form beads.
+Ce réglage transformera les lignes à débit extrêmement faible en mouvements de translation, faisant effectivement passer leur débit à 0 %. La matière continuera à suinter comme dans les mouvements de déplacement normaux, mais ne formera pas de perles.
 
-![Overlaps between walls are compensated normally](../../../articles/images/wall_min_flow_0.png)
-![Walls with less than 50% extrusion are turned into travel moves](../../../articles/images/wall_min_flow_50.png)
+![Les chevauchements entre les parois sont compensés normalement](../../../articles/images/wall_min_flow_0.png)
+![Les murs avec moins de 50% d'extrusion sont transformés en mouvements de déplacement](../../../articles/images/wall_min_flow_50.png)
 
-The nozzle will still follow the path of the wall in order to ooze in the correct location.
+La buse suivra toujours le tracé de la paroi afin de suinter au bon endroit.
 
-Increasing this setting will cause your walls to be thinner than desired. Instead of drawing very thin lines you're no longer drawing anything any more. Technically this is underextrusion, causing your part to be thinner than desired. However the wall wouldn't have printed well anyway. Instead of drawing a long line of blips or beads across the wall, nothing will be printed, making the wall a bit smoother.
+En augmentant ce réglage, vos murs seront plus fins que souhaité. Au lieu de tracer des lignes très fines, vous ne dessinez plus rien. Techniquement, il s'agit d'une sous-extrusion, ce qui fait que votre pièce est plus mince que souhaité. Cependant, le mur n'aurait pas bien imprimé de toute façon. Au lieu de dessiner une longue ligne de points ou de perles sur le mur, rien ne sera imprimé, ce qui rendra le mur un peu plus lisse.
 
-Set this setting to the minimum wall flow rate that your nozzle can achieve without forming droplets. Typically this is about 60%. If the line width would be reduced below 60% those droplets would form, so it is better to turn those lines into travel moves. If you are printing at greater layer heights or using thicker wall lines, you may be able to reduce this setting a bit to get greater dimensional accuracy.
+Réglez ce paramètre sur le débit minimum de la paroi que votre buse peut atteindre sans former de gouttelettes. En général, ce taux est d'environ 60 %. Si la largeur des lignes était réduite en dessous de 60%, ces gouttelettes se formeraient, il est donc préférable de transformer ces lignes en mouvements de déplacement. Si vous imprimez à des hauteurs de couche plus importantes ou si vous utilisez des lignes de paroi plus épaisses, vous pouvez peut-être réduire un peu ce réglage pour obtenir une plus grande précision dimensionnelle.
