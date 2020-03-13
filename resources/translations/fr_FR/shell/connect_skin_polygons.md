@@ -1,8 +1,8 @@
-When using a concentric top/bottom pattern (a pattern consisting of closed contours, otherwise known as polygons), connect all contours together such that they form one single path.
+Lorsque vous utilisez un motif concentrique haut/bas (un motif composé de contours fermés, également appelés polygones), connectez tous les contours entre eux de manière à ce qu'ils forment un seul chemin.
 
-![Naive concentric pattern](../../../articles/images/connect_skin_polygons_original.png)
-![All contours get connected to form one curve](../../../articles/images/connect_skin_polygons_enabled.png)
+![Modèle concentrique naïf](../../../articles/images/connect_skin_polygons_original.png)
+![Tous les contours sont connectés pour former une courbe](../../../articles/images/connect_skin_polygons_enabled.png)
 
-This prevents travel moves for the most part. However it creates new sharp corners where the nozzle will have to accelerate and decelerate a lot, which will offset against the win in printing time. The squiggly pattern will also be visible on the outside, which gives an interesting visual effect.
+Cela empêche la plupart des déplacements. Cependant, cela crée de nouveaux angles vifs où la buse devra accélérer et décélérer beaucoup, ce qui compensera le gain en temps d'impression. Le motif ondulé sera également visible à l'extérieur, ce qui donne un effet visuel intéressant.
 
-The contours created by [Extra Skin Wall Count](skin_outline_count.md) are not connected.
+Les contours créés par [Extra Skin Wall Count](skin_outline_count.md) ne sont pas reliés.
