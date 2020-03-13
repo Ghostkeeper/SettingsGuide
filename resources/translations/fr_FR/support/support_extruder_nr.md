@@ -1,9 +1,9 @@
-If your printer has multiple extruders, this setting allows you to choose which of these extruders is used to print the support structure with.
+Si votre imprimante dispose de plusieurs extrudeuses, ce paramètre vous permet de choisir celle qui sera utilisée pour imprimer la structure de support.
 
-![The support is printed in a white material, while the model is printed in blue](../../../articles/images/support_extruder_nr.png)
+![Le support est imprimé en blanc, tandis que le modèle est imprimé en bleu](../../../articles/images/support_extruder_nr.png)
 
-Using a different type of material tends to make the support easier to remove without compromising the strength of the support. Different material types don't adhere very well to each other, especially if they have different shrinkage rates.
+L'utilisation d'un autre type de matériau tend à rendre le support plus facile à enlever sans compromettre la solidité du support. Les différents types de matériaux n'adhèrent pas très bien les uns aux autres, surtout s'ils ont des taux de retrait différents.
 
-Also, some materials are designed to print support with. They can be made extremely brittle on purpose, for instance, so that they break off more easily. Some materials dissolve in water or in ethanol, so that you can remove support even if it's printed very closely to the model.
+De plus, certains matériaux sont conçus pour imprimer le support. Ils peuvent être volontairement rendus extrêmement cassants, par exemple, pour qu'ils se détachent plus facilement. Certains matériaux se dissolvent dans l'eau ou dans l'éthanol, de sorte que vous pouvez retirer le support même s'il est imprimé très près du modèle.
 
-Printing support with a different extruder than the rest of the model requires the printer to switch materials at every layer though, which could increase printing time. If the support material has a different colour than the build material, the residue of support on the print could be very visible.
+L'impression du support avec une extrudeuse différente de celle du reste du modèle nécessite cependant que l'imprimante change de matériau à chaque couche, ce qui peut augmenter le temps d'impression. Si le matériau de support a une couleur différente de celle du matériau de construction, les résidus de support sur l'impression pourraient être très visibles.
