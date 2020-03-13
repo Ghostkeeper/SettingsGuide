@@ -1,8 +1,8 @@
-The support pattern is normally oriented such that the lines are perpendicular to most things it supports. This way, the distance that the supported material has to bridge is minimised. With this setting, the orientation of the support lines can be customised.
+Le modèle de support est normalement orienté de telle sorte que les lignes sont perpendiculaires à la plupart des choses qu'il supporte. De cette façon, la distance que le matériau supporté doit franchir est réduite au minimum. Avec ce réglage, l'orientation des lignes de support peut être personnalisée.
 
-![An angle of 0°](../../../articles/images/support_infill_angle_0.png)
-![Alternating between 30° and 60°](../../../articles/images/support_infill_angles.png)
+![Un angle de 0°](../../../articles/images/support_infill_angle_0.png)
+![Alternant entre 30° et 60°](../../../articles/images/support_infill_angles.png)
 
-This setting allows multiple angles to be entered, separated by commas. When multiple angles are entered, Cura will alternate between these angles over the layers.
+Ce paramètre permet de saisir plusieurs angles, séparés par des virgules. Lorsque plusieurs angles sont saisis, Cura alternera entre ces angles sur les couches.
 
-If the [Top/Bottom Line Directions](skin_angles.md) have been adjusted, it is wise to adjust the angle of the support accordingly, so that it is still perpendicular to the lines of the bottom side of the print. This allows these bottom lines to rest properly on the support, rather than falling in between support lines. This is particularly important for lines and zigzag [Support Patterns](support_pattern.md) where there are long straights between the support lines that don't provide any support.
+Si les [Top/Bottom Line Directions](skin_angles.md) ont été ajustées, il est conseillé de régler l'angle du support en conséquence, de sorte qu'il soit toujours perpendiculaire aux lignes de la face inférieure de l'impression. Cela permet à ces lignes du bas de reposer correctement sur le support, plutôt que de tomber entre les lignes du support. Ceci est particulièrement important pour les lignes et les zigzags [Support Patterns](support_pattern.md) où il y a de longues lignes droites entre les lignes de support qui n'offrent aucun support.
