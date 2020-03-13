@@ -1,3 +1,3 @@
-This setting causes the support floor to expand in all horizontal directions into the rest of the support.
+Ce réglage provoque l'expansion du plancher de support dans toutes les directions horizontales dans le reste du support.
 
-Some materials typically used to print support with extrude badly at low flow rates or need some time to get going. Small areas of support floor don't jive well with those materials. This setting can literally make the areas larger so that there is more space to extrude these materials.
+Certains matériaux généralement utilisés pour imprimer le support s'extrudent mal à faible débit ou ont besoin d'un certain temps pour se mettre en route. Les petites surfaces du plancher de support ne s'accordent pas bien avec ces matériaux. Ce réglage peut littéralement agrandir les zones afin qu'il y ait plus d'espace pour extruder ces matériaux.
