@@ -1,5 +1,5 @@
-This is the speed at which the material is pulled out of the nozzle and pushed back in, when making a retraction.
+Il s'agit de la vitesse à laquelle la matière est retirée de la buse et repoussée à l'intérieur, lors d'un retrait.
 
-In general you'll want to set this as high as possible without grinding the material at the feeder. Moving the filament at greater speed makes the nozzle stand still for a shorter amount of time, which reduces the size of the blob in the location where it moves the material and slightly reduces printing time.
+En général, il est préférable de régler cette vitesse le plus haut possible sans broyer la matière au niveau de l'alimentateur. En déplaçant le filament à une vitesse plus élevée, la buse reste immobile pendant un temps plus court, ce qui réduit la taille de la goutte à l'endroit où elle déplace le matériau et réduit légèrement le temps d'impression.
 
-If the speed is set too high however, the force excerted by the feeder will be so high that the feeder wheel will start to grind into the filament. This reduces the reliability of the print.
+Cependant, si la vitesse est réglée trop haut, la force exercée par le margeur sera si élevée que la roue du margeur commencera à moudre le filament. Cela réduit la fiabilité de l'impression.
