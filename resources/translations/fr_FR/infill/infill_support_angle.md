@@ -1,8 +1,8 @@
-When using infill support, this setting determines the minimum overhang angle of the surface that needs to get supported. This is similar to the [Overhang Angle](../support/support_angle.md) setting for ordinary support.
+Lors de l'utilisation d'un support de remplissage, ce réglage détermine l'angle de surplomb minimum de la surface qui doit être soutenue. Il est similaire au paramètre [Overhang Angle](../support/support_angle.md) pour un support ordinaire.
 
-![A low angle results in more support](../../../articles/images/infill_support_angle_low.png)
-![A high angle results in less support](../../../articles/images/infill_support_angle_high.png)
+![Un angle bas donne plus de support](../../../articles/images/infill_support_angle_low.png)
+![Un angle élevé entraîne une diminution du support](../../../articles/images/infill_support_angle_high.png)
 
-Increasing this angle will cause the infill to support less of the top surface. This saves on printing time and material, but will cause the top skin to sag a bit more.
-* A value of 0° will act like normal infill. It supports everything.
-* A value of 90° will remove all infill material.
+En augmentant cet angle, le remblai supportera moins la surface supérieure. Cela permet d'économiser du temps et du matériel d'impression, mais la peau supérieure s'affaisse un peu plus.
+* Une valeur de 0° agira comme un remplissage normal. Il supporte tout.
+* Une valeur de 90° enlèvera tout le matériau de remplissage.
