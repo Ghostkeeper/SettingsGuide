@@ -1,8 +1,8 @@
-The support pattern is normally oriented such that the lines are perpendicular to most things it supports. This way, the distance that the supported material has to bridge is minimised. With this setting, the orientation of the support lines can be customised.
+Le modèle de support est normalement orienté de telle sorte que les lignes sont perpendiculaires à la plupart des choses qu'il supporte. De cette façon, la distance que le matériau supporté doit franchir est réduite au minimum. Avec ce réglage, l'orientation des lignes de support peut être personnalisée.
 
-![An angle of 0°](../../../articles/images/support_infill_angle_0.png)
-![An angle of 30°](../../../articles/images/support_infill_angle_30.png)
+![Un angle de 0°](../../../articles/images/support_infill_angle_0.png)
+![Un angle de 30°](../../../articles/images/support_infill_angle_30.png)
 
-If the [Top/Bottom Line Directions](../shell/skin_angles.md) have been adjusted, it is wise to adjust the angle of the support accordingly, so that it is still perpendicular to the lines of the bottom side of the print. This allows these bottom lines to rest properly on the support, rather than falling in between support lines. This is particularly important for lines and zigzag [Support Patterns](support_pattern.md) where there are long straights between the support lines that don't provide any support.
+Si les [Directions de la ligne supérieure/inférieure](../shell/skin_angles.md) ont été ajustées, il est sage de régler l'angle du support en conséquence, de sorte qu'il soit toujours perpendiculaire aux lignes de la face inférieure de l'impression. Cela permet à ces lignes du bas de reposer correctement sur le support, plutôt que de tomber entre les lignes du support. Ceci est particulièrement important pour les lignes et les zigzags [Support Patterns](support_pattern.md) où il y a de longues lignes droites entre les lignes de support qui n'offrent aucun support.
 
-*Since Cura 4.3, this setting allows multiple angles to be entered, which will alternate in a similar fashion to [Infill Line Directions](../infill/infill_angles.md).*
+*Depuis Cura 4.3, ce paramètre permet de saisir plusieurs angles, qui alternent de manière similaire à [Infill Line Directions](../infill/infill_angles.md).*
