@@ -1,6 +1,6 @@
-If this is enabled, Cura will spend some extra slicing time to optimise the order in which the walls are printed. The goal is to reduce the number of travel moves and retractions by printing walls that surround the same part after one another.
+Si cette fonction est activée, Cura consacrera un temps de découpe supplémentaire pour optimiser l'ordre dans lequel les murs sont imprimés. L'objectif est de réduire le nombre de déplacements et de retraits en imprimant les murs qui entourent la même pièce les uns après les autres.
 
-![Optimisation disabled](../../../articles/images/optimize_wall_printing_order_disabled.gif)
-![Optimisation enabled](../../../articles/images/optimize_wall_printing_order_enabled.gif)
+![Optimisation désactivée](../../../articles/images/optimize_wall_printing_order_disabled.gif)
+![Optimisation activée](../../../articles/images/optimize_wall_printing_order_enabled.gif)
 
-If this optimisation is enabled, the nozzle will print all the walls around one part first before moving to the next part, instead of printing all of the inner walls first before printing the outer walls. Optimising is usually positive, but with some parts it may impact dimensional accuracy because the previous wall hasn't solidified yet when placing down the next one next to it.
+Si cette optimisation est activée, la buse imprimera d'abord toutes les parois autour d'une pièce avant de passer à la pièce suivante, au lieu d'imprimer d'abord toutes les parois intérieures avant d'imprimer les parois extérieures. L'optimisation est généralement positive, mais pour certaines pièces, elle peut avoir un impact sur la précision dimensionnelle car la paroi précédente ne s'est pas encore solidifiée lors du placement de la suivante à côté d'elle.
