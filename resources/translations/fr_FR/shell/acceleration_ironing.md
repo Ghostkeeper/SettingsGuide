@@ -1,3 +1,3 @@
-The acceleration of ironing can be adjusted separately, to fine-tune the process.
+L'accélération du repassage peut être réglée séparément, pour affiner le processus.
 
-* The acceleration during ironing is normally significantly slower than the print acceleration, to ensure the layer gets a smooth surface.
+* L'accélération du repassage est normalement beaucoup plus lente que celle de l'impression, afin que la couche obtienne une surface lisse.
