@@ -1,8 +1,8 @@
-If this setting is enabled, the brim will continue to follow the model underneath support, instead of going around the support. The support will then be printed on top of the brim, in the next layer. There will also still be a brim around the support.
+Si ce paramètre est activé, le bord continuera à suivre le modèle sous le support, au lieu de contourner le support. Le support sera alors imprimé sur le dessus du bord, dans la couche suivante. Il y aura également toujours un bord autour du support.
 
-![Disabled, the brim goes around the support](../../../articles/images/brim_replaces_support_disabled.png)
-![Enabled, the brim goes underneath the support](../../../articles/images/brim_replaces_support_enabled.png)
+![Désactivé, le bord fait le tour du support](../../../articles/images/brim_replaces_support_disabled.png)
+![Activé, le rebord passe sous le support](../../../articles/images/brim_replaces_support_enabled.png)
 
-Enabling this setting will make the brim follow the model better. As a result, the model is kept down to the build plate better, which prevents warping.
+En activant ce paramètre, le bord suivra mieux le modèle. Ainsi, le modèle est mieux maintenu au niveau de la plaque de construction, ce qui empêche le gauchissement.
 
-In some cases, this will reduce the total width of the brim for some pieces of support. However in those cases, the support will be close enough to the model that the brim merges with that of the model, so it will hardly be a problem of adhesion there.
+Dans certains cas, cela réduira la largeur totale du bord pour certaines pièces de support. Cependant, dans ces cas, le support sera suffisamment proche du modèle pour que le bord se confonde avec celui du modèle, de sorte qu'il n'y aura guère de problème d'adhérence à cet endroit.
