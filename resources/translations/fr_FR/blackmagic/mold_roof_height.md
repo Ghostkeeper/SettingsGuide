@@ -1,5 +1,5 @@
-This setting specifies how thick the top and bottom sides of your mould will become. This is only the vertical thickness. The horizontal thickness is determined by the [Minimal Mold Width](mold_width.md) setting.
+Ce paramètre précise l'épaisseur des faces supérieure et inférieure de votre moule. Il s'agit uniquement de l'épaisseur verticale. L'épaisseur horizontale est déterminée par le paramètre [Minimal Mold Width](mold_width.md).
 
-There will not be a horizontal part at the highest point of your model, so that you can pour the material in. There will also not be a horizontal part beneath the model, because the build plate itself serves to close the mould there. If a horizontal part beneath the model is desired, the raft can be used to that end.
+Il n'y aura pas de partie horizontale au point le plus haut de votre modèle, afin que vous puissiez y verser la matière. Il n'y aura pas non plus de partie horizontale sous le modèle, car la plaque de construction elle-même sert à fermer le moule à cet endroit. Si vous souhaitez une partie horizontale sous le modèle, le radeau peut être utilisé à cette fin.
 
-Printing thicker top and bottom sides will make your mould stronger and more resistant to shrinkage. However, it also takes more material and takes longer to print.
+L'impression de côtés supérieurs et inférieurs plus épais rendra votre moule plus solide et plus résistant au rétrécissement. Cependant, il faut aussi plus de matière et l'impression prend plus de temps.
