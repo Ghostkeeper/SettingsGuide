@@ -1,10 +1,10 @@
-If this setting is enabled, the prime tower will get the shape of a cylinder. If it's disabled, the prime tower will be square.
+Si ce réglage est activé, la tour principale aura la forme d'un cylindre. Si elle est désactivée, la tour principale sera carrée.
 
-![Square prime tower](../../../articles/images/prime_tower_circular_disabled.png)
-![Circular prime tower](../../../articles/images/prime_tower_circular_enabled.png)
+![Tour primaire carrée](../../../articles/images/prime_tower_circular_disabled.png)
+![Tour primaire circulaire](../../../articles/images/prime_tower_circular_enabled.png)
 
-In either case, the prime tower is still hollow. The circular prime tower is strictly smaller than the square prime tower (as the corners are cut off). The [minimum volume](prime_tower_min_volume.md) will still be correct.
+Dans les deux cas, la tour principale est encore creuse. La tour primaire circulaire est pratiquement plus petite que la tour primaire carrée (car les coins sont coupés). Le [volume minimum](tour_primaire_min_volume.md) sera toujours correct.
 
-If the material has a tendency to warp, the square prime tower has four corners that can get loose from the build plate. This makes it more likely to topple over, compared to the circular prime tower. There are also greater accelerations involved in printing a square prime tower. These accelerations make the flow rate inconsistent, which is not what you'd want to prime the material.
+Si le matériau a tendance à se déformer, la tour principale carrée possède quatre coins qui peuvent se détacher de la plaque de construction. Elle a donc plus de chances de basculer que la tour principale circulaire. L'impression d'une tour carrée implique également des accélérations plus importantes. Ces accélérations rendent le débit irrégulier, ce qui n'est pas ce que vous souhaiteriez pour amorcer le matériau.
 
-The circular prime tower is better in almost every aspect. This is why the setting is removed in newer versions of Cura. Those versions will always have a circular prime tower.
+La tour primaire circulaire étant meilleure sous presque tous les aspects. C'est pourquoi le réglage est supprimé dans les nouvelles versions de Cura. Ces versions auront toujours une tour d'amorçage circulaire.
