@@ -1,5 +1,5 @@
-This setting determines the width of the lines with which the prime tower is drawn.
+Ce paramètre détermine la largeur des lignes avec lesquelles la tour principale est dessinée.
 
-![The blue material has a larger line width than the orange material](../../../articles/images/prime_tower_line_width.png)
+![Le matériau bleu a une largeur de ligne plus grande que le matériau orange](../../../articles/images/prime_tower_line_width.png)
 
-Chosing a thicker line width causes the prime tower to sometimes print faster. If the volume extruded by one contour is sufficiently big, increasing the line width makes another loop unnecessary. However increasing the line width too much can make the prime tower weaker because not enough material can be extruded fast enough.
+En choisissant une largeur de ligne plus épaisse, la tour principale imprime parfois plus vite. Si le volume extrudé par un contour est suffisamment grand, l'augmentation de la largeur de ligne rend une autre boucle inutile. Cependant, une augmentation trop importante de la largeur de ligne peut affaiblir la tour d'impression, car le volume extrudé n'est pas suffisant.
