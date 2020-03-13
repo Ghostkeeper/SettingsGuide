@@ -1,7 +1,7 @@
-This setting is a threshold for the diameter of a piece of overhang to choose between normal support and support towers. If the piece is thinner than this threshold, it'll get supported by a [support tower](support_use_towers.md). If it is wider than this threshold, it'll get supported by the ordinary support structures.
+Ce réglage est un seuil pour le diamètre d'un morceau de porte-à-faux permettant de choisir entre des tours de support normales et des tours de soutien. Si la pièce est plus fine que ce seuil, elle sera soutenue par une [tour de support](support_use_towers.md). Si elle est plus large que ce seuil, elle sera soutenue par les structures de soutien ordinaires.
 
-![The sword has an overhang area smaller than the minimum diameter](../../../articles/images/support_use_towers.svg)
+![Le spport a une surface de surplomb inférieure au diamètre minimum](../../../articles/images/support_use_towers.svg)
 
-If a very thin strip of overhang needs support, normal support would topple over. Such support is too wonky to print properly. Instead, a more sturdy tower is generated.
+Si une bande de surplomb très mince a besoin d'être soutenue, le support normal se renversera. Un tel support est trop bancal pour être imprimé correctement. Au lieu de cela, une tour plus solide est générée.
 
-Increasing this setting will cause towers to be generated more frequently. This increases the reliability of the support, but also requires slightly more material and printing time.
+En augmentant ce paramètre, les tours seront générées plus fréquemment. Cela augmente la fiabilité du support, mais nécessite aussi un peu plus de matériel et de temps d'impression.
