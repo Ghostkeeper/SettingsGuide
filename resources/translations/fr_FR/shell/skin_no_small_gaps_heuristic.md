@@ -1,10 +1,10 @@
-If your model has a small horizontal slit, smaller than the top/bottom skin thickness, this setting doesn't bother filling the top and bottom above/below that completely with skin. This saves on slicing and printing time, but might expose infill to the air.
+Si votre modèle présente une petite fente horizontale, plus petite que l'épaisseur de la peau du haut et du bas, ce réglage ne prend pas la peine de remplir complètement de peau le haut et le bas au-dessus/en dessous. Cela permet de gagner du temps de découpe et d'impression, mais risque d'exposer le remplissage à l'air.
 
-![Normally there is skin around the small horizontal slit](../../../articles/images/skin_no_small_gaps_heuristic_disabled.png)
-![If this is enabled, it doesn't properly close the skin](../../../articles/images/skin_no_small_gaps_heuristic_enabled.png)
+![Normalement, il y a de la peau autour de la petite fente horizontale](../../../articles/images/skin_no_small_gaps_heuristic_disabled.png)
+![Si cette option est activée, la fermeture de la peau n'est pas correcte](../../../articles/images/skin_no_small_gaps_heuristic_enabled.png)
 
-The main intent of this setting is to reduce slicing time. This setting effectively reduces the resolution with which Cura samples where skin must be placed. Depending on the shape of the model, this could save anywhere between 5% and 30% on slicing time. It will also save on printing time if there are any small gaps, because instead of skin it will print infill.
+L'objectif principal de ce réglage est de réduire le temps de tranchage. Ce réglage réduit effectivement la résolution avec laquelle Cura prélève les échantillons de peau à l'endroit où ils doivent être placés. Selon la forme du modèle, cela pourrait permettre de gagner entre 5 et 30 % sur le temps de tranchage. Il permet également de gagner du temps d'impression en cas de petits trous, car au lieu de la peau, c'est le remplissage qui est imprimé.
 
-If the model has no horizontal gaps smaller than the skin thickness, the only effect will be reduced slicing time.
+Si le modèle ne présente pas d'interstices horizontaux plus petits que l'épaisseur de la peau, le seul effet sera une réduction du temps de tranchage.
 
-If the model does have such horizontal gaps, there will be infill exposed in the gap. However if the gap is small enough, the overhang would make the walls sag down enough that it won't be visible anyway.
+Si le modèle présente de tels espaces horizontaux, le remplissage sera exposé dans l'espace. Cependant, si l'espace est suffisamment petit, le surplomb fera s'affaisser les murs au point de ne plus être visible.
