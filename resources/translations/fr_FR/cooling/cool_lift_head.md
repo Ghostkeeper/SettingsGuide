@@ -1,9 +1,9 @@
-When the [Minimum Layer Time](cool_min_layer_time.md) is reached, the print head will slow down in order to prevent printing faster than the Minimum Layer Time. This way the previous layer gets time to cool down and solidify before the next layer is put on top. The print head is allowed to slow down until the [Minimum Speed](cool_min_speed.md) is reached.
+Lorsque le [Temps de calque minimum](cool_min_layer_time.md) est atteint, la tête d'impression ralentit afin d'éviter d'imprimer plus vite que le Temps de calque minimum. De cette façon, la couche précédente a le temps de refroidir et de se solidifier avant que la couche suivante ne soit posée dessus. La tête d'impression est autorisée à ralentir jusqu'à ce que la [vitesse minimale](cool_min_speed.md) soit atteinte.
 
-If this setting is enabled and the print head should move slower than the Minimum Speed in order to maintain the Minimum Layer Time, then the print head will move up slightly after printing the layer. It will then wait for a while until the Minimum Layer Time is reached, before starting with the next layer.
+Si ce paramètre est activé et que la tête d'impression doit se déplacer plus lentement que la vitesse minimale afin de maintenir le temps de calque minimum, alors la tête d'impression se déplacera légèrement vers le haut après l'impression du calque. Elle attendra ensuite un certain temps jusqu'à ce que le temps de calque minimum soit atteint, avant de commencer avec le calque suivant.
 
-If this setting is disabled, then the print head will wait at the end of the layer instead, with the nozzle touching the print.
+Si ce paramètre est désactivé, la tête d'impression attendra plutôt à la fin de la couche, la buse touchant l'impression.
 
-![When the minimum layer time is reached, the head may lift up](../../../articles/images/cool_fan_speed.svg)
+![Lorsque le temps de calque minimum est atteint, la tête peut se soulever](../../../articles/images/cool_fan_speed.svg)
 
-The print head will always move up by 3mm. There is no setting to configure this at the moment.
+La tête d'impression se déplace toujours de 3 mm vers le haut. Il n'y a pas de réglage pour configurer cela pour le moment.
