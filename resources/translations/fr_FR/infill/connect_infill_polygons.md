@@ -1,9 +1,9 @@
 Lorsque le remplissage est constitué de boucles fermées, ces boucles fermées peuvent être fusionnées pour former une seule boucle. Cela permet d'établir de petites connexions là où les polygones sont adjacents.
 
 Ce paramètre n'est disponible que lorsque le remplissage consiste en des boucles adjacentes. Cela signifie que l'un ou l'autre :
-* Le [motif de remplissage] (motif_remplissage.md) est réglé sur Croix ou Croix 3D.
-* Les lignes de remplissage sont [multipliées](multiplicateur_de_remplissage.md) par un nombre pair.
-* Il y a au moins 2 [murs supplémentaires autour du remplissage] (infill_wall_line_count.md).
+* Le [motif de remplissage](infill_pattern.md) est réglé sur Croix ou Croix 3D.
+* Les lignes de remplissage sont [multipliées](infill_multiplier.md) par un nombre pair.
+* Il y a au moins 2 [murs supplémentaires autour du remplissage](infill_wall_line_count.md).
 
 ![Avec des lignes de remplissage multipliées, il y a beaucoup de boucles dans ce modèle de remplissage](../../../articles/images/connect_infill_polygons_disabled.png)
 ![Activer ce paramètre permet de fusionner les boucles](../../../articles/images/connect_infill_polygons_enabled.png)
