@@ -1,9 +1,9 @@
-The feeder wheel needs to grip into the filament in order to move it properly. Retracting the material often tends to cause the feeder wheel to wear down the filament to the point where it can no longer grip the filament properly. This setting limits the number of retractions within a certain length of filament in order to prevent this grinding.
+La roue d'alimentation doit s'agripper au filament pour le déplacer correctement. La rétraction de la matière a souvent tendance à user le filament au point que la roue d'alimentation ne peut plus le saisir correctement. Ce réglage limite le nombre de rétractions dans une certaine longueur de filament afin d'empêcher ce broyage.
 
-The retractions are limited by the combination of [Maximum Retraction Count](retraction_count_max.md) and this setting. The material is not allowed to be retracted more than the value of the Maximum Retraction Count within a length of filament indicated by this Minimum Extrusion Distance Window setting.
+Les rétractions sont limitées par la combinaison de [Maximum Retraction Count](retraction_count_max.md) et de ce réglage. Le matériau ne peut pas être rétracté plus que la valeur du nombre maximal de rétractions dans une longueur de filament indiquée par ce réglage de la fenêtre de la distance minimale d'extrusion.
 
-![A certain length of filament along which the number of retractions is limited](../../../articles/images/retraction_count_max.svg)
+![Une certaine longueur de filament le long de laquelle le nombre de rétractions est limité](../../../articles/images/retraction_count_max.svg)
 
-The length of filament during which the number of retractions is limited is a sliding window. For instance, with a window length of 3mm and a maximum retraction count of 10, this means that a new retraction is allowed as soon as the 10th retraction previous was made farther than 3mm back on the filament.
+La longueur de filament pendant laquelle le nombre de rétractions est limité est une fenêtre coulissante. Par exemple, avec une longueur de fenêtre de 3 mm et un nombre maximal de rétractions de 10, cela signifie qu'une nouvelle rétraction est autorisée dès que la 10e rétraction précédente a été effectuée à plus de 3 mm en arrière sur le filament.
 
-Increasing the length of the extrusion window effectively reduces the number of retractions. This makes the print more reliable, but increases the amount of stringing and blobs on the surface. This is especially useful for softer materials that are more sensitive to grinding.
+L'augmentation de la longueur de la fenêtre d'extrusion permet de réduire efficacement le nombre de rétractions. Cela rend l'impression plus fiable, mais augmente la quantité de filaments et de taches à la surface. Ceci est particulièrement utile pour les matériaux plus mous qui sont plus sensibles au broyage.
