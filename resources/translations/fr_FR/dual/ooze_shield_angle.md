@@ -1,6 +1,6 @@
-The ooze shield will follow the shape of the model. It needs to stay close, otherwise the travel from the shield to the model will ooze new material. But the model may have horizontal surfaces, so that would create steep overhangs in the ooze shield. This setting limits the steepness of the ooze shield so that it doesn't collapse.
+Le bouclier de suintement suivra la forme du modèle. Il doit rester proche, sinon le trajet entre le bouclier et la maquette suintera du nouveau matériau. Mais la maquette peut avoir des surfaces horizontales, ce qui créerait des surplombs abrupts dans le bouclier de suintement. Ce réglage limite l'inclinaison du bouclier de suintement afin qu'il ne s'effondre pas.
 
-![Instead of following the model down the bottom and the top, it doesn't go steeper than the specified angle](../../../articles/images/ooze_shield.svg)
+![Au lieu de suivre le modèle en bas et en haut, il n'est pas plus raide que l'angle spécifié](../../../articles/images/ooze_shield.svg)
 
-* A value of 0 makes the ooze shield completely vertical around the entire shape. The lower the angle, the more stable the shield will be.
-* A value of 90 makes the ooze shield follow the model exactly. The higher the angle, the better the ooze shield will prevent oozing on the model.
+* Une valeur de 0 rend le bouclier de suintement complètement vertical autour de la forme entière. Plus l'angle est faible, plus le bouclier sera stable.
+* Une valeur de 90 fait que le bouclier antifuite suit exactement le modèle. Plus l'angle est élevé, mieux la bouclier antifuite empêchera le suintement sur le modèle.
