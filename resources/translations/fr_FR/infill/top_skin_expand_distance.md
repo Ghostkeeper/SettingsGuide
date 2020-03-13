@@ -1,10 +1,10 @@
-Make the solid layers on the top of your print wider or thinner in a horizontal direction. Normally the solid layers are only generated below parts where there is air beneath them, but with this setting you can expand it horizontally a bit further, improving strength by making the skin attach better to adjacent walls and closing gaps in the skin.
+Élargissez ou réduisez les couches solides sur le dessus de votre impression dans le sens horizontal. Normalement, les couches solides ne sont générées qu'en dessous des parties où il y a de l'air, mais avec ce réglage, vous pouvez l'élargir horizontalement un peu plus, ce qui améliore la résistance en faisant en sorte que la peau s'attache mieux aux murs adjacents et en fermant les interstices de la peau.
 
-![How skins (the yellow parts) normally look](../../../articles/images/expand_skins_expand_distance_original.png)
-![Skins expanded by 1mm](../../../articles/images/expand_skins_expand_distance_1mm.png)
+![Comment les peaux (les parties jaunes) ont normalement l'air](../../../articles/images/expand_skins_expand_distance_original.png)
+![Peaux agrandies de 1mm](../../../articles/images/expand_skins_expand_distance_1mm.png)
 
-* If you have small holes in the top layers of the skin (holes that are filled with the infill pattern), setting this a bit higher will close them. This allows the printer to continuously print bottom lines, greatly improving strength.
-* If the bottom side of your print is not flat, increasing this setting will cause the skin to be printed beyond the area that is directly above air, above the walls. This will improve adhesion between the skin and the walls, improving strength again.
-* Setting this setting to a negative value will reduce the width of the bottom layers, replacing it with infill. This can save some printing time, at the cost of strength.
+* Si vous avez de petits trous dans les couches supérieures de la peau (trous qui sont remplis avec le motif de remplissage), le fait de régler ce paramètre un peu plus haut les fermera. Cela permet à l'imprimante d'imprimer en continu les lignes du bas, ce qui améliore considérablement la résistance.
+* Si la face inférieure de votre impression n'est pas plate, augmenter ce réglage entraînera l'impression de la peau au-delà de la zone qui se trouve directement au-dessus de l'air, au-dessus des murs. Cela améliorera l'adhérence entre la peau et les parois, ce qui améliorera encore la résistance.
+* Si vous réglez ce paramètre sur une valeur négative, la largeur des couches inférieures sera réduite et remplacée par un remplissage. Cela peut permettre de gagner du temps d'impression, au détriment de la résistance.
 
-**Due to technical limitations, you can't reduce this setting negatively below the value of [Top Skin Removal Width](top_skin_preshrink.md). Increase the Top Skin Removal Width setting in order to remove more skin.**
+**En raison de limitations techniques, vous ne pouvez pas réduire ce paramètre en dessous de la valeur de [Top Skin Removal Width](top_skin_preshrink.md). Augmentez le paramètre Top Skin Removal Width afin d'enlever plus de peau.**
