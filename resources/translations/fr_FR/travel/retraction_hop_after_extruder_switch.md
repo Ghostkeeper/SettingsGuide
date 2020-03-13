@@ -1,5 +1,5 @@
-This setting, if enabled, will make the nozzle move up slightly with a Z hop during the switching of extruders.
+Ce réglage, s'il est activé, fera monter légèrement la buse d'un saut en Z lors de la commutation des extrudeuses.
 
-Switching extruders brings in a nozzle that has had some extra time to ooze, so you may decide to give this a bit of a higher Z hop than the normal Z hops during the print.
+Le changement d'extrudeuse fait entrer une buse qui a eu un peu plus de temps pour suinter, vous pouvez donc décider de lui donner un saut Z un peu plus élevé que les sauts Z normaux pendant l'impression.
 
-If a prime tower is printed, this will only increase the Z hop height when travelling away from the print and to the prime tower. Since blobs on the prime tower are sort of expected anyway, it's not effective to increase this setting too much when using a prime tower.
+Si une tour d'amorçage est imprimée, cela ne fera qu'augmenter la hauteur du saut en Z lors du trajet entre l'impression et la tour d'amorçage. Étant donné que les taches sur la tour d'impression sont en quelque sorte attendues de toute façon, il n'est pas efficace de trop augmenter ce réglage lors de l'utilisation d'une tour d'impression.
