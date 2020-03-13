@@ -1,7 +1,7 @@
-This makes the lines in the initial layer wider or thinner by a certain ratio.
+Cela rend les lignes de la couche initiale plus larges ou plus fines dans un certain rapport.
 
-![The lines in the initial layer are twice as wide as the rest](../../../articles/images/initial_layer_line_width_factor.png)
+![Les lignes de la couche initiale sont deux fois plus larges que le reste](../../../articles/images/initial_layer_line_width_factor.png)
 
-The goal of this setting is to improve adhesion to the build plate. In order to print wider lines, the nozzle has to extrude more material and that material has to flow wider outward. This causes the nozzle to press the material harder on the build plate, which increases adhesion between the filament and the build plate.
-* Not only will the lines be wider or thinner, but they will also be farther apart or closer together by the same factor, so it would not produce overextrusion or underextrusion.
-* This setting affects all line widths; skin, walls, adhesion, support, the prime tower, and so on. They will be made wider or thinner by the same ratio.
+L'objectif de ce réglage est d'améliorer l'adhérence à la plaque de construction. Afin d'imprimer des lignes plus larges, la buse doit extruder plus de matière et cette matière doit s'écouler plus largement vers l'extérieur. La buse doit donc presser le matériau plus fort sur la plaque de montage, ce qui augmente l'adhérence entre le filament et la plaque de montage.
+* Non seulement les lignes seront plus larges ou plus fines, mais elles seront également plus éloignées ou plus proches les unes des autres par le même facteur, ce qui ne produira pas de sur ou de sous-extrusion.
+* Ce réglage affecte toutes les largeurs de lignes ; la peau, les parois, l'adhérence, le support, la tour d'amorçage, etc. Elles seront rendues plus larges ou plus fines par le même rapport.
