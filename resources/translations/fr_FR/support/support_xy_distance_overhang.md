@@ -1,7 +1,7 @@
-If the Z distance of support is preferred over the X/Y distance, the horizontal distance between the support and the model is allowed to become smaller than the [Support X/Y Distance](support_xy_distance.md) setting to satisfy the required [Support Z Distance](support_z_distance.md).
+Si la distance Z du support est préférée à la distance X/Y, la distance horizontale entre le support et le modèle peut devenir plus petite que le paramètre [Support X/Y Distance](support_xy_distance.md) pour satisfaire à la [Support Z Distance](support_z_distance.md) requise.
 
-This setting defines a minimum X/Y distance that must be held regardless of the Z distance. This minimum X/Y distance overrides the Z distance again.
+Ce paramètre définit une distance X/Y minimale qui doit être respectée quelle que soit la distance Z. Cette distance X/Y minimale est de nouveau prioritaire par rapport à la distance Z.
 
-![Minimum X/Y distance kicks in if the Z distance means that the X/Y distance would become very small](../../../articles/images/support_z_overrides_xy.svg)
+![La distance minimale X/Y est prise en compte si la distance Z signifie que la distance X/Y deviendrait très petite](../../../articles/images/support_z_overrides_xy.svg)
 
-Increasing this setting reduces the chance that the support hits the model on the side, leaving a scar where it's unnecessary. It also makes the support easier to remove. Keep in mind though that this only really kicks in at medium-steep overhangs where the overhang normally needs to be supported anyway, so it's meant to hit the support there. Increasing this setting also makes the overhang sag more, reducing its surface quality.
+En augmentant ce paramètre, on réduit le risque que le soutien frappe le modèle sur le côté, laissant une cicatrice là où elle n'est pas nécessaire. Cela facilite également le retrait du support. Gardez toutefois à l'esprit que cette option n'est efficace que pour les porte-à-faux de hauteur moyenne, là où le porte-à-faux doit normalement être soutenu, et qu'elle est donc censée toucher le support à cet endroit. En augmentant ce réglage, le porte-à-faux s'affaisse davantage, ce qui réduit sa qualité de surface.
