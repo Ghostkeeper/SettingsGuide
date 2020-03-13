@@ -1,7 +1,7 @@
-Originally, this setting caused the printer to start each layer with the object nearest to the position specified in the [Layer Start X](layer_start_x.md) and [Layer Start Y](layer_start_y.md) settings, instead of with the object that was printed last in the previous layer.
+À l'origine, ce paramètre faisait que l'imprimante commençait chaque couche avec l'objet le plus proche de la position spécifiée dans les paramètres [Layer Start X](layer_start_x.md) et [Layer Start Y](layer_start_y.md), au lieu de l'objet qui avait été imprimé en dernier dans la couche précédente.
 
-**The setting was hidden in Cura 2.4 and never properly removed, which is why this setting still exists in this list. However, it has no effect on the print.**
+**Le paramètre était caché dans Cura 2.4 et n'a jamais été supprimé correctement, c'est pourquoi ce paramètre existe toujours dans cette liste. Cependant, il n'a aucun effet sur l'impression.**
 
-The alternative behaviour was no longer possible after multi-threaded slicing was implemented, so the setting was hidden.
+Le comportement alternatif n'était plus possible après l'implémentation du découpage en plusieurs fils, donc le paramètre a été caché.
 
-Printing every layer in the same order prevents stacking two layers on top of each other immediately after each other, if there are multiple parts to print. This allows the previous layer to cool down longer while the nozzle is busy printing the other parts. This improves overhang and reduces banding and sagging. On the other hand, it makes the printer travel around a bit more, increasing printing time slightly.
+L'impression de chaque couche dans le même ordre évite d'empiler deux couches l'une sur l'autre immédiatement après l'autre, s'il y a plusieurs parties à imprimer. Cela permet à la couche précédente de refroidir plus longtemps pendant que la buse est occupée à imprimer les autres parties. Cela améliore le porte-à-faux et réduit le banderolage et l'affaissement. D'autre part, cela permet à l'imprimante de se déplacer un peu plus, ce qui augmente légèrement le temps d'impression.
