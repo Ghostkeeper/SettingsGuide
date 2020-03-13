@@ -1,8 +1,8 @@
-This setting causes very small pieces to be filled with the skin pattern rather than with the infill pattern, making them completely solid.
+Ce réglage fait que de très petites pièces sont remplies avec le motif de la peau plutôt qu'avec le motif de remplissage, ce qui les rend complètement solides.
 
-![Set to 0, the thin feet of this model get filled with infill](../../../articles/images/min_infill_area_disabled.png)
-![Set to 150, the feet get filled with skin](../../../articles/images/min_infill_area_150.png)
+![Réglé sur 0, les pieds minces de ce modèle sont remplis avec le remplissage](../../../articles/images/min_infill_area_disabled.png)
+![Réglé sur 150, les pieds se remplissent de peau](../../../articles/images/min_infill_area_150.png)
 
-Sometimes, very small hollow areas cannot properly get filled with infill, since the infill lines would be so short that the material doesn't get time to flow properly. This setting causes them to be filled with skin instead, making them stronger as well and preventing a border between the skin and the infill.
+Parfois, de très petites zones creuses ne peuvent pas être correctement remplies avec du matériau de remplissage, car les lignes de remplissage seraient si courtes que le matériau n'aurait pas le temps de s'écouler correctement. Ce réglage les remplit plutôt avec de la peau, ce qui les rend plus résistantes et empêche la formation d'une frontière entre la peau et le matériau de remplissage.
 
-Setting this setting to 0 effectively disables this feature.
+Le réglage de ce paramètre sur 0 désactive effectivement cette fonction.
