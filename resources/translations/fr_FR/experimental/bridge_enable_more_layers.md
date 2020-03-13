@@ -1,9 +1,9 @@
-If this setting is enabled, the skin in higher layers above the bridge will also be adjusted. You can then carefully tune the flow rate, speed, density and fan speed of the second and third layer above the bridge.
+Si ce paramètre est activé, la peau des couches supérieures au-dessus du pont sera également ajustée. Vous pouvez alors régler avec précision le débit, la vitesse, la densité et la vitesse du ventilateur des deuxième et troisième couches au-dessus du pont.
 
-The first layer that crosses the bridge is by far the most influential in how the bridge is going to look. If there is any sagging in that layer, there will not be anything to hold it up. With the second and third layers, there will be material beneath it that can hold (some of) the weight of the layer on top. Yet still, adjusting the layers on top can still have some positive effects.
-* Reducing the density can reduce the weight of the material that will be resting on the lower layer.
-* Increasing the fan speed makes the material sag less, putting less weight on the lower layer.
-* Reducing the printing speed has a similar effect to increasing the fan speed, as it allows the fans to blow on the material more.
-* Reducing the flow can reduce the weight of the material as well as improve the effectiveness of cooling.
+La première couche qui traverse le pont est de loin la plus influente sur l'aspect du pont. Si cette couche s'affaisse, il n'y aura rien pour la soutenir. Avec les deuxième et troisième couches, il y aura des matériaux en dessous qui pourront supporter (une partie) du poids de la couche du dessus. Cependant, l'ajustement des couches supérieures peut encore avoir des effets positifs.
+* La réduction de la densité peut réduire le poids du matériau qui reposera sur la couche inférieure.
+* L'augmentation de la vitesse du ventilateur permet de réduire l'affaissement du matériau, ce qui réduit le poids de la couche inférieure.
+* La réduction de la vitesse d'impression a un effet similaire à l'augmentation de la vitesse du ventilateur, car elle permet aux ventilateurs de souffler davantage sur le matériau.
+* Réduire le débit peut réduire le poids du matériau et améliorer l'efficacité du refroidissement.
 
-However there are other effects too which makes each of these settings a balancing act. Enabling the bridging settings for the second and third layers as well allow tuning more precisely, but also requires more experimenting to get a good result.
+Cependant, il existe d'autres effets qui font de chacun de ces réglages un exercice d'équilibre. L'activation des paramètres de pontage pour les deuxième et troisième couches permet un réglage plus précis, mais nécessite également davantage d'expérimentation pour obtenir un bon résultat.
