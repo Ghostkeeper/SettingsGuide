@@ -1,5 +1,5 @@
-The pattern with which the support interface is drawn can be configured separately from the rest of the support.
+Le modèle avec lequel l'interface du support est dessinée peut être configuré séparément du reste du support.
 
-The support interface is often much denser than the rest of the support. Some patterns don't work all that well at high densities, so it can then be useful to choose a pattern that works better at high densities, such as concentric or zigzag rather than grid or triangles.
+L'interface de support est souvent beaucoup plus dense que le reste du support. Certains motifs ne fonctionnent pas très bien à des densités élevées, il peut donc être utile de choisir un motif qui fonctionne mieux à des densités élevées, comme par exemple concentrique ou en zigzag plutôt qu'en grille ou en triangles.
 
-Since the support interface is the part of support that does the brunt of the work of supporting, it may be useful to choose a pattern that optimises for overhang quality, rather than optimising for other properties of support such as solubility or stability.
+Comme l'interface de support est la partie du support qui fait le plus gros du travail de support, il peut être utile de choisir un modèle qui optimise la qualité du surplomb, plutôt que d'optimiser d'autres propriétés du support comme la solubilité ou la stabilité.
