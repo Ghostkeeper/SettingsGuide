@@ -1,15 +1,15 @@
-With the Top/Bottom Thickness you can adjust how thick of a solid skin is created on the top and bottom sides of your print.
+Avec l'épaisseur supérieure/inférieure, vous pouvez ajuster l'épaisseur de la peau solide créée sur les côtés supérieur et inférieur de votre impression.
 
-![Ordinary top/bottom thickness](../../../articles/images/top_bottom_thickness_0.8.png)
-![Much thicker top and bottom sides](../../../articles/images/top_bottom_thickness_3.png)
+![Épaisseur ordinaire du haut/bas](../../../articles/images/épaisseur_du_haut/bas_0.8.png)
+![Côtés supérieur et inférieur beaucoup plus épais] (../../../articles/images/top_bottom_thickness_3.png)
 
-This affects both the top and bottom sides of the print. The top and bottom can also be configured individually with the [Top Thickness](top_thickness.md) and [Bottom Thickness](bottom_thickness.md) settings.
+Cela concerne à la fois les faces supérieure et inférieure de l'impression. Le haut et le bas peuvent également être configurés individuellement avec les paramètres [Top Thickness](top_thickness.md) et [Bottom Thickness](bottom_thickness.md).
 
-If this setting is not a multiple of the layer height, it will get rounded to the nearest multiple. This setting only determines how many top and bottom layers will be generated.
+Si ce paramètre n'est pas un multiple de la hauteur de la couche, il sera arrondi au multiple le plus proche. Ce paramètre détermine uniquement le nombre de couches supérieures et inférieures qui seront générées.
 
-Greater top and bottom thickness will have several effects, beneficial for total quality but detrimental to productivity.
-* Your part will be stronger. Greater top and bottom thickness will mean that a smaller part of your print will get filled with the sparse infill pattern. Instead it gets made completely solid.
-* The top surface will be smoother. Any pillowing and sagging in the top skin will get smoothed out in the layers put on top.
-* It's more likely that your model will be water tight. Both on the top and bottom sides there will be more layers to block water or other fluids from getting in, and to recover from sagging overhangs.
-* Your print will use more material, since more layers are filled completely.
-* Your print will take longer, since more material must be placed down and these layers are normally printed more slowly than the infill.
+Une épaisseur supérieure et inférieure plus importante aura plusieurs effets, bénéfiques pour la qualité totale mais préjudiciables à la productivité.
+* Votre pièce sera plus solide. Une épaisseur supérieure et inférieure plus importante signifie qu'une partie plus petite de votre impression sera remplie par le motif de remplissage épars. Au lieu de cela, elle sera rendue complètement solide.
+* La surface supérieure sera plus lisse. Les coussins et les affaissements de la peau supérieure seront aplanis dans les couches du dessus.
+* Il est plus probable que votre modèle soit étanche. Sur les côtés supérieur et inférieur, il y aura plus de couches pour empêcher l'eau ou d'autres fluides de pénétrer et pour récupérer les surplombs affaissés.
+* Votre empreinte utilisera plus de matériel, car plus de couches sont remplies complètement.
+* Votre tirage prendra plus de temps, car il faudra déposer plus de matériau et ces couches sont normalement imprimées plus lentement que le remplissage.
