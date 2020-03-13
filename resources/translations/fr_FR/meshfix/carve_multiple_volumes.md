@@ -1,1 +1,1 @@
-If multiple meshes overlap with each other, they would normally just both get printed, resulting in overextrusion. When this setting is enabled, one of the meshes gets carved out by the other. This way there will be no overextrusion, and the result will look just the same on the outside.
+Si plusieurs mailles se chevauchent, elles sont normalement imprimées toutes les deux, ce qui entraîne une surextrusion. Lorsque ce paramètre est activé, l'une des mailles est découpée par l'autre. De cette façon, il n'y aura pas de surextrusion et le résultat sera identique à l'extérieur.
