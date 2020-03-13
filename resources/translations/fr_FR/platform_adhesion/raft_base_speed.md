@@ -1,7 +1,7 @@
-This setting configures the speed at which the base layer of the raft is printed. The speed of the base layer can be configured separately from the speed of the top and middle layers.
+Ce paramètre configure la vitesse à laquelle la couche de base du radeau est imprimée. La vitesse de la couche de base peut être configurée séparément de la vitesse des couches supérieure et intermédiaire.
 
-![Where the base layer is located in the raft](../../../articles/images/raft_dimensions_simplified.svg)
+![Où se trouve la couche de base dans le radeau](../../../articles/images/raft_dimensions_simplified.svg)
 
-Printing the base layer more slowly allows the material to flow out more. This increases the contact area between the raft and the build plate, allowing it to stick better to the build plate. Keeping the material hot for longer will also anneal the plastic, reducing internal stress. Both of these effects reduce warping. The base layer is typically printed slower than the others. Of course, reducing the printing speed of the base layer too much makes the print take longer.
+L'impression plus lente de la couche de base permet au matériau de s'écouler plus facilement. Cela augmente la surface de contact entre le radeau et la plaque de construction, ce qui lui permet de mieux adhérer à la plaque de construction. En gardant le matériau chaud plus longtemps, le plastique est également recuit, ce qui réduit la contrainte interne. Ces deux effets réduisent le gauchissement. La couche de base est généralement imprimée plus lentement que les autres. Bien entendu, si la vitesse d'impression de la couche de base est trop réduite, l'impression sera plus longue.
 
-When the raft is used, the [initial layer printing speed](speed_print_layer_0.md) applies to the initial layer of the model, not the initial layer of the raft. The travel moves within the raft will be the ordinary [travel speed](../speed/speed_travel.md).
+Lorsque le radeau est utilisé, la [vitesse d'impression de la couche initiale](speed_print_layer_0.md) s'applique à la couche initiale du modèle, et non à la couche initiale du radeau. Les déplacements à l'intérieur du radeau se feront à la [vitesse de déplacement] ordinaire (../speed/speed_travel.md).
