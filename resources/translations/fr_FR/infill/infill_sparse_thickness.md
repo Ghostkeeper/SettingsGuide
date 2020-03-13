@@ -1,10 +1,10 @@
-Since the layer height of the infill is not important for visual quality, you can use thicker layers for the infill to reduce the printing time. This setting causes layers of infill to be combined together, as long as there are multiple layers of infill directly above each other. It will then not print any infill on some of the layers, but in the highest of the combined layers it will extrude more material to make up for it.
+Comme la hauteur de la couche de remplissage n'est pas importante pour la qualité visuelle, vous pouvez utiliser des couches plus épaisses pour le remplissage afin de réduire le temps d'impression. Ce réglage permet de combiner des couches de remplissage, à condition que plusieurs couches de remplissage soient directement superposées. Il n'imprimera alors aucun remplissage sur certaines des couches, mais dans la plus haute des couches combinées, il extrudera plus de matière pour compenser.
 
-In layer view, it will look as if the infill lines have become much wider. When actually printed, the infill lines will drop down further instead of spreading out horizontally.
+Dans la vue des couches, on aura l'impression que les lignes de remplissage sont devenues beaucoup plus larges. Lorsqu'elles sont imprimées, les lignes de remplissage s'abaissent davantage au lieu de s'étendre horizontalement.
 
-![Infill Layer Thickness is set to three times the layer height](../../../articles/images/infill_sparse_thickness.png)
+![L'épaisseur de la couche de remplissage est fixée à trois fois la hauteur de la couche](../../../articles/images/infill_sparse_thickness.png)
 
-The infill layer thickness must be a multiple of the ordinary layer height. If it is not, it will be rounded to the closest layer height.
+L'épaisseur de la couche de remplissage doit être un multiple de la hauteur de la couche ordinaire. Si elle ne l'est pas, elle sera arrondie à la hauteur de couche la plus proche.
 
-* Be careful with increasing this too much. When switching to and from infill, the flow rate through the nozzle needs to accelerate and decelerate significantly. There is some delay on this, so it'll extrude too little at the beginning of the infill and too much after the end of the infill.
-* In the in-between layers, it will still print infill with a lower layer thickness where there is no infill in the layers around it. This can cause small lines of infill to be printed alongside sloping walls.
+* Attention à ne pas trop l'augmenter. Lors du passage à la couche de remplissage et inversement, le débit à travers la buse doit accélérer et décélérer de manière significative. Il y a un certain retard sur ce point, de sorte qu'il y aura trop peu d'extrusion au début du remplissage et trop d'extrusion après la fin du remplissage.
+* Dans les couches intermédiaires, il imprimera toujours un remplissage avec une épaisseur de couche plus faible là où il n'y a pas de remplissage dans les couches autour de lui. Cela peut entraîner l'impression de petites lignes de remplissage le long des murs en pente.
