@@ -1,5 +1,5 @@
-The speed at which the fans on the print head will spin in the beginning of the print, during the first few layers. The fan speed will then slowly transition into the regular fan speed. At the layer number indicated by the [Regular Fan Speed At Layer](cool_fan_full_layer.md) setting, the fan speed will have transitioned to the [Regular Fan Speed](cool_fan_speed_min.md).
+La vitesse à laquelle les ventilateurs de la tête d'impression tournent au début de l'impression, pendant les premières couches. La vitesse des ventilateurs passera ensuite lentement à la vitesse normale des ventilateurs. Au numéro de calque indiqué par le paramètre [Regular Fan Speed At Layer](cool_fan_full_layer.md), la vitesse du ventilateur sera passée à la [Regular Fan Speed](cool_fan_speed_min.md).
 
-![Which fan speed is used where](../../../articles/images/cool_fan_speed.svg)
+![Quelle vitesse de ventilateur est utilisée où](../../../articles/images/cool_fan_speed.svg)
 
-The fan speed at the beginning of the print is normally lower than during the rest of the print. This allows the material to cool down slower and sag further onto the build plate. This improves build plate adhesion.
+La vitesse du ventilateur au début de l'impression est normalement plus faible que pendant le reste de l'impression. Cela permet au matériau de refroidir plus lentement et de s'affaisser davantage sur la plaque de montage. Cela améliore l'adhérence de la plaque de montage.
