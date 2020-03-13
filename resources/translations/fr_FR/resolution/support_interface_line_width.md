@@ -1,6 +1,6 @@
 La largeur de l'interface des lignes de support peut être configurée séparément de la largeur du reste des lignes de support.
 
-! [Les lignes de l'interface de support sont plus larges que le reste des lignes de support](../../../articles/images/support_roof_line_width.png)
+![Les lignes de l'interface de support sont plus larges que le reste des lignes de support](../../../articles/images/support_roof_line_width.png)
 
 L'impression de l'interface de support avec des lignes légèrement plus fines est souvent avantageuse pour la qualité de la surface en surplomb qu'elle supporte, du seul fait qu'elle présente une surface supérieure plus lisse au-dessus de l'interface de support. Cependant, cela n'augmente pas nécessairement l'adhérence entre l'interface du support et le modèle, de sorte que le support ne sera pas nécessairement plus difficile à enlever.
 
