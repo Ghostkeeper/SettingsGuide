@@ -1,13 +1,15 @@
-Ironing causes the printer to do another pass over the top surface in order to make it extra smooth. This extra pass has a very small line width and prints extra slow.
+Le repassage oblige l'imprimante à effectuer un nouveau passage sur la surface supérieure afin de la rendre encore plus lisse. Ce passage supplémentaire a une très faible largeur de ligne et imprime très lentement.
 
-![A normal print, viewed from the top side](../../../articles/images/ironing_enabled_disabled.png)
-![With ironing enabled, notice the thin lines on top.](../../../articles/images/ironing_enabled_enabled.png)
+![Une impression normale, vue de la face supérieure](../../../articles/images/ironing_enabled_disabled.png)
+![Avec le repassage activé, remarquez les fines lignes sur le dessus.](../../../articles/images/ironing_enabled_enabled.png)
 
-Ironing will print a line pattern on top of the top surface of your print. This has two major benificial effects:
-* It melts the top surface again by going over it multiple times with a hot nozzle. This is where the name "Ironing" comes from. Because the movement speed is so low and the line width is so small, the nozzle will heat up the surface significantly. The flat part of the nozzle then strokes it smooth.
-* It fills in gaps in the top surface. The ironing motion is done at the same height as the layer itself. It has less flow than a full layer, but still has some flow. In theory, this flow has nowhere to go, but in practice it will keep pressure inside the nozzle chamber. Whenever the nozzle passes over an unevenness in the surface, the material in the nozzle will flow into that gap.
+Le repassage permet d'imprimer un motif linéaire sur la surface supérieure de votre empreinte. Cela a deux effets bénéfiques majeurs :
+* Il fait fondre la surface supérieure en la passant plusieurs fois sur une buse chaude. C'est de là que vient le nom "repassage". La vitesse de déplacement étant très faible et la largeur du trait étant très petite, la buse chauffe la surface de manière significative. La partie plate de la buse la caresse alors de manière lisse.
+* Elle comble les lacunes de la surface supérieure. Le mouvement de repassage se fait à la même hauteur que la couche elle-même. Il a moins de débit qu'une couche pleine, mais il a quand même un certain débit. En théorie, ce flux n'a nulle part où aller, mais en pratique, il maintient la pression à l'intérieur de la chambre de la buse. Chaque fois que la buse passe sur une irrégularité de la surface, le matériau dans la buse s'écoule dans cet espace.
 
-However, ironing comes with some disadvantages as well:
-* It increases printing time significantly.
-* If the ironing pattern has interruptions (because it has to travel to different parts), it will leave a visible line between the part that was ironed earlier and the part that was ironed later. This can sometimes be avoided by setting the [Ironing Pattern](ironing_pattern.md) to a different pattern, such as Concentric.
-* Sloped surfaces, or top surfaces with lots of detail, may get ironed as well, which increases the topography effect. The borders between the layers become more pronounced. This can be prevented by enabling [Iron Only Highest Layer](ironing_only_highest_layer.md).
+Cependant, le repassage présente également quelques inconvénients :
+* Il augmente considérablement le temps d'impression.
+* Si le motif de repassage présente des interruptions (parce qu'il doit se déplacer vers différentes parties), il laissera une ligne visible entre la partie qui a été repassée plus tôt et la partie qui a été repassée plus tard. Cela peut parfois être évité en réglant le [Motif de repassage](ironing_pattern.md) sur un motif différent, par exemple Concentré.
+* Les surfaces inclinées, ou les surfaces supérieures avec beaucoup de détails, peuvent également être repassées, ce qui augmente l'effet de topographie. Les frontières entre les couches deviennent plus prononcées. Cela peut être évité en activant [Iron Only Highest Layer](ironing_only_highest_layer.md).
+
+
