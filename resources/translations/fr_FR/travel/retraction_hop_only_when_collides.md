@@ -1,5 +1,5 @@
-This setting causes the printer to try to avoid other objects horizontally more often rather than passing over them vertically.
+Ce réglage amène l'imprimante à essayer d'éviter plus souvent d'autres objets horizontalement plutôt que de passer au-dessus d'eux verticalement.
 
-If the [Avoid Printed Parts](travel_avoid_other_parts.md) setting is enabled, the nozzle will avoid other parts when travelling from one place to another. Normally, if a Z hop is applied, avoiding printed parts is not necessary any more. This setting switches that logic around: If avoiding printed parts is not possible, a Z hop is applied.
+Si le paramètre [Eviter les pièces imprimées](travel_avoid_other_parts.md) est activé, la buse évitera les autres pièces lorsqu'elle se déplace d'un endroit à un autre. Normalement, si un saut en Z est appliqué, il n'est plus nécessaire d'éviter les pièces imprimées. Ce réglage inverse cette logique : S'il n'est pas possible d'éviter les parties imprimées, un saut Z est appliqué.
 
-Z hops can be problematic for the wear of the Z axis of some printers. This setting can reduce the amount of Z hops by going around an object horizontally instead of vertically. For some printers, moving horizontally instead of vertically can also be faster.
+Les sauts en Z peuvent être problématiques pour l'usure de l'axe Z de certaines imprimantes. Ce réglage peut réduire le nombre de sauts en Z en contournant un objet horizontalement plutôt que verticalement. Pour certaines imprimantes, se déplacer horizontalement plutôt que verticalement peut également être plus rapide.
