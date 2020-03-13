@@ -1,5 +1,5 @@
-Even if the filament is retracted, you sometimes still lose some material on the way. This setting compensates for that by moving the material a bit further in than how far it was retracted.
+Même si le filament est rétracté, on perd parfois encore un peu de matière en cours de route. Ce réglage compense cela en déplaçant le matériau un peu plus loin que la distance à laquelle il était rétracté.
 
-The higher the extra prime amount is, the more pressure is added in the nozzle chamber after a retraction, which helps for the loss of pressure in the chamber. If the setting is too high, it will lead to blobs in the place where the nozzle lands after a retracted travel move.
+Plus la quantité d'amorce supplémentaire est élevée, plus la pression est ajoutée dans la chambre de la buse après une rétraction, ce qui contribue à la perte de pression dans la chambre. Si le réglage est trop élevé, il se produira des bulles à l'endroit où la buse atterrit après un mouvement de rétraction.
 
-This is particularly useful for flexible materials, which tend to take more time to retract. During this time it'll ooze more, so more material is lost.
+Ceci est particulièrement utile pour les matériaux flexibles, qui ont tendance à prendre plus de temps pour se rétracter. Pendant ce temps, il suinte davantage, ce qui entraîne une perte de matière plus importante.
