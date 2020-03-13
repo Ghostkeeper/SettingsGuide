@@ -1,9 +1,9 @@
-The speed at which the outer walls are printed can be configured separately from the normal print speed or from the inner walls.
+La vitesse à laquelle les parois extérieures sont imprimées peut être configurée séparément de la vitesse d'impression normale ou des parois intérieures.
 
-![Various structures printed at different speeds](../../../articles/images/speed_difference.png)
+![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)
 
-The outer walls are the most major factor in the visual quality of a print, so they should look nice. The printing speed of the outer walls is a major factor in how nice these walls look. It is therefore advisable to make the outer walls print very slowly. This reduces vibrations in the printer, which ultimately reduces ringing. It also improves the quality of overhang, because the slower printing speed allows the fans to cool down the walls better, giving it more strength to hang in the air.
+Les murs extérieurs sont le facteur le plus important dans la qualité visuelle d'une impression, ils doivent donc être beaux. La vitesse d'impression des parois extérieures est un facteur majeur dans l'aspect de ces parois. Il est donc conseillé de faire imprimer les murs extérieurs très lentement. Cela permet de réduire les vibrations dans l'imprimante, ce qui, en fin de compte, réduit les sonneries. Cela améliore également la qualité du surplomb, car la vitesse d'impression plus lente permet aux ventilateurs de mieux refroidir les murs, ce qui leur donne plus de résistance pour pendre dans l'air.
 
-If the outer wall printing speed is too low however, there is a risk of introducing too great of a flow change. If the nozzle suddenly has to extrude much more slowly, it will still extrude a lot of material for a while while the pressure in the nozzle chamber drops, so at the beginning of the wall it will overextrude.
+Cependant, si la vitesse d'impression de la paroi extérieure est trop faible, il y a un risque d'introduire un changement de débit trop important. Si la buse doit soudainement s'extruder beaucoup plus lentement, elle continuera à extruder beaucoup de matière pendant un certain temps alors que la pression dans la chambre de la buse diminue, de sorte qu'au début de la paroi, elle dépassera la limite.
 
-The outer walls are also a significant part of the printing time, so reducing the speed at which these walls are printed will drastically increase the printing time.
+Les parois extérieures représentent également une part importante du temps d'impression, de sorte que réduire la vitesse à laquelle ces parois sont imprimées augmentera considérablement le temps d'impression.
