@@ -1,17 +1,19 @@
-When your model has some overhang that is supported on both sides, Cura will detect this and modify the skin area that is overhanging in order to print better. If this setting is enabled, you can tune the detection of these bridging areas and the resulting behaviour so that it bridge better.
+Lorsque votre modèle présente un certain surplomb qui est soutenu des deux côtés, Cura le détecte et modifie la zone de peau en surplomb afin de mieux imprimer. Si ce paramètre est activé, vous pouvez régler la détection de ces zones de chevauchement et le comportement qui en résulte afin qu'il y ait un meilleur chevauchement.
 
-![When a bridge is detected, the skin lines are oriented to bridge the gap as best it can](../../../articles/images/bridge_settings_enabled_default.png)
-![With bridge settings enabled, the bridging lines are printed with different settings](../../../articles/images/bridge_settings_enabled_enabled.png)
+![Lorsqu'un pont est détecté, les lignes de peau sont orientées de manière à combler l'écart le mieux possible](../../../articles/images/bridge_settings_enabled_default.png)
+![Avec les paramètres de pont activés, les lignes de pont sont imprimées avec des paramètres différents](../../../articles/images/bridge_settings_enabled_enabled.png)
 
-Normally Cura will use a fairly rudimentary bridging technique. Cura will detect overhanging areas of skin that are supported on multiple sides. The [direction of those skin lines](../shell/skin_angles.md) is adjusted to bridge those areas automatically. This ensures that the greatest possible part of the overhanging area is supported on multiple sides and improves print quality.
+Normalement, Cura utilisera une technique de transition assez rudimentaire. Cura détectera les zones de peau en surplomb qui sont soutenues sur plusieurs côtés. La [direction de ces lignes de peau](../shell/skin_angles.md) est ajustée pour couvrir ces zones automatiquement. Cela permet de s'assurer que la plus grande partie possible de la zone en surplomb est supportée sur plusieurs côtés et d'améliorer la qualité d'impression.
 
-When this setting is enabled though, you can tune that behaviour more precisely according to your requirements. This allows you to tweak:
-* printing speed
-* flow rate
-* density (like infill density, but with the skin lines)
-* fan speed
-* for the walls, also coasting
+Lorsque ce paramètre est activé, vous pouvez toutefois régler ce comportement de manière plus précise en fonction de vos besoins. Cela vous permet d'apporter des modifications :
+* vitesse d'impression
+* débit
+* densité (comme la densité de remplissage, mais avec les lignes de la peau)
+* vitesse du ventilateur
+* pour les murs, également en côte
 
-These settings can be adjusted separately for the skin that bridges a gap as well as for the walls. If [Bridge Has Multiple Layers](bridge_enable_more_layers.md) is enabled, they can also be adjusted separately for the second and third layer above the bridged gap. It also allows tweaking which parts of the print are seen as bridging areas, by tuning [what fraction of an area must be over air](bridge_skin_support_threshold.md) and a [minimal width for the walls](bridge_wall_min_length.md).
+Ces paramètres peuvent être réglés séparément pour la peau qui comble un vide ainsi que pour les murs. Si l'option [Bridge Has Multiple Layers](bridge_enable_more_layers.md) est activée, ils peuvent également être ajustés séparément pour la deuxième et la troisième couche au-dessus de l'écart ponté. Il est également possible de modifier les parties de l'impression qui sont considérées comme des zones de pontage, en réglant [quelle fraction de la zone doit être au-dessus de l'air](bridge_skin_support_threshold.md) et une [largeur minimale pour les murs](bridge_wall_min_length.md).
 
-By enabling the bridging settings you get greater control over how bridges are handled in your print. By tuning the bridging parameters very well, you can improve the quality of your overhangs significantly and improve accuracy in the vertical direction. The only downside is that if you don't adjust the bridge settings to your printer, the print could be made worse just as likely.
+En activant les paramètres de pontage, vous avez un meilleur contrôle sur la façon dont les ponts sont traités dans votre impression. En réglant très bien les paramètres de pontage, vous pouvez améliorer la qualité de vos débords de manière significative et améliorer la précision dans le sens vertical. Le seul inconvénient est que si vous n'ajustez pas les paramètres de pontage à votre imprimante, l'impression risque d'être tout aussi mauvaise.
+
+
