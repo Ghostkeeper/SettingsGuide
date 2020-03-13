@@ -1,13 +1,13 @@
-This setting allows you to change the direction in which the lines of the top and bottom are printed. You can specify a comma-separated list of angles (in degrees), and the lines will alternate directions per layer.
+Ce paramètre vous permet de modifier la direction dans laquelle les lignes du haut et du bas sont imprimées. Vous pouvez spécifier une liste d'angles séparés par des virgules (en degrés), et les lignes alterneront les directions par couche.
 
-![Lines pattern with 0°, 60° and 120° angles alternating](../../../articles/images/skin_angles.gif)
+![Motif de lignes avec des angles de 0°, 60° et 120° alternés](../../../articles/images/skin_angles.gif)
 
-By default, the lines pattern prints in the two diagonal directions. For Cartesian gantry systems this is the most accurate, because the printer can use both the X and Y motors to accelerate the nozzle when turning around for the next line.
+Par défaut, le motif des lignes s'imprime dans les deux directions diagonales. Pour les systèmes à portique cartésien, c'est le plus précis, car l'imprimante peut utiliser les moteurs X et Y pour accélérer la buse lors du retournement pour la ligne suivante.
 
-There can be several reasons to change these directions:
-* To achieve an optical effect.
-* To optimise strength. The print will normally be tougher when subjected to push and pull parallel to the skin (and infill) lines.
-* To reduce overhang. If a print is very thin in one direction, making the skin bridge that direction can be an effective way to save material on infill. No infill will be necessary to bridge the gap. Similarly, you can also choose a direction that is perpendicular to the infill in order to minimise overhang over infill. This can achieve a better top surface quality.
-* To optimise accuracy if your printer does not have one motor for the X direction and one for the Y direction, such as a printer with an H-bridge gantry or a delta printer.
+Il peut y avoir plusieurs raisons de changer ces directions :
+* Pour obtenir un effet optique.
+* Pour optimiser la force. L'impression sera normalement plus résistante lorsqu'elle est soumise à une poussée et à une traction parallèles aux lignes de la peau (et de remplissage).
+* Pour réduire le surplomb. Si une impression est très fine dans une direction, faire un pont de peau dans cette direction peut être un moyen efficace d'économiser de la matière sur le remplissage. Aucun remplissage ne sera nécessaire pour combler l'écart. De même, vous pouvez également choisir une direction perpendiculaire au remplissage afin de réduire au minimum le débordement sur le remplissage. Cela permet d'obtenir une meilleure qualité de surface.
+* Pour optimiser la précision si votre imprimante ne dispose pas d'un moteur pour la direction X et d'un moteur pour la direction Y, comme une imprimante avec un portique en H ou une imprimante delta.
 
-Multiple numbers can be entered to change the direction in each layer. For example, entering `[0, 30, 60]` makes it alternate between 0 degrees away from the X axis, 30 degrees away and 60 degrees away.
+Plusieurs nombres peuvent être saisis pour changer la direction de chaque couche. Par exemple, la saisie de `[0, 30, 60]` fait alterner entre 0 degré de distance de l'axe X, 30 degrés de distance et 60 degrés de distance.
