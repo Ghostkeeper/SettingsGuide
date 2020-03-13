@@ -1,10 +1,10 @@
-Removes thin parts of the completely filled bottom layers, printing them with infill instead. This saves on printing time and material.
+Enlève les parties fines des couches inférieures complètement remplies, en les imprimant avec du remblai à la place. Cela permet d'économiser du temps et du matériel d'impression.
 
-With steep surfaces the bottom layers will often become very thin. They are not necessary, since the horizontal strength of the walls is more than enough if the surface is almost completely vertical.
+Dans le cas de surfaces abruptes, les couches inférieures deviennent souvent très minces. Elles ne sont pas nécessaires, car la résistance horizontale des parois est plus que suffisante si la surface est presque entièrement verticale.
 
-![Before removal](../../../articles/images/skin_preshrink_original.png)
-![After removal](../../../articles/images/skin_preshrink_shrunk.png)
+![Avant le retrait](../../../articles/images/skin_preshrink_original.png)
+![Après le retrait](../../../articles/images/skin_preshrink_shrunk.png)
 
-Where the bottom side of your model has a very steep slope, the skin will become very thin. At this point, the horizontal [thickness of the walls](../shell/wall_thickness.md) is the most major contributor to the strength of the shell. Since the wall thickness should already be set such that strength is sufficient, it doesn't pay to add more material there. Leaving this skin material out saves a lot of printing time.
+Lorsque la face inférieure de votre modèle présente une pente très raide, la peau devient très fine. À ce stade, [l'épaisseur horizontale des parois](../shell/wall_thickness.md) est le facteur qui contribue le plus à la résistance de l'enveloppe. Comme l'épaisseur des parois doit déjà être fixée de manière à ce que la résistance soit suffisante, il n'est pas rentable d'y ajouter plus de matériau. En laissant ce matériau de peau en dehors, on économise beaucoup de temps d'impression.
 
-Increasing this setting too much may result in the bottom side of tiny pieces being open, because it gets filled with infill instead of skin.
+Si l'on augmente trop ce réglage, le fond des petites pièces risque de s'ouvrir, car il est rempli de matériau de remplissage au lieu de peau.
