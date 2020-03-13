@@ -1,11 +1,11 @@
-Gradual support reduces the amount of support material used, by reducing the support density in the lower layers. This saves on printing time and material, while not reducing the overhang quality much. The primary purpose of support is to support overhanging areas. This feature focuses the support to that purpose only.
+Le soutien progressif réduit la quantité de matériau de soutien utilisé, en réduisant la densité de soutien dans les couches inférieures. Cela permet d'économiser du temps et du matériel d'impression, tout en ne réduisant pas beaucoup la qualité du surplomb. Le but premier du support est de soutenir les zones en surplomb. Cette caractéristique permet de concentrer le support à cette seule fin.
 
-This setting indicates in how many steps the support density gets reduced. At every step, the support's density is halved. For example, starting at a density of 20% and two gradual support steps, the support density of the lower parts will be 10% and 5% respectively.
+Ce paramètre indique en combien d'étapes la densité du support est réduite. À chaque étape, la densité du support est réduite de moitié. Par exemple, à partir d'une densité de 20 % et de deux étapes de soutien progressives, la densité de soutien des parties inférieures sera respectivement de 10 % et de 5 %.
 
-![The support is reduced to lower density in 3 steps](../../../articles/images/gradual_support_infill_step_height_1mm.png)
+![Le support est réduit à une densité inférieure en 3 étapes](../../../articles/images/gradual_support_infill_step_height_1mm.png)
 
-Increasing the number of steps cause the density to be halved more and more, resulting in lower density support. This saves a lot of material and printing time, but will make the support weaker.
+L'augmentation du nombre de marches entraîne une réduction de plus en plus importante de la densité, ce qui se traduit par une diminution du soutien de la densité. Cela permet d'économiser beaucoup de matériel et de temps d'impression, mais rend le support plus faible.
 
-Some of the support will be floating in mid-air. However in practice with most support patterns this will repair itself quickly as the layers can build up properly even on weakened lower layers. The intent of the [Gradual Support Infill Step Height](gradual_support_infill_step_height.md) is to allow sufficient time for the layers to repair themselves before the next gradual support step is piled on top.
+Une partie du support flottera dans l'air. Cependant, dans la pratique, avec la plupart des modèles de support, cela se réparera rapidement car les couches peuvent s'accumuler correctement même sur les couches inférieures affaiblies. L'objectif du [Gradual Support Infill Step Height](gradual_support_infill_step_height.md) est de laisser suffisamment de temps aux couches pour se réparer avant que la prochaine étape de support graduel ne soit empilée sur le dessus.
 
-This setting is best combined with at least one [Support Wall Line](support_wall_count.md). This gives the support lines something to hang on to, rather than being suspended in mid-air.
+Ce paramètre est à combiner avec au moins une [ligne de mur de soutien](support_wall_count.md). Cela donne aux lignes de support quelque chose à quoi s'accrocher, plutôt que d'être suspendues en l'air.
