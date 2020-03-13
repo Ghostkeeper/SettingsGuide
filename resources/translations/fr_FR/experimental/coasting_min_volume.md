@@ -1,5 +1,5 @@
-This setting ensures that a minimum amount of material is extruded properly before coasting is applied. If the contour is so small that this minimum amount of material is not extruded properly, it will not coast towards the end of the contour.
+Ce réglage garantit qu'une quantité minimale de matériau est correctement extrudée avant l'application du cabotage. Si le contour est si petit que cette quantité minimale de matériau n'est pas extrudée correctement, il ne roulera pas vers la fin du contour.
 
-This is necessary because for very small pieces, if coasting is applied, it will not have time to properly get the material flowing again when moving from one coasted contour to another. This leads to underextrusion very easily. It is better to skip the coasting technique then.
+Ceci est nécessaire car pour de très petites pièces, si le roulage en roue libre est appliqué, il n'aura pas le temps de faire circuler à nouveau le matériau correctement lorsqu'il passera d'un contour roulé en roue libre à un autre. Cela conduit très facilement à une sous-extrusion. Il est alors préférable de renoncer à la technique du cabossage.
 
-Increasing this setting will reduce underextrusion with very small parts. However it will increase the visibility of the seams for those parts as well.
+Augmenter ce réglage réduira la sous-extrusion avec de très petites pièces. Cependant, cela augmentera également la visibilité des coutures pour ces pièces.
