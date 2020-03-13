@@ -1,9 +1,9 @@
-This setting causes the support to become slightly wider, expanding horizontally in every direction.
+Ce réglage fait que le support devient légèrement plus large, s'étendant horizontalement dans toutes les directions.
 
-![The support is wider than necessary to support the model](../../../articles/images/support_offset.png)
+![Le support est plus large que nécessaire pour supporter le modèle](../../../articles/images/support_offset.png)
 
-This setting has multiple uses, depending on the material used for support and the type of model that needs supporting:
-* Increasing this setting will make support wider and thus sturdier. This is useful for tall models with small areas of overhang, since the overhang would otherwise be supported with a very tall, thin pillar of support. With some horizontal expansion, it becomes a very tall but slightly wider pillar of support.
-* Increasing this setting also functions as a safety measure to make sure that support areas have a certain minimum area. This is necessary for materials that are hard to extrude, such as PVA.
-* Reducing this setting will reduce material usage and printing time for support. Increasing it will increase the required material and printing time, of course. See also the [conical support](../experimental/support_conical_enabled.md) feature, which reduces the width of support without compromising the area that the support supports.
-* Setting this setting to a negative value can also remove thin pillars of support completely. If that support would fail to print anyway, it may be better to just leave it out altogether. A method to remove support without compromising the overhang quality of the rest of the model is the Support Blocker tool.
+Ce cadre a de multiples usages, selon le matériel utilisé pour le soutien et le type de modèle qui a besoin d'être soutenu :
+* Augmenter ce paramètre rendra le support plus large et donc plus solide. Ceci est utile pour les modèles hauts avec de petites zones de surplomb, puisque le surplomb serait autrement soutenu par un pilier de soutien très haut et mince. Avec un peu d'expansion horizontale, il devient un pilier de soutien très haut mais légèrement plus large.
+* L'augmentation de ce paramètre est également une mesure de sécurité pour s'assurer que les zones de soutien ont une certaine surface minimale. Ceci est nécessaire pour les matériaux difficiles à extruder, comme le PVA.
+* Réduire ce paramètre permet de réduire l'utilisation de matériaux et le temps d'impression du support. En l'augmentant, on augmentera bien sûr le matériau nécessaire et le temps d'impression. Voir également la fonction [support conique](../expérimental/support_conique_activé.md), qui réduit la largeur du support sans compromettre la surface qu'il supporte.
+* Le réglage de ce paramètre sur une valeur négative peut également supprimer complètement les piliers minces de support. Si ce support ne s'imprime pas de toute façon, il peut être préférable de le laisser complètement en dehors. Une méthode pour supprimer le support sans compromettre la qualité du surplomb du reste du modèle est l'outil Support Blocker.
