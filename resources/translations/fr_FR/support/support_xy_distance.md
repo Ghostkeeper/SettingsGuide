@@ -1,17 +1,17 @@
-This indicates how much distance must be kept horizontally between the support and the model.
+Cela indique la distance horizontale à respecter entre le support et le modèle.
 
-![A horizontal gap between the support and the model](../../../articles/images/support_xy_distance.png)
+![Un espace horizontal entre le support et le modèle](../../../articles/images/support_xy_distance.png)
 
-The horizontal distance is meant to prevent the support from hitting the model, where it would leave a scar on the surface. However, this also creates a larger distance between the model and the support structure where the overhang is, leaving smaller overhangs unsupported.
+La distance horizontale a pour but d'éviter que le support ne heurte le modèle, où il laisserait une cicatrice à la surface. Cependant, cela crée également une distance plus importante entre le modèle et la structure de support à l'endroit où se trouve le porte-à-faux, ce qui laisse les petits porte-à-faux non soutenus.
 
-X/Y versus Z distance
+Distance X/Y par rapport à Z
 ----
-Both the X/Y distance and the Z distance should be observed exactly; not more, not less. This is overconstrained, so there must be a preference between the two. This is indicated by the [Support Distance Priority](support_xy_overrides_z.md) setting. That setting changes the behaviour of this Support X/Y Distance setting.
+La distance X/Y et la distance Z doivent être observées exactement ; ni plus, ni moins. Comme il s'agit d'une contrainte excessive, il doit y avoir une préférence entre les deux. Cela est indiqué par le paramètre [Support Distance Priority](support_xy_overrides_z.md). Ce paramètre modifie le comportement de ce paramètre de distance de support X/Y.
 
-![X/Y overrides Z](../../../articles/images/support_xy_overrides_z.svg)
+![X/Y par rapport à Z](../../../articles/images/support_xy_overrides_z.svg)
 
-If X/Y overrides Z, the X/Y distance is held, even if that means that the Z distance is too great. The Z distance is still held as minimum.
+Si X/Y a priorité sur Z, la distance X/Y est maintenue, même si cela signifie que la distance Z est trop grande. La distance Z est toujours maintenue comme minimum.
 
-![Z overrides X/Y](../../../articles/images/support_z_overrides_xy.svg)
+![Z surpasse X/Y](../../../articles/images/support_z_overrides_xy.svg)
 
-If Z overrides X/Y, the Z distance is held, even if that means that the X/Y distance is too small. The X/Y distance then only has any influence away from the top of the support where the Z distance has no influence.
+Si Z a priorité sur X/Y, la distance Z est maintenue, même si cela signifie que la distance X/Y est trop faible. La distance X/Y n'a alors d'influence qu'à partir du sommet du support où la distance Z n'a aucune influence.
