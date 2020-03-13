@@ -1,31 +1,33 @@
-This setting allows you to choose how the top and bottom surfaces get filled up with material. Several different printing patterns are available, but the patterns here are more limited than for infill. Only patterns that create solid layers are available.
+Ce paramètre vous permet de choisir comment les surfaces supérieure et inférieure se remplissent de matériau. Plusieurs motifs d'impression différents sont disponibles, mais les motifs sont ici plus limités que pour le remplissage. Seuls les motifs qui créent des couches solides sont disponibles.
 
-Lines
+Lignes
 ---
-![Lines](../../../articles/images/top_bottom_pattern_lines.png)
+![Lignes](../../../articles/images/top_bottom_pattern_lines.png)
 
-The basic lines pattern draws straight lines across the surface. These lines are oriented by default such that they are well supported by the infill and support. The direction of the lines alternates between layers.
-* Provides a nice surface quality.
-* Very rigid in the directions that the lines are drawn.
-* Adheres strongly to the walls, creating relatively strong parts.
+Le schéma de base trace des lignes droites sur la surface. Ces lignes sont orientées par défaut de telle sorte qu'elles soient bien soutenues par le remplissage et le support. La direction des lignes alterne entre les couches.
+* Fournit une belle qualité de surface.
+* Très rigide dans les directions où les lignes sont tracées.
+* Adhère fortement aux murs, créant des parties relativement solides.
 
-Concentric
+Concentrique
 ----
-![Concentric](../../../articles/images/top_bottom_pattern_concentric.png)
+![Concentrique](../../../articles/images/top_bottom_pattern_concentric.png)
 
-The concentric pattern continues drawing contours towards the inside of the model.
-* Equally strong in all directions.
-* Prevents creating air pockets and gaps. It's easier to create water-tight objects with this pattern.
-* Great overhang quality, because the lines tend to bridge very well.
-* If the part is circular, this can create a nasty spot in the centre where the contours converge.
-* Surface quality is less than ideal.
+Le motif concentrique continue à dessiner des contours vers l'intérieur du modèle.
+* Egalement fort dans toutes les directions.
+* Empêche la création de poches d'air et d'espaces. Il est plus facile de créer des objets étanches avec ce modèle.
+* Grande qualité de surplomb, car les lignes ont tendance à très bien se recouper.
+* Si la pièce est circulaire, cela peut créer un point désagréable au centre où les contours convergent.
+* La qualité de la surface est loin d'être idéale.
 
 Zigzag
 ---
 ![Zigzag](../../../articles/images/top_bottom_pattern_zigzag.png)
 
-The zigzag pattern is very similar to the lines pattern, but instead of ending the lines in the walls it will continue extruding towards the next skin line.
-* Provides a great surface quality.
-* Very rigid in the directions that the lines are drawn.
-* Keeps the extrusion rate more constant, which improves the consistency of the surface for materials that extrude more difficultly.
-* Doesn't stick as well to the walls as the lines pattern. The effect of the [Skin Overlap](skin_overlap.md) is reduced. This makes the part weaker and reduces the quality of overhangs.
+Le motif en zigzag est très similaire au motif des lignes, mais au lieu de terminer les lignes dans les murs, il continuera à s'extruder vers la ligne de peau suivante.
+* Fournit une grande qualité de surface.
+* Très rigide dans les directions où les lignes sont tracées.
+* Garde le taux d'extrusion plus constant, ce qui améliore la consistance de la surface pour les matériaux qui s'extrudent plus difficilement.
+* Ne colle pas aussi bien aux murs que le dessin des lignes. L'effet du [chevauchement de la peau](skin_overlap.md) est réduit. Cela rend la pièce plus faible et réduit la qualité des débordements.
+
+
