@@ -1,6 +1,6 @@
-Normally the infill patterns are centred on the 3D model's centre. This setting, together with the [Infill Y Offset](infill_offset_y.md) allows shifting the centre of the pattern. This setting adjusts the X coordinate of the centre.
+Normalement, les modèles de remplissage sont centrés sur le centre du modèle 3D. Ce paramètre, ainsi que le [Infill Y Offset](infill_offset_y.md), permet de déplacer le centre du modèle. Ce paramètre permet d'ajuster la coordonnée X du centre.
 
-![Infill is centred](../../../articles/images/infill_offset_xy_0.png)
-![Shifted 5mm to the right](../../../articles/images/infill_offset_x_5.png)
+![Infill is centrred](../../../articles/images/infill_offset_xy_0.png)
+![Décalé de 5mm vers la droite](../../../articles/images/infill_offset_x_5.png)
 
-When printing with low infill density, you can use this to position the infill very precisely such that the individual infill lines are positioned where the strength is most needed.
+Lors de l'impression avec une faible densité de remplissage, vous pouvez l'utiliser pour positionner le remplissage de manière très précise, de sorte que les lignes de remplissage individuelles soient positionnées là où la résistance est la plus nécessaire.
