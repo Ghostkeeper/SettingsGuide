@@ -1,11 +1,11 @@
-This setting configures how thick the solid top side of the print will be. This solid layer is printed instead of the sparse infill. It is intended to close the top side.
+Ce paramètre permet de configurer l'épaisseur de la face supérieure pleine de l'impression. Cette couche solide est imprimée à la place du remplissage clairsemé. Elle est destinée à fermer la face supérieure.
 
-![Ordinary top thickness](../../../articles/images/top_bottom_thickness_0.8.png)
-![Greatly increased thickness](../../../articles/images/top_thickness.png)
+![Épaisseur supérieure ordinaire](../../../articles/images/top_bottom_thickness_0.8.png)
+![Épaisseur fortement augmentée](../../../articles/images/top_thickness.png)
 
-A thicker top side will have several effects, beneficial for the quality of the top surface but detrimental to productivity.
-* Your part will be stronger. Having a thicker top side will mean that a smaller part of your print will get filled with the sparse infill pattern. Instead it gets made completely solid.
-* The top surface will be smoother. Any pillowing and sagging in the top skin will get smoothed out in the additional layers.
-* It's more likely that your model will be water tight. A thicker top side top side will provide more layers to block water or other fluids from getting in, since more layers are filled completely.
-* Your print will use more material, since more layers are filled completely.
-* Your print will take longer, since more material must be placed down and these layers are normally printed more slowly than the infill.
+Une face supérieure plus épaisse aura plusieurs effets, bénéfiques pour la qualité de la surface supérieure mais préjudiciables à la productivité.
+* Votre pièce sera plus solide. Une face supérieure plus épaisse signifie qu'une partie plus petite de votre impression sera remplie par le motif de remplissage épars. Au lieu de cela, elle sera rendue complètement solide.
+* La surface supérieure sera plus lisse. Les coussins et les affaissements de la peau supérieure seront aplanis dans les couches supplémentaires.
+* Il est plus probable que votre modèle soit étanche. Une face supérieure plus épaisse fournira plus de couches pour empêcher l'eau ou d'autres fluides de pénétrer, puisque plus de couches sont remplies complètement.
+* Votre impression utilisera plus de matière, car plus de couches sont remplies complètement.
+* Votre impression prendra plus de temps, car il faut placer plus de matériau et ces couches sont normalement imprimées plus lentement que le remplissage.
