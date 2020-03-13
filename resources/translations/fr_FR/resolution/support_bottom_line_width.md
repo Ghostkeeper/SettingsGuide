@@ -1,5 +1,5 @@
-This setting adjusts the width of the lines of the bottom side of the support.
+Ce réglage permet d'ajuster la largeur des lignes de la face inférieure du support.
 
-![The support floor (darker blue) is printed with wider lines than the rest of the support](../../../articles/images/support_bottom_line_width.png)
+![Le plancher du support (bleu plus foncé) est imprimé avec des lignes plus larges que le reste du support](../../../articles/images/support_bottom_line_width.png)
 
-Printing thinner lines tends to reduce the adhesion where the support rests on the model. However it also makes the adhesion more constant and reliable. In general, it makes for support that is easier to remove and leaves less of a scar on the object. Of course, printing thinner lines also takes more printing time.
+L'impression de lignes plus fines tend à réduire l'adhérence là où le support repose sur le modèle. Cependant, cela rend également l'adhésion plus constante et plus fiable. En général, le support est plus facile à enlever et laisse moins de cicatrices sur l'objet. Bien entendu, l'impression de lignes plus fines prend également plus de temps.
