@@ -1,6 +1,6 @@
-This setting adjusts the width of the support brim. With a wider support brim, more contours will be drawn inside the support area to give better adhesion.
+Ce réglage permet d'ajuster la largeur du bord du support. Avec un bord de soutien plus large, plus de contours seront dessinés à l'intérieur de la zone de soutien pour donner une meilleure adhérence.
 
-![2mm width](../../../articles/images/support_brim_2mm.png)
-![4mm width](../../../articles/images/support_brim_4mm.png)
+![2mm de largeur](../../../articles/images/support_brim_2mm.png)
+![4mm de largeur](../../../articles/images/support_brim_4mm.png)
 
-A wider brim will increase the adhesion of the support to the build plate and reduce warping of support. As a result, the support will stand more sturdily, which improves reliability of the print.
+Un bord plus large augmentera l'adhérence du support à la plaque de construction et réduira le gauchissement du support. Par conséquent, le support sera plus solide, ce qui améliorera la fiabilité de l'impression.
