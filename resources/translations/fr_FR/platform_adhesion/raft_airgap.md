@@ -1,5 +1,5 @@
-To allow the raft to be broken off from the actual print, a gap is kept between the model and the raft. This makes the printer put the object down lightly on top of the raft.
+Pour permettre au radeau de se détacher de l'empreinte réelle, un espace est maintenu entre le modèle et le radeau. L'imprimeur pose alors l'objet légèrement sur le radeau.
 
-![Dimensions related to the raft](../../../articles/images/raft_dimensions.svg)
+![Dimensions relatives au radeau](../../../articles/images/raft_dimensions.svg)
 
-Increasing the gap allows you to remove the raft more easily, but will increase the likelyhood for the raft to let go during printing as well, which ruins your print. If you're printing the raft with a different model than the model on top of the raft, it's advisable to keep this distance fairly low, or the print has a high chance of failure.
+Augmenter l'écart vous permet d'enlever le radeau plus facilement, mais augmentera aussi la probabilité que le radeau lâche pendant l'impression, ce qui ruinera votre impression. Si vous imprimez le radeau avec un modèle différent de celui qui se trouve sur le dessus du radeau, il est conseillé de maintenir cette distance assez faible, sinon l'impression risque fort de tomber en panne.
