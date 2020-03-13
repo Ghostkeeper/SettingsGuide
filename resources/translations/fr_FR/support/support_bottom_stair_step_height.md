@@ -1,11 +1,11 @@
-If [Support Placement](support_type.md) is set to "Everywhere", the support is allowed to rest on the model. It won't follow the contours of the model exactly though. Instead, the bottom side of the support is given a stair stepping pattern. This way, the support only makes a connection to the model in a few locations.
+Si [Support Placement](support_type.md) est réglé sur "Partout", le support est autorisé à reposer sur le modèle. Il ne suivra cependant pas exactement les contours du modèle. Au lieu de cela, le côté inférieur du support est doté d'un modèle en escalier. De cette façon, le support n'établit un lien avec le modèle qu'à quelques endroits.
 
-This setting determines the height of these steps.
+Ce réglage détermine la hauteur de ces marches.
 
-![Stair steps forming at the bottom of support](../../../articles/images/support_bottom_stair_step_height.png)
+! [Marches d'escalier se formant au bas du support](../../../articles/images/support_bottom_stair_step_height.png)
 
-The stair step height is counted by the distance from the surface of the model. This means that if you have a vertical distance set in the [Support Bottom Distance](support_bottom_distance.md) setting, this gets subtracted from the height and the connection between the model and the support will be greater. Similarly, the [Support Floor](support_bottom_enable.md) also causes the effect of the stair steps to be reduced.
+La hauteur des marches de l'escalier est comptée par la distance à la surface du modèle. Cela signifie que si vous avez défini une distance verticale dans le paramètre [Support Bottom Distance](support_bottom_distance.md), celle-ci est soustraite de la hauteur et la connexion entre le modèle et le support sera plus grande. De même, le paramètre [Support Floor](support_bottom_enable.md) permet également de réduire l'effet des marches d'escalier.
 
-The [Support Stair Step Maximum Width](support_bottom_stair_step_width.md) setting limits the width of the steps. If the model's surface is so shallow that a small step height would incur a huge step width, the support will follow the surface of the model for the rest of the step's height.
+Le paramètre [Support Stair Step Maximum Width](support_bottom_stair_step_width.md) limite la largeur des marches. Si la surface du modèle est si peu profonde qu'une petite hauteur de marche entraînerait une grande largeur de marche, le support suivra la surface du modèle pour le reste de la hauteur de marche.
 
-Reducing this setting will cause the bottom of support to be smoother. This increases adhesion between the support and the model, making it harder to remove the support but also making the support more stable.
+En réduisant ce paramètre, le bas du support sera plus lisse. Cela augmente l'adhérence entre le support et le modèle, ce qui rend le retrait du support plus difficile mais aussi le support plus stable.
