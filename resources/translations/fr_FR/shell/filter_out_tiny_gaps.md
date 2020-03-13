@@ -1,3 +1,3 @@
-Filling gaps between walls introduces extra travel moves. If the gaps are extremely small, the material will typically not get enough time to flow out the nozzle very well. If this setting is enabled, the printer will not bother to fill some of the smallest gaps.
+Le remplissage des espaces entre les murs introduit des déplacements supplémentaires. Si les espaces sont extrêmement petits, le matériau n'aura généralement pas assez de temps pour s'écouler très bien de la buse. Si ce paramètre est activé, l'imprimante ne prendra pas la peine de remplir certains des plus petits espaces.
 
-Gaps smaller than 2 square outer wall line widths count as "tiny" gaps. For instance, if your [Outer Wall Line Width](../resolution/wall_line_width_0.md) setting is set to 0.4mm, gaps with an area of 0.4mm * 0.4mm * 2 = 0.32mm^2 will no longer get filled.
+Les espaces inférieurs à deux lignes carrées de largeur de paroi extérieure comptent comme des espaces "minuscules". Par exemple, si votre paramètre [Outer Wall Line Width](../resolution/wall_line_width_0.md) est réglé sur 0,4 mm, les espaces ayant une surface de 0,4 mm * 0,4 mm * 2 = 0,32 mm^2 ne seront plus remplis.
