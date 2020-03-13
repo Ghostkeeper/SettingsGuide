@@ -1,8 +1,8 @@
-The support interface is normally oriented to be as perpendicular as possible to the model and the support body that surrounds it. If the orientation of the top/bottom lines or the support lines has been customised, it is a good idea to customise the orientation of the support interface lines as well. This setting allows you to customise the orientation of the support interface lines.
+L'interface de support est normalement orientée de manière à être aussi perpendiculaire que possible au modèle et au corps de support qui l'entoure. Si l'orientation des lignes supérieures/inférieures ou des lignes de support a été personnalisée, il est conseillé de personnaliser également l'orientation des lignes de l'interface de support. Ce paramètre vous permet de personnaliser l'orientation des lignes de l'interface de support.
 
-![Angled at 0° and 90°](../../../articles/images/support_interface_angles_0.png)
-![Angled at 45° and 135°](../../../articles/images/support_interface_angles_45.png)
+![Angles à 0° et 90°](../../../articles/images/support_interface_angles_0.png)
+![Angles à 45° et 135°](../../../articles/images/support_interface_angles_45.png)
 
-Multiple angles can be filled in for this setting, separated by commas. Cura will alternate these angles across the layers.
+Plusieurs angles peuvent être remplis pour ce paramètre, séparés par des virgules. Cura fera alterner ces angles entre les couches.
 
-The support interface lines will ideally be oriented to be perpendicular to the lines that they rest on as well as to the lines that rest on them. Orienting them perpendicularly reduces the distance that these lines have to bridge and thus reduces sagging and improves the quality of overhangs. This is especially important when working with support that isn't completely dense.
+Les lignes de l'interface de support seront idéalement orientées pour être perpendiculaires aux lignes sur lesquelles elles reposent ainsi qu'aux lignes qui reposent sur elles. En les orientant perpendiculairement, on réduit la distance que ces lignes doivent franchir et on réduit ainsi l'affaissement et on améliore la qualité des surplombs. Ceci est particulièrement important lorsque l'on travaille avec un support qui n'est pas complètement dense.
