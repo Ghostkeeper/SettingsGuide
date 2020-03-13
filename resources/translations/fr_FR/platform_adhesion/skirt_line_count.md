@@ -1,5 +1,5 @@
-This setting configures the number of contours to draw around the print, for the skirt.
+Ce paramètre configure le nombre de contours à dessiner autour de l'impression, pour la jupe.
 
-One of the purposes of the skirt is to prime the nozzle, to get the material flowing properly. With very small models, a single line is not enough, so you can configure the skin to draw multiple lines.
+L'un des buts de la jupe est d'amorcer la buse, pour que le matériau s'écoule correctement. Pour les très petits modèles, une seule ligne n'est pas suffisante, vous pouvez donc configurer la peau pour qu'elle dessine plusieurs lignes.
 
-Using the [Skirt/Brim Minimum Length](skirt_brim_minimal_length.md) setting is more reliable than using this setting to ensure a minimum amount of primed material. This setting is only somewhat easier to understand.
+L'utilisation du paramètre [Skirt/Brim Minimum Length](skirt_brim_minimal_length.md) est plus fiable que l'utilisation de ce paramètre pour garantir une quantité minimale de matériau amorcé. Ce paramètre est seulement un peu plus facile à comprendre.
