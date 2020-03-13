@@ -1,5 +1,5 @@
-The width of the lines with which the support is drawn can be different from the line width of the rest of the print.
+La largeur des lignes avec lesquelles le support est dessiné peut être différente de la largeur des lignes du reste de l'impression.
 
-![The lines of support are wider than the rest of the lines](../../../articles/images/support_line_width.png)
+![Les lignes du support sont plus larges que le reste des lignes](../../../articles/images/support_line_width.png)
 
-The support generally doesn't need to be printed accurately, so it can be printed with a greater line width to save some time, without compromising the strength of the support. However, to achieve the same density for the support, the lines will be spaced further apart. This reduces the quality of the overhanging surfaces of your print.
+Le support n'a généralement pas besoin d'être imprimé avec précision, il peut donc être imprimé avec une plus grande largeur de ligne pour gagner du temps, sans compromettre la solidité du support. Toutefois, pour obtenir la même densité pour le support, les lignes seront plus espacées. Cela réduit la qualité des surfaces en surplomb de votre impression.
