@@ -1,10 +1,10 @@
-This setting allows you to choose what support can be placed on top of.
+Ce paramètre vous permet de choisir le support sur lequel vous souhaitez placer votre enfant.
 
-![Support is generated for all overhanging surfaces](../../../articles/images/support_type_everywhere.png)
-![Support is only generated where it can rest on the build plate](../../../articles/images/support_type_touching_buildplate.png)
+![Le support est généré pour toutes les surfaces en surplomb](../../../articles/images/support_type_everywhere.png)
+![Le support n'est généré que là où il peut reposer sur la plaque de construction](../../../articles/images/support_type_touching_buildplate.png)
 
-Placing support everywhere is more reliable for the support. All overhangs that would sag are supported properly. However, the support may rest on top of the model as well, leaving a scar where it touches. This reduces the visual quality and the smoothness of the model's surface after the support is removed.
+Le fait de placer des aides partout est plus fiable pour le soutien. Tous les surplombs qui s'affaisseraient sont correctement soutenus. Cependant, le support peut également reposer sur le modèle, laissant une cicatrice à l'endroit où il touche. Cela réduit la qualité visuelle et la douceur de la surface du modèle après avoir retiré le support.
 
-Instead, placing support only if it touches the build plate prevents support from resting on the model. This may leave some parts of your model unsupported, though.
+Au contraire, le fait de ne placer le support que s'il touche la plaque de construction empêche le support de reposer sur le modèle. Certaines parties de votre modèle peuvent cependant ne pas être soutenues.
 
-*As a trick when using support on the build plate only, try [enabling conical support](../experimental/support_conical_enabled.md) and giving the [Conical Support Angle](../experimental/support_conical_angle.md) a negative value. This allows the support to grow around the model and still support most of the mesh without resting on the model. Alternatively, try tree support.*
+*Comme astuce pour utiliser le support uniquement sur la plaque de construction, essayez [activation du support conique](../expérimental/support_conique_activé.md) et donnez une valeur négative à [Angle de support conique](../expérimental/support_conique_angle.md). Cela permet au support de se développer autour du modèle tout en supportant la majeure partie du maillage sans reposer sur le modèle. Sinon, essayez le support de l'arbre.*
