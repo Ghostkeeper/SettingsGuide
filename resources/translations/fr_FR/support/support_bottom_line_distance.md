@@ -1,3 +1,3 @@
-This setting configures the distance between any two adjacent lines in the support floor pattern, where the support rests on the model.
+Ce paramètre configure la distance entre deux lignes adjacentes dans le modèle de sol de support, où le support repose sur le modèle.
 
-Reducing the distance between lines in the support floor will increase the contact area between the support and the model, causing it to stick better. This can make the support more stable, but also harder to remove. Materials that are specialised for easy removal can benefit greatly from this, such as materials with different shrinkage ratios or soluble materials.
+La réduction de la distance entre les lignes du plancher de support augmentera la surface de contact entre le support et le modèle, ce qui permettra de mieux le coller. Cela peut rendre le support plus stable, mais aussi plus difficile à enlever. Les matériaux spécialisés pour faciliter le retrait peuvent en tirer un grand avantage, comme les matériaux ayant des rapports de retrait différents ou les matériaux solubles.
