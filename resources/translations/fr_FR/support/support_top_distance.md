@@ -1,6 +1,6 @@
-This setting configures how much distance is kept between the top of the support and the overhung surface of the model.
+Ce réglage permet de configurer la distance entre le sommet du support et la surface en surplomb du modèle.
 
-![The top distance between the dark blue model and the light blue support](../../../articles/images/support_top_bottom_distance.svg)
-![A vertical distance is kept between the model and the support](../../../articles/images/support_z_distance.png)
+![La distance supérieure entre le modèle bleu foncé et le support bleu clair](../../../articles/images/support_top_bottom_distance.svg)
+![Une distance verticale est maintenue entre le modèle et le support](../../../articles/images/support_z_distance.png)
 
-The support top distance is the most influential factor in how well the support adheres to the model where the model rests on the support. Increasing the distance makes it easier to remove the support after printing, since it won't adhere well to the printed object. However it will also make the overhang look worse, since it's allowed to sag a few more layers down before resting on the support.
+La distance supérieure du support est le facteur le plus influent dans la façon dont le support adhère au modèle où le modèle repose sur le support. En augmentant la distance, il est plus facile de retirer le support après l'impression, car il n'adhérera pas bien à l'objet imprimé. Cependant, cela ne fera qu'empirer l'aspect du surplomb, puisqu'il peut s'affaisser de quelques couches supplémentaires avant de reposer sur le support.
