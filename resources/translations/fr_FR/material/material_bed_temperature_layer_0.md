@@ -1,5 +1,5 @@
-This setting causes the build plate to be heated to a different temperature while the first layer is being printed.
+Ce réglage fait que la plaque de montage est chauffée à une température différente pendant l'impression de la première couche.
 
-The build plate allows the material to cool down faster because the heat from the molten material can transfer faster to the build plate than to the insulating air. Having the build plate heated slightly hotter while the first layer is being printed keeps the material away from the freezing point a bit longer, so that it doesn't get a temperature shock which causes the layer to shrink and warp.
+La plaque de montage permet au matériau de se refroidir plus rapidement car la chaleur du matériau fondu peut être transférée plus rapidement à la plaque de montage qu'à l'air isolant. Le fait de chauffer légèrement la plaque de montage pendant l'impression de la première couche permet d'éloigner le matériau du point de congélation un peu plus longtemps, de sorte qu'il n'y a pas de choc thermique entraînant le rétrécissement et le gauchissement de la couche.
 
-*After the first layer is completed, the bed temperature will be set to the ordinary bed temperature, but it will take a while for the bed to reach that temperature.*
+*Une fois la première couche terminée, la température du lit sera réglée à la température ordinaire du lit, mais il faudra un certain temps pour que le lit atteigne cette température.*
