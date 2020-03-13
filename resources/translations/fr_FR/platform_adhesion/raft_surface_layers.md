@@ -1,7 +1,7 @@
-This is the number of layers in the top portion of the raft. There will always be one base layer and one middle layer, but there may be any number of top layers. These top layers are normally very dense, as to produce a smooth surface to print the model on.
+C'est le nombre de couches dans la partie supérieure du radeau. Il y aura toujours une couche de base et une couche intermédiaire, mais il peut y avoir un nombre quelconque de couches supérieures. Ces couches supérieures sont normalement très denses, afin de produire une surface lisse sur laquelle on peut imprimer le modèle.
 
-![Dimensions related to the raft](../../../articles/images/raft_dimensions.svg)
+![Dimensions relatives au radeau](../../../articles/images/raft_dimensions.svg)
 
-More layers makes for a smoother surface to print the model on, because the sparsely filled base and middle layers need to be bridged. A smoother surface makes the bottom side of your print look better and makes the adhesion between the raft and the model stronger.
+Un plus grand nombre de couches permet d'obtenir une surface plus lisse pour l'impression du modèle, car les couches de base et intermédiaire, peu remplies, doivent être pontées. Une surface plus lisse améliore l'aspect de la face inférieure de votre impression et renforce l'adhérence entre le radeau et le modèle.
 
-However, more layers also take considerably more time to print.
+Toutefois, l'impression d'un plus grand nombre de couches prend également beaucoup plus de temps.
