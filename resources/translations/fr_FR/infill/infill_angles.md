@@ -1,14 +1,14 @@
-Infill lines are usually directed at a 45 degree angle as much as possible. At this angle, both the X and Y motor work together to obtain maximum acceleration of the print head, when using a printer with the common Cartesian gantry mechanism.
+Les lignes de remplissage sont généralement orientées à un angle de 45 degrés autant que possible. À cet angle, les moteurs X et Y travaillent ensemble pour obtenir une accélération maximale de la tête d'impression, lorsque l'on utilise une imprimante avec le mécanisme commun de portique cartésien.
 
-With this setting, you can adjust this angle. You can specialise it to create greater strength for your specific model, or achieve greater acceleration for your specific gantry system (such as for delta printers).
+Ce réglage permet d'ajuster cet angle. Vous pouvez le spécialiser pour créer une plus grande force pour votre modèle spécifique, ou obtenir une plus grande accélération pour votre système de portique spécifique (comme pour les imprimantes delta).
 
 ![Lines infill with default angles of 45 and 135 degrees](../../../articles/images/infill_angles_45_135.png)
-![Lines infill with customised angles of 0 and 30 degrees](../../../articles/images/infill_angles_0_30.png)
+![Remplissage des lignes avec des angles personnalisés de 0 et 30 degrés](../../../articles/images/infill_angles_0_30.png)
 
-The value of this setting needs to be a comma-separated list of angles with brackets around it. An angle of 0 degrees will result in a line parallel with the Y axis. The list of angles will be alternated over the layers.
-* The final print will be strongest in the directions of the infill lines. If you need the print to carry a specific force in a horizontal direction, it is useful to orient the infill lines around that direction.
-* Leave the setting an empty list to use the default.
-* The default depends on the infill pattern:
-  * For Cross and Cross 3D infill patterns, the default is [22]. This orients as many lines as possible close to the diagonals.
-  * For Lines and Zigzag infill patterns, the default is [45,135]. This causes the orientation to alternate layer by layer between the two diagonals.
-  * All other patterns use a default of [45]. This orients as many lines as possible close to the diagonals.
+La valeur de ce paramètre doit être une liste d'angles séparés par des virgules et entourés de crochets. Un angle de 0 degré donnera une ligne parallèle à l'axe Y. La liste des angles sera alternée sur les couches.
+* L'impression finale sera la plus forte dans les directions des lignes de remplissage. Si vous avez besoin que l'impression porte une force spécifique dans une direction horizontale, il est utile d'orienter les lignes de remplissage autour de cette direction.
+* Laisser la configuration une liste vide pour utiliser la valeur par défaut.
+* La valeur par défaut dépend du modèle de remplissage :
+  * Pour les motifs de remplissage en croix et en 3D, la valeur par défaut est [22]. Cela permet d'orienter autant de lignes que possible à proximité des diagonales.
+  * Pour les modèles de remplissage en lignes et en zigzag, la valeur par défaut est [45,135]. Cela fait alterner l'orientation couche par couche entre les deux diagonales.
+  * Tous les autres motifs utilisent une valeur par défaut de [45]. Cela permet d'orienter autant de lignes que possible à proximité des diagonales.
