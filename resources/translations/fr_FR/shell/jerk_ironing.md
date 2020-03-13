@@ -1,3 +1,3 @@
-This setting adjusts the jerk only during the parts where the printer is ironing.
+Ce réglage permet de régler l'instabilité uniquement pendant les périodes où l'imprimante repasse.
 
-Similar to the [Top/Bottom Jerk](../speed/jerk_topbottom.md) setting, you can reduce the jerk for ironing in order to achieve a better top surface quality. If the jerk is too high, vibrations in the printer's frame may cause the build plate to move up and down (depending on the printer's design) which causes ringing.
+Comme pour le réglage [Top/Bottom Jerk](../speed/jerk_topbottom.md), vous pouvez réduire la secousse pour le repassage afin d'obtenir une meilleure qualité de surface. Si la secousse est trop importante, les vibrations dans le châssis de l'imprimante peuvent faire bouger la plaque de montage de haut en bas (selon la conception de l'imprimante), ce qui provoque des sonneries.
