@@ -1,5 +1,5 @@
-When enabled, this causes Cura to output a command for the printer to prime, just before the extruder is first used. The printer will prime by creating a small blob of material on the build plate.
+Lorsqu'elle est activée, cette fonction permet à Cura d'envoyer une commande à l'imprimante pour l'amorçage, juste avant que l'extrudeuse ne soit utilisée pour la première fois. L'imprimante s'amorce en créant une petite goutte de matériau sur la plaque de montage.
 
-Priming is meant to get the material to flow properly. If the prime blob is not enabled, the printer will prime during the skirt or brim instead. That's the major use case for the skirt in the first place, but for a brim this will reduce the adhesion strength of the brim slightly.
+L'amorçage a pour but de faire en sorte que le matériau s'écoule correctement. Si la goutte d'amorçage n'est pas activée, l'imprimante amorcera plutôt pendant la jupe ou le bord. C'est le principal cas d'utilisation de la jupe en premier lieu, mais pour un bord, cela réduira légèrement la force d'adhérence du bord.
 
-The effect of this setting on the g-code is that Cura will put the M280 command in a certain location. **This currently only works on Ultimaker printers since the Ultimaker 3** since they are the only ones that implement the M280 command. For other printers the setting will not be visible.
+L'effet de ce réglage sur le g-code est que Cura placera la commande M280 à un certain endroit. **Cela ne fonctionne actuellement que sur les imprimantes Ultimaker depuis l'Ultimaker 3** car elles sont les seules à mettre en œuvre la commande M280. Pour les autres imprimantes, le paramètre ne sera pas visible.
