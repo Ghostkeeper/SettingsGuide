@@ -1,9 +1,9 @@
-The density of the pattern that the first layer of support is printed with can be adjusted separately from the density of the rest of the support. This setting configures the distance between two adjacent lines where the support rests on the build plate.
+La densité du motif imprimé sur la première couche du support peut être réglée séparément de la densité du reste du support. Ce réglage permet de configurer la distance entre deux lignes adjacentes où le support repose sur la plaque de construction.
 
-![The pattern of the first layer is twice as dense as the rest of the support](../../../articles/images/support_initial_layer_line_distance.png)
+![Le motif de la première couche est deux fois plus dense que le reste du support](../../../articles/images/support_initial_layer_line_distance.png)
 
-This setting is useful to improve the adhesion between support and the build plate. Making the support pattern denser in the first layer will increase the contact area between the support and the build plate, making it stick better. The subsequent layers can then be placed on top of a material that they stick better to.
+Ce réglage est utile pour améliorer l'adhérence entre le support et la plaque de construction. En rendant le motif du support plus dense dans la première couche, on augmente la surface de contact entre le support et la plaque de construction, ce qui améliore l'adhérence. Les couches suivantes peuvent ensuite être placées sur un matériau auquel elles adhèrent mieux.
 
-Since this setting only affects the first layer, so it doesn't significantly affect the strength of the support nor the time and material cost. It also doesn't affect the quality of overhangs. To adjust the density of support near the overhangs, look to the [Support Roof Line Distance](support_roof_line_distance.md) setting.
+Comme ce réglage n'affecte que la première couche, il n'a pas d'incidence significative sur la résistance du support, ni sur le temps et le coût des matériaux. Il n'affecte pas non plus la qualité des surplombs. Pour ajuster la densité du support à proximité des surplombs, consultez le paramètre [Support Roof Line Distance](support_roof_line_distance.md).
 
-It is a good idea to make this setting a multiple of the line distance of the main body of support. This way, the lines of support will match up with the lines on the first layer, allowing them to rest on the first layer instead of floating in air.
+Il est conseillé de régler ce paramètre sur un multiple de la distance entre les lignes du corps principal du support. De cette façon, les lignes de support correspondront aux lignes de la première couche, ce qui leur permettra de reposer sur la première couche au lieu de flotter dans l'air.
