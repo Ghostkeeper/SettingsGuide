@@ -1,7 +1,7 @@
-If your printer has multiple extruders, the bottom side of the support, where the support rests on the model, can be printed with a different extruder than the roof of the support, where the model rests on the support. This setting allows you to choose which extruder is used for the support floor.
+Si votre imprimante possède plusieurs extrudeuses, le côté inférieur du support, où le support repose sur le modèle, peut être imprimé avec une extrudeuse différente de celle du toit du support, où le modèle repose sur le support. Ce paramètre vous permet de choisir l'extrudeuse utilisée pour le plancher du support.
 
-![The support floor is printed in orange, but the support roof in white](../../../articles/images/support_bottom_extruder_nr.png)
+![Le plancher de support est imprimé en orange, mais le toit du support en blanc](../../../articles/images/support_bottom_extruder_nr.png)
 
-Some materials provide better overhang properties than other materials when used for support. For instance they might be able to print more closely to the surface because they don't chemically bond with the surface, or they are soluble in water. However such materials are often expensive and take longer to print. This setting allows you to print the support bottom with a different extruder. This can save some of the expensive or slow-printing material.
+Certains matériaux présentent de meilleures propriétés de surplomb que d'autres lorsqu'ils sont utilisés comme support. Par exemple, ils peuvent être capables de s'imprimer plus près de la surface parce qu'ils ne se lient pas chimiquement à la surface, ou parce qu'ils sont solubles dans l'eau. Toutefois, ces matériaux sont souvent coûteux et prennent plus de temps à imprimer. Ce paramètre vous permet d'imprimer le fond du support avec une autre extrudeuse. Cela peut permettre d'économiser une partie des matériaux coûteux ou lents à imprimer.
 
-The support floor is less important than the support roof for the quality of overhangs. If an expensive material is to be used sparingly, the support floor is a good candidate to print with the cheaper material.
+Le fond de soutien est moins important que le toit de soutien pour la qualité des débords. Si un matériau coûteux doit être utilisé avec parcimonie, le plancher de support est un bon candidat pour imprimer avec le matériau le moins cher.
