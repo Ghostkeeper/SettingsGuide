@@ -1,3 +1,3 @@
-This setting controls how fast the nozzle accelerates into different directions while printing the support. The acceleration during the support can be set to a different rate than the rest of the print.
+Ce réglage contrôle la vitesse d'accélération de la buse dans différentes directions lors de l'impression du support. L'accélération pendant le support peut être réglée à une vitesse différente de celle du reste de l'impression.
 
-Increasing the acceleration rate causes the printer to print the support faster in total, but also less carefully. This will reduce the printing time, but increases the chance for the printer to knock over the support as well and will make the support structure weaker. Typically the support is printed at raised acceleration compared to the rest of the print.
+L'augmentation de la vitesse d'accélération fait que l'imprimante imprime le support plus rapidement au total, mais aussi moins soigneusement. Cela réduit le temps d'impression, mais augmente également le risque que l'imprimante renverse le support et affaiblit la structure du support. En général, le support est imprimé avec une accélération plus forte que le reste de l'impression.
