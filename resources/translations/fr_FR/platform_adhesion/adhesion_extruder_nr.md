@@ -1,4 +1,4 @@
-If you are printing extra build plate adhesion structures, such as a brim or raft, this setting determines with which extruder those structures are printed.
+Si vous imprimez des structures d'adhérence de plaques de construction supplémentaire, comme un bord ou un radeau, ce réglage détermine avec quelle extrudeuse ces structures sont imprimées.
 
-* When printing with a material that doesn't stick well to your build plate, it could be useful to use a raft printed with a material that does stick well.
-* If you are using only one extruder for your print and it's not the first extruder, this setting will not automatically adjust to using the same extruder as your model. Your print will then still use multiple extruders.
+* Si vous imprimez avec un matériau qui n'adhère pas bien à votre plaque de montage, il peut être utile d'utiliser un radeau imprimé avec un matériau qui adhère bien.
+* Si vous utilisez une seule extrudeuse pour votre impression et que ce n'est pas la première, ce paramètre ne s'adaptera pas automatiquement à l'utilisation de la même extrudeuse que votre modèle. Votre impression utilisera alors toujours plusieurs extrudeuses.
