@@ -1,5 +1,5 @@
-This setting adjusts the vertical thickness of the lowest layer of the raft.
+Ce réglage permet d'ajuster l'épaisseur verticale de la couche la plus basse du radeau.
 
-![Dimensions related to the raft](../../../articles/images/raft_dimensions.svg)
+![Dimensions relatives au radeau](../../../articles/images/raft_dimensions.svg)
 
-Similar to the [Initial Layer Height](../resolution/layer_height_0.md) setting, increasing the height of the initial layer of the raft causes the nozzle to extrude with more force. This improves adhesion between the raft and the build plate. Additionally, the extra thickness can catch any variability in the height of the build plate, if your build plate is not exactly level.
+Comme pour le réglage [Hauteur de la couche initiale](../resolution/layer_height_0.md), l'augmentation de la hauteur de la couche initiale du radeau provoque l'extrusion de la buse avec plus de force. Cela améliore l'adhérence entre le radeau et la plaque de construction. En outre, l'épaisseur supplémentaire peut compenser toute variation de la hauteur de la plaque de construction, si celle-ci n'est pas exactement au même niveau.
