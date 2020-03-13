@@ -1,15 +1,15 @@
-Ironing covers the top surface with a path pattern. This setting determines which pattern is used to iron the top surface.
+Le repassage recouvre la surface supérieure avec un motif de cheminement. Ce réglage détermine le motif utilisé pour le repassage de la surface supérieure.
 
-The goal of the pattern is to create a smooth, continuous surface. If there is an interruption in the pattern, this will create a visible border on the top surface. There are two patterns available.
+L'objectif du motif est de créer une surface lisse et continue. S'il y a une interruption dans le motif, cela créera une bordure visible sur la surface supérieure. Deux motifs sont disponibles.
 
 Zigzag
 ----
-![Zigzag ironing pattern](../../../articles/images/ironing_enabled_enabled.png)
+![Repassage en zigzag](../../../articles/images/ironing_enabled_enabled.png)
 
-This will make the nozzle go back and forth over the surface. It works fine and reliably for most surfaces, but will cause somewhat more borders than necessary.
+La buse fera ainsi des allers-retours sur la surface. Elle fonctionne bien et de manière fiable pour la plupart des surfaces, mais elle causera un peu plus de bordures que nécessaire.
 
-Concentric
+Concentré
 ----
-![Concentric ironing pattern](../../../articles/images/ironing_pattern.png)
+![Modèle de repassage concentrique](../../../articles/images/ironing_pattern.png)
 
-This will cause the nozzle to make circles from inside to outside. This will reduce the borders to a minimum, but if the concentric rings become very small in the centre, the material will degrade due to the nozzle lingering too long around the same spot. This leaves a visible spot on the surface. As a result, this works best for surfaces that are long and thin rather than surfaces that are equally wide as they are tall.
+La buse tournera alors en rond de l'intérieur vers l'extérieur. Les bords seront ainsi réduits au minimum, mais si les anneaux concentriques deviennent très petits au centre, la matière se dégradera parce que la buse restera trop longtemps au même endroit. Cela laisse une tache visible sur la surface. Par conséquent, cette méthode est plus efficace pour les surfaces longues et minces que pour les surfaces aussi larges que hautes.
