@@ -1,5 +1,5 @@
-If your printer has multiple extruders, the layer of support that rests on the build plate can be printed with a different extruder than the rest of the support. This setting allows you to choose which extruder is used for the initial layer of support.
+Si votre imprimante possède plusieurs extrudeuses, la couche de support qui repose sur la plaque de construction peut être imprimée avec une extrudeuse différente du reste du support. Ce paramètre vous permet de choisir l'extrudeuse qui sera utilisée pour la couche de support initiale.
 
-![The initial layer of the support is printed in orange, but the rest in white](../../../articles/images/support_extruder_nr_layer_0.png)
+![La couche initiale du support est imprimée en orange, mais le reste en blanc](../../../articles/images/support_extruder_nr_layer_0.png)
 
-Some materials are better suited for printing support than others. These are often inert materials that don't stick well to other materials, so they can be removed more easily. However this property is not desirable for sticking to the build plate. A material that sticks better to the build plate can then be used for the first layer, to which the normal support material can stick better than to glass or aluminium.
+Certains matériaux sont mieux adaptés que d'autres aux supports d'impression. Il s'agit souvent de matériaux inertes qui n'adhèrent pas bien aux autres matériaux, de sorte qu'ils peuvent être retirés plus facilement. Toutefois, cette propriété n'est pas souhaitable pour coller à la plaque de construction. Un matériau qui adhère mieux à la plaque de montage peut alors être utilisé pour la première couche, à laquelle le matériau de support normal peut mieux adhérer que le verre ou l'aluminium.
