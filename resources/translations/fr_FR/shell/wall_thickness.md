@@ -1,15 +1,15 @@
-This setting determines how thick the wall around the print will be. Ultimately it adjusts the number of inner walls to achieve the desired thickness.
+Ce paramètre détermine l'épaisseur du mur autour de l'impression. Enfin, il permet d'ajuster le nombre de parois intérieures pour obtenir l'épaisseur souhaitée.
 
-![0.8mm thick walls](../../../articles/images/wall_thickness_0.8.png)
-![1.6mm thick walls](../../../articles/images/wall_thickness_1.6.png)
+![Parois de 0,8mm d'épaisseur](../../../articles/images/épaisseur_paroi_0,8.png)
+![murs de 1,6 mm d'épaisseur](../../../articles/images/épaisseur_mur_1.6.png)
 
-The wall thickness must be a multiple of the wall line width. If it is not, it will be rounded to be an exact multiple. Keep in mind though that one of the walls will be an outer wall, and the rest will be inner walls. These walls can have different line widths.
+L'épaisseur de la paroi doit être un multiple de la largeur de la ligne de paroi. Si elle ne l'est pas, elle sera arrondie pour être un multiple exact. Gardez cependant à l'esprit qu'une des parois sera une paroi extérieure, et le reste sera une paroi intérieure. Ces murs peuvent avoir des largeurs de ligne différentes.
 
-The thickness of the walls is a major factor in how strong the print will be. Since the walls are adjacent, they can reinforce each other leading to a stronger part. For larger prints, this can be a much more effective way to get a strong object than adjusting the infill, depending on the shape.
+L'épaisseur des parois est un facteur important dans la force de l'impression. Comme les murs sont adjacents, ils peuvent se renforcer mutuellement, ce qui donne une partie plus solide. Pour des empreintes plus grandes, cela peut être un moyen beaucoup plus efficace d'obtenir un objet fort que d'ajuster le remplissage, en fonction de la forme.
 
-Increasing the wall thickness will:
-* Greatly increase the strength of the print.
-* Reduce the shine-through effect where the infill pattern is visible on the outside.
-* Improve overhangs, because the wall lines are usually more oriented towards their nearest resting point.
-* Make the model watertight more easily.
-* Greatly increase the printing time and material usage of the print.
+Augmenter l'épaisseur de la paroi le fera :
+* Augmenter considérablement la résistance de l'impression.
+* Réduire l'effet de brillance lorsque le motif de remplissage est visible à l'extérieur.
+* Améliorer les surplombs, car les lignes de la paroi sont généralement plus orientées vers leur point de repos le plus proche.
+* Rendre le modèle étanche plus facilement.
+* Augmenter considérablement le temps d'impression et l'utilisation du matériel d'impression.
