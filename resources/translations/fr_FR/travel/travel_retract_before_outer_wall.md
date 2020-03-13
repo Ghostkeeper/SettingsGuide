@@ -1,5 +1,5 @@
-When moving to an outer wall, this setting orders the printer to always retract, in order to reduce blobs on that outer wall.
+Lorsque l'on se déplace vers une paroi extérieure, ce réglage ordonne à l'imprimante de toujours se rétracter, afin de réduire les taches sur cette paroi extérieure.
 
-When the nozzle needs to travel, the material can ooze out of the nozzle a little bit. This oozed material tends to end up on the wall where it enters. For the outer wall this is particularly annoying since the blob will be visible on the outside. This setting is intended to prevent this from happening, because when the material is retracted during the travel move, the material will ooze less.
+Lorsque la buse doit se déplacer, le matériau peut suinter un peu hors de la buse. Ce matériau suintant a tendance à se retrouver sur la paroi où il entre. Pour la paroi extérieure, cela est particulièrement gênant car la goutte est visible de l'extérieur. Ce réglage est destiné à empêcher que cela ne se produise, car lorsque la matière est rétractée pendant le déplacement, elle suinte moins.
 
-On the flip side however, this does require the material to be unretracted when the desired position on the outer wall is reached. During this unretraction the nozzle stands still for a split second, which leads to a blob as well because the material does ooze and the material of the outer wall can melt.
+En revanche, il faut pour cela que le matériau ne soit pas rétracté lorsque la position souhaitée sur la paroi extérieure est atteinte. Pendant ce retrait, la buse reste immobile pendant une fraction de seconde, ce qui entraîne également la formation d'une goutte, car la matière suinte et la matière de la paroi extérieure peut fondre.
