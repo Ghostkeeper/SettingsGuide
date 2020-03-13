@@ -1,10 +1,10 @@
-This setting expands only the initial layer that rests on the build plate (or on the raft). Similarly to [Horizontal Expansion](xy_offset.md), a positive value will make the initial layer wider while a negative value will shrink the initial layer.
+Ce réglage n'étend que la couche initiale qui repose sur la plaque de construction (ou sur le radeau). Comme pour [Expansion horizontale](xy_offset.md), une valeur positive élargira la couche initiale tandis qu'une valeur négative la réduira.
 
-![The original model](../../../articles/images/xy_offset_layer_0_original.png)
-![The intial layer is shrunk](../../../articles/images/xy_offset_layer_0_enabled.png)
+![Le modèle original](../../../articles/images/xy_offset_layer_0_original.png)
+![La couche initiale est rétrécie](../../../articles/images/xy_offset_layer_0_enabled.png)
 
-The initial layer is often printed on a heated build plate, which keeps it in a slightly liquid state in order to improve adhesion to the build plate. The initial layer is normally also much thicker than the rest of the layers. This allows for ample time and material to let the layer sag sideways, creating a phenomenon called "elephant's foot" where the bottom side of the print has a slightly wider lip. This setting can compensate for the elephant's foot by making the initial layer slimmer in advance. Give this setting a small negative value to compensate for the elephant's foot.
+La couche initiale est souvent imprimée sur un plateau chauffée, qui la maintient dans un état légèrement liquide afin d'améliorer l'adhérence au plateau de montage. La couche initiale est normalement beaucoup plus épaisse que le reste des couches. Cela laisse suffisamment de temps et de matière pour que la couche s'affaisse latéralement, créant un phénomène appelé "pied d'éléphant" où la face inférieure de l'impression a une lèvre légèrement plus large. Ce réglage peut compenser le pied d'éléphant en rendant la couche initiale plus mince à l'avance. Donnez à ce réglage une petite valeur négative pour compenser la patte de l'éléphant.
 
-You can also give this setting a large value to create a pseudo-brim around your print that can be combined with other adhesion techniques such as the raft. Keep in mind that this will cause the skin to be expanded as well though, so there will be skin below the walls of the second layer.
+Vous pouvez également donner à ce paramètre une valeur importante pour créer un pseudo-bord autour de votre empreinte qui peut être combiné avec d'autres techniques d'adhésion telles que le radeau. Gardez à l'esprit que cela entraînera également une expansion de la peau, de sorte qu'il y aura de la peau sous les parois de la deuxième couche.
 
-**Combining this setting with a brim is ineffective, since the brim will produce a large border around the initial layer anyway.**
+**La combinaison de ce réglage avec un bord est inefficace, car le bord produira de toute façon une large bordure autour de la couche initiale.**
