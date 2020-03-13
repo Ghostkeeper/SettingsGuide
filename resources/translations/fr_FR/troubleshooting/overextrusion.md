@@ -1,31 +1,31 @@
-Overextrusion is a term used when the printer extrudes too much material in one place. This causes the material to flow over to the sides or upwards, which makes the surface very rough and irregular. It can also cause [stringing](stringing.md) and lots of [blobs](blobs.md).
+La surextrusion est un terme utilisé lorsque l'imprimante extrude trop de matière en un seul endroit. La matière s'écoule alors sur les côtés ou vers le haut, ce qui rend la surface très rugueuse et irrégulière. Cela peut également provoquer des [stringing](stringing.md) et beaucoup de [blobs](blobs.md).
 
-![Massive overextrusion occurred in this print](../../../articles/images/overextrusion.jpg)
+![Une surextrusion massive s'est produite dans cette impression](../../../articles/images/overextrusion.jpg)
 
-Temperature control
+Contrôle de la température
 ----
-The most common cause of overextrusion is printing too hot. If the [printing temperature](../material/material_print_temperature.md) is set too high, then the material will have a lower viscosity, making it flow out the nozzle without control. Typically the result is overextrusion in some areas like the outer walls, but underextrusion in others like the infill.
+La cause la plus fréquente de la surextrusion est l'impression à trop haute température. Si la [température d'impression](../matière/température_d'impression_matière.md) est réglée trop haut, la matière aura une viscosité plus faible, ce qui la fera sortir de la buse sans contrôle. Il en résulte généralement une surextrusion dans certaines zones comme les parois extérieures, mais une sous-extrusion dans d'autres comme le remplissage.
 
-To remedy this you need to reduce your temperature gradually. Take a careful look at the specifications sheet of the material you're printing with to see which temperature range is acceptable and reduce your printing temperature towards the lower end of that range.
+Pour y remédier, vous devez réduire progressivement votre température. Examinez attentivement la fiche technique du matériau avec lequel vous imprimez pour voir quelle est la plage de température acceptable et réduisez votre température d'impression vers la partie inférieure de cette plage.
 
-Filament diameter
+Diamètre du filament
 ----
-There are several standards for filament diameters. The most common ones are 1.75mm and 2.85mm, but 3.00mm is also still around. Apart from that, not all manufacturers produce their filament with a consistent diameter. If your filament is wider than what Cura expects, you will extrude too much material, since Cura instructs the printer to extrude a certain length of filament which will have too much volume then.
+Il existe plusieurs normes pour le diamètre des filaments. Les plus courants sont 1,75 mm et 2,85 mm, mais 3,00 mm est également toujours possible. En dehors de cela, tous les fabricants ne produisent pas leur filament avec un diamètre constant. Si votre filament est plus large que ce que Cura attend, vous extruderez trop de matière, car Cura donne l'ordre à l'imprimeur d'extruder une certaine longueur de filament qui aura alors un volume trop important.
 
-To fix this, first measure the actual diameter of the filament using calipers. It is best to measure this in several spots, in case it varies, and at various angles around the circumference. Take the average of these measurements. This average can be filled into Cura in the Material Management page, as a property of the material. If the diameter can't be edited because it's a built-in material, you may need to duplicate the material first. It should then allow you to edit the diameter.
+Pour remédier à ce problème, mesurez d'abord le diamètre réel du filament à l'aide d'un pied à coulisse. Il est préférable de le mesurer à plusieurs endroits, au cas où il varierait, et à différents angles autour de la circonférence. Faites la moyenne de ces mesures. Cette moyenne peut être renseignée dans Cura dans la page Gestion du matériel, en tant que propriété du matériel. Si le diamètre ne peut pas être modifié parce qu'il s'agit d'un matériau intégré, vous devrez peut-être d'abord dupliquer le matériau. Cela devrait ensuite vous permettre d'éditer le diamètre.
 
-Extruder calibration
+Calibrage de l'extrudeuse
 ----
-Sometimes the problem lies in the hardware not matching up with the expectations of the firmware. If the extruder motor is a stepper motor (which is common in 3D printers) then the firmware needs to know how many steps of the motor will result in a certain distance to be moved. The firmware has a setting for this, measuring the accuracy of the feeder in steps per millimetre. If this setting is configured wrongly, the feeder may move too fast or too slow. It is best to adjust this in the firmware if you can. However if that is impossible, the [flow rate](../material/material_flow.md) in Cura can be adjusted to compensate. You should also compensate all of the [retraction distances](../travel/retraction_amount.md) and [speeds](../travel/retraction_speed.md) then.
+Parfois, le problème réside dans le fait que le matériel ne correspond pas aux attentes du microprogramme. Si le moteur de l'extrudeuse est un moteur pas à pas (ce qui est courant dans les imprimantes 3D), le microprogramme doit savoir combien de pas du moteur entraîneront le déplacement d'une certaine distance. Le microprogramme a un paramètre pour cela, mesurant la précision de l'alimentation en pas par millimètre. Si ce paramètre est mal configuré, le chargeur peut se déplacer trop rapidement ou trop lentement. Il est préférable d'ajuster ce paramètre dans le microprogramme si vous le pouvez. Cependant, si cela est impossible, le [débit](../material/material_flow.md) dans Cura peut être ajusté pour compenser. Vous devez également compenser toutes les [distances de rétraction](../travel/retraction_amount.md) et les [vitesses](../travel/retraction_speed.md).
 
-Overlapping walls
+Chevauchement des murs
 ----
-Cura would normally just draw the contours of the print with a certain line width. If the walls come close together in certain places of your print, this would lead to overlapping lines. These lines become thick and produce blobs because it may put up to twice as much material as necessary there. Where there is a lot of overlap, the second line will be prevented from extruding, and so the pressure inside the nozzle chamber rises until it is expunged and produces a blob.
+Cura se contente normalement de dessiner les contours de l'impression avec une certaine largeur de trait. Si les murs se rapprochent à certains endroits de l'empreinte, cela entraînera un chevauchement des lignes. Ces lignes deviennent épaisses et produisent des taches car il peut y avoir jusqu'à deux fois plus de matière que nécessaire. Lorsqu'il y a beaucoup de chevauchement, la deuxième ligne ne peut pas s'extruder, et la pression à l'intérieur de la chambre de la buse augmente jusqu'à ce qu'elle soit expulsée et produise un blob.
 
-This can be prevented by enabling the [compensation for overlapping walls](../shell/travel_compensate_overlapping_walls_enabled.md). The extrusion of the second line will be reduced such that it extrudes just as much material as necessary to fill up the remaining space of the wall, which prevents overextrusion.
+Cela peut être évité en activant la [compensation pour les parois qui se chevauchent](../shell/travel_compensate_overlapping_walls_enabled.md). L'extrusion de la deuxième ligne sera réduite de telle sorte qu'elle extrude autant de matériau que nécessaire pour remplir l'espace restant du mur, ce qui empêche la surextrusion.
 
-If the walls are overlapping due to the [Outer Wall Inset](../shell/wall_0_inset.md), you can try reducing that inset to prevent overextrusion. You can also try printing the [outer wall first](../shell/outer_inset_first.md). The excess material will then get pushed towards the inside of the model, where it is invisible.
+Si les murs se chevauchent en raison du [Outer Wall Inset](../shell/wall_0_inset.md), vous pouvez essayer de réduire cet encastrement pour éviter la surextrusion. Vous pouvez également essayer d'imprimer le [mur extérieur d'abord](../shell/outer_inset_first.md). L'excès de matériau sera alors poussé vers l'intérieur du modèle, où il est invisible.
 
-Directly adjusting flow rate
+Réglage direct du débit
 ----
-If it's for the rest unknown what is causing this overextrusion, you can also directly adjust the [flow rate](../material/material_flow.md). Reduce the flow rate until your surface appears smooth again. This can compensate for some unknown factor directly.
+Si vous ne savez pas ce qui cause cette surextrusion, vous pouvez également ajuster directement le [débit](../material/material_flow.md). Réduisez le débit jusqu'à ce que votre surface apparaisse à nouveau lisse. Cela peut compenser directement un facteur inconnu.
