@@ -1,13 +1,15 @@
-Cura writes instructions for the printer to print your object in g-code. These instructions move the print head to certain positions and the engages the feeder. Cura normally records both the coordinates for the print head to move to and the rotation of the feeder as absolute coordinates. If this setting is enabled however, the coordinates for the feeder will be recorded relatively.
+Cura écrit des instructions pour que l'imprimante imprime votre objet en g-code. Ces instructions déplacent la tête d'impression dans certaines positions et l'engage dans le chargeur. Cura enregistre normalement les coordonnées de la tête d'impression et la rotation du chargeur comme coordonnées absolues. Toutefois, si ce paramètre est activé, les coordonnées du chargeur seront enregistrées de manière relative.
 
-If this is disabled (i.e. absolute extrusion) the position of the filament at the start of the print is held as the zero coordinate. The position of the filament will increase throughout the file as more material gets extruded and the filament needs to move further and further from the starting point at the beginning of the print.
+Si ce paramètre est désactivé (c'est-à-dire si l'extrusion est absolue), la position du filament au début de l'impression est conservée comme coordonnée zéro. La position du filament augmentera tout au long du fichier à mesure que de la matière sera extrudée et que le filament devra s'éloigner de plus en plus du point de départ au début de l'impression.
 
-If this is enabled however, each separate line in the g-code will have their extrusion written separately, relative to the position of the previous line. Every line then contains only the amount of material extruded for that particular line.
+Toutefois, si cette fonction est activée, chaque ligne du code g aura son extrusion écrite séparément, par rapport à la position de la ligne précédente. Chaque ligne ne contient alors que la quantité de matière extrudée pour cette ligne particulière.
 
-Relative extrusion makes it easier to edit the g-code after it has been generated. If extra material needs to be extruded somewhere in between (to add or remove line segments or to adjust flow rates) the new extrusion simply needs to be written down in the part that is edited. If absolute extrusion is used, the position of the feeder needs to be reset using `G92` afterwards to make sure all subsequent commands are correct.
+L'extrusion relative facilite l'édition du code g après sa génération. Si de la matière supplémentaire doit être extrudée quelque part entre les deux (pour ajouter ou supprimer des segments de ligne ou pour ajuster les débits), la nouvelle extrusion doit simplement être écrite dans la partie qui est éditée. Si une extrusion absolue est utilisée, la position de l'alimentateur doit être réinitialisée en utilisant "G92" par la suite pour s'assurer que toutes les commandes ultérieures sont correctes.
 
-However if any rounding errors are introduced at any time during the processing of the g-code (in Cura, the firmware or the motion) absolute extrusion will automatically correct for that in the next line. In relative extrusion, this will lead to overextrusion or underextrusion, albeit extremely minor.
+Cependant, si des erreurs d'arrondi sont introduites à un moment quelconque du traitement du code g (dans Cura, le firmware ou le mouvement), l'extrusion absolue le corrigera automatiquement à la ligne suivante. Dans l'extrusion relative, cela entraînera une sur-extrusion ou une sous-extrusion, bien qu'extrêmement mineure.
 
-Not all printer firmware supports relative extrusion.
+Tous les microprogrammes d'imprimante ne prennent pas en charge l'extrusion relative.
 
-**When absolute extrusion is used, Cura will still reset the filament position every 10 metres in order to prevent floating point rounding errors in the firmware.**
+**Lorsque l'extrusion absolue est utilisée, Cura réinitialisera toujours la position du filament tous les 10 mètres afin d'éviter les erreurs d'arrondi en virgule flottante dans le firmware.**
+
+
