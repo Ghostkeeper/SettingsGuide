@@ -1,9 +1,9 @@
-This setting determines which walls are printed first, the outer or the inner walls.
+Ce paramètre détermine quels murs sont imprimés en premier, les murs extérieurs ou les murs intérieurs.
 
-![The inner wall is printed first](../../../articles/images/outer_inset_first_disabled.gif)
-![The outer wall is printed first](../../../articles/images/outer_inset_first_enabled.gif)
+![La paroi intérieure est imprimée en premier](../../../articles/images/outer_inset_first_disabled.gif)
+![La paroi extérieure est imprimée en premier](../../../articles/images/outer_inset_first_enabled.gif)
 
-Enabling this setting has a small effect on quality as well as dimensional accuracy:
-* It will improve dimensional accuracy. Adjacent walls generally push each other a bit, especially if the wall line width is smaller than the nozzle size. The wall that gets printed first will have been solidified and then doesn't get pushed as much. Therefore printing the outer wall first will make your outer wall be in a more accurate location.
-* If the infill is printed before the walls, it will reduce how much the infill shows through on the surface. Otherwise the infill is printed first, then the inner walls which get pushed outwards by the infill, and then the outer wall which gets pushed outwards by the inner walls. As a result, a pattern could be visible on the outside. If the outer wall is printed first, the outer wall can solidify before the inner wall is able to push on it.
-* Printing the outer wall first is generally worse for overhang. The outer wall is further removed from the previous layer than the inner wall. When printing the outer wall first, the outer wall has nothing yet to grab on to. When the inner wall is printed first, the outer wall can sideways attach to the outer wall.
+L'activation de ce paramètre a un faible effet sur la qualité ainsi que sur la précision dimensionnelle :
+* Il améliorera la précision dimensionnelle. Les parois adjacentes se repoussent généralement un peu, surtout si la largeur de la ligne de paroi est inférieure à la taille de la buse. La paroi qui est imprimée en premier aura été solidifiée et ne sera pas poussée autant. Par conséquent, en imprimant d'abord la paroi extérieure, vous obtiendrez un emplacement plus précis de votre paroi extérieure.
+* Si le remplissage est imprimé avant les parois, cela réduira la quantité de remplissage qui transparaît à la surface. Sinon, le remplissage est imprimé en premier, puis les parois intérieures qui sont poussées vers l'extérieur par le remplissage, et enfin la paroi extérieure qui est poussée vers l'extérieur par les parois intérieures. Un motif pourrait donc être visible à l'extérieur. Si la paroi extérieure est imprimée en premier, la paroi extérieure peut se solidifier avant que la paroi intérieure ne puisse la pousser.
+* L'impression de la paroi extérieure en premier est généralement pire pour le surplomb. La paroi extérieure est plus éloignée de la couche précédente que la paroi intérieure. Lorsque la paroi extérieure est imprimée en premier, elle n'a pas encore de prise sur la paroi intérieure. Lorsque la paroi intérieure est imprimée en premier, la paroi extérieure peut s'attacher latéralement à la paroi extérieure.
