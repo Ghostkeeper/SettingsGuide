@@ -1,5 +1,5 @@
-This setting determines the speed at which the nozzle can go through corners while printing the support. This can be configured separately from the rest of the print.
+Ce réglage détermine la vitesse à laquelle la buse peut passer dans les coins pendant l'impression du support. Cette vitesse peut être configurée séparément du reste de l'impression.
 
-For the support, carefully going through corners is not important. The support doesn't need to be pretty. It simply needs to stay standing. The jerk can be set pretty high during the printing of support. Generally this makes supports stronger as well as easier to remove, since the extrusion rate will be more constant.
+Pour le support, il n'est pas important de passer avec précaution dans les coins. Le support n'a pas besoin d'être joli. Il doit simplement rester debout. La secousse peut être réglée assez haut pendant l'impression du support. En général, cela rend les supports plus résistants et plus faciles à enlever, puisque la vitesse d'extrusion sera plus constante.
 
-Increasing the jerk too much increases the chance of a layer shift though. It really tests the limits of the motors.
+Cependant, si l'on augmente trop l'ébranlement, on augmente le risque de déplacement de la couche. Cela teste vraiment les limites des moteurs.
