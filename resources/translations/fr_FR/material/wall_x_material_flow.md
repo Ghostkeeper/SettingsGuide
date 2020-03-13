@@ -1,7 +1,7 @@
-This setting adjusts the flow rate for the inner walls only. The flow rate for the inner walls can be adjusted separately from the flow rate of the outer wall.
+Ce réglage ajuste le débit pour les parois intérieures uniquement. Le débit des parois intérieures peut être réglé séparément du débit de la paroi extérieure.
 
-Adjusting the flow rate during the inner walls is a stop gap method to fix problems with extrusion rate or dimensional accuracy.
+Le réglage du débit des parois intérieures est une méthode d'arrêt de l'écoulement pour résoudre les problèmes de débit d'extrusion ou de précision dimensionnelle.
 
-If there is a problem with extrusion rate only during the inner walls, it is better to look at the [printing speeds](../speed/speed_wall_x.md) and [printing temperature](material_print_temperature.md). Perhaps the material doesn't get enough momentum out the nozzle and a greater print speed could help. Perhaps the [lines are too thin](../resolution/wall_line_width_x.md) to extrude properly. Perhaps the material is too cool or too hot.
+S'il y a un problème de vitesse d'extrusion uniquement au niveau des parois intérieures, il est préférable d'examiner les [vitesses d'impression](../speed/speed_wall_x.md) et la [température d'impression](material_print_temperature.md). Peut-être que le matériau ne reçoit pas assez d'impulsion à la sortie de la buse et qu'une vitesse d'impression plus élevée pourrait aider. Peut-être que les [lignes sont trop fines](../resolution/wall_line_width_x.md) pour être extrudées correctement. Peut-être que le matériau est trop froid ou trop chaud.
 
-If there is a problem with dimensional accuracy, it is better to look at [line widths](../resolution/wall_line_width_x.md), [horizontal expansion](../shell/xy_offset.md) and the [printing order](../shell/outer_inset_first.md).
+En cas de problème de précision dimensionnelle, il est préférable d'examiner les [largeurs de ligne](../resolution/wall_line_width_x.md), [expansion horizontale](../shell/xy_offset.md) et l'[ordre d'impression](../shell/outer_inset_first.md).
