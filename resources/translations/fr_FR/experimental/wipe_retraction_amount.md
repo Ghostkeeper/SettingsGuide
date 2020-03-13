@@ -1,5 +1,5 @@
-This setting configures how far to retract the material while the wiping procedure is going on. This can be configured separately from the [normal retraction amount](../travel/retraction_amount.md).
+Ce paramètre permet de configurer jusqu'à quel point il faut rétracter le matériel pendant la procédure d'essuyage. Il peut être configuré séparément du [montant de rétraction normal](../travel/retraction_amount.md).
 
-The wiping procedure makes the nozzle go all the way to the side of the printer, move back and forth there, and then move all the way back. This is essentially a very long travel move. Since this travel move is longer than the average travel moves throughout the print, you may want to increase the retraction distance during wipes beyond the distance used during ordinary printing.
+La procédure d'essuyage fait que la buse va jusqu'au côté de l'imprimante, se déplace d'avant en arrière, puis se déplace jusqu'à l'arrière. Il s'agit essentiellement d'un déplacement très long. Comme ce déplacement est plus long que le déplacement moyen tout au long de l'impression, vous pouvez augmenter la distance de rétraction pendant l'essuyage au-delà de la distance utilisée lors de l'impression ordinaire.
 
-Retracting the material farther will take more time and wear down the filament faster, but will reduce the amount of material lost due to oozing.
+Rétracter le matériau plus loin prendra plus de temps et usera le filament plus rapidement, mais réduira la quantité de matériau perdu à cause du suintement.
