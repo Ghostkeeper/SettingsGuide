@@ -1,31 +1,31 @@
-Adaptive Layers will adjust the layer thickness of your print locally to optimise printing time and quality based on the model's surface features. The layers will be made thinner where there are shallow slopes, or made thicker where the walls are steep. The purpose of this is to print fast where possible but still print detailed where needed.
+Les couches adaptatives permettent d'ajuster localement l'épaisseur de votre impression afin d'optimiser le temps et la qualité d'impression en fonction des caractéristiques de surface du modèle. Les couches seront rendues plus fines lorsque les pentes sont faibles, ou plus épaisses lorsque les murs sont raides. L'objectif est d'imprimer rapidement lorsque c'est possible, tout en continuant à imprimer de manière détaillée lorsque c'est nécessaire.
 
-![With the "layer thickness" colour scheme, you can see it colour thinner layers blue and thicker layers yellow](../../../articles/images/adaptive_layer_height_enabled.png)
+![Avec le schéma de couleur "épaisseur de la couche", vous pouvez voir qu'il colore les couches plus fines en bleu et les couches plus épaisses en jaune](../../../articles/images/adaptive_layer_height_enabled.png)
 
-The layer height is adjusted such that the horizontal distance between the edges of the layers remains constant. Shallow surfaces cause a big horizontal displacement with a small vertical displacement, so a small vertical displacement is made to keep the horizontal displacement constant. With steep surfaces there is a small horizontal displacement with a large vertical displacement, so a large vertical displacement is made to keep the horizontal displacement constant. As such the topography effect of the layers is kept constant. The maximum distance between two adjacent layers is held at a constant distance of the [Threshold](adaptive_layer_height_threshold.md) setting.
+La hauteur des couches est ajustée de telle sorte que la distance horizontale entre les bords des couches reste constante. Les surfaces peu profondes provoquent un grand déplacement horizontal avec un petit déplacement vertical, donc un petit déplacement vertical est fait pour garder le déplacement horizontal constant. Les surfaces raides provoquent un petit déplacement horizontal avec un grand déplacement vertical, de sorte qu'un grand déplacement vertical est effectué pour maintenir le déplacement horizontal constant. Ainsi, l'effet topographique des couches est maintenu constant. La distance maximale entre deux couches adjacentes est maintenue à une distance constante du paramètre [Threshold](adaptive_layer_height_threshold.md).
 
-If the model has both shallow surfaces and steep surfaces at the same height, the layer thickness is taken to be the smaller of the layer thicknesses. This sometimes makes the layer height unnecessarily small because there is a horizontal surface next to it. This can be seen in the screenshot above as well halfway the height of the silo on the left.
+Si le modèle comporte à la fois des surfaces peu profondes et des surfaces abruptes à la même hauteur, l'épaisseur de la couche est considérée comme étant la plus petite des épaisseurs de couche. Cela rend parfois la hauteur de la couche inutilement petite parce qu'il y a une surface horizontale à côté. On peut le voir sur la capture d'écran ci-dessus ainsi qu'à mi-chemin de la hauteur du silo sur la gauche.
 
-Adaptive Layers is heavily constrained in order to improve printing quality. The layer height is not allowed to deviate more than a specified [Maximum Variation](adaptive_layer_height_variation.md) from the original [Layer Height](../resolution/layer_height.md) setting. Between two adjacent layers the difference in layer height may not be more than a certain [Step Size](adaptive_layer_height_variation_step.md). This causes the layer thickness to gradually transition instead of suddenly cutting it in half from one layer to the next.
+L'utilisation de couches adaptatives est fortement limitée afin d'améliorer la qualité d'impression. La hauteur de la couche ne doit pas s'écarter de plus d'une [Variation maximale](adaptive_layer_height_variation.md) spécifiée par rapport au paramètre original [Layer Height](../resolution/layer_height.md). Entre deux couches adjacentes, la différence de hauteur de couche ne peut pas dépasser une certaine [Taille de pas](adaptive_layer_height_variation_step.md). L'épaisseur de la couche passe ainsi progressivement d'une couche à l'autre au lieu de la couper soudainement en deux.
 
-Adaptive Layers can considerably reduce the printing time without suffering a loss in print quality, or even while improving quality in some cases. The effect of adjusting the layer thickness is immense. In most cases, the printing time will be greatly reduced, due to using thicker layers where the model is vertical. The topography effect is also reduced because the layers are spaced closer together horizontally.
+Les couches adaptatives peuvent réduire considérablement le temps d'impression sans subir de perte de qualité d'impression, voire en améliorant la qualité dans certains cas. L'effet de l'ajustement de l'épaisseur de la couche est immense. Dans la plupart des cas, le temps d'impression sera considérablement réduit, grâce à l'utilisation de couches plus épaisses lorsque le modèle est vertical. L'effet de topographie est également réduit parce que les couches sont plus rapprochées horizontalement.
 
-However this feature can introduce a number of problems as well.
-* With changing the layer height, some other settings typically need to be adjusted as well, such as the nozzle temperature. Adaptive Layers will not automatically adjust those as well. This can make the print sub-optimal for e.g. overhangs that would fare better at a lower printing temperature.
-* If the layer height is changed over the entire layer for a small feature somewhere in a small part of the layer, banding will be visible in the rest of the layer.
-* Vertical distances are unintentionally adjusted with this as well. This may have a negative effect on the print quality. For instance, the [Top/Bottom Thickness](../shell/top_bottom_thickness.md) will typically become lower because Cura will hold the [Top Layers](../shell/top_layers.md) setting as truth, and the layers become thinner. This can cause pillowing. Affected settings that may no longer be correct include:
-  * [Top Thickness](../shell/top_thickness.md)
-  * [Bottom Thickness](../shell/bottom_thickness.md)
-  * [Maximum Skin Angle for Expansion](../infill/max_skin_angle_for_expansion.md)
-  * [Gradual Infill Step Height](../infill/gradual_infill_step_height.md)
-  * [Gradual Support Infill Step Height](../support/gradual_support_infill_step_height.md)
-  * [Infill Layer Thickness](../infill/infill_sparse_thickness.md)
+Cependant, cette caractéristique peut également introduire un certain nombre de problèmes.
+* En changeant la hauteur des couches, il faut généralement régler d'autres paramètres, comme la température de la buse. Les couches adaptatives n'ajustent pas automatiquement ces autres paramètres. Cela peut rendre l'impression sous-optimale, par exemple pour les surplombs qui seraient plus performants à une température d'impression plus basse.
+* Si la hauteur de la couche est modifiée sur l'ensemble de la couche pour un petit élément situé quelque part dans une petite partie de la couche, les bandes seront visibles dans le reste de la couche.
+* Les distances verticales sont également ajustées involontairement dans ce cas. Cela peut avoir un effet négatif sur la qualité de l'impression. Par exemple, l'épaisseur du [Top/Bottom Thickness](../shell/top_bottom_thickness.md) sera généralement plus faible parce que Cura conservera le paramètre [Top Layers](../shell/top_layers.md) comme étant vrai, et les couches deviendront plus fines. Cela peut provoquer un effet d'oreiller. Parmi les paramètres affectés qui peuvent ne plus être corrects, on peut citer
+  * [Épaisseur supérieure](../shell/top_thickness.md)
+  * [Épaisseur du fond](../shell/bottom_thickness.md)
+  * [Angle maximal de la peau pour l'expansion](../infill/max_skin_angle_for_expansion.md)
+  * [Remplissage graduel Hauteur de pas](../infill/gradual_infill_step_height.md)
+  * [Hauteur de pas de remplissage du support graduel](../support/gradual_support_infill_step_height.md)
+  * [Remplir l'épaisseur de la couche](../infill/infill_sparse_thickness.md)
   * [Support Infill Layer Thickness](../support/support_infill_sparse_thickness.md)
   * [Support Z Distance](../support/support_z_distance.md)
-  * [Support Roof Thickness](../support/support_roof_height.md)
-  * [Support Floor Thickness](../support/support_bottom_height.md)
-  * [Support Overhang Angle](../support/support_angle.md)
-  * [Support Stair Step Height](../support/support_bottom_stair_step_height.md)
-  * [Tower Roof Angle](../support/support_tower_roof_angle.md)
-  * [Ooze Shield Angle](../dual/ooze_shield_angle.md)
-  * [Maximum Model Angle](../experimental/conical_overhang_angle.md)
+  * [Soutenir l'épaisseur du toit](../support/support_toof_height.md)
+  * [Épaisseur du plancher de support](../support/support_bottom_height.md)
+  * [Support Angle de surplomb](../support/support_angle.md)
+  * [Hauteur des marches de l'escalier de soutien](../support/support_bottom_stair_step_height.md)
+  * [Angle du toit de la tour](../support/support_tower_roof_angle.md)
+  * [Angle du bouclier anti-humidité](../dual/ooze_shield_angle.md)
+  * [Angle maximum du modèle](../experimental/conical_overhang_angle.md)
