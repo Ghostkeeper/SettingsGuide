@@ -1,5 +1,5 @@
-This setting defines how thick the interface layer is between the support and the model.
+Ce paramètre définit l'épaisseur de la couche d'interface entre le support et le modèle.
 
-A thicker interface reduces the savings that would be made by using a support interface rather than printing all of the support at increased density.
+Une interface plus épaisse réduit les économies qui seraient réalisées en utilisant une interface de support plutôt que d'imprimer tout le support à une densité accrue.
 
-However it increases the effectiveness of the interface as well. As the sparser support infill gets bridged by the lines of the interface, the interface lines sag a bit. By building multiple interface layers, this sagging can be reduced, which makes the surface of the support interface more even. This in turn makes the overhanging surface more even.
+Toutefois, elle augmente également l'efficacité de l'interface. À mesure que le remplissage du support plus clairsemé est ponté par les lignes de l'interface, les lignes de l'interface s'affaissent un peu. En construisant plusieurs couches d'interface, ce fléchissement peut être réduit, ce qui rend la surface de l'interface de support plus régulière. La surface en surplomb est ainsi plus régulière.
