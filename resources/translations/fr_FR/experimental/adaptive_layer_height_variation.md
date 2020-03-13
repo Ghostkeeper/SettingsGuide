@@ -1,9 +1,9 @@
-With this setting, you can limit the range from which the Adaptive Layers is allowed to select a layer thickness. The layer height is not allowed to deviate more than this variation from the normal [Layer Height](../resolution/layer_height.md).
+Avec ce paramètre, vous pouvez limiter la plage dans laquelle les couches adaptatives sont autorisées à sélectionner une épaisseur de couche. La hauteur de la couche ne doit pas s'écarter de plus de cette variation par rapport à la [Hauteur de la couche](../resolution/layer_height.md) normale.
 
-For example, with a normal layer height of 0.15mm and the variation set to 0.1mm, Adaptive Layers may produce layers with a thickness between 0.05mm and 0.25mm.
+Par exemple, avec une hauteur de couche normale de 0,15 mm et une variation fixée à 0,1 mm, les couches adaptatives peuvent produire des couches d'une épaisseur comprise entre 0,05 mm et 0,25 mm.
 
-This setting limits the power of the Adaptive Layers feature. If the range of layer thicknesses is too narrow, the layer thickness will always be very close to the original layer thickness as set by the Layer Height setting. Adaptive Layers will not do much then to save time or improve quality.
+Ce réglage limite la puissance de la fonction "Couches adaptatives". Si la gamme d'épaisseurs de couche est trop étroite, l'épaisseur de la couche sera toujours très proche de l'épaisseur de la couche d'origine telle que définie par le réglage de la hauteur de la couche. Les couches adaptatives ne feront alors pas grand-chose pour gagner du temps ou améliorer la qualité.
 
-If the range is very wide however, the layers may become very thick or very thin. Very thick layers require a lot of flow out of the nozzle, which is not always possible due to the limited nozzle size and melting capacity of the heating track in the print head. Very thin layers are also not always possible due to the viscosity of the material or inaccuracy of the Z axis. So it is good to limit the range to which Adaptive Layers can tune the layer thickness. Otherwise the printer will struggle to reach the desired layer thickness.
+Cependant, si la gamme est très large, les couches peuvent devenir très épaisses ou très fines. Les couches très épaisses nécessitent un débit important à la sortie de la buse, ce qui n'est pas toujours possible en raison de la taille limitée de la buse et de la capacité de fusion de la piste chauffante dans la tête d'impression. Les couches très fines ne sont pas non plus toujours possibles en raison de la viscosité du matériau ou de l'imprécision de l'axe Z. Il est donc bon de limiter la plage sur laquelle les couches adaptatives peuvent régler l'épaisseur de la couche. Sinon, l'imprimante aura du mal à atteindre l'épaisseur de couche souhaitée.
 
-The layer thickness can never go below 0.001mm, even if the range would allow it to.
+L'épaisseur de la couche ne peut jamais descendre en dessous de 0,001 mm, même si la plage le permet.
