@@ -1,5 +1,5 @@
-This setting adjusts the distance between the model and the skirt.
+Ce réglage permet d'ajuster la distance entre le modèle et la jupe.
 
-By keeping enough distance, the skirt won't attach to the model, reducing the elephant's feet effect.
+En gardant une distance suffisante, la jupe ne s'attachera pas au modèle, ce qui réduit l'effet des pattes de l'éléphant.
 
-This is the distance of the closest line of the skirt. If the skirt consists of multiple lines, those will be placed further.
+C'est la distance de la ligne la plus proche de la jupe. Si la jupe est constituée de plusieurs lignes, celles-ci seront placées plus loin.
