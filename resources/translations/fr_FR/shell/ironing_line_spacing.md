@@ -1,7 +1,7 @@
-This setting changes the space between every line of ironing. Ironing lines are normally much closer together than the actual printing lines, which is a major contributor to its effectiveness.
+Ce réglage modifie l'espace entre chaque ligne de repassage. Les lignes de repassage sont normalement beaucoup plus rapprochées que les lignes d'impression proprement dites, ce qui contribue grandement à son efficacité.
 
-![Normal line spacing](../../../articles/images/ironing_enabled_enabled.png)
-![Line spacing increased to 0.3mm](../../../articles/images/ironing_line_spacing.png)
+![Espacement normal entre les lignes](../../../articles/images/ironing_enabled_enabled.png)
+![Espacement des lignes augmenté à 0,3mm](../../../articles/images/ironing_line_spacing.png)
 
-* Increasing the line spacing will reduce printing time.
-* However, reducing the line spacing will improve the top surface quality.
+* L'augmentation de l'interligne permettra de réduire le temps d'impression.
+* Toutefois, la réduction de l'interligne améliorera la qualité de la surface supérieure.
