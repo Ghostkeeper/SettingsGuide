@@ -1,5 +1,5 @@
-The pattern with which the roof of the support is drawn can be configured separately from the rest of the support.
+Le modèle avec lequel le toit du support est dessiné peut être configuré séparément du reste du support.
 
-The support roof is often much denser than the rest of the support. Some patterns don't work all that well at high densities, so it can then be useful to choose a pattern that works better at high densities, such as concentric or zigzag rather than grid or triangles.
+Le toit du support est souvent beaucoup plus dense que le reste du support. Certains motifs ne fonctionnent pas très bien à des densités élevées, il peut donc être utile de choisir un motif qui fonctionne mieux à des densités élevées, comme par exemple concentrique ou en zigzag plutôt qu'en grille ou en triangles.
 
-The support roof is also the part that actually supports the overhang area. You can therefor choose a pattern that optimises the overhang quality, rather than optimising for other properties of support such as solubility or stability.
+Le toit de soutien est également la partie qui soutient réellement la zone en surplomb. Vous pouvez donc choisir un motif qui optimise la qualité du surplomb, plutôt que d'optimiser d'autres propriétés du support telles que la solubilité ou la stabilité.
