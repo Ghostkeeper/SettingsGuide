@@ -1,5 +1,5 @@
-This setting configures the distance between any two adjacent lines in the support roof pattern, where the model rests on the support.
+Ce réglage configure la distance entre deux lignes adjacentes du modèle de toit de soutien, où le modèle repose sur le support.
 
-Reducing the distance between the support roof lines allows you to achieve a nice surface finish at the overhangs, just as if the entire support was printed with a high density, without needing all that much extra time and material. The distance that the model has to bridge will be reduced.
+La réduction de la distance entre les lignes du toit du support permet d'obtenir une belle finition de surface au niveau des débords, comme si l'ensemble du support était imprimé avec une forte densité, sans avoir besoin de beaucoup de temps et de matériel supplémentaires. La distance que le modèle doit franchir sera réduite.
 
-However it will be harder to remove the support from the model after printing, because the contact area is also increased. Reduced line distance is particularly effective with materials that are specialised to be easy to remove from the build material, such as soluble support or materials with great shrinkage ratios.
+Cependant, il sera plus difficile de retirer le support du modèle après l'impression, car la surface de contact est également augmentée. La réduction de la distance entre les lignes est particulièrement efficace avec des matériaux spécialisés pour être faciles à retirer du matériau de construction, comme le support soluble ou les matériaux à fort taux de retrait.
