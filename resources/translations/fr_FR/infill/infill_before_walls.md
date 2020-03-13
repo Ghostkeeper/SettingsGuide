@@ -1,8 +1,8 @@
-This affects the order in which things are printed. With this setting enabled, the infill of a part will be printed before the walls of that part on that layer are printed.
+Cela affecte l'ordre dans lequel les choses sont imprimées. Lorsque ce paramètre est activé, le remplissage d'une pièce sera imprimé avant que les parois de cette pièce sur cette couche ne soient imprimées.
 
-![Setting is disabled, so walls are printed first](../../../articles/images/infill_before_walls_disabled.gif)
-![Setting is enabled, so infill is printed first](../../../articles/images/infill_before_walls_enabled.gif)
+![Le paramètre est désactivé, donc les murs sont imprimés en premier](../../../articles/images/infill_before_walls_disabled.gif)
+![Le paramètre est activé, donc le remplissage est imprimé en premier](../../../articles/images/infill_before_walls_enabled.gif)
 
-This setting is a trade-off between accuracy and strength:
-* If the walls are printed before the infill, the walls could have nothing to attach to, causing them to sag more. However, the walls will have solidified first and won't be pushed away by the infill, which prevents the infill from shining through the walls.
-* If the infill is printed before the walls, the walls will get pushed away where infill is attached to the walls, which makes the walls less accurate and can cause the infill to shine through the surface, creating a pattern visible on the outside. However the infill will hold the walls in place better while they are printed.
+Ce réglage est un compromis entre la précision et la force :
+* Si les murs sont imprimés avant le remplissage, les murs pourraient n'avoir rien à quoi se fixer, ce qui les ferait s'affaisser davantage. Cependant, les murs se seront solidifiés en premier et ne seront pas repoussés par le remblai, ce qui empêche le remblai de briller à travers les murs.
+* Si le remplissage est imprimé avant les murs, les murs seront repoussés à l'endroit où le remplissage est fixé aux murs, ce qui rend les murs moins précis et peut faire briller le remplissage à travers la surface, créant ainsi un motif visible à l'extérieur. Cependant, le remplissage maintiendra mieux les murs en place pendant l'impression.
