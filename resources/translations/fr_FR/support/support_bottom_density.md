@@ -1,3 +1,3 @@
-This setting specifies how dense the support floor will be, where the support rests on the model.
+Ce paramètre précise la densité du plancher de support, l'endroit où le support repose sur le modèle.
 
-Increasing the density of the support floor will increase the contact area between the support and the model, causing it to stick better. This can make the support more stable, but also harder to remove. Materials that are specialised for easy removal can benefit greatly from this, such as materials with different shrinkage ratios or soluble materials.
+L'augmentation de la densité du plancher de support augmentera la surface de contact entre le support et le modèle, ce qui permettra une meilleure adhérence. Cela peut rendre le support plus stable, mais aussi plus difficile à enlever. Les matériaux spécialisés pour faciliter le retrait peuvent en tirer un grand avantage, comme les matériaux ayant des rapports de retrait différents ou les matériaux solubles.
