@@ -1,5 +1,5 @@
-The speed at which the fans in the print head will spin when the layer is printed at minimum layer time.
+La vitesse à laquelle les ventilateurs de la tête d'impression tournent lorsque la couche est imprimée en un temps minimum.
 
-![Which fan speed is used where](../../../articles/images/cool_fan_speed.svg)
+![Quelle vitesse de ventilateur est utilisée où](../../../articles/images/cool_fan_speed.svg)
 
-If printing a layer takes somewhere between the [Regular/Maximum Fan Speed Threshold](cool_min_layer_time_fan_speed_max.md) and the [Minimum Layer Time](cool_min_layer_time.md) settings, then the fan speed will be interpolated between the [Regular Fan Speed](cool_fan_speed_min.md) and the [Maximum Fan Speed](cool_fan_speed_max.md). Once the Minimum Layer Time is reached, the Maximum Fan Speed will also be reached. This way the print will be cooled maximally to cool it down as quickly as possible before the next layer gets put on top.
+Si l'impression d'une couche se situe entre les paramètres [Seuil de vitesse normale/maximale du ventilateur](cool_min_layer_time_fan_speed_max.md) et [Durée minimale de la couche](cool_min_layer_time.md), la vitesse du ventilateur sera interpolée entre la [Vitesse normale du ventilateur](cool_fan_speed_min.md) et la [Vitesse maximale du ventilateur](cool_fan_speed_max.md). Une fois que le temps de couche minimum est atteint, la vitesse maximale du ventilateur sera également atteinte. De cette façon, l'impression sera refroidie au maximum afin de la refroidir le plus rapidement possible avant que la couche suivante ne soit mise sur le dessus.
