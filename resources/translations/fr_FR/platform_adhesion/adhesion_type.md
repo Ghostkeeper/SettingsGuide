@@ -1,21 +1,23 @@
-There are three types of build plate adhesion: skirt, brim and raft. You can also easily disable the adhesion types by setting it to None.
+Il existe trois types d'adhérence des plaques de construction : la jupe, la bordure et le radeau. Vous pouvez aussi facilement désactiver les types d'adhérence en réglant le paramètre sur Aucun.
 
-![Skirt](../../../articles/images/adhesion_type_skirt.png)
-![Brim](../../../articles/images/adhesion_type_brim.png)
-![Raft](../../../articles/images/adhesion_type_raft.png)
+![Jupe](../../../articles/images/adhesion_type_skirt.png)
+![Bordure](../../../articles/images/adhesion_type_brim.png)
+![Radeau](../../../articles/images/adhesion_type_raft.png)
 
-Skirt
+Jupe
 ----
-A skirt is a single line encircling your print. It will not directly contribute anything to build plate adhesion. However if you don't want to use the other adhesion methods, this method still serves two functions.
-* It causes your nozzle to prime before starting the printing of your actual model, to make sure that material is properly flowing.
-* It allows you to see whether or not your build plate is properly levelled.
+Une jupe est une simple ligne qui entoure votre empreinte. Elle ne contribue pas directement à l'adhérence de la plaque. Toutefois, si vous ne souhaitez pas utiliser les autres méthodes d'adhésion, cette méthode a toujours deux fonctions.
+* Elle permet d'amorcer votre buse avant de commencer l'impression de votre modèle réel, afin de s'assurer que le matériau s'écoule correctement.
+* Elle vous permet de voir si votre plaque de construction est correctement nivelée ou non.
 
-Brim
+Bordure
 ----
-A brim is a single layer flat area around the base of your model. Its purpose is to keep the edges of your print down and make the contact area between your print and the build plate bigger.
-* The bigger surface area allows your print to stick better to the build plate. This is useful for pretty much any print larger than a few centimetres.
-* This brim will also keep the edges of your print down. Materials that shrink a lot when cooling down (like ABS) tend to warp a lot while printing. Having a brim with sufficient width can keep the corners in place, preventing this warping.
+Uns bordure est une zone plane à une seule couche autour de la base de votre modèle. Son but est de maintenir les bords de votre impression vers le bas et d'agrandir la zone de contact entre votre impression et la plaque de construction.
+* La plus grande surface permet à votre empreinte de mieux adhérer à la plaque de construction. Cela est utile pour pratiquement toutes les impressions de plus de quelques centimètres.
+* Ce bord permet également de garder les bords de votre empreinte vers le bas. Les matériaux qui rétrécissent beaucoup en refroidissant (comme l'ABS) ont tendance à se déformer beaucoup pendant l'impression. Un bord suffisamment large permet de maintenir les coins en place et d'éviter ce gauchissement.
 
-Raft
+Radeau
 ----
-A raft is a thick plate between the model and the build plate. This raft shields your print from the heat of the build plate. It will also have a lot of surface area to stick to the build plate with. The print gets put on top of this raft, where it may stick much better. Be careful with thin prints though, since it may be hard to remove the raft without damaging the print.
+Un radeau est une plaque épaisse entre le modèle et la plaque de construction. Ce radeau protège votre empreinte de la chaleur de la plaque de construction. Il aura également une grande surface pour adhérer à la plaque de construction. L'empreinte est placée sur le dessus de ce radeau, où elle peut beaucoup mieux adhérer. Attention toutefois aux empreintes fines, car il peut être difficile de retirer le radeau sans endommager l'empreinte.
+
+
