@@ -1,7 +1,7 @@
-This setting configures the acceleration rate of the print head while the base layer of the raft is printed. The acceleration during the base layer of the raft can be configured separately from the middle and top layers.
+Ce paramètre configure le taux d'accélération de la tête d'impression pendant l'impression de la couche de base du radeau. L'accélération pendant la couche de base du radeau peut être configurée séparément des couches intermédiaire et supérieure.
 
-![Where the base layer is located in the raft](../../../articles/images/raft_dimensions_simplified.svg)
+![Où se trouve la couche de base dans le radeau](../../../articles/images/raft_dimensions_simplified.svg)
 
-Since the raft generally consists of long line segments, increasing acceleration normally has very little impact on printing time. Increasing the acceleration will save a bit of time when going through corners at the end of the lines though.
+Comme le radeau est généralement constitué de longs segments de ligne, l'accélération croissante a normalement très peu d'impact sur le temps d'impression. Augmenter l'accélération permet cependant de gagner un peu de temps lors des passages dans les virages en fin de ligne.
 
-Increasing the acceleration rate will cause the printer to vibrate more while printing the base layer of the raft. This slightly increases the risk of pulling the raft off of the build plate.
+Augmenter le taux d'accélération fera vibrer davantage l'imprimante lors de l'impression de la couche de base du radeau. Cela augmente légèrement le risque de tirer le radeau de la plaque de construction.
