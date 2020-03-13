@@ -1,7 +1,7 @@
-The width of every line of infill being drawn. The width of a line can be different from the nozzle size simply by extruding more or less material than needed. If more material is extruded, the plastic will flow towards the sides, making the line thicker. If less material is extruded, the surface tension of the material tends to pull the material towards the centre line of the nozzle's path.
+La largeur de chaque ligne de remplissage qui est tracée. La largeur d'une ligne peut être différente de la taille de la buse simplement en extrudant plus ou moins de matière que nécessaire. Si plus de matière est extrudée, le plastique s'écoulera vers les côtés, ce qui rendra la ligne plus épaisse. Si moins de matière est extrudée, la tension superficielle de la matière tend à tirer la matière vers la ligne centrale de la trajectoire de la buse.
 
-![The infill lines are significantly wider than the rest](../../../articles/images/infill_line_width.png)
+![Les lignes de remplissage sont beaucoup plus larges que le reste](../../../articles/images/infill_line_width.png)
 
-Making the infill lines wider can make your print stronger and reduce printing time as well. However, increasing it too much can cause great extrusion fluctuations. This will cause underextrusion when printing the infill and overextrusion when printing whatever comes after infill, because the flow through the nozzle cannot adjust fast enough.
+En élargissant les lignes de remplissage, vous pouvez rendre votre impression plus solide et réduire le temps d'impression également. Cependant, en l'augmentant trop, vous risquez de provoquer de grandes fluctuations d'extrusion. Cela entraînera une sous-extrusion lors de l'impression du remplissage et une surextrusion lors de l'impression de ce qui vient après le remplissage, car le débit à travers la buse ne peut pas s'ajuster assez rapidement.
 
-**The actual infill lines may come out wider than what this setting says, if you've adjusted the [Infill Layer Thickness](../infill/infill_sparse_thickness.md) setting.**
+**Les lignes de remplissage peuvent être plus larges que ce qui est indiqué dans ce paramètre, si vous avez ajusté le paramètre [Infill Layer Thickness](../infill/infill_sparse_thickness.md).**
