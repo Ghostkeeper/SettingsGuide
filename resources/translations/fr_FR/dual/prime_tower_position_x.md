@@ -1,5 +1,5 @@
-This setting allows you to reposition the prime tower. It indicates the X coordinate of one corner of the prime tower.
+Ce réglage vous permet de repositionner la tour principale. Il indique la coordonnée X d'un coin de la tour principale.
 
-![The X coordinate of the prime tower](../../../articles/images/prime_tower.svg)
+![La coordonnée X de la tour principale] (../../../articles/images/prime_tower.svg)
 
-Note that these coordinates don't indicate the centre of the prime tower, but the corner with the lowest X and Y coordinates.
+Notez que ces coordonnées n'indiquent pas le centre de la tour principale, mais le coin ayant les coordonnées X et Y les plus basses.
