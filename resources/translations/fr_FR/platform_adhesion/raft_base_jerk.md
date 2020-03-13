@@ -1,7 +1,7 @@
-This setting configures the speed at which the nozzle can go through corners while the base layer of the raft is printed. The jerk rate during the base layer of the raft can be configured separately from the middle and top layers.
+Ce réglage configure la vitesse à laquelle la buse peut passer dans les coins pendant que la couche de base du radeau est imprimée. Le taux de secousse pendant la couche de base du radeau peut être configuré séparément des couches intermédiaire et supérieure.
 
-![Where the base layer is located in the raft](../../../articles/images/raft_dimensions_simplified.svg)
+![Où se trouve la couche de base dans le radeau](../../../articles/images/raft_dimensions_simplified.svg)
 
-Since the raft generally consists of long line segments, increasing the jerk rate normally has very little impact on printing time. Increasing the jerk rate will save a bit of time when going through corners at the end of the lines though.
+Comme le radeau est généralement constitué de longs segments de ligne, l'augmentation du taux de secousse a normalement très peu d'impact sur le temps d'impression. Cependant, l'augmentation du taux de saccades permet de gagner un peu de temps lors du passage dans les coins en fin de ligne.
 
-Increasing the jerk rate will cause the printer to vibrate more while printing the base layer of the raft. This slightly increases the risk of pulling the raft off of the build plate.
+Augmenter le taux de secousse fera vibrer davantage l'imprimante pendant l'impression de la couche de base du radeau. Cela augmente légèrement le risque de tirer le radeau de la plaque de construction.
