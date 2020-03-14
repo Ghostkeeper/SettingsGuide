@@ -1,7 +1,7 @@
-While printing the wire frame, the material is expected to sag due to latent heat before it has the time to solidify. This would make the saw-tooth pattern too short. Whereas the horizontal rings are able to bridge due to the continuous horizontal motion, the saw-tooth pattern cannot. This setting compensates for the short stature of the saw-tooth pattern, making the pattern slightly taller so that the next horizontal ring will rest properly on it.
+Lors de l'impression du cadre métallique, on s'attend à ce que le matériau s'affaisse en raison de la chaleur latente avant qu'il ait le temps de se solidifier. Cela rendrait le motif en dents de scie trop court. Alors que les anneaux horizontaux sont capables de se chevaucher grâce au mouvement horizontal continu, le motif en dents de scie ne le peut pas. Ce réglage compense la courte taille du motif en dents de scie, rendant le motif légèrement plus grand pour que l'anneau horizontal suivant repose correctement sur lui.
 
-![How the height of the saw-tooth pattern is compensated for](../../../articles/images/wireframe_fall_down.svg)
+![Comment la hauteur du motif en dents de scie est compensée](../../../articles/images/wireframe_fall_down.svg)
 
-The value of the setting is added to the height of the saw teeth. Hopefully, this compensates for the sag during the printing of those saw teeth. If tuned well, the horizontal ring will be printed resting firmly on top of the saw-tooth pattern, instead of falling down lower than its intended printed height.
+La valeur du réglage est ajoutée à la hauteur des dents de la scie. On espère ainsi compenser l'affaissement lors de l'impression de ces dents de scie. S'il est bien réglé, l'anneau horizontal sera imprimé en reposant fermement sur le dessin des dents de scie, au lieu de tomber plus bas que la hauteur imprimée prévue.
 
-When combined with [Drag Along](wireframe_drag_along.md), the height of the saw-tooth pattern will become the normal [height](wireframe_height.md) plus the value of the Drag Along setting plus the value of this setting.
+Lorsqu'il est combiné avec [Drag Along] (wireframe_drag_along.md), la hauteur du motif en dents de scie devient la [hauteur] (wireframe_height.md) normale plus la valeur du paramètre Drag Along plus la valeur de ce paramètre.
