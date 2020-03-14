@@ -1,3 +1,3 @@
-This setting controls how fast the nozzle accelerates into different directions while printing the support roof. The acceleration during the support roof can be set to a different rate than the support floor.
+Ce réglage contrôle la vitesse d'accélération de la buse dans différentes directions lors de l'impression du toit support. L'accélération pendant le toit de soutien peut être réglée à un taux différent de celui du plancher de soutien.
 
-The support roof is more sensitive to inaccurate printing, because it directly affects the overhang quality. Adjusting the support roof to have a lower acceleration rate than the support bottom can give better overhang quality for a similar printing time.
+Le toit de support est plus sensible à une impression imprécise, car il affecte directement la qualité du surplomb. En réglant le toit de support de manière à ce que l'accélération soit inférieure à celle du fond de support, on peut obtenir une meilleure qualité de porte-à-faux pour un temps d'impression similaire.
