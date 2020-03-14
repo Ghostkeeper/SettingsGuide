@@ -1,7 +1,7 @@
-This setting adjusts the flow rate for the walls only. The flow rate for the walls can be adjusted separately from the flow rate of the rest of the print.
+Ce réglage permet d'ajuster le débit pour les murs uniquement. Le débit pour les murs peut être réglé séparément du débit du reste de l'impression.
 
-Adjusting the flow rate during the walls is a stop gap method to fix problems with extrusion rate or dimensional accuracy.
+Le réglage du débit pendant les parois est une méthode d'arrêt de l'espace pour régler les problèmes de vitesse d'extrusion ou de précision dimensionnelle.
 
-If there is a problem with extrusion rate only during the walls, it is better to look at the [printing speeds](../speed/speed_wall.md) and [temperature](material_print_temperature.md). Perhaps the material doesn't get enough momentum out the nozzle and a greater print speed could help. Perhaps the [lines are too thin](../resolution/wall_line_width.md) to extrude properly. Perhaps the material is too cool or too hot.
+S'il y a un problème de vitesse d'extrusion uniquement au niveau des parois, il est préférable d'examiner les [vitesses d'impression](../speed/speed_wall.md) et la [température](material_print_temperature.md). Peut-être que le matériau ne reçoit pas assez d'impulsion de la buse et qu'une plus grande vitesse d'impression pourrait aider. Peut-être que les [lignes sont trop fines](../resolution/wall_line_width.md) pour extruder correctement. Peut-être que le matériau est trop froid ou trop chaud.
 
-If there is a problem with dimensional accuracy, it is better to look at [line widths](../resolution/wall_line_width.md), [horizontal expansion](../shell/xy_offset.md) and the [printing order](../shell/outer_inset_first.md).
+En cas de problème de précision dimensionnelle, il est préférable d'examiner les [largeurs de ligne](../resolution/wall_line_width.md), [expansion horizontale](../shell/xy_offset.md) et l'[ordre d'impression](../shell/outer_inset_first.md).
