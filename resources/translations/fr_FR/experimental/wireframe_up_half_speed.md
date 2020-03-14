@@ -1,7 +1,7 @@
-When starting with the upwards motion of the saw-tooth pattern connecting adjacent horizontal rings in the frame of Wire Printing mode, the upwards motion may be made slower for the first part of the vertical line. This setting configures how much of the vertical line will be printed slower. This segment of the vertical line will be printed at half of the [upward speed](wireframe_printspeed_up.md).
+Lorsque l'on commence par le mouvement ascendant du motif en dents de scie reliant les anneaux horizontaux adjacents dans le cadre du mode d'impression par fil, le mouvement ascendant peut être ralenti pour la première partie de la ligne verticale. Ce réglage permet de configurer la partie de la ligne verticale qui sera imprimée plus lentement. Ce segment de la ligne verticale sera imprimé à la moitié de la [vitesse ascendante](wireframe_printspeed_up.md).
 
-![Where the different Wire Printing speeds apply](../../../articles/images/wireframe_printspeed.svg)
+![Où les différentes vitesses d'impression s'appliquent](../../../articles/images/wireframe_printspeed.svg)
 
-Instead of [pausing](wireframe_bottom_delay.md) at the bottom, it may be better to keep the nozzle going. This prevents the hot nozzle from re-melting the horizontal ring underneath it, but will still have the effect of pushing the saw-tooth pattern firmly onto the horizontal ring. The pressure inside the nozzle chamber will push the material out down onto the ring underneath.
+Au lieu de [faire une pause](wireframe_bottom_delay.md) dans le fond, il est peut-être préférable de laisser la buse en marche. Cela empêche la buse chaude de refondre l'anneau horizontal situé en dessous, mais aura toujours pour effet de pousser fermement le motif en dents de scie sur l'anneau horizontal. La pression à l'intérieur de la chambre de la buse poussera le matériau vers le bas sur l'anneau situé en dessous.
 
-The speed at which the nozzle moves during this length of wire cannot be separately configured. It will always be half of the normal speed.
+La vitesse à laquelle la buse se déplace pendant cette longueur de fil ne peut pas être configurée séparément. Elle sera toujours égale à la moitié de la vitesse normale.
