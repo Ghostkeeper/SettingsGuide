@@ -34,8 +34,8 @@
 
     <!-- Labels. -->
     <g font-family="sans-serif" font-size="40">
-        <text x="500" y="500" transform="rotate(22, 500,500)" fill="red">Inside</text>
-        <text x="440" y="640" transform="rotate(22, 440,640)" fill="blue">Outside</text>
-        <text x="330" y="780" transform="rotate(34, 330,780)" fill="red">Inside</text>
+        <text x="500" y="500" transform="rotate(22, 500,500)" fill="red">Intérieur</text>
+        <text x="440" y="640" transform="rotate(22, 440,640)" fill="blue">Extérieur</text>
+        <text x="330" y="780" transform="rotate(34, 330,780)" fill="red">Intérieur</text>
     </g>
 </svg>
