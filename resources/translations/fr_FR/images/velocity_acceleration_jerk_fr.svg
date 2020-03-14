@@ -18,10 +18,10 @@
 		<use href="#arrowUp" x="1140" y="135" />
 		<use href="#arrowDown" x="1140" y="185" />
 	</g>
-	<g font-family="sans-serif" font-size="40pt">
-		<text x="210" y="140">Acceleration</text>
-		<text x="610" y="150">Speed</text>
-		<text x="1150" y="170">Jerk</text>
+	<g font-family="sans-serif" font-size="30pt">
+		<text x="210" y="140">Accélération</text>
+		<text x="610" y="150">Vitesse</text>
+		<text x="1150" y="170">Secousse</text>
 	</g>
 
 	<!-- V-T curve. -->
