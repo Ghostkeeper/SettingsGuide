@@ -1,11 +1,11 @@
-This setting configures the speed at which the bottom side of the support is printed, if [Support Floor is enabled](../support/support_bottom_enable.md).
+Ce paramètre configure la vitesse d'impression de la face inférieure du support, si [Support Floor est activé](../support/support_bottom_enable.md).
 
-![Various structures printed at different speeds](../../../articles/images/speed_difference.png)
+![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)
 
-A higher speed can save some printing time.
+Une vitesse plus élevée peut permettre de gagner du temps d'impression.
 
-The effect of this setting greatly depends on circumstances. With some materials, in particular materials that cool quickly and with a large [Support Bottom Distance](../support/support_bottom_distance.md), greater speed will increase the adhesion between the support and the model. The effect is similar to bridging: At greater speeds, the material is less carefully suspended and doesn't get time to get cooled by the fans on the print head. This is something you don't normally want, because it will cause the support to leave a greater mark on your surface.
+L'effet de ce réglage dépend beaucoup des circonstances. Avec certains matériaux, en particulier les matériaux qui refroidissent rapidement et avec une grande [Distance fond support](../support/support_fond_distance.md), une vitesse plus élevée augmentera l'adhérence entre le support et le modèle. L'effet est similaire à celui d'un pontage : A plus grande vitesse, le matériau est moins soigneusement suspendu et n'a pas le temps d'être refroidi par les ventilateurs de la tête d'impression. C'est quelque chose que vous ne voulez pas normalement, car le support laissera une plus grande marque sur votre surface.
 
-With other materials, greater speed reduces the force with which the material is put down and doesn't allow it to flow out much. This effect is similar to bed adhesion. The greater speed is then only advantageous until you start reaching the limits of the change in flow rate that occurs at the start and end of the support floors.
+Avec d'autres matériaux, une vitesse plus élevée réduit la force avec laquelle le matériau est posé et ne lui permet pas de s'écouler beaucoup. Cet effet est similaire à celui de l'adhérence au lit. La plus grande vitesse n'est alors avantageuse que jusqu'à ce que vous commenciez à atteindre les limites de la variation de débit qui se produit au début et à la fin des planchers de support.
 
-If the support floor is very close to the model, such as for PVA or other soluble support materials, increasing the support floor speed can also cause the nozzle to overshoot into the model, marring the surface slightly.
+Si le plancher de support est très proche du modèle, comme dans le cas du PVA ou d'autres matériaux de support solubles, l'augmentation de la vitesse du plancher de support peut également provoquer un dépassement de la buse dans le modèle, ce qui abîme légèrement la surface.
