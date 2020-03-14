@@ -1,9 +1,9 @@
-The initial layer is not the only layer that gets printed slower. This setting configures how many layers get printed slower. Over the course of these layers, the printing speed will gradually increase to the normal printing speed.
+La couche initiale n'est pas la seule couche qui s'imprime plus lentement. Ce paramètre permet de configurer le nombre de couches qui sont imprimées plus lentement. Au cours de ces couches, la vitesse d'impression augmentera progressivement jusqu'à la vitesse d'impression normale.
 
-![The printing speed gradually increases to 50mm/s](../../../articles/images/speed_slowdown_layers.svg)
+[La vitesse d'impression augmente progressivement jusqu'à 50mm/s](../images/speed_slowdown_layers_fr.svg)
 
-Starting from the initial layer, the speed linearly increases (or decreases) to the ordinary printing speed. This happens separately for the walls, skin, infill and so on, if they are printed at different speeds.
+En partant de la couche initiale, la vitesse augmente (ou diminue) linéairement jusqu'à la vitesse d'impression ordinaire. Cela se produit séparément pour les murs, la peau, le remplissage, etc., s'ils sont imprimés à des vitesses différentes.
 
-There are two reasons why you could want to transition to the normal printing speed over several layers. Firstly, the second and third layers are still quite close to the build plate, and moving fast over them can rip the print loose pretty easily. Secondly, the difference in flow rate between the initial layer printing speed and the ordinary printing speed may be so great that the large flow rate change may take some time to come into effect. Transitioning slowly prevents underextruding at a great speed change.
+Il y a deux raisons pour lesquelles vous pourriez vouloir passer à la vitesse d'impression normale sur plusieurs couches. Tout d'abord, les deuxième et troisième couches sont encore assez proches de la plaque de construction, et le fait de passer rapidement au-dessus d'elles peut déchirer l'impression assez facilement. Deuxièmement, la différence de débit entre la vitesse d'impression de la couche initiale et la vitesse d'impression ordinaire peut être si grande que la grande variation de débit peut prendre un certain temps à se produire. La transition lente permet d'éviter la sous-extrusion lors d'un grand changement de vitesse.
 
-However, transitioning slowly will also make the print take longer in total.
+Cependant, une transition lente allonge également la durée totale de l'impression.
