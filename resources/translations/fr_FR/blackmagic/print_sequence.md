@@ -1,24 +1,25 @@
-When multiple models are placed on the build plate, this determines the order in which the layers for these objects are printed. There are two options.
+Lorsque plusieurs modèles sont placés sur la plaque de construction, cela détermine l'ordre dans lequel les couches de ces objets sont imprimées. Il existe deux options.
 
-All at Once
+Tout en même temps
 ----
-All objects will be printed at the same time, meaning that the layers will be printed from bottom to top for all objects at the same time. It will print one layer of each object before moving on to the next layer.
+Tous les objets seront imprimés en même temps, ce qui signifie que les couches seront imprimées de bas en haut pour tous les objets en même temps. Il imprimera une couche de chaque objet avant de passer à la couche suivante.
 
-This has two major advantages:
-* The previous layer gets more time to cool down, leading to better quality when printing small objects.
-* The full build volume can be used for your print.
+Cela présente deux avantages majeurs :
+* La couche précédente a plus de temps pour refroidir, ce qui permet d'obtenir une meilleure qualité lors de l'impression de petits objets.
+* Le volume complet peut être utilisé pour votre impression.
 
-One at a Time
+Un à la fois
 ----
-Objects will be printed one by one, meaning that it'll print all layers of one object and then move back down to the build plate to print the next object.
+Les objets seront imprimés un par un, ce qui signifie qu'il imprimera toutes les couches d'un objet, puis retournera à la plaque de construction pour imprimer l'objet suivant.
 
-The major advantages of this mode are:
-* If the print fails for whatever reason, all objects that were completed before the failure are completely fine to use.
-* Fewer travel moves are required to move back and forth between the models. This saves some printing time and reduces the number of scars on the surface where the nozzle exited and entered the object.
+Les principaux avantages de ce mode sont les suivants :
+* Si l'impression échoue pour une raison quelconque, tous les objets qui ont été terminés avant l'échec sont tout à fait utilisables.
+* Moins de déplacements sont nécessaires pour passer d'un modèle à l'autre. Cela permet de gagner un peu de temps d'impression et de réduire le nombre de cicatrices sur la surface où la buse est sortie et est entrée dans l'objet.
 
-This mode comes with a few constraints though, in order to prevent colliding the head and gantry with the model.
-* You cannot print any objects taller than the gantry height of your printer. The gantry height can be adjusted in the printer's Machine Settings dialogue. This gantry height indicates how much vertical distance there is between the nozzle's tip and the system that carries the print head. The reason for this limitation is that the print head will have to move down to the build plate to print the second object. This means that the first object may get hit by the gantry as the second object is printed. In theory the last printed object may be allowed to be higher than the gantry, but for simplicity Cura won't allow it anyway.
-* The objects must be spaced farther away from each other, in order to prevent the print head from hitting the previously printed models on the side.
-* The order in which the objects are printed is fixed and optimised in order to allow objects to be printed more closely together. If your print head is not symmetrical, this can save a lot of space on the build plate.
+Ce mode est toutefois assorti de quelques contraintes, afin d'éviter que la tête et le portique n'entrent en collision avec le modèle.
+* Vous ne pouvez pas imprimer d'objets plus hauts que la hauteur du portique de votre imprimante. La hauteur du portique peut être ajustée dans la boîte de dialogue des paramètres machine de l'imprimante. Cette hauteur de portique indique la distance verticale entre la pointe de la buse et le système qui porte la tête d'impression. La raison de cette limitation est que la tête d'impression devra descendre jusqu'à la plaque de construction pour imprimer le deuxième objet. Cela signifie que le premier objet peut être touché par le portique lorsque le deuxième objet est imprimé. En théorie, le dernier objet imprimé peut être autorisé à être plus haut que le portique, mais pour simplifier, Cura ne l'autorisera pas de toute façon.
+* Les objets doivent être plus éloignés les uns des autres, afin d'éviter que la tête d'impression ne heurte les modèles précédemment imprimés sur le côté.
+* L'ordre dans lequel les objets sont imprimés est fixe et optimisé afin de permettre aux objets d'être imprimés plus près les uns des autres. Si votre tête d'impression n'est pas symétrique, cela peut permettre de gagner beaucoup de place sur la plaque de construction.
 
-**One at a Time is only available in single extrusion. If you're using a multi-extrusion printer, you must deactivate all but one extruder for this setting to appear.**
+** Un à la fois n'est disponible qu'en extrusion simple. Si vous utilisez une imprimante multi-extrusion, vous devez désactiver toutes les extrudeuses sauf une pour que ce paramètre apparaisse.**
+
