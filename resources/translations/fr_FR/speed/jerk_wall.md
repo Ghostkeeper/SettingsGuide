@@ -1,5 +1,5 @@
-This setting determines the speed at which the nozzle can go through corners while printing the walls. This can be configured separately from the rest of the print.
+Ce réglage détermine la vitesse à laquelle la buse peut passer dans les coins tout en imprimant les murs. Cette vitesse peut être configurée séparément du reste de l'impression.
 
-During the printing of the walls, the printer is very sensitive to vibrations. If the print head vibrates in relation to the printed object, this will be visible in the form of ringing in the final print. It's useful to print the walls at a lower jerk rate than the rest of the print for this reason.
+Pendant l'impression des murs, l'imprimante est très sensible aux vibrations. Si la tête d'impression vibre par rapport à l'objet imprimé, cela sera visible sous forme de sonnerie dans l'impression finale. C'est pourquoi il est utile d'imprimer les murs à un taux de secousse plus faible que le reste de l'impression.
 
-However, this will make the corners less sharp on the outside, because the nozzle will slow down further in the corner and then put down more material in the corner as well. This effect is particularly strong with Bowden-style printers where there is a longer delay in the reaction time of the feeder. It's a balancing act.
+Toutefois, cela rendra les coins moins nets à l'extérieur, car la buse ralentira davantage dans le coin et déposera plus de matière dans le coin également. Cet effet est particulièrement marqué sur les imprimantes de type Bowden où le temps de réaction du chargeur est plus long. Il s'agit d'un exercice d'équilibre.
