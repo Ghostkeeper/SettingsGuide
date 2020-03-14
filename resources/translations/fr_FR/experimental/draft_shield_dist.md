@@ -1,7 +1,7 @@
-This setting configures how far from the print the draft shield will be printed.
+Ce paramètre permet de configurer la distance à laquelle le paravent sera imprimé.
 
-The farther the draft shield is located from your print, the less effective it will be at keeping the temperature within the draft shield constant. There will be more air flowing around the print then, so the print is less protected against air currents.
+Plus le paravent est éloigné de votre impression, moins il sera efficace pour maintenir la température à l'intérieur du paravent constante. L'air circulera alors davantage autour de l'impression, qui sera donc moins protégée contre les courants d'air.
 
-However printing the draft shield farther from the print can also have a positive effect on the cooling of your print since it allows the fans on the print head to properly blow onto your print.
+Cependant, le fait d'imprimer le paravent plus loin de l'impression peut également avoir un effet positif sur le refroidissement de votre impression, puisqu'il permet aux ventilateurs de la tête d'impression de souffler correctement sur votre impression.
 
-In addition, placing the draft shield farther from the object will take more space. You can't print it any farther from your object than your build volume allows.
+En outre, placer le paravent plus loin de l'objet prendra plus de place. Vous ne pouvez pas l'imprimer plus loin de votre objet que ne le permet votre volume de construction.
