@@ -1,24 +1,24 @@
-The most critical concern for the reliability of Wire Printing is the connection points where the layers of the frame connect to each other. There are several strategies available for making these connections stronger. This setting allows you to choose the strategy that the printer will be using.
+La préoccupation la plus importante pour la fiabilité de l'impression au fil de fer concerne les points de connexion où les couches de la trame se connectent les unes aux autres. Il existe plusieurs stratégies pour rendre ces connexions plus solides. Ce paramètre vous permet de choisir la stratégie que l'imprimante utilisera.
 
-Compensate
+Compenser
 ----
-When using this strategy, the printer will try to compensate for sagging factors in the material. Because the material comes molten out the nozzle, it will fall down a bit before it's solidified and will be dragged along with the motions of the nozzle. This strategy deforms the saw-tooth pattern that connects the layers of the frame such that it hopefully ends up in the correct location again.
+En utilisant cette stratégie, l'imprimeur essaiera de compenser les facteurs d'affaissement du matériau. Comme le matériau sort fondu de la buse, il tombera un peu avant de se solidifier et sera entraîné par les mouvements de la buse. Cette stratégie déforme le motif en dents de scie qui relie les couches du cadre de telle sorte qu'il finit, espérons-le, par se retrouver au bon endroit.
 
-Two compensation factors are available: One that deforms the saw-tooth pattern only vertically to [compensate for sagging](wireframe_fall_down.md), and one that deforms the saw-tooth pattern in a diagonal direction to [compensate for the material being dragged along](wireframe_drag_along.md) with the nozzle.
+Deux facteurs de compensation sont disponibles : L'un déforme le motif en dents de scie uniquement verticalement pour [compenser l'affaissement](wireframe_fall_down.md), et l'autre déforme le motif en dents de scie dans une direction diagonale pour [compenser le matériau entraîné](wireframe_drag_along.md) avec la buse.
 
-Knot
+Nœud
 ----
-When this strategy is selected, a little upwards and backwards motion will be made at the top of each saw tooth to form a "knot" of material there. The purpose of the knot is to give the horizontal ring on top of it some area to attach to the saw-tooth pattern. The knot will vary a little bit from side to side, so if the horizontal ring is not placed down very accurately there is still a bigger chance that they attach to each other. Also, the knot will make the upward line extend slightly further upwards, causing the horizontal ring to be pushed on top of it. And lastly, the knot will also produce some oozing due to the lack of retraction in this travel move. This produces a blob on which the horizontal ring can rest better.
+Lorsque cette stratégie est choisie, un petit mouvement vers le haut et vers l'arrière sera effectué au sommet de chaque dent de scie pour y former un "nœud" de matière. Le but de ce nœud est de donner à l'anneau horizontal qui le surmonte une certaine surface à attacher au motif de la dent de scie. Le nœud variera un peu d'un côté à l'autre, de sorte que si l'anneau horizontal n'est pas placé avec précision, il y a encore plus de chances qu'ils s'attachent l'un à l'autre. De plus, le nœud fera en sorte que la ligne ascendante s'étende un peu plus vers le haut, ce qui fera que l'anneau horizontal sera poussé par-dessus. Enfin, le nœud produira également un certain suintement en raison de l'absence de rétraction dans ce mouvement de déplacement. Cela produit une tache sur laquelle l'anneau horizontal peut mieux reposer.
 
-![Where the knot is drawn and what its size entails](../../../articles/images/wireframe_top_jump.svg)
+![Où est dessiné le nœud et quelle est sa taille](../../../articles/images/wireframe_top_jump.svg)
 
-The motion for this "knot" is a series of travel moves:
-1. First, the nozzle will move upwards and backwards slightly.
-2. If there is any [delay](wireframe_top_delay.md) in the top, the nozzle will pause for the set amount of delay. This pause is done in the tip of the knot's motion.
-3. Third, the nozzle will move back down to the ordinary height. At the same time, the nozzle will move forward and away from the vertical line.
+La motion pour ce "nœud" est une série de mouvements de voyage :
+1. Tout d'abord, la buse se déplace légèrement vers le haut et vers l'arrière.
+2. S'il y a un [retard](wireframe_top_delay.md) dans la partie supérieure, la buse s'arrête pendant la durée du retard. Cette pause se fait dans la pointe du mouvement du nœud.
+3. 3. Troisièmement, la buse redescend à la hauteur habituelle. En même temps, la buse avance et s'éloigne de la ligne verticale.
 
-Retract
+Rétractez
 ----
-When this strategy is selected, the material will be retracted after every upwards motion while printing the saw-tooth pattern. The idea is that by retracting the material, the wire is broken off. This reduces the effect that the material is dragged along with the movement of the nozzle, because the previous line is no longer attached to the nozzle. Afterwards, the nozzle makes a small hop of 1 millimetre and continues with the diagonal movement down towards the lower layer.
+Lorsque cette stratégie est choisie, le matériau sera rétracté après chaque mouvement vers le haut pendant l'impression du motif en dents de scie. L'idée est qu'en rétractant le matériau, le fil est rompu. Cela réduit l'effet de traînage du matériau lors du mouvement de la buse, car le fil précédent n'est plus attaché à la buse. Ensuite, la buse fait un petit saut d'un millimètre et continue son mouvement diagonal vers la couche inférieure.
 
-One major disadvantage of this strategy is that the diagonal downwards line is also not attached any more. This effectively makes the extrusion during that line useless. The material simply ends up as a blob on the lower layer. The material is also subject to more grinding as the material is retracted back and forth without much extrusion in between. That all takes a lot of time as well.
+Un inconvénient majeur de cette stratégie est que la ligne diagonale vers le bas n'est plus non plus attachée à la buse. Cela rend effectivement inutile l'extrusion pendant cette ligne. Le matériau finit simplement par former une tache sur la couche inférieure. Le matériau est également soumis à un broyage plus important car il est rétracté d'avant en arrière sans qu'il y ait beaucoup d'extrusion entre les deux. Tout cela prend également beaucoup de temps.
