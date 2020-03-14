@@ -1,7 +1,7 @@
-This setting specifies how fast the nozzle will move up while making a vertical motion in the saw-tooth pattern. The speed of moving upwards can be configured separately from the rest of the wire printing speed.
+Ce réglage précise la vitesse à laquelle la buse se déplacera vers le haut tout en effectuant un mouvement vertical dans la configuration en dents de scie. La vitesse de déplacement vers le haut peut être configurée séparément du reste de la vitesse d'impression du fil.
 
-![Where the different Wire Printing speeds apply](../../../articles/images/wireframe_printspeed.svg)
+![Où les différentes vitesses d'impression à fil s'appliquent](../../../articles/images/wireframe_printspeed.svg)
 
-The upward motion will not have the specified speed for the entire motion. For the lowest bit of the upward motion, as defined by the [Ease Upward](wireframe_up_half_speed.md) setting, the print head will move at half of this speed.
+Le mouvement ascendant n'aura pas la vitesse spécifiée pour l'ensemble du mouvement. Pour le bit le plus bas du mouvement ascendant, tel que défini par le paramètre [Ease Upward](wireframe_up_half_speed.md), la tête d'impression se déplacera à la moitié de cette vitesse.
 
-Moving up slower will take more time but gives the material more time to solidify. This way it won't get dragged along as much in the direction of the diagonal. However moving too slow will also push the line downward due to the inertia of the filament with pressure in the nozzle chamber. The filament tends to wobble then which makes it less likely that the next horizontal line can make a proper connection.
+Un mouvement vers le haut plus lent prendra plus de temps mais donnera plus de temps au matériau pour se solidifier. De cette façon, il ne sera pas traîné autant dans la direction de la diagonale. Cependant, un déplacement trop lent poussera également la ligne vers le bas en raison de l'inertie du filament avec la pression dans la chambre de la buse. Le filament a alors tendance à osciller, ce qui rend moins probable que la prochaine ligne horizontale puisse établir une connexion correcte.
