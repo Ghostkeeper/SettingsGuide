@@ -1,7 +1,7 @@
-This setting configures the distance along the original wall between movements for the fuzzy skin. If the distance is small, the print head will move in different directions very often along the wall. It will vibrate at high frequency.
+Ce réglage permet de configurer la distance le long du mur d'origine entre les mouvements pour la peau floue. Si la distance est faible, la tête d'impression se déplacera très souvent dans des directions différentes le long du mur. Elle vibrera à haute fréquence.
 
-With smaller distances, the roughness will be more fine, resulting in a rougher texture. This also affects the printing time significantly. To create a smoother, but bumpy texture, you can increase the distance.
+Avec des distances plus faibles, la rugosité sera plus fine, ce qui donnera une texture plus rugueuse. Cela a également une incidence importante sur le temps d'impression. Pour créer une texture plus lisse, mais bosselée, vous pouvez augmenter la distance.
 
-When Fuzzy Skin is enabled, the outer wall will consist entirely of straight line segments between the vibration movements, instead of the original surface. With high distances, it could happen that curved surfaces are not very curved any more because the original resolution was higher than the density of coordinates due to the fuzzy skin effect.
+Lorsque la fonction Fuzzy Skin est activée, la paroi extérieure sera entièrement constituée de segments de ligne droite entre les mouvements de vibration, au lieu de la surface d'origine. Avec des distances élevées, il pourrait arriver que les surfaces courbes ne soient plus très courbées car la résolution d'origine était supérieure à la densité des coordonnées en raison de l'effet Fuzzy Skin.
 
-Due to algorithmic constraints, the distance between points can't be too small if the [thickness](magic_fuzzy_skin_thickness.md) is very high.
+En raison de contraintes algorithmiques, la distance entre les points ne peut pas être trop petite si l'[épaisseur](magic_fuzzy_skin_thickness.md) est très élevée.
