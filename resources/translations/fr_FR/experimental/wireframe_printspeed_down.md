@@ -1,5 +1,5 @@
-This setting specifies how fast the nozzle will move down while making a diagonal motion in the saw-tooth pattern. The speed of moving downwards can be configured separately from the rest of the wire printing speed.
+Ce réglage précise la vitesse à laquelle la buse se déplacera vers le bas tout en effectuant un mouvement diagonal dans le motif en dents de scie. La vitesse de déplacement vers le bas peut être configurée séparément du reste de la vitesse d'impression du fil.
 
-![Where the different Wire Printing speeds apply](../../../articles/images/wireframe_printspeed.svg)
+![Où les différentes vitesses d'impression à fil s'appliquent](../../../articles/images/wireframe_printspeed.svg)
 
-Moving down slower will take more time, but gives the material more time to solidify. This makes the print more reliable.
+Le fait de descendre plus lentement prendra plus de temps, mais donne au matériau plus de temps pour se solidifier. Cela rend l'impression plus fiable.
