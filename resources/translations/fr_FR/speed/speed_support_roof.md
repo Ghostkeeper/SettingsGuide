@@ -1,5 +1,5 @@
-This setting configures the speed at which the top side of the support is printed, if [Support Roofs is enabled](../support/support_interface_enable.md).
+Ce paramètre configure la vitesse à laquelle la face supérieure du support est imprimée, si [Toits de support est activé](../support/support_interface_enable.md).
 
-![Various structures printed at different speeds](../../../articles/images/speed_difference.png)
+![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)
 
-A higher speed can save some printing time, but will reduce the quality of overhang. Because the printer will vibrate more, the support roof will be printed less accurately and its surface will be less smooth. As a result, the model printed on top of it will be printed less smoothly, especially if the model is printed very nearby, such as when using soluble support.
+Une vitesse plus élevée peut permettre de gagner du temps d'impression, mais réduira la qualité des débordements. Comme l'imprimante vibrera davantage, le toit de support sera imprimé avec moins de précision et sa surface sera moins lisse. Par conséquent, le modèle imprimé sur le toit sera imprimé de manière moins lisse, surtout si le modèle est imprimé très près, comme dans le cas de l'utilisation d'un support soluble.
