@@ -1,54 +1,55 @@
-Blobs are small specks on the side of the model. Sometimes they are just dots. Sometimes they are stripes. They are a visual surface defect and may increase friction between surfaces that need to slide over each other in a mechanism.
+Les blocs sont de petites gouttes sur le côté du modèle. Parfois, ce ne sont que des points. Parfois, ce sont des rayures. Ils constituent un défaut de surface visuel et peuvent augmenter la friction entre les surfaces qui doivent glisser les unes sur les autres dans un mécanisme.
 
-![Some blobs on this surface](../../../articles/images/blobs.jpg)
+![Quelques gouutes sur cette surface](../../../articles/images/blobs.jpg)
 
-There are several possible causes for blobs. It's one of the most common defects in 3D printing. This article lists some possible causes and their solutions.
+Il y a plusieurs causes possibles pour les blobs. C'est l'un des défauts les plus courants dans l'impression 3D. Cet article énumère quelques causes possibles et leurs solutions.
 
-Nozzle slows down
+La buse ralentit
 ----
-If the nozzle moves slower in a certain track than in others, it will allow more material to be deposited there. This material flows outwards out the wall surface, forming a blob.
+Si la buse se déplace plus lentement dans une certaine voie que dans d'autres, elle permettra d'y déposer plus de matière. Cette matière s'écoule vers l'extérieur de la surface de la paroi, en formant une goutte.
 
-The feed of material was likely meant to be reduced with it. However even if the feeder moves slower, it can take a few seconds for the flow rate out the nozzle opening to be reduced accordingly. During that time, too much material will be extruded, which results in blobs.
+L'alimentation en matière est probablement destinée à être réduite avec elle. Cependant, même si l'alimentateur se déplace plus lentement, il peut s'écouler quelques secondes avant que le débit sortant de l'ouverture de la buse ne soit réduit en conséquence. Pendant ce temps, une trop grande quantité de matière sera extrudée, ce qui donne des blobes.
 
-To combat this, look at the following settings:
-* Equalise the speed for the [outer wall](../speed/speed_wall_0.md) such that it's the same as whatever is printed before it (like the [inner walls](../speed/speed_wall_x.md) or [infill](../speed/speed_infill.md)). There will not be a slowdown then.
-* Increase the [jerk rate during the outer wall](../speed/jerk_wall_0.md). This will prevent the nozzle from slowing down in corners.
-* Reduce the [resolution](../meshfix/meshfix_maximum_resolution.md) and increase the [deviation](../meshfix/meshfix_maximum_deviation.md) to prevent the motion controller from slowing down the nozzle in order to keep up with the g-codes it needs to process.
-* Disable the [Compensate Outer Wall Overlaps](../shell/travel_compensate_overlapping_walls_0_enabled.md) setting. This setting can create new movement commands with different feed rates. Disabling that feature reduces the number of movement commands in the wall.
+Pour lutter contre ce phénomène, regardez les réglages suivants :
+* Égaliser la vitesse de la [paroi extérieure](../speed/speed_wall_0.md) de manière à ce qu'elle soit identique à celle de ce qui est imprimé avant elle (comme les [parois intérieures](../speed/speed_wall_x.md) ou [remplissage](../speed/speed_infill.md)). Il n'y aura donc pas de ralentissement.
+* Augmenter le [taux de secousse pendant la paroi extérieure](../speed/jerk_wall_0.md). Cela empêchera la buse de ralentir dans les coins.
+* Réduire la [résolution](../meshfix/meshfix_maximum_resolution.md) et augmenter la [déviation](../meshfix/meshfix_maximum_deviation.md) pour empêcher le contrôleur de mouvement de ralentir la buse afin de suivre les codes g qu'il doit traiter.
+* Désactivez le paramètre [Compenser les chevauchements des parois extérieures](../shell/travel_compensate_overlapping_walls_0_enabled.md). Ce paramètre permet de créer de nouvelles commandes de déplacement avec des vitesses d'avance différentes. La désactivation de cette fonction réduit le nombre d'ordres de déplacement dans le mur.
 
-Nozzle stands still
+La buse s'arrête
 ----
-If the nozzle makes small pauses during the printing of the outer wall, it's most likely waiting for the processor in your 3D printer to process new movement commands. The printer's motion planner software typically keeps a buffer with pre-processed commands ready for such occasions, where the motion commands have already been processed so that the printer knows precisely the timings for the activation of the stepper motors or other motions. If this buffer runs out, this is called a "buffer underrun". This causes blobs to appear on the surface.
+Si la buse fait de petites pauses pendant l'impression de la paroi extérieure, il est fort probable qu'elle attende que le processeur de votre imprimante 3D traite de nouvelles commandes de mouvement. Le logiciel de planification des mouvements de l'imprimante conserve généralement une mémoire tampon avec des commandes prétraitées prêtes pour de telles occasions, lorsque les commandes de mouvement ont déjà été traitées afin que l'imprimante connaisse précisément les délais d'activation des moteurs pas à pas ou d'autres mouvements. Si cette mémoire tampon s'épuise, on parle de "buffer underrun". Cela provoque l'apparition de taches à la surface.
 
-To prevent that, you need to reduce the resolution of the g-code.
-* Increase the [Maximum Resolution](../meshfix/meshfix_maximum_resolution.md) setting, which makes Cura output longer line segments.
-* Increase the [Maximum Deviation](../meshfix/meshfix_maximum_deviation.md) setting, which allows Cura to reduce the resolution further by deviating further from the original path.
-* Disable the [Compensate Outer Wall Overlaps](../shell/travel_compensate_overlapping_walls_0_enabled.md) setting. If the outer wall overlaps with other outer walls, it would give part of the wall a different line width, but that needs an extra motion command. To reduce the motion commands, you can disable this. However this might also cause overextrusion in those walls, which causes blobs too.
-* Reduce the [printing speed of the outer wall](../speed/speed_wall_0.md). This reduces the rate the movement commands need to be executed, allowing the CPU to catch up.
+Pour éviter cela, vous devez réduire la résolution du code g.
+* Augmentez le paramètre [Maximum Resolution](../meshfix/meshfix_maximum_resolution.md), ce qui permet à Cura de produire des segments de ligne plus longs.
+* Augmenter le paramètre [Maximum Deviation](../meshfix/meshfix_maximum_deviation.md), ce qui permet à Cura de réduire davantage la résolution en s'écartant davantage du chemin d'origine.
+* Désactivez le paramètre [Compenser les chevauchements des murs extérieurs](../shell/travel_compensate_overlapping_walls_0_enabled.md). Si le mur extérieur se chevauche avec d'autres murs extérieurs, cela donnerait à une partie du mur une largeur de ligne différente, mais cela nécessite une commande de mouvement supplémentaire. Pour réduire les commandes de mouvement, vous pouvez désactiver ce paramètre. Cependant, cela peut également entraîner une surextrusion dans ces murs, ce qui provoque également des boursouflures.
+* Réduisez la [vitesse d'impression du mur extérieur](../speed/speed_wall_0.md). Cela réduit la vitesse d'exécution des commandes de déplacement, ce qui permet au CPU de rattraper le retard.
 
-Travel moves through walls
+Le déplacement se fait à travers les murs
 ----
-While Cura will generally avoid crossing the outer wall as much as possible, sometimes this is unavoidable. If the nozzle carries some oozed material while it crosses an outer wall, this material can get wiped off there, leaving a blob.
+Bien que Cura évite généralement de traverser le mur extérieur autant que possible, cela est parfois inévitable. Si la buse transporte une matière suintante alors qu'elle traverse une paroi extérieure, cette matière peut être essuyée à cet endroit, laissant une tache.
 
-This cause of blobs can be prevented by adjusting the following settings:
-* Make sure that [combing](../travel/retraction_combing.md) is enabled. This makes the nozzle go around walls as much as possible, instead of through them.
-* Enable [Z Hops](../travel/retraction_hop_enabled.md). If the walls are crossed, this will make the nozzle move up a bit, to go over the wall instead of through them. The oozed material will most likely not get wiped off on the wall, but where the nozzle lands after the travel move. Cura will always attempt to land in the infill or skin if possible.
-* Make sure that [the wall printing order is optimised](../shell/optimize_wall_printing_order.md). This reduces the number of motions made while printing walls, allowing for more efficient motions and reducing the chance that some of these motions need to go through an outer wall.
+Il est possible d'éviter cette cause de bavure en réglant les paramètres suivants :
+* Assurez-vous que la fonction [peignage](../travel/retraction_combing.md) est activée. Cela permet à la buse de contourner les murs autant que possible, au lieu de les traverser.
+* Activer [Z Hops](../travel/retraction_hop_enabled.md). Si les murs sont franchis, la buse se déplacera un peu vers le haut, pour passer par-dessus les murs au lieu de les traverser. Le matériau suintant ne sera probablement pas essuyé sur la paroi, mais à l'endroit où la buse atterrit après le déplacement. Cura essaiera toujours de se poser dans le remblai ou la peau si possible.
+* Assurez-vous que [l'ordre d'impression des murs est optimisé](../shell/optimize_wall_printing_order.md). Cela réduit le nombre de mouvements effectués lors de l'impression des murs, ce qui permet des mouvements plus efficaces et réduit le risque que certains de ces mouvements doivent passer à travers un mur extérieur.
 
-Built up pressure
+Une pression accrue
 ----
-If the nozzle is overextruding, the extrusion can become irregular. This may sometimes suddenly find a way out when a particular nook of your print is printed (in particular at overhangs). Sometimes this pent-up pressure explodes out, leaving a big blob. Typically there will then be a stripe after the blob of gradually decreasing pressure.
+Si la buse est sur-extrudée, l'extrusion peut devenir irrégulière. Celle-ci peut parfois trouver soudainement une issue lorsqu'un coin particulier de votre empreinte est imprimé (en particulier au niveau des débords). Parfois, cette pression refoulée explose, laissant une grosse tache. En général, une bande de pression progressivement décroissante se forme après la goutte.
 
-To reduce this effect, here are a couple of settings to consider:
-* Reduce the [wall line width](../resolution/wall_line_width.md). This reduces the pressure in the nozzle chamber in general.
-* Reduce the [Outer Wall Inset](../shell/wall_0_inset.md). This setting makes the outer wall overlap with the adjacent inner wall, so that the wall gets pushed onto the inner wall harder, improving strength. However this pushing also increases the pressure inside the nozzle chamber.
+Pour réduire cet effet, voici quelques paramètres à prendre en compte :
+* Réduire la [largeur de la ligne du mur](../resolution/wall_line_width.md). Cela réduit la pression dans la chambre de la buse en général.
+* Réduire la [largeur de la paroi extérieure](../shell/wall_0_inset.md). Ce réglage fait que la paroi extérieure chevauche la paroi intérieure adjacente, de sorte que la paroi est poussée plus fortement sur la paroi intérieure, ce qui améliore la résistance. Cependant, cette poussée augmente également la pression à l'intérieur de la chambre de la buse.
 
-Water inside the filament
+Eau à l'intérieur du filament
 ----
-If the filament has accumulated moisture while it was still on the spool, this water will get heated in the nozzle beyond its boiling point. The water vapour will explode out of the nozzle when it gets pushed out. This small explosion can blow some plastic out of the way, resulting in a small blob on your surface.
+Si le filament a accumulé de l'humidité alors qu'il était encore sur la bobine, cette eau sera chauffée dans la buse au-delà de son point d'ébullition. La vapeur d'eau explosera hors de la buse lorsqu'elle en sera expulsée. Cette petite explosion peut faire éclater du plastique, ce qui se traduit par une petite tache à la surface.
 
-Seams
+Coutures
 ----
-Where the perimeter of the outer wall is started and closed off, a seam will be created. This is not what people normally call a blob, though it looks similar. See the article on [seams](seam.md) on how to reduce this effect.
+Un joint sera créé à l'endroit où le périmètre de la paroi extérieure est entamé et fermé. Ce n'est pas ce que les gens appellent normalement une tache, bien qu'elle ait un aspect similaire. Voir l'article sur les [coutures] (seam.md) pour savoir comment réduire cet effet.
 
-If the [Z Seam Alignment](../shell/z_seam_type.md) is set to "Random", the seam will be spread around the model, creating small seams everywhere. This can look exactly like a blob, even though it is actually a seam. Change the Z Seam Alignment setting to hide these seams.
+Si le paramètre [Z Seam Alignment](../shell/z_seam_type.md) est réglé sur "Random", la couture sera répartie autour du modèle, créant ainsi de petites coutures partout. Cela peut ressembler exactement à un blob, même si c'est en fait une couture. Modifiez le paramètre Alignement de la couture en Z pour masquer ces coutures.
+
