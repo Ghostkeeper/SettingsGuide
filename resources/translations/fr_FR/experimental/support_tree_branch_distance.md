@@ -1,12 +1,12 @@
-This setting determines the distance between two adjacent branches where the branches touch the build plate.
+Ce réglage détermine la distance entre deux branches adjacentes lorsque les branches touchent la plaque de construction.
 
-![Branches placed 1.4mm apart](../../../articles/images/support_tree_branch_distance_1_4.png)
-![Branches placed 5mm apart](../../../articles/images/support_tree_branch_distance_5.png)
+![Branches placées à 1,4 mm l'une de l'autre](../../../articles/images/support_tree_branch_distance_1_4.png)
+![Branches placées à 5mm d'intervalle](../../../articles/images/support_tree_branche_distance_5.png)
 
-In order to support the model, tree support will place contact points underneath the model in a staggered grid pattern. This setting essentially determines the size of that grid and thereby how far apart the branches are placed. Due to the alignment of the branches with respect to the (default) direction of the skin lines, the distance that the skin lines need to bridge will most likely be greater than this distance.
+Afin de soutenir le modèle, un support en forme d'arbre placera des points de contact sous le modèle selon un quadrillage en quinconce. Ce réglage détermine essentiellement la taille de cette grille et donc la distance entre les branches. En raison de l'alignement des branches par rapport à la direction (par défaut) des lignes de la peau, la distance que les lignes de la peau doivent franchir sera très probablement supérieure à cette distance.
 
-By reducing the branch distance, a better overhang quality can be achieved because the lines resting on top of the support won't need to bridge as far. The support will also be stiffer because more material will be used towards the top of the support, making the print more reliable.
+En réduisant la distance entre les branches, on peut obtenir une meilleure qualité de surplomb, car les lignes reposant sur le support n'auront pas besoin de franchir cette distance. Le support sera également plus rigide, car davantage de matériau sera utilisé vers le haut du support, ce qui rendra l'impression plus fiable.
 
-However reducing the branch distance will also cause the support to take more material and printing time.
+Toutefois, la réduction de la distance entre les branches entraînera également une augmentation de la quantité de matériau utilisée et du temps d'impression.
 
-Reducing the branch distance below the [branch diameter](support_tree_branch_diameter.md) will cause the branches to merge before they could properly be formed. As a result the centre of large overhang areas may not get supported properly then.
+Si la distance entre les branches est inférieure au [diamètre de la branche](support_tree_branch_diameter.md), les branches fusionneront avant de pouvoir être formées correctement. Par conséquent, le centre des grandes zones en surplomb risque de ne pas être correctement soutenu à ce moment-là.
