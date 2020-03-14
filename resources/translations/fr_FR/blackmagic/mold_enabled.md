@@ -1,13 +1,13 @@
-Au lieu d'imprimer le modèle lui-même, cette fonction amène l'imprimeur à créer un négatif du modèle, un moule, dans lequel vous pourriez couler un matériau différent pour créer votre modèle. Ce moule possède plusieurs propriétés spécifiques qui le rendent à la fois utilisable pour le moulage et imprimable avec l'impression FDM.
+Au lieu d'imprimer le modèle lui-même, cette fonction amène l'imprimante à créer un négatif du modèle, un moule, dans lequel vous pourriez couler un matériau différent pour créer votre modèle. Ce moule possède plusieurs propriétés spécifiques qui le rendent à la fois utilisable pour le moulage et imprimable avec l'impression FDM.
 
 ![Un modèle que vous voudriez mouler](../../../articles/images/mold_enabled_shell.png)
 ![Le moule pour ce modèle](../../../articles/images/mold_enabled_mould.png)
 
-La génération de moules de Cura créera un creux ayant la forme exacte que vous voulez mouler. Autour de ce creux, une coquille sera générée avec une certaine largeur, configurable grâce au paramètre [Minimal Mold Width](mold_width.md). Au-dessus et en dessous du moule, une peau sera générée avec une certaine hauteur, configurable grâce au paramètre [Mold Roof Height](mold_roof_height.md). Toutefois, cette peau ne sera pas générée tout en haut du modèle afin que vous puissiez y verser le matériau de moulage. Elle ne sera pas non plus générée tout en bas du modèle. Vous devez la garder sur la plaque de construction pendant le moulage.
+La génération de moules de Cura créera un creux ayant la forme exacte que vous voulez mouler. Autour de ce creux, une coquille sera générée avec une certaine largeur, configurable grâce au paramètre [Largeur minimal de moule](./mold_width.md). Au-dessus et en dessous du moule, une peau sera générée avec une certaine hauteur, configurable grâce au paramètre [Hauteur du plafond de moule](./mold_roof_height.md). Toutefois, cette peau ne sera pas générée tout en haut du modèle afin que vous puissiez y verser le matériau de moulage. Elle ne sera pas non plus générée tout en bas du modèle. Vous devez la garder sur la plaque de construction pendant le moulage.
 
 Conception de votre moule
 ----
-La génération de moisissures de Cura n'est pas parfaite. Il manque quelques éléments. Voici quelques conseils pour les corriger.
+La génération de moule de Cura n'est pas parfaite. Il manque quelques éléments. Voici quelques conseils pour les corriger.
 * Cura ne crée pas de carottes pour tous les maxima locaux de votre modèle. Vous devez ajouter des tiges verticales à votre modèle partout où vous avez besoin d'une carotte.
 * Cura ne permet pas de couler du matériau supplémentaire au cas où votre matériau se rétracterait en refroidissant. Vous devez ajouter des tiges supplémentaires même au point le plus élevé de votre modèle si vous utilisez un matériau qui rétrécit beaucoup.
 * Le moule de Cura est toujours en une seule pièce. Pour de nombreuses formes, cela signifie que le moule doit être détruit pour pouvoir être enlevé. Les moules peuvent être détruits de différentes manières : par la force pure ou en les chauffant si le matériau à l'intérieur le permet, ou en utilisant un matériau comme le PVA qui se dissout dans l'eau.
