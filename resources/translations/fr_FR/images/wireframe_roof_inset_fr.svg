@@ -12,9 +12,9 @@
 	<polygon points="500,325 520,305 510,305 510,95 520,95 500,75 480,95 490,95 490,305 480,305" />
 	<g font-family="sans-serif" font-size="50px">
 		<text x="520" y="170">
-			<tspan>Roof</tspan>
-			<tspan x="520" dy="1em">Inset</tspan>
-			<tspan x="520" dy="1em">Distance</tspan>
+			<tspan>Distance</tspan>
+			<tspan x="520" dy="1em">Encadré</tspan>
+			<tspan x="520" dy="1em">Toit</tspan>
 		</text>
 	</g>
 </svg>
