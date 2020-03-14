@@ -1,5 +1,5 @@
-Cura assumes that multi-extruder printers have separate nozzles that can have separate temperatures. While one extruder is busy printing, the rest of the nozzles must be held at a lower temperature in order to prevent the material in the nozzle chamber from degrading and to prevent oozing. This lower temperature is the stand-by temperature.
+Cura suppose que les imprimantes à plusieurs extrudeuses ont des buses séparées qui peuvent avoir des températures différentes. Pendant qu'une extrudeuse est occupée à imprimer, les autres buses doivent être maintenues à une température plus basse afin d'éviter que le matériau dans la chambre de la buse ne se dégrade et ne suinte. Cette température plus basse est la température d'attente.
 
-![While the blue extruder is printing, the red extruder cools down to the stand-by temperature](../../../articles/images/temperature_regulation.svg)
+![Pendant que l'extrudeuse bleue imprime, l'extrudeuse rouge refroidit à la température d'attente](../../../articles/images/temperature_regulation.svg)
 
-A good stand-by temperature is low enough to protect the filament from degrading, which might clog the nozzle. It is low enough to prevent the material from oozing out of the nozzle. But it is also high enough to quickly continue printing when the other extruders are done.
+Une bonne température de veille est suffisamment basse pour protéger le filament de la dégradation, qui pourrait boucher la buse. Elle est suffisamment basse pour éviter que la matière ne s'échappe de la buse par suintement. Mais elle est aussi suffisamment élevée pour que l'impression puisse se poursuivre rapidement lorsque les autres extrudeuses ont terminé.
