@@ -1,5 +1,5 @@
-This setting describes how strong the surface energy is with the printed material. It is not meant to be changed, only prescribed by the material that is being used.
+Ce paramètre décrit la force de l'énergie de surface avec le matériel imprimé. Il n'est pas censé être modifié, mais seulement prescrit par le matériau utilisé.
 
-The setting is not actually used by slicing at the moment, but some printer profiles use it to determine whether to use a prime tower or not.
+Ce réglage n'est pas utilisé pour le découpage pour le moment, mais certains profils d'imprimantes l'utilisent pour déterminer s'il faut utiliser une tour d'impression ou non.
 
-*The setting is not visible in Cura's interface. It can only be adjusted by the profiles.*
+*Le réglage n'est pas visible dans l'interface de Cura. Il ne peut être ajusté que par les profils.*
