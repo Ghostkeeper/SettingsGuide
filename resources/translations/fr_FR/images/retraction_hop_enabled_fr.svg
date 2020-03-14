@@ -29,9 +29,9 @@
 
 	<!-- Labels. -->
 	<path d="M760,540 l-20,-20 h15 v-60 h-15 l20,-20 l20,20 h-15 v60 h15 z" />
-	<g font-family="sans-serif" font-size="80px">
-		<text x="1000" y="70" text-anchor="middle">No hop</text>
-		<text x="1000" y="530" text-anchor="middle">Hop</text>
-		<text x="730" y="520" text-anchor="end">Z Hop Height</text>
+	<g font-family="sans-serif" font-size="70px">
+		<text x="1000" y="70" text-anchor="middle">Pas de saut</text>
+		<text x="1000" y="530" text-anchor="middle">Saut</text>
+		<text x="730" y="520" text-anchor="end">Hauteur du saut en Z</text>
 	</g>
 </svg>
