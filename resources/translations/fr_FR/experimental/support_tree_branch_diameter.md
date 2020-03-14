@@ -1,7 +1,7 @@
 Ce paramètre vous permet d'ajuster la largeur des branches du support de l'arbre. La largeur spécifiée ici sera la largeur au sommet des branches de l'arbre. L'extrémité de la branche sera plus fine et, vers le bas, elle s'élargira progressivement selon le paramètre [Tree Support Branch Diameter Angle](support_tree_branch_diameter_angle.md).
 
-![La forme d'une branche d'un diamètre de 1,4 mm](../../../articles/images/support_diamètre_branche_d'arbre_1_4mm_5.png)
-![La forme d'une branche d'un diamètre de 5mm](../../../articles/images/support_tree_branche_diamètre_5mm.png)
+![La forme d'une branche d'un diamètre de 1,4 mm](../../../articles/images/support_tree_branch_diameter_1_4mm_5.png)
+![La forme d'une branche d'un diamètre de 5mm](../../../articles/images/support_tree_branch_diameter_5mm.png)
 
 Les branches plus larges sont plus stables, ce qui réduit le risque que l'arbre soit renversé par la buse s'il doit le traverser.
 
