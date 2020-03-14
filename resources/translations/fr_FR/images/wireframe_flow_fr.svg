@@ -17,7 +17,7 @@
 	<polygon points="910,600 910,420 920,420 900,400 880,420 890,420 890,600" /> <!-- Up flow. -->
 	<polygon points="1107,393 1307,593 1314,586 1314,614 1286,614 1293,607 1093,407" /> <!-- Down flow. -->
 	<g font-family="sans-serif" font-size="50px">
-		<text x="1150" y="880">Flat</text>
-		<text x="930" y="550">Connection</text>
+		<text x="1150" y="880">Plat</text>
+		<text x="930" y="550">Connexion</text>
 	</g>
 </svg>
