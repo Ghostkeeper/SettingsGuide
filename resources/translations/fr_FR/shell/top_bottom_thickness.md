@@ -3,7 +3,7 @@ Avec l'épaisseur supérieure/inférieure, vous pouvez ajuster l'épaisseur de l
 ![Épaisseur ordinaire du haut/bas](../../../articles/images/top_bottom_thickness_0.8.png)
 ![Côtés supérieur et inférieur beaucoup plus épais](../../../articles/images/top_bottom_thickness_3.png)
 
-Cela concerne à la fois les faces supérieure et inférieure de l'impression. Le haut et le bas peuvent également être configurés individuellement avec les paramètres [Top Thickness](top_thickness.md) et [Bottom Thickness](bottom_thickness.md).
+Cela concerne à la fois les faces supérieure et inférieure de l'impression. Le haut et le bas peuvent également être configurés individuellement avec les paramètres [Épaisseur du dessus](./top_thickness.md) et [Épaisseur du dessous](./bottom_thickness.md).
 
 Si ce paramètre n'est pas un multiple de la hauteur de la couche, il sera arrondi au multiple le plus proche. Ce paramètre détermine uniquement le nombre de couches supérieures et inférieures qui seront générées.
 
