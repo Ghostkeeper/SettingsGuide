@@ -1,3 +1,3 @@
-This setting configures how fast the material is retracted for the wiping procedure. This can be configured separately from the ordinary [retraction retract speed](../travel/retraction_retract_speed.md).
+Ce paramètre configure la vitesse à laquelle le matériel est rétracté pour la procédure d'essuyage. Il peut être configuré séparément de la [vitesse de rétraction](../travel/retraction_retract_speed.md) ordinaire.
 
-Since any material that is oozed from the nozzle during this wipe procedure will be wiped off anyway, the retraction speed may be reduced somewhat for this procedure compared to the rest of the print. This reduces wear on the filament.
+Étant donné que tout matériau qui suinte de la buse pendant cette procédure d'essuyage sera de toute façon essuyé, la vitesse de rétraction peut être quelque peu réduite pour cette procédure par rapport au reste de l'impression. Cela permet de réduire l'usure du filament.
