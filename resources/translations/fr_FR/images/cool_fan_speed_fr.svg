@@ -121,8 +121,8 @@
 
 	<!-- Axis labels. -->
 	<g font-family="sans-serif" font-size="60px" text-anchor="middle">
-		<text x="700" y="60">Fan Speed</text>
-		<text x="2300" y="60">Layer Time</text>
+		<text x="700" y="60">Vitesse ventilateur</text>
+		<text x="2300" y="60">Temps de couche</text>
 	</g>
 
 	<!-- Dotted lines indicating height. -->
