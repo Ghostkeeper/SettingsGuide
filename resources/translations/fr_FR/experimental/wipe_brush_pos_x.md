@@ -1,7 +1,7 @@
-This setting configures where the nozzle moves to when wiping.
+Ce réglage permet de configurer l'endroit où la buse se déplace lors de l'essuyage.
 
-The wipe procedure only supports wiping in the X direction. This means that the wiping brush must span the entire Y axis. The wipe will be made directly to the left or right from the point where the nozzle ends up on the layer. The wiping movement itself will also be made solely in the X direction.
+La procédure d'essuyage ne prend en charge que l'essuyage dans le sens X. Cela signifie que la brosse d'essuyage doit couvrir l'ensemble de l'axe Y. L'essuyage sera effectué directement à gauche ou à droite du point où la buse se trouve sur la couche. Le mouvement d'essuyage lui-même se fera également uniquement dans la direction X.
 
-Your wiping brush may either be in the negative X direction or in the positive X direction. If the positive X direction is used, you'll most likely need the nozzle to move some ways beyond the edge of the build volume. If the brush is in the negative X direction, this coordinate will most likely need to be negative.
+Votre brosse d'essuyage peut être soit dans la direction X négative, soit dans la direction X positive. Si la direction X positive est utilisée, vous aurez très probablement besoin que la buse se déplace au-delà de la limite du volume de construction. Si la brosse est dans la direction X négative, cette coordonnée devra très probablement être négative.
 
-The nozzle will never move beyond this point for the wipe procedure. The wipe itself is made from this point on towards the model. It will not wipe beyond this point.
+La buse ne se déplacera jamais au-delà de ce point pour la procédure d'essuyage. L'essuyage lui-même est effectué à partir de ce point vers le modèle. Elle ne dépassera pas ce point.
