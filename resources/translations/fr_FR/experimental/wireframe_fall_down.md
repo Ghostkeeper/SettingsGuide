@@ -4,4 +4,4 @@ Lors de l'impression du cadre métallique, on s'attend à ce que le matériau s'
 
 La valeur du réglage est ajoutée à la hauteur des dents de la scie. On espère ainsi compenser l'affaissement lors de l'impression de ces dents de scie. S'il est bien réglé, l'anneau horizontal sera imprimé en reposant fermement sur le dessin des dents de scie, au lieu de tomber plus bas que la hauteur imprimée prévue.
 
-Lorsqu'il est combiné avec [Drag Along] (wireframe_drag_along.md), la hauteur du motif en dents de scie devient la [hauteur] (wireframe_height.md) normale plus la valeur du paramètre Drag Along plus la valeur de ce paramètre.
+Lorsqu'il est combiné avec [Drag Along](wireframe_drag_along.md), la hauteur du motif en dents de scie devient la [hauteur] (wireframe_height.md) normale plus la valeur du paramètre Drag Along plus la valeur de ce paramètre.
