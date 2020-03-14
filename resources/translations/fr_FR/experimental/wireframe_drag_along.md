@@ -1,7 +1,7 @@
-While printing the downward diagonal motion of the saw-tooth pattern for Wire Printing, the material tends to get dragged along a bit. This setting compensates for that effect by transforming the shape of the saw-tooth pattern slightly. The tips of the teeth are brought upwards and back.
+Lors de l'impression du mouvement diagonal vers le bas du motif en dents de scie pour l'impression au fil de fer, le matériau a tendance à être un peu traîné. Ce réglage compense cet effet en transformant légèrement la forme du motif en dents de scie. Les pointes des dents sont amenées vers le haut et vers l'arrière.
 
-![The tips of the saw teeth are moved backwards and up](../../../articles/images/wireframe_drag_along.svg)
+![Les pointes des dents de scie sont déplacées vers l'arrière et vers le haut](../../../articles/images/wireframe_drag_along.svg)
 
-The tips of the teeth are moved exactly opposite of the diagonal downward motion. As the material gets dragged along, hopefully the tips of the saw-tooth pattern end up in its intended location.
+Les pointes des dents sont déplacées exactement à l'opposé du mouvement diagonal vers le bas. Au fur et à mesure que le matériau est entraîné, on espère que les pointes des dents de scie se retrouvent à l'endroit prévu.
 
-When tuned well, this makes the saw-tooth pattern print more accurately. As a result, the next horizontal ring that gets placed on top of the saw-tooth pattern will not sag as much as it would otherwise. The entire structure becomes stronger and the print will be more reliable.
+Si le réglage est bon, l'impression en dents de scie est plus précise. Par conséquent, l'anneau horizontal suivant qui est placé sur le motif en dents de scie ne s'affaissera pas autant qu'il le ferait autrement. L'ensemble de la structure devient plus solide et l'impression est plus fiable.
