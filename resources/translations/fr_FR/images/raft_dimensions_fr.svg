@@ -53,30 +53,30 @@
 
 	<!-- Legend texts. -->
 	<g font-family="sans-serif">
-		<g font-size="70px">
-			<text x="1475" y="100" fill="midnightblue">Model layers</text>
-			<text x="0" y="550" fill="red">Top Layers</text>
-			<text x="1590" y="730" fill="blue">Middle Layer</text>
-			<text x="0" y="980">Base Layer</text>
+		<g font-size="50px">
+			<text x="1475" y="100" fill="midnightblue">Couches de modèle</text>
+			<text x="0" y="550" fill="red">Couches supérieures</text>
+			<text x="1590" y="730" fill="blue">Couche intermédiaire</text>
+			<text x="0" y="980">Couche de base</text>
 		</g>
-		<g font-size="45px">
-			<text x="1475" y="162.5">Initial Layer Z Overlap</text>
-			<text x="1393" y="310">Raft Air Gap</text>
-			<text x="150" y="40">Raft Extra Margin</text>
-			<text x="100" y="200">Raft Top Spacing</text>
-			<text x="0" y="270">Raft Top Line Width</text>
-			<text x="160" y="370">Raft Top</text>
-			<text x="0" y="420">Layer Thickness</text>
-			<text x="1600" y="500">Raft Middle Spacing</text>
-			<text x="1670" y="570">Raft Middle</text>
-			<text x="1680" y="620">Line Width</text>
-			<text x="1640" y="820">Raft Middle</text>
-			<text x="1655" y="870">Thickness</text>
-			<text x="130" y="650">Raft Base</text>
-			<text x="100" y="700">Line Spacing</text>
-			<text x="57" y="770">Raft Base</text>
-			<text x="50" y="820">Line Width</text>
-			<text x="0" y="900">Raft Base Thickness</text>
+		<g font-size="40px">
+			<text x="1475" y="162.5">Chevauchement couche initiale Z</text>
+			<text x="1393" y="310">Écart radeau</text>
+			<text x="150" y="40">Marge supp radeau</text>
+			<text x="100" y="200">Espacement radeau</text>
+			<text x="0" y="270">Largeur ligne supérieure radeau</text>
+			<text x="160" y="370">Haut radeau</text>
+			<text x="0" y="420">Épaisseur couche</text>
+			<text x="1600" y="500">Espacement radeau</text>
+			<text x="1670" y="570">Milieu Radeau</text>
+			<text x="1680" y="620">Largeur ligne</text>
+			<text x="1640" y="820">Milieu Radeau</text>
+			<text x="1655" y="870">Épaisseur</text>
+			<text x="130" y="650">Base Radeau</text>
+			<text x="100" y="700">Espacement lignes</text>
+			<text x="57" y="770">Base Radeau</text>
+			<text x="50" y="820">Largeur ligne</text>
+			<text x="0" y="900">Epaisseur base radeau</text>
 		</g>
 	</g>
 
