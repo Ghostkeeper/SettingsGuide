@@ -1,5 +1,5 @@
-This setting changes the speed for all build plate movements during the print. This includes all layer changes and Z Hops.
+Ce réglage modifie la vitesse de tous les mouvements de la plaque de construction pendant l'impression. Cela inclut tous les changements de couche et les Z Hops.
 
-Normally the speed of the build plate movements are determined by the firmware, which lets it move as fast as possible.
+Normalement, la vitesse des mouvements de la plaque de montage est déterminée par le microprogramme, qui lui permet de se déplacer aussi vite que possible.
 
-**[Spiralize Outer Contours](../blackmagic/magic_spiralize.md) is not affected by this setting, even if it causes the printer to move the build plate continuously during printing.**
+**[Spiralize Outer Contours](../blackmagic/magic_spiralize.md) n'est pas affecté par ce paramètre, même s'il amène l'imprimante à déplacer la plaque de montage de façon continue pendant l'impression.**
