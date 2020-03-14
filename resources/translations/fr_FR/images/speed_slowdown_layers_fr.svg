@@ -5,11 +5,11 @@
 	<!-- The build plate. -->
 	<line x1="0" y1="480" x2="2000" y2="480" stroke="lightgrey" stroke-width="40" />
 
-	<g font-family="sans-serif" font-size="50px" text-anchor="end">
+	<g font-family="sans-serif" font-size="40px" text-anchor="end">
 		<!-- Setting labels. -->
-		<text x="600" y="450">Initial Layer Print Speed</text>
-		<text x="600" y="250">Linearly interpolating</text>
-		<text x="600" y="50">Ordinary printing speed</text>
+		<text x="600" y="450">Vitesse d'impression couche initiale</text>
+		<text x="600" y="250">Interpolation linéaire</text>
+		<text x="600" y="50">Vitesse d'impression ordinaire</text>
 		<!-- Layer labels. -->
 		<g fill="dodgerblue">
 			<text x="860" y="450">20mm/s</text>
