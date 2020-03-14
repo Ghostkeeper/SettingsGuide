@@ -1,5 +1,5 @@
-This setting configures how often the nozzle will be wiped off the brush during every wipe procedure. The nozzle will move back and forth across the nozzle until it's passed this many times.
+Ce réglage permet de configurer la fréquence à laquelle l'embout sera essuyé de la brosse lors de chaque procédure d'essuyage. La buse se déplacera d'avant en arrière jusqu'à ce qu'elle soit passée autant de fois.
 
-The initial travel moves to and from the wiping positions are not counted in this setting, but the [initial position](wipe_brush_pos_x.md) is always beyond the brush. As such, the nozzle will also be wiped an extra two times before and after wiping back and forth on the brush.
+Les déplacements initiaux vers et depuis les positions d'essuyage ne sont pas pris en compte dans ce réglage, mais la [position initiale](wipe_brush_pos_x.md) est toujours au-delà de la brosse. Ainsi, la buse sera également essuyée deux fois de plus avant et après avoir été essuyée dans un sens ou dans l'autre sur la brosse.
 
-Brushing more often will make the wipe procedure more effective at removing all remaining material from the nozzle. However it will also take more time and allow the material to ooze more out the nozzle during the wiping procedure.
+En brossant plus souvent, la procédure d'essuyage sera plus efficace pour éliminer toute la matière restante de la buse. Cependant, cela prendra également plus de temps et permettra au matériau de suinter davantage hors de la buse pendant la procédure d'essuyage.
