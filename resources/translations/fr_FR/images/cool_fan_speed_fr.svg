@@ -115,8 +115,8 @@
 	<rect x="995" y="845" width="110" height="110" fill="none" stroke="white" stroke-width="10" />
 	<path d="M1600,905 h40 v10 l15,-15 l-15,-15 v10 h-40 z" />
 	<g font-family="sans-serif" font-size="60px">
-		<text x="1120" y="920">Minimum speed</text>
-		<text x="1700" y="920">Lift head</text>
+		<text x="1120" y="920">Vitesse minimale</text>
+		<text x="1700" y="920">Lever la tête</text>
 	</g>
 
 	<!-- Axis labels. -->
@@ -133,16 +133,16 @@
 	</g>
 
 	<!-- Markers depicting events. -->
-	<g font-family="sans-serif" font-size="50px">
+	<g font-family="sans-serif" font-size="40px">
 		<g text-anchor="end">
-			<text x="570" y="818">Vitesse initiale du ventilateur</text>
-			<text x="570" y="615">Vitesse régulière du ventilateur</text>
-			<text x="570" y="245">Vitesse maximale du ventilateur</text>
+			<text x="570" y="818">Vitesse initiale</text>
+			<text x="570" y="615">Vitesse régulière</text>
+			<text x="570" y="245">Vitesse maximale</text>
 		</g>
 		<text x="2400" y="765">Vitesse régulière du ventilateur</text>
 		<text x="2400" y="815">à la hauteur</text>
 		<text x="2400" y="455">Standard/Maximum</text>
-		<text x="2400" y="505">Seuil de vitesse du ventilateur</text>
+		<text x="2400" y="505">Seuil de vitesser</text>
 		<text x="2400" y="365">Durée minimale de la couche</text>
 		<text x="2400" y="240">(vitesse d'impression réduite)</text>
 		<text x="2400" y="117">Durée minimale de la couche</text>
