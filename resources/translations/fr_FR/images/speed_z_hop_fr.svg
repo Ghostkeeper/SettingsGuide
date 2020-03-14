@@ -27,8 +27,8 @@
 	<path d="M700,40 h580 v-15 l20,20 l-20,20 v-15 h-580 z" />
 
 	<!-- Labels. -->
-	<g font-family="sans-serif" font-size="80px">
-		<text x="1000" y="120" text-anchor="middle">Travel Speed</text>
-		<text x="530" y="80" text-anchor="end">Z Hop Speed</text>
+	<g font-family="sans-serif" font-size="60px">
+		<text x="1000" y="120" text-anchor="middle">Vitesse déplacement</text>
+		<text x="530" y="80" text-anchor="end">Vitesse du saut Z</text>
 	</g>
 </svg>
