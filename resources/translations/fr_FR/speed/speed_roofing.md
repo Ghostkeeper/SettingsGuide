@@ -1,5 +1,5 @@
-This setting adjusts the speed at which the top surface layers are printed, if there are any top surface skin layers as configured with the [Top Surface Skin Layers](../shell/roofing_layer_count.md) setting.
+Ce paramètre ajuste la vitesse à laquelle les couches de surface sont imprimées, s'il existe des couches de surface telles que configurées avec le paramètre [Top Surface Skin Layers](../shell/roofing_layer_count.md).
 
-![Various structures printed at different speeds](../../../articles/images/speed_difference.png)
+[Diverses structures imprimées à différentes vitesses](../../../articles/images/speed_difference.png)
 
-The top surface is very visible, so it could be worth the extra time to print this at a lower speed than the rest of the skin. That would improve the visual quality and water tightness of the top surface. Reducing this speed too much though will introduce a great flow change when switching to and from the top surface.
+La surface supérieure est très visible, il pourrait donc valoir la peine de l'imprimer à une vitesse plus faible que le reste de la peau. Cela permettrait d'améliorer la qualité visuelle et l'étanchéité de la surface supérieure. Cependant, une réduction trop importante de cette vitesse entraînerait une modification importante du flux lors du passage à la surface supérieure et inversement.
