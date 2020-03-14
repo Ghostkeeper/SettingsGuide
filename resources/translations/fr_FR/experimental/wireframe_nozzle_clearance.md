@@ -1,5 +1,5 @@
-This setting simply adjusts the distance between the vertical struts of the saw-tooth pattern of Wire Printing. It makes the pattern wider than it is tall, with the premise of leaving space for the nozzle to crawl down to the previous horizontal ring.
+Ce réglage permet simplement d'ajuster la distance entre les montants verticaux du motif en dents de scie de l'impression par fil. Il rend le motif plus large qu'il n'est haut, avec pour principe de laisser de l'espace pour que la buse puisse descendre jusqu'à l'anneau horizontal précédent.
 
-Normally, the saw-tooth pattern contains a diagonal that is exactly diagonal at 45°. The height of the teeth is exactly the same as the width. This setting increases the width of these teeth. As a result, the diagonal line will be printed more shallowly.
+Normalement, le motif en dents de scie contient une diagonale qui est exactement une diagonale à 45°. La hauteur des dents est exactement la même que la largeur. Ce réglage permet d'augmenter la largeur de ces dents. Par conséquent, la ligne diagonale sera imprimée de manière moins profonde.
 
-Increasing this setting reduces the amount of connections between the horizontal rings of the wire frame. This makes the frame weaker, but slightly reduces the print time. If the nozzle is very wide and shallow, this setting can be used to prevent the nozzle from hitting the adjacent teeth. 
+L'augmentation de ce réglage réduit le nombre de connexions entre les anneaux horizontaux du cadre métallique. Cela rend le cadre plus faible, mais réduit légèrement le temps d'impression. Si la buse est très large et peu profonde, ce réglage peut être utilisé pour éviter que la buse ne touche les dents adjacentes. 
