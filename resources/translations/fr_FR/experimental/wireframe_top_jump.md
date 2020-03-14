@@ -1,10 +1,10 @@
-If the [Wire Printing Strategy](wireframe_strategy.md) is set to "Knot", a little upwards and backwards motion will be made at the top of each saw tooth. This setting configures the magnitude of that motion.
+Si la [Stratégie d'impression par fil](wireframe_strategy.md) est réglée sur "Nœud", un petit mouvement de haut en bas et de bas en haut sera effectué au sommet de chaque dent de scie. Ce réglage permet de configurer l'ampleur de ce mouvement.
 
-![Where the knot is drawn and what its size entails](../../../articles/images/wireframe_top_jump.svg)
+![Où le nœud est dessiné et quelle est sa taille](../../../articles/images/wireframe_top_jump.svg)
 
-The motion for this "knot" is a series of travel moves:
-1. First, the nozzle will move upwards by the distance indicated by this setting. At the same time, the nozzle will move backwards by half of this distance.
-2. If there is any [delay](wireframe_top_delay.md) in the top, the nozzle will pause for the set amount of delay. This pause is done in the tip of the knot's motion.
-3. Third, the nozzle will move back down to the ordinary height. At the same time, the nozzle will move forward by 1.5 times the Knot Size, ending up at the distance indicated in this setting away from the vertical line.
+La motion pour ce "nœud" est une série de mouvements de voyage :
+1. Tout d'abord, la buse se déplace vers le haut de la distance indiquée par ce réglage. En même temps, la buse se déplace vers l'arrière sur la moitié de cette distance.
+2. S'il y a un [retard](wireframe_top_delay.md) dans la partie supérieure, la buse s'arrête pendant la durée du retard réglé. Cette pause se fait dans la pointe du mouvement du nœud.
+3. 3. Troisièmement, la buse redescend à la hauteur habituelle. Dans le même temps, la buse avance d'une fois et demie la taille du nœud, pour se retrouver à la distance indiquée dans ce réglage par rapport à la ligne verticale.
 
-The purpose of the knot is to give the horizontal ring on top of it some area to attach to the saw-tooth pattern. The knot will vary a little bit from side to side, so if the horizontal ring is not placed down very accurately there is still a bigger chance that they attach to each other. Also, the knot will make the upward line extend slightly further upwards, causing the horizontal ring to be pushed on top of it. And lastly, the knot will also produce some oozing due to the lack of retraction in this travel move. This produces a blob on which the horizontal ring can rest better.
+Le but du nœud est de donner à l'anneau horizontal qui le surmonte une certaine surface à fixer sur le motif en dents de scie. Le nœud varie un peu d'un côté à l'autre, de sorte que si l'anneau horizontal n'est pas placé avec précision, il y a encore plus de chances qu'ils s'attachent l'un à l'autre. De plus, le nœud fera en sorte que la ligne ascendante s'étende un peu plus vers le haut, ce qui fera que l'anneau horizontal sera poussé par-dessus. Enfin, le nœud produira également un certain suintement en raison de l'absence de rétraction dans ce mouvement de déplacement. Cela produit une tache sur laquelle l'anneau horizontal peut mieux reposer.
