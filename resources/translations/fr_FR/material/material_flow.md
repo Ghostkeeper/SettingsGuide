@@ -1,4 +1,4 @@
-Le réglage du débit permet d'ajuster directement la quantité de matière déposée. Normalement, la quantité de matériau est calculée par Cura de manière à ce que le matériau remplisse l'espace exact dans la largeur, la hauteur et la longueur de la ligne, mais cela peut être ajusté en utilisant les réglages de débit.
+Le réglage du débit permet d'ajuster directement la quantité de matière déposée. Normalement, la quantité de matériau est calculée par Cura de manière à ce que le matériau remplisse l'espace exact selon la largeur, la hauteur et la longueur de la ligne, mais cela peut être ajusté en utilisant les réglages de débit.
 
 Le principal cas d'utilisation pour ajuster le débit est de compenser une défaillance dans le train d'extrusion. Par exemple, si la buse est légèrement bouchée, cela peut provoquer une sous-extrusion. Augmenter le débit pourrait alors pousser plus de matière à travers la buse bouchée, en espérant qu'elle se termine à la bonne quantité de matière. Cela peut également compenser le glissement ou la variation du diamètre du filament.
 
