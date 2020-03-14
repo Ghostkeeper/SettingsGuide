@@ -1,6 +1,6 @@
 L'un des problèmes les plus courants de l'impression en 3D est que l'imprimante n'extrude pas assez de matière pour produire un bel objet solide. Lorsque cela se produit, on parle de "sous-extrusion" : La buse extrude moins de matière que prévu.
 
-[Un cas extrême de sous-extrusion, où l'on peut même voir l'intérieur de l'objet](../../../articles/images/underextrusion.jpg)
+![Un cas extrême de sous-extrusion, où l'on peut même voir l'intérieur de l'objet](../../../articles/images/underextrusion.jpg)
 
 La sous-extrusion peut également se manifester de nombreuses manières. Dans le cas le plus extrême, l'objet est très fragile et ses parties intérieures sont visibles à travers la surface. Parfois, on le voit en raison de la largeur trop faible des lignes, de sorte qu'elles ne se relient pas aux lignes adjacentes. Parfois, il se manifeste seulement par de petits trous dans la surface supérieure ou de minuscules fractures dans les parois.
 
