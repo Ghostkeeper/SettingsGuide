@@ -1,5 +1,5 @@
-This setting allows you to choose a different pattern for the very topmost layers indicated by the [Top Surface Skin Layers](../shell/roofing_layer_count.md) setting than the rest of the top and bottom.
+Ce paramètre vous permet de choisir un motif différent pour les couches les plus élevées indiquées par le paramètre [Top Surface Skin Layers](../shell/roofing_layer_count.md) que pour le reste du haut et du bas.
 
-Only the top layer(s) of the skin will get drawn in this pattern.
+Seule la ou les couches supérieures de la peau seront dessinées dans ce motif.
 
-The function of this setting is mostly cosmetic. While some options for the [Top/Bottom Pattern](../shell/top_bottom_pattern.md) setting will have different impact on strength or water tightness, the impact of the very topmost layer on this is minimal. Instead you may choose a different pattern that looks better for your part. For instance, you may want to choose the concentric pattern for circular objects.
+La fonction de ce paramètre est surtout cosmétique. Bien que certaines options du paramètre [Top/Bottom Pattern](../shell/top_bottom_pattern.md) aient un impact différent sur la résistance ou l'étanchéité, l'impact de la couche supérieure est minime. A la place, vous pouvez choisir un motif différent qui sera plus esthétique pour votre pièce. Par exemple, vous pouvez choisir le motif concentrique pour les objets circulaires.
