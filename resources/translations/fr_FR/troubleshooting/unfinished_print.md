@@ -1,25 +1,26 @@
-Sometimes a print doesn't finish completely. There could be a number of reasons why this happens, and some of them can be addressed by adjusting Cura's settings.
+Parfois, une empreinte ne se termine pas complètement. Plusieurs raisons peuvent expliquer ce phénomène, dont certaines peuvent être résolues en ajustant les paramètres de Cura.
 
-![The filament stopped flowing halfway through this print](../../../articles/images/unfinished_print.jpg)
+![Le filament a cessé de couler à mi-chemin de cette impression](../../../articles/images/unfinished_print.jpg)
 
-Printer failures
+Défaillances des imprimantes
 ----
-Sometimes the cause of an unfinished print is a printer failure, where the printer is not doing what it's expected to do. There is generally very little that Cura can do about these issues. Here are some common causes.
-* Power failure. There is very little Cura can do about this, aside from printing faster to reduce the odds of a power failure during the print.
-* Power supply failure. If any of the temperatures (either the [build plate](../material/material_bed_temperature.md) or the [nozzle](../material/material_print_temperature.md)) are too high, some printers have a failure mode where the power supply burns out or the temperature sensors give out errors. This will cause the printer to shut down, not finishing the print.
-* Firmware freezes. Due to bugs in the firmware the printer could end up unresponsive. If you can trace where in the g-code it freezes (most often at the beginning or the end of the print) then you might be able to see what g-code is causing this. Perhaps the start g-code or the end g-code needs to be adjusted.
-* The filament spool is tangled. It's a good idea to *always* hold on to the end of the filament if it's not securely in the feeder or inserted in one of the holes in the spool (if your spool has such holes). If you let go and the end of the filament jumps back onto the roll, it could slide under one of the other windings and tangle itself. Since the filament is typically hundreds of meters long, this knot can be very hard to unwind if it gets in.
+Parfois, la cause d'une impression inachevée est une panne d'imprimante, lorsque l'imprimante ne fait pas ce qu'on attend d'elle. En général, Cura ne peut pas faire grand-chose pour remédier à ces problèmes. Voici quelques causes courantes.
+* Panne de courant. Cura ne peut pas faire grand-chose à ce sujet, si ce n'est imprimer plus vite pour réduire les risques de panne de courant pendant l'impression.
+* Panne d'alimentation électrique. Si l'une des températures (soit la [plaque de construction](../material/material_bed_temperature.md) ou la [buse](../material/material_print_temperature.md)) est trop élevée, certaines imprimantes ont un mode de défaillance où l'alimentation électrique brûle ou les capteurs de température donnent des erreurs. L'imprimante s'éteint alors et ne termine pas l'impression.
+* Le microprogramme se fige. En raison de bogues dans le microprogramme, l'imprimante peut ne plus répondre. Si vous pouvez déterminer où dans le code G il se fige (le plus souvent au début ou à la fin de l'impression), vous pourrez peut-être voir quel code G en est la cause. Il est possible que le g-code de début ou de fin doive être ajusté.
+* La bobine de filament est emmêlée. C'est une bonne idée de *toujours* tenir le bout du filament s'il n'est pas bien fixé dans le chargeur ou inséré dans un des trous de la bobine (si votre bobine a de tels trous). Si vous lâchez et que l'extrémité du filament saute à nouveau sur la bobine, il pourrait glisser sous l'un des autres enroulements et s'emmêler. Comme le filament fait généralement des centaines de mètres de long, ce nœud peut être très difficile à dérouler s'il entre.
 
-Filament grinding
+Broyage du filament
 ----
-The feeder sometimes pushes very hard on the filament to push it through the extruder train. This damages the filament. When the feeder pushes and pulls on the same bit of filament very often, it can damage so much that the feeder can't get any grip on the filament any more. The material will stop flowing then and the rest of the print will be printed in air rather than plastic.
+L'alimentateur pousse parfois très fort sur le filament pour le faire passer dans le train de l'extrudeuse. Cela endommage le filament. Lorsque le dispositif d'alimentation pousse et tire très souvent sur le même bout de filament, cela peut l'endommager à tel point que le dispositif d'alimentation ne peut plus avoir de prise sur le filament. Le matériau s'arrête alors de couler et le reste de l'impression est imprimé à l'air plutôt qu'en plastique.
 
-![The filament has been ground out by the feeder](../../../articles/images/grinding.jpg)
+![Le filament a été broyé par le margeur](../../../articles/images/grinding.jpg)
 
-You can feel that this is happening during the print by placing a finger at the opening where the filament goes into the feeder. During a print, you should feel it move. If it doesn't move, it's most likely ground the material and doesn't get any grip on it. You can also pull the filament out of the printer and see where it is damaged.
+Vous pouvez sentir que cela se produit pendant l'impression en plaçant un doigt à l'ouverture où le filament va dans le chargeur. Pendant l'impression, vous devez sentir le filament bouger. Si elle ne bouge pas, c'est probablement qu'elle a broyé le matériau et qu'elle n'a pas de prise sur lui. Vous pouvez également tirer le filament hors de l'imprimante et voir où il est endommagé.
 
-To prevent this issue, you can make the following adjustments to Cura's settings:
-* Reduce the [Maximum Retraction Count](../travel/retraction_count_max.md) or increase the [Minimum Extrusion Distance Window](../travel/retraction_extrusion_window.md). This will limit the number of retractions made during the extrusion of a given length of filament. In effect this limits how often the feeder can roll back and forth across each piece of filament.
-* Reduce the [Retraction Distance](../travel/retraction_amount.md). Again this will limit the number of times the feeder goes back and forth across the same bit of filament.
-* Reduce the [Retraction Speed](../travel/retraction_speed.md). If the material is moving fast but is obstructed anywhere along the way, the feeder will grind the material. If the material is moving slower, there is less chance of this happening.
-* Print slower, by reducing the [Layer Height](../resolution/layer_height.md), the [Line Width](../resolution/line_width.md) or the [speeds](../speed/speed_print.md). This reduces the force that the feeder needs to put out on the filament, reducing the chance of grinding.
+Pour éviter ce problème, vous pouvez effectuer les réglages suivants dans les paramètres de Cura :
+* Réduire le [retrait maximal](../travel/retraction_count_max.md) ou augmenter la [Fenêtre de distance d'extrusion minimale](../travel/retraction_extrusion_window.md). Cela limitera le nombre de rétractions effectuées pendant l'extrusion d'une longueur donnée de filament. En fait, cela limite la fréquence à laquelle le dispositif d'alimentation peut rouler en avant et en arrière sur chaque morceau de filament.
+* Réduire la [Distance de rétraction](../travel/retraction_amount.md). Cela limitera à nouveau le nombre de fois que le chargeur fera des allers-retours sur le même morceau de filament.
+* Réduisez la [Vitesse de rétraction](../travel/retraction_speed.md)). Si le matériau se déplace rapidement mais qu'il est obstrué à un endroit quelconque du chemin, le chargeur broiera le matériau. Si le matériau se déplace plus lentement, il y a moins de chances que cela se produise.
+* Imprimez plus lentement en réduisant la [Hauteur de la couche](../resolution/layer_height.md), la [Largeur de la ligne](../resolution/line_width.md) ou les [vitesses](../speed/speed_print.md)). Cela permet de réduire la force que le chargeur doit exercer sur le filament, ce qui réduit les risques de broyage.
+
