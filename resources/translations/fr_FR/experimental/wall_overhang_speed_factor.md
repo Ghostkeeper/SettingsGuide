@@ -1,11 +1,11 @@
-With this setting, the speed can be adjusted at which [overhanging walls](wall_overhang_angle.md) are printed. The speed is set as a ratio of their normal print speed, which is either the [Outer Wall Speed](../speed/speed_wall_0.md) or the [Inner Wall Speed](../speed/speed_wall_x.md).
+Ce paramètre permet de régler la vitesse à laquelle [murs en surplomb](wall_overhang_angle.md) est imprimé. La vitesse est définie comme un rapport de leur vitesse d'impression normale, qui est soit la [Vitesse du mur extérieur](../speed/speed_wall_0.md) soit la [Vitesse du mur intérieur](../speed/speed_wall_x.md).
 
-Printing overhang at lower speeds can be very effective to reduce droop. This has a number of positive effects on your print.
-* The walls get more time to attach to adjacent walls in the previous layer. This helps them stay upright better, which reduces droop.
-* If your fan speed is set up high, the fans get more time to cool down the filament. This makes it solidify faster. If the printing speed were high, the material gets more time to droop down.
-* The material in the overhang is still connected to a bead coming out of the nozzle. When printing slower, the nozzle stays closer during the solidification, meaning that the pull of the nozzle on the material is more effective to keep the bead up high while it's solidifying.
+L'impression en surplomb à des vitesses plus faibles peut être très efficace pour réduire l'affaissement. Cela a un certain nombre d'effets positifs sur votre impression.
+* Les murs ont plus de temps pour se fixer aux murs adjacents de la couche précédente. Cela les aide à mieux se tenir debout, ce qui réduit l'affaissement.
+* Si la vitesse de votre ventilateur est élevée, les ventilateurs ont plus de temps pour refroidir le filament. Il se solidifie ainsi plus rapidement. Si la vitesse d'impression est élevée, le matériau a plus de temps pour s'affaisser.
+* Le matériau en surplomb est toujours relié à une perle sortant de la buse. Lorsque l'impression est plus lente, la buse reste plus proche pendant la solidification, ce qui signifie que la traction de la buse sur le matériau est plus efficace pour maintenir le bourrelet en hauteur pendant qu'il se solidifie.
 
-However printing overhang at lower (or different speeds can also have negative effects):
-* The print will obviously take longer to complete.
-* The border where the print speed is different may be very visible on the outside. This introduces a visible border in your print which may not be desirable.
-* When reducing speed, there will briefly be some overextrusion out the nozzle due to high pressure in the nozzle chamber. This can lead to blips or make the overhang quality worse. When increasing speed, there will be some underextrusion. In general this technique works better for large areas of overhang rather than small ones.
+Toutefois, l'impression en surplomb à des vitesses plus faibles (ou différentes vitesses peuvent également avoir des effets négatifs) :
+* L'impression sera évidemment plus longue à réaliser.
+* La bordure où la vitesse d'impression est différente peut être très visible à l'extérieur. Cela introduit une bordure visible dans votre impression qui peut ne pas être souhaitable.
+* En réduisant la vitesse, il y aura brièvement une certaine surexpulsion de la buse en raison de la haute pression dans la chambre de la buse. Cela peut entraîner des blips ou aggraver la qualité du surplomb. En augmentant la vitesse, il y aura une certaine sous-extrusion. En général, cette technique fonctionne mieux pour les grandes surfaces de surplomb que pour les petites.
