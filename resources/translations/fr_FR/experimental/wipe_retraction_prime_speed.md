@@ -1,3 +1,3 @@
-This setting configures how fast the material is primed after the wiping procedure. This can be configured separately from the ordinary [retraction prime speed](../travel/retraction_prime_speed.md).
+Ce paramètre configure la vitesse à laquelle le matériau est amorcé après la procédure d'essuyage. Il peut être configuré séparément de la [vitesse d'amorçage de la rétraction](../travel/retraction_prime_speed.md).
 
-Priming more slowly can cause a small blob to appear in the location where the nozzle lands after the wiping procedure. However priming more slowly might be necessary to get the material flowing properly after a longer retraction for the wiping procedure.
+Un amorçage plus lent peut provoquer l'apparition d'une petite tache à l'endroit où la buse atterrit après la procédure d'essuyage. Cependant, un amorçage plus lent peut être nécessaire pour que le matériau s'écoule correctement après une rétraction plus longue pour la procédure d'essuyage.
