@@ -1,8 +1,8 @@
-This setting determines how far before the end of the contour the feeder will stop feeding material. The length of coasting is configured however in a volume of material. It is more closely related to the volume inside the nozzle chamber.
+Ce paramètre détermine à quelle distance avant la fin du contour le chargeur cessera d'alimenter le matériau. La longueur de la côte est cependant configurée en volume de matériau. Elle est plus étroitement liée au volume à l'intérieur de la chambre de la buse.
 
-![Coasting 0.2mm³ of material](../../../articles/images/coasting_enable.png)
-![Coasting 0.1mm³ of material](../../../articles/images/coasting_volume_0_1.png)
+![Accostage 0.2mm³ de matière](../../../articles/images/coasting_enable.png)
+![Accostage de 0,1mm³ de matière](../../../articles/images/coasting_volume_0_1.png)
 
-Increasing the coasting volume causes the nozzle to stop extruding farther before it's finished the contour. The result is that it'll have more underextrusion towards the end. The function of coasting is to compensate for the blob when the contour is seamed, so increasing the coasted volume can compensate for bigger blobs.
+L'augmentation du volume en roue libre fait que la buse s'arrête d'extruder plus loin avant d'avoir fini le contour. Le résultat est qu'il y aura plus de sous-extrusion vers la fin. La fonction de la coulée en roue libre est de compenser la tache lorsque le contour est cousu, de sorte que l'augmentation du volume de coulée peut compenser des taches plus grandes.
 
-However increasing the coasted volume too much will cause harsh underextrusion towards the end of the contour. It can even lead to some underextrusion in whatever is printed after the contour, since the pressure on the nozzle is still low then.
+Cependant, une augmentation trop importante du volume côtier provoquera une forte sous-extrusion vers la fin du contour. Cela peut même entraîner une certaine sous-extrusion dans ce qui est imprimé après le contour, puisque la pression sur la buse est encore faible then.
