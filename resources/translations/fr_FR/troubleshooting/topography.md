@@ -1,15 +1,15 @@
-The "topography" effect is when a sloped top or bottom side is printed with a small amount of layers, such that the boundaries between layers are spaced far enough apart that they become easy to see. It is named after [topographic maps](https://en.wikipedia.org/wiki/Topographic_maps) where the elevation differences are typically indicated with contour lines.
+L'effet "topographie" est obtenu lorsqu'une face supérieure ou inférieure inclinée est imprimée avec une petite quantité de couches, de sorte que les limites entre les couches sont suffisamment espacées pour qu'elles deviennent facilement visibles. Il porte le nom de [cartes topographiques](https://en.wikipedia.org/wiki/Topographic_maps) où les différences d'altitude sont généralement indiquées par des courbes de niveau.
 
-![You can see the edges of the layers clearly](../../../articles/images/topography.jpg)
+![Vous pouvez voir clairement les bords des couches](../../../articles/images/topography.jpg)
 
-This effect is ubiquitous in 3D printing, and one of the easiest ways in which you can recognise that an object was 3D printed. It can be prevented, but preventing it typically reduces productivity significantly.
+Cet effet est omniprésent dans l'impression 3D, et c'est l'un des moyens les plus faciles de reconnaître qu'un objet a été imprimé en 3D. Il est possible de l'éviter, mais le fait de l'empêcher réduit généralement la productivité de manière significative.
 
-Layer height
+Hauteur de la couche
 ----
-Since the topography effect occurs when the borders between layers are spaced apart very far, the effect can be prevented by reducing the [layer height](../resolution/layer_height.md). When the layer height is reduced, the smaller vertical increments between layers will also result in smaller horizontal steps, which reduces the topography effect. Reducing the layer height greatly increases the printing time though.
+Comme l'effet de topographie se produit lorsque les frontières entre les couches sont très éloignées les unes des autres, il est possible d'éviter cet effet en réduisant la [hauteur de la couche](../resolution/layer_height.md). Lorsque la hauteur de la couche est réduite, les plus petits incréments verticaux entre les couches se traduiront également par des pas horizontaux plus petits, ce qui réduit l'effet de topographie. La réduction de la hauteur de la couche augmente cependant considérablement le temps d'impression.
 
-Instead of reducing the layer height for the entire print, you can also reduce the layer height only for the shallow slopes of the print by using [Adaptive Layer Height](../experimental/adaptive_layer_height_enabled.md). This greatly reduces the topography effect while having a minimal impact on the printing time. However it is more difficult to tune the print for other qualities then since the tuning usually depends on the layer height.
+Au lieu de réduire la hauteur de couche pour l'ensemble de l'impression, vous pouvez également réduire la hauteur de couche uniquement pour les faibles pentes de l'impression en utilisant [Adaptive Layer Height](../experimental/adaptive_layer_height_enabled.md). Cela permet de réduire considérablement l'effet de la topographie tout en ayant un impact minimal sur le temps d'impression. Cependant, il est plus difficile de régler l'impression pour d'autres qualités que celles mentionnées ci-dessus, car le réglage dépend généralement de la hauteur de la couche.
 
-Model adjustments
+Ajustements du modèle
 ----
-You can also consider rotating the model such that there are no more shallow slopes in the print. This usually involves printing a lot more support for your model though, which reduces productivity too, and the overhangs might not look as good.
+Vous pouvez également envisager de faire tourner le modèle de manière à ce qu'il n'y ait plus de pentes peu profondes dans l'impression. Mais cela implique généralement d'imprimer beaucoup plus de support pour votre modèle, ce qui réduit également la productivité, et les surplombs risquent de ne pas être aussi beaux.
