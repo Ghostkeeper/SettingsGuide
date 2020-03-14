@@ -1,7 +1,7 @@
-This setting specifies how fast the nozzle will move horizontally while printing the horizontal rings of the wire frame. The speed of the horizontal lines can be configured separately from the rest of the wire printing speed.
+Ce réglage précise la vitesse à laquelle la buse se déplace horizontalement pendant l'impression des anneaux horizontaux du cadre métallique. La vitesse des lignes horizontales peut être configurée séparément du reste de la vitesse d'impression des fils.
 
-![Where the different Wire Printing speeds apply](../../../articles/images/wireframe_printspeed.svg)
+![Où les différentes vitesses d'impression à fil s'appliquent](../../../articles/images/wireframe_printspeed.svg)
 
-The very lowest horizontal layer will be printed at the [Bottom Speed](wireframe_printspeed_bottom.md). That can be configured separately.
+La couche horizontale la plus basse sera imprimée à la [vitesse du fond](wireframe_printspeed_bottom.md). Cela peut être configuré séparément.
 
-Printing slower will take more time, but gives the material more time to solidify. This improves the bridging capacity of the material, which makes the print more reliable and look better in the end as well.
+Une impression plus lente prendra plus de temps, mais donne au matériau plus de temps pour se solidifier. Cela améliore la capacité de pontage du matériau, ce qui rend l'impression plus fiable et plus belle au final.
