@@ -1,11 +1,13 @@
-This setting directly adjusts the density of the spaghetti infill.
+Ce réglage permet d'ajuster directement la densité de la garniture de spaghettis.
 
-Normally, while printing infill, the [infill density](../infill/infill_sparse_density.md) setting only affects the [distance between infill lines](../infill/infill_line_distance.md). Because the [infill line width](../resolution/infill_line_width.md) is kept the same but the lines are spaced closer together, increasing the infill density has the effect that a greater portion of the infill volume gets filled with material in the end.
+Normalement, lors de l'impression d'un remplissage, le réglage [densité de remplissage](../infill/infill_sparse_density.md) n'affecte que la [distance entre les lignes de remplissage](../infill/infill_line_distance.md). Comme la [largeur de la ligne de remplissage](../resolution/infill_line_width.md) reste la même mais que les lignes sont plus rapprochées, l'augmentation de la densité de remplissage a pour effet qu'une plus grande partie du volume de remplissage est remplie de matériau à la fin.
 
-This works differently if [spaghetti infill](spaghetti_infill_enabled.md) is enabled. The infill line distance not only adjusts the distance between infill lines, but the line width will be adjusted as well in order to achieve the desired density as specified by this setting. This setting specifies exactly the fraction of the total infill volume that is going to get filled with material. Increasing this setting will cause the lines to become wider.
+Cela fonctionne différemment si [spaghetti infill](spaghetti_infill_enabled.md) est activé. La distance entre les lignes de remplissage permet non seulement d'ajuster la distance entre les lignes de remplissage, mais la largeur de la ligne sera également ajustée afin d'obtenir la densité souhaitée, comme spécifié par ce paramètre. Ce paramètre spécifie exactement la fraction du volume total de remplissage qui sera remplie de matériau. Si l'on augmente ce paramètre, les lignes deviennent plus larges.
 
-When using spaghetti infill to produce flexible infill, this setting essentially determines how stiff the infill material is going to be. Reducing the flow will produce softer infill, while increasing the flow will make the infill more stiff. However reducing the flow too much prevents the infill from being equally spread out. It will tend to fall down towards the bottom of the volume and produce piles of spaghetti there that don't add to the stiffness of the top. 
+Lorsque l'on utilise des spaghettis pour produire des remblais souples, ce réglage détermine essentiellement la rigidité du matériau de remplissage. En réduisant le débit, on obtient un matériau de remplissage plus souple, tandis qu'en augmentant le débit, on obtient un matériau de remplissage plus rigide. Cependant, une réduction excessive du débit empêche le matériau de remplissage d'être également réparti. Il aura tendance à tomber vers le bas du volume et à produire des tas de spaghettis qui n'ajouteront pas à la rigidité du dessus. 
 
-When using spaghetti infill to cast material, this setting should likely be set near 100% in order to fill up the model completely with material. However you may still adjust it slightly if your material has a tendency to shrink or expand as it sets.
+Lorsque l'on utilise un remplissage de spaghettis pour couler du matériau, ce réglage devrait probablement être proche de 100% afin de remplir complètement le modèle de matériau. Cependant, vous pouvez toujours l'ajuster légèrement si votre matériau a tendance à se contracter ou à se dilater en prenant.
 
-**This setting is still multiplied by the [infill flow](../material/infill_material_flow.md) setting.**
+**Ce paramètre est toujours multiplié par le paramètre [Débit de remplissage](../material/infill_material_flow.md).**
+
+
