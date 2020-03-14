@@ -1,11 +1,11 @@
-This setting configures the speed at which the top and bottom side of the support are printed, if [Support Interface is enabled](../support/support_interface_enable.md).
+Ce paramètre configure la vitesse à laquelle les faces supérieure et inférieure du support sont imprimées, si [Interface de support est activée](../support/support_interface_enable.md).
 
-![Various structures printed at different speeds](../../../articles/images/speed_difference.png)
+![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)
 
-A higher speed can save some printing time.
+Une vitesse plus élevée peut permettre de gagner du temps d'impression.
 
-A lower speed can improve the quality of overhangs. It causes the roofs to print more accurately and more smoothly. As a result, the surface on top of the roof will also be more accurate. The release of the support from the model will also be more consistent, leaving less of a scar on the model.
+Une vitesse plus faible peut améliorer la qualité des débordements. Elle permet d'imprimer les toits de manière plus précise et plus fluide. Par conséquent, la surface en haut du toit sera également plus précise. Le dégagement du support de la maquette sera également plus régulier, laissant moins de cicatrices sur la maquette.
 
-The effect of this setting on the bottom of the support depends on how the material behaves with cooling. It can either increase adhesion or reduce it, depending on whether the material is easy to cool.
+L'effet de ce réglage sur le bas du support dépend de la façon dont le matériau se comporte lors du refroidissement. Il peut soit augmenter l'adhérence, soit la réduire, selon que le matériau est facile à refroidir.
 
-If the support is very close to the model, such as for PVA or other soluble support materials, increasing the support speed can also cause the nozzle to overshoot into the model, marring the surface slightly.
+Si le support est très proche du modèle, comme dans le cas du PVA ou d'autres matériaux de support solubles, l'augmentation de la vitesse du support peut également provoquer un dépassement de la buse dans le modèle, ce qui en abîme légèrement la surface.
