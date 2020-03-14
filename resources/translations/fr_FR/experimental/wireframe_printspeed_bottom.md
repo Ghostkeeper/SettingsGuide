@@ -1,5 +1,5 @@
-This setting configures the printing speed of the concentric rings on the initial layer of the print when using Wire Printing. The printing speed of the initial flat layer can be configured separately from the rest of the horizontal layers.
+Ce réglage permet de configurer la vitesse d'impression des anneaux concentriques sur la couche initiale de l'impression lors de l'utilisation de l'impression au fil de fer. La vitesse d'impression de la couche initiale plane peut être configurée séparément du reste des couches horizontales.
 
-![Where the different Wire Printing speeds apply](../../../articles/images/wireframe_printspeed.svg)
+![Où les différentes vitesses d'impression par fil s'appliquent](../../../articles/images/wireframe_printspeed.svg)
 
-For the first flat layer, the wire printing technique won't need to bridge. Depending on the solidifying properties of your material and the fan speeds of your printer, the bottom speed may be printed a little slower than the rest of the flat layers.
+Pour la première couche plane, la technique d'impression au fil de fer ne devra pas faire de pont. Selon les propriétés de solidification de votre matériau et la vitesse de ventilation de votre imprimante, la vitesse inférieure peut être imprimée un peu plus lentement que le reste des couches plates.
