@@ -1,7 +1,7 @@
-While printing the horizontal rings of the wire frame, the nozzle will stand still for a fraction of a second at each line segment. This setting configures the duration of that pause. The pause is located exactly where the horizontal ring connects to the saw-tooth pattern beneath it.
+Pendant l'impression des anneaux horizontaux du cadre métallique, la buse s'arrête pendant une fraction de seconde à chaque segment de ligne. Ce réglage permet de configurer la durée de cette pause. La pause est située exactement à l'endroit où l'anneau horizontal se raccorde au motif en dents de scie qui se trouve en dessous.
 
-![The locations where the nozzle will pause](../../../articles/images/wireframe_flat_delay.svg)
+![Les emplacements où la buse s'arrêtera](../../../articles/images/wireframe_flat_delay.svg)
 
-By coming to a complete stand-still and pausing for a moment, a small blob of oozed material will appear in the locations where the nozzle pauses. The pressure of the material flow out the nozzle chamber will also push the horizontal ring slightly downwards. This attaches the ring extra well to the saw-tooth pattern underneath it.
+En s'arrêtant complètement et en faisant une pause, une petite goutte de matière suintante apparaîtra aux endroits où la buse s'arrête. La pression du flux de matière sortant de la chambre de la buse poussera également l'anneau horizontal légèrement vers le bas. L'anneau est ainsi très bien fixé au motif en dents de scie situé en dessous.
 
-The pause adds heavily onto the total printing time. There are many locations where the nozzle will be paused.
+La pause augmente fortement le temps total d'impression. Il existe de nombreux endroits où la buse est mise en pause.
