@@ -1,7 +1,7 @@
-Wire Printing consists of printing a number of rings around the outline. The vertical spacing of the rings is determined by this setting. With this setting you can define how long the connections between two concentric rings must be.
+L'impression au fil de fer consiste à imprimer un certain nombre d'anneaux autour du contour. L'espacement vertical des anneaux est déterminé par ce réglage. Avec ce réglage, vous pouvez définir la longueur des connexions entre deux anneaux concentriques.
 
-![Wire Printing visualised from the side, marking the height](../../../articles/images/wireframe_height.svg)
+![Impression filaire visualisé de côté, marquant la hauteur](../../../articles/images/wireframe_height.svg)
 
-The rings are connected with a saw-tooth pattern. This consists of a vertical line as well as a diagonal line. The vertical line will be exactly the length of the connection. The diagonal line will be angled at 45°. As a result, this setting not only determines the vertical height between the rings, but also the horizontal size of the saw-tooth pattern. It will determine how dense the frame will become in general.
+Les anneaux sont reliés par un motif en dents de scie. Celui-ci se compose d'une ligne verticale ainsi que d'une ligne diagonale. La ligne verticale sera exactement la longueur de la connexion. La ligne diagonale sera inclinée à 45°. Par conséquent, ce réglage détermine non seulement la hauteur verticale entre les anneaux, mais aussi la taille horizontale du motif en dents de scie. Il déterminera la densité du cadre en général.
 
-Reducing the height will make the frame more dense. It will make the frame more stable and will make printing more reliable. However it will also take more time to print then.
+La réduction de la hauteur rendra le cadre plus dense. Elle rendra le cadre plus stable et rendra l'impression plus fiable. Toutefois, l'impression prendra également plus de temps.
