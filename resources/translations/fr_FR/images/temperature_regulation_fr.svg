@@ -33,14 +33,14 @@
 	<path d="M2000,825 l-10,10 v-7 h-130 v-6 h130 v-7 z" />
 
 	<!-- Axis labels. -->
-	<g font-family="sans-serif" font-size="50px">
-		<text transform="rotate(-90, 60, 300)" x="60" y="300">Temperature</text>
-		<text x="1870" y="875">Time</text>
-		<text transform="rotate(60, 180, 830)" x="180" y="830" fill="blue">Preheat</text>
-		<text transform="rotate(60, 480, 830)" x="480" y="830" fill="red">Precool</text>
-		<text transform="rotate(60, 530, 830)" x="530" y="830">Switch</text>
-		<text transform="rotate(60, 1280, 830)" x="1280" y="830" fill="red">Preheat</text>
-		<text transform="rotate(60, 1480, 830)" x="1480" y="830" fill="blue">Precool</text>
-		<text transform="rotate(60, 1530, 830)" x="1530" y="830">Switch</text>
+	<g font-family="sans-serif" font-size="40px">
+		<text transform="rotate(-90, 60, 300)" x="60" y="300">Température</text>
+		<text x="1870" y="875">Temps</text>
+		<text transform="rotate(60, 180, 830)" x="180" y="830" fill="blue">Préchauffage</text>
+		<text transform="rotate(60, 480, 830)" x="480" y="830" fill="red">Pré-Refroidissement</text>
+		<text transform="rotate(60, 530, 830)" x="530" y="830">Changer</text>
+		<text transform="rotate(60, 1280, 830)" x="1280" y="830" fill="red">Préchauffage</text>
+		<text transform="rotate(60, 1480, 830)" x="1480" y="830" fill="blue">Pré-Refroidissemen</text>
+		<text transform="rotate(60, 1530, 830)" x="1530" y="830">Changer</text>
 	</g>
 </svg>
