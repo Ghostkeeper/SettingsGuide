@@ -1,7 +1,7 @@
-This setting adjusts the flow rate for the top surface only. The flow rate for the top surface can be adjusted separately from the flow rate of the rest of the top skin.
+Ce réglage ajuste le débit pour la surface supérieure uniquement. Le débit de la surface supérieure peut être réglé séparément du débit du reste de la peau supérieure.
 
-Adjusting the flow rate during the top surface is a stop gap method to fix problems with extrusion rate or the top surface not being very smooth.
+L'ajustement du débit pendant la surface supérieure est une méthode d'arrêt de l'écoulement pour régler les problèmes de débit d'extrusion ou de surface supérieure peu lisse.
 
-If there is a problem with extrusion rate only during the printing of the top surface, it is better to look at the [temperature](material_print_temperature.md), [line width](../experimental/roofing_line_width.md) and [speed](../speed/speed_roofing.md) combined, to achieve a reliable flow out the nozzle.
+S'il y a un problème de vitesse d'extrusion uniquement pendant l'impression de la surface supérieure, il est préférable de regarder la [température](material_print_temperature.md), la [largeur de ligne](../experimental/roofing_line_width.md) et la [vitesse](../speed/speed_roofing.md) combinées, pour obtenir un débit fiable à la sortie de la buse.
 
-If the top surface is not smooth, the [ironing](../shell/ironing_enabled.md) feature is worth a try, but the [line width](../experimental/roofing_line_width.md) setting is also a more effective way to tune the smoothness of the top surface.
+Si la surface supérieure n'est pas lisse, la fonction [repassage](../shell/ironing_enabled.md) vaut la peine d'être essayée, mais le réglage [line width](../experimental/roofing_line_width.md) est également un moyen plus efficace de régler la douceur de la surface supérieure.
