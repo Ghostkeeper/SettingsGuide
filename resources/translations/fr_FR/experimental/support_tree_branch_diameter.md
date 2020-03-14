@@ -1,10 +1,10 @@
-This setting allows you to adjust the width of the tree support's branches. The width specified here will be the width at the top of the tree's branches. The very tip of the branch will be thinner and towards the bottom it gradually becomes wider as per the [Tree Support Branch Diameter Angle](support_tree_branch_diameter_angle.md) setting.
+Ce paramètre vous permet d'ajuster la largeur des branches du support de l'arbre. La largeur spécifiée ici sera la largeur au sommet des branches de l'arbre. L'extrémité de la branche sera plus fine et, vers le bas, elle s'élargira progressivement selon le paramètre [Tree Support Branch Diameter Angle](support_tree_branch_diameter_angle.md).
 
-![The shape of a branch with a diameter of 1.4mm](../../../articles/images/support_tree_branch_diameter_1_4mm_5.png)
-![The shape of a branch with a diameter of 5mm](../../../articles/images/support_tree_branch_diameter_5mm.png)
+![La forme d'une branche d'un diamètre de 1,4 mm](../../../articles/images/support_diamètre_branche_d'arbre_1_4mm_5.png)
+![La forme d'une branche d'un diamètre de 5mm](../../../articles/images/support_tree_branche_diamètre_5mm.png)
 
-Wider branches are more stable, reducing the chance that the tree gets knocked over by the nozzle if it needs to travel across it.
+Les branches plus larges sont plus stables, ce qui réduit le risque que l'arbre soit renversé par la buse s'il doit le traverser.
 
-Wider branches will also merge together faster. This will save some material but can also prevent some of the model from being properly supported, and indeed some of the support itself as well. When branches are merged together they don't have an outline any more. Wide branches are best combined with either a wide [spacing](support_tree_branch_distance.md) or some [infill](../support/support_infill_rate.md) in order to properly support parts in the middle of the wide branches.
+Les branches plus larges se rejoignent également plus rapidement. Cela permet d'économiser du matériel, mais peut aussi empêcher qu'une partie du modèle soit correctement supportée, et même une partie du support lui-même. Lorsque les branches sont fusionnées ensemble, elles n'ont plus de contour. Il est préférable de combiner les branches larges avec un [espacement](support_tree_branch_distance.md) ou un [remplissage](../support/support_infill_rate.md) afin de soutenir correctement les parties situées au milieu des branches larges.
 
-Wider branches will also have a harder time navigating around your model. This may cause more of the support to be resting on the model rather than on the build plate. As a result, your model may have more scarring after removal of the support structures.
+Les branches plus larges auront également plus de mal à naviguer dans votre modèle. Cela peut faire en sorte qu'une plus grande partie du support repose sur le modèle plutôt que sur la plaque de construction. Par conséquent, votre modèle peut présenter davantage de cicatrices après le retrait des structures de soutien.
