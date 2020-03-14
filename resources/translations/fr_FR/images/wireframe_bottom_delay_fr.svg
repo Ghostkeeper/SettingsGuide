@@ -16,5 +16,5 @@
 	<polygon points="607,493 807,693 814,686 814,714 786,714 793,707 593,507" /> <!-- Down before the delay. -->
 	<polygon points="910,700 910,520 920,520 900,500 880,520 890,520 890,700" /> <!-- Up after the delay. -->
 	<circle fill="red" cx="900" cy="800" r="30" /> <!-- Point of delay. -->
-	<text x="930" y="760" font-family="sans-serif" font-size="50px">Bottom Delay</text>
+	<text x="930" y="760" font-family="sans-serif" font-size="60px">Retardement de la base</text>
 </svg>
