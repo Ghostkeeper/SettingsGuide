@@ -1,3 +1,3 @@
-This setting configures how much clearance must be created while travelling for the wipe procedure. This can be configured separately from the ordinary [Z hop height](../travel/retraction_hop.md).
+Ce paramètre configure la quantité d'espace libre à créer pendant le voyage pour la procédure d'essuyage. Il peut être configuré séparément de l'habituel [Z hop height](../travel/retraction_hop.md).
 
-During the wiping procedure, the nozzle moves back and forth rapidly. This makes the printer shake violently, which makes the build plate and the gantry system vibrate up and down as well. If the normal Z hop height is configured very tightly, some more space should be taken for the Z hop during the wipe procedure.
+Pendant la procédure d'essuyage, la buse se déplace rapidement d'avant en arrière. Cela fait trembler violemment l'imprimante, ce qui fait vibrer la plaque de montage et le système de portique de haut en bas également. Si la hauteur normale du Z hop est configurée de manière très serrée, il faut prendre un peu plus de place pour le Z hop pendant la procédure d'essuyage.
