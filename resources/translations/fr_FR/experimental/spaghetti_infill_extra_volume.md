@@ -1,5 +1,5 @@
-With this setting, an extra amount of material will be extruded every time when printing infill. This is done at every step if the spaghetti infill is printed in [steps](spaghetti_infill_stepped.md), or once per vertical pillar of infill otherwise.
+Avec ce réglage, une quantité supplémentaire de matériau sera extrudée à chaque fois lors de l'impression d'un remplissage. Cela se fait à chaque étape si le remplissage de spaghetti est imprimé en [étapes](spaghetti_infill_stepped.md), ou une fois par pilier vertical de remplissage sinon.
 
-When using spaghetti infill for casting, this allows filling up a [sprue](https://en.wikipedia.org/wiki/Sprue_\(manufacturing\)) with material or to compensate for losses due to the starting and stopping mechanism.
+Lorsque le remplissage spaghetti est utilisé pour le moulage, cela permet de remplir une [carotte](https://en.wikipedia.org/wiki/Sprue_\(manufacturing\)) de matériau ou de compenser les pertes dues au mécanisme de démarrage et d'arrêt.
 
-When using spaghetti infill to create soft infill structures, this allows you to compensate for underextrusion due to the sudden flow change to a higher flow rate. There is no mechanism to compensate for the sudden drop in flow rate after printing infill though, so there will still be blobs on whatever is printed afterwards. 
+Lorsque vous utilisez des spaghettis de remplissage pour créer des structures de remplissage souples, cela vous permet de compenser la sous-extrusion due au changement soudain de débit vers un débit plus élevé. Il n'y a pas de mécanisme pour compenser la chute soudaine du débit après l'impression du remplissage, de sorte qu'il y aura toujours des taches sur ce qui sera imprimé par la suite. 
