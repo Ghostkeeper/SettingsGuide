@@ -1,5 +1,5 @@
-This setting is another compensation factor that can be applied to compensate for the sagging of the material during Wire Printing. Instead of directly moving diagonally downwards for the saw-tooth pattern, this setting will make the nozzle go horizontal for a specified length of wire and then move on downwards.
+Ce réglage est un autre facteur de compensation qui peut être appliqué pour compenser l'affaissement du matériau pendant l'impression au fil de fer. Au lieu de se déplacer directement en diagonale vers le bas pour le motif en dents de scie, ce réglage fera en sorte que la buse se déplace horizontalement pour une longueur de fil donnée, puis se déplace vers le bas.
 
-![Moving straight horizontally first before moving back down](../../../articles/images/wireframe_straight_before_down.svg)
+![Déplacement horizontal droit d'abord avant de redescendre](../../../articles/images/wireframe_straight_before_down.svg)
 
-The straight horizontal motion is intended to pull the material upwards slightly before moving down. If tuned correctly, this makes the material go down in a straight diagonal rather than in a sagged curve. This makes the saw-tooth pattern stronger and also makes the tips of the teeth stand up better to support the next horizontal ring.
+Le mouvement horizontal droit a pour but de tirer le matériau vers le haut avant de le faire descendre. S'il est correctement réglé, il fait descendre le matériau en diagonale droite plutôt qu'en courbe affaissée. Cela rend le motif en dents de scie plus fort et permet également aux extrémités des dents de mieux se relever pour soutenir l'anneau horizontal suivant.
