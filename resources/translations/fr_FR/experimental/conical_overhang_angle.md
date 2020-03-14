@@ -1,10 +1,10 @@
-With this setting, the overhang angle is configured (in degrees) that is produced to [make the overhang printable](conical_overhang_enabled.md). Increasing this angle allows for greater overhang, causing Cura to modify the model less. Reducing this angle gives the object barely any overhang at all any more.
+Avec ce paramètre, l'angle de surplomb est configuré (en degrés) de manière à rendre le surplomb imprimable (conical_overhang_enabled.md). L'augmentation de cet angle permet d'obtenir un plus grand surplomb, ce qui fait que Cura modifie moins le modèle. Réduire cet angle permet de ne plus avoir de surplomb du tout.
 
-![A maximum model angle of 50°](../../../articles/images/conical_overhang_enabled_enabled.png)
-![A maximum model angle of 20°](../../../articles/images/conical_overhang_angle_20.png)
+![Un angle maximum de 50° pour le modèle](../../../articles/images/conical_overhang_enabled_enabled.png)
+![Un angle de modèle maximal de 20°](../../../articles/images/conical_overhang_angle_20.png)
 
-An angle of 90° will leave the model as it was with all of its overhang. The model will not be altered. An angle of 0° will make all slopes completely vertical.
+Un angle de 90° laissera le modèle tel qu'il était avec tout son surplomb. Le modèle ne sera pas modifié. Un angle de 0° rendra toutes les pentes complètement verticales.
 
-Reducing this angle reduces the overhang in the model. This allows the model to print better. It will not sag as much, and therefore the surface on the bottom sides will be smoother. However it will also make the printed object less truthful to the original model. It will also take slightly more time and material to print it.
+La réduction de cet angle réduit le surplomb du modèle. Cela permet de mieux imprimer le modèle. Il ne s'affaissera pas autant, et donc la surface des côtés inférieurs sera plus lisse. Cependant, cela rendra également l'objet imprimé moins fidèle au modèle original. Il faudra également un peu plus de temps et de matériel pour l'imprimer.
 
-The angle can also be negative. This makes the entire print conical with a wide base. This can produce interesting effects, but has no real practical use.
+L'angle peut également être négatif. Cela rend l'ensemble de l'impression conique avec une large base. Cela peut produire des effets intéressants, mais n'a pas de réelle utilité pratique.
