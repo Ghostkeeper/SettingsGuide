@@ -1,3 +1,3 @@
-If enabled, the filament will be retracted when moving to the height of the next layer.
+S'il est activé, le filament sera rétracté lors du passage à la hauteur de la couche suivante.
 
-This can be used to reduce the Z seam on the surface. However, it will only be effective if the retraction distance is very low. If the retraction distance is high, the duration of the retraction will allow the material to ooze so much that it counteracts the retraction.
+Cela peut être utilisé pour réduire la couture en Z sur la surface. Toutefois, elle ne sera efficace que si la distance de rétraction est très faible. Si la distance de rétraction est élevée, la durée de la rétraction permettra au matériau de suinter à tel point qu'il s'opposera à la rétraction.
