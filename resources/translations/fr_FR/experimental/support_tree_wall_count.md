@@ -1,9 +1,9 @@
-This setting determines the number of contours that will be drawn inside the tree support. With more contours, the tree support will be more rigid.
+Ce paramètre détermine le nombre de contours qui seront dessinés à l'intérieur du support de l'arbre. Avec plus de contours, le support de l'arbre sera plus rigide.
 
-![Two walls](../../../articles/images/support_tree_wall_count.png)
+![Deux murs](../../../articles/images/support_de_l'arbre_comte_de_mur.png)
 
-More walls will make the support much more sturdy, especially with large [angles of the branches](support_tree_angle.md). This increases reliability of the print, reducing the chance for the branches of the support to break.
+Un plus grand nombre de murs rendra le support beaucoup plus solide, surtout avec de grands [angles des branches] (support_tree_angle.md). Cela augmente la fiabilité de l'impression et réduit le risque de rupture des branches du support.
 
-However it will also greatly increase the time and material spent on the support.
+Toutefois, cela augmentera également considérablement le temps et le matériel consacrés au support.
 
-This setting works very similar to the [Support Wall Line Count](../support/support_wall_count.md) setting.
+Ce paramètre fonctionne de manière très similaire au paramètre [Support Wall Line Count](../support/support_wall_count.md).
