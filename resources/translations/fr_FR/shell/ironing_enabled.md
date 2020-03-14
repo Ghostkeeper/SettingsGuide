@@ -9,7 +9,7 @@ Le repassage permet d'imprimer un motif linéaire sur la surface supérieure de 
 
 Cependant, le repassage présente également quelques inconvénients :
 * Il augmente considérablement le temps d'impression.
-* Si le motif de repassage présente des interruptions (parce qu'il doit se déplacer vers différentes parties), il laissera une ligne visible entre la partie qui a été repassée plus tôt et la partie qui a été repassée plus tard. Cela peut parfois être évité en réglant le [Motif de repassage](ironing_pattern.md) sur un motif différent, par exemple Concentré.
-* Les surfaces inclinées, ou les surfaces supérieures avec beaucoup de détails, peuvent également être repassées, ce qui augmente l'effet de topographie. Les frontières entre les couches deviennent plus prononcées. Cela peut être évité en activant [Iron Only Highest Layer](ironing_only_highest_layer.md).
+* Si le motif de repassage présente des interruptions (parce qu'il doit se déplacer vers différentes parties), il laissera une ligne visible entre la partie qui a été repassée plus tôt et la partie qui a été repassée plus tard. Cela peut parfois être évité en réglant le [Motif de repassage](./ironing_pattern.md) sur un motif différent, par exemple Concentré.
+* Les surfaces inclinées, ou les surfaces supérieures avec beaucoup de détails, peuvent également être repassées, ce qui augmente l'effet de topographie. Les frontières entre les couches deviennent plus prononcées. Cela peut être évité en activant [Iron Only Highest Layer](./ironing_only_highest_layer.md).
 
 
