@@ -29,10 +29,10 @@
 	<use href="#legend_box" x="1200" y="350" fill="lime" />
 	<use href="#legend_box" x="1200" y="500" fill="gold" />
 	<use href="#legend_box" x="1200" y="650" fill="maroon" />
-	<g font-family="sans-serif" font-size="80pt">
-		<text x="1320" y="290">Outer wall</text>
-		<text x="1320" y="440">Inner wall</text>
-		<text x="1320" y="590">Infill</text>
-		<text x="1320" y="740">Overextruded</text>
+	<g font-family="sans-serif" font-size="70pt">
+		<text x="1320" y="290">Mur extérieur</text>
+		<text x="1320" y="440">Mur intérieur</text>
+		<text x="1320" y="590">Remplissage</text>
+		<text x="1320" y="740">SurExtrusion</text>
 	</g>
 </svg>
