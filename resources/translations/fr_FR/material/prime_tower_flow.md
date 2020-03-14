@@ -1,5 +1,5 @@
-The flow rate of the prime tower. If this is increased, more material is pushed in a smaller amount of space.
+Le débit de la tour principale. Si on l'augmente, plus de matière est poussée dans un espace plus restreint.
 
-Increasing this setting causes the nozzle to prime faster. This can save some time. Increasing it too much though can cause overextrusion. As a result there could be blobs on the prime tower which can cause the tower to be knocked over.
+En augmentant ce réglage, la buse s'amorce plus rapidement. Cela peut permettre de gagner du temps. Mais si on l'augmente trop, on risque de provoquer une surextrusion. En conséquence, il peut y avoir des bulles sur la tour d'amorçage, ce qui peut la faire basculer.
 
-This setting is taken into account when calculating how many perimeters the prime tower will have to prime enough volume for the [Prime Tower Minimum Volume](../dual/prime_tower_min_volume.md) setting, so increasing the flow will cause the prime tower to have fewer perimeters.
+Ce paramètre est pris en compte lors du calcul du nombre de périmètres que la tour principale devra amorcer pour obtenir un volume suffisant pour le paramètre [Volume minimum de la tour principale](../dual/prime_tower_min_volume.md), de sorte que l'augmentation du débit entraînera une réduction du nombre de périmètres de la tour principale.
