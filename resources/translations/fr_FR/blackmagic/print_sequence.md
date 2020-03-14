@@ -2,7 +2,7 @@ Lorsque plusieurs modèles sont placés sur la plaque de construction, cela dét
 
 Tout en même temps
 ----
-Tous les objets seront imprimés en même temps, ce qui signifie que les couches seront imprimées de bas en haut pour tous les objets en même temps. Il imprimera une couche de chaque objet avant de passer à la couche suivante.
+Tous les objets seront imprimés en même temps, ce qui signifie que les couches seront imprimées de bas en haut pour tous les objets en même temps. On imprimera une couche de chaque objet avant de passer à la couche suivante.
 
 Cela présente deux avantages majeurs :
 * La couche précédente a plus de temps pour refroidir, ce qui permet d'obtenir une meilleure qualité lors de l'impression de petits objets.
@@ -10,7 +10,7 @@ Cela présente deux avantages majeurs :
 
 Un à la fois
 ----
-Les objets seront imprimés un par un, ce qui signifie qu'il imprimera toutes les couches d'un objet, puis retournera à la plaque de construction pour imprimer l'objet suivant.
+Les objets seront imprimés un par un, ce qui signifie qu'il imprimera toutes les couches d'un objet, puis retournera au plateau d'impression pour imprimer l'objet suivant.
 
 Les principaux avantages de ce mode sont les suivants :
 * Si l'impression échoue pour une raison quelconque, tous les objets qui ont été terminés avant l'échec sont tout à fait utilisables.
