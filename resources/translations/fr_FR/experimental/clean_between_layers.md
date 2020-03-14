@@ -1,14 +1,14 @@
-This setting enables a procedure that gets executed at the end of every layer to wipe off any material from the nozzle tip. If you have a printer with a built-in wiping brush, enabling this setting will cause Cura to instruct the printer to periodically wipe the nozzle off on that brush.
+Ce réglage permet d'exécuter une procédure à la fin de chaque couche pour essuyer toute matière de l'embout de la buse. Si votre imprimante est équipée d'une brosse d'essuyage intégrée, l'activation de ce paramètre amènera Cura à demander à l'imprimante d'essuyer périodiquement l'embout de cette brosse.
 
-![Visualisation of the movements in the wiping procedure](../../../articles/images/clean_between_layers.svg)
+![Visualisation des mouvements de la procédure d'essuyage](../../../articles/images/clean_between_layers.svg)
 
-This wiping procedure consists of a number of steps:
-1. If [retraction is enabled](wipe_retraction_enable.md), the material is retracted.
-2. If [Z-hop is enabled](wipe_hop_enable.md), the nozzle is moved up or the build plate down.
-3. The nozzle is moved beyond the [position of the brush](wipe_brush_pos_x.md).
-4. The nozzle is wiped [a number of times](wipe_repeat_count.md) on the brush.
-5. The nozzle is moved back to its original position.
-6. The Z hop is ended, if it was enabled. The material unretracts.
-7. The print pauses for a [certain period](wipe_pause.md).
+Cette procédure d'effacement comprend un certain nombre d'étapes :
+1. Si [rétraction est activée](wipe_retraction_enable.md), le matériau est rétracté.
+2. Si le [saut en Z est activé](wipe_hop_enable.md), la buse est déplacée vers le haut ou la plaque de montage vers le bas.
+3. La buse est déplacée au-delà de la [position de la brosse](wipe_brush_pos_x.md).
+4. La buse est essuyée [un certain nombre de fois](wipe_repeat_count.md) sur la brosse.
+5. La buse est ramenée à sa position initiale.
+6. Le saut en Z est terminé, s'il a été activé. Le matériau se détache.
+7. L'impression s'arrête pendant une [certaine période](wipe_pause.md).
 
-The aim of this procedure is to clean the nozzle periodically of any debree. Some materials tend to creep up to the nozzle with capillary action due to high surface tension. This can creep into the print head and collect there, which may break the print head apart. Other materials containing fibres or other fillings may cause the filling to be sprayed onto the nozzle during printing. This will wipe that material off.
+Le but de cette procédure est de nettoyer périodiquement la buse de tout débris. Certains matériaux ont tendance à remonter vers la buse par capillarité en raison d'une tension superficielle élevée. Ces matériaux peuvent s'infiltrer dans la tête d'impression et s'y accumuler, ce qui peut entraîner la rupture de la tête d'impression. D'autres matériaux contenant des fibres ou d'autres charges peuvent provoquer la pulvérisation de la charge sur la buse pendant l'impression. Cette action permet d'essuyer ce matériau.
