@@ -19,14 +19,14 @@
 	<polygon points="265,775 280,755 270,755 270,620 280,620 265,600 250,620 260,620 260,755 250,755" /> <!-- Ease up distance. -->
 	<polygon points="1107,393 1307,593 1314,586 1314,614 1286,614 1293,607 1093,407" /> <!-- Down speed. -->
 	<g font-family="sans-serif" font-size="50px">
-		<text x="1120" y="880">Bottom</text>
-		<text x="1080" y="280">Horizontal</text>
-		<text x="320" y="420">Upward</text>
-		<text x="320" y="700">Half of Upward</text>
+		<text x="1120" y="880">Fond</text>
+		<text x="1080" y="280">Horizontale</text>
+		<text x="320" y="420">Vers le haut</text>
+		<text x="320" y="700">Moitié de la hausse</text>
 		<text text-anchor="end" x="240" y="680">
-			<tspan>Ease</tspan>
-			<tspan x="240" dy="1em">Upward</tspan>
+			<tspan>Faciliter</tspan>
+			<tspan x="240" dy="1em">Vers le haut</tspan>
 		</text>
-		<text x="1230" y="500">Downward</text>
+		<text x="1230" y="500">Vers le bas</text>
 	</g>
 </svg>
