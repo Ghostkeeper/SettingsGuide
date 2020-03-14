@@ -1,11 +1,11 @@
-The speed at which the inner walls are printed can be configured separately from the normal print speed and the outer wall.
+La vitesse à laquelle les parois intérieures sont imprimées peut être configurée séparément de la vitesse d'impression normale et de la paroi extérieure.
 
-![Various structures printed at different speeds](../../../articles/images/speed_difference.png)
+![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)
 
-The inner walls are less important for visual quality than the outer walls. However they will influence the placement of the outer walls, causing the material for the outer walls to be pushed outside if the [outer wall is printed after the inner walls](../shell/outer_inset_first.md), or directly pushing the outer wall out if the outer wall is printed first. It is therefore still somewhat important to print the inner walls accurately, but they can be printed a bit faster than the outer walls in order to save time.
+Les murs intérieurs sont moins importants pour la qualité visuelle que les murs extérieurs. Cependant, elles influencent l'emplacement des parois extérieures, ce qui fait que le matériau des parois extérieures est poussé vers l'extérieur si la [paroi extérieure est imprimée après les parois intérieures](../shell/outer_inset_first.md), ou pousse directement la paroi extérieure vers l'extérieur si la paroi extérieure est imprimée en premier. Il est donc important d'imprimer les parois intérieures avec précision, mais elles peuvent être imprimées un peu plus rapidement que les parois extérieures afin de gagner du temps.
 
-Reducing the speed of the inner wall will reduce vibrations while printing this structure, which reduces ringing. It also improves overhang, because the fans on the print head get more time to cool the material down while it's still being held taut by the nozzle.
+La réduction de la vitesse de la paroi intérieure permet de réduire les vibrations lors de l'impression de cette structure, ce qui réduit le tintement. Cela améliore également le porte-à-faux, car les ventilateurs de la tête d'impression ont plus de temps pour refroidir le matériau pendant qu'il est encore maintenu tendu par la buse.
 
-If the inner wall printing speed is too low however, there is a risk of introducing too great of a flow change. If the nozzle suddenly has to extrude much more slowly, it will extrude a lot of material for a while while the pressure in the nozzle chamber drops, so at the beginning of the wall it will overextrude.
+Cependant, si la vitesse d'impression de la paroi intérieure est trop faible, il y a un risque d'introduire un changement de débit trop important. Si la buse doit soudainement s'extruder beaucoup plus lentement, elle extrudera beaucoup de matériau pendant un certain temps alors que la pression dans la chambre de la buse diminue, de sorte qu'au début de la paroi, elle dépassera.
 
-The inner walls are also a significant part of the printing time, so reducing the speed at which the inner walls are printed will drastically increase the printing time.
+Les parois intérieures représentent également une partie importante du temps d'impression, donc réduire la vitesse à laquelle les parois intérieures sont imprimées augmentera considérablement le temps d'impression.
