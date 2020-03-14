@@ -14,10 +14,10 @@
 	<path fill="white" d="M190,500 l15,15 h-10 v30 h-10 v-30 h-10 z" />
 	<path d="M190,490 l-15,-15 h10 v-30 h10 v30 h10 z" />
 
-	<g font-family="sans-serif" font-size="40px" fill="white">
-		<text x="235" y="140">Top distance</text>
-		<text x="235" y="590">Top distance</text>
-		<text x="205" y="540">Bottom distance</text>
+	<g font-family="sans-serif" font-size="30px" fill="white">
+		<text x="235" y="140">Distance supérieure</text>
+		<text x="235" y="590">Distance supérieure</text>
+		<text x="205" y="540">Distance au fond</text>
 	</g>
 
 	<!-- Build plate. -->
