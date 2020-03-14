@@ -18,5 +18,5 @@
 	<circle fill="red" cx="300" cy="800" r="30" /> <!-- Points of delay. -->
 	<circle fill="red" cx="900" cy="800" r="30" />
 	<circle fill="red" cx="1500" cy="800" r="30" />
-	<text x="930" y="760" font-family="sans-serif" font-size="50px">Flat Delay</text>
+	<text x="930" y="760" font-family="sans-serif" font-size="60px">Délai d'attente</text>
 </svg>
