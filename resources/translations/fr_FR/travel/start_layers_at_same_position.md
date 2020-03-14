@@ -1,4 +1,4 @@
-À l'origine, ce paramètre faisait que l'imprimante commençait chaque couche avec l'objet le plus proche de la position spécifiée dans les paramètres [Layer Start X](layer_start_x.md) et [Layer Start Y](layer_start_y.md), au lieu de l'objet qui avait été imprimé en dernier dans la couche précédente.
+À l'origine, ce paramètre faisait que l'imprimante commençait chaque couche avec l'objet le plus proche de la position spécifiée dans les paramètres [X début couche](./layer_start_x.md) et [Y début couche](./layer_start_y.md), au lieu de l'objet qui avait été imprimé en dernier dans la couche précédente.
 
 **Le paramètre était caché dans Cura 2.4 et n'a jamais été supprimé correctement, c'est pourquoi ce paramètre existe toujours dans cette liste. Cependant, il n'a aucun effet sur l'impression.**
 
