@@ -1,31 +1,31 @@
-With the slicing tolerance, you can adjust how to deal with the inaccuracy of subdividing a mesh into a finite amount of layers. It allows you to choose whether the layers should closely approximate the surface, should stay bounded by the surface or should include the surface completely.
+Grâce à la tolérance de découpage, vous pouvez ajuster la manière de traiter l'imprécision de la subdivision d'une maille en un nombre fini de couches. Elle vous permet de choisir si les couches doivent se rapprocher de la surface, rester délimitées par la surface ou inclure la surface complètement.
 
-Middle
+Milieu
 ----
-![Middle](../../../articles/images/slicing_tolerance_middle.svg)
+![Milieu](../../../articles/images/slicing_tolerance_middle.svg)
 
-When using Middle, the layers will stay as close to the original surface as possible. This means that the layers will sometimes protrude outside of the original surface and sometimes dip into the original surface. Overall, the volume of the layers will match the volume of the original mesh very closely.
+En utilisant le milieu, les couches resteront aussi proches que possible de la surface d'origine. Cela signifie que les couches vont parfois dépasser de la surface d'origine et parfois s'enfoncer dans la surface d'origine. Dans l'ensemble, le volume des couches correspondra très étroitement au volume de la maille d'origine.
 
-To get the Middle tolerance, Cura will compute a cross section halfway across each layer's thickness. Everything inside the cross section will be made part of the layer.
+Pour obtenir la tolérance moyenne, Cura calculera une section transversale à mi-chemin de l'épaisseur de chaque couche. Tout ce qui se trouve à l'intérieur de la section transversale fera partie de la couche.
 
-Inclusive
+Inclus
 ----
-![Inclusive](../../../articles/images/slicing_tolerance_inclusive.svg)
+![Inclus](../../../articles/images/slicing_tolerance_inclusive.svg)
 
-When using Inclusive, the layers will contain *at least* all of the original volume. Where the surface is sloped, the layers will protrude slightly. The total volume of the layers will almost always be more than the volume of the original mesh.
+Lorsque vous utilisez Inclusive, les couches contiennent *au moins* la totalité du volume original. Lorsque la surface est inclinée, les couches seront légèrement en saillie. Le volume total des couches sera presque toujours supérieur au volume de la maille originale.
 
-To get the Inclusive tolerance, Cura will compute cross sections at the top and the bottom of each layer's height. All surfaces that are in *either* of those cross sections will be taken as being part of that layer. Tiny details that fall between the two cross sections will still be ignored, being smaller than one layer height.
+Pour obtenir la tolérance Inclusive, Cura calculera les sections transversales en haut et en bas de la hauteur de chaque couche. Toutes les surfaces qui se trouvent dans *l'une ou l'autre* de ces sections transversales seront considérées comme faisant partie de cette couche. Les petits détails qui se situent entre les deux sections transversales seront toujours ignorés, étant inférieurs à la hauteur d'une couche.
 
-Exclusive
+Exclusif
 ----
-![Exclusive](../../../articles/images/slicing_tolerance_exclusive.svg)
+![Exclusif](../../../articles/images/slicing_tolerance_exclusive.svg)
 
-When using Exclusive, the layers will be contained within the original volume. Where the surface is sloped, the layers will be slightly smaller than the original volume. The total volume of the layers will almost always be less than the volume of the original mesh.
+En cas d'utilisation d'Exclusive, les couches seront contenues dans le volume original. Lorsque la surface est inclinée, les couches seront légèrement plus petites que le volume original. Le volume total des couches sera presque toujours inférieur au volume de la maille originale.
 
-To get the Exclusive tolerance, Cura will compute cross sections at the top and the bottom of each layer's height. Only surfaces that are in *both* of those cross sections will be taken as being part of that layer.
+Pour obtenir la tolérance Exclusive, Cura calculera les sections transversales en haut et en bas de la hauteur de chaque couche. Seules les surfaces qui se trouvent dans les *deux* de ces sections transversales seront considérées comme faisant partie de cette couche.
 
-Usage
+Utilisation
 ----
-This setting is named after its intended use rather than its functional effect. If you have multiple pieces that need to slide past each other, the theoretical shape of the layers may physically prevent exact fits. In such a case, you can set this setting to Exclusive so that the layers are guaranteed to stay within the bounds of the original volume. Barring warping, sagging and similar deformation effects, this would guarantee that the parts fit within each other and are able to slide past each other.
+Ce paramètre porte le nom de son utilisation prévue plutôt que de son effet fonctionnel. Si vous avez plusieurs pièces qui doivent glisser les unes sur les autres, la forme théorique des couches peut physiquement empêcher un ajustement exact. Dans un tel cas, vous pouvez régler ce paramètre sur Exclusif afin de garantir que les couches restent dans les limites du volume original. À l'exception du gauchissement, de l'affaissement et d'autres effets de déformation similaires, cela garantirait que les pièces s'emboîtent les unes dans les autres et puissent glisser les unes sur les autres.
 
-In reality there are always other effects going on that prevent this. In practice, this setting can be used to get slightly more or less tolerance between two sloped surfaces, as can be seen in the above images.
+En réalité, il y a toujours d'autres effets qui empêchent cela. Dans la pratique, ce réglage peut être utilisé pour obtenir une tolérance légèrement plus ou moins grande entre deux surfaces inclinées, comme on peut le voir sur les images ci-dessus.
