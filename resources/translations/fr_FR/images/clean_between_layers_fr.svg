@@ -62,7 +62,7 @@
 
 	<!-- Labels. -->
 	<g font-family="sans-serif" font-size="50px">
-		<text x="1000" y="110">Move to wiping brush</text>
-		<text x="1820" y="80">Wipe</text>
+		<text x="1000" y="110">Passer à la brosse d'essuyage</text>
+		<text x="1820" y="80">Essuyer</text>
 	</g>
 </svg>
