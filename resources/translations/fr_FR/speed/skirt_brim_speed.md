@@ -1,5 +1,5 @@
-This setting adjusts the speed of the skirt or the brim separately from the rest of the print.
+Ce réglage permet d'ajuster la vitesse de la jupe ou du bord séparément du reste de l'empreinte.
 
-The skirt or brim is usually printed rather slowly, in order to make it stick better to the build plate. Printing slower (up to a point) generally makes it stick better, but takes more time to print.
+La jupe ou le bord est généralement imprimé assez lentement, afin de mieux adhérer à la plaque de montage. Une impression plus lente (jusqu'à un certain point) permet généralement une meilleure adhérence, mais prend plus de temps à imprimer.
 
-Even though the skirt and brim are printed on the first layer, this setting overrides the [Initial Layer Print Speed](speed_print_layer_0.md).
+Même si la jupe et le bord sont imprimés sur la première couche, ce paramètre a priorité sur la [Vitesse d'impression de la couche initiale](./speed_print_layer_0.md).
