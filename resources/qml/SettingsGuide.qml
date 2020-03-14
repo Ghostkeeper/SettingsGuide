@@ -109,7 +109,7 @@ Window {
 				spacing: UM.Theme.getSize("wide_margin").height
 
 				Text {
-					text: selectedArticleName.properties.label ? "<h1>" + selectedArticleName.properties.label + "</h1>" : ""
+					text: "<h1>" + settingsSidebar.selectedArticleName + "</h1>"
 					width: parent.width
 					wrapMode: Text.Wrap
 					renderType: Text.NativeRendering
