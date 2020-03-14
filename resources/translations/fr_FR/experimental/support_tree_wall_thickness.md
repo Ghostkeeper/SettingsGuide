@@ -1,9 +1,9 @@
-This setting determines how thick the tree support's perimeter will be. For a thicker perimeter, more contours will be drawn in the shape of the tree.
+Ce paramètre détermine l'épaisseur du périmètre du support de l'arbre. Pour un périmètre plus épais, plus de contours seront dessinés dans la forme de l'arbre.
 
-![Using a wall thickness of 0.8mm results in two contours inside the tree support](../../../articles/images/support_tree_wall_count.png)
+![L'utilisation d'une épaisseur de paroi de 0,8 mm donne deux contours à l'intérieur du support de l'arbre](../../../articles/images/support_tree_wall_count.png)
 
-Thicker walls will make the support much more sturdy, especially with large [angles of the branches](support_tree_angle.md). This increases reliability of the print, reducing the chance for the branches of the support to break.
+Des murs plus épais rendront le support beaucoup plus solide, surtout avec de grands [angles des branches](support_tree_angle.md). Cela augmente la fiabilité de l'impression et réduit le risque de rupture des branches du support.
 
-However it will also greatly increase the time and material spent on the support.
+Cependant, cela augmentera également considérablement le temps et le matériel consacrés au support.
 
-This setting works very similar to the [Support Wall Line Count](../support/support_wall_count.md) setting.
+Ce paramètre fonctionne de manière très similaire au paramètre [Support Wall Line Count](../support/support_wall_count.md).
