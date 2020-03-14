@@ -14,9 +14,9 @@
 	<rect x="1000" y="200" width="150" height="150" fill="midnightblue" />
 	<rect x="1000" y="450" width="150" height="150" fill="deepskyblue" />
 	<path d="M1000,775 l50,30 l-10,-20 h80 l-10,20 l50,-30 l-50,-30 l10,20 h-80 l10,-20 z" />
-	<g font-family="sans-serif" font-size="110px">
+	<g font-family="sans-serif" font-size="100px">
 		<text x="1200" y="320">Modèle</text>
 		<text x="1200" y="570">Jupe</text>
-		<text x="1200" y="820">Distance de la jupe</text>
+		<text x="1200" y="820">Distance jupe</text>
 	</g>
 </svg>
