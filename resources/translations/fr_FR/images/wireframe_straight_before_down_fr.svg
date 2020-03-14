@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1000">
+	<g stroke="deepskyblue" stroke-width="30" fill="none" stroke-linejoin="bevel">
+		<!-- Connecting zigzaggy lines. -->
+		<path d="M-300,240 h150 l410,560 v-560 h150 l410,560 v-560 h150 l410,560 v-560 h150 l410,560 v-560 h150" />
+	</g>
+	<g stroke="darkblue" stroke-width="50" fill="none">
+		<!-- Horizontal "layer" lines. -->
+		<line x1="0" y1="800" x2="2000" y2="800" />
+		<line x1="0" y1="200" x2="2000" y2="200" />
+	</g>
+
+	<!-- Legend. -->
+	<polygon points="835,280 855,300 855,290 950,290 950,300 970,280 950,260 950,270 855,270 855,260" />
+	<text x="840" y="360" font-family="sans-serif" font-size="50px">Straight</text>
+</svg>
