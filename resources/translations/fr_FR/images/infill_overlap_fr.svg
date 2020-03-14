@@ -46,7 +46,7 @@
 		<text x="280" y="500">50%</text>
 		<text x="280" y="850">10%</text>
 	</g>
-	<text x="1320" y="900" font-family="sans-serif" font-size="100px" fill="blue">0.4mm Essuyage</text>
+	<text x="1320" y="900" font-family="sans-serif" font-size="70px" fill="blue">0.4mm Essuyage</text>
 
 	<!-- Legend. -->
 	<g stroke-width="10" stroke="black">
