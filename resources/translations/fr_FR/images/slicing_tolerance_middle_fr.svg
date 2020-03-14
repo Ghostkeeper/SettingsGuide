@@ -85,9 +85,9 @@
 	<line stroke="black" stroke-width="10" x1="720" y1="50" x2="780" y2="50" />
 	<line stroke="red" stroke-width="10" x1="720" y1="100" x2="780" y2="100" />
 	<line stroke="red" stroke-width="50" opacity="0.3" x1="720" y1="150" x2="780" y2="150" />
-	<g font-family="sans-serif" font-size="30px">
-		<text x="800" y="60">Cross section</text>
-		<text x="800" y="110">Intersecting</text>
-		<text x="800" y="160">Final layer</text>
+	<g font-family="sans-serif" font-size="22px">
+		<text x="800" y="60">Coupe transversale</text>
+		<text x="800" y="110">Intersection</text>
+		<text x="800" y="160">Couche finale</text>
 	</g>
 </svg>
