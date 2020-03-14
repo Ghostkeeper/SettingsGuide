@@ -1,9 +1,9 @@
-With this setting, the nozzle will stand still for a moment after printing an upward line.
+Avec ce réglage, la buse s'arrête un instant après l'impression d'une ligne ascendante.
 
-![The location where the nozzle will pause](../../../articles/images/wireframe_top_delay.svg)
+![L'endroit où la buse s'arrêtera](../../../articles/images/wireframe_top_delay.svg)
 
-While the nozzle stands still at the top of the upward line, the upward line gets some time to solidify. This prevents it from being dragged along with the nozzle once it starts moving downwards again.
+Alors que la buse reste immobile au sommet de la ligne ascendante, la ligne ascendante a le temps de se solidifier. Cela permet d'éviter qu'elle ne soit entraînée avec la buse lorsqu'elle recommence à descendre.
 
-Of course, adding delay adds significantly on the printing time. While standing still, the heat from the nozzle can also melt the material and it will be oozing there at the top. This adds a blob of molten material on top of a single line of filament, which makes that line a bit top heavy.
+Bien sûr, l'ajout d'un délai augmente considérablement le temps d'impression. À l'arrêt, la chaleur de la buse peut également faire fondre le matériau et il suinte par le haut. Cela ajoute une goutte de matériau fondu sur une seule ligne de filament, ce qui rend cette ligne un peu lourde.
 
-This setting adds a conglomerate of factors to the print that are hard to predict. Which precise delay works best for your material, printer and model needs to be determined experimentally. In general, increasing the delay within reason tends to have a positive impact on the reliability of the print but a big negative impact on printing speed.
+Ce réglage ajoute à l'empreinte un conglomérat de facteurs difficiles à prévoir. Le délai précis qui convient le mieux à votre matériau, à votre imprimante et à votre modèle doit être déterminé expérimentalement. En général, l'augmentation du délai dans des limites raisonnables a tendance à avoir un impact positif sur la fiabilité de l'impression, mais un impact négatif important sur la vitesse d'impression.
