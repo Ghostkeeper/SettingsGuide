@@ -1,7 +1,7 @@
-If the support is [broken up in chunks](support_skip_some_zags.md), this setting determines how big each of the chunks of supports will be.
+Si le support est [découpé en morceaux](support_skip_some_zags.md), ce paramètre détermine la taille de chacun des morceaux de support.
 
-![Each chunk is about 20mm wide](../../../articles/images/support_skip_some_zags.png)
+![Chaque morceau fait environ 20 mm de large](../../../articles/images/support_skip_some_zags.png)
 
-Smaller chunks tend to be easier to break off than larger chunks. There is less surface area to stick to the model, so it will require less force to pull the support away. However there will also be more chunks to pull away, so if pulling off the support is not normally difficult, this may make pulling off support more work. Each piece has to be pulled off individually then, instead of pulling all of the support off in one big chunk.
+Les petits morceaux ont tendance à être plus faciles à casser que les gros morceaux. Il y a moins de surface à coller sur le modèle, donc il faudra moins de force pour retirer le support. Cependant, il y aura également plus de morceaux à retirer, donc si le retrait du support n'est normalement pas difficile, cela peut rendre le retrait du support plus difficile. Chaque pièce doit alors être retirée individuellement, au lieu de retirer tout le support en un seul morceau.
 
-If the chunks are made to be very small, the structural integrity of the support may be compromised. The support pattern will resemble the lines pattern more then, which has a greater chance of falling over. This would result in more stringing and worse overhang quality in places where the support fell over.
+Si les morceaux sont très petits, l'intégrité structurelle du support peut être compromise. Le motif du support ressemblera alors davantage au motif des lignes, qui a plus de chances de tomber. Cela se traduirait par une plus grande quantité de cordes et une moins bonne qualité de surplomb aux endroits où le support est tombé.
