@@ -14,7 +14,7 @@
 	<path d="M928,666 l10,-10 v6 h23 v-6 l10,10 l-10,10 v-6 h-23 v6 z" />
 
 	<!-- Labels. -->
-	<g font-family="sans-serif" font-size="50px">
+	<g font-family="sans-serif" font-size="55px">
 		<text x="890" y="880" transform="rotate(-65, 890, 880)">Angle</text>
 		<text x="725" y="680" fill="white">Distance</text>
 	</g>
