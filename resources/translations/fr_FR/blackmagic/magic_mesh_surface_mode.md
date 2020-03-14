@@ -3,7 +3,7 @@ Normalement, Cura crée des sections transversales de tous les triangles de votr
 Ce paramètre contrôle ce qui sera fait avec ces boucles non fermées. Si ce paramètre est réglé sur "Normal", elles sont rejetées. S'il est réglé sur "Surface", toutes les sections transversales sont imprimées sous forme de contours. Si le paramètre est réglé sur "Both", les contours fermés sont imprimés normalement, mais les contours non fermés sont imprimés séparément sous forme de murs supplémentaires.
 
 ![Le mode normal ne tient pas compte de la surface non fermée unique à droite](../../../articles/images/magic_mesh_surface_mode_normal.png)
-![Le mode Surface n'imprime que les zones de surface sans les traiter comme des volumes fermés](../../../articles/images/magic_mesh_mode_surface_surface.png)
+![Le mode Surface n'imprime que les zones de surface sans les traiter comme des volumes fermés](../../../articles/images/magic_mesh_surface_mode_surface.png)
 ![Impression des volumes et de la surface non fermée supplémentaire à droite](../../../articles/images/magic_mesh_surface_mode_both.png)
 
 Les surfaces supplémentaires qui seront imprimées ne comprendront que les surfaces verticales sous forme de lignes simples. Il n'y a pas de technique de remplissage pour les surfaces horizontales, car les surfaces ne sont pas des polygones fermés. Elles ne peuvent pas être remplies puisqu'il n'y a pas d'intérieur. Il ne peut pas y avoir de dessus, de dessous, de remplissage ou de supports. Seulement des lignes simples.
