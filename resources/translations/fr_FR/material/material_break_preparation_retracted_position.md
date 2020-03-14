@@ -1,9 +1,9 @@
-For some printers, when a material is retracted for a filament switch, the material needs to be broken off cleanly in order to move it through the feeder without tangling. This setting configures part of the procedure to break it cleanly.
+Pour certaines imprimantes, lorsqu'un matériau est rétracté pour un interrupteur à filament, le matériau doit être coupé proprement afin de le faire passer dans le chargeur sans s'emmêler. Ce réglage configure une partie de la procédure pour le rompre proprement.
 
-This setting adjusts the second position that the material is retracted to in order to stretch the material to a thin thread. This thin thread stretches out of the heated zone in the nozzle, allowing it to cool down and solidify. The thin, hard strand of material can then be broken off in the next stage of the retraction.
+Ce réglage ajuste la deuxième position dans laquelle le matériau est rétracté afin de l'étirer pour en faire un fil fin. Ce fil fin s'étire hors de la zone chauffée dans la buse, ce qui lui permet de refroidir et de se solidifier. Le fil fin et dur peut ensuite être rompu lors de l'étape suivante de la rétraction.
 
-![First, the material is retracted to stop oozing](../../../articles/images/filament_switch_anti_ooze.svg)
-![Second, the filament is slowly retracted to draw a thin thread that is easy to break and let this thread solidify](../../../articles/images/filament_switch_break_preparation.svg)
-![Third, the filament is quickly retracted further to break off the filament](../../../articles/images/filament_switch_break.svg)
+![D'abord, le matériau est rétracté pour arrêter de suinter](../../../articles/images/filament_switch_anti_ooze.svg)
+![Deuxièmement, le filament est lentement rétracté pour tirer un fil fin qui est facile à casser et laisser ce fil se solidifier](../../../articles/images/filament_switch_break_preparation.svg)
+![Troisièmement, le filament est rapidement rétracté davantage pour le rompre](../../../articles/images/filament_switch_break.svg)
 
-**This setting is currently never visible in Cura's interface. It can only be set by the profiles. It is also not used by Cura during slicing. However, printers that understand Cura's material file format may use it to configure their filament switching procedure correctly.** Through a post-processing script the `M600` command can be inserted in the print, which will trigger a filament switch.
+**Ce paramètre n'est actuellement jamais visible dans l'interface de Cura. Il ne peut être défini que par les profils. Il n'est pas non plus utilisé par Cura pendant le découpage. Cependant, les imprimeurs qui comprennent le format de fichier matériel de Cura peuvent l'utiliser pour configurer correctement leur procédure de changement de filament ** Grâce à un script de post-traitement, la commande "M600" peut être insérée dans l'impression, ce qui déclenchera un changement de filament.
