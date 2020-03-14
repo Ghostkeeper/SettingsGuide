@@ -135,17 +135,17 @@
 	<!-- Markers depicting events. -->
 	<g font-family="sans-serif" font-size="50px">
 		<g text-anchor="end">
-			<text x="570" y="818">Initial Fan Speed</text>
-			<text x="570" y="615">Regular Fan Speed</text>
-			<text x="570" y="245">Maximum Fan Speed</text>
+			<text x="570" y="818">Vitesse initiale du ventilateur</text>
+			<text x="570" y="615">Vitesse régulière du ventilateur</text>
+			<text x="570" y="245">Vitesse maximale du ventilateur</text>
 		</g>
-		<text x="2400" y="765">Regular Fan Speed</text>
-		<text x="2400" y="815">at Height</text>
-		<text x="2400" y="455">Regular/Maximum</text>
-		<text x="2400" y="505">Fan Speed Threshold</text>
-		<text x="2400" y="365">Minimum Layer Time</text>
-		<text x="2400" y="240">(print speed reduced)</text>
-		<text x="2400" y="117">Minimum Layer Time</text>
+		<text x="2400" y="765">Vitesse régulière du ventilateur</text>
+		<text x="2400" y="815">à la hauteur</text>
+		<text x="2400" y="455">Standard/Maximum</text>
+		<text x="2400" y="505">Seuil de vitesse du ventilateur</text>
+		<text x="2400" y="365">Durée minimale de la couche</text>
+		<text x="2400" y="240">(vitesse d'impression réduite)</text>
+		<text x="2400" y="117">Durée minimale de la couche</text>
 	</g>
 
 	<!-- Indicator for fan speed gradient. -->
