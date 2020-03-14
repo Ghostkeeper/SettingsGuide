@@ -17,11 +17,11 @@
 
 	<!-- Labels. -->
 	<g font-family="sans-serif" font-size="50px" stroke-width="5">
-		<text x="440" y="480" stroke="white">Minimum X/Y Distance</text>
-		<text x="440" y="480">Minimum X/Y Distance</text>
-		<text x="1100" y="920" stroke="white">X/Y Distance</text>
-		<text x="1100" y="920">X/Y Distance</text>
-		<text x="1220" y="240" stroke="white">Z Distance</text>
-		<text x="1220" y="240">Z Distance</text>
+		<text x="440" y="480" stroke="white">Distance Minimum X/Y</text>
+		<text x="440" y="480">Distance Minimum X/Y</text>
+		<text x="1100" y="920" stroke="white">Distance X/Y</text>
+		<text x="1100" y="920">Distance X/Y</text>
+		<text x="1220" y="240" stroke="white">Distance Z</text>
+		<text x="1220" y="240">Distance Z</text>
 	</g>
 </svg>
