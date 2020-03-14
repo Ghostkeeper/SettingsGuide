@@ -1,5 +1,5 @@
-After being on stand-by while different extruders have been printing, the nozzle will start at a slightly lower temperature. It then immediately heats up to the ordinary printing temperature once the printing has started.
+Après avoir été mise en veille pendant que différentes extrudeuses ont imprimé, la buse démarre à une température légèrement inférieure. Elle se réchauffe ensuite immédiatement pour atteindre la température d'impression ordinaire une fois que l'impression a commencé.
 
-![The extruder switch happens at a slightly lower temperature than the normal printing temperature](../../../articles/images/temperature_regulation.svg)
+![L'interrupteur de l'extrudeuse se produit à une température légèrement inférieure à la température d'impression normale](../../../articles/images/temperature_regulation.svg)
 
-Restarting the print at a slightly lower temperature reduces the amount of oozing while the nozzle is standing by. After all, most of the oozing happens while the nozzle is at its highest temperature. Lowering this temperature effectively causes it to start printing at a slightly lower temperature so that this oozing would occur during printing when it's actually desired.
+Le redémarrage de l'impression à une température légèrement inférieure réduit la quantité de suintement lorsque la buse est en attente. Après tout, la plupart des suintements se produisent lorsque la buse est à sa température la plus élevée. En effet, si l'on abaisse cette température, la buse commence à imprimer à une température légèrement plus basse, de sorte que le suintement se produit pendant l'impression, au moment où on le souhaite vraiment.
