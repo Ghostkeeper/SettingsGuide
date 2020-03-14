@@ -1,11 +1,11 @@
-This setting determines the angle of the slope at which the conical support gets printed.
+Ce réglage détermine l'angle de la pente à laquelle le support conique est imprimé.
 
-![An angle of 30 degrees](../../../articles/images/support_conical_enabled.png)
-![An angle of 10 degrees](../../../articles/images/support_conical_angle_10.png)
-![An angle of -10 degrees, causing the base to be wider](../../../articles/images/support_conical_angle_neg10.png)
+![Un angle de 30 degrés](../../../articles/images/support_conical_enabled.png)
+![Un angle de 10 degrés](../../../articles/images/support_conical_angle_10.png)
+![Un angle de -10 degrés, ce qui fait que la base est plus large](../../../articles/images/support_conical_angle_neg10.png)
 
-The conical support angle is the most major trade-off between the stability of support and how much support is generated.
+L'angle de soutien conique est le compromis le plus important entre la stabilité du soutien et le montant du soutien généré.
 
-Using a large angle will make the support very thin for a large portion of its height. This saves a lot of support material and printing time. When lots of support material is needed, this can save a lot of time and material, as upwards to half of the support is left out. However, since the support becomes very thin at the bottom, the support may also become less stable, increasing the chance of the print to fail. You can increase the [minimum width](support_conical_min_width.md) to guard against this.
+L'utilisation d'un grand angle rendra le support très mince sur une grande partie de sa hauteur. Cela permet d'économiser beaucoup de matériel de support et de temps d'impression. Lorsqu'il faut beaucoup de matériel de support, cela permet d'économiser beaucoup de temps et de matériel, car jusqu'à la moitié du support est laissée de côté. Cependant, comme le support devient très mince en bas, il peut aussi devenir moins stable, ce qui augmente le risque d'échec de l'impression. Vous pouvez augmenter la [largeur minimale](support_conical_min_width.md) pour éviter cela.
 
-Using a negative angle will make the support wider towards the bottom, shaped like a volcano. If your print has tiny features high up that need supporting, they will normally produce very tall [towers](../support/support_use_towers.md) that are prone to falling over during the print. With a negative angle these tall, thin support structures will be made wider at the bottom. This gives them some added stability. However, it will take longer to print this support since it requires more material. An angle of about -5° is normally enough to give even the tallest, thinnest support structures enough stability. If your material tends to ooze a lot during travel moves, a greater negative angle will be required because the structure will get pushed more due to blobs on the support.
+L'utilisation d'un angle négatif rendra le support plus large vers le bas, en forme de volcan. Si votre tirage comporte des éléments minuscules en hauteur qui doivent être soutenus, ils produiront normalement de très hautes [tours](../support/support_use_towers.md) qui auront tendance à tomber pendant le tirage. Avec un angle négatif, ces hautes et minces structures de support seront élargies dans le bas. Cela leur donne une certaine stabilité supplémentaire. Cependant, l'impression de ce support prendra plus de temps car il nécessite plus de matériel. Un angle d'environ -5° est normalement suffisant pour donner aux structures de support les plus hautes et les plus minces une stabilité suffisante. Si votre matériau a tendance à suinter beaucoup lors des déplacements, un angle négatif plus important sera nécessaire car la structure sera davantage poussée en raison des taches sur le support.
