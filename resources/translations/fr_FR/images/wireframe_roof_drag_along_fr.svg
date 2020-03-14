@@ -11,7 +11,7 @@
 	<!-- Legend. -->
 	<polygon points="500,455 520,435 510,435 510,395 520,395 500,375 480,395 490,395 490,435 480,435" />
 	<g font-family="sans-serif" font-size="50px">
-		<text x="520" y="430" fill="white" stroke="white" stroke-width="6">Roof Drag Along</text> <!-- White outline for legibility. -->
-		<text x="520" y="430">Roof Drag Along</text>
+		<text x="520" y="430" fill="white" stroke="white" stroke-width="6">Traîner le toit</text> <!-- White outline for legibility. -->
+		<text x="520" y="430">Traîner le toit</text>
 	</g>
 </svg>
