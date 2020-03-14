@@ -1,37 +1,37 @@
-Sometimes the bottom side of the print is slightly wider than the rest of the print, resulting in a small lip there. This is called an "elephant's foot", since it resembles the legs of an elephant where the toes are slightly wider than the rest of the leg.
+Parfois, la face inférieure de l'empreinte est légèrement plus large que le reste de l'empreinte, ce qui donne une petite lèvre à cet endroit. C'est ce qu'on appelle une "patte d'éléphant", car elle ressemble aux pattes d'un éléphant dont les orteils sont légèrement plus larges que le reste de la patte.
 
-There are several effects that people call elephant's foot with completely different inherent causes. These will require completely different solutions, too. This article will help you find the root cause.
+Il existe plusieurs effets que les gens appellent "pied d'éléphant", dont les causes inhérentes sont complètement différentes. Ces effets nécessitent également des solutions complètement différentes. Cet article vous aidera à trouver la cause première.
 
-![Elephant feet caused by the strength of the skin layers](../../../articles/images/elephants_foot.jpg)
+![Pieds d'éléphant causés par la force des couches de la peau](../../../articles/images/elephants_foot.jpg)
 
 Brim
 ----
-Sometimes the elephant's foot is really just a part of the brim that wasn't removed properly. If you've torn off the brim by hand, you can tell because the brim line is completely adjacent to the normal wall line, and the normal wall line is directly underneath the rest of the wall. To remove the brim completely, it's best to use a sharp knife to carve along the bottom side of your print.
+Parfois, la patte de l'éléphant n'est en fait qu'une partie du bord qui n'a pas été enlevée correctement. Si vous avez arraché le rebord à la main, vous pouvez le dire parce que la ligne du rebord est complètement adjacente à la ligne normale du mur, et la ligne normale du mur est directement sous le reste du mur. Pour enlever complètement le bord, il est préférable d'utiliser un couteau bien aiguisé pour graver le bas de votre empreinte.
 
-If the model doesn't have a big bottom side, consider setting the [adhesion method](../platform_adhesion/adhesion_type.md) to a skirt instead. If this gives too much problems with bed adhesion, you can try alternative methods of improving adhesion, such as setting the [Initial Layer Bottom Pattern](../shell/top_bottom_pattern_0.md) to "concentric".
+Si le modèle n'a pas un grand côté inférieur, envisagez plutôt de définir la [méthode d'adhésion](../platform_adhesion/adhesion_type.md) sur une jupe. Si cela pose trop de problèmes d'adhérence au lit, vous pouvez essayer d'autres méthodes pour améliorer l'adhérence, par exemple en réglant la [méthode d'adhérence de la couche initiale du fond](../shell/top_bottom_pattern_0.md) sur "concentrique".
 
-Warping
+Gauchissement
 ----
-Perhaps the most common cause of an actual elephant's foot is warping. As the material cools down, it will shrink a bit. The material in the bottom layer(s) is sometimes not able to shrink. They remain their original size, but the layers above it shrink a bit. There are several reasons why the bottom layers may be unable to shrink:
-* It's stuck to the build plate, which doesn't shrink.
-* It's heated by the build plate, which prevents it from shrinking.
-* There is skin adjacent to it, which blocks the shrinkage. (On higher layers there may be infill instead).
+La cause la plus fréquente de la patte d'un éléphant est peut-être le gauchissement. Lorsque le matériau se refroidit, il rétrécit un peu. La matière de la ou des couches inférieures ne peut parfois pas se rétracter. Elles conservent leur taille d'origine, mais les couches supérieures se rétractent un peu. Plusieurs raisons peuvent expliquer pourquoi les couches inférieures ne peuvent pas se rétracter :
+* Elle est collée à la plaque de construction, qui ne rétrécit pas.
+* Elle est chauffée par la plaque de montage, ce qui l'empêche de rétrécir.
+* Il y a de la peau à côté, ce qui bloque le rétrécissement. (Sur les couches supérieures, il peut y avoir du remblaiement à la place).
 
-To prevent warping, take a look at the [troubleshooting article](warping.md) about it. Specifically for this type of warping, here are a few things you can try:
-* Increase the [wall thickness](../shell/wall_thickness.md) to prevent the walls next to the infill from shrinking.
-* Reduce the [build plate temperature](../material/material_bed_temperature.md) to allow the first layer to shrink just as much as the other layers. If the bed temperature was very high, it can also allow the material to sag a bit, which makes it wider at the bottom. This effect is usually small, but this will also be prevented by reducing the bed temperature.
-* Increase the [bottom thickness](../shell/bottom_thickness.md) to more gradually transition to a shrunken size. You can even consider printing the model completely solidly (preferably by setting the bottom thickness extremely high) to get rid of the difference in shrinkage completely.
+Pour éviter le gauchissement, jetez un coup d'œil à l'[article de dépannage](warping.md) à ce sujet. Pour ce type de déformation, voici quelques exemples de ce que vous pouvez essayer :
+* Augmenter l'[épaisseur de la paroi](../shell/wall_thickness.md) pour empêcher les parois à côté du remplissage de rétrécir.
+* Réduire la [température de la plaque de construction](../material/material_bed_temperature.md) pour permettre à la première couche de se rétracter autant que les autres couches. Si la température du lit était très élevée, cela peut aussi permettre au matériau de s'affaisser un peu, ce qui le rend plus large au fond. Cet effet est généralement faible, mais il sera également évité en réduisant la température du lit.
+* Augmenter l'[épaisseur du fond](../shell/bottom_thickness.md) pour passer plus progressivement à une taille plus réduite. Vous pouvez même envisager d'imprimer le modèle de façon complètement solide (de préférence en fixant l'épaisseur du fond à un niveau extrêmement élevé) pour éliminer complètement la différence de rétrécissement.
 
-Build plate adjustments
+Ajustement des plaques de construction
 ----
-The elephant's foot can also be caused by having the build plate too close to the nozzle while the first layer is printed. This effectively overextrudes, which causes the first layer to be pushed outwards.
+La patte d'éléphant peut également être causée par le fait que la plaque de montage est trop proche de la buse alors que la première couche est imprimée. Cela entraîne une surextrusion, qui pousse la première couche vers l'extérieur.
 
-To adjust the build plate, consult the manual of your 3D printer. Most printers have adjustment screws in the bed or the gantry to adjust the height difference of the build plate during the first layer. Adjust the build plate during printing (during the brim, skirt or raft preferably) until the first layer is nice and smooth and not thinner than any other layer.
+Pour ajuster la plaque de montage, consultez le manuel de votre imprimante 3D. La plupart des imprimantes sont équipées de vis de réglage dans le lit ou le portique pour ajuster la différence de hauteur de la plaque de montage pendant la première couche. Ajustez la plaque de montage pendant l'impression (de préférence pendant le bord, la jupe ou le radeau) jusqu'à ce que la première couche soit bien lisse et pas plus fine que les autres.
 
-You can also directly adjust the [flow in the first layer](../material/material_flow_layer_0.md) in Cura to compensate for any overextrusion. Alternatively, reducing the [Initial Layer Line Width](../resolution/initial_layer_line_width_factor.md) may also normalise the extrusion enough so that the elephant's foot is prevented.
+Vous pouvez également ajuster directement le [flux dans la première couche](../material/material_flow_layer_0.md) dans Cura pour compenser toute surextrusion. Une autre solution consiste à réduire la [Largeur de la ligne de la couche initiale](../resolution/initial_layer_line_width_factor.md) pour normaliser suffisamment l'extrusion afin d'éviter la patte d'éléphant.
 
-General solutions
+Solutions générales
 ----
-Here are a few solutions you can try that get rid of any type of elephant's foot, regardless of its cause:
-* Using a [raft](../platform_adhesion/adhesion_type.md) moves the entire print off the build plate, preventing any effects caused by the build plate such as its temperature and sticking too much to the build plate, and also prevents the need for a brim.
-* Reduce the [Initial Layer Horizontal Expansion](../shell/xy_offset_layer_0.md) (possibly to something negative). This compensates for the elephant's foot in the first layer.
+Voici quelques solutions que vous pouvez essayer pour vous débarrasser de n'importe quel type de patte d'éléphant, quelle que soit sa cause :
+* L'utilisation d'un [radeau](../platform_adhesion/adhesion_type.md) permet de déplacer toute l'empreinte de la plaque de montage, ce qui évite les effets causés par la plaque de montage tels que sa température et le fait qu'elle colle trop à la plaque de montage, et évite également d'avoir à la couper.
+* Réduire l'[Expansion horizontale de la couche initiale](../shell/xy_offset_layer_0.md) (éventuellement à quelque chose de négatif). Cela permet de compenser le pied de l'éléphant dans la première couche.
