@@ -1,7 +1,7 @@
-When printing molten plastic, the nozzle tends to pull some of the material along with its motion even after it's been extruded. This effect is even stronger when printing in mid-air for the roof of the wire frame when printing for Wire Printing mode. This setting causes the saw-tooth pattern at the top of the print to be continued a bit deeper inwards to compensate for it being dragged along with the nozzle.
+Lors de l'impression de plastique fondu, la buse a tendance à tirer une partie du matériau en même temps que son mouvement, même après son extrusion. Cet effet est encore plus fort lors de l'impression en plein air pour le toit du cadre métallique lors de l'impression en mode Wire Printing. Ce réglage fait que le motif en dents de scie en haut de l'impression se poursuit un peu plus profondément vers l'intérieur pour compenser le fait qu'il est entraîné avec la buse.
 
-![The additional distance inwards is configured by this setting](../../../articles/images/wireframe_roof_drag_along.svg)
+![La distance supplémentaire vers l'intérieur est configurée par ce réglage](../../../articles/images/wireframe_roof_drag_along.svg)
 
-This setting causes the inner tips of the saw-tooth pattern in the top side of the print to be moved further inwards. The tips are moved in the exact opposite direction of the diagonals that move outward, not the straights that move inwards.
+Ce réglage provoque le déplacement vers l'intérieur des extrémités intérieures du motif en dents de scie de la face supérieure de l'empreinte. Les pointes sont déplacées dans le sens exactement opposé des diagonales qui se déplacent vers l'extérieur, et non des droites qui se déplacent vers l'intérieur.
 
-With careful tuning, the objective of this setting is to improve the attachment of the inner tips of the saw-tooth pattern to the concentric ring that is printed to rest upon them.
+Avec un réglage minutieux, l'objectif de ce réglage est d'améliorer la fixation des pointes intérieures du motif en dents de scie à l'anneau concentrique qui est imprimé pour reposer sur elles.
