@@ -1,20 +1,20 @@
-Tree support offers an alternative approach to supporting the model than the ordinary support technique. In tree support, a branching structure is generated that starts on the build plate with a small base, but grows towards the parts that need supporting.
+Le soutien aux arbres offre une approche alternative au soutien du modèle que la technique de soutien ordinaire. Le support en arbre génère une structure ramifiée qui commence sur la plaque de construction avec une petite base, mais qui se développe vers les parties qui ont besoin d'être soutenues.
 
-![A tree-like structure supports the overhang](../../../articles/images/support_tree_enable.png)
+![Une structure en forme d'arbre soutient le surplomb](../../../articles/images/support_tree_enable.png)
 
-Tree support can avoid obstacles when growing towards the overhang areas. If at all possible, the tree will be grown from the build plate upwards to prevent scarring of the surface that the support rests on. If this is not possible, the tree will be resting on the model's surface as close to the overhang as possible to minimise time and material usage. The branches of tree support are limited by the [Tree Support Branch Angle](support_tree_angle.md) so that they don't produce too steep an overhang of themselves. This limits the ability to grow around obstacles and also determines the height at which trunks will start branching out.
+Le soutien des arbres permet d'éviter les obstacles lors de la croissance vers les zones en surplomb. Dans la mesure du possible, l'arbre poussera à partir de la plaque de construction vers le haut afin d'éviter les cicatrices sur la surface sur laquelle le support repose. Si cela n'est pas possible, l'arbre reposera sur la surface du modèle aussi près que possible du surplomb afin de minimiser le temps et l'utilisation de matériel. Les branches du support de l'arbre sont limitées par l'[Angle de la branche du support de l'arbre](support_tree_angle.md) afin qu'elles ne produisent pas un surplomb trop abrupt d'elles-mêmes. Cela limite la capacité de croissance autour des obstacles et détermine également la hauteur à laquelle les troncs commenceront à se ramifier.
 
-Tree support is hollow by default. However the ordinary support settings still apply to the area circumscribed by the tree's branches. In particular, the [Support Density](../support/support_infill_rate.md) can be used to give the support more structural strength. Due to the nature of tree support being greatly jagged, it normally has plenty of strength for its purpose.
+Le support de l'arbre est creux par défaut. Toutefois, les paramètres de support ordinaires s'appliquent toujours à la zone délimitée par les branches de l'arbre. En particulier, la [Densité du support](../support/support_infill_rate.md) peut être utilisée pour donner au support une plus grande résistance structurelle. Comme la nature du support de l'arbre est très irrégulière, il a normalement une grande force pour remplir sa fonction.
 
-Tree support has a number of advantages over normal support, to name a few:
-* Tree support generally uses way less material than ordinary support. Between 25% and 50% of the material usage is typical. This saves a lot of time and cost in material.
-* When printed with the same material as the print, overhang tends to look better when using tree support.
-* Tree support is easier to remove than normal support.
-* Tree support leaves fewer scars on the surface than normal support, due to being able to reach around the model towards the build plate.
+Le support d'arbre présente un certain nombre d'avantages par rapport à un support normal, pour n'en citer que quelques-uns :
+* Le support d'arbre utilise généralement beaucoup moins de matériau que le support ordinaire. Entre 25 et 50 % de l'utilisation du matériel est typique. Cela permet d'économiser beaucoup de temps et de coûts en matériel.
+* Lorsqu'il est imprimé avec le même matériau que l'impression, le surplomb a tendance à être plus esthétique avec un support en forme d'arbre.
+* Le support en forme d'arbre est plus facile à enlever que le support ordinaire.
+* Le support en forme d'arbre laisse moins de cicatrices sur la surface que le support normal, car il permet d'atteindre la plaque de construction autour du modèle.
 
-However this comes with some disadvantages as well:
-* Tree support takes an order of magnitude longer to slice. Patience will be necessary, especially with tall models.
-* There are lots of interruptions in the flow when the smallest branches are printed, making tree support unsuitable to print using materials that are hard to extrude, such as PVA or flexible materials.
-* Tree support doesn't work very well to support some mechanical models. In particular, it tends to place too few branches to support flat, sloped overhangs.
+Cependant, cela présente également quelques inconvénients :
+* Le support en forme d'arbre prend un ordre de grandeur plus long à découper. La patience sera nécessaire, surtout avec les modèles de grande taille.
+* Il y a beaucoup d'interruptions dans le flux lorsque les plus petites branches sont imprimées, ce qui rend le support d'arbre impropre à l'impression avec des matériaux difficiles à extruder, comme le PVA ou les matériaux flexibles.
+* Le support d'arbre ne fonctionne pas très bien pour supporter certains modèles mécaniques. En particulier, il a tendance à placer trop peu de branches pour supporter des surplombs plats et inclinés.
 
-While tree support can be activated at the same time as ordinary support, this is generally not desirable. The two types of support will intersect and cause overextrusion.
+Bien que le support d'arbre puisse être activé en même temps que le support ordinaire, ce n'est généralement pas souhaitable. Les deux types de support se croiseront et provoqueront une surextrusion.
