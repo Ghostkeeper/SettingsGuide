@@ -1,5 +1,5 @@
-With this setting, the wiping procedure will be done while Z hopped. This can be configured separately from the ordinary [Z hops](../travel/retraction_hop_enabled.md).
+Avec ce réglage, la procédure d'effacement se fera pendant que Z saute. Il peut être configuré séparément du [Z hops](../travel/retraction_hop_enabled.md) ordinaire.
 
-The wipe procedure contains two very long travel moves that go all the way to the side of the build volume. During these travel moves, the print head may pick up quite some speed because it has a lot of time to accelerate. At great speeds, there is an increased chance of the print head accidentally knocking over previously printed parts. Therefore you may want to enable Z hops even if you wouldn't do that for the ordinary printing process.
+La procédure d'effacement contient deux déplacements très longs qui vont jusqu'au côté du volume de construction. Pendant ces déplacements, la tête d'impression peut prendre de la vitesse car elle a beaucoup de temps pour accélérer. À grande vitesse, il y a un risque accru que la tête d'impression renverse accidentellement des parties déjà imprimées. C'est pourquoi vous pouvez activer les sauts en Z même si vous ne le feriez pas pour le processus d'impression ordinaire.
 
-The Z hop in this procedure is executed regardless of whether [Z hops are only performed over previously printed parts](../travel/retraction_hop_only_when_collides.md) or whether there are printed parts in between.
+Dans cette procédure, le saut Z est exécuté indépendamment du fait que [les sauts Z ne sont effectués que sur des parties précédemment imprimées](../travel/retraction_hop_only_when_collides.md) ou qu'il y ait des parties imprimées entre les deux.
