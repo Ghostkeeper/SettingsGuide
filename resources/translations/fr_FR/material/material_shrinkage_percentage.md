@@ -1,7 +1,7 @@
-This is a descriptive setting, letting Cura know how much the material shrinks when it cools down from the printing temperature to room temperature.
+Il s'agit d'un réglage descriptif, permettant à Cura de savoir à quel point le matériau se rétrécit lorsqu'il passe de la température d'impression à la température ambiante.
 
-This setting is currently not used for slicing. It is currently only used to display a warning to the user when printing large things if the shrinkage ratio is larger than 0.5%.
+Ce paramètre n'est actuellement pas utilisé pour le tranchage. Il n'est actuellement utilisé que pour afficher un avertissement à l'utilisateur lors de l'impression de grandes choses si le taux de rétrécissement est supérieur à 0,5%.
 
-In the future, the slicer may be able to use this setting to counteract the shrinkage for better dimensional accuracy.
+À l'avenir, le trancheur pourra peut-être utiliser ce paramètre pour contrer le rétrécissement afin d'obtenir une meilleure précision dimensionnelle.
 
-*This setting is not visible in the list of settings. It is only an internal setting to be overwritten by the material profile.*
+*Ce paramètre n'est pas visible dans la liste des paramètres. Il s'agit seulement d'un réglage interne qui doit être écrasé par le profil de matériau.*
