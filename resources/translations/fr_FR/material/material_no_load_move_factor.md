@@ -1,9 +1,9 @@
-This setting expresses the difference in the length of the filament when it's being compressed between the feeder and the nozzle chamber.
+Ce réglage exprime la différence de longueur du filament lorsqu'il est comprimé entre l'alimentateur et la chambre de la buse.
 
-If the filament is being pushed out the nozzle, there is a counter-pressure applied by the nozzle itself (due to the smaller nozzle opening) and by the material underneath the nozzle, be it the printed part or the bed. Meanwhile, the feeder is pushing from the other end. This compresses the filament in the length of the path between the feeder and the nozzle, making the filament effectively shorter. As a result, bringing the filament from the feeder to the nozzle tip requires less movement than bringing the filament into a proper printing position.
+Si le filament est poussé hors de la buse, une contre-pression est appliquée par la buse elle-même (en raison de la plus petite ouverture de la buse) et par le matériau sous la buse, qu'il s'agisse de la partie imprimée ou du lit. Pendant ce temps, le margeur pousse de l'autre côté. Cela comprime le filament dans la longueur du trajet entre le margeur et la buse, ce qui le rend plus court. Par conséquent, amener le filament de l'alimentateur à l'extrémité de la buse nécessite moins de mouvement que d'amener le filament dans une position d'impression correcte.
 
-This setting tells the printer how far the filament needs to be moved to bring the filament to the nozzle, given that it knows how long the track is from the feeder to the nozzle. This may also help to determine how much material needs to be primed in order to bring the nozzle up to a proper pressure for printing.
+Ce réglage indique à l'imprimante la distance à parcourir pour amener le filament jusqu'à la buse, étant donné qu'elle connaît la longueur du chemin entre le chargeur et la buse. Cela peut également aider à déterminer la quantité de matière à amorcer pour amener la buse à une pression adéquate pour l'impression.
 
-Materials that compress more easily, such as TPU or Polypropylene, will have a lower factor than stiff materials such as PLA.
+Les matériaux qui se compriment plus facilement, comme le TPU ou le polypropylène, auront un facteur inférieur à celui des matériaux rigides comme le PLA.
 
-**This setting is currently never visible in Cura's interface. It can only be set by the profiles. It is also not used by Cura during slicing. However, printers that understand Cura's material file format may use it to determine how to move the filament around between the feeder and the nozzle.**
+**Ce réglage n'est actuellement jamais visible dans l'interface de Cura. Il ne peut être réglé que par les profils. Il n'est pas non plus utilisé par Cura pendant le tranchage. Cependant, les imprimeurs qui comprennent le format de fichier de matériau de Cura peuvent l'utiliser pour déterminer comment déplacer le filament entre le chargeur et la buse.**
