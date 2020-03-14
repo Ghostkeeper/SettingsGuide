@@ -1,37 +1,37 @@
-Ringing (sometimes called "ghosting") is an effect where ripples appear on otherwise flat surfaces near small details on that surface. The ripples start occurring just after printing the small details.
+Les ondulations (parfois appelé "ghosting") est un effet où des ondulations apparaissent sur des surfaces par ailleurs plates à proximité de petits détails de cette surface. Les ondulations commencent à se produire juste après l'impression des petits détails.
 
-![Ripples on the surface](../../../articles/images/ringing.jpg)
+![Ondulations sur la surface](../../../articles/images/ringing.jpg)
 
 Causes
 ----
-Ringing is caused by vibrations in your 3D printer. Trying to prevent ringing is to reduce these vibrations. They are especially pronounced if the print head moves in one of the resonance frequencies of your printer's frame.
+Les ondulations sont causées par les vibrations de votre imprimante 3D. Essayer d'éviter les sonneries, c'est réduire ces vibrations. Elles sont particulièrement prononcées si la tête d'impression se déplace dans l'une des fréquences de résonance du cadre de votre imprimante.
 
-It is one of these things that more expensive 3D printers usually try to prevent with a more rigid frame that vibrates less. They have a stronger gantry with hardened steel bars and rods, or provide a fully closed frame made out of very rigid material. This is expensive though, so cheap 3D printer models don't have the resources to prevent ringing. Printers with a Bowden tube set-up also don't have as much ringing, since the print head is much lighter than that of a direct drive print head (since the heavy feeder motor is resting on the print head).
+C'est l'une des choses que les imprimantes 3D plus coûteuses essaient généralement d'éviter avec un cadre plus rigide qui vibre moins. Elles ont un portique plus solide avec des barres et des tiges en acier trempé, ou fournissent un cadre entièrement fermé fait d'un matériau très rigide. Mais comme cela coûte cher, les modèles d'imprimantes 3D bon marché n'ont pas les moyens d'empêcher les vibrations. Les imprimantes équipées d'un tube Bowden ne présentent pas non plus autant d'ondulations, car la tête d'impression est beaucoup plus légère que celle d'une tête d'impression à entraînement direct (puisque le lourd moteur d'alimentation repose sur la tête d'impression).
 
-Although the ringing manifests itself horizontally, the vibrations are not always horizontal. The build plate vibrating up and down with respect to the nozzle is a very significant effect too, because the plastic bead gets squished to become wider as the build plate vibrates closer, or thinner as it vibrates farther.
+Bien que les ondulations se manifeste horizontalement, les vibrations ne sont pas toujours horizontales. La vibration de la plaque de montage de haut en bas par rapport à la buse est également un effet très important, car la goutte de plastique est écrasée et devient plus large lorsque la plaque de montage vibre plus près, ou plus fine lorsqu'elle vibre plus loin.
 
-Hardware solutions
+Solutions matérielles
 ----
-Before adjusting your print in Cura, it's a good idea to see first if you can improve your hardware to prevent ringing. This can provide overall improvements of the print results without having to sacrifice other qualities of the print such as strength or productivity. Here are some things you can consider:
-* Add dampeners underneath your printer. You can use rubber feet or just place the printer on a block of soft foam. This will prevent vibrations if the table vibrates, and prevent the printer from vibrating the table as well. It will reduce the feedback that the vibrating printer gets from the table, which helps to reduce the high-frequency vibrations.
-* Tighten the driving belts of the gantry. If these belts are not tight, the springiness of their rubber allows the print head to vibrate.
-* If your print head has flexible attachments, such as a Bowden tube, consider affixing those so that they can no longer wobble. Tie wraps work well for Bowden tubes if there is something you can tie them to.
-* Add more mass to the frame of your 3D printer. This will make it harder to move the frame due to its increased inertia, and so it will be harder to make it vibrate.
-* Increase the rigidity of the frame of your 3D printer with extra braces or cross bars. You could manufacture these out of durable materials like steel, but if this is not an option, perhaps something can be found in a hardware store that fits with minimal adjustments. You can also consider 3D printing these braces and cross bars, but be aware that most plastics don't cope well with sustained force being applied.
+Avant d'ajuster votre empreinte dans Cura, il est bon de voir d'abord si vous pouvez améliorer votre matériel pour éviter les ondulations. Cela peut permettre d'améliorer globalement les résultats de l'impression sans avoir à sacrifier d'autres qualités de l'impression comme la résistance ou la productivité. Voici quelques éléments à prendre en considération :
+* Ajoutez des mouilleurs sous votre imprimante. Vous pouvez utiliser des pieds en caoutchouc ou simplement placer l'imprimante sur un bloc de mousse souple. Cela empêchera les vibrations si la table vibre, et empêchera également l'imprimante de faire vibrer la table. Cela réduira le retour d'information que l'imprimante vibrante reçoit de la table, ce qui contribue à réduire les vibrations à haute fréquence.
+* Serrer les courroies d'entraînement du portique. Si ces courroies ne sont pas tendues, l'élasticité de leur caoutchouc permet à la tête d'impression de vibrer.
+* Si votre tête d'impression est équipée d'attaches flexibles, comme un tube Bowden, pensez à les fixer de manière à ce qu'elles ne puissent plus osciller. Les attaches fonctionnent bien pour les tubes Bowden si vous pouvez les attacher à quelque chose.
+* Ajoutez plus de masse au cadre de votre imprimante 3D. Il sera ainsi plus difficile de déplacer le cadre en raison de son inertie accrue, et il sera donc plus difficile de le faire vibrer.
+* Augmentez la rigidité du cadre de votre imprimante 3D avec des renforts ou des barres transversales supplémentaires. Vous pourriez les fabriquer avec des matériaux durables comme l'acier, mais si ce n'est pas possible, vous trouverez peut-être dans une quincaillerie un produit qui s'adapte avec un minimum d'ajustements. Vous pouvez également envisager d'imprimer ces renforts et ces traverses en 3D, mais sachez que la plupart des plastiques ne supportent pas bien l'application d'une force soutenue.
 
-Cura's solutions
+Les solutions de Cura
 ----
-If the hardware solutions are not an option, you can also reduce the ringing effect through some adjustments in Cura settings.
+Si les solutions matérielles ne sont pas envisageables, vous pouvez également réduire l'effet de sonnerie grâce à certains ajustements des paramètres de Cura.
 
-Since the vibrations are caused by accelerating the print head, the most prominent improvements are geared towards reducing those accelerations.
-* Reducing the maximum [printing speed](../speed/speed_print.md) reduces the duration of the accelerations.
-* Reducing the [acceleration rate](../speed/acceleration_print.md) directly reduces the acceleration and will reduce the strength of the vibrations.
-* In 3D printing, [jerk](../speed/jerk_print.md) is an industry term for instantaneous velocity changes through corners. What that means is that it's essentially trying to accelerate infinitely in order to prevent needing to slow down too much in every corner. This causes very high accelerations for short amounts of time in every corner. Reducing the jerk can then also help to reduce vibrations. Instead of a brief, strong acceleration it will accelerate more slowly and for a longer time, which reduces high frequency vibrations but increases low frequency vibrations.
+Comme les vibrations sont causées par l'accélération de la tête d'impression, les améliorations les plus importantes visent à réduire ces accélérations.
+* La réduction de la [vitesse d'impression](../speed/speed_print.md)  maximale réduit la durée des accélérations.
+* La réduction de la [vitesse d'accélération](../speed/acceleration_print.md) réduit directement l'accélération et diminue la force des vibrations.
+* En impression 3D, [jerk](../speed/jerk_print.md) est un terme industriel qui désigne les changements instantanés de vitesse dans les virages. Cela signifie qu'il s'agit essentiellement d'essayer d'accélérer à l'infini afin d'éviter de devoir trop ralentir dans chaque virage. Cela entraîne des accélérations très élevées pendant de courtes périodes dans chaque virage. La réduction de la secousse peut alors aussi contribuer à réduire les vibrations. Au lieu d'une brève et forte accélération, elle accélère plus lentement et plus longtemps, ce qui réduit les vibrations à haute fréquence mais augmente les vibrations à basse fréquence.
 
-Those adjustments will make your print take longer. You can also prevent ringing in other ways though, by preventing the type of movements that cause them:
-* Disable the [gap filling](../shell/fill_perimeter_gaps.md) technique and don't [print thin walls](../shell/fill_outline_gaps.md), since these techniques sometimes use very small line segments and extra travel moves. If a wall is being printed afterwards, the printer will still be vibrating a bit.
-* If your printer moves the build plate up and down rather than the print head, don't use [Z hops](../travel/retraction_hop_enabled.md). These cause the build plate to vibrate up and down long after the hop has been completed.
+Ces ajustements feront que votre impression prendra plus de temps. Mais vous pouvez aussi éviter les tintement d'autres façons, en empêchant le type de mouvements qui les provoquent :
+* Désactivez la technique de [remplissage des espaces](../shell/fill_perimeter_gaps.md) et ne [imprimez pas de parois fines](../shell/fill_outline_gaps.md), car ces techniques utilisent parfois de très petits segments de ligne et des déplacements supplémentaires. Si un mur est imprimé par la suite, l'imprimante vibrera encore un peu.
+* Si votre imprimante déplace la plaque de construction de haut en bas plutôt que la tête d'impression, n'utilisez pas [Z hops](../travel/retraction_hop_enabled.md). Cela fait vibrer la plaque de montage de haut en bas longtemps après que le saut ait été effectué.
 
-You can also print the [inner walls before the outer wall](../shell/outer_inset_first.md). Since the printing of the walls doesn't usually cause as much vibrations as other parts, this allows the printer to stop vibrating before the all-important outer wall is printed.
+Vous pouvez également imprimer les [parois intérieures avant la paroi extérieure](../shell/outer_inset_first.md). Comme l'impression des parois ne provoque généralement pas autant de vibrations que les autres parties, cela permet à l'imprimante de cesser de vibrer avant que la paroi extérieure, si importante, ne soit imprimée.
 
-Lastly, depending on the geometry of your gantry, vibrations are sometimes absorbed differently in different directions. Rotating your print by 45 degrees may help too. 
+Enfin, selon la géométrie de votre portique, les vibrations sont parfois absorbées différemment dans différentes directions. Une rotation de 45 degrés de votre imprimante peut également vous aider. 
