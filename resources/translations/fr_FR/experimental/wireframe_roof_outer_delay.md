@@ -1,7 +1,7 @@
-With this setting, you can configure the nozzle to stand still for a short moment every time it hits the outer contour while printing the saw-tooth pattern in the roof of the wire frame.
+Avec ce réglage, vous pouvez configurer la buse pour qu'elle reste immobile pendant un court instant chaque fois qu'elle touche le contour extérieur tout en imprimant le motif en dents de scie dans le toit de la charpente métallique.
 
-![The red dots are locations where the nozzle will pause](../../../articles/images/wireframe_roof_outer_delay.svg)
+![Les points rouges sont les endroits où la buse s'arrêtera](../../../articles/images/wireframe_roof_outer_delay.svg)
 
-While standing still, the nozzle will produce a tiny blob in the paused location due to oozing. This blob improves the connection between the saw-tooth pattern and the contour around it.
+Lorsque la buse est immobile, elle produit une minuscule tache à l'endroit où elle est en pause, en raison du suintement. Cette goutte améliore la connexion entre le motif en dents de scie et le contour qui l'entoure.
 
-Pausing takes a significant amount of printing time, since there are many locations where the nozzle will pause.
+La pause prend un temps d'impression important, car il y a de nombreux endroits où la buse s'arrêtera.
