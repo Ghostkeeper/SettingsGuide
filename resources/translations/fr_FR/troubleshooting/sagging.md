@@ -26,7 +26,7 @@ Lorsque vous configurez le pontage pour réduire l'affaissement, tenez compte de
 
 Soutien
 ----
-![Une structure de soutien soutient le modèle](../images/support_enable.png)
+![Une structure de soutien soutient le modèle](../../../articles/images/support_enable.png)
 
 La façon la plus courante et la plus fiable d'améliorer les parties en surplomb est de les soutenir par une structure de soutien pendant l'impression. Cette structure de soutien est ensuite retirée après la solidification du matériau. Le support d'impression est très efficace pour prévenir l'affaissement, quelle que soit la taille de la zone en surplomb, mais il nécessite plus de temps et de matériel et laisse une cicatrice à l'endroit où le support était fixé.
 
@@ -44,7 +44,7 @@ Adapter le modèle
 ----
 Si vous avez la liberté d'ajuster le modèle qui est imprimé, cela peut donner un résultat beaucoup plus propre que d'essayer de combler les surplombs ou de les soutenir. Au lieu de laisser le matériau s'affaisser dans les surplombs, concevez et orientez votre modèle de manière à ce qu'il n'y ait pas de surplombs.
 
-![Cette orientation permet d'imprimer l'objet avec très peu de support](../images/support_minimise_overhang.png)
+![Cette orientation permet d'imprimer l'objet avec très peu de support](../../../articles/images/support_minimise_overhang.png)
 
 L'astuce la plus élémentaire pour appliquer cela est de faire tourner le modèle. Si votre imprimante est capable d'imprimer des angles de 45 degrés sans affaissement, vous pouvez faire pivoter un modèle avec une pièce verticale et une pièce horizontale de telle sorte qu'il y ait deux inclinaisons de 45 degrés, ce qui réduit légèrement la qualité de la paroi verticale, mais empêche l'affaissement de la partie horizontale. Veillez cependant à ne pas rendre la zone de contact avec la plaque de construction trop petite, sinon l'impression pourrait se détacher de la plaque de construction et être encore endommagée.
 
