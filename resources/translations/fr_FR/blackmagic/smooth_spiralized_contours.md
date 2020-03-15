@@ -1,4 +1,7 @@
-Si [Spiralize](magic_spiralize.md) est activé, ce paramètre active ou désactive la caractéristique la plus distinctive du mode Spiralize: au lieu d'imprimer chaque couche l'une après l'autre à des intervalles de hauteur, la hauteur est progressivement augmentée au cours de la couche.
+Lisser les contours spiralisés
+===
+
+Si [Spiraliser le contour extérieur](./magic_spiralize.md) est activé, ce paramètre active ou désactive la caractéristique la plus distinctive du mode Spiralize: au lieu d'imprimer chaque couche l'une après l'autre à des intervalles de hauteur, la hauteur est progressivement augmentée au cours de la couche.
 
 Étant donné que le mode Spiralize entraîne uniquement l'impression des murs pour la plupart des couches avec un seul contour, ce contour unique prendra la forme d'une spirale, prêtant le nom à la fonction Spiralize. Les première et dernière couches de l'impression voient leur débit progressivement réduit afin d'éviter une surextrusion et d'atteindre la bonne hauteur.
 
