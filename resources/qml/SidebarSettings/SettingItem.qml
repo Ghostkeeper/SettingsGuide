@@ -77,6 +77,8 @@ Item {
 			anchors.verticalCenter: parent.verticalCenter
 			width: height
 			height: UM.Theme.getSize("setting_control").height
+
+			article_id: definition.key
 		}
 
 		Item {

@@ -4,14 +4,32 @@
 //You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
 import QtQuick 2.7
+import QtQuick.Controls 2.0
+
 import UM 1.1 as UM
 
-Item {
+MouseArea {
+	property string article_id
+
 	UM.RecolorImage {
 		color: UM.Theme.getColor("text")
 		source: Qt.resolvedUrl("../../icons/translations.svg")
 		anchors.centerIn: parent
 		width: height
 		height: parent.height - UM.Theme.getSize("narrow_margin").height * 2
+	}
+	onClicked: languagesMenu.popup()
+
+	Menu {
+		id: languagesMenu
+		Instantiator {
+			model: manager.language_list(article_id)
+
+			MenuItem {
+				text: modelData.toString()
+			}
+			onObjectAdded: languagesMenu.insertItem(index, object)
+			onObjectRemoved: languagesMenu.removeItem(object)
+		}
 	}
 }

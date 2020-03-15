@@ -396,3 +396,12 @@ class CuraSettingsGuide(Extension, QObject):
 		:return: The the currently selected article.
 		"""
 		return self._getArticle(self._selected_article_id, self._selected_language)
+
+	@pyqtSlot(str, result="QVariantList")
+	def language_list(self, article_key: str) -> List[str]:
+		"""
+		Gets a list of available languages for a certain article.
+		:param article_key: The article ID to get the languages for.
+		:return: A list of language codes (e.g. [nl_NL, en_US]).
+		"""
+		return list(self.articles[article_key].keys())
