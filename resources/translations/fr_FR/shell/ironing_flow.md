@@ -1,4 +1,4 @@
-Le repassage consiste à placer des lignes supplémentaires à la surface, ce qui est techniquement trop compliqué. Ce réglage permet de contrôler la quantité extrudée lors de ce passage supplémentaire. Le flux est nécessaire pour combler les lacunes de la surface.
+L'étirage consiste à placer des lignes supplémentaires à la surface, ce qui est techniquement trop compliqué. Ce réglage permet de contrôler la quantité extrudée lors de ce passage supplémentaire. Le flux est nécessaire pour combler les lacunes de la surface.
 
 ![10% de débit](../../../articles/images/ironing_enabled_enabled.png)
 ![20% de débit](../../../articles/images/ironing_flow.png)
