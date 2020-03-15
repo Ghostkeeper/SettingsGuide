@@ -4,4 +4,4 @@ La largeur de chaque ligne de remplissage qui est tracée. La largeur d'une lign
 
 En élargissant les lignes de remplissage, vous pouvez rendre votre impression plus solide et réduire le temps d'impression également. Cependant, en l'augmentant trop, vous risquez de provoquer de grandes fluctuations d'extrusion. Cela entraînera une sous-extrusion lors de l'impression du remplissage et une surextrusion lors de l'impression de ce qui vient après le remplissage, car le débit à travers la buse ne peut pas s'ajuster assez rapidement.
 
-**Les lignes de remplissage peuvent être plus larges que ce qui est indiqué dans ce paramètre, si vous avez ajusté le paramètre [Infill Layer Thickness](../infill/infill_sparse_thickness.md).**
+**Les lignes de remplissage peuvent être plus larges que ce qui est indiqué dans ce paramètre, si vous avez ajusté le paramètre [Épaisseur de la couche de remplissage de support](../infill/infill_sparse_thickness.md).**
