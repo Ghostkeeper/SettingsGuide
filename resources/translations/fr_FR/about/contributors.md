@@ -1,3 +1,6 @@
+CONTRIBUTEURS
+===
+
 Ce projet est maintenu par Ghostkeeper.
 
 Programmation
