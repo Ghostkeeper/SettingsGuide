@@ -1,3 +1,6 @@
+Largeur de retrait de la couche extérieure supérieure
+====
+
 Enlève les parties fines des couches supérieures complètement remplies, en les imprimant avec du remblai à la place. Cela permet d'économiser du temps et du matériel d'impression.
 
 Dans le cas de surfaces abruptes, les couches supérieures deviennent souvent très minces. Elles ne sont pas nécessaires, car la résistance horizontale des parois est plus que suffisante si la surface est presque entièrement verticale.
