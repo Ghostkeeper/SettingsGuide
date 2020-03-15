@@ -1,3 +1,6 @@
+Extrusion relative
+===
+
 Cura écrit des instructions pour que l'imprimante imprime votre objet en g-code. Ces instructions déplacent la tête d'impression dans certaines positions et le pilotage de l'extrudeur. Cura enregistre normalement les coordonnées de la tête d'impression et la rotation de l'extrudeur comme coordonnées absolues. Toutefois, si ce paramètre est activé, les coordonnées de l'extrudeur seront enregistrées de manière relative.
 
 Si ce paramètre est désactivé (c'est-à-dire si l'extrusion est absolue), la position du filament au début de l'impression est définie comme coordonnée zéro. La position du filament augmentera tout au long du fichier à mesure que de la matière sera extrudée et que le filament devra s'éloigner de plus en plus du point de départ au début de l'impression.
