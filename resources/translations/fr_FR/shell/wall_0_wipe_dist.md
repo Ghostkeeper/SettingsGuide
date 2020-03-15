@@ -6,4 +6,4 @@ Le but de cette caractéristique est de réduire la visibilité de la couture. L
 
 La couture sera toujours visible, mais le résultat devrait être légèrement meilleur avec une petite distance d'essuyage. Une augmentation trop importante de ce réglage n'a plus d'effet puisque la buse se déplace au-delà du joint, et peut provoquer une certaine sous-extrusion plus tard, lorsque la chambre de la buse se vide en suintant sur la paroi extérieure.
 
-Cet effet est essentiellement l'opposé de [coasting](../experimental/coasting_enable.md), qui s'arrêtera d'extruder légèrement avant que le contour ne soit terminé.
+Cet effet est essentiellement l'opposé de [la roue libre](../experimental/coasting_enable.md), qui s'arrêtera d'extruder légèrement avant que le contour ne soit terminé.
