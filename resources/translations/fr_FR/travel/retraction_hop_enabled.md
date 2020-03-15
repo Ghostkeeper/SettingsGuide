@@ -1,6 +1,6 @@
 Si ce réglage est activé, la buse sera légèrement soulevée au-dessus de l'impression lorsque la buse doit se déplacer d'un endroit à l'autre. L'objectif est que la buse passe au-dessus de l'impression au lieu de frapper les parties précédemment imprimées avec la buse.
 
-![Déplacement vers le haut lorsque les sauts Z sont activés](../../../articles/images/retraction_hop_enabled.svg)
+![Déplacement vers le haut lorsque les sauts Z sont activés](../images/retraction_hop_enabled_fr.svg)
 
 Chaque fois qu'un retrait est effectué, la buse est relevée (ou la plaque de montage abaissée) pour créer un espace entre la buse et l'impression. Cela présente plusieurs avantages :
 * Il empêche la buse de heurter l'impression pendant les déplacements. Lorsque la buse frappe l'impression, elle laisse une cicatrice visible, ce qui devrait améliorer la qualité visuelle des parois de l'impression.
