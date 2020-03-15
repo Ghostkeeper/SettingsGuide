@@ -1,3 +1,6 @@
+Taille des étapes de variation des couches adaptatives
+===
+
 Si l'épaisseur souhaitée d'une couche est très différente de celle d'une couche adjacente, il y aura une grande différence de débit à la sortie de la buse, ce qui peut provoquer une sur ou une sous-extrusion. Ce réglage permet de s'assurer que la différence d'épaisseur de couche est un changement progressif, pour éviter cela. Avec ce paramètre, vous pouvez spécifier la variation maximale de l'épaisseur de la couche entre deux couches adjacentes.
 
 ![Une grande taille de pas permet des changements très soudains dans l'épaisseur de la couche](../../../articles/images/adaptive_layer_height_variation_step_0_05.png)
