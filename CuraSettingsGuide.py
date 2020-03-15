@@ -404,4 +404,4 @@ class CuraSettingsGuide(Extension, QObject):
 		:param article_key: The article ID to get the languages for.
 		:return: A list of language codes (e.g. [nl_NL, en_US]).
 		"""
-		return list(self.articles[article_key].keys())
+		return list(self.article_locations[article_key].keys())
