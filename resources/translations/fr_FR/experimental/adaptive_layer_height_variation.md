@@ -1,3 +1,6 @@
+Taille des étapes de variation des couches adaptatives
+===
+
 Avec ce paramètre, vous pouvez limiter la plage dans laquelle les couches adaptatives sont autorisées à sélectionner une épaisseur de couche. La hauteur de la couche ne doit pas s'écarter de plus de cette variation par rapport à la [Hauteur de la couche](../resolution/layer_height.md) normale.
 
 Par exemple, avec une hauteur de couche normale de 0,15 mm et une variation fixée à 0,1 mm, les couches adaptatives peuvent produire des couches d'une épaisseur comprise entre 0,05 mm et 0,25 mm.
