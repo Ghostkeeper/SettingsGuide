@@ -1,3 +1,6 @@
+Rendre le porte-à-faux imprimable
+===
+
 Ce réglage va transformer votre modèle de telle sorte qu'il n'ait plus de surplomb. Il placera du matériel supplémentaire sous chaque surplomb et l'imprimera comme s'il faisait partie de la pièce.
 ![Une tour avec quelques pièces en surplomb](../../../articles/images/conical_overhang_enabled_disabled.png)
 ![Le surplomb est rendu imprimable](../../../articles/images/conical_overhang_enabled_enabled.png)
