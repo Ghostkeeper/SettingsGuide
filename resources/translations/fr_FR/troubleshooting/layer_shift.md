@@ -1,3 +1,6 @@
+Le décalage des couches
+===
+
 Un décalage de couches se produit lorsque les couches d'une impression ne sont pas correctement empilées les unes sur les autres. Si la tête d'impression est déplacée pendant l'impression d'une couche pour une raison quelconque, l'imprimante continue d'imprimer avec un décalage. La face supérieure de l'impression est alors décalée par rapport à la face inférieure.
 
 ![Un décalage d'un seul calque dû à une obstruction](../../../articles/images/layer_shift_single.jpg)
@@ -22,5 +25,5 @@ Si le matériel fonctionne bien, vous pouvez également régler Cura go un peu p
 * Diminuer les [taux de secousse](../speed/jerk_print.md). Cela ralentira la tête d'impression avant de faire les coins. Cela rend le coin plus souple, en se plaçant dans le coin au lieu de faire un virage serré.
 * Diminuez les [taux d'accélération](../speed/acceleration_print.md). La tête d'impression ralentira ainsi plus prudemment et plus longtemps avant de faire un virage (bien que la vitesse à laquelle la tête d'impression passera par le sommet du virage ne soit pas affectée ; c'est le but du réglage de l'accélération).
 * Diminuez la [vitesse de déplacement](../speed/speed_travel.md). Cela réduit la force avec laquelle la buse glisse sur les pièces déjà imprimées.
-* Activer [z hops](../travel/retraction_hop_enabled.md). Cela évite que la tête d'impression ne heurte les pièces précédemment imprimées si elles dépassent un peu vers le haut en raison de taches ou de déformations.
+* Activer le [décalage en Z lors d’une rétraction](../travel/retraction_hop_enabled.md). Cela évite que la tête d'impression ne heurte les pièces précédemment imprimées si elles dépassent un peu vers le haut en raison de taches ou de déformations.
 
