@@ -9,9 +9,10 @@ Programming
 
 Articles
 ----
-* Ghostkeeper: rewriting all content in v2.0 and many articles since.
+* Ghostkeeper: Rewriting all content in v2.0 and many articles since.
 * Ellecross: Much of the content of v1.0.
 * Jeroen Stevens: Much of the content of v1.0.
 * ChrisTerBeke: Article about Adaptive Layer Height.
+* Goodfeat: Russian translations.
 
 ![](../images/created_by.jpg)
