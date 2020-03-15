@@ -1,3 +1,5 @@
+Z Seam Y
+====
 If the location of the seam is set to "User Specified" in the [Z Seam Alignment](z_seam_type.md) setting, the seam is placed close to the location specified with the [Z Seam X](z_seam_x.md) and Z Seam Y settings.
 
 ![The seam is located on the front side](../images/z_seam_y_front.png)

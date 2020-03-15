@@ -1,3 +1,5 @@
+Inner Wall Speed
+====
 The speed at which the inner walls are printed can be configured separately from the normal print speed and the outer wall.
 
 ![Various structures printed at different speeds](../images/speed_difference.png)

@@ -1,3 +1,5 @@
+Minimum Layer Time
+====
 The Minimum Layer Time configures the shortest duration of printing a layer that is allowed. The printer is not allowed to print layers any faster than this.
 
 This is necessary in order to allow the previous layer to cool down before the next layer gets put on top of it. This ensures that the previous layer has completely solidified, to prevent sagging.

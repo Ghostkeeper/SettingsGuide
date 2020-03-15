@@ -1,3 +1,5 @@
+Unfinished Print
+====
 Sometimes a print doesn't finish completely. There could be a number of reasons why this happens, and some of them can be addressed by adjusting Cura's settings.
 
 ![The filament stopped flowing halfway through this print](../images/unfinished_print.jpg)

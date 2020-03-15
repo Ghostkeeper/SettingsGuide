@@ -1,3 +1,5 @@
+Raft Middle Print Acceleration
+====
 This setting configures the acceleration rate of the print head while the middle layer of the raft is printed. The acceleration during the middle layer of the raft can be configured separately from the base and top layers.
 
 ![Where the middle layer is located in the raft](../images/raft_dimensions_simplified.svg)

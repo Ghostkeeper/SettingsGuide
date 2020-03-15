@@ -1,3 +1,5 @@
+Missing Parts
+====
 Sometimes, when inspecting layer view (or if unlucky, while printing), it appears like some pieces of the print are missing. This can have several reasons. This article names a few possibilities.
 
 Non-manifold meshes

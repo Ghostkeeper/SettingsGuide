@@ -1,3 +1,5 @@
+Brim Only on Outside
+====
 If your model has holes in the initial layer on the build plate, this setting will prevent a brim from being printed along the inside of the hole.
 
 ![Brim printed everywhere](../images/brim_outside_only_original.png)

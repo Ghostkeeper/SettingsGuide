@@ -1,3 +1,5 @@
+Raft Middle Print Speed
+====
 This setting configures the speed at which the middle layer of the raft is printed. The speed of the middle layer can be configured separately from the speed of the top and base layers.
 
 ![Where the middle layer is located in the raft](../images/raft_dimensions_simplified.svg)

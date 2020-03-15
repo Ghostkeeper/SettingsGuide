@@ -1,3 +1,5 @@
+Auto Temperature
+====
 When printing faster, it's best to print at a slightly higher temperature. This makes the thermoplastic more fluid, allowing it to flow more quickly out of the nozzle opening. This setting adjusts the temperature automatically depending on the average flow rate of material out of the nozzle.
 
 To know how much the temperature must be adjusted, the [Flow Temperature Graph](material_flow_temp_graph.md) is referenced. The flow rate is calculated in cubic millimetres per second. Putting that in the flow temperature relation results in a certain temperature. This temperature will get used as the printing temperature. When this setting is activated, the ordinary [printing temperature](../material/material_print_temperature.md) setting will no longer be used in favour of the temperature calculated from the flow rate.

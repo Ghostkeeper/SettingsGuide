@@ -1,3 +1,5 @@
+WP Connection Height
+====
 Wire Printing consists of printing a number of rings around the outline. The vertical spacing of the rings is determined by this setting. With this setting you can define how long the connections between two concentric rings must be.
 
 ![Wire Printing visualised from the side, marking the height](../images/wireframe_height.svg)

@@ -1,3 +1,5 @@
+Surface Mode
+====
 Normally, Cura will create cross sections of all the triangles in your mesh. These line segments are stitched together to form loops. Any loops that are not closed will be discarded.
 
 This setting controls what will be done with these unclosed loop. If set to "Normal", they are discarded. If set to "Surface", all of the cross sections are printed as outlines. If set to "Both", the closed outlines are printed normally but the unclosed ones are printed separately as extra walls.

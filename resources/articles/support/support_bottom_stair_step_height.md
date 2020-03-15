@@ -1,3 +1,5 @@
+Support Stair Step Height
+====
 If [Support Placement](support_type.md) is set to "Everywhere", the support is allowed to rest on the model. It won't follow the contours of the model exactly though. Instead, the bottom side of the support is given a stair stepping pattern. This way, the support only makes a connection to the model in a few locations.
 
 This setting determines the height of these steps.

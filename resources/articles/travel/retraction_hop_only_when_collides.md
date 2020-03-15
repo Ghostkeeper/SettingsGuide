@@ -1,3 +1,5 @@
+Z Hop Only Over Printed Parts
+====
 This setting causes the printer to try to avoid other objects horizontally more often rather than passing over them vertically.
 
 If the [Avoid Printed Parts](travel_avoid_other_parts.md) setting is enabled, the nozzle will avoid other parts when travelling from one place to another. Normally, if a Z hop is applied, avoiding printed parts is not necessary any more. This setting switches that logic around: If avoiding printed parts is not possible, a Z hop is applied.

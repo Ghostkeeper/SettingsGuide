@@ -1,3 +1,5 @@
+Remove Empty First Layers
+====
 When enabled, any empty layers on the bottom side of the print will be removed. The entire print will move down until it rests on the build plate. Instead of having empty layers which cause the print to fail, the print will be slightly lower.
 
 If the Cura preference to "Automatically drop models to the build plate" is enabled, this setting will likely have very little effect. It can still have an effect though. When automatically dropping models down to the build plate, the models are aligned exactly with the build plate. However, if the first layer(s) contain only features that are too small to print (perhaps due to the bottom not being entirely smooth) the first layer may still be empty in the final print. This setting will prevent that by moving the rest of the layers one down.

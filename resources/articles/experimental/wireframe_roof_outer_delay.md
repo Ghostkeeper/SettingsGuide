@@ -1,3 +1,5 @@
+WP Roof Outer Delay
+====
 With this setting, you can configure the nozzle to stand still for a short moment every time it hits the outer contour while printing the saw-tooth pattern in the roof of the wire frame.
 
 ![The red dots are locations where the nozzle will pause](../images/wireframe_roof_outer_delay.svg)

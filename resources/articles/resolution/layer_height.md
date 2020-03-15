@@ -1,3 +1,5 @@
+Layer Height
+====
 The 3D printer puts down plastic in layers. The layer height is the thickness of these layers in millimetres. It is the most important factor in both the visual quality of your final print and the printing time.
 
 ![0.1mm layer height](../images/layer_height_0.1.png)

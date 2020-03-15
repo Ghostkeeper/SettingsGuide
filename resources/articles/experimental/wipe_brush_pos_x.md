@@ -1,3 +1,5 @@
+Wipe Brush X Position
+====
 This setting configures where the nozzle moves to when wiping.
 
 The wipe procedure only supports wiping in the X direction. This means that the wiping brush must span the entire Y axis. The wipe will be made directly to the left or right from the point where the nozzle ends up on the layer. The wiping movement itself will also be made solely in the X direction.

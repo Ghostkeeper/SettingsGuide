@@ -1,3 +1,5 @@
+Raft Top Fan Speed
+====
 This setting configures the fan speed while printing the top layers of the raft. The fan speed while printing the top layers can be configured separately from the base and middle layers.
 
 ![Where the top layers are located in the raft](../images/raft_dimensions_simplified.svg)

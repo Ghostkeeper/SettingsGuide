@@ -1,3 +1,5 @@
+Bridge Skin Density
+====
 This setting controls the density of the bottom side of the print where it bridges a gap. At 100% density, the lines are placed directly adjacent. At lower densities, the lines are spaced further apart.
 
 ![At 100% density, the lines are placed directly adjacent to one another](../images/bridge_skin_density_100.png)

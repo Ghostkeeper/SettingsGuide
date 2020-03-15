@@ -1,3 +1,5 @@
+Print Thin Walls
+====
 Normally, Cura will omit walls that are thinner than the [Outer Wall Line Width](../resolution/wall_line_width_0.md), discarding them as being too small to print.
 
 If this setting is enabled, Cura will make an attempt at printing these pieces anyway. The resulting print will be inaccurate and messy, but it should produce the desired shape somewhat reliably.

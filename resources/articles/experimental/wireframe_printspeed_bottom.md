@@ -1,3 +1,5 @@
+WP Bottom Printing Speed
+====
 This setting configures the printing speed of the concentric rings on the initial layer of the print when using Wire Printing. The printing speed of the initial flat layer can be configured separately from the rest of the horizontal layers.
 
 ![Where the different Wire Printing speeds apply](../images/wireframe_printspeed.svg)

@@ -1,3 +1,5 @@
+Underextrusion
+====
 One of the most common problems in 3D printing is that the printer doesn't extrude enough material to produce a nice, solid object. When this happens, we speak of "underextrusion": The nozzle extrudes less material than intended.
 
 ![An extreme case of underextrusion, where you can even see the insides of the object](../images/underextrusion.jpg)

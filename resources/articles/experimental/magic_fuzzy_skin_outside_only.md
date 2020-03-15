@@ -1,3 +1,5 @@
+Fuzzy Skin Outside Only
+====
 If this setting is enabled, the [fuzzy skin effect](magic_fuzzy_skin_enabled.md) will only applied to outside walls of the print.
 
 ![The outside is fuzzy, but the inside is not](../images/magic_fuzzy_skin_outside_only.png)

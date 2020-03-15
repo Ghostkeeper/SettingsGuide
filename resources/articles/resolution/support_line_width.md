@@ -1,3 +1,5 @@
+Support Line Width
+====
 The width of the lines with which the support is drawn can be different from the line width of the rest of the print.
 
 ![The lines of support are wider than the rest of the lines](../images/support_line_width.png)

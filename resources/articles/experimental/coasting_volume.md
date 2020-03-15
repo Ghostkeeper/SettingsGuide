@@ -1,3 +1,5 @@
+Coasting Volume
+====
 This setting determines how far before the end of the contour the feeder will stop feeding material. The length of coasting is configured however in a volume of material. It is more closely related to the volume inside the nozzle chamber.
 
 ![Coasting 0.2mm³ of material](../images/coasting_enable.png)

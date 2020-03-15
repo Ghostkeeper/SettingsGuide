@@ -1,3 +1,5 @@
+WP Roof Drag Along
+====
 When printing molten plastic, the nozzle tends to pull some of the material along with its motion even after it's been extruded. This effect is even stronger when printing in mid-air for the roof of the wire frame when printing for Wire Printing mode. This setting causes the saw-tooth pattern at the top of the print to be continued a bit deeper inwards to compensate for it being dragged along with the nozzle.
 
 ![The additional distance inwards is configured by this setting](../images/wireframe_roof_drag_along.svg)

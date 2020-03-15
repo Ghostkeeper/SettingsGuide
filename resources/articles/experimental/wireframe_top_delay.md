@@ -1,3 +1,5 @@
+WP Top Delay
+====
 With this setting, the nozzle will stand still for a moment after printing an upward line.
 
 ![The location where the nozzle will pause](../images/wireframe_top_delay.svg)

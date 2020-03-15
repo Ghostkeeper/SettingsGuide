@@ -1,3 +1,5 @@
+No Load Move Factor
+====
 This setting expresses the difference in the length of the filament when it's being compressed between the feeder and the nozzle chamber.
 
 If the filament is being pushed out the nozzle, there is a counter-pressure applied by the nozzle itself (due to the smaller nozzle opening) and by the material underneath the nozzle, be it the printed part or the bed. Meanwhile, the feeder is pushing from the other end. This compresses the filament in the length of the path between the feeder and the nozzle, making the filament effectively shorter. As a result, bringing the filament from the feeder to the nozzle tip requires less movement than bringing the filament into a proper printing position.

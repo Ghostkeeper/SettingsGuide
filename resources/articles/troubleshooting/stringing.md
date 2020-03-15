@@ -1,3 +1,5 @@
+Stringing
+====
 When the printer is done printing one part of a layer and needs to move to a different part, it needs to temporarily stop extruding. If the material keeps flowing while it's traveling, a thin string of plastic is drawn between the two parts. This is called stringing.
 
 ![Thin lines of plastic are visible where the nozzle moved from one part to another](../images/stringing.jpg)

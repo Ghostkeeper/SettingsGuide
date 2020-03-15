@@ -1,3 +1,5 @@
+Tree Support
+====
 Tree support offers an alternative approach to supporting the model than the ordinary support technique. In tree support, a branching structure is generated that starts on the build plate with a small base, but grows towards the parts that need supporting.
 
 ![A tree-like structure supports the overhang](../images/support_tree_enable.png)

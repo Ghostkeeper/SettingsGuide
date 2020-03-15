@@ -1,3 +1,5 @@
+WP Flow
+====
 With this setting, the flow rate can be adjusted while printing with the Wire Printing technique. This simply serves as a multiplier on the line width and layer height. It directly determines how much material is used for Wire Printing.
 
 This setting adjusts the flow for the entire print, but the flow can also be adjusted separately for the [horizontal parts](wireframe_flow_flat.md) or the [connections](wireframe_flow_connection.md).

@@ -1,3 +1,5 @@
+Initial Layer Travel Speed
+====
 This setting adjusts the speed of the travel moves during the printing of the first layer.
 
 The print speed needs to be lower during the first layer than during the rest of the print, because there is a greater chance for the nozzle to rip the print off the build plate.

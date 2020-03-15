@@ -1,3 +1,5 @@
+Extensive Stitching
+====
 Cura needs to know where the inside of the model is in order to fill it with material. If the surface of your model is not precisely closed or has internal walls, it may be ambiguous where the inside of the model is.
 
 A common case of the model not being manifold, is when an extra piece of the model is attached to an otherwise closed part. This is common when editing meshes with CAD software that was not designed for manufacturing (but only for digital rendering) such as Blender or SketchUp. You can see an example of this in the images below.

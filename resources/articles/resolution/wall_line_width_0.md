@@ -1,3 +1,5 @@
+Outer Wall Line Width
+====
 The line width for the outer wall can be adjusted separately from the inner walls. This setting indicates how wide the outer wall line will be.
 
 ![The contour for the outer wall is much wider than the rest](../images/wall_line_width_0.png)

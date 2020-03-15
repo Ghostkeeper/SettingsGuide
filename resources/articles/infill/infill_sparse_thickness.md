@@ -1,3 +1,5 @@
+Infill Layer Thickness
+====
 Since the layer height of the infill is not important for visual quality, you can use thicker layers for the infill to reduce the printing time. This setting causes layers of infill to be combined together, as long as there are multiple layers of infill directly above each other. It will then not print any infill on some of the layers, but in the highest of the combined layers it will extrude more material to make up for it.
 
 In layer view, it will look as if the infill lines have become much wider. When actually printed, the infill lines will drop down further instead of spreading out horizontally.

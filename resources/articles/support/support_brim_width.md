@@ -1,3 +1,5 @@
+Support Brim Width
+====
 This setting adjusts the width of the support brim. With a wider support brim, more contours will be drawn inside the support area to give better adhesion.
 
 ![2mm width](../images/support_brim_2mm.png)

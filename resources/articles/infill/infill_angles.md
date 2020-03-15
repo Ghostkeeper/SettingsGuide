@@ -1,3 +1,5 @@
+Infill Line Directions
+====
 Infill lines are usually directed at a 45 degree angle as much as possible. At this angle, both the X and Y motor work together to obtain maximum acceleration of the print head, when using a printer with the common Cartesian gantry mechanism.
 
 With this setting, you can adjust this angle. You can specialise it to create greater strength for your specific model, or achieve greater acceleration for your specific gantry system (such as for delta printers).

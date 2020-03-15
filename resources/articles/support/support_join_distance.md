@@ -1,3 +1,5 @@
+Support Join Distance
+====
 Thin pieces of support are generally not desirable. They are prone to topple over, which can ruin the print. When multiple pieces of support are adjacent to one another, they can be joined together, forming one piece of support that is much sturdier.
 
 ![Two pieces of support are close together](../images/support_join_distance_low.png)

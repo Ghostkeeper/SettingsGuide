@@ -1,3 +1,5 @@
+Prime Tower Size
+====
 This setting adjusts the width of the prime tower.
 
 ![The width of the prime tower](../images/prime_tower.svg)

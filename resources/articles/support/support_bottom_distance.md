@@ -1,3 +1,5 @@
+Support Bottom Distance
+====
 With this setting you can adjust the distance between the bottom side of the support and the model, where the support rests on the model.
 
 ![The bottom distance between the dark blue model and the light blue support](../images/support_top_bottom_distance.svg)

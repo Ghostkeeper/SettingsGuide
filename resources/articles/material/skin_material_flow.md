@@ -1,3 +1,5 @@
+Top/Bottom Flow
+====
 This setting adjusts the flow rate for the top and bottom only. The flow rate for the top and bottom can be adjusted separately from the flow rate of the rest of the print.
 
 Adjusting the flow rate during the top and bottom is a stop gap method to fix problems with extrusion rate or not being water tight.

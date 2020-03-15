@@ -1,3 +1,5 @@
+Use Adaptive Layers
+====
 Adaptive Layers will adjust the layer thickness of your print locally to optimise printing time and quality based on the model's surface features. The layers will be made thinner where there are shallow slopes, or made thicker where the walls are steep. The purpose of this is to print fast where possible but still print detailed where needed.
 
 ![With the "layer thickness" colour scheme, you can see it colour thinner layers blue and thicker layers yellow](../images/adaptive_layer_height_enabled.png)

@@ -1,3 +1,5 @@
+WP Strategy
+====
 The most critical concern for the reliability of Wire Printing is the connection points where the layers of the frame connect to each other. There are several strategies available for making these connections stronger. This setting allows you to choose the strategy that the printer will be using.
 
 Compensate

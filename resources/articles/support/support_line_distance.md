@@ -1,3 +1,5 @@
+Support Line Distance
+====
 This setting defines the distance between two adjacent lines in the support pattern. This way of adjusting the density of support may be more intuitive than adjusting the density of support, since it directly adjusts the distance that the supported lines must bridge.
 
 ![Great line distance](../images/support_infill_rate_low.png)

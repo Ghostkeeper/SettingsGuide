@@ -1,3 +1,5 @@
+Print Speed
+====
 This setting adjusts the overall speeds at which the model is printed.
 
 Since speeds can also be adjusted separately for individual structures of the print, the actual printing speed will still vary. This setting causes the rest of the speeds to adjust by ratio.

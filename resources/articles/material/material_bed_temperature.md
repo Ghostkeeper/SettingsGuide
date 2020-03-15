@@ -1,3 +1,5 @@
+Build Plate Temperature
+====
 Some printers have a heated build plate. This setting determines how warm the build plate will become.
 
 Heating the build plate will keep the material slightly fluid and sticky. Some materials will form crystals upon freezing, which causes the material to shrink significantly upon freezing. The heated bed keeps the material just above freezing temperature to prevent this shrinkage. This is all meant to improve the adhesion of the print to the build plate.

@@ -1,3 +1,5 @@
+Maximum Fan Speed
+====
 The speed at which the fans in the print head will spin when the layer is printed at minimum layer time.
 
 ![Which fan speed is used where](../images/cool_fan_speed.svg)

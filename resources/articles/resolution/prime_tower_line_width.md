@@ -1,3 +1,5 @@
+Prime Tower Line Width
+====
 This setting determines the width of the lines with which the prime tower is drawn.
 
 ![The blue material has a larger line width than the orange material](../images/prime_tower_line_width.png)

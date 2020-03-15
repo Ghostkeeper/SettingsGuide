@@ -1,3 +1,5 @@
+Ironing Inset
+====
 Ironing normally doesn't smooth all the way to the outer edge. If it did, the continuous pressure in the nozzle chamber would cause the material to flow over the edge, which causes a sort of ripple effect. This setting determines how far away from the edge the ironing will keep.
 
 ![Default inset of half a line width](../images/ironing_enabled_enabled.png)

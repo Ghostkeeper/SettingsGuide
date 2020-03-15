@@ -1,3 +1,5 @@
+Infill Speed
+====
 The speed at which the infill material is printed can be configured separately from the normal print speed.
 
 ![Various structures printed at different speeds](../images/speed_difference.png)

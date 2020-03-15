@@ -1,3 +1,5 @@
+Infill Line Width
+====
 The width of every line of infill being drawn. The width of a line can be different from the nozzle size simply by extruding more or less material than needed. If more material is extruded, the plastic will flow towards the sides, making the line thicker. If less material is extruded, the surface tension of the material tends to pull the material towards the centre line of the nozzle's path.
 
 ![The infill lines are significantly wider than the rest](../images/infill_line_width.png)

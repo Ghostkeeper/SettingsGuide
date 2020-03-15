@@ -1,3 +1,5 @@
+Skin Edge Support Thickness
+====
 When printing concave shapes, there will be some top skin that ends somewhere halfway through the infill. This setting adds an extra line through the infill to support the edge of the skin, so that it sags a little bit less.
 
 ![A perimeter is drawn through the infill under the edge of the skin](../images/skin_edge_support_thickness.png)

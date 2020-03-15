@@ -1,3 +1,5 @@
+Retraction Minimum Travel
+====
 This setting prevents the material from retracting for very short travel moves. During those travel moves there is very little time for the material to ooze out of the nozzle anyway, so retracting would do more harm than good.
 
 ![The shortest travel move in the middle is not retracted](../images/retraction_min_travel.png)

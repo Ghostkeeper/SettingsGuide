@@ -1,3 +1,5 @@
+Ironing Line Spacing
+====
 This setting changes the space between every line of ironing. Ironing lines are normally much closer together than the actual printing lines, which is a major contributor to its effectiveness.
 
 ![Normal line spacing](../images/ironing_enabled_enabled.png)

@@ -1,3 +1,5 @@
+Spaghetti Flow
+====
 This setting directly adjusts the density of the spaghetti infill.
 
 Normally, while printing infill, the [infill density](../infill/infill_sparse_density.md) setting only affects the [distance between infill lines](../infill/infill_line_distance.md). Because the [infill line width](../resolution/infill_line_width.md) is kept the same but the lines are spaced closer together, increasing the infill density has the effect that a greater portion of the infill volume gets filled with material in the end.

@@ -1,3 +1,5 @@
+Spaghetti Infill
+====
 If this setting is enabled, Cura will extrude all infill of multiple layers at once in a higher layer. This serves as an extreme form of [Infill Layer Thickness](../infill/infill_sparse_thickness.md), but without the aim of maintaining rigidity of the infill. It has a bit of functionality to deal with the extreme amounts of extrusion.
 
 This feature is not functional for ordinary materials. You'll normally either want the strength of ordinary infill patterns, or leave out the infill altogether. There are two use cases for it though.

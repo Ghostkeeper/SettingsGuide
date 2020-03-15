@@ -1,3 +1,5 @@
+Support Placement
+====
 This setting allows you to choose what support can be placed on top of.
 
 ![Support is generated for all overhanging surfaces](../images/support_type_everywhere.png)

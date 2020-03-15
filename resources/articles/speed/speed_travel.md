@@ -1,3 +1,5 @@
+Travel Speed
+====
 This setting configures the speed at which the print head moves when it's not extruding any material.
 
 ![Various structures printed at different speeds](../images/speed_difference.png)

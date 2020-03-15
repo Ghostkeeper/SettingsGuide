@@ -1,3 +1,5 @@
+Support Density
+====
 This setting defines the rate at which the support structures are filled with material. At great infill rates, the support lines will be placed very close together. At low infill rates, the lines will be placed further apart.
 
 ![Low support density](../images/support_infill_rate_low.png)

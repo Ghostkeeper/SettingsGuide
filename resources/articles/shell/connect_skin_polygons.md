@@ -1,3 +1,5 @@
+Connect Top/Bottom Polygons
+====
 When using a concentric top/bottom pattern (a pattern consisting of closed contours, otherwise known as polygons), connect all contours together such that they form one single path.
 
 ![Naive concentric pattern](../images/connect_skin_polygons_original.png)

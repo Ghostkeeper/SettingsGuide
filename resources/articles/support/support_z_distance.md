@@ -1,3 +1,5 @@
+Support Z Distance
+====
 This setting indicates the vertical clearance that must be kept between the support and the model, both at the top of the support and the bottom.
 
 ![Z distance determines both the top and the bottom sides of support](../images/support_top_bottom_distance.svg)

@@ -1,3 +1,5 @@
+Infill Support
+====
 When enabled, this treats infill as support. Infill will then only generate where it is needed in order to support the top surface. It behaves as if the model is hollow and generates support inside it, but this support is generated using the infill settings.
 
 ![Normal infill](../images/infill_support_enabled_disabled.png)

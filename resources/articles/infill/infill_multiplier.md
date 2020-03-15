@@ -1,3 +1,5 @@
+Infill Line Multiplier
+====
 By increasing this setting, Cura will place down more infill lines directly next to the other infill lines.
 
 ![Multiplied by 3](../images/infill_multiplier.png)

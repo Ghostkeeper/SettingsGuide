@@ -1,3 +1,5 @@
+Enable Jerk Control
+====
 Jerk determines the speed at which the nozzle can go through corners. If jerk control is enabled, Cura will take control of how much jerk to apply during various parts of the print. If it's disabled, the printer firmware will choose a jerk value. The printer's jerk value is typically fairly high as to give more control to the slicer, but it may have more information about its own hardware than Cura has. 
 
 ![The relation between velocity, acceleration and jerk](../images/velocity_acceleration_jerk.svg)

@@ -1,3 +1,5 @@
+Fuzzy Skin Density
+====
 This setting configures the frequency at which the nozzle vibrates as it moves along the wall. At a higher density, the nozzle will move up and down more often along the surface. The "density" here refers to the density of points in which the nozzle can change direction.
 
 At higher density, the roughness will be more fine, resulting in a rougher texture. This also affects the printing time significantly. To create a smoother, but bumpy texture, you can reduce the density.

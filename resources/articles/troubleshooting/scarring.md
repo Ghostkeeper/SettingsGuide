@@ -1,3 +1,5 @@
+Scarring
+====
 When a print has a big flat top side, there is a danger of scars. This is when there is a clearly visible line on the top side of the print, that doesn't belong to the normal pattern. This line mars the otherwise smooth top surface of the print.
 
 ![A diagonal scar across the surface](../images/scarring.jpg)

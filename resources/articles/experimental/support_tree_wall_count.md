@@ -1,3 +1,5 @@
+Tree Support Wall Line Count
+====
 This setting determines the number of contours that will be drawn inside the tree support. With more contours, the tree support will be more rigid.
 
 ![Two walls](../images/support_tree_wall_count.png)

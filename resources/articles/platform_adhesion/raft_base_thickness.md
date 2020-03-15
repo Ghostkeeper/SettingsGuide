@@ -1,3 +1,5 @@
+Raft Base Thickness
+====
 This setting adjusts the vertical thickness of the lowest layer of the raft.
 
 ![Dimensions related to the raft](../images/raft_dimensions.svg)

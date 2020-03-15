@@ -1,3 +1,5 @@
+Infill Jerk
+====
 This setting determines the speed at which the nozzle can go through corners while printing infill. This can be configured separately from the rest of the print.
 
 The infill is normally not visible from the outside, so it can be printed at greater jerk without much trouble to win some printing time. The printer will vibrate more, but this is hardly visible. However the nozzle might also overshoot a bit in the corner. Especially when printing the infill before the walls, this overshoot could make the infill pattern more visible from the outside.

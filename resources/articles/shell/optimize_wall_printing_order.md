@@ -1,3 +1,5 @@
+Optimize Wall Printing Order
+====
 If this is enabled, Cura will spend some extra slicing time to optimise the order in which the walls are printed. The goal is to reduce the number of travel moves and retractions by printing walls that surround the same part after one another.
 
 ![Optimisation disabled](../images/optimize_wall_printing_order_disabled.gif)

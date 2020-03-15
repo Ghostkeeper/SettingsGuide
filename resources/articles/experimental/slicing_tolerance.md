@@ -1,3 +1,5 @@
+Slicing Tolerance
+====
 With the slicing tolerance, you can adjust how to deal with the inaccuracy of subdividing a mesh into a finite amount of layers. It allows you to choose whether the layers should closely approximate the surface, should stay bounded by the surface or should include the surface completely.
 
 Middle

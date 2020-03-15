@@ -1,3 +1,5 @@
+Enable Ooze Shield
+====
 When printing with multiple extruders, the inactive extruders sometimes still have some material in them. If the nozzles are still hot, this material tends to ooze out. That's the problem that the ooze shield is meant to prevent. The ooze shield is a border around the object that catches any ooze beneath the nozzle.
 
 ![The ooze shield gets printed with the first extruder of a layer, causing an alternating pattern if printing with two extruders](../images/ooze_shield.png)

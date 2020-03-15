@@ -1,3 +1,5 @@
+Bed Adhesion Problems
+====
 One of the most common failure modes for 3D prints is that the print got loose from the build plate while it was still being printed. This article goes over some adjustments you can make to prevent this from happening.
 
 If the print got lost from the build plate, you will generally see a lot of loose wires all over the build plate. If you have more luck, it may manifest also as just a [layer shift](layer_shift.md) (and there will be less to clean up). Either way, the print is ruined.

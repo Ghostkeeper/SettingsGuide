@@ -1,3 +1,5 @@
+Enable Ironing
+====
 Ironing causes the printer to do another pass over the top surface in order to make it extra smooth. This extra pass has a very small line width and prints extra slow.
 
 ![A normal print, viewed from the top side](../images/ironing_enabled_disabled.png)

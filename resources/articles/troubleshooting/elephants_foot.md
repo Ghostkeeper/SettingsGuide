@@ -1,3 +1,5 @@
+Elephant's Foot
+====
 Sometimes the bottom side of the print is slightly wider than the rest of the print, resulting in a small lip there. This is called an "elephant's foot", since it resembles the legs of an elephant where the toes are slightly wider than the rest of the leg.
 
 There are several effects that people call elephant's foot with completely different inherent causes. These will require completely different solutions, too. This article will help you find the root cause.

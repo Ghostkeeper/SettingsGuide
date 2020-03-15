@@ -1,3 +1,5 @@
+Initial Layer Height
+====
 This setting defines the thickness of the first layer of your print. The initial layer is normally printed thicker than the rest in order to create a stronger adhesion with the build plate. With this setting, the initial layer's thickness can be increased without reducing the resolution of the rest of the print.
 
 ![The initial layer is thicker than the rest of the layers](../images/layer_height_0.png)

@@ -1,3 +1,5 @@
+Skin Removal Width
+====
 This setting will remove very thin strips of skin, replacing them with infill instead.
 
 The skin will only be removed if there is infill next to it, so it won't normally remove the skin at the very top or bottom of your print, even if that is very thin.

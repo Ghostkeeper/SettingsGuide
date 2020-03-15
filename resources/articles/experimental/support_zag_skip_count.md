@@ -1,3 +1,5 @@
+Support Chunk Line Count
+====
 If the support is [broken up in chunks](support_skip_some_zags.md), this setting determines how many lines of support will be combined into one chunk.
 
 ![Each chunk contains 8 lines](../images/support_skip_some_zags.png)

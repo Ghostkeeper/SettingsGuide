@@ -1,3 +1,5 @@
+Mold
+====
 Instead of printing the model itself, this feature causes the printer to create a negative of the model, a mould, that you could cast a different material in to create your model. This mould has several specific properties that make it both workable to cast with and printable with FDM printing.
 
 ![A model that you'd want to cast](../images/mold_enabled_shell.png)

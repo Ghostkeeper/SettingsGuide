@@ -1,3 +1,5 @@
+Enable Support Interface
+====
 A "support interface" is an intermediary structure in between the normal support and the model. This structure can adjust the properties of how support interfaces with the model without affecting the majority of the support much.
 
 ![Support interface is shown in a darker shade of blue](../images/support_interface_enable.png)

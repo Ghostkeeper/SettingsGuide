@@ -1,3 +1,5 @@
+Enable Conical Support
+====
 If this setting is enabled, the support structure will no longer be completely vertical on the sides. The support will get a conical shape, getting either smaller or larger towards the bottom.
 
 ![The support gets smaller towards the bottom](../images/support_conical_enabled.png)

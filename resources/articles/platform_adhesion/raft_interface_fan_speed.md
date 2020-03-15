@@ -1,3 +1,5 @@
+Raft Middle Fan Speed
+====
 This setting configures the fan speed while printing the middle layer of the raft. The fan speed while printing the middle layer can be configured separately from the base and top layers.
 
 ![Where the middle layer is located in the raft](../images/raft_dimensions_simplified.svg)

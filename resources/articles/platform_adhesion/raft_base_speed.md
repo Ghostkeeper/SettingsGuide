@@ -1,3 +1,5 @@
+Raft Base Print Speed
+====
 This setting configures the speed at which the base layer of the raft is printed. The speed of the base layer can be configured separately from the speed of the top and middle layers.
 
 ![Where the base layer is located in the raft](../images/raft_dimensions_simplified.svg)

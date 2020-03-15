@@ -1,3 +1,5 @@
+Coasting Speed
+====
 During the coasting, the nozzle doesn't extrude any more. However it doesn't quite behave as a travel move. The nozzle still continues travelling at approximately the same rate. With this setting, the exact rate at which the nozzle continues travelling can be configured.
 
 The speed of coasting is configured by ratio of the normal printing speed. This means that if the [outer wall](../speed/speed_wall_0.md) and [inner wall](../speed/speed_wall_x.md) have different speeds, they will also coast at different speeds. Typically the coasting is done at a slightly lower speed than the normal printing speed, to combat the underextrusion.

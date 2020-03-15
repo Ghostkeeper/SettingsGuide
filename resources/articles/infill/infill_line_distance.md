@@ -1,3 +1,5 @@
+Infill Line Distance
+====
 Instead of setting the [Infill Density](infill_sparse_density.md) as a percentage, it is also possible to configure infill density by setting the distance between adjacent infill lines. A greater distance between infill lines will result in a lower infill density overall.
 
 Infill Line Distance is a different way of looking at this property than density. The distance between infill lines gives an indication of the distance that the top surface lines have to cross from one infill line to the next. Reducing the Infill Line Distance thus reduces the bridged distance and improves the quality of top surfaces.

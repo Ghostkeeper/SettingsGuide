@@ -1,3 +1,5 @@
+Generate Support
+====
 3D printers with fused-filament fabrication work by placing a string of molten plastic in the correct locations. If this plastic is not supported, it will sag down, because it gets pushed out the nozzle with significant force and because of gravity. Unless the model is beneath it to support the new layer, it will need to be supported by an additional support structure, that is removed and discarded after printing the model.
 
 This setting enables creating support structures to support the object while it's being printed. Cura won't enable this support by default, but it will mark the surface of the model red if it thinks that the material there could sag a lot if support is not enabled.

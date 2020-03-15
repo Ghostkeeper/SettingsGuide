@@ -1,3 +1,5 @@
+Maximum Travel Resolution
+====
 If the model has a very high resolution, Cura will reduce the resolution such that the printer's processor is able to keep up with processing the g-code commands as they are being executed. The maximum resolution of the travel moves can be determined separately from the [maximum resolution](meshfix_maximum_resolution.md) while printing.
 
 Since travel moves are executed significantly faster than printing moves, the print head will go through travel's line segments much faster than other line segments. The CPU would have to process those line segments much faster in order to keep up with the nozzle. This is why the resolution of the travel moves should be lower than the resolution of the slower extrusion moves.

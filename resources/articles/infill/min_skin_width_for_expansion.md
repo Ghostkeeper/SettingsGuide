@@ -1,3 +1,5 @@
+Minimum Skin Width for Expansion
+====
 Since skin is present throughout the model, it is unnecessary to expand all of those areas. Rather, only the skin angles that are already wider than this setting will get expanded. In that way, flat surfaces with protruding elements will be strengthened, without needlessly increasing printing time for the rest of the model.
 
 ![Set to 0mm, all skin is expanded with the Skin Expand Distance setting](../images/max_skin_angle_for_expansion_90.png)

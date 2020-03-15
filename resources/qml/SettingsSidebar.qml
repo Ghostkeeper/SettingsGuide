@@ -15,7 +15,6 @@ import Cura 1.0 as Cura
 Item {
 	id: rightSideItem
 	width: UM.Theme.getSize("print_setup_widget").width
-	property string selectedArticleName: ""
 
 	Rectangle {
 		id: filterContainer
@@ -175,7 +174,6 @@ Item {
 				} else {
 					manager.selectedArticleId = currentItem.definition.key;
 				}
-				rightSideItem.selectedArticleName = currentItem.definition.label;
 			}
 
 			delegate: Loader {

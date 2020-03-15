@@ -1,3 +1,5 @@
+Overhanging Wall Angle
+====
 This setting indicates the threshold angle after which a wall will be marked as an "overhanging wall". These overhanging walls can be printed at a different speed using the [Overhanging Wall Speed](wall_overhang_speed_factor.md) setting.
 
 If this setting is set to 0°, all walls will be treated as overhanging walls. If this setting is set to 90°, no walls will be treated as overhanging walls. Walls that rest on support are not treated as overhanging walls either.

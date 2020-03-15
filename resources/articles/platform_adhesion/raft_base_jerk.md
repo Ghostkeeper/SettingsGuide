@@ -1,3 +1,5 @@
+Raft Base Print Jerk
+====
 This setting configures the speed at which the nozzle can go through corners while the base layer of the raft is printed. The jerk rate during the base layer of the raft can be configured separately from the middle and top layers.
 
 ![Where the base layer is located in the raft](../images/raft_dimensions_simplified.svg)

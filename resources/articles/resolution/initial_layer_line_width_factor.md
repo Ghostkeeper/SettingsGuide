@@ -1,3 +1,5 @@
+Initial Layer Line Width
+====
 This makes the lines in the initial layer wider or thinner by a certain ratio.
 
 ![The lines in the initial layer are twice as wide as the rest](../images/initial_layer_line_width_factor.png)

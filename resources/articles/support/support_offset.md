@@ -1,3 +1,5 @@
+Support Horizontal Expansion
+====
 This setting causes the support to become slightly wider, expanding horizontally in every direction.
 
 ![The support is wider than necessary to support the model](../images/support_offset.png)

@@ -1,3 +1,5 @@
+WP Straighten Downward Lines
+====
 This setting is another compensation factor that can be applied to compensate for the sagging of the material during Wire Printing. Instead of directly moving diagonally downwards for the saw-tooth pattern, this setting will make the nozzle go horizontal for a specified length of wire and then move on downwards.
 
 ![Moving straight horizontally first before moving back down](../images/wireframe_straight_before_down.svg)

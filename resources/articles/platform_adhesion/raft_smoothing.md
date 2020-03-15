@@ -1,3 +1,5 @@
+Raft Smoothing
+====
 With this setting, inside corners of the raft can be made smoother. The setting specifies the radius of an arc. All inside corners that are sharper than the specified arc radius will get smoothed to have the arc radius.
 
 ![No smoothing](../images/raft_smoothing_0mm.png)

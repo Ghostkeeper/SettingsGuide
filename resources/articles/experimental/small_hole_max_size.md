@@ -1,3 +1,5 @@
+Small Hole Max Size
+====
 Small details of the print are often very dimension-critical. This setting causes small holes in the print to be printed more slowly in order to achieve greater accuracy.
 
 If a circular hole has a diameter less than this setting's value, the speed at which the perimeter of that hole is printed will be multiplied by a factor of the [Small Feature Speed](small_feature_speed_factor.md) (reduced, normally). For holes that are not circular, they will be printed at a different speed if the circumference is less than a circle with the diameter specified here. See also [Small Feature Max Length](small_feature_max_length.md); that is the setting that will actually be used for slicing.

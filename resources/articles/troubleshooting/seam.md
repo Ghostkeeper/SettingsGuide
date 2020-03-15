@@ -1,3 +1,5 @@
+Seam
+====
 The walls of your print are printed as continuous loops, but the printer must start that loop somewhere and close it up nicely. If the loop is not closed nicely, a visible seam will be created. These seams are hard to remove completely, but some things can be done to hide them or reduce their size.
 
 ![A long vertical seam on the surface](../images/seam.jpg)

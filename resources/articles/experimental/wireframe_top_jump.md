@@ -1,3 +1,5 @@
+WP Knot Size
+====
 If the [Wire Printing Strategy](wireframe_strategy.md) is set to "Knot", a little upwards and backwards motion will be made at the top of each saw tooth. This setting configures the magnitude of that motion.
 
 ![Where the knot is drawn and what its size entails](../images/wireframe_top_jump.svg)

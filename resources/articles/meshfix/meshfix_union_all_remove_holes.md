@@ -1,3 +1,5 @@
+Remove All Holes
+====
 Some models, particularly those made for manufacturing techniques like injection moulding, tend to come with internal cavities that are not visible. If this setting is enabled, Cura removes those internal cavities.
 
 ![This model has a hole in the centre](../images/meshfix_union_all_remove_holes_disabled.png)

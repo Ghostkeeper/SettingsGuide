@@ -1,3 +1,5 @@
+Inner Wall(s) Flow
+====
 This setting adjusts the flow rate for the inner walls only. The flow rate for the inner walls can be adjusted separately from the flow rate of the outer wall.
 
 Adjusting the flow rate during the inner walls is a stop gap method to fix problems with extrusion rate or dimensional accuracy.

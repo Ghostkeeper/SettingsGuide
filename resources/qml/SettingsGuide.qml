@@ -108,15 +108,6 @@ Window {
 				width: article_scroll.width - UM.Theme.getSize("wide_margin").width * 2
 				spacing: UM.Theme.getSize("wide_margin").height
 
-				Text {
-					text: "<h1>" + settingsSidebar.selectedArticleName + "</h1>"
-					width: parent.width
-					wrapMode: Text.Wrap
-					renderType: Text.NativeRendering
-					font: UM.Theme.getFont("medium")
-					color: UM.Theme.getColor("text")
-				}
-
 				Repeater {
 					model: manager.selectedArticle
 					delegate: Component {
@@ -207,12 +198,5 @@ Window {
 				}
 			}
 		}
-	}
-
-	UM.SettingPropertyProvider {
-		id: selectedArticleName
-		containerStack: manager.containerStack
-		key: manager.selectedArticleId
-		watchedProperties: ["label"]
 	}
 }

@@ -1,3 +1,5 @@
+Raft Base Print Acceleration
+====
 This setting configures the acceleration rate of the print head while the base layer of the raft is printed. The acceleration during the base layer of the raft can be configured separately from the middle and top layers.
 
 ![Where the base layer is located in the raft](../images/raft_dimensions_simplified.svg)

@@ -1,3 +1,5 @@
+Combing Mode
+====
 Combing is the practice of avoiding crossing the walls of the print when travelling from one place to another. Crossing the walls tends to leave a scar on the surface where a hot nozzle exited or entered the volume of the print, so that is generally undesirable.
 
 Combing alone just causes the nozzle to avoid the walls when travelling through the inside of the mesh. However it also allows for the [Avoid Printed Parts While Traveling](travel_avoid_other_parts.md) feature, which makes the nozzle avoid objects while outside of the volume as well.

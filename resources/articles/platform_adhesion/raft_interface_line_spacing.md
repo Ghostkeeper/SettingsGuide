@@ -1,3 +1,5 @@
+Raft Middle Spacing
+====
 This setting adjusts the spacing between adjacent lines in the middle layer of the raft. This is in a way similar to the [Infill Line Distance](../infill/infill_line_distance.md) setting. The main purpose is to adjust the stiffness of the raft and how well the top layer gets supported.
 
 ![Dimensions related to the raft](../images/raft_dimensions.svg)

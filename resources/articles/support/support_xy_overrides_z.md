@@ -1,3 +1,5 @@
+Support Distance Priority
+====
 Both the [X/Y distance](support_xy_distance.md) and the [Z distance](support_z_distance.md) of support should be observed exactly; not more, not less. This is overconstrained, so there must be a preference between the two. This setting determines that preference.
 
 X/Y overrides Z

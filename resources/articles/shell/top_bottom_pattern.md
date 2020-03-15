@@ -1,3 +1,5 @@
+Top/Bottom Pattern
+====
 This setting allows you to choose how the top and bottom surfaces get filled up with material. Several different printing patterns are available, but the patterns here are more limited than for infill. Only patterns that create solid layers are available.
 
 Lines

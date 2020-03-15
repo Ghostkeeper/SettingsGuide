@@ -1,3 +1,5 @@
+Initial Layer Jerk
+====
 This setting determines the speed at which the nozzle can go through corners while the initial layer is being printed. This can be configured separately from the rest of the layers.
 
 Going through sharp corners at great speeds not only causes the print head to vibrate horizontally. It can also cause the build plate to vibrate vertically. This affects bed adhesion negatively. Going through corners a bit more carefully during the first layer allows for more consistent bed adhesion, but will take longer to print.

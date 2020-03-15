@@ -1,3 +1,5 @@
+Support Infill Extruder
+====
 If your printer has multiple extruders, the main body of the support can be printed with a different extruder than the support interface. This setting allows you to choose which extruder is used for the main body of the support.
 
 ![The body of the support is printed in orange, but the interface in white](../images/support_infill_extruder_nr.png)

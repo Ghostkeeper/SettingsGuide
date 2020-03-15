@@ -1,3 +1,5 @@
+Maximum Speed for Flow Equalization
+====
 If the [Equalize Filament Flow](speed_equalize_flow_enabled.md) setting is enabled, then the small gap filling technique will adjust its speed such that the flow rate out the nozzle will be equal to the skin, even if the lines are much thinner.
 
 One problem with this is that very thin lines could result in extremely high speeds. Such speeds may not be reachable by the printer, resulting in lost steps and ultimately in a layer shift. This setting puts a maximum on those speeds.

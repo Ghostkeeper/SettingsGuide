@@ -1,3 +1,5 @@
+Wall Flow
+====
 This setting adjusts the flow rate for the walls only. The flow rate for the walls can be adjusted separately from the flow rate of the rest of the print.
 
 Adjusting the flow rate during the walls is a stop gap method to fix problems with extrusion rate or dimensional accuracy.

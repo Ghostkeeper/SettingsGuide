@@ -1,3 +1,5 @@
+Draft Shield X/Y Distance
+====
 This setting configures how far from the print the draft shield will be printed.
 
 The farther the draft shield is located from your print, the less effective it will be at keeping the temperature within the draft shield constant. There will be more air flowing around the print then, so the print is less protected against air currents.

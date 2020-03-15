@@ -1,3 +1,5 @@
+Ringing
+====
 Ringing (sometimes called "ghosting") is an effect where ripples appear on otherwise flat surfaces near small details on that surface. The ripples start occurring just after printing the small details.
 
 ![Ripples on the surface](../images/ringing.jpg)

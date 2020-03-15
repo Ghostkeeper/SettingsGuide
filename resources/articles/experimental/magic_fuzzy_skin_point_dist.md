@@ -1,3 +1,5 @@
+Fuzzy Skin Point Distance
+====
 This setting configures the distance along the original wall between movements for the fuzzy skin. If the distance is small, the print head will move in different directions very often along the wall. It will vibrate at high frequency.
 
 With smaller distances, the roughness will be more fine, resulting in a rougher texture. This also affects the printing time significantly. To create a smoother, but bumpy texture, you can increase the distance.

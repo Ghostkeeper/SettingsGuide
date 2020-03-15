@@ -1,3 +1,5 @@
+Support Infill Layer Thickness
+====
 Since the visual quality and resolution of support is not important, you can use thicker layers for the support to reduce printing time. This setting configures how thick the layers will be that the support is printed with.
 
 In layer view, it will look as if the support lines have become much wider. When actually printed, the support lines will drop down further instead of spreading out horizontally.

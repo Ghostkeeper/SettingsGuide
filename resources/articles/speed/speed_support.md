@@ -1,3 +1,5 @@
+Support Speed
+====
 This setting configures the speed at which the support structures are printed.
 
 ![Various structures printed at different speeds](../images/speed_difference.png)

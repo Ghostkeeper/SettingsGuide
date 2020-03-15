@@ -1,3 +1,5 @@
+Raft Middle Thickness
+====
 This setting adjusts the vertical thickness of the middle layer of the raft.
 
 ![Dimensions related to the raft](../images/raft_dimensions.svg)

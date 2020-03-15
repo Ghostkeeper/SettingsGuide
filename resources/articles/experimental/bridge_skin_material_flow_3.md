@@ -1,3 +1,5 @@
+Bridge Third Skin Flow
+====
 This setting adjusts the amount of material that is extruded to print the third layer of skin above a bridge.
 
 Reducing the amount of material will effectively reduce the line width of the bottom side that is bridging a gap. With reduced line width, the lines' surface-to-mass ratio is greater, which allows them to cool down faster and this will prevent them from leaning as much on the first and second bridge layers.

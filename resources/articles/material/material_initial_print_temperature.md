@@ -1,3 +1,5 @@
+Initial Printing Temperature
+====
 After being on stand-by while different extruders have been printing, the nozzle will start at a slightly lower temperature. It then immediately heats up to the ordinary printing temperature once the printing has started.
 
 ![The extruder switch happens at a slightly lower temperature than the normal printing temperature](../images/temperature_regulation.svg)

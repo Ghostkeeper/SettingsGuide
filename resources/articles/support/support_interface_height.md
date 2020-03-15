@@ -1,3 +1,5 @@
+Support Interface Thickness
+====
 This setting defines how thick the interface layer is between the support and the model.
 
 A thicker interface reduces the savings that would be made by using a support interface rather than printing all of the support at increased density.

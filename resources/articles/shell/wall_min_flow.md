@@ -1,3 +1,5 @@
+Minimum Wall Flow
+====
 Compensating for overlaps in wall lines will reduce the flow rate of some of the walls. This can be problematic, because it can reduce the flow rate arbitrarily low, down to 1% if the walls almost completely overlap. Printing at extremely low flow rates doesn't work well. It tends to form a droplet pattern instead of continuously extruding lines.
 
 This setting will turn those lines with extremely low flow rate into travel moves, effectively snapping their flow rate to 0%. Material will still ooze out as with normal travel moves, but will not form beads.

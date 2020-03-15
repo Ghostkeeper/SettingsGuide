@@ -1,3 +1,5 @@
+Limit Support Retractions
+====
 Instead of retracting when moving from one place to another to print support, this setting causes it to just travel directly without any retraction.
 
 If enabled, the material will no longer be retracted when making a travel move from support to support in a straight line. When travelling to or from the actual print or when making a detour to avoid colliding with the actual print, the material will still be retracted.

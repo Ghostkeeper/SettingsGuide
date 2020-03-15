@@ -1,3 +1,5 @@
+Bridge Wall Speed
+====
 This setting controls the speed at which the wall lines are being printed while bridging a gap.
 
 For materials that require the fan to be turned on and turned up high (such as PLA), it is generally better to print bridges very slow. This allows the fans to blow a lot of air over the material, which causes them to solidify very quickly. The material doesn't get as much chance to sag then. This is less effective for materials that don't need the fan to be spinning so fast or printers that don't have a very powerful fan.

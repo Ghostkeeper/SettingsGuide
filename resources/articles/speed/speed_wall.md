@@ -1,3 +1,5 @@
+Wall Speed
+====
 The speed at which the walls are printed can be configured separately from the normal print speed.
 
 ![Various structures printed at different speeds](../images/speed_difference.png)

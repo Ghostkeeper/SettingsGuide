@@ -1,3 +1,5 @@
+Support Roof Thickness
+====
 This setting defines how thick the support roof is, where the model rests on the support.
 
 A thicker roof reduces the savings that would be made by using a support roof rather than printing all of the support at increased density.
