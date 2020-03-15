@@ -17,12 +17,11 @@ SettingItem {
 		border.width: UM.Theme.getSize("default_lining").width
 		border.color: UM.Theme.getColor("setting_control_disabled_border")
 
-		UM.RecolorImage
-        {
+		UM.RecolorImage {
 			id: downArrow
 			anchors {
-	            right: parent.right
-                rightMargin: UM.Theme.getSize("default_margin").width
+				right: parent.right
+				rightMargin: UM.Theme.getSize("default_margin").width
 				verticalCenter: parent.verticalCenter
 			}
 
