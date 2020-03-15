@@ -1,3 +1,6 @@
+Vitesse de rétraction de l'anti-suintage
+===
+
 Pour certaines imprimantes, lorsqu'un matériau est rétracté pour un interrupteur à filament, le matériau doit être coupé proprement afin de le faire passer dans le chargeur sans s'emmêler. Ce réglage configure une partie de la procédure pour le rompre proprement.
 
 Ce réglage ajuste la vitesse à laquelle le matériau est rétracté vers la première position afin de l'empêcher de suinter. Le matériau n'est pas encore cassé à ce stade. Le but est seulement de supprimer rapidement la pression sur la chambre de la buse en la tirant vers l'intérieur.
