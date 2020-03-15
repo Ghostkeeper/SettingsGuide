@@ -5,4 +5,4 @@ Lorsque vous utilisez un motif concentrique haut/bas (un motif composé de conto
 
 Cela empêche la plupart des déplacements. Cependant, cela crée de nouveaux angles vifs où la buse devra accélérer et décélérer beaucoup, ce qui compensera le gain en temps d'impression. Le motif ondulé sera également visible à l'extérieur, ce qui donne un effet visuel intéressant.
 
-Les contours créés par [Extra Skin Wall Count](skin_outline_count.md) ne sont pas reliés.
+Les contours créés par [Nombre supplémentaire de parois extérieures](./skin_outline_count.md) ne sont pas reliés.
