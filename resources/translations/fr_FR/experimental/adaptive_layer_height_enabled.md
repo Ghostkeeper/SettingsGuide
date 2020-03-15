@@ -1,3 +1,6 @@
+Utiliser des couches adaptatives
+===
+
 Les couches adaptatives permettent d'ajuster localement l'épaisseur de votre impression afin d'optimiser le temps et la qualité d'impression en fonction des caractéristiques de surface du modèle. Les couches seront rendues plus fines lorsque les pentes sont faibles, ou plus épaisses lorsque les murs sont raides. L'objectif est d'imprimer rapidement lorsque c'est possible, tout en continuant à imprimer de manière détaillée lorsque c'est nécessaire.
 
 ![Avec le schéma de couleur "épaisseur de la couche", vous pouvez voir qu'il colore les couches plus fines en bleu et les couches plus épaisses en jaune](../../../articles/images/adaptive_layer_height_enabled.png)
