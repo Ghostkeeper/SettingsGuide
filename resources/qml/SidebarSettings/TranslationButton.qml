@@ -11,6 +11,9 @@ import UM 1.1 as UM
 MouseArea {
 	property string article_id
 
+	onClicked: languagesMenu.popup()
+	visible: manager.language_list(article_id).length > 1
+
 	UM.RecolorImage {
 		color: UM.Theme.getColor("text")
 		source: Qt.resolvedUrl("../../icons/translations.svg")
@@ -18,7 +21,6 @@ MouseArea {
 		width: height
 		height: parent.height - UM.Theme.getSize("narrow_margin").height * 2
 	}
-	onClicked: languagesMenu.popup()
 
 	Menu {
 		id: languagesMenu
