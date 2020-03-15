@@ -86,7 +86,7 @@ Le motif en quart de cube crée une tesselation tridimensionnelle composée de t
 * Effet réduit de l'oreiller, car il ne produit pas de longues poches verticales d'air chaud.
 * Résulte en une très longue distance de pontage pour la peau supérieure, ce qui réduit la qualité de la surface supérieure.
 
-Concentré
+Concentrique
 ----
 ![Concentrique](../../../articles/images/infill_pattern_concentric.png)
 
@@ -108,7 +108,7 @@ Le motif de remplissage en zigzag fait que la buse dessine des lignes en zigzag.
 * Tend à être assez faible dans le sens vertical, car les couches n'ont que de petits points de liaison entre elles.
 * Sera extrêmement faible dans la direction horizontale, sauf dans la seule direction où les lignes sont orientées. Mais même dans cette direction, il n'est pas résistant au cisaillement, de sorte qu'il cède assez rapidement sous la charge. 
 
-Cross
+En Croix
 ----
 ![Croix](../../../articles/images/infill_pattern_cross.png)
 
