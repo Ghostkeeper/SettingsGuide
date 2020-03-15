@@ -1,3 +1,6 @@
+Mode de surface
+===
+
 Normalement, Cura crée des sections transversales de tous les triangles de votre maillage. Ces segments de ligne sont cousus ensemble pour former des boucles. Les boucles qui ne sont pas fermées seront rejetées.
 
 Ce paramètre contrôle ce qui sera fait avec ces boucles non fermées. Si ce paramètre est réglé sur "Normal", elles sont rejetées. S'il est réglé sur "Surface", toutes les sections transversales sont imprimées sous forme de contours. Si le paramètre est réglé sur "Les deux", les contours fermés sont imprimés normalement, mais les contours non fermés sont imprimés séparément sous forme de murs supplémentaires.
