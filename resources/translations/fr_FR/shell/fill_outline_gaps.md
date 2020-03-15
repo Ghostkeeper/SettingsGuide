@@ -1,3 +1,6 @@
+Imprimer parois fines
+===
+
 Normalement, Cura omet les murs plus minces que la [Largeur de ligne de la paroi externe](../resolution/wall_line_width_0.md), les rejetant comme étant trop petits pour être imprimés.
 
 Si ce paramètre est activé, Cura essaiera quand même d'imprimer ces pièces. L'impression résultante sera imprécise et désordonnée, mais elle devrait produire la forme souhaitée de manière assez fiable.
