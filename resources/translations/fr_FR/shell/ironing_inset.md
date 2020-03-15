@@ -1,4 +1,4 @@
-Normalement, le repassage n'est pas lisse jusqu'au bord extérieur. Si c'était le cas, la pression continue dans la chambre de la buse ferait passer le matériau par-dessus le bord, ce qui provoquerait une sorte d'effet d'ondulation. Ce réglage détermine la distance du repassage par rapport au bord.
+Normalement, l'étirage n'est pas lisse jusqu'au bord extérieur. Si c'était le cas, la pression continue dans la chambre de la buse ferait passer le matériau par-dessus le bord, ce qui provoquerait une sorte d'effet d'ondulation. Ce réglage détermine la distance du repassage par rapport au bord.
 
 ![Insertion par défaut d'une demi-largeur de ligne](../../../articles/images/ironing_enabled_enabled.png)
 ![Un encart plus grand de 1,2 mm](../../../articles/images/ironing_inset.png)
