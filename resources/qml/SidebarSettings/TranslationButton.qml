@@ -26,10 +26,19 @@ MouseArea {
 			model: manager.language_list(article_id)
 
 			MenuItem {
-				text: modelData.toString()
+				text: code_to_language(modelData.toString())
 			}
 			onObjectAdded: languagesMenu.insertItem(index, object)
 			onObjectRemoved: languagesMenu.removeItem(object)
 		}
+	}
+
+	function code_to_language(code) {
+		var language_mapping = {
+			"en_US": "English",
+			"fr_FR": "Français",
+			"ru_RU": "Русский"
+		};
+		return language_mapping[code];
 	}
 }
