@@ -3,7 +3,7 @@ Si une imprimante 3D arrêtait de pousser le matériau, le matériau ne cesserai
 ![Rétractations désactivées](../../../articles/images/retraction_enable_disabled.png)
 ![Les mouvements de déplacement rétractés apparaissent en bleu plus clair](../../../articles/images/retraction_enable_enabled.png)
 
-Les rétractions sont effectuées lors d'un déplacement particulièrement sensible à la ficelle. Les mouvements de déplacement qui ne font que passer par un remplissage ou un déplacement de support à support ne sont normalement pas rétractés. Il existe également une limite à la fréquence de rétraction du matériau, par le biais des paramètres [Maximum Retraction Count](retraction_count_max.md) et [Minimum Extrusion Distance Window](retraction_extrusion_window.md).
+Les rétractions sont effectuées lors d'un déplacement particulièrement sensible à la ficelle. Les mouvements de déplacement qui ne font que passer par un remplissage ou un déplacement de support à support ne sont normalement pas rétractés. Il existe également une limite à la fréquence de rétraction du matériau, par le biais des paramètres [Nombre maximal de rétractions](./retraction_count_max.md) et [Intervalle de distance minimale d'extrusion](./retraction_extrusion_window.md).
 
 La rétraction présente des avantages importants, mais aussi des inconvénients :
 * Il réduit considérablement le nombre de cordes. Plus de câblage entre les différentes parties de l'impression.
