@@ -1,3 +1,6 @@
+Expansion horizontale de la couche initiale
+===
+
 Ce réglage n'étend que la couche initiale qui repose sur la plaque de construction (ou sur le radeau). Comme pour [Expansion horizontale](./xy_offset.md), une valeur positive élargira la couche initiale tandis qu'une valeur négative la réduira.
 
 ![Le modèle original](../../../articles/images/xy_offset_layer_0_original.png)
