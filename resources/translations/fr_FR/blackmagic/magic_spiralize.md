@@ -1,3 +1,6 @@
+Spiraliser le contour extérieur
+===
+
 Spiraliser le contour extérieur est une astuce.
 
 Lors de l'impression couche par couche, la buse doit normalement se déplacer d'une couche à l'autre. Ce mouvement fait que la buse reste presque immobile pendant une fraction de seconde, ce qui laisse une couture sur la surface appelée la couture Z. Ce réglage est destiné à empêcher cela et bien plus encore.
