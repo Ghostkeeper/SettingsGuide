@@ -72,15 +72,6 @@ Item {
 			font: UM.Theme.getFont("default")
 		}
 
-		TranslationButton {
-			anchors.right: controlContainer.left
-			anchors.verticalCenter: parent.verticalCenter
-			width: height
-			height: UM.Theme.getSize("setting_control").height
-
-			article_id: definition.key
-		}
-
 		Item {
 			id: controlContainer
 

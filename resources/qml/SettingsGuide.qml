@@ -137,6 +137,20 @@ Window {
 			}
 		}
 
+		TranslationButton {
+			anchors {
+				right: rightSideItem.left
+				rightMargin: UM.Theme.getSize("default_margin").width
+				top: parent.top
+				topMargin: UM.Theme.getSize("default_margin").top
+			}
+
+			width: height
+			height: 35 * screenScaleFactor
+
+			article_id: manager.selectedArticleId
+		}
+
 		//Zoomed in version of an image, shown only when you click an image.
 		Item {
 			id: zoom_layer

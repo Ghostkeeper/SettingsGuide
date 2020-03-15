@@ -16,7 +16,7 @@ MouseArea {
 
 	UM.RecolorImage {
 		color: UM.Theme.getColor("text")
-		source: Qt.resolvedUrl("../../icons/translations.svg")
+		source: Qt.resolvedUrl("../icons/translations.svg")
 		anchors.centerIn: parent
 		width: height
 		height: parent.height - UM.Theme.getSize("narrow_margin").height * 2
@@ -39,6 +39,7 @@ MouseArea {
 		var language_mapping = {
 			"en_US": "English",
 			"fr_FR": "Français",
+			"nl_NL": "Nederlands",
 			"ru_RU": "Русский"
 		};
 		return language_mapping[code];
