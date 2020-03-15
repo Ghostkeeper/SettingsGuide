@@ -28,6 +28,6 @@ Le motif en zigzag est très similaire au motif des lignes, mais au lieu de term
 * Fournit une grande qualité de surface.
 * Très rigide dans les directions où les lignes sont tracées.
 * Garde le taux d'extrusion plus constant, ce qui améliore la consistance de la surface pour les matériaux qui s'extrudent plus difficilement.
-* Ne colle pas aussi bien aux murs que le dessin des lignes. L'effet du [chevauchement de la peau](skin_overlap.md) est réduit. Cela rend la pièce plus faible et réduit la qualité des débordements.
+* Ne colle pas aussi bien aux murs que le dessin des lignes. L'effet du [pourcentage de chevauchement de la couche extérieure](./skin_overlap.md) est réduit. Cela rend la pièce plus faible et réduit la qualité des débordements.
 
 
