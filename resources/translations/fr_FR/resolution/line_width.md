@@ -16,7 +16,7 @@ La réduction de la largeur de la ligne permet à l'imprimante d'imprimer plus d
 
 Ajuster la largeur des lignes pour qu'elles s'adaptent à un nombre suffisant de parois
 ----
-Lorsque vous imprimez des objets mécaniques qui doivent être minces mais solides, vous vous heurtez régulièrement au problème que votre pièce n'est pas un multiple net et régulier de la largeur de la ligne. Si ce n'est pas un multiple pair, Cura réduira normalement le flux de certaines lignes en raison du paramètre [Compenser les chevauchements de murs](../shell/travel_compensate_walls_overlapping_enabled.md). Cela modifie le débit à travers la buse, ce qui nuit à la qualité visuelle. S'il s'agit d'un multiple net de la largeur de la ligne mais pas d'un nombre pair, l'une des parois sera réduite à 0.
+Lorsque vous imprimez des objets mécaniques qui doivent être minces mais solides, vous vous heurtez régulièrement au problème que votre pièce n'est pas un multiple net et régulier de la largeur de la ligne. Si ce n'est pas un multiple pair, Cura réduira normalement le flux de certaines lignes en raison du paramètre [Compenser les chevauchements de paroi](../shell/travel_compensate_overlapping_walls_enabled.md). Cela modifie le débit à travers la buse, ce qui nuit à la qualité visuelle. S'il s'agit d'un multiple net de la largeur de la ligne mais pas d'un nombre pair, l'une des parois sera réduite à 0.
 
 La production de contours nets avec des lignes paires peut rendre l'impression plus forte et plus belle. L'une des compétences principales de tout utilisateur expert de Cura est de pouvoir modifier la largeur de la ligne de manière à ce que le nombre de contours souhaité remplisse l'impression.
 
