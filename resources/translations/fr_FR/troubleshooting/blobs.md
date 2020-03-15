@@ -1,6 +1,9 @@
-Les blocs sont de petites gouttes sur le côté du modèle. Parfois, ce ne sont que des points. Parfois, ce sont des rayures. Ils constituent un défaut de surface visuel et peuvent augmenter la friction entre les surfaces qui doivent glisser les unes sur les autres dans un mécanisme.
+Les Blobs
+===
 
-![Quelques gouutes sur cette surface](../../../articles/images/blobs.jpg)
+Les blobs sont de petites gouttes sur le côté du modèle. Parfois, ce ne sont que des points. Parfois, ce sont des rayures. Ils constituent un défaut de surface visuel et peuvent augmenter la friction entre les surfaces qui doivent glisser les unes sur les autres dans un mécanisme.
+
+![Quelques gouttes sur cette surface](../../../articles/images/blobs.jpg)
 
 Il y a plusieurs causes possibles pour les blobs. C'est l'un des défauts les plus courants dans l'impression 3D. Cet article énumère quelques causes possibles et leurs solutions.
 
@@ -43,13 +46,13 @@ Pour réduire cet effet, voici quelques paramètres à prendre en compte :
 * Réduire la [largeur de la ligne du mur](../resolution/wall_line_width.md). Cela réduit la pression dans la chambre de la buse en général.
 * Réduire la [largeur de la paroi extérieure](../shell/wall_0_inset.md). Ce réglage fait que la paroi extérieure chevauche la paroi intérieure adjacente, de sorte que la paroi est poussée plus fortement sur la paroi intérieure, ce qui améliore la résistance. Cependant, cette poussée augmente également la pression à l'intérieur de la chambre de la buse.
 
-Eau à l'intérieur du filament
+Filament humide
 ----
 Si le filament a accumulé de l'humidité alors qu'il était encore sur la bobine, cette eau sera chauffée dans la buse au-delà de son point d'ébullition. La vapeur d'eau explosera hors de la buse lorsqu'elle en sera expulsée. Cette petite explosion peut faire éclater du plastique, ce qui se traduit par une petite tache à la surface.
 
 Coutures
 ----
-Un joint sera créé à l'endroit où le périmètre de la paroi extérieure est entamé et fermé. Ce n'est pas ce que les gens appellent normalement une tache, bien qu'elle ait un aspect similaire. Voir l'article sur les [coutures] (seam.md) pour savoir comment réduire cet effet.
+Un joint sera créé à l'endroit où le périmètre de la paroi extérieure est entamé et fermé. Ce n'est pas ce que les gens appellent normalement une tache, bien qu'elle ait un aspect similaire. Voir l'article sur les [coutures](./seam.md) pour savoir comment réduire cet effet.
 
 Si le paramètre [Z Seam Alignment](../shell/z_seam_type.md) est réglé sur "Random", la couture sera répartie autour du modèle, créant ainsi de petites coutures partout. Cela peut ressembler exactement à un blob, même si c'est en fait une couture. Modifiez le paramètre Alignement de la couture en Z pour masquer ces coutures.
 
