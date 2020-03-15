@@ -7,7 +7,7 @@ Programmation
 ----
 * Ghostkeeper: Ecriture de la version V1.1 est suivante.
 * Asasin: Writing v1.0.
-* Laurent LALLIARD Traduction française
+
 
 Articles
 ----
@@ -15,6 +15,7 @@ Articles
 * Ellecross: une grande partie du contenu de la v1.0.
 * Jeroen Stevens: Une grande partie du contenu de la v1.0.
 * ChrisTerBeke: article sur la hauteur de couche adaptative.
+* Laurent LALLIARD : Traduction française
 
 ![](../../../articles/images/created_by.jpg)
 ![](../images/contributeurs_fr.jpg)
