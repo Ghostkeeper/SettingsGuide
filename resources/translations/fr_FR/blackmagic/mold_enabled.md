@@ -1,3 +1,6 @@
+Moule
+===
+
 Au lieu d'imprimer le modèle lui-même, cette fonction amène l'imprimante à créer un négatif du modèle, un moule, dans lequel vous pourriez couler un matériau différent pour créer votre modèle. Ce moule possède plusieurs propriétés spécifiques qui le rendent à la fois utilisable pour le moulage et imprimable avec l'impression FDM.
 
 ![Un modèle que vous voudriez mouler](../../../articles/images/mold_enabled_shell.png)
