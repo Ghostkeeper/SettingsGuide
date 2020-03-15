@@ -1,8 +1,11 @@
+Problèmes d'adhérence au plateau
+===
+
 L'un des modes de défaillance les plus courants pour les impressions 3D est que l'empreinte s'est détachée de la plaque de construction alors qu'elle était encore en cours d'impression. Cet article passe en revue certains ajustements que vous pouvez apporter pour éviter que cela ne se produise.
 
-Si l'impression s'est perdue de la plaque de montage, vous verrez généralement beaucoup de fils détachés sur la plaque de montage. Si vous avez plus de chance, cela peut aussi se manifester par un simple [décalage de couche](layer_shift.md) (et il y aura moins à nettoyer). Dans tous les cas, l'impression est gâchée.
+Si l'impression s'est perdue de la plaque de montage, vous verrez généralement beaucoup de fils détachés sur la plaque de montage. Si vous avez plus de chance, cela peut aussi se manifester par un simple [décalage de couche](./layer_shift.md) (et il y aura moins à nettoyer). Dans tous les cas, l'impression est gâchée.
 
-Méthodes d'adhérence au lit
+Méthodes d'adhérence au plateau
 ----
 Cura propose plusieurs méthodes pour améliorer l'adhérence au lit. Vous pouvez choisir entre ces méthodes avec le paramètre [Build Plate Adhesion Type](../platform_adhesion/adhesion_type.md). Les options suivantes sont disponibles.
 * Bord, la technique la plus courante, ajoute un bord autour de la face inférieure de l'impression, ce qui augmente la surface de l'impression de sorte que celle-ci adhère mieux à la plaque de montage.
@@ -18,7 +21,7 @@ De même, si un radeau est utilisé, vous pouvez augmenter l'adhérence en augme
 
 Prévention du gauchissement
 ----
-Si votre impression souffre de déformation, la zone de contact entre l'impression et la plaque de montage est fortement réduite. Pour éviter cela, consultez l'article sur [warping](warping.md). En résumé, voici quelques ajustements à apporter pour éviter le gauchissement.
+Si votre impression souffre de déformation, la zone de contact entre l'impression et la plaque de montage est fortement réduite. Pour éviter cela, consultez l'article sur [le décollement](./warping.md). En résumé, voici quelques ajustements à apporter pour éviter le gauchissement.
 * Réglez le [Modèle de couche initiale du bas](../resolution/layer_height_0.md) sur concentrique.
 * Réduisez la [température de la plaque de construction] (../matériau/matériau_lit_température.md) et augmentez la [température du volume de construction] (../matériau/volume_de_construction_température.md).
 * Ajustez le modèle de manière à ce qu'il y ait moins de coins extérieurs tranchants sur la première couche.
@@ -33,9 +36,9 @@ Ces paramètres peuvent également être ajustés si les méthodes normales d'ad
 * De même, réduisez la [vitesse de la couche initiale] (../speed/speed_print_layer_0.md). La réduction de la [vitesse d'impression de la couche initiale] (../speed/speed_print_layer_0.md) permet au matériau de s'écouler à nouveau davantage, car le matériau est maintenu fluide plus longtemps par la buse chaude. La réduction de la [vitesse de déplacement de la couche initiale] (../speed/speed_travel_layer_0.md) réduit le risque qu'un mouvement de déplacement arrache les lignes précédemment imprimées de la plaque de montage. De même, il faut envisager d'ajuster les paramètres [Accélération de la couche initiale](../speed/acceleration_layer_0.md) et [Accélération de la couche initiale](../speed/jerk_layer_0.md). 
 * Augmenter le [nombre de couches plus lentes](../speed/speed_slowdown_layers.md). Cela réduit les risques que des mouvements rapides ne fassent disparaître les couches précédentes.
 
-Construire des plaques
+Plateau de construction
 ----
-En plus d'une bonne impression, une bonne plaque de construction est également importante pour l'adhérence. Une bonne plaque de montage devrait l'être :
+En plus d'une bonne impression, une bonne plaque de construction est également importante pour l'adhérence. Un bon plateau d'impression devrait être :
 * ...propre ! Il est très important que la plaque de montage ne contienne pas de graisse (comme celle de vos doigts) et pas de poussière. Il est très efficace de la nettoyer sous un robinet chaud. L'idéal est d'utiliser de l'alcool à friction et un chiffon en microfibre.
 * ...niveau ! Si la plaque de montage est trop proche, le flux sortant de la buse sera irrégulier, ce qui entraînera des bosses que la buse arrachera lors de sa prochaine utilisation. Si la plaque de montage est trop loin, le matériau n'est pas bien poussé sur la plaque de montage, ce qui réduit considérablement la surface. La plupart des imprimantes permettent d'ajuster la plaque de montage à l'aide de quelques vis à oreilles, il faut donc s'assurer qu'elle est parfaitement de niveau et correctement espacée de la buse.
 * ...grossier ! Avec une plaque de montage légèrement rugueuse, la surface de contact entre la plaque de montage et l'impression est considérablement augmentée, contrairement à une plaque de montage parfaitement lisse. Pour cette raison, certaines imprimantes sont équipées de verre dépoli ou de métal anodisé.
