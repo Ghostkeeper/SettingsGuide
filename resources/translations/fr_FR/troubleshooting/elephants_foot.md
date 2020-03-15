@@ -1,3 +1,6 @@
+Le pied d'éléphant
+===
+
 Parfois, la face inférieure de l'empreinte est légèrement plus large que le reste de l'empreinte, ce qui donne une petite lèvre à cet endroit. C'est ce qu'on appelle une "patte d'éléphant", car elle ressemble aux pattes d'un éléphant dont les orteils sont légèrement plus larges que le reste de la patte.
 
 Il existe plusieurs effets que les gens appellent "pied d'éléphant", dont les causes inhérentes sont complètement différentes. Ces effets nécessitent également des solutions complètement différentes. Cet article vous aidera à trouver la cause première.
@@ -17,7 +20,7 @@ La cause la plus fréquente de la patte d'un éléphant est peut-être le gauchi
 * Elle est chauffée par la plaque de montage, ce qui l'empêche de rétrécir.
 * Il y a de la peau à côté, ce qui bloque le rétrécissement. (Sur les couches supérieures, il peut y avoir du remblaiement à la place).
 
-Pour éviter le gauchissement, jetez un coup d'œil à l'[article de dépannage](warping.md) à ce sujet. Pour ce type de déformation, voici quelques exemples de ce que vous pouvez essayer :
+Pour éviter le gauchissement, jetez un coup d'œil à l'[article de dépannage](./warping.md) à ce sujet. Pour ce type de déformation, voici quelques exemples de ce que vous pouvez essayer :
 * Augmenter l'[épaisseur de la paroi](../shell/wall_thickness.md) pour empêcher les parois à côté du remplissage de rétrécir.
 * Réduire la [température de la plaque de construction](../material/material_bed_temperature.md) pour permettre à la première couche de se rétracter autant que les autres couches. Si la température du lit était très élevée, cela peut aussi permettre au matériau de s'affaisser un peu, ce qui le rend plus large au fond. Cet effet est généralement faible, mais il sera également évité en réduisant la température du lit.
 * Augmenter l'[épaisseur du fond](../shell/bottom_thickness.md) pour passer plus progressivement à une taille plus réduite. Vous pouvez même envisager d'imprimer le modèle de façon complètement solide (de préférence en fixant l'épaisseur du fond à un niveau extrêmement élevé) pour éliminer complètement la différence de rétrécissement.
