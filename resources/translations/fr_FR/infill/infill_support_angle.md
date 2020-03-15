@@ -1,4 +1,4 @@
-Lors de l'utilisation d'un support de remplissage, ce réglage détermine l'angle de surplomb minimum de la surface qui doit être soutenue. Il est similaire au paramètre [Overhang Angle](../support/support_angle.md) pour un support ordinaire.
+Lors de l'utilisation d'un support de remplissage, ce réglage détermine l'angle de surplomb minimum de la surface qui doit être soutenue. Il est similaire au paramètre [Angle de porte-à-faux de support](../support/support_angle.md) pour un support ordinaire.
 
 ![Un angle bas donne plus de support](../../../articles/images/infill_support_angle_low.png)
 ![Un angle élevé entraîne une diminution du support](../../../articles/images/infill_support_angle_high.png)
