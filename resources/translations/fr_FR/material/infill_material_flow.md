@@ -1,3 +1,6 @@
+Débit de remplissage
+===
+
 Ce réglage ajuste le débit pour le remplissage uniquement. Le débit de la recharge peut être réglé séparément du débit du reste de l'impression.
 
 L'ajustement du débit pendant le remplissage est une méthode d'arrêt de l'espace pour régler les problèmes de vitesse d'extrusion ou de résistance. Le même effet peut être obtenu en ajustant la [distance entre les lignes](../remplissage/remplissage_distance_ligne.md) et la [largeur de ligne](../résolution/remplissage_ligne_largeur.md) du remplissage, mais ce réglage peut être plus intuitif.
