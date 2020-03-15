@@ -1,6 +1,6 @@
 Jerk détermine la vitesse à laquelle la buse peut passer dans les virages. Si le contrôle des secousses est activé, Cura prend le contrôle de la quantité de secousse à appliquer pendant les différentes parties de l'impression. S'il est désactivé, le microprogramme de l'imprimante choisira une valeur de secousse. Cette valeur est généralement assez élevée pour donner plus de contrôle à la trancheuse, mais l'imprimante peut avoir plus d'informations sur son propre matériel que Cura n'en a. 
 
-![La relation entre la vitesse, l'accélération et la saccade](../../../articles/images/velocity_acceleration_jerk.svg)
+![La relation entre la vitesse, l'accélération et la saccade](../images/velocity_acceleration_jerk_fr.svg)
 
 **Le terme "jerk" a été introduit par Marlin. Il y a été conçu comme une solution de contournement du problème inhérent à la tentative de suivre parfaitement un chemin. Comme la buse ne peut pas s'écarter de la trajectoire (en théorie), il faudrait qu'elle décélère à 0 mm/s dans chaque coin. Cela ruinerait votre impression, car la décélération à 0 mm/s provoquerait une tache dans chaque coin. Il n'est pas permis de faire des courbes pour raccourcir le coin, ni de le dépasser. Au lieu de cela, Marlin permet un changement instantané du vecteur vitesse dans chaque coin. L'ampleur de ce changement du vecteur vitesse est appelée "saccade".
 
