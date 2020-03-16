@@ -1,3 +1,6 @@
+Extérieur avant les parois intérieures
+===
+
 Ce paramètre détermine quels murs sont imprimés en premier, les murs extérieurs ou les murs intérieurs.
 
 ![La paroi intérieure est imprimée en premier](../../../articles/images/outer_inset_first_disabled.gif)
