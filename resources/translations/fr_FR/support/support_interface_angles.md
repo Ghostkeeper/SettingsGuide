@@ -1,3 +1,6 @@
+Direction de ligne d'interface du support
+===
+
 L'interface de support est normalement orientée de manière à être aussi perpendiculaire que possible au modèle et au corps de support qui l'entoure. Si l'orientation des lignes supérieures/inférieures ou des lignes de support a été personnalisée, il est conseillé de personnaliser également l'orientation des lignes de l'interface de support. Ce paramètre vous permet de personnaliser l'orientation des lignes de l'interface de support.
 
 ![Angles à 0° et 90°](../../../articles/images/support_interface_angles_0.png)
