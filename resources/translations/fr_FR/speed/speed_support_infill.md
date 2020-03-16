@@ -1,3 +1,6 @@
+Vitesse d'impression du remplissage de support
+===
+
 Ce paramètre configure la vitesse à laquelle les principales structures de support sont imprimées. C'est-à-dire tous les supports, à l'exception du toit et du sol.
 
 ![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)
