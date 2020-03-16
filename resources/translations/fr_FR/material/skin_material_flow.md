@@ -1,3 +1,6 @@
+Débit du dessus/dessous
+===
+
 Ce réglage ajuste le débit pour le haut et le bas seulement. Le débit pour le haut et le bas peut être réglé séparément du débit du reste de l'impression.
 
 Le réglage du débit pour le haut et le bas est une méthode d'arrêt de l'espace pour régler les problèmes de débit d'extrusion ou de manque d'étanchéité.
