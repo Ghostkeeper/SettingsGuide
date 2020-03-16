@@ -1,3 +1,6 @@
+Expansion horizontale
+===
+
 Ce réglage fait que l'ensemble du modèle est légèrement plus large ou plus mince. Il s'agit d'une mesure de compensation des inexactitudes dimensionnelles du processus d'impression.
 
 ![Le modèle original](../../../articles/images/xy_offset_neutral.png)
