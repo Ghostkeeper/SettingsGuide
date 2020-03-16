@@ -1,7 +1,10 @@
+Nombre de lignes de la paroi
+===
+
 Ce paramètre détermine le nombre de contours qui seront dessinés autour de l'impression sur chaque couche.
 
-![Deux murs](../../../articles/images/épaisseur_mur_0.8.png)
-![Quatre murs](../../../articles/images/épaisseur_mur_1.6.png)
+![Deux murs](../../../articles/images/wall_thickness_0.8.png)
+![Quatre murs](../../../articles/images/wall_thickness_1.6.png)
 
 Un seul des murs sera un mur extérieur, sur lequel seront imprimés les paramètres du mur extérieur. Le reste des murs sera imprimé avec les paramètres de la paroi intérieure.
 
