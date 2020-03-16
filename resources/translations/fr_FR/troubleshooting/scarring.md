@@ -1,3 +1,6 @@
+Cicatrice
+===
+
 Lorsqu'une empreinte a une grande face supérieure plate, il y a un risque de cicatrices. C'est le cas lorsqu'il y a une ligne clairement visible sur la face supérieure de l'empreinte, qui n'appartient pas au motif normal. Cette ligne marque la surface supérieure, par ailleurs lisse, de l'empreinte.
 
 ![Une cicatrice diagonale sur la surface](../../../articles/images/scarring.jpg)
