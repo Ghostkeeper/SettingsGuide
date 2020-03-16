@@ -1,3 +1,6 @@
+Angle maximum de la couche extérieure pour l'expansion
+===
+
 Comme la peau est présente dans tout le modèle, il est inutile d'étendre toutes ces zones. Au contraire, seules les zones où l'angle entre la surface de la peau et l'horizon est inférieur à ce réglage seront étendues. De cette façon, les surfaces planes avec des éléments saillants seront renforcées, sans augmenter inutilement le temps d'impression pour le reste du modèle.
 
 ![Réglé à 90 degrés, toute la peau est agrandie avec le paramètre Skin Expand Distance](../../../articles/images/max_skin_angle_for_expansion_90.png)
