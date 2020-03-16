@@ -1,3 +1,6 @@
+Activer le contrôle de saccade
+===
+
 Jerk détermine la vitesse à laquelle la buse peut passer dans les virages. Si le contrôle des secousses est activé, Cura prend le contrôle de la quantité de secousse à appliquer pendant les différentes parties de l'impression. S'il est désactivé, le microprogramme de l'imprimante choisira une valeur de secousse. Cette valeur est généralement assez élevée pour donner plus de contrôle à la trancheuse, mais l'imprimante peut avoir plus d'informations sur son propre matériel que Cura n'en a. 
 
 ![La relation entre la vitesse, l'accélération et la saccade](../images/velocity_acceleration_jerk_fr.svg)
