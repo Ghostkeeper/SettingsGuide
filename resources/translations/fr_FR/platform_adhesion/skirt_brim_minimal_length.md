@@ -1,4 +1,7 @@
-Ce réglage permet de s'assurer que la buse est suffisamment amorcée avant de commencer une impression, en ajoutant plus de lignes de bordure ou de bord que ce qui était demandé à l'origine par le réglage [Nombre de lignes de bordure](skirt_line_count.md) ou [Nombre de lignes de bord](brim_line_count.md). Si la longueur minimale dans ce paramètre n'est pas atteinte par la circonférence totale de toutes les lignes de bordure ou de contour additionnées, d'autres contours seront ajoutés.
+Longueur minimale de la jupe/bordure
+===
+
+Ce réglage permet de s'assurer que la buse est suffisamment amorcée avant de commencer une impression, en ajoutant plus de lignes de bordure ou de bord que ce qui était demandé à l'origine par le réglage [Nombre de lignes de bordure](./skirt_line_count.md) ou [Nombre de lignes de bord](./brim_line_count.md). Si la longueur minimale dans ce paramètre n'est pas atteinte par la circonférence totale de toutes les lignes de bordure ou de contour additionnées, d'autres contours seront ajoutés.
 
 Le but de ce réglage est de s'assurer que le matériau est suffisamment apprêté avant de commencer l'impression. La valeur de ce réglage doit être réglée de telle sorte que le volume extrudé par cette longueur minimale soit juste suffisant pour amorcer la buse avant une impression.
 
