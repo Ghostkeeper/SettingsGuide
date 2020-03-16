@@ -1,3 +1,6 @@
+Chevauchement de la couche extérieure
+===
+
 Ce réglage fait que la peau chevauche un peu les structures adjacentes. La peau adhère ainsi mieux à ces structures.
 
 ![Pas de chevauchement](../../../articles/images/skin_overlap_none.png)
