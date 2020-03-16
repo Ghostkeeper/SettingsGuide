@@ -1,3 +1,6 @@
+Affaissement
+===
+
 La fabrication de filaments fondus consiste à déposer une ligne de plastique fondu. Cette ligne est souple, et si elle ne repose sur rien, elle s'affaisse. C'est ce qu'on appelle l'affaissement.
 
 ![Affaissement dans les parties en surplomb](../../../articles/images/sagging.jpg)
@@ -48,6 +51,7 @@ Si vous avez la liberté d'ajuster le modèle qui est imprimé, cela peut donner
 
 L'astuce la plus élémentaire pour appliquer cela est de faire tourner le modèle. Si votre imprimante est capable d'imprimer des angles de 45 degrés sans affaissement, vous pouvez faire pivoter un modèle avec une pièce verticale et une pièce horizontale de telle sorte qu'il y ait deux inclinaisons de 45 degrés, ce qui réduit légèrement la qualité de la paroi verticale, mais empêche l'affaissement de la partie horizontale. Veillez cependant à ne pas rendre la zone de contact avec la plaque de construction trop petite, sinon l'impression pourrait se détacher de la plaque de construction et être encore endommagée.
 
-L'ajout de chanfreins peut également contribuer à réduire les débordements du modèle avec relativement peu de matériau ajouté. Cura propose une méthode automatisée pour ajouter des chanfreins à votre modèle, grâce au paramètre [Make Overhang Printable](../experimental/conical_overhang_enabled.md). L'ajout de chanfreins ajoute essentiellement la structure de support au modèle réel. Ils seront ensuite imprimés de façon transparente dans le modèle, qui est plus beau. Cela permet également d'économiser de la matière, par rapport à l'impression du support, puisque le matériau de support amène rapidement les forces vers le reste du modèle. Et au final, votre objet sera plus solide.
+L'ajout de chanfreins peut également contribuer à réduire les débordements du modèle avec relativement peu de matériau ajouté. Cura propose une méthode automatisée pour ajouter des chanfreins à votre modèle, grâce au paramètre [Rendre le porte-à-faux imprimable
+](../experimental/conical_overhang_enabled.md). L'ajout de chanfreins ajoute essentiellement la structure de support au modèle réel. Ils seront ensuite imprimés de façon transparente dans le modèle, qui est plus beau. Cela permet également d'économiser de la matière, par rapport à l'impression du support, puisque le matériau de support amène rapidement les forces vers le reste du modèle. Et au final, votre objet sera plus solide.
 
 En général, lors de la conception d'objets pour l'impression 3D, il est préférable d'éviter tout débordement. Si la géométrie de l'objet ne vous le permet pas, envisagez de diviser le modèle en plusieurs parties et de les assembler ensuite.
