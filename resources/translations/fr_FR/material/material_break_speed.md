@@ -1,3 +1,6 @@
+Vitesse de rétraction de rupture
+===
+
 Pour certaines imprimantes, lorsqu'un matériau est rétracté pour un interrupteur à filament, le matériau doit être coupé proprement afin de le faire passer dans le chargeur sans s'emmêler. Ce réglage configure une partie de la procédure pour le rompre proprement.
 
 Ce réglage ajuste la vitesse à laquelle le matériau est rétracté pour finalement rompre le filament de la goutte qui reste inévitablement dans la buse. Bien que la goutte dans la buse ne puisse pas être retirée en raison de son état de fusion, la partie qui est retirée ne doit pas avoir de fil fin à son extrémité, car elle pourrait rester coincée dans le chargeur. Cette rétraction finale brise le filament, mais avec un peu de chance, il se casse proprement grâce aux deux étapes précédentes.
