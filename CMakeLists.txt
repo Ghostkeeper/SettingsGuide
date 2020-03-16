@@ -121,6 +121,7 @@ install(FILES ${installed_paths_resources_icons} DESTINATION ${SETTINGSGUIDE_PLU
 install(FILES ${installed_paths_resources_qml} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml)
 install(FILES ${installed_paths_resources_qml_SidebarSettings} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings)
 install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/resources/articles" DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources)
+install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/resources/translations" DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources)
 install(FILES "${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune/mistune.py" DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/Mistune)
 
 #Packing this into a .curapackage file.
@@ -145,6 +146,7 @@ foreach(sdk_version ${SETTINGSGUIDE_SUPPORTED_SDKS})
 		COMMAND ${CMAKE_COMMAND} -E make_directory files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings
 		COMMAND ${CMAKE_COMMAND} -E copy_if_different ${installed_paths_resources_qml_SidebarSettings} files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings
 		COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/resources/articles" files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/articles
+		COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/resources/translations" files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/translations
 		COMMAND ${CMAKE_COMMAND} -E copy_if_different "${CMAKE_CURRENT_SOURCE_DIR}/cmake/[Content_Types].xml" .
 		COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/cmake/_rels" _rels
 		COMMAND ${CMAKE_COMMAND} -E make_directory files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/Mistune
