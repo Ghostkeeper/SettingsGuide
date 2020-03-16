@@ -1,3 +1,6 @@
+Épaisseur de la paroi
+===
+
 Ce paramètre détermine l'épaisseur du mur autour de l'impression. Enfin, il permet d'ajuster le nombre de parois intérieures pour obtenir l'épaisseur souhaitée.
 
 ![Parois de 0,8mm d'épaisseur](../../../articles/images/wall_thickness_0.8.png)
