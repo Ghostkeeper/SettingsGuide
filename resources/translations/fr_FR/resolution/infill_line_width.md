@@ -1,3 +1,6 @@
+Largeur de ligne de remplissage
+===
+
 La largeur de chaque ligne de remplissage qui est tracée. La largeur d'une ligne peut être différente de la taille de la buse simplement en extrudant plus ou moins de matière que nécessaire. Si plus de matière est extrudée, le plastique s'écoulera vers les côtés, ce qui rendra la ligne plus épaisse. Si moins de matière est extrudée, la tension superficielle de la matière tend à tirer la matière vers la ligne centrale de la trajectoire de la buse.
 
 ![Les lignes de remplissage sont beaucoup plus larges que le reste](../../../articles/images/infill_line_width.png)
