@@ -1,3 +1,6 @@
+Extrudeuse de parois internes
+===
+
 Si votre imprimante possède plusieurs extrudeuses, vous pouvez choisir de n'imprimer que les parois intérieures avec une autre extrudeuse.
 
 ![Les parois intérieures sont imprimées en bleu, mais le reste en orange](../../../articles/images/wall_x_extruder_nr.png)
