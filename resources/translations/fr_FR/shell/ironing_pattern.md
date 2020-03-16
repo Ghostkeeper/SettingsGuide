@@ -1,3 +1,6 @@
+Motif d'étirage
+===
+
 L'étirage recouvre la surface supérieure avec un motif de cheminement. Ce réglage détermine le motif utilisé pour le repassage de la surface supérieure.
 
 L'objectif du motif est de créer une surface lisse et continue. S'il y a une interruption dans le motif, cela créera une bordure visible sur la surface supérieure. Deux motifs sont disponibles.
