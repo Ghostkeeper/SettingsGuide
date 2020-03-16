@@ -1,3 +1,6 @@
+Hauteur de l'étape de remplissage progressif
+===
+
 En cas de remplissage progressif, la densité du remplissage sera réduite de haut en bas en plusieurs étapes. À chaque étape, la densité de remplissage est réduite de moitié. Ce réglage indique la hauteur de ces marches, la distance entre deux endroits où le remplissage est réduit de moitié.
 
 ![Hauteur des marches de 1,5 mm](../../../articles/images/gradual_infill_step_height_small.png)
