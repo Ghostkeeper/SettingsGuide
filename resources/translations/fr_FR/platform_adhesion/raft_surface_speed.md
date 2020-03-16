@@ -1,10 +1,10 @@
 Vitesse d’impression du dessus du radeau
 ===
 
-This setting configures the speed at which the top layers of the raft are printed. The speed of the top layers can be configured separately from the speed of the middle and base layers.
+Ce paramètre configure la vitesse à laquelle les couches supérieures du radeau sont imprimées. La vitesse des couches supérieures peut être configurée séparément de la vitesse des couches intermédiaires et de base.
 
 ![Où se trouvent les couches supérieures dans le radeau](../images/raft_dimensions_simplified_fr.svg)
 
-Printing the top layers more slowly keeps the material hot for longer, which reduces internal stresses and warping. It will also allow the nozzle to heat up adjacent raft lines to smooth them out more. This creates a smoother surface for the raft and as a result also a smoother surface for your print.
+L'impression plus lente des couches supérieures maintient le matériau chaud plus longtemps, ce qui réduit les tensions internes et le gauchissement. Cela permet également à la buse de chauffer les lignes de radeau adjacentes pour les lisser davantage. Cela crée une surface plus lisse pour le radeau et, par conséquent, une surface plus lisse pour votre impression.
 
-This comes at the cost of added printing time. Since there are often more than one top layers, the effect of speed on printing time for the top layers is bigger than the base and middle layers.
+Cela se fait au prix d'un temps d'impression supplémentaire. Comme il y a souvent plus d'une couche supérieure, l'effet de la vitesse sur le temps d'impression des couches supérieures est plus important que celui des couches inférieures et intermédiaires.
