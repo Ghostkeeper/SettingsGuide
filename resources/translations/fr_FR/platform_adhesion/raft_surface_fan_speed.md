@@ -1,5 +1,8 @@
-This setting configures the fan speed while printing the top layers of the raft. The fan speed while printing the top layers can be configured separately from the base and middle layers.
+Vitesse du ventilateur pour le dessus du radeau
+===
 
-![Where the top layers are located in the raft](../../../articles/images/raft_dimensions_simplified.svg)
+Ce réglage permet de configurer la vitesse du ventilateur lors de l'impression des couches supérieures du radeau. La vitesse du ventilateur lors de l'impression des couches supérieures peut être configurée séparément de celle des couches de base et intermédiaire.
 
-Configuring the fan speed for the top layers separately is useful since the fan speed greatly affects the bed adhesion, but this is not an issue for the top layers. Increasing the fan speed will improve the smoothness of the top surface of the raft though (which is not an issue for the lower layers). It is therefor useful to set the fan speed of the top surfaces somewhat higher than the fan speed of the lower layers. However setting the fan speed too high can cause warping with some materials.
+![Où se trouvent les couches supérieures dans le radeau](../images/raft_dimensions_simplified_fr.svg)
+
+Il est utile de configurer la vitesse du ventilateur pour les couches supérieures séparément, car la vitesse du ventilateur affecte grandement l'adhérence du lit, mais ce n'est pas un problème pour les couches supérieures. L'augmentation de la vitesse du ventilateur améliorera cependant la douceur de la surface supérieure du radeau (ce qui n'est pas un problème pour les couches inférieures). Il est donc utile de régler la vitesse du ventilateur des surfaces supérieures un peu plus haut que la vitesse du ventilateur des couches inférieures. Cependant, un réglage trop élevé de la vitesse du ventilateur peut entraîner un gauchissement de certains matériaux.
