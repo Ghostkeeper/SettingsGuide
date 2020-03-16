@@ -1,3 +1,6 @@
+Vitesse d’impression
+===
+
 Ce réglage ajuste les vitesses globales auxquelles le modèle est imprimé.
 
 Comme les vitesses peuvent également être ajustées séparément pour les différentes structures de l'impression, la vitesse d'impression réelle variera toujours. Ce réglage fait que les autres vitesses s'ajustent par rapport.
