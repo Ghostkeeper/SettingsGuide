@@ -1,5 +1,8 @@
-This setting indicates the spacing between the lines of the top layers of the raft. This is in a way similar to the [Infill Line Distance](../infill/infill_line_distance.md) setting.
+Interligne supérieur du radeau
+===
 
-![Dimensions related to the raft](../../../articles/images/raft_dimensions.svg)
+Ce paramètre indique l'espacement entre les lignes des couches supérieures du radeau. Il est similaire au paramètre [Distance_ligne_de_remplissage](../infill/infill_line_distance.md).
 
-Typically the top layers of the raft are very dense, meaning that the lines are spaced fairly close together. A denser top layer makes the surface of the raft smoother. This causes the bottom side of the print on top of the raft to be smoother as well. A smoother top surface improves adhesion between the model and the raft as well.
+![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)
+
+En général, les couches supérieures du radeau sont très denses, ce qui signifie que les lignes sont espacées assez près les unes des autres. Une couche supérieure plus dense rend la surface du radeau plus lisse. La face inférieure de l'empreinte sur le dessus du radeau est donc également plus lisse. Une surface supérieure plus lisse améliore également l'adhérence entre le modèle et le radeau.
