@@ -1,3 +1,6 @@
+Type d'adhérence du plateau
+===
+
 Il existe trois types d'adhérence des plaques de construction : la jupe, la bordure et le radeau. Vous pouvez aussi facilement désactiver les types d'adhérence en réglant le paramètre sur Aucun.
 
 ![Jupe](../../../articles/images/adhesion_type_skirt.png)
@@ -19,5 +22,3 @@ Uns bordure est une zone plane à une seule couche autour de la base de votre mo
 Radeau
 ----
 Un radeau est une plaque épaisse entre le modèle et la plaque de construction. Ce radeau protège votre empreinte de la chaleur de la plaque de construction. Il aura également une grande surface pour adhérer à la plaque de construction. L'empreinte est placée sur le dessus de ce radeau, où elle peut beaucoup mieux adhérer. Attention toutefois aux empreintes fines, car il peut être difficile de retirer le radeau sans endommager l'empreinte.
-
-
