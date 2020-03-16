@@ -1,3 +1,6 @@
+Largeur de ligne
+===
+
 Il s'agit de la largeur horizontale des lignes que l'imprimante va placer vers le bas. Normalement, le diamètre de l'ouverture de la buse détermine la largeur des lignes, mais en extrudant plus ou moins de matière, l'imprimante peut faire varier légèrement la largeur des lignes.
 
 ![Lignes très fines](../../../articles/images/line_width_small.png)
