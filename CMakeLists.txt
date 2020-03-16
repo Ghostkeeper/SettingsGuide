@@ -51,6 +51,7 @@ set(installed_files_resources_icons
 	arrow.svg
 	icon.svg
 	play.svg
+	translations.svg
 )
 set(installed_files_resources
 	settings_guide_definitions.def.json
@@ -61,6 +62,7 @@ set(installed_files_resources_qml
 	ArticleText.qml
 	SettingsGuide.qml
 	SettingsSidebar.qml
+	TranslationButton.qml
 )
 set(installed_files_resources_qml_SidebarSettings
 	SettingCategory.qml
