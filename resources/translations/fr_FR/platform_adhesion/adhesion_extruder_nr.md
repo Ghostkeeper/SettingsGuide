@@ -1,3 +1,6 @@
+Extrudeuse d'adhérence du plateau
+===
+
 Si vous imprimez des structures d'adhérence de plaques de construction supplémentaire, comme un bord ou un radeau, ce réglage détermine avec quelle extrudeuse ces structures sont imprimées.
 
 * Si vous imprimez avec un matériau qui n'adhère pas bien à votre plaque de montage, il peut être utile d'utiliser un radeau imprimé avec un matériau qui adhère bien.
