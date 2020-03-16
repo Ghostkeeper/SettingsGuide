@@ -1,5 +1,8 @@
-This setting adjusts the vertical thickness of the middle layer of the raft.
+Épaisseur intermédiaire du radeau
+===
 
-![Dimensions related to the raft](../../../articles/images/raft_dimensions.svg)
+Ce réglage permet d'ajuster l'épaisseur verticale de la couche intermédiaire du radeau.
 
-Having a thicker raft layer tends to make the raft a bit stiffer. This prevents it from bending, both during printing and after printing. During printing, you'd want the raft to be stiff as to not warp, which breaks the adhesion to the build plate and causes the raft to fuse to the model. After printing, you'd want the raft to be flexible so that you can break it away from the model more easily. That is the balance that needs to be struck for this setting.
+![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)
+
+Une couche de radeau plus épaisse a tendance à rendre le radeau un peu plus rigide. Cela l'empêche de se plier, tant pendant qu'après l'impression. Pendant l'impression, il faut que le radeau soit rigide pour ne pas se déformer, ce qui casse l'adhérence à la plaque de construction et fait que le radeau fusionne avec le modèle. Après l'impression, vous souhaitez que le radeau soit flexible afin de pouvoir le détacher plus facilement de la maquette. C'est l'équilibre qu'il faut trouver pour ce réglage.
