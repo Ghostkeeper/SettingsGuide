@@ -1,3 +1,6 @@
+Motif de remplissage
+===
+
 Le modèle de remplissage définit une structure qui est utilisée pour remplir le volume de l'objet. Il existe plusieurs modèles, chacun ayant ses propres avantages. Certains sont spécialisés pour des applications très spécifiques.
 
 Grille
@@ -29,7 +32,7 @@ Le motif des triangles crée trois ensembles de lignes dans trois directions dif
 * Les lignes supérieures doivent être assez longues, ce qui nécessite de nombreuses couches de peau pour obtenir une surface supérieure uniforme.
 * L'écoulement est considérablement interrompu aux intersections, ce qui entraîne une résistance relativement faible à des taux de remplissage élevés.
 
-Tri-hexagon
+Trihexagonal
 ----
 ![Tri-hexagon](../../../articles/images/infill_pattern_trihexagon.png)
 
@@ -65,22 +68,22 @@ Algorithmiquement, ce modèle est généré en créant un cube géant autour du 
 * Introduit des rétractions, ce qui ne fonctionne pas bien avec des matériaux flexibles ou coulants.
 * Prend plus de temps à découper.
 
-Octet
+Octaédrique
 ----
 ![Octet](../../../articles/images/infill_pattern_octet.png)
 
-Le motif en octuor crée une combinaison de tétraèdres et de cubes réguliers, un motif tridimensionnel. De temps en temps, plusieurs lignes de remplissage sont placées l'une à côté de l'autre.
+Le motif Octaédrique crée une combinaison de tétraèdres et de cubes réguliers, un motif tridimensionnel. De temps en temps, plusieurs lignes de remplissage sont placées l'une à côté de l'autre.
 * Crée un cadre interne solide où plusieurs lignes parallèles se touchent. La charge est rapidement dissipée vers ce cadre interne.
 * Fort sur les modèles d'une épaisseur moyenne d'environ un centimètre.
 * Effet réduit de l'oreiller, puisqu'il ne produit pas de longues poches verticales d'air chaud.
 * Il en résulte une très longue distance de pontage pour la peau supérieure, ce qui réduit la surface supérieure qu
 
 
-Quart de cube
+Quart cubique
 ----
 ![Quart cubique](../../../articles/images/infill_pattern_quarter_cubic.png)
 
-Le motif en quart de cube crée une tesselation tridimensionnelle composée de tétraèdres et de tétraèdres tronqués. De temps en temps, plusieurs lignes de remplissage sont placées l'une à côté de l'autre.
+Le motif en Quart cubique crée une tesselation tridimensionnelle composée de tétraèdres et de tétraèdres tronqués. De temps en temps, plusieurs lignes de remplissage sont placées l'une à côté de l'autre.
 * Crée deux cadres internes disjoints, semblables à un octet, où de multiples lignes parallèles se touchent. La charge est rapidement dissipée vers ce cadre interne. Les cadres sont orientés dans deux directions différentes, ce qui les rend plus faibles individuellement mais réduit la distance pour répartir la charge sur ces cadres.
 * Fort sur les modèles de faible épaisseur de quelques millimètres.
 * Effet réduit de l'oreiller, car il ne produit pas de longues poches verticales d'air chaud.
@@ -137,7 +140,7 @@ Gyroïde
 
 Le motif de remplissage gyroïde produit un motif ondulé qui alterne les directions.
 * Produit un volume qui est complètement perméable aux fluides, ce qui en fait un modèle utile pour les matériaux dissolvables.
-* Egalement fort dans toutes les directions, mais pas très fort. Cela le rend utile pour les matériaux souples, mais le résultat sera un peu plus dur, moins écrasant, que les motifs de remplissage en croix (3D).
+* Egalement fort dans toutes les directions, mais pas trop. Cela le rend utile pour les matériaux souples, mais le résultat sera un peu plus dur, moins écrasant, que les motifs de remplissage en croix (3D).
 * Résistant au cisaillement.
 * Prend beaucoup de temps à découper et produit de gros fichiers g-code. Pour certaines imprimantes, il peut être difficile de suivre les nombreuses commandes g-code par seconde, et il peut être difficile de suivre une connexion en série à faible débit en bauds.
 
