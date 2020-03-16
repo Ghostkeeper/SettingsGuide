@@ -1,4 +1,7 @@
-Si le modèle a une très haute résolution, Cura réduira la résolution de manière à ce que le processeur de l'imprimante soit capable de suivre le traitement des commandes g-code au fur et à mesure de leur exécution. La résolution maximale des déplacements peut être déterminée séparément de la [résolution maximale](meshfix_maximum_resolution.md) lors de l'impression.
+Résolution de déplacement maximum
+===
+
+Si le modèle a une très haute résolution, Cura réduira la résolution de manière à ce que le processeur de l'imprimante soit capable de suivre le traitement des commandes g-code au fur et à mesure de leur exécution. La résolution maximale des déplacements peut être déterminée séparément de la [résolution maximale](./meshfix_maximum_resolution.md) lors de l'impression.
 
 Étant donné que les déplacements sont exécutés beaucoup plus rapidement que les impressions, la tête d'impression parcourra les segments de ligne du déplacement beaucoup plus rapidement que les autres segments de ligne. L'unité centrale devrait traiter ces segments de ligne beaucoup plus rapidement afin de suivre la buse. C'est pourquoi la résolution des mouvements de déplacement devrait être inférieure à celle des mouvements d'extrusion plus lents.
 
