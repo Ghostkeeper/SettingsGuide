@@ -1,3 +1,6 @@
+Couche initiale du motif du dessous
+===
+
 Ce réglage permet de configurer le modèle qui sera utilisé pour la face inférieure du modèle où il repose directement sur la plaque de construction ou le radeau. Le motif de cette couche est configuré séparément du reste des couches inférieures.
 
 ![La couche initiale est imprimée avec un motif concentrique, mais le reste est le motif des lignes](../../../articles/images/top_bottom_pattern_0.gif)
