@@ -1,3 +1,6 @@
+Largeur de ligne de plafond de support
+===
+
 La largeur des lignes de soutien du toit peut être configurée séparément de la largeur du reste des lignes de soutien.
 
 ![Les lignes de toit de soutien sont plus larges que le reste des lignes de soutien](../../../articles/images/support_roof_line_width.png)
