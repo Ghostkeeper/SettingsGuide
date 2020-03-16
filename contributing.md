@@ -12,13 +12,15 @@ Feature requests are also welcome in the [issues page](https://github.com/Ghostk
 
 I intend to write descriptions for every setting in Cura, but this is a lot of work. If you'd like to request priority for certain settings, feel free to ask.
 
-Submitting pull requests
+Providing code improvements
 ----
 Pull requests to the main code (QML, Python) are subject to the following requirements:
 * It does not slow down behaviour significantly.
 * The code style is similar to the rest of the code in this repository.
 * Your code will be licensed under AGPL 3.0 like the rest of the code in this repository.
 
+Writing articles
+----
 Pull requests to add descriptions for settings or improve current descriptions are also welcome. In general, articles about settings should hold the following format:
 1. First an explanation of what the setting does directly.
 2. Some pictures with examples, if applicable.
