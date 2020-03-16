@@ -1,3 +1,6 @@
+Saccade de la jupe/bordure
+===
+
 Ce réglage détermine la vitesse à laquelle la buse peut passer dans les coins tout en imprimant la jupe ou le bord. Cette vitesse peut être configurée séparément du reste de la couche initiale.
 
 Lorsque la buse passe dans les coins, la tête d'impression ne vibre pas seulement horizontalement, mais le plateau d'impression peut également vibrer verticalement. Cette vibration rend l'adhérence entre la jupe ou le bord et du plateau moins uniforme. La réduction des secousses pendant l'impression de la jupe ou du bord peut réduire le risque que l'impression ne se détache du plateau d'impression.
