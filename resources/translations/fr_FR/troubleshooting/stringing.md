@@ -1,10 +1,13 @@
-Lorsque l'imprimante a fini d'imprimer une partie d'une couche et doit passer à une autre partie, elle doit temporairement arrêter l'extrusion. Si le matériau continue à couler pendant qu'il se déplace, une fine ficelle de plastique est tirée entre les deux parties. C'est ce qu'on appelle le cordage.
+Filasse
+===
+
+Lorsque l'imprimante a fini d'imprimer une partie d'une couche et doit passer à une autre partie, elle doit temporairement arrêter l'extrusion. Si le matériau continue à couler pendant qu'il se déplace, un fin fil de plastique est tiré entre les deux parties. C'est ce qu'on appelle la filasse.
 
 ![De fines lignes de plastique sont visibles à l'endroit où la buse s'est déplacée d'une partie à l'autre](../../../articles/images/stringing.jpg)
 
-Souvent, les cordes sont alignées les unes sur les autres, car la buse complète une pièce au même endroit sur chaque couche. Cela crée une sangle verticale. Le plastique supplémentaire peut également s'accumuler sur les cordes des couches précédentes, ce qui donne des boules de plastique partout.
+Souvent, les fils sont alignées les unes sur les autres, car la buse complète une pièce au même endroit sur chaque couche. Cela crée une bande verticale. Le plastique supplémentaire peut également s'accumuler sur les cordes des couches précédentes, ce qui donne des boules de plastique partout.
 
-Le cordage est parfois accompagné d'une sous-extrusion. Le trancheur part généralement du principe qu'aucun matériau n'est perdu pendant les déplacements et demande donc à l'imprimeur d'extruder juste assez de matériau pour imprimer sa prochaine partie. Si du matériau s'échappe de la buse pendant un voyage (ce qui donne une ficelle), ce matériau ne sera pas utilisé pour l'impression de la partie suivante, ce qui entraîne une sous-extrusion à cet endroit. Le cordage n'est normalement pas un problème s'il se produit à l'intérieur du remplissage, mais si le cordage est trop extrême, il peut poser un problème même à cet endroit car il entraîne une sous-extrusion par la suite.
+La filasse est parfois accompagné d'une sous-extrusion. Le trancheur part généralement du principe qu'aucun matériau n'est perdu pendant les déplacements et demande donc à l'imprimante d'extruder juste assez de matériau pour imprimer sa prochaine partie. Si du matériau s'échappe de la buse pendant un voyage (ce qui donne une ficelle), ce matériau ne sera pas utilisé pour l'impression de la partie suivante, ce qui entraîne une sous-extrusion à cet endroit. Le cordage n'est normalement pas un problème s'il se produit à l'intérieur du remplissage, mais si le cordage est trop extrême, il peut poser un problème même à cet endroit car il entraîne une sous-extrusion par la suite.
 
 Causes
 ----
