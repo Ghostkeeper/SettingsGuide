@@ -1,3 +1,6 @@
+Activer la bordure du support
+===
+
 Lorsque le bord de soutien est activé, un bord supplémentaire sera dessiné à l'intérieur de la zone de soutien sur la première couche.
 
 ![Le bord de support](../../../articles/images/support_brim_4mm.png)
