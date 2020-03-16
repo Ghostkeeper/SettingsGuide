@@ -1,3 +1,6 @@
+Activer l'interface de support
+===
+
 Une "interface de support" est une structure intermédiaire entre le support normal et le modèle. Cette structure peut ajuster les propriétés de l'interface du support avec le modèle sans trop affecter la majorité du support.
 
 ![L'interface de support est représentée dans une teinte de bleu plus foncée](../../../articles/images/support_interface_enable.png)
