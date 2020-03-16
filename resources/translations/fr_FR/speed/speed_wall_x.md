@@ -1,3 +1,6 @@
+Vitesse d'impression de la paroi interne
+====
+
 La vitesse à laquelle les parois intérieures sont imprimées peut être configurée séparément de la vitesse d'impression normale et de la paroi extérieure.
 
 ![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)
