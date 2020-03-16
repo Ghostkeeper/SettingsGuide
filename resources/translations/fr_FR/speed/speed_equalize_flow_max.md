@@ -1,4 +1,7 @@
-Si le paramètre [Equalize Filament Flow](./speed_equalize_flow_enabled.md) est activé, alors la technique de remplissage de petits espaces ajustera sa vitesse de manière à ce que le débit sortant de la buse soit égal à celui de la peau, même si les lignes sont beaucoup plus fines.
+Vitesse maximale pour l'égalisation du débit
+===
+
+Si le paramètre [Égaliser le débit de filaments](./speed_equalize_flow_enabled.md) est activé, alors la technique de remplissage de petits espaces ajustera sa vitesse de manière à ce que le débit sortant de la buse soit égal à celui de la peau, même si les lignes sont beaucoup plus fines.
 
 Le problème est que des lignes très fines peuvent entraîner des vitesses extrêmement élevées. Ces vitesses peuvent ne pas être atteintes par l'imprimante, ce qui entraîne des pertes de pas et, en fin de compte, un décalage des couches. Ce réglage fixe un maximum pour ces vitesses.
 
