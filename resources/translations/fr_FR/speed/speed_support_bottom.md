@@ -1,4 +1,7 @@
-Ce paramètre configure la vitesse d'impression de la face inférieure du support, si [Support Floor est activé](../support/support_bottom_enable.md).
+Vitesse d'impression des bas de support
+===
+
+Ce paramètre configure la vitesse d'impression de la face inférieure du support, si [Activer les bas de support](../support/support_bottom_enable.md).
 
 ![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)
 
