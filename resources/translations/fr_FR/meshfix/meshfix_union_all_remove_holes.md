@@ -1,3 +1,6 @@
+Supprimer tous les trous
+===
+
 Certains modèles, en particulier ceux qui sont destinés à des techniques de fabrication comme le moulage par injection, ont tendance à présenter des cavités internes qui ne sont pas visibles. Si ce paramètre est activé, Cura supprime ces cavités internes.
 
 ![Ce modèle a un trou au centre](../../../articles/images/meshfix_union_all_remove_holes_disabled.png)
