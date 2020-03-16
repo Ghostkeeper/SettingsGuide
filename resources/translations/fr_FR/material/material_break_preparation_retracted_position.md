@@ -1,3 +1,6 @@
+Préparation de rupture Position rétractée
+===
+
 Pour certaines imprimantes, lorsqu'un matériau est rétracté pour un interrupteur à filament, le matériau doit être coupé proprement afin de le faire passer dans le chargeur sans s'emmêler. Ce réglage configure une partie de la procédure pour le rompre proprement.
 
 Ce réglage ajuste la deuxième position dans laquelle le matériau est rétracté afin de l'étirer pour en faire un fil fin. Ce fil fin s'étire hors de la zone chauffée dans la buse, ce qui lui permet de refroidir et de se solidifier. Le fil fin et dur peut ensuite être rompu lors de l'étape suivante de la rétraction.
