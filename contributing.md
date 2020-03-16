@@ -92,5 +92,6 @@ There are a few things to pay attention to though:
 * The guide is intended to be shown within Cura as well as online on Github. This means that your translations will need to link correctly to images using relative paths.
 * When linking to other articles, use relative links to the translated article of the same name, if such an article exists. If the linked article is not (yet) translated, link to the English article.
 * You will generally not need to translate images, but all images containing text should be SVG images, which are text-based and should be easy to translate. Do not copy any images you're not translating.
+* Do not translate the preferences file. While the helper text won't cause any harm, translating the labels of the preferences will cause them to stop working.
 
 Don't be afraid to ask for help with translations. I have experience handling Cura's translations and did a lot of translating in my spare time.
