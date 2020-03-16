@@ -1,7 +1,10 @@
+Distance d'expansion de la couche extérieure
+===
+
 Élargissez ou réduisez les couches solides en haut et en bas de votre impression dans le sens horizontal. Normalement, les couches solides ne sont générées que dans les parties où il y a de l'air au-dessus ou en dessous, mais avec ce réglage, vous pouvez l'élargir horizontalement un peu plus, ce qui améliore la résistance en faisant en sorte que la peau s'attache mieux aux murs adjacents et en fermant les interstices de la peau.
 
-![Comment les peaux (les parties jaunes) ont normalement l'air](../../../articles/images/expand_skins_expand_distance_original.png)
-![Peaux agrandies de 1mm](../../../articles/images/expand_skins_expand_distance_1mm.png)
+![Comment les ontours extérieur (les parties jaunes) ont normalement l'air](../../../articles/images/expand_skins_expand_distance_original.png)
+![Contours extérieurs agrandis de 1mm](../../../articles/images/expand_skins_expand_distance_1mm.png)
 
 * Si vous avez de petits trous dans les couches supérieures ou inférieures de l'impression (trous qui sont remplis par le motif de remplissage), le fait de régler ce paramètre un peu plus haut les fermera. Cela permet à l'imprimante d'imprimer en continu les lignes du bas, ce qui améliore considérablement la résistance.
 * Si votre modèle a une surface horizontale à côté d'un mur raide, augmenter ce réglage peut améliorer l'adhérence entre les parois de la surface raide et la peau, car la peau sera imprimée directement au contact de ces parois.
