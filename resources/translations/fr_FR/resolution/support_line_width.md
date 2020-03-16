@@ -1,3 +1,6 @@
+Largeur de ligne de support
+===
+
 La largeur des lignes avec lesquelles le support est dessiné peut être différente de la largeur des lignes du reste de l'impression.
 
 ![Les lignes du support sont plus larges que le reste des lignes](../../../articles/images/support_line_width.png)
