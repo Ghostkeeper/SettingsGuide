@@ -1,3 +1,6 @@
+Débit de l'interface de support
+===
+
 Ce paramètre ajuste le débit pour l'interface de support uniquement. Le débit de l'interface de support peut être réglé séparément du débit du reste du support.
 
 Le réglage du débit pendant l'interface du support est une méthode d'arrêt de l'espace pour résoudre les problèmes de taux d'extrusion ou d'adhérence entre le modèle et le support. Le même effet peut être obtenu en ajustant la [largeur de ligne](../resolution/support_interface_line_width.md) ou [espacement des lignes](../support/support_roof_line_distance.md) de l'interface de support, mais l'ajustement du débit peut être plus intuitif.
