@@ -1,3 +1,6 @@
+Expansion horizontale de l'interface de support
+===
+
 Ce réglage entraîne l'extension de l'interface du support dans toutes les directions horizontalement dans le reste du support.
 
 ![L'interface de support est étendue dans le support](../../../articles/images/support_interface_offset.png)
