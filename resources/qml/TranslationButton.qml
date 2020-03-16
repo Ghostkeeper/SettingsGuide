@@ -13,6 +13,11 @@ MouseArea {
 
 	onClicked: languagesMenu.popup()
 	visible: manager.language_list(article_id).length > 1
+	hoverEnabled: true
+	ToolTip.visible: containsMouse
+	ToolTip.delay: 500
+	ToolTip.timeout: 5000
+	ToolTip.text: qsTr("Translations are available.")
 
 	UM.RecolorImage {
 		color: UM.Theme.getColor("text")
