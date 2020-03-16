@@ -1,3 +1,6 @@
+Distance de jointement des supports
+===
+
 Les supports minces ne sont généralement pas souhaitables. Ils ont tendance à basculer, ce qui peut ruiner l'impression. Lorsque plusieurs pièces de support sont adjacentes, elles peuvent être assemblées pour former une seule pièce de support beaucoup plus solide.
 
 ![Deux pièces de support sont proches l'une de l'autre](../../../articles/images/support_join_distance_low.png)
