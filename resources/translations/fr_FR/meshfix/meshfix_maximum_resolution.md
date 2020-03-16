@@ -1,4 +1,4 @@
-Résolution de déplacement maximum
+Résolution maximum
 ===
 
 Bien que la haute résolution puisse sembler meilleure au début, il arrive souvent que l'imprimante ne gère pas très bien le code G haute résolution. C'est pourquoi Cura réduira la résolution de son entrée pendant le processus de découpage. Ce paramètre détermine la résolution que Cura maintiendra au maximum.
@@ -8,7 +8,7 @@ Bien que la haute résolution puisse sembler meilleure au début, il arrive souv
 
 L'imprimante doit traiter le g-code pendant qu'il est exécuté. Si le g-code contient de nombreux segments de lignes minuscules, la tête d'impression peut se précipiter dans le mouvement si rapidement que le processeur de l'imprimante 3D ne peut pas suivre. Cela a pour effet que la tête d'impression ralentit sporadiquement pour permettre à l'unité centrale de rattraper le mouvement ou simplement d'attendre la prochaine commande de mouvement. La surface devient alors très rugueuse, voire présente de petites taches, car le débit sortant de la buse ne correspond pas parfaitement au mouvement sporadique de la buse. Parfois, une résolution plus faible se traduit par une meilleure qualité d'impression.
 
-Ce réglage indique une longueur minimale pour les segments de ligne. Les segments de ligne qui sont plus courts que la longueur spécifiée seront considérés pour être joints à d'autres segments de ligne. Ils seront alors joints si le nouveau chemin ne s'écarte pas de son chemin d'origine de plus de [Déviation maximale](meshfix_maximum_deviation.md).
+Ce réglage indique une longueur minimale pour les segments de ligne. Les segments de ligne qui sont plus courts que la longueur spécifiée seront considérés pour être joints à d'autres segments de ligne. Ils seront alors joints si le nouveau chemin ne s'écarte pas de son chemin d'origine de plus de [Déviation maximale](./meshfix_maximum_deviation.md).
 
 Notez qu'il n'est pas garanti que les mêmes sommets soient retirés de chaque couche si les sommets s'alignent. La réduction de la résolution est effectuée en 2D en supprimant les sommets des formes de la couche, et non en 3D en supprimant les sommets du maillage. Par conséquent, une réduction trop importante de la résolution conduira souvent à une surface irrégulière, plutôt qu'à une surface angulaire.
 
