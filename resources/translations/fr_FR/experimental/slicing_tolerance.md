@@ -1,8 +1,11 @@
+Tolérance à la découpe
+===
+
 Grâce à la tolérance de découpage, vous pouvez ajuster la manière de traiter l'imprécision de la subdivision d'une maille en un nombre fini de couches. Elle vous permet de choisir si les couches doivent se rapprocher de la surface, rester délimitées par la surface ou inclure la surface complètement.
 
 Milieu
 ----
-![Milieu](../../../articles/images/slicing_tolerance_middle.svg)
+![Milieu](../images/slicing_tolerance_middle_fr.svg)
 
 En utilisant le milieu, les couches resteront aussi proches que possible de la surface d'origine. Cela signifie que les couches vont parfois dépasser de la surface d'origine et parfois s'enfoncer dans la surface d'origine. Dans l'ensemble, le volume des couches correspondra très étroitement au volume de la maille d'origine.
 
@@ -10,7 +13,7 @@ Pour obtenir la tolérance moyenne, Cura calculera une section transversale à m
 
 Inclus
 ----
-![Inclus](../../../articles/images/slicing_tolerance_inclusive.svg)
+![Inclus](../images/slicing_tolerance_inclusive_fr.svg)
 
 Lorsque vous utilisez Inclusive, les couches contiennent *au moins* la totalité du volume original. Lorsque la surface est inclinée, les couches seront légèrement en saillie. Le volume total des couches sera presque toujours supérieur au volume de la maille originale.
 
@@ -18,7 +21,7 @@ Pour obtenir la tolérance Inclusive, Cura calculera les sections transversales 
 
 Exclusif
 ----
-![Exclusif](../../../articles/images/slicing_tolerance_exclusive.svg)
+![Exclusif](../images/slicing_tolerance_exclusive_fr.svg)
 
 En cas d'utilisation d'Exclusive, les couches seront contenues dans le volume original. Lorsque la surface est inclinée, les couches seront légèrement plus petites que le volume original. Le volume total des couches sera presque toujours inférieur au volume de la maille originale.
 
