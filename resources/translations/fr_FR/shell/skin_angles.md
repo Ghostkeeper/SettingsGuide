@@ -1,3 +1,6 @@
+Sens de la ligne du dessus / dessous
+===
+
 Ce paramètre vous permet de modifier la direction dans laquelle les lignes du haut et du bas sont imprimées. Vous pouvez spécifier une liste d'angles séparés par des virgules (en degrés), et les lignes alterneront les directions par couche.
 
 ![Motif de lignes avec des angles de 0°, 60° et 120° alternés](../../../articles/images/skin_angles.gif)
