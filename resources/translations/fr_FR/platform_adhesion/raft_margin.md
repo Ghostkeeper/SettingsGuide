@@ -1,7 +1,10 @@
-This setting makes the raft wider than the model. It indicates the width of the extra border around the model.
+Marge supplémentaire du radeau
+===
 
-![Dimensions related to the raft](../../../articles/images/raft_dimensions.svg)
+Ce réglage rend le radeau plus large que le modèle. Il indique la largeur de la bordure supplémentaire autour du modèle.
 
-Increasing this setting will greatly improve adhesion between the raft and the build plate. Not only is there a greater area for the raft to stick to the build plate, but the expansions also softens the corners of the raft. With softer corners, warping will have less of an effect on the raft. Secondly, a larger raft allows you to break away the raft from the model more easily, since there is some area to grab the raft with.
+![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)
 
-However, increasing the Raft Extra Margin will also take more space on the build plate. It will take more material and time to print the raft.
+L'augmentation de ce paramètre améliorera considérablement l'adhérence entre le radeau et la plaque de construction. Non seulement le radeau a une plus grande surface d'adhérence à la plaque de construction, mais les expansions adoucissent également les coins du radeau. Avec des coins plus souples, le gauchissement aura moins d'effet sur le radeau. Deuxièmement, un radeau plus grand vous permet de le détacher plus facilement du modèle, puisqu'il y a une certaine surface pour l'attraper.
+
+Cependant, l'augmentation de la marge supplémentaire du radeau prendra également plus de place sur la plaque de construction. Il faudra plus de matériel et de temps pour imprimer le radeau.
