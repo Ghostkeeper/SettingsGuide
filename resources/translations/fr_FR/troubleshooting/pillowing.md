@@ -1,3 +1,6 @@
+Mattelassage
+===
+
 L'effet de mattelassage est un effet où de petits renflements ou trous apparaissent entre les lignes de remplissage sur la face supérieure du modèle. On l'observe le plus souvent sur les surfaces supérieures (autrement) planes lors de l'impression à haut débit.
 
 ![Forts bombements et petits trous dans la surface](../../../articles/images/pillowing.jpg)
