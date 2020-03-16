@@ -1,3 +1,6 @@
+Surface minimale de support
+===
+
 Ce paramètre impose une taille minimale autorisée pour les pièces de support. Si un morceau de support a une surface inférieure à la valeur de ce paramètre sur une certaine couche, le support est laissé là.
 
 ![Pas de filtrage sur la surface (la surface minimale est 0)](../../../articles/images/minimum_support_area_0.png)
