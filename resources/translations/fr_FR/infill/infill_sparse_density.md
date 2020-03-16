@@ -1,3 +1,6 @@
+Densité du remplissage
+===
+
 Ce paramètre configure la densité du volume à l'intérieur de l'impression, qui est un facteur majeur de la solidité de l'impression finale ainsi que de la qualité de la surface supérieure. Plus la densité de remplissage est élevée, plus les lignes de remplissage seront rapprochées. Vous pouvez même dépasser la densité de 100 %, mais cela entraînera une surextrusion.
 
 ![20% de densité](../../../articles/images/infill_sparse_density_high.png)
