@@ -1,3 +1,6 @@
+Nombre supplémentaire de parois extérieures
+===
+
 En imprimant le haut et le bas avec le motif des lignes, le bord extérieur des zones de la peau peut encore être imprimé avec quelques lignes concentriques. Cette méthode diffère de l'impression d'une paroi supplémentaire, car la paroi de peau supplémentaire est également placée entre la peau et le remplissage.
 
 ![Pas de contour de peau supplémentaire](../../../articles/images/skin_outline_count_0.png)
