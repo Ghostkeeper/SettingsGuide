@@ -1,10 +1,13 @@
-With this setting, inside corners of the raft can be made smoother. The setting specifies the radius of an arc. All inside corners that are sharper than the specified arc radius will get smoothed to have the arc radius.
+Lissage de radeau
+===
 
-![No smoothing](../../../articles/images/raft_smoothing_0mm.png)
-![Radius of 5mm](../../../articles/images/raft_smoothing_5mm.png)
+Ce réglage permet de rendre les angles intérieurs du radeau plus lisses. Le réglage spécifie le rayon d'un arc. Tous les coins intérieurs qui sont plus nets que le rayon d'arc spécifié seront lissés pour avoir le rayon d'arc.
 
-The technical term for this is a [morphological closing operation](https://en.wikipedia.org/wiki/Closing_\(morphology\)). All holes smaller than the specified radius will be closed. The sharpest inside corners will not be made as sharp any more.
+![Pas de lissage](../../../articles/images/raft_smoothing_0mm.png)
+![Rayon de 5mm](../../../articles/images/raft_smoothing_5mm.png)
 
-The function of this setting is to make the raft stiffer. When multiple pieces are connected through thin connections, the raft can bend at those places. This makes them less stiff and less resistant against warping. Increasing this setting will make separate pieces better connected, making the raft stronger. The surface area of the raft will be bigger, so the raft will stick better. Moreover, the raft will have a smaller circumference in total, reducing the places where warping can start. In total, there should be less warping.
+Le terme technique pour cela est une [opération de fermeture morphologique](https://en.wikipedia.org/wiki/Closing_\(morphology\)). Tous les trous plus petits que le rayon spécifié seront fermés. Les angles intérieurs les plus aigus ne seront plus aussi nets.
 
-However the total volume of the raft will also be increased. This uses more material and takes more time to print, especially since the raft is normally printed very slowly.
+La fonction de ce réglage est de rendre le radeau plus rigide. Lorsque plusieurs pièces sont reliées par des raccords fins, le radeau peut se plier à ces endroits. Cela les rend moins rigides et moins résistants au gauchissement. En augmentant ce réglage, les pièces séparées seront mieux connectées, ce qui rendra le radeau plus solide. La surface du radeau sera plus grande, donc le radeau collera mieux. De plus, le radeau aura une circonférence totale plus petite, ce qui réduira les endroits où le gauchissement peut commencer. Au total, il devrait y avoir moins de déformation.
+
+Cependant, le volume total du radeau sera également augmenté. Cela utilise plus de matériel et prend plus de temps à imprimer, d'autant plus que le radeau est normalement imprimé très lentement.
