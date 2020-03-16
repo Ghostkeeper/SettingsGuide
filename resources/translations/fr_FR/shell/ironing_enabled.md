@@ -1,3 +1,6 @@
+Activer l'étirage
+===
+
 Le repassage oblige l'imprimante à effectuer un nouveau passage sur la surface supérieure afin de la rendre encore plus lisse. Ce passage supplémentaire a une très faible largeur de ligne et imprime très lentement.
 
 ![Une impression normale, vue de la face supérieure](../../../articles/images/ironing_enabled_disabled.png)
