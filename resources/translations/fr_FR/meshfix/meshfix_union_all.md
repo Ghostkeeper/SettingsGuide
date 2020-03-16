@@ -1,3 +1,6 @@
+Joindre les volumes se chevauchant
+===
+
 Si un modèle contient plusieurs volumes qui se croisent, le volume qui se trouve à l'intérieur des deux volumes ne sera normalement pas rempli. Ce réglage fait que Cura ignore les structures internes et se contente de les remplir toutes, quel que soit le nombre de coquilles autour du volume.
 
 ![Un maillage avec deux cubes qui se croisent](../../../articles/images/meshfix_union_all_shell.png)
