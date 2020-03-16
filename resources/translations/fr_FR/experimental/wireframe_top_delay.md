@@ -1,6 +1,9 @@
+Attente pour le haut de l'impression filaire
+===
+
 Avec ce réglage, la buse s'arrête un instant après l'impression d'une ligne ascendante.
 
-![L'endroit où la buse s'arrêtera](../../../articles/images/wireframe_top_delay.svg)
+![L'endroit où la buse s'arrêtera](../images/wireframe_top_delay_fr.svg)
 
 Alors que la buse reste immobile au sommet de la ligne ascendante, la ligne ascendante a le temps de se solidifier. Cela permet d'éviter qu'elle ne soit entraînée avec la buse lorsqu'elle recommence à descendre.
 
