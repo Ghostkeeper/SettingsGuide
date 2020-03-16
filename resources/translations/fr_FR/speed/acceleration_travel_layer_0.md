@@ -1,3 +1,6 @@
+Accélération de déplacement de la couche initiale
+===
+
 Ce réglage contrôle la vitesse à laquelle la buse accélère dans différentes directions pendant qu'elle se déplace sur la plaque de construction au cours de la première couche. L'accélération pendant les déplacements sur la première couche peut être réglée à une vitesse différente de celle des déplacements dans le reste de l'impression ou des déplacements d'extrusion de la première couche.
 
 L'impression à des vitesses d'accélération élevées peut provoquer des vibrations qui se répercutent dans l'imprimante. En particulier, ces vibrations peuvent faire trembler la plaque de montage de haut en bas, ce qui peut faire que la buse frappe la plaque de montage et endommage l'imprimante. Les vibrations peuvent également se poursuivre après le mouvement de translation pendant l'extrusion, ce qui nuit à l'adhérence entre le modèle et la plaque de montage. La réduction de l'accélération des mouvements de translation pendant la première couche par rapport aux autres couches peut prévenir ces effets. Toutefois, pour gagner du temps, l'accélération pendant le déplacement de la première couche peut toujours être plus élevée que pendant les mouvements d'extrusion de la première couche, car les vibrations ne posent généralement un problème que pendant l'extrusion.
