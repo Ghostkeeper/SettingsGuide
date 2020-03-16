@@ -1,3 +1,6 @@
+Matériau sans charge facteur de déplacement
+===
+
 Ce réglage exprime la différence de longueur du filament lorsqu'il est comprimé entre l'alimentateur et la chambre de la buse.
 
 Si le filament est poussé hors de la buse, une contre-pression est appliquée par la buse elle-même (en raison de la plus petite ouverture de la buse) et par le matériau sous la buse, qu'il s'agisse de la partie imprimée ou du lit. Pendant ce temps, le margeur pousse de l'autre côté. Cela comprime le filament dans la longueur du trajet entre le margeur et la buse, ce qui le rend plus court. Par conséquent, amener le filament de l'alimentateur à l'extrémité de la buse nécessite moins de mouvement que d'amener le filament dans une position d'impression correcte.
