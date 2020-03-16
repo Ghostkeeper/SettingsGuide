@@ -1,4 +1,7 @@
-Parfois, une empreinte ne se termine pas complètement. Plusieurs raisons peuvent expliquer ce phénomène, dont certaines peuvent être résolues en ajustant les paramètres de Cura.
+Impression non terminée
+===
+
+Parfois, une impression ne se termine pas complètement. Plusieurs raisons peuvent expliquer ce phénomène, dont certaines peuvent être résolues en ajustant les paramètres de Cura.
 
 ![Le filament a cessé de couler à mi-chemin de cette impression](../../../articles/images/unfinished_print.jpg)
 
@@ -6,9 +9,9 @@ Défaillances des imprimantes
 ----
 Parfois, la cause d'une impression inachevée est une panne d'imprimante, lorsque l'imprimante ne fait pas ce qu'on attend d'elle. En général, Cura ne peut pas faire grand-chose pour remédier à ces problèmes. Voici quelques causes courantes.
 * Panne de courant. Cura ne peut pas faire grand-chose à ce sujet, si ce n'est imprimer plus vite pour réduire les risques de panne de courant pendant l'impression.
-* Panne d'alimentation électrique. Si l'une des températures (soit la [plaque de construction](../material/material_bed_temperature.md) ou la [buse](../material/material_print_temperature.md)) est trop élevée, certaines imprimantes ont un mode de défaillance où l'alimentation électrique brûle ou les capteurs de température donnent des erreurs. L'imprimante s'éteint alors et ne termine pas l'impression.
+* Panne d'alimentation électrique. Si l'une des températures (soit le [plateau](../material/material_bed_temperature.md) ou la [buse](../material/material_print_temperature.md)) est trop élevée, certaines imprimantes ont un mode de défaillance où l'alimentation électrique brûle ou les capteurs de température donnent des erreurs. L'imprimante s'éteint alors et ne termine pas l'impression.
 * Le microprogramme se fige. En raison de bogues dans le microprogramme, l'imprimante peut ne plus répondre. Si vous pouvez déterminer où dans le code G il se fige (le plus souvent au début ou à la fin de l'impression), vous pourrez peut-être voir quel code G en est la cause. Il est possible que le g-code de début ou de fin doive être ajusté.
-* La bobine de filament est emmêlée. C'est une bonne idée de *toujours* tenir le bout du filament s'il n'est pas bien fixé dans le chargeur ou inséré dans un des trous de la bobine (si votre bobine a de tels trous). Si vous lâchez et que l'extrémité du filament saute à nouveau sur la bobine, il pourrait glisser sous l'un des autres enroulements et s'emmêler. Comme le filament fait généralement des centaines de mètres de long, ce nœud peut être très difficile à dérouler s'il entre.
+* La bobine de filament est emmêlée. C'est une bonne idée de *toujours* tenir le bout du filament s'il n'est pas bien fixé dans l'extrudeuse ou engagé dans un des trous du filament (si votre bobine a de tels trous). Si vous lâchez et que l'extrémité du filament saute à nouveau sur la bobine, il pourrait glisser sous l'un des autres enroulements et s'emmêler. Comme le filament fait généralement des centaines de mètres de long, ce nœud peut être très difficile à dérouler s'il entre.
 
 Broyage du filament
 ----
