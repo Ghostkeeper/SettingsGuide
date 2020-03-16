@@ -1,3 +1,6 @@
+Extrudeuse du dessus/dessous
+===
+
 Les faces supérieure et inférieure de l'objet peuvent être imprimées avec une extrudeuse différente du reste du modèle, si on le souhaite. Ce paramètre vous permet de choisir l'extrudeuse qui sera utilisée pour les faces supérieure et inférieure.
 
 ![Le haut et le bas de cet objet sont imprimés en rouge](../../../articles/images/top_bottom_extruder_nr.png)
