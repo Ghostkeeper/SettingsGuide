@@ -1,3 +1,6 @@
+Épaisseur de l'interface de support
+===
+
 Ce paramètre définit l'épaisseur de la couche d'interface entre le support et le modèle.
 
 Une interface plus épaisse réduit les économies qui seraient réalisées en utilisant une interface de support plutôt que d'imprimer tout le support à une densité accrue.
