@@ -1,3 +1,6 @@
+Extrudeuse des bas de support
+===
+
 Si votre imprimante possède plusieurs extrudeuses, le côté inférieur du support, où le support repose sur le modèle, peut être imprimé avec une extrudeuse différente de celle du toit du support, où le modèle repose sur le support. Ce paramètre vous permet de choisir l'extrudeuse utilisée pour le plancher du support.
 
 ![Le plancher de support est imprimé en orange, mais le toit du support en blanc](../../../articles/images/support_bottom_extruder_nr.png)
