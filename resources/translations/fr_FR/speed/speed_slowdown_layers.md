@@ -1,3 +1,6 @@
+Nombre de couches plus lentes
+===
+
 La couche initiale n'est pas la seule couche qui s'imprime plus lentement. Ce paramètre permet de configurer le nombre de couches qui sont imprimées plus lentement. Au cours de ces couches, la vitesse d'impression augmentera progressivement jusqu'à la vitesse d'impression normale.
 
 ![La vitesse d'impression augmente progressivement jusqu'à 50mm/s](../images/speed_slowdown_layers_fr.svg)
