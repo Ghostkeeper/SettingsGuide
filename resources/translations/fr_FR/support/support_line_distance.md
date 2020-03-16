@@ -1,3 +1,6 @@
+Distance d'écartement de ligne du support
+===
+
 Ce paramètre définit la distance entre deux lignes adjacentes dans le modèle de support. Cette façon d'ajuster la densité du support peut être plus intuitive que l'ajustement de la densité du support, puisqu'elle ajuste directement la distance que les lignes supportées doivent couvrir.
 
 ![Distance entre les lignes](../../../articles/images/support_infill_rate_low.png)
