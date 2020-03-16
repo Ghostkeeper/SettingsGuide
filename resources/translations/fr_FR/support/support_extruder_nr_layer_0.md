@@ -1,3 +1,6 @@
+Extrudeuse de support de la première couche
+===
+
 Si votre imprimante possède plusieurs extrudeuses, la couche de support qui repose sur la plaque de construction peut être imprimée avec une extrudeuse différente du reste du support. Ce paramètre vous permet de choisir l'extrudeuse qui sera utilisée pour la couche de support initiale.
 
 ![La couche initiale du support est imprimée en orange, mais le reste en blanc](../../../articles/images/support_extruder_nr_layer_0.png)
