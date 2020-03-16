@@ -5,4 +5,4 @@ Ce réglage contrôle la vitesse à laquelle la buse accélère dans différente
 
 Le bord est crucial pour l'adhérence du lit, donc la réduction des taux d'accélération pendant l'impression du bord peut réduire les vibrations pendant l'impression du bord, puis améliorer l'adhérence du bord à la plaque de construction, augmentant l'efficacité du bord pour un coût de temps d'impression mineur.
 
-L'effet de l'accélération sur le bord et la jupe est généralement très faible, car il s'agit de lignes aux courbes douces. L'accélération est souvent complètement prise en charge par le paramètre [Skirt/Brim Jerk](./jerk_skirt_brim.md).
+L'effet de l'accélération sur le bord et la jupe est généralement très faible, car il s'agit de lignes aux courbes douces. L'accélération est souvent complètement prise en charge par le paramètre [Saccade de la jupe/bordure](./jerk_skirt_brim.md).
