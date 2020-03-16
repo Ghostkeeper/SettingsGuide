@@ -1,3 +1,6 @@
+Limite de vitesse régulière/maximale du ventilateur
+===
+
 Le temps minimum de couche configure la durée la plus courte autorisée pour l'impression d'une couche. L'imprimante n'est pas autorisée à imprimer des couches plus rapidement que cela.
 
 Ceci est nécessaire pour permettre à la couche précédente de refroidir avant que la couche suivante ne soit mise par-dessus. Cela permet de s'assurer que la couche précédente s'est complètement solidifiée, pour éviter qu'elle ne s'affaisse.
