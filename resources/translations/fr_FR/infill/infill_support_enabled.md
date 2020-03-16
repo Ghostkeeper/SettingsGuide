@@ -1,3 +1,6 @@
+Support de remplissage
+===
+
 Lorsqu'il est activé, ce système traite l'appoint comme un soutien. Le remblai ne sera alors généré que là où il est nécessaire pour soutenir la surface supérieure. Il se comporte comme si le modèle était creux et génère un support à l'intérieur de celui-ci, mais ce support est généré en utilisant les paramètres de remplissage.
 
 ![Remplissage normal](../../../articles/images/infill_support_enabled_disabled.png)
