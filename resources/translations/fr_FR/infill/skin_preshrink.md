@@ -1,3 +1,6 @@
+Largeur de retrait de la couche extérieure
+===
+
 Ce réglage permet d'enlever de très fines bandes de peau et de les remplacer par du remplissage.
 
 La peau ne sera enlevée que s'il y a un remplissage à côté, de sorte que la peau ne sera normalement pas enlevée tout en haut ou tout en bas de votre empreinte, même si elle est très fine.
