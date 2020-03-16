@@ -1,3 +1,6 @@
+Vitesse maximale du ventilateur
+===
+
 La vitesse à laquelle les ventilateurs de la tête d'impression tournent lorsque la couche est imprimée en un temps minimum.
 
 ![Quelle vitesse de ventilateur est utilisée où](../images/cool_fan_speed_fr.svg)
