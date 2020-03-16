@@ -1,3 +1,6 @@
+Hauteur de la couche initiale
+===
+
 Ce paramètre définit l'épaisseur de la première couche de votre impression. La couche initiale est normalement imprimée plus épaisse que le reste afin de créer une adhérence plus forte avec la plaque de construction. Avec ce réglage, l'épaisseur de la couche initiale peut être augmentée sans réduire la résolution du reste de l'impression.
 
 ![La couche initiale est plus épaisse que le reste des couches](../../../articles/images/layer_height_0.png)
