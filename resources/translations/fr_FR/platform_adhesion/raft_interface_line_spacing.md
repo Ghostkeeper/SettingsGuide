@@ -1,5 +1,8 @@
-This setting adjusts the spacing between adjacent lines in the middle layer of the raft. This is in a way similar to the [Infill Line Distance](../infill/infill_line_distance.md) setting. The main purpose is to adjust the stiffness of the raft and how well the top layer gets supported.
+Interligne intermédiaire du radeau
+===
 
-![Dimensions related to the raft](../../../articles/images/raft_dimensions.svg)
+Ce réglage permet d'ajuster l'espacement entre les lignes adjacentes dans la couche centrale du radeau. Il est similaire au paramètre [Distance de la ligne de remplissage](../infill/infill_line_distance.md). L'objectif principal est d'ajuster la rigidité du radeau et la qualité du support de la couche supérieure.
 
-Having the lines spaced far apart reduces the printing time of the raft. It also makes the raft easier to bend, which allows it to break off more easily. However, if the lines are spaced very far apart the top layers of the raft won't get supported well. This makes the raft's surface uneven, which reduces the adhesion between the raft and model but also makes the model's bottom side messier.
+![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)
+
+L'espacement des lignes réduit le temps d'impression du radeau. Cela facilite également le pliage du radeau, qui peut ainsi se détacher plus facilement. Cependant, si les lignes sont très espacées, les couches supérieures du radeau ne seront pas bien supportées. Cela rend la surface du radeau inégale, ce qui réduit l'adhérence entre le radeau et la maquette, mais rend également le côté inférieur de la maquette plus sale.
