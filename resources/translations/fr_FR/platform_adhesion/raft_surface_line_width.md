@@ -1,7 +1,10 @@
-This setting indicates how wide the lines of the top layers of the raft will be.
+Largeur de la ligne supérieure du radeau
+===
 
-![Dimensions related to the raft](../../../articles/images/raft_dimensions.svg)
+Ce paramètre indique la largeur des lignes des couches supérieures du radeau.
 
-In order to produce a smooth surface for the raft, the lines of the top layers should be quite thin and spaced closed together with the [Raft Top Spacing](raft_surface_line_spacing.md) setting. Thinner lines produce a smoother surface which will in turn produce a smoother bottom side of the print and improve adhesion between the raft and the print.
+![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)
 
-However, thinner and closely spaced lines also take considerably longer to print. Making the lines too thin causes underextrusion as well, which makes the adhesion between the raft and the model weaker.
+Afin de produire une surface lisse pour le radeau, les lignes des couches supérieures doivent être assez minces et espacées de manière fermée avec le paramètre [Interligne supérieur du radeau](./raft_surface_line_spacing.md). Des lignes plus fines produisent une surface plus lisse qui, à son tour, produira une face inférieure plus lisse de l'impression et améliorera l'adhérence entre le radeau et l'impression.
+
+Cependant, les lignes plus fines et peu espacées prennent également beaucoup plus de temps à s'imprimer. Des lignes trop fines entraînent également une sous-extrusion, ce qui affaiblit l'adhérence entre le radeau et le modèle.
