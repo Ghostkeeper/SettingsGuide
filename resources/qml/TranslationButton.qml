@@ -34,6 +34,7 @@ MouseArea {
 
 			MenuItem {
 				text: code_to_language(modelData.toString())
+				onTriggered: manager.set_language(modelData.toString())
 			}
 			onObjectAdded: languagesMenu.insertItem(index, object)
 			onObjectRemoved: languagesMenu.removeItem(object)

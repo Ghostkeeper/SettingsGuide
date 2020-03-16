@@ -407,3 +407,12 @@ class CuraSettingsGuide(Extension, QObject):
 		if article_key not in self.article_locations:
 			return []  # We have no articles about this setting at all.
 		return list(self.article_locations[article_key].keys())
+
+	@pyqtSlot(str)
+	def set_language(self, language_code: str) -> None:
+		"""
+		Changes the viewing language.
+		:param language_code: The new language code.
+		"""
+		self._selected_language = language_code
+		self.selectedArticleChanged.emit()
