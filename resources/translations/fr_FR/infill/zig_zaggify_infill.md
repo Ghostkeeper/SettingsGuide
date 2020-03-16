@@ -1,4 +1,6 @@
-Thirelie les points d'extrémité du modèle de remplissage, où le remplissage rencontre la paroi intérieure ou la peau, à l'aide d'une ligne qui suit le bord de la zone de remplissage.
+Relier les lignes de remplissage
+==
+Cette option permet de rajouter une trajectoire qui relie les points d'extrémité du modèle de remplissage, où le remplissage rencontre la paroi intérieure ou la peau, à l'aide d'une ligne qui suit le bord de la zone de remplissage.
 
 ![Aucune ligne de remplissage connectée](../../../articles/images/zig_zaggify_infill_disabled.png)
 ![Lignes de remplissage connectées](../../../articles/images/zig_zaggify_infill_enabled.png)
