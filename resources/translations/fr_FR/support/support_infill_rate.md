@@ -1,3 +1,6 @@
+Densité du support
+===
+
 Ce paramètre définit le rythme auquel les structures de soutien sont remplies de matériel. En cas de taux de remplissage élevé, les lignes de support seront placées très près les unes des autres. Pour les faibles taux de remplissage, les lignes seront placées plus loin les unes des autres.
 
 ![Faible densité de support](../../../articles/images/support_infill_rate_low.png)
