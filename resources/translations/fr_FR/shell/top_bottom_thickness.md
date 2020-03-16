@@ -1,3 +1,6 @@
+Épaisseur du dessus/dessous
+===
+
 Avec l'épaisseur supérieure/inférieure, vous pouvez ajuster l'épaisseur de la peau solide créée sur les côtés supérieur et inférieur de votre impression.
 
 ![Épaisseur ordinaire du haut/bas](../../../articles/images/top_bottom_thickness_0.8.png)
