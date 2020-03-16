@@ -1,3 +1,6 @@
+Optimiser l'ordre d'impression des parois
+===
+
 Si cette fonction est activée, Cura consacrera un temps de découpe supplémentaire pour optimiser l'ordre dans lequel les murs sont imprimés. L'objectif est de réduire le nombre de déplacements et de retraits en imprimant les murs qui entourent la même pièce les uns après les autres.
 
 ![Optimisation désactivée](../../../articles/images/optimize_wall_printing_order_disabled.gif)
