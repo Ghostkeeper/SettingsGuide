@@ -1,3 +1,6 @@
+Vitesse d'impression du dessus/dessous
+===
+
 La vitesse à laquelle les faces supérieure et inférieure du modèle sont imprimées peut être configurée séparément de la vitesse d'impression normale.
 
 ![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)
@@ -8,4 +11,4 @@ En règle générale, il faut imprimer assez lentement si le modèle présente u
 * Semblable au surplomb, il améliore la qualité de la surface supérieure. Le même effet de surplomb est appliqué à la façon dont la surface supérieure repose sur le remblai.
 * L'imprimante vibre généralement moins. Si la plaque de construction vibre moins, le dessus et le dessous auront meilleure allure.
 
-**Ce réglage n'a pas d'effet significatif sur l'adhérence de la plaque de montage. La [Vitesse d'impression de la couche initiale](speed_print_layer_0.md) est utilisée pour les premières couches.**
+**Ce réglage n'a pas d'effet significatif sur l'adhérence de la plaque de montage. La [Vitesse d'impression de la couche initiale](./speed_print_layer_0.md) est utilisée pour les premières couches.**
