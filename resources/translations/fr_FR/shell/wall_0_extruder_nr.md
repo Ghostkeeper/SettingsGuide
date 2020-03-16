@@ -1,3 +1,6 @@
+Extrudeuse de paroi externe
+===
+
 Si votre imprimante possède plusieurs extrudeuses, vous pouvez choisir de n'imprimer que la paroi extérieure avec une autre extrudeuse.
 
 ![La paroi extérieure est imprimée en bleu, mais le reste en orange](../../../articles/images/wall_0_extruder_nr.png)
