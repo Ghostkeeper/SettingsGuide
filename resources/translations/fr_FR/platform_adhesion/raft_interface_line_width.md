@@ -1,5 +1,8 @@
-This setting configures the width of the lines in the middle layer of the raft.
+Largeur de la ligne intermédiaire du radeau
+===
 
-![Dimensions related to the raft](../../../articles/images/raft_dimensions.svg)
+Ce paramètre configure la largeur des lignes dans la couche centrale du radeau.
 
-Having wider lines increases the stiffness of the raft. For some materials that warp a lot, this makes it easier to remove the raft. For others, it makes it harder, because you want to bend the raft in order to remove it.
+![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)
+
+Le fait d'avoir des lignes plus larges augmente la rigidité du radeau. Pour certains matériaux qui se déforment beaucoup, cela facilite l'enlèvement du radeau. Pour d'autres, cela le rend plus difficile, parce que vous voulez plier le radeau pour l'enlever.
