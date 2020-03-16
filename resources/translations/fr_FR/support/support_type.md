@@ -1,3 +1,6 @@
+Positionnement des supports
+===
+
 Ce paramètre vous permet de choisir le support sur lequel vous souhaitez placer votre enfant.
 
 ![Le support est généré pour toutes les surfaces en surplomb](../../../articles/images/support_type_everywhere.png)
