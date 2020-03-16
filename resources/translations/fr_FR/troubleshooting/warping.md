@@ -1,3 +1,6 @@
+Décollement
+===
+
 Le décollement est un problème de l'impression finale où l'empreinte se recroqueville après l'impression, laissant l'objet final déformé. Généralement, les coins du bas de l'impression se recourbent vers le haut, ou bien des parties fines de l'impression deviennent ondulées.
 
 ![Les pointes s'enroulent](../../../articles/images/warping.jpg)
@@ -6,7 +9,7 @@ Cause
 ----
 Le décollement est causé par une combinaison d'effets, mais principalement par une contrainte interne due à la traction de la buse sur le plastique fondu. Lorsqu'il est en transition vitreuse, le plastique se comporte un peu comme le caoutchouc ou la gomme. Si vous tirez dessus, le matériau s'étire, mais si vous arrêtez de tirer, il reprend sa forme initiale. La même chose se produit également lors de l'impression. Lorsque vous imprimez une longue ligne, la buse tire sur la ligne de plastique, qui s'étire sur la longueur de la ligne. Lorsque la buse s'éloigne et cesse de tirer, la ligne de plastique se contracte. Cette contraction provoque une traction sur tout ce qui y est attaché. Lorsqu'un nombre suffisant de lignes de plastique tirent à l'unisson, elles peuvent déformer l'impression. Cela est particulièrement fréquent lorsque de nombreuses lignes sont parallèles, comme dans la peau.
 
-Un deuxième effet qui provoque le gauchissement est le rétrécissement de la matière lorsqu'elle refroidit. La plupart des matériaux ont tendance à rétrécir lorsqu'ils refroidissent. Si l'objet refroidit de manière non uniforme, certaines parties de l'impression rétrécissent plus que d'autres, ce qui déforme l'objet. Au fur et à mesure que l'objet continue à refroidir, il se solidifie davantage, ce qui verrouille cette déformation de façon permanente.
+Un deuxième effet qui provoque le décollement est le rétrécissement de la matière lorsqu'elle refroidit. La plupart des matériaux ont tendance à rétrécir lorsqu'ils refroidissent. Si l'objet refroidit de manière non uniforme, certaines parties de l'impression rétrécissent plus que d'autres, ce qui déforme l'objet. Au fur et à mesure que l'objet continue à refroidir, il se solidifie davantage, ce qui verrouille cette déformation de façon permanente.
 
 Certains matériaux sont plus sensibles au rétrécissement que d'autres. Voici quelques coefficients de rétrécissement des matériaux d'impression 3D courants. Il s'agit approximativement de la quantité de rétrécissement de chaque type de matériau lorsqu'il refroidit de sa température de transition vitreuse à la température ambiante. Une certaine variation se produit entre les mélanges. Un retrait plus important entraînera un gauchissement plus important.
 * PLA : 0,21%.
