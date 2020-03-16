@@ -1,9 +1,12 @@
+Coque de la subdivision cubique
+===
+
 Ce réglage fait que le motif de remplissage de la subdivision cubique commence à réduire un peu plus le remplissage vers l'intérieur, pour améliorer la résistance de l'impression.
 
 ![Cubic Subdivision sans coquille supplémentaire](../../../articles/images/sub_div_rad_add_small.png)
 ![Coque supplémentaire de 5mm](../../../articles/images/sub_div_rad_add_large.png)
 
-Le Cubic Subdivision fonctionne en supprimant les frontières entre huit cubes adjacents si aucun des cubes ne touche la frontière du volume de remplissage. Ce réglage déplace cette frontière plus à l'intérieur, empêchant ainsi la suppression des frontières entre les cubes.
+La Subdivision Cubique fonctionne en supprimant les frontières entre huit cubes adjacents si aucun des cubes ne touche la frontière du volume de remplissage. Ce réglage déplace cette frontière plus à l'intérieur, empêchant ainsi la suppression des frontières entre les cubes.
 
 En fait, cela permet au modèle de subdivision cubique de dessiner la densité maximale plus souvent. Cela augmente la résistance de l'objet, mais aussi le temps et le matériel nécessaires pour l'imprimer. À l'extrême, en augmentant suffisamment ce paramètre, le schéma de subdivision cubique finira par être le même que le schéma cubique simple.
 
