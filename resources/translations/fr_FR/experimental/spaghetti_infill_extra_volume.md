@@ -1,4 +1,7 @@
-Avec ce réglage, une quantité supplémentaire de matériau sera extrudée à chaque fois lors de l'impression d'un remplissage. Cela se fait à chaque étape si le remplissage de spaghetti est imprimé en [étapes](spaghetti_infill_stepped.md), ou une fois par pilier vertical de remplissage sinon.
+Volume supplémentaire de remplissage en spaghettis
+===
+
+Avec ce réglage, une quantité supplémentaire de matériau sera extrudée à chaque fois lors de l'impression d'un remplissage. Cela se fait à chaque étape si le remplissage de spaghetti est imprimé en [étages](./spaghetti_infill_stepped.md), ou une fois par pilier vertical de remplissage sinon.
 
 Lorsque le remplissage spaghetti est utilisé pour le moulage, cela permet de remplir une [carotte](https://en.wikipedia.org/wiki/Sprue_\(manufacturing\)) de matériau ou de compenser les pertes dues au mécanisme de démarrage et d'arrêt.
 
