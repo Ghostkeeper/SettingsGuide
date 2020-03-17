@@ -1,3 +1,6 @@
+Angle des branches de support arborescent
+===
+
 Ce réglage détermine l'angle de surplomb maximum que les branches de l'arbre de support sont autorisées à faire. Si l'angle est augmenté, les branches peuvent être imprimées plus horizontalement, ce qui leur permet d'aller plus loin.
 
 ![Un angle de branche de 20°](../../../articles/images/support_tree_angle_20.png)
@@ -10,4 +13,4 @@ Les effets les plus importants de l'augmentation de l'angle des branches pour le
 * Réduction du temps d'impression et de l'utilisation des matériaux, en raison de la séparation des branches à des altitudes plus élevées. Les branches sont coupées juste à temps pour pouvoir atteindre tout le surplomb.
 * Fiabilité réduite. Si l'angle du surplomb devient trop important, le support sera fortement affaibli, ce qui augmentera le risque que le support se brise ou bascule.
 
-Il est préférable de combiner les grands angles de branches avec des valeurs faibles pour le paramètre [Tree Support Collision Resolution](support_tree_collision_resolution.md). Cela permettra de réduire les décalages dans les positions de l'arbre en raison de l'évitement des collisions. Cela évite que la distance de surplomb ne devienne trop importante lorsque la distance de collision est ajustée.
+Il est préférable de combiner les grands angles de branches avec des valeurs faibles pour le paramètre [Résolution de collision du support arborescent](./support_tree_collision_resolution.md). Cela permettra de réduire les décalages dans les positions de l'arbre en raison de l'évitement des collisions. Cela évite que la distance de surplomb ne devienne trop importante lorsque la distance de collision est ajustée.
