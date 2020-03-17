@@ -29,7 +29,7 @@ Si votre impression souffre de déformation, la zone de contact entre l'impressi
 Ajustements divers
 ----
 Ces paramètres peuvent également être ajustés si les méthodes normales d'adhésion au lit ne sont pas suffisantes.
-* Augmenter la [Hauteur de la couche initiale](../résolution/ hauteur_de_la_couche_0.md). Cela offre un peu plus de marge d'erreur, si la plaque de construction n'est pas parfaitement de niveau. Cela augmente également la force avec laquelle le matériau est poussé hors de la buse et sur la plaque de montage.
+* Augmenter la [Hauteur de la couche initiale](../resolution/layer_height_0.md). Cela offre un peu plus de marge d'erreur, si la plaque de construction n'est pas parfaitement de niveau. Cela augmente également la force avec laquelle le matériau est poussé hors de la buse et sur la plaque de montage.
 * Augmenter la [Largeur de la ligne de la couche initiale](../resolution/initial_layer_line_width_factor.md). De même, cela pousse le matériau avec plus de force, en le collant bien à la plaque de montage.
 * L'augmentation de la [couche initiale de la température d'impression] (../material/material_print_temperature_layer_0.md) permet au matériau de s'écouler davantage sur la plaque de montage, ce qui augmente la surface de contact.
 * Comme pour l'augmentation de la température, vous pouvez également réduire la [vitesse du ventilateur de la couche initiale](../cooling/cool_fan_speed_0.md) pour garder le matériau fluide plus longtemps.
