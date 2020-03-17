@@ -1,4 +1,7 @@
-Ce paramètre détermine la largeur de la buse qui va osciller d'avant en arrière pendant l'impression de la paroi extérieure si [Fuzzy Skin](magic_fuzzy_skin_enabled.md) est activé.
+Épaisseur de la couche floue
+====
+
+Ce paramètre détermine la largeur de la buse qui va osciller d'avant en arrière pendant l'impression de la paroi extérieure si [Surfaces floues](./magic_fuzzy_skin_enabled.md) est activé.
 
 ![Peau floue normale](../../../articles/images/magic_fuzzy_skin_photo.jpg)
 ![10mm d'épaisseur](../../../articles/images/magic_fuzzy_skin_thickness.jpg)
