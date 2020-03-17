@@ -1,3 +1,6 @@
+Intervalle de distance minimale d'extrusion
+===
+
 La roue d'alimentation doit s'agripper au filament pour le déplacer correctement. La rétraction de la matière a souvent tendance à user le filament au point que la roue d'alimentation ne peut plus le saisir correctement. Ce réglage limite le nombre de rétractions dans une certaine longueur de filament afin d'empêcher ce broyage.
 
 Les rétractions sont limitées par la combinaison de [Nombre maximal de rétractions](./retraction_count_max.md) et de ce réglage. Le matériau ne peut pas être rétracté plus que la valeur du nombre maximal de rétractions dans une longueur de filament indiquée par ce réglage de la fenêtre de la distance minimale d'extrusion.
