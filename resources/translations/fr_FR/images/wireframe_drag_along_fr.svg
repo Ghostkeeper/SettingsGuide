@@ -13,5 +13,5 @@
 	<!-- Legend. -->
 	<polygon points="860,175 880,155 870,155 870,85 880,85 860,65 840,85 850,85 850,155 840,155" />
 	<polygon points="880,40 900,60 900,50 970,50 970,60 990,40 970,20 970,30 900,30 900,20" />
-	<text x="840" y="130" text-anchor="end" font-family="sans-serif" font-size="50px">Traînez</text>
+	<text x="840" y="130" text-anchor="end" font-family="sans-serif" font-size="50px">Décalage</text>
 </svg>
