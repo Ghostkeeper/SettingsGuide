@@ -59,6 +59,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self._markdown_per_folder = {}  # For each directory containing Markdown files, create one renderer that correctly dereferences images relatively.
 
 		self.articles = {}  # type: Dict[str, Dict[str, List[List[str]]]]  # All of the articles by key and language. Key: article ID, value: Dict with language as key and lists of items in each article as value.
+		self.articles_rich_text = {}  # type: Dict[str, Dict[str, str]]  # For each article and language, the complete Rich Text that should get shown in the tooltip.
 		self.load_definitions()
 		self.article_locations = self.find_articles()
 		self._selected_article_id = ""  # Which article is currently shown for the user. Empty string indicates it's the welcome screen.
@@ -155,6 +156,8 @@ class CuraSettingsGuide(Extension, QObject):
 		for article_id in self.article_locations:
 			for language in self.article_locations[article_id]:
 				self._getArticle(article_id, language)  # Load articles one by one.
+		if CuraApplication.getInstance().getPreferences().getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
+			self.set_tooltips()
 		Logger.log("i", "Finished loading Settings Guide articles.")
 
 	def load_definitions(self):
@@ -176,6 +179,23 @@ class CuraSettingsGuide(Extension, QObject):
 		self._container_stack = ContainerStack("settings_guide_stack")
 		self._container_stack.addContainer(definition_container)
 		ContainerRegistry.getInstance().addContainer(self._container_stack)
+
+	def set_tooltips(self):
+		"""
+		Set the tooltips to the contents of the articles in the current
+		language.
+		"""
+		language = CuraApplication.getInstance().getPreferences().getValue("settings_guide/language")
+		global_stack = CuraApplication.getInstance().getGlobalContainerStack()
+		if not global_stack:
+			return  # Fail.
+		for article_id in self.articles_rich_text:
+			if article_id in global_stack.getAllKeys():
+				definition = global_stack.definition.findDefinitions(key=article_id)[0]
+				if language in self.articles_rich_text[article_id]:
+					definition._SettingDefinition__property_values["description"] = self.articles_rich_text[article_id][language]
+				else:
+					definition._SettingDefinition__property_values["description"] = self.articles_rich_text[article_id]["en_US"]  # English should always exist if there is a translation.
 
 	def find_articles(self):
 		"""
@@ -284,7 +304,6 @@ class CuraSettingsGuide(Extension, QObject):
 			renderer = QtMarkdownRenderer.QtMarkdownRenderer(images_path)
 			self._markdown_per_folder[images_path] = mistune.Markdown(renderer=renderer)  # Renders the Markdown articles into the subset of HTML supported by Qt.
 
-		preferences = CuraApplication.getInstance().getPreferences()
 		find_images = re.compile(r"!\[(.*)\]\(([^\)]+)\)")
 		find_checkboxes = re.compile(r"\[ \]\s*([^\n]+)")
 		image_description = None
@@ -318,14 +337,9 @@ class CuraSettingsGuide(Extension, QObject):
 		if article_id not in self.articles:
 			self.articles[article_id] = {}
 		self.articles[article_id][language] = parts
-
-		if preferences.getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
-			# Load the article into the actual setting description as well.
-			global_stack = CuraApplication.getInstance().getGlobalContainerStack()
-			if global_stack and article_id in global_stack.getAllKeys():
-				complete_article = self._markdown_per_folder[images_path](markdown_str)
-				definition = global_stack.definition.findDefinitions(key=article_id)[0]
-				definition._SettingDefinition__property_values["description"] = complete_article
+		if article_id not in self.articles_rich_text:
+			self.articles_rich_text[article_id] = {}
+		self.articles_rich_text[article_id][language] = self._markdown_per_folder[images_path](markdown_str)
 
 		return self.articles[article_id][language]
 
@@ -419,5 +433,8 @@ class CuraSettingsGuide(Extension, QObject):
 		Changes the viewing language.
 		:param language_code: The new language code.
 		"""
-		CuraApplication.getInstance().getPreferences().setValue("settings_guide/language", language_code)
+		preferences = CuraApplication.getInstance().getPreferences()
+		preferences.setValue("settings_guide/language", language_code)
+		if preferences.getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
+			self.set_tooltips()
 		self.selectedArticleChanged.emit()
