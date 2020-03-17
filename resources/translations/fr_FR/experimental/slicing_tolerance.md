@@ -29,6 +29,6 @@ Pour obtenir la tolérance Exclusive, Cura calculera les sections transversales 
 
 Utilisation
 ----
-Ce paramètre porte le nom de son utilisation prévue plutôt que de son effet fonctionnel. Si vous avez plusieurs pièces qui doivent glisser les unes sur les autres, la forme théorique des couches peut physiquement empêcher un ajustement exact. Dans un tel cas, vous pouvez régler ce paramètre sur Exclusif afin de garantir que les couches restent dans les limites du volume original. À l'exception du gauchissement, de l'affaissement et d'autres effets de déformation similaires, cela garantirait que les pièces s'emboîtent les unes dans les autres et puissent glisser les unes sur les autres.
+Ce paramètre porte le nom de son utilisation prévue plutôt que de son effet fonctionnel. Si vous avez plusieurs pièces qui doivent glisser les unes sur les autres, la forme théorique des couches peut physiquement empêcher un ajustement exact. Dans un tel cas, vous pouvez régler ce paramètre sur Exclusif afin de garantir que les couches restent dans les limites du volume original. À l'exception du gauchissement, de l'affaissement et d'autres effets de déformation similaires, cela garantira que les pièces s'emboîtent les unes dans les autres et puissent glisser les unes sur les autres.
 
 En réalité, il y a toujours d'autres effets qui empêchent cela. Dans la pratique, ce réglage peut être utilisé pour obtenir une tolérance légèrement plus ou moins grande entre deux surfaces inclinées, comme on peut le voir sur les images ci-dessus.
