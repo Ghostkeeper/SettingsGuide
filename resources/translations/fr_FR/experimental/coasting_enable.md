@@ -1,3 +1,6 @@
+Activer la roue libre
+===
+
 Si ce réglage est activé, la buse arrêtera légèrement l'extrusion du matériau avant de refermer le contour d'une paroi. L'idée est que la chambre de la buse peut alors se vider sur le dernier morceau de ligne à cet endroit, ce qui réduit la pression sur la buse et permet de la bloquer par le début du contour. Cela permet de réduire la pression sur la buse et de la bloquer au début du contour.
 
 ![En vue par couches, la couture est facile à voir si le cabotage est activé, car il y a alors un mouvement de déplacement](../../../articles/images/coasting_enable.png)
