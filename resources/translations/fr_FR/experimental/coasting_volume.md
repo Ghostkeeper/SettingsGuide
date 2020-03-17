@@ -1,3 +1,6 @@
+Volume en roue libre
+===
+
 Ce paramètre détermine à quelle distance avant la fin du contour le chargeur cessera d'alimenter le matériau. La longueur de la côte est cependant configurée en volume de matériau. Elle est plus étroitement liée au volume à l'intérieur de la chambre de la buse.
 
 ![Accostage 0.2mm³ de matière](../../../articles/images/coasting_enable.png)
