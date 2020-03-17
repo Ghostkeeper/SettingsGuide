@@ -1,4 +1,7 @@
-Ce réglage indique l'angle de seuil après lequel un mur sera marqué comme "mur en surplomb". Ces murs en surplomb peuvent être imprimés à une vitesse différente en utilisant le paramètre [Overhanging Wall Speed](wall_overhang_speed_factor.md).
+Angle de parois en porte-à-faux
+===
+
+Ce réglage indique l'angle de seuil après lequel un mur sera marqué comme "mur en surplomb". Ces murs en surplomb peuvent être imprimés à une vitesse différente en utilisant le paramètre [Vitesse de paroi en porte-à-faux](./wall_overhang_speed_factor.md).
 
 Si ce paramètre est réglé sur 0°, tous les murs seront traités comme des murs en surplomb. Si ce paramètre est réglé sur 90°, aucun mur ne sera traité comme un mur en surplomb. Les murs qui reposent sur un support ne sont pas non plus traités comme des murs en surplomb.
 
