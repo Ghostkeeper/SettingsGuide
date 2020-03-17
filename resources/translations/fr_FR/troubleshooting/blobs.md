@@ -1,4 +1,4 @@
-Les Blobs
+Les gouttes (Blobs)
 ===
 
 Les blobs sont de petites gouttes sur le côté du modèle. Parfois, ce ne sont que des points. Parfois, ce sont des rayures. Ils constituent un défaut de surface visuel et peuvent augmenter la friction entre les surfaces qui doivent glisser les unes sur les autres dans un mécanisme.
@@ -9,14 +9,14 @@ Il y a plusieurs causes possibles pour les blobs. C'est l'un des défauts les pl
 
 La buse ralentit
 ----
-Si la buse se déplace plus lentement dans une certaine voie que dans d'autres, elle permettra d'y déposer plus de matière. Cette matière s'écoule vers l'extérieur de la surface de la paroi, en formant une goutte.
+Si la buse se déplace plus lentement dans un certain parcours que dans d'autres, elle y déposera alors plus de matière. Cette matière s'écoule vers l'extérieur de la surface de la paroi, en formant une goutte.
 
-L'alimentation en matière est probablement destinée à être réduite avec elle. Cependant, même si l'alimentateur se déplace plus lentement, il peut s'écouler quelques secondes avant que le débit sortant de l'ouverture de la buse ne soit réduit en conséquence. Pendant ce temps, une trop grande quantité de matière sera extrudée, ce qui donne des blobes.
+L'alimentation en matière est probablement destinée à être réduite avec elle. Cependant, même si l'extrudeur se déplace plus lentement, il peut s'écouler quelques secondes avant que le débit sortant de l'ouverture de la buse ne soit réduit en conséquence. Pendant ce temps, une trop grande quantité de matière sera extrudée, ce qui donne ces gouttes.
 
 Pour lutter contre ce phénomène, regardez les réglages suivants :
-* Égaliser la vitesse de la [paroi extérieure](../speed/speed_wall_0.md) de manière à ce qu'elle soit identique à celle de ce qui est imprimé avant elle (comme les [parois intérieures](../speed/speed_wall_x.md) ou [remplissage](../speed/speed_infill.md)). Il n'y aura donc pas de ralentissement.
-* Augmenter le [taux de secousse pendant la paroi extérieure](../speed/jerk_wall_0.md). Cela empêchera la buse de ralentir dans les coins.
-* Réduire la [résolution](../meshfix/meshfix_maximum_resolution.md) et augmenter la [déviation](../meshfix/meshfix_maximum_deviation.md) pour empêcher le contrôleur de mouvement de ralentir la buse afin de suivre les codes g qu'il doit traiter.
+* Égaliser la vitesse de la [paroi extérieure](../speed/speed_wall_0.md) de manière à ce qu'elle soit identique à celle de ce qui est imprimé avant elle (comme les [parois intérieures](../speed/speed_wall_x.md) ou le [remplissage](../speed/speed_infill.md)). Il n'y aura donc pas de ralentissement.
+* Augmenter le [taux de secousse pour la paroi extérieure](../speed/jerk_wall_0.md). Cela empêchera la buse de ralentir dans les coins.
+* Vous pouvez réduire la [résolution](../meshfix/meshfix_maximum_resolution.md) et augmenter la [déviation](../meshfix/meshfix_maximum_deviation.md) pour empêcher le contrôleur de ralentir la buse afin de suivre les Codes G qu'il doit traiter.
 * Désactivez le paramètre [Compenser les chevauchements des parois extérieures](../shell/travel_compensate_overlapping_walls_0_enabled.md). Ce paramètre permet de créer de nouvelles commandes de déplacement avec des vitesses d'avance différentes. La désactivation de cette fonction réduit le nombre d'ordres de déplacement dans le mur.
 
 La buse s'arrête
@@ -52,7 +52,6 @@ Si le filament a accumulé de l'humidité alors qu'il était encore sur la bobin
 
 Coutures
 ----
-Un joint sera créé à l'endroit où le périmètre de la paroi extérieure est entamé et fermé. Ce n'est pas ce que les gens appellent normalement une tache, bien qu'elle ait un aspect similaire. Voir l'article sur les [coutures](./seam.md) pour savoir comment réduire cet effet.
+Un joint sera créé à l'endroit où le périmètre de la paroi extérieure est démarré et fermé. Ce n'est pas ce que les gens appellent normalement une goutte, bien qu'elle ait un aspect similaire. Voir l'article sur les [coutures](./seam.md) pour savoir comment réduire cet effet.
 
-Si le paramètre [Z Seam Alignment](../shell/z_seam_type.md) est réglé sur "Random", la couture sera répartie autour du modèle, créant ainsi de petites coutures partout. Cela peut ressembler exactement à un blob, même si c'est en fait une couture. Modifiez le paramètre Alignement de la couture en Z pour masquer ces coutures.
-
+Si le paramètre [Alignement de la jointure en Z](../shell/z_seam_type.md) est réglé sur "Aléatoire", la couture sera répartie autour du modèle, créant ainsi de petites coutures partout. Cela peut ressembler exactement à un blob, même si c'est en fait une couture. Modifiez le paramètre [Alignement de la jointure en Z](../shell/z_seam_type.md) pour masquer ces coutures.
