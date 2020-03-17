@@ -1,4 +1,4 @@
-CONTRIBUTEURS
+Contributeurs
 ===
 
 Ce projet est maintenu par Ghostkeeper.
@@ -15,7 +15,7 @@ Articles
 * Ellecross: une grande partie du contenu de la v1.0.
 * Jeroen Stevens: Une grande partie du contenu de la v1.0.
 * ChrisTerBeke: article sur la hauteur de couche adaptative.
-* Laurent LALLIARD : Traduction française
+* Laurent Lalliard: Traduction française
 
 ![](../../../articles/images/created_by.jpg)
 ![](../images/contributeurs_fr.jpg)
