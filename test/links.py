@@ -21,12 +21,14 @@ class TestLinks(unittest.TestCase):
 		Get all article file paths.
 		:return: A sequence of all article file paths.
 		"""
-		for root, _, files in os.walk(os.path.join(os.path.dirname(__file__), "..", "resources", "articles")):
-			for filename in files:
-				_, extension = os.path.splitext(filename)
-				if extension != ".md":
-					continue  # Not an article. Ignore this.
-				yield os.path.join(root, filename)
+		article_directories = {"articles", "translations"}
+		for article_directory in article_directories:
+			for root, _, files in os.walk(os.path.join(os.path.dirname(__file__), "..", "resources", article_directory)):
+				for filename in files:
+					_, extension = os.path.splitext(filename)
+					if extension != ".md":
+						continue  # Not an article. Ignore this.
+					yield os.path.join(root, filename)
 
 	def test_images(self):
 		"""
