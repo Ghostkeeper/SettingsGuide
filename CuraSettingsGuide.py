@@ -293,7 +293,8 @@ class CuraSettingsGuide(Extension, QObject):
 			images_path = os.path.dirname(markdown_file)
 		except (OSError, KeyError):  # File doesn't exist or is otherwise not readable.
 			if self.definition_container and article_id in self.definition_container.getAllKeys():
-				markdown_str = "*" + self.definition_container.getProperty(article_id, "description") + "*"  # Use the setting description as fallback.
+				markdown_str = self.definition_container.getProperty(article_id, "label") + "\n====\n"
+				markdown_str += "*" + self.definition_container.getProperty(article_id, "description") + "*"  # Use the setting description as fallback.
 			else:
 				markdown_str = "There is no article on this topic."
 
