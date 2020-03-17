@@ -63,7 +63,7 @@ Gyroïde
 ----
 ![Gyroïde](../../../articles/images/support_pattern_gyroid.png)
 
-Le motif gyroscopique est ondulé, avec une courbe qui se déplace d'avant en arrière. La courbe varie d'une couche à l'autre.
+Le motif gyroïde est ondulé, avec une courbe qui fait faire des va et vient à la buse. L'angle de la courbe varie d'une couche à l'autre.
 * Modèle assez robuste, ce qui augmente la fiabilité.
 * L'air entre le support est un volume unique. Lors de l'impression avec des matériaux de support solubles, cela permet au solvant (eau, éthanol ou autre) de dépasser à l'intérieur de la structure de support, même s'il y a un rebord en dessous. Cela lui permet de dissoudre le support plus rapidement.
 * Supporte toutes les lignes du surplomb de manière égale, quelle que soit leur direction.
