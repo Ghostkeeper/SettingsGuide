@@ -1,3 +1,5 @@
+Support Infill Speed
+====
 This setting configures the speed at which the main support structures are printed. That is, all of the support aside from the roof and floor.
 
 ![Various structures printed at different speeds](../images/speed_difference.png)

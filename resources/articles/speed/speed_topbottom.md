@@ -1,3 +1,5 @@
+Top/Bottom Speed
+====
 The speed at which the top and bottom side of the model is printed can be configured separately from the normal print speed.
 
 ![Various structures printed at different speeds](../images/speed_difference.png)

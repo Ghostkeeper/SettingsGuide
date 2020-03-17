@@ -1,3 +1,5 @@
+Enable Bridge Settings
+====
 When your model has some overhang that is supported on both sides, Cura will detect this and modify the skin area that is overhanging in order to print better. If this setting is enabled, you can tune the detection of these bridging areas and the resulting behaviour so that it bridge better.
 
 ![When a bridge is detected, the skin lines are oriented to bridge the gap as best it can](../images/bridge_settings_enabled_default.png)

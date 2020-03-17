@@ -1,3 +1,5 @@
+Inner Wall Extruder
+====
 If your printer has multiple extruders, you can choose to print just the inner walls with a different extruder.
 
 ![The inner walls are printed in blue, but the rest in orange](../images/wall_x_extruder_nr.png)

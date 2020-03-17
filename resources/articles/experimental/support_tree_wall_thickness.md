@@ -1,3 +1,5 @@
+Tree Support Wall Thickness
+====
 This setting determines how thick the tree support's perimeter will be. For a thicker perimeter, more contours will be drawn in the shape of the tree.
 
 ![Using a wall thickness of 0.8mm results in two contours inside the tree support](../images/support_tree_wall_count.png)

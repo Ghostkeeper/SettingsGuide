@@ -1,3 +1,5 @@
+Break Retraction Speed
+====
 For some printers, when a material is retracted for a filament switch, the material needs to be broken off cleanly in order to move it through the feeder without tangling. This setting configures part of the procedure to break it cleanly.
 
 This setting adjusts the speed at which the material is retracted to finally break the filament off of the blob that inevitably remains in the nozzle. While the blob in the nozzle cannot be pulled out due to its molten state, the part that does get pulled out should not have a thin thread at its tip, because that could get caught stuck in the feeder. This final retraction breaks the filament, but hopefully it breaks cleanly thanks to the preceding two stages.

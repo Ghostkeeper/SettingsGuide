@@ -1,3 +1,5 @@
+Top/Bottom Thickness
+====
 With the Top/Bottom Thickness you can adjust how thick of a solid skin is created on the top and bottom sides of your print.
 
 ![Ordinary top/bottom thickness](../images/top_bottom_thickness_0.8.png)

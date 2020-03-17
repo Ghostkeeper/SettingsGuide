@@ -1,3 +1,5 @@
+Break Up Support In Chunks
+====
 If the zigzag [pattern](../support/support_pattern.md) is used for support, the support can be crumpled up as an easy way to remove the support. This becomes more difficult if the support is very wide. With this setting, the zigzag support is broken up into pieces that are easier to break off individually but are still wide enough to maintain their stability.
 
 ![Every 8 lines a connecting line is left out, breaking the support up in chunks](../images/support_skip_some_zags.png)

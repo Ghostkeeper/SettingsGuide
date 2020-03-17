@@ -1,3 +1,5 @@
+Top Skin Removal Width
+====
 Removes thin parts of the completely filled top layers, printing them with infill instead. This saves on printing time and material.
 
 With steep surfaces the top layers will often become very thin. They are not necessary, since the horizontal strength of the walls is more than enough if the surface is almost completely vertical.

@@ -1,3 +1,5 @@
+Wall Line Count
+====
 This setting determines how many contours will be drawn around the print on every layer.
 
 ![Two walls](../images/wall_thickness_0.8.png)

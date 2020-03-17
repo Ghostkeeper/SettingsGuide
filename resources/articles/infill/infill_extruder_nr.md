@@ -1,3 +1,5 @@
+Infill Extruder
+====
 This setting determines which extruder will be used to print the infill material. It is only available for printers with multiple extruders.
 
 ![The shell of the model will get printed with the silver material, but the infill gets printed with the blue material](../images/infill_extruder_nr.png)

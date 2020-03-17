@@ -1,3 +1,5 @@
+Raft Top Line Width
+====
 This setting indicates how wide the lines of the top layers of the raft will be.
 
 ![Dimensions related to the raft](../images/raft_dimensions.svg)

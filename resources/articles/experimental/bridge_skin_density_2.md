@@ -1,3 +1,5 @@
+Bridge Second Skin Density
+====
 This setting controls the density of the skin in the second layer above the bridge. At 100% density, the lines are placed directly adjacent. At lower densities, the lines are spaced further apart.
 
 When spacing the skin lines directly adjacent to each other, they will stick to one another. This helps in making the model water tight and will look smoother on the underside of the print. It will also allow subsequent lines to lean on the previous lines a bit, which helps to prevent sagging.

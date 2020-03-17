@@ -1,3 +1,5 @@
+Wipe Retraction Enable
+====
 If this setting is enabled, the material will be retracted throughout the wiping procedure. This can be configured separately from the [normal retractions](../travel/retraction_enable.md).
 
 The wiping procedure makes the nozzle go all the way to the side of the printer, move back and forth there, and then move all the way back. This is essentially a very long travel move. Since this travel move is longer than the average travel moves throughout the print, you may want to have the material retracted during this procedure even if retractions are normally disabled.

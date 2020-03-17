@@ -1,3 +1,5 @@
+Blobs
+====
 Blobs are small specks on the side of the model. Sometimes they are just dots. Sometimes they are stripes. They are a visual surface defect and may increase friction between surfaces that need to slide over each other in a mechanism.
 
 ![Some blobs on this surface](../images/blobs.jpg)

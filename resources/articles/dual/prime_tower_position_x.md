@@ -1,3 +1,5 @@
+Prime Tower X Position
+====
 This setting allows you to reposition the prime tower. It indicates the X coordinate of one corner of the prime tower.
 
 ![The X coordinate of the prime tower](../images/prime_tower.svg)

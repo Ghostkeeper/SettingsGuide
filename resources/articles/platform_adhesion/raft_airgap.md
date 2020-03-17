@@ -1,3 +1,5 @@
+Raft Air Gap
+====
 To allow the raft to be broken off from the actual print, a gap is kept between the model and the raft. This makes the printer put the object down lightly on top of the raft.
 
 ![Dimensions related to the raft](../images/raft_dimensions.svg)

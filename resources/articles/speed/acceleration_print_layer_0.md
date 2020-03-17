@@ -1,3 +1,5 @@
+Initial Layer Print Acceleration
+====
 This setting controls how fast the nozzle accelerates into different directions while extruding in the first layer. The acceleration during the first layer can be set to a different rate than the rest of the print and the acceleration during the extrusion moves can be set to a different rate than the acceleration during travel moves.
 
 While the walls, platform adhesion, bottoms, support and infill may all have different rates of acceleration, during the first layer they will be made the same. The initial layer acceleration rate will override the individual structures' acceleration rates. The [Skirt/Brim Acceleration](acceleration_skirt_brim.md) setting overrides the initial layer print acceleration again.

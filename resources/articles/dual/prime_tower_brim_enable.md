@@ -1,3 +1,5 @@
+Prime Tower Brim
+====
 The prime tower brim is an additional brim, similar to the brim option in the [Build Plate Adhesion Type](../platform_adhesion/adhesion_type.md). This brim can be enabled and disabled separately from the ordinary adhesion. When activated, an additional brim will be printed around the prime tower. This brim is a flat disc around the prime tower of just one layer that improves the adhesion of the prime tower to the build plate.
 
 ![The adhesion is set to skirt, but there is still a brim around the prime tower](../images/prime_tower_brim_enable.png)

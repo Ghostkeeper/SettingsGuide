@@ -1,3 +1,5 @@
+Tree Support Branch Distance
+====
 This setting determines the distance between two adjacent branches where the branches touch the build plate.
 
 ![Branches placed 1.4mm apart](../images/support_tree_branch_distance_1_4.png)

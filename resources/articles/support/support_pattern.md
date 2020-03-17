@@ -1,3 +1,5 @@
+Support Pattern
+====
 With this setting you can choose the pattern that will be used to fill the volume of the support structure. Different patterns have different strengths and weaknesses.
 
 Lines

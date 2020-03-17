@@ -1,3 +1,5 @@
+Minimum Support X/Y Distance
+====
 If the Z distance of support is preferred over the X/Y distance, the horizontal distance between the support and the model is allowed to become smaller than the [Support X/Y Distance](support_xy_distance.md) setting to satisfy the required [Support Z Distance](support_z_distance.md).
 
 This setting defines a minimum X/Y distance that must be held regardless of the Z distance. This minimum X/Y distance overrides the Z distance again.

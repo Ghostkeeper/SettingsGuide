@@ -1,3 +1,5 @@
+Minimum Support Area
+====
 This setting imposes a minimum allowed size for pieces of support. If a piece of support has less area than the value of this setting on a certain layer, the support is left out there.
 
 ![No filtering on area (minimum area is 0)](../images/minimum_support_area_0.png)

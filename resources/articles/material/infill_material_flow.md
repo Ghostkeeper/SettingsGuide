@@ -1,3 +1,5 @@
+Infill Flow
+====
 This setting adjusts the flow rate for the infill only. The flow rate for the infill can be adjusted separately from the flow rate of the rest of the print.
 
 Adjusting the flow rate during the infill is a stop gap method to fix problems with extrusion rate or strength. The same effect can be achieved by adjusting the [distance between lines](../infill/infill_line_distance.md) and [line width](../resolution/infill_line_width.md) of the infill, but this setting may be more intuitive.

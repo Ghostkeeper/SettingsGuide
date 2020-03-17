@@ -1,3 +1,5 @@
+Adaptive Layers Maximum Variation
+====
 With this setting, you can limit the range from which the Adaptive Layers is allowed to select a layer thickness. The layer height is not allowed to deviate more than this variation from the normal [Layer Height](../resolution/layer_height.md).
 
 For example, with a normal layer height of 0.15mm and the variation set to 0.1mm, Adaptive Layers may produce layers with a thickness between 0.05mm and 0.25mm.

@@ -1,3 +1,5 @@
+Minimum Extrusion Distance Window
+====
 The feeder wheel needs to grip into the filament in order to move it properly. Retracting the material often tends to cause the feeder wheel to wear down the filament to the point where it can no longer grip the filament properly. This setting limits the number of retractions within a certain length of filament in order to prevent this grinding.
 
 The retractions are limited by the combination of [Maximum Retraction Count](retraction_count_max.md) and this setting. The material is not allowed to be retracted more than the value of the Maximum Retraction Count within a length of filament indicated by this Minimum Extrusion Distance Window setting.

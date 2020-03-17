@@ -1,3 +1,5 @@
+Enable Support Brim
+====
 When the support brim is activated, an additional brim will be drawn inside the support area on the first layer.
 
 ![The support brim](../images/support_brim_4mm.png)

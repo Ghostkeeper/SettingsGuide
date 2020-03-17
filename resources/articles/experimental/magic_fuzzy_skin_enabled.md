@@ -1,3 +1,5 @@
+Fuzzy Skin
+====
 When printing with fuzzy skin, the surface on the sides of the print is made rough on purpose. This gives the print a texture of sorts.
 
 ![The walls look wobbly in Cura's layer view](../images/magic_fuzzy_skin_enabled.png)

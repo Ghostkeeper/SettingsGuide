@@ -1,3 +1,5 @@
+Ooze Shield Distance
+====
 This setting determines how much spacing the ooze shield must keep (at minimum) from your object. Some small distance must be kept to prevent the ooze shield or the blobs on it from sticking to your model.
 
 ![A horizontal distance is kept between the shield and the model](../images/ooze_shield.svg)

@@ -1,3 +1,5 @@
+Number of Slower Layers
+====
 The initial layer is not the only layer that gets printed slower. This setting configures how many layers get printed slower. Over the course of these layers, the printing speed will gradually increase to the normal printing speed.
 
 ![The printing speed gradually increases to 50mm/s](../images/speed_slowdown_layers.svg)

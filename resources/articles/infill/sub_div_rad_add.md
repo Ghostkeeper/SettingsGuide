@@ -1,3 +1,5 @@
+Cubic Subdivision Shell
+====
 This setting makes the Cubic Subdivision infill pattern start reducing infill a bit more towards the inside, to improve the strength of the print.
 
 ![Cubic Subdivision with no additional shell](../images/sub_div_rad_add_small.png)

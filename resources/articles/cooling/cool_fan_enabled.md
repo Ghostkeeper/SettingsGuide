@@ -1,3 +1,5 @@
+Enable Print Cooling
+====
 This setting will enable or disable the fans on the print head during printing. The fans are meant to cool down the material while it is printing, so that it solidifies faster.
 
 Materials with a low glass transition temperature range, such as PLA, will need to be cooled down while printing. Otherwise they will start to sag from their heat, which causes deformities and may even fail the print completely. Also, points where the material is put down in mid-air will sag even further, the longer it takes to solidify the material.

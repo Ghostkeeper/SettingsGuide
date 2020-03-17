@@ -1,3 +1,5 @@
+Top/Bottom Line Directions
+====
 This setting allows you to change the direction in which the lines of the top and bottom are printed. You can specify a comma-separated list of angles (in degrees), and the lines will alternate directions per layer.
 
 ![Lines pattern with 0°, 60° and 120° angles alternating](../images/skin_angles.gif)

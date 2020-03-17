@@ -1,3 +1,5 @@
+Extra Skin Wall Count
+====
 When printing the top and bottom with the lines pattern, the outer rim of the skin areas can still be printed with a few concentric lines. This is different than printing an extra wall, because the extra skin wall also gets put between the skin and the infill.
 
 ![No extra skin outlines](../images/skin_outline_count_0.png)

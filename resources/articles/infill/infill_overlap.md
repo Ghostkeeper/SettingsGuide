@@ -1,3 +1,5 @@
+Infill Overlap Percentage
+====
 If the infill overlaps a bit with the walls, it will adhere better to the walls, causing the part to be much stronger. This setting controls how much the infill overlaps the walls, as a percentage of the line width of the infill.
 
 ![A visualisation of the infill overlap and wipe distance](../images/infill_overlap.svg)

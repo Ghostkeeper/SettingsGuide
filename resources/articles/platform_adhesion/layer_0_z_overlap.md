@@ -1,3 +1,5 @@
+Initial Layer Z Overlap
+====
 This setting is only available when printing with a raft. It lowers all layers of the model, except the initial layer. This compresses the first layer harder onto the raft.
 
 ![Dimensions that make up a raft](../images/raft_dimensions.svg)

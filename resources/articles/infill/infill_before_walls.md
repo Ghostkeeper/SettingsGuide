@@ -1,3 +1,5 @@
+Infill Before Walls
+====
 This affects the order in which things are printed. With this setting enabled, the infill of a part will be printed before the walls of that part on that layer are printed.
 
 ![Setting is disabled, so walls are printed first](../images/infill_before_walls_disabled.gif)

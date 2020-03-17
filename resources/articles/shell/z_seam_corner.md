@@ -1,3 +1,5 @@
+Seam Corner Preference
+====
 With this setting you can control how the seams will be positioned relative to corners in your model.
 
 Generally there are two options for where the seam can be placed: hidden in an inside corner, or exposed in an outside corner. Hiding the seam in an inside corner is generally preferable since the seam will hardly be visible there. But it is also possible to put it on an outside corner so that you can cut off the seam with a knife or sand it smooth with some sand paper, if some post-processing can be done on the part.

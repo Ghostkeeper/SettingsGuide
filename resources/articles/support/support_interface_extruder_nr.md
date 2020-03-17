@@ -1,3 +1,5 @@
+Support Interface Extruder
+====
 If your printer has multiple extruders, the interface layers where the support touches the model can be printed with a different extruder than the main body of the support. This setting allows you to choose which extruder is used for the support interface.
 
 ![The support interface is printed in organe, but the main body in white](../images/support_interface_extruder_nr.png)

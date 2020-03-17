@@ -1,3 +1,5 @@
+Fan Speed
+====
 The speed at which the fans on the print head will spin throughout most of the print. This is a percentage of the maximum capabilities of the fans.
 
 ![Which fan speed is used where](../images/cool_fan_speed.svg)

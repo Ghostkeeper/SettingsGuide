@@ -1,3 +1,5 @@
+Gradual Infill Step Height
+====
 When using gradual infill, the density of the infill will be reduced from top to bottom in several steps. At each step, the infill density is halved. This setting indicates the height of these steps, the distance between two places where infill is halved.
 
 ![Gradual Infill Step Height of 1.5mm](../images/gradual_infill_step_height_small.png)

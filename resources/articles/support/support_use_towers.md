@@ -1,3 +1,5 @@
+Use Towers
+====
 Small areas of overhanging surfaces produce small pillars of support. These pillars are prone to topple over. Instead of those small pillars, Cura can generate specialised towers that are wider and more sturdy, to prevent the support from falling over.
 
 ![A tower supports the sword which would otherwise have a very small overhanging area](../images/support_use_towers.svg)

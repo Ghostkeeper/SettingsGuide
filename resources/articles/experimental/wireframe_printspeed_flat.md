@@ -1,3 +1,5 @@
+WP Horizontal Printing Speed
+====
 This setting specifies how fast the nozzle will move horizontally while printing the horizontal rings of the wire frame. The speed of the horizontal lines can be configured separately from the rest of the wire printing speed.
 
 ![Where the different Wire Printing speeds apply](../images/wireframe_printspeed.svg)

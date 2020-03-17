@@ -1,3 +1,5 @@
+WP Flat Delay
+====
 While printing the horizontal rings of the wire frame, the nozzle will stand still for a fraction of a second at each line segment. This setting configures the duration of that pause. The pause is located exactly where the horizontal ring connects to the saw-tooth pattern beneath it.
 
 ![The locations where the nozzle will pause](../images/wireframe_flat_delay.svg)

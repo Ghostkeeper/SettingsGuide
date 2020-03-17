@@ -1,3 +1,5 @@
+Enable Prime Tower
+====
 This prints a tower on your build plate with a mix of materials. The tower is meant to be thrown away, but it serves to prime the material after each extruder switch.
 
 ![How a prime tower looks, and the dimensions of it](../images/prime_tower.svg)

@@ -1,3 +1,5 @@
+Z Seam Position
+====
 If the location of the seam is set to "User Specified" in the [Z Seam Alignment](z_seam_type.md) setting, the seam will be placed in the direction specified by this setting.
 
 ![The seam is located on the left side](../images/z_seam_x_left.png)

@@ -1,3 +1,5 @@
+Ironing Pattern
+====
 Ironing covers the top surface with a path pattern. This setting determines which pattern is used to iron the top surface.
 
 The goal of the pattern is to create a smooth, continuous surface. If there is an interruption in the pattern, this will create a visible border on the top surface. There are two patterns available.

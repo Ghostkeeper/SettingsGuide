@@ -1,3 +1,5 @@
+Skin Overlap
+====
 This setting makes the skin overlap a bit with the adjacent structures. This makes the skin adhere better to those structures.
 
 ![No overlap](../images/skin_overlap_none.png)

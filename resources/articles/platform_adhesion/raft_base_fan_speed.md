@@ -1,3 +1,5 @@
+Raft Base Fan Speed
+====
 This setting configures the fan speed while printing the base layer of the raft. The fan speed while printing the base layer can be configured separately from the middle and top layers.
 
 ![Where the base layer is located in the raft](../images/raft_dimensions_simplified.svg)

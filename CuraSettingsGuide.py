@@ -65,7 +65,6 @@ class CuraSettingsGuide(Extension, QObject):
 
 		# Add context menu item to the settings list to open the guide for that setting.
 		application = CuraApplication.getInstance()
-		self._selected_language = application.getPreferences().getValue("general/language")
 		application.getCuraAPI().interface.settings.addContextMenuItem({
 			"name": "Settings Guide",
 			"icon_name": "help-contents",
@@ -73,6 +72,7 @@ class CuraSettingsGuide(Extension, QObject):
 			"menu_item": MenuItemHandler.MenuItemHandler(self)
 		})
 
+		application.getPreferences().addPreference("settings_guide/language", "cura_default")
 		application.getPreferences().addPreference("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29", False)
 
 		self.adjust_theme()
@@ -395,4 +395,28 @@ class CuraSettingsGuide(Extension, QObject):
 		items, some of which are text and some of which are image lists.
 		:return: The the currently selected article.
 		"""
-		return self._getArticle(self._selected_article_id, self._selected_language)
+		preferences = CuraApplication.getInstance().getPreferences()
+		language = preferences.getValue("settings_guide/language")
+		if language == "cura_default":
+			language = preferences.getValue("general/language")
+		return self._getArticle(self._selected_article_id, language)
+
+	@pyqtSlot(str, result="QVariantList")
+	def language_list(self, article_key: str) -> List[str]:
+		"""
+		Gets a list of available languages for a certain article.
+		:param article_key: The article ID to get the languages for.
+		:return: A list of language codes (e.g. [nl_NL, en_US]).
+		"""
+		if article_key not in self.article_locations:
+			return []  # We have no articles about this setting at all.
+		return list(self.article_locations[article_key].keys())
+
+	@pyqtSlot(str)
+	def set_language(self, language_code: str) -> None:
+		"""
+		Changes the viewing language.
+		:param language_code: The new language code.
+		"""
+		CuraApplication.getInstance().getPreferences().setValue("settings_guide/language", language_code)
+		self.selectedArticleChanged.emit()

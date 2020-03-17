@@ -1,3 +1,5 @@
+WP Fall Down
+====
 While printing the wire frame, the material is expected to sag due to latent heat before it has the time to solidify. This would make the saw-tooth pattern too short. Whereas the horizontal rings are able to bridge due to the continuous horizontal motion, the saw-tooth pattern cannot. This setting compensates for the short stature of the saw-tooth pattern, making the pattern slightly taller so that the next horizontal ring will rest properly on it.
 
 ![How the height of the saw-tooth pattern is compensated for](../images/wireframe_fall_down.svg)

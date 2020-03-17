@@ -1,3 +1,5 @@
+Z Hop Height
+====
 If a Z hop is performed, this setting determines how high the nozzle will move up before travelling to the destination.
 
 ![A Z hop being performed with a certain height](../images/retraction_hop_enabled.svg)

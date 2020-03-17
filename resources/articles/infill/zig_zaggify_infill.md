@@ -1,3 +1,5 @@
+Connect Infill Lines
+====
 This setting connects the endpoints of the infill pattern, where the infill meets the inner wall or skin, using a line that follows the edge of the infill area.
 
 ![No connected infill lines](../images/zig_zaggify_infill_disabled.png)

@@ -1,3 +1,5 @@
+Z Hop After Extruder Switch
+====
 This setting, if enabled, will make the nozzle move up slightly with a Z hop during the switching of extruders.
 
 Switching extruders brings in a nozzle that has had some extra time to ooze, so you may decide to give this a bit of a higher Z hop than the normal Z hops during the print.

@@ -1,3 +1,5 @@
+Cross Fill Density Image for Support
+====
 In this setting, you can provide an image that specifies the density in various places across the support. The support density will vary in certain places depending on the brightness of the image. This only works for the [Cross pattern](../support/support_pattern.md), since that pattern is able to adjust its density without chopping up lines, which would result in interrupted flow and reduced strength.
 
 ![The support density is greater at the sides](../images/cross_support_density_image.png)

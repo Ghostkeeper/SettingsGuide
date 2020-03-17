@@ -1,3 +1,5 @@
+Skirt Line Count
+====
 This setting configures the number of contours to draw around the print, for the skirt.
 
 One of the purposes of the skirt is to prime the nozzle, to get the material flowing properly. With very small models, a single line is not enough, so you can configure the skin to draw multiple lines.

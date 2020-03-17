@@ -1,3 +1,5 @@
+Overextrusion
+====
 Overextrusion is a term used when the printer extrudes too much material in one place. This causes the material to flow over to the sides or upwards, which makes the surface very rough and irregular. It can also cause [stringing](stringing.md) and lots of [blobs](blobs.md).
 
 ![Massive overextrusion occurred in this print](../images/overextrusion.jpg)

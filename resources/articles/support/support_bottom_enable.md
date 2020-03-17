@@ -1,3 +1,5 @@
+Enable Support Floor
+====
 The support floor is an intermediary structure between the support and the model where the support rests on the model. It can be used to provide a more stable base for the support or to make the support easier to remove from the print, leaving fewer scars.
 
 ![The support floor is coloured in a darker shade of blue](../images/support_bottom_enable.png)

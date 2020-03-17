@@ -108,15 +108,6 @@ Window {
 				width: article_scroll.width - UM.Theme.getSize("wide_margin").width * 2
 				spacing: UM.Theme.getSize("wide_margin").height
 
-				Text {
-					text: selectedArticleName.properties.label ? "<h1>" + selectedArticleName.properties.label + "</h1>" : ""
-					width: parent.width
-					wrapMode: Text.Wrap
-					renderType: Text.NativeRendering
-					font: UM.Theme.getFont("medium")
-					color: UM.Theme.getColor("text")
-				}
-
 				Repeater {
 					model: manager.selectedArticle
 					delegate: Component {
@@ -144,6 +135,20 @@ Window {
 					height: UM.Theme.getSize("wide_margin").height
 				}
 			}
+		}
+
+		TranslationButton {
+			anchors {
+				right: rightSideItem.left
+				rightMargin: UM.Theme.getSize("default_margin").width
+				top: parent.top
+				topMargin: UM.Theme.getSize("default_margin").top
+			}
+
+			width: height
+			height: 35 * screenScaleFactor
+
+			article_id: manager.selectedArticleId
 		}
 
 		//Zoomed in version of an image, shown only when you click an image.
@@ -207,12 +212,5 @@ Window {
 				}
 			}
 		}
-	}
-
-	UM.SettingPropertyProvider {
-		id: selectedArticleName
-		containerStack: manager.containerStack
-		key: manager.selectedArticleId
-		watchedProperties: ["label"]
 	}
 }

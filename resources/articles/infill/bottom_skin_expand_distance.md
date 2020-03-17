@@ -1,3 +1,5 @@
+Bottom Skin Expand Distance
+====
 Make the solid layers on the bottom of your print wider or thinner in a horizontal direction. Normally the solid layers are only generated above parts where there is air beneath them, but with this setting you can expand it horizontally a bit further, improving strength by making the skin attach better to adjacent walls and closing gaps in the skin.
 
 ![How skins (the yellow parts) normally look](../images/expand_skins_expand_distance_original.png)

@@ -1,3 +1,5 @@
+Raft Top Layers
+====
 This is the number of layers in the top portion of the raft. There will always be one base layer and one middle layer, but there may be any number of top layers. These top layers are normally very dense, as to produce a smooth surface to print the model on.
 
 ![Dimensions related to the raft](../images/raft_dimensions.svg)

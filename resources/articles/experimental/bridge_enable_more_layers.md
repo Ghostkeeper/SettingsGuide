@@ -1,3 +1,5 @@
+Bridge Has Multiple Layers
+====
 If this setting is enabled, the skin in higher layers above the bridge will also be adjusted. You can then carefully tune the flow rate, speed, density and fan speed of the second and third layer above the bridge.
 
 The first layer that crosses the bridge is by far the most influential in how the bridge is going to look. If there is any sagging in that layer, there will not be anything to hold it up. With the second and third layers, there will be material beneath it that can hold (some of) the weight of the layer on top. Yet still, adjusting the layers on top can still have some positive effects.

@@ -1,3 +1,5 @@
+Support Roof Line Distance
+====
 This setting configures the distance between any two adjacent lines in the support roof pattern, where the model rests on the support.
 
 Reducing the distance between the support roof lines allows you to achieve a nice surface finish at the overhangs, just as if the entire support was printed with a high density, without needing all that much extra time and material. The distance that the model has to bridge will be reduced.

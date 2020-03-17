@@ -1,3 +1,5 @@
+Relative Extrusion
+====
 Cura writes instructions for the printer to print your object in g-code. These instructions move the print head to certain positions and the engages the feeder. Cura normally records both the coordinates for the print head to move to and the rotation of the feeder as absolute coordinates. If this setting is enabled however, the coordinates for the feeder will be recorded relatively.
 
 If this is disabled (i.e. absolute extrusion) the position of the filament at the start of the print is held as the zero coordinate. The position of the filament will increase throughout the file as more material gets extruded and the filament needs to move further and further from the starting point at the beginning of the print.

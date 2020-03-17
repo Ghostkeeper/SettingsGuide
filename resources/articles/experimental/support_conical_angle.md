@@ -1,3 +1,5 @@
+Conical Support Angle
+====
 This setting determines the angle of the slope at which the conical support gets printed.
 
 ![An angle of 30 degrees](../images/support_conical_enabled.png)

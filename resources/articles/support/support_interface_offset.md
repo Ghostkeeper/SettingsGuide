@@ -1,3 +1,5 @@
+Support Interface Horizontal Expansion
+====
 This setting causes the support interface to be expanded in all directions horizontally into the rest of the support.
 
 ![The support interface is expanded into the support](../images/support_interface_offset.png)

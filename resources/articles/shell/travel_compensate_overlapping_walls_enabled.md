@@ -1,3 +1,5 @@
+Compensate Wall Overlaps
+====
 When printing thin parts, opposite walls may come close enough together that they overlap. When printing both walls with their normal line width they would overextrude. This setting prevents that overextrusion by reducing the width of one of the lines, preventing this overextrusion and achieving a better dimensional accuracy.
 
 ![Where the line width gets reduced](../images/travel_compensate_overlapping_walls_enabled_schematic.svg)

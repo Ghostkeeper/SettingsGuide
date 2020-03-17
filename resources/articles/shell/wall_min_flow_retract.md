@@ -1,3 +1,5 @@
+Prefer Retract
+====
 Compensating for overlaps in wall lines will reduce the flow rate of some of the walls. If this flow rate gets below the value of the [Minimum Wall Flow](wall_min_flow.md) setting, a travel move is made instead of the wall line.
 
 If this setting is enabled, the filament will be retracted during that travel move.

@@ -1,3 +1,5 @@
+Fuzzy Skin Thickness
+====
 This setting determines how wide the nozzle will jitter back and forth while printing the outer wall if [Fuzzy Skin](magic_fuzzy_skin_enabled.md) is enabled.
 
 ![Normal fuzziness](../images/magic_fuzzy_skin_photo.jpg)

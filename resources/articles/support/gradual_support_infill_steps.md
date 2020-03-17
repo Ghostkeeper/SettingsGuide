@@ -1,3 +1,5 @@
+Gradual Support Infill Steps
+====
 Gradual support reduces the amount of support material used, by reducing the support density in the lower layers. This saves on printing time and material, while not reducing the overhang quality much. The primary purpose of support is to support overhanging areas. This feature focuses the support to that purpose only.
 
 This setting indicates in how many steps the support density gets reduced. At every step, the support's density is halved. For example, starting at a density of 20% and two gradual support steps, the support density of the lower parts will be 10% and 5% respectively.

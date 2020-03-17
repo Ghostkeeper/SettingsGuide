@@ -1,3 +1,5 @@
+Topography
+====
 The "topography" effect is when a sloped top or bottom side is printed with a small amount of layers, such that the boundaries between layers are spaced far enough apart that they become easy to see. It is named after [topographic maps](https://en.wikipedia.org/wiki/Topographic_maps) where the elevation differences are typically indicated with contour lines.
 
 ![You can see the edges of the layers clearly](../images/topography.jpg)

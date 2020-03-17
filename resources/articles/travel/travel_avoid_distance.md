@@ -1,3 +1,5 @@
+Travel Avoid Distance
+====
 When [avoiding collisions with other objects](travel_avoid_other_parts.md), this setting defines how much clearance the nozzle keeps to the other objects that it needs to avoid.
 
 Keep in mind that this defines the distance between the other objects and the centreline of the travel move. The travel move has no thickness. It's advisable to give a value to this setting that is at least big enough so that the nozzle tip doesn't hit the other parts.

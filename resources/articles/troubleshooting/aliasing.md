@@ -1,3 +1,5 @@
+Aliasing
+====
 Stepper motors rotate in discrete steps. Their ability to rest in a position between those steps is limited. The step size of the motors serves as a limit to the resolution the printer can achieve. When printing walls that are almost, but not quite, aligned to the X or Y axis, this resolution sometimes shows as a pattern of lines.
 
 ![The aliasing pattern showing on the sides of this object](../images/aliasing.jpg)

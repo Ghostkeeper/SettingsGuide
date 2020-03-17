@@ -1,3 +1,5 @@
+Conical Support Minimum Width
+====
 If conical support is enabled and set to shrink the support structure, this setting determines the minimum width that the conical support will shrink the support to. The support will not get any thinner unless the overhang area that needs supporting is already thinner.
 
 ![A minimum width of 5mm](../images/support_conical_enabled.png)

@@ -1,3 +1,5 @@
+Outer Wall Jerk
+====
 This setting determines the speed at which the nozzle can go through corners while printing the outer wall. This can be configured separately from the inner walls.
 
 During the printing of the outer walls, the printer is very sensitive to vibrations. If the print head vibrates in relation to the printed object, this will be visible immediately in the form of ringing in the final print. It's useful to print the outer walls at a lower jerk rate than the inner walls for this reason.

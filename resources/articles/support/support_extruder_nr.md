@@ -1,3 +1,5 @@
+Support Extruder
+====
 If your printer has multiple extruders, this setting allows you to choose which of these extruders is used to print the support structure with.
 
 ![The support is printed in a white material, while the model is printed in blue](../images/support_extruder_nr.png)

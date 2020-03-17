@@ -1,3 +1,5 @@
+Brim Distance
+====
 This setting causes a gap to appear between the model and the brim. The brim lines are no longer securely adjacent to the model.
 
 ![The brim keeps a certain distance away from the model](../images/brim_gap.png)

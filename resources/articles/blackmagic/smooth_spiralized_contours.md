@@ -1,3 +1,5 @@
+Smooth Spiralized Contours
+====
 If [Spiralize](magic_spiralize.md) is enabled, this setting enables or disables the most distinguishing feature of Spiralize mode: Instead of printing each layer one after the other at intervals of height, the height is gradually increased over the course of the layer.
 
 Since the Spiralize mode causes only the walls to be printed for most of the layers with a single contour, this single contour will take the form of a spiral, lending the name to the Spiralize feature. The first and last layers of the print get their flow rate gradually reduced in order to prevent overextrusion and achieve the correct height.

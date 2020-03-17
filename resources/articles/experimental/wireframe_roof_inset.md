@@ -1,3 +1,5 @@
+WP Roof Inset Distance
+====
 Where the surface of the model is horizontal, such as the top side of the model, a series of concentric rings will be printed and connected with a saw-tooth pattern. This setting determines the distance between these concentric rings.
 
 ![Top-side view of the wire frame, with the inset marked](../images/wireframe_roof_inset.svg)

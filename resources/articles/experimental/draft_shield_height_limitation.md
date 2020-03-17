@@ -1,3 +1,5 @@
+Draft Shield Limitation
+====
 The draft shield can be printed either towards the full height of the model or only up to a specific height. This setting allows you to choose how high the draft shield goes.
 
 ![The draft shield is equally high as the model](../images/draft_shield_enabled.png)

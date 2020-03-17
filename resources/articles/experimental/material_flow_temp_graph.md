@@ -1,3 +1,5 @@
+Flow Temperature Graph
+====
 When printing faster, it's best to print at a slightly higher temperature. This makes the thermoplastic more fluid, allowing it to flow more quickly out of the nozzle opening. When [Auto Temperature](material_flow_dependent_temperature.md) is enabled, this setting specifies for each flow rate at which temperature the material should be printed. The flow rate is then averaged for each layer to determine a temperature for that layer.
 
 The flow rate is calculated in cubic millimetres per second, averaged for an entire layer. The temperature is in degrees Celsius. The value of this setting must be a comma-separated list of coordinates. Each coordinate is of the form `[<flow>, <temperature>]`.

@@ -1,3 +1,5 @@
+Brim Width
+====
 This setting adjusts the width of the brim in millimeters.
 
 ![The dimensions of the brim](../images/brim_width.svg)

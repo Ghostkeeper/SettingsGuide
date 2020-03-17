@@ -1,3 +1,5 @@
+Brim Line Count
+====
 Controls how many perimeters are being drawn around the base of your print.
 
 ![This brim has 8 lines.](../images/brim_width.svg)

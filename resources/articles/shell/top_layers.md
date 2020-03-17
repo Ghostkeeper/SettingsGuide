@@ -1,3 +1,5 @@
+Top Layers
+====
 This setting configures how many solid layers are printed at the top side of the print. These solid layers are printed instead of the infill. They are intended to close the top side.
 
 ![12 top layers](../images/top_bottom_thickness_0.8.png)

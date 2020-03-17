@@ -1,3 +1,5 @@
+Enable Draft Shield
+====
 When this setting is enabled, the printer will construct a shell around your print that protects the print against air currents from the environment.
 
 ![A draft shield is printed around the model](../images/draft_shield_enabled.png)

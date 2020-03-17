@@ -1,3 +1,5 @@
+Z Seam Alignment
+====
 This setting allows you to choose where the seam of each contour is placed. Several options are available that give great control over where the seam gets placed to minimise its impact or to allow you to remove the seam more easily in post-processing.
 
 The seam is where the contour starts and ends printing. Even if the path of the nozzle is a closed circle, a seam is still left where the extrusion starts and ends because the printing process is never completely accurate. With this setting the visibility of the seam can be minimised by hiding it somewhere or spreading it around.

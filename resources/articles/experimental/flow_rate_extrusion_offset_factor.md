@@ -1,3 +1,5 @@
+Flow Rate Compensation Factor
+====
 Flow rate compensation is an experiment similar to the [Linear Advance](http://marlinfw.org/docs/features/lin_advance.html) functionality of Marlin. The purpose of flow rate compensation is to compensate for underextrusion and overextrusion when the flow rate of material out the nozzle changes. This setting configures the magnitude of the effect.
 
 The flow rate compensation moves the filament forward by the extra material that is needed in the next second, during every move. In between every move, there are three possible scenarios.

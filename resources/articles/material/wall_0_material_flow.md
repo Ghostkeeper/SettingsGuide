@@ -1,3 +1,5 @@
+Outer Wall Flow
+====
 This setting adjusts the flow rate for the outer wall only. The flow rate for the outer wall can be adjusted separately from the flow rate of the inner walls.
 
 Adjusting the flow rate during the outer wall is a stop gap method to fix problems with extrusion rate or dimensional accuracy. The same effect can also be achieved by adjusting the [Outer Wall Line Width](../resolution/wall_line_width_0.md) and [Outer Wall Inset](../shell/wall_0_inset.md) settings, but this setting could be a more intuitive way to tune initially.

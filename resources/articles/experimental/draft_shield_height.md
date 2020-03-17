@@ -1,3 +1,5 @@
+Draft Shield Height
+====
 If the [Draft Shield Limitation](draft_shield_height_limitation.md) setting is set to "Limited", this setting allows you to specify to what height the draft shield should be limited.
 
 ![The draft shield is limited to 20mm height](../images/draft_shield_height_limitation.png)

@@ -1,3 +1,5 @@
+Build Plate Adhesion Extruder
+====
 If you are printing extra build plate adhesion structures, such as a brim or raft, this setting determines with which extruder those structures are printed.
 
 * When printing with a material that doesn't stick well to your build plate, it could be useful to use a raft printed with a material that does stick well.

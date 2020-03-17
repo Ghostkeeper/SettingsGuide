@@ -1,3 +1,5 @@
+Randomize Infill Start
+====
 If this setting is enabled, the position where the printer will start with printing the infill on a layer will be randomised.
 
 The start of the infill track is usually a bit weaker than the rest of the infill. This happens when the infill is printed faster, with thicker lines or has a greater layer height. The flow of material suddenly needs to speed up, and this doesn't happen instantaneously so there will be underextrusion for a short while. If this happens in the same location at every layer, this weakens the infill structure. The location where this happens will be the weakest link, and the infill around it will be subject to more strain. If the print is subjected to force, this is where it's more likely to break.

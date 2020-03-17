@@ -1,3 +1,5 @@
+Spaghetti Infill Extra Volume
+====
 With this setting, an extra amount of material will be extruded every time when printing infill. This is done at every step if the spaghetti infill is printed in [steps](spaghetti_infill_stepped.md), or once per vertical pillar of infill otherwise.
 
 When using spaghetti infill for casting, this allows filling up a [sprue](https://en.wikipedia.org/wiki/Sprue_\(manufacturing\)) with material or to compensate for losses due to the starting and stopping mechanism.

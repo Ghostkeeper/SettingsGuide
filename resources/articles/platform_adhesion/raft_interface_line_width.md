@@ -1,3 +1,5 @@
+Raft Middle Line Width
+====
 This setting configures the width of the lines in the middle layer of the raft.
 
 ![Dimensions related to the raft](../images/raft_dimensions.svg)

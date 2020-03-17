@@ -1,3 +1,5 @@
+Cross Infill Density Image
+====
 In this setting, you can provide an image that specifies the density in various places across the infill. The infill density will vary in certain places depending on the brightness of the image. This only works for the [Cross (3D) pattern](../infill/infill_pattern.md), since that pattern is able to adjust its density without chopping up lines, which would result in interrupted flow and reduced strength.
 
 ![The infill density varies across the object](../images/cross_infill_density_image.png)

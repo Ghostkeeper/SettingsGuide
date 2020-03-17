@@ -1,3 +1,5 @@
+Raft Base Line Width
+====
 This setting configures the width of the lines with which the lowest layer of the raft is being drawn.
 
 ![Dimensions related to the raft](../images/raft_dimensions.svg)

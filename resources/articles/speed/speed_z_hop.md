@@ -1,3 +1,5 @@
+Z Hop Speed
+====
 This setting configures the movement rate at which the vertical movements are made in a Z Hop. The horizontal movements of a Z Hop are unaffected, since those are configured by the [Travel Speed](speed_travel.md).
 
 ![The vertical movement is made at the Z Hop Speed](../images/speed_z_hop.svg)

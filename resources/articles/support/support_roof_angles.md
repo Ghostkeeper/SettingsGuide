@@ -1,3 +1,5 @@
+Support Roof Line Directions
+====
 The support roof is normally oriented to be as perpendicular as possible to the model above it and the support body below. If the orientation of the bottom lines or the support lines has been customised, it is a good idea to customise the orientation of the support roof lines as well. This setting allows you to customise the orientation of the support roof lines.
 
 ![Both the roof and floor angled at 0° and 90°](../images/support_interface_angles_0.png)

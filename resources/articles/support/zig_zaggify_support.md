@@ -1,3 +1,5 @@
+Connect Support Lines
+====
 With some support patterns, the support can become very unstable when thin strips of support are needed. This setting will cause the endpoints of the support lines to be connected together. This gives them more stability. It also makes the support print with more continuous flow. Fewer travel moves will be necessary.
 
 ![Disconnected support lines](../images/zig_zaggify_support_disabled.png)

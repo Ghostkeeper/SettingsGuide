@@ -1,3 +1,5 @@
+Support Floor Extruder
+====
 If your printer has multiple extruders, the bottom side of the support, where the support rests on the model, can be printed with a different extruder than the roof of the support, where the model rests on the support. This setting allows you to choose which extruder is used for the support floor.
 
 ![The support floor is printed in orange, but the support roof in white](../images/support_bottom_extruder_nr.png)

@@ -1,3 +1,5 @@
+Spiralize Outer Contour
+====
 Spiralize Outer Contour is a trick.
 
 When printing layer by layer, the nozzle normally needs to move from one layer to the next. This movement causes the nozzle to stand almost still for a fraction of a second, which leaves a seam on the surface called the Z seam. This setting is meant to prevent that and more.

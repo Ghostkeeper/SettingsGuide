@@ -1,3 +1,5 @@
+Horizontal Expansion
+====
 This setting causes the entire model to be slightly wider or slimmer. It is a compensating measure for dimensional inaccuracies of the printing process.
 
 ![The original model](../images/xy_offset_neutral.png)

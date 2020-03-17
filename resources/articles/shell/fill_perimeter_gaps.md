@@ -1,3 +1,5 @@
+Fill Gaps Between Walls
+====
 Many prints contain pieces that are thinner than the desired wall thickness. In most cases that is fine, but for some prints this would leave a gap between the walls. If this setting is enabled, gaps between the walls will be filled up with a spot of extra material.
 
 ![A long, thin gap between opposite walls is shown on the left and right side of the image](../images/fill_perimeter_gaps_disabled.png)

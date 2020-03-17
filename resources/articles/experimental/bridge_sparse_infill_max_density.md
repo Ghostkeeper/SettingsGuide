@@ -1,3 +1,5 @@
+Bridge Sparse Infill Max Density
+====
 If you're printing with a very low infill density, the top skin tends to sag, causing [pillowing](../troubleshooting/pillowing.md) and just generally irregular surfaces on the top side of the print. Optionally, the bridging techniques can be applied to the top skin as well. This setting configures at what infill rate the bridging technique will start being applied.
 
 ![The skin is bridging over the infill](../images/bridge_sparse_infill_max_density.png)

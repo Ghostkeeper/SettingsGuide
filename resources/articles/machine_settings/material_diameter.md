@@ -1,3 +1,5 @@
+Diameter
+====
 This setting describes the diameter of the filament that will be fed into the nozzle. It is important for Cura to calculate the extrusion rate correctly and to limit the number of retractions correctly.
 
 Most printers expect the g-code to specify how far the extrusion wheel has to turn in order to extrude enough to print a line. This filament diameter is necessary to get the correct amount of material to flow. If the printer's firmware interprets extrusion amounts to be listed volumetrically, that is unnecessary, but it will still use the filament diameter to limit the number of retractions over a certain length of filament.

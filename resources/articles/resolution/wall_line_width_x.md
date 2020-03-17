@@ -1,3 +1,5 @@
+Inner Wall(s) Line Width
+====
 The line width for the inner walls can be adjusted separately from the outer wall. This setting indicates how wide the individual inner wall lines will be.
 
 ![The lines for the inner walls are much wider than the rest](../images/wall_line_width_x.png)

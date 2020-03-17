@@ -12,13 +12,15 @@ Feature requests are also welcome in the [issues page](https://github.com/Ghostk
 
 I intend to write descriptions for every setting in Cura, but this is a lot of work. If you'd like to request priority for certain settings, feel free to ask.
 
-Submitting pull requests
+Providing code improvements
 ----
 Pull requests to the main code (QML, Python) are subject to the following requirements:
 * It does not slow down behaviour significantly.
 * The code style is similar to the rest of the code in this repository.
 * Your code will be licensed under AGPL 3.0 like the rest of the code in this repository.
 
+Writing articles
+----
 Pull requests to add descriptions for settings or improve current descriptions are also welcome. In general, articles about settings should hold the following format:
 1. First an explanation of what the setting does directly.
 2. Some pictures with examples, if applicable.
@@ -34,6 +36,7 @@ When taking screenshots of the g-code in layer view, these are some instructions
 * Use the perspective camera mode, not orthographic.
 * Don't use the compatibility mode of layer view.
 * Don't collage your screenshots. Use separate images for different effects, each with their own subtitle.
+* Don't write any text in PNG images. Use SVG images for that, if necessary with embedded PNG images.
 
 To adjust your Cura installation for easier screenshot making, the theme can be adjusted. In the file `resources/themes/cura-light/theme.json`, replace the three sections starting with `disabled_axis` with the following:
 ```
@@ -78,3 +81,17 @@ Diagrams should be submitted in SVG format. Also for these there are a number of
 * Patterns are not supported.
 
 It is up to the discretion of the package maintainer to decide whether images are too big or not. A major factor in this decision is whether the image is any bigger than strictly necessary.
+
+Translating
+----
+Translating this guide is no small task and not something that the maintainer can do, so all help is welcome.
+
+To translate articles, put translations in the `resources/languages` folder, in a subfolder named with the language code of the language you're translating into. Inside this folder, please keep the folder structure of the English folder (which sorts the articles by their category). This helps to keep articles easy to find online and while developing.
+
+There are a few things to pay attention to though:
+* The guide is intended to be shown within Cura as well as online on Github. This means that your translations will need to link correctly to images using relative paths.
+* When linking to other articles, use relative links to the translated article of the same name, if such an article exists. If the linked article is not (yet) translated, link to the English article.
+* You will generally not need to translate images, but all images containing text should be SVG images, which are text-based and should be easy to translate. Do not copy any images you're not translating.
+* Do not translate the preferences file. While the helper text won't cause any harm, translating the labels of the preferences will cause them to stop working.
+
+Don't be afraid to ask for help with translations. I have experience handling Cura's translations and did a lot of translating in my spare time.

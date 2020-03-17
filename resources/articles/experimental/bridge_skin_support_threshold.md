@@ -1,3 +1,5 @@
+Bridge Skin Support Threshold
+====
 This setting allows you to adjust how sensitive the detection of bridging areas will be. Bridging areas are detected by virtue of the portion of the skin's area that is supported by something in the previous layer.
 
 For each disjunct region of skin, this will look how much of that skin is supported by anything in the layer below. If the region is supported too little, then the bridging technique will be applied to the regions of the skin that are not supported.

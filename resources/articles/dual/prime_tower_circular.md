@@ -1,3 +1,5 @@
+Circular Prime Tower
+====
 If this setting is enabled, the prime tower will get the shape of a cylinder. If it's disabled, the prime tower will be square.
 
 ![Square prime tower](../images/prime_tower_circular_disabled.png)

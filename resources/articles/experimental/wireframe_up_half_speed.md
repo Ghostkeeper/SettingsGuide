@@ -1,3 +1,5 @@
+WP Ease Upward
+====
 When starting with the upwards motion of the saw-tooth pattern connecting adjacent horizontal rings in the frame of Wire Printing mode, the upwards motion may be made slower for the first part of the vertical line. This setting configures how much of the vertical line will be printed slower. This segment of the vertical line will be printed at half of the [upward speed](wireframe_printspeed_up.md).
 
 ![Where the different Wire Printing speeds apply](../images/wireframe_printspeed.svg)

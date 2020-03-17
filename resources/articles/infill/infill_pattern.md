@@ -1,3 +1,5 @@
+Infill Pattern
+====
 The infill pattern defines a structure that is used to fill the volume of the object. Various patterns are available, each of which has their own advantages. Some are specialised for very specific applications.
 
 Grid

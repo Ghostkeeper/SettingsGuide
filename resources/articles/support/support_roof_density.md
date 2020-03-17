@@ -1,3 +1,5 @@
+Support Roof Density
+====
 This setting specifies how dense the support roof will be, where the model rests on the support.
 
 Increasing the density of the support roof allows you to achieve a nice surface finish at the overhangs, just as if the entire support was printed with a high density, without needing all that much extra time and material. The lines of the support roof's pattern will be placed more closely together, so the distance that the model has to bridge will be reduced.

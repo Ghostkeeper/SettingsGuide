@@ -1,3 +1,5 @@
+Prime Tower Minimum Volume
+====
 This indicates how much material must be purged every time the extruder switches. The idea is that a certain volume will have oozed out of the nozzle while it was on stand-by. The volume being primed as indicated by this setting is meant to compensate for that.
 
 ![The volume being extruded is highlighted in green](../images/prime_tower.svg)

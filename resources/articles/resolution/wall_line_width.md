@@ -1,3 +1,5 @@
+Wall Line Width
+====
 The line width for the walls can be adjusted separately from the rest of the print. This setting indicates how wide the individual wall lines will be.
 
 ![The lines for the walls are much wider than the rest](../images/wall_line_width.png)

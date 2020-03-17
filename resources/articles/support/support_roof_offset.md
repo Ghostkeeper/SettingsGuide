@@ -1,3 +1,5 @@
+Support Roof Horizontal Expansion
+====
 This setting causes the support roof to be expanded in all directions horizontally into the rest of the support.
 
 There are two use cases for this mechanism.

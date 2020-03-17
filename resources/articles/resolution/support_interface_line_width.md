@@ -1,3 +1,5 @@
+Support Interface Line Width
+====
 The widths of the lines of support interface can be configured separately from the widths of the rest of the support lines.
 
 ![The support interface lines are wider than the rest of the support lines](../images/support_roof_line_width.png)

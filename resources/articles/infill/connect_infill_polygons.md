@@ -1,3 +1,5 @@
+Connect Infill Polygons
+====
 When the infill consists of closed loops, these closed loops can be fused together to form one single loop. Enabling this will make small connections where polygons are adjacent.
 
 This setting is only available when the infill consists of loops that are adjacent to each other. That means that either:

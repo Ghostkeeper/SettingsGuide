@@ -1,3 +1,5 @@
+Small Feature Max Length
+====
 Small details of the print are often very dimension-critical. This setting causes small holes in the print to be printed more slowly in order to achieve greater accuracy.
 
 If a hole in the print has a circumference less than indicated by this setting, the speed at which the perimeter of that hole is printed will be multiplied by a factor of the [Small Feature Speed](small_feature_speed_factor.md) (reduced, normally). This setting is a different way of approaching the [Small Hole Max Size](small_hole_max_size.md) setting, which is more generic than just for circular holes.

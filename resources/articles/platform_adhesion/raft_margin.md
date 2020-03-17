@@ -1,3 +1,5 @@
+Raft Extra Margin
+====
 This setting makes the raft wider than the model. It indicates the width of the extra border around the model.
 
 ![Dimensions related to the raft](../images/raft_dimensions.svg)

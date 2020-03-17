@@ -1,3 +1,5 @@
+Support Wall Line Count
+====
 This setting adds a number of walls around the perimeter of the support.
 
 ![No extra walls](../images/support_wall_count_0.png)

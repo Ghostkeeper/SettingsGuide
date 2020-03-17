@@ -1,3 +1,5 @@
+Support Chunk Size
+====
 If the support is [broken up in chunks](support_skip_some_zags.md), this setting determines how big each of the chunks of supports will be.
 
 ![Each chunk is about 20mm wide](../images/support_skip_some_zags.png)

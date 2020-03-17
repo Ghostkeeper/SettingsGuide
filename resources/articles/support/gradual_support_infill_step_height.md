@@ -1,3 +1,5 @@
+Gradual Support Infill Step Height
+====
 When using gradual support, the density of the support gets periodically reduced from top to bottom in several steps. At each step, the support density is halved. This setting indicates the height of these steps, the distance between two places where the support density is halved.
 
 ![1mm step height](../images/gradual_support_infill_step_height_1mm.png)

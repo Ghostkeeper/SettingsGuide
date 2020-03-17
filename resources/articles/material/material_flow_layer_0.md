@@ -1,3 +1,5 @@
+Initial Layer Flow
+====
 Just like the ordinary [Flow](material_flow.md) setting, this setting adjusts the amount of material being pushed through the nozzle, but this one only affects the layer that rests on the build plate.
 
 Adjusting the flow directly adjusts how much material is placed down. Normally the amount of material is calculated by Cura such that the material would fill the exact space in the line's width, height and length, but this can be adjusted using the flow settings.

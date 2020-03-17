@@ -1,3 +1,5 @@
+Top Surface Skin Line Width
+====
 With the [Top Surface Skin Layers](../shell/roofing_layer_count.md) setting, a number of layers at the very top can be given a different line width than the deeper top surface layers.
 
 The skin on the top side of the print serves several functions. In particular it needs to close the holes on the top side left by the infill and it provides a great deal of strength to the part. Apart from that, it would ideally still look nice and smooth. Reducing the [line width of the top and bottom](../resolution/skin_line_width.md) can serve to create a smoother surface, but will make the print take much more time. This setting allows for creating a smooth top surface with very thin lines without needing to print the rest of the top and bottom with the same line width. This incurs less of a penalty on printing time.

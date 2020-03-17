@@ -1,3 +1,5 @@
+Wire Printing
+====
 This setting enables a completely different mode of printing called Wire Printing. When Wire Printing is used, the printer will not make a solid object, but only a triangular mesh of the outside shape out of thin wires.
 
 This technique has a number of advantages:

@@ -1,3 +1,5 @@
+Break Temperature
+====
 For some printers, when a material is retracted for a filament switch, the material needs to be broken off cleanly in order to move it through the feeder without tangling. This setting configures part of the procedure to break it cleanly.
 
 This setting adjusts the temperature to cool down to before breaking the filament off. This cooling will occur between the second and the third stage (as shown in the images below). The aim is to allow the filament to harden, which allows the printer to break it off cleanly rather than drawing it out in a long strand which could get caught in the feeder.

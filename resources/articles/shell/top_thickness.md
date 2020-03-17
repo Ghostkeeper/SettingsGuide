@@ -1,3 +1,5 @@
+Top Thickness
+====
 This setting configures how thick the solid top side of the print will be. This solid layer is printed instead of the sparse infill. It is intended to close the top side.
 
 ![Ordinary top thickness](../images/top_bottom_thickness_0.8.png)

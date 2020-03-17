@@ -1,3 +1,5 @@
+WP Bottom Delay
+====
 With this setting, the nozzle will stand still for a moment after printing a diagonal downward line.
 
 ![The location where the nozzle will pause](../images/wireframe_bottom_delay.svg)

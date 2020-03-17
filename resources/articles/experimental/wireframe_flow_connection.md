@@ -1,3 +1,5 @@
+WP Connection Flow
+====
 This setting configures the flow rate (and thereby the thickness of the wires) of the upwards and downwards connecting wires in the wire frame structure. This can be configured separately from the horizontal rings.
 
 ![Where the different flow settings apply](../images/wireframe_flow.svg)

@@ -1,3 +1,5 @@
+Wall Thickness
+====
 This setting determines how thick the wall around the print will be. Ultimately it adjusts the number of inner walls to achieve the desired thickness.
 
 ![0.8mm thick walls](../images/wall_thickness_0.8.png)

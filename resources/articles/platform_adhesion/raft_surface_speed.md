@@ -1,3 +1,5 @@
+Raft Top Print Speed
+====
 This setting configures the speed at which the top layers of the raft are printed. The speed of the top layers can be configured separately from the speed of the middle and base layers.
 
 ![Where the top layers are located in the raft](../images/raft_dimensions_simplified.svg)
