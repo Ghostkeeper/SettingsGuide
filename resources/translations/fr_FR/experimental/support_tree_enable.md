@@ -1,8 +1,11 @@
+Support arborescent
+===
+
 Le soutien aux arbres offre une approche alternative au soutien du modèle que la technique de soutien ordinaire. Le support en arbre génère une structure ramifiée qui commence sur la plaque de construction avec une petite base, mais qui se développe vers les parties qui ont besoin d'être soutenues.
 
 ![Une structure en forme d'arbre soutient le surplomb](../../../articles/images/support_tree_enable.png)
 
-Le soutien des arbres permet d'éviter les obstacles lors de la croissance vers les zones en surplomb. Dans la mesure du possible, l'arbre poussera à partir de la plaque de construction vers le haut afin d'éviter les cicatrices sur la surface sur laquelle le support repose. Si cela n'est pas possible, l'arbre reposera sur la surface du modèle aussi près que possible du surplomb afin de minimiser le temps et l'utilisation de matériel. Les branches du support de l'arbre sont limitées par l'[Angle de la branche du support de l'arbre](support_tree_angle.md) afin qu'elles ne produisent pas un surplomb trop abrupt d'elles-mêmes. Cela limite la capacité de croissance autour des obstacles et détermine également la hauteur à laquelle les troncs commenceront à se ramifier.
+Le soutien des arbres permet d'éviter les obstacles lors de la croissance vers les zones en surplomb. Dans la mesure du possible, l'arbre poussera à partir de la plaque de construction vers le haut afin d'éviter les cicatrices sur la surface sur laquelle le support repose. Si cela n'est pas possible, l'arbre reposera sur la surface du modèle aussi près que possible du surplomb afin de minimiser le temps et l'utilisation de matériel. Les branches du support de l'arbre sont limitées par l'[Angle de la branche du support de l'arbre](./support_tree_angle.md) afin qu'elles ne produisent pas un surplomb trop abrupt d'elles-mêmes. Cela limite la capacité de croissance autour des obstacles et détermine également la hauteur à laquelle les troncs commenceront à se ramifier.
 
 Le support de l'arbre est creux par défaut. Toutefois, les paramètres de support ordinaires s'appliquent toujours à la zone délimitée par les branches de l'arbre. En particulier, la [Densité du support](../support/support_infill_rate.md) peut être utilisée pour donner au support une plus grande résistance structurelle. Comme la nature du support de l'arbre est très irrégulière, il a normalement une grande force pour remplir sa fonction.
 
