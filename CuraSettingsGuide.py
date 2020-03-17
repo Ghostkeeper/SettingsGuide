@@ -152,8 +152,9 @@ class CuraSettingsGuide(Extension, QObject):
 		article is requested. It also makes sure that the setting description
 		is correctly displayed (after a while).
 		"""
+		language = CuraApplication.getInstance().getPreferences().getValue("settings_guide/language")
 		for article_id in self._container_stack.getAllKeys():
-			self._getArticle(article_id)  # Load articles one by one.
+			self._getArticle(article_id, language)  # Load articles one by one.
 		Logger.log("i", "Finished loading Settings Guide articles.")
 
 	def load_definitions(self):
