@@ -23,7 +23,7 @@ Prévention du gauchissement
 ----
 Si votre impression souffre de déformation, la zone de contact entre l'impression et la plaque de montage est fortement réduite. Pour éviter cela, consultez l'article sur [le décollement](./warping.md). En résumé, voici quelques ajustements à apporter pour éviter le gauchissement.
 * Réglez le [Modèle de couche initiale du bas](../resolution/layer_height_0.md) sur concentrique.
-* Réduisez la [température de la plaque de construction] (../matériau/matériau_lit_température.md) et augmentez la [température du volume de construction] (../matériau/volume_de_construction_température.md).
+* Réduisez la [température de la plaque de construction](../material/material_bed_temperature.md) et augmentez la [température du volume de construction](../material/build_volume_temperature.md).
 * Ajustez le modèle de manière à ce qu'il y ait moins de coins extérieurs tranchants sur la première couche.
 
 Ajustements divers
@@ -51,4 +51,3 @@ Il existe également des méthodes d'adhésion par lit supplémentaire que vous 
 * La laque pour cheveux fonctionne de la même manière que la colle, en ce sens qu'elle laisse une surface rugueuse à grain fin sur la plaque de construction. Il est très facile de l'appliquer uniformément.
 * Appliquez du papier de verre sur la plaque de montage pour la rendre plus rugueuse et augmenter la surface de contact. Ne la rendez pas trop rugueuse, sinon vous aurez une surface inégale pour imprimer. Pour ce faire, utilisez un papier de verre à grain très fin, d'un grain de 500 ou plus.
 * Des "feuilles d'adhérence" spécialisées sont vendues par de nombreux vendeurs d'imprimantes 3D, qui peuvent être tendues sur la plaque de construction. Elles fonctionnent de la même manière que le ruban adhésif, mais sont conçues pour durer plus longtemps. Certaines sont faites d'un plastique qui adhère chimiquement au matériau imprimé également.
-
