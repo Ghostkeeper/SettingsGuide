@@ -1,9 +1,12 @@
+Activer les supports coniques
+===
+
 Si ce paramètre est activé, la structure de soutien ne sera plus complètement verticale sur les côtés. Le support aura une forme conique, devenant plus petit ou plus grand vers le bas.
 
 ![Le support devient plus petit vers le bas](../../../articles/images/support_conical_enabled.png)
 ![Le support s'agrandit vers le bas](../../../articles/images/support_conical_angle_neg10.png)
 
-Le support lui-même sera incliné d'un certain [angle] (support_conical_angle.md). En cas d'angle négatif, le support s'élargit vers le bas, ce qui le rend beaucoup plus stable. Avec des angles positifs, il se rétrécira vers le bas. Cela permet d'économiser beaucoup de matériel et de temps d'impression. Pour éviter que le support ne devienne instable, une [largeur minimale](./support_conical_min_width.md) peut également être définie pour le support.
+Le support lui-même sera incliné d'un certain [angle](./support_conical_angle.md). En cas d'angle négatif, le support s'élargit vers le bas, ce qui le rend beaucoup plus stable. Avec des angles positifs, il se rétrécira vers le bas. Cela permet d'économiser beaucoup de matériel et de temps d'impression. Pour éviter que le support ne devienne instable, une [largeur minimale](./support_conical_min_width.md) peut également être définie pour le support.
 
 Le support conique est le paramètre le plus puissant pour la pondération entre le temps d'impression et la stabilité du support. Il existe deux principaux cas d'utilisation du support conique :
 * Pour économiser du matériel et du temps d'impression. Le support conique peut facilement vous faire économiser la moitié du matériel nécessaire au support, et par extension la moitié du temps passé à l'imprimerie. Cette solution est particulièrement efficace en cas de grands volumes de support, pour des impressions de grande taille.
