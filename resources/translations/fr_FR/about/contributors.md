@@ -5,8 +5,8 @@ Ce projet est maintenu par Ghostkeeper.
 
 Programmation
 ----
-* Ghostkeeper: Ecriture de la version V1.1 est suivante.
-* Asasin: Writing v1.0.
+* Ghostkeeper: Ecriture de la version V1.1 et suivante.
+* Asasin: Ecriture de la v1.0.
 
 
 Articles
