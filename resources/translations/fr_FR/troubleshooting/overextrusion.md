@@ -7,7 +7,7 @@ La surextrusion est un terme utilisé lorsque l'imprimante extrude trop de mati�
 
 Contrôle de la température
 ----
-La cause la plus fréquente de la surextrusion est l'impression à trop haute température. Si la [température d'impression](../matière/température_d'impression_matière.md) est réglée trop haut, la matière aura une viscosité plus faible, ce qui la fera sortir de la buse sans contrôle. Il en résulte généralement une surextrusion dans certaines zones comme les parois extérieures, mais une sous-extrusion dans d'autres comme le remplissage.
+La cause la plus fréquente de la surextrusion est l'impression à trop haute température. Si la [température d'impression](../material/material_print_temperature.md) est réglée trop haut, la matière aura une viscosité plus faible, ce qui la fera sortir de la buse sans contrôle. Il en résulte généralement une surextrusion dans certaines zones comme les parois extérieures, mais une sous-extrusion dans d'autres comme le remplissage.
 
 Pour y remédier, vous devez réduire progressivement votre température. Examinez attentivement la fiche technique du matériau avec lequel vous imprimez pour voir quelle est la plage de température acceptable et réduisez votre température d'impression vers la partie inférieure de cette plage.
 
