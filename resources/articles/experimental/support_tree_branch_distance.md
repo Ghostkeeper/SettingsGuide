@@ -11,4 +11,4 @@ By reducing the branch distance, a better overhang quality can be achieved becau
 
 However reducing the branch distance will also cause the support to take more material and printing time.
 
-Reducing the branch distance below the [branch diameter](support_tree_branch_diameter.md) will cause the branches to merge before they could properly be formed. As a result the centre of large overhang areas may not get supported properly then.
+Reducing the branch distance below the [Diamètre des branches de support arborescent](./support_tree_branch_diameter.md) will cause the branches to merge before they could properly be formed. As a result the centre of large overhang areas may not get supported properly then.
