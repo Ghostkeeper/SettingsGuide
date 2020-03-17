@@ -1,3 +1,6 @@
+Densité de la couche extérieure du pont
+===
+
 Ce paramètre contrôle la densité de la face inférieure de l'impression lorsqu'elle comble un vide. À une densité de 100 %, les lignes sont placées directement à côté. À des densités plus faibles, les lignes sont plus espacées.
 
 ![À une densité de 100 %, les lignes sont placées directement les unes à côté des autres](../../../articles/images/bridge_skin_density_100.png)
@@ -11,4 +14,4 @@ Mais il y a un autre effet, c'est le refroidissement. Lorsque les lignes sont pl
 
 Lequel de ces effets est le plus fort dépend de la viscosité du matériau, de la vitesse à laquelle il se solidifie et de la vitesse du ventilateur. Un certain réglage est toujours nécessaire.
 
-**Si le [débit de la peau du pont] (débit du matériau de la peau du pont) est inférieur à 100 %, il y aura également un certain espacement entre les lignes même si la densité est de 100 %, car les lignes seront alors plus fines.
+**Si le ![débit de la peau du pont](./bridge_skin_material_flow.md) est inférieur à 100 %, il y aura également un certain espacement entre les lignes même si la densité est de 100 %, car les lignes seront alors plus fines.
