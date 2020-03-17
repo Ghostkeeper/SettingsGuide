@@ -54,7 +54,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self.setMenuName("Ѕettings Guide")  # Using Cyrillic Ѕ instead of normal S to prevent MacOS detecting the word "setting" and pulling this menu item out of context.
 		self.addMenuItem("Ѕettings Guide", self.startWelcomeGuide)
 		self._dialog = None  # Cached instance of the dialogue window.
-		self._container_stack = None  # Stack that provides not only the normal settings but also the extra articles added by this guide.
+		self.definition_container = None  # Setting definitions that provide not only the normal settings but also the extra articles added by this guide.
 
 		self._markdown_per_folder = {}  # For each directory containing Markdown files, create one renderer that correctly dereferences images relatively.
 
@@ -162,23 +162,20 @@ class CuraSettingsGuide(Extension, QObject):
 
 	def load_definitions(self):
 		"""
-		Load all the setting definitions into a custom container stack.
+		Load all the setting definitions into a custom definition container.
 
-		This container stack also contains extra entries for the articles that
-		are not settings.
+		This definition container also contains extra entries for the articles
+		that are not settings.
 
-		The result is stored in self._container_stack.
+		The result is stored in `self.definition_container`.
 		"""
-		if self._container_stack:
+		if self.definition_container:
 			return  # Already done earlier. Don't re-load.
 		with open(os.path.join(os.path.dirname(__file__), "resources", "settings_guide_definitions.def.json")) as f:
 			definitions_serialised = f.read()
-		definition_container = DefinitionContainer("settings_guide_definitions")
-		definition_container.deserialize(definitions_serialised)
-		ContainerRegistry.getInstance().addContainer(definition_container)
-		self._container_stack = ContainerStack("settings_guide_stack")
-		self._container_stack.addContainer(definition_container)
-		ContainerRegistry.getInstance().addContainer(self._container_stack)
+		self.definition_container = DefinitionContainer("settings_guide_definitions")
+		self.definition_container.deserialize(definitions_serialised)
+		ContainerRegistry.getInstance().addContainer(self.definition_container)
 
 	def set_tooltips(self):
 		"""
@@ -295,8 +292,8 @@ class CuraSettingsGuide(Extension, QObject):
 				markdown_str = f.read()
 			images_path = os.path.dirname(markdown_file)
 		except (OSError, KeyError):  # File doesn't exist or is otherwise not readable.
-			if self._container_stack and article_id in self._container_stack.getAllKeys():
-				markdown_str = "*" + self._container_stack.getProperty(article_id, "description") + "*"  # Use the setting description as fallback.
+			if self.definition_container and article_id in self.definition_container.getAllKeys():
+				markdown_str = "*" + self.definition_container.getProperty(article_id, "description") + "*"  # Use the setting description as fallback.
 			else:
 				markdown_str = "There is no article on this topic."
 
@@ -355,16 +352,6 @@ class CuraSettingsGuide(Extension, QObject):
 		or False if it isn't.
 		"""
 		return os.path.exists(filename)
-
-	@pyqtProperty(QObject, constant=True)
-	def containerStack(self) -> Optional[ContainerStack]:
-		"""
-		The specialised container stack containing setting definitions for all
-		of the articles in the guide.
-		:return: A container stack with extra definitions for all articles in
-		the guide.
-		"""
-		return self._container_stack
 
 	@pyqtProperty(str, constant=True)
 	def pluginVersion(self) -> str:
