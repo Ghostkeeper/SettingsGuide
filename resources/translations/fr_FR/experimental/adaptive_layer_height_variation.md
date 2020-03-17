@@ -1,4 +1,4 @@
-Taille des étapes de variation des couches adaptatives
+Variation maximale des couches adaptatives
 ===
 
 Avec ce paramètre, vous pouvez limiter la plage dans laquelle les couches adaptatives sont autorisées à sélectionner une épaisseur de couche. La hauteur de la couche ne doit pas s'écarter de plus de cette variation par rapport à la [Hauteur de la couche](../resolution/layer_height.md) normale.
