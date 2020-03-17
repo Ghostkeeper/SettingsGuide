@@ -1,4 +1,7 @@
-Ce paramètre permet de régler la vitesse à laquelle [murs en surplomb](wall_overhang_angle.md) est imprimé. La vitesse est définie comme un rapport de leur vitesse d'impression normale, qui est soit la [Vitesse du mur extérieur](../speed/speed_wall_0.md) soit la [Vitesse du mur intérieur](../speed/speed_wall_x.md).
+Vitesse de paroi en porte-à-faux
+===
+
+Ce paramètre permet de régler la vitesse à laquelle [murs en surplomb](./wall_overhang_angle.md) est imprimé. La vitesse est définie comme un rapport de leur vitesse d'impression normale, qui est soit la [Vitesse du mur extérieur](../speed/speed_wall_0.md) soit la [Vitesse du mur intérieur](../speed/speed_wall_x.md).
 
 L'impression en surplomb à des vitesses plus faibles peut être très efficace pour réduire l'affaissement. Cela a un certain nombre d'effets positifs sur votre impression.
 * Les murs ont plus de temps pour se fixer aux murs adjacents de la couche précédente. Cela les aide à mieux se tenir debout, ce qui réduit l'affaissement.
