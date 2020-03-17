@@ -1,6 +1,6 @@
 Graphique de la température du flux
 ===
-Pour imprimer plus vite, il est préférable d'imprimer à une température légèrement plus élevée. Cela rend le thermoplastique plus fluide, ce qui lui permet de s'écouler plus rapidement par l'ouverture de la buse. Lorsque [Auto Temperature](./material_flow_dependent_temperature.md) est activé, ce paramètre spécifie pour chaque débit à quelle température le matériau doit être imprimé. Le débit est ensuite moyenné pour chaque couche afin de déterminer une température pour cette couche.
+Pour imprimer plus vite, il est préférable d'imprimer à une température légèrement plus élevée. Cela rend le thermoplastique plus fluide, ce qui lui permet de s'écouler plus rapidement par l'ouverture de la buse. Lorsque [Température Auto](./material_flow_dependent_temperature.md) est activé, ce paramètre spécifie pour chaque débit à quelle température le matériau doit être imprimé. Le débit est ensuite moyenné pour chaque couche afin de déterminer une température pour cette couche.
 
 Le débit est calculé en millimètres cubes par seconde, moyenné pour une couche entière. La température est exprimée en degrés Celsius. La valeur de ce paramètre doit être une liste de coordonnées séparées par des virgules. Chaque coordonnée est de la forme `[<débit>, <température>]`.
 
