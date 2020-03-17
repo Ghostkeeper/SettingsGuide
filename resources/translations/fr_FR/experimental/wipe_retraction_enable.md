@@ -1,3 +1,6 @@
+Activation de la rétraction d'essuyage
+===
+
 Si ce paramètre est activé, le matériel sera rétracté tout au long de la procédure d'essuyage. Ce paramètre peut être configuré séparément des [rétractions normales](../travel/retraction_enable.md).
 
 La procédure d'essuyage fait que la buse va jusqu'au côté de l'imprimante, se déplace d'avant en arrière, puis revient à sa position initiale. Il s'agit essentiellement d'un déplacement très long. Comme ce mouvement est plus long que les mouvements moyens de déplacement tout au long de l'impression, vous pouvez souhaiter que le matériel soit rétracté pendant cette procédure, même si les rétractions sont normalement désactivées.
