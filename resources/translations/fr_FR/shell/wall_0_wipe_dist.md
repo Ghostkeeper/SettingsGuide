@@ -1,3 +1,7 @@
+
+Distance d'essuyage paroi extérieure
+===
+
 Avec ce réglage, à l'extrémité de chaque paroi extérieure, la buse se déplacera légèrement plus loin sans extrusion, essuyant le contour fermé.
 
 ![Un petit mouvement de déplacement après avoir terminé la paroi extérieure](../../../articles/images/wall_0_wipe_dist.png)
