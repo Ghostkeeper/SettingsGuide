@@ -10,4 +10,4 @@ Le fait de placer des aides partout est plus fiable pour le soutien. Tous les su
 
 Au contraire, le fait de ne placer le support que s'il touche la plaque de construction empêche le support de reposer sur le modèle. Certaines parties de votre modèle peuvent cependant ne pas être soutenues.
 
-*Comme astuce pour utiliser le support uniquement sur la plaque de construction, essayez [activation du support conique](../expérimental/support_conique_activé.md) et donnez une valeur négative à [Angle de support conique](../expérimental/support_conique_angle.md). Cela permet au support de se développer autour du modèle tout en supportant la majeure partie du maillage sans reposer sur le modèle. Sinon, essayez le support de l'arbre.*
+*Comme astuce pour utiliser le support uniquement sur la plaque de construction, essayez [activation du support conique](../experimental/support_conical_enabled.md) et donnez une valeur négative à [Angle de support conique](../experimental/support_conical_angle.md). Cela permet au support de se développer autour du modèle tout en supportant la majeure partie du maillage sans reposer sur le modèle. Sinon, essayez le support de l'arbre.*
