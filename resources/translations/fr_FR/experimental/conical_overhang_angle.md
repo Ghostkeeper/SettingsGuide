@@ -1,3 +1,6 @@
+Angle maximal du modèle
+===
+
 Avec ce paramètre, l'angle de surplomb est configuré (en degrés) de manière à rendre le surplomb imprimable (conical_overhang_enabled.md). L'augmentation de cet angle permet d'obtenir un plus grand surplomb, ce qui fait que Cura modifie moins le modèle. Réduire cet angle permet de ne plus avoir de surplomb du tout.
 
 ![Un angle maximum de 50° pour le modèle](../../../articles/images/conical_overhang_enabled_enabled.png)
