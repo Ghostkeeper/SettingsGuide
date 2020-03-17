@@ -1,7 +1,7 @@
 Support arborescent
 ===
 
-Le soutien aux arbres offre une approche alternative au soutien du modèle que la technique de soutien ordinaire. Le support en arbre génère une structure ramifiée qui commence sur la plaque de construction avec une petite base, mais qui se développe vers les parties qui ont besoin d'être soutenues.
+Les support arborescent offrent une approche alternative au support du modèle que la technique de support ordinaire. Le support en arborescent génère une structure ramifiée qui commence sur la plaque de construction avec une petite base, mais qui se développe vers les parties qui ont besoin d'être soutenues.
 
 ![Une structure en forme d'arbre soutient le surplomb](../../../articles/images/support_tree_enable.png)
 
