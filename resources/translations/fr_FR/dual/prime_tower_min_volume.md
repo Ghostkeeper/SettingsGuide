@@ -1,6 +1,9 @@
+Volume minimum de la tour primaire
+===
+
 Cela indique la quantité de matière à purger à chaque changement d'extrudeuse. L'idée est qu'un certain volume aura suinté de la buse lorsqu'elle était en veille. Le volume d'amorçage indiqué par ce réglage est censé compenser cela.
 
-![Le volume en cours d'extrusion est mis en évidence en vert](../../../articles/images/prime_tower.svg)
+![Le volume en cours d'extrusion est mis en évidence en vert](../images/prime_tower_fr.svg)
 
 Ce paramètre indique la quantité minimale de matière à purger. Les contours de la tour principale seront cependant complètement finis, donc plus de matériau peut être purgé en fonction de la façon dont le volume s'aligne avec le volume d'un contour.
 
