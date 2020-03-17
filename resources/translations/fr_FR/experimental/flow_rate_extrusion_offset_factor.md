@@ -1,3 +1,6 @@
+Facteur de compensation du débit
+===
+
 La compensation du débit est une expérience similaire à la fonctionnalité [Linear Advance](http://marlinfw.org/docs/features/lin_advance.html) de Marlin. Le but de la compensation du débit est de compenser la sous-extrusion et la surextrusion lorsque le débit de la matière sortant de la buse change. Ce réglage permet de configurer l'ampleur de l'effet.
 
 La compensation du débit fait avancer le filament de la matière supplémentaire nécessaire dans la seconde qui suit, à chaque mouvement. Entre chaque mouvement, il y a trois scénarios possibles.
