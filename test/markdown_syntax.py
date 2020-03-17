@@ -4,16 +4,16 @@
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
 """
-These are tests to check whether there are any broken links in any articles.
+These are tests to check for common mistakes in the Markdown syntax.
 """
 
 import os  # To find all articles.
-import re  # To find the links in the Markdown articles.
+import re  # To find broken Markdown syntax in those articles.
 import unittest  # Run the automated tests.
 
-class TestLinks(unittest.TestCase):
+class TestMarkdownSyntax(unittest.TestCase):
 	"""
-	These are tests to check whether there are any broken links in any articles.
+	These are tests to check for common mistakes in the Markdown syntax.
 	"""
 
 	def all_articles(self):
@@ -30,33 +30,30 @@ class TestLinks(unittest.TestCase):
 						continue  # Not an article. Ignore this.
 					yield os.path.join(root, filename)
 
-	def test_images(self):
+	def test_space_within_link(self):
 		"""
-		Test if the links to images are correct.
-		"""
-		find_images = re.compile(r"!\[.*\]\(([^\)]*)\)")
-		for filename in self.all_articles():
-			with self.subTest():
-				with open(filename) as f:
-					contents = f.read()
-				for image_link in find_images.findall(contents):
-					image_path = os.path.join(os.path.dirname(filename), image_link)
-					assert os.path.exists(image_path), "Article {article_path} refers to image {image_path}, which doesn't exist.".format(article_path=filename, image_path=image_link)
+		Search for broken links due to a space in the middle of the link
+		syntax.
 
-	def test_articles(self):
+		Example:
+
+		```
+		This is a [hyperlink] (some_article.md).
+		```
+
+		Most likely, the author intended that to be a hyper link, like this:
+
+		```
+		This is a [hyperlink](some_article.md).
+		```
 		"""
-		Test if the links to other articles are correct.
-		"""
-		find_links = re.compile(r"\[.*\]\(([^\)]*)\)")
+		find_space_within_link = re.compile(r"\[.*\]\s+\(.*\)")
 		for filename in self.all_articles():
 			with self.subTest():
 				with open(filename) as f:
 					contents = f.read()
-				for link in find_links.findall(contents):
-					if link.startswith("https://") or link.startswith("http://"):
-						continue  # Don't find articles on the internet either.
-					article_path = os.path.join(os.path.dirname(filename), link)
-					assert os.path.exists(article_path), "Article {article_path} refers to article {path}, which doesn't exist.".format(article_path=filename, path=article_path)
+				for broken_link in find_space_within_link.findall(contents):
+					assert False, "Article {filename} contains a space within a link: {broken_link}".format(filename=filename, broken_link=broken_link)
 
 if __name__ == "__main__":
 	unittest.main()

@@ -31,6 +31,7 @@ if(BUILD_TESTS)
 	enable_testing()
 	set(test_packages
 		links.py
+		markdown_syntax.py
 	)
 	foreach(test_case ${test_packages})
 		add_test(${test_case} ${Python3_EXECUTABLE} "${CMAKE_SOURCE_DIR}/test/${test_case}")
