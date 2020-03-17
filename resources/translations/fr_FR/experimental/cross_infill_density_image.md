@@ -1,3 +1,6 @@
+Image de densité du remplissage croisé
+===
+
 Dans ce paramètre, vous pouvez fournir une image qui spécifie la densité à différents endroits du remplissage. La densité de remplissage variera à certains endroits en fonction de la luminosité de l'image. Cela ne fonctionne que pour le [motif en croix (3D)](../infill/infill_pattern.md), car ce motif est capable d'ajuster sa densité sans hacher les lignes, ce qui entraînerait une interruption du flux et une réduction de la force.
 
 ![La densité de remplissage varie selon l'objet](../../../articles/images/cross_infill_density_image.png)
