@@ -1,3 +1,6 @@
+Image de densité du remplissage croisé pour le support
+===
+
 Dans ce paramètre, vous pouvez fournir une image qui spécifie la densité à différents endroits du support. La densité du support varie à certains endroits en fonction de la luminosité de l'image. Cela ne fonctionne que pour le [motif en croix](../support/support_pattern.md), car ce motif est capable d'ajuster sa densité sans croiser les lignes, ce qui entraînerait une interruption du flux et une réduction de la force.
 
 ![La densité du support est plus importante sur les côtés](../../../articles/images/cross_support_density_image.png)
