@@ -1,3 +1,6 @@
+Entraînement du dessus de l'impression filaire
+===
+
 Lors de l'impression de plastique fondu, la buse a tendance à tirer une partie du matériau en même temps que son mouvement, même après son extrusion. Cet effet est encore plus fort lors de l'impression en plein air pour le toit du cadre métallique lors de l'impression en mode Wire Printing. Ce réglage fait que le motif en dents de scie en haut de l'impression se poursuit un peu plus profondément vers l'intérieur pour compenser le fait qu'il est entraîné avec la buse.
 
 ![La distance supplémentaire vers l'intérieur est configurée par ce réglage](../../../articles/images/wireframe_roof_drag_along.svg)
