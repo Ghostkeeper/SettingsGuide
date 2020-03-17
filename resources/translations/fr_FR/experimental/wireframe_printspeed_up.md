@@ -1,6 +1,9 @@
+Vitesse d’impression filaire ascendante
+===
+
 Ce réglage précise la vitesse à laquelle la buse se déplacera vers le haut tout en effectuant un mouvement vertical dans la configuration en dents de scie. La vitesse de déplacement vers le haut peut être configurée séparément du reste de la vitesse d'impression du fil.
 
-![Où les différentes vitesses d'impression à fil s'appliquent](../../../articles/images/wireframe_printspeed.svg)
+![Où les différentes vitesses d'impression à fil s'appliquent](../images/wireframe_printspeed_fr.svg)
 
 Le mouvement ascendant n'aura pas la vitesse spécifiée pour l'ensemble du mouvement. Pour le bit le plus bas du mouvement ascendant, tel que défini par le paramètre [Ease Upward](wireframe_up_half_speed.md), la tête d'impression se déplacera à la moitié de cette vitesse.
 
