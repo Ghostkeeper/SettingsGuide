@@ -7,7 +7,7 @@ Milieu
 ----
 ![Milieu](../images/slicing_tolerance_middle_fr.svg)
 
-En utilisant le milieu, les couches resteront aussi proches que possible de la surface d'origine. Cela signifie que les couches vont parfois dépasser de la surface d'origine et parfois s'enfoncer dans la surface d'origine. Dans l'ensemble, le volume des couches correspondra très étroitement au volume de la maille d'origine.
+En utilisant le milieu, les couches resteront aussi proches que possible de la surface d'origine. Cela signifie que les couches vont parfois dépasser de la surface d'origine et parfois s'enfoncer dans la surface d'origine. Dans l'ensemble, le volume des couches correspondra très étroitement au volume du maillage d'origine.
 
 Pour obtenir la tolérance moyenne, Cura calculera une section transversale à mi-chemin de l'épaisseur de chaque couche. Tout ce qui se trouve à l'intérieur de la section transversale fera partie de la couche.
 
