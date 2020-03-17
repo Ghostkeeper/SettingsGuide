@@ -145,16 +145,16 @@ class CuraSettingsGuide(Extension, QObject):
 
 	def load_all(self):
 		"""
-		Pre-cache all articles.
+		Pre-cache all articles in all languages.
 
 		This is meant to run as a background task. This makes sure all setting
 		descriptions are loaded so that they can load faster next time the
 		article is requested. It also makes sure that the setting description
 		is correctly displayed (after a while).
 		"""
-		language = CuraApplication.getInstance().getPreferences().getValue("settings_guide/language")
-		for article_id in self._container_stack.getAllKeys():
-			self._getArticle(article_id, language)  # Load articles one by one.
+		for article_id in self.article_locations:
+			for language in self.article_locations[article_id]:
+				self._getArticle(article_id, language)  # Load articles one by one.
 		Logger.log("i", "Finished loading Settings Guide articles.")
 
 	def load_definitions(self):
