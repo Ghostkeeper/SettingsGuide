@@ -1,3 +1,6 @@
+Surfaces floues
+===
+
 Lors de l'impression avec une peau floue, la surface des côtés de l'impression est rendue rugueuse à dessein. Cela donne à l'impression une sorte de texture.
 
 ![Les murs semblent bancals dans la vue en couches de Cura](../../../articles/images/magic_fuzzy_skin_enabled.png)
