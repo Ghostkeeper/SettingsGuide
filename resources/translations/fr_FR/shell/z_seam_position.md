@@ -1,3 +1,6 @@
+Position de la jointure en Z
+===
+
 Si l'emplacement de la couture est défini sur "Spécifié par l'utilisateur" dans le paramètre [Alignement de la jointure en Z](./z_seam_type.md), la couture sera placée dans la direction spécifiée par ce paramètre.
 
 ![La couture est située sur le côté gauche](../../../articles/images/z_seam_x_left.png)
