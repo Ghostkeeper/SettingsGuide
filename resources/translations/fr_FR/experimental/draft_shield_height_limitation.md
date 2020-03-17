@@ -1,3 +1,6 @@
+Limite du bouclier
+===
+
 Le paravent peut être imprimé soit sur toute la hauteur du modèle, soit seulement sur une hauteur spécifique. Ce paramètre vous permet de choisir la hauteur du paravent.
 
 ![Le paravent est aussi haut que le modèle](../../../articles/images/draft_shield_enabled.png)
