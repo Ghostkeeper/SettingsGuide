@@ -1,4 +1,4 @@
-PREFERENCES
+Preférences
 ===
 
 Dans cette page, vous pouvez modifier le comportement du guide des paramètres.
