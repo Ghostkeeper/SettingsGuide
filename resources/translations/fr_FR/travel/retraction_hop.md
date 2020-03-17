@@ -1,3 +1,6 @@
+Hauteur du décalage en Z
+===
+
 Si un saut en Z est effectué, ce réglage détermine la hauteur à laquelle la buse se déplacera vers le haut avant de se rendre à destination.
 
 ![Un saut Z est effectué à une certaine hauteur](../images/retraction_hop_enabled_fr.svg)
