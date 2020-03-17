@@ -25,7 +25,7 @@ Exclusif
 
 En cas d'utilisation d'Exclusive, les couches seront contenues dans le volume original. Lorsque la surface est inclinée, les couches seront légèrement plus petites que le volume original. Le volume total des couches sera presque toujours inférieur au volume de la maille originale.
 
-Pour obtenir la tolérance Exclusive, Cura calculera les sections transversales en haut et en bas de la hauteur de chaque couche. Seules les surfaces qui se trouvent dans les *deux* de ces sections transversales seront considérées comme faisant partie de cette couche.
+Pour obtenir la tolérance Exclusive, Cura calculera les sections transversales en haut et en bas de la hauteur de chaque couche. Seules les surfaces qui se trouvent à l'intérieur de ces*deux* sections transversales seront considérées comme faisant partie de cette couche.
 
 Utilisation
 ----
