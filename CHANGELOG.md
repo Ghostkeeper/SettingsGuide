@@ -1,3 +1,7 @@
+2.2.1 - Bug Fixes
+====
+* Fixed inter-article links
+
 2.2.0 - The Bad One
 ====
 This release adds articles on common forms of print failure, including pictures of the actual print results.
