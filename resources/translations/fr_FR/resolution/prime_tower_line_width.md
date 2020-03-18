@@ -1,4 +1,4 @@
-Largeur de ligne de la tour primaire (d'amprçage)
+Largeur de ligne de la tour primaire
 ===
 
 Ce paramètre détermine la largeur des lignes avec lesquelles la tour principale est dessinée.

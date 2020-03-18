@@ -31,10 +31,10 @@
 
 	<!-- Labels. -->
 	<g font-family="sans-serif" font-size="70px" stroke-width="10">
-		<text x="1120" y="350" stroke="white">Tour R</text>
+		<text x="1120" y="350" stroke="white">Angle sommet tour</text>
 		<text x="1120" y="350">Angle sommet tour</text>
-		<text x="1186" y="860" stroke="white">Dia</text>
-		<text x="950" y="860">Diametre Tour</text>
+		<text x="1186" y="860" stroke="white">Diametre Tour</text>
+		<text x="1186" y="860">Diametre Tour</text>
 		<text x="1260" y="220" stroke="white">Diametre Minimum</text>
 		<text x="1260" y="220">Diametre Minimum </text>
 	</g>

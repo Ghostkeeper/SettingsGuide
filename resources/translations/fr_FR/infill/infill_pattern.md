@@ -15,7 +15,7 @@ La grille de remplissage crée deux ensembles de lignes perpendiculaires. Ensemb
 
 Lignes
 ----
-![Lines](../../../articles/images/infill_pattern_lines.png)
+![Lignes](../../../articles/images/infill_pattern_lines.png)
 
 Le motif des lignes crée des lignes parallèles. Par défaut, le motif de lignes alterne sa direction perpendiculairement d'une couche à l'autre, ce qui le fait ressembler au motif de grille à première vue. Cependant, il est possible de modifier cette apparence avec le paramètre [Infill Line Directions](infill_angles.md).
 * Le meilleur motif pour une surface supérieure lisse en même temps que le zigzag, puisque la distance entre les lignes est la plus petite.
@@ -34,7 +34,7 @@ Le motif des triangles crée trois ensembles de lignes dans trois directions dif
 
 Trihexagonal
 ----
-![Tri-hexagon](../../../articles/images/infill_pattern_trihexagon.png)
+![Tri-hexagonal](../../../articles/images/infill_pattern_trihexagon.png)
 
 Le modèle tri-hexagone crée trois ensembles de lignes dans trois directions différentes, tout comme le modèle triangulaire, mais décalées les unes par rapport aux autres afin qu'elles ne se croisent pas toutes dans la même position.
 * Le motif le plus fort dans la direction horizontale.
@@ -44,7 +44,7 @@ Le modèle tri-hexagone crée trois ensembles de lignes dans trois directions di
 
 Cubique
 ----
-![Cubic](../../../articles/images/infill_pattern_cubic.png)
+![Cubique](../../../articles/images/infill_pattern_cubic.png)
 
 Le motif cubique crée des cubes, un motif tridimensionnel. Les cubes sont orientés debout sur un coin, ce qui permet de les imprimer sans déborder les surfaces internes.
 * Force approximativement égale dans toutes les directions, y compris la direction verticale.
@@ -70,7 +70,7 @@ Algorithmiquement, ce modèle est généré en créant un cube géant autour du 
 
 Octaédrique
 ----
-![Octet](../../../articles/images/infill_pattern_octet.png)
+![Octaédrique](../../../articles/images/infill_pattern_octet.png)
 
 Le motif Octaédrique crée une combinaison de tétraèdres et de cubes réguliers, un motif tridimensionnel. De temps en temps, plusieurs lignes de remplissage sont placées l'une à côté de l'autre.
 * Crée un cadre interne solide où plusieurs lignes parallèles se touchent. La charge est rapidement dissipée vers ce cadre interne.
@@ -111,7 +111,7 @@ Le motif de remplissage en zigzag fait que la buse dessine des lignes en zigzag.
 * Tend à être assez faible dans le sens vertical, car les couches n'ont que de petits points de liaison entre elles.
 * Sera extrêmement faible dans la direction horizontale, sauf dans la seule direction où les lignes sont orientées. Mais même dans cette direction, il n'est pas résistant au cisaillement, de sorte qu'il cède assez rapidement sous la charge. 
 
-En Croix
+Croix
 ----
 ![Croix](../../../articles/images/infill_pattern_cross.png)
 
@@ -125,7 +125,7 @@ Le modèle de remplissage en croix produit une courbe de remplissage de l'espace
 
 Croix 3D
 ----
-![Cross 3D](../../../articles/images/infill_pattern_cross_3d.png)
+![Croix 3D](../../../articles/images/infill_pattern_cross_3d.png)
 
 Le modèle de remplissage en 3D croisé produit une courbe de remplissage de l'espace qui produit quelque chose qui ressemble à des croix le long de l'intérieur du volume. Ce motif pulse le long de l'axe Z afin de l'affaiblir dans le sens vertical.
 * Ce motif est donc le plus utile pour l'impression d'objets souples et flexibles.
