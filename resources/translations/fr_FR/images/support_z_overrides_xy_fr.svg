@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000">
+	<!-- The model. -->
+	<path fill="midnightblue" d="M0,1000 v-1000 h1600 v1000 h-200 v-800 h-400 a800,800 0 0 0 -800,800 z" />
+	<!-- The support. -->
+	<path fill="deepskyblue" d="M1000,250 a800,800 0 0 0 -388,100 a800,800 0 0 0 -95,80 v570 h683 v-750 z" />
+
+	<!-- Arrows indicating X/Y distance. -->
+	<path d="M439,430 l10,-10 v14 h58 v-14 l10,10 l-10,10 v-14 h-58 v14 z" />
+	<path d="M534,350 l10,-10 v14 h58 v-14 l10,10 l-10,10 v-14 h-58 v14 z" />
+	<path d="M1200,950 l20,-20 v14 h160 v-14 l20,20 l-20,20 v-14 h-160 v14 z" />
+
+	<!-- Arrows indicating Z distance. -->
+	<path d="M622,295 l10,10 h-14 v30 h14 l-10,10 l-10,-10 h14 v-30 h-14 z" />
+	<path d="M1000,200 l10,10 h-14 v30 h14 l-10,10 l-10,-10 h14 v-30 h-14 z" />
+	<path d="M1200,200 l10,10 h-14 v30 h14 l-10,10 l-10,-10 h14 v-30 h-14 z" />
+
+	<!-- Labels. -->
+	<g font-family="sans-serif" font-size="50px" stroke-width="5">
+		<text x="440" y="480" stroke="white">Distance Minimum X/Y</text>
+		<text x="440" y="480">Distance Minimum X/Y</text>
+		<text x="1100" y="920" stroke="white">Distance X/Y</text>
+		<text x="1100" y="920">Distance X/Y</text>
+		<text x="1220" y="240" stroke="white">Distance Z</text>
+		<text x="1220" y="240">Distance Z</text>
+	</g>
+</svg>

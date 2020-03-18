@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg width="3000" height="1000" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<path id="model" d="M800,800 h1400 l-500,-500 h-50 l-40,-40 v-20 h40 v-20 h-40 v-40 h40 v-40 h-300 v40 h40 v40 h-40 v20 h40 v20 l-40,40 h-50 z m620,-500 h40 v-40 h-40 z m60,0 h40 v-40 h-40 z m60,0 h40 v-40 h-40 z" />
+	</defs>
+
+	<!-- Grid lines. -->
+	<g stroke-width="4" stroke="lightgrey">
+		<line x1="700" y1="800" x2="2300" y2="800" />
+		<line x1="700" y1="700" x2="2300" y2="700" />
+		<line x1="700" y1="600" x2="2300" y2="600" />
+		<line x1="700" y1="500" x2="2300" y2="500" />
+		<line x1="700" y1="400" x2="2300" y2="400" />
+		<line x1="700" y1="300" x2="2300" y2="300" />
+		<line x1="700" y1="200" x2="2300" y2="200" />
+		<line x1="700" y1="100" x2="2300" y2="100" />
+
+		<line x1="800" y1="100" x2="800" y2="800" />
+		<line x1="900" y1="100" x2="900" y2="800" />
+		<line x1="1000" y1="100" x2="1000" y2="800" />
+		<line x1="1100" y1="100" x2="1100" y2="800" />
+		<line x1="1200" y1="100" x2="1200" y2="800" />
+		<line x1="1300" y1="100" x2="1300" y2="800" />
+		<line x1="1400" y1="100" x2="1400" y2="800" />
+		<line x1="1500" y1="100" x2="1500" y2="800" />
+		<line x1="1600" y1="100" x2="1600" y2="800" />
+		<line x1="1700" y1="100" x2="1700" y2="800" />
+		<line x1="1800" y1="100" x2="1800" y2="800" />
+		<line x1="1900" y1="100" x2="1900" y2="800" />
+		<line x1="2000" y1="100" x2="2000" y2="800" />
+		<line x1="2100" y1="100" x2="2100" y2="800" />
+		<line x1="2200" y1="100" x2="2200" y2="800" />
+	</g>
+
+	<!-- The printed model. -->
+	<use href="#model" fill="white" />
+	<g stroke="deepskyblue" stroke-width="7.071"> <!-- The stripes. QtSvg sadly doesn't support the <pattern> tag, so we must repeat this manually. -->
+		<line x1="1390" y1="250" x2="1405" y2="235" />
+		<line x1="1395" y1="265" x2="1425" y2="235" />
+		<line x1="1415" y1="265" x2="1445" y2="235" />
+		<line x1="1435" y1="265" x2="1465" y2="235" />
+		<line x1="1455" y1="265" x2="1485" y2="235" />
+		<line x1="1475" y1="265" x2="1505" y2="235" />
+		<line x1="1495" y1="265" x2="1525" y2="235" />
+		<line x1="1515" y1="265" x2="1545" y2="235" />
+		<line x1="1535" y1="265" x2="1565" y2="235" />
+		<line x1="1555" y1="265" x2="1585" y2="235" />
+		<line x1="1575" y1="265" x2="1605" y2="235" />
+		<line x1="1595" y1="265" x2="1610" y2="250" />
+
+		<line x1="1390" y1="190" x2="1405" y2="175" />
+		<line x1="1390" y1="210" x2="1425" y2="175" />
+		<line x1="1395" y1="225" x2="1445" y2="175" />
+		<line x1="1415" y1="225" x2="1465" y2="175" />
+		<line x1="1435" y1="225" x2="1485" y2="175" />
+		<line x1="1455" y1="225" x2="1505" y2="175" />
+		<line x1="1475" y1="225" x2="1525" y2="175" />
+		<line x1="1495" y1="225" x2="1545" y2="175" />
+		<line x1="1515" y1="225" x2="1565" y2="175" />
+		<line x1="1535" y1="225" x2="1585" y2="175" />
+		<line x1="1555" y1="225" x2="1605" y2="175" />
+		<line x1="1575" y1="225" x2="1610" y2="190" />
+		<line x1="1595" y1="225" x2="1610" y2="210" />
+	</g>
+	<rect x="1390" y="235" width="220" height="30" fill="none" stroke-width="10" stroke="white" />
+	<rect x="1390" y="175" width="220" height="50" fill="none" stroke-width="10" stroke="white" />
+	<use href="#model" fill="none" stroke="grey" stroke-width="10" />
+
+	<!-- Axes on either side with dashes on eventful heights. -->
+	<g stroke-width="4" stroke="black">
+		<line x1="700" y1="100" x2="700" y2="800" />
+		<line x1="680" y1="798" x2="700" y2="798" />
+		<line x1="680" y1="750" x2="700" y2="750" />
+		<line x1="680" y1="450" x2="700" y2="450" />
+		<line x1="680" y1="350" x2="700" y2="350" />
+		<line x1="680" y1="102" x2="700" y2="102" />
+
+		<line x1="2300" y1="100" x2="2300" y2="800" />
+		<line x1="2300" y1="798" x2="2320" y2="798" />
+		<line x1="2300" y1="750" x2="2320" y2="750" />
+		<line x1="2300" y1="450" x2="2320" y2="450" />
+		<line x1="2300" y1="350" x2="2320" y2="350" />
+		<line x1="2300" y1="102" x2="2320" y2="102" />
+
+		<path d="M2370,800 l8,-8 h-5 v-34 h5 l-8,-8 l-8,8 h5 v34 h-5 z" />
+	</g>
+
+	<!-- Markers on the axes. -->
+	<g font-family="sans-serif" font-size="40px">
+		<g text-anchor="end">
+			<text x="680" y="813">0%</text>
+			<text x="680" y="765">70%</text>
+			<text x="680" y="465">70%</text>
+			<text x="680" y="365">100%</text>
+			<text x="680" y="117">100%</text>
+		</g>
+		<text x="2320" y="465">20s</text>
+		<text x="2320" y="365">5s</text>
+		<text x="2320" y="117">5s</text>
+	</g>
+
+	<!-- Minimum speed legend. -->
+	<g stroke="deepskyblue" stroke-width="7.071"> <!-- Since QtSvg doesn't support patterns, we need to make this pattern manually. -->
+		<line x1="995" y1="860" x2="1010" y2="845" />
+		<line x1="995" y1="880" x2="1030" y2="845" />
+		<line x1="995" y1="900" x2="1050" y2="845" />
+		<line x1="995" y1="920" x2="1070" y2="845" />
+		<line x1="995" y1="940" x2="1090" y2="845" />
+		<line x1="1000" y1="955" x2="1105" y2="850" />
+		<line x1="1020" y1="955" x2="1105" y2="870" />
+		<line x1="1040" y1="955" x2="1105" y2="890" />
+		<line x1="1060" y1="955" x2="1105" y2="910" />
+		<line x1="1080" y1="955" x2="1105" y2="930" />
+	</g>
+	<rect x="995" y="845" width="110" height="110" fill="none" stroke="white" stroke-width="10" />
+	<path d="M1600,905 h40 v10 l15,-15 l-15,-15 v10 h-40 z" />
+	<g font-family="sans-serif" font-size="60px">
+		<text x="1120" y="920">Vitesse minimale</text>
+		<text x="1700" y="920">Lever la tête</text>
+	</g>
+
+	<!-- Axis labels. -->
+	<g font-family="sans-serif" font-size="60px" text-anchor="middle">
+		<text x="700" y="60">Vitesse ventilateur</text>
+		<text x="2300" y="60">Temps de couche</text>
+	</g>
+
+	<!-- Dotted lines indicating height. -->
+	<g stroke="black" stroke-width="4" stroke-dasharray="40 20">
+		<line x1="850" y1="750" x2="2300" y2="750" />
+		<line x1="1150" y1="450" x2="2300" y2="450" />
+		<line x1="1250" y1="350" x2="2300" y2="350" />
+	</g>
+
+	<!-- Markers depicting events. -->
+	<g font-family="sans-serif" font-size="40px">
+		<g text-anchor="end">
+			<text x="570" y="818">Vitesse initiale</text>
+			<text x="570" y="615">Vitesse régulière</text>
+			<text x="570" y="245">Vitesse maximale</text>
+		</g>
+		<text x="2400" y="765">Vitesse régulière du ventilateur</text>
+		<text x="2400" y="815">à la hauteur</text>
+		<text x="2400" y="455">Standard/Maximum</text>
+		<text x="2400" y="505">Seuil de vitesser</text>
+		<text x="2400" y="365">Durée minimale de la couche</text>
+		<text x="2400" y="240">(vitesse d'impression réduite)</text>
+		<text x="2400" y="117">Durée minimale de la couche</text>
+	</g>
+
+	<!-- Indicator for fan speed gradient. -->
+	<path d="M720,800 l35,-50 v-300 l15,-100 v-250 h-50 z" />
+</svg>

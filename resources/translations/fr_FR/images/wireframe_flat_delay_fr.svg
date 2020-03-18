@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1000">
+	<g stroke="deepskyblue" stroke-width="30" fill="none" stroke-linejoin="bevel">
+		<!-- Connecting zigzaggy lines. -->
+		<path d="M-300,-400 l600,600 v-600 l600,600 v-600 l600,600 v-600 l600,600 v-600" />
+		<path d="M-300,200 l600,600 v-600 l600,600 v-600 l600,600 v-600 l600,600 v-600" />
+		<path d="M-300,800 l600,600 v-600 l600,600 v-600 l600,600 v-600 l600,600 v-600" />
+	</g>
+	<g stroke="darkblue" stroke-width="50" fill="none">
+		<!-- Horizontal "layer" lines. -->
+		<line x1="0" y1="800" x2="2000" y2="800" />
+		<line x1="0" y1="200" x2="2000" y2="200" />
+	</g>
+
+	<!-- Legend. -->
+	<polygon fill="white" points="600,810 780,810 780,820 800,800 780,780 780,790 600,790" /> <!-- Before delay. -->
+	<polygon fill="white" points="1000,810 1180,810 1180,820 1200,800 1180,780 1180,790 1000,790" /> <!-- After delay. -->
+	<circle fill="red" cx="300" cy="800" r="30" /> <!-- Points of delay. -->
+	<circle fill="red" cx="900" cy="800" r="30" />
+	<circle fill="red" cx="1500" cy="800" r="30" />
+	<text x="930" y="760" font-family="sans-serif" font-size="60px">Délai d'attente</text>
+</svg>

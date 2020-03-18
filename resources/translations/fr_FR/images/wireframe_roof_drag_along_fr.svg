@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000">
+	<!-- Connecting zigzaggy lines. -->
+	<polygon stroke="deepskyblue" stroke-width="30" fill="none" stroke-linejoin="bevel" points="500,450 500,50 535,465 818,182 550,500 950,500 535,535 818,818 500,550 500,950 465,535 182,818 450,500 50,500 465,465 182,182" />
+	<g stroke="darkblue" stroke-width="50" fill="none">
+		<!-- Concentric rings. -->
+		<circle cx="500" cy="500" r="450" />
+		<circle cx="500" cy="500" r="150" />
+	</g>
+
+	<!-- Legend. -->
+	<polygon points="500,455 520,435 510,435 510,395 520,395 500,375 480,395 490,395 490,435 480,435" />
+	<g font-family="sans-serif" font-size="50px">
+		<text x="520" y="430" fill="white" stroke="white" stroke-width="6">Traîner le toit</text> <!-- White outline for legibility. -->
+		<text x="520" y="430">Traîner le toit</text>
+	</g>
+</svg>

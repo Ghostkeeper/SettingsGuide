@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000">
+    <defs>
+        <marker id="arrow_inside" markerWidth="3" markerHeight="3" refX="0" refY="1.5" orient="auto">
+            <polygon points="0,3 0,0 3,1.5" fill="red" />
+        </marker>
+        <marker id="arrow_outside" markerWidth="3" markerHeight="3" refX="0" refY="1.5" orient="auto">
+            <polygon points="0,3 0,0 3,1.5" fill="blue" />
+        </marker>
+    </defs>
+
+    <!-- Arrows. -->
+    <g stroke-width="10">
+        <g stroke="red" marker-end="url(#arrow_inside)">
+            <line x1="460" y1="550" x2="504" y2="450" />
+            <line x1="280" y1="820" x2="340" y2="732" />
+        </g>
+        <g stroke="blue" marker-end="url(#arrow_outside)">
+            <line x1="460" y1="550" x2="416" y2="650" />
+        </g>
+    </g>
+
+    <!-- The outlines. -->
+    <g stroke="black" fill="none">
+        <g stroke-width="30"> <!-- Outlines. -->
+            <polygon points="100,400 800,700 950,300 500,100" />
+            <polyline points="84,398 250,800 400,900 802,707" />
+        </g>
+        <g stroke-width="10"> <!-- Lines indicating the inside. -->
+            <polygon points="151,394 785,665 916,315 502,130" />
+            <polyline points="117,413 272,784 402,871 780,690" />
+        </g>
+    </g>
+
+    <!-- Labels. -->
+    <g font-family="sans-serif" font-size="40">
+        <text x="500" y="500" transform="rotate(22, 500,500)" fill="red">Intérieur</text>
+        <text x="440" y="640" transform="rotate(22, 440,640)" fill="blue">Extérieur</text>
+        <text x="330" y="780" transform="rotate(34, 330,780)" fill="red">Intérieur</text>
+    </g>
+</svg>
