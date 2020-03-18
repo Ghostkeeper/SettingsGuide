@@ -1,7 +1,7 @@
 Éviter les pièces imprimées lors du déplacement
 ===
 
-En activant ce paramètre, la tête d'impression essaiera d'éviter de heurter d'autres objets lors de ses déplacements dans le volume de construction. Elle fera plutôt un petit détour. Si un détour est possible et qu'il ne touche aucun autre objet, aucune rétraction n'est déclenchée à moins que la longueur du trajet ne dépasse le paramètre [Distance de détour maximale sans rétraction](./retraction_combing_max_distance.md).
+En activant ce paramètre, la tête d'impression essaiera d'éviter de heurter d'autres objets lors de ses déplacements dans le volume de construction. Elle fera plutôt un petit détour. Si un détour est possible et qu'il ne touche aucun autre objet, aucune rétraction n'est déclenchée à moins que la longueur du trajet ne dépasse le paramètre [Distance de détour maximale sans rétraction](retraction_combing_max_distance.md).
 
 ![Lorsque ce paramètre est désactivé, les mouvements de déplacement peuvent traverser d'autres parties](../../../articles/images/travel_avoid_other_parts_disabled.png)
 ![Lorsque cette option est activée, les déplacements évitent les autres parties](../../../articles/images/travel_avoid_other_parts_enabled.png)

@@ -9,7 +9,7 @@ Causes
 ----
 L'oreiller est une combinaison de plusieurs effets qui se combinent pour provoquer un effet de bombement sur la face supérieure de l'impression.
 
-Le bombement reconnaissable de la peau supérieure est en fait une forme de [gauchissement](./warping.md) où la peau supérieure est comprimée par les murs environnants et le remplissage sous-jacent. Comme les parois et le remplissage sont imprimés en premier dans les couches inférieures, ils vont refroidir et se rétracter pendant que la peau est encore en cours d'impression. Pendant le rétrécissement, les parois et le remplissage poussent les lignes de la peau à l'intérieur au point où elles sont bombées.
+Le bombement reconnaissable de la peau supérieure est en fait une forme de [gauchissement](warping.md) où la peau supérieure est comprimée par les murs environnants et le remplissage sous-jacent. Comme les parois et le remplissage sont imprimés en premier dans les couches inférieures, ils vont refroidir et se rétracter pendant que la peau est encore en cours d'impression. Pendant le rétrécissement, les parois et le remplissage poussent les lignes de la peau à l'intérieur au point où elles sont bombées.
 
 Un autre facteur important dans l'oreiller est l'affaissement des lignes de peau entre les lignes de remplissage. En fonction de la distance entre les lignes de remplissage, les lignes de peau doivent couvrir une certaine distance. Si le refroidissement est insuffisant, le plastique s'affaissera un peu. Les lignes cutanées adhèrent alors moins bien les unes aux autres, laissant des espaces entre elles. Il faut quelques couches de peau pour réparer cela.
 

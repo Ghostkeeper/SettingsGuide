@@ -7,4 +7,4 @@ Lorsque la buse passe dans les coins, la tête d'impression ne vibre pas seuleme
 
 Cela dit, l'adhérence entre la jupe et la plaque de montage n'est pas très importante. Si la jupe se détache, l'impression réussira probablement quand même. En outre, les coins de la jupe ou du bord ne sont généralement pas très nets pendant l'impression, ce qui peut provoquer des vibrations. L'effet du réglage de ce paramètre sera très faible.
 
-Même si la jupe et le bord font toujours partie de la couche initiale, la [saccade d’impression de la couche initiale](./jerk_print_layer_0.md) n'a aucun effet sur eux. Ce paramètre a priorité sur l'erreur d'impression de la couche initiale.
+Même si la jupe et le bord font toujours partie de la couche initiale, la [saccade d’impression de la couche initiale](jerk_print_layer_0.md) n'a aucun effet sur eux. Ce paramètre a priorité sur l'erreur d'impression de la couche initiale.

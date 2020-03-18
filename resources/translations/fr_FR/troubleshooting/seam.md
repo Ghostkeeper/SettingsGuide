@@ -5,7 +5,7 @@ Les parois de votre impression sont imprimées en boucles continues, mais l'impr
 
 ![Une longue couture verticale à la surface](../../../articles/images/seam.jpg)
 
-Il ne faut pas confondre avec le "joint en Z", qui est un joint qui se crée lorsque la buse se déplace à la hauteur de la couche suivante. Ce mouvement arrête la buse pendant un bref instant, créant ainsi un [blob](./blobs.md) à cet endroit. La terminologie de Cura concernant les réglages de la couture est historiquement erronée à cet égard, car ses réglages dits de "couture en Z" concernent en fait l'endroit où placer la couture normale.
+Il ne faut pas confondre avec le "joint en Z", qui est un joint qui se crée lorsque la buse se déplace à la hauteur de la couche suivante. Ce mouvement arrête la buse pendant un bref instant, créant ainsi un [blob](blobs.md) à cet endroit. La terminologie de Cura concernant les réglages de la couture est historiquement erronée à cet égard, car ses réglages dits de "couture en Z" concernent en fait l'endroit où placer la couture normale.
 
 Placement de la couture
 ----

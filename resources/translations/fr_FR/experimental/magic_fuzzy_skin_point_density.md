@@ -7,4 +7,4 @@ Ce réglage permet de configurer la fréquence à laquelle la buse vibre lorsqu'
 
 Lorsque la fonction Fuzzy Skin est activée, la paroi extérieure sera entièrement constituée de segments de ligne droite entre les mouvements de vibration, au lieu de la surface d'origine. Avec une faible densité, il pourrait arriver que les surfaces courbes ne soient plus très courbées car la résolution d'origine était supérieure à la densité des coordonnées en raison de l'effet Fuzzy Skin.
 
-En raison de contraintes algorithmiques, la densité ne peut pas être augmentée trop fortement si l'[épaisseur](./magic_fuzzy_skin_thickness.md) est très élevée.
+En raison de contraintes algorithmiques, la densité ne peut pas être augmentée trop fortement si l'[épaisseur](magic_fuzzy_skin_thickness.md) est très élevée.

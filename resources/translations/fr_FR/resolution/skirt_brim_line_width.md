@@ -7,4 +7,4 @@ Lorsque vous utilisez un bord, une largeur de ligne légèrement augmentée amé
 
 Pour la jupe, l'augmentation de la largeur du trait entraîne l'utilisation d'une plus grande quantité de matériau. Cependant, cela permet un bon amorçage en un temps plus court, de sorte que moins de lignes de jupe sont nécessaires pour les petits objets.
 
-**La largeur de la ligne de la jupe et du bord est également influencée par le paramètre [Largeur de la ligne de la couche initiale](./initial_layer_line_width_factor.md).**
+**La largeur de la ligne de la jupe et du bord est également influencée par le paramètre [Largeur de la ligne de la couche initiale](initial_layer_line_width_factor.md).**

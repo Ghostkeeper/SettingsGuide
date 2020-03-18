@@ -52,6 +52,6 @@ Si le filament a accumulé de l'humidité alors qu'il était encore sur la bobin
 
 Coutures
 ----
-Un joint sera créé à l'endroit où le périmètre de la paroi extérieure est démarré et fermé. Ce n'est pas ce que les gens appellent normalement une goutte, bien qu'elle ait un aspect similaire. Voir l'article sur les [coutures](./seam.md) pour savoir comment réduire cet effet.
+Un joint sera créé à l'endroit où le périmètre de la paroi extérieure est démarré et fermé. Ce n'est pas ce que les gens appellent normalement une goutte, bien qu'elle ait un aspect similaire. Voir l'article sur les [coutures](seam.md) pour savoir comment réduire cet effet.
 
 Si le paramètre [Alignement de la jointure en Z](../shell/z_seam_type.md) est réglé sur "Aléatoire", la couture sera répartie autour du modèle, créant ainsi de petites coutures partout. Cela peut ressembler exactement à un blob, même si c'est en fait une couture. Modifiez le paramètre [Alignement de la jointure en Z](../shell/z_seam_type.md) pour masquer ces coutures.

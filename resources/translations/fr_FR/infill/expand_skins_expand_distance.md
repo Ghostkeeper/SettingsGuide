@@ -10,4 +10,4 @@ Distance d'expansion de la couche extérieure
 * Si votre modèle a une surface horizontale à côté d'un mur raide, augmenter ce réglage peut améliorer l'adhérence entre les parois de la surface raide et la peau, car la peau sera imprimée directement au contact de ces parois.
 * Si vous réglez ce paramètre sur une valeur négative, la largeur des couches supérieure et inférieure sera réduite et remplacée par un remplissage. Cela peut permettre de gagner du temps d'impression, au détriment de la résistance.
 
-**En raison de limitations techniques, vous ne pouvez pas réduire ce paramètre en dessous de la valeur de [Largeur de retrait de la couche extérieure](./skin_preshrink.md). Augmentez le paramètre Skin Removal Width afin d'enlever plus de peau.**
+**En raison de limitations techniques, vous ne pouvez pas réduire ce paramètre en dessous de la valeur de [Largeur de retrait de la couche extérieure](skin_preshrink.md). Augmentez le paramètre Skin Removal Width afin d'enlever plus de peau.**

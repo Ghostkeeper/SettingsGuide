@@ -3,7 +3,7 @@ Problèmes d'adhérence au plateau
 
 L'un des modes de défaillance les plus courants pour les impressions 3D est que l'empreinte s'est détachée de la plaque de construction alors qu'elle était encore en cours d'impression. Cet article passe en revue certains ajustements que vous pouvez apporter pour éviter que cela ne se produise.
 
-Si l'impression s'est perdue de la plaque de montage, vous verrez généralement beaucoup de fils détachés sur la plaque de montage. Si vous avez plus de chance, cela peut aussi se manifester par un simple [décalage de couche](./layer_shift.md) (et il y aura moins à nettoyer). Dans tous les cas, l'impression est gâchée.
+Si l'impression s'est perdue de la plaque de montage, vous verrez généralement beaucoup de fils détachés sur la plaque de montage. Si vous avez plus de chance, cela peut aussi se manifester par un simple [décalage de couche](layer_shift.md) (et il y aura moins à nettoyer). Dans tous les cas, l'impression est gâchée.
 
 Méthodes d'adhérence au plateau
 ----
@@ -21,7 +21,7 @@ De même, si un radeau est utilisé, vous pouvez augmenter l'adhérence en augme
 
 Prévention du gauchissement
 ----
-Si votre impression souffre de déformation, la zone de contact entre l'impression et la plaque de montage est fortement réduite. Pour éviter cela, consultez l'article sur [le décollement](./warping.md). En résumé, voici quelques ajustements à apporter pour éviter le gauchissement.
+Si votre impression souffre de déformation, la zone de contact entre l'impression et la plaque de montage est fortement réduite. Pour éviter cela, consultez l'article sur [le décollement](warping.md). En résumé, voici quelques ajustements à apporter pour éviter le gauchissement.
 * Réglez le [Modèle de couche initiale du bas](../resolution/layer_height_0.md) sur concentrique.
 * Réduisez la [température de la plaque de construction](../material/material_bed_temperature.md) et augmentez la [température du volume de construction](../material/build_volume_temperature.md).
 * Ajustez le modèle de manière à ce qu'il y ait moins de coins extérieurs tranchants sur la première couche.

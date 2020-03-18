@@ -19,7 +19,7 @@ Le plus court
 
 Cette option minimise simplement la longueur des déplacements vers la couture, sans faire d'effort pour la placer à un endroit particulier. Comme le trajet est plus court, vous gagnerez un peu de temps sur les déplacements. La couture sera également légèrement plus petite, car moins de suintement sera placé à l'endroit où la buse atterrit sur le contour.
 
-La préférence de coin souhaitée est toujours maintenue en choisissant un coin proche de l'endroit où se trouve la buse. Le coin le plus proche n'est pas choisi, mais une préférence pondérée est utilisée pour minimiser quelque peu les déplacements, mais aussi pour utiliser un coin approprié pour le paramètre [Préférence de jointure d'angle](./z_seam_corner.md).
+La préférence de coin souhaitée est toujours maintenue en choisissant un coin proche de l'endroit où se trouve la buse. Le coin le plus proche n'est pas choisi, mais une préférence pondérée est utilisée pour minimiser quelque peu les déplacements, mais aussi pour utiliser un coin approprié pour le paramètre [Préférence de jointure d'angle](z_seam_corner.md).
 
 Aléatoire
 ----
@@ -31,6 +31,6 @@ Le coin le plus aigu
 ----
 ![Coin le plus aigu](../../../articles/images/z_seam_type_sharpest.png)
 
-La couture sera placée dans le coin le plus aigu de tout le contour, selon la préférence de coin choisie dans le paramètre [Préférence de jointure d'angle](./z_seam_corner.md). Cela peut entraîner des déplacements plus longs, mais garantit que la couture est cachée ou exposée au maximum selon la préférence définie pour les coins.
+La couture sera placée dans le coin le plus aigu de tout le contour, selon la préférence de coin choisie dans le paramètre [Préférence de jointure d'angle](z_seam_corner.md). Cela peut entraîner des déplacements plus longs, mais garantit que la couture est cachée ou exposée au maximum selon la préférence définie pour les coins.
 
 

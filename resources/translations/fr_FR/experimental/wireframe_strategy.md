@@ -7,7 +7,7 @@ Compenser
 ----
 En utilisant cette stratégie, l'imprimeur essaiera de compenser les facteurs d'affaissement du matériau. Comme le matériau sort fondu de la buse, il tombera un peu avant de se solidifier et sera entraîné par les mouvements de la buse. Cette stratégie déforme le motif en dents de scie qui relie les couches du cadre de telle sorte qu'il finit, espérons-le, par se retrouver au bon endroit.
 
-Deux facteurs de compensation sont disponibles : L'un déforme le motif en dents de scie uniquement verticalement pour [compenser l'affaissement](./wireframe_fall_down.md), et l'autre déforme le motif en dents de scie dans une direction diagonale pour [compenser le matériau entraîné](./wireframe_drag_along.md) avec la buse.
+Deux facteurs de compensation sont disponibles : L'un déforme le motif en dents de scie uniquement verticalement pour [compenser l'affaissement](wireframe_fall_down.md), et l'autre déforme le motif en dents de scie dans une direction diagonale pour [compenser le matériau entraîné](wireframe_drag_along.md) avec la buse.
 
 Nœud
 ----
@@ -17,7 +17,7 @@ Lorsque cette stratégie est choisie, un petit mouvement vers le haut et vers l'
 
 La motion pour ce "nœud" est une série de mouvements de voyage :
 1. Tout d'abord, la buse se déplace légèrement vers le haut et vers l'arrière.
-2. S'il y a un [retard](./wireframe_top_delay.md) dans la partie supérieure, la buse s'arrête pendant la durée du retard. Cette pause se fait dans la pointe du mouvement du nœud.
+2. S'il y a un [retard](wireframe_top_delay.md) dans la partie supérieure, la buse s'arrête pendant la durée du retard. Cette pause se fait dans la pointe du mouvement du nœud.
 3. 3. Troisièmement, la buse redescend à la hauteur habituelle. En même temps, la buse avance et s'éloigne de la ligne verticale.
 
 Rétraction

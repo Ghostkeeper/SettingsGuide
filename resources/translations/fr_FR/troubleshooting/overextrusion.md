@@ -1,7 +1,7 @@
 Surextrusion
 ===
 
-La surextrusion est un terme utilisé lorsque l'imprimante extrude trop de matière en un seul endroit. La matière s'écoule alors sur les côtés ou vers le haut, ce qui rend la surface très rugueuse et irrégulière. Cela peut également provoquer des [Filasse](./stringing.md) et beaucoup de [Gouttes (blobs)](./blobs.md).
+La surextrusion est un terme utilisé lorsque l'imprimante extrude trop de matière en un seul endroit. La matière s'écoule alors sur les côtés ou vers le haut, ce qui rend la surface très rugueuse et irrégulière. Cela peut également provoquer des [Filasse](stringing.md) et beaucoup de [Gouttes (blobs)](blobs.md).
 
 ![Une surextrusion massive s'est produite dans cette impression](../../../articles/images/overextrusion.jpg)
 

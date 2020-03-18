@@ -1,7 +1,7 @@
 Relatif à la jointure en Z
 ===
 
-Lorsque la couture est placée à un endroit spécifié par l'utilisateur conformément au paramètre [Z Alignement de la couture](./z_seam_type.md), vous pouvez saisir les coordonnées de l'endroit où la couture doit être placée. Normalement, ces coordonnées indiquent un emplacement sur la plaque de montage, par exemple au dos de l'imprimante. Si ce paramètre est activé, ces coordonnées seront prises par rapport à la position du modèle.
+Lorsque la couture est placée à un endroit spécifié par l'utilisateur conformément au paramètre [Z Alignement de la couture](z_seam_type.md), vous pouvez saisir les coordonnées de l'endroit où la couture doit être placée. Normalement, ces coordonnées indiquent un emplacement sur la plaque de montage, par exemple au dos de l'imprimante. Si ce paramètre est activé, ces coordonnées seront prises par rapport à la position du modèle.
 
 ![Désactivé : Les coordonnées indiquent une position absolue au centre de la plaque de montage, de sorte que toutes les bandes bleues pointent vers le milieu](../../../articles/images/z_seam_relative_disabled.png)
 ![Activé : Les coordonnées sont relatives au modèle, donc chaque modèle aura les bandes bleues dans le même coin](../../../articles/images/z_seam_relative_enabled.png)

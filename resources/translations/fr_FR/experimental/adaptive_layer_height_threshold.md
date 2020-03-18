@@ -3,7 +3,7 @@ Taille de la topographie des couches adaptatives
 
 Ce paramètre permet de configurer la distance (horizontale) entre les bords des couches sur une pente quelconque. La hauteur des couches est ajustée de manière à obtenir le déplacement souhaité. Pour éviter l'effet topographique, ce paramètre configure essentiellement la distance entre les contours topographiques.
 
-En réduisant ce réglage, les couches seront globalement plus fines, car les bords horizontaux des couches doivent être placés plus près les uns des autres. En augmentant ce paramètre, les couches seront plus épaisses, car les bords des couches peuvent être plus éloignés les uns des autres. L'épaisseur des couches restera cependant dans la plage définie par les paramètres [Hauteur de couche](./layer_height.md) et [Variation maximale des couches adaptatives](./adaptive_layer_height_variation.md).
+En réduisant ce réglage, les couches seront globalement plus fines, car les bords horizontaux des couches doivent être placés plus près les uns des autres. En augmentant ce paramètre, les couches seront plus épaisses, car les bords des couches peuvent être plus éloignés les uns des autres. L'épaisseur des couches restera cependant dans la plage définie par les paramètres [Hauteur de couche](layer_height.md) et [Variation maximale des couches adaptatives](adaptive_layer_height_variation.md).
 
 Réduisez ce paramètre pour diminuer l'effet de topographie sur les faces supérieure ou inférieure de votre impression. L'impression prendra cependant plus de temps. Augmentez ce paramètre pour réduire la durée de l'impression.
 

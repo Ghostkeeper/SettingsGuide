@@ -1,7 +1,7 @@
 Distance X/Y minimale des supports
 ===
 
-Si la distance Z du support est préférée à la distance X/Y, la distance horizontale entre le support et le modèle peut devenir plus petite que le paramètre [Support X/Y Distance](./support_xy_distance.md) pour satisfaire à la [Support Z Distance](./support_z_distance.md) requise.
+Si la distance Z du support est préférée à la distance X/Y, la distance horizontale entre le support et le modèle peut devenir plus petite que le paramètre [Support X/Y Distance](support_xy_distance.md) pour satisfaire à la [Support Z Distance](support_z_distance.md) requise.
 
 Ce paramètre définit une distance X/Y minimale qui doit être respectée quelle que soit la distance Z. Cette distance X/Y minimale est de nouveau prioritaire par rapport à la distance Z.
 

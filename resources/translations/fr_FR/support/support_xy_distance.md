@@ -9,7 +9,7 @@ La distance horizontale a pour but d'éviter que le support ne heurte le modèle
 
 Distance X/Y par rapport à Z
 ----
-La distance X/Y et la distance Z doivent être observées exactement ; ni plus, ni moins. Comme il s'agit d'une contrainte excessive, il doit y avoir une préférence entre les deux. Cela est indiqué par le paramètre [Priorité de distance des supports](./support_xy_overrides_z.md). Ce paramètre modifie le comportement de ce paramètre de distance de support X/Y.
+La distance X/Y et la distance Z doivent être observées exactement ; ni plus, ni moins. Comme il s'agit d'une contrainte excessive, il doit y avoir une préférence entre les deux. Cela est indiqué par le paramètre [Priorité de distance des supports](support_xy_overrides_z.md). Ce paramètre modifie le comportement de ce paramètre de distance de support X/Y.
 
 ![X/Y par rapport à Z](../images/support_xy_overrides_z_fr.svg)
 

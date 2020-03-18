@@ -10,4 +10,4 @@ Distance d'expansion de la couche extérieure inférieure
 * Si la face inférieure n'est pas directement sur la plaque de construction, il y aura des parois sous la peau. Cela améliorera l'adhérence entre les couches inférieures et ses parois voisines, car les couches inférieures seront imprimées directement sur les parois.
 * Le réglage de ce paramètre à une valeur négative réduira la largeur des couches inférieures, en la remplaçant par un remplissage. Cela peut permettre de gagner du temps d'impression, au détriment de la résistance.
 
-**En raison de limitations techniques, vous ne pouvez pas réduire ce paramètre en dessous de la valeur de [Largeur de retrait de la couche extérieure inférieure](./bottom_skin_preshrink.md). Augmentez le paramètre Bottom Skin Removal Width afin d'enlever plus de peau.**
+**En raison de limitations techniques, vous ne pouvez pas réduire ce paramètre en dessous de la valeur de [Largeur de retrait de la couche extérieure inférieure](bottom_skin_preshrink.md). Augmentez le paramètre Bottom Skin Removal Width afin d'enlever plus de peau.**

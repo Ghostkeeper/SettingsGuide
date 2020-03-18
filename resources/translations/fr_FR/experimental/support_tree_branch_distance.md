@@ -12,4 +12,4 @@ En réduisant la distance entre les branches, on peut obtenir une meilleure qual
 
 Toutefois, la réduction de la distance entre les branches entraînera également une augmentation de la quantité de matériau utilisée et du temps d'impression.
 
-Si la distance entre les branches est inférieure au [diamètre de la branche](./support_tree_branch_diameter.md), les branches fusionneront avant de pouvoir être formées correctement. Par conséquent, le centre des grandes zones en surplomb risque de ne pas être correctement soutenu à ce moment-là.
+Si la distance entre les branches est inférieure au [diamètre de la branche](support_tree_branch_diameter.md), les branches fusionneront avant de pouvoir être formées correctement. Par conséquent, le centre des grandes zones en surplomb risque de ne pas être correctement soutenu à ce moment-là.

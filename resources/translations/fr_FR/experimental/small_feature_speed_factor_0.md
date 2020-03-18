@@ -1,7 +1,7 @@
 Vitesse de la couche initiale de petite structure
 ===
 
-Les contours qui sont plus courts que la [longueur maximale des petits éléments](./small_feature_max_length.md) peuvent être imprimés à une vitesse réduite. Ce paramètre vous permet d'indiquer la vitesse à laquelle ces contours doivent être imprimés sur la première couche, en tant que facteur de leur [vitesse d'impression normale](../vitesse/speed_wall.md). Cette vitesse peut être configurée séparément de la vitesse d'impression des petits éléments sur le [reste des couches](./small_feature_speed_factor.md).
+Les contours qui sont plus courts que la [longueur maximale des petits éléments](small_feature_max_length.md) peuvent être imprimés à une vitesse réduite. Ce paramètre vous permet d'indiquer la vitesse à laquelle ces contours doivent être imprimés sur la première couche, en tant que facteur de leur [vitesse d'impression normale](../vitesse/speed_wall.md). Cette vitesse peut être configurée séparément de la vitesse d'impression des petits éléments sur le [reste des couches](small_feature_speed_factor.md).
 
 Les petits contours n'ont pas beaucoup de surface à coller sur la plaque de construction. En particulier lorsque [impression des murs avant le remplissage](../infill/infill_before_walls.md), les murs pour les petits trous ne sont souvent que de petits cercles posés sur la plaque de montage. Si la buse les dépasse lors d'un déplacement ultérieur, elles peuvent être arrachées de la plaque de construction. Pour cette raison, la vitesse d'impression de ces petits contours peut être réduite par rapport aux autres contours. Cela permet au matériau de s'écouler davantage et de mieux fusionner avec la plaque de montage, ce qui réduit les chances de les arracher de la plaque de montage.
 

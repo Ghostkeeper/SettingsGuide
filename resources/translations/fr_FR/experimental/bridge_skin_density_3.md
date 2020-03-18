@@ -9,4 +9,4 @@ Cependant, le matériau ne pourra pas refroidir aussi bien. Avec un certain espa
 
 Lequel de ces effets est le plus fort dépend de la viscosité du matériau, de la vitesse à laquelle il se solidifie et de la vitesse du ventilateur. Un certain réglage est toujours nécessaire.
 
-**Si le [débit de la troisième peau du pont](./bridge_skin_material_flow_3.md) est inférieur à 100%, il y aura également un certain espacement entre les lignes même si la densité est de 100%, car les lignes seront alors plus fines.**
+**Si le [débit de la troisième peau du pont](bridge_skin_material_flow_3.md) est inférieur à 100%, il y aura également un certain espacement entre les lignes même si la densité est de 100%, car les lignes seront alors plus fines.**

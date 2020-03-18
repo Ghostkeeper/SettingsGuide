@@ -5,7 +5,7 @@ Spiraliser le contour extérieur est une astuce.
 
 Lors de l'impression couche par couche, la buse doit normalement se déplacer d'une couche à l'autre. Ce mouvement fait que la buse reste presque immobile pendant une fraction de seconde, ce qui laisse une couture sur la surface appelée la couture Z. Ce réglage est destiné à empêcher cela et bien plus encore.
 
-Lors de la mise en spirale du modèle, le modèle n'obtiendra aucun remplissage ni aucun sommet. Il n'aura qu'une paroi et un fond. Il est essentiel que si [Lisser les contours spiralisés](./smooth_spiralized_contours.md) est activé, la hauteur de la buse sera progressivement augmentée sur la grossièreté d'une couche. De cette façon, une spirale est créée en suivant le contour du modèle. Il n'y aura aucun mouvement d'une couche à l'autre, car la buse s'est déjà déplacée progressivement vers la couche suivante. 
+Lors de la mise en spirale du modèle, le modèle n'obtiendra aucun remplissage ni aucun sommet. Il n'aura qu'une paroi et un fond. Il est essentiel que si [Lisser les contours spiralisés](smooth_spiralized_contours.md) est activé, la hauteur de la buse sera progressivement augmentée sur la grossièreté d'une couche. De cette façon, une spirale est créée en suivant le contour du modèle. Il n'y aura aucun mouvement d'une couche à l'autre, car la buse s'est déjà déplacée progressivement vers la couche suivante. 
 
 Le mode spiral est courant chez de nombreux trancheurs.  Il est aussi parfois appelé "mode vase", car c'est un bon moyen d'imprimer des vases.  Parmi les autres propriétés, on peut citer 
 * Imprime extrêmement rapidement. 

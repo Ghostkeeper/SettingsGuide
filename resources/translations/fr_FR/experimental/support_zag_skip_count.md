@@ -1,7 +1,7 @@
 Nombre d'omissions de connexion ZigZag
 ===
 
-Si le support est [décomposé en morceaux](./support_skip_some_zags.md), ce paramètre détermine combien de lignes de support seront combinées en un seul morceau.
+Si le support est [décomposé en morceaux](support_skip_some_zags.md), ce paramètre détermine combien de lignes de support seront combinées en un seul morceau.
 
 ![Chaque morceau contient 8 lignes](../../../articles/images/support_skip_some_zags.png)
 
