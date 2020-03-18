@@ -1,9 +1,9 @@
-Enable Print Cooling
+Activer le refroidissement de l'impression
 ====
-This setting will enable or disable the fans on the print head during printing. The fans are meant to cool down the material while it is printing, so that it solidifies faster.
+Ce paramètre active ou désactive les ventilateurs de la tête d'impression pendant l'impression. Les ventilateurs sont destinés à refroidir le matériau pendant l'impression, afin qu'il se solidifie plus rapidement.
 
-Materials with a low glass transition temperature range, such as PLA, will need to be cooled down while printing. Otherwise they will start to sag from their heat, which causes deformities and may even fail the print completely. Also, points where the material is put down in mid-air will sag even further, the longer it takes to solidify the material.
+Les matériaux avec une plage de températures de transition vitreuse faible, comme le PLA, devront être refroidis pendant l'impression. Sinon, ils commenceront à s'affaisser, ce qui provoque des déformations et peut même faire échouer complètement l'impression. Plus les points où le matériau est déposé dans le vide, donc s'affaissent encore plus, plus il faut de temps pour solidifier le matériau.
 
-For materials with a higher glass transition temperature range, such as ABS, it is still recommended to turn on the fans, but they may spin at a lower rate for certain parts of the print.
+Pour les matériaux avec une plage de températures de transition vitreuse plus élevée, comme l'ABS, il est toujours recommandé d'activer les ventilateurs, mais ils peuvent tourner à un taux inférieur pour certaines parties de l'impression.
 
-Only for materials with a very high glass transition temperature should you completely disable the fans. If the fans are enabled then, it could give extrusion problems and make the final print brittle.
+Ce n'est que pour les matériaux avec une température de transition vitreuse très élevée que vous devez désactiver complètement les ventilateurs. Si les ventilateurs sont activés alors, cela pourrait donner des problèmes d'extrusion et rendre l'impression finale fragile.
