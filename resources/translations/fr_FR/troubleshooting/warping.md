@@ -1,6 +1,5 @@
 Décollement
-===
-
+====
 Le décollement est un problème de l'impression finale où l'empreinte se recroqueville après l'impression, laissant l'objet final déformé. Généralement, les coins du bas de l'impression se recourbent vers le haut, ou bien des parties fines de l'impression deviennent ondulées.
 
 ![Les pointes s'enroulent](../../../articles/images/warping.jpg)

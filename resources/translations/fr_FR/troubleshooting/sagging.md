@@ -1,6 +1,5 @@
 Affaissement
-===
-
+====
 La fabrication de filaments fondus consiste à déposer une ligne de plastique fondu. Cette ligne est souple, et si elle ne repose sur rien, elle s'affaisse. C'est ce qu'on appelle l'affaissement.
 
 ![Affaissement dans les parties en surplomb](../../../articles/images/sagging.jpg)

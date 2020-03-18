@@ -1,6 +1,5 @@
 Saccade de paroi externe
-===
-
+====
 Ce réglage détermine la vitesse à laquelle la buse peut passer dans les coins tout en imprimant la paroi extérieure. Elle peut être configurée séparément des parois intérieures.
 
 Lors de l'impression des parois extérieures, l'imprimante est très sensible aux vibrations. Si la tête d'impression vibre par rapport à l'objet imprimé, cela sera immédiatement visible sous forme de sonnerie dans l'impression finale. C'est pourquoi il est utile d'imprimer les parois extérieures à un taux de secousse plus faible que les parois intérieures.

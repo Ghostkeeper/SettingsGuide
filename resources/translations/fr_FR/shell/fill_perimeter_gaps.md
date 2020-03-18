@@ -1,6 +1,5 @@
 Remplir les trous entre les parois
-===
-
+====
 De nombreuses estampes contiennent des pièces plus fines que l'épaisseur de la paroi souhaitée. Dans la plupart des cas, c'est très bien, mais pour certaines empreintes, cela laisserait un espace entre les parois. Si ce paramètre est activé, les espaces entre les parois seront remplis d'une quantité de matériau supplémentaire.
 
 ![Un long et mince espace entre les parois opposées est indiqué sur les côtés gauche et droit de l'image](../../../articles/images/fill_perimeter_gaps_disabled.png)

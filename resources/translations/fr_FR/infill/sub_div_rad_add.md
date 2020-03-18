@@ -1,6 +1,5 @@
 Coque de la subdivision cubique
-===
-
+====
 Ce réglage fait que le motif de remplissage de la subdivision cubique commence à réduire un peu plus le remplissage vers l'intérieur, pour améliorer la résistance de l'impression.
 
 ![Subdivision cubique sans coquille supplémentaire](../../../articles/images/sub_div_rad_add_small.png)

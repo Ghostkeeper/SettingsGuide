@@ -1,6 +1,5 @@
 Largeur de ligne de la (des) paroi(s) interne(s)
-===
-
+====
 La largeur de la ligne des parois intérieures peut être ajustée séparément de celle de la paroi extérieure. Ce réglage indique la largeur des lignes de chaque paroi intérieure.
 
 ![Les lignes des murs intérieurs sont beaucoup plus larges que les autres](../../../articles/images/wall_line_width_x.png)

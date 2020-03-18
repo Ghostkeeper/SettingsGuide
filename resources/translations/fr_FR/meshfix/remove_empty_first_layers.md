@@ -1,6 +1,5 @@
 Supprimer les premières couches vides
-===
-
+====
 Lorsque cette option est activée, les couches vides sur la face inférieure de l'impression seront supprimées. L'ensemble de l'impression se déplacera vers le bas jusqu'à ce qu'elle repose sur la plaque de construction. Au lieu d'avoir des couches vides qui font échouer l'impression, l'impression sera légèrement plus basse.
 
 Si la préférence de Cura pour "Déposer automatiquement les modèles sur la plaque de montage" est activée, ce paramètre n'aura probablement que très peu d'effet. Il peut néanmoins avoir un effet. Lorsque vous déposez automatiquement des modèles sur la plaque de montage, les modèles sont exactement alignés avec la plaque de montage. Cependant, si la ou les premières couches ne contiennent que des éléments trop petits pour être imprimés (peut-être parce que le fond n'est pas entièrement lisse), la première couche peut être encore vide dans l'impression finale. Ce réglage permet d'éviter cela en déplaçant les autres couches d'une couche vers le bas.

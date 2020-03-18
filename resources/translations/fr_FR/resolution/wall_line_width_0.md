@@ -1,6 +1,5 @@
  Largeur de ligne de la paroi externe
- ===
- 
+====
 La largeur de la ligne de la paroi extérieure peut être ajustée séparément de celle des parois intérieures. Ce réglage indique la largeur de la ligne de la paroi extérieure.
 
 ![Le contour de la paroi extérieure est beaucoup plus large que le reste](../../../articles/images/wall_line_width_0.png)

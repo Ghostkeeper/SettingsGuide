@@ -1,6 +1,5 @@
 Vitesse d’impression filaire du bas
-===
-
+====
 Ce réglage permet de configurer la vitesse d'impression des anneaux concentriques sur la couche initiale de l'impression lors de l'utilisation de l'impression au fil de fer. La vitesse d'impression de la couche initiale plane peut être configurée séparément du reste des couches horizontales.
 
 ![Où les différentes vitesses d'impression par fil s'appliquent](../images/wireframe_printspeed_fr.svg)

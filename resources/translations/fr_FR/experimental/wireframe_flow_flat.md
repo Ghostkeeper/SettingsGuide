@@ -1,6 +1,5 @@
 Débit des fils plats
-===
-
+====
 Ce réglage permet de configurer le débit (et donc l'épaisseur des fils) des anneaux horizontaux de la structure de la charpente métallique. Ce paramètre peut être configuré séparément de la vitesse des fils de connexion ascendants et descendants.
 
 ![Où les différents réglages de débit s'appliquent](../images/wireframe_flow_fr.svg)

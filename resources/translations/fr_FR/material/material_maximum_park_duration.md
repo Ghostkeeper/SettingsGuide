@@ -1,6 +1,5 @@
 Durée maximale du parc
-===
-
+====
 Même si une imprimante est stockée au sec, elle peut présenter le matériau prêt à la buse pendant un certain temps après avoir terminé l'impression précédente, ou après avoir chargé le matériau, car l'utilisateur est susceptible de faire une nouvelle impression bientôt. Ce paramètre configure la durée maximale pendant laquelle le matériau est hors du stockage à sec, prêt pour l'impression. S'il reste plus longtemps à l'extérieur, il commencera à se dégrader en raison de l'humidité de l'air.
 
 En réduisant ce paramètre, les imprimantes doivent rétracter le filament pour le remettre en stockage à sec plus rapidement, ce qui est moins pratique pour l'utilisateur. Cependant, si le matériau est garé trop longtemps, l'humidité absorbée par l'air le dégradera. Cela peut augmenter la friction dans le train de l'extrudeuse, ce qui entraîne un broyage lorsque l'imprimante recommence à imprimer. Cela peut également rendre le matériau plus fragile, entraînant des parties plus faibles ou des filaments cassés. Les filaments cassés entraînent des impressions ratées, ou ne se rétractent pas si l'imprimante est équipée d'un tube Bowden.

@@ -1,6 +1,5 @@
 Activer les bas de support
-===
-
+====
 Le plancher de soutien est une structure intermédiaire entre le soutien et le modèle où le soutien repose sur le modèle. Il peut être utilisé pour fournir une base plus stable au support ou pour rendre le support plus facile à retirer de l'empreinte, en laissant moins de cicatrices.
 
 ![Le sol du support est coloré dans une teinte de bleu plus foncée](../../../articles/images/support_bottom_enable.png)

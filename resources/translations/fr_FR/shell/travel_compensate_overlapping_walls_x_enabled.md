@@ -1,6 +1,5 @@
 Compenser les chevauchements de paroi intérieure
-===
-
+====
 Lors de l'impression de pièces fines, les parois opposées peuvent se rapprocher suffisamment pour se chevaucher. En imprimant les deux parois avec leur largeur de ligne normale, elles dépasseraient. Ce réglage permet d'éviter cette surextrusion en réduisant la largeur de l'une des lignes, ce qui permet d'éviter cette surextrusion et d'obtenir une meilleure précision dimensionnelle.
 
 ![Toutes les lignes sont extrudées avec leur pleine largeur, créant ainsi une pièce qui sera trop large](../../../articles/images/travel_compensate_overlapping_walls_x_enabled_disabled.png)

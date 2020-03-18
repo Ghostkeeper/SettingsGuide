@@ -1,6 +1,5 @@
 Motif du support
-===
-
+====
 Avec ce paramètre, vous pouvez choisir le modèle qui sera utilisé pour remplir le volume de la structure de soutien. Les différents modèles ont des forces et des faiblesses différentes.
 
 Lignes

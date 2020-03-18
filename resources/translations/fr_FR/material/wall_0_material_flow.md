@@ -1,6 +1,5 @@
 Débit de paroi externe
-===
-
+====
 Ce réglage ajuste le débit pour la paroi extérieure uniquement. Le débit de la paroi extérieure peut être réglé séparément du débit des parois intérieures.
 
 Le réglage du débit de la paroi extérieure est une méthode d'arrêt de l'espace pour résoudre les problèmes de débit d'extrusion ou de précision dimensionnelle. Le même effet peut également être obtenu en ajustant les paramètres [Largeur de ligne de la paroi externe

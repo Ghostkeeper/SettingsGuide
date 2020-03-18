@@ -1,6 +1,5 @@
 Diamètre minimal
-===
-
+====
 Ce réglage est un seuil pour le diamètre d'un morceau de porte-à-faux permettant de choisir entre des tours de support normales et des tours de soutien. Si la pièce est plus fine que ce seuil, elle sera soutenue par une [tour de support](support_use_towers.md). Si elle est plus large que ce seuil, elle sera soutenue par les structures de soutien ordinaires.
 
 ![Le spport a une surface de surplomb inférieure au diamètre minimum](../images/support_use_towers_fr.svg)

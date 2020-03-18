@@ -1,6 +1,5 @@
 Température d’impression initiale
-===
-
+====
 Après avoir été mise en veille pendant que différentes extrudeuses ont imprimé, la buse démarre à une température légèrement inférieure. Elle se réchauffe ensuite immédiatement pour atteindre la température d'impression ordinaire une fois que l'impression a commencé.
 
 ![L'interrupteur de l'extrudeuse se produit à une température légèrement inférieure à la température d'impression normale](../images/temperature_regulation_fr.svg)

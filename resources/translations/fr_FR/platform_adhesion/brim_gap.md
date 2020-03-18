@@ -1,6 +1,5 @@
 Espace de bordure
-===
-
+====
 Ce réglage fait apparaître un décalage entre le modèle et le bord. Les lignes de bordure ne sont plus connectées au modèle.
 
 ![Le bord garde une certaine distance par rapport au modèle](../../../articles/images/brim_gap.png)

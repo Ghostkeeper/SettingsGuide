@@ -1,6 +1,5 @@
 Distance de rétraction
-===
-
+====
 C'est la distance, en millimètres, à laquelle le matériau est rétracté de l'extrémité de la buse, lorsqu'un retrait est effectué.
 
 Le réglage a de nombreux effets, de toutes sortes de façons.

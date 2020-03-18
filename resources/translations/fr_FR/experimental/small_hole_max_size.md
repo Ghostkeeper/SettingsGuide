@@ -1,6 +1,5 @@
 Taille maximale des petits trous
-===
-
+====
 Les petits détails de l'empreinte sont souvent très critiques sur le plan dimensionnel. Ce réglage fait que les petits trous dans l'impression sont imprimés plus lentement afin d'obtenir une plus grande précision.
 
 Si un trou circulaire a un diamètre inférieur à la valeur de ce paramètre, la vitesse à laquelle le périmètre de ce trou est imprimé sera multipliée par un facteur de la [Vitesse de petite structure](small_feature_speed_factor.md) (réduit, normalement). Pour les trous qui ne sont pas circulaires, ils seront imprimés à une vitesse différente si la circonférence est inférieure à un cercle ayant le diamètre spécifié ici. Voir aussi [Longueur max de petite structure](small_feature_max_length.md); c'est le réglage qui sera effectivement utilisé pour le découpage.

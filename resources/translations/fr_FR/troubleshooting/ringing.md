@@ -1,6 +1,5 @@
 Ondulations
-===
-
+====
 Les ondulations (parfois appelé "ghosting") est un effet où des ondulations apparaissent sur des surfaces par ailleurs plates à proximité de petits détails de cette surface. Les ondulations commencent à se produire juste après l'impression des petits détails.
 
 ![Ondulations sur la surface](../../../articles/images/ringing.jpg)

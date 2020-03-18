@@ -1,6 +1,5 @@
 Angle des supports coniques
-===
-
+====
 Ce réglage détermine l'angle de la pente à laquelle le support conique est imprimé.
 
 ![Un angle de 30 degrés](../../../articles/images/support_conical_enabled.png)

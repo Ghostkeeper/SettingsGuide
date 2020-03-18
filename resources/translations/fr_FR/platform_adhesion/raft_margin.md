@@ -1,6 +1,5 @@
 Marge supplémentaire du radeau
-===
-
+====
 Ce réglage rend le radeau plus large que le modèle. Il indique la largeur de la bordure supplémentaire autour du modèle.
 
 ![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)

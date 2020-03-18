@@ -1,6 +1,5 @@
 Largeur de la ligne supérieure du radeau
-===
-
+====
 Ce paramètre indique la largeur des lignes des couches supérieures du radeau.
 
 ![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)

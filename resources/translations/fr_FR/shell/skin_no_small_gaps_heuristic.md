@@ -1,6 +1,5 @@
 Aucune couche dans les trous en Z
-===
-
+====
 Si votre modèle présente une petite fente horizontale, plus petite que l'épaisseur de la peau du haut et du bas, ce réglage ne prend pas la peine de remplir complètement de peau le haut et le bas au-dessus/en dessous. Cela permet de gagner du temps de découpe et d'impression, mais risque d'exposer le remplissage à l'air.
 
 ![Normalement, il y a de la peau autour de la petite fente horizontale](../../../articles/images/skin_no_small_gaps_heuristic_disabled.png)

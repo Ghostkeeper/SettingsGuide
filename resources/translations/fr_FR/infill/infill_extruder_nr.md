@@ -1,6 +1,5 @@
 Extrudeuse de remplissage du support
-===
-
+====
 Ce paramètre détermine l'extrudeuse qui sera utilisée pour imprimer le matériau de remplissage. Il n'est disponible que pour les imprimantes disposant de plusieurs extrudeuses.
 
 ![La coque du modèle sera imprimée avec le matériau argenté, mais le matériau de remplissage sera imprimé avec le matériau bleu](../../../articles/images/infill_extruder_nr.png)

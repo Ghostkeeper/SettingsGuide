@@ -1,6 +1,5 @@
 Topographie ou escalier
-===
-
+====
 L'effet "topographie" est obtenu lorsqu'une face supérieure ou inférieure inclinée est imprimée avec une petite quantité de couches, de sorte que les limites entre les couches sont suffisamment espacées pour qu'elles deviennent facilement visibles. Il porte le nom de [cartes topographiques](https://en.wikipedia.org/wiki/Topographic_maps) où les différences d'altitude sont généralement indiquées par des courbes de niveau.
 
 ![Vous pouvez voir clairement les bords des couches](../../../articles/images/topography.jpg)

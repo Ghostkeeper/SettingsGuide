@@ -1,6 +1,5 @@
 Déplacement minimal de rétraction
-===
-
+====
 Ce réglage empêche le matériel de se rétracter pour les déplacements très courts. Pendant ces déplacements, il y a très peu de temps pour que la matière s'échappe de la buse, de sorte qu'une rétraction ferait plus de mal que de bien.
 
 ![Le mouvement de déplacement le plus court au milieu n'est pas rétracté](../../../articles/images/retraction_min_travel.png)

@@ -1,6 +1,5 @@
 Largeur de la ligne intermédiaire du radeau
-===
-
+====
 Ce paramètre configure la largeur des lignes dans la couche centrale du radeau.
 
 ![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)

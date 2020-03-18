@@ -1,6 +1,5 @@
 Vitesse d’impression de la base du radeau
-===
-
+====
 Ce paramètre configure la vitesse à laquelle la couche de base du radeau est imprimée. La vitesse de la couche de base peut être configurée séparément de la vitesse des couches supérieure et intermédiaire.
 
 ![Où se trouve la couche de base dans le radeau](../images/raft_dimensions_simplified_fr.svg)

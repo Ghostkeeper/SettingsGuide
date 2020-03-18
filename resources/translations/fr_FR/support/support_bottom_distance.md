@@ -1,6 +1,5 @@
 Distance inférieure des supports
-===
-
+====
 Ce paramètre vous permet de régler la distance entre le côté inférieur du support et le modèle, où le support repose sur le modèle.
 
 ![La distance inférieure entre le modèle bleu foncé et le support bleu clair](../images/support_top_bottom_distance_fr.svg)

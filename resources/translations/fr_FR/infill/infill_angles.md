@@ -1,6 +1,5 @@
 Sens de ligne de remplissage
-===
-
+====
 Les lignes de remplissage sont généralement orientées à un angle de 45 degrés autant que possible. À cet angle, les moteurs X et Y travaillent ensemble pour obtenir une accélération maximale de la tête d'impression, lorsque l'on utilise une imprimante avec le mécanisme commun de portique cartésien.
 
 Ce réglage permet d'ajuster cet angle. Vous pouvez le spécialiser pour créer une plus grande force pour votre modèle spécifique, ou obtenir une plus grande accélération pour votre système de portique spécifique (comme pour les imprimantes delta).

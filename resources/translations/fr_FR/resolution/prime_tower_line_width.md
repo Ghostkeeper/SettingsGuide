@@ -1,6 +1,5 @@
 Largeur de ligne de la tour primaire
-===
-
+====
 Ce paramètre détermine la largeur des lignes avec lesquelles la tour principale est dessinée.
 
 ![Le matériau bleu a une largeur de ligne plus grande que le matériau orange](../../../articles/images/prime_tower_line_width.png)

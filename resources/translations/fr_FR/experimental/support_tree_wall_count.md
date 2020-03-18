@@ -1,6 +1,5 @@
 Nombre de lignes de la paroi du support arborescent
-===
-
+====
 Ce paramètre détermine le nombre de contours qui seront dessinés à l'intérieur du support de l'arbre. Avec plus de contours, le support de l'arbre sera plus rigide.
 
 ![Deux murs](../../../articles/images/support_tree_wall_count.png)

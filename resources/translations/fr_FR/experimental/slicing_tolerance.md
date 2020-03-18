@@ -1,6 +1,5 @@
 Tolérance à la découpe
-===
-
+====
 Grâce à la tolérance de découpage, vous pouvez ajuster la manière de traiter l'imprécision de la subdivision d'une maille en un nombre fini de couches. Elle vous permet de choisir si les couches doivent se rapprocher de la surface, rester délimitées par la surface ou inclure la surface complètement.
 
 Milieu

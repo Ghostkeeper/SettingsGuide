@@ -1,6 +1,5 @@
 Débit de la couche extérieure du pont
-===
-
+====
 Ce réglage permet d'ajuster la quantité de matériau extrudé pour imprimer des ponts sur les côtés inférieurs.
 
 La réduction de la quantité de matériau réduira effectivement la largeur de ligne de la face inférieure qui couvre un espace. Avec une largeur de ligne réduite, le rapport surface/masse des lignes est plus important, ce qui leur permet de refroidir plus rapidement et les empêche de s'affaisser autant.

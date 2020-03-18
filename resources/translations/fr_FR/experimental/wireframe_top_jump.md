@@ -1,6 +1,5 @@
 Taille de nœud de l'impression filaire
-===
-
+====
 Si la [Stratégie d'impression par fil](wireframe_strategy.md) est réglée sur "Nœud", un petit mouvement de haut en bas et de bas en haut sera effectué au sommet de chaque dent de scie. Ce réglage permet de configurer l'ampleur de ce mouvement.
 
 ![Où le nœud est dessiné et quelle est sa taille](../images/wireframe_top_jump_fr.svg)

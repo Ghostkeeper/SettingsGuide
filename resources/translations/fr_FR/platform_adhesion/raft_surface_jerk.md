@@ -1,6 +1,5 @@
 Saccade d’impression du dessus du radeau
-===
-
+====
 Ce paramètre configure la vitesse à laquelle la tête d'impression peut passer dans les coins pendant que les couches supérieures du radeau sont imprimées. Le taux de secousse pendant les couches supérieures du radeau peut être configuré séparément des couches de base et intermédiaire.
 
 ![Où se trouvent les couches supérieures dans le radeau](../images/raft_dimensions_simplified_fr.svg)

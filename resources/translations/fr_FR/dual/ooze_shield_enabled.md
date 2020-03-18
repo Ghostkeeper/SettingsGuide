@@ -1,6 +1,5 @@
 Activer le bouclier de suintage
-===
-
+====
 Lors de l'impression avec plusieurs extrudeuses, les extrudeuses inactives contiennent parfois encore un peu de matière. Si les buses sont encore chaudes, cette matière a tendance à suinter. C'est le problème que le bouclier antifuite est censé éviter. Il s'agit d'une bordure autour de l'objet qui retient le suintement sous la buse.
 
 ![Le bouclier antifuite est imprimé avec la première extrudeuse d'une couche, ce qui provoque une alternance de motifs si l'impression se fait avec deux extrudeuses](../../../articles/images/ooze_shield.png)

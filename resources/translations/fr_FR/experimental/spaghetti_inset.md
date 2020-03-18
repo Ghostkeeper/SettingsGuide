@@ -1,6 +1,5 @@
 Insert en spaghettis
-===
-
+====
 Pour permettre au remplissage de spaghetti de se développer dans toutes les directions de manière égale, il faut garder une certaine distance par rapport aux murs. Ce réglage détermine cette distance.
 
 Le comportement de ce paramètre est presque le même que celui du paramètre [Chevauchement du remplissage](../infill/infill_overlap_mm.md). Si le chevauchement de remplissage est réglé à la valeur négative de ce paramètre, la zone que la buse traversera sera la même. Toutefois, la différence est que le volume total extrudé pour le remplissage reste inchangé par ce réglage. Alors que la réduction du chevauchement réduit la quantité de matériau extrudé pour le remplissage, le réglage de ce paramètre ne changera pas le volume total extrudé pour le remplissage.

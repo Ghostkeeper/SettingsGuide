@@ -1,6 +1,5 @@
 Limite de support de la couche extérieure du pont
-===
-
+====
 Ce paramètre vous permet d'ajuster la sensibilité de la détection des zones de transition. Les zones de pontage sont détectées en vertu de la partie de la peau qui est soutenue par quelque chose dans la couche précédente.
 
 Pour chaque région disjointe de la peau, ce paramètre permet de déterminer la proportion de la peau qui est soutenue par un élément de la couche inférieure. Si la région est trop peu soutenue, la technique de pontage sera appliquée aux régions de la peau qui ne sont pas soutenues.

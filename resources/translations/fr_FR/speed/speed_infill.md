@@ -1,6 +1,5 @@
 Vitesse de remplissage
-===
-
+====
 La vitesse à laquelle le matériel de remplissage est imprimé peut être configurée séparément de la vitesse d'impression normale.
 
 ![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)

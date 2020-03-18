@@ -1,6 +1,5 @@
 Aliasing
-===
-
+====
 Les moteurs pas à pas tournent par pas discrets. Leur capacité à rester en position entre ces pas est limitée. La taille des pas des moteurs sert de limite à la résolution que l'imprimante peut atteindre. Lors de l'impression de murs qui sont presque, mais pas tout à fait, alignés sur l'axe X ou Y, cette résolution se traduit parfois par un motif de lignes.
 
 ![Le motif d'aliasing apparaissant sur les côtés de cet objet](../../../articles/images/aliasing.jpg)

@@ -1,6 +1,5 @@
 Activer les supports coniques
-===
-
+====
 Si ce paramètre est activé, la structure de soutien ne sera plus complètement verticale sur les côtés. Le support aura une forme conique, devenant plus petit ou plus grand vers le bas.
 
 ![Le support devient plus petit vers le bas](../../../articles/images/support_conical_enabled.png)

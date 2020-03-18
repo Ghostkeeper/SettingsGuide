@@ -1,6 +1,5 @@
 Préférence de jointure d'angle
-===
-
+====
 Avec ce réglage, vous pouvez contrôler la position des coutures par rapport aux coins de votre modèle.
 
 En général, il existe deux options pour l'endroit où la couture peut être placée : cachée dans un coin intérieur ou exposée dans un coin extérieur. Il est généralement préférable de cacher la couture dans un coin intérieur, car la couture y sera à peine visible. Mais il est également possible de la placer dans un coin extérieur afin de pouvoir couper le joint avec un couteau ou de le poncer avec du papier de verre, si un post-traitement peut être effectué sur la pièce.

@@ -1,6 +1,5 @@
 Épaisseur de la paroi du support arborescent
-===
-
+====
 Ce paramètre détermine l'épaisseur du périmètre du support de l'arbre. Pour un périmètre plus épais, plus de contours seront dessinés dans la forme de l'arbre.
 
 ![L'utilisation d'une épaisseur de paroi de 0,8 mm donne deux contours à l'intérieur du support de l'arbre](../../../articles/images/support_tree_wall_count.png)

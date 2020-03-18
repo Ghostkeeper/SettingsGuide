@@ -1,6 +1,5 @@
 Angle des branches de support arborescent
-===
-
+====
 Ce réglage détermine l'angle de surplomb maximum que les branches de l'arbre de support sont autorisées à faire. Si l'angle est augmenté, les branches peuvent être imprimées plus horizontalement, ce qui leur permet d'aller plus loin.
 
 ![Un angle de branche de 20°](../../../articles/images/support_tree_angle_20.png)

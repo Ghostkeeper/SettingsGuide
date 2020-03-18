@@ -1,6 +1,5 @@
 Relier les lignes de support
-===
-
+====
 Avec certains modèles de support, le support peut devenir très instable lorsque de fines bandes de support sont nécessaires. Ce réglage entraînera la connexion des extrémités des lignes de support entre elles. Cela leur donne plus de stabilité. Cela permet également au support de s'imprimer avec un flux plus continu. Moins de déplacements seront nécessaires.
 
 ![Lignes de support déconnectées](../../../articles/images/zig_zaggify_support_disabled.png)

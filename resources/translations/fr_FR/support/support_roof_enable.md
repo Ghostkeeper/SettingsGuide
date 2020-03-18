@@ -1,6 +1,5 @@
 Activer les plafonds de support
-===
-
+====
 Le toit de soutien est une structure intermédiaire entre le soutien et le modèle où le modèle repose sur le soutien. Il peut être utilisé pour fournir un plus grand ou un meilleur soutien au modèle sans avoir un impact significatif sur le temps d'impression. Le toit de soutien est généralement imprimé plus ou moins rapidement.
 
 ![Le toit du support est coloré dans une teinte de bleu plus sombre](../../../articles/images/support_roof_enable.png)

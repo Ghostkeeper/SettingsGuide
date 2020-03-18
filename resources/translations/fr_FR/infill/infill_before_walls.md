@@ -1,6 +1,5 @@
 Imprimer le remplissage avant les parois
-===
-
+====
 Cela affecte l'ordre dans lequel les choses sont imprimées. Lorsque ce paramètre est activé, le remplissage d'une pièce sera imprimé avant que les parois de cette pièce sur cette couche ne soient imprimées.
 
 ![Le paramètre est désactivé, donc les murs sont imprimés en premier](../../../articles/images/infill_before_walls_disabled.gif)

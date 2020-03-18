@@ -1,6 +1,5 @@
 Saccade de la tour primaire (d'amorçage)
-===
-
+====
 Ce réglage détermine la vitesse à laquelle la buse peut passer dans les virages tout en imprimant la tour d'amorçage. Cette vitesse peut être configurée séparément du reste de l'impression.
 
 La réduction de la secousse permet de diminuer les vibrations qui traversent l'imprimante pendant l'impression de la tour d'impression. Cela peut réduire le risque de renversement de la tour d'impression.

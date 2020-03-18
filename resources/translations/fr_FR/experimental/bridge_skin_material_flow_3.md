@@ -1,6 +1,5 @@
 Débit de la troisième couche extérieure du pont
-===
-
+====
 Ce réglage permet d'ajuster la quantité de matériau qui est extrudé pour imprimer la troisième couche de peau au-dessus d'un pont.
 
 La réduction de la quantité de matériau permet de réduire efficacement la largeur de la ligne de la face inférieure qui forme un pont. Avec une largeur de ligne réduite, le rapport surface/masse des lignes est plus important, ce qui leur permet de refroidir plus rapidement et les empêche de s'appuyer autant sur les première et deuxième couches du pont.

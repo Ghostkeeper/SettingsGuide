@@ -1,6 +1,5 @@
 Température de veille
-===
-
+====
 Cura suppose que les imprimantes à plusieurs extrudeuses ont des buses séparées qui peuvent avoir des températures différentes. Pendant qu'une extrudeuse est occupée à imprimer, les autres buses doivent être maintenues à une température plus basse afin d'éviter que le matériau dans la chambre de la buse ne se dégrade et ne suinte. Cette température plus basse est la température de veille.
 
 ![Pendant que l'extrudeuse bleue imprime, l'extrudeuse rouge refroidit à la température d'attente](../images/temperature_regulation_fr.svg)

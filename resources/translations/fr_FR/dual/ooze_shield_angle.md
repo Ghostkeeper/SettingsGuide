@@ -1,6 +1,5 @@
 Angle du bouclier de suintage
-===
-
+====
 Le bouclier de suintement suivra la forme du modèle. Il doit rester proche, sinon le trajet entre le bouclier et la maquette suintera du nouveau matériau. Mais la maquette peut avoir des surfaces horizontales, ce qui créerait des surplombs abrupts dans le bouclier de suintement. Ce réglage limite l'inclinaison du bouclier de suintement afin qu'il ne s'effondre pas.
 
 ![Au lieu de suivre le modèle en bas et en haut, il n'est pas plus raide que l'angle spécifié](../images/ooze_shield_fr.svg)

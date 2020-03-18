@@ -1,6 +1,5 @@
 Filasse
-===
-
+====
 Lorsque l'imprimante a fini d'imprimer une partie d'une couche et doit passer à une autre partie, elle doit temporairement arrêter l'extrusion. Si le matériau continue à couler pendant qu'il se déplace, un fin fil de plastique est tiré entre les deux parties. C'est ce qu'on appelle la filasse.
 
 ![De fines lignes de plastique sont visibles à l'endroit où la buse s'est déplacée d'une partie à l'autre](../../../articles/images/stringing.jpg)

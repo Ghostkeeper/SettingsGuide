@@ -1,6 +1,5 @@
 Largeur minimale des supports coniques
-===
-
+====
 Si le support conique est activé et réglé pour rétrécir la structure de support, ce réglage détermine la largeur minimale à laquelle le support conique rétrécira le support. Le support ne s'amincit que si la zone en surplomb qui doit être soutenue est déjà plus mince.
 
 ![Une largeur minimale de 5 mm](../../../articles/images/support_conical_enabled.png)

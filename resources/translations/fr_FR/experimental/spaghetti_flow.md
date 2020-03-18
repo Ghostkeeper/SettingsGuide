@@ -1,6 +1,5 @@
 Flux en spaghettis
-===
-
+====
 Ce réglage permet d'ajuster directement la densité de la garniture de spaghettis.
 
 Normalement, lors de l'impression d'un remplissage, le réglage [densité de remplissage](../infill/infill_sparse_density.md) n'affecte que la [distance entre les lignes de remplissage](../infill/infill_line_distance.md). Comme la [largeur de la ligne de remplissage](../resolution/infill_line_width.md) reste la même mais que les lignes sont plus rapprochées, l'augmentation de la densité de remplissage a pour effet qu'une plus grande partie du volume de remplissage est remplie de matériau à la fin.

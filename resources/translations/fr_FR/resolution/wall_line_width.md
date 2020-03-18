@@ -1,6 +1,5 @@
 Largeur de ligne de la paroi
-===
-
+====
 La largeur des lignes des murs peut être ajustée séparément du reste de l'impression. Ce réglage indique la largeur des lignes individuelles des murs.
 
 ![Les lignes pour les murs sont beaucoup plus larges que le reste](../../../articles/images/wall_line_width.png)

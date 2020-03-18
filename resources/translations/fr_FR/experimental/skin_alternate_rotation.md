@@ -1,6 +1,5 @@
 Alterner la rotation dans les couches extérieures
-===
-
+====
 Lorsque le haut et le bas sont imprimés avec des lignes ou des motifs en [zigzag](../shell/top_bottom_pattern.md), les lignes sont normalement orientées dans les directions diagonales, en alternant les deux directions chaque fois que cela est possible. Si ce paramètre est activé, il alternera plutôt dans quatre directions : deux directions diagonales, verticale et horizontale.
 
 ![Alternance de quatre directions](../../../articles/images/skin_alternate_rotation.gif)

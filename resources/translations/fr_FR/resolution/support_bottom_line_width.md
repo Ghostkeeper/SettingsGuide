@@ -1,6 +1,5 @@
 Largeur de ligne de bas de support
-===
-
+====
 Ce réglage permet d'ajuster la largeur des lignes de la face inférieure du support.
 
 ![Le plancher du support (bleu plus foncé) est imprimé avec des lignes plus larges que le reste du support](../../../articles/images/support_bottom_line_width.png)

@@ -1,6 +1,5 @@
 Motif de couche extérieure de surface supérieure
-===
-
+====
 Ce paramètre vous permet de choisir un motif différent pour les couches les plus élevées indiquées par le paramètre [Couches extérieures de la surface supérieure](../shell/roofing_layer_count.md) que pour le reste du haut et du bas.
 
 Seule la ou les couches supérieures de la peau seront dessinées dans ce motif.

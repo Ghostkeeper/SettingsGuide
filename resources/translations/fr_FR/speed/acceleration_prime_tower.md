@@ -1,6 +1,5 @@
 Accélération de la tour primaire
-===
-
+====
 Ce réglage contrôle la vitesse à laquelle la buse accélère dans différentes directions pendant l'impression de la tour principale. L'accélération pendant la tour d'impression peut être réglée à une vitesse différente de celle du reste de l'impression.
 
 L'impression de la tour d'impression à une vitesse d'accélération plus élevée permet à l'extrusion d'être un peu plus constante, ce qui permet un meilleur amorçage. Cela permet également de gagner du temps d'impression. Cependant, la tour d'impression peut basculer plus facilement si elle devient très haute et si l'imprimante vibre beaucoup pendant l'impression.

@@ -1,6 +1,5 @@
 Mode de détours
-===
-
+====
 Le détour est la pratique qui consiste à éviter de traverser les murs de l'empreinte lors d'un voyage d'un endroit à un autre. Le croisement des parois tend à laisser une cicatrice sur la surface où une buse chaude est sortie ou est entrée dans le volume de l'impression, ce qui est généralement indésirable.
 
 Le détour seul fait que la buse évite les parois lorsqu'elle traverse l'intérieur de la maille. Cependant, cela permet également d'utiliser la fonction [Eviter les pièces imprimés lors du déplacment](travel_avoid_other_parts.md), qui permet à la buse d'éviter les objets lorsqu'elle se trouve à l'extérieur du volume.

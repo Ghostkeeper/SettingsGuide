@@ -1,6 +1,5 @@
 Vitesse d’impression du milieu du radeau
-===
-
+====
 This setting configures the speed at which the middle layer of the raft is printed. The speed of the middle layer can be configured separately from the speed of the top and base layers.
 
 ![Où se trouve la couche intermédiaire dans le radeau](../images/raft_dimensions_simplified_fr.svg)

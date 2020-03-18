@@ -1,6 +1,5 @@
 Distance entre les lignes de toit des supports
-===
-
+====
 Ce réglage configure la distance entre deux lignes adjacentes du modèle de toit de soutien, où le modèle repose sur le support.
 
 La réduction de la distance entre les lignes du toit du support permet d'obtenir une belle finition de surface au niveau des débords, comme si l'ensemble du support était imprimé avec une forte densité, sans avoir besoin de beaucoup de temps et de matériel supplémentaires. La distance que le modèle doit franchir sera réduite.

@@ -1,6 +1,5 @@
 Épaisseur de la couche de remplissage de support
-===
-
+====
 La qualité visuelle et la résolution du support n'étant pas importantes, vous pouvez utiliser des couches plus épaisses pour le support afin de réduire le temps d'impression. Ce paramètre permet de configurer l'épaisseur des couches avec lesquelles le support sera imprimé.
 
 En vue par couches, on aura l'impression que les lignes du support sont devenues beaucoup plus larges. Lorsqu'elles seront imprimées, les lignes de support descendront davantage au lieu de s'étendre horizontalement.

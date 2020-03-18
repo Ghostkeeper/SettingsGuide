@@ -1,6 +1,5 @@
 Sous-extrusion
-===
-
+====
 L'un des problèmes les plus courants de l'impression en 3D est que l'imprimante n'extrude pas assez de matière pour produire un bel objet solide. Lorsque cela se produit, on parle de "sous-extrusion" : La buse extrude moins de matière que prévu.
 
 ![Un cas extrême de sous-extrusion, où l'on peut même voir l'intérieur de l'objet](../../../articles/images/underextrusion.jpg)

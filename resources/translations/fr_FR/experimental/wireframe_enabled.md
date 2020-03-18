@@ -1,6 +1,5 @@
 Impression filaire
-===
-
+====
 Ce paramètre permet un mode d'impression complètement différent appelé Wire Printing. Lorsque l'impression à fil est utilisée, l'imprimante ne fabrique pas un objet solide, mais seulement un treillis triangulaire de la forme extérieure à partir de fils fins.
 
 Cette technique présente un certain nombre d'avantages :

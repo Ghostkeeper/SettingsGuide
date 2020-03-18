@@ -1,6 +1,5 @@
 Type d'adhérence du plateau
-===
-
+====
 Il existe trois types d'adhérence des plaques de construction : la jupe, la bordure et le radeau. Vous pouvez aussi facilement désactiver les types d'adhérence en réglant le paramètre sur Aucun.
 
 ![Jupe](../../../articles/images/adhesion_type_skirt.png)

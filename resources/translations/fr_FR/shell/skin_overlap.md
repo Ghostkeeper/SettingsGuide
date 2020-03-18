@@ -1,6 +1,5 @@
 Pourcentage de chevauchement de la couche extérieure
-===
-
+====
 Ce réglage fait que la peau chevauche un peu les structures adjacentes. La peau adhère ainsi mieux à ces structures.
 
 Le chevauchement dans ce réglage est exprimé en pourcentage de la largeur moyenne des lignes entre les lignes de la peau et les lignes de la paroi la plus intérieure.

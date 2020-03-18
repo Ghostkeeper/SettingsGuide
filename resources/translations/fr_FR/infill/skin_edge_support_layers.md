@@ -1,6 +1,5 @@
 Couches de soutien des bords de la peau
-===
-
+====
 Lors de l'impression de formes concaves, il y aura une peau supérieure qui se terminera quelque part à mi-chemin du remplissage. Ce réglage ajoute une ligne supplémentaire à travers le remplissage pour soutenir le bord de la peau, de sorte qu'elle s'affaisse un peu moins.
 
 ![Un périmètre est tracé à travers le remplissage sous le bord de la peau](../../../articles/images/skin_edge_support_thickness.png)

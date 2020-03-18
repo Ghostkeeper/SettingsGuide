@@ -1,6 +1,5 @@
 Vitesse d'impression de l'interface de support
-===
-
+====
 Ce paramètre configure la vitesse à laquelle les faces supérieure et inférieure du support sont imprimées, si [Interface de support est activée](../support/support_interface_enable.md).
 
 ![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)

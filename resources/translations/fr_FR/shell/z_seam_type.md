@@ -1,6 +1,5 @@
 Alignement de la jointure en Z
-===
-
+====
 Ce paramètre vous permet de choisir l'endroit où la couture de chaque contour est placée. Plusieurs options sont disponibles qui permettent de contrôler l'endroit où la couture est placée afin de minimiser son impact ou de vous permettre de la retirer plus facilement lors du post-traitement.
 
 La couture est l'endroit où le contour commence et finit l'impression. Même si le chemin de la buse est un cercle fermé, il reste une couture à l'endroit où l'extrusion commence et se termine car le processus d'impression n'est jamais complètement précis. Avec ce réglage, la visibilité de la couture peut être minimisée en la cachant quelque part ou en la répartissant.

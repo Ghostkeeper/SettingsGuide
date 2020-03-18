@@ -1,6 +1,5 @@
 Chevauchement Z de la couche initiale
-===
-
+====
 Ce réglage n'est disponible que pour les impressions avec un radeau. Il abaisse toutes les couches du modèle, sauf la couche initiale. La première couche est ainsi comprimée plus fortement sur le radeau.
 
 ![Dimensions qui composent un radeau](../images/raft_dimensions_fr.svg)

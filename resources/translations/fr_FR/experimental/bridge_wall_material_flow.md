@@ -1,6 +1,5 @@
 Débit de paroi du pont
-===
-
+====
 Ce réglage permet d'ajuster la quantité de matériau qui est extrudé pour imprimer les parois de pontage.
 
 La réduction de la quantité de matériau réduira effectivement la largeur des lignes des parois qui forment un pont. Avec une largeur de ligne réduite, le rapport surface/masse des lignes est plus important, ce qui leur permet de refroidir plus rapidement et les empêche de s'affaisser autant.

@@ -1,6 +1,5 @@
 Largeur de la ligne de base du radeau
-===
-
+====
 Ce paramètre configure la largeur des lignes avec lesquelles la couche la plus basse du radeau est dessinée.
 
 ![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)

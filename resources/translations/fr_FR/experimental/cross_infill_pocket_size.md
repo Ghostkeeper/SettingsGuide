@@ -1,6 +1,5 @@
 Taille de poches entrecroisées 3D
-===
-
+====
 Le Cross 3D [Motif de remplissage](../infill/infill_pattern.md) a été conçu pour faciliter les impressions flexibles. Le motif contient des croisements à 4 voies qui sont cependant très rigides. Ce réglage permet d'éviter les croisements afin de ne pas être trop rigide à certains endroits. Le motif laissera une poche d'air dans le croisement. Ce réglage détermine la taille de la poche.
 
 ![La taille de la poche par défaut est de 2mm](../../../articles/images/infill_pattern_cross_3d.png)

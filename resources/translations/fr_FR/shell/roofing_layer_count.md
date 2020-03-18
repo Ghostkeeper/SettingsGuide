@@ -1,6 +1,5 @@
 Couches extérieures de la surface supérieure
-===
-
+====
 Une partie du haut de l'impression peut être séparée et imprimée avec différents paramètres. Ce paramètre détermine la taille de la partie à séparer. Combien de couches de la partie supérieure de l'impression obtiendront des paramètres différents ?
 
 ![La couche supérieure est imprimée plus lentement (bleu) que le reste de la peau (vert)](../../../articles/images/roofing_layer_count.png)

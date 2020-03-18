@@ -1,6 +1,5 @@
 Vitesse d'impression de la paroi
-===
-
+====
 La vitesse à laquelle les murs sont imprimés peut être configurée séparément de la vitesse d'impression normale.
 
 ![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)

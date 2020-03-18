@@ -1,6 +1,5 @@
 Nombre de lignes de la paroi du support
-===
-
+====
 Ce cadre ajoute un certain nombre de murs autour du périmètre du support.
 
 ![Pas de murs supplémentaires](../../../articles/images/support_wall_count_0.png)

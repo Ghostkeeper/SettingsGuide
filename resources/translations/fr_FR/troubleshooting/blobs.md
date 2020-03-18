@@ -1,6 +1,5 @@
 Les gouttes (Blobs)
-===
-
+====
 Les blobs sont de petites gouttes sur le côté du modèle. Parfois, ce ne sont que des points. Parfois, ce sont des rayures. Ils constituent un défaut de surface visuel et peuvent augmenter la friction entre les surfaces qui doivent glisser les unes sur les autres dans un mécanisme.
 
 ![Quelques gouttes sur cette surface](../../../articles/images/blobs.jpg)

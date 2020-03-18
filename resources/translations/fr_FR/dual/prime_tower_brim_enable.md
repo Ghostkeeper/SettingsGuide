@@ -1,6 +1,5 @@
 Bordure de la tour primaire
-===
-
+====
 Le bord principal de la tour est un bord supplémentaire, similaire à l'option de bord dans le [Type d'adhérence du plateau](../platform_adhesion/adhesion_type.md). Ce bord peut être activé et désactivé séparément de l'adhésion ordinaire. Lorsqu'il est activé, un bord supplémentaire sera imprimé autour de la tour principale. Ce bord est un disque plat autour de la tour de base d'une seule couche qui améliore l'adhérence de la tour de base à la plaque de construction.
 
 ![L'adhésion est réglée sur la jupe, mais il y a toujours un bord autour de la tour primaire](../../../articles/images/prime_tower_brim_enable.png)

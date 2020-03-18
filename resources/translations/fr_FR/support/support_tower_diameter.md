@@ -1,6 +1,5 @@
 Diamètre de la tour
-===
-
+====
 Certaines parties en surplomb de la maquette sont très petites. Le soutien qui serait généré s'effondrerait facilement. Au lieu de cela, Cura génère des tours pour ces pièces qui sont plus larges, afin qu'elles ne s'effondrent pas.
 
 Ce réglage permet de configurer la largeur de ces tours.

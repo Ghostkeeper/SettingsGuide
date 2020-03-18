@@ -1,6 +1,5 @@
 Direction de ligne de remplissage du support
-===
-
+====
 Le modèle de support est normalement orienté de telle sorte que les lignes sont perpendiculaires à la plupart des choses qu'il supporte. De cette façon, la distance que le matériau supporté doit franchir est réduite au minimum. Avec ce réglage, l'orientation des lignes de support peut être personnalisée.
 
 ![Un angle de 0°](../../../articles/images/support_infill_angle_0.png)

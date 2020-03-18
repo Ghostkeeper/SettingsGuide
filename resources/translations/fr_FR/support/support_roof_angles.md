@@ -1,6 +1,5 @@
 Direction de la ligne de plafond de support
-===
-
+====
 Le toit de soutien est normalement orienté de manière à être aussi perpendiculaire que possible au modèle situé au-dessus et au corps de soutien situé en dessous. Si l'orientation des lignes de fond ou des lignes de support a été personnalisée, il est bon de personnaliser également l'orientation des lignes du toit de soutien. Ce paramètre vous permet de personnaliser l'orientation des lignes du toit de soutien.
 
 ![Le toit et le sol sont tous deux inclinés à 0° et 90°](../../../articles/images/support_interface_angles_0.png)

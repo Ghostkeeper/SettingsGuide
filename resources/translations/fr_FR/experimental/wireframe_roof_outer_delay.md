@@ -1,6 +1,5 @@
 Délai d'impression filaire de l'extérieur du dessus
-===
-
+====
 Avec ce réglage, vous pouvez configurer la buse pour qu'elle reste immobile pendant un court instant chaque fois qu'elle touche le contour extérieur tout en imprimant le motif en dents de scie dans le toit de la charpente métallique.
 
 ![Les points rouges sont les endroits où la buse s'arrêtera](../../../articles/images/wireframe_roof_outer_delay.svg)

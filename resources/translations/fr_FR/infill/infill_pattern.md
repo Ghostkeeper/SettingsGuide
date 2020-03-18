@@ -1,6 +1,5 @@
 Motif de remplissage
-===
-
+====
 Le modèle de remplissage définit une structure qui est utilisée pour remplir le volume de l'objet. Il existe plusieurs modèles, chacun ayant ses propres avantages. Certains sont spécialisés pour des applications très spécifiques.
 
 Grille

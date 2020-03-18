@@ -1,6 +1,5 @@
 Distance X/Y des supports
-===
-
+====
 Cela indique la distance horizontale à respecter entre le support et le modèle.
 
 ![Un espace horizontal entre le support et le modèle](../../../articles/images/support_xy_distance.png)

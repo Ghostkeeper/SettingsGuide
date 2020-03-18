@@ -1,6 +1,5 @@
 Température de rétraction de préparation de rupture
-===
-
+====
 Pour certaines imprimantes, lorsqu'un matériau est rétracté pour un interrupteur à filament, le matériau doit être coupé proprement afin de le faire passer dans le chargeur sans s'emmêler. Ce réglage configure une partie de la procédure pour le rompre proprement.
 
 Ce réglage ajuste la température de la buse lorsque le matériau est rétracté vers la deuxième position pour étirer le matériau en un fil fin. Ce fil fin s'étire en dehors de la zone chauffée de la buse, ce qui lui permet de refroidir et de se solidifier. Le fil fin et dur de la matière peut ensuite être rompu lors de l'étape suivante de la rétraction.

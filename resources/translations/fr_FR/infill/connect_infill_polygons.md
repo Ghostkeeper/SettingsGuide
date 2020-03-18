@@ -1,6 +1,5 @@
 Relier les polygones de remplissage
-===
-
+====
 Lorsque le remplissage est constitué de boucles fermées, ces boucles fermées peuvent être fusionnées pour former une seule boucle. Cela permet d'établir de petites connexions là où les polygones sont adjacents.
 
 Ce paramètre n'est disponible que lorsque le remplissage consiste en des boucles adjacentes. Cela signifie que l'un ou l'autre :

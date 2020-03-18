@@ -1,6 +1,5 @@
 Extrudeuse des plafonds de support
-===
-
+====
 Si votre imprimante est équipée de plusieurs extrudeuses, la face supérieure du support, où le modèle repose sur le support, peut être imprimée avec une extrudeuse différente de celle du plancher du support, où le support repose sur le modèle. Ce paramètre vous permet de choisir l'extrudeuse utilisée pour le toit du support.
 
 ![Le toit du support est imprimé en orange, mais le plancher du support en blanc](../../../articles/images/support_roof_extruder_nr.png)

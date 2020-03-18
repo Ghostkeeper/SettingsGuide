@@ -1,6 +1,5 @@
 Nombre de lignes de la jupe
-===
-
+====
 Ce paramètre configure le nombre de contours à dessiner autour de l'impression, pour la jupe.
 
 L'un des buts de la jupe est d'amorcer la buse, pour que le matériau s'écoule correctement. Pour les très petits modèles, une seule ligne n'est pas suffisante, vous pouvez donc configurer la peau pour qu'elle dessine plusieurs lignes.

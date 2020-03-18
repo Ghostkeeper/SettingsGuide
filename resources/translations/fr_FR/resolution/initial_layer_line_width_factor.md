@@ -1,6 +1,5 @@
 Largeur de ligne couche initiale
-===
-
+====
 Cela rend les lignes de la couche initiale plus larges ou plus fines dans un certain rapport.
 
 ![Les lignes de la couche initiale sont deux fois plus larges que le reste](../../../articles/images/initial_layer_line_width_factor.png)

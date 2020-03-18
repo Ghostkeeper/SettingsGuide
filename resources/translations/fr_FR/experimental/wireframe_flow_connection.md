@@ -1,6 +1,5 @@
 Débit de connexion de l'impression filaire
-===
-
+====
 Ce réglage permet de configurer le débit (et donc l'épaisseur des fils) des fils de connexion ascendants et descendants dans la structure de la charpente métallique. Il peut être configuré séparément des anneaux horizontaux.
 
 ![Où les différents réglages de débit s'appliquent](../images/wireframe_flow_fr.svg)

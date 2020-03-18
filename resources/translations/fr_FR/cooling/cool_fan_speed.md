@@ -1,6 +1,5 @@
 Vitesse du ventilateur
-===
-
+====
 La vitesse à laquelle les ventilateurs de la tête d'impression tournent pendant la majeure partie de l'impression. Il s'agit d'un pourcentage des capacités maximales des ventilateurs.
 
 ![Quelle vitesse de ventilateur est utilisée où](../images/cool_fan_speed_fr.svg)

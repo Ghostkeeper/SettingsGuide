@@ -1,6 +1,5 @@
 Épaisseur de la base du radeau
-===
-
+====
 Ce réglage permet d'ajuster l'épaisseur verticale de la couche la plus basse du radeau.
 
 ![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)

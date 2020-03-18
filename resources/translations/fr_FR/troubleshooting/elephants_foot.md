@@ -1,6 +1,5 @@
 Le pied d'éléphant
-===
-
+====
 Parfois, la face inférieure de l'empreinte est légèrement plus large que le reste de l'empreinte, ce qui donne une petite lèvre à cet endroit. C'est ce qu'on appelle une "patte d'éléphant", car elle ressemble aux pattes d'un éléphant dont les orteils sont légèrement plus larges que le reste de la patte.
 
 Il existe plusieurs effets que les gens appellent "pied d'éléphant", dont les causes inhérentes sont complètement différentes. Ces effets nécessitent également des solutions complètement différentes. Cet article vous aidera à trouver la cause première.

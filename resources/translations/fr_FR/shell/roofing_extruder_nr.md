@@ -1,6 +1,5 @@
 Extrudeuse de couche extérieure de la surface supérieure
-===
-
+====
 Pour les imprimeurs qui disposent de plusieurs extrudeuses, cela permet de sélectionner l'extrudeuse qui sera utilisée pour imprimer la surface supérieure.
 
 ![Ce modèle sera imprimé avec uniquement les couches de la surface supérieure dans une couleur différente](../../../articles/images/roofing_extruder_nr.png)

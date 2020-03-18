@@ -1,6 +1,5 @@
 Distance X/Y du bouclier
-===
-
+====
 Ce paramètre permet de configurer la distance à laquelle le paravent sera imprimé.
 
 Plus le paravent est éloigné de votre impression, moins il sera efficace pour maintenir la température à l'intérieur du paravent constante. L'air circulera alors davantage autour de l'impression, qui sera donc moins protégée contre les courants d'air.

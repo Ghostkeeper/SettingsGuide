@@ -1,6 +1,5 @@
 Extrudeuse de support
-===
-
+====
 Si votre imprimante dispose de plusieurs extrudeuses, ce paramètre vous permet de choisir celle qui sera utilisée pour imprimer la structure de support.
 
 ![Le support est imprimé en blanc, tandis que le modèle est imprimé en bleu](../../../articles/images/support_extruder_nr.png)

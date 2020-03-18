@@ -1,6 +1,5 @@
 Saccade de la couche initiale
-===
-
+====
 Ce réglage détermine la vitesse à laquelle la buse peut passer dans les coins pendant l'impression de la couche initiale. Cette vitesse peut être configurée séparément du reste des couches.
 
 Le passage à grande vitesse dans les angles vifs ne fait pas que faire vibrer la tête d'impression horizontalement. Elle peut également faire vibrer la plaque de montage verticalement. Cela affecte négativement l'adhérence du lit. En traversant les coins avec un peu plus d'attention pendant la première couche, on obtient une adhérence plus régulière, mais l'impression sera plus longue.

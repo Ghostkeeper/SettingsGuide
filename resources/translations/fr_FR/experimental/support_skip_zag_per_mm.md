@@ -1,6 +1,5 @@
 Taille de morceaux du support
-===
-
+====
 Si le support est [découpé en morceaux](support_skip_some_zags.md), ce paramètre détermine la taille de chacun des morceaux de support.
 
 ![Chaque morceau fait environ 20 mm de large](../../../articles/images/support_skip_some_zags.png)

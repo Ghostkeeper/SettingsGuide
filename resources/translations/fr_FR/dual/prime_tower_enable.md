@@ -1,6 +1,5 @@
 Activer la tour d'amorçage
-===
-
+====
 Ce système imprime une tour sur votre plaque de construction avec un mélange de matériaux. La tour est destinée à être jetée, mais elle sert à amorcer le matériau après chaque changement d'extrudeuse.
 
 ![Comment se présente une tour d'amorçage, et ses dimensions](../images/prime_tower_fr.svg)

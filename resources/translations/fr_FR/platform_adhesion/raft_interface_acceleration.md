@@ -1,6 +1,5 @@
 Accélération de l'impression du milieu du radeau
-===
-
+====
 Ce réglage permet de configurer le taux d'accélération de la tête d'impression pendant l'impression de la couche intermédiaire du radeau. L'accélération pendant la couche médiane du radeau peut être configurée séparément des couches de base et supérieure.
 
 ![Où se trouve la couche intermédiaire dans le radeau](../images/raft_dimensions_simplified_fr.svg)

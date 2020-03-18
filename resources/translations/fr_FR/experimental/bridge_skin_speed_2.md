@@ -1,6 +1,5 @@
 Vitesse de la deuxième couche extérieure du pont
-===
-
+====
 Ce réglage permet de contrôler la vitesse d'impression des lignes de la peau dans la deuxième couche au-dessus du pont.
 
 Pour les matériaux qui exigent que le ventilateur soit allumé et tourné vers le haut (comme le PLA), il est généralement préférable d'imprimer les ponts très lentement. Cela permet aux ventilateurs de souffler beaucoup d'air sur le matériau, ce qui le fait se solidifier très rapidement. Le matériau n'a alors pas autant de chance de s'affaisser, ce qui les ferait s'appuyer sur la première couche de pontage et rendrait cet affaissement plus important. Cette méthode est moins efficace pour les matériaux qui n'ont pas besoin que le ventilateur tourne si vite ou pour les imprimantes qui n'ont pas de ventilateur très puissant.

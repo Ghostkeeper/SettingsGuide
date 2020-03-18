@@ -1,6 +1,5 @@
 Problèmes d'adhérence au plateau
-===
-
+====
 L'un des modes de défaillance les plus courants pour les impressions 3D est que l'empreinte s'est détachée de la plaque de construction alors qu'elle était encore en cours d'impression. Cet article passe en revue certains ajustements que vous pouvez apporter pour éviter que cela ne se produise.
 
 Si l'impression s'est perdue de la plaque de montage, vous verrez généralement beaucoup de fils détachés sur la plaque de montage. Si vous avez plus de chance, cela peut aussi se manifester par un simple [décalage de couche](layer_shift.md) (et il y aura moins à nettoyer). Dans tous les cas, l'impression est gâchée.

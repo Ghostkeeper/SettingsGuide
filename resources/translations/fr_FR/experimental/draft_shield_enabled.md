@@ -1,6 +1,5 @@
 Activer le bouclier
-===
-
+====
 Lorsque ce paramètre est activé, l'imprimante construit autour de votre impression une enveloppe qui la protège des courants d'air provenant de l'environnement.
 
 ![Un paravent est imprimé autour du modèle](../../../articles/images/draft_shield_enabled.png)

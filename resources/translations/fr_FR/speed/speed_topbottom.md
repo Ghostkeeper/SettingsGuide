@@ -1,6 +1,5 @@
 Vitesse d'impression du dessus/dessous
-===
-
+====
 La vitesse à laquelle les faces supérieure et inférieure du modèle sont imprimées peut être configurée séparément de la vitesse d'impression normale.
 
 ![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)

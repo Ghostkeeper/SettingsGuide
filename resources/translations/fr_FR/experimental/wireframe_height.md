@@ -1,6 +1,5 @@
 Hauteur de connexion pour l'impression filaire
-===
-
+====
 L'impression au fil de fer consiste à imprimer un certain nombre d'anneaux autour du contour. L'espacement vertical des anneaux est déterminé par ce réglage. Avec ce réglage, vous pouvez définir la longueur des connexions entre deux anneaux concentriques.
 
 ![Impression filaire visualisé de côté, marquant la hauteur](../images/wireframe_height_fr.svg)

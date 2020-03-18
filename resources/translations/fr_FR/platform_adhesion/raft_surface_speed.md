@@ -1,6 +1,5 @@
 Vitesse d’impression du dessus du radeau
-===
-
+====
 Ce paramètre configure la vitesse à laquelle les couches supérieures du radeau sont imprimées. La vitesse des couches supérieures peut être configurée séparément de la vitesse des couches intermédiaires et de base.
 
 ![Où se trouvent les couches supérieures dans le radeau](../images/raft_dimensions_simplified_fr.svg)

@@ -1,6 +1,5 @@
 Diamètre des branches de support arborescent
-===
-
+====
 Ce paramètre vous permet d'ajuster la largeur des branches du support de l'arbre. La largeur spécifiée ici sera la largeur au sommet des branches de l'arbre. L'extrémité de la branche sera plus fine et, vers le bas, elle s'élargira progressivement selon le paramètre [Angle de diamètre des branches de support arborescent](support_tree_branch_diameter_angle.md).
 
 ![La forme d'une branche d'un diamètre de 1,4 mm](../../../articles/images/support_tree_branch_diameter_1_4mm_5.png)

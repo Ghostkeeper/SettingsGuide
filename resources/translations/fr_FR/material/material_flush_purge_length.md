@@ -1,6 +1,5 @@
 Longueur de la purge de la matière
-===
-
+====
 Si l'imprimante doit changer le filament qui passe par une certaine buse, elle doit évacuer les restes de matière qui se trouvaient encore dans la chambre de la buse. Ce réglage détermine la quantité de matière utilisée pour rincer la matière précédente.
 
 Cela ne s'applique qu'au moment où l'on passe à un autre type de matériau. Si le même type de matériau est rechargé (par exemple parce que la bobine précédente était vide), une [longueur différente](material_end_of_filament_purge_length.md) est utilisée.

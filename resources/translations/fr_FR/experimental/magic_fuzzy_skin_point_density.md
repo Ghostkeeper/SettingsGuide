@@ -1,6 +1,5 @@
 Densité de la couche floue
-===
-
+====
 Ce réglage permet de configurer la fréquence à laquelle la buse vibre lorsqu'elle se déplace le long de la paroi. À une densité plus élevée, la buse se déplacera plus souvent de haut en bas le long de la surface. La "densité" fait ici référence à la densité des points dans lesquels la buse peut changer de direction.
 
 À une densité plus élevée, la rugosité sera plus fine, ce qui donnera une texture plus rugueuse. Cela a également une incidence importante sur le temps d'impression. Pour créer une texture plus lisse, mais bosselée, vous pouvez réduire la densité.

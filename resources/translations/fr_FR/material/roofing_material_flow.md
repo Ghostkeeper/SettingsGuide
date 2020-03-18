@@ -1,6 +1,5 @@
 Débit de la surface du dessus
-===
-
+====
 Ce réglage ajuste le débit pour la surface supérieure uniquement. Le débit de la surface supérieure peut être réglé séparément du débit du reste de la peau supérieure.
 
 L'ajustement du débit pendant la surface supérieure est une méthode d'arrêt de l'écoulement pour régler les problèmes de débit d'extrusion ou de surface supérieure peu lisse.

@@ -1,6 +1,5 @@
 Débit du plafond de support
-===
-
+====
 Ce réglage permet d'ajuster le débit pour le toit de soutien uniquement. Le débit du toit porteur peut être réglé séparément du débit du reste du support.
 
 Le réglage du débit pendant le toit de soutien est une méthode d'arrêt de l'espace pour régler les problèmes de taux d'extrusion ou d'adhérence entre le modèle et le support. Le même effet peut être obtenu en ajustant la [largeur de ligne](../resolution/support_roof_line_width.md) ou la [distance de ligne](../support/support_roof_line_distance.md) du toit de support, mais l'ajustement du débit peut être plus intuitif.

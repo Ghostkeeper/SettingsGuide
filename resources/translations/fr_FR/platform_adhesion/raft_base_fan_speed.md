@@ -1,6 +1,5 @@
 Vitesse du ventilateur pour la base du radeau
-===
-
+====
 Ce réglage permet de configurer la vitesse du ventilateur lors de l'impression de la couche de base du radeau. La vitesse du ventilateur lors de l'impression de la couche de base peut être configurée séparément de celle des couches intermédiaire et supérieure.
 
 ![Où se trouve la couche de base dans le radeau](../images/raft_dimensions_simplified_fr.svg)

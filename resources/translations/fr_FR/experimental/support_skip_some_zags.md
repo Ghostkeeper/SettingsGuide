@@ -1,6 +1,5 @@
 Démantèlement du support en morceaux
-===
-
+====
 Si le [motif](../support/support_pattern.md) est utilisé comme support, le support peut être froissé afin de pouvoir le retirer facilement. Cela devient plus difficile si le support est très large. Avec ce réglage, le support en zigzag est brisé en morceaux qui sont plus faciles à détacher individuellement, mais qui restent suffisamment larges pour maintenir leur stabilité.
 
 ![Toutes les 8 lignes, une ligne de connexion est laissée de côté, ce qui brise le support en morceaux](../../../articles/images/support_skip_some_zags.png)

@@ -1,6 +1,5 @@
 Direction de la ligne de bas de support
-===
-
+====
 Le plancher de support est normalement orienté de manière à être aussi perpendiculaire que possible au support situé au-dessus et au modèle situé en dessous. Si l'orientation des lignes de la surface supérieure ou des lignes de support a été personnalisée, il est conseillé de personnaliser également l'orientation des lignes du plancher de support. Ce paramètre vous permet de personnaliser l'orientation des lignes du plancher de soutien.
 
 ![Le toit et le plancher sont tous deux inclinés à 0° et 90°](../../../articles/images/support_interface_angles_0.png)

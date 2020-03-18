@@ -1,5 +1,5 @@
 Priorité de distance des supports
-===
+====
 La [distance X/Y](support_xy_distance.md) et la [distance Z](support_z_distance.md) de support doivent être observées exactement ; ni plus, ni moins. Cette méthode est trop contraignante, il doit donc y avoir une préférence entre les deux. Ce paramètre détermine cette préférence.
 
 X/Y prioritaire sur Z

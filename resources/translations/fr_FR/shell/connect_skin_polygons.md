@@ -1,6 +1,5 @@
 Relier les polygones supérieurs / inférieurs
-===
-
+====
 Lorsque vous utilisez un motif concentrique haut/bas (un motif composé de contours fermés, également appelés polygones), connectez tous les contours entre eux de manière à ce qu'ils forment un seul chemin.
 
 ![Modèle concentrique naïf](../../../articles/images/connect_skin_polygons_original.png)

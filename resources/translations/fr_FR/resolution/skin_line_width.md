@@ -1,6 +1,5 @@
 Largeur de la ligne du dessus/dessous
-===
-
+====
 La largeur de chaque ligne du haut et du bas étant dessinée. La largeur d'une ligne peut être différente de la taille de la buse simplement en extrudant plus ou moins de matière que nécessaire. Si plus de matière est extrudée, le plastique s'écoulera vers les côtés, ce qui rendra la ligne plus épaisse. Si moins de matière est extrudée, la tension superficielle de la matière tend à tirer la matière vers la ligne centrale de la trajectoire de la buse.
 
 ![Les lignes de la peau sont beaucoup plus larges que le reste](../../../articles/images/skin_line_width.png)

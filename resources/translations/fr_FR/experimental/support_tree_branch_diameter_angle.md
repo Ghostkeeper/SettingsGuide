@@ -1,6 +1,5 @@
 Angle de diamètre des branches de support arborescent
-===
-
+====
 Les branches du support des arbres sont plus larges vers le bas qu'elles ne le sont en haut. Cela garantit que les branches restent stables quelle que soit la hauteur du support. Avec ce réglage, vous pouvez contrôler la vitesse à laquelle le support s'élargit.
 
 ![La forme d'une branche avec un angle de diamètre de 5°](../../../articles/images/support_tree_branch_diameter_1_4mm_5.png)

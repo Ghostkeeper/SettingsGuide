@@ -1,6 +1,5 @@
 Utilisation de tours
-===
-
+====
 De petites surfaces en surplomb produisent de petits piliers de soutien. Ces piliers ont tendance à basculer. Au lieu de ces petits piliers, Cura peut générer des tours spécialisées, plus larges et plus robustes, pour éviter que le support ne se renverse.
 
 ![Une tour soutient l'épée qui, autrement, aurait une très petite surface en surplomb](../images/support_use_towers_fr.svg)

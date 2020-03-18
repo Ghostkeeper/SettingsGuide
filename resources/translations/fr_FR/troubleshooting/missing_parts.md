@@ -1,6 +1,5 @@
 Trous dans le modèle
-===
-
+====
 Parfois, lors de l'inspection de la vue de la couche (ou si l'on n'a pas de chance, lors de l'impression), il semble que certaines parties de l'impression manquent. Cela peut avoir plusieurs raisons. Cet article énumère quelques possibilités.
 
 Mailles non manifold

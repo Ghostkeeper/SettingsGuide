@@ -1,6 +1,5 @@
 Vitesse de purge des matériaux
-===
-
+====
 Si l'imprimante doit changer le filament qui passe par une certaine buse, elle doit évacuer les restes de matière qui se trouvaient encore dans la chambre de la buse. Ce réglage détermine la vitesse à laquelle le filament est poussé dans le chargeur afin de purger l'ancien matériau.
 
 Cela ne s'applique qu'au moment où l'on passe à un autre type de matériau. Si le même type de matériau est rechargé (par exemple parce que la bobine précédente était vide), une [vitesse différente](material_end_of_filament_purge_speed.md) est utilisée.

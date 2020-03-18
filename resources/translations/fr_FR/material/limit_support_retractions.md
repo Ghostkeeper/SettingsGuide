@@ -1,6 +1,5 @@
 Limiter les rétractations du support
-===
-
+====
 Au lieu de se rétracter lorsqu'il se déplace d'un endroit à l'autre pour imprimer le support, ce réglage lui permet de se déplacer directement sans aucune rétraction.
 
 Si ce paramètre est activé, le matériau ne sera plus rétracté lors d'un déplacement en ligne droite de support à support. Lors d'un déplacement vers ou depuis le support d'impression réel ou lors d'un détour pour éviter d'entrer en collision avec le support d'impression réel, le matériau sera toujours rétracté.

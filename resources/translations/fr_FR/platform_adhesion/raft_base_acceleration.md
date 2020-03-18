@@ -1,6 +1,5 @@
 Accélération de l'impression de la base du radeau
-===
-
+====
 Ce paramètre configure le taux d'accélération de la tête d'impression pendant l'impression de la couche de base du radeau. L'accélération pendant la couche de base du radeau peut être configurée séparément des couches intermédiaire et supérieure.
 
 ![Où se trouve la couche de base dans le radeau](../images/raft_dimensions_simplified_fr.svg)

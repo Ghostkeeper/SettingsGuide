@@ -1,6 +1,5 @@
 Extrudeuse de remplissage du support
-===
-
+====
 Si votre imprimante possède plusieurs extrudeuses, le corps principal du support peut être imprimé avec une extrudeuse différente de celle de l'interface du support. Ce paramètre vous permet de choisir quelle extrudeuse est utilisée pour le corps principal du support.
 
 ![Le corps du support est imprimé en orange, mais l'interface en blanc](../../../articles/images/support_infill_extruder_nr.png)

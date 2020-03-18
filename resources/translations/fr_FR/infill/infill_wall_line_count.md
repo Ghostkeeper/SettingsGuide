@@ -1,6 +1,5 @@
 Nombre de parois de remplissage supplémentaire
-===
-
+====
 Ce réglage ajoute un certain nombre de contours autour des zones de remplissage. Cela revient à augmenter le [nombre de murs](../shell/wall_line_count.md), mais les contours ne font pas le tour de la peau et les murs seront également entre la peau et le remplissage. C'est également similaire à l'ajout de [parois de peau supplémentaires](../shell/skin_outline_count.md), mais autour du remplissage plutôt qu'autour de la peau.
 
 Ces parois sont imprimées avec les paramètres de remplissage.

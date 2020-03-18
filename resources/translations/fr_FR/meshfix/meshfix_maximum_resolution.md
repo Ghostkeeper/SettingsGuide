@@ -1,6 +1,5 @@
 Résolution maximum
-===
-
+====
 Bien que la haute résolution puisse sembler meilleure au début, il arrive souvent que l'imprimante ne gère pas très bien le code G haute résolution. C'est pourquoi Cura réduira la résolution de son entrée pendant le processus de découpage. Ce paramètre détermine la résolution que Cura maintiendra au maximum.
 
 ![Avant de réduire la résolution](../../../articles/images/meshfix_maximum_resolution_0.05.png)

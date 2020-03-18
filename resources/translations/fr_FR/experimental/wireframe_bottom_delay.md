@@ -1,6 +1,5 @@
 Attente pour le bas de l'impression filaire
-===
-
+====
 Avec ce réglage, la buse s'arrête un instant après avoir imprimé une ligne diagonale vers le bas.
 
 ![L'endroit où la buse s'arrêtera](../images/wireframe_bottom_delay_fr.svg)

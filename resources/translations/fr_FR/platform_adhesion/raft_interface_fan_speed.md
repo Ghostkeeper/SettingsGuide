@@ -1,6 +1,5 @@
 Vitesse du ventilateur pour le milieu du radeau
-===
-
+====
 Ce réglage permet de configurer la vitesse du ventilateur lors de l'impression de la couche intermédiaire du radeau. La vitesse du ventilateur lors de l'impression de la couche intermédiaire peut être configurée séparément des couches de base et supérieure.
 
 ![Où se trouve la couche intermédiaire dans le radeau](../images/raft_dimensions_simplified_fr.svg)

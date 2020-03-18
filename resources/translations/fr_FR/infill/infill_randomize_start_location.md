@@ -1,6 +1,5 @@
 Randomiser le démarrage du remplissage
-===
-
+====
 Si ce paramètre est activé, la position où l'imprimante commencera à imprimer le remplissage sur une couche sera aléatoire.
 
 Le début de la piste de remplissage est généralement un peu plus faible que le reste du remplissage. Cela se produit lorsque le remplissage est imprimé plus rapidement, avec des lignes plus épaisses ou une hauteur de couche plus importante. Le flux de matériau doit soudainement s'accélérer, et cela ne se produit pas instantanément, de sorte qu'il y aura une sous-extrusion pendant un court moment. Si cela se produit au même endroit à chaque couche, cela affaiblit la structure de remplissage. L'endroit où cela se produit sera le maillon le plus faible, et le matériau de remplissage qui l'entoure sera soumis à plus de contraintes. Si l'empreinte est soumise à une force, c'est à cet endroit qu'elle risque le plus de se rompre.

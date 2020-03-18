@@ -1,6 +1,5 @@
 Descente de l'impression filaire
-===
-
+====
 Lors de l'impression du cadre métallique, on s'attend à ce que le matériau s'affaisse en raison de la chaleur latente avant qu'il ait le temps de se solidifier. Cela rendrait le motif en dents de scie trop court. Alors que les anneaux horizontaux sont capables de se chevaucher grâce au mouvement horizontal continu, le motif en dents de scie ne le peut pas. Ce réglage compense la courte taille du motif en dents de scie, rendant le motif légèrement plus grand pour que l'anneau horizontal suivant repose correctement sur lui.
 
 ![Comment la hauteur du motif en dents de scie est compensée](../images/wireframe_fall_down_fr.svg)

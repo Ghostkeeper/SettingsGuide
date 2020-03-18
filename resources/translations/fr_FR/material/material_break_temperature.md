@@ -1,6 +1,5 @@
 Température de rupture
-===
-
+====
 Pour certaines imprimantes, lorsqu'un matériau est rétracté pour un interrupteur à filament, le matériau doit être coupé proprement afin de le faire passer dans le chargeur sans s'emmêler. Ce réglage configure une partie de la procédure pour le rompre proprement.
 
 Ce réglage règle la température à laquelle il faut refroidir avant de couper le filament. Ce refroidissement aura lieu entre la deuxième et la troisième étape (comme le montrent les images ci-dessous). L'objectif est de permettre au filament de durcir, ce qui permet à l'imprimante de le rompre proprement plutôt que de l'étirer en un long brin qui pourrait se prendre dans le chargeur.

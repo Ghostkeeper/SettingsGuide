@@ -1,6 +1,5 @@
 Débit minimal de la paroi
-===
-
+====
 La compensation des chevauchements des lignes de mur réduira le débit de certains des murs. Cela peut être problématique, car cela peut réduire le débit arbitrairement faible, jusqu'à 1 % si les parois se chevauchent presque complètement. L'impression à des débits extrêmement faibles ne fonctionne pas bien. Elle a tendance à former un motif de gouttelettes au lieu de lignes d'extrusion continues.
 
 Ce réglage transformera les lignes à débit extrêmement faible en mouvements de translation, faisant effectivement passer leur débit à 0 %. La matière continuera à suinter comme dans les mouvements de déplacement normaux, mais ne formera pas de perles.

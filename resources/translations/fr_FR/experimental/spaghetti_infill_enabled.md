@@ -1,6 +1,5 @@
 Remplissage en spaghettis
-===
-
+====
 Si ce paramètre est activé, Cura extrudera tout le remplissage de plusieurs couches à la fois dans une couche supérieure. Ceci constitue une forme extrême d'[Épaisseur de la couche de remplissage](../infill/infill_sparse_thickness.md), mais sans le but de maintenir la rigidité du remplissage. Il possède une certaine fonctionnalité pour faire face aux quantités extrêmes d'extrusion.
 
 Cette caractéristique n'est pas fonctionnelle pour les matériaux ordinaires. Vous voudrez normalement soit la résistance des motifs de remplissage ordinaires, soit ne pas tenir compte du remplissage. Il existe cependant deux cas d'utilisation.

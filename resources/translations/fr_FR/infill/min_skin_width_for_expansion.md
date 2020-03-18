@@ -1,6 +1,5 @@
 Largeur minimum de la couche extérieure pour l'expansion
-===
-
+====
 Comme la peau est présente dans tout le modèle, il est inutile d'étendre toutes ces zones. Au contraire, seuls les angles de la peau qui sont déjà plus larges que ce paramètre seront élargis. De cette façon, les surfaces planes avec des éléments en saillie seront renforcées, sans augmenter inutilement le temps d'impression pour le reste du modèle.
 
 ![Réglé sur 0mm, toute la peau est agrandie avec le paramètre Skin Expand Distance](../../../articles/images/max_skin_angle_for_expansion_90.png)

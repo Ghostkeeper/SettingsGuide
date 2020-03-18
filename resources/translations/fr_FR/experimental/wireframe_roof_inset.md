@@ -1,5 +1,5 @@
 Distance d’insert de toit pour les impressions filaires
-===
+====
 Lorsque la surface du modèle est horizontale, par exemple la face supérieure du modèle, une série d'anneaux concentriques sera imprimée et reliée à un motif en dents de scie. Ce réglage détermine la distance entre ces anneaux concentriques.
 
 ![Vue de dessus du cadre en fil de fer, avec l'insert marqué](../images/wireframe_roof_inset_fr.svg)

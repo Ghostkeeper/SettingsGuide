@@ -1,6 +1,5 @@
 Débit de l'impression filaire
-===
-
+====
 Ce réglage permet de régler le débit pendant l'impression avec la technique de l'impression au fil de fer. Cela sert simplement de multiplicateur sur la largeur de ligne et la hauteur de couche. Il détermine directement la quantité de matériau utilisée pour l'impression au fil de fer.
 
 Ce réglage permet d'ajuster le débit pour l'ensemble de l'impression, mais le débit peut également être ajusté séparément pour les [parties horizontales](wireframe_flow_flat.md) ou les [connexions](wireframe_flow_connection.md).

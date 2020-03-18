@@ -1,6 +1,5 @@
 Débit de paroi(s) interne(s)
-===
-
+====
 Ce réglage ajuste le débit pour les parois intérieures uniquement. Le débit des parois intérieures peut être réglé séparément du débit de la paroi extérieure.
 
 Le réglage du débit des parois intérieures est une méthode d'arrêt de l'écoulement pour résoudre les problèmes de débit d'extrusion ou de précision dimensionnelle.

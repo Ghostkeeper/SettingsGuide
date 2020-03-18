@@ -1,6 +1,5 @@
 Activer les paramètres du pont
-===
-
+====
 Lorsque votre modèle présente un certain surplomb qui est soutenu des deux côtés, Cura le détecte et modifie la zone de peau en surplomb afin de mieux imprimer. Si ce paramètre est activé, vous pouvez régler la détection de ces zones de chevauchement et le comportement qui en résulte afin qu'il y ait un meilleur chevauchement.
 
 ![Lorsqu'un pont est détecté, les lignes de peau sont orientées de manière à combler l'écart le mieux possible](../../../articles/images/bridge_settings_enabled_default.png)

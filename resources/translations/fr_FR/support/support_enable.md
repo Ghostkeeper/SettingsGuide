@@ -1,6 +1,5 @@
 Générer les supports
-===
-
+====
 Les imprimantes 3D avec fabrication de filaments fondus fonctionnent en plaçant un cordon de plastique fondu aux bons endroits. Si ce plastique n'est pas soutenu, il va s'affaisser, car il est poussé hors de la buse avec une force importante et à cause de la gravité. À moins que le modèle ne se trouve en dessous pour soutenir la nouvelle couche, il devra être soutenu par une structure de support supplémentaire, qui sera enlevée et jetée après l'impression du modèle.
 
 Ce réglage permet de créer des structures de support pour soutenir l'objet pendant l'impression. Cura n'activera pas ce support par défaut, mais il marquera la surface du modèle en rouge s'il pense que le matériau qui s'y trouve pourrait beaucoup s'affaisser si le support n'est pas activé.

@@ -1,6 +1,5 @@
 Position X de la brosse d'essuyage
-===
-
+====
 Ce réglage permet de configurer l'endroit où la buse se déplace lors de l'essuyage.
 
 La procédure d'essuyage ne prend en charge que l'essuyage dans le sens X. Cela signifie que la brosse d'essuyage doit couvrir l'ensemble de l'axe Y. L'essuyage sera effectué directement à gauche ou à droite du point où la buse se trouve sur la couche. Le mouvement d'essuyage lui-même se fera également uniquement dans la direction X.

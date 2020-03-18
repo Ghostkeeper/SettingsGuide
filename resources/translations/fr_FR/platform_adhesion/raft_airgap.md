@@ -1,6 +1,5 @@
 Lame d'air du radeau
-===
-
+====
 Pour permettre au radeau de se détacher de l'empreinte réelle, un espace est maintenu entre le modèle et le radeau. L'imprimeur pose alors l'objet légèrement sur le radeau.
 
 ![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)

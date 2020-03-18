@@ -1,6 +1,5 @@
 Activer la rétraction
-===
-
+====
 Si une imprimante 3D arrêtait de pousser le matériau, le matériau ne cesserait pas immédiatement de couler par l'extrémité de la buse. Il y a des résidus de matière dans la buse et elle est pressurisée, ce qui fait qu'elle continue à couler pendant un certain temps encore. Pour empêcher le matériau de s'écouler, l'imprimante doit le retirer de l'ouverture de la buse. Cela est nécessaire pour effectuer des mouvements de déplacement propres sans fil.
 
 ![Rétractations désactivées](../../../articles/images/retraction_enable_disabled.png)

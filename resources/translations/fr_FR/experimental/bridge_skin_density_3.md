@@ -1,6 +1,5 @@
 Densité de la troisième couche extérieure du pont
-===
-
+====
 Ce réglage permet de contrôler la densité de la peau dans la troisième couche au-dessus du pont. À une densité de 100 %, les lignes sont placées directement à côté. À des densités plus faibles, les lignes sont plus espacées.
 
 Lorsque les lignes de la peau sont espacées et directement adjacentes, elles se collent les unes aux autres. Cela permet de rendre le modèle étanche et d'obtenir un aspect plus lisse sur la face inférieure de l'impression. Cela permettra également aux lignes suivantes de s'appuyer un peu sur les lignes précédentes, ce qui aide à prévenir l'affaissement.

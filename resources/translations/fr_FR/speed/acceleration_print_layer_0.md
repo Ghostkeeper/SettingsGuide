@@ -1,6 +1,5 @@
 Accélération de l'impression de la couche initiale
-===
-
+====
 Ce réglage contrôle la vitesse à laquelle la buse accélère dans différentes directions pendant l'extrusion de la première couche. L'accélération pendant la première couche peut être réglée à un taux différent de celui du reste de l'impression et l'accélération pendant les mouvements d'extrusion peut être réglée à un taux différent de celui de l'accélération pendant les mouvements de déplacement.
 
 Alors que les parois, l'adhérence de la plate-forme, les fonds, le support et le remplissage peuvent tous avoir des taux d'accélération différents, pendant la première couche, ils seront identiques. Le taux d'accélération de la première couche aura préséance sur les taux d'accélération des structures individuelles. Le paramètre [Accélération de la jupe/bordure](acceleration_skirt_brim.md) annule à nouveau l'accélération de l'impression de la couche initiale.

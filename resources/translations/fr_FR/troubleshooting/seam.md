@@ -1,6 +1,5 @@
 Couture
-===
-
+====
 Les parois de votre impression sont imprimées en boucles continues, mais l'imprimante doit commencer cette boucle quelque part et la fermer correctement. Si la boucle n'est pas bien fermée, une couture visible sera créée. Ces coutures sont difficiles à enlever complètement, mais il est possible de les cacher ou de réduire leur taille.
 
 ![Une longue couture verticale à la surface](../../../articles/images/seam.jpg)

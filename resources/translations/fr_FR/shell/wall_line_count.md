@@ -1,6 +1,5 @@
 Nombre de lignes de la paroi
-===
-
+====
 Ce paramètre détermine le nombre de contours qui seront dessinés autour de l'impression sur chaque couche.
 
 ![Deux murs](../../../articles/images/wall_thickness_0.8.png)

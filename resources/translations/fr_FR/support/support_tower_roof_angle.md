@@ -1,6 +1,5 @@
 Angle du toit de la tour
-===
-
+====
 Les tours de soutien ont un sommet pointu, qui fait la transition entre le pilier le plus large de la tour et l'étroite zone de surplomb qui doit en fait être soutenue.
 
 ![L'angle des toits des tours de soutien](../images/support_use_towers_fr.svg)

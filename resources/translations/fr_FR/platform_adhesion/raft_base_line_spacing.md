@@ -1,6 +1,5 @@
 Espacement des lignes de base du radeau
-===
-
+====
 Ce réglage permet d'ajuster l'espacement des lignes de la couche de base du radeau. Ce réglage est similaire à celui de [Distance d'écartement de ligne de remplissage](../infill/infill_line_distance.md). Le but principal est d'ajuster la façon dont le radeau adhère à la plaque de construction.
 
 ![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)

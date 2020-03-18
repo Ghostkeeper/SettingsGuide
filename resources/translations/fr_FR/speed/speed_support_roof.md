@@ -1,6 +1,5 @@
 Vitesse d'impression des plafonds de support
-===
-
+====
 Ce paramètre configure la vitesse à laquelle la face supérieure du support est imprimée, si [Activer l'interface de support](../support/support_interface_enable.md).
 
 ![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)

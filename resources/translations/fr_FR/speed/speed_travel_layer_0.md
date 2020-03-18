@@ -1,6 +1,5 @@
 Vitesse de déplacement de la couche initiale
-===
-
+====
 Ce réglage permet d'ajuster la vitesse des déplacements lors de l'impression de la première couche.
 
 La vitesse d'impression doit être plus faible pendant la première couche que pendant le reste de l'impression, car la buse risque davantage d'arracher l'impression de la plaque de montage.

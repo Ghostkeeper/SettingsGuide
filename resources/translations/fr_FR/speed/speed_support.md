@@ -1,6 +1,5 @@
 Vitesse d'impression des supports
-===
-
+====
 Ce paramètre permet de configurer la vitesse d'impression des structures de support.
 
 ![Diverses structures imprimées à des vitesses différentes](../../../articles/images/speed_difference.png)

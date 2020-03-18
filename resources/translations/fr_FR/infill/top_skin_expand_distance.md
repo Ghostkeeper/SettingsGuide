@@ -1,6 +1,5 @@
 Distance d'expansion de la couche extérieure supérieure
-===
-
+====
 Élargissez ou réduisez les couches solides sur le dessus de votre impression dans le sens horizontal. Normalement, les couches solides ne sont générées qu'en dessous des parties où il y a du vide, mais avec ce réglage, vous pouvez l'élargir horizontalement un peu plus, ce qui améliore la résistance en faisant en sorte que la peau s'attache mieux aux murs adjacents et en fermant les interstices de la peau.
 
 ![Comment les peaux (les parties jaunes) sont normalement définies](../../../articles/images/expand_skins_expand_distance_original.png)

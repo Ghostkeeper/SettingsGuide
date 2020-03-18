@@ -1,6 +1,5 @@
 Nombre de lignes de la bordure du support
-===
-
+====
 Contrôle le nombre de périmètres tracés autour de la base de votre empreinte.
 
 ![Ce bord a 8 lignes.](../images/brim_width_fr.svg)

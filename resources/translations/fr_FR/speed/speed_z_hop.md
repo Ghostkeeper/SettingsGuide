@@ -1,6 +1,5 @@
 Vitesse du décalage en Z
-===
-
+====
 Ce paramètre configure la vitesse de déplacement à laquelle les mouvements verticaux sont effectués dans un Z Hop. Les mouvements horizontaux d'un Z Hop ne sont pas affectés, puisqu'ils sont configurés par la [Vitesse de déplacement](speed_travel.md).
 
 ![Le mouvement vertical est effectué à la vitesse du Z Hop](../images/speed_z_hop_fr.svg)

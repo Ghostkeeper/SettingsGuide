@@ -1,6 +1,5 @@
 Épaisseur intermédiaire du radeau
-===
-
+====
 Ce réglage permet d'ajuster l'épaisseur verticale de la couche intermédiaire du radeau.
 
 ![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)

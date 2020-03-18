@@ -1,6 +1,5 @@
 Densité de la couche extérieure du pont
-===
-
+====
 Ce paramètre contrôle la densité de la face inférieure de l'impression lorsqu'elle comble un vide. À une densité de 100 %, les lignes sont placées directement à côté. À des densités plus faibles, les lignes sont plus espacées.
 
 ![À une densité de 100 %, les lignes sont placées directement les unes à côté des autres](../../../articles/images/bridge_skin_density_100.png)

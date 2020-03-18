@@ -1,6 +1,5 @@
 Écart maximum
-===
-
+====
 Bien que la haute précision puisse sembler meilleure au début, il arrive souvent que l'imprimante ne gère pas très bien le Code-G  obtenu en haute précision. C'est pourquoi Cura réduira la résolution pendant le processus de découpage. Ce paramètre détermine dans quelle mesure le chemin lissé peut s'écarter du chemin original afin de réduire la précision.
 
 ![Avant de réduire la résolution](../../../articles/images/meshfix_maximum_resolution_0.05.png)

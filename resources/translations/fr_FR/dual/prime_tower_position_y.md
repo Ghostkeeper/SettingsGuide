@@ -1,6 +1,5 @@
 Position Y de la tour primaire
-===
-
+====
 Ce réglage vous permet de repositionner la tour principale. Il indique la coordonnée Y d'un coin de la tour principale.
 
 ![La coordonnée Y de la tour principale](../images/prime_tower_fr.svg)

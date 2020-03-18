@@ -1,6 +1,5 @@
 Décalage en Z après changement d'extrudeuse
-===
-
+====
 Ce réglage, s'il est activé, fera monter légèrement la buse d'un saut en Z lors de la commutation des extrudeuses.
 
 Le changement d'extrudeuse fait entrer une buse qui a eu un peu plus de temps pour suinter, vous pouvez donc décider de lui donner un saut Z un peu plus élevé que les sauts Z normaux pendant l'impression.

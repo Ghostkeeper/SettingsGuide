@@ -1,6 +1,5 @@
 Température auto
-===
-
+====
 Pour imprimer plus vite, il est préférable d'imprimer à une température légèrement plus élevée. Cela rend le thermoplastique plus fluide, ce qui lui permet de s'écouler plus rapidement par l'ouverture de la buse. Ce réglage ajuste automatiquement la température en fonction du débit moyen du matériau hors de la buse.
 
 Pour savoir dans quelle mesure la température doit être ajustée, le [graphique de la température d'écoulement](material_flow_temp_graph.md) est référencé. Le débit est calculé en millimètres cubes par seconde. Si l'on met cela en relation avec la température du flux, on obtient une certaine température. Cette température sera utilisée comme température d'impression. Lorsque ce réglage est activé, le réglage ordinaire [température d'impression](../material/material_print_temperature.md) ne sera plus utilisé en faveur de la température calculée à partir du débit.

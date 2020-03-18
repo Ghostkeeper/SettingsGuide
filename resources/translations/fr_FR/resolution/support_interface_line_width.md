@@ -1,6 +1,5 @@
 Largeur de ligne d'interface de support
-===
-
+====
 La largeur de l'interface des lignes de support peut être configurée séparément de la largeur du reste des lignes de support.
 
 ![Les lignes de l'interface de support sont plus larges que le reste des lignes de support](../../../articles/images/support_roof_line_width.png)

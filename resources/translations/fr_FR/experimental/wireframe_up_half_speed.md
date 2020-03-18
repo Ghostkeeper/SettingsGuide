@@ -1,6 +1,5 @@
 Écart ascendant de l'impression filaire
-===
-
+====
 Lorsque l'on commence par le mouvement ascendant du motif en dents de scie reliant les anneaux horizontaux adjacents dans le cadre du mode d'impression par fil, le mouvement ascendant peut être ralenti pour la première partie de la ligne verticale. Ce réglage permet de configurer la partie de la ligne verticale qui sera imprimée plus lentement. Ce segment de la ligne verticale sera imprimé à la moitié de la [vitesse ascendante](wireframe_printspeed_up.md).
 
 ![Où les différentes vitesses d'impression s'appliquent](../images/wireframe_printspeed_fr.svg)

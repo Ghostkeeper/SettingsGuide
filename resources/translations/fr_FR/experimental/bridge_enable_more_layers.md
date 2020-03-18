@@ -1,6 +1,5 @@
 Le pont possède plusieurs couches
-===
-
+====
 Si ce paramètre est activé, la peau des couches supérieures au-dessus du pont sera également ajustée. Vous pouvez alors régler avec précision le débit, la vitesse, la densité et la vitesse du ventilateur des deuxième et troisième couches au-dessus du pont.
 
 La première couche qui traverse le pont est de loin la plus influente sur l'aspect du pont. Si cette couche s'affaisse, il n'y aura rien pour la soutenir. Avec les deuxième et troisième couches, il y aura des matériaux en dessous qui pourront supporter (une partie) du poids de la couche du dessus. Cependant, l'ajustement des couches supérieures peut encore avoir des effets positifs.

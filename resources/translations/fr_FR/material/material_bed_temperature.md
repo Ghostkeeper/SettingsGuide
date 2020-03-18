@@ -1,6 +1,5 @@
 Température du plateau par défaut
-===
-
+====
 Certaines imprimantes ont un plateau chauffé. Ce réglage détermine la température du plateau.
 
 En chauffant le plateau, le matériau reste légèrement fluide et collant. Certains matériaux forment des cristaux lors de la congélation, ce qui entraîne un rétrécissement important du matériau lors de la congélation. Le lit chauffant maintient le matériau juste au-dessus de la température de congélation pour éviter ce retrait. Tout ceci a pour but d'améliorer l'adhérence de l'impression à la plaque de montage.

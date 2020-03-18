@@ -1,6 +1,5 @@
 Distance supérieure des supports
-===
-
+====
 Ce réglage permet de configurer la distance entre le sommet du support et la surface en surplomb du modèle.
 
 ![La distance supérieure entre le modèle bleu foncé et le support bleu clair](../images/support_top_bottom_distance_fr.svg)

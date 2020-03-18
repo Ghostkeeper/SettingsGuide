@@ -1,6 +1,5 @@
 Expansion horizontale des supports
-===
-
+====
 Ce réglage fait que le support devient légèrement plus large, s'étendant horizontalement dans toutes les directions.
 
 ![Le support est plus large que nécessaire pour supporter le modèle](../../../articles/images/support_offset.png)

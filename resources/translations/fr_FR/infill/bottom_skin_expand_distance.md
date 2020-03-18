@@ -1,6 +1,5 @@
 Distance d'expansion de la couche extérieure inférieure
-===
-
+====
 Élargissez ou réduisez les couches solides du fond de votre tirage dans le sens horizontal. Normalement, les couches solides ne sont générées qu'au-dessus des parties où il y a de l'air en dessous, mais avec ce réglage, vous pouvez l'élargir horizontalement un peu plus, ce qui améliore la résistance en faisant en sorte que la peau s'attache mieux aux murs adjacents et en fermant les interstices de la peau.
 
 ![Comment les peaux (les parties jaunes) ont normalement l'air](../../../articles/images/expand_skins_expand_distance_original.png)

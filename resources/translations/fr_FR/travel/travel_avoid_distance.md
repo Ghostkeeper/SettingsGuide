@@ -1,6 +1,5 @@
 Distance d'évitement du déplacement
-===
-
+====
 Lorsque [Eviter les pièces imprimées lors du déplacement](travel_avoid_other_parts.md) est actif, ce paramètre définit l'espace libre que la buse garde par rapport aux autres objets qu'elle doit éviter.
 
 N'oubliez pas que ce paramètre définit la distance entre les autres objets et l'axe du mouvement de translation. Le mouvement de déplacement n'a pas d'épaisseur. Il est conseillé de donner une valeur à ce paramètre qui soit au moins suffisamment grande pour que l'extrémité de la buse ne touche pas les autres parties.

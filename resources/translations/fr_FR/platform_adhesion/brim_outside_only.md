@@ -1,6 +1,5 @@
 Bordure uniquement sur l'extérieur
-===
-
+====
 Si votre modèle comporte des trous dans la couche initiale de la plaque de construction, ce réglage empêchera l'impression d'un bord le long de l'intérieur du trou.
 
 ![Bord imprimé partout](../../../articles/images/brim_outside_only_original.png)

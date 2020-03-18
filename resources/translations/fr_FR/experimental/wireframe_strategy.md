@@ -1,6 +1,5 @@
 Stratégie de l'impression filaire
-===
-
+====
 La préoccupation la plus importante pour la fiabilité de l'impression au fil de fer concerne les points de connexion où les couches de la trame se connectent les unes aux autres. Il existe plusieurs stratégies pour rendre ces connexions plus solides. Ce paramètre vous permet de choisir la stratégie que l'imprimante utilisera.
 
 Compenser

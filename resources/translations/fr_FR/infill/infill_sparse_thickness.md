@@ -1,6 +1,5 @@
 Épaisseur de la couche de remplissage
-===
-
+====
 Comme la hauteur de la couche de remplissage n'est pas importante pour la qualité visuelle, vous pouvez utiliser des couches plus épaisses pour le remplissage afin de réduire le temps d'impression. Ce réglage permet de combiner des couches de remplissage, à condition que plusieurs couches de remplissage soient directement superposées. Il n'imprimera alors aucun remplissage sur certaines des couches, mais dans la plus haute des couches combinées, il extrudera plus de matière pour compenser.
 
 Dans la vue des couches, on aura l'impression que les lignes de remplissage sont devenues beaucoup plus larges. Lorsqu'elles sont imprimées, les lignes de remplissage s'abaissent davantage au lieu de s'étendre horizontalement.

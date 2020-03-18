@@ -1,6 +1,5 @@
 Angle de porte-à-faux de support
-===
-
+====
 L'angle de porte_à_faux influence la quantité de matière placée pour soutenir l'impression. L'angle indique l'angle minimum qui est supporté.
 
 **Réduire la valeur de ce paramètre génère plus de support.**

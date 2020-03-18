@@ -1,6 +1,5 @@
 Pourcentage de chevauchement du remplissage
-===
-
+====
 Si le remplissage chevauche un peu les murs, il adhérera mieux aux parois, ce qui rendra la pièce beaucoup plus solide. Ce paramètre contrôle la quantité de chevauchement des murs, en pourcentage de la largeur de la ligne de remplissage.
 
 ![Une visualisation du chevauchement des remplissages et de la distance d'essuyage](../images/infill_overlap_fr.svg)

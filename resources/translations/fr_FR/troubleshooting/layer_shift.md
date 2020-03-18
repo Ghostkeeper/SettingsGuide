@@ -1,6 +1,5 @@
 Le décalage des couches
-===
-
+====
 Un décalage de couches se produit lorsque les couches d'une impression ne sont pas correctement empilées les unes sur les autres. Si la tête d'impression est déplacée pendant l'impression d'une couche pour une raison quelconque, l'imprimante continue d'imprimer avec un décalage. La face supérieure de l'impression est alors décalée par rapport à la face inférieure.
 
 ![Un décalage d'un seul calque dû à une obstruction](../../../articles/images/layer_shift_single.jpg)

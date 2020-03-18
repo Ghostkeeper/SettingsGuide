@@ -1,6 +1,5 @@
 Taille de la tour primaire
-===
-
+====
 Ce réglage permet d'ajuster la largeur de la tour principale.
 
 ![La largeur de la tour principale](../../../articles/images/prime_tower.svg)

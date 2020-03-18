@@ -1,6 +1,5 @@
 Épaisseur de la couche supérieure du radeau
-===
-
+====
 Ce réglage permet d'ajuster l'épaisseur des couches de surface. Il ne s'agit que de la hauteur d'une couche, donc la hauteur totale des couches de surface correspondra à ce paramètre multiplié par la valeur du paramètre [Couches supérieures du radeau](raft_surface_layers.md).
 
 ![Dimensions relatives au radeau](../images/raft_dimensions_fr.svg)

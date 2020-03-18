@@ -1,6 +1,5 @@
 Débit du support
-===
-
+====
 Ce réglage permet d'ajuster le débit pour le soutien uniquement. Le débit du support peut être réglé séparément du débit du reste de l'impression.
 
 Le réglage du débit pendant le support est une méthode d'arrêt de l'espace pour régler les problèmes de débit d'extrusion ou d'adhérence entre le support et l'impression. Le même effet peut être obtenu en ajustant la [largeur de ligne](../resolution/support_line_width.md) ou [interligne](../support_line_distance.md) du support, mais l'ajustement du débit peut être plus intuitif.

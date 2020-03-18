@@ -1,6 +1,5 @@
 Saccade d’impression de la couche initiale
-===
-
+====
 Ce réglage détermine la vitesse à laquelle la buse peut passer dans les coins pendant l'extrusion de la couche initiale. Cette vitesse peut être configurée séparément des mouvements de déplacement pendant la couche initiale.
 
 La réduction de la secousse fera que l'imprimante déposera plus de matériau dans les coins tranchants car la buse ralentit alors que le flux de matériau a un certain retard dans la réduction du flux. Ces angles vifs sont souvent ceux où l'impression se détache de la plaque de montage en premier à cause du gauchissement. Il est alors avantageux de déposer un peu plus de matériau dans ces coins, car cela permet de mieux les coller. Cet effet n'est pas présent lors des déplacements de la couche initiale. C'est pourquoi l'effet de secousse lors de l'extrusion de la première couche est normalement un peu plus faible que l'effet de secousse lors des déplacements de la première couche.

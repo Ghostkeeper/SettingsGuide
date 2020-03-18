@@ -1,6 +1,5 @@
 Vitesse de déplacement
-===
-
+====
 Ce paramètre configure la vitesse à laquelle la tête d'impression se déplace lorsqu'elle n'extrude aucun matériau.
 
 ![Diverses structures imprimées à différentes vitesses](../../../articles/images/speed_difference.png)

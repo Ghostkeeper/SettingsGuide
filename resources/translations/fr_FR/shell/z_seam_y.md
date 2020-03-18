@@ -1,6 +1,5 @@
 Y Jointure en Z
-===
-
+====
 Si l'emplacement de la couture est défini sur "Spécifié par l'utilisateur" dans le paramètre [Alignement de la jointure en Z
 ](z_seam_type.md), la couture est placée près de l'emplacement spécifié avec les paramètres [X Jointure en Z](z_seam_x.md) et la **Y Jointure en Z.**
 

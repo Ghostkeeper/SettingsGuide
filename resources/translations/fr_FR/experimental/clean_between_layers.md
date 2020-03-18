@@ -1,6 +1,5 @@
 Essuyer la buse entre les couches
-===
-
+====
 Ce réglage permet d'exécuter une procédure à la fin de chaque couche pour essuyer toute matière de l'embout de la buse. Si votre imprimante est équipée d'une brosse d'essuyage intégrée, l'activation de ce paramètre amènera Cura à demander à l'imprimante d'essuyer périodiquement l'embout de cette brosse.
 
 ![Visualisation des mouvements de la procédure d'essuyage](../images/clean_between_layers_fr.svg)

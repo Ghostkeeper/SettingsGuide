@@ -1,6 +1,5 @@
 Multiplicateur de ligne de remplissage
-===
-
+====
 En augmentant ce paramètre, Cura placera davantage de lignes de remplissage directement à côté des autres lignes de remplissage.
 
 ![Multiplié par 3](../../../articles/images/infill_multiplier.png)

@@ -1,6 +1,5 @@
 Zone de remplissage minimum
-===
-
+====
 Ce réglage fait que de très petites pièces sont remplies avec le motif de la peau plutôt qu'avec le motif de remplissage, ce qui les rend complètement solides.
 
 ![Réglé sur 0, les pieds minces de ce modèle sont remplis avec le remplissage](../../../articles/images/min_infill_area_disabled.png)

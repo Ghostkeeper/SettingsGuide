@@ -1,6 +1,5 @@
 Roue libre pour paroi du pont
-===
-
+====
 Lors de l'impression d'un pont avec des lignes murales, juste avant qu'un pont ne soit imprimé, l'alimentation en matériau est interrompue pendant un moment. Pendant ce temps, le matériau restant à l'intérieur de la chambre de la buse est laissé s'écouler, afin de réduire la pression à l'intérieur de la chambre de la buse. Cette technique est appelée [Roue libre](coasting_enable.md). Ce réglage permet de contrôler la quantité de roue libre. Il s'agit essentiellement de contrôler la distance à laquelle le matériau cessera de s'écouler devant un pont.
 
 Une fois le pont terminé, le matériau qui n'a pas été extrudé sera de toute façon expulsé. La quantité totale de matériau extrudé restera la même. Cela rétablit la pression sur la buse, ce qui empêche la sous-extrusion.

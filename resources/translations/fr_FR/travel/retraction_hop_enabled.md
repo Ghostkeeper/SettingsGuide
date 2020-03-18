@@ -1,6 +1,5 @@
 Décalage en Z lors d’une rétraction
-===
-
+====
 Si ce réglage est activé, la buse sera légèrement soulevée au-dessus de l'impression lorsque la buse doit se déplacer d'un endroit à l'autre. L'objectif est que la buse passe au-dessus de l'impression au lieu de frapper les parties précédemment imprimées avec la buse.
 
 ![Déplacement vers le haut lorsque les sauts Z sont activés](../images/retraction_hop_enabled_fr.svg)

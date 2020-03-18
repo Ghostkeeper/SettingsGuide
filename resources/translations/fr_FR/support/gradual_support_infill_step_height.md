@@ -1,6 +1,5 @@
 Hauteur d'étape de remplissage graduel du support
-===
-
+====
 Lorsque vous utilisez un support graduel, la densité du support est périodiquement réduite de haut en bas en plusieurs étapes. À chaque étape, la densité du support est divisée par deux. Ce paramètre indique la hauteur de ces marches, la distance entre deux endroits où la densité du support est divisée par deux.
 
 ![1mm de hauteur](../../../articles/images/gradual_support_infill_step_height_1mm.png)

@@ -1,6 +1,5 @@
 Impression non terminée
-===
-
+====
 Parfois, une impression ne se termine pas complètement. Plusieurs raisons peuvent expliquer ce phénomène, dont certaines peuvent être résolues en ajustant les paramètres de Cura.
 
 ![Le filament a cessé de couler à mi-chemin de cette impression](../../../articles/images/unfinished_print.jpg)

@@ -1,6 +1,5 @@
 Débit de la tour primaire (d'amorçage)
-===
-
+====
 Le débit de la tour d'amorçage. Si on l'augmente, plus de matière est poussée dans un espace plus restreint.
 
 En augmentant ce réglage, la buse s'amorce plus rapidement. Cela peut permettre de gagner du temps. Mais si on l'augmente trop, on risque de provoquer une surextrusion. En conséquence, il peut y avoir des bulles sur la tour d'amorçage, ce qui peut la faire basculer.

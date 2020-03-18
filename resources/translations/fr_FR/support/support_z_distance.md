@@ -1,6 +1,5 @@
 Distance Z des supports
-===
-
+====
 Ce réglage indique la distance verticale qui doit être maintenue entre le support et le modèle, tant en haut qu'en bas du support.
 
 ![La distance Z détermine à la fois le côté supérieur et le côté inférieur du support](../images/support_top_bottom_distance_fr.svg)

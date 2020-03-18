@@ -1,6 +1,5 @@
 Lissage de radeau
-===
-
+====
 Ce réglage permet de rendre les angles intérieurs du radeau plus lisses. Le réglage spécifie le rayon d'un arc. Tous les coins intérieurs qui sont plus nets que le rayon d'arc spécifié seront lissés pour avoir le rayon d'arc.
 
 ![Pas de lissage](../../../articles/images/raft_smoothing_0mm.png)

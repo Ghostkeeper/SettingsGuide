@@ -1,6 +1,5 @@
 Extrudeuse de l'interface du support
-===
-
+====
 Si votre imprimante possède plusieurs extrudeuses, les couches d'interface où le support touche le modèle peuvent être imprimées avec une extrudeuse différente de celle du corps principal du support. Ce paramètre vous permet de choisir quelle extrudeuse est utilisée pour l'interface du support.
 
 ![L'interface de support est imprimée en organe, mais le corps principal en blanc](../../../articles/images/support_interface_extruder_nr.png)
