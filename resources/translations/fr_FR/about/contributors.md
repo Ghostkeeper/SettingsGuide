@@ -14,7 +14,8 @@ Articles
 * Ellecross: une grande partie du contenu de la v1.0.
 * Jeroen Stevens: Une grande partie du contenu de la v1.0.
 * ChrisTerBeke: article sur la hauteur de couche adaptative.
-* Laurent Lalliard: Traduction française
+* Goodfeat: Traduction russe.
+* Laurent Lalliard: Traduction française.
 
 ![](../../../articles/images/created_by.jpg)
 ![](../images/contributeurs_fr.jpg)

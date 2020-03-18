@@ -14,5 +14,6 @@ Articles
 * Jeroen Stevens: Much of the content of v1.0.
 * ChrisTerBeke: Article about Adaptive Layer Height.
 * Goodfeat: Russian translations.
+* Laurent Lalliard: French translations.
 
 ![](../images/created_by.jpg)
