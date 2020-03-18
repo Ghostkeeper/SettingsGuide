@@ -1,7 +1,7 @@
-Raft Fan Speed
+Vitesse du ventilateur pendant le radeau
 ====
-This setting configures the speed at which the cooling fans will spin while the raft is being printed.
+Ce paramètre configure la vitesse à laquelle les ventilateurs de refroidissement tourneront pendant l'impression du radeau.
 
-Increasing the fan speed causes the material to cool down more quickly. This can cause warping as internal stresses in the plastic are not able to relax before the plastic sets. It can also cause the raft to adhere less well to the build plate, since the material is not able to flow out as much as it would otherwise, to increase its contact area with the build plate. However with increased fan speed the lines will also bridge better in the middle and top layers, producing a smoother surface for your raft which ultimately leads to a smoother surface for your print.
+L'augmentation de la vitesse du ventilateur fait refroidir le matériau plus rapidement. Cela peut provoquer une déformation, car les contraintes internes dans le plastique ne peuvent pas se détendre avant que le plastique ne prenne. Cela peut également faire en sorte que le radeau adhère moins bien à la plaque de construction, car le matériau ne peut pas s'écouler autant qu'il le ferait autrement, pour augmenter sa surface de contact avec la plaque de construction. Cependant, avec une vitesse de ventilateur accrue, les lignes pourront être créés dans le vide également mieux dans les couches moyennes et supérieures, produisant une surface plus lisse pour votre radeau, ce qui conduit finalement à une surface plus lisse pour votre impression.
 
-When the raft is used, the [fan speed at the initial layer](../cooling/cool_fan_speed_0.md) will affect the fan speed at the initial layer of the model, rather than the first layer of the raft.
+Lorsque le mode radeau est utilisé, la [Vitesse des ventilateurs initiale](../cooling/cool_fan_speed_0.md) affectera la vitesse du ventilateur à la couche initiale du modèle, plutôt qu'à la première couche du radeau.
