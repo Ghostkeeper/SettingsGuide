@@ -1,6 +1,6 @@
 Largeur de la bordure
 ====
-Ce réglage permet d'ajuster la largeur du bord en millimètres.
+Ce réglage permet d'ajuster la largeur de la bordure en millimètres.
 
 ![Les dimensions du bord](../images/brim_width_fr.svg)
 
