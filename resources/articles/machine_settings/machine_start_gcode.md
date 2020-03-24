@@ -51,3 +51,5 @@ Through the same syntax as references to settings, some auxiliary information is
 Heating before the start g-code
 ----
 Cura will automatically issue heating commands before your start g-code begins. This way your start g-code doesn't need to consider that the nozzle needs to heat up. You can immediately start priming the nozzle. If your start g-code contains a reference to any temperature (for the nozzle or the bed), this will be disabled (for respectively the nozzle or the bed).
+
+*This setting is a machine setting, so it will not appear in the normal list of settings. It can be changed by going to the list of printers in the preferences screen and clicking on "Machine Settings".*
