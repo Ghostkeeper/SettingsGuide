@@ -1,8 +1,8 @@
 Problèmes d'adhérence au plateau
 ====
-L'un des modes de défaillance les plus courants pour les impressions 3D est que l'empreinte s'est décollée du plateau alors qu'elle était encore en cours d'impression. Cet article passe en revue certains ajustements que vous pouvez apporter pour éviter que cela ne se produise.
+L'un des modes de défaillance les plus courants pour les impressions 3D est que la pièce se décolle du plateau alors qu'elle était encore en cours d'impression. Cet article passe en revue certains ajustements que vous pouvez apporter pour éviter que cela ne se produise.
 
-Si l'impression s'est perdue du plateau, vous verrez généralement beaucoup de fils détachés sur le plateau. Si vous avez plus de chance, cela peut aussi se manifester par un simple [décalage de couche](./layer_shift.md) (et il y aura moins à nettoyer). Dans tous les cas, l'impression est gâchée.
+Si l'impression s'est décollée du plateau, vous verrez généralement beaucoup de fils éparpillés sur le plateau. Si vous avez plus de chance, cela peut aussi se manifester par un simple [décalage de couche](./layer_shift.md) (et il y aura moins à nettoyer). Dans tous les cas, l'impression est gâchée.
 
 Méthodes d'adhérence au plateau
 ----
@@ -16,7 +16,7 @@ La bordure et le radeau sont les techniques les plus efficaces pour augmenter l'
 
 Si une bordure est utilisée, vous pouvez augmenter encore l'adhérence en augmentant la [largeur de la bordure](../platform_adhesion/brim_width.md). Vous pouvez également ajouter une bordure à [l'intérieur des supports](../support/support_brim_enable.md) et à la [tour principale](../dual/prime_tower_brim_enable.md) ainsi qu'entre le [modèle et support](../platform_adhesion/brim_replaces_support.md) et les [trous intérieurs](../platform_adhesion/brim_outside_only.md) du modèle.
 
-De même, si un radeau est utilisé, vous pouvez augmenter l'adhérence en augmentant la [largeur du radeau](../platform_adhesion/raft_margin.md). Le radeau sera toujours imprimé en dessous de tout, car les couches doivent correspondre. Si l'adhérence entre la maquette et le radeau pose problème, pensez à réduire la[lame d'air](../platform_adhesion/raft_airgap.md) entre le radeau et la maquette. De plus, vous pouvez envisager d'augmenter la [largeur de la ligne de base du radeau](../platform_adhesion/raft_base_line_width.md).
+De même, si un radeau est utilisé, vous pouvez augmenter l'adhérence en augmentant la [largeur du radeau](../platform_adhesion/raft_margin.md). Le radeau sera toujours imprimé en dessous de tout, car les couches doivent correspondre. Si l'adhérence entre la maquette et le radeau pose problème, pensez à réduire la [lame d'air](../platform_adhesion/raft_airgap.md) entre le radeau et la maquette. De plus, vous pouvez envisager d'augmenter la [largeur de la ligne de base du radeau](../platform_adhesion/raft_base_line_width.md).
 
 Prévention du gauchissement
 ----
