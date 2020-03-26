@@ -16,7 +16,8 @@ Text {
 
 	onLinkActivated: {
 		if(manager.isArticleFile(link)) {
-			var article_id = link.replace(/\.[^/.]*$/, "");
+			var article_id = link.replace(/\.[^\/.]*$/, "");
+			article_id = article_id.replace(/.*\\/, ""); //Backslashes for Windows.
 			article_id = article_id.replace(/.*\//, "");
 			manager.setSelectedArticleId(article_id);
 		} else {
