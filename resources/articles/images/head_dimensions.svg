@@ -13,7 +13,7 @@
 
 		<line x1="370" y1="610" x2="370" y2="670" /> <!-- Nozzle diameter. -->
 		<line x1="380" y1="610" x2="380" y2="670" />
-		<line x1="30" y1="660" x2="347.5" y2="660" />
+		<line x1="5" y1="660" x2="347.5" y2="660" />
 		<use href="#arrow" x="347.5" y="660" />
 		<line x1="420" y1="660" x2="402.5" y2="660" />
 		<use href="#arrow" x="402.5" y="660" transform="rotate(180, 402.5, 660)" />
@@ -57,7 +57,7 @@
 
 	<g font-size="40" font-family="sans-serif"> <!-- Actual legend. Mythology and all. -->
 		<text x="970" y="600" transform="rotate(-90, 970, 600)">Gantry Height</text>
-		<text x="30" y="650">Nozzle Diameter</text>
+		<text x="5" y="650">Nozzle Diameter</text>
 		<text x="5" y="720" font-size="30">Outer Nozzle Diameter</text>
 		<text x="560" y="575">Nozzle Length</text>
 		<text x="380" y="310" transform="rotate(25, 380, 310)">Nozzle Angle</text>
