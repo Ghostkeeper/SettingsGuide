@@ -2,6 +2,6 @@ Maximum Speed Z
 ====
 This setting indicates the highest speed that your printer can reach in the Z direction.
 
-This is used to limit the [print speed](../speed/speed_print.md) and related settings. You can't use a printing speed that is higher than the maximum speed when moving diagonally with all axes at the same time. It is also used to compute correct time estimates if a move is not moving diagonally and then exceeds the maximum speed in the Z axis.
+This is used to limit the [Z Hop Speed](../speed/speed_z_hop.md). You can't use a Z hop speed that is greater than the maximum speed your printer can take.
 
 *Since this is a machine setting, this setting is not normally visible in the settings list.*
