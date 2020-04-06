@@ -178,7 +178,10 @@ Window {
 
 			Connections {
 				target: manager
-				onSelectedArticleChanged: settingsGuideBase.zoomed_image = ""
+				onSelectedArticleChanged: {
+					settingsGuideBase.zoomed_image = ""; //Zoom out any zoomed images.
+					article_scroll.contentItem.contentY = 0; //Scroll back to the top of the article.
+				}
 			}
 
 			Rectangle {
