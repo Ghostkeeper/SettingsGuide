@@ -14,7 +14,7 @@ Réglage d'autres paramètres pour le remplissage de spaghetti
 ----
 Ces deux demandes nécessitent un traitement très particulier de votre demande de remplissage. Voici quelques paramètres que vous voudrez très probablement adapter à vos besoins :
 * La [vitesse d'impression du remplissage](../speed/speed_infill.md) doit être massivement réduite. Si la buse doit extruder le matériau de remplissage de 10 couches en même temps, vous devrez réduire la vitesse d'impression d'au moins un facteur 8.
-* Réglez votre [épaisseur de la couche de remplissage] (../infill/infill_sparse_thickness.md) pour qu'elle soit égale à la hauteur de la couche.
+* Réglez votre [épaisseur de la couche de remplissage](../infill/infill_sparse_thickness.md) pour qu'elle soit égale à la hauteur de la couche.
 * Augmentez légèrement votre [température d'impression](../material/material_print_temperature.md) (pour l'extrudeuse qui imprimera le remplissage). Cela permet au matériau de s'écouler correctement hors de la buse et permet une extrusion plus rapide.
 * Définissez le [alignement du joint](../shell/z_seam_type.md) de manière aléatoire pour étaler la structure de manière aléatoire.
 
