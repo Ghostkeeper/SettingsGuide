@@ -1,4 +1,4 @@
-Début du code G
+G-Code de démarrage
 ====
 Avec ce paramètre, il est possible d'écrire un peu de g-code qui sera exécuté au tout début de chaque impression. Grâce à ce code G, l'imprimante peut être configurée pour être prête à l'impression.
 
