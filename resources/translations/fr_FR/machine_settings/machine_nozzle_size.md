@@ -1,13 +1,13 @@
-Nozzle Diameter
+Diamètre de la buse
 ====
-This setting measures the diameter of the nozzle opening through which the material flows.
+Ce réglage mesure le diamètre de l'ouverture de la buse à travers laquelle la matière s'écoule.
 
-![Dimensions of the print head](../images/head_dimensions.svg)
+! [Dimensions de la tête d'impression](../images/head_dimensions_fr.svg)
 
-This is an important dimension that other settings can base their defaults on. Most importantly, the [Line Width](../resolution/line_width.md) is normally adjusted based on the nozzle size. Some printer profiles limit the layer height based on the nozzle size as well, since the nozzle size is the most important factor in how fast material can be extruded.
+C'est une dimension importante sur laquelle d'autres paramètres peuvent se baser par défaut. Plus important encore, la [Largeur de ligne](../resolution/line_width.md) est normalement ajustée en fonction de la taille de la buse. Certains profils d'imprimante limitent également la hauteur de la couche en fonction de la taille de la buse, car la taille de la buse est le facteur le plus important pour la vitesse d'extrusion du matériau.
 
-The nozzle size is also used directly, for one detail: When filling [tiny gaps](../shell/fill_perimeter_gaps.md), line pieces further than two nozzle sizes away from each other are not merged together.
+La taille de la buse est également utilisée directement, pour un détail : Lors du remplissage de [minuscules espaces](../shell/fill_perimeter_gaps.md), les morceaux de ligne plus éloignés que deux tailles de buse ne sont pas fusionnés.
 
-Do not adjust the nozzle size unless you actually modify the physical nozzle. Some slicers (including Cura 15.04 and earlier) use the term "nozzle size" to mean how wide the lines of the print should be. Cura uses the [Line Width](../resolution/line_width.md) setting for that.
+N'ajustez pas la taille de la buse à moins que vous ne modifiiez réellement la buse physique. Certaines trancheuses (dont Cura 15.04 et antérieures) utilisent le terme "taille de buse" pour désigner la largeur des lignes de l'impression. Cura utilise le paramètre [Largeur ligne](../resolution/line_width.md) pour cela.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list. If your printer has specific profiles for the available nozzles, you can select from them in the printer set-up menu in the top centre side of the screen. Otherwise, you can adjust the nozzle diameter in the printer settings dialogue, which can be found in the list of added printers in the preferences dialogue.*
+*Comme il s'agit d'un réglage de la machine, ce paramètre n'est normalement pas visible dans la liste des paramètres. Si votre imprimante possède des profils spécifiques pour les buses disponibles, vous pouvez les sélectionner dans le menu de configuration de l'imprimante en haut au centre de l'écran. Sinon, vous pouvez ajuster le diamètre des buses dans la boîte de dialogue des paramètres de l'imprimante, qui se trouve dans la liste des imprimantes ajoutées dans la boîte de dialogue des préférences.*
