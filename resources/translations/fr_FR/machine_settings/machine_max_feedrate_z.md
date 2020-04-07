@@ -1,7 +1,7 @@
-Maximum Speed Z
+Vitesse maximale Z
 ====
-This setting indicates the highest speed that your printer can reach in the Z direction.
+Ce paramètre indique la vitesse maximale que votre imprimante peut atteindre dans la direction Z.
 
-This is used to limit the [Z Hop Speed](../speed/speed_z_hop.md). You can't use a Z hop speed that is greater than the maximum speed your printer can take.
+Il est utilisé pour limiter la [vitesse de saut Z](../speed/speed_z_hop.md). Vous ne pouvez pas utiliser une vitesse de saut Z supérieure à la vitesse maximale que votre imprimante peut atteindre.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un paramètre de la machine, ce paramètre n'est normalement pas visible dans la liste des paramètres.*
