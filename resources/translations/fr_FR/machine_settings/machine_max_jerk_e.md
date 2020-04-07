@@ -1,7 +1,7 @@
-Default Filament Jerk
+Saccade par défaut du filament
 ====
-This setting indicates the jerk rate that your firmware uses for the feeder, if Cura is not [controlling the jerk](../speed/jerk_enabled.md) of the print.
+Ce paramètre indique le taux de saccades que votre microprogramme utilise pour le chargeur, si Cura ne [Activer le contrôle de saccade](../speed/jerk_enabled.md) de l'impression.
 
-This is used to obtain correct time estimates for your print if Cura is not controlling the jerk rates. The entire print will use the same jerk rate then.
+Il est utilisé pour obtenir des estimations de temps correctes pour votre impression si Cura ne contrôle pas les taux de saccades. L'impression entière utilisera alors le même taux de saccades.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce paramètre n'est normalement pas visible dans la liste des paramètres.*
