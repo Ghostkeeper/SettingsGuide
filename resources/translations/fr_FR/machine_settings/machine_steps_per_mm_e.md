@@ -1,9 +1,9 @@
-Steps per Millimeter (E)
+Étapes par millimètre (E)
 ====
-Most 3D printers use stepper motors in their feeders to move the filament back and forth. These motors rotate in steps, and have difficulty staying between two positions of the steps. The steps are essentially the precision of the feeder. This setting indicates that precision: How many steps of the motor would result in moving the filament by one millimetre?
+La plupart des imprimantes 3D utilisent des moteurs pas à pas dans leurs alimentateurs pour déplacer le filament d'avant en arrière. Ces moteurs tournent par pas et ont du mal à se maintenir entre deux positions des pas. Les pas sont essentiellement la précision de l'alimentateur. Ce réglage indique cette précision : Combien de pas du moteur entraîneraient le déplacement du filament d'un millimètre ?
 
-This does not apply for printers that don't use stepper motors in their feeders. Cura will also assume that the step sizes of the feeders are the same for every extruder, if there are multiple feeders involved.
+Cela ne s'applique pas aux imprimantes qui n'utilisent pas de moteurs pas à pas dans leurs chargeurs. Cura supposera également que la taille des pas des feeders est la même pour chaque extrudeuse, s'il y a plusieurs feeders impliqués.
 
-This setting is not used in Cura at all. However it is used by the X3Gwriter plug-in to output X3G files with correct step sizes.
+Ce paramètre n'est pas du tout utilisé dans Cura. Cependant, il est utilisé par le plug-in X3Gwriter pour produire des fichiers X3G avec des tailles de pas correctes.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de machine, ce paramètre n'est normalement pas visible dans la liste des paramètres.*
