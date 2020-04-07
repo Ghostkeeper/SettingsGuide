@@ -1,11 +1,11 @@
-Machine Width
+Largeur de la machine
 ====
-This setting indicates the range of X coordinates through which the nozzle(s) are able to move. It's basically the usable size of the printer.
+Ce réglage indique la plage de coordonnées X à travers laquelle la ou les buses peuvent se déplacer. Il s'agit essentiellement de la taille utilisable de l'imprimante.
 
-This is not equal to the actual width of your printer on the shelf. The actual printer will also have a frame or an arm around its build volume, and this measurement doesn't include that size. It's only the size of the build volume, the coordinates where the nozzle could move.
+Elle n'est pas égale à la largeur réelle de votre imprimante sur l'étagère. L'imprimante réelle aura également un cadre ou un bras autour de son volume de construction, et cette mesure n'inclut pas cette taille. Il s'agit seulement de la taille du volume de construction, des coordonnées où la buse pourrait se déplacer.
 
-![The build volume dimensions](../images/build_volume_dimensions.svg)
+![Les dimensions du volume de construction](../../../articles/images/build_volume_dimensions.svg)
 
-If multiple nozzles are involved, not all nozzles may be able to reach the entire build volume. For some printers, if the printer has different nozzles offset from one another, some nozzles won't be able to reach all the way to one side of the build volume. This setting merely indicates the union of the volumes that all nozzles are able to reach.
+Si plusieurs buses sont concernées, il se peut que toutes les buses ne puissent pas atteindre le volume total de la construction. Pour certaines imprimantes, si l'imprimante a différentes buses décalées les unes par rapport aux autres, certaines buses ne pourront pas atteindre tout le volume de production. Ce réglage indique simplement l'union des volumes que toutes les buses sont capables d'atteindre.
 
-*Since this is a machine setting, it will not normally be listed in the normal list of settings. The width can be changed in the printer settings dialogue, which can be found in the list of added printers in the preferences dialogue.*
+*Comme il s'agit d'un réglage de la machine, il ne figurera normalement pas dans la liste normale des réglages. La largeur peut être modifiée dans la boîte de dialogue des paramètres de l'imprimante, qui se trouve dans la liste des imprimantes ajoutées dans la boîte de dialogue des préférences.*
