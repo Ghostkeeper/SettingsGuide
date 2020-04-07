@@ -21,7 +21,7 @@ You can install this plug-in in several ways.
 
     Drag that package file onto the Cura window, then restart Cura.
 3. **Building packages:** Download the latest source code [from Github](https://github.com/Ghostkeeper/SettingsGuide/archive/master.zip), then in a terminal run `cmake . && make pack` to create a .curapackage file for each supported SDK version. Similar to the previous option, select the SDK version that fits your version of Cura and drag it onto the Cura window, then restart Cura.
-4. **From source:** Download the latest source code [from Github](https://github.com/Ghostkeeper/SettingsGuide/archive/master.zip). In Cura, click on "Help", "Show configuration folder". Navigate to the "plugins" subfolder and unpack the .zip file from Github there. Rename the folder to "SettingsGuide2" (removing any suffix that Github added such as "-master"). Restart Cura.
+4. **From source:** Download the latest source code [from Github](https://github.com/Ghostkeeper/SettingsGuide/archive/master.zip). In Cura, click on "Help", "Show configuration folder". Navigate to the "plugins" subfolder and unpack the .zip file from Github there. Rename the folder to "SettingsGuide2" (removing any suffix that Github added such as "-master"). Rename the `plugin.json.in` file to simply `plugin.json` and fill in the CMake variables inside. Restart Cura.
 
 Usage
 ----
