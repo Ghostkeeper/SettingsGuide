@@ -1,7 +1,7 @@
-Nozzle ID
+ID de la buse
 ====
-This is a setting, intended to be specialised by nozzle profiles, that indicates what type of nozzle this is.
+Il s'agit d'un réglage, destiné à être spécialisé par profils de buses, qui indique de quel type de buse il s'agit.
 
-The value of this setting is written in the g-code header when using the [Griffin flavour of g-code](machine_gcode_flavor.md). This way the printer knows which nozzle the g-code was meant for, and can warn the user that he might want to switch the nozzle before starting this print.
+La valeur de ce paramètre est inscrite dans l'en-tête du g-code lors de l'utilisation de [Griffin flavour of g-code](machine_gcode_flavor.md). De cette façon, l'imprimante sait à quelle buse le g-code est destiné et peut avertir l'utilisateur qu'il peut vouloir changer de buse avant de lancer l'impression.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
