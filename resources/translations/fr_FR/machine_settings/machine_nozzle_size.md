@@ -2,7 +2,7 @@ Diamètre de la buse
 ====
 Ce réglage mesure le diamètre de l'ouverture de la buse à travers laquelle la matière s'écoule.
 
-! [Dimensions de la tête d'impression](../images/head_dimensions_fr.svg)
+![Dimensions de la tête d'impression](../images/head_dimensions_fr.svg)
 
 C'est une dimension importante sur laquelle d'autres paramètres peuvent se baser par défaut. Plus important encore, la [Largeur de ligne](../resolution/line_width.md) est normalement ajustée en fonction de la taille de la buse. Certains profils d'imprimante limitent également la hauteur de la couche en fonction de la taille de la buse, car la taille de la buse est le facteur le plus important pour la vitesse d'extrusion du matériau.
 
