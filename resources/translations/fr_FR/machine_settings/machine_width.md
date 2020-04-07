@@ -4,7 +4,7 @@ Ce réglage indique la plage de coordonnées X à travers laquelle la ou les bus
 
 Elle n'est pas égale à la largeur réelle de votre imprimante sur l'étagère. L'imprimante réelle aura également un cadre ou un bras autour de son volume de construction, et cette mesure n'inclut pas cette taille. Il s'agit seulement de la taille du volume de construction, des coordonnées où la buse pourrait se déplacer.
 
-![Les dimensions du volume de construction](../../../articles/images/build_volume_dimensions.svg)
+![Les dimensions du volume de construction](../images/build_volume_dimensions_fr.svg)
 
 Si plusieurs buses sont concernées, il se peut que toutes les buses ne puissent pas atteindre le volume total de la construction. Pour certaines imprimantes, si l'imprimante a différentes buses décalées les unes par rapport aux autres, certaines buses ne pourront pas atteindre tout le volume de production. Ce réglage indique simplement l'union des volumes que toutes les buses sont capables d'atteindre.
 
