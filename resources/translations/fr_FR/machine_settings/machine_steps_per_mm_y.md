@@ -1,9 +1,9 @@
-Steps per Millimeter (Y)
+Pas par millimètre (Y)
 ====
-Most 3D printers use stepper motors to move the print head around the build volume. These motors rotate in steps, and have difficulty staying between two positions of the steps. The steps are essentially the resolution of the printer. This setting indicates that resolution: How many steps of the motor would result in one millimetre of movement in the Y direction?
+La plupart des imprimantes 3D utilisent des moteurs pas à pas pour déplacer la tête d'impression autour du volume de construction. Ces moteurs tournent par étapes, et ont du mal à se maintenir entre deux positions des étapes. Les pas sont essentiellement la résolution de l'imprimante. Ce paramètre indique cette résolution : Combien de pas du moteur entraîneraient un mouvement d'un millimètre dans la direction Y ?
 
-This does not apply for printers that don't control motion in the Y direction with a separate motor (such as delta-style printers) or that don't use stepper motors to move the print head in the Y direction.
+Cela ne s'applique pas aux imprimantes qui ne contrôlent pas le mouvement dans la direction Y avec un moteur séparé (comme les imprimantes de type delta) ou qui n'utilisent pas de moteurs pas à pas pour déplacer la tête d'impression dans la direction Y.
 
-This setting is not used in Cura at all. However it is used by the X3Gwriter plug-in to output X3G files with correct step sizes.
+Ce paramètre n'est pas du tout utilisé à Cura. Cependant, il est utilisé par le plug-in X3Gwriter pour produire des fichiers X3G avec des tailles de pas correctes.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
