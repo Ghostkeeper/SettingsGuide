@@ -78,5 +78,3 @@ Il s'agit d'une saveur g-code destinée aux imprimantes 3D de Repetier. Il imite
 * Les changements d'accélération sont effectués à l'aide de la commande "M207" plutôt que de la commande "M205".
 
 *Comme il s'agit d'un réglage machine, il ne sera normalement pas listé dans la liste normale des réglages. Il existe cependant un menu de sélection pour ce paramètre dans la boîte de dialogue des paramètres de l'imprimante, qui peut être trouvé dans la liste des imprimantes ajoutées dans la boîte de dialogue des préférences.*
-*** Traduit avec www.DeepL.com/Translator (version gratuite) ***
-
