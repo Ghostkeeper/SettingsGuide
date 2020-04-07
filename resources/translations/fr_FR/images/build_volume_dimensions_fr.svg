@@ -18,8 +18,8 @@
             M425.314,953.367 l542.258,-112.864 2.058,-743.082 -558.856,50.431 z" /> <!-- The printer frame. -->
     </g>
     <g font-family="sans-serif" font-size="50">
-        <text x="600" y="710" transform="rotate(-8, 600, 710)">Width</text>
-        <text x="230" y="665" transform="rotate(18, 230, 665)">Depth</text>
-        <text x="860" y="500" transform="rotate(-90, 860, 500)">Height</text>
+        <text x="600" y="710" transform="rotate(-8, 600, 710)">Largeur</text>
+        <text x="230" y="665" transform="rotate(18, 230, 665)">Profondeur</text>
+        <text x="860" y="500" transform="rotate(-90, 860, 500)">Hauteur</text>
     </g>
 </svg>
