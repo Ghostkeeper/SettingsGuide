@@ -1,7 +1,7 @@
-Has Heated Build Plate
+A un plateau chauffé
 ====
-This setting indicates whether or not the printer has a build plate that can control the temperature. These types of build plates are installed in many 3D printers to improve adhesion between the print and the build plate.
+Ce paramètre indique si l'imprimante est équipée d'un plateau d'impression permettant de contrôler la température. Ces types de plaques de montage sont installés dans de nombreuses imprimantes 3D pour améliorer l'adhérence entre l'impression et la plaque de montage.
 
-If the printer has no heated build plate, the [Build Plate Temperature](../material/material_bed_temperature.md) setting and its related settings will not be shown to the user. Cura will also not issue any build plate temperature commands to the printer.
+Si l'imprimante n'a pas de plaque chauffante, le paramètre [Température plateau](../material/material_bed_temperature.md) et ses paramètres associés ne seront pas affichés à l'utilisateur. Cura n'enverra pas non plus de commande de température de la plaque de montage à l'imprimante.
 
-*Since this is a machine setting, it will not normally be listed in the normal list of settings. There is a checkbox for this setting though in the printer settings dialogue, which can be found in the list of added printers in the preferences dialogue.*
+*Comme il s'agit d'un réglage de la machine, il ne sera normalement pas répertorié dans la liste normale des réglages. Il existe cependant une case à cocher pour ce paramètre dans la boîte de dialogue des paramètres de l'imprimante, qui se trouve dans la liste des imprimantes ajoutées dans la boîte de dialogue des préférences.*
