@@ -1,7 +1,7 @@
-Machine Type
+Type de machine
 ====
-This is a descriptive setting, describing which model of printer you are printing with.
+Il s'agit d'un paramètre descriptif, décrivant le modèle d'imprimante avec lequel vous imprimez.
 
-Currently this setting is used only to output the correct metadata in the g-code header for the Griffin g-code flavour. Using this information, the printer can know which printer model the g-code was optimised for. If the printer is connected to a group of printers of various types, it may decide to let the correct type of printer print this g-code. If the preferred printer is not available, it may give the user a warning that the g-code was not designed for this printer.
+Actuellement, ce paramètre n'est utilisé que pour produire les métadonnées correctes dans l'en-tête du code g pour la saveur code g de Griffin. Grâce à ces informations, l'imprimante peut savoir pour quel modèle d'imprimante le g-code a été optimisé. Si l'imprimante est connectée à un groupe d'imprimantes de différents types, elle peut décider de laisser le bon type d'imprimante imprimer ce g-code. Si l'imprimante préférée n'est pas disponible, elle peut avertir l'utilisateur que le g-code n'a pas été conçu pour cette imprimante.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de machine, ce paramètre n'est normalement pas visible dans la liste des paramètres.*
