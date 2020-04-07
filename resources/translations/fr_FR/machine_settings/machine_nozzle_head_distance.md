@@ -1,9 +1,9 @@
-Nozzle Length
+Longueur de la buse
 ====
-This setting contains the distance between the tip of the nozzle and the main body of the printer.
+Ce réglage contient la distance entre la pointe de la buse et le corps principal de l'imprimante.
 
-![Dimensions of the print head](../images/head_dimensions.svg)
+![Dimensions de la tête d'impression](../images/head_dimensions_fr.svg)
 
-This setting is not used by Cura, but profiles may use it to determine the values for other settings, such as the [Wire Printing Connection Height](../experimental/wireframe_height.md).
+Ce paramètre n'est pas utilisé par Cura, mais les profils peuvent l'utiliser pour déterminer les valeurs d'autres paramètres, tels que la [Hauteur de connexion de l'impression sur fil](../experimental/wireframe_height.md).
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
