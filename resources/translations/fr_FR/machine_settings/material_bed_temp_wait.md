@@ -1,7 +1,5 @@
-Wait for Build Plate Heatup
+Attendre le chauffage du plateau
 ====
-If this setting is enabled, the printer will wait until the build plate temperature is reached every time the build plate temperature is changed.
+Si ce paramètre est activé, l'imprimante attendra que la température du plateau soit atteinte chaque fois que la température de la plaque de montage est modifiée.
 
-The build plate temperature is normally only changed after the first layer, if the [Build Plate Temperature Initial Layer](../material/material_bed_temperature_layer_0.md) is different from the normal [Build Plate Temperature](../material/material_bed_temperature.md). If printing in [one-at-a-time mode](../blackmagic/print_sequence.md), the build plate is also changed when it starts with the initial layer again for the next model. In these cases, the printer will wait until the new temperature is reached before continuing printing.
-
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+La température de la plaque de montage n'est normalement modifiée qu'après la première couche, si la [couche initiale de la température de la plaque de montage](../material/material_bed_temperature_layer_0.md) est différente de la [température de la plaque de montage](../material/material_bed_temperature.md) normale. Si l'impression est effectuée en [mode unique](../blackmagic/print_sequence.md), la plaque de construction est également modifiée lorsqu'elle recommence avec la couche initiale pour le modèle suivant. Dans ce cas, l'imprimante attendra que la nouvelle température soit atteinte avant de poursuivre l'impression.
