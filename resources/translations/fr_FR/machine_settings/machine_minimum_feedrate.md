@@ -1,9 +1,9 @@
-Minimum Feedrate
+Vitesse minimale d'alimentation
 ====
-The Marlin firmware for 3D printers, from which most printer firmware is derived, has a minimum speed for all of its movements. This setting indicates what that minimum speed is for your printer's firmware.
+Le microprogramme Marlin pour imprimantes 3D, dont la plupart des microprogrammes d'imprimantes sont dérivés, a une vitesse minimale pour tous ses mouvements. Ce paramètre indique quelle est cette vitesse minimale pour le microprogramme de votre imprimante.
 
-The minimum speed is an adjustment to prevent errors in the firmware due to divisions by zero. The firmware needs to calculate the time intervals between steps in order to send a signal to the motors with the correct timing. If the motor needs to move with a speed of 0 (i.e. stand still) this would be an infinite time interval, which the firmware can't handle well. This only applies if none of the motors of the printer actually turn though. For example, when moving in the X direction the motor controlling the Y axis still doesn't rotate, but due to the intricacies of stepper motors the minimum feedrate doesn't apply here.
+La vitesse minimale est un ajustement destiné à éviter les erreurs dans le microprogramme dues à des divisions par zéro. Le microprogramme doit calculer les intervalles de temps entre les pas afin d'envoyer un signal aux moteurs avec le bon timing. Si le moteur doit se déplacer à une vitesse de 0 (c'est-à-dire s'arrêter), il s'agit d'un intervalle de temps infini, que le microprogramme ne peut pas bien gérer. Cela ne s'applique que si aucun des moteurs de l'imprimante ne tourne réellement. Par exemple, en se déplaçant dans la direction X, le moteur qui contrôle l'axe Y ne tourne toujours pas, mais en raison de la complexité des moteurs pas à pas, la vitesse d'avance minimale ne s'applique pas ici.
 
-Cura uses this minimum feedrate in order to produce correct time estimates. It is applied when accelerating at the beginning of the print or after a pause, and when decelerating to a standstill at the end of a print or before a pause.
+Cura utilise cette vitesse d'avance minimale pour produire des estimations de temps correctes. Elle est appliquée lors de l'accélération au début de l'impression ou après une pause, et lors de la décélération jusqu'à l'arrêt à la fin d'une impression ou avant une pause.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce paramètre n'est normalement pas visible dans la liste des paramètres.*
