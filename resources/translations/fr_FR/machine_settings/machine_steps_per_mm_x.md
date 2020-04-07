@@ -1,4 +1,4 @@
-Étapes par millimètre (X)
+Pas par millimètre (X)
 ====
 La plupart des imprimantes 3D utilisent des moteurs pas à pas pour déplacer la tête d'impression autour du volume de construction. Ces moteurs tournent par étapes, et ont du mal à se maintenir entre deux positions des étapes. Les pas sont essentiellement la résolution de l'imprimante. Ce paramètre indique cette résolution : Combien de pas du moteur entraîneraient un mouvement d'un millimètre dans la direction X ?
 
