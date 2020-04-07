@@ -1,7 +1,7 @@
-Default Z Jerk
+Saccade Z par défaut
 ====
-This setting indicates the jerk rate that your firmware uses for the Z direction, if Cura is not [controlling the jerk](../speed/jerk_enabled.md) of the print.
+Ce paramètre indique le taux de saccades que votre microprogramme utilise pour l'axe Z, si dans Cura le paramètre [Activer le contrôle de saccade](../speed/jerk_enabled.md) de l'impression n'est pas actif.
 
-This is used to obtain correct time estimates for your print if Cura is not controlling the jerk rates. The entire print will use the same jerk rate then.
+Cela permet d'obtenir des estimations de temps correctes pour votre impression si Cura ne contrôle pas les taux de saccades. L'ensemble de l'impression utilisera alors le même taux de saccades.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce paramètre n'est normalement pas visible dans la liste des paramètres.*
