@@ -1,10 +1,10 @@
-Build Plate Shape
+Construire en forme de plaque
 ====
-With this setting, you can indicate the shape that the printable volume takes in your printer. There are two options: rectangular or elliptic.
+Avec ce paramètre, vous pouvez indiquer la forme que prend le volume imprimable dans votre imprimante. Il existe deux options : rectangulaire ou elliptique.
 
-![A rectangular build plate](../images/machine_shape_rectangular.png)
-![An elliptical build plate](../images/machine_shape_elliptic.png)
+[Une plaque de construction rectangulaire](../../../images/machine_shape_rectangular.png)
+[Une plaque de construction elliptique](../../../images/machine_shape_elliptic.png)
 
-Elliptical build volume are common with delta-style 3D printers. If the build plate is elliptical, the [width](machine_width.md) and [depth](machine_depth.md) of the build volume apply to the two radii of the ellipse. Cura will only allow placing objects within the ellipsis, so the total build volume will be smaller, compared to a rectangular build plate with the same dimensions.
+Les volumes de construction elliptiques sont courants avec les imprimantes 3D de type delta. Si la plaque de construction est elliptique, la [largeur](machine_width.md) et la [profondeur](machine_depth.md) du volume de construction s'appliquent aux deux rayons de l'ellipse. Cura ne permet de placer des objets qu'à l'intérieur de l'ellipse, de sorte que le volume total de construction sera plus petit que celui d'une plaque de construction rectangulaire de mêmes dimensions.
 
-*This setting is a machine setting, so it will not appear in the normal list of settings. It can be changed by going to the list of printers in the preferences screen and clicking on "Machine Settings".*
+*Ce réglage est un réglage machine, il n'apparaîtra donc pas dans la liste normale des réglages. Il peut être modifié en allant dans la liste des imprimantes dans l'écran des préférences et en cliquant sur "Réglages machine".*
