@@ -1,9 +1,9 @@
-Nozzle Angle
+Angle de la buse
 ====
-This setting contains a measurement of the angle of the nozzle tip, in degrees. A lower angle means that the tip is very sharp. A higher angle means that the tip is stubby.
+Ce réglage contient une mesure de l'angle de l'extrémité de la buse, en degrés. Un angle plus faible signifie que la pointe est très pointue. Un angle plus élevé signifie que la pointe est tronquée.
 
-![Dimensions of the print head](../images/head_dimensions.svg)
+[Dimensions de la tête d'impression](../images/head_dimensions_fr.svg)
 
-This angle is used to determine the clearance between adjacent struts when using [wire printing](../experimental/wireframe_enabled.md). If the nozzle is very stubby, the vertical struts must be spaced very far apart in order to prevent the nozzle hitting other struts.
+Cet angle est utilisé pour déterminer le dégagement entre des montants adjacents lors de l'utilisation de [wire printing](../experimental/wireframe_enabled.md). Si la buse est très courte, les montants verticaux doivent être très espacés afin d'éviter que la buse ne heurte d'autres montants.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
