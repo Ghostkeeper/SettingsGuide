@@ -1,11 +1,11 @@
-Nozzle Disallowed Areas
+Zones interdites aux buses
 ====
-This setting indicates any areas on your build plate where the active nozzle is not allowed to go. The user is not allowed to place any objects in those areas, or nearby enough that they would cause something to be printed there (like a brim).
+Ce réglage indique les zones de votre plaque de construction où la buse active n'est pas autorisée à aller. L'utilisateur n'est pas autorisé à placer des objets dans ces zones ou à proximité de celles-ci au point de provoquer l'impression de quelque chose (comme un rebord).
 
-This setting only applies to the *active nozzle*, meaning that you may still print objects next to these disallowed areas even if that would cause other nozzles to move over those disallowed areas. As such, this setting is really only useful for printers which lift the inactive nozzles up or park them outside the build volume when inactive. Contrary to the ordinary [Disallowed Areas](machine_disallowed_areas.md), these disallowed areas are not moved depending on the offset between the nozzles.
+Ce paramètre s'applique uniquement à la *buse active*, ce qui signifie que vous pouvez toujours imprimer des objets à côté de ces zones interdites, même si cela entraîne le déplacement d'autres buses sur ces zones interdites. Ainsi, ce paramètre n'est vraiment utile que pour les imprimantes qui soulèvent les buses inactives ou les stationnent en dehors du volume de construction lorsqu'elles sont inactives. Contrairement aux [zones interdites](machine_disallowed_areas.md) ordinaires, ces zones interdites ne sont pas déplacées en fonction du décalage entre les buses.
 
-These forbidden areas are necessary to prevent the nozzle from colliding into things. For instance, there may be some clips on the build plate, or a sticker or a logo. If the user were to print too close to these objects, the nozzle would collide with them. At best you'd get a [layer shift](../troubleshooting/layer_shift.md). At worst you'd damage the nozzle or whatever the nozzle is colliding with.
+Ces zones interdites sont nécessaires pour éviter que la buse n'entre en collision avec des objets. Par exemple, il peut y avoir des clips sur la plaque de construction, ou un autocollant ou un logo. Si l'utilisateur devait imprimer trop près de ces objets, la buse entrerait en collision avec eux. Au mieux, vous obtiendrez un [décalage de couche](../troubleshooting/layer_shift.md). Au pire, vous endommageriez la buse ou tout autre objet avec lequel la buse entre en collision.
 
-The disallowed areas are drawn as a grey shadow on the build plate, indicating to the user that they cannot place any objects there. These shadows may be expanded in all directions to prevent the brim or skirt from hitting it and for various other reasons. There are also other shadows on the build plate, for instance to limit the range of motion if the nozzles have an offset.
+Les zones interdites sont représentées par une ombre grise sur la plaque de construction, indiquant à l'utilisateur qu'il ne peut y placer aucun objet. Ces ombres peuvent être étendues dans toutes les directions pour éviter que le bord ou la jupe ne la touche et pour diverses autres raisons. Il existe également d'autres ombres sur la plaque de montage, par exemple pour limiter l'amplitude de mouvement si les buses sont décalées.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
