@@ -61,7 +61,7 @@
 		<text x="5" y="720" font-size="30">Diamètre extérieur de la buse</text>
 		<text x="560" y="575">Longueur de la buse</text>
 		<text x="380" y="310" transform="rotate(25, 380, 310)">Angle de la buse</text>
-		<text x="265" y="140" font-size="39">Polygone de tête de machine</text>
-		<text x="190" y="35">Tête de machine &amp; Polygone des ventilateurs</text>
+		<text x="265" y="140" font-size="39">Enveloppe tête machine</text>
+		<text x="190" y="35">Tête de machine &amp; Enveloppe ventilateurs</text>
 	</g>
 </svg>
