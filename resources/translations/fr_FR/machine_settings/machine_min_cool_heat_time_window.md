@@ -1,9 +1,9 @@
-Minimal Time Standby Temperature
+Température minimale de veille
 ====
-This setting configures the minimum duration of a stand-by in which it'll bother to cool the nozzle down to stand-by temperature. If the nozzle is set to be standing by for a shorter duration than this, it will not be cooled down but instead stay at the [Final Printing Temperature](../material/material_final_print_temperature.md).
+Ce réglage configure la durée minimale d'une mise en veille pendant laquelle il faudra refroidir la buse à la température de veille. Si la buse est réglée pour une durée plus courte, elle ne sera pas refroidie mais restera à la [Température d'impression finale](../material/material_final_print_temperature.md).
 
-Your nozzle has a PID regulator, which regulates how much power is used to heat your nozzle in order to reach the correct temperatures. When the nozzle is commanded to cool down and heat up with big temperature differences in quick succession, the PID regulator tends to mispredict how much heat is necessary. This causes wide fluctuations in the actual temperature of the nozzle. With this, you can prevent it from going to the [stand-by temperature](../material/material_standby_temperature.md) if the nozzle is inactive for a very short time.
+Votre buse est équipée d'un régulateur PID, qui régule la quantité de puissance utilisée pour chauffer votre buse afin d'atteindre les températures correctes. Lorsque la buse est commandée pour se refroidir et se réchauffer avec de grandes différences de température en succession rapide, le régulateur PID a tendance à mal prévoir la quantité de chaleur nécessaire. Cela entraîne de grandes fluctuations de la température réelle de la buse. Vous pouvez ainsi éviter qu'elle n'atteigne la [température d'attente] (../material/material_standby_temperature.md) si la buse est inactive pendant une très courte période.
 
-The optimal value for this setting depends on the tuning of your PID regulator. Some regulators handle rapid target temperature changes better than others, and those may be able to handle a brief stand-by period better. Lowering this setting would then help to prevent the material from degrading inside the nozzle.
+La valeur optimale de ce réglage dépend du réglage de votre régulateur PID. Certains régulateurs gèrent mieux que d'autres les changements rapides de la température cible, et ceux-là peuvent mieux gérer une brève période de veille. Abaisser ce réglage permettrait alors d'éviter que la matière ne se dégrade à l'intérieur de la buse.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
