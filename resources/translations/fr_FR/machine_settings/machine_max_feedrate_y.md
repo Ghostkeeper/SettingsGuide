@@ -1,7 +1,7 @@
-Maximum Speed Y
+Vitesse maximale Y
 ====
-This setting indicates the highest speed that your printer can reach in the Y direction.
+Ce paramètre indique la vitesse maximale que votre imprimante peut atteindre dans la direction Y.
 
-This is used to limit the [print speed](../speed/speed_print.md) and related settings. You can't use a printing speed that is higher than the maximum speed when moving diagonally with all axes at the same time. It is also used to compute correct time estimates if a move is not moving diagonally and then exceeds the maximum speed in the Y axis.
+Il est utilisé pour limiter la [vitesse d'impression](../speed/speed_print.md) et les paramètres associés. Vous ne pouvez pas utiliser une vitesse d'impression supérieure à la vitesse maximale lorsque vous vous déplacez en diagonale avec tous les axes en même temps. Elle est également utilisée pour calculer des estimations de temps correctes si un mouvement ne se déplace pas en diagonale et dépasse ensuite la vitesse maximale sur l'axe Y.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
