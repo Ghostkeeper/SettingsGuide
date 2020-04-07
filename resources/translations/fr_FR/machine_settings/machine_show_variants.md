@@ -1,7 +1,7 @@
-Show Machine Variants
+Afficher les variantes de la machine
 ====
-Up until Cura 2.1, this setting used to determine whether printer definitions derived from this printer would be shown as variants of the printer in a separate drop-down.
+Jusqu'à Cura 2.1, ce paramètre permettait de déterminer si les définitions d'imprimante dérivées de cette imprimante devaient être affichées en tant que variantes de l'imprimante dans une liste déroulante séparée.
 
-Since Cura 2.3, this setting no longer has any effect.
+Depuis Cura 2.3, ce paramètre n'a plus d'effet.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
