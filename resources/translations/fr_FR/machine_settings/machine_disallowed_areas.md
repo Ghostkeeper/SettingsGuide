@@ -6,6 +6,6 @@ Ces zones interdites sont nécessaires pour éviter que la tête d'impression n'
 
 Les zones interdites sont représentées par une ombre grise sur la plaque de construction, indiquant à l'utilisateur qu'il ne peut y placer aucun objet. Ces ombres peuvent être étendues dans toutes les directions pour éviter que le bord ou la jupe ne la touche et pour diverses autres raisons. Il existe également d'autres ombres sur la plaque de montage, par exemple pour limiter l'amplitude de mouvement si les buses sont décalées.
 
-Si seule la buse active devait entrer en collision avec les obstacles, le réglage similaire [Nozzle Disallowed Areas](nozzle_disallowed_areas.md) peut empêcher la buse d'entrer en collision avec elle tout en permettant à la tête d'impression de se déplacer au-dessus.
+Si seule la buse active devait entrer en collision avec les obstacles, le réglage similaire [Zones interdites aux buses](nozzle_disallowed_areas.md) peut empêcher la buse d'entrer en collision avec elle tout en permettant à la tête d'impression de se déplacer au-dessus.
 
 *Comme il s'agit d'un réglage de la machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
