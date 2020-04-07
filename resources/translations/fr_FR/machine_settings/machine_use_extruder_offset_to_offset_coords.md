@@ -1,11 +1,11 @@
-Offset with Extruder
+Décalage avec l'extrudeuse
 ====
-This setting decides whether Cura should write coordinates for the print head to move to, or for the nozzle to move to.
+Ce paramètre décide si Cura doit écrire les coordonnées de la tête d'impression ou de la buse.
 
-If your printer has just a single nozzle, the coordinate system of your printer is most likely aligned to your nozzle. This means that moving to position [50,50] actually moves the tip of the nozzle to that position. If your printer has multiple nozzles though, and those nozzles are next to each other in the print head, then it does matter.
+Si votre imprimante n'a qu'une seule buse, le système de coordonnées de votre imprimante est très probablement aligné sur votre buse. Cela signifie qu'en se déplaçant vers la position [50,50], la pointe de la buse se déplace effectivement vers cette position. Si votre imprimante a plusieurs buses et que ces buses sont côte à côte dans la tête d'impression, alors c'est important.
 
-Some printers would move the print head to the same location regardless of which nozzle is currently activated. While the g-code might command the printer to move to position [50,50], the tip of the currently active nozzle might be moved to position [68,50] instead since it is, for instance, 18mm to the right of the first nozzle. If this is the case, this setting should be enabled.
+Certaines imprimantes déplacent la tête d'impression au même endroit, quelle que soit la buse actuellement activée. Alors que le code g peut ordonner à l'imprimante de se placer en position [50,50], l'extrémité de la buse actuellement active peut être placée en position [68,50] puisqu'elle se trouve, par exemple, à 18 mm à droite de la première buse. Si c'est le cas, ce paramètre doit être activé.
 
-Other printers automatically adjust the position of the print head such that the active nozzle is moved to the position indicated in the g-code. This means that if the g-code commands the printer to move to position [50,50], the currently active extruder would move to that position. The print head itself would move a bit to the side to position the active extruder there. If your printer behaves in that way, this setting should be disabled.
+D'autres imprimantes ajustent automatiquement la position de la tête d'impression de telle sorte que la buse active soit déplacée à la position indiquée dans le code g. Cela signifie que si le code g commande à l'imprimante de se déplacer en position [50,50], l'extrudeuse actuellement active se déplacera dans cette position. La tête d'impression elle-même se déplacerait un peu sur le côté pour y positionner l'extrudeuse active. Si votre imprimante se comporte de cette manière, ce paramètre doit être désactivé.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
