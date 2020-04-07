@@ -1,15 +1,16 @@
-Cool Down Speed
+Vitesse de refroidissement
 ====
-This setting tells Cura how fast your nozzle cools down when it's not heated. It is used for predicting when to start pre-cooling the nozzle before switching extruders.
+Ce réglage indique à Cura la vitesse à laquelle votre buse se refroidit lorsqu'elle n'est pas chauffée. Il sert à prédire quand il faut commencer à pré-refroidir la buse avant de changer d'extrudeuse.
 
-![The nozzles start heating up in advance before switching extruders](../images/temperature_regulation.svg)
+![Les buses commencent à chauffer à l'avance avant de changer d'extrudeuse](../images/temperature_regulation_fr.svg)
 
-When switching extruders, Cura will start pre-cooling the active nozzle just before it is done, so that it will ooze a bit less while it's waiting. Cura will also try to predict how much the nozzle has cooled down while it was inactive. This way it knows how much it'll need to heat it up again afterwards.
+Lorsqu'il change d'extrudeuse, Cura commence à pré-refroidir la buse active juste avant qu'elle ne soit terminée, afin qu'elle suinte un peu moins en attendant. Cura essaiera également de prédire la quantité de refroidissement de la buse lorsqu'elle était inactive. De cette façon, il sait de combien de temps il aura besoin pour la réchauffer par la suite.
 
-If the nozzle actually cools down faster than what this setting indicates, the nozzle will be at the stand-by temperature faster than what Cura predicts. As a result it may take longer to heat up the nozzle than what Cura predicts, and the printer will be waiting at the nozzle switch for this nozzle to heat up further.
+Si la buse refroidit effectivement plus vite que ce que ce réglage indique, la buse sera à la température de veille plus vite que ce que Cura prévoit. Par conséquent, le réchauffement de la buse peut prendre plus de temps que prévu par Cura, et l'imprimante attendra, au niveau de l'interrupteur de la buse, que celle-ci se réchauffe davantage.
 
-If the nozzle actually cools down more slowly than what this setting indicates, the nozzle may still be warm when Cura sends a command to pre-heat the nozzle, causing it to heat too fast. It will be at a printing temperature for a while before it's the nozzle's turn to print. During this time it will be oozing a bit and the plastic will degrade a bit more.
+Si la buse se refroidit plus lentement que ce que ce réglage indique, il est possible qu'elle soit encore chaude lorsque Cura envoie une commande de préchauffage, ce qui la fait chauffer trop vite. Elle sera à une température d'impression pendant un certain temps avant que ce soit au tour de la buse d'imprimer. Pendant ce temps, elle suinte un peu et le plastique se dégrade un peu plus.
 
-The actual cool down speed is not a constant rate in degrees per second. More likely it will depend on the difference between the current nozzle temperature and the temperature of the build volume. As such it will cool down faster when it's hot, and it will cool down more slowly as it approaches the stand-by temperature. If you're tuning this, try to tune it by measuring the time it takes to cool from the [final printing temperature](../material/material_final_print_temperature.md) to the [stand-by temperature](../material/material_standby_temperature.md). This is the most important track that Cura will attempt to predict. When making small prints, you could increase the cool down speed slightly to adjust for that it stays hot more often.
+La vitesse de refroidissement réelle n'est pas un taux constant en degrés par seconde. Elle dépendra plus probablement de la différence entre la température actuelle de la buse et la température du volume de production. Ainsi, il se refroidira plus rapidement lorsqu'il est chaud, et plus lentement lorsqu'il s'approchera de la température d'attente. Si vous réglez ce paramètre, essayez de le régler en mesurant le temps de refroidissement entre la [température finale d'impression] (../material/material_final_print_temperature.md) et la [température d'attente] (../material/material_standby_temperature.md). C'est la piste la plus importante que Cura tentera de prévoir. Pour les petits tirages, vous pouvez augmenter légèrement la vitesse de refroidissement afin d'ajuster la température pour qu'elle reste chaude plus souvent.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce réglage n'est normalement pas visible dans la liste des paramètres.*
+
