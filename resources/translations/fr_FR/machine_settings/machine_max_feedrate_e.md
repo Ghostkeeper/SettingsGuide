@@ -1,9 +1,9 @@
-Maximum Feedrate
+Vitesse d'alimentation maximale
 ====
-This setting indicates the highest speed that your feeder can move the filament at.
+Ce réglage indique la vitesse maximale à laquelle votre chargeur peut déplacer le filament.
 
-This is used to limit the speed of [retractions](../travel/retraction_speed.md). You can't retract any faster than what your feeder can take.
+Il est utilisé pour limiter la vitesse des [rétractions](../travel/retraction_speed.md). Vous ne pouvez pas rétracter plus vite que ce que votre chargeur peut supporter.
 
-It is also used to compute correct time estimates if the speed of the feeder would ever be a limiting factor in how fast a line can be printed. However in reality, the feeder normally moves orders of magnitude faster than the speed at which the plastic can melt inside your nozzle and the speed at which the print head can move to draw a neat line in your print, so this is never really a limiting factor.
+Il est également utilisé pour calculer des estimations de temps correctes si la vitesse du dérouleur devait un jour être un facteur limitant la vitesse d'impression d'une ligne. Cependant, en réalité, le margeur se déplace normalement à une vitesse supérieure à la vitesse à laquelle le plastique peut fondre à l'intérieur de votre buse et à la vitesse à laquelle la tête d'impression peut se déplacer pour tracer une ligne nette dans votre impression, ce qui ne constitue jamais vraiment un facteur limitant.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
