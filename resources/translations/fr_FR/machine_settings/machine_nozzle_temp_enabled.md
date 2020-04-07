@@ -1,9 +1,9 @@
-Enable Nozzle Temperature Control
+Activer le contrôle de la température des buses
 ====
-If this setting is disabled, Cura will not output any temperature commands to the g-code. Instead, Cura will leave it up to the firmware of the printer to heat the nozzles before the print.
+Si ce paramètre est désactivé, Cura n'enverra aucune commande de température au g-code. Au lieu de cela, Cura laissera au microprogramme de l'imprimante le soin de chauffer les buses avant l'impression.
 
-This is similar to [Has Heated Build Plate](machine_heated_bed.md) in how it functions. If this setting is disabled, the temperature control settings such as [Printing Temperature](../material/material_print_temperature.md) will not be shown to the user.
+Ce fonctionnement est similaire à celui de [A un plateau chauffant](machine_heated_bed.md). Si ce paramètre est désactivé, les paramètres de contrôle de la température tels que [Température d'impression](../material/material_print_temperature.md) ne seront pas affichés à l'utilisateur.
 
-Disabling this temporarily could be used to perform a dry run of the print. For that, you would also need to [disable the build plate](machine_heated_bed.md), the [heating of the build volume](machine_heated_build_volume.md) and set the [flow rate](../material/material_flow.md) to 0%.
+La désactivation temporaire de ce paramètre peut être utilisée pour effectuer un essai d'impression à sec. Pour cela, vous devez également [désactiver la plaque de montage](machine_heated_bed.md), le [chauffage du volume de montage](machine_heated_build_volume.md) et régler le [débit](../material/material_flow.md) sur 0%.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
