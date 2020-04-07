@@ -3,6 +3,7 @@ Machine Head & Fan Polygon
 This setting tells Cura what the shape of your print head is, as seen from the top. This is necessary to prevent collisions when printing in [one-at-a-time mode](../blackmagic/print_sequence.md).
 
 ![Dimensions of the print head](../images/head_dimensions.svg)
+![Seen from top down, the shape of the print head is relative to the nozzle position](../images/machine_head_with_fans_polygon.png)
 
 This setting contains a list of coordinates that form a polygon. The coordinates are relative to the "position" of the head, to which the nozzles are also positioned relatively.
 
