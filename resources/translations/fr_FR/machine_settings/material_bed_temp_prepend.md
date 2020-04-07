@@ -1,7 +1,7 @@
-Include Material Temperatures
+Inclure les températures des matériaux
 ====
-This setting communicates to the slicing back-end whether or not it should write nozzle temperature commands for the start of the print before the start g-code. It is automatically set upon starting a slice.
+Ce paramètre indique à l'arrière-boutique de découpe si elle doit ou non écrire les commandes de température de la buse pour le début de l'impression avant le code g de début. Il est automatiquement défini au démarrage d'une tranche.
 
-For most operations during the [start g-code](machine_start_gcode.md) it makes sense to have the nozzle up to the correct temperature for printing. To make it easier for people designing printer definitions, Cura will automatically heat up the nozzle before the start g-code is executed. However if the start g-code contains any reference to a nozzle temperature setting, it will not heat up the nozzle automatically any more.
+Pour la plupart des opérations effectuées pendant le [g-code de démarrage](machine_start_gcode.md), il est judicieux que la buse soit à la bonne température pour l'impression. Pour faciliter la conception des définitions d'imprimante, Cura chauffe automatiquement la buse avant que le [g-code de démarrage](machine_start_gcode.md) ne soit exécuté. Toutefois, si le code g de démarrage contient une référence à un réglage de la température de la buse, celle-ci ne sera plus chauffée automatiquement.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list. Changing it also has no effect since it will be changed automatically by Cura.*
+*Comme il s'agit d'un réglage de la machine, ce réglage n'est normalement pas visible dans la liste des réglages. Le modifier n'a pas non plus d'effet puisqu'il sera modifié automatiquement par Cura.*
