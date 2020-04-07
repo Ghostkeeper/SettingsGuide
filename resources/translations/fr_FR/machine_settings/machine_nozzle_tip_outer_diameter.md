@@ -1,9 +1,9 @@
-Outer Nozzle Diameter
+Diamètre extérieur de la buse
 ====
-This setting describes the outside diameter of the nozzle tip at its thinnest point, in the bottom.
+Ce réglage décrit le diamètre extérieur de la pointe de la buse à son point le plus fin, dans le fond.
 
-![Dimensions of the print head](../images/head_dimensions.svg)
+![Dimensions de la tête d'impression](../images/head_dimensions_fr.svg)
 
-Other settings can use this to automatically set some defaults, such as the spacing between ironing lines.
+D'autres paramètres peuvent l'utiliser pour définir automatiquement certaines valeurs par défaut, comme l'espacement entre les lignes d'étirage.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de machine, ce paramètre n'est normalement pas visible dans la liste des paramètres.*
