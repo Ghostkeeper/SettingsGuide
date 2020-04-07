@@ -1,9 +1,9 @@
-Default X-Y Jerk
+Saccade X-Y par défaut
 ====
-This setting indicates the jerk rate that your firmware uses for the X and Y directions, if Cura is not [controlling the jerk](../speed/jerk_enabled.md) of the print.
+Ce paramètre indique le taux de saccades que votre microprogramme utilise pour les axes X et Y, si dans Cura le paramètre [Activer le contrôle de saccade](../speed/jerk_enabled.md) de l'impression n'est pas actif.
 
-Cura assumes that your firmware uses the same jerk rate for the X and Y directions, but this jerk rate might be different for the Z direction and the feeder.
+Cura suppose que votre microprogramme utilise le même taux de secousse pour les directions X et Y, mais ce taux de secousse peut être différent pour la direction Z et l'extrudeuse.
 
-This is used to obtain correct time estimates for your print if Cura is not controlling the jerk rates. The entire print will use the same jerk rate then.
+Il est utilisé pour obtenir des estimations de temps correctes pour votre impression si Cura ne contrôle pas les taux de saccades. L'impression entière utilisera alors le même taux de saccades.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce paramètre n'est normalement pas visible dans la liste des paramètres.*
