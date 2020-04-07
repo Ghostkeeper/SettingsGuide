@@ -1,4 +1,4 @@
-Température d’impression par défaut
+Température d’impression
 ====
 Il s'agit de la température de la buse lors de l'impression. La température d'impression est l'un des paramètres les plus influents, car elle affecte le comportement du matériau pendant l'impression. Même une petite différence de température peut avoir un effet important sur la façon dont le plastique s'écoule.
 
