@@ -1,9 +1,9 @@
-Feeder Wheel Diameter
+Diamètre de la roue d'alimentation
 ====
-This setting is a measurement of the diameter of the wheel that moves the filament back and forth inside the feeder.
+Ce réglage est une mesure du diamètre de la roue qui déplace le filament d'avant en arrière à l'intérieur de l'alimentateur.
 
-![The feeder wheel is usually the one with the most grippy surface](../images/machine_feeder_wheel_diameter.svg)
+![La roue d'alimentation est généralement celle dont la surface est la plus adhérente](../images/machine_feeder_wheel_diameter_fr.svg)
 
-This setting is not used by Cura at all. However it is used by the X3GWriter plug-in in order to control the feeder correctly. It needs to know how fast to move the feeder in order to move the filament the correct distance.
+Ce paramètre n'est pas du tout utilisé par Cura. Cependant, il est utilisé par le plug-in X3GWriter afin de contrôler correctement le chargeur. Il doit savoir à quelle vitesse déplacer le chargeur afin de déplacer le filament à la bonne distance.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
