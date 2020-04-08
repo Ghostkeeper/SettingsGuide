@@ -1,7 +1,7 @@
-Number of Extruders
+Nombre d'extrudeuses
 ====
-This setting configures how many extruders this printer has. Some printers have multiple extruders so that they can change the material they are printing with during the same print.
+Ce paramètre permet de configurer le nombre d'extrudeuses dont dispose cette imprimante. Certaines imprimantes ont plusieurs extrudeuses afin de pouvoir changer le matériau avec lequel elles impriment au cours d'une même impression.
 
-For each of the extruders, Cura will show a tab with settings. The settings can be adjusted separately for the most part, though some settings can't be adjusted per extruder (such as build volume temperature). The number of extruders is also limited by the extruder definition files available to the current printer, since Cura also needs more information about these extruders such as their relative position on the print head.
+Pour chacune des extrudeuses, Cura affichera un onglet avec les paramètres. Les paramètres peuvent être ajustés séparément pour la plupart, bien que certains paramètres ne puissent pas être ajustés par extrudeuse (comme la température du volume de construction). Le nombre d'extrudeuses est également limité par les fichiers de définition des extrudeuses disponibles pour l'imprimante actuelle, car Cura a également besoin de plus d'informations sur ces extrudeuses, comme leur position relative sur la tête d'impression.
 
-*Since this is a machine setting, it will not normally be listed in the normal list of settings. There is a drop-down widget in the printer settings dialogue, which can be found in the list of added printers in the preferences dialogue.*
+*Comme il s'agit d'un réglage de machine, il ne sera normalement pas répertorié dans la liste normale des réglages. Il existe un widget déroulant dans la boîte de dialogue des paramètres de l'imprimante, qui se trouve dans la liste des imprimantes ajoutées dans la boîte de dialogue des préférences.*
