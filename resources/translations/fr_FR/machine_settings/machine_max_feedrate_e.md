@@ -1,4 +1,4 @@
-Vitesse d'alimentation maximale
+Taux d'alimentation maximal
 ====
 Ce réglage indique la vitesse maximale à laquelle votre chargeur peut déplacer le filament.
 
