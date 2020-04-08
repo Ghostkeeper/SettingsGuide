@@ -1,4 +1,4 @@
-Vitesse minimale d'alimentation
+Vitesse minimale
 ====
 Le microprogramme Marlin pour imprimantes 3D, dont la plupart des microprogrammes d'imprimantes sont dérivés, a une vitesse minimale pour tous ses mouvements. Ce paramètre indique quelle est cette vitesse minimale pour le microprogramme de votre imprimante.
 
