@@ -1,4 +1,4 @@
-Température minimale de veille
+Durée minimale température de veille
 ====
 Ce réglage configure la durée minimale d'une mise en veille pendant laquelle il faudra refroidir la buse à la température de veille. Si la buse est réglée pour une durée plus courte, elle ne sera pas refroidie mais restera à la [Température d'impression finale](../material/material_final_print_temperature.md).
 
