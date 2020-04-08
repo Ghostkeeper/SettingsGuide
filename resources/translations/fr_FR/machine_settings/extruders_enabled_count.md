@@ -1,7 +1,7 @@
-Number of Extruders That Are Enabled
+Nombre d'extrudeuses activées
 ====
-This setting stores how many extruders are currently enabled in the front-end. Extruders can be enabled or disabled with a checkbox in the configuration menu in the top-centre of the screen, or just above the list of settings before Cura 4.0.
+Ce paramètre enregistre le nombre d'extrudeuses actuellement activées. Les extrudeuses peuvent être activées ou désactivées en cochant une case dans le menu de configuration en haut au centre de l'écran, ou juste au-dessus de la liste des paramètres avant Cura 4.0.
 
-This setting is automatically adjusted by Cura whenever the user enables or disables an extruder. The setting should not be changed by the user or in profiles. Other settings can use this to determine an appropriate setting value or to see whether multi-extrusion settings should get shown or not.
+Ce paramètre est automatiquement ajusté par Cura chaque fois que l'utilisateur active ou désactive une extrudeuse. Le paramètre ne doit pas être modifié par l'utilisateur ou dans les profils. D'autres paramètres peuvent l'utiliser pour déterminer une valeur de réglage appropriée ou pour voir si les paramètres de multi-extrusion doivent être affichés ou non.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
