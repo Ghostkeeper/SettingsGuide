@@ -1,9 +1,9 @@
-Is Center Origin
+Est l'origine du centre
 ====
-If this setting is enabled, the 0,0 coordinate of the printer is set to be in the middle of the build volume, rather than the front left corner.
+Si ce paramètre est activé, la coordonnée 0,0 de l'imprimante est réglée pour se trouver au milieu du volume de construction, plutôt que dans le coin avant gauche.
 
-In some printer the firmware considers the 0,0 coordinate to be in the centre of the build volume. This is common for delta-style printers, which generally have cylindrical build volumes rather than cuboids.
+Dans certaines imprimantes, le microprogramme considère que la coordonnée 0,0 est au centre du volume de construction. C'est courant pour les imprimantes de type delta, qui ont généralement des volumes de construction cylindriques plutôt que cubiques.
 
-If the zero coordinate of the printer is in the centre, then the final g-code will contain negative coordinates as well as positive coordinates. The coordinate origin will be in the middle of Cura's build volume. Cura will also show its tricolor coordinate marker in the centre. However the coordinates of 3MF files will still be treated as if the coordinate origin is in the front-left corner of the printer, since the 3MF file format requires this.
+Si la coordonnée zéro de l'imprimante est au centre, le code g final contiendra des coordonnées négatives ainsi que des coordonnées positives. L'origine des coordonnées se trouvera au milieu du volume de construction de Cura. Cura affichera également son marqueur de coordonnées tricolore au centre. Toutefois, les coordonnées des fichiers 3MF seront toujours traitées comme si l'origine des coordonnées se trouvait dans le coin avant gauche de l'imprimante, puisque le format de fichier 3MF l'exige.
 
-*Since this is a machine setting, it will not normally be listed in the normal list of settings. There is a checkbox for this setting though in the printer settings dialogue, which can be found in the list of added printers in the preferences dialogue.*
+*Comme il s'agit d'un réglage de la machine, il ne sera normalement pas répertorié dans la liste normale des réglages. Il existe cependant une case à cocher pour ce paramètre dans la boîte de dialogue des paramètres de l'imprimante, qui se trouve dans la liste des imprimantes ajoutées dans la boîte de dialogue des préférences.*
