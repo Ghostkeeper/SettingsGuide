@@ -1,7 +1,7 @@
-Heat Zone Length
+Longueur de la zone chauffée
 ====
-This setting measures the distance between the tip of the nozzle and the point along the filament where the filament starts getting heated.
+Ce réglage mesure la distance entre l'extrémité de la buse et le point du filament où celui-ci commence à être chauffé.
 
-The heat zone essentially determines the "danger zone" for the filament to be positioned during the print. While the nozzle is hot and the filament is within this heat zone, the filament will get molten and so it could degrade. This measurement is therefore a good starting point for long term retractions, such as the [Nozzle Switch Retraction Distance](../dual/switch_extruder_retraction_amount.md) or the [Filament Park Distance](machine_filament_park_distance.md). Some profiles have retraction lengths depend on the heat zone length.
+La zone de chauffe détermine essentiellement la "zone de danger" pour le positionnement du filament pendant l'impression. Lorsque la buse est chaude et que le filament se trouve dans cette zone de chaleur, le filament va fondre et pourrait donc se dégrader. Cette mesure est donc un bon point de départ pour les rétractions à long terme, telles que la [distance de rétraction de l'interrupteur de la buse](../dual/switch_extruder_retraction_amount.md) ou la [distance de parcage du filament](machine_filament_park_distance.md). Certains profils ont des longueurs de rétraction qui dépendent de la longueur de la zone de chaleur.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce paramètre n'est normalement pas visible dans la liste des paramètres.*
