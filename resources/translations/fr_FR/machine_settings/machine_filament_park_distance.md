@@ -1,5 +1,5 @@
-Filament Park Distance
+Distance de stationnement du filament
 ====
-This setting used to indicate where to park the filament after it is no longer used. If you're printing with multiple extruders and one of the extruders doesn't need to print as high as the other, it would put the filament in a parking position just after its last usage. However this is no longer done. Instead, it'll now retract to the [Nozzle Switch Retraction Distance](../dual/switch_extruder_retraction_amount.md).
+Ce réglage permettait d'indiquer où parker le filament lorsqu'il n'est plus utilisé. Si vous imprimez avec plusieurs extrudeuses et que l'une d'entre elles n'a pas besoin d'imprimer aussi haut que l'autre, elle placera le filament dans une position de stationnement juste après sa dernière utilisation. Cependant, cela ne se fait plus. Au lieu de cela, il va maintenant se rétracter à la [distance de rétraction de l'interrupteur de la buse](../dual/switch_extruder_retraction_amount.md).
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
