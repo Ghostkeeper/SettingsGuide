@@ -1,4 +1,4 @@
-Zones interdites aux buses
+Zones interdites aux buses d'impression
 ====
 Ce réglage indique les zones de votre plaque de construction où la buse active n'est pas autorisée à aller. L'utilisateur n'est pas autorisé à placer des objets dans ces zones ou à proximité de celles-ci au point de provoquer l'impression de quelque chose (comme un rebord).
 
