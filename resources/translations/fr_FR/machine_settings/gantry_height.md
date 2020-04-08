@@ -1,11 +1,11 @@
-Gantry Height
+Hauteur du portique
 ====
-This setting measures the distance between the build plate and the gantry system to which the print head is suspended. This height is a ceiling when you're printing [one object at a time](../blackmagic/print_sequence.md), since previously printed object could collide against the gantry.
+Ce réglage mesure la distance entre la plaque de construction et le système de portique auquel la tête d'impression est suspendue. Cette hauteur est un plafond lorsque vous imprimez [un objet à la fois](../blackmagic/print_sequence.md), car les objets précédemment imprimés pourraient entrer en collision avec le portique.
 
-![Dimensions of the print head](../images/head_dimensions.svg)
+![Dimensions de la tête d'impression](../images/head_dimensions_fr.svg)
 
-Most 3D printers have their print head hanging on a cross bar or two. The shape of this gantry is not modelled by Cura: whether it's two crossing bars, a single arm coming in from one direction or a single crossbar along which the print head can move in one direction. Cura sees this gantry as a hard ceiling when printing one at a time, regardless of which order the models are printed in. When printing one at a time, the height of the build volume is lowered to this gantry height, to indicate that no models higher than the gantry height are allowed.
+La plupart des imprimantes 3D ont leur tête d'impression suspendue à une ou deux barres transversales. La forme de ce portique n'est pas modélisée par Cura : qu'il s'agisse de deux barres transversales, d'un seul bras venant d'une direction ou d'une seule barre transversale le long de laquelle la tête d'impression peut se déplacer dans une direction. Cura considère ce portique comme un plafond dur lorsqu'il imprime un à la fois, quel que soit l'ordre dans lequel les modèles sont imprimés. Lors de l'impression d'un modèle à la fois, la hauteur du volume de construction est abaissée à cette hauteur de portique, pour indiquer qu'aucun modèle plus haut que la hauteur du portique n'est autorisé.
 
-One exception is when only one object is loaded on the build plate. This object is allowed to be higher than the gantry height since there will be nothing else on the build plate that can collide with the gantry then.
+Une exception est faite lorsqu'un seul objet est chargé sur la plaque de construction. Cet objet est autorisé à être plus haut que la hauteur du portique car il n'y aura alors rien d'autre sur la plaque de construction qui puisse entrer en collision avec le portique.
 
-*Since this is a machine setting, it will not normally be listed in the normal list of settings. The gantry height can be changed in the printer settings dialogue, which can be found in the list of added printers in the preferences dialogue.*
+*Comme il s'agit d'un réglage de machine, il ne figurera normalement pas dans la liste normale des réglages. La hauteur du portique peut être modifiée dans la boîte de dialogue des paramètres de l'imprimante, qui se trouve dans la liste des imprimantes ajoutées dans la boîte de dialogue des préférences.*
