@@ -1,4 +1,4 @@
-Construire en forme de plaque
+Forme du plateau
 ====
 Avec ce paramètre, vous pouvez indiquer la forme que prend le volume imprimable dans votre imprimante. Il existe deux options : rectangulaire ou elliptique.
 
