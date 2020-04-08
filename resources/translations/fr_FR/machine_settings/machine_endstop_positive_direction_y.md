@@ -1,7 +1,7 @@
-Y Endstop in Positive Direction
+Butée Y dans le sens positif
 ====
-This setting tells Cura in which direction the printer will move along the Y axis when it is ordered to home. If this setting is disabled, it assumes that the endstop for the Y axis is at the zero (or negative) coordinate of the build volume. If the setting is enabled, it assumes that the endstop for the Y axis is at the printer's maximum Y coordinate. When the printer homes, it will need to move towards those endstops to allow the printer to know where the print head is.
+Ce paramètre indique à Cura dans quelle direction l'imprimante se déplacera le long de l'axe Y lorsqu'elle returnera sur ses origines. Si ce paramètre est désactivé, il suppose que la butée de l'axe Y se trouve à la coordonnée zéro (ou négative) du volume de construction. Si ce paramètre est activé, il suppose que la butée de l'axe Y est à la coordonnée Y maximale de l'imprimante. Lorsque l'imprimante est à la maison, elle devra se déplacer vers ces butées pour permettre à l'imprimante de savoir où se trouve la tête d'impression.
 
-This setting is not used by Cura at all. However it is used by the X3GWriter plug-in to implement the homing g-code command correctly when writing an X3G tool path file.
+Ce paramètre n'est pas du tout utilisé par Cura. Cependant, il est utilisé par le plug-in X3GWriter pour implémenter correctement la commande de recherche de l'origine du code G lors de l'écriture d'un fichier de chemin d'outil X3G.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
