@@ -1,4 +1,4 @@
-Activer le contrôle de la température des buses
+Activer le contrôle de la température de la buse
 ====
 Si ce paramètre est désactivé, Cura n'enverra aucune commande de température au g-code. Au lieu de cela, Cura laissera au microprogramme de l'imprimante le soin de chauffer les buses avant l'impression.
 
