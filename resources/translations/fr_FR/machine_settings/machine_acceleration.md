@@ -1,4 +1,4 @@
-Accélération des défauts
+Accélération par défaut
 ====
 Ce paramètre indique l'accélération que votre microprogramme utilise si Cura n'utilise pas le [contrôle de l'accélération](../speed/acceleration_enabled.md) de l'impression.
 
