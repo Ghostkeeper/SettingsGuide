@@ -1,7 +1,7 @@
-Default Acceleration
+Accélération des défauts
 ====
-This setting indicates the acceleration that your firmware uses if Cura is not [controlling the acceleration](../speed/acceleration_enabled.md) of the print.
+Ce paramètre indique l'accélération que votre microprogramme utilise si Cura n'utilise pas le [contrôle de l'accélération](../speed/acceleration_enabled.md) de l'impression.
 
-This is used to obtain correct time estimates for your print if Cura is not controlling the acceleration rates. The entire print will use the same acceleration rate then.
+Il est utilisé pour obtenir des estimations de temps correctes pour votre impression si Cura ne contrôle pas les taux d'accélération. L'impression entière utilisera alors le même taux d'accélération.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage machine, ce paramètre n'est normalement pas visible dans la liste des paramètres.*
