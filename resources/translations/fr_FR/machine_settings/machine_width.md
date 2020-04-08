@@ -2,7 +2,7 @@ Largeur de la machine
 ====
 Ce réglage indique la plage de coordonnées X à travers laquelle la ou les buses peuvent se déplacer. Il s'agit essentiellement de la taille utilisable de l'imprimante.
 
-Elle n'est pas égale à la largeur réelle de votre imprimante sur l'étagère. L'imprimante réelle aura également un cadre ou un bras autour de son volume de construction, et cette mesure n'inclut pas cette taille. Il s'agit seulement de la taille du volume de construction, des coordonnées où la buse pourrait se déplacer.
+Elle n'est pas égale à la largeur réelle de votre imprimante sur l'étagère. L'imprimante réelle aura également un cadre ou un bandeau autour de son volume de construction, et cette mesure n'inclut pas cette limite. Il s'agit seulement de la taille du volume de construction, des coordonnées où la buse pourrait se déplacer.
 
 ![Les dimensions du volume de construction](../images/build_volume_dimensions_fr.svg)
 
