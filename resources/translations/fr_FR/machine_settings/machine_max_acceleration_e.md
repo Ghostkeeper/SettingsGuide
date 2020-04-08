@@ -1,9 +1,9 @@
-Maximum Filament Acceleration
+Accélération maximale du filament
 ====
-This setting indicates the maximum acceleration that your printer's feeder motors handle, according to the printer's firmware.
+Ce paramètre indique l'accélération maximale que les moteurs du chargeur de votre imprimante prennent en charge, selon le microprogramme de l'imprimante.
 
-This setting is only used to obtain correct time estimates. The [acceleration](../speed/acceleration_print.md) set by Cura has no limit, but Cura will assume that your firmware sets a certain limit per axis. If the acceleration for the feeder exceeds this setting, the time estimate of those moves will be adjusted to assume that your firmware limits the acceleration. The total acceleration may still be greater when accelerating diagonally with multiple axes at the same time.
+Ce paramètre n'est utilisé que pour obtenir des estimations de temps correctes. L'[accélération](./speed/acceleration_print.md) définie par Cura n'a pas de limite, mais Cura suppose que votre microprogramme fixe une certaine limite par axe. Si l'accélération du chargeur dépasse ce paramètre, l'estimation du temps de ces mouvements sera ajustée pour supposer que votre microprogramme limite l'accélération. L'accélération totale peut encore être plus importante lorsque l'on accélère en diagonale avec plusieurs axes en même temps.
 
-It is quite common that the acceleration limits for the feeder are hit, since (depending on the firmware) the acceleration set by Cura also affects the feeder. So it is crucial that this setting is configured correctly in order to get correct time estimates for retractions.
+Il est assez fréquent que les limites d'accélération du chargeur soient atteintes, puisque (selon le microprogramme) l'accélération définie par Cura affecte également le chargeur. Il est donc crucial que ce paramètre soit configuré correctement afin d'obtenir des estimations de temps correctes pour les rétractions.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
