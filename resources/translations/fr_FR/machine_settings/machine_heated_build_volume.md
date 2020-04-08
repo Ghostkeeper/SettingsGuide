@@ -1,9 +1,9 @@
-Has Build Volume Temperature Stabilization
+Est dotée de la stabilisation de la température du volume d'impression
 ====
-This setting describes whether or not the printer has control over the temperature of its build volume. 
+Ce paramètre décrit si l'imprimante a ou non le contrôle de la température de son volume de construction. 
 
-All 3D printers warm up their build volume to some extent, by the heaters in their nozzles and build plates, but some printers have active heating or ventilation systems and a temperature probe. This allows them to control the temperature inside its build volume.
+Toutes les imprimantes 3D chauffent leur volume de construction dans une certaine mesure, grâce aux éléments chauffants de leurs buses et de leurs plaques de construction, mais certaines imprimantes sont dotées de systèmes de chauffage ou de ventilation actifs et d'une sonde de température. Cela leur permet de contrôler la température à l'intérieur de leur volume de construction.
 
-If this setting is disabled, the [Build Volume Temperature](../material/build_volume_temperature.md) setting is hidden from the interface. 
+Si ce paramètre est désactivé, le paramètre [Build Volume Temperature](../material/build_volume_temperature.md) est caché de l'interface. 
 
-*Since this is a machine setting, it will not normally be listed in the normal list of settings. There is a checkbox for this setting though in the printer settings dialogue, which can be found in the list of added printers in the preferences dialogue.*
+*Comme il s'agit d'un paramètre machine, il ne sera normalement pas listé dans la liste normale des paramètres. Il y a cependant une case à cocher pour ce paramètre dans la boîte de dialogue des paramètres de l'imprimante, qui se trouve dans la liste des imprimantes ajoutées dans la boîte de dialogue des préférences.*
