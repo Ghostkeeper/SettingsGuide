@@ -1,9 +1,9 @@
-Extruder Prime Z Position
+Position Z de l'extrudeuse
 ====
-If the [prime blob](../platform_adhesion/prime_blob_enable.md) is enabled, this setting indicates the Z coordinate at which the motion of the prime blob starts. Cura will move to that position before the prime blob is executed.
+Si la fonction [prime blob](../platform_adhesion/prime_blob_enable.md) est activée, ce paramètre indique la coordonnée Z à laquelle le mouvement de la goutte première commence. Cura se déplacera vers cette position avant que la goutte de départ ne soit exécutée.
 
-Unlike the X and Y coordinate, this is a machine setting. This is because the act of priming is assumed to have a fixed Z coordinate. To create a prime blob, the nozzle will need to move to the build plate and perhaps move up and down a bit. The [X](../platform_adhesion/extruder_prime_pos_x.md) and [Y](../platform_adhesion/extruder_prime_pos_y.md) can be chosen with normal settings to move the position of the prime blob in case the space on the build plate is limiting, but the Z coordinate cannot.
+Contrairement aux coordonnées X et Y, il s'agit d'un réglage machine. Cela est dû au fait que l'acte d'amorçage est supposé avoir une coordonnée Z fixe. Pour créer une goutte d'amorçage, la buse devra se déplacer vers la plaque de montage et peut-être se déplacer un peu de haut en bas. Les paramètres [X](../platform_adhesion/extruder_prime_pos_x.md) et [Y](../platform_adhesion/extruder_prime_pos_y.md) peuvent être choisis avec des réglages normaux pour déplacer la position de la goutte d'amorçage dans le cas où l'espace sur la plaque de montage est limité, mais pas la coordonnée Z.
 
-The only thing this changes is the Z coordinate that Cura will command the nozzle to move to before the prime blob command is executed.
+La seule chose que cela change est la coordonnée Z à laquelle Cura commandera à la buse de se déplacer avant que la commande de la goutte de départ ne soit exécutée.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
