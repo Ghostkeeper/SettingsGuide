@@ -1,6 +1,6 @@
-Guide du matériel
+GUID matériau
 ====
-Ce paramètre contient un identifiant unique pour le matériel qui se trouve sur la bobine actuellement chargée dans l'imprimante. Il identifie de manière unique le plastique qui est introduit dans l'imprimante, y compris son fabricant et sa couleur. Il sera cependant identique entre les différentes bobines d'un même matériau. En gros, chaque article différent que vous verrez dans une boutique en ligne recevra un identifiant unique. Cura utilise cet identifiant unique dans deux buts : pour synchroniser la configuration avec ce qui se trouve sur votre imprimante (si votre imprimante est connectée à Cura) et pour regrouper les profils qui appartiennent au même matériau.
+Ce paramètre contient un identifiant unique pour la matière qui se trouve sur la bobine actuellement chargée dans l'imprimante. Il identifie de manière unique le plastique qui est introduit dans l'imprimante, y compris son fabricant et sa couleur. Il sera cependant identique entre les différentes bobines d'un même matériau. En gros, chaque article différent que vous verrez dans une boutique en ligne recevra un identifiant unique. Cura utilise cet identifiant unique dans deux buts : pour synchroniser la configuration avec ce qui se trouve sur votre imprimante (si votre imprimante est connectée à Cura) et pour regrouper les profils qui appartiennent au même matériau.
 
 Lorsqu'une imprimante Ultimaker est connectée à Cura via le réseau ou l'internet, l'imprimante fournit à Cura une liste de GUIDs pour les matériaux qui sont actuellement chargés dans l'imprimante. Cura fait correspondre ces GUID avec les GUID de ses profils, ce qui lui permet de savoir quels profils afficher à l'utilisateur.
 
