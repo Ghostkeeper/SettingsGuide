@@ -1,4 +1,4 @@
-Attendre le réchauffement de la buse
+Attendre le chauffage de la buse
 ====
 La couche initiale peut avoir une [Température d’impression couche initiale](../material/material_print_temperature_layer_0.md) différente de la [Température d’impression par défaut](../material/material_print_temperature.md). Si ce paramètre est activé, l'imprimante attendra que cette température soit atteinte avant de poursuivre l'impression.
 
