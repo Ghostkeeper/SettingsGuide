@@ -17,5 +17,5 @@
 
 	<!-- Legend. -->
 	<path d="M215,410 l15,-15 v10 h100 v-10 l15,15 l-15,15 v-10 h-100 v10 z" /> <!-- Arrow for feeder wheel diameter. -->
-	<text font-family="sans-serif" font-size="40" x="60" y="380">Feeder Wheel Diameter</text>
+	<text font-family="sans-serif" font-size="40" x="60" y="380">Diamètre de la roue d'alimentation</text>
 </svg>
