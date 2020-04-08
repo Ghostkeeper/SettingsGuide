@@ -1,4 +1,4 @@
-Tête de machine et polygone de ventilateur
+Polygone de la Tête de machine et du ventilateur
 ====
 Ce réglage indique à Cura quelle est la forme de votre tête d'impression, vue d'en haut. Cette fonction est nécessaire pour éviter les collisions lors de l'impression en mode [un à la fois](../blackmagic/print_sequence.md).
 
