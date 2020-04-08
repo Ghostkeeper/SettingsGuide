@@ -1,6 +1,6 @@
 Zones interdites aux buses d'impression
 ====
-Ce réglage indique les zones de votre plaque de construction où la buse active n'est pas autorisée à aller. L'utilisateur n'est pas autorisé à placer des objets dans ces zones ou à proximité de celles-ci au point de provoquer l'impression de quelque chose (comme un rebord).
+Ce réglage indique les zones de votre plateau d'impression où la buse active n'est pas autorisée à aller. L'utilisateur n'est pas autorisé à placer des objets dans ces zones ou à proximité de celles-ci au point de provoquer l'impression de quelque chose (comme un rebord).
 
 Ce paramètre s'applique uniquement à la *buse active*, ce qui signifie que vous pouvez toujours imprimer des objets à côté de ces zones interdites, même si cela entraîne le déplacement d'autres buses sur ces zones interdites. Ainsi, ce paramètre n'est vraiment utile que pour les imprimantes qui soulèvent les buses inactives ou les stationnent en dehors du volume de construction lorsqu'elles sont inactives. Contrairement aux [zones interdites](machine_disallowed_areas.md) ordinaires, ces zones interdites ne sont pas déplacées en fonction du décalage entre les buses.
 
