@@ -1,7 +1,7 @@
-Maximum Acceleration Y
+Accélération maximale Y
 ====
-This setting indicates the maximum acceleration that your printer's motor and frame can handle in the Y direction, according to the printer's firmware.
+Ce paramètre indique l'accélération maximale que le moteur et le châssis de votre imprimante peuvent supporter dans la direction Y, selon le microprogramme de l'imprimante.
 
-This setting is only used to obtain correct time estimates. The [acceleration](../speed/acceleration_print.md) set by Cura has no limit, but Cura will assume that your firmware sets a certain limit per axis. If the acceleration in the Y axis exceeds this setting, the time estimate of those moves will be adjusted to assume that your firmware limits the acceleration. The total acceleration may still be greater when accelerating diagonally with multiple axes at the same time.
+Ce paramètre n'est utilisé que pour obtenir des estimations de temps correctes. La valeur de l'[acceleration](../speed/acceleration_print.md) fixée par Cura n'a pas de limite, mais Cura suppose que votre microprogramme fixe une certaine limite par axe. Si l'accélération sur l'axe Y dépasse ce paramètre, l'estimation du temps de ces mouvements sera ajustée pour supposer que votre microprogramme limite l'accélération. L'accélération totale peut encore être plus importante lorsque l'on accélère en diagonale avec plusieurs axes en même temps.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage machine, ce réglage n'est normalement pas visible dans la liste des paramètres.*
