@@ -1,9 +1,9 @@
-Machine Height
+Hauteur de la machine
 ====
-This setting indicates the vertical range of Z coordinates through which the nozzle(s) are able to move. It's basically the usable size of the printer.
+Ce réglage indique la plage verticale des coordonnées Z à travers laquelle la ou les buses peuvent se déplacer. Il s'agit essentiellement de la taille utilisable de l'imprimante.
 
-This is not equal to the actual height of your printer on the shelf. The actual printer will also have a gantry or an arm and a base around its build volume, and this measurement doesn't include that size. It's only the size of the build volume, the coordinates where the nozzle could move.
+Elle n'est pas égale à la hauteur réelle de votre imprimante sur l'étagère. L'imprimante réelle aura également un portique ou un bras et une base autour de son volume de construction, et cette mesure n'inclut pas cette taille. Il s'agit seulement de la taille du volume de construction, des coordonnées où la buse pourrait se déplacer.
 
-![The build volume dimensions](../images/build_volume_dimensions.svg)
+![Les dimensions du volume de construction](../images/build_volume_dimensions_fr.svg)
 
-*Since this is a machine setting, it will not normally be listed in the normal list of settings. The height can be changed in the printer settings dialogue, which can be found in the list of added printers in the preferences dialogue.*
+*Comme il s'agit d'un réglage de la machine, il ne figurera pas normalement dans la liste normale des réglages. La hauteur peut être modifiée dans la boîte de dialogue des paramètres de l'imprimante, qui se trouve dans la liste des imprimantes ajoutées dans la boîte de dialogue des préférences.*
