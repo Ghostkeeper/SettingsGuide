@@ -1,7 +1,7 @@
-Firmware Retraction
+Rétraction fu firmware
 ====
-Normally, Cura causes a retraction by controlling the movement of the feeder, commanding it to move the filament a bit back. If this setting is enabled, it will instead write a `G10` command to mean that the printer must retract the filament, or a `G11` command to unretract.
+Normalement, Cura provoque une rétraction en contrôlant le mouvement du chargeur, en lui commandant de déplacer le filament un peu vers l'arrière. Si ce paramètre est activé, il écrira à la place une commande "G10" pour signifier que l'imprimante doit rétracter le filament, ou une commande "G11" pour le retirer.
 
-By choosing to use firmware retractions, the firmware of the printer controls how far and how fast to retract the filament. The printer may know more about its own geometry than Cura, so it may be able to decide better on how to retract the filament. However, this means that Cura is no longer in control of these retractions and Cura knows more about the print itself. Essentially, the slicer and the firmware have different information, and this setting decides which of the two gets to choose.
+En choisissant d'utiliser les rétractions du microprogramme, le microprogramme de l'imprimante contrôle la distance et la vitesse de rétraction du filament. L'imprimante en sait peut-être plus sur sa propre géométrie que Cura, et peut donc mieux décider de la manière de rétracter le filament. Cependant, cela signifie que Cura ne contrôle plus ces rétractions et que Cura en sait plus sur l'impression elle-même. Pour l'essentiel, le trancheur et le microprogramme ont des informations différentes, et ce réglage décide lequel des deux peut être choisi.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
