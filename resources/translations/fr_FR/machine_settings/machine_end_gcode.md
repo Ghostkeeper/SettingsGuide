@@ -1,6 +1,6 @@
-G-Code de fin
+GCode de fin
 ====
-Avec ce paramètre, il est possible d'écrire le g-code qui sera exécuté à la toute fin de chaque impression. Grâce à ce code g, l'imprimante peut éteindre ses composants et se nettoyer après l'impression.
+Avec ce paramètre, il est possible d'écrire le GCode qui sera exécuté à la toute fin de chaque impression. Grâce à ce Code G, l'imprimante peut éteindre ses composants et se nettoyer après l'impression.
 
 Voici quelques exemples de choses qui sont généralement exécutées dans le g-code final :
 
