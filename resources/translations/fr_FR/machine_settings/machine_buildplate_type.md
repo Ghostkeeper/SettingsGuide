@@ -1,7 +1,7 @@
-Build Plate Material
+Matériau du plateau
 ====
-With this setting, you can indicate what type of material your build plate is made out of. There are currently two options: aluminium or glass.
+Avec ce réglage, vous pouvez indiquer de quel type de matériau votre plateau est fait. Il existe actuellement deux options : l'aluminium ou le verre.
 
-Cura does absolutely nothing with this information, except to pass it on to the g-code in the Griffin g-code header. This way, the printer can know whether the g-code was intended for the correct build plate.
+Cura ne fait absolument rien avec cette information, sauf la transmettre au g-code dans l'en-tête du g-code de Griffin. De cette façon, l'imprimante peut savoir si le code g a été conçu pour la bonne plaque de construction.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+*Comme il s'agit d'un réglage de la machine, ce réglage n'est normalement pas visible dans la liste des réglages.*
