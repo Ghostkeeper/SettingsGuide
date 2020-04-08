@@ -1,4 +1,4 @@
-GCode de fin
+G-Code de fin
 ====
 Avec ce paramètre, il est possible d'écrire le GCode qui sera exécuté à la toute fin de chaque impression. Grâce à ce Code G, l'imprimante peut éteindre ses composants et se nettoyer après l'impression.
 
@@ -9,11 +9,11 @@ Voici quelques exemples de choses qui sont généralement exécutées dans le g-
 * Refroidissement de la plaque de montage.
 * Éteindre les ventilateurs.
 
-Pour une liste assez complète des g-codes disponibles que vous pouvez écrire ici, reportez-vous au [RepRap Wiki] (https://reprap.org/wiki/G-code).
+Pour une liste assez complète des g-codes disponibles que vous pouvez écrire ici, reportez-vous au [RepRap Wiki](https://reprap.org/wiki/G-code).
 
 Références aux paramètres
 ----
-Lorsque vous modifiez le code g de fin, vous pouvez vous référer aux valeurs d'autres paramètres. Ceci utilise une certaine syntaxe. Les paramètres sont désignés par leur *clé*. Cette clé est un nom interne à Cura. Elle n'est pas visible dans l'interface utilisateur. Pour une liste complète de toutes les clés, consultez [ce document] (https://github.com/Ultimaker/Cura/blob/master/resources/definitions/fdmprinter.def.json) dans le code source de Cura.
+Lorsque vous modifiez le code g de fin, vous pouvez vous référer aux valeurs d'autres paramètres. Ceci utilise une certaine syntaxe. Les paramètres sont désignés par leur *clé*. Cette clé est un nom interne à Cura. Elle n'est pas visible dans l'interface utilisateur. Pour une liste complète de toutes les clés, consultez [ce document](https://github.com/Ultimaker/Cura/blob/master/resources/definitions/fdmprinter.def.json) dans le code source de Cura.
 
 La syntaxe pour obtenir la valeur d'un paramètre global est la suivante :
 
