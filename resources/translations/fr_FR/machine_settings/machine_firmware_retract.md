@@ -1,4 +1,4 @@
-Rétraction fu firmware
+Rétraction du firmware
 ====
 Normalement, Cura provoque une rétraction en contrôlant le mouvement du chargeur, en lui commandant de déplacer le filament un peu vers l'arrière. Si ce paramètre est activé, il écrira à la place une commande "G10" pour signifier que l'imprimante doit rétracter le filament, ou une commande "G11" pour le retirer.
 
