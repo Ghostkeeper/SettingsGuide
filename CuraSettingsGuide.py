@@ -279,6 +279,10 @@ class CuraSettingsGuide(Extension, QObject):
 		taken from the cache.
 		:param article_id: The ID of the article to get.
 		:param language: The language to get the article in.
+		:return: A list of article "parts". Each article part is a list, where
+		the first element indicates the type of part and the rest contains the
+		content. Possible types of parts are "rich_text", "images" or
+		"checkbox".
 		"""
 		if article_id in self.articles and language in self.articles[article_id]:
 			return self.articles[article_id][language]
