@@ -9,6 +9,7 @@ import UM 1.3 as UM
 Text {
 	property var article_data
 	text: article_data[0]
+	textFormat: Text.RichText
 	wrapMode: Text.Wrap
 	renderType: Text.NativeRendering
 	font: UM.Theme.getFont("medium")
