@@ -1,19 +1,19 @@
 G-Code de fin
 ====
-Avec ce paramètre, il est possible d'écrire le GCode qui sera exécuté à la toute fin de chaque impression. Grâce à ce Code G, l'imprimante peut éteindre ses composants et se nettoyer après l'impression.
+Avec ce paramètre, il est possible d'écrire le G-Code qui sera exécuté à la toute fin de chaque impression. Grâce à ce G-Code, l'imprimante peut éteindre ses composants et se nettoyer après l'impression.
 
-Voici quelques exemples de choses qui sont généralement exécutées dans le g-code final :
+Voici quelques exemples de choses qui sont généralement exécutées dans le G-Code final :
 
-* Rétraction du matériel.
+* Rétraction du fil.
 * Refroidir la ou les buses.
-* Refroidissement de la plaque de montage.
+* Refroidissement du plateau d'impression.
 * Éteindre les ventilateurs.
 
 Pour une liste assez complète des g-codes disponibles que vous pouvez écrire ici, reportez-vous au [RepRap Wiki](https://reprap.org/wiki/G-code).
 
 Références aux paramètres
 ----
-Lorsque vous modifiez le code g de fin, vous pouvez vous référer aux valeurs d'autres paramètres. Ceci utilise une certaine syntaxe. Les paramètres sont désignés par leur *clé*. Cette clé est un nom interne à Cura. Elle n'est pas visible dans l'interface utilisateur. Pour une liste complète de toutes les clés, consultez [ce document](https://github.com/Ultimaker/Cura/blob/master/resources/definitions/fdmprinter.def.json) dans le code source de Cura.
+Lorsque vous modifiez le G-Code de fin, vous pouvez vous référer aux valeurs d'autres paramètres. Ceci utilise une certaine syntaxe. Les paramètres sont désignés par leur *clé*. Cette clé est un nom interne à Cura. Elle n'est pas visible dans l'interface utilisateur. Pour une liste complète de toutes les clés, consultez [ce document](https://github.com/Ultimaker/Cura/blob/master/resources/definitions/fdmprinter.def.json) dans le code source de Cura.
 
 La syntaxe pour obtenir la valeur d'un paramètre global est la suivante :
 
@@ -33,7 +33,7 @@ Vous pouvez par exemple utiliser ces références pour refroidir à une tempéra
 
 `M204 P{machine_acceleration} T{machine_acceleration}`
 
-Faites attention aux vitesses. Le code G accepte normalement la vitesse d'avance en millimètres par *minute*, alors que les réglages sont indiqués en millimètres par *seconde*. Il n'est pas possible de sélectionner la vitesse d'avance correcte pour le moment. Il est impossible de faire des calculs dans ces références.
+Faites attention aux vitesses. Le G-Code accepte normalement la vitesse d'avance en millimètres par *minute*, alors que les réglages sont indiqués en millimètres par *seconde*. Il n'est pas possible de sélectionner la vitesse d'avance correcte pour le moment. Il est impossible de faire des calculs dans ces références.
 
 Autres informations
 ----
