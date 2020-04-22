@@ -4,4 +4,4 @@ La vitesse à laquelle les ventilateurs de la tête d'impression tournent au dé
 
 ![Quelle vitesse de ventilateur est utilisée où](../images/cool_fan_speed_fr.svg)
 
-La vitesse du ventilateur au début de l'impression est normalement plus faible que pendant le reste de l'impression. Cela permet au matériau de refroidir plus lentement et de s'affaisser davantage sur la plaque de montage. Cela améliore l'adhérence de la plaque de montage.
+La vitesse du ventilateur au début de l'impression est normalement plus faible que pendant le reste de l'impression. Cela permet au matériau de refroidir plus lentement et de s'affaisser davantage sur le plateau d'impression. Cela améliore l'adhérence au plateau d'impression.
