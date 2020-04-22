@@ -1,6 +1,6 @@
 Polygone de tête de machine
 ====
-C'est un paramètre qui était autrefois utilisé de la même manière que le [Polygone de la tête de la machine et des ventilateurs] (machine_head_with_fans_polygon.md) est utilisé aujourd'hui. Ce paramètre était utilisé pour déterminer la zone de collision autour des objets lors de l'impression avec une séquence d'impression en mode [un à la fois](../blackmagic/print_sequence.md).
+C'est un paramètre qui était autrefois utilisé de la même manière que le [Polygone de la tête de la machine et des ventilateurs](machine_head_with_fans_polygon.md) est utilisé aujourd'hui. Ce paramètre était utilisé pour déterminer la zone de collision autour des objets lors de l'impression avec une séquence d'impression en mode [un à la fois](../blackmagic/print_sequence.md).
 
 ![Dimensions de la tête d'impression](../images/head_dimensions_fr.svg)
 
