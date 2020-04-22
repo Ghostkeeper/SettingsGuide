@@ -1,6 +1,6 @@
 Séquence d'impression
 ====
-Lorsque plusieurs modèles sont placés sur la plaque de construction, cela détermine l'ordre dans lequel les couches de ces objets sont imprimées. Il existe deux options.
+Lorsque plusieurs modèles sont placés sur le plateau d'impression, cela détermine l'ordre dans lequel les couches de ces objets sont imprimées. Il existe deux options :
 
 Tout en même temps
 ----
