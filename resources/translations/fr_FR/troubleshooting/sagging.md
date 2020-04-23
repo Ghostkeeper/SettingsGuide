@@ -4,7 +4,7 @@ La fabrication de filaments fondus consiste à déposer une ligne de plastique f
 
 ![Affaissement dans les parties en surplomb](../../../articles/images/sagging.jpg)
 
-L'affaissement tend à donner un aspect filandreux aux parties en surplomb. Plutôt que de suivre en douceur la surface prévue du modèle, il sera trop bas. Dans les cas extrêmes, la face inférieure d'une surface devient si déchiquetée que l'on peut voir l'intérieur creux de l'empreinte.
+L'affaissement tend à donner un aspect filandreux aux parties en surplomb. Plutôt que de suivre en douceur la surface prévue du modèle, il sera trop bas. Dans les cas extrêmes, la face inférieure d'une surface devient si déchiquetée que l'on peut voir l'intérieur creux de la pièce.
 
 Causes
 ----
