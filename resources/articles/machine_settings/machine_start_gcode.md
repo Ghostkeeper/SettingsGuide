@@ -25,7 +25,7 @@ In other words, write the setting's key in curly brackets. This will get the glo
 
 `{setting_key, #}`
 
-Here in place of the `#` symbol you should write the number of the extruder from which to get the setting. Extruders start counting at 0. Global settings can also be obtained by specifying an extruder, but they will be the same for all extruders. When you try to obtain an extruder-specific temperature without specifying the extruder number, you will get the global default for your printer, before any material profile or anything has been applied (since materials are extruder-specific).
+Here in place of the `#` symbol you should write the number of the extruder from which to get the setting. Extruders start counting at 0. Global settings can also be obtained by specifying an extruder, but they will be the same for all extruders. When you try to obtain an extruder-specific temperature without specifying the extruder number, you will get the value for the first extruder that is not disabled.
 
 You can use these references for instance to pre-heat to the correct temperature, or to set the accelerations. Here are some examples:
 
