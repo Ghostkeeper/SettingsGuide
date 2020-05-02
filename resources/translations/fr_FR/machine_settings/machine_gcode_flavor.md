@@ -18,7 +18,7 @@ C'est une variante du Marlin où les commandes d'extrusion spécifient la quanti
 
 RepRap
 ----
-Il s'agit d'un format axée sur le soutien aux imprimantes, qui sont issues du [projet RepRap] (https://reprap.org/wiki/RepRap). Il comporte un certain nombre d'exceptions notables :
+Il s'agit d'un format axée sur le soutien aux imprimantes, qui sont issues du [projet RepRap](https://reprap.org/wiki/RepRap). Il comporte un certain nombre d'exceptions notables :
 * Toujours mentionner l'extrudeuse lors du réglage de la température de la couche initiale, même s'il n'y a qu'une seule extrudeuse.
 * Revenir à l'extrusion relative après l'impression.
 * Changer les accélérations en utilisant les paramètres "P" et "T" de la commande "M204", pour respectivement l'accélération d'impression et l'accélération de déplacement, plutôt que le paramètre "S".
