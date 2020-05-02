@@ -21,7 +21,7 @@ class TestLinks(unittest.TestCase):
 		Get all article file paths.
 		:return: A sequence of all article file paths.
 		"""
-		article_directories = {"articles", "translations"}
+		article_directories = {"articles", "translations/fr_FR"}
 		for article_directory in article_directories:
 			for root, _, files in os.walk(os.path.join(os.path.dirname(__file__), "..", "resources", article_directory)):
 				for filename in files:
