@@ -2,7 +2,7 @@ Problèmes d'adhérence au plateau
 ====
 L'un des modes de défaillance les plus courants pour les impressions 3D est que la pièce se décolle du plateau alors qu'elle était encore en cours d'impression. Cet article passe en revue certains ajustements que vous pouvez apporter pour éviter que cela ne se produise.
 
-Si l'impression s'est décollée du plateau, vous verrez généralement beaucoup de fils éparpillés sur le plateau. Si vous avez plus de chance, cela peut aussi se manifester par un simple [décalage de couche](./layer_shift.md) (et il y aura moins à nettoyer). Dans tous les cas, l'impression est gâchée.
+Si l'impression s'est décollée du plateau, vous verrez généralement beaucoup de fils éparpillés sur le plateau. Si vous avez plus de chance, cela peut aussi se manifester par un simple [décalage de couche](layer_shift.md) (et il y aura moins à nettoyer). Dans tous les cas, l'impression est gâchée.
 
 Méthodes d'adhérence au plateau
 ----
@@ -20,15 +20,15 @@ De même, si un radeau est utilisé, vous pouvez augmenter l'adhérence en augme
 
 Prévention du gauchissement
 ----
-Si votre impression souffre de déformation, la zone de contact entre l'impression et le plateau est fortement réduite. Pour éviter cela, consultez l'article sur [le décollement](./warping.md). En résumé, voici quelques ajustements à apporter pour éviter le gauchissement.
-* Réglez le [Modèle de couche initiale du dessous](../resolution/layer_height_0.md) sur concentrique.
-* Réduisez la [température du plateau](../matériau/matériau_lit_température.md) et augmentez la [température du volume de construction](../matériau/volume_de_construction_température.md).
+Si votre impression souffre de déformation, la zone de contact entre l'impression et le plateau est fortement réduite. Pour éviter cela, consultez l'article sur [le décollement](warping.md). En résumé, voici quelques ajustements à apporter pour éviter le gauchissement.
+* Réglez la [Couche initiale du motif du dessous](../shell/top_bottom_pattern_0.md) sur concentrique.
+* Réduisez la [température du plateau](../material/material_bed_temperature.md) et augmentez la [température du volume de construction](../material/build_volume_temperature.md).
 * Ajustez le modèle de manière à ce qu'il y ait moins de coins extérieurs tranchants sur la première couche.
 
 Ajustements divers
 ----
 Ces paramètres peuvent également être ajustés si les méthodes normales d'adhérence au plateau ne sont pas suffisantes.
-* Augmenter la [Hauteur de la couche initiale](../résolution/ hauteur_de_la_couche_0.md). Cela offre un peu plus de marge d'erreur, si le plateau n'est pas parfaitement de niveau. Cela augmente également la force avec laquelle le matériau est poussé hors de la buse et sur le plateau.
+* Augmenter la [Hauteur de la couche initiale](../resolution/layer_height_0.md). Cela offre un peu plus de marge d'erreur, si le plateau n'est pas parfaitement de niveau. Cela augmente également la force avec laquelle le matériau est poussé hors de la buse et sur le plateau.
 * Augmenter la [Largeur de la ligne de la couche initiale](../resolution/initial_layer_line_width_factor.md). De même, cela pousse le matériau avec plus de force, en le collant bien au plateau.
 * L'augmentation de la [couche initiale de la température d'impression](../material/material_print_temperature_layer_0.md) permet au matériau de s'écouler davantage sur la plaque de montage, ce qui augmente la surface de contact.
 * Comme pour l'augmentation de la température, vous pouvez également réduire la [vitesse du ventilateur de la couche initiale](../cooling/cool_fan_speed_0.md) pour garder le matériau fluide plus longtemps.
