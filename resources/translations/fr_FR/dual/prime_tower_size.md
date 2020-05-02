@@ -2,7 +2,7 @@ Taille de la tour d'amorçage
 ====
 Ce réglage permet d'ajuster la largeur de la tour d'amorçage.
 
-![La largeur de la tour principale](../../../articles/images/prime_tower.svg)
+![La largeur de la tour principale](../images/prime_tower_fr.svg)
 
 En élargissant la tour d'amorçage, on obtient une meilleure stabilité. Cela augmente la fiabilité de votre impression.
 
