@@ -3,10 +3,13 @@
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
-from .Mistune import mistune #Extending from this library's renderer.
-import os.path #To fix the source paths for images.
-import PyQt5.QtCore #To fix the source paths for images using QUrl.
-import UM.Qt.Bindings.Theme #To get the correct hyperlink colour from the theme.
+from .Mistune import mistune  # Extending from this library's renderer.
+import os.path  # To fix the source paths for images.
+import PyQt5.QtCore  # To fix the source paths for images using QUrl.
+import UM.Application  # To get the application version.
+import UM.Logger  # To log warnings if parsing went wrong.
+import UM.Qt.Bindings.Theme  # To get the correct hyperlink colour from the theme.
+import UM.Version  # To compare version numbers for conditional content.
 
 CONDITIONAL_PATTERN = r"<!--if\s+([A-Za-z0-9_]+)\s*(<|<=|==|>=|>)\s*([^-^:]+)\s*(:(.*)-->|-->(.*)<!--endif-->)"
 """
@@ -63,10 +66,55 @@ def parse_conditional(parser, match, state):
 		content = match.group(5)
 	return "conditional", variable, operator, value, content
 
+def render_conditional(variable, operator, value, content):
+	"""
+	Render conditional content. Or don't render it, maybe.
+	:param variable: A variable to check against whether to render the content
+	or not. These are the possible variables that can be checked against:
+	* cura_version: The version of Cura that the user is running this plug-in
+	in.
+	:param operator: The operator to check the variable against the value. This
+	is one of: < <= == >= >
+	:param value: The value to compare the variable to. This is a string,
+	stripped of whitespace.
+	:param content: The content to show if the condition is met.
+	:return: The text to add to the RichText document shown in Qt. If the
+	condition is not met, this will be an empty string.
+	"""
+	if variable == "cura_version":
+		variable_value = UM.Application.Application.getInstance().getVersion()
+	else:
+		UM.Logger.Logger.log("w", "Unknown conditional variable: {variable}".format(variable=variable))
+		return ""
+
+	# Some type conversion so that we can properly compare, which may depend on the type in the variable.
+	if variable == "cura_version":
+		variable_value = UM.Version.Version(variable_value)
+		value = UM.Version.Version(value)
+
+	if operator == "<":
+		condition_met = variable_value < value
+	elif operator == "<=":
+		condition_met = variable_value <= value
+	elif operator == "==":
+		condition_met = variable_value == value
+	elif operator == ">=":
+		condition_met = variable_value >= value
+	elif operator == ">":
+		condition_met = variable_value > value
+	else:
+		UM.Logger.Logger.log("w", "Unknown operator: {operator}".format(operator=operator))  # Should never happen because the regex doesn't match then.
+		return ""
+
+	if condition_met:
+		return content
+	else:
+		return ""
+
 class QtMarkdownRenderer(mistune.Renderer):
 	"""
 	Specialises the Mistune renderer in order to be better compatible with Qt's
-	rich text while staying compatible with Github's renderer.
+	rich text while degrading gracefully with Github's renderer.
 
 	Mistune converts Markdown into HTML. However its choice for the HTML
 	elements to use is not always supported by the limited HTML subset that Qt
