@@ -8,7 +8,7 @@ Pour sélectionner le bon G-Code, reportez-vous à la documentation du microprog
 
 Marlin
 ----
-Le marlin est considéré comme le format par défaut du G-Code. Il est destiné au microprogramme principal [Marlin firmware] (https://marlinfw.org/) qui est le microprogramme d'impression 3D le plus populaire et la base de la plupart des microprogrammes alternatifs disponibles sur le marché.
+Le marlin est considéré comme le format par défaut du G-Code. Il est destiné au microprogramme principal [Marlin firmware](https://marlinfw.org/) qui est le microprogramme d'impression 3D le plus populaire et la base de la plupart des microprogrammes alternatifs disponibles sur le marché.
 
 Marlin (Volumétrique)
 ----
@@ -34,7 +34,6 @@ Ce format de G-Code est destiné à la famille Ultimaker 2. Le microprogramme de
 * La plaque de montage est supposée avoir la [température de la plaque de montage de la couche initiale](../material/material_bed_temperature_layer_0.md) lorsque l'impression commence.
 * Le paramètre "E" de la commande "G1" est calculé en millimètres cubes, le volume du plastique alimenté, plutôt que la longueur du filament à alimenter pendant ce mouvement.
 * Les statistiques au début du code g mentionnent le filament utilisé en millimètres cubes.
-*** Traduit avec www.DeepL.com/Translator (version gratuite) ***
 
 Griffin
 ----
