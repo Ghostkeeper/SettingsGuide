@@ -8,7 +8,7 @@ Pour sélectionner le bon G-Code, reportez-vous à la documentation du microprog
 
 Marlin
 ----
-Le marlin est considéré comme le format par défaut du G-Code. Il est destiné au microprogramme principal [Marlin firmware](https://marlinfw.org/) qui est le microprogramme d'impression 3D le plus populaire et la base de la plupart des microprogrammes alternatifs disponibles sur le marché.
+Marlin est considéré comme le format par défaut du G-Code. Il est destiné au microprogramme principal [Marlin firmware](https://marlinfw.org/) qui est le microprogramme d'impression 3D le plus populaire et la base de la plupart des microprogrammes alternatifs disponibles sur le marché.
 
 Marlin (Volumétrique)
 ----
