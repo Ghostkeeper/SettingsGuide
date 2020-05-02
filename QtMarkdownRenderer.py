@@ -8,15 +8,53 @@ import os.path #To fix the source paths for images.
 import PyQt5.QtCore #To fix the source paths for images using QUrl.
 import UM.Qt.Bindings.Theme #To get the correct hyperlink colour from the theme.
 
+CONDITIONAL_PATTERN = r"<!--if\s+([A-Za-z0-9_]+)\s*(<|<=|==|>=|>)\s*([^-^:]+)\s*(:(.*)-->|-->(.*)<!--endif-->)"
+"""
+This is a pattern that matches content that is shown only if a certain condition
+is met.
+
+The regex matches two types of syntax at the same time:
+* There is a syntax that is completely enclosed in one HTML comment. The content
+then does not get shown in Github. The syntax has the form:
+`<!--if variable < value :conditional text-->`
+Note that the conditional text includes all whitespace around it, so if the
+conditional text should not get spaces around it there should be no whitespace
+between the : and the text or between the --> and the text.
+* There is also a syntax that leaves the content exposed outside of the HTML
+comment. This content then also gets shown in Github. The syntax has the form:
+`<!--if variable == value -->conditional text<!--endif-->
+Again, the conditional text includes all whitespace between the two HTML
+comments.
+
+Note that there may be no whitespace before the "if" keyword or around the
+"endif" keyword. This is to reduce false positives.
+
+The pattern matches on six groups:
+# The "variable" which is checked against.
+# The comparator to compare the variable to the value with. This is one of the
+following: < <= == >= >
+# The "value" to which to compare the variable.
+# This group is used for prioritising the order of operations in the regex
+itself and shouldn't be used.
+# The conditional text to show when using the "hidden" syntax (the first one as
+documented above).
+# The conditional text to show when using the "exposed" syntax (the second one
+as documented above).
+"""
+
 class QtMarkdownRenderer(mistune.Renderer):
 	"""
 	Specialises the Mistune renderer in order to be better compatible with Qt's
-	rich text.
+	rich text while staying compatible with Github's renderer.
 
 	Mistune converts Markdown into HTML. However its choice for the HTML
 	elements to use is not always supported by the limited HTML subset that Qt
 	can display with its "rich text" rendering. This class makes sure that the
 	supported subset of HTML is used.
+
+	This renderer makes sure that the Markdown that gets interpreted by the
+	renderer displays correctly on a conventional Markdown parser such as that
+	of Github.
 	"""
 
 	def __init__(self, images_path):
