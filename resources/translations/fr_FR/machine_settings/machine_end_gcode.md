@@ -23,7 +23,7 @@ En d'autres termes, écrivez la clé du lieu entre parenthèses. Vous obtiendrez
 
 `{setting_key, #}`
 
-Ici, à la place du symbole "#", vous devez écrire le numéro de l'extrudeuse dont vous voulez obtenir le réglage. Les extrudeuses commencent à compter à partir de 0. Les réglages globaux peuvent également être obtenus en spécifiant une extrudeuse, mais ils seront les mêmes pour toutes les extrudeuses. Lorsque vous essayez d'obtenir une température spécifique à l'extrudeuse sans spécifier le numéro de l'extrudeuse, vous obtiendrez le réglage global par défaut de votre imprimante, avant qu'un profil de matériau ou quoi que ce soit n'ait été appliqué (puisque les matériaux sont spécifiques à l'extrudeuse).
+Ici, à la place du symbole "#", vous devez écrire le numéro de l'extrudeuse dont vous voulez obtenir le réglage. Les extrudeuses commencent à compter à partir de 0. Les réglages globaux peuvent également être obtenus en spécifiant une extrudeuse, mais ils seront les mêmes pour toutes les extrudeuses. Lorsque vous essayez d'obtenir une température spécifique pour une extrudeuse sans spécifier le numéro de l'extrudeuse, vous obtenez la valeur pour la première extrudeuse qui n'est pas désactivée.
 
 Vous pouvez par exemple utiliser ces références pour refroidir à une température de veille, ou rétablir l'accélération et la secousse par défaut de l'imprimante. Voici quelques exemples :
 
