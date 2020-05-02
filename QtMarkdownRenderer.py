@@ -42,6 +42,27 @@ documented above).
 as documented above).
 """
 
+def parse_conditional(parser, match, state):
+	"""
+	Parse conditional content.
+
+	This is part of an implementation of a Mistune plug-in. These parameters are
+	provided to the function by Mistune itself:
+	:param parser: The parser to add this syntax rule to.
+	:param match: A regex match that matches with the CONDITIONAL_PATTERN.
+	:param state: A memory of state variables provided by earlier parsings.
+	:return: A tuple containing the render function to call on the parser to
+	render this conditional, as well as the parameters to call it with.
+	"""
+	variable = match.group(1)
+	operator = match.group(2)
+	value = match.group(3)
+	if match.group(4) is not None:
+		content = match.group(4)
+	else:
+		content = match.group(5)
+	return "conditional", variable, operator, value, content
+
 class QtMarkdownRenderer(mistune.Renderer):
 	"""
 	Specialises the Mistune renderer in order to be better compatible with Qt's
