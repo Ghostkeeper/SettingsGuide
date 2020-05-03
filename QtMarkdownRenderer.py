@@ -6,6 +6,7 @@
 from .Mistune import mistune  # Extending from this library's renderer.
 import os.path  # To fix the source paths for images.
 import PyQt5.QtCore  # To fix the source paths for images using QUrl.
+import re  # To find parts of the conditional syntax.
 import UM.Application  # To get the application version.
 import UM.Logger  # To log warnings if parsing went wrong.
 import UM.Qt.Bindings.Theme  # To get the correct hyperlink colour from the theme.
@@ -112,15 +113,10 @@ class QtMarkdownRenderer(mistune.Renderer):
 		met. For instance, you could have a condition such as:
 		`cura_version < 4.4` which would cause the conditional content to draw
 		only if the user is using a Cura version earlier than 4.4.
-
-		The variable in this condition is one of the following:
-		* `cura_version`: The current version of Cura that the user is running.
-
-		The operator is one of the following: `==`, `!=`, `<`, `<=`, `>=`, `>`
 		:param html: The HTML tag that was found in the article.
 		:return: What should be shown in the article.
 		"""
-		return self.parse_html(html)
+		return self.any_html(html)
 
 	def block_html(self, html):
 		"""
@@ -146,17 +142,12 @@ class QtMarkdownRenderer(mistune.Renderer):
 		met. For instance, you could have a condition such as:
 		`cura_version < 4.4` which would cause the conditional content to draw
 		only if the user is using a Cura version earlier than 4.4.
-
-		The variable in this condition is one of the following:
-		* `cura_version`: The current version of Cura that the user is running.
-
-		The operator is one of the following: `==`, `!=`, `<`, `<=`, `>=`, `>`
 		:param html: The HTML tag that was found in the article.
 		:return: What should be shown in the article.
 		"""
-		return self.parse_html(html)
+		return self.any_html(html)
 
-	def parse_html(self, html):
+	def any_html(self, html):
 		"""
 		Helper function to parse HTML.
 
@@ -166,4 +157,55 @@ class QtMarkdownRenderer(mistune.Renderer):
 		:param html: The HTML content found in the article.
 		:return: The rich text to draw instead of the HTML tag.
 		"""
-		return html  # TODO.
+		result = ""
+
+		# First try finding the conditional content that gets hidden by conventional renderers.
+		hidden_pattern = r"<!--if\s+([A-Za-z0-9_]+)\s*(<|<=|==|!=|>=|>)\s*([^-^:]+)\s*:(.*)-->"
+		for match in re.finditer(hidden_pattern, html):
+			variable = match.group(1)
+			operator = match.group(2)
+			value = match.group(3)
+			content = match.group(4)
+			if self.condition_met(variable, operator, value):
+				result += content
+			else:
+				pass
+
+		return result
+
+	def condition_met(self, variable, operator, value):
+		"""
+		Checks if a piece of conditional Markdown should be shown or not.
+		:param variable: The variable in the condition to check against.
+		Supported variables are:
+		* `cura_version`: The current version of Cura that the user is running.
+		:param operator: The operator to check with. Supported operators are:
+		`==`, `!=`, `<`, `<=`, `>=` and `>`.
+		:param value: The value to check the variable against.
+		:return: `True` if the condition is met, or `False` if it is not met.
+		"""
+		if variable == "cura_version":
+			variable_value = UM.Application.Application.getInstance().getVersion()
+		else:
+			UM.Logger.Logger.log("w", "Unknown variable in condition: {variable}".format(variable=variable))
+			return False
+
+		# Depending on the variable, we may need to convert the type for proper comparison.
+		if variable == "cura_version":
+			variable_value = UM.Version.Version(variable_value)
+			value = UM.Version.Version(value)
+
+		if operator == "==":
+			return variable_value == value
+		if operator == "!=":
+			return variable_value != value
+		if operator == "<":
+			return variable_value < value
+		if operator == "<=":
+			return variable_value <= value
+		if operator == ">":
+			return variable_value > value
+		if operator == ">=":
+			return variable_value >= value
+		UM.Logger.Logger.log("w", "Unknown condition operator: {operator}".format(operator=operator))
+		return False
