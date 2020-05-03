@@ -87,3 +87,83 @@ class QtMarkdownRenderer(mistune.Renderer):
 		margin = UM.Qt.Bindings.Theme.Theme.getInstance().getSize("default_margin").width()
 		width = UM.Qt.Bindings.Theme.Theme.getInstance().getSize("tooltip").width() / 3 - margin * 2  # Fit 3 images in the width.
 		return "<img src=\"{image_url}\" width=\"{width}\" />".format(image_url=image_url, width=width)
+
+	def inline_html(self, html):
+		"""
+		This renders a piece of inline HTML.
+
+		HTML is not really supported here. However we're using this syntax to
+		implement our own conditional Markdown syntax, which renders only if a
+		certain condition is met. This conditional syntax is designed to degrade
+		 gracefully when rendered in a conventional Markdown renderer such as
+		 the one on github.com.
+
+		There are two possible syntax variations for conditional content. Both
+		will look exactly the same in this plug-in, but look differently when
+		rendered with a conventional renderer.
+		* Content that gets hidden with a conventional renderer looks like this:
+		`<!--if variable == value:conditional content-->`
+		* Content that gets shown in a conventional renderer looks like this:
+		`<!--if variable == value -->conditional content<!--endif-->`
+
+		This syntax contains a condition, in the above example:
+		`variable == true`. This condition consists of a variable, a comparator
+		and a value. The conditional content is shown only if the condition is
+		met. For instance, you could have a condition such as:
+		`cura_version < 4.4` which would cause the conditional content to draw
+		only if the user is using a Cura version earlier than 4.4.
+
+		The variable in this condition is one of the following:
+		* `cura_version`: The current version of Cura that the user is running.
+
+		The operator is one of the following: `==`, `!=`, `<`, `<=`, `>=`, `>`
+		:param html: The HTML tag that was found in the article.
+		:return: What should be shown in the article.
+		"""
+		return self.parse_html(html)
+
+	def block_html(self, html):
+		"""
+		This renders a piece of HTML on a separate block.
+
+		HTML is not really supported here. However we're using this syntax to
+		implement our own conditional Markdown syntax, which renders only if a
+		certain condition is met. This conditional syntax is designed to degrade
+		 gracefully when rendered in a conventional Markdown renderer such as
+		 the one on github.com.
+
+		There are two possible syntax variations for conditional content. Both
+		will look exactly the same in this plug-in, but look differently when
+		rendered with a conventional renderer.
+		* Content that gets hidden with a conventional renderer looks like this:
+		`<!--if variable == value:conditional content-->`
+		* Content that gets shown in a conventional renderer looks like this:
+		`<!--if variable == value -->conditional content<!--endif-->`
+
+		This syntax contains a condition, in the above example:
+		`variable == true`. This condition consists of a variable, a comparator
+		and a value. The conditional content is shown only if the condition is
+		met. For instance, you could have a condition such as:
+		`cura_version < 4.4` which would cause the conditional content to draw
+		only if the user is using a Cura version earlier than 4.4.
+
+		The variable in this condition is one of the following:
+		* `cura_version`: The current version of Cura that the user is running.
+
+		The operator is one of the following: `==`, `!=`, `<`, `<=`, `>=`, `>`
+		:param html: The HTML tag that was found in the article.
+		:return: What should be shown in the article.
+		"""
+		return self.parse_html(html)
+
+	def parse_html(self, html):
+		"""
+		Helper function to parse HTML.
+
+		In most cases this will do nothing to the text. However if a conditional
+		tag is found we'll remove the text or replace it, depending on whether
+		the condition is met.
+		:param html: The HTML content found in the article.
+		:return: The rich text to draw instead of the HTML tag.
+		"""
+		return html  # TODO.
