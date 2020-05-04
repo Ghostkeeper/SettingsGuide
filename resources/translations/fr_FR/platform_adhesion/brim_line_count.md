@@ -6,4 +6,4 @@ Contrôle le nombre de périmètres tracés autour de la base de votre empreinte
 
 Un plus grand nombre de lignes de bord améliorera l'adhérence au plateau, en augmentant la surface de votre impression. Toutefois, cela réduira la surface d'impression effective.
 
-**Ce paramètre remplace le paramètre [Largeur de la bordure](./brim_width.md).**
+**Ce paramètre remplace le paramètre [Largeur de la bordure](brim_width.md).**
