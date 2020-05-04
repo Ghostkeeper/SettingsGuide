@@ -1,4 +1,4 @@
-Tour primaire circulaire
+Tour d'amorçage circulaire
 ====
 Si ce réglage est activé, la tour d'amorçage aura la forme d'un cylindre. Si elle est désactivée, la tour d'amorçage sera carrée.
 
