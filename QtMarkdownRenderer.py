@@ -161,7 +161,7 @@ class QtMarkdownRenderer(mistune.Renderer):
 
 		# First try finding the conditional content that gets hidden by conventional renderers.
 		hidden_pattern = r"<!--if\s+([A-Za-z0-9_]+)\s*(<|<=|==|!=|>=|>)\s*([^-^:]+)\s*:(.*?)-->"
-		for match in re.finditer(hidden_pattern, html, re.DOTALL):
+		for match in re.finditer(hidden_pattern, html, flags=re.DOTALL):
 			variable = match.group(1)
 			operator = match.group(2)
 			value = match.group(3)
@@ -209,3 +209,33 @@ class QtMarkdownRenderer(mistune.Renderer):
 			return variable_value >= value
 		UM.Logger.Logger.log("w", "Unknown condition operator: {operator}".format(operator=operator))
 		return False
+
+	@classmethod
+	def preprocess_exposed_conditionals(cls, markdown):
+		"""
+		Preprocesses a piece of Markdown so that exposed conditional texts get
+		properly parsed.
+
+		This is necessary because Mistune provides two methods to customise text
+		parsing, which are both insufficient as far as I could find.
+		* A renderer can only process existing syntax and then only processes
+		the content of the syntax at hand. Exposed conditional syntax would
+		display the content *between* two inline HTML or block HTML bits, which
+		are not part of any syntax, so the rendering is not powerful enough to
+		choose to render this bit or not.
+		* A lexer (or in Mistune v2.0 a plug-in) can define new syntax elements,
+		including stuff wrapped by delimiters. However since the HTML comments
+		that we are using are already existing syntax elements, this causes a
+		clash which makes the lexer or plug-in not function. These elements get
+		parsed as HTML.
+
+		This function turns all of the exposed conditional elements into hidden
+		conditional elements, which then get properly rendered by the
+		`inline_html` and `block_html` functions.
+		:param markdown: A piece of Markdown that needs to get pre-processed.
+		:return: The same Markdown, except that exposed conditionals are changed
+		into hidden conditionals.
+		"""
+		exposed_pattern = r"<!--if\s+([A-Za-z0-9_]+)\s*(<|<=|==|!=|>=|>)\s*([^-^:]+)\s*-->(.*?)<!--endif-->"
+		replacement = r"<!--if \1 \2 \3:\4-->"
+		return re.sub(exposed_pattern, replacement, markdown, flags=re.DOTALL)
