@@ -236,6 +236,6 @@ class QtMarkdownRenderer(mistune.Renderer):
 		:return: The same Markdown, except that exposed conditionals are changed
 		into hidden conditionals.
 		"""
-		exposed_pattern = r"<!--if\s+([A-Za-z0-9_]+)\s*(<|<=|==|!=|>=|>)\s*([^-^:]+)\s*-->(.*?)<!--endif-->"
-		replacement = r"<!--if \1 \2 \3:\4-->"
+		exposed_pattern = r"<!--if\s+([A-Za-z0-9_]+\s*(<|<=|==|!=|>=|>)\s*[^-^:]+)\s*-->(.*?)<!--endif-->"
+		replacement = r"<!--if \1:\3-->"
 		return re.sub(exposed_pattern, replacement, markdown, flags=re.DOTALL)
