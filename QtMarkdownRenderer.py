@@ -160,55 +160,67 @@ class QtMarkdownRenderer(mistune.Renderer):
 		result = ""
 
 		# First try finding the conditional content that gets hidden by conventional renderers.
-		hidden_pattern = r"<!--if\s+([A-Za-z0-9_]+)\s*(<=|==|!=|>=|<|>)\s*([^-^:]+)\s*:(.*?)-->"
+		hidden_pattern = r"<!--if\s+([A-Za-z0-9_]+\s*(<=|==|!=|>=|<|>)\s*[^-^:]+?(\s+and\s+[A-Za-z0-9_]+\s*(<=|==|!=|>=|<|>)\s*[^-^:]+?)*)\s*:(.*?)-->"
 		for match in re.finditer(hidden_pattern, html, flags=re.DOTALL):
-			variable = match.group(1)
-			operator = match.group(2)
-			value = match.group(3)
-			content = match.group(4)
-			if self.condition_met(variable, operator, value):
+			condition = match.group(1)
+			content = match.group(5)
+			if self.condition_met(condition):
 				result += content
 			else:
 				pass
 
 		return result
 
-	def condition_met(self, variable, operator, value):
+	def condition_met(self, condition):
 		"""
 		Checks if a piece of conditional Markdown should be shown or not.
-		:param variable: The variable in the condition to check against.
-		Supported variables are:
-		* `cura_version`: The current version of Cura that the user is running.
-		:param operator: The operator to check with. Supported operators are:
-		`==`, `!=`, `<`, `<=`, `>=` and `>`.
-		:param value: The value to check the variable against.
+		:param condition: The condition under which the content gets shown, as a
+		string. This needs to be formatted as a series of variable checks of the
+		form `variable <= value` (with any comparative operator). If there are
+		multiple of these checks (separated with `and`) then all of them must
+		hold for the condition to be met.
 		:return: `True` if the condition is met, or `False` if it is not met.
 		"""
-		if variable == "cura_version":
-			variable_value = UM.Application.Application.getInstance().getVersion()
-		else:
-			UM.Logger.Logger.log("w", "Unknown variable in condition: {variable}".format(variable=variable))
-			return False
+		check_pattern = r"([A-Za-z09_]+)\s*(<=|==|!=|>=|<|>)\s*([^-^:]+?)\s*(?=(\s*and\s*|$))"
+		for match in re.finditer(check_pattern, condition):
+			variable = match.group(1)
+			operator = match.group(2)
+			value = match.group(3)
 
-		# Depending on the variable, we may need to convert the type for proper comparison.
-		if variable == "cura_version":
-			variable_value = UM.Version.Version(variable_value)
-			value = UM.Version.Version(value)
+			if variable == "cura_version":
+				variable_value = UM.Application.Application.getInstance().getVersion()
+			else:
+				UM.Logger.Logger.log("w", "Unknown variable in condition: {variable}".format(variable=variable))
+				return False
 
-		if operator == "==":
-			return variable_value == value
-		if operator == "!=":
-			return variable_value != value
-		if operator == "<":
-			return variable_value < value
-		if operator == "<=":
-			return variable_value <= value
-		if operator == ">":
-			return variable_value > value
-		if operator == ">=":
-			return variable_value >= value
-		UM.Logger.Logger.log("w", "Unknown condition operator: {operator}".format(operator=operator))
-		return False
+			# Depending on the variable, we may need to convert the type for proper comparison.
+			if variable == "cura_version":
+				variable_value = UM.Version.Version(variable_value)
+				value = UM.Version.Version(value)
+
+			if operator == "==":
+				if variable_value != value:
+					return False
+			elif operator == "!=":
+				if variable_value == value:
+					return False
+			elif operator == "<":
+				if variable_value >= value:
+					return False
+			elif operator == "<=":
+				if variable_value > value:
+					return False
+			elif operator == ">":
+				if variable_value <= value:
+					return False
+			elif operator == ">=":
+				if variable_value < value:
+					return False
+			else:
+				UM.Logger.Logger.log("w", "Unknown condition operator: {operator}".format(operator=operator))
+				return False
+
+		return True
 
 	@classmethod
 	def preprocess_exposed_conditionals(cls, markdown):
@@ -236,6 +248,6 @@ class QtMarkdownRenderer(mistune.Renderer):
 		:return: The same Markdown, except that exposed conditionals are changed
 		into hidden conditionals.
 		"""
-		exposed_pattern = r"<!--if\s+([A-Za-z0-9_]+\s*(<=|==|!=|>=|<|>)\s*[^-^:]+)\s*-->(.*?)<!--endif-->"
-		replacement = r"<!--if \1:\3-->"
+		exposed_pattern = r"<!--if\s+([A-Za-z0-9_]+\s*(<=|==|!=|>=|<|>)\s*[^-^:]+?(\s+and\s+[A-Za-z0-9_]+\s*(<=|==|!=|>=|<|>)\s*[^-^:]+?)*)\s*-->(.*?)<!--endif-->"
+		replacement = r"<!--if \1:\5-->"
 		return re.sub(exposed_pattern, replacement, markdown, flags=re.DOTALL)
