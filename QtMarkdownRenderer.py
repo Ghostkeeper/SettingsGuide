@@ -160,7 +160,7 @@ class QtMarkdownRenderer(mistune.Renderer):
 		result = ""
 
 		# First try finding the conditional content that gets hidden by conventional renderers.
-		hidden_pattern = r"<!--if\s+([A-Za-z0-9_]+)\s*(<|<=|==|!=|>=|>)\s*([^-^:]+)\s*:(.*?)-->"
+		hidden_pattern = r"<!--if\s+([A-Za-z0-9_]+)\s*(<=|==|!=|>=|<|>)\s*([^-^:]+)\s*:(.*?)-->"
 		for match in re.finditer(hidden_pattern, html, flags=re.DOTALL):
 			variable = match.group(1)
 			operator = match.group(2)
@@ -236,6 +236,6 @@ class QtMarkdownRenderer(mistune.Renderer):
 		:return: The same Markdown, except that exposed conditionals are changed
 		into hidden conditionals.
 		"""
-		exposed_pattern = r"<!--if\s+([A-Za-z0-9_]+\s*(<|<=|==|!=|>=|>)\s*[^-^:]+)\s*-->(.*?)<!--endif-->"
+		exposed_pattern = r"<!--if\s+([A-Za-z0-9_]+\s*(<=|==|!=|>=|<|>)\s*[^-^:]+)\s*-->(.*?)<!--endif-->"
 		replacement = r"<!--if \1:\3-->"
 		return re.sub(exposed_pattern, replacement, markdown, flags=re.DOTALL)
