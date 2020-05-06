@@ -17,7 +17,7 @@ Cependant, cette caractéristique peut également introduire un certain nombre d
 * Si la hauteur de la couche est modifiée sur l'ensemble de la couche pour un petit élément situé quelque part dans une petite partie de la couche, les bandes seront visibles dans le reste de la couche.
 * Les distances verticales sont également ajustées involontairement dans ce cas. Cela peut avoir un effet négatif sur la qualité de l'impression. Par exemple, l'épaisseur du [Épaisseur du dessus/dessous](../shell/top_bottom_thickness.md) sera généralement plus faible parce que Cura conservera le paramètre [Couches supérieures](../shell/top_layers.md) comme étant vrai, et les couches deviendront plus fines. Cela peut provoquer un effet d'oreiller. Parmi les paramètres affectés qui peuvent ne plus être corrects, on peut citer
   * [Épaisseur du dessus](../shell/top_thickness.md)
-  * [Épaisseur du fond](../shell/bottom_thickness.md)
+  * [Épaisseur du dessous](../shell/bottom_thickness.md)
   * [Angle maximum de la couche extérieure pour l'expansion](../infill/max_skin_angle_for_expansion.md)
   * [Hauteur de l'étape de remplissage progressif](../infill/gradual_infill_step_height.md)
   * [Hauteur d'étape de remplissage graduel du support](../support/gradual_support_infill_step_height.md)
