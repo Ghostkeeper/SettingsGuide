@@ -4,6 +4,6 @@ This is a setting that was once used in the same way as what [Machine Head & Fan
 
 ![Dimensions of the print head](../images/head_dimensions.svg)
 
-However in later versions, it became clear that the fans could collide just as well as the rest of the print head. This setting is finally removed in Cura 4.5, even though it was not used to any effect in many versions before that. In your current version of Cura, this setting has no effect whatsoever.
+However in later versions, it became clear that the fans could collide just as well as the rest of the print head. <!--if cura_version >= 4.5 -->This setting is finally removed in Cura 4.5, even though it was not used to any effect in many versions before that. In your current version of Cura, this setting has no effect whatsoever.<!--endif-->
 
 **Since this is a machine setting, this setting is not normally visible in the settings list.**
