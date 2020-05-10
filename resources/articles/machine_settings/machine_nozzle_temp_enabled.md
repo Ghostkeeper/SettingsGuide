@@ -6,4 +6,4 @@ This is similar to [Has Heated Build Plate](machine_heated_bed.md) in how it fun
 
 Disabling this temporarily could be used to perform a dry run of the print. For that, you would also need to [disable the build plate](machine_heated_bed.md), the [heating of the build volume](machine_heated_build_volume.md) and set the [flow rate](../material/material_flow.md) to 0%.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+**Since this is a machine setting, this setting is not normally visible in the settings list.**

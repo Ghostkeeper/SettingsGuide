@@ -44,4 +44,4 @@ Through the same syntax as references to settings, some auxiliary information is
 * `{day}` refers to the day of the week on which it was sliced.
 * `{initial_extruder_nr}` refers to the extruder that the print will start with.
 
-*This setting is a machine setting, so it will not appear in the normal list of settings. It can be changed by going to the list of printers in the preferences screen and clicking on "Machine Settings".*
+**This setting is a machine setting, so it will not appear in the normal list of settings. It can be changed by going to the list of printers in the preferences screen and clicking on "Machine Settings".**

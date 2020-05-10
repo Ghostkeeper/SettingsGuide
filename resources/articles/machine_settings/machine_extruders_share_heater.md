@@ -6,4 +6,4 @@ Most commonly this is necessary for mixing nozzles, where multiple filaments are
 
 Cura will not necessarily assume that if the extruders share a heater they also share a nozzle. If they do, the relative nozzle positions need to be 0 and most likely there needs to be some extruder start sequence to purge the previous material when switching.
 
-*Since this is a machine setting, it will not normally be listed in the normal list of settings. There is a checkbox for this setting though in the printer settings dialogue, which can be found in the list of added printers in the preferences dialogue.*
+**Since this is a machine setting, it will not normally be listed in the normal list of settings. There is a checkbox for this setting though in the printer settings dialogue, which can be found in the list of added printers in the preferences dialogue.**

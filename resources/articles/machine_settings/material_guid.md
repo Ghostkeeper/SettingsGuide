@@ -6,4 +6,4 @@ When an Ultimaker printer is connected to Cura over the network or the internet,
 
 It's also used to group the available quality levels for a certain material. Cura's profile system is very complex, and this is one of its quirks: Normally Cura will display all quality profiles available for the current material type. That is to say, if a certain manufacturer indicates that his material is a type of PLA, all quality profiles for PLA will be available. However when there is any quality profile that specifies the current material by GUID, then only that quality profile will be available. This essentially means that there are profiles specifically tailored for this filament, and the generic profiles should no longer be shown.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+**Since this is a machine setting, this setting is not normally visible in the settings list.**

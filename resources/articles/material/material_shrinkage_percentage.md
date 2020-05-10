@@ -6,4 +6,4 @@ This setting is currently not used for slicing. It is currently only used to dis
 
 In the future, the slicer may be able to use this setting to counteract the shrinkage for better dimensional accuracy.
 
-*This setting is not visible in the list of settings. It is only an internal setting to be overwritten by the material profile.*
+**This setting is not visible in the list of settings. It is only an internal setting to be overwritten by the material profile.**

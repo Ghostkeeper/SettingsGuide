@@ -6,4 +6,4 @@ This does not apply for printers that don't use stepper motors in their feeders.
 
 This setting is not used in Cura at all. However it is used by the X3Gwriter plug-in to output X3G files with correct step sizes.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+**Since this is a machine setting, this setting is not normally visible in the settings list.**

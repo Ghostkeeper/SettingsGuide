@@ -10,4 +10,4 @@ These forbidden areas are necessary to prevent the nozzle from colliding into th
 
 The disallowed areas are drawn as a grey shadow on the build plate, indicating to the user that they cannot place any objects there. These shadows may be expanded in all directions to prevent the brim or skirt from hitting it and for various other reasons. There are also other shadows on the build plate, for instance to limit the range of motion if the nozzles have an offset.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+**Since this is a machine setting, this setting is not normally visible in the settings list.**

@@ -21,4 +21,4 @@ Additional notes
 ----
 At very low layer heights, you could run into the resolution limit of your Z axis. Look up the step size of your printer's Z axis and make sure that the layer height is a multiple of this. If it doesn't match up properly, some layers will be thicker than others which will result in banding.
 
-*Note that the layer height setting does not hold for the initial layer of the print or for the raft layers, which have their own settings to adjust the layer height separately. When using adaptive layers, this layer height setting will be used as a baseline but the actual layer height will have some variation.*
+**Note that the layer height setting does not hold for the initial layer of the print or for the raft layers, which have their own settings to adjust the layer height separately. When using adaptive layers, this layer height setting will be used as a baseline but the actual layer height will have some variation.**

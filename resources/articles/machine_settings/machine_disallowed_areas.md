@@ -10,4 +10,4 @@ The disallowed areas are drawn as a grey shadow on the build plate, indicating t
 
 If only the active nozzle would collide with the obstacles, then the similar setting [Nozzle Disallowed Areas](nozzle_disallowed_areas.md) can prevent the nozzle from colliding with it while still allowing the print head to move over it.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+**Since this is a machine setting, this setting is not normally visible in the settings list.**

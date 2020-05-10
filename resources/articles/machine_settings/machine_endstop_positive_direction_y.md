@@ -4,4 +4,4 @@ This setting tells Cura in which direction the printer will move along the Y axi
 
 This setting is not used by Cura at all. However it is used by the X3GWriter plug-in to implement the homing g-code command correctly when writing an X3G tool path file.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+**Since this is a machine setting, this setting is not normally visible in the settings list.**

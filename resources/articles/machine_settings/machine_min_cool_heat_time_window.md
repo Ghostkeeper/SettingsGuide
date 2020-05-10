@@ -6,4 +6,4 @@ Your nozzle has a PID regulator, which regulates how much power is used to heat 
 
 The optimal value for this setting depends on the tuning of your PID regulator. Some regulators handle rapid target temperature changes better than others, and those may be able to handle a brief stand-by period better. Lowering this setting would then help to prevent the material from degrading inside the nozzle.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+**Since this is a machine setting, this setting is not normally visible in the settings list.**

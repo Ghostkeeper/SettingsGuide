@@ -76,4 +76,4 @@ This is a g-code flavour aimed at the 3D printers by Repetier. It mimics the out
 * Acceleration changes are made using the `M201` and `M202` commands (for respectively printing acceleration and travel acceleration) rather than `M204`.
 * Jerk changes are made using the `M207` command, rather than the `M205` command.
 
-*Since this is a machine setting, it will not normally be listed in the normal list of settings. There is a selection menu for this setting though in the printer settings dialogue, which can be found in the list of added printers in the preferences dialogue.*
+**Since this is a machine setting, it will not normally be listed in the normal list of settings. There is a selection menu for this setting though in the printer settings dialogue, which can be found in the list of added printers in the preferences dialogue.**
