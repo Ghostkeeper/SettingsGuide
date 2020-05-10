@@ -165,7 +165,8 @@ class QtMarkdownRenderer(mistune.Renderer):
 			condition = match.group(1)
 			content = match.group(5)
 			if self.condition_met(condition):
-				result += content
+				markdown = mistune.Markdown(renderer=self)
+				result = markdown(content)
 			else:
 				pass
 
