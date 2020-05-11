@@ -321,7 +321,7 @@ class CuraSettingsGuide(Extension, QObject):
 						# The parts of the regex split alternate between text and checkbox description.
 						if index2 % 2 == 0:
 							if part_between_checkboxes:
-								part_between_checkboxes = QtMarkdownRenderer.QtMarkdownRenderer.preprocess_exposed_conditionals(part_between_checkboxes)
+								part_between_checkboxes = QtMarkdownRenderer.QtMarkdownRenderer.preprocess_conditionals(part_between_checkboxes)
 								rich_text = self._markdown_per_folder[images_path](part_between_checkboxes)
 								parts.append(["rich_text", rich_text])
 						else:  # if index2 == 1:
@@ -342,7 +342,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self.articles[article_id][language] = parts
 		if article_id not in self.articles_rich_text:
 			self.articles_rich_text[article_id] = {}
-		markdown_str = QtMarkdownRenderer.QtMarkdownRenderer.preprocess_exposed_conditionals(markdown_str)
+		markdown_str = QtMarkdownRenderer.QtMarkdownRenderer.preprocess_conditionals(markdown_str)
 		self.articles_rich_text[article_id][language] = self._markdown_per_folder[images_path](markdown_str)
 
 		return self.articles[article_id][language]

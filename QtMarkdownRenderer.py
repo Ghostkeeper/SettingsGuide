@@ -89,90 +89,8 @@ class QtMarkdownRenderer(mistune.Renderer):
 		width = UM.Qt.Bindings.Theme.Theme.getInstance().getSize("tooltip").width() / 3 - margin * 2  # Fit 3 images in the width.
 		return "<img src=\"{image_url}\" width=\"{width}\" />".format(image_url=image_url, width=width)
 
-	def inline_html(self, html):
-		"""
-		This renders a piece of inline HTML.
-
-		HTML is not really supported here. However we're using this syntax to
-		implement our own conditional Markdown syntax, which renders only if a
-		certain condition is met. This conditional syntax is designed to degrade
-		 gracefully when rendered in a conventional Markdown renderer such as
-		 the one on github.com.
-
-		There are two possible syntax variations for conditional content. Both
-		will look exactly the same in this plug-in, but look differently when
-		rendered with a conventional renderer.
-		* Content that gets hidden with a conventional renderer looks like this:
-		`<!--if variable == value:conditional content-->`
-		* Content that gets shown in a conventional renderer looks like this:
-		`<!--if variable == value -->conditional content<!--endif-->`
-
-		This syntax contains a condition, in the above example:
-		`variable == true`. This condition consists of a variable, a comparator
-		and a value. The conditional content is shown only if the condition is
-		met. For instance, you could have a condition such as:
-		`cura_version < 4.4` which would cause the conditional content to draw
-		only if the user is using a Cura version earlier than 4.4.
-		:param html: The HTML tag that was found in the article.
-		:return: What should be shown in the article.
-		"""
-		return self.any_html(html)
-
-	def block_html(self, html):
-		"""
-		This renders a piece of HTML on a separate block.
-
-		HTML is not really supported here. However we're using this syntax to
-		implement our own conditional Markdown syntax, which renders only if a
-		certain condition is met. This conditional syntax is designed to degrade
-		 gracefully when rendered in a conventional Markdown renderer such as
-		 the one on github.com.
-
-		There are two possible syntax variations for conditional content. Both
-		will look exactly the same in this plug-in, but look differently when
-		rendered with a conventional renderer.
-		* Content that gets hidden with a conventional renderer looks like this:
-		`<!--if variable == value:conditional content-->`
-		* Content that gets shown in a conventional renderer looks like this:
-		`<!--if variable == value -->conditional content<!--endif-->`
-
-		This syntax contains a condition, in the above example:
-		`variable == true`. This condition consists of a variable, a comparator
-		and a value. The conditional content is shown only if the condition is
-		met. For instance, you could have a condition such as:
-		`cura_version < 4.4` which would cause the conditional content to draw
-		only if the user is using a Cura version earlier than 4.4.
-		:param html: The HTML tag that was found in the article.
-		:return: What should be shown in the article.
-		"""
-		return self.any_html(html)
-
-	def any_html(self, html):
-		"""
-		Helper function to parse HTML.
-
-		In most cases this will do nothing to the text. However if a conditional
-		tag is found we'll remove the text or replace it, depending on whether
-		the condition is met.
-		:param html: The HTML content found in the article.
-		:return: The rich text to draw instead of the HTML tag.
-		"""
-		result = ""
-
-		# First try finding the conditional content that gets hidden by conventional renderers.
-		hidden_pattern = r"<!--if\s+([A-Za-z0-9_]+\s*(<=|==|!=|>=|<|>)\s*[^-^:]+?(\s+and\s+[A-Za-z0-9_]+\s*(<=|==|!=|>=|<|>)\s*[^-^:]+?)*)\s*:(.*?)-->"
-		for match in re.finditer(hidden_pattern, html, flags=re.DOTALL):
-			condition = match.group(1)
-			content = match.group(5)
-			if self.condition_met(condition):
-				markdown = mistune.Markdown(renderer=self)
-				result = markdown(content)
-			else:
-				pass
-
-		return result
-
-	def condition_met(self, condition):
+	@classmethod
+	def condition_met(cls, condition):
 		"""
 		Checks if a piece of conditional Markdown should be shown or not.
 		:param condition: The condition under which the content gets shown, as a
@@ -224,10 +142,10 @@ class QtMarkdownRenderer(mistune.Renderer):
 		return True
 
 	@classmethod
-	def preprocess_exposed_conditionals(cls, markdown):
+	def preprocess_conditionals(cls, markdown):
 		"""
-		Preprocesses a piece of Markdown so that exposed conditional texts get
-		properly parsed.
+		Preprocesses a piece of Markdown so that conditional texts get properly
+		parsed.
 
 		This is necessary because Mistune provides two methods to customise text
 		parsing, which are both insufficient as far as I could find.
@@ -242,13 +160,45 @@ class QtMarkdownRenderer(mistune.Renderer):
 		clash which makes the lexer or plug-in not function. These elements get
 		parsed as HTML.
 
-		This function turns all of the exposed conditional elements into hidden
-		conditional elements, which then get properly rendered by the
-		`inline_html` and `block_html` functions.
+		There are two possible syntax variations for conditional content. Both
+		will look exactly the same in this plug-in, but look differently when
+		rendered with a conventional renderer.
+		* Content that gets hidden with a conventional renderer looks like this:
+		`<!--if variable == value:conditional content-->`
+		* Content that gets shown in a conventional renderer looks like this:
+		`<!--if variable == value -->conditional content<!--endif-->`
+
+		This syntax contains a condition, in the above example:
+		`variable == true`. This condition consists of a variable, a comparator
+		and a value. The conditional content is shown only if the condition is
+		met. For instance, you could have a condition such as:
+		`cura_version < 4.4` which would cause the conditional content to draw
+		only if the user is using a Cura version earlier than 4.4.
+
+		This function finds all of the conditional elements in the text, parses
+		them and chooses whether to display them or not.
 		:param markdown: A piece of Markdown that needs to get pre-processed.
-		:return: The same Markdown, except that exposed conditionals are changed
-		into hidden conditionals.
+		:return: The same Markdown, but without the HTML comments, and their
+		contents are only included if the condition inside the comments was met.
 		"""
-		exposed_pattern = r"<!--if\s+([A-Za-z0-9_]+\s*(<=|==|!=|>=|<|>)\s*[^-^:]+?(\s+and\s+[A-Za-z0-9_]+\s*(<=|==|!=|>=|<|>)\s*[^-^:]+?)*)\s*-->(.*?)<!--endif-->"
-		replacement = r"<!--if \1:\5-->"
-		return re.sub(exposed_pattern, replacement, markdown, flags=re.DOTALL)
+		condition_pattern = r"([A-Za-z0-9_]+\s*(<=|==|!=|>=|<|>)\s*[^-^:]+?(\s+and\s+[A-Za-z0-9_]+\s*(<=|==|!=|>=|<|>)\s*[^-^:]+?)*)"
+		exposed_pattern = r"<!--if\s+" + condition_pattern + r"\s*-->(.*?)<!--endif-->"
+		hidden_pattern = r"<!--if\s+" + condition_pattern + r"\s*:(.*?)-->"
+
+		# First replace all occurrences of the exposed pattern with the hidden pattern so that we only need to split on one regex at a time.
+		markdown = re.sub(exposed_pattern, r"<!--if \1:\5-->", markdown, flags=re.DOTALL)
+
+		# Now split the text into the conditions, the contents and the pieces between conditionals.
+		result = ""
+		condition_met = False  # Whether to display the upcoming conditional part.
+		for i, part in enumerate(re.split(hidden_pattern, markdown, flags=re.DOTALL)):
+			if i % 6 == 0:  # Outside of the conditional.
+				result += part
+			elif i % 6 == 1:  # The condition for some upcoming piece of text.
+				condition_met = cls.condition_met(part)
+				# Pieces 2, 3 and 4 are not interesting here, but only groups necessary for the order of operations in the regex.
+			elif i % 6 == 5:  # The conditional text.
+				if condition_met:  # Only add this if the last condition was met.
+					result += part
+
+		return result
