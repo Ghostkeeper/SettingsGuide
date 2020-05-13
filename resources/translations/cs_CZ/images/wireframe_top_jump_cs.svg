@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1000">
+	<g fill="none">
+		<path stroke-linejoin="bevel" stroke="deepskyblue" stroke-width="30" d="M-300,200 h100 l500,600 v-600 h100 l500,600 v-600 h100 l500,600 v-600 h100 l500,600 v-600" /> <!-- Connecting zigzaggy lines. -->
+		<path stroke="red" stroke-width="20" stroke-dasharray="18" d="M-300,200 l-50,-100 l150,100 h500 l-50,-100 l150,100 h500 l-50,-100 l150,100 h500 l-50,-100 l150,100 h500" /> <!-- Jump moves. -->
+	</g>
+	<g stroke="darkblue" stroke-width="50" fill="none">
+		<!-- Horizontal "layer" lines. -->
+		<line x1="0" y1="800" x2="2000" y2="800" />
+		<line x1="0" y1="200" x2="2000" y2="200" />
+	</g>
+
+	<!-- Legend. -->
+	<polygon points="800,175 820,155 810,155 810,95 820,95 800,75 780,95 790,95 790,155 780,155" />
+	<text x="780" y="140" text-anchor="end" font-family="sans-serif" font-size="50px">Velikost uzlu</text>
+</svg>

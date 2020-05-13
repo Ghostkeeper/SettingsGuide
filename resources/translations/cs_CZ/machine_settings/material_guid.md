@@ -1,0 +1,9 @@
+GUID materiálu
+====
+Toto nastavení obsahuje jedinečný identifikátor materiálu, který je na aktuálně zavedené cívce v tiskárně. To jedinečně identifikuje plast, který se přivádí do tiskárny, včetně výrobce a barvy. Bude to stejné mezi různými cívkami stejného materiálu. V zásadě by každá jiná položka, kterou byste viděli v internetovém obchodě, získala jedinečný identifikátor. Cura používá tento jedinečný identifikátor pro dva účely: pro synchronizaci konfigurace s tím, co je na vaší tiskárně (pokud je vaše tiskárna připojena k aplikaci Cura) a ke sdružování profilů, které patří ke stejnému materiálu.
+
+Pokud je tiskárna Ultimaker připojena k aplikaci Cura přes síť nebo internet, tiskárna poskytne společnosti Cura seznam GUID pro materiály, které jsou aktuálně načteny do tiskárny. Cura porovnává tyto GUID identifikátory s GUID identifikátory ve svých profilech, podle kterých ví, které profily uživateli zobrazit.
+
+Používá se také k seskupení dostupných úrovní kvality pro určitý materiál. Profilový systém Cury je velmi složitý, a to je jedno z jeho vtipů: Normálně Cura zobrazí všechny profily kvality dostupné pro aktuální typ materiálu. To znamená, že pokud určitý výrobce uvede, že jeho materiál je typem PLA, budou k dispozici všechny profily kvality pro PLA. Pokud však existuje nějaký profil kvality, který specifikuje aktuální materiál podle GUID, bude k dispozici pouze tento profil kvality. To v podstatě znamená, že existují profily speciálně přizpůsobené pro toto vlákno a obecné profily by již neměly být zobrazovány.
+
+*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*
