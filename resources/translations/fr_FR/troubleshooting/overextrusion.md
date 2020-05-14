@@ -26,7 +26,7 @@ Cura se contente normalement de dessiner les contours de l'impression avec une c
 
 Cela peut être évité en activant la [compensation pour les parois qui se chevauchent](../shell/travel_compensate_overlapping_walls_enabled.md). L'extrusion de la deuxième ligne sera réduite de telle sorte qu'elle extrude autant de matériau que nécessaire pour remplir l'espace restant du mur, ce qui empêche la surextrusion.
 
-Si les murs se chevauchent en raison du [Outer Wall Inset](../shell/wall_0_inset.md), vous pouvez essayer de réduire cet encastrement pour éviter la surextrusion. Vous pouvez également essayer d'imprimer le [mur extérieur d'abord](../shell/outer_inset_first.md). L'excès de matériau sera alors poussé vers l'intérieur du modèle, où il est invisible.
+Si les murs se chevauchent en raison de l'[Insert de paroi externe](../shell/wall_0_inset.md), vous pouvez essayer de réduire cet ajout pour éviter la surextrusion. Vous pouvez également essayer d'imprimer le [mur extérieur d'abord](../shell/outer_inset_first.md). L'excès de matériau sera alors poussé vers l'intérieur du modèle, où il est invisible.
 
 Réglage direct du débit
 ----
