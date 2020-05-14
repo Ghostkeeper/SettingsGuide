@@ -2,7 +2,7 @@ Le décalage des couches
 ====
 Un décalage de couches se produit lorsque les couches d'une impression ne sont pas correctement empilées les unes sur les autres. Si la tête d'impression est déplacée pendant l'impression d'une couche pour une raison quelconque, l'imprimante continue d'imprimer avec un décalage. La face supérieure de l'impression est alors décalée par rapport à la face inférieure.
 
-![Un décalage d'un seul calque dû à une obstruction](../../../articles/images/layer_shift_single.jpg)
+![Un décalage d'une seule couche dû à une obstruction](../../../articles/images/layer_shift_single.jpg)
 
 Causes
 ----
@@ -14,7 +14,7 @@ Un autre type de décalage de couche se produit lorsque la tâche d'impression e
 
 Prévention
 ----
-Le premier type de déplacement de couche n'est normalement pas corrigeable par desréglages Cura. Cura est conçu pour éviter de heurter les côtés du volume d'impression. Si la taille du volume d'impression est saisie correctement dans Cura, elle ne devrait pas générer de G-Code qui se déplace en dehors du volume imprimable. S'il génère un tel G-Code, la boîte de dialogue Paramètres machine sous la gestion de l'imprimante vous permettra d'ajuster la taille du volume d'impression pour effectuer une correction. Vous devez également vous assurer qu'il n'y a pas d'obstruction dans le volume d'impression que la tête d'impression ou le système de mouvement pourrait toucher pendant l'impression. Les imprimantes ne peuvent généralement pas détecter ce genre de problème, et elles continueront donc à imprimer à partir d'une position décalée. Recherchez si il y a des câbles qui gênent et assurez-vous que tous les câbles sont suffisamment longs pour permettre à l'imprimante de se déplacer dans toute sa plage de mouvement. Vérifiez également si les pilotes pas à pas de la carte de circuit imprimé de l'imprimante ne sont pas en surchauffe, ce qui pourrait entraîner un arrêt temporaire de leur fonctionnement.
+Le premier type de déplacement de couche n'est normalement pas corrigeable par des réglages Cura. Cura est conçu pour éviter de heurter les côtés du volume d'impression. Si la taille du volume d'impression est saisie correctement dans Cura, elle ne devrait pas générer de G-Code qui se déplace en dehors du volume imprimable. S'il génère un tel G-Code, la boîte de dialogue Paramètres machine sous la gestion de l'imprimante vous permettra d'ajuster la taille du volume d'impression pour effectuer une correction. Vous devez également vous assurer qu'il n'y a pas d'obstruction dans le volume d'impression que la tête d'impression ou le système de mouvement pourrait toucher pendant l'impression. Les imprimantes ne peuvent généralement pas détecter ce genre de problème, et elles continueront donc à imprimer à partir d'une position décalée. Recherchez si il y a des câbles qui gênent et assurez-vous que tous les câbles sont suffisamment longs pour permettre à l'imprimante de se déplacer dans toute sa plage de mouvement. Vérifiez également si les pilotes pas à pas de la carte de circuit imprimé de l'imprimante ne sont pas en surchauffe, ce qui pourrait entraîner un arrêt temporaire de leur fonctionnement.
 
 L'autre type de décalage de couche, celui qui se produit continuellement tout au long de l'impression, est probablement dû à une force trop importante exercée sur votre système de mouvement. Il existe plusieurs solutions possibles.
 
