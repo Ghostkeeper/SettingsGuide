@@ -16,12 +16,12 @@ Broyage du filament
 ----
 L'extrudeur pousse parfois très fort sur le filament pour le faire passer dans le train de l'extrudeuse. Cela endommage le filament. Lorsque le dispositif d'alimentation pousse et tire très souvent sur le même bout de filament, cela peut l'endommager à tel point que le dispositif d'alimentation ne peut plus avoir de prise sur le filament. Le matériau s'arrête alors de couler et le reste de l'impression est imprimé à vide plutôt qu'avec du plastique.
 
-![Le filament a été broyé par l'extrudeur](../../../articles/images/grinding.jpg)
+![Le filament a été rogné par l'extrudeur](../../../articles/images/grinding.jpg)
 
 Vous pouvez sentir que cela se produit pendant l'impression en plaçant un doigt à l'ouverture où le filament va dans l'extrudeuse. Pendant l'impression, vous devez sentir le filament bouger. Si il ne bouge pas, c'est probablement qu'elle a broyé le matériau et qu'elle n'a pas de prise sur lui. Vous pouvez également tirer le filament hors de l'imprimante et voir où il est endommagé.
 
 Pour éviter ce problème, vous pouvez effectuer les réglages suivants dans les paramètres de Cura :
-* Réduire le [retrait maximal](../travel/retraction_count_max.md) ou augmenter la [Fenêtre de distance d'extrusion minimale](../travel/retraction_extrusion_window.md). Cela limitera le nombre de rétractions effectuées pendant l'extrusion d'une longueur donnée de filament. En fait, cela limite la fréquence à laquelle le dispositif d'alimentation peut rouler en avant et en arrière sur chaque morceau de filament.
+* Réduire le [retrait maximal](../travel/retraction_count_max.md) ou augmenter la [Intervalle de distance minimale d'extrusion](../travel/retraction_extrusion_window.md). Cela limitera le nombre de rétractions effectuées pendant l'extrusion d'une longueur donnée de filament. En fait, cela limite la fréquence à laquelle le dispositif d'alimentation peut rouler en avant et en arrière sur chaque morceau de filament.
 * Réduire la [Distance de rétraction](../travel/retraction_amount.md). Cela limitera à nouveau le nombre de fois que l'extrudeuse fera des allers-retours sur le même morceau de filament.
 * Réduisez la [Vitesse de rétraction](../travel/retraction_speed.md)). Si le matériau se déplace rapidement mais qu'il est obstrué à un endroit quelconque du chemin, l'extrudeuse usera le matériau. Si le matériau se déplace plus lentement, il y a moins de chances que cela se produise.
 * Imprimez plus lentement en réduisant la [Hauteur de la couche](../resolution/layer_height.md), la [Largeur de la ligne](../resolution/line_width.md) ou les [vitesses](../speed/speed_print.md)). Cela permet de réduire la force que l'extrudeuse doit exercer sur le filament, ce qui réduit les risques d'usure du filament.
