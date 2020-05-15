@@ -12,6 +12,6 @@ Comme l'effet de topographie se produit lorsque les frontières entre les couche
 
 Au lieu de réduire la hauteur de couche pour l'ensemble de l'impression, vous pouvez également réduire la hauteur de couche uniquement pour les faibles pentes de l'impression en utilisant [Utiliser des couches adaptatives](../experimental/adaptive_layer_height_enabled.md). Cela permet de réduire considérablement l'effet de la topographie tout en ayant un impact minimal sur le temps d'impression. Cependant, il est plus difficile de régler l'impression pour d'autres qualités que celles mentionnées ci-dessus, car le réglage dépend généralement de la hauteur de la couche.
 
-Ajustements du modèle
+Ajustement de la position du modèle
 ----
-Vous pouvez également envisager de faire tourner le modèle de manière à ce qu'il n'y ait plus de pentes peu profondes dans l'impression. Mais cela implique généralement d'imprimer beaucoup plus de support pour votre modèle, ce qui réduit également la productivité, et les surplombs risquent de ne pas être aussi beaux.
+Vous pouvez également envisager de positionner le modèle de manière à ce qu'il n'y ait plus de faible pente dans l'impression. Mais cela implique généralement d'imprimer beaucoup plus de support pour votre modèle, ce qui réduit également la productivité, et les surplombs risquent de ne pas être aussi beaux.
