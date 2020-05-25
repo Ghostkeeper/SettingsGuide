@@ -23,5 +23,5 @@ Ce mode est toutefois assorti de quelques contraintes, afin d'éviter que la tê
 * Les objets doivent être plus éloignés les uns des autres, afin d'éviter que la tête d'impression ne heurte les modèles précédemment imprimés sur le côté.
 * L'ordre dans lequel les objets sont imprimés est fixe et optimisé afin de permettre aux objets d'être imprimés plus près les uns des autres. Si votre tête d'impression n'est pas symétrique, cela peut permettre de gagner beaucoup de place sur la plaque de construction.
 
-** Un à la fois n'est disponible qu'en extrusion simple. Si vous utilisez une imprimante multi-extrusion, vous devez désactiver toutes les extrudeuses sauf une pour que ce paramètre apparaisse.**
+**Un à la fois n'est disponible qu'en extrusion simple. Si vous utilisez une imprimante multi-extrusion, vous devez désactiver toutes les extrudeuses sauf une pour que ce paramètre apparaisse.**
 

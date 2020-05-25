@@ -14,7 +14,7 @@ L'alimentation en matière est probablement destinée à être réduite avec ell
 
 Pour lutter contre ce phénomène, regardez les réglages suivants :
 * Égaliser la vitesse de la [paroi extérieure](../speed/speed_wall_0.md) de manière à ce qu'elle soit identique à celle de ce qui est imprimé avant elle (comme les [parois intérieures](../speed/speed_wall_x.md) ou le [remplissage](../speed/speed_infill.md)). Il n'y aura donc pas de ralentissement.
-* Augmenter le [taux de secousse pour la paroi extérieure](../speed/jerk_wall_0.md). Cela empêchera la buse de ralentir dans les coins.
+* Augmenter la [Saccade de paroi externe](../speed/jerk_wall_0.md). Cela empêchera la buse de ralentir dans les coins.
 * Vous pouvez réduire la [résolution](../meshfix/meshfix_maximum_resolution.md) et augmenter la [déviation](../meshfix/meshfix_maximum_deviation.md) pour empêcher le contrôleur de ralentir la buse afin de suivre les Codes G qu'il doit traiter.
 * Désactivez le paramètre [Compenser les chevauchements des parois extérieures](../shell/travel_compensate_overlapping_walls_0_enabled.md). Ce paramètre permet de créer de nouvelles commandes de déplacement avec des vitesses d'avance différentes. La désactivation de cette fonction réduit le nombre d'ordres de déplacement dans le mur.
 
@@ -33,8 +33,8 @@ Le déplacement se fait à travers les murs
 Bien que Cura évite généralement de traverser le mur extérieur autant que possible, cela est parfois inévitable. Si la buse transporte une matière suintante alors qu'elle traverse une paroi extérieure, cette matière peut être essuyée à cet endroit, laissant une tache.
 
 Il est possible d'éviter cette cause de bavure en réglant les paramètres suivants :
-* Assurez-vous que la fonction [peignage](../travel/retraction_combing.md) est activée. Cela permet à la buse de contourner les murs autant que possible, au lieu de les traverser.
-* Activer [Z Hops](../travel/retraction_hop_enabled.md). Si les murs sont franchis, la buse se déplacera un peu vers le haut, pour passer par-dessus les murs au lieu de les traverser. Le matériau suintant ne sera probablement pas essuyé sur la paroi, mais à l'endroit où la buse atterrit après le déplacement. Cura essaiera toujours de se poser dans le remblai ou la peau si possible.
+* Assurez-vous que la fonction [Mode de détours](../travel/retraction_combing.md) est activée. Cela permet à la buse de contourner les murs autant que possible, au lieu de les traverser.
+* Activer le [Rétract en Z](../travel/retraction_hop_enabled.md). Si les murs sont franchis, la buse se déplacera un peu vers le haut, pour passer par-dessus les murs au lieu de les traverser. Le matériau suintant ne sera probablement pas essuyé sur la paroi, mais à l'endroit où la buse atterrit après le déplacement. Cura essaiera toujours de se poser dans le remblai ou la peau si possible.
 * Assurez-vous que [l'ordre d'impression des murs est optimisé](../shell/optimize_wall_printing_order.md). Cela réduit le nombre de mouvements effectués lors de l'impression des murs, ce qui permet des mouvements plus efficaces et réduit le risque que certains de ces mouvements doivent passer à travers un mur extérieur.
 
 Une pression accrue

@@ -1,6 +1,6 @@
 Surextrusion
 ====
-La surextrusion est un terme utilisé lorsque l'imprimante extrude trop de matière en un seul endroit. La matière s'écoule alors sur les côtés ou vers le haut, ce qui rend la surface très rugueuse et irrégulière. Cela peut également provoquer des [Filasse](stringing.md) et beaucoup de [Gouttes (blobs)](blobs.md).
+La surextrusion est un terme utilisé lorsque l'imprimante extrude trop de matière en un seul endroit. La matière s'écoule alors sur les côtés ou vers le haut, ce qui rend la surface très rugueuse et irrégulière. Cela peut également provoquer des [Fils](stringing.md) et beaucoup de [Gouttes (blobs)](blobs.md).
 
 ![Une surextrusion massive s'est produite dans cette impression](../../../articles/images/overextrusion.jpg)
 
@@ -26,7 +26,7 @@ Cura se contente normalement de dessiner les contours de l'impression avec une c
 
 Cela peut être évité en activant la [compensation pour les parois qui se chevauchent](../shell/travel_compensate_overlapping_walls_enabled.md). L'extrusion de la deuxième ligne sera réduite de telle sorte qu'elle extrude autant de matériau que nécessaire pour remplir l'espace restant du mur, ce qui empêche la surextrusion.
 
-Si les murs se chevauchent en raison du [Outer Wall Inset](../shell/wall_0_inset.md), vous pouvez essayer de réduire cet encastrement pour éviter la surextrusion. Vous pouvez également essayer d'imprimer le [mur extérieur d'abord](../shell/outer_inset_first.md). L'excès de matériau sera alors poussé vers l'intérieur du modèle, où il est invisible.
+Si les murs se chevauchent en raison de l'[Insert de paroi externe](../shell/wall_0_inset.md), vous pouvez essayer de réduire ce décalage pour éviter la surextrusion. Vous pouvez également essayer d'imprimer le [mur extérieur d'abord](../shell/outer_inset_first.md). L'excès de matériau sera alors poussé vers l'intérieur du modèle, où il est invisible.
 
 Réglage direct du débit
 ----
