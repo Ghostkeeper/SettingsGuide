@@ -2,7 +2,7 @@ Velikost aktivační věže
 ====
 Toto nastavení upravuje šířku aktivační věže.
 
-![Šířka aktivační věže](../../../articles/images/prime_tower.svg)
+![Šířka aktivační věže](../images/prime_tower_cs.svg)
 
 Rozšířením aktivační věže se dosáhne lepší stability. To zvyšuje spolehlivost tisku.
 
