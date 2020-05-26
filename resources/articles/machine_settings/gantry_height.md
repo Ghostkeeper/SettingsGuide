@@ -8,4 +8,4 @@ Most 3D printers have their print head hanging on a cross bar or two. The shape 
 
 One exception is when only one object is loaded on the build plate. This object is allowed to be higher than the gantry height since there will be nothing else on the build plate that can collide with the gantry then.
 
-*Since this is a machine setting, it will not normally be listed in the normal list of settings. The gantry height can be changed in the printer settings dialogue, which can be found in the list of added printers in the preferences dialogue.*
+**Since this is a machine setting, it will not normally be listed in the normal list of settings. The gantry height can be changed in the printer settings dialogue, which can be found in the list of added printers in the preferences dialogue.**

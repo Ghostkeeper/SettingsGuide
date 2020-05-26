@@ -1,4 +1,4 @@
-Skirt/Brim Minimal Length
+Skirt/Brim Minimum Length
 ====
 This setting makes sure that the nozzle is primed enough before starting a print, by adding more skirt or brim lines than originally requested by the [Skirt Line Count](skirt_line_count.md) or [Brim Line Count](brim_line_count.md) setting. If the minimum length in this setting is not reached by the total circumference of all the skirt or brim lines added together, more contours will be added.
 

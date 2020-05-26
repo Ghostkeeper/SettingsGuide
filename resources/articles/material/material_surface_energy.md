@@ -4,4 +4,4 @@ This setting describes how strong the surface energy is with the printed materia
 
 The setting is not actually used by slicing at the moment, but some printer profiles use it to determine whether to use a prime tower or not.
 
-*The setting is not visible in Cura's interface. It can only be adjusted by the profiles.*
+**The setting is not visible in Cura's interface. It can only be adjusted by the profiles.**

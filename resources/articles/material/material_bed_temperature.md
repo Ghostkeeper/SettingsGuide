@@ -8,4 +8,4 @@ However if the build plate is kept too hot, the print will be very fluid where i
 
 If this setting is set to 0 degrees, Cura will not output any commands to change the build plate's temperature, which could confuse the firmware if there is no build plate.
 
-*When you adjust the build plate temperature in a material profile, this will adjust the [Default Build Plate Temperature](default_material_bed_temperature.md) setting. Normally the Build Plate Temperature will be equal to the Default Build Plate temperature, but sometimes choosing a different quality can make slight adjustments to the build plate temperature. This Build Plate Temperature setting is the one that actually gets used for the print.*
+**When you adjust the build plate temperature in a material profile, this will adjust the [Default Build Plate Temperature](default_material_bed_temperature.md) setting. Normally the Build Plate Temperature will be equal to the Default Build Plate temperature, but sometimes choosing a different quality can make slight adjustments to the build plate temperature. This Build Plate Temperature setting is the one that actually gets used for the print.**

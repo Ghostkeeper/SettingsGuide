@@ -6,4 +6,4 @@ The main use case for adjusting the flow is to compensate for some fault in the 
 
 It is almost always better to fix the actual problem causing the overextrusion or underextrusion, but adjusting the flow can be an easy temporary fix.
 
-*If you want the lines to be wider, it is better to adjust the actual line width setting. The line width doesn't necessarily need to be the same as the nozzle size. Adjusting the line width will also adjust the spacing between the lines which prevents overextrusion and underextrusion. Adjusting the flow doesn't adjust spacing.*
+**If you want the lines to be wider, it is better to adjust the actual line width setting. The line width doesn't necessarily need to be the same as the nozzle size. Adjusting the line width will also adjust the spacing between the lines which prevents overextrusion and underextrusion. Adjusting the flow doesn't adjust spacing.**

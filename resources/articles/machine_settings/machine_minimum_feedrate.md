@@ -6,4 +6,4 @@ The minimum speed is an adjustment to prevent errors in the firmware due to divi
 
 Cura uses this minimum feedrate in order to produce correct time estimates. It is applied when accelerating at the beginning of the print or after a pause, and when decelerating to a standstill at the end of a print or before a pause.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+**Since this is a machine setting, this setting is not normally visible in the settings list.**

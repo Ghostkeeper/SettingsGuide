@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000">
+	<!-- Connecting zigzaggy lines. -->
+	<polygon stroke="deepskyblue" stroke-width="30" fill="none" stroke-linejoin="bevel" points="500,350 500,50 606,394 818,182 650,500 950,500 606,606 818,818 500,650 500,950 394,606 182,818 350,500 50,500 394,394 182,182" />
+	<g stroke="darkblue" stroke-width="50" fill="none">
+		<!-- Concentric rings. -->
+		<circle cx="500" cy="500" r="450" />
+		<circle cx="500" cy="500" r="150" />
+	</g>
+
+	<!-- Pause locations. -->
+	<circle cx="500" cy="50" r="30" fill="red" />
+	<circle cx="818" cy="182" r="30" fill="red" />
+	<circle cx="950" cy="500" r="30" fill="red" />
+	<circle cx="818" cy="818" r="30" fill="red" />
+	<circle cx="500" cy="950" r="30" fill="red" />
+	<circle cx="182" cy="818" r="30" fill="red" />
+	<circle cx="50" cy="500" r="30" fill="red" />
+	<circle cx="182" cy="182" r="30" fill="red" />
+</svg>

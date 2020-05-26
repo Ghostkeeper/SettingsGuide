@@ -1,4 +1,4 @@
-#Copyright (C) 2019 Ghostkeeper
+#Copyright (C) 2020 Ghostkeeper
 #This plug-in is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
@@ -10,8 +10,8 @@ cmake_minimum_required(VERSION 3.10.2) #Oldest version it's been tested with.
 set(SETTINGSGUIDE_PLUGIN_NAME "Settings Guide" CACHE STRING "The name of the plug-in in distribution.")
 set(SETTINGSGUIDE_PLUGIN_ID "SettingsGuide2" CACHE STRING "The plug-in ID of the installation in Cura.") #Needs to be '2' because the original plug-in ID was reserved by Asasin for his original version.
 set(SETTINGSGUIDE_VERSION_MAJOR 2 CACHE STRING "The major version number, indicating a backward compatibility break.")
-set(SETTINGSGUIDE_VERSION_MINOR 2 CACHE STRING "The minor version number, indicating a forward compatibility break.")
-set(SETTINGSGUIDE_VERSION_PATCH 1 CACHE STRING "The patch version number, indicating an incremental improvement without compatibility break.")
+set(SETTINGSGUIDE_VERSION_MINOR 3 CACHE STRING "The minor version number, indicating a forward compatibility break.")
+set(SETTINGSGUIDE_VERSION_PATCH 0 CACHE STRING "The patch version number, indicating an incremental improvement without compatibility break.")
 set(SETTINGSGUIDE_SUPPORTED_SDKS "6.0.0;7.0.0" CACHE STRING "List of supported Cura SDK versions.")
 
 #Make sure we have Mistune.

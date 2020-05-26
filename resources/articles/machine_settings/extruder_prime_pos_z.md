@@ -6,4 +6,4 @@ Unlike the X and Y coordinate, this is a machine setting. This is because the ac
 
 The only thing this changes is the Z coordinate that Cura will command the nozzle to move to before the prime blob command is executed.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+**Since this is a machine setting, this setting is not normally visible in the settings list.**

@@ -1,6 +1,29 @@
+2.3.0 - Machine Language
+====
+This release adds translations of the guide, and new articles about the printer ("machine") settings.
+
+New Features
+----
+* If translations for an article are available, a button in the top right corner of the article allows switching the language.
+* Articles will now show their titles when viewed on Github.
+* By default, articles will be shown in the language configured for the rest of Cura (if translations are available).
+
+Bug Fixes
+----
+* The guide will no longer cause a (harmless) error to appear in the log upon starting Cura.
+* Links to articles in the same category work again on Windows.
+* The scroll position is no longer retained when switching articles.
+
+Articles
+----
+* Added articles for the printer/machine settings.
+* Added partial French translations.
+* Added partial Russian translations.
+* Added partial Dutch translations.
+
 2.2.1 - Bug Fixes
 ====
-* Fixed inter-article links
+* Fixed inter-article links.
 
 2.2.0 - The Bad One
 ====

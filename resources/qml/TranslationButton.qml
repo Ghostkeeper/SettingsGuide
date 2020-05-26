@@ -43,6 +43,7 @@ MouseArea {
 
 	function code_to_language(code) {
 		var language_mapping = {
+			"cs_CZ": "Čeština",
 			"en_US": "English",
 			"fr_FR": "Français",
 			"nl_NL": "Nederlands",

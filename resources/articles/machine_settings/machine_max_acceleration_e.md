@@ -6,4 +6,4 @@ This setting is only used to obtain correct time estimates. The [acceleration](.
 
 It is quite common that the acceleration limits for the feeder are hit, since (depending on the firmware) the acceleration set by Cura also affects the feeder. So it is crucial that this setting is configured correctly in order to get correct time estimates for retractions.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+**Since this is a machine setting, this setting is not normally visible in the settings list.**

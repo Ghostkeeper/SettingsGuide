@@ -279,6 +279,10 @@ class CuraSettingsGuide(Extension, QObject):
 		taken from the cache.
 		:param article_id: The ID of the article to get.
 		:param language: The language to get the article in.
+		:return: A list of article "parts". Each article part is a list, where
+		the first element indicates the type of part and the rest contains the
+		content. Possible types of parts are "rich_text", "images" or
+		"checkbox".
 		"""
 		if article_id in self.articles and language in self.articles[article_id]:
 			return self.articles[article_id][language]
@@ -317,6 +321,7 @@ class CuraSettingsGuide(Extension, QObject):
 						# The parts of the regex split alternate between text and checkbox description.
 						if index2 % 2 == 0:
 							if part_between_checkboxes:
+								part_between_checkboxes = QtMarkdownRenderer.QtMarkdownRenderer.preprocess_conditionals(part_between_checkboxes)
 								rich_text = self._markdown_per_folder[images_path](part_between_checkboxes)
 								parts.append(["rich_text", rich_text])
 						else:  # if index2 == 1:
@@ -337,6 +342,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self.articles[article_id][language] = parts
 		if article_id not in self.articles_rich_text:
 			self.articles_rich_text[article_id] = {}
+		markdown_str = QtMarkdownRenderer.QtMarkdownRenderer.preprocess_conditionals(markdown_str)
 		self.articles_rich_text[article_id][language] = self._markdown_per_folder[images_path](markdown_str)
 
 		return self.articles[article_id][language]

@@ -12,4 +12,4 @@ If the nozzle actually cools down more slowly than what this setting indicates, 
 
 The actual cool down speed is not a constant rate in degrees per second. More likely it will depend on the difference between the current nozzle temperature and the temperature of the build volume. As such it will cool down faster when it's hot, and it will cool down more slowly as it approaches the stand-by temperature. If you're tuning this, try to tune it by measuring the time it takes to cool from the [final printing temperature](../material/material_final_print_temperature.md) to the [stand-by temperature](../material/material_standby_temperature.md). This is the most important track that Cura will attempt to predict. When making small prints, you could increase the cool down speed slightly to adjust for that it stays hot more often.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+**Since this is a machine setting, this setting is not normally visible in the settings list.**

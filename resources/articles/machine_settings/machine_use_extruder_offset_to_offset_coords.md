@@ -8,4 +8,4 @@ Some printers would move the print head to the same location regardless of which
 
 Other printers automatically adjust the position of the print head such that the active nozzle is moved to the position indicated in the g-code. This means that if the g-code commands the printer to move to position [50,50], the currently active extruder would move to that position. The print head itself would move a bit to the side to position the active extruder there. If your printer behaves in that way, this setting should be disabled.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+**Since this is a machine setting, this setting is not normally visible in the settings list.**

@@ -58,6 +58,7 @@ The cross pattern draws a fractional pattern throughout the volume with cross-li
 * Easiest to bend of all patterns, since there are no long straight lines in this pattern.
 * Almost always draws the support in a single line, minimising the need for retractions or travel moves.
 
+<!--if cura_version >= 4.1-->
 Gyroid
 ----
 ![Gyroid](../images/support_pattern_gyroid.png)
@@ -66,5 +67,4 @@ The gyroid pattern is a wavy one, with a curve wiggling back and forth. The curv
 * Fairly sturdy pattern, increasing reliability.
 * The air between the support is a single volume. When printing with soluble support materials, this allows the solvent (water, ethanol or otherwise) to protrude to all the innards of the support structure, even if there is a brim underneath. This allows it to dissolve the support faster.
 * Supports all lines in the overhang evenly, regardless of their directions.
-
-**This pattern is new in Cura 4.1.**
+<!--endif-->

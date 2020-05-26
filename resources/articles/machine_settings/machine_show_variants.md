@@ -4,4 +4,4 @@ Up until Cura 2.1, this setting used to determine whether printer definitions de
 
 Since Cura 2.3, this setting no longer has any effect.
 
-*Since this is a machine setting, this setting is not normally visible in the settings list.*
+**Since this is a machine setting, this setting is not normally visible in the settings list.**

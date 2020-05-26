@@ -12,4 +12,4 @@ Spiralize mode is common among many slicers. It is also known as "vase mode" som
 * It will not be very strong.
 * It is difficult to get the print to be water tight if it has any size. For that, it's advisable to have at least 2 walls.
 
-*Spiralize will not work well with prints with many horizontal surfaces. It doesn't handle overhangs at all, and doesn't print top surfaces so nothing will be able to lean on a horizontal surface. It also doesn't work well when there are multiple parts on a layer.*
+**Spiralize will not work well with prints with many horizontal surfaces. It doesn't handle overhangs at all, and doesn't print top surfaces so nothing will be able to lean on a horizontal surface. It also doesn't work well when there are multiple parts on a layer.**

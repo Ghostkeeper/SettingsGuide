@@ -6,4 +6,4 @@ Most printers expect the g-code to specify how far the extrusion wheel has to tu
 
 Most printers nowadays use filament with a diameter of 1.75mm. Another common diameter is 2.85mm.
 
-*A material will only appear in the list of materials available to the printer, if the diameter of the filament is compatible with the extruder. Look into the Machine Settings panel of your printer (in the extruder's tab) to know which filaments your extruder train accepts.*
+**A material will only appear in the list of materials available to the printer, if the diameter of the filament is compatible with the extruder. Look into the Machine Settings panel of your printer (in the extruder's tab) to know which filaments your extruder train accepts.**
