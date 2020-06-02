@@ -5,4 +5,4 @@ Ce réglage permet d'ajuster la largeur du bord du support. Avec un bord de sout
 ![2mm de largeur](../../../articles/images/support_brim_2mm.png)
 ![4mm de largeur](../../../articles/images/support_brim_4mm.png)
 
-Un bord plus large augmentera l'adhérence du support à la plaque de construction et réduira le gauchissement du support. Par conséquent, le support sera plus solide, ce qui améliorera la fiabilité de l'impression.
+Un bord plus large augmentera l'adhérence du support au plateau d'impression et réduira le gauchissement du support. Par conséquent, le support sera plus solide, ce qui améliorera la fiabilité de l'impression.
