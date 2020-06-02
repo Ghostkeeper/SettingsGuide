@@ -6,4 +6,4 @@ Ce réglage permet de configurer le taux d'accélération de la tête d'impressi
 
 Comme le radeau est généralement constitué de longs segments de ligne, l'accélération croissante a normalement très peu d'impact sur le temps d'impression. Augmenter l'accélération permet cependant de gagner un peu de temps lors des passages dans les virages en fin de ligne.
 
-Augmenter le taux d'accélération fera vibrer davantage l'imprimante lors de l'impression de la couche centrale du radeau. Cela augmente légèrement le risque de tirer le radeau de la plaque de construction.
+Augmenter le taux d'accélération fera vibrer davantage l'imprimante lors de l'impression de la couche centrale du radeau. Cela augmente légèrement le risque de décoller le radeau du plateau d'impression.
