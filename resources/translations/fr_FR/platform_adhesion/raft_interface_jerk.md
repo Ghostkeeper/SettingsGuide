@@ -6,4 +6,4 @@ Ce réglage configure la vitesse à laquelle la buse peut passer dans les coins 
 
 Comme le radeau est généralement constitué de longs segments de ligne, l'augmentation du taux de secousse a normalement très peu d'impact sur le temps d'impression. Cependant, l'augmentation du taux de saccades permet de gagner un peu de temps lors du passage dans les coins en fin de ligne.
 
-Augmenter le taux de secousse fera vibrer davantage l'imprimante pendant l'impression de la couche centrale du radeau. Cela augmente légèrement le risque de tirer le radeau de la plaque de construction.
+Augmenter le taux de secousse fera vibrer davantage l'imprimante pendant l'impression de la couche centrale du radeau. Cela augmente légèrement le risque de décoller le radeau du plateau d'impression.
