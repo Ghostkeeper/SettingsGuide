@@ -4,6 +4,6 @@ Les tours de soutien ont un sommet pointu, qui fait la transition entre le pilie
 
 ![L'angle des toits des tours de soutien](../images/support_use_towers_fr.svg)
 
-Une valeur plus élevée fait que les tours de soutien ont un toit très pointu. La tour commence alors à réduire sa largeur un peu plus bas déjà, ce qui réduit la stabilité de la tour mais permet d'économiser du matériel et du temps d'impression.
+Une valeur plus élevée fait que les tours de soutien ont un toit très pointu. La tour commence alors à réduire sa largeur un peu plus bas déjà, ce qui réduit la stabilité de la tour mais permet d'économiser de la matière et du temps d'impression.
 
 Une valeur plus faible fait que les tours de support ont un toit plus plat.

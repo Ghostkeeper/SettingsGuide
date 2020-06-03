@@ -9,7 +9,7 @@ Les supports arborescents permettent d'éviter les obstacles lors de la croissan
 Le support de l'arbre est creux par défaut. Toutefois, les paramètres de support ordinaires s'appliquent toujours à la zone délimitée par les branches de l'arbre. En particulier, la [Densité du support](../support/support_infill_rate.md) peut être utilisée pour donner au support une plus grande résistance structurelle. Comme la nature du support de l'arbre est très irrégulière, il a normalement une grande rigidité pour remplir sa fonction.
 
 Le support d'arbre présente un certain nombre d'avantages par rapport à un support normal, pour n'en citer que quelques-uns :
-* Le support d'arbre utilise généralement beaucoup moins de matériau que le support ordinaire. Entre 25 et 50 % de l'utilisation du matériel est typique. Cela permet d'économiser beaucoup de temps et de coûts en matière.
+* Le support d'arbre utilise généralement beaucoup moins de matériau que le support ordinaire. Entre 25 et 50 % de l'utilisation de la matière est typique. Cela permet d'économiser beaucoup de temps et de coûts en matière.
 * Lorsqu'il est imprimé avec le même matériau que l'impression, le surplomb a tendance à être plus esthétique avec un support en forme d'arbre.
 * Le support en forme d'arbre est plus facile à enlever que le support ordinaire.
 * Le support en forme d'arbre laisse moins de cicatrices sur la surface que le support normal, car il permet d'atteindre la plaque de construction autour du modèle.

@@ -6,4 +6,4 @@ Ce réglage permet de configurer la largeur de ces tours.
 
 ![La largeur de la tour de support](../images/support_use_towers_fr.svg)
 
-Les tours plus larges prennent un peu plus de temps à imprimer et consomment plus de matériel, mais elles rendent également le support plus solide, ce qui améliore en fin de compte la fiabilité de l'impression.
+Les tours plus larges prennent un peu plus de temps à imprimer et consomment plus de matière, mais elles rendent également le support plus solide, ce qui améliore en fin de compte la fiabilité de l'impression.

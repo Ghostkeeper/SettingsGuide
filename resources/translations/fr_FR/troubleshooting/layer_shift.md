@@ -20,7 +20,7 @@ L'autre type de décalage de couche, celui qui se produit continuellement tout a
 
 Vous devriez d'abord examiner votre matériel. Les courroies sont-elles bien tendues ? Si ce n'est pas le cas, vous pouvez chercher un moyen de les resserrer. Certaines imprimantes ont des moteurs à position réglable qui vous permettent de serrer les courroies. Les poulies glissent-elles ? Serrez les boulons des poulies pour être sûr. Enfin, un problème électrique courant est que les moteurs ne reçoivent pas suffisamment de courant pour générer des forces assez fortes pour effectuer un virage serré. Dans ce cas, vérifiez si l'alimentation électrique est suffisante.
 
-Si le matériel fonctionne bien, vous pouvez également régler Cura  pour que les déplacements matériel soit plus facile. Voici quelques paramètres que vous pouvez ajuster :
+Si la matière fonctionne bien, vous pouvez également régler Cura  pour que les déplacements matériel soit plus facile. Voici quelques paramètres que vous pouvez ajuster :
 * Diminuer les [taux de secousse](../speed/jerk_print.md). Cela ralentira la tête d'impression avant de faire les coins. Cela rend le passage dans les coins plus souple, en lissant le coin au lieu de faire un virage serré.
 * Diminuez les [taux d'accélération](../speed/acceleration_print.md). La tête d'impression ralentira ainsi plus et plus longtemps avant de faire un virage ( la vitesse à laquelle la tête d'impression passera par le sommet du virage ne sera pas affectée ; c'est le but du réglage de l'accélération).
 * Diminuez la [vitesse de déplacement](../speed/speed_travel.md). Cela réduit la force avec laquelle la buse frotte sur les pièces déjà imprimées.

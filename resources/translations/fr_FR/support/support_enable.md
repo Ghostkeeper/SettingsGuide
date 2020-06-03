@@ -7,7 +7,7 @@ Ce réglage permet de créer des structures de support pour soutenir l'objet pen
 ![Marquer le modèle en rouge là où le support est nécessaire](../../../articles/images/support_enable_prepare_mode.png)
 ![Structure de support (en cyan) pour soutenir le modèle pendant l'impression](../../../articles/images/support_enable.png)
 
-L'impression d'un support prend beaucoup de temps et de matériel. Lorsque le support touche le modèle, il doit être cassé ou coupé plus tard, une fois l'impression terminée. Cela a tendance à laisser une cicatrice sur la surface.
+L'impression d'un support prend beaucoup de temps et de matière. Lorsque le support touche le modèle, il doit être cassé ou coupé plus tard, une fois l'impression terminée. Cela a tendance à laisser une cicatrice sur la surface.
 
 Cependant, le support est parfois complètement nécessaire. Par exemple, si le modèle comporte un morceau qui pointe vers le bas en direction de la plaque de construction, ce morceau serait sinon simplement suspendu en l'air.
 

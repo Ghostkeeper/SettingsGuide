@@ -1,6 +1,6 @@
 Largeur de retrait de la couche extérieure inférieure
 ====
-Enlève les parties fines des couches inférieures complètement remplies, en les imprimant avec du remplissage à la place. Cela permet d'économiser du temps et du matériel d'impression.
+Enlève les parties fines des couches inférieures complètement remplies, en les imprimant avec du remplissage à la place. Cela permet d'économiser du temps et de la matière d'impression.
 
 Dans le cas de surfaces abruptes, les couches inférieures deviennent souvent très minces. Elles ne sont pas nécessaires, car la résistance horizontale des parois est plus que suffisante si la surface est presque entièrement verticale.
 

@@ -6,4 +6,4 @@ Ce réglage est un seuil pour le diamètre d'un morceau de porte-à-faux permett
 
 Si une bande de surplomb très mince a besoin d'être soutenue, le support normal se renversera. Un tel support est trop bancal pour être imprimé correctement. Au lieu de cela, une tour plus solide est générée.
 
-En augmentant ce paramètre, les tours seront générées plus fréquemment. Cela augmente la fiabilité du support, mais nécessite aussi un peu plus de matériel et de temps d'impression.
+En augmentant ce paramètre, les tours seront générées plus fréquemment. Cela augmente la fiabilité du support, mais nécessite aussi un peu plus de matière et de temps d'impression.

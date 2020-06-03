@@ -8,4 +8,4 @@ Ce réglage indique à l'imprimante la distance à parcourir pour amener le fila
 
 Les matériaux qui se compriment plus facilement, comme le TPU ou le polypropylène, auront un facteur inférieur à celui des matériaux rigides comme le PLA.
 
-**Ce réglage n'est actuellement jamais visible dans l'interface de Cura. Il ne peut être réglé que par les profils. Il n'est pas non plus utilisé par Cura pendant le tranchage. Cependant, les imprimeurs qui comprennent le format de fichier de matériau de Cura peuvent l'utiliser pour déterminer comment déplacer le filament entre le chargeur et la buse.**
+**Ce réglage n'est actuellement jamais visible dans l'interface de Cura. Il ne peut être réglé que par les profils. Il n'est pas non plus utilisé par Cura pendant le tranchage. Cependant, les imprimantes qui comprennent le format de fichier de matériau de Cura peuvent l'utiliser pour déterminer comment déplacer le filament entre le chargeur et la buse.**

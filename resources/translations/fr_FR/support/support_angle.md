@@ -8,7 +8,7 @@ L'angle de porte_à_faux influence la quantité de matière placée pour souteni
 ![Un angle de porte-à-faux élevé génère moins de support](../../../articles/images/support_angle_high.png)
 ![Les zones prises en charge sont indiquées en rouge](../../../articles/images/support_angle_prepare_mode.png)
 
-En réduisant ce paramètre, l'imprimante prend en charge une plus grande partie de la partie imprimée, même les surfaces qui sont plus droites et qui ne s'affaissent pas beaucoup pendant l'impression. Si le support supporte des parties qui n'ont pas besoin d'être soutenues, cela augmentera inutilement le temps d'impression et l'utilisation de matériel et créera également des marques là où le support a touché l'impression.
+En réduisant ce paramètre, l'imprimante prend en charge une plus grande partie de la partie imprimée, même les surfaces qui sont plus droites et qui ne s'affaissent pas beaucoup pendant l'impression. Si le support supporte des parties qui n'ont pas besoin d'être soutenues, cela augmentera inutilement le temps d'impression et l'utilisation de matière et créera également des marques là où le support a touché l'impression.
 
 Cependant, il est parfois nécessaire de réduire l'angle du support pour éviter que le matériau ne s'affaisse trop. Cela améliore généralement la précision dimensionnelle de la pièce finale et permet également d'améliorer l'aspect des débords.
 

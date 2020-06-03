@@ -7,4 +7,4 @@ Avec ce paramètre, vous pouvez définir le nombre de couches inférieures solid
 
 * Augmentez pour améliorer la force.
 * Augmentez pour combler les espaces en bas de votre impression.
-* Réduisez pour raccourcir le temps d'impression et l'utilisation du matériel.
+* Réduisez pour raccourcir le temps d'impression et l'utilisation de la matière.
