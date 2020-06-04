@@ -49,11 +49,30 @@ class TestMarkdownSyntax(unittest.TestCase):
 		"""
 		find_space_within_link = re.compile(r"\[.*\]\s+\(.*\)")
 		for filename in self.all_articles():
-			with self.subTest():
+			with self.subTest(filename=filename):
 				with open(filename) as f:
 					contents = f.read()
 				for broken_link in find_space_within_link.findall(contents):
 					assert False, "Article {filename} contains a space within a link: {broken_link}".format(filename=filename, broken_link=broken_link)
+
+	def test_simplest_link(self):
+		"""
+		Tests if all links are in their simplest form.
+
+		Examples of incorrect links are:
+		`folder/../folder/file.md` (can be simplified to `folder/file.md`)
+		`folder/./folder/file.md` (can be simplified to `folder/folder/file.md`)
+		`./file.md` (can be simplified to `file.md`)
+		"""
+		find_link = re.compile(r"\[.*?\]\((.*?)\)")
+		for filename in self.all_articles():
+			with self.subTest(filename=filename):
+				with open(filename) as f:
+					contents = f.read()
+				for link_path in find_link.findall(contents):
+					if link_path.startswith("http://") or link_path.startswith("https://"):
+						continue  # Ignore web links for now, since os.path doesn't deal with them.
+					self.assertEqual(link_path, os.path.normpath(link_path))
 
 if __name__ == "__main__":
 	unittest.main()
