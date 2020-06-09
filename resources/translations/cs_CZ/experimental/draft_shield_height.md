@@ -1,6 +1,6 @@
 Výška ochranného štítu
 ====
-Pokud je parametr [Omezení ochranného štítu](draft_shield_height_limitation.md) je nastavena na „Omezen“, umožňuje tento parametr určit výšku, na kterou by měl být ochranný štít omezen.
+Pokud je parametr [Omezení ochranného štítu](draft_shield_height_limitation.md) je nastavena na "Omezen", umožňuje tento parametr určit výšku, na kterou by měl být ochranný štít omezen.
 
 ![Ochranný štít je omezen na výšku 20 mm](../../../articles/images/draft_shield_height_limitation.png)
 

@@ -1,6 +1,6 @@
 Typ přilnavosti tiskové plochy
 ====
-Existují tři typy přilnavosti k podložce tisku: sukénka, krempa a raft. Typ přilnavosti můžete také snadno deaktivovat nastavením parametru na Žadný.
+Existují tři typy přilnavosti k podložce tisku: sukénka, krempa a raft. Typ přilnavosti můžete také snadno deaktivovat nastavením parametru na Žádný.
 
 ![Sukénka](../../../articles/images/adhesion_type_skirt.png)
 ![Krempa](../../../articles/images/adhesion_type_brim.png)

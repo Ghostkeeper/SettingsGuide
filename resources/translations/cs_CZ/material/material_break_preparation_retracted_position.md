@@ -8,4 +8,4 @@ Toto nastavení upravuje druhou pozici, ve které je materiál zasunut, aby se m
 ![Za druhé se vlákno pomalu stahuje, aby vytáhlo tenké vlákno, které lze snadno zlomit a toto vlákno nechá ztuhnout](../../../articles/images/filament_switch_break_preparation.svg)
 ![Za třetí se vlákno rychle zatáhne a odlomí](../../../articles/images/filament_switch_break.svg)
 
-**Tento parametr není v rozhraní Cura v současné době viditelný. Může být definován pouze profily. Cura ho během slicování také nepoužívá. Tiskárny, které rozumí formátu souboru materiálu Cura, jej však mohou použít ke správné konfiguraci svého postupu změny vlákna.** Díky skriptu pro následné zpracování lze do tisku vložit příkaz "M600", který vyvolá změnu vlákna.
+**Tento parametr není v rozhraní Cura v současné době viditelný. Může být definován pouze profily. Cura ho během slicování také nepoužívá. Tiskárny, které rozumí formátu souboru materiálu Cura, jej však mohou použít ke správné konfiguraci svého postupu změny vlákna.** Díky skriptu pro následné zpracování lze do tisku vložit příkaz `M600`, který vyvolá změnu vlákna.

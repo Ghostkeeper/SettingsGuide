@@ -1,6 +1,6 @@
 Úhel převislé stěny
 ====
-Toto nastavení určuje prahový úhel, po kterém bude stěna označena jako „převislá stěna“. Tyto převislé stěny lze tisknout různou rychlostí pomocí nastavení [Rychlost tisku převislé stěny](wall_overhang_speed_factor.md).
+Toto nastavení určuje prahový úhel, po kterém bude stěna označena jako "převislá stěna". Tyto převislé stěny lze tisknout různou rychlostí pomocí nastavení [Rychlost tisku převislé stěny](wall_overhang_speed_factor.md).
 
 Pokud je tento parametr nastaven na 0°, bude se všemi stěnami zacházet jako s převislými stěnami. Pokud je tento parametr nastaven na 90°, nebude se žádná stěna považovat za převislou stěna. Stěny, které spočívají na podpěře, se také nepovažují za převislé stěny.
 

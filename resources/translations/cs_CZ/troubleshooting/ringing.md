@@ -1,6 +1,6 @@
 Vlnky
 ====
-Vlnky (někdy nazývané „duchové“) je efekt, kdy se vlnky objevují na jinak plochých površích poblíž malých detailů na tomto povrchu. Zvlnění se začne objevovat ihned po tisku malých detailů.
+Vlnky (někdy nazývané "duchové") je efekt, kdy se vlnky objevují na jinak plochých površích poblíž malých detailů na tomto povrchu. Zvlnění se začne objevovat ihned po tisku malých detailů.
 
 ![Zvlnění na povrchu](../../../articles/images/ringing.jpg)
 
@@ -8,7 +8,7 @@ Příčiny
 ----
 Vlny jsou způsobeny vibracemi vaší 3D tiskárny. Snažit se vyhnout zvlnění znamená omezit tyto vibrace. Jsou obzvláště výrazné, pokud se tisková hlava pohybuje v jedné z rezonančních frekvencí rámu vaší tiskárny.
 
-Toto je jedna z věcí, které se dražší 3D tiskárny obvykle pokoušejí vyhnout pomocí tužšího rámu, který méně vibruje. Mají silnější portál s tvrzenými ocelovými tyčemi a pruty nebo poskytují plně uzavřený rám vyrobený z velmi tuhého materiálu. To je ale drahé, takže levné modely 3D tiskáren nemají zdroje, které by zabránily vybracím. Tiskárny vybavené bowdenovou trubicí také nemají tolik vlnek, protože tisková hlava je mnohem lehčí než tisková hlava s přímým pohonem (protože motor s velkým posuvem spočívá na tisková hlava).
+Toto je jedna z věcí, které se dražší 3D tiskárny obvykle pokoušejí vyhnout pomocí tužšího rámu, který méně vibruje. Mají silnější portál s tvrzenými ocelovými tyčemi a pruty nebo poskytují plně uzavřený rám vyrobený z velmi tuhého materiálu. To je ale drahé, takže levné modely 3D tiskáren nemají zdroje, které by zabránily vibracím. Tiskárny vybavené bowdenovou trubicí také nemají tolik vlnek, protože tisková hlava je mnohem lehčí než tisková hlava s přímým pohonem (protože motor s velkým posuvem spočívá na tiskové hlavě).
 
 Ačkoli vlnky se projevují vodorovně, vibrace nejsou vždy vodorovné. Vibrace tiskové plochy nahoru a dolů ve vztahu k trysce je také velmi důležitým efektem, protože kapka plastu je rozdrcena a rozšíří se, když tisková plocha vibruje blíže nebo se zeslabí, když vibruje dále.
 
@@ -27,7 +27,7 @@ Pokud hardwarová řešení nejsou možná, můžete také omezit efekt zvlněn�
 
 Protože vibrace jsou způsobeny zrychlením tiskové hlavy, jsou nejdůležitější vylepšení zaměřena na snížení těchto zrychlení.
 * Snížení maximální [rychlosti tisku](../speed/speed_print.md) zkracuje dobu zrychlení.
-* Snížení hodnoty [zrychlení](../speed/acceleration_print.md) přímo snižuje zrychlení a sniží sílu vibrací.
+* Snížení hodnoty [zrychlení](../speed/acceleration_print.md) přímo snižuje zrychlení a sníží sílu vibrací.
 * Ve 3D tisku je [ryv (jerk)](../speed/jerk_print.md) průmyslový pojem, který označuje okamžité změny rychlosti v rozích. To znamená, že se v podstatě snaží nekonečně zrychlovat, aby v každém rohu nemusel příliš zpomalit. To způsobuje velmi vysoké zrychlení na krátkou dobu v každém rohu. Snížení ryvu (jerku) pak může také pomoci snížit vibrace. Místo krátkého a silného zrychlení zrychluje pomaleji a déle, což snižuje vysokofrekvenční vibrace, ale zvyšuje nízkofrekvenční vibrace.
 
 Díky těmto úpravám bude tisk trvat déle. Můžete se však také vyhnout vlnění jinými způsoby tím, že zamezíte typům pohybů, které to způsobují.

@@ -1,6 +1,6 @@
 Výška kroku schodů podpěry
 ====
-Pokud je položka [Umístění podpěry](support_type.md) nastavena na „Kdekoliv“, může být podpěra umístěna na modelu. Nebude však přesně sledovat obrysy modelu. Místo toho má podlaha podpěry stupňovitý vzor. Tímto způsobem podpěra naváže spojení s modelem pouze na několika místech.
+Pokud je položka [Umístění podpěry](support_type.md) nastavena na "Kdekoliv", může být podpěra umístěna na modelu. Nebude však přesně sledovat obrysy modelu. Místo toho má podlaha podpěry stupňovitý vzor. Tímto způsobem podpěra naváže spojení s modelem pouze na několika místech.
 
 Toto nastavení určuje výšku těchto schodů.
 

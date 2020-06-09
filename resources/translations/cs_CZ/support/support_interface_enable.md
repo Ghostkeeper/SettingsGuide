@@ -1,6 +1,6 @@
 Povolit rozhraní podpěry
 ====
-„Rozhraní podpěry“ je střední struktura mezi normální podpěrou a modelem. Tato struktura může upravit vlastnosti rozhraní podpěry s modelem, aniž by výrazně ovlivnila většinu podpěry.
+"Rozhraní podpěry" je střední struktura mezi normální podpěrou a modelem. Tato struktura může upravit vlastnosti rozhraní podpěry s modelem, aniž by výrazně ovlivnila většinu podpěry.
 
 ![Rozhraní podpěry je zobrazeno v tmavším odstínu modré](../../../articles/images/support_interface_enable.png)
 

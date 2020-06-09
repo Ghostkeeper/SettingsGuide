@@ -7,4 +7,4 @@ S tímto nastavením můžete definovat tloušťku pevných spodních vrstev tis
 
 * Zvětšení zvyšuje sílu.
 * Zvětšení pro vyplnění mezer ve spodní části tisku.
-* Sníženi pro zkrácení doby tisku a zmenšení spotřeby materiálu.
+* Snížení pro zkrácení doby tisku a zmenšení spotřeby materiálu.

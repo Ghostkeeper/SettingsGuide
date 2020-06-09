@@ -1,6 +1,6 @@
 Zarovnání švu v Z
 ====
-Tento parametr umožňuje zvolit, kam se má umístit šev každého obrysu. K dispozici je několik možností, které vám umožňují kontrolovat, kde je šev umístěn, aby se minimalizoval jeho dopad, nebo vám to umožní ho snadněji odstranit během následného zpracování.
+Tento parametr umožňuje zvolit, kam se má umístit šev každého obrysu. K dispozici je několik možností, které vám umožňují kontrolovat, kde je šev umístěn, aby se minimalizoval jeho dopad nebo vám to umožní ho snadněji odstranit během následného zpracování.
 
 Šev je místo, kde obrys začíná a končí tisk. I když je cesta trysky uzavřeným kruhem, v místě, kde začíná a končí vytlačování, je šev, protože proces tisku není nikdy úplně přesný. S tímto nastavením lze viditelnost švu minimalizovat skrytím nebo rozložením.
 

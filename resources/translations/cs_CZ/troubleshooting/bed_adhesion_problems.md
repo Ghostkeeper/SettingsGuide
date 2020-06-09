@@ -16,13 +16,13 @@ Krempa a raft jsou nejúčinnější techniky pro zvýšení přilnavosti, proto
 
 Je-li použita krempa, můžete dále zvýšit přilnavost zvýšením [šířky krempy](../platform_adhesion/brim_width.md). Také můžete přidat krempu do [vnitřku podpěry](../support/support_brim_enable.md) a do [aktivační věže](../dual/prime_tower_brim_enable.md) a také mezi [model a podpěru](../platform_adhesion/brim_replaces_support.md) a [vnitřní otvory](../platform_adhesion/brim_outside_only.md) modelu.
 
-Podobně, pokud se používá raft, můžete zvýšit přilnavost zvýšením [šířky raftu](../platform_adhesion/raft_margin.md). Raft bude vždy vytištěn pod vším, protože vrstvy se musí shodovat. Pokud je problémem přilnavost mezi modelem a raftem, zvažte snížení [vzduchové mezery](../platform_adhesion/raft_airgap.md) mezi raftem a modelem. Kromě toho můžete zvážit zvýšení [šířku základní linie raftu](../platform_adhesion/raft_base_line_width.md).
+Podobně, pokud se používá raft, můžete zvýšit přilnavost zvýšením [šířky raftu](../platform_adhesion/raft_margin.md). Raft bude vždy vytištěn pod vším, protože vrstvy se musí shodovat. Pokud je problémem přilnavost mezi modelem a raftem, zvažte snížení [vzduchové mezery](../platform_adhesion/raft_airgap.md) mezi raftem a modelem. Kromě toho můžete zvážit zvýšení [šířky základní linie raftu](../platform_adhesion/raft_base_line_width.md).
 
 Prevence deformace
 ----
 Pokud je váš tisk deformovaný, je kontaktní plocha mezi tiskem a montážní deskou výrazně zmenšena. Chcete-li tomu zabránit, přečtěte si článek o [deformacích](warping.md). Stručně řečeno, je zde několik úprav, aby k deformaci nedošlo.
 * Nastavte [vzor dolní počáteční vrstvy](../shell/top_bottom_pattern_0.md) na soustředný.
-* Snižte hodnotu [teploty tiskové podložkyy](../material/material_bed_temperature.md) a zvyšte hodnotu [teploty prostoru objemu tisku](../material/build_volume_temperature.md).
+* Snižte hodnotu [teploty tiskové podložky](../material/material_bed_temperature.md) a zvyšte hodnotu [teploty prostoru objemu tisku](../material/build_volume_temperature.md).
 * Upravte model tak, aby na první vrstvě bylo méně ostrých vnějších rohů.
 
 Různé úpravy
@@ -48,5 +48,5 @@ Existují také adhezivní metody přilnavosti na podložku, které můžete pou
 * Běžné lepicí tyčinky fungují velmi dobře. Přestože lepidlo rychle vysychá, vytváří drsný povrch se zvětšenou plochou, na kterou se může tisk přilepit. 
 * Maskovací páska má podobný účinek, protože má drsný povrch vyrobený z papíru, ale na rozdíl od papíru zůstává na desce sestavy dokonale plochá. Silnější typy maskovací pásky vyrobené pro venkovní použití jsou nejúčinnější. 
 * Vlasový sprej funguje podobně jako lepidlo v tom, že zanechává jemně zrnitý drsný povrch na tiskové podložce. Je velmi snadné ho aplikovat rovnoměrně. 
-* Na sestavovací desku naneste trochu brusného papíru, který ji zdrsní a zvětší kontaktní plochu. Nerostte to však příliš, nebo budete mít na nerovný povrch. K tomu použijte velmi jemnozrnný brusný papír, zrnitost 500 nebo více. 
-* Specializované „adhezní listy“ prodává mnoho dodavatelů 3D tiskáren, které lze natáhnout přes podložku tisku. Fungují podobně jako maskovací páska, ale vydrží déle. Některé jsou vyrobeny z plastu, který se také chemicky váže na tištěný materiál. 
+* Na sestavovací desku naneste trochu brusného papíru, který ji zdrsní a zvětší kontaktní plochu. Nerostte to však příliš nebo budete mít na nerovný povrch. K tomu použijte velmi jemnozrnný brusný papír, zrnitost 500 nebo více. 
+* Specializované "adhezní listy" prodává mnoho dodavatelů 3D tiskáren, které lze natáhnout přes podložku tisku. Fungují podobně jako maskovací páska, ale vydrží déle. Některé jsou vyrobeny z plastu, který se také chemicky váže na tištěný materiál. 

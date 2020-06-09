@@ -5,7 +5,7 @@ V tomto parametru můžete poskytnout obrázek, který určuje hustotu na různ�
 ![Hustota podpěry je po stranách důležitější](../../../articles/images/cross_support_density_image.png)
 ![Soubor obrázku použitý k vytvoření tohoto vzoru](../../../articles/images/cross_support_density_image_mask.png)
 
-Cesta k obrázku je poskytována jako místní cesta, například `C:\Projects\3D Printing\support_density.png` ve Windows nebo `/home/ghostkeeper/3d_printing/support_density.png` v Unixu. Les formats de fichiers supportés sont JPG, PNG, TGA, BMP, PSD, GIF, HDR et PIC. Podporované formáty souborů jsou JPG, PNG, TGA, BMP, PSD, GIF, HDR a PIC. Jas obrázku určuje hustotu výplně:
+Cesta k obrázku je poskytována jako místní cesta, například `C:\Projects\3D Printing\support_density.png` ve Windows nebo `/home/ghostkeeper/3d_printing/support_density.png` v Unixu. Podporované formáty souborů jsou JPG, PNG, TGA, BMP, PSD, GIF, HDR a PIC. Jas obrázku určuje hustotu výplně:
 * Tam, kde je obrázek černý, použije se [hustota podpěry](../support/support_infill_rate.md).
 * Tam, kde je obrázek bílý, hustota podpěry se přiblíží 0 %.
 

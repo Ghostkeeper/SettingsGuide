@@ -18,4 +18,4 @@ Parametry, které lze nastavit pro horní povrch, jsou následující:
 
 Chcete-li získat hezčí horní povrch, zkuste snížit rychlost a zvýšit ryv (jerk).
 
-Když tisknete horní povrch v jiné barvě (pomocí nastavení parametru [Extrudér pro horní povrch pláště](roofing_extruder_nr.md), často je nutné vytisknout v jiné barvě více než jednu vrstvu. Jinak bude původní barva vždy prosvítat.
+Když tisknete horní povrch v jiné barvě (pomocí nastavení parametru [Extrudér pro horní povrch pláště](roofing_extruder_nr.md)), často je nutné vytisknout v jiné barvě více než jednu vrstvu. Jinak bude původní barva vždy prosvítat.

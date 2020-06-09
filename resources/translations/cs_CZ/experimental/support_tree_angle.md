@@ -9,7 +9,7 @@ Zmenšením úhlu větve se větve zvýší. Pokud je zvýšíte, budou vodorovn
 
 Nejdůležitější efekty zvětšení úhlu větví pro stromovou podpěru jsou:
 * Snížení jizev, protože podpěra musí spočívat spíše na modelu než na podložce tisku. Pokud je [Umístění podpěry](../support/support_type.md) nastaveno na kontakt s deskou, lze podepřít více částí modelu.
-* Zkrácení doby tisku a použití materiálů díky oddělení větví ve vyšších úrovních. Větve jsou nařezány právě včas, aby bylo možné dosáhnout přesahu.Snížení doby tisku a spotřeby materiálu v důsledku odštěpení větví ve vyšších úrovních. Větve se oddělí právě včas, aby bylo možné dosáhnout převisu.
+* Zkrácení doby tisku a použití materiálů díky oddělení větví ve vyšších úrovních. Větve jsou nařezány právě včas, aby bylo možné dosáhnout přesahu. Snížení doby tisku a spotřeby materiálu v důsledku odštěpení větví ve vyšších úrovních. Větve se oddělí právě včas, aby bylo možné dosáhnout převisu.
 * Snížená spolehlivost. Pokud je úhel převisu příliš velký, bude podpěra výrazně oslabena, což zvyšuje riziko zlomení nebo převrácení podpěry.
 
 Je výhodné kombinovat velké úhly větví s malými hodnotami parametru [Rozlišení kolize stromové podpěry](support_tree_collision_resolution.md). Tím se sníží posuny v pozicích stromu kvůli zamezení kolize. Při nastavení kolizní vzdálenosti se zabrání příliš velké vzdálenosti převisu.

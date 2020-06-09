@@ -4,7 +4,7 @@ Pokud je toto nastavení povoleno, tiskárna vytvoří kolem vašeho obalu skoř
 
 ![Okolo modelu se vytiskne ochranný štít](../../../articles/images/draft_shield_enabled.png)
 
-Některé tiskárny a tiskové materiály jsou velmi citlivé na prostředí, ve kterém jsou tištěny. Tisk na různých místech na podložce tisku může vést k různým výsledkům, protože jsou citlivější na průvan zvenčí. Pokud je tisk ponechán přes noc a místnost se ochladí, může to mít významný dopad na tisk. Cílem tohoto nastavení je snížit tento efekt vytvořením malého izolovaného objemu kolem tisku. Slouží jako provizorní „vytápěný prostor“, který udržuje tisk v teple a chrání ho před studeným průvanem přicházejícím z vnějšku.
+Některé tiskárny a tiskové materiály jsou velmi citlivé na prostředí, ve kterém jsou tištěny. Tisk na různých místech na podložce tisku může vést k různým výsledkům, protože jsou citlivější na průvan zvenčí. Pokud je tisk ponechán přes noc a místnost se ochladí, může to mít významný dopad na tisk. Cílem tohoto nastavení je snížit tento efekt vytvořením malého izolovaného objemu kolem tisku. Slouží jako provizorní "vytápěný prostor", který udržuje tisk v teple a chrání ho před studeným průvanem přicházejícím z vnějšku.
 
 Štít se vytiskne současně při tisku modelu. Pokud je do tisku zapojeno několik extrudérů, bude štít vytištěn pomocí extrudéru, který začíná vrstvu. To se bude střídat z vrstvy na vrstvu.
 

@@ -14,4 +14,4 @@ Zvýšení počtu linií stěny:
 * Pokud je vzor výplně viditelný zvenku, snižte efekt prosvítání.
 * Zlepší převisy, protože linie stěn jsou obecně více orientovány k jejich nejbližšímu bodu podpěry.
 * Usnadní vodotěsnost modelu.
-* Zvyšte dobu tisku a spotřebu materiálu.
+* Zvyšuje dobu tisku a spotřebu materiálu.

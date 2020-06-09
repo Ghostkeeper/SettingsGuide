@@ -6,4 +6,4 @@ Snížení množství materiálu účinně zmenší šířku linie spodní stran
 
 Přílišné snížení průtoku však způsobí velkou změnu průtoku, zejména v kombinaci s [pomalejší rychlostí tisku](bridge_skin_speed_2.md). Ve skutečnosti nebude materiál schopen měnit svůj tok velmi rychle, což znamená, že linie budou o něco silnější, než se očekávalo, když se tok zpomalí a o něco tenčí, než se očekávalo, když se tok zrychlí.
 
-Také mějte na paměti, že s největší pravděpodobností budete chtít, aby spodní strana byla v určitém okamžiku uzavřena, ať už je vodotěsná, nebo jen aby vypadala lépe. Příliš mnoho vrstev s řídkou výplní vytváří hluboké štěrbiny, které by se mohly dokonce rozšířit do výplně.
+Také mějte na paměti, že s největší pravděpodobností budete chtít, aby spodní strana byla v určitém okamžiku uzavřena, ať už je vodotěsná nebo jen aby vypadala lépe. Příliš mnoho vrstev s řídkou výplní vytváří hluboké štěrbiny, které by se mohly dokonce rozšířit do výplně.

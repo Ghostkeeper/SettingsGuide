@@ -6,7 +6,7 @@ Povolit žehlení
 ![S aktivovaným žehlením si všimněte jemných čar nahoře](../../../articles/images/ironing_enabled_enabled.png)
 
 Žehlení umožňuje tisknout lineární vzor na horní povrch vašeho tisku. To má dva hlavní příznivé účinky:
-* Toto znovu roztaví horní povrch tím, že přes něj několikrát projde horkou tryskou. Odtud pochází název „žehlení“. Rychlost pohybu je velmi nízká a šířka linie je velmi malá, tryska povrch výrazně ohřívá. Plochá část trysky ji pak vyhladí.
+* Toto znovu roztaví horní povrch tím, že přes něj několikrát projde horkou tryskou. Odtud pochází název "žehlení". Rychlost pohybu je velmi nízká a šířka linie je velmi malá, tryska povrch výrazně ohřívá. Plochá část trysky ji pak vyhladí.
 * Vyplňuje mezery v horní ploše. Žehlící pohyb se provádí ve stejné výšce jako samotná vrstva. Má menší průtok než plná vrstva, ale stále má určitý tok. Teoreticky tento tok nemá kam jít, ale v praxi udržuje tlak uvnitř tryskové komory. Kdykoli tryska prochází nepravidelností povrchu, materiál v trysce proudí do tohoto prostoru.
 
 Žehlení však má i několik nevýhod:

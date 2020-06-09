@@ -1,10 +1,10 @@
 Aktivovat řízení ryvu (jerku)
 ====
-Jerk určuje rychlost, jakou může tryska procházet rohy. Pokud je aktivováno řízení ryvu (jerku), Cura převezme kontrolu nad množstvím ryvu (jerku), které má být aplikováno během různých částí tisku. Pokud je zakázáno, vybere hodnotu ryvu (jerku) firmware tiskáry. Tato hodnota je obvykle dostatečně vysoká, aby poskytla sliceru větší kontrolu, ale tiskárna může mít více informací o svém vlastním hardwaru, než má Cura.
+Jerk určuje rychlost, jakou může tryska procházet rohy. Pokud je aktivováno řízení ryvu (jerku), Cura převezme kontrolu nad množstvím ryvu (jerku), které má být aplikováno během různých částí tisku. Pokud je zakázáno, vybere hodnotu ryvu (jerku) firmware tiskárny. Tato hodnota je obvykle dostatečně vysoká, aby poskytla sliceru větší kontrolu, ale tiskárna může mít více informací o svém vlastním hardwaru, než má Cura.
 
 ![Vztah mezi rychlostí, zrychlením a ryvem (jerkem)](../images/velocity_acceleration_jerk_cs.svg)
 
-**Termín “ryv (jerk)” byl představen Marlinem. Byl zamýšlen jako řešení problému spojeného se snahou dokonale sledovat cestu. Protože se tryska nemůže teoreticky odchýlit od trajektorie, měla by se v každém rohu zpomalit na 0 mm/s. To by zničilo váš tisk, protože zpomalení na 0 mm/s by způsobilo v každém rohu skvrnu. Není dovoleno vytvářet křivky pro zkrácení rohu, ani pro jeho překročení. Místo toho Marlin umožňuje okamžitou změnu vektoru rychlosti v každém rohu. Velikost této změny ve vektoru rychlosti se nazývá „ryv (jerk)“.
+**Ryv (jerk) ve 3D tisku není totéž jako ryv (jerk) ve fyzice.** Termín "ryv (jerk)" byl představen Marlinem. Byl zamýšlen jako řešení problému spojeného se snahou dokonale sledovat cestu. Protože se tryska nemůže teoreticky odchýlit od trajektorie, měla by se v každém rohu zpomalit na 0 mm/s. To by zničilo váš tisk, protože zpomalení na 0 mm/s by způsobilo v každém rohu skvrnu. Není dovoleno vytvářet křivky pro zkrácení rohu, ani pro jeho překročení. Místo toho Marlin umožňuje okamžitou změnu vektoru rychlosti v každém rohu. Velikost této změny ve vektoru rychlosti se nazývá "ryv (jerk)".
 
 Ryv (jerk) je tedy maximální okamžitá změna rychlosti, aplikovaná na pohyb v každém rohu.
 
@@ -22,4 +22,3 @@ Vezměme například velmi jednoduchý tisk: Nejprve posun o 100 mm doprava, pot
 7. Zrychlení z 7,07 mm/s na 50 mm/s bude trvat 0,043 s.
 8. Tryska se po určitou dobu pohybuje opět rychlostí 50 mm/s, což je maximální rychlost tisku.
 9. Ke konci tisku tryska zpomalí z 50 mm/s na 0 mm/s za 0,05 s.
-

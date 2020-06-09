@@ -6,7 +6,7 @@ Když tisknete vrstvu po vrstvě, tryska se obvykle musí přesunout z jedné vr
 
 Při spirálování modelu nedostane model žádnou výplň ani vrcholy. Dostane pouze jednu stěnu a dno. Je důležité, pokud je aktivována funkce [Vyhladit spiralizované obrysy](smooth_spiralized_contours.md), výška trysky se bude postupně zvyšovat přes tloušťku vrstvy. Tímto způsobem se vytvoří spirála podle obrysu modelu. Nebude se pohybovat z jedné vrstvy na druhou, protože tryska se již postupně posunula směrem k další vrstvě. 
 
-Spiralizační režim je běžný u mnoha slicerů. Někdy se také nazývá „režim vázy“, protože je to dobrý způsob, jak tisknout vázy. Mezi některé další vlastnosti patří: 
+Spiralizační režim je běžný u mnoha slicerů. Někdy se také nazývá "režim vázy", protože je to dobrý způsob, jak tisknout vázy. Mezi některé další vlastnosti patří: 
 * Tiskne velmi rychle. 
 * Povrch je velmi hladký. 
 * Nebude moc silný. 

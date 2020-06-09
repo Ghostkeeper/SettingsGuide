@@ -4,7 +4,7 @@ Tento parametr určuje tloušťku obvodu podpěry stromu. V případě silnějš
 
 ![Použití tloušťky stěny 0,8 mm dává dvě kontury uvnitř stromové podpěry](../../../articles/images/support_tree_wall_count.png)
 
-Silnější stěny zlepší pevnost podpěry, zejména s velkými [úhly větví](support_tree_angle.md). To zvyšuje spolehlivost tisku a snižuje pravděpodobnost, že se větve podpory zlomí.
+Silnější stěny zlepší pevnost podpěry, zejména s velkými [úhly větví](support_tree_angle.md). To zvyšuje spolehlivost tisku a snižuje pravděpodobnost, že se větve podpěry zlomí.
 
 To však také výrazně prodlouží čas a spotřebu materiál pro podpěru.
 

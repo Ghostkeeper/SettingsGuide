@@ -1,6 +1,6 @@
 Omezení ochranného štítu
 ====
-Ochranný štít lze vytisknout buď na celou výšku modelu, nebo pouze na určitou výšku. Tento parametr umožňuje zvolit výšku ochranného štítu.
+Ochranný štít lze vytisknout buď na celou výšku modelu nebo pouze na určitou výšku. Tento parametr umožňuje zvolit výšku ochranného štítu.
 
 ![Ochranný štít je stejně vysoký jako model](../../../articles/images/draft_shield_enabled.png)
 ![Výška ochranného štítu je omezena na 20 mm](../../../articles/images/draft_shield_height_limitation.png)

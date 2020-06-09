@@ -2,7 +2,7 @@
 ====
 Pokud je toto nastavení povoleno, Cura vytlačí veškerou výplň z více vrstev najednou do horní vrstvy. Jedná se o extrémní formu parametru [Tloušťka vrstvy výplně](../infill/infill_sparse_thickness.md), ale bez cíle udržet tuhost výplně. Má určité funkce, aby se vypořádal s extrémním množstvím vytlačování.
 
-Tato vlastnost není pro běžné materiály funkční. Normálně budete chtít buď sílu běžných vzorů výplně, nebo výplň ignorovat. Existují však dva případy použití.
+Tato vlastnost není pro běžné materiály funkční. Normálně budete chtít buď sílu běžných vzorů výplně nebo výplň ignorovat. Existují však dva případy použití.
 
 Případy použití
 ----
@@ -18,7 +18,7 @@ Obě tyto aplikace vyžadují velmi speciální zacházení s vaší výplní. T
 * Mírně zvyšte svou hodnotu [teploty tisku](../material/material_print_temperature.md) (pro extrudér, který bude tisknout výplň). To umožňuje materiálu, aby správně z trysky vytékal, a umožňuje rychlejší vytlačování.
 * Nastavte [Zarovnání švu v Z](../shell/z_seam_type.md) na náhodné, aby se struktura náhodně rozšířila.
 
-**V pohledu vrstev v aplikaci Cura se výplň objeví jako velmi silné linie. Je to proto, že Cura předpokládá, že materiál zůstává na stejné vrstvě a šíří se tam. Ve skutečnosti ten bude klesat.
+**V pohledu vrstev v aplikaci Cura se výplň objeví jako velmi silné linie. Je to proto, že Cura předpokládá, že materiál zůstává na stejné vrstvě a šíří se tam. Ve skutečnosti ten bude klesat.**
 
 **Při použití špagetové výplně nemá parametr [Šířka linie výplně](../resolution/infill_line_width.md) žádný efekt. Šířka linie je upravena tak, aby vyhovovala potřebám parametrů [Vzdálenost linií výplně](../infill/infill_line_distance.md) a [hustotě toku](spaghetti_flow.md).**
 
