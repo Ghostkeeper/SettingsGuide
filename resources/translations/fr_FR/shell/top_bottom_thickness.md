@@ -13,5 +13,5 @@ Une épaisseur supérieure et inférieure plus importante aura plusieurs effets,
 * Votre pièce sera plus solide. Une épaisseur supérieure et inférieure plus importante signifie qu'une partie plus petite de votre impression sera remplie par le motif de remplissage épars. Au lieu de cela, elle sera rendue complètement solide.
 * La surface supérieure sera plus lisse. Les coussins et les affaissements de la peau supérieure seront aplanis dans les couches du dessus.
 * Il est plus probable que votre modèle soit étanche. Sur les côtés supérieur et inférieur, il y aura plus de couches pour empêcher l'eau ou d'autres fluides de pénétrer et pour récupérer les surplombs affaissés.
-* Votre empreinte utilisera plus de matériel, car plus de couches sont remplies complètement.
+* Votre empreinte utilisera plus de matière, car plus de couches sont remplies complètement.
 * Votre tirage prendra plus de temps, car il faudra déposer plus de matériau et ces couches sont normalement imprimées plus lentement que le remplissage.

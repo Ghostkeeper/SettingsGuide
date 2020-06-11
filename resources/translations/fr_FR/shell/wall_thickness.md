@@ -14,4 +14,4 @@ Augmenter l'épaisseur de la paroi le fera :
 * Réduire l'effet de brillance lorsque le motif de remplissage est visible à l'extérieur.
 * Améliorer les surplombs, car les lignes de la paroi sont généralement plus orientées vers leur point de repos le plus proche.
 * Rendre le modèle étanche plus facilement.
-* Augmenter considérablement le temps d'impression et l'utilisation du matériel d'impression.
+* Augmenter considérablement le temps d'impression et l'utilisation de la matière d'impression.

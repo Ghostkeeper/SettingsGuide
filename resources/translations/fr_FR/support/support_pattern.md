@@ -58,6 +58,7 @@ Le motif en croix dessine un motif fractionnaire dans tout le volume avec des fo
 * Le plus facile à plier de tous les motifs, car il n'y a pas de longues lignes droites dans ce motif.
 * Le support est presque toujours dessiné en un seul parcours, ce qui minimise le besoin de rétractions ou de déplacements.
 
+<!--if cura_version >= 4.1-->
 Gyroïde
 ----
 ![Gyroïde](../../../articles/images/support_pattern_gyroid.png)
@@ -66,7 +67,6 @@ Le motif gyroïde est ondulé, avec une courbe qui fait faire des va et vient à
 * Modèle assez robuste, ce qui augmente la fiabilité.
 * L'air entre le support est un volume unique. Lors de l'impression avec des matériaux de support solubles, cela permet au solvant (eau, éthanol ou autre) de dépasser à l'intérieur de la structure de support, même s'il y a un rebord en dessous. Cela lui permet de dissoudre le support plus rapidement.
 * Supporte toutes les lignes du surplomb de manière égale, quelle que soit leur direction.
-
-**Ce modèle est nouveau depuis la version Cura 4.1.**
+<!--endif-->
 
 

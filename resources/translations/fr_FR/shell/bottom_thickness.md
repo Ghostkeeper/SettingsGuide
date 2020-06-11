@@ -7,4 +7,4 @@ Avec ce réglage, vous pouvez définir l'épaisseur des couches inférieures sol
 
 * Augmenter pour améliorer la force.
 * Augmentez pour combler les espaces en bas de votre impression.
-* Réduire pour raccourcir le temps d'impression et l'utilisation du matériel.
+* Réduire pour raccourcir le temps d'impression et l'utilisation de la matière.

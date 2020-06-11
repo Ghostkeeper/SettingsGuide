@@ -4,6 +4,6 @@ C'est un paramètre qui était autrefois utilisé de la même manière que le [P
 
 ![Dimensions de la tête d'impression](../images/head_dimensions_fr.svg)
 
-Cependant, dans les versions ultérieures, il est apparu clairement que les ventilateurs pouvaient entrer en collision tout aussi bien que le reste de la tête d'impression. Ce paramètre est finalement supprimé dans Cura 4.5, même s'il n'était pas utilisé à bon escient dans de nombreuses versions antérieures. Dans votre version actuelle de Cura, ce paramètre n'a aucun effet.
+Cependant, dans les versions ultérieures, il est apparu clairement que les ventilateurs pouvaient entrer en collision tout aussi bien que le reste de la tête d'impression. <!--if cura_version >= 4.5 -->Ce paramètre est finalement supprimé dans Cura 4.5, même s'il n'était pas utilisé à bon escient dans de nombreuses versions antérieures. Dans votre version actuelle de Cura, ce paramètre n'a aucun effet.<!--endif-->
 
 *Comme il s'agit d'un réglage de la machine, ce réglage n'est normalement pas visible dans la liste des réglages.*

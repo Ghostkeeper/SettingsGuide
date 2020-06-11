@@ -7,4 +7,4 @@ La vitesse du ventilateur commence à la valeur du paramètre [vitesse des venti
 
 * L'augmentation de ce paramètre peut améliorer l'adhérence au lit.
 * Réduisez ce réglage si vous constatez des problèmes de pattes d'éléphant ou de suintement.
-* Si votre plaque de construction est chauffée à une température élevée, vous devrez peut-être réduire ce réglage afin d'éviter les pattes d'éléphant ou les suintements.
+* Si votre plateau d'impression est chauffé à une température élevée, vous devrez peut-être réduire ce réglage afin d'éviter les pattes d'éléphant ou les suintements.

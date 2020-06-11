@@ -10,4 +10,4 @@ La tour d'amorçage est constituée d'une enveloppe extérieure qui est entière
 
 En plus de l'amorçage, la buse effectuera également un mouvement à l'intérieur de la tour pour essuyer tout matériau de la buse qui s'est accumulé pendant la mise en veille. Cela empêche le suintement de coller à l'impression. C'est pourquoi la tour d'amorçage est aussi parfois appelée *tour d'essuyage*.
 
-Les inconvénients de la tour d'impression sont qu'elle prend un peu plus de temps pour imprimer et qu'elle prend de la place sur le plateau d'impression.
+Les inconvénients de la tour d'amorçage sont qu'elle prend un peu plus de temps pour imprimer et qu'elle prend de la place sur le plateau d'impression.

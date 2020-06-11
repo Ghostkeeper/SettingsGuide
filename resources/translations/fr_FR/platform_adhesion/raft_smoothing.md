@@ -9,4 +9,4 @@ Le terme technique pour cela est une [opération de fermeture morphologique](htt
 
 La fonction de ce réglage est de rendre le radeau plus rigide. Lorsque plusieurs pièces sont reliées par des raccords fins, le radeau peut se plier à ces endroits. Cela les rend moins rigides et moins résistants au gauchissement. En augmentant ce réglage, les pièces séparées seront mieux connectées, ce qui rendra le radeau plus solide. La surface du radeau sera plus grande, donc le radeau collera mieux. De plus, le radeau aura une circonférence totale plus petite, ce qui réduira les endroits où le gauchissement peut commencer. Au total, il devrait y avoir moins de déformation.
 
-Cependant, le volume total du radeau sera également augmenté. Cela utilise plus de matériel et prend plus de temps à imprimer, d'autant plus que le radeau est normalement imprimé très lentement.
+Cependant, le volume total du radeau sera également augmenté. Cela utilise plus de matière et prend plus de temps à imprimer, d'autant plus que le radeau est normalement imprimé très lentement.

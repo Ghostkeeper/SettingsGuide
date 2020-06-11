@@ -1,6 +1,6 @@
 Activer le contrôle de saccade
 ====
-la Saccade (jerk) détermine la vitesse à laquelle la buse peut passer dans les virages. Si le contrôle des saccades est activé, Cura prend le contrôle de la quantité de saccade à appliquer pendant les différentes parties de l'impression. S'il est désactivé, le microprogramme de l'imprimante choisira une valeur de saccade. Cette valeur est généralement assez élevée pour donner plus de contrôle au logiciel, mais l'imprimante peut avoir plus d'informations sur son propre matériel que Cura n'en a. 
+la Saccade (jerk) détermine la vitesse à laquelle la buse peut passer dans les virages. Si le contrôle des saccades est activé, Cura prend le contrôle de la quantité de saccade à appliquer pendant les différentes parties de l'impression. S'il est désactivé, le microprogramme de l'imprimante choisira une valeur de saccade. Cette valeur est généralement assez élevée pour donner plus de contrôle au logiciel, mais le fabricant peut avoir plus d'informations sur son propre matériel que Cura n'en a. 
 
 ![La relation entre la vitesse, l'accélération et la saccade](../images/velocity_acceleration_jerk_fr.svg)
 
