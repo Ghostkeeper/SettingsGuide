@@ -1,4 +1,4 @@
-Vitesse de la tour primaire (d'amorçage)
+Vitesse de la tour d'amorçage
 ====
 Ce paramètre configure la vitesse à laquelle la tour principale est imprimée.
 

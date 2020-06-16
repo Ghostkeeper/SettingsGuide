@@ -1,4 +1,4 @@
-Débit de la tour primaire (d'amorçage)
+Débit de la tour d'amorçage
 ====
 Le débit de la tour d'amorçage. Si on l'augmente, plus de matière est poussée dans un espace plus restreint.
 

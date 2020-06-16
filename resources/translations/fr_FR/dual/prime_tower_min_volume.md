@@ -1,4 +1,4 @@
-Volume minimum de la tour primaire
+Volume minimum de la tour d'amorçage
 ====
 Cela indique la quantité de matière à purger à chaque changement d'extrudeuse. L'idée est qu'un certain volume aura suinté de la buse lorsqu'elle était en veille. Le volume d'amorçage indiqué par ce réglage est censé compenser cela.
 
