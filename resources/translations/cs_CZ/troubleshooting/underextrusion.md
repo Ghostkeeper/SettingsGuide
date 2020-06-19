@@ -1,8 +1,8 @@
 Pod-extruze
 ====
-Jedním z nejčastějších problémů s 3D tiskem je to, že tiskárna nevysouvá dostatek materiálu k vytvoření pěkného pevného objektu. Když k tomu dojde, mluvíme o „pod-extruzi“: Tryska vytlačuje méně materiálu, než se očekávalo.
+Jedním z nejčastějších problémů s 3D tiskem je to, že tiskárna nevysouvá dostatek materiálu k vytvoření pěkného pevného objektu. Když k tomu dojde, mluvíme o "pod-extruzi": Tryska vytlačuje méně materiálu, než se očekávalo.
 
-![Extrémní případ podextruse, kde můžete dokonce vidět vnitřek objektu](../../../articles/images/underextrusion.jpg)
+![Extrémní případ podextruze, kde můžete dokonce vidět vnitřek objektu](../../../articles/images/underextrusion.jpg)
 
 Podextruze se také může projevit mnoha způsoby. V nejextrémnějším případě je objekt velmi křehký a jeho vnitřní části jsou vidět přes povrch. Někdy je vidět, že šířka linií je příliš malá, takže se nepřipojují k sousedním liniím. Někdy se projevuje pouze malými otvory v horním povrchu nebo malými zlomeninami ve stěnách.
 
@@ -14,7 +14,7 @@ Pokud vaše tiskárna dříve tiskla velmi dobře a najednou vykazuje pod-extruz
 
 Ucpané trysky jsou běžným jevem u jakékoli 3D tiskárny. K tomu může dojít, když je vlákno kontaminováno prvky, které se dobře neroztavují a jsou tlačeny do trysky. K tomu může také dojít, když je vlákno samo v trysce spáleno. K tomu může dojít, když je plast příliš tvrdý nebo příliš dlouho udržovaný na vysoké hodnotě. Materiál se degraduje, polymery krystalizují a nakonec skončí kusem tvrdého plastu, který se v trysce neroztaví. Chcete-li to napravit, musíte z trysky odstranit zbytky.
 
-Existuje několik technik pro odstranění nečistot z trysky. Pokud máte akupunkturní jehlu nebo jiný tenký kovový kolík, můžete ho vytlačit zdola. Nejběžnější technika je však známá jako „atomová vytažení“. Pro provedení této techniky vezměte kus vlákna alespoň 50 cm dlouhý, nejlépe z materiálu s vysokou teplotou tání. Zahřívejte trysku na bod tání tohoto vlákna (například 190°C pro PLA) a potom tlačte vlákno kleštěmi dovnitř, dokud z trysky nevyjde určitý materiál. Potom nechte trysku vychladnout na teplotu skelného přechodu (např. 60°C pro PLA), a přitom tlačte vlákno dolů do trysky. Těsně před dosažením skelného přechodu vlákno rychle vytáhněte. Pokud je konec vlákna znečištěn černým plastem, odřízněte ho a zkuste to znovu, dokud nebude čistý. Zkuste něco vytisknout znovu a snad to bude nyní lepší.
+Existuje několik technik pro odstranění nečistot z trysky. Pokud máte akupunkturní jehlu nebo jiný tenký kovový kolík, můžete ho vytlačit zdola. Nejběžnější technika je však známá jako "atomová vytažení". Pro provedení této techniky vezměte kus vlákna alespoň 50 cm dlouhý, nejlépe z materiálu s vysokou teplotou tání. Zahřívejte trysku na bod tání tohoto vlákna (například 190°C pro PLA) a potom tlačte vlákno kleštěmi dovnitř, dokud z trysky nevyjde určitý materiál. Potom nechte trysku vychladnout na teplotu skelného přechodu (např. 60°C pro PLA), a přitom tlačte vlákno dolů do trysky. Těsně před dosažením skelného přechodu vlákno rychle vytáhněte. Pokud je konec vlákna znečištěn černým plastem, odřízněte ho a zkuste to znovu, dokud nebude čistý. Zkuste něco vytisknout znovu a snad to bude nyní lepší.
 
 Prokluzující podavač
 ----

@@ -8,6 +8,6 @@ Rozlišení krokového motoru v typické spotřebitelské 3D tiskárně je v roz
 
 Prevence
 ----
-Krokové motory si mohou vybrat mezi několika strategiemi otáčení svých hřídelí, ale jedná se o kompromis mezi rozlišením, točivým momentem a hlukem. Některé firmware tyto parametry automaticky upravují podle rychlosti pohybu. Některý firmware vám to také umožňuje upravit z G kódu. Například příkaz „M350“ z g-kódu může být umístěn do počátečního g-kódu pro manuální konfiguraci. Cura (v současné době) nemá žádný způsob, jak to nakonfigurovat automaticky na základě rychlosti nebo struktury.
+Krokové motory si mohou vybrat mezi několika strategiemi otáčení svých hřídelí, ale jedná se o kompromis mezi rozlišením, točivým momentem a hlukem. Některé firmware tyto parametry automaticky upravují podle rychlosti pohybu. Některý firmware vám to také umožňuje upravit z G kódu. Například příkaz `M350` z g-kódu může být umístěn do počátečního g-kódu pro manuální konfiguraci. Cura (v současné době) nemá žádný způsob, jak to nakonfigurovat automaticky na základě rychlosti nebo struktury.
 
 Nejspolehlivějším způsobem, jak se tomuto jevu vyhnout, je upravit model tak, aby aliasy nebyly viditelné. Otočte svůj model, aby nedošlo k efektu aliasingu. Pokud má váš model (téměř) rovnou stěnu, ujistěte se, že je zcela vyrovnán s osami nebo nakloněn o několik stupňů od nich.

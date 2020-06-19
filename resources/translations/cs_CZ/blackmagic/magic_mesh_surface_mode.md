@@ -2,7 +2,7 @@ Povrchový režim
 ====
 Cura obvykle vytváří průřezy všech trojúhelníků ve vaší síti. Tyto úsečky jsou vzájemně spojeny a vytvářejí smyčky. Smyčky, které nejsou uzavřeny, budou odmítnuty.
 
-Tento parametr řídí, co se bude dělat s těmito neuzavřenými smyčkami. Pokud je tento parametr nastaven na „Normální“, budou odmítnuty. Pokud je nastavena na „Povrch“, všechny průřezy se vytisknou jako obrysy. Pokud je parametr nastaven na "Oba", uzavřené obrysy se tisknou normálně, ale neuzavřené obrysy se tisknou samostatně jako další stěny.
+Tento parametr řídí, co se bude dělat s těmito neuzavřenými smyčkami. Pokud je tento parametr nastaven na "Normální", budou odmítnuty. Pokud je nastavena na "Povrch", všechny průřezy se vytisknou jako obrysy. Pokud je parametr nastaven na "Oba", uzavřené obrysy se tisknou normálně, ale neuzavřené obrysy se tisknou samostatně jako další stěny.
 
 ![Normální režim nebere v úvahu jedinečnou neuzavřenou oblast vpravo](../../../articles/images/magic_mesh_surface_mode_normal.png)
 ![Režim povrchu tiskne pouze povrchové oblasti, aniž by je považoval za uzavřené objemy](../../../articles/images/magic_mesh_surface_mode_surface.png)

@@ -1,6 +1,6 @@
 Rychlost Z-skoku
 ====
-Tento parametr konfiguruje rychlost pohybu, při které jsou prováděny vertikální pohyby v Z-skoku. Vodorovné pohyby Z -skoku nejsou ovlivněny, protože jsou konfigurovány pomocí parametru [Rychlost přesunu](speed_travel.md).
+Tento parametr konfiguruje rychlost pohybu, při které jsou prováděny vertikální pohyby v Z-skoku. Vodorovné pohyby Z-skoku nejsou ovlivněny, protože jsou konfigurovány pomocí parametru [Rychlost přesunu](speed_travel.md).
 
 ![Svislý pohyb se provádí rychlostí Z-skoku](../images/speed_z_hop_cs.svg)
 

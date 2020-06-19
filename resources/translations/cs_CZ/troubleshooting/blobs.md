@@ -13,14 +13,14 @@ Pokud se tryska pohybuje v určité cestě pomaleji než v jiných, uloží tam 
 Přísun materiálu se tím pravděpodobně sníží. I když se však extrudér pohybuje pomaleji, může to trvat několik sekund, než se odpovídajícím způsobem sníží průtok vycházející z otvoru trysky. Během této doby bude vytlačováno příliš mnoho materiálu, což dává tyto kapky.
 
 Chcete-li bojovat proti tomuto jevu, podívejte se na následující nastavení:
-* Vyrovnejte rychlost [vnější stěny](../speed/speed_wall_0.md) tak, aby byla identická s rychlostí toho, co je před ní vytištěno (jako [vnitřní stěny](../speed/speed_wall_x.md) nebo [výplň](../speed/speed_infill.md)). Pak nedojde ke zpomalení.
+* Vyrovnejte rychlost [vnější stěny](../speed/speed_wall_0.md) tak, aby byla identická s rychlostí toho, co je před ní vytištěno (jako [vnitřní stěny](../speed/speed_wall_x.md) nebo [výplň](../speed/speed_infill.md). Pak nedojde ke zpomalení.
 * Zvyšte hodnotu [ryvu (jerku) vnější stěny](../speed/jerk_wall_0.md). To zabrání zpomalení trysky v rozích.
 * Můžete snížit hodnotu [rozlišení](../meshfix/meshfix_maximum_resolution.md) a zvýšit [odchylku](../meshfix/meshfix_maximum_deviation.md), abyste zabránili ovladači pohybu zpomalit trysku, abyste udrželi krok s g-kódy, které musí zpracovat.
 * Deaktivujte parametr [Kompenzovat překrytí vnější stěny](../shell/travel_compensate_overlapping_walls_0_enabled.md). Tento parametr se používá k vytvoření nových pohybových příkazů s různými rychlostmi posuvu. Deaktivace této funkce snižuje počet příkazů pohybu ve stěně.
 
 Tryska se zastaví
 ----
-Pokud se tryska zastaví během tisku vnější stěny, je velmi pravděpodobné, že čeká, až procesor vaší 3D tiskárny zpracuje nové příkazy k pohybu. Software pro plánování pohybu tiskárny obvykle udržuje vyrovnávací paměť s předem zpracovanými příkazy připravenými pro takové případy, když již byly zpracovány příkazy k pohybu, takže tiskárna přesně zná časy aktivace krokových motorů nebo jiných pohybů. Pokud dojde tato vyrovnávací paměť, hovoříme o „podběhu vyrovnávací paměti“. To způsobí, že se na povrchu objeví kapky.
+Pokud se tryska zastaví během tisku vnější stěny, je velmi pravděpodobné, že čeká, až procesor vaší 3D tiskárny zpracuje nové příkazy k pohybu. Software pro plánování pohybu tiskárny obvykle udržuje vyrovnávací paměť s předem zpracovanými příkazy připravenými pro takové případy, když již byly zpracovány příkazy k pohybu, takže tiskárna přesně zná časy aktivace krokových motorů nebo jiných pohybů. Pokud dojde tato vyrovnávací paměť, hovoříme o "podběhu vyrovnávací paměti". To způsobí, že se na povrchu objeví kapky.
 
 Chcete-li tomu zabránit, měli byste snížit rozlišení g-kódu.
 * Zvyšte parametr [Maximální rozlišení](../meshfix/meshfix_maximum_resolution.md), který umožňuje aplikaci Cura produkovat delší segmenty linií.
@@ -30,12 +30,12 @@ Chcete-li tomu zabránit, měli byste snížit rozlišení g-kódu.
 
 Přesuny prochází stěnami
 ----
-Přestože se Cura obecně vyhýbá co nejvíce překročení vnější zdi, je to někdy nevyhnutelné. Pokud tryska nese vytekající materiál, když prochází vnější stěnou, může být tento materiál tam setřen a zanechává kapku.
+Přestože se Cura obecně vyhýbá co nejvíce překročení vnější zdi, je to někdy nevyhnutelné. Pokud tryska nese vytékající  materiál, když prochází vnější stěnou, může být tento materiál tam setřen a zanechává kapku.
 
-Je možné se vyhnout této příčině apek úpravou následující parametrů:
+Je možné se vyhnout této příčině kapek úpravou následující parametrů:
 * Ujistěte se, že je aktivována funkce [objezd](../travel/retraction_combing.md). To umožňuje, aby tryska obcházela stěny co nejvíce, místo aby jimi procházela.
 * Aktivujte [Z-skoky](../travel/retraction_hop_enabled.md). Pokud jsou stěny zkřížené, tryska se bude pohybovat trochu nahoru, aby prošla přes stěny místo aby je překročila. Vytékající materiál pravděpodobně nebude setřen na zdi, ale v bodě, kde tryska přistane po pohybu. Cura se bude vždy snažit přistát na výplni nebo na plášti, pokud to bude možné.
-* Ujistěte se, že [pořadí tisku stěn je optimalizováno](../shell/optimize_wall_printing_order.md). To snižuje počet pohybů prováděných při tisku na stěny, což umožňuje efektivnější pohyby a snižuje riziko, že některé z těchto pohybů budou muet projít vnější stěnou.
+* Ujistěte se, že [pořadí tisku stěn je optimalizováno](../shell/optimize_wall_printing_order.md). To snižuje počet pohybů prováděných při tisku na stěny, což umožňuje efektivnější pohyby a snižuje riziko, že některé z těchto pohybů budou muset projít vnější stěnou.
 
 Zvýšený tlak
 ----

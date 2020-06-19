@@ -12,7 +12,7 @@ Návrh vaší formy
 Generace forem Cura není dokonalá. Některé prvky chybí. Zde je několik tipů, jak je opravit.
 * Cura nevytváří vtoky pro všechna lokální maxima ve vašem modelu. Do svého modelu musíte přidat svislé pruty, kdekoli vtok potřebujete.
 * Cura neumožňuje doplnění dalšího materiálu pro případ, že se materiál během ochlazování smršťuje. Pokud používáte materiál, který se hodně smršťuje, budete muset přidat další vtoky do nejvyššího bodu vašeho modelu.
-* Forma Cury je vždy z jednoho kusu. Pro mnoho tvarů to znamená, že forma musí být zničena, aby byla odstraněna. Formy mohou být zničeny různými způsoby; pouhou silou nebo zahřátím, pokud to materiál uvnitř umožňuje, nebo použitím materiálu jako je PVA, který se ve vodě rozpustí.
+* Forma Cury je vždy z jednoho kusu. Pro mnoho tvarů to znamená, že forma musí být zničena, aby byla odstraněna. Formy mohou být zničeny různými způsoby; pouhou silou nebo zahřátím, pokud to materiál uvnitř umožňuje nebo použitím materiálu jako je PVA, který se ve vodě rozpustí.
 * Cura nedovolí vložit pruty nebo dráty k posílení formy. Chcete-li to umožnit, vložte do svého modelu další tyče, aby jim Cura nechala dutiny, a poté vložte do formy tyč nebo drát.
 * Podříznutí ve vaší formě jsou generovány bez varování. Pokud váš díl potřebuje hodně podříznutí, budete potřebovat nějaké vtoky nebo jiné kanály, abyste tam dostali materiál, aby tam správně tekl a aby se vzduch dostal ven. Také si uvědomte, že vaše formu může být nutné zničit, aby se po vyhlazení dostala součást ven.
 
@@ -22,7 +22,7 @@ Ideální forma je:
 * velmi tuhá
 * odolná vůči vysokým teplotám
 * chemicky inertní, takže se neváže na váš formovací materiál
-* nezmršťuje se
+* nesmršťuje se
 
 Kromě toho musí být některé formy zničeny, aby bylo možné model vyjmout. Za tímto účelem si můžete vybrat křehký materiál nebo materiál, který lze rozpustit pomocí vody nebo jiných chemikálií, jako je PVA.
 
@@ -32,7 +32,7 @@ Při výběru materiálu určeného k odlévání mějte na paměti, že tisk FD
 * **Kovy**, které musí být zahřívány nad bod tání plastů, aby byly dostatečně tekuté, aby mohly být formovány. Tepelná hmota kovu vaši formu roztaví.
 * **Plasty, které se váží** na plast, ze kterého je forma vyrobena. Po formování nemůžete od součásti formu oddělit. Můžete nastříkat trochu uvolňovacího činidla, ale pokud je materiál příliš podobný, bude se na formu stále lepit.
 * **Materiály po ztuhnutí smršťují**. Materiály, které se před ztuhnutím smršťují, jsou přijatelné za předpokladu, že máte dostatečně dlouhé vtoky, aby mohl nový materiál vyplnit dutinu, když k tomu dojde.
-* **Epoxidová pryskyřice ** není vhodná, protože když je pryskyřice během lisování studená, chemická reakce těchto dvou složek uvolní dostatečné teplo pro roztavení plastu. Epoxid také velmi dobře k plastům přilne.
+* **Epoxidová pryskyřice** není vhodná, protože když je pryskyřice během lisování studená, chemická reakce těchto dvou složek uvolní dostatečné teplo pro roztavení plastu. Epoxid také velmi dobře k plastům přilne.
 
 Některé materiály jsou pro odlévání vhodnější:
 * **Silikon**. Silikon se neváže na plasty, takže se snadno odstraňuje. Silikon je také velmi pružný, což ho činí shovívavějším k podříznutí. Kromě toho jsou silikony tepelně tvrditelné a odolné vůči teplu, takže můžete zvážit roztavení formy po jejím vytvrzení. K odlévání silikonu je však třeba použít speciální nástroje. Zejména budete potřebovat vakuovou komoru k odsávání plynových bublin ze silikonu.

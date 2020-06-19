@@ -3,7 +3,7 @@ Rychlost tisku převislé stěny
 Tento parametr umožňuje nastavit rychlost tisku [převislé stěny](wall_overhang_angle.md). Rychlost je nastavena jako poměr jejich normálních rychlostí tisku, což je buď [Rychlost vnější stěny](../speed/speed_wall_0.md) nebo [Rychlost vnitřní stěny](../speed/speed_wall_x.md).
 
 Tisk převisu při nižších rychlostech může být velmi účinný při snižování průvěsů. To má na váš tisk řadu pozitivních účinků.
-* Stěny mají více času na připojení k sousedním stěnám předchozí vrstvy. To jim pomáhá lépe zůstat vzpřímeně, což snižuj ochabování.
+* Stěny mají více času na připojení k sousedním stěnám předchozí vrstvy. To jim pomáhá lépe zůstat vzpřímeně, což snižuje ochabování.
 * Pokud je rychlost vašeho ventilátoru vysoká, mají ventilátory více času na ochlazení vlákna. Rychleji tuhne. Pokud je rychlost tisku vysoká, má materiál více času na prověšení.
 * Převislý materiál je vždy spojen s kapkou vycházející z trysky. Když je tisk pomalejší, tryska zůstane během tuhnutí blíže, což znamená, že tah trysky na materiálu je účinnější při udržování kapky ve výšce, zatímco tuhne.
 

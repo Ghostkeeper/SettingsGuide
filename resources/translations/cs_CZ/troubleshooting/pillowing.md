@@ -21,4 +21,4 @@ Existuje několik metod, jak zabránit polštářování v aplikaci Cura:
 * Zvětšení [hustoty výplně](../infill/infill_sparse_density.md) zmenší velikost mezer, které musí být vyplněny horním pláštěm. To usnadňuje vyplnění těchto mezer. Pokud to zkombinujete s [postupnými kroky výplně](../infill/gradual_infill_steps.md), většina hustoty výplně může zůstat stejná. Pouze horní část bude mít vyšší hustotu, aby se zabránilo efektu polštářování.
 * Tisk nižší [teplotě](../material/material_print_temperature.md) zlepšuje přemostění a deformace obecně, také s horním pláštěm, což snižuje účinek polštářů.
 * Podobně je třeba dbát na zvýšení rychlosti [chlazení](../cooling/cool_fan_speed.md), aby se zlepšilo přemostění.
-* Omezení [rychlost tisku pláště](../speed/speed_topbottom.md) zlepší přemostění přímo. To také pomůže tlačit horní vrstvy pláště lépe na spodní vrstvy. Tímto se otvory rychleji také uzavírají.
+* Omezení [rychlosti tisku pláště](../speed/speed_topbottom.md) zlepší přemostění přímo. To také pomůže tlačit horní vrstvy pláště lépe na spodní vrstvy. Tímto se otvory rychleji také uzavírají.

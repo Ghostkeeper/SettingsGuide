@@ -13,7 +13,7 @@ Přiměřeně obsáhlý seznam dostupných g-kódů, které zde můžete zapsat,
 
 Odkazy na nastavení
 ----
-Při úpravě koncového g-kódu se můžete odkazovat na hodnoty ostatních nastavení. To používá určitou syntaxi. Nastavení jsou označena *key*. Tento klíč je v Cuře interním názvem. Není vidět v uživatelském rozhraní. Úplný seznam všech klíčů naleznete v [tomto dokumentu](https://github.com/Ultimaker/Cura/blob/master/resources/definitions/fdmprinter.def.json) in Cura's source code.
+Při úpravě koncového g-kódu se můžete odkazovat na hodnoty ostatních nastavení. To používá určitou syntaxi. Nastavení jsou označena *key*. Tento klíč je v Cuře interním názvem. Není vidět v uživatelském rozhraní. Úplný seznam všech klíčů naleznete v [tomto dokumentu](https://github.com/Ultimaker/Cura/blob/master/resources/definitions/fdmprinter.def.json) ve zdrojovém kódu programu Cura.
 
 Syntaxe pro získání hodnoty globálního nastavení je následující:
 
@@ -23,7 +23,7 @@ Jinými slovy, zapište klíč nastavení do složených závorek. Tím získát
 
 `{setting_key, #}`
 
-Zde místo symbolu „#“ byste měli napsat číslo extrudéru, ze kterého chcete získat nastavení. Extrudéry se začínají počítat od 0. Globální nastavení lze také získat zadáním extrudéru, ale budou stejné pro všechny extrudéry. Pokud se pokusíte získat teplotu specifickou pro extrudér, aniž byste určili číslo extrudéru, dostanete globální výchozí nastavení pro vaši tiskárnu, než bude použit jakýkoli materiálový profil nebo cokoli (protože materiály jsou specifické pro extrudér).
+Zde místo symbolu `#` byste měli napsat číslo extrudéru, ze kterého chcete získat nastavení. Extrudéry se začínají počítat od 0. Globální nastavení lze také získat zadáním extrudéru, ale budou stejné pro všechny extrudéry. Pokud se pokusíte získat teplotu specifickou pro extrudér, aniž byste určili číslo extrudéru, dostanete globální výchozí nastavení pro vaši tiskárnu, než bude použit jakýkoli materiálový profil nebo cokoli (protože materiály jsou specifické pro extrudér).
 
 Tyto odkazy můžete použít například k ochlazení na pohotovostní teplotu nebo k obnovení výchozího zrychlení a ryvu (jerku) tiskárny. Zde jsou nějaké příklady:
 
@@ -44,4 +44,4 @@ Stejnou syntaxí jako odkazy na nastavení jsou k dispozici také některé pomo
 * `{day}` označuje den v týdnu slicování.
 * `{initial_extruder_nr}` odkazuje na extrudér, se kterým začne tisk.
 
-*Toto nastavení je nastavení stroje, takže se neobjeví v normálním seznamu nastavení. Lze ho změnit tak, že přejdete na seznam tiskáren v okně předvoleb a kliknete na „Nastavení stroje“.*
+*Toto nastavení je nastavení stroje, takže se neobjeví v normálním seznamu nastavení. Lze ho změnit tak, že přejdete na seznam tiskáren v okně předvoleb a kliknete na "Nastavení stroje".*

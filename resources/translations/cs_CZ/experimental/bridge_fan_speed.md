@@ -4,4 +4,4 @@ Toto nastavení řídí rychlost ventilátoru během tisku stěn a pláště př
 
 Za normálních okolností budete chtít během přemostění zvýšit rychlost ventilátoru na nejvyšší možnou míru. Rychlost ventilátoru by měla být vyšší než pro zbytek tisku. To pomáhá zabránit ochabování, protože materiál může tuhnout rychleji.
 
-U některých vysokoteplotních materiálů však může zvýšení otáček ventilátoru způsobit podextruzi nebo dokonce úplné ucpání trysky..
+U některých vysokoteplotních materiálů však může zvýšení otáček ventilátoru způsobit podextruzi nebo dokonce úplné ucpání trysky.

@@ -7,4 +7,4 @@ Tento parametr udává, v jakých fázích je hustota výplně snížena. V kaž
 ![Normální výplň](../../../articles/images/gradual_infill_disabled.png)
 ![3 fáze postupné výplně](../../../articles/images/gradual_infill_step_height_large.png)
 
-**Zaškrtávací pole „Postupná výplň“ v doporučeném režimu nastavuje tento parametr na 5 kroků a zvyšuje hustotu výplně na 90%. Výsledkem je velmi vysoká hustota v horní části (90%) a velmi nízká hustota v dolní části vašeho tisku (2,8%).**
+**Zaškrtávací pole "Postupná výplň" v doporučeném režimu nastavuje tento parametr na 5 kroků a zvyšuje hustotu výplně na 90%. Výsledkem je velmi vysoká hustota v horní části (90%) a velmi nízká hustota v dolní části vašeho tisku (2,8%).**

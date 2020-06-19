@@ -1,6 +1,6 @@
 Pozice švu v Z
 ====
-Pokud je umístění švu v parametru [Zarovnání švu v Z](z_seam_type.md) nastaveno na „Uživatelsky specifikované“, bude šev umístěn ve směru specifikovaném tímto parametrem.
+Pokud je umístění švu v parametru [Zarovnání švu v Z](z_seam_type.md) nastaveno na "Uživatelsky specifikované", bude šev umístěn ve směru specifikovaném tímto parametrem.
 
 ![Šev je umístěn na levé straně](../../../articles/images/z_seam_x_left.png)
 ![Šev je umístěn na zadní straně](../../../articles/images/z_seam_y_back.png)

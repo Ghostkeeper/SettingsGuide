@@ -1,6 +1,6 @@
 Normální rychlost ventilátoru ve vrstvě
 ====
-Rychlost ventilátoru začíná na hodnotě parametru [Počáteční rychlost ventilátoru](cool_fan_speed_0.md) na začátku tisku. Během prvních vrstev tisku, jak je určeno tímto parametrem, bude Rychlost ventilátoru postupně zvyšován až do [normální rychlosti ventilátoru](cool_fan_speed_min.md).
+Rychlost ventilátoru začíná na hodnotě parametru [Počáteční rychlost ventilátoru](cool_fan_speed_0.md) na začátku tisku. Během prvních vrstev tisku, jak je určeno tímto parametrem, bude rychlost ventilátoru postupně zvyšován až do [normální rychlosti ventilátoru](cool_fan_speed_min.md).
 
 ![Jaká rychlost ventilátoru se používá, a kde](../images/cool_fan_speed_cs.svg)
 

@@ -9,7 +9,7 @@ Různé hustoty fungují nejlépe s různými vzory výplně. Výplňové vzory 
 
 Zvýšení hustoty výplně (zmenšením vzdálenosti mezi liniemi) má důležitý vliv na váš tisk, a to:
 * Váš tisk bude silnější.
-* Horní povrch bude lépe podepřen, díky čemuž bude hladší a voděodolnější.
+* Horní povrch bude lépe podepřen, díky čemuž bude hladší a vodotěsnější.
 * Snížení polštářování, protože tepelné kapsy budou menší.
 * Váš tisk bude vyžadovat více materiálu, a proto bude těžší.
 * Tisk trvá déle.

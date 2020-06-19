@@ -5,7 +5,7 @@ Někdy při kontrole pohledu na vrstvu (nebo pokud máte při tisku smůlu) se z
 
 Nerozdělená síť
 ----
-Některé sítě mají na povrchu otvory nebo další geometrii. Díky tomu je Cura zmatená, protože již není jasné, které části objemu patří do interiéru a které nikoli. Cura vezme průřez sítě v každé vrstvě a předpokládá, že najde uzavřené smyčky. Pokud neexistují žádné uzavřené smyčky nebo jsou-li vedle těchto uzavřených smyček další povrchy, obvykle se netisknou. Proto, pokud je v modelu otvor, nebudou průřezy uzavřené smyčky a vrstvy, kde tato díra existuje, vytištěny. Sítě, které obsahují takové otvory nebo dodatečnou geometrii, se nazývají [variety](https://en.wikipedia.org/wiki/Manifold), protože nemohly v reálném světě existovat.
+Některé sítě mají na povrchu otvory nebo další geometrii. Díky tomu je Cura zmatená, protože již není jasné, které části objemu patří do interiéru a které nikoli. Cura vezme průřez sítě v každé vrstvě a předpokládá, že najde uzavřené smyčky. Pokud neexistují žádné uzavřené smyčky nebo jsou-li vedle těchto uzavřených smyček další povrchy, obvykle se netisknou. Proto, pokud je v modelu otvor, nebudou průřezy uzavřené smyčky a vrstvy, kde tato díra existuje, vytištěny. Sítě, které obsahují takové otvory nebo dodatečnou geometrii, se nazývají [variety](https://en.wikipedia.org/wiki/Manifold), protože by nemohly v reálném světě existovat.
 
 ![Část se zvláštní stěnou uvnitř, kde je nejednoznačné, zda je spodní část uvnitř nebo vně části](../images/non_manifold_inside_cs.svg)
 ![Ne-varietní sítě jsou obvykle zobrazeny s červenými částmi v rentgenovém zobrazení](../../../articles/images/x_ray.png)

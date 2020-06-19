@@ -16,7 +16,7 @@ Lineární
 ----
 ![Lineární](../../../articles/images/infill_pattern_lines.png)
 
-Lineární vzor vytváří rovnoběžné linie. Ve výchozím nastavení vzorec linií mění svůj směr kolmo z jedné vrstvy na druhou, takže na první pohled vypadá jako vzor mřížky. Tento vzhled Je však možné upravit pomocí parametru [Směr linií výplně](infill_angles.md).
+Lineární vzor vytváří rovnoběžné linie. Ve výchozím nastavení vzorec linií mění svůj směr kolmo z jedné vrstvy na druhou, takže na první pohled vypadá jako vzor mřížky. Tento vzhled je však možné upravit pomocí parametru [Směr linií výplně](infill_angles.md).
 * Nejlepší vzor pro hladký horní povrch stejně jako vzor cikcak, protože vzdálenost mezi liniemi je nejmenší.
 * Ve svislém směru bývá slabý, protože vrstvy mají mezi sebou pouze malé spojovací body.
 * Bude extrémně slabý v horizontálním směru, s výjimkou jediného směru, kde jsou orientovány linie. Ale ani v tomto směru není odolný vůči střihu, takže při zatížení poměrně rychle selže.

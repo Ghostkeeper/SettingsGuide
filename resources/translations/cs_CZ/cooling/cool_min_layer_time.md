@@ -1,6 +1,6 @@
 Minimální čas vrstvy
 ====
-Minimální čas vrstvy nastavuje nejkratší čas povolený pro tisk vrstvy. Tiskárna nemá povoleno tisknout vrstvy rychleji.
+Minimální čas vrstvy nastavuje nejkratší čas, povolený pro tisk vrstvy. Tiskárna nemá povoleno tisknout vrstvy rychleji.
 
 To je nezbytné k tomu, aby předchozí vrstva mohla vychladnout před nasazením další vrstvy. Tím je zajištěno, že předchozí vrstva zcela ztuhla, aby se zabránilo jejímu ochabnutí.
 

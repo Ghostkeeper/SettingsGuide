@@ -1,10 +1,10 @@
 Velikost uzlu drátového tisku
 ====
-Pokud je [Strategie drátového tisku](wireframe_strategy.md) nastavena na „Uzel“, bude v horní části každého pilového zubu proveden malý pohyb shora dolů a zdola nahoru. Toto nastavení umožňuje nakonfigurovat rozsah tohoto pohybu.
+Pokud je [Strategie drátového tisku](wireframe_strategy.md) nastavena na "Uzel", bude v horní části každého pilového zubu proveden malý pohyb shora dolů a zdola nahoru. Toto nastavení umožňuje nakonfigurovat rozsah tohoto pohybu.
 
 ![Kde je uzel nakreslen a jaká je jeho velikost](../images/wireframe_top_jump_cs.svg)
 
-Pohyb pro tento „uzel“ je řada přesunů:
+Pohyb pro tento "uzel" je řada přesunů:
 1. Nejprve se tryska posune směrem nahoru, jak ukazuje toto nastavení. Současně se tryska pohybuje o polovinu zpět.
 2. Pokud je v horní části [pauza](wireframe_top_delay.md), tryska se zastaví po dobu nastavené pauzy. Toto přerušení se koná ve špičce pohybu uzlu.
 3. Tryska klesá do obvyklé výšky. Současně se tryska posune o jedenapůlnásobek velikosti uzlu, aby se ocitla ve vzdálenosti uvedené v tomto nastavení vzhledem ke svislé linii.

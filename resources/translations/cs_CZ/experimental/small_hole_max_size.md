@@ -6,4 +6,4 @@ Pokud má kruhový otvor průměr menší, než je hodnota tohoto parametru, ryc
 
 Běžným případem použití této funkce je tisk otvorů pro šrouby ve velmi přesných rozměrech. Při tisku malých otvorů má kapka tendenci být tažena tryskou do rohu. Pokud jsem roh je velmi ostrý, jako je tomu u malých otvorů, má to za následek zmenšení otvoru. Pokud je tisk pomalejší, je tato trakce snížena, protože materiál má více času na usazení a protože mechanická trakce je prostě nižší.
 
-Zvýšením tohoto nastavení se více obrysů označí jako „malý prvek“. Pomaleji bude vytištěno více otvorů v tisku. Tyto otvory budou proto vytištěny přesněji, ale doba tisku bude delší.
+Zvýšením tohoto nastavení se více obrysů označí jako "malý prvek". Pomaleji bude vytištěno více otvorů v tisku. Tyto otvory budou proto vytištěny přesněji, ale doba tisku bude delší.

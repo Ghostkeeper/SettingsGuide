@@ -10,7 +10,7 @@ Příčinou neúplného tisku je někdy selhání tiskárny, když tiskárna ned
 * Výpadek napájení. Cura s tím nemůže dělat nic jiného než rychlejší tisk, aby se snížilo riziko výpadku napájení během tisku.
 * Porucha napájení. Pokud je jedna z teplot (buď [podložky tisku](../material/material_bed_temperature.md) nebo [trysky](../material/material_print_temperature.md)), příliš vysoká, některé tiskárny mají poruchový režim, kde napájecí zdroj shoří nebo teplotní senzory vydávají chyby. Tiskárna se poté vypne a nedokončí tisk.
 * Firmware zamrzne. V důsledku chyb ve firmwaru může tiskárna přestat reagovat. Pokud můžete určit, kde v g-kódu zamrzne (nejčastěji na začátku nebo na konci tisku), můžete zjistit, který g-kód to způsobuje. Může být nutné upravit počáteční nebo koncový g-kód.
-* Cívka je zamotaná. Je dobré vždy uchytit konec vlákna, pokud není bezpečně upevněno v extrudéru nebo pokud není zasunut do jednoho z otvorů ve vláknu (pokud vaše cívka takové otvory má). Pokud ho pustíte,  konec vlákna skočí zpět na cívku, může sklouznout pod jedno z dalších závitů a zamotat se. Jelikož je vlákno obvykle stovky metrů dlouhé, může být velmi obtížné tento uzel uvolnit, pokud se dostane dovnitř.
+* Cívka je zamotaná. Je dobré vždy uchytit konec vlákna, pokud není bezpečně upevněno v extrudéru nebo pokud není zasunut do jednoho z otvorů ve vláknu (pokud vaše cívka takové otvory má). Pokud ho pustíte,  konec vlákna skočí zpět na cívku, může sklouznout pod jeden z dalších závitů a zamotat se. Jelikož je vlákno obvykle stovky metrů dlouhé, může být velmi obtížné tento uzel uvolnit, pokud se dostane dovnitř.
 
 Broušení vláken
 ----

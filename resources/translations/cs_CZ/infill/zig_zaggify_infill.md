@@ -5,7 +5,7 @@ Tato volba umožňuje přidat linie, které spojují koncové body vzoru výpln�
 ![Není propojena žádná linie výplně](../../../articles/images/zig_zaggify_infill_disabled.png)
 ![Propojené linie výplně](../../../articles/images/zig_zaggify_infill_enabled.png)
 
-Tím se celý vzor výplně převede na jednu nebo na velmi málo linií. Převod na jednu linii není vždy možný. Počáteční bod této linie je libovolný, takže nemusí být stejný pro každou vrstvu, zejména pokud se tvar výplně od jedné vrstvy k druhé liší..
+Tím se celý vzor výplně převede na jednu nebo na velmi málo linií. Převod na jednu linii není vždy možný. Počáteční bod této linie je libovolný, takže nemusí být stejný pro každou vrstvu, zejména pokud se tvar výplně od jedné vrstvy k druhé liší.
 
 Propojení výplně má některé výhody, ale také některé nevýhody:
 * Váš díl bude nakonec pevnější, protože je tu prakticky polovina obrysu navíc.
