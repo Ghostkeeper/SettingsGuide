@@ -1,6 +1,6 @@
 Automatická teplota
 ====
-Pro rychlejší tisk je nejlepší tisknout při mírně vyšším tlaku. Díky tomu je termoplast tekutější, což mu umožňuje rychleji protékat otvorem trysky. Toto nastavení automaticky upravuje teplotu podle průměrného toku materiálu z trysky.
+Pro rychlejší tisk je nejlepší tisknout při mírně vyšší teplotě. Díky tomu je termoplast tekutější, což mu umožňuje rychleji protékat otvorem trysky. Toto nastavení automaticky upravuje teplotu podle průměrného toku materiálu z trysky.
 
 Chcete-li zjistit, do jaké míry by měla být teplota upravena, použijte [Graf teploty toku](material_flow_temp_graph.md). Rychlost průtoku se počítá v krychlových milimetrech za sekundu. Pokud to uvedeme ve vztahu k toku, dostaneme určitou teplotu. Toto hodnocení bude použito pro teplotu tisku. Je-li toto nastavení aktivováno, nebude již používáno běžné nastavení [teploty tisku](../material/material_print_temperature.md) ve prospěch teploty vypočtené z průtoku.
 

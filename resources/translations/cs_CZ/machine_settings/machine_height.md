@@ -6,4 +6,4 @@ To se nerovná skutečné výšce vaší tiskárny na polici. Skutečná tiskár
 
 ![Rozměry objemu tisku](../images/build_volume_dimensions_cs.svg)
 
-*Protože se jedná o nastavení stroje, nebude obvykle uvedeno v normálním seznamu nastavení. Výšku lze změnit v dialogu nastavení tiskárny, který najdete v seznamu přidaných tiskáren v dialogu předvoleb.*
+**Protože se jedná o nastavení stroje, nebude obvykle uvedeno v normálním seznamu nastavení. Výšku lze změnit v dialogu nastavení tiskárny, který najdete v seznamu přidaných tiskáren v dialogu předvoleb.**

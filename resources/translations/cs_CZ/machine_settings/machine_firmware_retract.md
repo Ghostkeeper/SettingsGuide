@@ -4,4 +4,4 @@ Normálně způsobuje Cura retrakci tím, že řídí pohyb podavače a přikazu
 
 Výběrem možnosti použití firmwarové retrakce řídí firmware tiskárny, jak daleko a jak rychle se vlákno retrahuje. Tiskárna může vědět více o své vlastní geometrii než Cura, takže se bude moci lépe rozhodnout, jak vlákno retrahovat. To však znamená, že Cura již tyto retrakce neovládá a Cura ví více o samotném tisku. V zásadě mají slicer a firmware různé informace a toto nastavení rozhoduje, které z těchto dvou si vybere.
 
-*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*
+**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**

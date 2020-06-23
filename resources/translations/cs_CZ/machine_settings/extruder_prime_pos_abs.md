@@ -8,4 +8,4 @@ Pokud je toto nastavení zakázáno, souřadnice X a Y jsou relativní k poloze,
 
 Důrazně se doporučuje používat absolutní pozici zavádění. Je zaručeno, že absolutní zaváděcí pozice bude bez kolizí s jinými částmi tisku, protože na toto místo na podložce tisku nemůžete umístit objekty. S relativní zaváděcí pozicí byste mohli skončit kdekoli na tiskové ploše a v důsledku toho by se kapky mohly skončit někde na vrcholu vaší první vrstvy. Použití relativní zaváděcí pozice by mohlo ušetřit nějaký čas na pojíždění, ale opravdu to nestojí za riziko
 
-*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*
+**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**

@@ -58,6 +58,7 @@ Křížový vzor kreslí zlomkový vzor v celém objemu s křížovými tvary.
 * Nejjednodušší pro ohyb ze všech vzorů, protože v tomto vzoru nejsou žádné dlouhé přímé linie.
 * Téměř vždy tiskne podpěru jednou linií, což minimalizuje potřebu extruzí nebo přesunů.
 
+<!--if cura_version >= 4.1-->
 Gyroid
 ----
 ![Gyroid](../../../articles/images/support_pattern_gyroid.png)
@@ -66,7 +67,4 @@ Vzorek gyroid je zvlněný a má křivku, díky které se tryska pohybuje tam a 
 * Docela robustní vzor, který zvyšuje spolehlivost.
 * Vzduch mezi podpěrou je jeden objem. Při tisku rozpustnými podpůrnými materiály to umožňuje, aby rozpouštědlo (voda, ethanol nebo jiné) zateklo do všech vnitřků nosné struktury, i když je pod ní krempa. To umožňuje rychlejší rozpuštění podpěry.
 * Podporuje rovnoměrně všechny převislé linie, bez ohledu na směr.
-
-**Tento vzor je od verze Cura 4.1 nový.**
-
-
+<!--endif-->
