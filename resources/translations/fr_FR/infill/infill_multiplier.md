@@ -10,7 +10,7 @@ Lorsqu'un multiplicateur impair est défini, les lignes de remplissage d'origine
 
 Par rapport à l'alternative consistant à augmenter la densité de remplissage par le même multiplicateur, cela aura quelques effets sur votre impression.
 * Le remplissage devient plus rigide dans l'ensemble, tout comme l'augmentation de la largeur de la ligne de remplissage, car les lignes de remplissage peuvent s'appuyer les unes sur les autres lorsqu'elles sont soumises à des forces de cisaillement.
-* Le remplissage brillera davantage à travers la peau, ce qui réduira la qualité de la surface.
-* Les espaces entre les lignes de remplissage sont plus grands, car les lignes sont plus serrées les unes contre les autres. La peau s'affaisse donc davantage et permet de s'affaisser.
+* Le remplissage sera davantage visible à travers la peau, ce qui pourrait réduire la qualité de la surface.
+* Les espaces entre les lignes de remplissage sont plus grands, car les lignes sont plus serrées les unes contre les autres. La peau s'affaisse donc davantage si les espaces lui permettent de s'affaisser.
 
 **Ce réglage n'a aucun effet si la densité de remplissage est de 100 % ou plus.**
