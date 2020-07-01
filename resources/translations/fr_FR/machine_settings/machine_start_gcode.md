@@ -1,13 +1,13 @@
 G-Code de démarrage
 ====
-Avec ce paramètre, il est possible d'écrire un peu de g-code qui sera exécuté au tout début de chaque impression. Grâce à ce code G, l'imprimante peut être configurée pour être prête à l'impression.
+Avec ce paramètre, il est possible d'écrire un peu de G-Code qui sera exécuté au tout début de chaque impression. Grâce à ce G-Code, l'imprimante peut être configurée pour être prête à l'impression.
 
 Voici quelques exemples de choses qui sont généralement exécutées dans le g-code de départ :
 * Amorçage de la ou des buses.
 * Chauffage du plateau d'impression.
 * Chauffage de la (des) buse(s).
 * S'assurer que la bonne extrudeuse est sélectionnée.
-* Configurer les ventilateurs, les accélérations ou les secousses.
+* Configurer les ventilateurs, les accélérations ou les saccades.
 * Mise à niveau automatique du lit.
 * Configurer l'avance linéaire.
 
