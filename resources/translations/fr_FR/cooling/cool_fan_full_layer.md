@@ -4,6 +4,6 @@ La vitesse du ventilateur commence à la valeur du paramètre [Vitesse des venti
 
 ![Quelle vitesse de ventilateur est utilisée où](../images/cool_fan_speed_fr.svg)
 
-* L'augmentation de ce paramètre peut améliorer l'adhérence au lit.
-* Réduisez ce réglage si vous constatez des problèmes de pattes d'éléphant ou de suintement.
-* Si votre plateau d'impression est chauffé à une température élevée, vous devrez peut-être réduire ce réglage afin d'éviter les pattes d'éléphant ou les suintements.
+* L'augmentation de ce paramètre peut améliorer l'adhérence au plateau.
+* Réduisez ce réglage si vous constatez des problèmes de pied d'éléphant ou de suintement.
+* Si votre plateau d'impression est chauffé à une température élevée, vous devrez peut-être réduire ce réglage afin d'éviter les pieds d'éléphant ou les suintements.
