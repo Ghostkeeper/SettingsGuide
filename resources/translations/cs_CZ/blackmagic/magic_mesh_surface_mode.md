@@ -12,4 +12,4 @@ Další oblasti určené k tisku budou zahrnovat pouze svislé oblasti jako jedn
 
 Další povrchy budou vytištěny, jako by šlo o vnější stěny, takže budou ovlivněny rychlostí tisku vnějších stěn, šířkou linií atd.
 
-*Pokud tisknete jak normální objemy, tak další povrchy, mějte na paměti, že objemy budou vytištěny s vnější stěnou zcela uvnitř objemu. Další oblasti jsou vytištěny s linií vystředěnou na oblasti, s polovinou šířky linie na každé straně. Pokud je další povrch zarovnán s povrchem uzavřeného objemu, jako na obrázcích výše, bude povrch odsazen o půl linie. Koneckonců, další povrch nemá žádný interiér, do kterého by se mohl přesunout.*
+**Pokud tisknete jak normální objemy, tak další povrchy, mějte na paměti, že objemy budou vytištěny s vnější stěnou zcela uvnitř objemu. Další oblasti jsou vytištěny s linií vystředěnou na oblasti, s polovinou šířky linie na každé straně. Pokud je další povrch zarovnán s povrchem uzavřeného objemu, jako na obrázcích výše, bude povrch odsazen o půl linie. Koneckonců, další povrch nemá žádný interiér, do kterého by se mohl přesunout.**

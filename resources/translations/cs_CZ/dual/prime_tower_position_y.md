@@ -1,6 +1,6 @@
 Pozice Y aktivační věže
 ====
-Toto nastavení umožňuje aktivační věže přemístit. Označuje souřadnici X rohu aktivační věže.
+Toto nastavení umožňuje aktivační věže přemístit. Označuje souřadnici Y rohu aktivační věže.
 
 ![Souřadnice Y aktivační věže](../images/prime_tower_cs.svg)
 
