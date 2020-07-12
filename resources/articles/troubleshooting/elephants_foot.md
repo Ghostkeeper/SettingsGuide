@@ -32,6 +32,16 @@ To adjust the build plate, consult the manual of your 3D printer. Most printers 
 
 You can also directly adjust the [flow in the first layer](../material/material_flow_layer_0.md) in Cura to compensate for any overextrusion. Alternatively, reducing the [Initial Layer Line Width](../resolution/initial_layer_line_width_factor.md) may also normalise the extrusion enough so that the elephant's foot is prevented.
 
+Deformation above glass transition
+----
+With very small prints, there is the possibility that the previous layer has not yet solidified when the next layer is pushed on top of it. Material is pushed out with considerable force from the nozzle, so if the previous layer is not yet solidified, this layer will get squished and expands horizontally. This manifests itself as an elephant's foot. The solution to this is to make sure that the material is solidified by the time that the next layer is pushed on top of it. Try adjusting the following settings:
+
+* Reduce the [printing temperature during the first layer](../material/material_print_temperature_layer_0.md), so that the material doesn't have to cool down as much.
+* Reduce the [bed temperature during the first layer](../material/material_bed_temperature_layer_0.md), so that the first layer will cool down faster, by expunging more heat to the build plate. Plastics for 3D printing are engineered to solidify very quickly at a precise temperature point, its [glass transition temperature](https://en.wikipedia.org/wiki/Glass_transition#Transition_temperature_Tg). To prevent deformation, look up the glass transition temperature of your filament in its data sheet, and ensure that the bed temperature doesn't get too far above this transition temperature.
+* Increase the [fan speed during the first layers](../cooling/cool_fan_speed_0.md), to cool down the material faster. Also consider increasing the [Regular Fan Speed At Height](../cooling/cool_fan_full_at_height.md) setting, to continue cooling the first few layers.
+* Reduce the [initial layer speed](../speed/speed_layer_0.md). This allows more time for the first layer to cool down after being printed.
+* Increase the [minimum layer time](../cooling/cool_min_layer_time.md). The purpose of this is to ensure a certain time for any layer to cool down before the next layer is placed on top, and will also cause the [maximum fan speed](../cooling/cool_fan_speed_max.md) to be used. Effectively this is an easier way to combine the adjustments to the initial layer speed and fan speed listed above. Keep in mind that this applies to the entire print however, not just the first layer. 
+
 General solutions
 ----
 Here are a few solutions you can try that get rid of any type of elephant's foot, regardless of its cause:
