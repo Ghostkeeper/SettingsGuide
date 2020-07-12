@@ -16,6 +16,3 @@ Articles
 * ChrisTerBeke: article sur la hauteur de couche adaptative.
 * Goodfeat: Traduction russe.
 * Laurent Lalliard: Traduction française.
-
-![](../../../articles/images/created_by.jpg)
-![](../images/contributeurs_fr.jpg)

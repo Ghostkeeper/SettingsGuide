@@ -17,5 +17,3 @@ Programování
 * Goodfeat: ruský překlad.
 * Laurent Lalliard: francouzský překlad.
 * Vladimír Běhal: český překlad.
-
-![](../../../articles/images/created_by.jpg)
