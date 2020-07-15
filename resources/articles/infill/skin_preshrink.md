@@ -14,3 +14,4 @@ For most prints, setting this to 1 or 2 line widths is helpful to reduce the pri
 If the setting is increased too much, gaps can appear in the top and bottom surface where infill gets exposed. In particular, take good care with models that have thin ledges that should get a thin strip of skin.
 
 ![These pieces of skin are removed, exposing infill](../images/skin_preshrink_problem.svg)
+![The infill can be seen in layer view too](../images/skin_preshrink_problem_screenshot.png)
