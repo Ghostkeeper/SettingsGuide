@@ -1,6 +1,6 @@
 Mold
 ====
-Instead of printing the model itself, this feature causes the printer to create a negative of the model, a mould, that you could cast a different material in to create your model. This mould has several specific properties that make it both workable to cast with and printable with FDM printing.
+Instead of printing the model itself, this feature causes the printer to create a negative of the model, a mould, that you could cast a different material in to create your model. This mould has several specific properties that make it both workable to cast with and printable with FFF printing. This allows for the process of [Rapid Casting](https://en.wikipedia.org/wiki/Rapid_casting).
 
 ![A model that you'd want to cast](../images/mold_enabled_shell.png)
 ![The mould for that model](../images/mold_enabled_mould.png)
@@ -22,20 +22,31 @@ The ideal mould is:
 * very stiff
 * resistant to high temperatures
 * chemically inert so that it doesn't bind to your casting material
-* don't shrink
+* made out of a material that doesn't shrink
 
 Additionally, some moulds need to be destroyed in order to get the model out. To this end, you could choose a brittle material or a material that can be dissolved using water or other chemicals, such as PVA.
 
 Materials to Cast With
 ----
-When choosing a material to cast, keep in mind that FDM printing can only work with thermoplastics. Thermoplastics are plastics that inherently become soft at high temperatures. This is not compatible with casting materials that are hot when casting. Some materials that are generally incompatible with 3D printed moulds:
+There are many different types of materials to cast a mould in. Some are more compatible with 3D-printed moulds than others. These are some examples of materials that may work:
+* **Silicone**. Silicone does not bind to plastics, so it is easy to remove. Silicone is also very flexible and this makes it lenient to undercuts. What's more, silicones are thermoset and heat resistant, so you can also consider melting the mould off after it's been set. Some special tooling is needed to cast silicone though. In particular, you'll need a vacuum chamber to pump out the gas bubbles from the silicone.
+* **Sand**. Sand is an industry standard for making a negative of something since it is very heat resistant but doesn't need to be heated in order to be cast. After casting it, you can bind it with concrete or glue in order to prevent it from falling apart. You can then use it to make another negative out of a more heat-resistant material.
+* **Stucco**. Similar to sand, but generally made out of a finer grain. This has the advantage that the binding is already included in the material, so there is no need to bind it. It may result in a more brittle final result though.
+* **Wax**. For making custom candles or figurines, you can cast a model in wax. Wax has a low melting temperature, so it won't melt the mould. It also doesn't bind to plastics, making it easier to release from the mould. Wax is very malleable and easy to modify after releasing it from the mould. If making a custom candle from this, don't forget to insert a wick before it's set.
+* **Chocolate**, as a special customised treat or gift. To cast chocolate, melt it to just above its melting point, then pour it in the mould, vibrate it a bit to get the air bubbles out, and put it in the freezer immediately. You can even put the mould in a bath of cold water inside the freezer to subtract the heat faster. After five minutes, remove the chocolate carefully from the mould.
+
+FFF printing can only work with thermoplastics. Thermoplastics are plastics that inherently become soft at high temperatures. This is not compatible with casting materials that are hot when casting. Some materials that are generally incompatible with 3D printed moulds:
 * **Metals**, which need to be heated above the melting point of the plastics in order to be liquid enough to cast. The heat mass of the metal will cause your mold to melt.
 * **Plastics that bind** to the plastic that the mould is made of. You couldn't separate the mould from the model after casting. You can spray some mould release in, but if the material is too similar it will still bind permanently to the mould.
 * **Materials that shrink** too much after solidifying. Materials that shrink before solidifying are okay as long as you have sufficiently long sprues to allow new material to fill the cavity when that happens.
 * **Epoxy resin** is not appropriate because while the resin is cold while it is being cast, the chemical reaction from the two components releases enough heat to melt the plastic. Epoxy also tends to stick very well to plastics.
 
-Some materials that are more appropriate to cast with:
-* **Silicone**. Silicone does not bind to plastics, so it is easy to remove. Silicone is also very flexible and this makes it lenient to undercuts. What's more, silicones are thermoset and heat resistant, so you can also consider melting the mould off after it's been set. Some special tooling is needed to cast silicone though. In particular, you'll need a vacuum chamber to pump out the gas bubbles from the silicone.
-* **Sand**. Sand is an industry standard for making a negative of something since it is very heat resistant but doesn't need to be heated in order to be cast. After casting it, you can bind it with concrete or glue in order to prevent it from falling apart. You can then use it to make another negative out of a more heat-resistant material.
-* **Wax**. For making custom candles or figurines, you can cast a model in wax. Wax has a low melting temperature, so it won't melt the mould. It also doesn't bind to plastics, making it easier to release from the mould. Wax is very malleable and easy to modify after releasing it from the mould. If making a custom candle from this, don't forget to insert a wick before it's set.
-* **Chocolate**, as a special customised treat or gift. To cast chocolate, melt it to just above its melting point, then cast it, vibrate it a bit to get the air bubbles out, and put it in the freezer immediately. You can even put the mould in a bath of cold water inside the freezer to subtract the heat faster. After five minutes, remove the chocolate carefully from the mould.
+If you need to create an object in a material that is not directly compatible with 3D printing, you need to work in multiple casting stages. Each stage creates a negative of the previous stage. For instance, you could print the shape of your object normally (with this setting disabled), then create a negative of that by putting the mould in a bath of stucco. Since the stucco is much more heat resistant, you can then use materials that need to be heated hotter to melt, such as bronze, or materials that bind to plastics such as epoxy.
+
+The Casting Process
+----
+Casting with a 3D printed mould is largely the same as with any other mould and will depend greatly on the materials involved. There are a few points of special attention when it comes to 3D printed moulds though.
+
+The thermoplastic you've printed your mould with has a low heat capacity and may have a reasonably low glass transition temperature. This means that time is of the essence after the mould has been cast. If the material cools down too slowly, the mould could get soft. This can cause the mould to deform and makes it harder to release the mould from the result. To accelerate the setting of the cast, you can for instance dip it in an ice bath.
+
+3D printed moulds also have more ridges along their sides due to the boundaries between layers. These make it harder to release the mould from the cast. If you're using a release agent between the mould and the cast, use something that can fill up these gaps. Thin lubricants are not enough. More appropriate interface layers are wax or thicker lubricants.
