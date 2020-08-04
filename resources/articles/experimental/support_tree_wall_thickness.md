@@ -4,7 +4,7 @@ This setting determines how thick the tree support's perimeter will be. For a th
 
 ![Using a wall thickness of 0.8mm results in two contours inside the tree support](../images/support_tree_wall_count.png)
 
-Thicker walls will make the support much more sturdy, especially with large [angles of the branches](support_tree_angle.md). This increases reliability of the print, reducing the chance for the branches of the support to break.
+Thicker walls will make the support much more sturdy, especially with large [angles of the branches](../support/support_tree_angle.md). This increases reliability of the print, reducing the chance for the branches of the support to break.
 
 However it will also greatly increase the time and material spent on the support.
 
