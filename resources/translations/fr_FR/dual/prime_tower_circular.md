@@ -2,8 +2,8 @@ Tour d'amorçage circulaire
 ====
 Si ce réglage est activé, la tour d'amorçage aura la forme d'un cylindre. Si elle est désactivée, la tour d'amorçage sera carrée.
 
-![Tour primaire carrée](../../../articles/images/prime_tower_circular_disabled.png)
-![Tour primaire circulaire](../../../articles/images/prime_tower_circular_enabled.png)
+![Tour d'amorçage carrée](../../../articles/images/prime_tower_circular_disabled.png)
+![Tour d'amorçage circulaire](../../../articles/images/prime_tower_circular_enabled.png)
 
 Dans les deux cas, la tour d'amorçage est encore creuse. La tour d'amorçage circulaire est pratiquement plus petite que la tour d'amorçage carrée (car les coins sont coupés). Le [volume minimum](prime_tower_min_volume.md) sera toujours correct.
 

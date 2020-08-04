@@ -1,4 +1,4 @@
-Essuyer le bec d'impression inactif sur la tour primaire
+Essuyer le bec d'impression inactif sur la tour d'amorçage
 ====
 Si cette fonction est activée, l'imprimante essuie la buse précédente après avoir amorcé la suivante dans la tour d'amorçage.
 

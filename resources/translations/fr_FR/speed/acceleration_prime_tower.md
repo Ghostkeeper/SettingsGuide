@@ -4,4 +4,4 @@ Ce réglage contrôle la vitesse à laquelle la buse accélère dans différente
 
 L'impression de la tour d'amorçage à une vitesse d'accélération plus élevée permet à l'extrusion d'être un peu plus constante, ce qui permet un meilleur amorçage. Cela permet également de gagner du temps d'impression. Cependant, la tour d'amorçage peut basculer plus facilement si elle devient très haute et si l'imprimante vibre beaucoup pendant l'impression.
 
-<!--if cura_version >= 4.1-->L'accélération de la tour primaire a un effet significatif si la tour primaire carrée est utilisée, car dans ce cas il y a des coins à réaliser. Avec une tour d'amorçage ronde, l'effet de ce réglage de l'accélération est négligeable puisque toute l'accélération sera prise en compte par le réglage de la saccade.<!--endif-->
+<!--if cura_version >= 4.1-->L'accélération de la tour d'amorçage a un effet significatif si la tour d'amorçage carrée est utilisée, car dans ce cas il y a des coins à réaliser. Avec une tour d'amorçage ronde, l'effet de ce réglage de l'accélération est négligeable puisque toute l'accélération sera prise en compte par le réglage de la saccade.<!--endif-->
