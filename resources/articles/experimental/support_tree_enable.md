@@ -2,7 +2,7 @@ Tree Support
 ====
 Tree support offers an alternative approach to supporting the model than the ordinary support technique. In tree support, a branching structure is generated that starts on the build plate with a small base, but grows towards the parts that need supporting.
 
-![A tree-like structure supports the overhang](../images/support_tree_enable.png)
+![A tree-like structure supports the overhang](../images/support_structure_tree.png)
 
 Tree support can avoid obstacles when growing towards the overhang areas. If at all possible, the tree will be grown from the build plate upwards to prevent scarring of the surface that the support rests on. If this is not possible, the tree will be resting on the model's surface as close to the overhang as possible to minimise time and material usage. The branches of tree support are limited by the [Tree Support Branch Angle](support_tree_angle.md) so that they don't produce too steep an overhang of themselves. This limits the ability to grow around obstacles and also determines the height at which trunks will start branching out.
 

@@ -21,7 +21,7 @@ Since the support will usually be large and wide, an [infill pattern](support_pa
 
 Tree
 ----
-![Tree support](../images/support_tree_enable.png)
+![Tree support](../images/support_structure_tree.png)
 
 With tree support, the support structure will start out small on the build plate, and will grow branches towards the parts of the print that need supporting.
 

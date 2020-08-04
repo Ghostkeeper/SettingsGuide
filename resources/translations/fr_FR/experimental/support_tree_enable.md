@@ -2,7 +2,7 @@ Support arborescent
 ====
 Les support arborescent offrent une approche alternative au support du modèle que la technique de support ordinaire. Le support en arborescent génère une structure ramifiée qui commence sur la plaque de construction avec une petite base, mais qui se développe vers les parties qui ont besoin d'être soutenues.
 
-![Une structure en forme d'arbre soutient le surplomb](../../../articles/images/support_tree_enable.png)
+![Une structure en forme d'arbre soutient le surplomb](../../../articles/images/support_structure_tree.png)
 
 Les supports arborescents permettent d'éviter les obstacles lors de la croissance vers les zones en surplomb. Dans la mesure du possible, l'arbre poussera à partir de la plaque de construction vers le haut afin d'éviter les cicatrices sur la surface sur laquelle le support repose. Si cela n'est pas possible, l'arbre reposera sur la surface du modèle aussi près que possible du surplomb afin de minimiser le temps et l'utilisation de matière. Les branches du support de l'arbre sont limitées par l'[Angle de la branche du support de l'arbre](support_tree_angle.md) afin qu'elles ne produisent pas une dépouille trop abrupt pour eux même. Cela limite la capacité de croissance autour des obstacles et détermine également la hauteur à laquelle les troncs commenceront à se ramifier.
 
