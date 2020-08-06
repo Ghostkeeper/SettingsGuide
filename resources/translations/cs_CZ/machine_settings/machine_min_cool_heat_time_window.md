@@ -1,4 +1,4 @@
-Minimální doba pohotovostní teploty
+Minimální doba pohotovostního teploty
 ====
 Toto nastavení konfiguruje minimální dobu pohotovosti, při které se bude obtěžovat ochlazovat trysku na pohotovostní teplotu. Pokud je tryska nastavena tak, aby byla v pohotovostním stavu po kratší dobu, než je tato, nebude ochlazena, ale zůstane na [konečné teplotě tisku](../material/material_final_print_temperature.md).
 
