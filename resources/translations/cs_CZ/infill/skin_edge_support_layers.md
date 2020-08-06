@@ -4,7 +4,7 @@ Při tisku konkávních tvarů bude horní plášť, který končí někde upros
 
 ![Obvod je protažen výplní pod okrajem pláště](../../../articles/images/skin_edge_support_thickness.png)
 
-Jedna linie napříč mezerami výplně se bude vždy prohýbat, takže linie může být nakreslena v několika vrstvách pod okrajem pláště, která musí být podepřena. Tento parametr umožňuje nakonfigurovat počet vrstev, kterými bude tato linie nakreslena pod okrajem pláště. Lze také nastavit [tloušťku](skin_edge_support_thickness.md) vrstev, kterými je linie vedena.
+Jedna linie napříč mezerami výplně se bude vždy prohýbat, takže linie může být nakreslena v několika vrstvách pod okrajem pláště, která musí být podepřena. Tento parametr umožňuje nakonfigurovat počet vrstev, kterými bude tato linie nakreslena pod okrajem pláště. Lze také nastavit [tloušťku] skin_edge_support_thickness.md) vrstev, kterými je linie vedena.
 
 Zvýšení počtu vrstev bude mít obvykle na tisk následující účinky:
 * Okraj pláště bude lépe podepřen, což poskytne hladší horní povrch, protože plášť může zcela přecházet z jedné strany na druhou.

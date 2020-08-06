@@ -76,4 +76,4 @@ Jedná se o variantu g-kódu zaměřenou na 3D tiskárny od společnosti Repetie
 * Změny zrychlení se provádějí pomocí příkazů `M201` a `M202` (pro zrychlení tisku a zrychlení přesunu) namísto `M204`.
 * Změny ryvu (jerku) se provádějí pomocí příkazu `M207` a ne pomocí příkazu `M205`.
 
-**Protože se jedná o nastavení stroje, nebude obvykle uvedeno v normálním seznamu nastavení. Pro toto nastavení existuje menu výběru, v dialogu nastavení tiskárny, který se nachází v seznamu přidaných tiskáren v dialogu předvoleb.**
+*Protože se jedná o nastavení stroje, nebude obvykle uvedeno v normálním seznamu nastavení. Pro toto nastavení existuje menu výběru, v dialogu nastavení tiskárny, který se nachází v seznamu přidaných tiskáren v dialogu předvoleb.*

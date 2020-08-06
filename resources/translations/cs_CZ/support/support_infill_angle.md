@@ -7,4 +7,4 @@ Vzor podpěry je obvykle orientován tak, že linie jsou kolmé k většině vě
 
 Pokud byl upraven parametr [Směr horní/dolní linie](../shell/skin_angles.md), je vhodné odpovídajícím způsobem upravit úhel podpěry tak, aby byl vždy kolmý na linie spodní strany tisku. To umožňuje, aby tyto spodní linie spočívaly správně na podpěře, než aby propadaly mezi podpůrnými liniemi. To je zvláště důležité pro lineární a cikcak [vzory podpěry](support_pattern.md), kde jsou dlouhé přímky mezi podpůrnými liniemi, které nenabízejí žádnou oporu.
 
-<!--if cura_version >= 4.3-->**Tento parametr umožňuje zadat několik úhlů, které se střídají podobně jako parametr [Směr linií výplně](../infill/infill_angles.md).**<!--endif-->
+*Od Cura 4.3 tento parametr umožňuje zadat několik úhlů, které se střídají podobně jako parametr [Směr linií výplně](../infill/infill_angles.md).*

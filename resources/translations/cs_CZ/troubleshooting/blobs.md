@@ -53,4 +53,4 @@ Pokud vlákno nahromadilo vlhkost, zatímco bylo stále na cívce, bude tato vod
 ----
 Šev bude vytvořen tam, kde je obvod vnější stěny zahájen a uzavřen. Není to to, co lidé obvykle nazývají kapkou, i když má podobný vzhled. V článku o [švech](seam.md) najdete informace o tom, jak tento účinek snížit.
 
-Pokud je parametr [Zarovnání švu v Z](../shell/z_seam_type.md) nastaven na "Náhodné", šev se rozloží kolem modelu a vytvoří všude malé švy. Může to vypadat přesně jako skvrna, i když je to vlastně šev. Upravte parametr Zarovnání švu v Z a skryjte tyto švy.
+Pokud je parametr [Zarovnání švu v Z](../shell/z_seam_type.md) nastaven na "Náhodné", šev se rozloží kolem modelu a vytvoří všude malé švy. Může to vypadat přesně jako skvrna, i když je to vlastně šev. Upravte parametr [Zarovnání švu v Z](../shell/z_seam_type.md) a skryjte tyto švy.

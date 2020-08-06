@@ -12,4 +12,4 @@ Pokud se tryska ve skutečnosti ochlazuje pomaleji, než co naznačuje toto nast
 
 Skutečná rychlost ochlazování není konstantní rychlost ve stupních za sekundu. Pravděpodobněji to bude záviset na rozdílu mezi aktuální teplotou trysky a teplotou tiskového objemu. A tak se ochlazuje rychleji rychleji, když je horká a ochladí se pomaleji, když se přiblíží k pohotovostní teplotě. Pokud to ladíte, zkuste naladit změřením času potřebného k vychladnutí z [konečné teploty tisku](../material/material_final_print_temperature.md) na [pohotovostní teplotu](../material/material_standby_temperature.md). Toto je nejdůležitější stopa, kterou se Cura pokusí předpovědět. Při malých tiscích byste mohli mírně zvýšit rychlost ochlazování a upravit tak, aby zůstala častěji horká.
 
-**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**
+*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*

@@ -6,4 +6,4 @@ Hlavním případem použití k úpravě toku je kompenzace poruchy v extruzi. P
 
 Je téměř vždy lepší opravit skutečný problém, který způsobuje nadměrné nebo nedostatečné vytlačování, ale přizpůsobení toku může být snadným dočasným řešením.
 
-**Pokud chcete, aby byly linie širší, je nejlepší upravit nastavení skutečné šířky linie. Šířka linie nemusí být stejná jako velikost trysky. Nastavení šířky linie také upravuje mezery mezi liniemi, což zabraňuje nadměrnému a nedostatečnému vytlačování. Úprava toku neupravuje mezery.**
+*Pokud chcete, aby byly linie širší, je nejlepší upravit nastavení skutečné šířky linie. Šířka linie nemusí být stejná jako velikost trysky. Nastavení šířky linie také upravuje mezery mezi liniemi, což zabraňuje nadměrnému a nedostatečnému vytlačování. Úprava toku neupravuje mezery.*

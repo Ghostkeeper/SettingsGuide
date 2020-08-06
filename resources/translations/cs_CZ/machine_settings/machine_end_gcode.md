@@ -44,4 +44,4 @@ Stejnou syntaxí jako odkazy na nastavení jsou k dispozici také některé pomo
 * `{day}` označuje den v týdnu slicování.
 * `{initial_extruder_nr}` odkazuje na extrudér, se kterým začne tisk.
 
-**Toto nastavení je nastavení stroje, takže se neobjeví v normálním seznamu nastavení. Lze ho změnit tak, že přejdete na seznam tiskáren v okně předvoleb a kliknete na "Nastavení stroje".**
+*Toto nastavení je nastavení stroje, takže se neobjeví v normálním seznamu nastavení. Lze ho změnit tak, že přejdete na seznam tiskáren v okně předvoleb a kliknete na "Nastavení stroje".*

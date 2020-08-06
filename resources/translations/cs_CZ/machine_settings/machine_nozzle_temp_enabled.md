@@ -6,4 +6,4 @@ Funkce je to podobná, jako  u parametru [Má vyhřívanou podložku tisku](mach
 
 Dočasné vypnutí by mohlo být použito k provedení suchého spuštění tisku. K tomu je také třeba zakázat [ohřev podložky tisku](machine_heated_bed.md), [ohřev objemu tisku](machine_heated_build_volume.md) a nastavit [průtok](../material/material_flow.md) na 0%.
 
-**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**
+*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*

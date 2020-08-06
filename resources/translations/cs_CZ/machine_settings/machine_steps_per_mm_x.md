@@ -6,4 +6,4 @@ To neplatí pro tiskárny, které nekontrolují pohyb ve směru X samostatným m
 
 Toto nastavení se v aplikaci Cura vůbec nepoužívá. Používá ho však plug-in X3Gwriter k výstupu X3G souborů se správnou velikostí kroku.
 
-**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**
+*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*

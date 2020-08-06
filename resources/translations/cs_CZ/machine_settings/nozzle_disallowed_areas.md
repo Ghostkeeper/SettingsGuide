@@ -10,4 +10,4 @@ Tyto zakázané oblasti jsou nezbytná, aby se zabránilo kolizi trysky s věcí
 
 Zakázané oblasti jsou nakresleny jako šedý stín na tiskové ploše, což indikuje uživateli, že tam nemůže umístit žádné objekty. Tyto stíny mohou být rozšířeny ve všech směrech, aby zabránily nárazu při tisku krempy nebo sukénky a z různých jiných důvodů. Na tiskové ploše jsou také jiné stíny, například pro omezení rozsahu pohybu, pokud mají trysky offset.
 
-**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**
+*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*

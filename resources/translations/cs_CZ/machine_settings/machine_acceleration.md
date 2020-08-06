@@ -4,4 +4,4 @@ Toto nastavení označuje zrychlení, které používá váš firmware, pokud Cu
 
 Slouží k získání správných odhadů času tisku, pokud Cura nekontroluje hodnotu zrychlení. Celý tisk bude poté používat stejnou hodnotu zrychlení.
 
-**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**
+*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*

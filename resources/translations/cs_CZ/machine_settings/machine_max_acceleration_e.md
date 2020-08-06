@@ -6,4 +6,4 @@ Toto nastavení se používá pouze k získání správných odhadů času. [Zry
 
 Je zcela běžné, že jsou dodrženy limity zrychlení podavače, protože (v závislosti na firmwaru) zrychlení nastavené aplikací Cura ovlivňuje také podavač. Proto je důležité, aby toto nastavení bylo správně nakonfigurováno, aby se získaly správné odhady času pro retrakce.
 
-**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**
+*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*

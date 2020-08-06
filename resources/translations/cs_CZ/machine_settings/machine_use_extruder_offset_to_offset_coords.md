@@ -8,4 +8,4 @@ Některé tiskárny by přesunuly tiskovou hlavu na stejné místo bez ohledu na
 
 Ostatní tiskárny automaticky upraví polohu tiskové hlavy tak, aby se aktivní tryska posunula do polohy uvedené v g-kódu. To znamená, že pokud g-kód přikáže tiskárně, aby se přesunula do pozice [50,50], přesunul by se do této pozice aktuálně aktivní extrudér. Samotná tisková hlava by se trochu posunula na stranu, aby tam umístila aktivní extrudér. Pokud se vaše tiskárna chová tímto způsobem, mělo by být toto nastavení deaktivováno.
 
-**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**
+*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*

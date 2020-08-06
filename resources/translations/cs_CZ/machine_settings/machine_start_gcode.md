@@ -52,4 +52,4 @@ Zahřívání před spuštěním g-kódu
 ----
 Cura automaticky vydá příkazy pro ohřev před spuštěním g-kódu. Takže váš startovací g-kód nemusí zvažovat, že se tryska musí zahřívat. Může okamžitě začít plnit trysku. Pokud váš startovací g-kód obsahuje odkaz na jakoukoli teplotu (pro trysku nebo lůžko), bude to deaktivováno (pro trysku nebo lůžko).
 
-**Toto nastavení je nastavení stroje, takže se neobjeví v normálním seznamu nastavení. Lze ho změnit tak, že přejdete na seznam tiskáren v okně předvoleb a kliknete na "Nastavení stroje".**
+*Toto nastavení je nastavení stroje, takže se neobjeví v normálním seznamu nastavení. Lze ho změnit tak, že přejdete na seznam tiskáren v okně předvoleb a kliknete na "Nastavení stroje".*

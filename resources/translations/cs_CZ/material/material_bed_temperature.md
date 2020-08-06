@@ -8,4 +8,4 @@ Pokud je však tisková podložka příliš horká, bude tisk velmi tekutý, kdy
 
 Pokud je tento parametr nastaven na 0 stupňů, Cura nevydá žádný příkaz ke změně teploty podložky tisku, což by mohlo zmást firmware, pokud podložka tisku neexistuje.
 
-**Když nastavíte teplotu podložky tisku v materiálovém profilu, upraví se nastavení parametru [Výchozí teplota tiskové podložky](default_material_bed_temperature.md). Normálně bude teplota podložky tisku stejná jako výchozí teplota podložky tisku, ale někdy volba jiné kvality tisku může mít za následek mírné přizpůsobení teploty podložky tisku. Toto nastavení teploty podložky tisku je takové, jaké se skutečně používá pro tisk.**
+*Když nastavíte teplotu podložky tisku v materiálovém profilu, upraví se nastavení parametru [Výchozí teplota tiskové podložky](default_material_bed_temperature.md). Normálně bude teplota podložky tisku stejná jako výchozí teplota podložky tisku, ale někdy volba jiné kvality tisku může mít za následek mírné přizpůsobení teploty podložky tisku. Toto nastavení teploty podložky tisku je takové, jaké se skutečně používá pro tisk.*

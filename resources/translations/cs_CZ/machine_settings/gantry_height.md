@@ -8,4 +8,4 @@ Většina 3D tiskáren má tiskovou hlavu zavěšenou na příčce nebo na dvou.
 
 Jedinou výjimkou je, když je na podložce tisku načten pouze jeden objekt. Tento objekt smí být vyšší než výška portálu, protože na podložce tisku nebude nic jiného, co by se s ním mohlo srazit.
 
-**Protože se jedná o nastavení stroje, nebude obvykle uvedeno v normálním seznamu nastavení. Výšku portálu lze změnit v dialogu nastavení tiskárny, který najdete v seznamu přidaných tiskáren v dialogu předvoleb.**
+*Protože se jedná o nastavení stroje, nebude obvykle uvedeno v normálním seznamu nastavení. Výšku portálu lze změnit v dialogu nastavení tiskárny, který najdete v seznamu přidaných tiskáren v dialogu předvoleb.*

@@ -6,4 +6,4 @@ Minimální rychlost je nastavení, které zabrání chybám ve firmwaru v důsl
 
 Cura používá tuto minimální rychlost k vytvoření správných odhadů času. Používá se při zrychlování na začátku tisku nebo po pauze a při zpomalení do klidového stavu na konci tisku nebo před pauzou.
 
-**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**
+*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*

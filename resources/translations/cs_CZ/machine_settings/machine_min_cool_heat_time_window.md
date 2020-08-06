@@ -6,4 +6,4 @@ Vaše tryska má PID regulátor, který reguluje, kolik energie je spotřebován
 
 Optimální hodnota pro toto nastavení závisí na vyladění vašeho PID regulátoru. Některé regulátory zvládají rychlé změny cílové teploty lépe než jiné a ty mohou být schopny lépe zvládnout krátkou pohotovostní dobu. Snížení tohoto nastavení by pak pomohlo zabránit materiálu v degradaci uvnitř trysky.
 
-**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**
+*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*

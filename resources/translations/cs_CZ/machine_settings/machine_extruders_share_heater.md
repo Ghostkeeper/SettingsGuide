@@ -6,4 +6,4 @@ Nejčastěji je to nutné pro směšovací trysky, kde se do stejné trysky při
 
 Cura nemusí nutně předpokládat, že pokud extrudéry sdílejí ohřev, sdílejí také trysku. Pokud ano, musí být relativní polohy trysek 0 a nejpravděpodobnější je, že musí být k dispozici určitá počáteční sekvence extrudéru, aby se při přepnutí propláchl předchozí materiál.
 
-**Protože se jedná o nastavení stroje, nebude obvykle uvedeno v normálním seznamu nastavení. Zaškrtávací políčko pro toto nastavení je však v dialogu nastavení tiskárny, které lze nalézt v seznamu přidaných tiskáren v dialogu předvoleb.**
+*Protože se jedná o nastavení stroje, nebude obvykle uvedeno v normálním seznamu nastavení. Zaškrtávací políčko pro toto nastavení je však v dialogu nastavení tiskárny, které lze nalézt v seznamu přidaných tiskáren v dialogu předvoleb.*

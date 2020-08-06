@@ -6,4 +6,4 @@ Na rozdíl od souřadnic X a Y je toto nastavení stroje. Je tomu tak proto, že
 
 Jedinou věcí, kterou se to změní, je souřadnice Z, na kterou Cura nařídí, přesunutí trysky před provedením příkazu zaváděcí kapky.
 
-**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**
+*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*
