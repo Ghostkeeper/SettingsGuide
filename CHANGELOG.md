@@ -1,3 +1,28 @@
+2.4.0 - Something to Hide
+====
+This is a maintenance update to document the new features of Cura 4.7. The articles can now also show different content depending on which version of Cura the user is running.
+
+New Features
+----
+* Added a syntax to allow articles to display different content in different Cura versions.
+* Added a syntax to be able to hide outdated content when viewed on Github.
+* Automated tests have been put in place to make it easier for people to contribute articles and translations while ensuring quality.
+
+Bug Fixes
+----
+* Some very short articles weren't displaying paragraphs properly. They are now.
+
+Articles
+----
+* Added articles about new settings for Cura 4.7.
+* Added a Czech translation.
+* Updated French translations.
+* Another pass over some old articles has been made to add advantages and disadvantages of some settings that were missing them.
+* In old versions of Cura, information only relevant to new versions is no longer shown.
+* In new versions of Cura and on Github, information only relevant to old versions is no longer shown.
+* Notices at the end of the articles are consistently bold now, not italic.
+* The contributors page is redesigned to give all contributors an equal position, not highlighting some with a picture but not others.
+
 2.3.0 - Machine Language
 ====
 This release adds translations of the guide, and new articles about the printer ("machine") settings.
