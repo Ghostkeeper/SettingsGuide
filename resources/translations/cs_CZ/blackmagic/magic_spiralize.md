@@ -12,4 +12,4 @@ Spiralizační režim je běžný u mnoha slicerů. Někdy se také nazývá "re
 * Nebude moc silný. 
 * Je obtížné zajistit, aby byl tisk vodotěsný, pokud má jakoukoli velikost. K tomu je vhodné mít alespoň 2 stěny. 
 
-*Spiralizace nebude dobře fungovat u výtisků s mnoha vodorovnými plochami. Vůbec nezvládá převisy a netiskne horní povrchy, takže se nic nebude moci opírat o vodorovný povrch. Rovněž nefunguje dobře, když je na vrstvě více částí.* 
+**Spiralizace nebude dobře fungovat u výtisků s mnoha vodorovnými plochami. Vůbec nezvládá převisy a netiskne horní povrchy, takže se nic nebude moci opírat o vodorovný povrch. Rovněž nefunguje dobře, když je na vrstvě více částí.**
