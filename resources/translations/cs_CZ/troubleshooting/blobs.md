@@ -43,7 +43,7 @@ Pokud je tryska nadměrně vytlačována, může být vytlačování nepravideln
 
 Pro snížení tohoto efektu je třeba vzít v úvahu některé parametry:
 * Zmenšete [šířku linií stěny](../resolution/wall_line_width.md). To obecně snižuje tlak v komoře trysky.
-* Zmenšete [šířku vnější stěny](../shell/wall_0_inset.md). Toto nastavení způsobí, že vnější stěna překrývá sousední vnitřní stěnu, takže stěna je tlačena silněji proti vnitřní stěně, což zvyšuje pevnost. Tento tah však také zvyšuje tlak uvnitř tryskové komory.
+* Zmenšete [vnoření vnější stěny](../shell/wall_0_inset.md). Toto nastavení způsobí, že vnější stěna překrývá sousední vnitřní stěnu, takže stěna je tlačena silněji proti vnitřní stěně, což zvyšuje pevnost. Tento tah však také zvyšuje tlak uvnitř tryskové komory.
 
 Mokré vlákno
 ----
