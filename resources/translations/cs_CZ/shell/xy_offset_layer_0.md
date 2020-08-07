@@ -1,6 +1,6 @@
 Horizontální rozšíření počáteční vrstvy
 ====
-Toto nastavení rozšiřuje pouze počáteční vrstvu, která spočívá na tiskové podložce (nebo na raftu). Pokud jde o [Horizontální rozšíření](xy_offset.md), pozitivní hodnota rozšíří počáteční vrstvu, zatímco záporná hodnota ji sníží.
+Toto nastavení rozšiřuje pouze počáteční vrstvu, která spočívá na tiskové podložce (nebo na raftu). Podobně jako [Horizontální rozšíření](xy_offset.md), pozitivní hodnota rozšíří počáteční vrstvu, zatímco záporná hodnota ji sníží.
 
 ![Původní model](../../../articles/images/xy_offset_layer_0_original.png)
 ![Počáteční vrstva je zmenšená](../../../articles/images/xy_offset_layer_0_enabled.png)

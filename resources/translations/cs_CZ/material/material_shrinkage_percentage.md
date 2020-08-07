@@ -6,4 +6,4 @@ Tento parametr se v současné době nepoužívá pro slicování. V současné 
 
 V budoucnu bude Cura moci použít toto nastavení k potlačení smrštění pro lepší přesnost rozměrů.
 
-*Tento parametr není v seznamu parametrů viditelný. Jedná se pouze o interní nastavení, které musí být přepsáno materiálovým profilem.*
+**Tento parametr není v seznamu parametrů viditelný. Jedná se pouze o interní nastavení, které musí být přepsáno materiálovým profilem.**

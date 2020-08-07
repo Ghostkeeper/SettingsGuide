@@ -14,7 +14,7 @@ Průměr vlákna
 ----
 Pro průměr vláken existuje několik norem. Nejběžnější jsou 1,75 mm a 2,85 mm, ale stále jsou možné i 3,00 mm. Kromě toho ne všichni výrobci vyrábějí svá vlákna s konstantním průměrem. Pokud je vaše vlákno širší, než to, co Cura očekává, vytlačíte příliš mnoho materiálu, protože Cura dá tiskárně pokyn k vytlačení určité délky vlákna, které bude mít příliš velký objem.
 
-K vyřešení tohoto problému nejprve změřte skutečný průměr vlákna pomocí posuvného měřítka. Nejlepší je změřit ho na několika místech, v případě, že se liší, a pod různými úhly po obvodu. Vezměte průměr těchto měření. Tento průměr lze zadat v aplikaci Cura na stránce Správa materiálu jako vlastnost materiálu. Pokud průměr nelze změnit, protože se jedná o vestavěný materiál, možná budete muset materiál nejprve duplikovat. To by vám pak mělo umožnit průměr upravit.                                                                                                                                                                  
+K vyřešení tohoto problému nejprve změřte skutečný průměr vlákna pomocí posuvného měřítka. Nejlepší je změřit ho na několika místech, v případě, že se liší, a pod různými úhly po obvodu. Vezměte průměr těchto měření. Tento průměr lze zadat v aplikaci Cura na stránce Správa materiálu jako vlastnost materiálu. Pokud průměr nelze změnit, protože se jedná o vestavěný materiál, možná budete muset materiál nejprve duplikovat. To by vám pak mělo umožnit průměr upravit.
 
 Kalibrace extrudéru
 ----
