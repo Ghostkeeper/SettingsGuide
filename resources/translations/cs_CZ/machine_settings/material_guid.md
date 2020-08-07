@@ -6,4 +6,4 @@ Pokud je tiskárna Ultimaker připojena k aplikaci Cura přes síť nebo interne
 
 Používá se také k seskupení dostupných úrovní kvality pro určitý materiál. Profilový systém Cury je velmi složitý, a to je jeden z jeho vtipů: Normálně Cura zobrazí všechny profily kvality dostupné pro aktuální typ materiálu. To znamená, že pokud určitý výrobce uvede, že jeho materiál je typem PLA, budou k dispozici všechny profily kvality pro PLA. Pokud však existuje nějaký profil kvality, který specifikuje aktuální materiál podle GUID, bude k dispozici pouze tento profil kvality. To v podstatě znamená, že existují profily speciálně přizpůsobené pro toto vlákno a obecné profily by již neměly být zobrazovány.
 
-*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*
+**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**

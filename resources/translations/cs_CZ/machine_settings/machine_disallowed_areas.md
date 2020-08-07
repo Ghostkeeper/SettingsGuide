@@ -10,4 +10,4 @@ Zakázané oblasti jsou nakresleny jako šedý stín na tiskové ploše, což in
 
 Pokud na překážku narazí pouze aktivní tryska, pak podobné nastavení [zakázané oblasti trysky](nozzle_disallowed_areas.md) může zabránit srážce trysky s ní a přitom stále umožnit tiskové hlavě přejít nad ní.
 
-*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*
+**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**
