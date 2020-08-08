@@ -31,7 +31,7 @@ Tyto parametry lze také upravit, pokud normální metody adheze k lůžku nejso
 * Zvyšte [výšku počáteční vrstvy](../resolution/layer_height_0.md). To nabízí trochu více prostoru pro chyby, pokud není montážní deska dokonale vodorovná. Také zvyšuje sílu, s níž je materiál tlačen z trysky a na tiskovou podložku.
 * Zvětšete [šířku linie počáteční vrstvy](../resolution/initial_layer_line_width_factor.md). Podobně to tlačí materiál s větší silou a dobře ho přilepuje k montážní desce.
 * Zvýšení [teploty tisku počáteční vrstvy](../material/material_print_temperature_layer_0.md) způsobuje, že materiál více vytéká na tiskovou podložku, čímž se zvětšuje kontaktní plocha.
-* Stejně jako zvýšení teploty, můžete také snížit [rychlost ventilátoru počáteční vrstvy](../cooling/cool_fan_speed_0.md), abyste materiál udrželi déle tekutý.
+* Stejně jako zvýšení teploty, můžete také snížit [rychlost ventilátoru počáteční vrstvy](../cooling/cool_fan_speed_0.md) nebo zvýšit [trvání tohoto nastavení](../cooling/cool_fan_full_at_height.md), abyste materiál udrželi déle tekutý.
 * Podobně snižte [rychlost počáteční vrstvy](../speed/speed_layer_0.md). Snížení [rychlost tisku počáteční vrstvy](../speed/speed_print_layer_0.md) způsobí, že materiál znovu více vytéká, protože materiál je horkou tryskou udržován déle tekutý. Snížení [rychlosti přesunu počáteční vrstvy](../speed/speed_travel_layer_0.md) snižuje pravděpodobnost, že pohyb přesunu vytáhne dříve vytištěné linie z podložky tisku. Stejně tak zvažte úpravu [zrychlení počáteční vrstvy](../speed/acceleration_layer_0.md) a [ryv (jerk) vrstvy](../speed/jerk_layer_0.md).
 * Zvyšte [počet pomalejších vrstev](../speed/speed_slowdown_layers.md). Tím se snižuje riziko rychlých pohybů, které způsobí, že stáhnou předchozí vrstvy.
 

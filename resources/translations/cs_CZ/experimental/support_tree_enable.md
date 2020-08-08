@@ -2,9 +2,9 @@ Stromová podpěra
 ====
 Stromová podpěra nabízí alternativní přístup k podepření modelu než běžná podpůrná technika. Stromová podpěra vytváří rozvětvenou strukturu, která začíná na tiskové podložce s malou základnou, ale která se vyvíjí směrem k částem, které je třeba podepřít.
 
-![Stromová struktura podpírá převis](../../../articles/images/support_tree_enable.png)
+![Stromová struktura podpírá převis](../../../articles/images/support_structure_tree.png)
 
-Stromové podpěry pomáhají vyhýbat se překážkám při růstu směrem k převislým oblastem. Je-li to možné, strom poroste z podložky tisku vzhůru, aby nedošlo ke zjizvení na povrchu, na kterém podpěra spočívá. Pokud to není možné, strom bude spočívat na povrchu modelu co nejblíže k převisu, aby se minimalizovala doba a spotřeba materiálu. Větve stromové podpěry jsou omezeny parametrem [Úhel větve stromové podpěry](support_tree_angle.md), takže pro sebe nevytvářejí příliš prudký převis. To omezuje schopnost růst kolem překážek a také určuje výšku, ve které se kmeny začnou větvit.
+Stromové podpěry pomáhají vyhýbat se překážkám při růstu směrem k převislým oblastem. Je-li to možné, strom poroste z podložky tisku vzhůru, aby nedošlo ke zjizvení na povrchu, na kterém podpěra spočívá. Pokud to není možné, strom bude spočívat na povrchu modelu co nejblíže k převisu, aby se minimalizovala doba a spotřeba materiálu. Větve stromové podpěry jsou omezeny parametrem [Úhel větve stromové podpěry](../support/support_tree_angle.md), takže pro sebe nevytvářejí příliš prudký převis. To omezuje schopnost růst kolem překážek a také určuje výšku, ve které se kmeny začnou větvit.
 
 Ve výchozím nastavení je stromová podpěra dutá. Běžná nastavení podpěry však stále platí pro oblast ohraničenou větvemi stromu. Zejména hodnota parametru [Hustota podpěry](../support/support_infill_rate.md) může být použita pro zvýšení nosnosti konstrukce. Protože povaha stromové podpěry je velmi nepravidelná, má obvykle svou tuhost, aby mohla plnit svou funkci.
 
