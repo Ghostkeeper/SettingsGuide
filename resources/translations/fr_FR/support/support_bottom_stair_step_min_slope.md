@@ -1,4 +1,4 @@
-Marche de l'escalier de soutien Angle de pente minimum
+Marche de support Angle de pente minimum
 ====
 Avec ce réglage, vous pouvez désactiver le fait de créer des macrhes sur le bas des supports, jusqu'à ce que la pente du modèle ait un certain angle.
 
