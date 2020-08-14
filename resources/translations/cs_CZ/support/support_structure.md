@@ -1,41 +1,41 @@
-Struktura podpìry
+Struktura podpÄ›ry
 ====
-S tímto nastavením si mùete vybrat, kterı algoritmus pouijete k vytvoøení podpùrnıch struktur. Tyto konstrukce mají vıraznì odlišné vlastnosti, take vıbìr algoritmu bude mít velkı vliv na to, jak dobøe bude váš tisk podpírán. K dispozici jsou dvì monosti.
+S tÃ­mto nastavenÃ­m si mÅ¯Å¾ete vybrat, kterÃ½ algoritmus pouÅ¾ijete k vytvoÅ™enÃ­ podpÅ¯rnÃ½ch struktur. Tyto konstrukce majÃ­ vÃ½raznÄ› odliÅ¡nÃ© vlastnosti, takÅ¾e vÃ½bÄ›r algoritmu bude mÃ­t velkÃ½ vliv na to, jak dobÅ™e bude vÃ¡Å¡ tisk podpÃ­rÃ¡n. K dispozici jsou dvÄ› moÅ¾nosti.
 
-Normální
+NormÃ¡lnÃ­
 ----
-![Normální podpùrná konstrukce](../../../articles/images/support_type_everywhere.png)
+![NormÃ¡lnÃ­ podpÅ¯rnÃ¡ konstrukce](../../../articles/images/support_type_everywhere.png)
 
-Jedná se o tradièní podpùrnou strukturu, na kterou je vìtšina lidí zvyklá. Struktura je generována pod pøevislımi oblastmi a obvykle je vyplnìna vzorem, kterı pøímo podpírá pøevislé oblasti. Odtud klesá pøímo dolù, dokud nedosáhne tiskovou podloku nebo èásti modelu, kterou podpírá.
+JednÃ¡ se o tradiÄnÃ­ podpÅ¯rnou strukturu, na kterou je vÄ›tÅ¡ina lidÃ­ zvyklÃ¡. Struktura je generovÃ¡na pod pÅ™evislÃ½mi oblastmi a obvykle je vyplnÄ›na vzorem, kterÃ½ pÅ™Ã­mo podpÃ­rÃ¡ pÅ™evislÃ© oblasti. Odtud klesÃ¡ pÅ™Ã­mo dolÅ¯, dokud nedosÃ¡hne tiskovou podloÅ¾ku nebo ÄÃ¡sti modelu, kterou podpÃ­rÃ¡.
 
-Normální konstrukce podpìry byla vıchozí pro vìtšinu historie 3D tisku a funguje podobnì ve všech slicerech. Toto je zlatı standard, a ne bez dùvodu:
-* Díky své robustní struktuøe, velkım kontaktním plochám na modelu a podloce tisku je velmi spolehlivá. Odpouští velmi špatné nastavení nebo špatnì naladìné tiskárny.
-* Protoe je tvar jednoduchı, lze ji rychle slicovat.
-* Pøímou strukturu podpìry lze snadno pøizpùsobit pro uivatele, protoe je okamitì jasné, které hranice budou podpírány a které nikoli.
+NormÃ¡lnÃ­ konstrukce podpÄ›ry byla vÃ½chozÃ­ pro vÄ›tÅ¡inu historie 3D tisku a funguje podobnÄ› ve vÅ¡ech slicerech. Toto je zlatÃ½ standard, a ne bez dÅ¯vodu:
+* DÃ­ky svÃ© robustnÃ­ struktuÅ™e, velkÃ½m kontaktnÃ­m plochÃ¡m na modelu a podloÅ¾ce tisku je velmi spolehlivÃ¡. OdpouÅ¡tÃ­ velmi Å¡patnÃ© nastavenÃ­ nebo Å¡patnÄ› naladÄ›nÃ© tiskÃ¡rny.
+* ProtoÅ¾e je tvar jednoduchÃ½, lze ji rychle slicovat.
+* PÅ™Ã­mou strukturu podpÄ›ry lze snadno pÅ™izpÅ¯sobit pro uÅ¾ivatele, protoÅ¾e je okamÅ¾itÄ› jasnÃ©, kterÃ© hranice budou podpÃ­rÃ¡ny a kterÃ© nikoli.
 
-Nejdùleitìjší nevıhody vyplıvají ze stejnıch vlastností:
-* Díky velkım kontaktním oblastem je podpìra èasto obtínì odstranitelná a mùe na povrchu, kde se dotıká, zanechat znaèné jizvy.
-* Pøestoe je stabilní, mùe spotøebovat spoustu materiálu a tisk mùe zabrat spoustu èasu. To lze do urèité míry potlaèit pomocí [kónické podpìry](../experimental/conical_overhang_enabled.md).
+NejdÅ¯leÅ¾itÄ›jÅ¡Ã­ nevÃ½hody vyplÃ½vajÃ­ ze stejnÃ½ch vlastnostÃ­:
+* DÃ­ky velkÃ½m kontaktnÃ­m oblastem je podpÄ›ra Äasto obtÃ­Å¾nÄ› odstranitelnÃ¡ a mÅ¯Å¾e na povrchu, kde se dotÃ½kÃ¡, zanechat znaÄnÃ© jizvy.
+* PÅ™estoÅ¾e je stabilnÃ­, mÅ¯Å¾e spotÅ™ebovat spoustu materiÃ¡lu a tisk mÅ¯Å¾e zabrat spoustu Äasu. To lze do urÄitÃ© mÃ­ry potlaÄit pomocÃ­ [kÃ³nickÃ© podpÄ›ry](../experimental/conical_overhang_enabled.md).
 
-Protoe podpìra bude obvykle velká a široká, je pro správné podepøení povrchu potøeba [vıplòovı vzor](support_pattern.md). Cik-cak vzor vıplnì mùe bıt pouit k tisku podpìry z velké èásti z jedné linie a pro umonìní snadnìjšího odstranìní. Další vzory lze kombinovat s extra [obrysy](support_wall_count.md) aby byla podpìra místo toho robustní.
+ProtoÅ¾e podpÄ›ra bude obvykle velkÃ¡ a Å¡irokÃ¡, je pro sprÃ¡vnÃ© podepÅ™enÃ­ povrchu potÅ™eba [vÃ½plÅˆovÃ½ vzor](support_pattern.md). Cik-cak vzor vÃ½plnÄ› mÅ¯Å¾e bÃ½t pouÅ¾it k tisku podpÄ›ry z velkÃ© ÄÃ¡sti z jednÃ© linie a pro umoÅ¾nÄ›nÃ­ snadnÄ›jÅ¡Ã­ho odstranÄ›nÃ­. DalÅ¡Ã­ vzory lze kombinovat s extra [obrysy](support_wall_count.md) aby byla podpÄ›ra mÃ­sto toho robustnÃ­.
 
 Strom
 ----
-![Stromová podpìra](../../../articles/images/support_structure_tree.png)
+![StromovÃ¡ podpÄ›ra](../../../articles/images/support_structure_tree.png)
 
-Pøi stromové podpìøe zaène podpùrná struktura na desce sestavy malá a její vìtve rostou smìrem k èástem tisku, které potøebují podepøít.
+PÅ™i stromovÃ© podpÄ›Å™e zaÄne podpÅ¯rnÃ¡ struktura na desce sestavy malÃ¡ a jejÃ­ vÄ›tve rostou smÄ›rem k ÄÃ¡stem tisku, kterÃ© potÅ™ebujÃ­ podepÅ™Ã­t.
 
-Stromová podpìra se mùe vyhnout pøekákám, kdy roste smìrem k pøevislım oblastem, protoe nemusí splıvat pøímo dolù. Pokud je to vùbec moné, bude podpìra spoèívat pouze na tiskové podloce, aby se zabránilo zjizvení povrchu, na kterém podpìra spoèívá. Pokud z podloky tisku k pøevisu neexistuje ádná cesta, bude podpìra spoèívat na povrchu, kterı je co nejblíe pøevisu, aby se minimalizovalo pouití materiálu. Vìtve stromové podpìry jsou omezeny hodnotou parametru [Úhel vìtve stromové podpìry](support_tree_angle.md) take samotné nevytváøí pøíliš strmı pøevis. To omezuje schopnost rùst kolem pøekáek a také urèuje vıšku, ve které se kmeny zaènou rozvìtvovat.
+StromovÃ¡ podpÄ›ra se mÅ¯Å¾e vyhnout pÅ™ekÃ¡Å¾kÃ¡m, kdyÅ¾ roste smÄ›rem k pÅ™evislÃ½m oblastem, protoÅ¾e nemusÃ­ splÃ½vat pÅ™Ã­mo dolÅ¯. Pokud je to vÅ¯bec moÅ¾nÃ©, bude podpÄ›ra spoÄÃ­vat pouze na tiskovÃ© podloÅ¾ce, aby se zabrÃ¡nilo zjizvenÃ­ povrchu, na kterÃ©m podpÄ›ra spoÄÃ­vÃ¡. Pokud z podloÅ¾ky tisku k pÅ™evisu neexistuje Å¾Ã¡dnÃ¡ cesta, bude podpÄ›ra spoÄÃ­vat na povrchu, kterÃ½ je co nejblÃ­Å¾e pÅ™evisu, aby se minimalizovalo pouÅ¾itÃ­ materiÃ¡lu. VÄ›tve stromovÃ© podpÄ›ry jsou omezeny hodnotou parametru [Ãšhel vÄ›tve stromovÃ© podpÄ›ry](support_tree_angle.md) takÅ¾e samotnÃ© nevytvÃ¡Å™Ã­ pÅ™Ã­liÅ¡ strmÃ½ pÅ™evis. To omezuje schopnost rÅ¯st kolem pÅ™ekÃ¡Å¾ek a takÃ© urÄuje vÃ½Å¡ku, ve kterÃ© se kmeny zaÄnou rozvÄ›tvovat.
 
-Konstrukce stromové podpìry má oproti bìné podpìøe øadu velkıch vıhod:
-* Stromová podpìra èasto pouívá mnohem ménì materiálu ne bìná podpìra. Bìné je 25 a 50% vyuití materiálu. To šetøí spoustu èasu a sniuje náklady na tisk.
-* Vzhledem k jeho malé kontaktní ploše má pøevis pøi pouití stromové podpìry tendenci vypadat lépe.
-* Také díky malé kontaktní oblasti bude podpìru snadnìjší odstranit.
-* Zanechává na povrchu ménì jizev ne bìná podpìra, protoe je schopna se pohybovat kolem modelu od tiskové podloky smìrem k pøevisu.
+Konstrukce stromovÃ© podpÄ›ry mÃ¡ oproti bÄ›Å¾nÃ© podpÄ›Å™e Å™adu velkÃ½ch vÃ½hod:
+* StromovÃ¡ podpÄ›ra Äasto pouÅ¾Ã­vÃ¡ mnohem mÃ©nÄ› materiÃ¡lu neÅ¾ bÄ›Å¾nÃ¡ podpÄ›ra. BÄ›Å¾nÃ© je 25 aÅ¾ 50% vyuÅ¾itÃ­ materiÃ¡lu. To Å¡etÅ™Ã­ spoustu Äasu a sniÅ¾uje nÃ¡klady na tisk.
+* Vzhledem k jeho malÃ© kontaktnÃ­ ploÅ¡e mÃ¡ pÅ™evis pÅ™i pouÅ¾itÃ­ stromovÃ© podpÄ›ry tendenci vypadat lÃ©pe.
+* TakÃ© dÃ­ky malÃ© kontaktnÃ­ oblasti bude podpÄ›ru snadnÄ›jÅ¡Ã­ odstranit.
+* ZanechÃ¡vÃ¡ na povrchu mÃ©nÄ› jizev neÅ¾ bÄ›Å¾nÃ¡ podpÄ›ra, protoÅ¾e je schopna se pohybovat kolem modelu od tiskovÃ© podloÅ¾ky smÄ›rem k pÅ™evisu.
 
-Hlavní nevıhody jsou:
-* Slicování trvá podstatnì déle ne normální podpìra. Bude zapotøebí trpìlivosti, zejména u vysokıch modelù.
-* Pøi tisku nejmenších vìtví dochází v toku k mnoha pøerušením, co zpùsobuje, e stromová podpìra není vhodná pro tisk pomocí materiálù, které lze tìko vytlaèovat, jako je PVA nebo pruné materiály.
-* Stromová podpìra nefunguje dobøe pro podpírání nìkterıch mechanickıch modelù. Zejména má tendenci umísovat pøíliš málo vìtví na podporu plochıch, šikmıch pøevisù.
+HlavnÃ­ nevÃ½hody jsou:
+* SlicovÃ¡nÃ­ trvÃ¡ podstatnÄ› dÃ©le neÅ¾ normÃ¡lnÃ­ podpÄ›ra. Bude zapotÅ™ebÃ­ trpÄ›livosti, zejmÃ©na u vysokÃ½ch modelÅ¯.
+* PÅ™i tisku nejmenÅ¡Ã­ch vÄ›tvÃ­ dochÃ¡zÃ­ v toku k mnoha pÅ™eruÅ¡enÃ­m, coÅ¾ zpÅ¯sobuje, Å¾e stromovÃ¡ podpÄ›ra nenÃ­ vhodnÃ¡ pro tisk pomocÃ­ materiÃ¡lÅ¯, kterÃ© lze tÄ›Å¾ko vytlaÄovat, jako je PVA nebo pruÅ¾nÃ© materiÃ¡ly.
+* StromovÃ¡ podpÄ›ra nefunguje dobÅ™e pro podpÃ­rÃ¡nÃ­ nÄ›kterÃ½ch mechanickÃ½ch modelÅ¯. ZejmÃ©na mÃ¡ tendenci umÃ­sÅ¥ovat pÅ™Ã­liÅ¡ mÃ¡lo vÄ›tvÃ­ na podporu plochÃ½ch, Å¡ikmÃ½ch pÅ™evisÅ¯.
 
-Ve vıchozím nastavení je stromová podpìra dutá. Vìtve budou mít malı hrot, take vıplòovı vzor neposkytuje zvláštní podporu pro pøevislı povrch tištìné poloky. Díky svému zubatému tvaru je stromová podpìra obvykle pomìrnì robustní. Bìná nastavení podpìry však stále platí pro oblast ohranièenou vìtvemi stromu. Pro zvıšení pevnosti podpùrné struktury mùe bıt pouit parametr [Hustota podpìry](support_infill_rate.md).
+Ve vÃ½chozÃ­m nastavenÃ­ je stromovÃ¡ podpÄ›ra dutÃ¡. VÄ›tve budou mÃ­t malÃ½ hrot, takÅ¾e vÃ½plÅˆovÃ½ vzor neposkytuje zvlÃ¡Å¡tnÃ­ podporu pro pÅ™evislÃ½ povrch tiÅ¡tÄ›nÃ© poloÅ¾ky. DÃ­ky svÃ©mu zubatÃ©mu tvaru je stromovÃ¡ podpÄ›ra obvykle pomÄ›rnÄ› robustnÃ­. BÄ›Å¾nÃ¡ nastavenÃ­ podpÄ›ry vÅ¡ak stÃ¡le platÃ­ pro oblast ohraniÄenou vÄ›tvemi stromu. Pro zvÃ½Å¡enÃ­ pevnosti podpÅ¯rnÃ© struktury mÅ¯Å¾e bÃ½t pouÅ¾it parametr [Hustota podpÄ›ry](support_infill_rate.md).
