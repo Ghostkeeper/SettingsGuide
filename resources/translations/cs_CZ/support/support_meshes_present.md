@@ -1,4 +1,4 @@
-Scene Has Support Meshes
+Scéna má podpůrné sítě
 ====
 Nejedná se o skutečné nastavení, ale o skryté interní nastavení, které mohou ostatní nastavení a profily použít k úpravě svých profilů na základě toho, zda jsou ve scéně přítomny podpůrné sítě.
 
