@@ -12,4 +12,4 @@ Pokud se tryska zahřeje pomaleji, než je uvedeno v tomto nastavení, bude tisk
 
 Skutečná rychlost zahřívání není konstantní rychlost ve stupních za sekundu. Pravděpodobněji to bude záviset na rozdílu mezi aktuální teplotou trysky a teplotou tiskového objemu. Jako taková se bude zahřívat rychleji, když je chladná, a když se blíží cílové teplotě, bude se ohřívat pomaleji. Velkou roli v tom hraje také regulátor PID tiskárny. Většina regulátorů zpomalí ohřev těsně před dosažením cílové teploty, aby se zabránilo jejímu překročení. Pokud toto ladíte, zkuste to naladit změřením času potřebného k zahřátí z [pohotovostní teploty](../material/material_initial_print_temperature.md) na [počáteční teplotu tisku](../material/material_initial_print_temperature.md). Toto je nejdůležitější stopa, kterou se Cura pokusí předpovědět. Při malých tiscích byste mohli mírně snížit rychlost zahřívání a nastavit tak, aby se nespustilo z pohotovostní teploty, ale z vyšší teploty.
 
-*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*
+**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**

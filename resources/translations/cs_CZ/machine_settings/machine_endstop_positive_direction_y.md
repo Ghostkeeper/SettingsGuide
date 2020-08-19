@@ -4,4 +4,4 @@ Toto nastavení oznámí aplikaci Cura, kterým směrem se bude tiskárna pohybo
 
 Toto nastavení Cura vůbec nepoužívá. Používá však ho však plug-in X3GWriter pro správnou implementaci příkazu homing g-kódu při zápisu souboru dráhy nástroje X3G.
 
-*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*
+**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**

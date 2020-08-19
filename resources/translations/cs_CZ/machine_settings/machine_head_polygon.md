@@ -6,4 +6,4 @@ Toto je nastavení, které bylo kdysi používáno stejným způsobem jako to, k
 
 V pozdějších verzích se však ukázalo, že se ventilátory mohou srazit stejně dobře jako zbytek tiskové hlavy. Toto nastavení je nakonec v Cura 4.5 odstraněno, přestože v mnoha verzích nebylo dříve použito. Ve vaší aktuální verzi Cury nemá toto nastavení vůbec žádný efekt.
 
-*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.*
+**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**

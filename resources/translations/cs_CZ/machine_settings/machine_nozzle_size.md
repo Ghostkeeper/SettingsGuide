@@ -10,4 +10,4 @@ Velikost trysek se také používá přímo, pro jeden detail: Když se [vyplňu
 
 Velikost trysky neupravujte, dokud skutečně neupravujete fyzickou trysku. Některé slicery (včetně Cury 15.04 a dřívějších) používají termín "velikost trysek", což znamená, jak široké linie tisku by měly být. Cura k tomu používá nastavení [šířky linie](../resolution/line_width.md).
 
-*Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné. Pokud má vaše tiskárna specifické profily pro dostupné trysky, můžete si je vybrat z nabídky nastavení tiskárny v horní horní části obrazovky. V opačném případě můžete upravit průměr trysek v dialogu nastavení tiskárny, který najdete v seznamu přidaných tiskáren v dialogu předvoleb.*
+**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné. Pokud má vaše tiskárna specifické profily pro dostupné trysky, můžete si je vybrat z nabídky nastavení tiskárny v horní horní části obrazovky. V opačném případě můžete upravit průměr trysek v dialogu nastavení tiskárny, který najdete v seznamu přidaných tiskáren v dialogu předvoleb.**
