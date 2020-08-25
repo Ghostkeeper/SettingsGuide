@@ -17,7 +17,7 @@ La construction de support normale a été la valeur par défaut pour la plupart
 
 Les inconvénients les plus importants proviennent des mêmes propriétés:
 * En raison des grandes zones de contact, le support est souvent difficile à retirer et peut laisser des cicatrices importantes sur la surface où il a été touché.
-* Bien qu'il soit stable, il peut utiliser beaucoup de matière et prendre beaucoup de temps à imprimer. Cela peut être contrecarré dans une certaine mesure en utilisant [support conique][conical support](../experimental/conical_overhang_enabled.md).
+* Bien qu'il soit stable, il peut utiliser beaucoup de matière et prendre beaucoup de temps à imprimer. Cela peut être contrecarré dans une certaine mesure en utilisant [support conique](../experimental/conical_overhang_enabled.md).
 
 
 Comme le support sera généralement large et large, un [motif de remplissage](support_pattern.md) est nécessaire pour supporter correctement la surface. Le motif de remplissage en zig-zag peut être utilisé pour imprimer le support en grande partie sur une seule ligne et pour permettre un retrait plus facile. D'autres modèles peuvent être combinés avec un [contour supplémentaire](support_wall_count.md) pour rendre le support plus robuste à la place.
