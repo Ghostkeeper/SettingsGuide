@@ -4,7 +4,7 @@ Avec ce paramètre, vous pouvez choisir l'algorithme à utiliser pour construire
 
 Normal
 ----
-![Support normal](../../articles/images/support_type_everywhere.png)
+![Support normal](../../../articles/images/support_type_everywhere.png)
 
 Il s'agit d'une structure de soutien traditionnelle, celle à laquelle la plupart des gens sont habitués. La structure est générée sous les zones en surplomb et généralement remplie d'un motif qui supporte directement les zones en surplomb. De là, il est déposé directement vers le bas jusqu'à ce qu'il atteigne le plateau de construction ou une partie du modèle qui le supporte.
 
@@ -25,7 +25,7 @@ Comme le support sera généralement large et large, un [motif de remplissage](s
 
 Arborescence
 ----
-![Support Arborescent](../../articles/images/support_structure_tree.png)
+![Support Arborescent](../../../articles/images/support_structure_tree.png)
 
 Avec le support d'arbre, la structure de support commencera petit sur la plaque de construction et poussera des branches vers les parties de l'impression qui ont besoin d'être supportées.
 
