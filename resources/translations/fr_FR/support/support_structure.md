@@ -20,7 +20,7 @@ Les inconvénients les plus importants proviennent des mêmes propriétés:
 * Bien qu'il soit stable, il peut utiliser beaucoup de matière et prendre beaucoup de temps à imprimer. Cela peut être contrecarré dans une certaine mesure en utilisant [Rendre le porte-à-faux imprimable](../experimental/conical_overhang_enabled.md).
 
 
-Comme le support sera généralement large et large, un [motif du support](support_pattern.md) est nécessaire pour supporter correctement la surface. Le motif de remplissage en zig-zag peut être utilisé pour imprimer le support en grande partie sur une seule ligne et pour permettre un retrait plus facile. D'autres modèles peuvent être combinés avec un [contour supplémentaire](support_wall_count.md) pour rendre le support plus robuste à la place.
+Comme le support sera généralement large et large, un [motif du support](support_pattern.md) est nécessaire pour supporter correctement la surface. Le motif de remplissage en zig-zag peut être utilisé pour imprimer le support en grande partie sur une seule ligne et pour permettre un retrait plus facile. D'autres modèles peuvent être combinés avec un [Nombre de lignes de la paroi du support](support_wall_count.md) pour rendre le support plus robuste à la place.
 
 
 Arborescence
@@ -29,7 +29,7 @@ Arborescence
 
 Avec le support d'arbre, la structure de support commencera petit sur la plaque de construction et poussera des branches vers les parties de l'impression qui ont besoin d'être supportées.
 
-Le support d'arbre peut éviter les obstacles lors de la croissance vers les zones de surplomb, car le support n'a pas besoin de descendre directement. Dans la mesure du possible, le support reposera uniquement sur la plaque de construction, pour éviter de cicatriser la surface sur laquelle repose le support. S'il n'y a pas de chemin entre la plaque de construction et le surplomb, il reposera sur une surface aussi proche que possible du surplomb, afin de minimiser l'utilisation du matériau. Les branches du support d'arbre sont limitées par l '[Angle de branche de support d'arbre](support_tree_angle.md) afin qu'elles ne produisent pas elles-mêmes un surplomb trop raide. Cela limite la capacité de se développer autour des obstacles et détermine également la hauteur à laquelle les troncs commenceront à se ramifier.
+Le support d'arbre peut éviter les obstacles lors de la croissance vers les zones de surplomb, car le support n'a pas besoin de descendre directement. Dans la mesure du possible, le support reposera uniquement sur la plaque de construction, pour éviter de cicatriser la surface sur laquelle repose le support. S'il n'y a pas de chemin entre la plaque de construction et le surplomb, il reposera sur une surface aussi proche que possible du surplomb, afin de minimiser l'utilisation du matériau. Les branches du support d'arbre sont limitées par l'[Angle de branche de support arborescent](support_tree_angle.md) afin qu'elles ne produisent pas elles-mêmes un surplomb trop raide. Cela limite la capacité de se développer autour des obstacles et détermine également la hauteur à laquelle les troncs commenceront à se ramifier.
 
 La construction du support d'arbre présente un certain nombre de grands avantages par rapport au support normal:
 * Le support d'arbre utilise souvent beaucoup moins de matière que le support ordinaire. Entre 25% et 50% de l'utilisation du matériel est courante. Cela économise beaucoup de temps et réduit le coût de l'impression.
