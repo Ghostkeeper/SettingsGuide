@@ -20,7 +20,7 @@ Les inconvénients les plus importants proviennent des mêmes propriétés:
 * Bien qu'il soit stable, il peut utiliser beaucoup de matière et prendre beaucoup de temps à imprimer. Cela peut être contrecarré dans une certaine mesure en utilisant [Rendre le porte-à-faux imprimable](../experimental/conical_overhang_enabled.md).
 
 
-Comme le support sera généralement large et large, un [motif de remplissage](support_pattern.md) est nécessaire pour supporter correctement la surface. Le motif de remplissage en zig-zag peut être utilisé pour imprimer le support en grande partie sur une seule ligne et pour permettre un retrait plus facile. D'autres modèles peuvent être combinés avec un [contour supplémentaire](support_wall_count.md) pour rendre le support plus robuste à la place.
+Comme le support sera généralement large et large, un [motif du support](support_pattern.md) est nécessaire pour supporter correctement la surface. Le motif de remplissage en zig-zag peut être utilisé pour imprimer le support en grande partie sur une seule ligne et pour permettre un retrait plus facile. D'autres modèles peuvent être combinés avec un [contour supplémentaire](support_wall_count.md) pour rendre le support plus robuste à la place.
 
 
 Arborescence
