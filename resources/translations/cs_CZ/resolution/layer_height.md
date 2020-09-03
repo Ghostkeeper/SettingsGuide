@@ -21,6 +21,4 @@ Další poznámky
 ----
 Při velmi nízké výšce vrstvy se můžete dostat do limitu rozlišení vaší osy Z. Zkontrolujte velikost kroku osy Z vaší tiskárny a ujistěte se, že výška vrstvy je jeho násobkem. Pokud se neshodují, některé vrstvy budou silnější než jiné, což způsobí pruhy.
 
-*Mějte na paměti, že nastavení výšky vrstvy se nevztahuje na počáteční vrstvu tisku nebo na vrstvy voru, které mají svá vlastní samostatná nastavení pro úpravu výšky vrstev. Při použití adaptivních vrstev bude toto nastavení výšky vrstvy použito jako základní linie, ale skutečná výška vrstvy bude mít určité variace.*
-
-
+**Mějte na paměti, že nastavení výšky vrstvy se nevztahuje na počáteční vrstvu tisku nebo na vrstvy voru, které mají svá vlastní samostatná nastavení pro úpravu výšky vrstev. Při použití adaptivních vrstev bude toto nastavení výšky vrstvy použito jako základní linie, ale skutečná výška vrstvy bude mít určité variace.**

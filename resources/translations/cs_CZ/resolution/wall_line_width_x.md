@@ -16,6 +16,4 @@ Pokud je aktivována funkce [Vyplnit mezery mezi stěnami](../shell/fill_perimet
 
 Pro ideální uložení musí být díl přesným násobkem šířky linie stěny tak, aby stěny přesně zapadaly do součásti. Pokud znáte šířku svého součásti, lze to snadno provést úpravou šířky stěn. Nejprve uvidíte, kolik obrysů chcete upravit tak, aby byly linie stále přiměřené šířky. Pak uvidíte, o kolik musíte upravit šířku linií stěny, aby řádky správně zapadly. Mějte na paměti, že můžete upravit [šířku linie vnější stěny](wall_line_width_0.md) a šířku linie vnitřní stěny samostatně. Pečlivě spočítejte, kolikrát bude každý typ stěny nakreslen, aby se mohl předpovědět účinek změny šířky linie stěny.
 
-Přizpůsobení linií stěn je důležitou dovedností pro 3D tisk, který odlišuje odborné operátory 3D tiskáren od ostatních. Je nutná určitá praxe..
-
-
+Přizpůsobení linií stěn je důležitou dovedností pro 3D tisk, který odlišuje odborné operátory 3D tiskáren od ostatních. Je nutná určitá praxe.
