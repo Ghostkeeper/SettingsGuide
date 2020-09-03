@@ -4,7 +4,7 @@ Přispěvatelé
 
 Programování
 ----
-![Ghostkeeper - Verze 1.1 a novější](../images/contributors/Ghostkeeper.png)
+![Ghostkeeper - Verze 1.1 a novější](../../../articles/images/contributors/Ghostkeeper.png)
 ![Alekseisasin - Verze 1.0](../../../articles/images/contributors/Alekseisasin.png)
 
 Články
