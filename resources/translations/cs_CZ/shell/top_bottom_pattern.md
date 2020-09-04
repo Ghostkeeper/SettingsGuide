@@ -31,5 +31,3 @@ Cikcak vzor je velmi podobný lineárnímu vzoru, ale místo toho, aby ukončil 
 * Velmi tuhý ve směrech, kde jsou linie nakresleny.
 * Udržuje rychlost vytlačování konstantní, což zlepšuje konzistenci povrchu pro materiály, které je těžší vytlačovat.
 * Nelepí se stejně dobře na stěny jako lineární vzor. Účinek parametru [Procento překrytí pláště](skin_overlap.md) je snížen. Tím je součást slabší a snižuje se kvalita převisů.
-
-

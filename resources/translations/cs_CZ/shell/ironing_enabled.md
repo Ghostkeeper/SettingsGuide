@@ -13,5 +13,3 @@ Povolit žehlení
 * Výrazně to zvyšuje dobu tisku.
 * Pokud má žehlení vzor přerušení (protože se musí přesunout do různých částí), zanechá viditelnou linii mezi částí, která byla dříve vyžehlena a částí, která byla vyžehlena později. Tomu lze někdy zabránit nastavením parametru [Vzor žehlení](ironing_pattern.md) na jiný, například soustředný.
 * Nakloněné povrchy nebo horní povrchy se spoustou detailů lze také vyžehlit, což zvyšuje topografický efekt. Hranice mezi vrstvami jsou výraznější. Tomu lze zabránit aktivací funkce [Žehlit pouze nejvyšší vrstvu](ironing_only_highest_layer.md).
-
-
