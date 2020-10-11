@@ -126,6 +126,12 @@
 			"description": "About this plug-in",
 			"icon": "info",
 			"children": {
+				"glossary": {
+					"label": "Glossary",
+					"description": "Terminology used by Cura.",
+					"type": "str",
+					"default_value": ""
+				},
 				"preferences": {
 					"label": "Preferences",
 					"description": "Adjust the behaviour of this plug-in.",
