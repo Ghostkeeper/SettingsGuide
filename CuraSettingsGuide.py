@@ -235,8 +235,9 @@ class CuraSettingsGuide(Extension, QObject):
 		"""
 		self.load_definitions()
 
-		if self._dialog:
-			return  # Dialogue already open.
+		if self._dialog:  # Dialogue already open.
+			self._dialog.requestActivate()  # Bring focus to dialogue.
+			return
 		Logger.log("d", "Creating Settings Guide window.")
 		plugin_path = PluginRegistry.getInstance().getPluginPath(self.getPluginId())
 		if plugin_path is None:
