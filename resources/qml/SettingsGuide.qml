@@ -1,5 +1,5 @@
 //Copyright (C) 2018 Ultimaker B.V.
-//Copyright (C) 2019 Ghostkeeper
+//Copyright (C) 2020 Ghostkeeper
 //This plug-in is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 //This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 //You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
@@ -14,7 +14,20 @@ import Cura 1.0 as Cura
 Window {
 	id: settingsGuideBase
 	title: catalog.i18nc("@title", "Cura Settings Guide") + " (" + manager.pluginVersion + ")"
-	modality: Qt.NonModal
+
+	modality: UM.Preferences.getValue("settings_guide/window+always+in+front") ? Qt.ApplicationModal : Qt.NonModal
+	Connections {
+		target: UM.Preferences
+		onPreferenceChanged: {
+			//Update modality if preference changes.
+			if(preference !== "settings_guide/window+always+in+front") {
+				return;
+			}
+			settingsGuideBase.hide(); //Qt limitation: Need to hide and show the window to change the modality.
+			settingsGuideBase.modality = UM.Preferences.getValue("settings_guide/window+always+in+front") ? Qt.ApplicationModal : Qt.NonModal;
+			settingsGuideBase.show();
+		}
+	}
 
 	width: 1200 * screenScaleFactor
 	height: 640 * screenScaleFactor
