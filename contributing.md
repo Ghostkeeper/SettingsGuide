@@ -1,3 +1,5 @@
+This Cura plug-in aims to be free software (as in freedom). You are free to modify it under the terms of the [license](LICENSE.md), which is chosen purposefully to stimulate people to contribute. Contributors who have their changes merged into Ghostkeeper's repository will be added to the [contributors article](resources/articles/about/contributors.md). This document describes how you can contribute and things you need to keep in mind then.
+
 Reporting bugs
 ----
 Please report bugs in the [issues page of this repository](https://github.com/Ghostkeeper/SettingsGuide/issues). Do not report bugs in the Cura repository; they will be closed there.
@@ -5,6 +7,15 @@ Please report bugs in the [issues page of this repository](https://github.com/Gh
 When reporting a bug, it helps to provide the following information:
 * The version of SettingsGuide you're using.
 * Cura's log file (see [Cura's readme](https://github.com/Ultimaker/Cura#logging-issues) for instructions on where to find that).
+* What you did when you encountered the bug, or what someone else could do to see it happen.
+
+Reporting mistakes or omissions in the articles
+----
+If you think there is something wrong with an article, or you think something is missing, you may not always have the technical skill or time to correct it yourself. Please [create an issue](https://github.com/Ghostkeeper/SettingsGuide/issues/new/choose) and explain:
+* which article the mistake or omission is in,
+* what you'd like to change.
+
+The developer or other contributors can make the changes for you. Keep in mind that some effects are subjective, and settings may have different effects with different printers or materials. Your own experiences are not the only truth, so if there are intricate changes to the effects of a setting there will be discussions to work out the details of what can be written down. 
 
 Requesting features
 ----
@@ -37,6 +48,7 @@ When taking screenshots of the g-code in layer view, these are some instructions
 * Don't use the compatibility mode of layer view.
 * Don't collage your screenshots. Use separate images for different effects, each with their own subtitle.
 * Don't write any text in PNG images. Use SVG images for that, if necessary with embedded PNG images.
+* Use an image editor to remove the background, shadow and build plate from your screenshots, to make it work if users have a dark theme.
 
 To adjust your Cura installation for easier screenshot making, the theme can be adjusted. In the file `resources/themes/cura-light/theme.json`, replace the three sections starting with `disabled_axis` with the following:
 ```
@@ -58,7 +70,9 @@ To adjust your Cura installation for easier screenshot making, the theme can be 
 ```
 To restore your Cura installation on Windows, you can run the installer again. On other platforms, you can just download the application again.
 
-In an effort to keep the download size of the plug-in manageable, care needs to be taken with .png images.
+Unfortunately, this plug-in is running into the limits of what Ultimaker's Marketplace can handle. Contributions are checked for metadata, and this plug-in is also signed for use in the Enterprise edition of Cura. To prevent a DOS attack, Ultimaker's servers have a limit to the memory and time usage when submitting the plug-in which effectively cap the file size to about 30MB. To stay below this limit, the plug-in employs a lot of tricks to reduce the file size of its resources.
+
+Please take care with PNG images. Using the above theme settings will already make screenshots smaller. Other adjustments you can make are:
 1. Reduce your image to 256 colours. You can use dithering if you think it looks better, but quite often it doesn't look better.
 2. Download [OptiPNG](http://optipng.sourceforge.net/).
 3. Optimize your image by entering this in a terminal: `optipng -o7 -strip all my_image.png`
@@ -72,6 +86,8 @@ Animated images are even more prone to having large file sizes. The following st
 6. Optimize your image by entering this in a terminal: `flexigif my_image.gif my_image_opt.gif`.
 7. Delete the old image and rename the new `my_image_opt.gif` to have the original file name.
 
+Note that Cura's interface framework doesn't properly support animated SVG images. GIF is a better option.
+
 Diagrams should be submitted in SVG format. Also for these there are a number of requirements:
 * The source code of the SVG file will be treated as normal source code during the review, so please make sure that it is readable.
 * The SVG files are rendered with QtSVG, which supports a very [limited subset](https://doc.qt.io/qt-5/svgrendering.html) of the SVG specification. Only the static features of SVG Tiny 1.2.
@@ -79,6 +95,8 @@ Diagrams should be submitted in SVG format. Also for these there are a number of
 * Gradients are not supported.
 * Animations are not supported.
 * Patterns are not supported.
+
+Optimising these images takes a lot of knowledge. Don't be afraid to ask the package maintainer for help.
 
 It is up to the discretion of the package maintainer to decide whether images are too big or not. A major factor in this decision is whether the image is any bigger than strictly necessary.
 
@@ -89,6 +107,7 @@ Translating this guide is no small task and not something that the maintainer ca
 To translate articles, put translations in the `resources/languages` folder, in a subfolder named with the language code of the language you're translating into. Inside this folder, please keep the folder structure of the English folder (which sorts the articles by their category). This helps to keep articles easy to find online and while developing.
 
 There are a few things to pay attention to though:
+* Automatic (machine) translations are not allowed.
 * The guide is intended to be shown within Cura as well as online on Github. This means that your translations will need to link correctly to images using relative paths.
 * When linking to other articles, use relative links to the translated article of the same name, if such an article exists. If the linked article is not (yet) translated, link to the English article.
 * You will generally not need to translate images, but all images containing text should be SVG images, which are text-based and should be easy to translate. Do not copy any images you're not translating.
