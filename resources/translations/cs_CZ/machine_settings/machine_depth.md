@@ -8,4 +8,4 @@ To se nerovná skutečné hloubce vaší tiskárny na polici. Skutečná tiskár
 
 Pokud se jedná o více trysek, nemusí všechny trysky dosáhnout celého objemu tisku. U některých tiskáren, pokud má tiskárna různé vzájemné přesazení trysek, nebudou některé trysky schopny dosáhnout až k jedné straně objemu tisku. Toto nastavení indikuje pouze sjednocení objemů, kterých jsou schopny dosáhnout všechny trysky.
 
-*Protože se jedná o nastavení stroje, nebude obvykle uvedeno v normálním seznamu nastavení. Hloubku lze změnit v dialogu nastavení tiskárny, který najdete v seznamu přidaných tiskáren v dialogu předvoleb.*
+**Protože se jedná o nastavení stroje, nebude obvykle uvedeno v normálním seznamu nastavení. Hloubku lze změnit v dialogu nastavení tiskárny, který najdete v seznamu přidaných tiskáren v dialogu předvoleb.**

@@ -31,5 +31,3 @@ Nejostřejší roh
 ![Nejostřejší roh](../../../articles/images/z_seam_type_sharpest.png)
 
 Šev se umístí do nejostřejšího rohu celého obrysu podle preference rohu vybrané v parametru [Preference rohového švu](z_seam_corner.md). To může vést k delším přesunům, ale zajišťuje to, že šev je skrytý nebo vystavený maximu podle předvolby nastavené pro rohy.
-
-

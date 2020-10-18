@@ -142,5 +142,3 @@ Vzor výplně Gyroid vytváří vlnitý vzor, který mění směr.
 * Stejně silný ve všech směrech, ale ne příliš. To je užitečné pro flexibilní materiály, ale výsledek bude o něco těžší, méně zvlněný, než vzory (3D) křížové výplně.
 * Odolný proti střihu.
 * Slicování trvá dlouho a vytváří velké soubory g-kódu. U některých tiskáren může být obtížné sledovat mnoho příkazů g-kódu za sekundu a může být obtížné držet krok přes sériové připojení při nízkých přenosových rychlostech.
-
-

@@ -7,4 +7,4 @@ Většina tiskáren očekává, že g-kód specifikuje vzdálenost, kterou se mu
 
 Většina tiskáren dnes používá vlákna o průměru 1,75 mm. Další běžný průměr je 2,85 mm.
 
-*Materiál se objeví v seznamu materiálů dostupných pro tiskárnu, pouze pokud je průměr vlákna kompatibilní s extrudérem. Podívejte se na panel nastavení zařízení vaší tiskárny (na kartě extrudéru) a zjistěte, která vlákna vaše extrudér akceptuje.*
+**Materiál se objeví v seznamu materiálů dostupných pro tiskárnu, pouze pokud je průměr vlákna kompatibilní s extrudérem. Podívejte se na panel nastavení zařízení vaší tiskárny (na kartě extrudéru) a zjistěte, která vlákna vaše extrudér akceptuje.**
