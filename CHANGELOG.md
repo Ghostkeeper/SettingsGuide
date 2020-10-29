@@ -1,3 +1,19 @@
+2.5.0 - In the Background
+====
+This is a maintenance update to document the new features of Cura 4.8, with just some minor adjustments.
+
+New Features
+----
+* If the window was already open but gets opened again, it will now be brought to the foreground and get focus.
+* Added a preference to keep the window always in focus (modal).
+
+Articles
+----
+* Update for new features in Cura 4.8.
+* Added a glossary of 3D printing terms and how they're used in Cura.
+* Updated French translations.
+* Updated Czech translations.
+
 2.4.0 - Something to Hide
 ====
 This is a maintenance update to document the new features of Cura 4.7. The articles can now also show different content depending on which version of Cura the user is running.
