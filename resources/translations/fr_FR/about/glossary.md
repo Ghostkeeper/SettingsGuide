@@ -2,114 +2,114 @@ Glossaire
 ====
 Cette page explique certains des termes utilisés par Cura dans l'industrie. Cura n'est pas toujours le plus cohérent dans l'utilisation de la terminologie, certains termes sont donc des synonymes.
 
-* **Couches adaptatives:** (Adaptive layers) A technique that varies the layer height across the print to reduce the visibility of topology while still printing reasonably fast.
-* **Aliasing:** (Aliasing) A print defect where the resolution limit of the stepper motors is visible on the outside of the print.
-* **Maille anti-débordement:**  (Anti-overhang mesh) A model that will prevent support from being generated to support any overhang that the model overlaps with. Synonym of "support blocker".
-* **Bead:**  (Bead) A strand of material after it's been placed down by the extruder train. The term "bead" is used in science where it's important to consider the actual shape of the strand of filament after it's been solidified. Similar to "line".
-* **Blob:**  (Blob) A dot of excess material on the outside of the print.
-* **Bowden tube:**  (Bowden tube) A hollow, flexible tube used to guide the filament through the extruder train.
-* **Bridging:**  (Bridging) A technique to print overhanging lines in mid-air, by stretching straight lines between two resting points. Cura can adjust the parameters of bridging lines and will adjust the direction of some lines to create bridges.
-* **Brim:**  (Brim) A rim of material, attached to the print, that acts like a skirt but also attaches the print better to the build plate by providing more surface area for the material to stick.
-* **Build plate:**  (Build plate) The plate where the print is being placed on while it's being constructed. Some build plates are heated to make the material stick better while the print is ongoing.
-* **Build volume:** T (Build volume) he 3D space where the printer can reach to extrude material.
-* **Coasting:**  (Coasting) A technique where the last part of an extrusion path is printed with 0% flow, draining the nozzle from its overpressure.
-* **Combing:**  (Combing) A movement that tries to avoid crossing walls during travels, to prevent creating a visible scar on the outside of the print.
-* **Coordinate origin:**  (Coordinate origin) The location on the build plate where a nozzle would move if instructed to move to coordinates [0, 0, 0].
-* **CuraEngine:**  (CuraEngine) A program that Cura uses to do the heavy lifting of the slicing process. Converts 3D models into g-code.
-* **Cutting mesh:**  (Cutting mesh) A model on the build plate that can change settings for the part of its volume that overlaps with actual printed models. The model itself is not printed, but it cuts out pieces of other models and can then change the settings or extruder with which those parts are printed.
-* **Disallowed area:**  (Disallowed area) A location on the build plate where you're not allowed to place a model for printing. For instance, because it would hit clips holding down the bed, the prime tower, or because your print would have auxiliary parts that would go out of the build volume.
-* **Draft shield:**  (Draft shield) A shell of material being printed around the object that keeps the temperature around the print consistent.
-* **Elephant's foot:**  (Elephant's foot) A print defect where the bottom side of the print is slightly wider than desired.
-* **Extruder:**  (Extruder) The feeder, optional Bowden tube, heat zone, hot end and nozzle together. Some printers have multiple extruders or have more than one of some parts of the extruder train. Short for "extruder train".
-* **Extruder switch:**  (Extruder switch) Typically only one of the extruders is active at a time. An extruder switch is when it changes the active extruder from one extruder to another.
-* **Extruder train:**  (Extruder train) The feeder, optional Bowden tube, heat zone, hot end and nozzle together. Some printers have multiple extruder trains or have more than one of some parts of the extruder train.
-* **Extrusion:**  (Extrusion) The act of pushing filament through the extruder train such that material comes out of the nozzle, which is hopefully deposited in the correct place to form the print.
-* **Face:**  (Face) A flat surface of a 3D mesh. With triangular meshes (the only kind Cura can process), all faces are triangles in 3D space.
-* **Fan:**  (Fan) Not just any fan of the printer, but specifically the fan(s) attached to the print head that cool down the print just after the material has been extruded.
-* **FDM printing:**  (FDM printing) Fused Deposition Modelling. A type of 3D printing done by extruding lines of plastic in a certain shape. This is the only technique of 3D printing that Cura supports. Synonym of "FFF printing".
-* **Feeder:**  (Feeder) A motor and gearbox that pushes or pulls the filament through the extrusion train.
-* **Feedrate:**  (Feedrate) The speed at which filament is fed into the extruder train.
-* **FFF printing:**  (FFF printing) Fused Filament Fabrication. A type of 3D printing done by extruding lines of plastic in a certain shape. This is the only technique of 3D printing that Cura supports. Synonym of "FDM printing".
+* **Couches adaptatives:** (Adaptive layers) Une technique qui fait varier la hauteur de la couche sur l'impression afin de réduire la visibilité de la topologie tout en imprimant assez rapidement.
+* **Aliasing:** (Aliasing) Un défaut d'impression où la limite de résolution des moteurs pas à pas est visible sur l'extérieur de l'impression.
+* **Maille anti-débordement:**  (Anti-overhang mesh) Un modèle qui empêchera la génération d'un soutien pour soutenir tout dépassement avec lequel le modèle chevauche. Synonyme de "bloqueur de support".
+* **Bourelet:**  (Bead) Un brin de matériau après avoir été déposé par le train de l'extrudeuse. Le terme "bourelet" est utilisé en science où il est important de considérer la forme réelle du brin de filament après qu'il ait été solidifié. Semblable à "ligne"..
+* **Goutte:**  (Blob) Un point d'excès de matière à l'extérieur de l'impression.
+* **Tube Bowden:**  (Bowden tube) Un tube creux et flexible utilisé pour guider le filament dans le train de l'extrudeuse.
+* **Pont:**  (Bridging) Technique permettant d'imprimer des lignes en surplomb dans l'air, en étirant des lignes droites entre deux points d'appui. Cura peut ajuster les paramètres des lignes de pontage et ajustera la direction de certaines lignes pour créer des ponts.
+* **Bordure:**  (Brim) Une bordure de matériau, fixé à l'empreinte, qui agit comme une jupe mais fixe également mieux l'empreinte au plateau d'impression en offrant plus de surface pour que le matériau puisse adhérer.
+* **Plateau d'impression:**  (Build plate) La plaque sur laquelle l'impression est placée pendant sa construction. Certains plateau d'impression sont chauffés pour que le matériau adhère mieux pendant l'impression.
+* **Volume de construction:** (Build volume) L'espace 3D que l'imprimante peut atteindre pour extruder le matériau.
+* **Roue libre:**  (Coasting) Technique dans laquelle la dernière partie d'un trajet d'extrusion est imprimée avec un débit de 0%, ce qui permet de vider la buse de sa surpression.
+* **Détour:**  (Combing) Un mouvement qui tente d'éviter de traverser les murs lors des déplacements, pour éviter de créer une cicatrice visible à l'extérieur de l'empreinte.
+* **Coordonnées de l'origine:**  (Coordinate origin) L'emplacement sur le plateau d'impression où une buse se déplacerait si on lui demandait de se déplacer vers les coordonnées [0, 0, 0].
+* **CuraEngine:**  (CuraEngine) Un programme que Cura utilise pour faire le gros du travail de tranchage. Convertit les modèles 3D en g-code.
+* **Maillage de découpe:**  (Cutting mesh) Un modèle sur le plateau d'impression qui peut changer les réglages pour la partie de son volume qui chevauche les modèles imprimés réels. Le modèle lui-même n'est pas imprimé, mais il découpe des morceaux d'autres modèles et peut ensuite modifier les réglages ou l'extrudeuse avec laquelle ces pièces sont imprimées.
+* **Zone interdite:**  (Disallowed area) Un endroit sur le plateau d'impression où vous n'êtes pas autorisé à placer un modèle pour l'impression. Par exemple, parce qu'elle heurterait les clips qui maintiennent le lit, la tour principale, ou parce que votre impression comporterait des parties auxiliaires qui sortiraient du volume de construction.
+* **Bouclier:**  (Draft shield) Une enveloppe de matériau imprimé autour de l'objet qui maintient la température autour de l'impression constante.
+* **Pied d'éléphant:**  (Elephant's foot) A print defect where the bottom side of the print is slightly wider than desired.
+* **Extrudeuse:**  (Extruder) L'alimentation, le tube Bowden optionnel, la zone de chauffe, le bout chaud et la buse ensemble. Certains imprimeurs disposent de plusieurs extrudeuses ou ont plus d'une partie du train d'extrusion. Abréviation de "train d'extrudeuses".
+* **Commutateur d'extrudeuse:**  (Extruder switch) En général, une seule des extrudeuses est active à la fois. Le passage d'une extrudeuse à l'autre se fait en changeant l'extrudeuse active d'une extrudeuse à l'autre.
+* **Train d'extrudeuses:**  (Extruder train) L'alimentation, le tube Bowden optionnel, la zone de chauffe, le bout chaud et la buse ensemble. Certains imprimeurs ont plusieurs trains d'extrusion ou ont plus d'une partie du train d'extrusion.
+* **Extrusion:**  (Extrusion) L'action de pousser le filament à travers le train de l'extrudeuse de telle sorte que la matière sorte de la buse, qui, espérons-le, est déposée au bon endroit pour former l'impression.
+* **Face:**  (Face) Une surface plane d'un maillage 3D. Avec les maillages triangulaires (le seul type que Cura peut traiter), toutes les faces sont des triangles dans l'espace 3D.
+* **Ventilateur:**  (Fan) Pas n'importe quel ventilateur de l'imprimante, mais plus précisément le ou les ventilateurs fixés à la tête d'impression qui refroidissent l'impression juste après que le matériau a été extrudé.
+* **Impression FDM:**  (FDM printing) Modélisation des dépôts fondus. Type d'impression 3D réalisée par l'extrusion de lignes de plastique d'une certaine forme. C'est la seule technique d'impression 3D que Cura soutient. Synonyme d'"impression FFF".
+* **Alimentateur:**  (Feeder) Un moteur et un réducteur qui poussent ou tirent le filament à travers le train d'extrusion.
+* **Vitesse:**  (Feedrate) La vitesse à laquelle le filament est introduit dans le train de l'extrudeuse.
+* **Impression FFF:**  (FFF printing) Fabrication de filaments fondus. Type d'impression 3D réalisée par l'extrusion de lignes de plastique d'une certaine forme. C'est la seule technique d'impression 3D que Cura soutient. Synonyme de "impression FDM".
 * **Filament:**  (Filament) A rope of plastic being fed into the 3D printer. Comes on spools. Once it's been extruded, it's not filament any more but just material.
-* **Flow:**  (Flow) The rate of extruding material as ratio of its normal rate. More than 100% flow theoretically extrudes more material than would fit in the allotted volume. Less than 100% flow theoretically extrudes too little material.
-* **Gantry:**  (Gantry) The mechanical frame that moves the print head around the build volume.
-* **Gap filling:**  (Gap filling) A technique used by Cura to fill small gaps in the print with material using very tiny line segments.
-* **Gradual infill:**  (Gradual infill) A technique where the amount of material is reduced in lower parts of a volume, but still high in higher parts to support the material above it properly. This is not only used for material but also for support.
-* **Hardness:**  (Hardness) A measure of a print to how much it can resist elastic deformation or puncturing.
-* **Heater:**  (Heater) A heating element that brings the filament to the temperature required for 3D printing.
-* **Heat zone:** (Heat zone) The zone where the filament is heating up while going towards the nozzle. At the beginning of the heat zone the filament is at room temperature. At the end it is at printing temperature.
-* **Hop:** (Hop) A technique where the nozzle is moved up (+Z) in order to travel over the print with a bit of clearance. Synonym of "Z hop".
-* **Hot end:** (Hot end) The hot metal or ceramic bit containing the nozzle, heating element and temperature sensor.
-* **Infill:** (Infill) A structure created on the inside of a print that holds up the top skin and provides additional strength to the print.
-* **Infill mesh:** (Infill mesh) Similar to "cutting mesh", but only applies where it overlaps with the infill volume of another model. This is a model that adjusts settings for infill of another model.
-* **Inner walls:** (Inner walls) All of the walls except the outermost wall. While a part on a layer has only one outer wall, it may have any number of inner walls.
-* **Inset:** (Inset) An operation on polygons that produces a smaller/thinner polygon, whose contour keeps a certain distance from the contour of the original polygon. An inset with a negative distance is called an "offset".
-* **Ironing:** (Ironing) A technique that passes over the top surface an additional time to make it extra smooth.
-* **Jerk:** (Jerk) A limit on the amount of instantaneous change in velocity applied at the start of every move. This is not the same as the common definition of "jerk" in physics!
-* **Layer:** (Layer) 3D printing is done in thin layers of material. These layers are 2D shapes with a certain thickness, which when stacked vertically form a 3D print.
-* **Layer shift:** (Layer shift) A print defect where the horizontal position of a layer is unintentionally shifted, typically shifting the rest of the print too.
-* **Layer split:** (Layer split) A print defect where the layers don't stick together well enough and crack open.
-* **Line:** (Line) A strand of material after it's been placed down by the extruder train. In Cura, lines are modelled as being rectangular blocks with a certain width, thickness (layer height) and length. Similar to "bead".
-* **Line segment:** (Line segment) To disambiguate with the 3D printing term "line", when referring to a line segment in a mathematical sense Cura will always use the full term "line segment" to indicate a straight geometrical line of limited length.
-* **Material:** (Material) The material that your 3D print consists of. Typically a thermoplastic in FFF printing.
-* **Maillage:** (Mesh) A collection of triangles that together forms a model. Although sometimes used as synonym of "object" and "model", typically this is used in the context of a piece of data rather than something you'd want to print.
-* **Model:** (Model) A 3D model loaded into the 3D scene of Cura (before slicing). Synonym of "object".
-* **Buse:** (Nozzle) The opening where the printing material exits the extruder train.
-* **Object:** (Object) A 3D model loaded into the 3D scene of Cura (before slicing). Synonym of "model".
-* **Décalage:** (Offset) An operation on polygons that produces a larger/fatter polygon, whose contour keeps a certain distance from the contour of the original polygon. An offset with a negative distance is called an "inset".
-* **One-at-a-time mode:** (One-at-a-time mode) A mode of printing multiple objects where each object is completed fully before continuing with the next object, whereas normally it prints a layer for each object before continuing with the next layer.
-* **Ooze shield:** (Ooze shield) A shell of material being printed around the print that catches any oozed material when a travel moves the nozzle towards the print.
-* **Oozing:** (Oozing) Leaking material out the nozzle while it's not intended to. Typically this leaves a string of material along the travel path.
-* **Outer wall:** (Outer wall) The outermost wall. There is only one outer wall per part per layer.
-* **Overextrusion:** (Overextrusio) Extruding too much material in a limited volume, causing the material to spill over to where it's not supposed to go.
-* **Overhang:** (Overhang) A part of the print that is not (or not completely) supported by material in the layers below it. If the overhang is too extreme to print well, support or bridging is necessary.
-* **Overpressure:** (Overpressure) While printing, the nozzle chamber is kept at great pressure to ensure that the material is extruded consistently.
-* **Parking:** (Parking) The act of pausing the print for a moment while the nozzle is away from the print, to allow the material some time to cool down.
-* **Part:** (Part) A continuous shape (polygon) on a single layer. A single model may split up into multiple parts on certain layers, when sliced.
-* **Pattern:** (Pattern) A technique of filling a volume with material, although not necessarily at 100% density. Cura provides choice between several patterns such as lines, grid, concentric, tetrahedral, etc.
-* **Matelassage:** (Pillowing) A print defect where the top skin bulges or breaks up in between where it rests on the infill lines below.
-* **Polygon:** (Polygon) A 2D shape or closed loop consisting of a series of points with straight line segments between them.
-* **Prime blob:** (Prime blob) A blob of material being purged at the start of a print to prime an extruder.
-* **Tour d'amorçage:** (Prime tower) A structure created besides the print that allows the printer to prime its nozzles on higher layers without the excess material ending up on the side of the actual print. Used for prints where multiple extruders are involved to prime an extruder after being on stand-by for a while.
-* **Priming:** (Priming) The act of purging some material to ensure that the filament is aligned to the nozzle tip and the nozzle chamber is filled and pressurised correctly. Usually done at the start of a print or after an extruder switch.
-* **Purge:** (Purging) The act of extruding some material as waste. A common reason for purging is "priming".
-* **Radeau:** (Raft) A technique to improve build plate adhesion by printing a solid plate underneath your print that is later discarded. The plate has a lot of surface area and is printed with thick lines that stick well, and catches any irregularities in the flatness of the build plate.
-* **Retraction:** (Retraction) The act of using the feeder to pull the material back into the nozzle chamber. Usually done to temporarily stop the material from flowing out the nozzle to make a clean travel.
-* **Ringing:** (Ringing) A print defect where the surface wobbles due to inconsistent extrusion or wobbling of the nozzle. Typically happens after making sharp corners too fast.
-* **Cicatrice:** (Scar) A spot of damage on the outside of the print where the nozzle melted down the material in passing.
-* **Couture:** (Seam) The location where a closed loop starts and stops. This spot is usually visible on the final print, so you'd like to position it in a spot where it's not very visible.
-* **Shell:** (Shell) Both the walls and the skin.
-* **Skin:** (Skin) The top and bottom sides of the print. These are always printed at 100% density, typically with the lines pattern. Synonym of "top/bottom".
-* **Skirt:** (Skirt) A contour drawn around the print on the first layer to both prime the material and to allow the user to see whether the build plate is completely level.
-* **Slicing:** (Slicing) The process of converting a 3D model into instructions for a 3D printer to print it. Within the context of CuraEngine, this is also sometimes used for the process of creating cross-sections of the model, which is one of the stages of the complete slicing process.
-* **Spiralise mode:** (Spiralise mode) A mode to print only the outline of the models, typically while gradually increasing the Z coordinate throughout the layer to eliminate the Z seam by printing the model in one great spiral. Outside of Cura this is also known as "vase mode".
-* **Stand-by:** (Stand-by) When printing with multiple extruders, typically only one of the extruders is active at a time. The other extruders will be on stand-by.
-* **Stitching:** (Stitching) A part of the slicing process. Creating cross sections of a group of triangles results in a bunch of line segments on each layer. Stitching combines those line segments into polygons and determines what the inside of the layer is.
-* **Strength:** (Strength) Encompassing term indicating various measures of resistance to movement, including hardness, stiffness and toughness when various types of force are being applied.
-* **Stringing:** (Stringing) When travelling while oozing material, this creates thin strands of material called "stringing". The strands don't necessarily span all the way across the length of a travel move. A less extreme form of this results in "blobs".
-* **Support:** (Support) A part of the print that is removed after printing, but was necessary to keep parts of the print in place while the print was still ongoing, to prevent material from falling down or wobbling too much.
-* **Support blocker:** (Support blocker) A model that will prevent support from being generated to support any overhang that the model overlaps with. Synonym of "anti-overhang mesh".
-* **Support floor:** (Support floor) The bottom side of the support, used where the support rests on the model. This part of support can optionally be printed with different settings. There is no support floor where the support rests on the build plate.
-* **Support infill:** (Support infill) The main component of support. If there is no support interface, the support consists only of support infill.
-* **Support interface:** (Support interface) The support roof and floor, where the model rests on the support and where the support rests on the model. The bottom side of support where the support rests on the build plate does not get support interface.
-* **Support mesh:** (Support mesh) A model that is being filled with support structure, instead of printing as a normal print. Can be used to customise the shape of your support.
-* **Support roof:** (Support roof) The top side of the support, used where the model rests on the support. This part of support can optionally be printed with different settings.
-* **Support towers:** (Support towers) A technique to support very thin or small parts of the print. The part is supported by the tip of a tower that gets wider further down so that the support doesn't topple while being printed.
-* **Thermoplastique:** (Thermoplastic) A type of plastic that becomes soft when melting. Only thermoplastics can be used for FFF Printing.
-* **Thickness:** (Thickness) The size of some structure in the vertical direction (Z). Compare with "width".
-* **Dessus/dessous:** (Top/bottom) The top and bottom sides of the print. These are always printed at 100% density, typically with the lines pattern. Synonym of "skin".
-* **Surface du dessus:** (Top surface) The highest part of the top skin. Rarely more than 1 layer, this top surface can be printed with separate settings to achieve greater quality without costing a lot of extra printing time.
-* **Topography:** (Topography) The effect where the limited layer height turns an almost-flat surface into something that resembles a geographical height map with rings where the layers end.
-* **Toughness:** (Toughness) A measure of a print as to how much it can resist plastic deformation.
-* **Travel (move):** (Travel (move)) Moving the nozzle from one place to another without extruding material.
-* **Underextrusion:** (Underextrusion) Extruding too little material to properly fill a volume or to properly create strong and continuous beads.
-* **Underpressure:** (Underpressure) While retracted, the nozzle chamber is kept at a negative pressure, to suck the material inside, preventing oozing.
-* **Vase mode:** (Vase mode) A mode to print only the outline of the models, typically while gradually increasing the Z coordinate throughout the layer to eliminate the Z seam. Cura always calls this "spiralise mode".
-* **Murs:** (Walls) The sides of the print. They loop around the model horizontally.
-* **Warping:** (Warping) Deformation of the print after printing, due to the material shrinking or due to internal stresses pulling on the material while it's not yet solidified.
-* **Width:** (Width) The size of some structure in the horizontal direction (X/Y). Compare with "thickness".
-* **Winding order:** (Winding order) The order of points forming a polygon. Either clockwise or counter-clockwise. In Cura, a counter-clockwise winding order indicates a positive shape while a clockwise winding order indicates a hole. The input 3D models must have triangles with counter-clockwise winding order when seen from the outside.
-* **Wiping:** (Wiping) A technique to make the nozzle cross a previously printed structure on purpose to wipe off any dangling oozed material from the nozzle tip, to prevent that material from being placed on the outside of the print.
-* **Wire printing:** (Wire printing) A technique to print a model by only printing a wireframe around its shell. Highly experimental.
-* **Couture en Z:** (Z seam) A visible spot on the outer wall where the nozzle moved from one layer to the next. Often incorrectly used instead of just "seam".
-* **Z hop:** (Z hop) A technique where the nozzle is moved up (+Z) in order to travel over the print with a bit of clearance. Synonym of "hop".
+* **Débit:**  (Flow) Le taux de matériau d'extrusion par rapport à son taux normal. Un débit supérieur à 100 % permet théoriquement d'extruder plus de matière que ne le permettrait le volume alloué. Un débit inférieur à 100 % extrude théoriquement trop peu de matière.
+* **Portique:**  (Gantry) Le cadre mécanique qui déplace la tête d'impression autour du volume de construction.
+* **Combler les trous:**  (Gap filling) A technique used by Cura to fill small gaps in the print with material using very tiny line segments.
+* **Remplissage progressif:**  (Gradual infill) Une technique où la quantité de matériau est réduite dans les parties inférieures d'un volume, mais toujours élevée dans les parties supérieures pour soutenir correctement le matériau au-dessus. Cette technique n'est pas seulement utilisée pour le matériau mais aussi pour le support.
+* **Dureté:**  (Hardness) Mesure d'une empreinte par rapport à sa capacité de résistance à la déformation élastique ou à la perforation.
+* **Chauffeur:**  (Heater) Un élément chauffant qui amène le filament à la température requise pour l'impression 3D.
+* **Zone de chauffage:** (Heat zone) La zone où le filament s'échauffe en se dirigeant vers la buse. Au début de la zone de chauffe, le filament est à température ambiante. À la fin, il est à la température d'impression.
+* **Saut:** (Hop) Une technique où la buse est déplacée vers le haut (+Z) afin de se déplacer sur l'impression avec un peu d'espace. Synonyme de "Saut en Z"..
+* **Hot end:** (Hot end) La mèche en métal chaud ou en céramique contenant la buse, l'élément chauffant et le capteur de température.
+* **Remplissage:** (Infill) Une structure créée à l'intérieur d'une empreinte qui soutient la peau supérieure et apporte une résistance supplémentaire à l'empreinte.
+* **Maillage de remplissage:** (Infill mesh) Semblable à la "maille coupante", mais ne s'applique que lorsqu'elle chevauche le volume de remplissage d'un autre modèle. Il s'agit d'un modèle qui ajuste les paramètres de remplissage d'un autre modèle.
+* **Murs intérieurs:** (Inner walls) Tous les murs sauf le mur extérieur. Si une partie d'une couche n'a qu'une seule paroi extérieure, elle peut avoir un nombre quelconque de parois intérieures.
+* **Inset:** (Inset) Une opération sur les polygones qui produit un polygone plus petit/plus fin, dont le contour garde une certaine distance par rapport au contour du polygone original. Un encart avec une distance négative est appelé "décalage".
+* **Repassage:** (Ironing) Une technique qui consiste à passer sur la surface supérieure une fois de plus pour la rendre encore plus lisse.
+* **Secousse:** (Jerk) Une limite sur la quantité de changement instantané de la vitesse appliquée au début de chaque mouvement. Ce n'est pas la même chose que la définition courante de "secousse" en physique !
+* **Couche:** (Layer) L'impression en 3D se fait sur de fines couches de matériau. Ces couches sont des formes 2D d'une certaine épaisseur qui, lorsqu'elles sont empilées verticalement, forment une impression 3D.
+* **Décalage de couche:** (Layer shift) Un défaut d'impression où la position horizontale d'une couche est involontairement déplacée, déplaçant généralement le reste de l'impression également.
+* **Séparation des couches:** (Layer split) Un défaut d'impression où les couches ne collent pas assez bien ensemble et se fissurent.
+* **Ligne:** (Line) Un brin de matériau après avoir été déposé par le train de l'extrudeuse. Dans Cura, les lignes sont modélisées comme des blocs rectangulaires ayant une certaine largeur, épaisseur (hauteur de la couche) et longueur. Semblable à un "bourelet".
+* **Segment de ligne:** (Line segment) Pour éviter toute ambiguïté avec le terme d'impression 3D "ligne", Cura utilisera toujours le terme complet "segment de ligne" pour indiquer une ligne géométrique droite de longueur limitée lorsqu'il se réfère à un segment de ligne au sens mathématique.
+* **Matière:** (Material) Le matériel dont se compose votre impression 3D. Généralement un thermoplastique dans l'impression FFF.
+* **Maillage:** (Mesh) Une collection de triangles qui forment ensemble un modèle. Bien qu'il soit parfois utilisé comme synonyme d'"objet" et de "modèle", il est généralement utilisé dans le contexte d'une donnée plutôt que dans celui d'un document que vous souhaitez imprimer.
+* **Modèle:** (Model) Un modèle 3D chargé dans la scène 3D de Cura (avant le découpage). Synonyme de "objet"..
+* **Buse:** (Nozzle) L'ouverture où le matériel d'impression sort du train de l'extrudeuse.
+* **Objet:** (Object) Un modèle 3D chargé dans la scène 3D de Cura (avant le découpage). Synonyme de "modèle"..
+* **Décalage:** (Offset) Une opération sur les polygones qui produit un polygone plus grand/plus gros, dont le contour garde une certaine distance par rapport au contour du polygone original. Un décalage avec une distance négative est appelé "incrustation".
+* **Mode "un à la fois":** (One-at-a-time mode) Mode d'impression de plusieurs objets où chaque objet est entièrement terminé avant de passer à l'objet suivant, alors que normalement il imprime une couche pour chaque objet avant de passer à la couche suivante.
+* **Bouclier de suintement:** (Ooze shield) Une coquille de matière imprimée autour de l'empreinte qui capte toute matière suintante lorsqu'un déplacement déplace la buse vers l'empreinte.
+* **Suintement:** (Oozing) Fuite de matière par la buse alors qu'elle n'est pas prévue. En général, cela laisse un cordon de matériau le long du chemin.
+* **Mur extérieur:** (Outer wall) Le mur le plus extérieur. Il n'y a qu'un seul mur extérieur par partie et par couche.
+* **Surextrusion:** (Overextrusio) Extrusion d'une trop grande quantité de matériau dans un volume limité, ce qui fait que le matériau se répand là où il n'est pas censé aller.
+* **Surplomb:** (Overhang) Une partie de l'impression qui n'est pas (ou pas complètement) supportée par le matériau des couches inférieures. Si le débordement est trop important pour bien imprimer, il est nécessaire de le soutenir ou de le ponter.
+* **Surpression:** (Overpressure) Pendant l'impression, la chambre de la buse est maintenue à une forte pression pour garantir que le matériau est extrudé de manière constante.
+* **Parking:** (Parking) Le fait de mettre l'impression en pause pendant un moment alors que la buse est éloignée de l'impression, pour laisser le temps au matériau de refroidir.
+* **Pièce:** (Part) Une forme continue (polygone) sur une seule couche. Un modèle unique peut se diviser en plusieurs parties sur certaines couches, lorsqu'il est tranché.
+* **Motif:** (Pattern) Technique consistant à remplir un volume de matière, mais pas nécessairement à 100% de densité. Cura permet de choisir entre plusieurs motifs tels que lignes, grille, concentrique, tétraédrique, etc.
+* **Matelassage:** (Pillowing) Un défaut d'impression où la peau supérieure est bombée ou se brise entre les deux, où elle repose sur les lignes de remplissage en dessous.
+* **Polygone:** (Polygon) Une forme 2D ou une boucle fermée constituée d'une série de points avec des segments de ligne droite entre eux.
+* **Goutte d'amorçage:** (Prime blob) Une goutte de matière qui est purgée au début d'une impression pour amorcer une extrudeuse.
+* **Tour d'amorçage:** (Prime tower) Une structure créée en plus de l'impression qui permet à l'imprimante d'amorcer ses buses sur les couches supérieures sans que l'excès de matériau ne se retrouve sur le côté de l'impression réelle. Utilisé pour les impressions où plusieurs extrudeuses sont impliquées pour amorcer une extrudeuse après avoir été en attente pendant un certain temps.
+* **Amorçage:** (Priming) Action de purger une matière pour s'assurer que le filament est aligné sur l'extrémité de la buse et que la chambre de la buse est remplie et mise sous pression correctement. Habituellement, cette opération est effectuée au début d'une impression ou après un changement d'extrudeuse.
+* **Purge:** (Purging) L'acte d'extruder une matière en tant que déchet. Une raison courante de purge est l'"amorçage".
+* **Radeau:** (Raft) Technique permettant d'améliorer l'adhérence des plaques en imprimant une plaque solide sous votre impression, qui est ensuite jetée. La plaque a une grande surface et est imprimée avec des lignes épaisses qui adhèrent bien, et rattrapent les irrégularités de la planéité de le plateau d'impression.
+* **Rétraction:** (Retraction) L'action d'utiliser l'alimentateur pour ramener la matière dans la chambre de la buse. Habituellement, il s'agit d'arrêter temporairement la matière qui s'écoule de la buse pour effectuer un trajet propre.
+* **Oscillation:** (Ringing) Un défaut d'impression où la surface vacille en raison d'une extrusion incohérente ou d'une oscillation de la buse. Cela se produit généralement après avoir fait des angles vifs trop rapidement.
+* **Cicatrice:** (Scar) Une marque de dommage sur l'extérieur de l'impression où la buse a fait fondre le matériau en passant.
+* **Couture:** (Seam) L'endroit où une boucle fermée commence et s'arrête. Ce point est généralement visible sur l'impression finale, vous souhaitez donc le placer à un endroit peu visible.
+* **Coquille:** (Shell) Tant les murs que la peau.
+* **Peau:** (Skin) Les faces supérieure et inférieure de l'impression. Ils sont toujours imprimés à 100 % de densité, généralement avec le motif des lignes. Synonyme de "haut/bas".
+* **Jupe:** (Skirt) Un contour dessiné autour de l'impression sur la première couche pour à la fois amorcer le matériau et permettre à l'utilisateur de voir si le plateau d'impression est complètement à niveau.
+* **Découpage:** (Slicing) Le processus de conversion d'un modèle 3D en instructions pour qu'une imprimante 3D puisse l'imprimer. Dans le contexte de CuraEngine, ce processus est aussi parfois utilisé pour la création de coupes transversales du modèle, qui est l'une des étapes du processus de découpage complet.
+* **Mode spirale:** (Spiralise mode) Un mode permettant d'imprimer uniquement le contour des modèles, généralement en augmentant progressivement la coordonnée Z dans toute la couche pour éliminer le joint Z en imprimant le modèle en une grande spirale. En dehors de Cura, ce mode est également connu sous le nom de "mode vase".
+* **En attente:** (Stand-by) Lorsque l'impression se fait avec plusieurs extrudeuses, une seule d'entre elles est généralement active à la fois. Les autres extrudeuses sont en attente.
+* **Couture:** (Stitching) Une partie du processus de découpage. La création de sections transversales d'un groupe de triangles donne lieu à un ensemble de segments de lignes sur chaque couche. La couture combine ces segments de ligne en polygones et détermine ce qu'est l'intérieur de la couche.
+* **Force:** (Strength) Terme englobant indiquant diverses mesures de résistance au mouvement, y compris la dureté, la rigidité et la ténacité lorsque différents types de force sont appliqués.
+* **Filasse:** (Stringing) Lorsque l'on voyage en suintant de la matière, cela crée de minces brins de matière appelés "cordage". Ces brins ne s'étendent pas nécessairement sur toute la longueur d'un déplacement. Une forme moins extrême de ce phénomène donne lieu à des "gouttes".
+* **Support:** (Support) Une partie de l'impression qui est enlevée après l'impression, mais qui était nécessaire pour maintenir des parties de l'impression en place pendant que l'impression était encore en cours, pour éviter que le matériau ne tombe ou ne vacille trop.
+* **Bloqueur de support:** (Support blocker) Un modèle qui empêchera que le soutien soit généré pour soutenir tout dépassement avec lequel le modèle chevauche. Synonyme de "maillage anti-dépassement".
+* **Plancher de soutien:** (Support floor) La face inférieure du support, utilisée là où le support repose sur le modèle. Cette partie du support peut éventuellement être imprimée avec différents réglages. Il n'y a pas de plancher de support où le support repose sur le plateau d'impression.
+* **Remplissage de soutien:** (Support infill) La principale composante des éléments dit d'aide. S'il n'y a pas d'interface de soutien, le soutien consiste uniquement en un remplissage de soutien.
+* **Interface de support:** (Support interface) Le toit et le plancher de soutien, où le modèle repose sur le support et où le support repose sur le modèle. Le côté inférieur du support, où le support repose sur le plateau d'impression, n'a pas d'interface de support.
+* **Maillage de soutien:** (Support mesh) Un modèle qui est rempli d'une structure de support, au lieu d'être imprimé comme une impression normale. Peut être utilisé pour personnaliser la forme de votre support.
+* **Toit de soutien:** (Support roof) La face supérieure du support, utilisée là où le modèle repose sur le support. Cette partie du support peut éventuellement être imprimée avec différents settings.
+* **Support towers:** (Support towers) Une technique permettant de soutenir des parties très fines ou petites de l'impression. La partie est soutenue par la pointe d'une tour qui s'élargit vers le bas afin que le support ne s'effondre pas pendant l'impression.
+* **Thermoplastique:** (Thermoplastic) Un type de plastique qui devient mou en fondant. Seuls les thermoplastiques peuvent être utilisés pour l'impression FFF.
+* **Épaisseur:** (Thickness) La taille d'une structure dans la direction verticale (Z). Comparer avec "largeur".
+* **Dessus/dessous:** (Top/bottom) Les faces supérieure et inférieure de l'impression. Ils sont toujours imprimés à 100 % de densité, généralement avec le motif des lignes. Synonyme de "peau".
+* **Surface du dessus:** (Top surface) La partie la plus haute de la peau supérieure. Rarement plus d'une couche, cette surface supérieure peut être imprimée avec des réglages séparés pour obtenir une meilleure qualité sans que cela ne coûte beaucoup de temps d'impression supplémentaire.
+* **Topographie:** (Topography) L'effet où la hauteur limitée des couches transforme une surface presque plane en quelque chose qui ressemble à une carte de hauteur géographique avec des anneaux où les couches se terminent.
+* **Ténacité:** (Toughness) Mesure d'une empreinte pour savoir dans quelle mesure elle peut résister à la déformation plastique.
+* **Déplacement:** (Travel , move) Déplacer la buse d'un endroit à l'autre sans extruder de matière.
+* **Sous-extrusion:** (Underextrusion) Extrusion de trop peu de matière pour remplir correctement un volume ou pour créer correctement des perles solides et continues.
+* **La sous-pression:** (Underpressure) Lorsqu'elle est rétractée, la chambre de la buse est maintenue à une pression négative, afin d'aspirer la matière à l'intérieur, ce qui empêche le suintement.
+* **Mode Vase:** (Vase mode) Un mode permettant d'imprimer uniquement le contour des modèles, généralement en augmentant progressivement la coordonnée Z sur toute la couche pour éliminer la couture Z. Cura appelle toujours ce mode "spiralisé".
+* **Murs:** (Walls) Les côtés de l'impression. Ils s'enroulent autour du modèle horizontalement.
+* **Gauchissement:** (Warping) Déformation de l'impression après l'impression, due au rétrécissement du matériau ou à des contraintes internes tirant sur le matériau alors qu'il n'est pas encore solidifié.
+* **Largeur:** (Width) La taille d'une structure dans le sens horizontal (X/Y). Comparer avec "épaisseur".
+* **Sens d'enroulement:** (Winding order) L'ordre des points formant un polygone. Soit dans le sens des aiguilles d'une montre, soit dans le sens inverse. Dans Cura, un sens d'enroulement dans le sens inverse des aiguilles d'une montre indique une forme positive tandis qu'un ordre d'enroulement dans le sens des aiguilles d'une montre indique un trou. Les modèles 3D d'entrée doivent avoir des triangles avec un ordre d'enroulement dans le sens inverse des aiguilles d'une montre lorsqu'ils sont vus de l'extérieur.
+* **Essuyage:** (Wiping) Technique consistant à faire traverser à la buse une structure préalablement imprimée afin d'essuyer toute matière suintante pendante à l'extrémité de la buse, pour éviter que cette matière ne soit placée sur l'extérieur de l'impression.
+* **Impression par fil:** (Wire printing) Technique permettant d'imprimer un modèle en imprimant uniquement un cadre métallique autour de sa coque. Très expérimental (Désactivé dans les dernières version de cura).
+* **Couture en Z:** (Z seam) Un point visible sur la paroi extérieure où la buse se déplace d'une couche à l'autre. Souvent utilisé à tort au lieu de "joint".
+* **Saut en Z:** (Z hop) Une technique où la buse est déplacée vers le haut (+Z) afin de se déplacer sur l'impression avec un peu d'espace. Synonyme de "Saut".
