@@ -30,7 +30,7 @@ Cette page explique certains des termes utilisés par Cura dans l'industrie. Cur
 * **Alimentation :** (Feeder) Un moteur et un réducteur qui poussent ou tirent le filament à travers la ligne d'extrusion.
 * **Vitesse :** (Feedrate) Vitesse à laquelle le filament est introduit dans la ligne d'extrusion.
 * **Impression FFF :** (FFF printing) Fabrication de filaments fondus. Type d'impression 3D réalisée par l'extrusion de lignes de plastique d'une certaine forme. C'est la seule technique d'impression 3D que Cura soutient. Synonyme de "impression FDM".
-* **Filament :** (Filament) Un fil de plastique est introduit dans l'imprimante 3D,à partir de bobines. Une fois extrudé, ce n'est plus un filament mais juste de la matière
+* **Filament :** (Filament) Un fil de plastique est introduit dans l'imprimante 3D,à partir de bobines. Une fois extrudé, ce n'est plus un filament mais juste de la matière.
 * **Débit :** (Flow) Le taux de matériau d'extrusion par rapport à son taux normal. Un débit supérieur à 100 % permet théoriquement d'extruder plus de matière que ne le permettrait le volume alloué. Un débit inférieur à 100 % extrude théoriquement trop peu de matière.
 * **Portique :** (Gantry) Le cadre mécanique qui déplace la tête d'impression autour du volume de construction.
 * **Combler les trous :** (Gap filling) Technique utilisée par Cura pour remplir de petits espaces dans l'impression avec du matériau utilisant de très petits segments de ligne.
