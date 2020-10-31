@@ -28,7 +28,7 @@ Cette page explique certains des termes utilisés par Cura dans l'industrie. Cur
 * **Ventilateur :** (Fan) Pas n'importe quel ventilateur de l'imprimante, mais plus précisément le ou les ventilateurs fixés à la tête d'impression qui refroidissent l'impression juste après l'extrusion du matériau.
 * **Impression FDM :** (FDM printing) Modélisation des dépôts fondus. Type d'impression 3D réalisée par l'extrusion de lignes de plastique d'une certaine forme. C'est la seule technique d'impression 3D que Cura soutient. Synonyme d'"impression FFF".
 * **Alimentation :** (Feeder) Un moteur et un réducteur qui poussent ou tirent le filament à travers la ligne d'extrusion.
-* **Vitesse :** (Feedrate) Vitesse à laquelle le filament est introduit dans la ligne d'extrusion,
+* **Vitesse :** (Feedrate) Vitesse à laquelle le filament est introduit dans la ligne d'extrusion.
 * **Impression FFF :** (FFF printing) Fabrication de filaments fondus. Type d'impression 3D réalisée par l'extrusion de lignes de plastique d'une certaine forme. C'est la seule technique d'impression 3D que Cura soutient. Synonyme de "impression FDM".
 * **Filament :** (Filament) Un fil de plastique est introduit dans l'imprimante 3D,à partir de bobines. Une fois extrudé, ce n'est plus un filament mais juste de la matière
 * **Débit :** (Flow) Le taux de matériau d'extrusion par rapport à son taux normal. Un débit supérieur à 100 % permet théoriquement d'extruder plus de matière que ne le permettrait le volume alloué. Un débit inférieur à 100 % extrude théoriquement trop peu de matière.
@@ -53,9 +53,9 @@ Cette page explique certains des termes utilisés par Cura dans l'industrie. Cur
 * **Segment de ligne :** (Line segment) Pour éviter toute ambiguïté avec le terme d'impression 3D "ligne", Cura utilisera toujours le terme complet "segment de ligne" pour indiquer une ligne géométrique droite de longueur limitée lorsqu'il se réfère à un segment de ligne au sens mathématique.
 * **Matière :** (Material) Le matériau dont se compose votre impression 3D. Généralement un thermoplastique dans l'impression FFF.
 * **Maillage :** (Mesh) Une collection de triangles qui forment ensemble un modèle. Bien qu'il soit parfois utilisé comme synonyme d'"objet" et de "modèle", il est généralement utilisé dans le contexte d'une donnée plutôt que dans celui d'un document que vous souhaitez imprimer.
-* **Modèle :** (Model) Un modèle 3D chargé dans la scène 3D de Cura (avant le découpage). Synonyme de "objet"..
+* **Modèle :** (Model) Un modèle 3D chargé dans la scène 3D de Cura (avant le découpage). Synonyme de "objet".
 * **Buse :** (Nozzle) L'ouverture où le matériel d'impression sort de la ligne d'extrusion.
-* **Objet :** (Object) Un modèle 3D chargé dans la scène 3D de Cura (avant le découpage). Synonyme de "modèle"..
+* **Objet :** (Object) Un modèle 3D chargé dans la scène 3D de Cura (avant le découpage). Synonyme de "modèle".
 * **Décalage :** (Offset) Une opération sur les polygones qui produit un polygone plus grand/plus gros, dont le contour garde une certaine distance par rapport au contour du polygone original. Un décalage avec une distance négative est appelé "incrustation".
 * **Mode "un à la fois" :** (One-at-a-time mode) Mode d'impression de plusieurs objets où chaque objet est entièrement terminé avant de passer à l'objet suivant, alors que normalement il imprime une couche pour chaque objet avant de passer à la couche suivante.
 * **Bouclier de suintement :** (Ooze shield) Une coquille de matière imprimée autour de l'empreinte qui capte toute matière suintante lorsqu'un déplacement déplace la buse vers l'empreinte.
@@ -64,7 +64,7 @@ Cette page explique certains des termes utilisés par Cura dans l'industrie. Cur
 * **Surextrusion :** (Overextrusion) Extrusion d'une trop grande quantité de matériau dans un volume limité, ce qui fait que le matériau se répand là où il n'est pas censé aller.
 * **Surplomb :** (Overhang) Une partie de l'impression qui n'est pas (ou pas complètement) supportée par le matériau des couches inférieures. Si le débordement est trop important pour bien imprimer, il est nécessaire de le soutenir ou de le ponter.
 * **Surpression :** (Overpressure) Pendant l'impression, la chambre de la buse est maintenue à une forte pression pour garantir que le matériau est extrudé de manière constante.
-* **Parking :** (Parking) Le fait de mettre l'impression en pause pendant un moment alors que la buse est éloignée de l'impression, pour laisser le temps au matériau de refroidir.
+* **Parquage :** (Parking) Le fait de mettre l'impression en pause pendant un moment alors que la buse est éloignée de l'impression, pour laisser le temps au matériau de refroidir.
 * **Pièce :** (Part) Une forme continue (polygone) sur une seule couche. Un modèle unique peut se diviser en plusieurs parties sur certaines couches, lorsqu'il est tranché.
 * **Motif :** (Pattern) Technique consistant à remplir un volume de matière, mais pas nécessairement à 100% de densité. Cura permet de choisir entre plusieurs motifs tels que lignes, grille, concentrique, tétraédrique, etc.
 * **Matelassage :** (Pillowing) Un défaut d'impression où la peau supérieure est bombée ou se brise entre les deux, où elle repose sur les lignes de remplissage en dessous.
