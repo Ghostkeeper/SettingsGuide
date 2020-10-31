@@ -3,7 +3,7 @@ Glossaire
 
 Cette page explique certains des termes utilisés par Cura dans l'industrie. Cura n'est pas toujours le plus cohérent dans l'utilisation de la terminologie, certains termes sont donc des synonymes.
 * **Couches adaptatives :** (Adaptive layers) Une technique qui fait varier la hauteur de la couche sur l'impression afin de réduire la visibilité de la topologie tout en imprimant assez rapidement.
-* **Aliasing :** (Aliasing) Un défaut d'impression où la limite de résolution des moteurs pas à pas est visible sur l'extérieur de l'impression.
+* **Aliasing :** (Aliasing) Un défaut d'impression (Effet d'escalier) où la limite de résolution des moteurs pas à pas est visible sur l'extérieur de l'impression.
 * **Maille anti-débordement :** (Anti-overhang mesh) Un modèle qui empêchera la génération d'un soutien pour soutenir tout dépassement avec lequel le modèle chevauche. Synonyme de "bloqueur de support".
 * **Bourrelet :** (Bead) Un brin de matériau après avoir été déposé par le train de l'extrudeuse. Le terme "bourrelet" est utilisé en science où il est important de considérer la forme réelle du brin de filament après qu'il ait été solidifié. Semblable à "ligne".
 * **Goutte :** (Blob) Un point d'excès de matière à l'extérieur de l'impression.
