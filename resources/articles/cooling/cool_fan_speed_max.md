@@ -1,6 +1,6 @@
 Maximum Fan Speed
 ====
-The speed at which the fans in the print head will spin when the layer is printed at minimum layer time.
+The speed at which the fans in the print head will spin when the layer is printed at minimum layer time. At the minimum layer time, you'll want to cool down the layer as fast as possible to reduce the time it takes for the layer to cool down before your printer puts the next layer on top.
 
 ![Which fan speed is used where](../images/cool_fan_speed.svg)
 
