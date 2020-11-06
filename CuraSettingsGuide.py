@@ -192,9 +192,24 @@ class CuraSettingsGuide(Extension, QObject):
 			if article_id in global_stack.getAllKeys():
 				definition = global_stack.definition.findDefinitions(key=article_id)[0]
 				if language in self.articles_rich_text[article_id]:
-					definition._SettingDefinition__property_values["description"] = self.articles_rich_text[article_id][language]
+					definition._SettingDefinition__property_values["description"] = self.preprocess_tooltips(self.articles_rich_text[article_id][language])
 				else:
-					definition._SettingDefinition__property_values["description"] = self.articles_rich_text[article_id]["en_US"]  # English should always exist if there is a translation.
+					# English should always exist if there is a translation.
+					definition._SettingDefinition__property_values["description"] = self.preprocess_tooltips(self.articles_rich_text[article_id]["en_US"])
+
+	def preprocess_tooltips(self, original_text):
+		"""
+		Preprocess the articles for display in tooltips.
+
+		The tooltips need slightly different formatting. This function transforms text for display in the tooltips.
+		:param original_text: Rich text that is being displayed in the main articles.
+		:return: Rich text that can be displayed in the tooltips.
+		"""
+		# Remove all hyperlinks from this text.
+		# Hyperlinks don't work when clicked on here (Cura's tooltip display code won't activate weblinks, and it can't open up the Settings Guide to display different articles).
+		# However they do break through having a different colour in system-styled tooltips in the setting visibility list.
+		remove_links_regex = re.compile(r"(?:<a href=\".*\">|</a>)")
+		return re.sub(remove_links_regex, "", original_text)
 
 	def find_articles(self):
 		"""
