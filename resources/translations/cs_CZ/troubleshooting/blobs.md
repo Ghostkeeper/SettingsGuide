@@ -43,7 +43,7 @@ Pokud je tryska nadměrně vytlačována, může být vytlačování nepravideln
 
 Pro snížení tohoto efektu je třeba vzít v úvahu některé parametry:
 * Zmenšete [šířku linií stěny](../resolution/wall_line_width.md). To obecně snižuje tlak v komoře trysky.
-* Zmenšete [šířku vnější stěny](../shell/wall_0_inset.md). Toto nastavení způsobí, že vnější stěna překrývá sousední vnitřní stěnu, takže stěna je tlačena silněji proti vnitřní stěně, což zvyšuje pevnost. Tento tah však také zvyšuje tlak uvnitř tryskové komory.
+* Zmenšete [vnoření vnější stěny](../shell/wall_0_inset.md). Toto nastavení způsobí, že vnější stěna překrývá sousední vnitřní stěnu, takže stěna je tlačena silněji proti vnitřní stěně, což zvyšuje pevnost. Tento tah však také zvyšuje tlak uvnitř tryskové komory.
 
 Mokré vlákno
 ----
@@ -53,4 +53,4 @@ Pokud vlákno nahromadilo vlhkost, zatímco bylo stále na cívce, bude tato vod
 ----
 Šev bude vytvořen tam, kde je obvod vnější stěny zahájen a uzavřen. Není to to, co lidé obvykle nazývají kapkou, i když má podobný vzhled. V článku o [švech](seam.md) najdete informace o tom, jak tento účinek snížit.
 
-Pokud je parametr [Zarovnání švu v Z](../shell/z_seam_type.md) nastaven na "Náhodné", šev se rozloží kolem modelu a vytvoří všude malé švy. Může to vypadat přesně jako skvrna, i když je to vlastně šev. Upravte parametr [Zarovnání švu v Z](../shell/z_seam_type.md) a skryjte tyto švy.
+Pokud je parametr [Zarovnání švu v Z](../shell/z_seam_type.md) nastaven na "Náhodné", šev se rozloží kolem modelu a vytvoří všude malé švy. Může to vypadat přesně jako skvrna, i když je to vlastně šev. Upravte parametr Zarovnání švu v Z a skryjte tyto švy.

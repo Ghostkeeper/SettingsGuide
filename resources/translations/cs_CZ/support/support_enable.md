@@ -21,5 +21,3 @@ Ačkoli je to někdy nutné, je třeba se co nejvíce vyhnout tiskovým podpěr�
 * Malé římsy mohou být podepřeny sklonem 45 stupňů, což umožňuje přenést převis do modelu.
 * Větší přesahy mohou být přemostěny, pokud jsou podpírány na obou stranách. Cura bude automaticky orientovat linie na spodní straně tohoto převisu tak, aby procházely v přímé linii přes most. Během tisku těchto linií bude tryska udržovat napětí na vláknu tak, aby nesklouzlo dolů. To mu pak dá dostatek času na ztuhnutí, aby se mohlo samo udržet.
 * Pokud je v převisu mezera, lze navrhnout obětní můstek. Je to vrstva, kterou je mezera uzavřena. To umožňuje vybudovat dobrý most, takže druhá vrstva může nahoře postavit odpovídající prostorové stěny. Po tisku lze štěrbinu otevřít nožem, protože je silná pouze jednu vrstvu.
-
-

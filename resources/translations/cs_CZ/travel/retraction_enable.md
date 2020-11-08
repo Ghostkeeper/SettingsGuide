@@ -15,5 +15,3 @@ Retrakce má významné výhody, ale také nevýhody:
 * Vlákno se může opotřebovat, když je příliš mnoho retrakcí, což brání podavači v uchopení materiálu.
 
 **Ohebné materiály se obtížněji retrahují, protože tahem za vlákno se se vlákno natáhne, místo aby se vytáhlo z trysky. Může být velmi časově náročné a relativně neefektivní umožnit retrakci s takovými materiály.**
-
-

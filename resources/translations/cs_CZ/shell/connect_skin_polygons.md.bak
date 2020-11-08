@@ -2,7 +2,7 @@ Propojit polygony horní/dolní strany
 ====
 Při použití soustředného horního/dolního vzoru (vzor tvořený uzavřenými obrysy, nazývanými také mnohoúhelníky), spojí všechny obrysy dohromady tak, aby tvořily jednu jedinou cestu.
 
-![Soustředný vzor vytváří samostatné obrysy](../../../articles/images/connect_skin_polygons_original.png)
+![Běžný soustředný vzor](../../../articles/images/connect_skin_polygons_original.png)
 ![Všechny obrysy jsou spojeny do jedné křivky](../../../articles/images/connect_skin_polygons_enabled.png)
 
 Tím se zabrání většině přesunů. To však vytváří nové ostré úhly, ve kterých bude tryska muset hodně zrychlovat a zpomalovat, což kompenzuje nárůst doby tisku. Zvlněný vzor bude také viditelný na vnější straně, což dává zajímavý vizuální efekt.

@@ -7,4 +7,3 @@ Toto nastavení určuje rychlost, jakou se tryska pohybuje vodorovně během tis
 Nejnižší vodorovná vrstva bude vytištěna [dolní rychlostí](wireframe_printspeed_bottom.md). Tu lze nakonfigurovat samostatně.
 
 Pomalejší tisk bude trvat déle, ale dává materiálu více času na ztuhnutí. To zlepšuje schopnost přemostění materiálu, díky čemuž je tisk na konci spolehlivější a lépe vypadající.
-
