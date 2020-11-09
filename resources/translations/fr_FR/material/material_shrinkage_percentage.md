@@ -10,9 +10,9 @@ Les données purement chimiques sur le rétrécissement d'un matériau entre la 
 
 Si le facteur d'échelle est supérieur à 100,5 % et que vous imprimez quelque chose de grand, Cura affichera un avertissement que vous pourriez commencer à avoir de la [déformation](../troubleshooting/warping.md).<!--endif-->
 
-<!--if cura_version < 4.8:This is a descriptive setting, letting Cura know how much the material shrinks when it cools down from the printing temperature to room temperature.
+<!--if cura_version < 4.8:Il s'agit d'un réglage descriptif, permettant à Cura de savoir à quel point le matériau se rétrécit lorsqu'il passe de la température d'impression à la température ambiante.
 
-This setting is currently not used for slicing. It is currently only used to display a warning to the user when printing large things if the shrinkage ratio is larger than 0.5%.
+Ce paramètre n'est actuellement pas utilisé pour la découpe. Il n'est utilisé que pour afficher un avertissement à l'utilisateur lors de l'impression de grandes pièces si le taux de rétrécissement est supérieur à 0,5%..
 -->
 
 *Ce paramètre n'est pas visible dans la liste des paramètres. Il s'agit seulement d'un réglage interne qui doit être écrasé par le profil matériau.*
