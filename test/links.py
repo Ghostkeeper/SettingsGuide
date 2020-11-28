@@ -48,7 +48,7 @@ class TestLinks(unittest.TestCase):
 					contents = f.read()
 				for image_link in find_images.findall(contents):
 					image_path = os.path.join(os.path.dirname(filename), image_link)
-					assert os.path.exists(image_path), "Article {article_path} refers to image {image_path}, which doesn't exist.".format(article_path=filename, image_path=image_link)
+					self.assertTrue(os.path.exists(image_path), "Article {article_path} refers to image {image_path}, which doesn't exist.".format(article_path=filename, image_path=image_link))
 
 	def test_articles(self):
 		"""
@@ -62,7 +62,7 @@ class TestLinks(unittest.TestCase):
 					if link.startswith("https://") or link.startswith("http://"):
 						continue  # Don't find articles on the internet either.
 					article_path = os.path.join(os.path.dirname(filename), link)
-					assert os.path.exists(article_path), "Article {article_path} refers to article {path}, which doesn't exist.".format(article_path=filename, path=article_path)
+					self.assertTrue(os.path.exists(article_path), "Article {article_path} refers to article {path}, which doesn't exist.".format(article_path=filename, path=article_path))
 
 	def test_links_within_translations(self):
 		"""
