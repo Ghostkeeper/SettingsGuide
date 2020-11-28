@@ -16,6 +16,13 @@ class TestLinks(unittest.TestCase):
 	These are tests to check whether there are any broken links in any articles.
 	"""
 
+	"""
+	Regex to find hyperlinks in articles.
+
+	The capture group is the URL in the link. The text itself is ignored.
+	"""
+	find_links = re.compile(r"\[.*\]\(([^\)]*)\)")
+
 	def all_articles(self):
 		"""
 		Get all article file paths.
@@ -47,16 +54,56 @@ class TestLinks(unittest.TestCase):
 		"""
 		Test if the links to other articles are correct.
 		"""
-		find_links = re.compile(r"\[.*\]\(([^\)]*)\)")
 		for filename in self.all_articles():
 			with self.subTest():
 				with open(filename) as f:
 					contents = f.read()
-				for link in find_links.findall(contents):
+				for link in self.find_links.findall(contents):
 					if link.startswith("https://") or link.startswith("http://"):
 						continue  # Don't find articles on the internet either.
 					article_path = os.path.join(os.path.dirname(filename), link)
 					assert os.path.exists(article_path), "Article {article_path} refers to article {path}, which doesn't exist.".format(article_path=filename, path=article_path)
+
+	def test_links_within_translations(self):
+		"""
+		Tests that translations of articles link to translated articles of the same language if a translation is
+		available.
+		"""
+		# First gather which articles are translated in each language.
+		all_articles = list(self.all_articles())
+		translated_articles = {}
+		for filename in all_articles:
+			rel_filename = os.path.relpath(filename, os.path.join(os.path.dirname(__file__), "..", "resources"))  # Make relative to the resources folder.
+			path = rel_filename.split(os.sep)
+			if len(path) <= 2:
+				continue  # Ignore files not in the translations/<language> folders.
+			if path[0] != "translations":
+				continue
+
+			language = path[1]
+			if language not in translated_articles:
+				translated_articles[language] = {}
+			translated_articles[language][os.path.basename(filename)] = filename
+
+		for filename in all_articles:
+			rel_filename = os.path.relpath(filename, os.path.join(os.path.dirname(__file__), "..", "resources"))  # Make relative to the resources folder.
+			path = rel_filename.split(os.sep)
+			if len(path) <= 2:
+				continue  # Ignore files not in the translations/<language> folders.
+			if path[0] != "translations":
+				continue
+			language = path[1]
+
+			with self.subTest():
+				with open(filename) as f:
+					contents = f.read()
+				for link in self.find_links.findall(contents):
+					if link.startswith("https://") or link.startswith("http://"):
+						continue  # Don't find articles on the internet either.
+					absolute_link = os.path.join(os.path.dirname(filename), link)
+					linked_file = os.path.basename(link)
+					if linked_file in translated_articles[language]:
+						self.assertEqual(os.path.abspath(absolute_link), os.path.abspath(translated_articles[language][linked_file]), "There is a translation of {linked_file} in {language}, but {article} is not linking to the translation.".format(linked_file=linked_file, language=language, article=os.path.basename(filename)))
 
 if __name__ == "__main__":
 	unittest.main()
