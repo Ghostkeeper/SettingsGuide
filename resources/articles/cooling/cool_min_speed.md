@@ -6,4 +6,4 @@ Enforcing the Minimum Layer Time is important in order to allow the previous lay
 
 ![Which fan speed is used where](../images/cool_fan_speed.svg)
 
-For example, a very small part may have some layer which takes 3 seconds to print at a normal speed of 30mm/s, but the Minimum Layer Time setting is set to 10 seconds. The printer would then reduce its speed to 9mm/s. However if a Minimum Speed is set to 10mm/s, then the printer would print this layer at 10mm/s and finish after 9 seconds. The printer will then wait for 1 second at the end of the layer before starting with the next.
+For example, a very small part may have some layer which takes 3 seconds to print at a normal speed of 30mm/s, but the Minimum Layer Time setting is set to 10 seconds. The printer would then reduce its speed to 9mm/s. However if a Minimum Speed is set to 10mm/s, then the printer would print this layer at 10mm/s and finish after 9 seconds. The printer will then wait for 1 second at the end of the layer before starting with the next. If [Lift Head](cool_lift_head.md) is enabled, it will wait with the nozzle slightly away from the print.
