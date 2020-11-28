@@ -13,5 +13,3 @@ Snížení tohoto parametru si vynutí postupnější přechod tloušťky vrstvy
 * Podobně, když by ostrý úhel modelu měl způsobit náhlý přechod na silnější vrstvy, vytvoří tiskárna zbytečně tenké vrstvy, a ztratí čas tisku, pokud to není nutné.
 
 Vzhledem k implementaci algoritmu adaptivní vrstvy dojde k postupnému přechodu na jinou tloušťku vrstvy *vždy nad* úhlem v modelu, který způsobil přechod.
-
-

@@ -13,5 +13,3 @@ Pokud však dojde během zpracování g-kódu k nějakým chybám zaokrouhlován
 Ne všechny firmware tiskáren podporují relativní extruzi.
 
 **Pokud je použita absolutní extruze, Cura stále vynuluje polohu vlákna každých 10 metrů, aby se zabránilo chybám zaokrouhlování s plovoucí desetinnou čárkou ve firmwaru.**
-
-

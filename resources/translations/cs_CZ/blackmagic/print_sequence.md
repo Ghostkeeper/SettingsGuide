@@ -24,4 +24,3 @@ V tomto režimu je však několik omezení, která zabraňují kolizi hlavy a po
 * Pořadí, ve kterém jsou objekty tisknuty, je pevné a optimalizované, aby to umožňovalo tisknout objekty blíže k sobě. Pokud vaše tisková hlava není souměrná, může to ušetřit spoustu místa na podložce tisku.
 
 **Jeden po druhém je k dispozici pouze u jednoduchého extrudéru. Pokud používáte tiskárnu s více extrudéry, je nutné, aby se toto nastavení zobrazilo až po deaktivaci všech extrudérů kromě jednoho.**
-

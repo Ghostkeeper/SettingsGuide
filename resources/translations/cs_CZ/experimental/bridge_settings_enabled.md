@@ -17,5 +17,3 @@ Pokud je však toto nastavení povoleno, můžete toto chování doladit tak, ab
 Tyto parametry lze nastavit samostatně pro plášť, který překlenuje mezeru, a také pro stěny. Pokud je aktivována možnost [Přemostění má několik vrstev](bridge_enable_more_layers.md), lze je také upravit samostatně pro druhou a třetí vrstvu nad mezerou přemostění. Je také možné upravit části tisku, které jsou považovány za přemostěné oblasti, nastavením [jaký zlomek zóny musí být nad vzduchem](bridge_skin_support_threshold.md) a [minimální šířky stěn](bridge_wall_min_length.md).
 
 Aktivací parametru přemostění máte lepší kontrolu nad tím, jak jsou v tisku ošetřena přemostění. Velmi dobrým nastavením parametrů přemostění můžete výrazně zlepšit kvalitu převisů a zlepšit přesnost ve svislém směru. Jedinou nevýhodou je, že pokud neupravíte nastavení přemostění podle vaší tiskárny, může být tisk ještě horší.
-
-

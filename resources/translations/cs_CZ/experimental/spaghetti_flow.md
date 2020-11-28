@@ -11,5 +11,3 @@ Když se pro vytvoření pružné výplně používají špagety, toto nastaven�
 Pokud k nalévání materiálu používáte špagetovou výplň, mělo by být toto nastavení pravděpodobně blízko 100%, aby se model zcela naplnil materiálem. Pokud však má váš materiál při pořizování tendenci se stahovat nebo rozšiřovat, můžete ho mírně upravit.
 
 **Tento parametr je vždy násoben parametrem [Tok pro tisk výplně](../material/infill_material_flow.md).**
-
-

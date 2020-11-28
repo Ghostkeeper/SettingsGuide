@@ -21,5 +21,3 @@ Obě tyto aplikace vyžadují velmi speciální zacházení s vaší výplní. T
 **V pohledu vrstev v aplikaci Cura se výplň objeví jako velmi silné linie. Je to proto, že Cura předpokládá, že materiál zůstává na stejné vrstvě a šíří se tam. Ve skutečnosti ten bude klesat.**
 
 **Při použití špagetové výplně nemá parametr [Šířka linie výplně](../resolution/infill_line_width.md) žádný efekt. Šířka linie je upravena tak, aby vyhovovala potřebám parametrů [Vzdálenost linií výplně](../infill/infill_line_distance.md) a [hustotě toku](spaghetti_flow.md).**
-
-

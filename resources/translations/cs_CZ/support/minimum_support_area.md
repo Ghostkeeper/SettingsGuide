@@ -5,7 +5,7 @@ Tento parametr stanoví minimální velikost povolenou pro části podpěr. Poku
 ![Žádné filtrování plochy (minimální plocha je 0)](../../../articles/images/minimum_support_area_0.png)
 ![Malé části podpěry jsou vynechány](../../../articles/images/minimum_support_area_10.png)
 
-Důvodem tohoto nastavení je to, že tenké sloupy podpěry se pravděpodobně převrátí. Mají také tendenci podpírat malé položky, které by se pravděpodobně tiskly bez podpěry. Pokud se podpěra nakloní, zůstane na tisku mnoho kapek. Proto je nejlepší tyto tenké sloupky podpěry vynechat. Toto nastavení filtruje podpěru podle průřezu sloupku.
+Důvodem tohoto nastavení je to, že tenké sloupy podpěry se pravděpodobně převrhnou. Mají také tendenci podpírat malé položky, které by se pravděpodobně dobře tiskly bez podpěry. Pokud se podpěra převrhne, zůstane na tisku mnoho kapek. Proto je nejlepší tyto tenké sloupky podpěry vynechat. Toto nastavení filtruje podpěru podle průřezu sloupku.
 
 Zvětšením povrchu se sníží množství tištěného materiálu, což mírně snižuje čas a použití materiálu. Ještě důležitější je, že zvyšuje spolehlivost tisku, protože existuje menší šance na převrácení sloupků podpěry. Odstraní však také podpěru malých prvků vašeho tisku, takže kvalita převisů se u těchto částí může zhoršit.
 

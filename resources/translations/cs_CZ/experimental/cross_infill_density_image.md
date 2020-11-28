@@ -14,4 +14,3 @@ Hustota výplně nikdy nepřesáhne hodnotu určenou [vzdálenost linií výpln�
 S tímto nastavením můžete svou výplň upravit velmi daleko. Protože vzory křížové výplně mají většinu použití s pružnými materiály, toto nastavení se používá k dosažení velmi specifických omezení měkkosti nebo tvrdosti. Například by bylo možné vytisknout podrážku boty s přizpůsobenou měkkostí, aby lépe seděla na nohou nebo strojní zařízení, které se musí ohýbat v určitých částech.
 
 **Tento parametr nebude správně přenesen do projektových souborů Cura. Soubor projektu uloží cestu k obrázku jako nastavení, ale neukládá obrázek. Pokud se soubor projektu otevře na jiném počítači, obraz hustoty pravděpodobně nebude obnoven.**
-

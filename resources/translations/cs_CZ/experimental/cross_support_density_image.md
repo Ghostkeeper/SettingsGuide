@@ -14,4 +14,3 @@ Hustota podpěry nikdy nepřesáhne hodnotu specifikovanou v parametru [Vzdálen
 S tímto nastavením můžete svou podpěru upravit velmi daleko. Pokud jsou některé části vašeho tisku náchylné k prohýbání nebo je třeba je tisknout velmi přesně, můžete na místě zvýšit hustotu, abyste je lépe podepřeli, aniž byste museli dělat velký zásah v době tisku nebo ztížit odejmutí podpěry. 
 
 **Tento parametr nebude správně přenesen do projektových souborů Cura. Soubor projektu uloží cestu k obrázku jako nastavení, ale neukládá obrázek. Pokud se soubor projektu otevře na jiném počítači, obraz hustoty pravděpodobně nebude obnoven.**
-

@@ -1,6 +1,6 @@
 Maximální rychlost ventilátoru
 ====
-Rychlost, jakou běží ventilátory tiskové hlavy, když je vrstva vytištěna v minimálním čase.
+Rychlost, jakou běží ventilátory tiskové hlavy, když je vrstva vytištěna v minimálním čase. Při minimální době vrstvy budete chtít vrstvu co nejrychleji ochladit, abyste zkrátili dobu potřebnou k vychladnutí vrstvy, než tiskárna umístí  na vrch další vrstvu.
 
 ![Jaká rychlost ventilátoru se používá, a kde](../images/cool_fan_speed_cs.svg)
 
