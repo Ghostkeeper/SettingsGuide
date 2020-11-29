@@ -6,4 +6,4 @@ Je důležité respektovat minimální dobu vrstvy, aby předchozí vrstva mohla
 
 ![Jaká rychlost ventilátoru se používá, a kde](../images/cool_fan_speed_cs.svg)
 
-Například velmi malá část může mít vrstvu, která trvá 3 sekundy, než se vytiskne normální rychlostí 30 mm/s, ale nastavení minimální doby vrstvy je fixováno na 10 sekund. Tiskárna by pak snížila rychlost na 9 mm/s. Pokud je však minimální rychlost nastavena na 10 mm/s, tiskárna tuto vrstvu vytiskne rychlostí 10 mm/s a dokončí se po 9 sekundách. Tiskárna pak počká 1 sekundu na konci vrstvy, než začne další vrstvu.
+Například velmi malá část může mít vrstvu, která trvá 3 sekundy, než se vytiskne normální rychlostí 30 mm/s, ale nastavení minimální doby vrstvy je fixováno na 10 sekund. Tiskárna by pak snížila rychlost na 9 mm/s. Pokud je však minimální rychlost nastavena na 10 mm/s, tiskárna tuto vrstvu vytiskne rychlostí 10 mm/s a dokončí se po 9 sekundách. Tiskárna pak počká 1 sekundu na konci vrstvy, než začne další vrstvu. Pokud je povolena funkce [Zvednout hlavu](cool_lift_head.md), bude čekat s tryskou mírně oddálenou od tisku.
