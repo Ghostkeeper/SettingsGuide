@@ -20,3 +20,7 @@ Translations
 ![Goodfeat - Russian](../images/contributors/Goodfeat.png)
 ![Laurent Lalliard - French](../images/contributors/5axes.png)
 ![Vb138 - Czech](../images/contributors/Vb138.png)
+
+Sponsors
+----
+![Eskeyaar - Thank you very much!](../images/contributors/Eskeyaar.png)
