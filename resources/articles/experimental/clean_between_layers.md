@@ -13,4 +13,4 @@ This wiping procedure consists of a number of steps:
 6. The Z hop is ended, if it was enabled. The material unretracts.
 7. The print pauses for a [certain period](wipe_pause.md).
 
-The aim of this procedure is to clean the nozzle periodically of any debree. Some materials tend to creep up to the nozzle with capillary action due to high surface tension. This can creep into the print head and collect there, which may break the print head apart. Other materials containing fibres or other fillings may cause the filling to be sprayed onto the nozzle during printing. This will wipe that material off.
+The aim of this procedure is to clean the nozzle periodically of any debris. Some materials tend to creep up to the nozzle with capillary action due to high surface tension. This can creep into the print head and collect there, which may break the print head apart. Other materials containing fibres or other fillings may cause the filling to be sprayed onto the nozzle during printing. This will wipe that material off.
