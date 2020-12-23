@@ -8,6 +8,8 @@ While other extruders are printing, a nozzle will sometimes ooze some material, 
 
 The prime tower consists of an outer shell which is completely printed with one extruder, every layer. This is necessary in order to guarantee stability of the tower, but will sometimes require extra extruder switches for some prints. All other extruders will print loops inside this shell, dumping their material inside the tower, preferably along the walls on the inside. These extruders don't need to prime if they happen to start on the layer, because they will not go in stand-by then.
 
+The material that gets chosen for the outer shell is the material with the greatest [Adhesion Tendency](../material/material_adhesion_tendency.md). This is a hidden setting that can't be altered from the interface, which indicates how well layers stick together. By choosing the material with the greatest adhesion between layers, the risk of the prime tower breaking is minimised. If multiple materials have the same adhesion tendency (e.g. for dual-colour prints using the same material type), the lowest extruder number is chosen.
+
 In addition to priming, the nozzle will also make a movement inside the tower to wipe off any material from the nozzle that accumulated during stand-by. This prevents the ooze from sticking to the print. This is why the prime tower is also sometimes called a *wipe tower*.
 
 The disadvantages of the prime tower are that it takes some extra time to print and takes away some space on the build plate.
