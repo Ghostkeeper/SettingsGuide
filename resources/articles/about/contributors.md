@@ -14,6 +14,7 @@ Articles
 ![Jeroen Stevens - Basis of content in v1.0](../images/contributors/no_avatar.svg)
 ![Christerbeke - Article about Adaptive Layer Height](../images/contributors/Christerbeke.jpg)
 ![Laurent Lalliard - Minor corrections](../images/contributors/5axes.png)
+![Sophist - Minor corrections](../images/contributors/Sophist.jpg)
 
 Translations
 ----
