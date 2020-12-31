@@ -5,3 +5,5 @@ If there are multiple parts to print to a layer, Cura will optimise the order in
 This is a different setting than the Z seam. The Z seam alignment settings only determine where the printer will start printing the contour of a part, whereas this setting determines which part it will start with.
 
 If your printer does something specific when starting with a new layer or when switching extruders, it's a good idea to set these coordinates to the location where the print head ends up when it is ready to continue printing. This minimises travel moves and oozing.
+
+These coordinates are in the g-code coordinate system, which is different from the coordinate system that Cura uses to show the placement of objects.
