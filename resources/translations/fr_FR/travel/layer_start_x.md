@@ -5,3 +5,5 @@ S'il y a plusieurs parties à imprimer sur une couche, Cura optimisera l'ordre d
 Il s'agit d'un paramètre différent de la couture Z. Les paramètres d'alignement de la couture Z déterminent seulement où l'imprimante commencera à imprimer le contour d'une pièce, alors que ce paramètre détermine avec quelle pièce elle commencera.
 
 Si votre imprimante fait quelque chose de spécifique lorsqu'elle commence avec une nouvelle couche ou lorsqu'elle change d'extrudeuse, il est bon de régler ces coordonnées à l'endroit où la tête d'impression termine lorsqu'elle est prête à poursuivre l'impression. Cela permet de réduire au minimum les déplacements et les suintements.
+
+Ces coordonnées se trouvent dans le système de coordonnées g-code, qui est différent du système de coordonnées que Cura utilise pour montrer le placement des objets.
