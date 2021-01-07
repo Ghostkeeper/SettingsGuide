@@ -4,4 +4,6 @@ Si un saut en Z est effectué, ce réglage détermine la hauteur à laquelle la 
 
 ![Un saut Z est effectué à une certaine hauteur](../images/retraction_hop_enabled_fr.svg)
 
+La vitesse Z étant jusqu'à un ordre de grandeur de deux fois plus lente que les vitesses X/Y, le décalage en Z peut être long.
+
 Les retraits en Z plus élevés prennent plus de temps, ce qui augmente le temps total d'impression et augmente légèrement la quantité de suintement également. Cependant, le fait de passer trop bas sur la surface permet au suintement de la buse de frapper le modèle de toute façon, ce qui va à l'encontre de l'objectif du Z hop.
