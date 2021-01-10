@@ -9,7 +9,7 @@ There are two major effects at play when tuning this setting: Adhesion between l
 
 When spacing the skin lines directly adjacent to each other, they will stick to one another. This will make the bottom side of the bridged gap look nicer, since the surface will be continuous instead of stringing. Additionally, the second line can lean on the first line a bit while bridging, which makes the bridge sag a bit less.
 
-However there is another effect and that is cooling. When the lines are spaced further apart, they will be able to cool down faster and then won't sag as much either. Of course, this only applies when the fan is turned on, so for high temperature materials this strategy is not going to work.
+However there is another effect: cooling. When the lines are spaced further apart, they will be able to cool down faster and then won't sag as much either. Of course, this only applies when the fan is turned on, so for high temperature materials this strategy is not going to work.
 
 Which of these effects is stronger depends on the viscosity of the material, how fast it solidifies and on the fan speed. Some tuning is always required.
 
