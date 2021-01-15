@@ -75,7 +75,7 @@ class CuraSettingsGuide(Extension, QObject):
 
 		preferences = application.getPreferences()
 		preferences.addPreference("settings_guide/language", "cura_default")
-		preferences.addPreference("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29", False)
+		preferences.addPreference("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29", True)
 		preferences.addPreference("settings_guide/window+always+in+front", False)
 
 		self.adjust_theme()
