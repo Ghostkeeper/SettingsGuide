@@ -2,7 +2,7 @@ Couches de soutien des bords de la peau
 ====
 Lors de l'impression de formes concaves, il y aura une peau supérieure qui se terminera quelque part à mi-chemin du remplissage. Ce réglage ajoute une ligne supplémentaire à travers le remplissage pour soutenir le bord de la peau, de sorte qu'elle s'affaisse un peu moins.
 
-![Un périmètre est tracé à travers le remplissage sous le bord de la peau](../../../articles/images/skin_edge_support_thickness.png)
+![Un contour est créé à travers le remplissage sous le bord de la peau](../../../articles/images/skin_edge_support_thickness.png)
 
 Une seule ligne à travers les interstices du remplissage s'affaissera toujours, de sorte que la ligne peut être tracée sur plusieurs couches sous le bord de la peau qui a besoin d'être soutenue. Ce paramètre permet de configurer le nombre de couches à travers lesquelles cette ligne sera tracée sous le bord de la peau. Vous pouvez également ajuster l'[épaisseur](skin_edge_support_thickness.md) des couches à travers lesquelles la ligne est tracée.
 
