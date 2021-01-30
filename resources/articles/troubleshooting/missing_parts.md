@@ -4,12 +4,14 @@ Sometimes, when inspecting layer view (or if unlucky, while printing), it appear
 
 Non-manifold meshes
 ----
-Some meshes have holes in their surface or extra geometry on the inside. This confuses Cura, because it's no longer clear which parts of the volume belong to the inside and which parts don't. Cura takes a cross section of the mesh at each layer and assumes that it will find closed loops. If there are no closed loops or if there is extra surfaces besides these closed loops, these are normally not printed. As a result, if there is a hole in the model, the cross sections will not be closed loops, and the layers where this hole exists will not be printed. Meshes that contain such holes or extra geometry are called [non-manifold](https://en.wikipedia.org/wiki/Manifold) because they could not exist in the real world. 
+Some meshes have holes in their surface or extra geometry on the inside. This confuses Cura, because it's no longer clear which parts of the volume belong to the inside and which parts don't. When looking at a cross-section of the model, Cura will count from the outside in. The first surface it crosses means it's going to the inside of the model. The second surface means it's going outside again. The third surface it crosses means it's going back inside, and so on. If parts of the surfaces are missing, or if there are extra loose surfaces in the middle, the inside becomes ambiguous depending on which side you're looking from.
 
-![A part with an extra wall inside, where it's ambiguous whether the bottom part is inside or outside of the part](../images/non_manifold_inside.svg)
-![Non-manifold meshes are usually displayed with red parts in X-ray view](../images/x_ray.png)
+![With manifold meshes, it's clear where the inside of the model is](../images/manifold_correct.svg)
+![With non-manifold meshes, the volume of the mesh is ambiguous](../images/manifold_incorrect.svg)
 
-If the mesh is not manifold, you can usually see this by going into the Prepare stage and selecting the X-ray view. The X-ray view will colour some parts red if you are looking through an odd number of surfaces, which happens when the mesh is not manifold. This way you can identify problems with your mesh. You will then need to repair those meshes in a CAD or modelling application.
+Meshes that have such missing surfaces or extra pieces are called non-manifold since they could not exist in the real world. Cura will try to mend them by closing small gaps, but if a surface can't be mended it will be left out of the print (unless [Surface Mode](../blackmagic/magic_mesh_surface_mode.md) is set to include them). The missing or extra geometry is also displayed in the 3D scene with a spotted pattern, or in red in the Prepare stage when using the X-ray view. This will colour the surface differently if it belongs to an odd number of surfaces, which happens only when the mesh is not manifold. It helps to identify problems with your mesh. You will then need to repair those meshes in a CAD or modelling application.
+
+![Non-manifold meshes are displayed with red parts in X-ray view](../images/x_ray.png)
 
 While Cura normally assumes that the mesh is manifold, it can fix the model in some cases. These are some things you can try:
 * [Extensive Stitching](../meshfix/meshfix_extensive_stitching.md) handles cases better where there is extra geometry attached to the outside of a model, though it takes some extra time to slice.
