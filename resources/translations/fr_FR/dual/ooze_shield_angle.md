@@ -4,5 +4,5 @@ Le bouclier de suintement suivra la forme du modèle. Il doit rester proche, sin
 
 ![Au lieu de suivre le modèle en bas et en haut, il n'est pas plus raide que l'angle spécifié](../images/ooze_shield_fr.svg)
 
-* Une valeur de 0 rend le bouclier de suintement complètement vertical autour de la forme entière. Plus l'angle est faible, plus le bouclier sera stable.
-* Une valeur de 90 fait que le bouclier antifuite suit exactement le modèle. Plus l'angle est élevé, mieux la bouclier antifuite empêchera le suintement sur le modèle.
+* Une valeur de **0** rend le bouclier de suintement complètement vertical autour de la forme entière. Plus l'angle est faible, plus le bouclier sera stable.
+* Une valeur de **90** fait que le bouclier antifuite suit exactement le modèle. Plus l'angle est élevé, mieux la bouclier antifuite empêchera le suintement sur le modèle.
