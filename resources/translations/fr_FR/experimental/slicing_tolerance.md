@@ -10,9 +10,9 @@ En utilisant le milieu, les couches resteront aussi proches que possible de la s
 
 Pour obtenir la tolérance moyenne, Cura calculera une section transversale à mi-chemin de l'épaisseur de chaque couche. Tout ce qui se trouve à l'intérieur de la section transversale fera partie de la couche.
 
-Inclus
+Inclusif
 ----
-![Inclus](../images/slicing_tolerance_inclusive_fr.svg)
+![Inclusif](../images/slicing_tolerance_inclusive_fr.svg)
 
 Lorsque vous utilisez Inclusive, les couches contiennent *au moins* la totalité du volume original. Lorsque la surface est inclinée, les couches seront légèrement en saillie. Le volume total des couches sera presque toujours supérieur au volume de la maille originale.
 
@@ -27,7 +27,7 @@ En cas d'utilisation d'Exclusive, les couches seront contenues dans le volume or
 Pour obtenir la tolérance Exclusive, Cura calculera les sections transversales en haut et en bas de la hauteur de chaque couche. Seules les surfaces qui se trouvent à l'intérieur de ces*deux* sections transversales seront considérées comme faisant partie de cette couche.
 
 Utilisation
-----
-Ce paramètre porte le nom de son utilisation prévue plutôt que de son effet fonctionnel. Si vous avez plusieurs pièces qui doivent glisser les unes sur les autres, la forme théorique des couches peut physiquement empêcher un ajustement exact. Dans un tel cas, vous pouvez régler ce paramètre sur Exclusif afin de garantir que les couches restent dans les limites du volume original. À l'exception du gauchissement, de l'affaissement et d'autres effets de déformation similaires, cela garantira que les pièces s'emboîtent les unes dans les autres et puissent glisser les unes sur les autres.
+-----
+Ce paramètre porte le nom de son utilisation prévue plutôt que de son effet fonctionnel. Si vous avez plusieurs pièces qui doivent glisser les unes sur les autres, la forme théorique des couches peut physiquement empêcher un ajustement exact. Dans un tel cas, vous pouvez régler ce paramètre sur **Exclusif** afin de garantir que les couches restent dans les limites du volume original. À l'exception du gauchissement, de l'affaissement et d'autres effets de déformation similaires, cela garantira que les pièces s'emboîtent les unes dans les autres et puissent glisser les unes sur les autres.
 
 En réalité, il y a toujours d'autres effets qui empêchent cela. Dans la pratique, ce réglage peut être utilisé pour obtenir une tolérance légèrement plus ou moins grande entre deux surfaces inclinées, comme on peut le voir sur les images ci-dessus.
