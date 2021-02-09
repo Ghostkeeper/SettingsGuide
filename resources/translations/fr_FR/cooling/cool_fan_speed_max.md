@@ -1,6 +1,7 @@
 Vitesse maximale du ventilateur
 ====
-La vitesse à laquelle les ventilateurs de la tête d'impression tournent lorsque la couche est imprimée en un temps minimum.
+
+La vitesse à laquelle les ventilateurs de la tête d'impression tournent lorsque la couche est imprimée en un temps minimum. Au temps de calque minimum, vous voudrez refroidir la couche le plus rapidement possible pour réduire le temps nécessaire au refroidissement de la couche avant que votre imprimante n'imprime la couche suivante par-dessus.
 
 ![Quelle vitesse de ventilateur est utilisée où](../images/cool_fan_speed_fr.svg)
 
