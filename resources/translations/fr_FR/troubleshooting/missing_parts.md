@@ -6,7 +6,9 @@ Mailles non manifold
 ----
 Certaines mailles ont des trous dans leur surface ou une géométrie supplémentaire à l'intérieur. Cela rend Cura confus, car on ne sait plus clairement quelles parties du volume appartiennent à l'intérieur et quelles parties n'y appartiennent pas. Cura prend une section transversale de la maille à chaque couche et suppose qu'elle trouvera des boucles fermées. S'il n'y a pas de boucles fermées ou s'il y a des surfaces supplémentaires en plus de ces boucles fermées, celles-ci ne sont normalement pas imprimées. Par conséquent, s'il y a un trou dans le modèle, les sections transversales ne seront pas des boucles fermées, et les couches où ce trou existe ne seront pas imprimées. Les mailles qui contiennent de tels trous ou une géométrie supplémentaire sont appelées [non-manifold](https://en.wikipedia.org/wiki/Manifold) parce qu'elles ne pourraient pas exister dans le monde réel. 
 
-![Une pièce avec une paroi supplémentaire à l'intérieur, où il est ambigu que la partie inférieure soit à l'intérieur ou à l'extérieur de la pièce](../images/non_manifold_inside_fr.svg)
+![Avec les maillages multiples, on sait clairement où se trouve l'intérieur du modèle](../images/manifold_correct_fr.svg)
+![Dans le cas des mailles non pliées, le volume de la maille est ambigu](../images/manifold_incorrect_fr.svg)
+
 ![Les mailles non manifestes sont généralement affichées avec des parties rouges en vue radiographique](../../../articles/images/x_ray.png)
 
 Si la maille n'est pas multiple, vous pouvez généralement le voir en entrant dans la phase de préparation et en sélectionnant la vue aux rayons X. La vue aux rayons X colorera certaines parties en rouge si vous regardez à travers un nombre impair de surfaces, ce qui se produit lorsque la maille n'est pas multiple. De cette façon, vous pouvez identifier les problèmes de votre maillage. Vous devrez ensuite réparer ces maillages dans une application de CAO ou de modélisation.
