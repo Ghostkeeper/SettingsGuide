@@ -8,4 +8,4 @@ La réduction de cet angle permettra de réduire l'extrémité des porte-à-faux
 
 Pour certaines formes, il ne suffit pas de modifier la forme extérieure du moule pour qu'il s'imprime correctement. Il faudra quand même lui apporter un soutien. Vous pouvez obtenir un effet similaire en activant [Activer les supports coniques](../experimental/support_conical_enabled.md).
 
-![Ce moule a encore besoin de soutien](../../../articles/image/mold_needs_support.png)
+![Ce moule a encore besoin de soutien](../../../articles/images/mold_needs_support.png)
