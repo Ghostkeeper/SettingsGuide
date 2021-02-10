@@ -8,8 +8,8 @@ Lors de la mise en spirale du modèle, le modèle n'aura aucun remplissage ni au
 
 Le mode spirale est courant chez de nombreux trancheurs. Il est aussi parfois appelé "mode vase", car c'est un bon moyen d'imprimer des vases. Voici quelques autres propriétés :
 * Imprime extrêmement rapidement.
-* La surface devient très lisse. Il n'y a plus de [joint en Z](../troubleshooting/seam.md) là où il est passé à la couche suivante si [lisser les contours spiralisés](smooth_spiralized_contours.md) est activé.
-* Il ne sera pas très fort. Si le modèle est trop grand, il a tendance à se diviser à cause de [décollement](../troubleshooting/warping.md).
-* Bien que le fait d'enlever la couture aide à rendre l'impression étanche, il est difficile de rendre l'impression étanche si elle a une taille quelconque. Pour cela, il est conseillé d'avoir au moins 2 parois. Il est alors impossible de faire tourner le contour extérieur en spirale.
+* La surface devient très lisse. Il n'y a plus de [couture](../troubleshooting/seam.md) là où il est passé à la couche suivante si [lisser les contours spiralisés](smooth_spiralized_contours.md) est activé.
+* Il ne sera pas très fort. Si le modèle est trop grand, il a tendance à se diviser à cause des [décollements](../troubleshooting/warping.md).
+* Bien que le fait d'enlever la couture aide à rendre l'impression étanche, il est difficile de rendre l'impression étanche si elle a un sel contour. Pour cela, il est conseillé d'avoir au moins 2 parois. Il est alors impossible de faire tourner le contour extérieur en spirale.
 
 **La spiralisation ne fonctionnera pas bien avec des impressions ayant beaucoup de surfaces horizontales.  Elle ne gère pas du tout les surplombs et n'imprime pas les surfaces supérieures, donc rien ne pourra s'appuyer sur une surface horizontale.  Elle ne fonctionne pas bien non plus lorsqu'il y a plusieurs zones sur une couche.**
