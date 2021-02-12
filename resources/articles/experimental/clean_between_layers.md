@@ -14,3 +14,5 @@ This wiping procedure consists of a number of steps:
 7. The print pauses for a [certain period](wipe_pause.md).
 
 The aim of this procedure is to clean the nozzle periodically of any debris. Some materials tend to creep up to the nozzle with capillary action due to high surface tension. This can creep into the print head and collect there, which may break the print head apart. Other materials containing fibres or other fillings may cause the filling to be sprayed onto the nozzle during printing. This will wipe that material off.
+
+The wipe procedure is not very configurable now though. It always wipes in the X direction, keeping the Y position of the last position in the print. This means that a printer with a brush in a corner is not going to work well with this function. You'd need a brush along an entire side of the build volume.
