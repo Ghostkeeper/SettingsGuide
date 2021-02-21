@@ -17,7 +17,7 @@ class ScreenshotTool:
 	dependencies. The dependencies that need to be installed to create the screenshots are:
 	* Linux: The tool is only designed to work on Linux at the moment.
 	* OpenSCAD: After downloading the 3D model files, they are compiled with OpenSCAD to STL files that Cura can read.
-	* Gimp: Used in command line mode to reduce the colour palette for better compression.
+	* ImageMagick: Used to reduce colour depth and to combine screenshots into GIF animations.
 	* OptiPNG: To pre-process for optimising PNG files.
 	* Efficient-Compression-Tool: To refine optimisation of PNG files.
 	* Gifsicle: To optimise GIF files.
@@ -31,3 +31,12 @@ class ScreenshotTool:
 	visible on every article. When pressed, it will re-create the images for that article. A button will also be present
 	on the landing page that will re-create ALL images. This takes a long time!
 	"""
+
+	# These are several system commands we can execute to perform various tasks using external tools.
+	commands = {
+		"openscad": "openscad -o {output} {input}",  # Compile an OpenSCAD file.
+		"reduce_palette": "convert -colors {colours} {input} png:{output}",  # Reduce colour palette of an image.
+		"optimise_png": "optipng -o7 -strip all -snip -out {output} {input} && ect -9 -strip --allfilters-b --pal_sort=120 --mt-deflate {output}",  # Reduce file size of PNG images.
+		"merge_gif": "convert -delay {delay} -loop 0 {inputs} {output}",  # Merge multiple images into a GIF.
+		"optimise_gif": "gifsicle -O3 {input}"  # Reduce file size of GIF images.
+	}
