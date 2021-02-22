@@ -77,6 +77,7 @@ class CuraSettingsGuide(Extension, QObject):
 		preferences.addPreference("settings_guide/language", "cura_default")
 		preferences.addPreference("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29", True)
 		preferences.addPreference("settings_guide/window+always+in+front", False)
+		preferences.addPreference("settings_guide/screenshot_tool", False)
 
 		self.adjust_theme()
 		application.initializationFinished.connect(self.load_all_in_background)

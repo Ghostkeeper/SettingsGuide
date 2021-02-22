@@ -1,5 +1,5 @@
 //Copyright (C) 2018 Ultimaker B.V.
-//Copyright (C) 2020 Ghostkeeper
+//Copyright (C) 2021 Ghostkeeper
 //This plug-in is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 //This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 //You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
@@ -151,6 +151,7 @@ Window {
 		}
 
 		TranslationButton {
+			id: translation_button
 			anchors {
 				right: rightSideItem.left
 				rightMargin: UM.Theme.getSize("default_margin").width
@@ -162,6 +163,35 @@ Window {
 			height: 35 * screenScaleFactor
 
 			article_id: manager.selectedArticleId
+		}
+
+		//Button to refresh the screenshots on this page.
+		MouseArea {
+			anchors {
+				right: translation_button.left
+				rightMargin: UM.Theme.getSize("default_margin").width
+				top: parent.top
+				topMargin: UM.Theme.getSize("default_margin").top
+			}
+
+			visible: UM.Preferences.getValue("settings_guide/screenshot_tool")
+			enabled: visible
+			width: height
+			height: 35 * screenScaleFactor
+
+			hoverEnabled: true
+			ToolTip.visible: containsMouse
+			ToolTip.delay: 500
+			ToolTip.timeout: 5000
+			ToolTip.text: qsTr("Refresh screenshots of this article. Tool for maintainers of the Settings Guide!")
+
+			UM.RecolorImage {
+				color: UM.Theme.getColor("text")
+				source: Qt.resolvedUrl("../icons/camera.svg")
+				anchors.centerIn: parent
+				width: height
+				height: parent.height - UM.Theme.getSize("narrow_margin").height * 2
+			}
 		}
 
 		//Zoomed in version of an image, shown only when you click an image.
