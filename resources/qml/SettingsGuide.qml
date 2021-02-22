@@ -178,6 +178,7 @@ Window {
 			enabled: visible
 			width: height
 			height: 35 * screenScaleFactor
+			onClicked: manager.refresh_screenshots()
 
 			hoverEnabled: true
 			ToolTip.visible: containsMouse

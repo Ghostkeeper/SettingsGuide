@@ -1,5 +1,5 @@
 #Copyright (C) 2018 Aleksei Sasin
-#Copyright (C) 2020 Ghostkeeper
+#Copyright (C) 2021 Ghostkeeper
 #This plug-in is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
@@ -25,6 +25,7 @@ from UM.Settings.DefinitionContainer import DefinitionContainer  # To register t
 
 from . import MenuItemHandler  # To register the context menu item in the settings list.
 from . import QtMarkdownRenderer  # To match Mistune's output to Qt's supported HTML subset.
+from . import ScreenshotTool  # To refresh screenshots using the Cura client.
 from .Mistune import mistune  # To parse the Markdown files.
 
 class CuraSettingsGuide(Extension, QObject):
@@ -451,3 +452,12 @@ class CuraSettingsGuide(Extension, QObject):
 		if preferences.getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
 			self.set_tooltips()
 		self.selectedArticleChanged.emit()
+
+	@pyqtSlot()
+	def refresh_screenshots(self) -> None:
+		"""
+		Refresh the screenshots on the current article.
+
+		This starts the process outlined in the ScreenshotTool class.
+		"""
+		ScreenshotTool.refresh_screenshots(self.selectedArticle)
