@@ -10,10 +10,12 @@ import os.path  # To store temporary files.
 import PyQt5.QtCore  # Because some API calls require QUrl rather than just strings...
 import re  # To find the screenshot instructions.
 import subprocess  # To call external applications to do conversions and optimisations for us.
+import time  # Crude way to make asynchronous calls synchronous: Spinlock until we get a signal that the asynchronous method is completed.
 import typing
 
 import cura.CuraApplication  # To change the settings before slicing.
 import UM.Logger
+import UM.Mesh.ReadMeshJob  # To load STL files to slice or take pictures of.
 import UM.Resources  # To store converted OpenSCAD documents long-term.
 
 if typing.TYPE_CHECKING:
@@ -229,7 +231,11 @@ def load_model(stl_path) -> None:
 	Load a 3D model into the scene to take a screenshot of.
 	:param stl_path: A path to an STL model to load.
 	"""
-	cura.CuraApplication.CuraApplication.getInstance().readLocalFile(PyQt5.QtCore.QUrl.fromLocalFile(stl_path))
+	application = cura.CuraApplication.CuraApplication.getInstance()
+	application._currently_loading_files.append(stl_path)
+	job = UM.Mesh.ReadMeshJob.ReadMeshJob(stl_path, add_to_recent_files=False)
+	job.run()  # Don't plan it in on the job queue or anything. Actually run it on this thread.
+	application._readMeshFinished(job)  # Abuse CuraApplication's implementation to properly put the model on the build plate.
 
 def slice_scene() -> None:
 	"""
