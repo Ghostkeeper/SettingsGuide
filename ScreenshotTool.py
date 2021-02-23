@@ -152,12 +152,29 @@ def setup_printer(settings) -> None:
 	registry = application.getContainerRegistry()
 	machine_manager = application.getMachineManager()
 
+	# Create a printer if necessary and activate it if necessary.
 	settings_guide_printer = registry.findContainerStacksMetadata(name="Settings Guide Printer")
 	if settings_guide_printer:
 		if machine_manager.activeMachine.getId() != settings_guide_printer[0]["id"]:  # Added, but not active yet.
 			machine_manager.setActiveMachine(settings_guide_printer[0]["id"])
 	else:  # There is no printer yet. Create one.
 		machine_manager.addMachine("custom", name="Settings Guide Printer")
+
+	# Restore the printer to a certain baseline.
+	machine_manager.setActiveMachineExtruderCount(4)
+	printer = machine_manager.activeMachine
+	blue_pla = registry.findInstanceContainers(id="ultimaker_pla_blue")[0]
+	red_pla = registry.findInstanceContainers(id="ultimaker_pla_red")[0]
+	silver_pla = registry.findInstanceContainers(id="ultimaker_pla_silver-metallic")[0]
+	printer.extruderList[1].setMaterial(blue_pla)
+	printer.extruderList[2].setMaterial(red_pla)
+	printer.extruderList[3].setMaterial(silver_pla)
+	printer.definitionChanges.setProperty("machine_width", "value", "1000")
+	printer.definitionChanges.setProperty("machine_height", "value", "1000")
+	printer.definitionChanges.setProperty("machine_depth", "value", "1000")
+	for extruder_nr in range(4):
+		printer.extruderList[extruder_nr].userChanges.clear()
+	printer.userChanges.clear()
 
 def convert_model(scad_path) -> str:
 	"""
