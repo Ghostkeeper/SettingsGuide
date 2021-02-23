@@ -5,9 +5,15 @@
 
 import collections  # For namedtuple.
 import json  # Screenshot instructions are stored in JSON format.
+import os  # To store temporary files.
+import os.path  # To store temporary files.
 import re  # To find the screenshot instructions.
+import subprocess  # To call external applications to do conversions and optimisations for us.
 import typing
+
 import cura.CuraApplication  # To change the settings before slicing.
+import UM.Logger
+import UM.Resources  # To store converted OpenSCAD documents long-term.
 
 if typing.TYPE_CHECKING:
 	from PyQt5.QtGui import QImage  # Screenshots are returned as QImage by the Snapshot tool of Cura.
@@ -42,13 +48,25 @@ on the landing page that will re-create ALL images. This takes a long time!
 
 # These are several system commands we can execute to perform various tasks using external tools.
 commands = {
-	"openscad": ["openscad", "-o" "{output}" "{input}"],  # Compile an OpenSCAD file.
+	"openscad": ["openscad", "-o", "{output}", "{input}"],  # Compile an OpenSCAD file.
 	"reduce_palette": ["convert", "-colors", "{colours}", "{input}", "png:{output}"],  # Reduce colour palette of an image.
 	"optimise_png1": ["optipng", "-o7", "-strip", "all", "-snip", "-out", "{output}", "{input}"],
 	"optimise_png2": ["ect", "-9", "-strip", "--allfilters-b", "--pal_sort=120", "--mt-deflate", "{output}"],  # Reduce file size of PNG images.
 	"merge_gif": ["convert", "-delay", "{delay}", "-loop", "0", "{inputs}", "{output}"],  # Merge multiple images into a GIF.
 	"optimise_gif": ["gifsicle", "-O3", "{input}"]  # Reduce file size of GIF images.
 }
+
+def call_with_args(command, **kwargs) -> None:
+	"""
+	Call a command with specified arguments.
+	:param command: The key of the command to call (from the `commands` dictionary above).
+	:param kwargs: Key-word arguments to format the command's arguments with.
+	"""
+	args = []
+	for arg in commands[command]:
+		args.append(arg.format(**kwargs))
+	UM.Logger.Logger.info("Subprocess: " + " ".join(args))
+	subprocess.call(args)
 
 ScreenshotInstruction = collections.namedtuple("ScreenshotInstruction", ["image_path", "model_path", "camera_position", "camera_lookat", "layer", "line", "settings", "colours", "width", "delay"])
 """
@@ -192,7 +210,15 @@ def convert_model(scad_path) -> str:
 	:param scad_path: A path to an OpenSCAD model file.
 	:return: A path to an STL model file.
 	"""
-	return ""  # TODO
+	scad_path = os.path.join(os.path.dirname(__file__), "resources", "models", scad_path)
+	file_name = os.path.splitext(os.path.basename(scad_path))[0]
+	stl_dir = os.path.join(UM.Resources.Resources.getDataStoragePath(), "settings_guide_screenshots")
+	if not os.path.exists(stl_dir):
+		os.mkdir(stl_dir)
+	stl_path = os.path.join(stl_dir, file_name + ".stl")
+	if not os.path.exists(stl_path):
+		call_with_args("openscad", input=scad_path, output=stl_path)
+	return stl_path
 
 def load_model(stl_path) -> None:
 	"""
