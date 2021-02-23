@@ -176,6 +176,13 @@ def setup_printer(settings) -> None:
 		printer.extruderList[extruder_nr].userChanges.clear()
 	printer.userChanges.clear()
 
+	# Set the settings that we want to override for this slice.
+	for key, value in settings.items():
+		# Just set it anywhere without really checking whether it's per-extruder or whatever.
+		for extruder_nr in range(4):
+			printer.extruderList[extruder_nr].userChanges.setProperty(key, "value", value)
+		printer.userChanges.setProperty(key, "value", value)
+
 def convert_model(scad_path) -> str:
 	"""
 	Convert an OpenSCAD file into an STL model.
