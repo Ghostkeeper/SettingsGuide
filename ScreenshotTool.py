@@ -7,6 +7,7 @@ import collections  # For namedtuple.
 import json  # Screenshot instructions are stored in JSON format.
 import re  # To find the screenshot instructions.
 import typing
+import cura.CuraApplication  # To change the settings before slicing.
 
 if typing.TYPE_CHECKING:
 	from PyQt5.QtGui import QImage  # Screenshots are returned as QImage by the Snapshot tool of Cura.
@@ -147,7 +148,16 @@ def setup_printer(settings) -> None:
 	This makes sure that the model will be sliced with the correct settings.
 	:param settings: The settings to slice the model with, as a dictionary of setting keys to setting values.
 	"""
-	pass  # TODO
+	application = cura.CuraApplication.CuraApplication.getInstance()
+	registry = application.getContainerRegistry()
+	machine_manager = application.getMachineManager()
+
+	settings_guide_printer = registry.findContainerStacksMetadata(name="Settings Guide Printer")
+	if settings_guide_printer:
+		if machine_manager.activeMachine.getId() != settings_guide_printer[0]["id"]:  # Added, but not active yet.
+			machine_manager.setActiveMachine(settings_guide_printer[0]["id"])
+	else:  # There is no printer yet. Create one.
+		machine_manager.addMachine("custom", name="Settings Guide Printer")
 
 def convert_model(scad_path) -> str:
 	"""
