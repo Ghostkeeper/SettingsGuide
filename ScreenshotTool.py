@@ -172,6 +172,9 @@ def setup_printer(settings) -> None:
 	registry = application.getContainerRegistry()
 	machine_manager = application.getMachineManager()
 
+	# Clear the build plate.
+	application.deleteAll()
+
 	# Create a printer if necessary and activate it if necessary.
 	settings_guide_printer = registry.findContainerStacksMetadata(name="Settings Guide Printer")
 	if settings_guide_printer:
