@@ -7,6 +7,7 @@ import collections  # For namedtuple.
 import json  # Screenshot instructions are stored in JSON format.
 import os  # To store temporary files.
 import os.path  # To store temporary files.
+import PyQt5.QtCore  # Because some API calls require QUrl rather than just strings...
 import re  # To find the screenshot instructions.
 import subprocess  # To call external applications to do conversions and optimisations for us.
 import typing
@@ -225,7 +226,7 @@ def load_model(stl_path) -> None:
 	Load a 3D model into the scene to take a screenshot of.
 	:param stl_path: A path to an STL model to load.
 	"""
-	pass  # TODO
+	cura.CuraApplication.CuraApplication.getInstance().readLocalFile(PyQt5.QtCore.QUrl.fromLocalFile(stl_path))
 
 def slice_scene() -> None:
 	"""
