@@ -3,7 +3,9 @@
 # This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 # You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
-import collections
+import collections  # For namedtuple.
+import json  # Screenshot instructions are stored in JSON format.
+import re  # To find the screenshot instructions.
 import typing
 
 if typing.TYPE_CHECKING:
@@ -46,7 +48,7 @@ commands = {
 	"optimise_gif": "gifsicle -O3 {input}"  # Reduce file size of GIF images.
 }
 
-ScreenshotInstruction = collections.namedtuple("ScreenshotInstruction", ["image_path", "model_path", "camera_position", "camera_lookat", "layer", "line", "settings", "colours", "width", "height", "delay"])
+ScreenshotInstruction = collections.namedtuple("ScreenshotInstruction", ["image_path", "model_path", "camera_position", "camera_lookat", "layer", "line", "settings", "colours", "width", "delay"])
 """
 All the information needed to take a screenshot.
 * image_path: The filename of the image to refresh in the articles/images folder.
@@ -116,8 +118,24 @@ def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, No
 	:param article_text: The article to find screenshots in, HTML-formatted.
 	:return: A sequence of ScreenshotInstruction instances.
 	"""
-	if False:
-		yield None
+	screenshot_regex = re.compile(r"<!--screenshot\s*({.*?})\s*-->", re.DOTALL)
+	for part in article_text:
+		if part[0] == "rich_text":
+			for match in re.finditer(screenshot_regex, part[1]):
+				json_serialised = match.group(1)
+				json_document = json.loads(json_serialised)
+				yield ScreenshotInstruction(
+					image_path=json_document["image_path"],
+					model_path=json_document["model_path"],
+					camera_position=json_document["camera_position"],
+					camera_lookat=json_document["camera_lookat"],
+					layer=json_document.get("layer", 99999),
+					line=json_document.get("line", 0),
+					settings=json_document.get("settings", {}),
+					colours=json_document.get("colours", 256),
+					width=json_document.get("width", 500),
+					delay=json_document.get("delay", 500)
+				)
 	return  # TODO
 
 def setup_printer(settings) -> None:
