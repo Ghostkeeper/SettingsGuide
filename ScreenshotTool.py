@@ -77,19 +77,21 @@ def refresh_screenshots(article_text) -> None:
 		stl_path = convert_model(screenshot_instruction.model_path)
 		load_model(stl_path)
 
-		if type(screenshot_instruction.layer) != list:  # To simplify processing, always use lists for the layer and line, pretending it's always an animation.
-			screenshot_instruction.layer = [screenshot_instruction.layer]
-		if type(screenshot_instruction.line) != list:
-			screenshot_instruction.line = [screenshot_instruction.line]
+		layers = screenshot_instruction.layer
+		if type(layers) != list:  # To simplify processing, always use lists for the layer and line, pretending it's always an animation.
+			layers = [layers]
+		lines = screenshot_instruction.line
+		if type(lines) != list:
+			lines = [lines]
 
-		is_animation = len(screenshot_instruction.layer) > 1
-		if screenshot_instruction.layer[0] >= 0:
+		is_animation = len(layers) > 1
+		if layers[0] >= 0:
 			slice_scene()
 
 		# Track saved images in case we're making multiple that need to be combined into a GIF later.
 		saved_images = []
 		index = 0
-		for layer, line in zip(screenshot_instruction.layer, screenshot_instruction.line):
+		for layer, line in zip(layers, lines):
 			if layer >= 0:  # Need to show layer view.
 				switch_to_layer_view()
 				navigate_layer_view(layer, line)
@@ -136,7 +138,7 @@ def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, No
 					width=json_document.get("width", 500),
 					delay=json_document.get("delay", 500)
 				)
-	return  # TODO
+	return
 
 def setup_printer(settings) -> None:
 	"""
