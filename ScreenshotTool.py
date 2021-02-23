@@ -58,8 +58,7 @@ All the information needed to take a screenshot.
   animation.
 * settings: A dictionary of setting keys and values to slice the object with.
 * colours: The colour depth of the resulting image. Reduce colours to reduce file size. Max 256.
-* width: The width of the resulting screenshot.
-* height: The height of the resulting screenshot.
+* width: The width of the resulting screenshot. The height is adjusted according to aspect ratio of the cropped area.
 * delay: If this is an animation, the delay between consecutive images in milliseconds.
 """
 
@@ -94,7 +93,7 @@ def refresh_screenshots(article_text) -> None:
 				navigate_layer_view(layer, line)
 			else:  # Need to show the model itself.
 				switch_to_solid_view()
-			screenshot = take_snapshot(screenshot_instruction.camera_position, screenshot_instruction.camera_lookat, screenshot_instruction.width, screenshot_instruction.height)
+			screenshot = take_snapshot(screenshot_instruction.camera_position, screenshot_instruction.camera_lookat, screenshot_instruction.width)
 			if not is_animation:
 				target_file = screenshot_instruction.image_path
 			else:
@@ -173,13 +172,13 @@ def switch_to_solid_view() -> None:
 	"""
 	pass  # TODO
 
-def take_snapshot(camera_position, camera_lookat, width, height) -> "QImage":
+def take_snapshot(camera_position, camera_lookat, width) -> "QImage":
 	"""
 	Take a snapshot of the current scene.
 	:param camera_position: The position of the camera to take the snapshot with.
 	:param camera_lookat: The position of the focal point of the camera.
-	:param width: The width of the snapshot, in pixels.
-	:param height: The height of the snapshot, in pixels.
+	:param width: The width of the snapshot, in pixels. The height is adjusted according to aspect ratio of the cropped
+	image.
 	:return: A screenshot of the current scene.
 	"""
 	pass  # TODO
