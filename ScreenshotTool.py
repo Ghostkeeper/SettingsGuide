@@ -285,7 +285,7 @@ def switch_to_solid_view() -> None:
 	"""
 	Show solid view in the screenshot.
 	"""
-	pass  # TODO
+	cura.CuraApplication.CuraApplication.getInstance().getController().setActiveStage("PrepareStage")
 
 def take_snapshot(camera_position, camera_lookat, width) -> "QImage":
 	"""
