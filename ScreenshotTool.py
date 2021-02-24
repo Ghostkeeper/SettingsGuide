@@ -13,10 +13,12 @@ import time  # Crude way to make asynchronous calls synchronous: Spinlock until 
 import typing
 
 import cura.CuraApplication  # To change the settings before slicing.
+import cura.Utils.Threading  # To render on the Qt thread.
 import UM.Backend.Backend  # To know when the slice has finished.
 import UM.Logger
 import UM.Math.Vector  # To move the camera.
 import UM.Mesh.ReadMeshJob  # To load STL files to slice or take pictures of.
+import UM.View.GL.OpenGL  # To load the shaders to render screenshots with.
 import UM.Resources  # To store converted OpenSCAD documents long-term.
 import UM.Scene.Iterator.DepthFirstIterator  # To find the layer view data.
 import UM.Scene.Selection  # To clear the selection before taking screenshots.
@@ -90,6 +92,13 @@ All the information needed to take a screenshot.
 * delay: If this is an animation, the delay between consecutive images in milliseconds.
 """
 
+render_resolution = 4096
+"""
+The resolution of the renderings made initially. These are first cropped, then downscaled to the desired size.
+
+Increasing this resolution improves image quality and anti-aliasing, but takes longer to compute.
+"""
+
 def refresh_screenshots(article_text) -> None:
 	"""
 	Refresh the screenshots nested in the selected article text.
@@ -118,12 +127,13 @@ def refresh_screenshots(article_text) -> None:
 		saved_images = []
 		index = 0
 		for layer, line in zip(layers, lines):
-			if layer >= 0:  # Need to show layer view.
+			is_layer_view = layer >= 0
+			if is_layer_view:
 				switch_to_layer_view()
 				navigate_layer_view(layer, line)
 			else:  # Need to show the model itself.
 				switch_to_solid_view()
-			screenshot = take_snapshot(screenshot_instruction.camera_position, screenshot_instruction.camera_lookat, screenshot_instruction.width)
+			screenshot = take_snapshot(screenshot_instruction.camera_position, screenshot_instruction.camera_lookat, screenshot_instruction.width, is_layer_view)
 			if not is_animation:
 				target_file = screenshot_instruction.image_path
 			else:
@@ -292,7 +302,8 @@ def switch_to_solid_view() -> None:
 	"""
 	cura.CuraApplication.CuraApplication.getInstance().getController().setActiveStage("PrepareStage")
 
-def take_snapshot(camera_position, camera_lookat, width) -> "QImage":
+@cura.Utils.Threading.call_on_qt_thread  # Must be called from the Qt thread because the OpenGL bindings don't support multi-threading.
+def take_snapshot(camera_position, camera_lookat, width, is_layer_view) -> "QImage":
 	"""
 	Take a snapshot of the current scene.
 	:param camera_position: The position of the camera to take the snapshot with.
@@ -302,13 +313,20 @@ def take_snapshot(camera_position, camera_lookat, width) -> "QImage":
 	:return: A screenshot of the current scene.
 	"""
 	application = cura.CuraApplication.CuraApplication.getInstance()
+	plugin_registry = application.getPluginRegistry()
 
 	# Set the camera to the desired position. We'll use the actual camera for the snapshot just because it looks cool while it's busy.
 	camera = application.getController().getScene().getActiveCamera()
 	camera.setPosition(UM.Math.Vector.Vector(camera_position[0], camera_position[2], camera_position[1]))  # Note that these are OpenGL coordinates, swapping Y and Z.
 	camera.lookAt(UM.Math.Vector.Vector(camera_lookat[0], camera_lookat[2], camera_lookat[1]))
+	time.sleep(0.25)  # Some time to update the scene nodes. Don't know if this is necessary but it feels safer.
 
-	# TODO: Basically re-implement the PreviewPass algorithm to work for us to draw the layer view as we want it. Or the solid mesh if we want that. Pretty hard!
+	if is_layer_view:
+		render_pass = plugin_registry.getPluginObject("SimulationView").getSimulationPass()
+		render_pass.setSize(render_resolution, render_resolution)
+		render_pass.render()
+		return render_pass.getOutput()
+	return None
 
 def save_screenshot(screenshot, image_path) -> None:
 	"""
