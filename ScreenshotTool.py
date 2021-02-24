@@ -135,9 +135,9 @@ def refresh_screenshots(article_text) -> None:
 				switch_to_solid_view()
 			screenshot = take_snapshot(screenshot_instruction.camera_position, screenshot_instruction.camera_lookat, screenshot_instruction.width, is_layer_view)
 			if not is_animation:
-				target_file = screenshot_instruction.image_path
+				target_file = os.path.join(os.path.dirname(__file__), "resources", "articles", "images", screenshot_instruction.image_path)
 			else:
-				target_file = screenshot_instruction.image_path + str(index) + ".png"
+				target_file = os.path.join(os.path.dirname(__file__), "resources", "articles", "images", screenshot_instruction.image_path + str(index) + ".png")
 			save_screenshot(screenshot, target_file)
 			saved_images.append(target_file)
 			index += 1
@@ -334,7 +334,7 @@ def save_screenshot(screenshot, image_path) -> None:
 	:param screenshot: The image to save to the file.
 	:param image_path: The file path to store the screenshot in.
 	"""
-	pass  # TODO
+	screenshot.save(image_path)
 
 def combine_animation(frames, image_path, colours) -> None:
 	"""
