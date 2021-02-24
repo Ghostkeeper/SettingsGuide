@@ -17,6 +17,7 @@ import UM.Backend.Backend  # To know when the slice has finished.
 import UM.Logger
 import UM.Mesh.ReadMeshJob  # To load STL files to slice or take pictures of.
 import UM.Resources  # To store converted OpenSCAD documents long-term.
+import UM.Scene.Iterator.DepthFirstIterator  # To find the layer view data.
 
 if typing.TYPE_CHECKING:
 	from PyQt5.QtGui import QImage  # Screenshots are returned as QImage by the Snapshot tool of Cura.
@@ -258,7 +259,14 @@ def switch_to_layer_view() -> None:
 	"""
 	Show layer view in the screenshot.
 	"""
-	pass  # TODO
+	cura.CuraApplication.CuraApplication.getInstance().getController().setActiveStage("PreviewStage")
+
+	layer_view_completed = False
+	while not layer_view_completed:
+		for node in UM.Scene.Iterator.DepthFirstIterator.DepthFirstIterator(cura.CuraApplication.CuraApplication.getInstance().getController().getScene().getRoot()):
+			if node.callDecoration("getLayerData"):
+				layer_view_completed = True
+		time.sleep(0.2)
 
 def navigate_layer_view(layer_nr, line_nr) -> None:
 	"""
