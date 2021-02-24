@@ -19,6 +19,7 @@ import UM.Math.Vector  # To move the camera.
 import UM.Mesh.ReadMeshJob  # To load STL files to slice or take pictures of.
 import UM.Resources  # To store converted OpenSCAD documents long-term.
 import UM.Scene.Iterator.DepthFirstIterator  # To find the layer view data.
+import UM.Scene.Selection  # To clear the selection before taking screenshots.
 
 if typing.TYPE_CHECKING:
 	from PyQt5.QtGui import QImage  # Screenshots are returned as QImage by the Snapshot tool of Cura.
@@ -240,6 +241,7 @@ def load_model(stl_path) -> None:
 	job = UM.Mesh.ReadMeshJob.ReadMeshJob(stl_path, add_to_recent_files=False)
 	job.run()  # Don't plan it in on the job queue or anything. Actually run it on this thread.
 	application._readMeshFinished(job)  # Abuse CuraApplication's implementation to properly put the model on the build plate.
+	UM.Scene.Selection.Selection.clear()  # If the preference was enabled to auto-select objects, clear selection.
 	time.sleep(1)
 
 def slice_scene() -> None:
