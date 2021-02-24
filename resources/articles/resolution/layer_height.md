@@ -5,8 +5,8 @@ The 3D printer puts down plastic in layers. The layer height is the thickness of
 <!--screenshot {
 "image_path": "layer_height_0.1.png",
 "model_path": "plunger_stop.scad",
-"camera_position": [47, 78, 111],
-"camera_lookat": [0, 0, 10],
+"camera_position": [30, 80, 61],
+"camera_lookat": [0, 0, 12.5],
 "layer": 9999,
 "line": 0,
 "settings": {
@@ -19,8 +19,8 @@ The 3D printer puts down plastic in layers. The layer height is the thickness of
 <!--screenshot {
 "image_path": "layer_height_0.3.png",
 "model_path": "plunger_stop.scad",
-"camera_position": [47, 78, 111],
-"camera_lookat": [0, 0, 10],
+"camera_position": [30, 80, 61],
+"camera_lookat": [0, 0, 12.5],
 "layer": 9999,
 "line": 0,
 "settings": {
