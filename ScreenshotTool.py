@@ -134,6 +134,8 @@ def refresh_screenshots(article_text) -> None:
 		if is_animation:
 			combine_animation(saved_images, screenshot_instruction.image_path, screenshot_instruction.colours)
 			optimise_gif(screenshot_instruction.image_path)
+			for image in saved_images:
+				os.remove(image)
 		else:
 			reduce_colours(screenshot_instruction.image_path, screenshot_instruction.colours)
 			optimise_png(screenshot_instruction.image_path)
@@ -301,8 +303,10 @@ def take_snapshot(camera_position, camera_lookat, width) -> "QImage":
 
 	# Set the camera to the desired position. We'll use the actual camera for the snapshot just because it looks cool while it's busy.
 	camera = application.getController().getScene().getActiveCamera()
-	camera.setPosition(UM.Math.Vector.Vector(camera_position[0], camera_position[2], camera_position[1]))
+	camera.setPosition(UM.Math.Vector.Vector(camera_position[0], camera_position[2], camera_position[1]))  # Note that these are OpenGL coordinates, swapping Y and Z.
 	camera.lookAt(UM.Math.Vector.Vector(camera_lookat[0], camera_lookat[2], camera_lookat[1]))
+
+	# TODO: Basically re-implement the PreviewPass algorithm to work for us to draw the layer view as we want it. Or the solid mesh if we want that. Pretty hard!
 
 def save_screenshot(screenshot, image_path) -> None:
 	"""
