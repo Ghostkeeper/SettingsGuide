@@ -15,6 +15,7 @@ import typing
 import cura.CuraApplication  # To change the settings before slicing.
 import UM.Backend.Backend  # To know when the slice has finished.
 import UM.Logger
+import UM.Math.Vector  # To move the camera.
 import UM.Mesh.ReadMeshJob  # To load STL files to slice or take pictures of.
 import UM.Resources  # To store converted OpenSCAD documents long-term.
 import UM.Scene.Iterator.DepthFirstIterator  # To find the layer view data.
@@ -296,7 +297,12 @@ def take_snapshot(camera_position, camera_lookat, width) -> "QImage":
 	image.
 	:return: A screenshot of the current scene.
 	"""
-	pass  # TODO
+	application = cura.CuraApplication.CuraApplication.getInstance()
+
+	# Set the camera to the desired position. We'll use the actual camera for the snapshot just because it looks cool while it's busy.
+	camera = application.getController().getScene().getActiveCamera()
+	camera.setPosition(UM.Math.Vector.Vector(camera_position[0], camera_position[2], camera_position[1]))
+	camera.lookAt(UM.Math.Vector.Vector(camera_lookat[0], camera_lookat[2], camera_lookat[1]))
 
 def save_screenshot(screenshot, image_path) -> None:
 	"""
