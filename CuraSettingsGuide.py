@@ -10,6 +10,7 @@ import urllib.parse  # For unquote_plus to create preference keys for forms.
 from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl  # To expose data to the GUI.
 import re  # To get images from the descriptions.
 import shutil  # To copy the theme.
+import threading  # Screenshot refresh is done on a separate thread.
 from typing import Dict, List, Optional
 
 from cura.CuraApplication import CuraApplication  # To get the setting version to load the correct definition file, and to create QML components.
@@ -460,4 +461,5 @@ class CuraSettingsGuide(Extension, QObject):
 
 		This starts the process outlined in the ScreenshotTool class.
 		"""
-		ScreenshotTool.refresh_screenshots(self.selectedArticle)
+		refresh_job = threading.Thread(target=ScreenshotTool.refresh_screenshots, kwargs={"article_text": self.selectedArticle})
+		refresh_job.start()
