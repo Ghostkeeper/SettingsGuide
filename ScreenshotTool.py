@@ -7,13 +7,13 @@ import collections  # For namedtuple.
 import json  # Screenshot instructions are stored in JSON format.
 import os  # To store temporary files.
 import os.path  # To store temporary files.
-import PyQt5.QtCore  # Because some API calls require QUrl rather than just strings...
 import re  # To find the screenshot instructions.
 import subprocess  # To call external applications to do conversions and optimisations for us.
 import time  # Crude way to make asynchronous calls synchronous: Spinlock until we get a signal that the asynchronous method is completed.
 import typing
 
 import cura.CuraApplication  # To change the settings before slicing.
+import UM.Backend.Backend  # To know when the slice has finished.
 import UM.Logger
 import UM.Mesh.ReadMeshJob  # To load STL files to slice or take pictures of.
 import UM.Resources  # To store converted OpenSCAD documents long-term.
@@ -236,12 +236,23 @@ def load_model(stl_path) -> None:
 	job = UM.Mesh.ReadMeshJob.ReadMeshJob(stl_path, add_to_recent_files=False)
 	job.run()  # Don't plan it in on the job queue or anything. Actually run it on this thread.
 	application._readMeshFinished(job)  # Abuse CuraApplication's implementation to properly put the model on the build plate.
+	time.sleep(1)
 
 def slice_scene() -> None:
 	"""
 	Trigger a slice, so that we can show layer view in the screenshot.
 	"""
-	pass  # TODO
+
+	application = cura.CuraApplication.CuraApplication.getInstance()
+	backend = application.getBackend()
+	backend.slice()
+	time.sleep(1)  # Give stuff some time to spin up.
+
+	# Now do a spinloop, blocking this thread until the slice is completed.
+	while backend._process:
+		time.sleep(0.1)
+	time.sleep(1)  # Give stuff some time to wind down.
+
 
 def switch_to_layer_view() -> None:
 	"""
