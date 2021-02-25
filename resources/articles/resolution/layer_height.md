@@ -13,8 +13,7 @@ The 3D printer puts down plastic in layers. The layer height is the thickness of
     "layer_height": 0.1,
     "adhesion_type": "none"
 },
-"colours": 32,
-"width": 500
+"colours": 32
 }-->
 <!--screenshot {
 "image_path": "layer_height_0.3.png",
@@ -27,8 +26,7 @@ The 3D printer puts down plastic in layers. The layer height is the thickness of
     "layer_height": 0.3,
     "adhesion_type": "none"
 },
-"colours": 32,
-"width": 500
+"colours": 32
 }-->
 ![0.1mm layer height](../images/layer_height_0.1.png)
 ![0.3mm layer height](../images/layer_height_0.3.png)
