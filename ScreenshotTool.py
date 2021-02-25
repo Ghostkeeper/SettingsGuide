@@ -76,7 +76,7 @@ def call_with_args(command, **kwargs) -> None:
 	UM.Logger.Logger.info("Subprocess: " + " ".join(args))
 	subprocess.call(args)
 
-ScreenshotInstruction = collections.namedtuple("ScreenshotInstruction", ["image_path", "model_path", "camera_position", "camera_lookat", "layer", "line", "settings", "colours", "width", "delay"])
+ScreenshotInstruction = collections.namedtuple("ScreenshotInstruction", ["image_path", "model_path", "camera_position", "camera_lookat", "layer", "line", "settings", "colours", "delay"])
 """
 All the information needed to take a screenshot.
 * image_path: The filename of the image to refresh in the articles/images folder.
@@ -88,15 +88,7 @@ All the information needed to take a screenshot.
   animation.
 * settings: A dictionary of setting keys and values to slice the object with.
 * colours: The colour depth of the resulting image. Reduce colours to reduce file size. Max 256.
-* width: The width of the resulting screenshot. The height is adjusted according to aspect ratio of the cropped area.
 * delay: If this is an animation, the delay between consecutive images in milliseconds.
-"""
-
-render_resolution = 4096
-"""
-The resolution of the renderings made initially. These are first cropped, then downscaled to the desired size.
-
-Increasing this resolution improves image quality and anti-aliasing, but takes longer to compute.
 """
 
 def refresh_screenshots(article_text) -> None:
@@ -133,7 +125,7 @@ def refresh_screenshots(article_text) -> None:
 				navigate_layer_view(layer, line)
 			else:  # Need to show the model itself.
 				switch_to_solid_view()
-			screenshot = take_snapshot(screenshot_instruction.camera_position, screenshot_instruction.camera_lookat, screenshot_instruction.width, is_layer_view)
+			screenshot = take_snapshot(screenshot_instruction.camera_position, screenshot_instruction.camera_lookat, is_layer_view)
 			if not is_animation:
 				target_file = os.path.join(os.path.dirname(__file__), "resources", "articles", "images", screenshot_instruction.image_path)
 			else:
@@ -173,7 +165,6 @@ def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, No
 					line=json_document.get("line", 0),
 					settings=json_document.get("settings", {}),
 					colours=json_document.get("colours", 256),
-					width=json_document.get("width", 500),
 					delay=json_document.get("delay", 500)
 				)
 	return
@@ -303,13 +294,11 @@ def switch_to_solid_view() -> None:
 	cura.CuraApplication.CuraApplication.getInstance().getController().setActiveStage("PrepareStage")
 
 @cura.Utils.Threading.call_on_qt_thread  # Must be called from the Qt thread because the OpenGL bindings don't support multi-threading.
-def take_snapshot(camera_position, camera_lookat, width, is_layer_view) -> "QImage":
+def take_snapshot(camera_position, camera_lookat, is_layer_view) -> "QImage":
 	"""
 	Take a snapshot of the current scene.
 	:param camera_position: The position of the camera to take the snapshot with.
 	:param camera_lookat: The position of the focal point of the camera.
-	:param width: The width of the snapshot, in pixels. The height is adjusted according to aspect ratio of the cropped
-	image.
 	:return: A screenshot of the current scene.
 	"""
 	application = cura.CuraApplication.CuraApplication.getInstance()
@@ -319,14 +308,13 @@ def take_snapshot(camera_position, camera_lookat, width, is_layer_view) -> "QIma
 	camera = application.getController().getScene().getActiveCamera()
 	camera.setPosition(UM.Math.Vector.Vector(camera_position[0], camera_position[2], camera_position[1]))  # Note that these are OpenGL coordinates, swapping Y and Z.
 	camera.lookAt(UM.Math.Vector.Vector(camera_lookat[0], camera_lookat[2], camera_lookat[1]))
-	time.sleep(0.25)  # Some time to update the scene nodes. Don't know if this is necessary but it feels safer.
+	time.sleep(1)  # Some time to update the scene nodes. Don't know if this is necessary but it feels safer.
 
 	if is_layer_view:
 		render_pass = plugin_registry.getPluginObject("SimulationView").getSimulationPass()
-		render_pass.setSize(render_resolution, render_resolution)
 		render_pass.render()
 		return render_pass.getOutput()
-	return None
+	return QImage()
 
 def save_screenshot(screenshot, image_path) -> None:
 	"""
