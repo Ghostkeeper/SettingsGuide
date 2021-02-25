@@ -373,4 +373,5 @@ def optimise_png(image_path) -> None:
 	Do a compression optimisation on a PNG file.
 	:param image_path: A path to the PNG file to optimise.
 	"""
-	pass  # TODO
+	call_with_args("optimise_png1", input=image_path, output=image_path)
+	call_with_args("optimise_png2", output=image_path)
