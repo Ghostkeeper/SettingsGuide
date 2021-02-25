@@ -314,6 +314,12 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> "QImage":
 		render_pass = plugin_registry.getPluginObject("SimulationView").getSimulationPass()
 	else:
 		render_pass = plugin_registry.getPluginObject("SolidView").getRenderer().getRenderPass("composite")
+
+	# Use a transparent background.
+	gl_bindings = UM.View.GL.OpenGL.OpenGL.getInstance().getBindingsObject()
+	gl_bindings.glClearColor(0.0, 0.0, 0.0, 0.0)
+	gl_bindings.glClear(gl_bindings.GL_COLOR_BUFFER_BIT | gl_bindings.GL_DEPTH_BUFFER_BIT)
+
 	render_pass.render()
 	return render_pass.getOutput()
 
