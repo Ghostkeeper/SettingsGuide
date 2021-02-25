@@ -312,9 +312,10 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> "QImage":
 
 	if is_layer_view:
 		render_pass = plugin_registry.getPluginObject("SimulationView").getSimulationPass()
-		render_pass.render()
-		return render_pass.getOutput()
-	return QImage()
+	else:
+		render_pass = plugin_registry.getPluginObject("SolidView").getRenderer().getRenderPass("composite")
+	render_pass.render()
+	return render_pass.getOutput()
 
 def save_screenshot(screenshot, image_path) -> None:
 	"""
