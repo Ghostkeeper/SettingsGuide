@@ -366,7 +366,7 @@ def reduce_colours(image_path, colours) -> None:
 	:param image_path: A path to the PNG image to reduce the colour palette of.
 	:param colours: The desired number of colours to use in the palette of the PNG file.
 	"""
-	pass  # TODO
+	call_with_args("reduce_palette", input=image_path, output=image_path, colours=colours)
 
 def optimise_png(image_path) -> None:
 	"""
