@@ -116,6 +116,8 @@ def refresh_screenshots(article_text) -> None:
 		if layers[0] >= 0:
 			slice_scene()
 
+		full_image_path = os.path.join(os.path.dirname(__file__), "resources", "articles", "images", screenshot_instruction.image_path)
+
 		# Track saved images in case we're making multiple that need to be combined into a GIF later.
 		saved_images = []
 		index = 0
@@ -128,21 +130,21 @@ def refresh_screenshots(article_text) -> None:
 				switch_to_solid_view()
 			screenshot = take_snapshot(screenshot_instruction.camera_position, screenshot_instruction.camera_lookat, is_layer_view)
 			if not is_animation:
-				target_file = os.path.join(os.path.dirname(__file__), "resources", "articles", "images", screenshot_instruction.image_path)
+				target_file = full_image_path
 			else:
-				target_file = os.path.join(os.path.dirname(__file__), "resources", "articles", "images", screenshot_instruction.image_path + str(index) + ".png")
+				target_file = full_image_path + str(index) + ".png"
 			save_screenshot(screenshot, target_file)
 			saved_images.append(target_file)
 			index += 1
 
 		if is_animation:
-			combine_animation(saved_images, screenshot_instruction.image_path, screenshot_instruction.colours)
-			optimise_gif(screenshot_instruction.image_path)
+			combine_animation(saved_images, full_image_path, screenshot_instruction.colours)
+			optimise_gif(full_image_path)
 			for image in saved_images:
 				os.remove(image)
 		else:
-			reduce_colours(screenshot_instruction.image_path, screenshot_instruction.colours)
-			optimise_png(screenshot_instruction.image_path)
+			reduce_colours(full_image_path, screenshot_instruction.colours)
+			optimise_png(full_image_path)
 
 def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, None, None]:
 	"""
