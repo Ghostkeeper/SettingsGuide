@@ -5,6 +5,7 @@
 
 import collections  # For namedtuple.
 import json  # Screenshot instructions are stored in JSON format.
+import numpy  # To crop the screenshots.
 import os  # To store temporary files.
 import os.path  # To store temporary files.
 import re  # To find the screenshot instructions.
@@ -321,7 +322,17 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> "QImage":
 	gl_bindings.glClear(gl_bindings.GL_COLOR_BUFFER_BIT | gl_bindings.GL_DEPTH_BUFFER_BIT)
 
 	render_pass.render()
-	return render_pass.getOutput()
+	image = render_pass.getOutput()
+
+	# Crop this image to the non-transparent pixels.
+	pixel_data = image.bits().asarray(image.byteCount())
+	numpy_pixels = numpy.frombuffer(pixel_data, dtype=numpy.uint8).reshape([image.height(), image.width(), 4])
+	opaque_pixels = numpy.nonzero(numpy_pixels)
+	min_y, min_x, _ = numpy.amin(opaque_pixels, axis=1)
+	max_y, max_x, _ = numpy.amax(opaque_pixels, axis=1)
+	image = image.copy(min_x, min_y, max_x - min_x, max_y - min_y)
+
+	return image
 
 def save_screenshot(screenshot, image_path) -> None:
 	"""
