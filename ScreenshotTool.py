@@ -61,7 +61,7 @@ commands = {
 	"reduce_palette": ["convert", "-colors", "{colours}", "+dither", "{input}", "png:{output}"],  # Reduce colour palette of an image.
 	"optimise_png1": ["optipng", "-o7", "-strip", "all", "-snip", "-out", "{output}", "{input}"],
 	"optimise_png2": ["ect", "-9", "-strip", "--allfilters-b", "--pal_sort=120", "--mt-deflate", "{output}"],  # Reduce file size of PNG images.
-	"merge_gif": ["convert", "-delay", "{delay}", "-loop", "0", "{inputs}", "{output}"],  # Merge multiple images into a GIF.
+	"merge_gif": ["convert", "-colors", "{colours}", "-delay", "{delay}", "-loop", "0", "{inputs}", "{output}"],  # Merge multiple images into a GIF.
 	"optimise_gif": ["gifsicle", "-O3", "{input}"]  # Reduce file size of GIF images.
 }
 
