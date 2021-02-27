@@ -400,7 +400,7 @@ def optimise_gif(image_path) -> None:
 	Do a compression optimisation on a GIF file.
 	:param image_path: A path to the GIF file to optimise.
 	"""
-	pass  # TODO
+	call_with_args("optimise_gif", input=image_path)
 
 def reduce_colours(image_path, colours) -> None:
 	"""
