@@ -142,7 +142,7 @@ def refresh_screenshots(article_text) -> None:
 			index += 1
 
 		if is_animation:
-			combine_animation(saved_images, full_image_path, screenshot_instruction.colours)
+			combine_animation(saved_images, full_image_path, screenshot_instruction.colours, screenshot_instruction.delay)
 			optimise_gif(full_image_path)
 			for image in saved_images:
 				os.remove(image)
@@ -348,14 +348,22 @@ def save_screenshot(screenshot, image_path) -> None:
 	"""
 	screenshot.save(image_path)
 
-def combine_animation(frames, image_path, colours) -> None:
+def combine_animation(frames, image_path, colours, delay) -> None:
 	"""
 	Combine the frames of an animation into a GIF file.
 	:param frames: A list of PNG files storing the frames of the animation, in order.
 	:param image_path: The path to the GIF file to store.
 	:param colours: The number of colours to use in the palette of the GIF.
+	:param delay: The duration to show each frame, in milliseconds.
 	"""
-	pass  # TODO
+	args = []
+	for arg in commands["merge_gif"]:
+		if arg == "{inputs}":
+			args.extend(frames)  # Frames need to be supplied as individual arguments.
+		else:
+			args.append(arg.format(colours=colours, delay=round(delay / 10.0), output=image_path))
+	UM.Logger.Logger.info("Subprocess: " + " ".join(args))
+	subprocess.call(args)
 
 def optimise_gif(image_path) -> None:
 	"""
