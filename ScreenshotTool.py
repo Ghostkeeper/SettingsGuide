@@ -111,6 +111,10 @@ def refresh_screenshots(article_text) -> None:
 		lines = screenshot_instruction.line
 		if type(lines) != list:
 			lines = [lines]
+		while len(lines) < len(layers):  # Make the lines array equally long as the layers array by repeating it.
+			lines *= 2
+		while len(lines) > len(layers):
+			lines.pop()
 
 		is_animation = len(layers) > 1
 		if layers[0] >= 0:
