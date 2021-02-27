@@ -137,15 +137,19 @@ def refresh_screenshots(article_text) -> None:
 				target_file = full_image_path
 			else:
 				target_file = full_image_path + str(index) + ".png"
-			save_screenshot(screenshot, target_file)
-			saved_images.append(target_file)
+			saved_images.append((screenshot, target_file))
 			index += 1
 
+		saved_images = crop_images(saved_images)  # Crop all frames at once, to get the same cropping region and correctly align all frames of an animation.
+
+		for screenshot, target_file in saved_images:
+			save_screenshot(screenshot, target_file)
+
 		if is_animation:
-			combine_animation(saved_images, full_image_path, screenshot_instruction.colours, screenshot_instruction.delay)
+			combine_animation([fname for _, fname in saved_images], full_image_path, screenshot_instruction.colours, screenshot_instruction.delay)
 			optimise_gif(full_image_path)
-			for image in saved_images:
-				os.remove(image)
+			for _, filename in saved_images:
+				os.remove(filename)
 		else:
 			reduce_colours(full_image_path, screenshot_instruction.colours)
 			optimise_png(full_image_path)
@@ -328,17 +332,43 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> "QImage":
 	gl_bindings.glClear(gl_bindings.GL_COLOR_BUFFER_BIT | gl_bindings.GL_DEPTH_BUFFER_BIT)
 
 	render_pass.render()
-	image = render_pass.getOutput()
+	return render_pass.getOutput()
 
-	# Crop this image to the non-transparent pixels.
-	pixel_data = image.bits().asarray(image.byteCount())
-	numpy_pixels = numpy.frombuffer(pixel_data, dtype=numpy.uint8).reshape([image.height(), image.width(), 4])
-	opaque_pixels = numpy.nonzero(numpy_pixels)
-	min_y, min_x, _ = numpy.amin(opaque_pixels, axis=1)
-	max_y, max_x, _ = numpy.amax(opaque_pixels, axis=1)
-	image = image.copy(min_x, min_y, max_x - min_x, max_y - min_y)
+def crop_images(images) -> typing.List[typing.Tuple["QImage", str]]:
+	"""
+	Crop a list of images to eliminate any transparent borders.
 
-	return image
+	All images will be cropped to the same dimensions and the same region of the original snapshots. This makes sure
+	that nothing will get cropped off any frame and all frames are correctly aligned with each other.
+
+	The images will be cropped in-place.
+	:param images: A list of tuples of images and their filenames.
+	:return: A new list of cropped images and their filenames.
+	"""
+	min_x = images[0][0].width()
+	min_y = images[0][0].height()
+	max_x = 0
+	max_y = 0
+
+	# Find the cropping dimensions that work for all images.
+	for image, _ in images:
+		pixel_data = image.bits().asarray(image.byteCount())
+		numpy_pixels = numpy.frombuffer(pixel_data, dtype=numpy.uint8).reshape([image.height(), image.width(), 4])
+		opaque_pixels = numpy.nonzero(numpy_pixels)
+		image_min_y, image_min_x, _ = numpy.amin(opaque_pixels, axis=1)
+		image_max_y, image_max_x, _ = numpy.amax(opaque_pixels, axis=1)
+		min_x = min(image_min_x, min_x)
+		min_y = min(image_min_y, min_y)
+		max_x = max(image_max_x, max_x)
+		max_y = max(image_max_y, max_y)
+
+	# Crop each image to the same dimensions.
+	result = []
+	for image, filename in images:
+		image = image.copy(min_x, min_y, max_x - min_x, max_y - min_y)
+		result.append((image, filename))
+
+	return result
 
 def save_screenshot(screenshot, image_path) -> None:
 	"""
