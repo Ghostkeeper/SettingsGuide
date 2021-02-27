@@ -43,12 +43,14 @@ dependencies. The dependencies that need to be installed to create the screensho
 * ImageMagick: Used to reduce colour depth and to combine screenshots into GIF animations.
 * OptiPNG: To pre-process for optimising PNG files.
 * Efficient-Compression-Tool: To refine optimisation of PNG files.
-* Gifsicle: To optimise GIF files.
+* FlexiGIF: To optimise GIF files.
 
-These dependencies can be installed on Ubuntu by running:
-`sudo apt install openscad gimp optipng gifsicle`
-Only Efficient-Compression-Tool has to be compiled separately from source. Make sure it ends up in the path. It can
-be found here: https://github.com/fhanau/Efficient-Compression-Tool
+Most of these dependencies can be installed on Ubuntu by running:
+`sudo apt install openscad imagemagick optipng`
+Efficient-Compression-Tool has to be compiled separately from source. It can be found here:
+https://github.com/fhanau/Efficient-Compression-Tool
+FlexiGIF is not available from Apt either but can be downloaded as separate application here:
+https://create.stephan-brumme.com/flexigif-lossless-gif-lzw-optimization/
 
 The tool is available by setting the preference "settings_guide/screenshot_tool" to True. A button will then be
 visible on every article. When pressed, it will re-create the images for that article. A button will also be present
@@ -62,7 +64,7 @@ commands = {
 	"optimise_png1": ["optipng", "-o7", "-strip", "all", "-snip", "-out", "{output}", "{input}"],
 	"optimise_png2": ["ect", "-9", "-strip", "--allfilters-b", "--pal_sort=120", "--mt-deflate", "{output}"],  # Reduce file size of PNG images.
 	"merge_gif": ["convert", "-colors", "{colours}", "+dither", "-delay", "{delay}", "-loop", "0", "{inputs}", "{output}"],  # Merge multiple images into a GIF.
-	"optimise_gif": ["gifsicle", "-O3", "{input}"]  # Reduce file size of GIF images.
+	"optimise_gif": ["flexigif", "-p", "-f", "{input}", "{output}"]  # Reduce file size of GIF images.
 }
 
 def call_with_args(command, **kwargs) -> None:
@@ -400,7 +402,9 @@ def optimise_gif(image_path) -> None:
 	Do a compression optimisation on a GIF file.
 	:param image_path: A path to the GIF file to optimise.
 	"""
-	call_with_args("optimise_gif", input=image_path)
+	call_with_args("optimise_gif", input=image_path, output=image_path + ".opt.gif")
+	os.remove(image_path)
+	os.rename(image_path + ".opt.gif", image_path)
 
 def reduce_colours(image_path, colours) -> None:
 	"""
