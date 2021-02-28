@@ -461,5 +461,13 @@ class CuraSettingsGuide(Extension, QObject):
 
 		This starts the process outlined in the ScreenshotTool class.
 		"""
-		refresh_job = threading.Thread(target=ScreenshotTool.refresh_screenshots, kwargs={"article_text": self.selectedArticle})
-		refresh_job.start()
+		if self.selectedArticleId:  # Refresh a particular article.
+			refresh_job = threading.Thread(target=ScreenshotTool.refresh_screenshots, kwargs={"article_text": self.selectedArticle})
+			refresh_job.start()
+		else:  # Refresh everything.
+			def refresh_everything():
+				for article_per_language in self.articles.values():
+					for article in article_per_language.values():
+						ScreenshotTool.refresh_screenshots(article_text=article)
+			refresh_job = threading.Thread(target=refresh_everything)
+			refresh_job.start()
