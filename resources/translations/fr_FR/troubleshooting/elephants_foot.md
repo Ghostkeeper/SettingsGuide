@@ -24,13 +24,23 @@ Pour éviter le gauchissement, jetez un coup d'œil à l'[article de dépannage]
 * Réduire la [température de la plaque de construction](../material/material_bed_temperature.md) pour permettre à la première couche de se rétracter autant que les autres couches. Si la température du lit était très élevée, cela peut aussi permettre au matériau de s'affaisser un peu, ce qui le rend plus large au fond. Cet effet est généralement faible, mais il sera également évité en réduisant la température du lit.
 * Augmenter l'[épaisseur du fond](../shell/bottom_thickness.md) pour passer plus progressivement à une taille plus réduite. Vous pouvez même envisager d'imprimer le modèle de façon complètement solide (de préférence en fixant l'épaisseur du fond à un niveau extrêmement élevé) pour éliminer complètement la différence de rétrécissement.
 
-Ajustement des plaques de construction
+Ajustement du plateau d'impression 
 ----
-La patte d'éléphant peut également être causée par le fait que la plaque de montage est trop proche de la buse alors que la première couche est imprimée. Cela entraîne une surextrusion, qui pousse la première couche vers l'extérieur.
+La patte d'éléphant peut également être causée par le fait que le plateau d'impression est trop proche de la buse alors que la première couche est imprimée. Cela entraîne une surextrusion, qui pousse la première couche vers l'extérieur.
 
 Pour ajuster la plaque de montage, consultez le manuel de votre imprimante 3D. La plupart des imprimantes sont équipées de vis de réglage pour le plateau d'impression ou sur le portique pour ajuster la différence de hauteur du plateau d'impression pendant la première couche. Ajustez la plaque le plateau d'impression pendant l'impression (de préférence pendant la réalisation de la bordure, de la jupe ou du radeau) jusqu'à ce que la première couche soit bien lisse et pas plus fine que les autres.
 
 Vous pouvez également ajuster directement le [Débit de la première couche](../material/material_flow_layer_0.md) dans Cura pour compenser toute surextrusion. Une autre solution consiste à réduire la [Largeur de la ligne de la couche initiale](../resolution/initial_layer_line_width_factor.md) pour normaliser suffisamment l'extrusion afin d'éviter la patte d'éléphant.
+
+Déformation au-dessus de la transition vitreuse
+----
+Dans le cas de très petits pièces, il est possible que la couche précédente ne se soit pas encore solidifiée lorsque la couche suivante est imprimée par-dessus. La matière est expulsée avec une force considérable par la buse, donc si la couche précédente n'est pas encore solidifiée, cette couche sera écrasée et se dilatera horizontalement. Cela se manifeste sous la forme d'une patte d'éléphant. La solution consiste à s'assurer que la matière est solidifiée au moment où la couche suivante est poussée par-dessus. Essayez de régler les paramètres suivants :
+
+* Réduisez la [température d’impression couche initiale](../material/material_print_temperature_layer_0.md), afin que le matériau n'ait pas à refroidir autant.
+* Réduire la [température du plateau couche initiale](../material/material_bed_temperature_layer_0.md), de sorte que la première couche se refroidisse plus rapidement, en envoyant plus de chaleur au plateau d'impressione. Les plastiques pour l'impression 3D sont conçus pour se solidifier très rapidement à un point de température précis, sa [température de transition vitreuse](https://en.wikipedia.org/wiki/Glass_transition#Transition_temperature_Tg). Pour éviter toute déformation, consultez la température de transition vitreuse de votre filament dans sa fiche technique, et assurez-vous que la température du plateau ne dépasse pas trop cette température de transition.
+* Augmentez la [vitesse des ventilateurs initiale](../cooling/cool_fan_speed_0.md), pour refroidir le matériau plus rapidement. Envisagez également d'augmenter le paramètre [Vitesse régulière du ventilateur à la hauteur](../cooling/cool_fan_full_at_height.md), pour continuer à refroidir les premières couches.
+* Réduire la [vitesse de la couche initiale](../speed/speed_layer_0.md). Cela permet de laisser plus de temps à la première couche pour refroidir après l'impression.
+* Augmenter la [Durée minimale d’une couche](../cooling/cool_min_layer_time.md). Le but est de garantir un certain temps de refroidissement pour chaque couche avant que la couche suivante ne soit placée par-dessus, et d'utiliser la [vitesse maximale du ventilateur](../cooling/cool_fan_speed_max.md). Il s'agit en fait d'un moyen plus simple de combiner les ajustements de la vitesse de la couche initiale et de la vitesse du ventilateur énumérés ci-dessus. Gardez à l'esprit que cela s'applique à l'ensemble de l'impression cependant, et pas seulement à la première couche.
 
 Solutions générales
 ----

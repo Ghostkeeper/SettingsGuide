@@ -10,3 +10,6 @@ La peau ne sera enlevée que s'il y a un remplissage à côté, de sorte que la 
 La peau est normalement générée à tout endroit qui se trouve verticalement près du haut ou du bas de l'objet. Cela n'est pas nécessaire partout. Les murs verticaux sont généralement assez solides, donc alors qu'il devrait normalement y avoir de la peau à côté des murs verticaux, ce réglage vous permet de l'omettre. Cela permet d'économiser du temps et de la matière d'impression.
 
 Si le réglage est trop élevé, des espaces peuvent apparaître sur les surfaces supérieure et inférieure où le remplissage est exposé. Faites particulièrement attention aux modèles qui ont des rebords fins qui devraient avoir une fine bande de peau.
+
+![Ces morceaux de peau sont retirés, exposant ainsi le remplissage](../images/skin_preshrink_problem_fr.svg)
+![Le remplissage peut également être vu en vue par couches](../../../articles/images/skin_preshrink_problem_screenshot.png)
