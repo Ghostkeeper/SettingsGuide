@@ -10,6 +10,7 @@ import os  # To store temporary files.
 import os.path  # To store temporary files.
 import re  # To find the screenshot instructions.
 import subprocess  # To call external applications to do conversions and optimisations for us.
+import threading  # To multi-thread optimisation of the optimisation calls (which take a long time and are not always multi-threaded applications).
 import time  # Crude way to make asynchronous calls synchronous: Spinlock until we get a signal that the asynchronous method is completed.
 import typing
 
@@ -402,9 +403,15 @@ def optimise_gif(image_path) -> None:
 	Do a compression optimisation on a GIF file.
 	:param image_path: A path to the GIF file to optimise.
 	"""
-	call_with_args("optimise_gif", input=image_path, output=image_path + ".opt.gif")
-	os.remove(image_path)
-	os.rename(image_path + ".opt.gif", image_path)
+	def optimise_threaded():
+		call_with_args("optimise_gif", input=image_path, output=image_path + ".opt.gif")
+		os.remove(image_path)
+		os.rename(image_path + ".opt.gif", image_path)
+	thread = threading.Thread(target=optimise_threaded)
+	# We'll use a rudimentary global thread pool here just by counting the number of active threads.
+	while threading.active_count() > 50:  # Cura normally uses around 30 threads on my computer. Let's allow for 20 more for active optimisation.
+		time.sleep(0.5)
+	thread.start()  # Fire and forget. It terminates eventually and our thread pool implementation can then start a new one.
 
 def reduce_colours(image_path, colours) -> None:
 	"""
@@ -419,5 +426,11 @@ def optimise_png(image_path) -> None:
 	Do a compression optimisation on a PNG file.
 	:param image_path: A path to the PNG file to optimise.
 	"""
-	call_with_args("optimise_png1", input=image_path, output=image_path)
-	call_with_args("optimise_png2", output=image_path)
+	def optimise_threaded():
+		call_with_args("optimise_png1", input=image_path, output=image_path)
+		call_with_args("optimise_png2", output=image_path)
+	thread = threading.Thread(target=optimise_threaded)
+	# We'll use a rudimentary global thread pool here just by counting the number of active threads.
+	while threading.active_count() > 50:  # Cura normally uses around 30 threads on my computer. Let's allow for 20 more for active optimisation.
+		time.sleep(0.5)
+	thread.start()  # Fire and forget. It terminates eventually and our thread pool implementation can then start a new one.
