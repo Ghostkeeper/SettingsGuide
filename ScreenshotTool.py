@@ -183,6 +183,7 @@ def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, No
 				)
 	return
 
+@cura.Utils.Threading.call_on_qt_thread  # Must be called from the Qt thread because it creates QML objects (the global stack).
 def setup_printer(settings) -> None:
 	"""
 	Set up a Cura printer and set the settings as desired in the screenshot instruction.
