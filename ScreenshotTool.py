@@ -63,7 +63,7 @@ commands = {
 	"openscad": ["openscad", "-o", "{output}", "{input}"],  # Compile an OpenSCAD file.
 	"reduce_palette": ["convert", "-colors", "{colours}", "+dither", "{input}", "png:{output}"],  # Reduce colour palette of an image.
 	"optimise_png1": ["optipng", "-o7", "-strip", "all", "-snip", "-out", "{output}", "{input}"],
-	"optimise_png2": ["ect", "-9", "-strip", "--allfilters-b", "--pal_sort=120", "--mt-deflate", "{output}"],  # Reduce file size of PNG images.
+	"optimise_png2": ["ect", "-9", "-strip", "--pal_sort=16", "--allfilters", "{output}"],  # Reduce file size of PNG images.
 	"merge_gif": ["convert", "-colors", "{colours}", "+dither", "-delay", "{delay}", "-loop", "0", "{inputs}", "{output}"],  # Merge multiple images into a GIF.
 	"optimise_gif": ["flexigif", "-f", "{input}", "{output}"]  # Reduce file size of GIF images.
 }
