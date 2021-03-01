@@ -95,15 +95,20 @@ All the information needed to take a screenshot.
 * delay: If this is an animation, the delay between consecutive images in milliseconds.
 """
 
-def refresh_screenshots(article_text) -> None:
+def refresh_screenshots(article_text, refreshed_set) -> None:
 	"""
 	Refresh the screenshots nested in the selected article text.
 
 	This function serves as glue code and an overview of the stages through which we go in order to refresh the
 	screenshots.
 	:param article_text: The text containing embedded screenshots to refresh.
+	:param refreshed_set: Set of images that have already been refreshed and don't need to be refreshed this pass if
+	encountered.
 	"""
 	for screenshot_instruction in find_screenshots(article_text):
+		if screenshot_instruction.image_path in refreshed_set:
+			continue  # Has already been refreshed. Don't refresh again.
+
 		setup_printer(screenshot_instruction.settings)
 		stl_path = convert_model(screenshot_instruction.model_path)
 		load_model(stl_path)
@@ -156,6 +161,8 @@ def refresh_screenshots(article_text) -> None:
 		else:
 			reduce_colours(full_image_path, screenshot_instruction.colours)
 			optimise_png(full_image_path)
+
+		refreshed_set.add(screenshot_instruction.image_path)
 
 def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, None, None]:
 	"""
