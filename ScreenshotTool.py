@@ -30,6 +30,7 @@ if typing.TYPE_CHECKING:
 
 """
 This module provides an automatic way to generate screenshots for the Settings Guide.
+It is not supplied with the actual Settings Guide package.
 
 The goals of this tool are:
 * To have a canonical way to create screenshots, ensuring that the look and feel is consistent.
