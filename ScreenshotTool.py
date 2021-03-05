@@ -4,6 +4,7 @@
 # You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
 import collections  # For namedtuple.
+import importlib.util  # To execute Python scripts to generate 3D models.
 import json  # Screenshot instructions are stored in JSON format.
 import numpy  # To crop the screenshots.
 import os  # To store temporary files.
@@ -237,22 +238,28 @@ def setup_printer(settings) -> None:
 			printer.extruderList[extruder_nr].userChanges.setProperty(key, "value", value)
 		printer.userChanges.setProperty(key, "value", value)
 
-def convert_model(scad_path) -> str:
+def convert_model(script_path) -> str:
 	"""
-	Convert an OpenSCAD file into an STL model.
+	Use an OpenSCAD or Python script to generate a 3D model.
 
 	The STL model will be saved in a temporary file.
 	:param scad_path: A path to an OpenSCAD model file.
 	:return: A path to an STL model file.
 	"""
-	scad_path = os.path.join(os.path.dirname(__file__), "resources", "models", scad_path)
-	file_name = os.path.splitext(os.path.basename(scad_path))[0]
+	script_path = os.path.join(os.path.dirname(__file__), "resources", "models", script_path)
+	file_name = os.path.splitext(os.path.basename(script_path))[0]
 	stl_dir = os.path.join(UM.Resources.Resources.getDataStoragePath(), "settings_guide_screenshots")
 	if not os.path.exists(stl_dir):
 		os.mkdir(stl_dir)
 	stl_path = os.path.join(stl_dir, file_name + ".stl")
 	if not os.path.exists(stl_path):
-		call_with_args("openscad", input=scad_path, output=stl_path)
+		extension = os.path.splitext(script_path)[1]
+		if extension == ".scad":
+			call_with_args("openscad", input=script_path, output=stl_path)
+		elif extension == ".py":
+			spec = importlib.util.spec_from_file_location(file_name, script_path)
+			generator = spec.loader.load_module(file_name)
+			generator.generate(stl_path)
 	return stl_path
 
 def load_model(stl_path) -> None:
