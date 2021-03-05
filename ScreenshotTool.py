@@ -207,6 +207,9 @@ def setup_printer(settings) -> None:
 	# Clear the build plate.
 	application.deleteAll()
 
+	# Camera position is different if it's not in perspective mode.
+	application.getPreferences().setValue("general/camera_perspective_mode", "perspective")
+
 	# Create a printer if necessary and activate it if necessary.
 	settings_guide_printer = registry.findContainerStacksMetadata(name="Settings Guide Printer")
 	if settings_guide_printer:
