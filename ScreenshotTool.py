@@ -421,7 +421,7 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 
 		support_angle = application.getGlobalContainerStack().getProperty("support_angle", "value")
 		view._enabled_shader.setUniformValue("u_overhangAngle", math.cos(math.radians(90 - support_angle)))  # Correct overhang angle.
-		view._enabled_shader.setUniformValue("u_lowestPrintableHeight", 0)  # Don't show initial layer height.
+		view._enabled_shader.setUniformValue("u_lowestPrintableHeight", -1.0)  # Don't show initial layer height.
 		object_batch = renderer.createRenderBatch(shader=view._enabled_shader)
 		renderer.addRenderBatch(object_batch)
 		for node in UM.Scene.Iterator.DepthFirstIterator.DepthFirstIterator(application.getController().getScene().getRoot()):
