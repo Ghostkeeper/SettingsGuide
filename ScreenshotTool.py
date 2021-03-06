@@ -19,6 +19,7 @@ import cura.CuraApplication  # To change the settings before slicing.
 import cura.Utils.Threading  # To render on the Qt thread.
 import UM.Backend.Backend  # To know when the slice has finished.
 import UM.Logger
+import UM.Math.AxisAlignedBox  # To calculate the centre of the scene for the camera to look at.
 import UM.Math.Quaternion  # Rotating objects after loading them.
 import UM.Math.Vector  # To move the camera and apply transformations.
 import UM.Mesh.ReadMeshJob  # To load STL files to slice or take pictures of.
@@ -100,7 +101,7 @@ All the information needed to take a screenshot.
   - rotateY(angle)
   - rotateZ(angle)
 * camera_position: The X, Y and Z position of the camera (as list).
-* camera_lookat: The X, Y and Z position of the camera focus centre.
+* camera_lookat: The X, Y and Z position of the camera focus centre. If not specified, look at the centre of the scene.
 * layer: The layer number to look at. Use layer -1 to not use layer view. Use a list to define an animation.
 * line: The number of lines to show on the current layer. Use 0 to view the entire layer. Use a list to define an
   animation.
@@ -196,7 +197,7 @@ def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, No
 					model_path=json_document["model_path"],
 					transformation=json_document.get("transformation", []),
 					camera_position=json_document["camera_position"],
-					camera_lookat=json_document["camera_lookat"],
+					camera_lookat=json_document.get("camera_lookat"),  # If None, look at the centre of the scene.
 					layer=json_document.get("layer", 99999),
 					line=json_document.get("line", 0),
 					settings=json_document.get("settings", {}),
@@ -393,7 +394,15 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> "QImage":
 	# Set the camera to the desired position. We'll use the actual camera for the snapshot just because it looks cool while it's busy.
 	camera = application.getController().getScene().getActiveCamera()
 	camera.setPosition(UM.Math.Vector.Vector(camera_position[0], camera_position[2], camera_position[1]))  # Note that these are OpenGL coordinates, swapping Y and Z.
-	camera.lookAt(UM.Math.Vector.Vector(camera_lookat[0], camera_lookat[2], camera_lookat[1]))
+	if not camera_lookat:
+		bounding_box = UM.Math.AxisAlignedBox.AxisAlignedBox()
+		for node in UM.Scene.Iterator.DepthFirstIterator.DepthFirstIterator(cura.CuraApplication.CuraApplication.getInstance().getController().getScene().getRoot()):
+			if node.isSelectable():
+				bounding_box = bounding_box + node.getBoundingBox()
+		camera_lookat = bounding_box.center
+	else:
+		camera_lookat = UM.Math.Vector.Vector(camera_lookat[0], camera_lookat[2], camera_lookat[1])
+	camera.lookAt(camera_lookat)
 	time.sleep(1)  # Some time to update the scene nodes. Don't know if this is necessary but it feels safer.
 
 	if is_layer_view:

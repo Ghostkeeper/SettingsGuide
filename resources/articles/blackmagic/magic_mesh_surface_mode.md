@@ -20,7 +20,6 @@ This setting controls what will be done with these unclosed loops. If set to "No
 "image_path": "magic_mesh_surface_mode_surface.png",
 "model_path": "extra_surface.py",
 "camera_position": [66, 129, 124],
-"camera_lookat": [0, 0, 17.5],
 "settings": {
     "magic_mesh_surface_mode": "surface"
 },
@@ -30,7 +29,6 @@ This setting controls what will be done with these unclosed loops. If set to "No
 "image_path": "magic_mesh_surface_mode_both.png",
 "model_path": "extra_surface.py",
 "camera_position": [66, 129, 124],
-"camera_lookat": [0, 0, 17.5],
 "settings": {
     "magic_mesh_surface_mode": "both"
 },
