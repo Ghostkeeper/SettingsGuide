@@ -455,10 +455,12 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 
 		default_pass = renderer.getRenderPass("default")
 		default_pass.render()
+		time.sleep(0.2)
 		normal_shading = default_pass.getOutput()
 		xray_pass = renderer.getRenderPass("xray")
 		renderer.addRenderPass(xray_pass)
 		xray_pass.render()
+		time.sleep(0.2)
 		xray_shading = xray_pass.getOutput()
 
 		# Manually composite these shadings. Because the composite shader also adds a background colour.
