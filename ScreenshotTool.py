@@ -6,6 +6,7 @@
 import collections  # For namedtuple.
 import importlib.util  # To execute Python scripts to generate 3D models.
 import json  # Screenshot instructions are stored in JSON format.
+import math  # Rendering correct overhang angle.
 import numpy  # To crop the screenshots.
 import os  # To store temporary files.
 import os.path  # To store temporary files.
@@ -14,9 +15,11 @@ import subprocess  # To call external applications to do conversions and optimis
 import threading  # To multi-thread optimisation of the optimisation calls (which take a long time and are not always multi-threaded applications).
 import time  # Crude way to make asynchronous calls synchronous: Spinlock until we get a signal that the asynchronous method is completed.
 import typing
+import PyQt5.QtGui  # For QImage, the result of the renders.
 
 import cura.CuraApplication  # To change the settings before slicing.
 import cura.Utils.Threading  # To render on the Qt thread.
+import cura.XRayPass  # To render solid objects with their X-ray mode.
 import UM.Backend.Backend  # To know when the slice has finished.
 import UM.Logger
 import UM.Math.AxisAlignedBox  # To calculate the centre of the scene for the camera to look at.
@@ -30,9 +33,6 @@ import UM.Resources  # To store converted OpenSCAD documents long-term.
 import UM.Scene.Iterator.DepthFirstIterator  # To find the layer view data and meshes to transform.
 import UM.Scene.Selection  # To clear the selection before taking screenshots.
 import UM.View.GL.OpenGL  # To load the shaders to render screenshots with.
-
-if typing.TYPE_CHECKING:
-	from PyQt5.QtGui import QImage  # Screenshots are returned as QImage by the Snapshot tool of Cura.
 
 """
 This module provides an automatic way to generate screenshots for the Settings Guide.
@@ -381,7 +381,7 @@ def switch_to_solid_view() -> None:
 	cura.CuraApplication.CuraApplication.getInstance().getController().setActiveStage("PrepareStage")
 
 @cura.Utils.Threading.call_on_qt_thread  # Must be called from the Qt thread because the OpenGL bindings don't support multi-threading.
-def take_snapshot(camera_position, camera_lookat, is_layer_view) -> "QImage":
+def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.QImage:
 	"""
 	Take a snapshot of the current scene.
 	:param camera_position: The position of the camera to take the snapshot with.
@@ -405,20 +405,85 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> "QImage":
 	camera.lookAt(camera_lookat)
 	time.sleep(1)  # Some time to update the scene nodes. Don't know if this is necessary but it feels safer.
 
-	if is_layer_view:
-		render_pass = plugin_registry.getPluginObject("SimulationView").getSimulationPass()
-	else:
-		render_pass = plugin_registry.getPluginObject("SolidView").getRenderer().getRenderPass("composite")
-
 	# Use a transparent background.
 	gl_bindings = UM.View.GL.OpenGL.OpenGL.getInstance().getBindingsObject()
 	gl_bindings.glClearColor(0.0, 0.0, 0.0, 0.0)
 	gl_bindings.glClear(gl_bindings.GL_COLOR_BUFFER_BIT | gl_bindings.GL_DEPTH_BUFFER_BIT)
 
-	render_pass.render()
-	return render_pass.getOutput()
+	if is_layer_view:
+		render_pass = plugin_registry.getPluginObject("SimulationView").getSimulationPass()
+		render_pass.render()
+		return render_pass.getOutput()
+	else:  # Render the objects themselves! Going to be quite complex here since the render is highly specialised in what it shows and what it doesn't.
+		view = plugin_registry.getPluginObject("SolidView")
+		view._checkSetup()
+		renderer = view.getRenderer()
 
-def crop_images(images) -> typing.List[typing.Tuple["QImage", str]]:
+		support_angle = application.getGlobalContainerStack().getProperty("support_angle", "value")
+		view._enabled_shader.setUniformValue("u_overhangAngle", math.cos(math.radians(90 - support_angle)))  # Correct overhang angle.
+		view._enabled_shader.setUniformValue("u_lowestPrintableHeight", 0)  # Don't show initial layer height.
+		object_batch = renderer.createRenderBatch(shader=view._enabled_shader)
+		renderer.addRenderBatch(object_batch)
+		for node in UM.Scene.Iterator.DepthFirstIterator.DepthFirstIterator(application.getController().getScene().getRoot()):
+			if not node.getMeshData() or not node.isSelectable():
+				continue
+			uniforms = {}
+
+			# Get the object's colour.
+			extruder_index = int(node.callDecoration("getActiveExtruderPosition"))
+			material_color = application.getExtrudersModel().getItem(extruder_index)["color"]
+			uniforms["diffuse_color"] = [
+				int(material_color[1:3], 16) / 255,
+				int(material_color[3:5], 16) / 255,
+				int(material_color[5:7], 16) / 255,
+				1.0
+			]
+
+			# Render with special shaders for special types of meshes, or otherwise in the normal batch.
+			if node.callDecoration("isNonPrintingMesh") and (node.callDecoration("isInfillMesh") or node.callDecoration("isCuttingMesh")):
+				renderer.queueNode(node, shader=view._non_printing_shader, uniforms=uniforms, transparent=True)
+			elif node.callDecoration("isSupportMesh"):
+				uniforms["diffuse_color_2"] = [
+					uniforms["diffuse_color"][0] * 0.6,
+					uniforms["diffuse_color"][1] * 0.6,
+					uniforms["diffuse_color"][2] * 0.6,
+					1.0
+				]
+				renderer.queueNode(node, shader=view._support_mesh_shader, uniforms=uniforms)
+			else:
+				object_batch.addItem(node.getWorldTransformation(copy=False), node.getMeshData(), uniforms=uniforms, normal_transformation=node.getCachedNormalMatrix())
+
+		default_pass = renderer.getRenderPass("default")
+		default_pass.render()
+		normal_shading = default_pass.getOutput()
+		xray_pass = renderer.getRenderPass("xray")
+		renderer.addRenderPass(xray_pass)
+		xray_pass.render()
+		xray_shading = xray_pass.getOutput()
+
+		# Manually composite these shadings. Because the composite shader also adds a background colour.
+		normal_data = normal_shading.bits().asarray(normal_shading.byteCount())
+		composite_pixels = numpy.frombuffer(normal_data, dtype=numpy.uint8).reshape([normal_shading.height(), normal_shading.width(), 4])  # Start from the normal image.
+		colours = numpy.true_divide(composite_pixels[:, :, 0:3], 255)  # Scaled to [0, 1].
+		alpha = numpy.true_divide(composite_pixels[:, :, 3], 255)
+		xray_data = xray_shading.bits().asarray(xray_shading.byteCount())
+		xray_pixels = numpy.frombuffer(xray_data, dtype=numpy.uint8).reshape([xray_shading.height(), xray_shading.width(), 4])
+		xray_pixels = numpy.mod(xray_pixels[:, :, 0:3], 10) // 5  # The X-ray shader creates increments of 5 for some reason. If there are an odd number of increments (not divisible by 10) then it must be highlighted.
+		hue_shift = ((alpha - 0.333) * 6.2831853)
+		cos_shift = numpy.repeat(numpy.expand_dims(numpy.cos(hue_shift), axis=2), 3, axis=2)
+		sin_shift = numpy.repeat(numpy.expand_dims(numpy.sin(hue_shift), axis=2), 3, axis=2)
+		k = numpy.array([0.57735, 0.57735, 0.57735])  # 1/sqrt(3), resulting in a diagonal unit vector around which we rotate the channels.
+		cross_colour = numpy.cross(colours, k) * -1
+		dot_colour = numpy.repeat(numpy.expand_dims(numpy.dot(colours, k), axis=2), 3, axis=2)
+		rotated_hue = colours * cos_shift + cross_colour * sin_shift + (cos_shift * -1 + 1.0) * dot_colour * k  # Rodrigues' rotation formula!
+		rotated_hue = rotated_hue * 255
+
+		composite_pixels[:, :, 0:3] -= composite_pixels[:, :, 0:3] * xray_pixels  # Don't use the normal colour for x-rayed pixels.
+		composite_pixels[:, :, 0:3] += (rotated_hue * xray_pixels).astype("uint8")  # Use the rotated colour instead.
+		composite_pixels[:, :, 3][alpha > 0.1] = 255
+		return PyQt5.QtGui.QImage(composite_pixels.data, composite_pixels.shape[1], composite_pixels.shape[0], PyQt5.QtGui.QImage.Format_ARGB32)
+
+def crop_images(images) -> typing.List[typing.Tuple[PyQt5.QtGui.QImage, str]]:
 	"""
 	Crop a list of images to eliminate any transparent borders.
 
