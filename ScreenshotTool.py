@@ -19,12 +19,13 @@ import cura.CuraApplication  # To change the settings before slicing.
 import cura.Utils.Threading  # To render on the Qt thread.
 import UM.Backend.Backend  # To know when the slice has finished.
 import UM.Logger
-import UM.Math.Vector  # To move the camera.
+import UM.Math.Vector  # To move the camera and apply transformation.
 import UM.Mesh.ReadMeshJob  # To load STL files to slice or take pictures of.
-import UM.View.GL.OpenGL  # To load the shaders to render screenshots with.
+import UM.Operations.MirrorOperation  # Mirroring objects after loading them.
 import UM.Resources  # To store converted OpenSCAD documents long-term.
-import UM.Scene.Iterator.DepthFirstIterator  # To find the layer view data.
+import UM.Scene.Iterator.DepthFirstIterator  # To find the layer view data and meshes to transform.
 import UM.Scene.Selection  # To clear the selection before taking screenshots.
+import UM.View.GL.OpenGL  # To load the shaders to render screenshots with.
 
 if typing.TYPE_CHECKING:
 	from PyQt5.QtGui import QImage  # Screenshots are returned as QImage by the Snapshot tool of Cura.
@@ -82,11 +83,19 @@ def call_with_args(command, **kwargs) -> None:
 	UM.Logger.Logger.info("Subprocess: " + " ".join(args))
 	subprocess.call(args)
 
-ScreenshotInstruction = collections.namedtuple("ScreenshotInstruction", ["image_path", "model_path", "camera_position", "camera_lookat", "layer", "line", "settings", "colours", "delay"])
+ScreenshotInstruction = collections.namedtuple("ScreenshotInstruction", ["image_path", "model_path", "transformation", "camera_position", "camera_lookat", "layer", "line", "settings", "colours", "delay"])
 """
 All the information needed to take a screenshot.
 * image_path: The filename of the image to refresh in the articles/images folder.
 * model_path: The filename of the 3D model in the models folder.
+* transformation: List of transformations to apply to the model, in order. Implemented transformations are:
+  - mirrorX()
+  - mirrorY()
+  - mirrorZ()
+  - scale(ratio)
+  - rotateX(angle)
+  - rotateY(angle)
+  - rotateZ(angle)
 * camera_position: The X, Y and Z position of the camera (as list).
 * camera_lookat: The X, Y and Z position of the camera focus centre.
 * layer: The layer number to look at. Use layer -1 to not use layer view. Use a list to define an animation.
@@ -113,7 +122,7 @@ def refresh_screenshots(article_text, refreshed_set) -> None:
 
 		setup_printer(screenshot_instruction.settings)
 		stl_path = convert_model(screenshot_instruction.model_path)
-		load_model(stl_path)
+		load_model(stl_path, screenshot_instruction.transformation)
 
 		layers = screenshot_instruction.layer
 		if type(layers) != list:  # To simplify processing, always use lists for the layer and line, pretending it's always an animation.
@@ -182,6 +191,7 @@ def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, No
 				yield ScreenshotInstruction(
 					image_path=json_document["image_path"],
 					model_path=json_document["model_path"],
+					transformation=json_document.get("transformation", []),
 					camera_position=json_document["camera_position"],
 					camera_lookat=json_document["camera_lookat"],
 					layer=json_document.get("layer", 99999),
@@ -271,18 +281,37 @@ def convert_model(script_path) -> str:
 			generator.generate(stl_path)
 	return stl_path
 
-def load_model(stl_path) -> None:
+def load_model(stl_path, transformations) -> None:
 	"""
 	Load a 3D model into the scene to take a screenshot of.
 	:param stl_path: A path to an STL model to load.
+	:param transformations: A list of transformation commands to apply to the model.
 	"""
 	application = cura.CuraApplication.CuraApplication.getInstance()
 	application._currently_loading_files.append(stl_path)
 	job = UM.Mesh.ReadMeshJob.ReadMeshJob(stl_path, add_to_recent_files=False)
 	job.run()  # Don't plan it in on the job queue or anything. Actually run it on this thread.
 	application._readMeshFinished(job)  # Abuse CuraApplication's implementation to properly put the model on the build plate.
+	time.sleep(1)  # Wait for scene node update triggers to be processed.
+
+	# Apply transformations to the resulting mesh.
+	for node in UM.Scene.Iterator.DepthFirstIterator.DepthFirstIterator(application.getController().getScene().getRoot()):
+		if not node.isSelectable():
+			continue
+		for transformation in transformations:
+			transformation = transformation.lower()
+			if transformation.startswith("mirrorx"):
+				operation = UM.Operations.MirrorOperation.MirrorOperation(node, UM.Math.Vector.Vector(-1, 1, 1), mirror_around_center=True)
+			elif transformation.startswith("mirrory"):
+				operation = UM.Operations.MirrorOperation.MirrorOperation(node, UM.Math.Vector.Vector(1, 1, -1), mirror_around_center=True)
+			elif transformation.startswith("mirrorz"):
+				operation = UM.Operations.MirrorOperation.MirrorOperation(node, UM.Math.Vector.Vector(1, -1, 1), mirror_around_center=True)
+			else:
+				continue  # Unknown transformation.
+			operation.push()
+
 	UM.Scene.Selection.Selection.clear()  # If the preference was enabled to auto-select objects, clear selection.
-	time.sleep(1)
+	time.sleep(1)  # Wait for scene node update triggers to be processed.
 
 def slice_scene() -> None:
 	"""
