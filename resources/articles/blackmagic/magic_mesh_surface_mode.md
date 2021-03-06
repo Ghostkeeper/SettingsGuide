@@ -4,6 +4,42 @@ Normally, Cura will create cross sections of all the triangles in your mesh. The
 
 This setting controls what will be done with these unclosed loops. If set to "Normal", they are discarded. If set to "Surface", all of the cross sections are printed as outlines. If set to "Both", the closed outlines are printed normally but the unclosed ones are printed separately as extra walls.
 
+<!--screenshot {
+"image_path": "magic_mesh_surface_mode_normal.png",
+"model_path": "extra_surface.py",
+"camera_position": [66, 129, 124],
+"camera_lookat": [0, 0, 17.5],
+"layer": 9999,
+"line": 0,
+"settings": {
+    "magic_mesh_surface_mode": "normal"
+},
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "magic_mesh_surface_mode_surface.png",
+"model_path": "extra_surface.py",
+"camera_position": [66, 129, 124],
+"camera_lookat": [0, 0, 17.5],
+"layer": 9999,
+"line": 0,
+"settings": {
+    "magic_mesh_surface_mode": "surface"
+},
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "magic_mesh_surface_mode_both.png",
+"model_path": "extra_surface.py",
+"camera_position": [66, 129, 124],
+"camera_lookat": [0, 0, 17.5],
+"layer": 9999,
+"line": 0,
+"settings": {
+    "magic_mesh_surface_mode": "both"
+},
+"colours": 32
+}-->
 ![Normal mode leaves out the single unclosed surface on the right](../images/magic_mesh_surface_mode_normal.png)
 ![Surface mode only prints the surfaces without treating them as closed volumes](../images/magic_mesh_surface_mode_surface.png)
 ![Printing both the volumes and the extra unclosed surface on the right](../images/magic_mesh_surface_mode_both.png)
