@@ -19,9 +19,11 @@ import cura.CuraApplication  # To change the settings before slicing.
 import cura.Utils.Threading  # To render on the Qt thread.
 import UM.Backend.Backend  # To know when the slice has finished.
 import UM.Logger
-import UM.Math.Vector  # To move the camera and apply transformation.
+import UM.Math.Quaternion  # Rotating objects after loading them.
+import UM.Math.Vector  # To move the camera and apply transformations.
 import UM.Mesh.ReadMeshJob  # To load STL files to slice or take pictures of.
 import UM.Operations.MirrorOperation  # Mirroring objects after loading them.
+import UM.Operations.RotateOperation  # Rotating objects after loading them.
 import UM.Operations.ScaleOperation  # Scaling objects after loading them.
 import UM.Resources  # To store converted OpenSCAD documents long-term.
 import UM.Scene.Iterator.DepthFirstIterator  # To find the layer view data and meshes to transform.
@@ -310,6 +312,18 @@ def load_model(stl_path, transformations) -> None:
 			elif transformation.startswith("scale(") and transformation.endswith(")"):
 				scale_factor = float(transformation[len("scale("):-len(")")])
 				operation = UM.Operations.ScaleOperation.ScaleOperation(node, UM.Math.Vector.Vector(scale_factor, scale_factor, scale_factor))
+			elif transformation.startswith("rotatex(") and transformation.endswith(")"):
+				angle = float(transformation[len("rotatex("):-len(")")])
+				rotation = UM.Math.Quaternion.Quaternion.fromAngleAxis(angle, UM.Math.Vector.Vector.Unit_X)
+				operation = UM.Operations.RotateOperation.RotateOperation(node, rotation, rotate_around_point=node.getPosition())
+			elif transformation.startswith("rotatey(") and transformation.endswith(")"):
+				angle = float(transformation[len("rotatey("):-len(")")])
+				rotation = UM.Math.Quaternion.Quaternion.fromAngleAxis(angle, UM.Math.Vector.Vector.Unit_Z)
+				operation = UM.Operations.RotateOperation.RotateOperation(node, rotation, rotate_around_point=node.getPosition())
+			elif transformation.startswith("rotatez(") and transformation.endswith(")"):
+				angle = float(transformation[len("rotatez("):-len(")")])
+				rotation = UM.Math.Quaternion.Quaternion.fromAngleAxis(angle, UM.Math.Vector.Vector.Unit_Y)
+				operation = UM.Operations.RotateOperation.RotateOperation(node, rotation, rotate_around_point=node.getPosition())
 			else:
 				continue  # Unknown transformation.
 			operation.push()
