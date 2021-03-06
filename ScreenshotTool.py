@@ -234,6 +234,12 @@ def setup_printer(settings) -> None:
 		printer.extruderList[extruder_nr].userChanges.clear()
 	printer.userChanges.clear()
 
+	# Some defaults that we'll want for most screenshots to make them look good. Remove distractions.
+	printer.userChanges.setProperty("layer_height", "value", "0.06")  # Reducing layer height makes the sides look smoother. This improves compression but also reduces distraction from the layer lines.
+	printer.userChanges.setProperty("adhesion_type", "value", "none")  # Except for settings concerning bed adhesion, remove adhesion type to remove distraction from the actual object.
+	printer.userChanges.setProperty("z_seam_type", "value", "back")  # Seam alignment to "User Specified" to align the seam. This makes the seam more recognisable as such, and allows us to find a camera angle that hides it if necessary.
+	printer.userChanges.setProperty("z_seam_position", "value", "backleft")  # In case of axis-aligned models (which is pretty common) this puts the seam in a corner rather than spreading it out over a side.
+
 	# Set the settings that we want to override for this slice.
 	for key, value in settings.items():
 		# Just set it anywhere without really checking whether it's per-extruder or whatever.

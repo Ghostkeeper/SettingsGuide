@@ -10,8 +10,7 @@ The 3D printer puts down plastic in layers. The layer height is the thickness of
 "layer": 9999,
 "line": 0,
 "settings": {
-    "layer_height": 0.1,
-    "adhesion_type": "none"
+    "layer_height": 0.1
 },
 "colours": 32
 }-->
@@ -23,8 +22,7 @@ The 3D printer puts down plastic in layers. The layer height is the thickness of
 "layer": 9999,
 "line": 0,
 "settings": {
-    "layer_height": 0.3,
-    "adhesion_type": "none"
+    "layer_height": 0.3
 },
 "colours": 32
 }-->
