@@ -22,6 +22,7 @@ import UM.Logger
 import UM.Math.Vector  # To move the camera and apply transformation.
 import UM.Mesh.ReadMeshJob  # To load STL files to slice or take pictures of.
 import UM.Operations.MirrorOperation  # Mirroring objects after loading them.
+import UM.Operations.ScaleOperation  # Scaling objects after loading them.
 import UM.Resources  # To store converted OpenSCAD documents long-term.
 import UM.Scene.Iterator.DepthFirstIterator  # To find the layer view data and meshes to transform.
 import UM.Scene.Selection  # To clear the selection before taking screenshots.
@@ -306,6 +307,9 @@ def load_model(stl_path, transformations) -> None:
 				operation = UM.Operations.MirrorOperation.MirrorOperation(node, UM.Math.Vector.Vector(1, 1, -1), mirror_around_center=True)
 			elif transformation.startswith("mirrorz"):
 				operation = UM.Operations.MirrorOperation.MirrorOperation(node, UM.Math.Vector.Vector(1, -1, 1), mirror_around_center=True)
+			elif transformation.startswith("scale(") and transformation.endswith(")"):
+				scale_factor = float(transformation[len("scale("):-len(")")])
+				operation = UM.Operations.ScaleOperation.ScaleOperation(node, UM.Math.Vector.Vector(scale_factor, scale_factor, scale_factor))
 			else:
 				continue  # Unknown transformation.
 			operation.push()
