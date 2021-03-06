@@ -2,6 +2,21 @@ Mold
 ====
 Instead of printing the model itself, this feature causes the printer to create a negative of the model, a mould, that you could cast a different material in to create your model. This mould has several specific properties that make it both workable to cast with and printable with FFF printing. This allows for the process of [Rapid Casting](https://en.wikipedia.org/wiki/Rapid_casting).
 
+<!--screenshot {
+"image_path": "mold_enabled_shell.png",
+"model_path": "stature.scad",
+"camera_position": [-78, 160, 228],
+"layer": -1
+}-->
+<!--screenshot {
+"image_path": "mold_enabled_mould.png",
+"model_path": "stature.scad",
+"camera_position": [-78, 160, 228],
+"settings": {
+    "mold_enabled": "True"
+},
+"colours": 32
+}-->
 ![A model that you'd want to cast](../images/mold_enabled_shell.png)
 ![The mould for that model](../images/mold_enabled_mould.png)
 
