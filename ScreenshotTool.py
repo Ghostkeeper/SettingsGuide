@@ -30,6 +30,7 @@ import UM.Mesh.ReadMeshJob  # To load STL files to slice or take pictures of.
 import UM.Operations.MirrorOperation  # Mirroring objects after loading them.
 import UM.Operations.RotateOperation  # Rotating objects after loading them.
 import UM.Operations.ScaleOperation  # Scaling objects after loading them.
+import UM.Operations.SetTransformOperation  # Resetting objects' transformations after loading them.
 import UM.Resources  # To store converted OpenSCAD documents long-term.
 import UM.Scene.Iterator.DepthFirstIterator  # To find the layer view data and meshes to transform.
 import UM.Scene.Selection  # To clear the selection before taking screenshots.
@@ -329,6 +330,11 @@ def load_model(stl_path, transformations, object_settings) -> None:
 			continue
 		if node.getMeshData() not in mesh_data:  # This node was not part of the models just loaded.
 			continue
+
+		# First move the object to the 0,0 position and undo its rotation, in case it was moved by the arranger.
+		reset_operation = UM.Operations.SetTransformOperation.SetTransformOperation(node, UM.Math.Vector.Vector(0, 0, 0), UM.Math.Quaternion.Quaternion(), UM.Math.Vector.Vector(1, 1, 1))
+		reset_operation.push()
+
 		for transformation in transformations:
 			transformation = transformation.lower()
 			if transformation.startswith("mirrorx"):
