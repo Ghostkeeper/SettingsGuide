@@ -19,6 +19,7 @@ import PyQt5.QtGui  # For QImage, the result of the renders.
 
 import cura.CuraApplication  # To change the settings before slicing.
 import cura.Utils.Threading  # To render on the Qt thread.
+import cura.Settings.SettingOverrideDecorator  # To add per-object settings to the loaded models.
 import cura.XRayPass  # To render solid objects with their X-ray mode.
 import UM.Backend.Backend  # To know when the slice has finished.
 import UM.Logger
@@ -32,6 +33,7 @@ import UM.Operations.ScaleOperation  # Scaling objects after loading them.
 import UM.Resources  # To store converted OpenSCAD documents long-term.
 import UM.Scene.Iterator.DepthFirstIterator  # To find the layer view data and meshes to transform.
 import UM.Scene.Selection  # To clear the selection before taking screenshots.
+import UM.Settings.SettingInstance  # To add per-object settings to the loaded models.
 import UM.View.GL.OpenGL  # To load the shaders to render screenshots with.
 
 """
@@ -313,12 +315,17 @@ def load_model(stl_path, transformations, object_settings) -> None:
 	application._currently_loading_files.append(stl_path)
 	job = UM.Mesh.ReadMeshJob.ReadMeshJob(stl_path, add_to_recent_files=False)
 	job.run()  # Don't plan it in on the job queue or anything. Actually run it on this thread.
+	mesh_data = [node.getMeshData() for node in job.getResult()]  # Find the nodes by finding their mesh data in the scene after _readMeshFinished is done with them, since that re-creates the nodes.
 	application._readMeshFinished(job)  # Abuse CuraApplication's implementation to properly put the model on the build plate.
 	time.sleep(1)  # Wait for scene node update triggers to be processed.
 
-	# Apply transformations to the resulting mesh.
+	# Apply transformations and per-object settings to the resulting mesh.
 	for node in UM.Scene.Iterator.DepthFirstIterator.DepthFirstIterator(application.getController().getScene().getRoot()):
 		if not node.isSelectable():
+			continue
+		if not node.getMeshData():
+			continue
+		if node.getMeshData() not in mesh_data:  # This node was not part of the models just loaded.
 			continue
 		for transformation in transformations:
 			transformation = transformation.lower()
@@ -346,6 +353,16 @@ def load_model(stl_path, transformations, object_settings) -> None:
 			else:
 				continue  # Unknown transformation.
 			operation.push()
+		for key, value in object_settings.items():  # Add the per-object settings.
+			stack = node.callDecoration("getStack")
+			if not stack:
+				node.addDecorator(cura.Settings.SettingOverrideDecorator.SettingOverrideDecorator())
+				stack = node.callDecoration("getStack")
+			container = stack.getTop()
+			definition = stack.getSettingDefinition(key)
+			new_instance = UM.Settings.SettingInstance.SettingInstance(definition, container)
+			new_instance.setProperty("value", value)
+			container.addInstance(new_instance)
 
 	UM.Scene.Selection.Selection.clear()  # If the preference was enabled to auto-select objects, clear selection.
 	time.sleep(1)  # Wait for scene node update triggers to be processed.
