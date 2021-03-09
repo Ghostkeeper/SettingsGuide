@@ -359,6 +359,10 @@ def load_model(stl_path, transformations, object_settings) -> None:
 			if not stack:
 				node.addDecorator(cura.Settings.SettingOverrideDecorator.SettingOverrideDecorator())
 				stack = node.callDecoration("getStack")
+			if key == "extruder_nr":  # Extruder index gets special handling.
+				extruder_id = application.getExtruderManager().getExtruderStack(value).getId()
+				node.callDecoration("setActiveExtruder", extruder_id)
+				continue
 			container = stack.getTop()
 			definition = stack.getSettingDefinition(key)
 			new_instance = UM.Settings.SettingInstance.SettingInstance(definition, container)
