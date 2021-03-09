@@ -90,12 +90,13 @@ def call_with_args(command, **kwargs) -> None:
 	subprocess.call(args)
 
 ScreenshotInstruction = collections.namedtuple("ScreenshotInstruction", ["image_path", "models", "camera_position", "camera_lookat", "layer", "line", "settings", "colours", "delay"])
-ModelInstruction = collections.namedtuple("ModelInstruction", ["script_path", "scad_params", "transformation", "object_settings"])
+ModelInstruction = collections.namedtuple("ModelInstruction", ["script", "scad_params", "transformation", "object_settings"])
 """
 All the information needed to take a screenshot.
 * image_path: The filename of the image to refresh in the articles/images folder.
-* models: The 3D models to showcase. This is a dictionary with as keys the filenames of the 3D models in the models
-  folder. The values are dictionaries with the following options:
+* models: The 3D models to showcase. This is a list of the 3D models. Each model is a ModelInstruction with the
+  following parameters:
+  - script: The file name of the script to generate this 3D model, in the models folder.
   - scad_params: A list of OpenSCAD parameters to generate the model with. Each should be of the form key=value and in a
     separate string in the list. Only applicable for OpenSCAD scripts.
   - transformation: A list of transformations to apply to the model, in order. Implemented transformations are:
@@ -129,7 +130,7 @@ def refresh_screenshots(article_text, refreshed_set) -> None:
 
 		setup_printer(screenshot_instruction.settings)
 		for model in screenshot_instruction.models:
-			stl_path = convert_model(model.script_path, model.scad_params)
+			stl_path = convert_model(model.script, model.scad_params)
 			load_model(stl_path, model.transformation, model.object_settings)
 
 		layers = screenshot_instruction.layer
@@ -199,11 +200,11 @@ def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, No
 				yield ScreenshotInstruction(
 					image_path=json_document["image_path"],
 					models=[ModelInstruction(
-						script_path=script_path,
+						script=model["script"],
 						scad_params=model.get("scad_params", []),
 						transformation=model.get("transformation", []),
 						object_settings=model.get("object_settings", {})
-					) for script_path, model in json_document["models"].items()],
+					) for model in json_document["models"]],
 					camera_position=json_document["camera_position"],
 					camera_lookat=json_document.get("camera_lookat"),  # If None, look at the centre of the scene.
 					layer=json_document.get("layer", 99999),

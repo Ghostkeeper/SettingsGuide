@@ -4,8 +4,9 @@ Similar to the [Make Overhang Printable](../experimental/conical_overhang_enable
 
 <!--screenshot {
 "image_path": "mold_angle.png",
-"models": {
-    "star_podium.scad": {
+"models": [
+    {
+        "script": "star_podium.scad",
         "transformation": ["mirrorZ"]
     }
 },
@@ -23,7 +24,7 @@ For some shapes, modifying the outside shape of the mould is not enough to make 
 
 <!--screenshot {
 "image_path": "mold_needs_support.png",
-"model_path": "basic_overhang.scad",
+"models": [{"script": "basic_overhang.scad"}],
 "camera_position": [20, 183, 97],
 "settings": {
     "mold_enabled": "True"

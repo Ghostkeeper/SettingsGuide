@@ -6,7 +6,7 @@ This setting controls what will be done with these unclosed loops. If set to "No
 
 <!--screenshot {
 "image_path": "magic_mesh_surface_mode_normal.png",
-"models": {"extra_surface.py": {}},
+"models": [{"script": "extra_surface.py"}],
 "camera_position": [66, 129, 124],
 "settings": {
     "magic_mesh_surface_mode": "normal"
@@ -15,7 +15,7 @@ This setting controls what will be done with these unclosed loops. If set to "No
 }-->
 <!--screenshot {
 "image_path": "magic_mesh_surface_mode_surface.png",
-"models": {"extra_surface.py": {}},
+"models": [{"script": "extra_surface.py"}],
 "camera_position": [66, 129, 124],
 "settings": {
     "magic_mesh_surface_mode": "surface"
@@ -24,7 +24,7 @@ This setting controls what will be done with these unclosed loops. If set to "No
 }-->
 <!--screenshot {
 "image_path": "magic_mesh_surface_mode_both.png",
-"models": {"extra_surface.py": {}},
+"models": [{"script": "extra_surface.py"}],
 "camera_position": [66, 129, 124],
 "settings": {
     "magic_mesh_surface_mode": "both"
