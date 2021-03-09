@@ -90,7 +90,7 @@ def call_with_args(command, **kwargs) -> None:
 	UM.Logger.Logger.info("Subprocess: " + " ".join(args))
 	subprocess.call(args)
 
-ScreenshotInstruction = collections.namedtuple("ScreenshotInstruction", ["image_path", "models", "camera_position", "camera_lookat", "layer", "line", "settings", "colours", "delay"])
+ScreenshotInstruction = collections.namedtuple("ScreenshotInstruction", ["image_path", "models", "camera_position", "camera_lookat", "layer", "line", "colour_scheme", "settings", "colours", "delay"])
 ModelInstruction = collections.namedtuple("ModelInstruction", ["script", "scad_params", "transformation", "object_settings"])
 """
 All the information needed to take a screenshot.
@@ -109,6 +109,8 @@ All the information needed to take a screenshot.
 * layer: The layer number to look at. Use layer -1 to not use layer view. Use a list to define an animation.
 * line: The number of lines to show on the current layer. Use 0 to view the entire layer. Use a list to define an
   animation.
+* colour_scheme: The layer view colour scheme to use. Choose from: line_type, material_colour, speed, layer_thickness,
+  line_width.
 * settings: A dictionary of setting keys and values to slice the object with. These can be global or per-extruder
   settings. Per-extruder settings are applied to all extruders.
 * colours: The colour depth of the resulting image. Reduce colours to reduce file size. Max 256.
@@ -157,7 +159,7 @@ def refresh_screenshots(article_text, refreshed_set) -> None:
 		for layer, line in zip(layers, lines):
 			is_layer_view = layer >= 0
 			if is_layer_view:
-				switch_to_layer_view()
+				switch_to_layer_view(screenshot_instruction.colour_scheme)
 				navigate_layer_view(layer, line)
 			else:  # Need to show the model itself.
 				switch_to_solid_view()
@@ -210,6 +212,7 @@ def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, No
 					camera_lookat=json_document.get("camera_lookat"),  # If None, look at the centre of the scene.
 					layer=json_document.get("layer", 99999),
 					line=json_document.get("line", 0),
+					colour_scheme=json_document.get("colour_scheme", "line_type"),
 					settings=json_document.get("settings", {}),
 					colours=json_document.get("colours", 256),
 					delay=json_document.get("delay", 500)
@@ -232,8 +235,9 @@ def setup_printer(settings) -> None:
 	application.deleteAll()
 
 	# Some global preferences that we need for this tool.
-	application.getPreferences().setValue("general/camera_perspective_mode", "perspective")
-	application.getPreferences().setValue("physics/automatic_push_free", "False")
+	preferences = application.getPreferences()
+	preferences.setValue("general/camera_perspective_mode", "perspective")
+	preferences.setValue("physics/automatic_push_free", "False")
 
 	# Create a printer if necessary and activate it if necessary.
 	settings_guide_printer = registry.findContainerStacksMetadata(name="Settings Guide Printer")
@@ -395,11 +399,15 @@ def slice_scene() -> None:
 	time.sleep(1)  # Give stuff some time to wind down.
 
 
-def switch_to_layer_view() -> None:
+def switch_to_layer_view(colour_scheme) -> None:
 	"""
 	Show layer view in the screenshot.
+	:param colour_scheme: The colour scheme to use for this layer view.
 	"""
-	cura.CuraApplication.CuraApplication.getInstance().getController().setActiveStage("PreviewStage")
+	colour_schemes = ["material_colour", "line_type", "speed", "layer_thickness", "line_width"]  # In order in which they appear, so that we can find the correct index to set the preference to.
+	application = cura.CuraApplication.CuraApplication.getInstance()
+	application.getController().setActiveStage("PreviewStage")
+	application.getPreferences().setValue("layerview/layer_view_type", colour_schemes.index(colour_scheme))
 
 	layer_view_completed = False
 	while not layer_view_completed:
