@@ -4,8 +4,11 @@ Similar to the [Make Overhang Printable](../experimental/conical_overhang_enable
 
 <!--screenshot {
 "image_path": "mold_angle.png",
-"model_path": "star_podium.scad",
-"transformation": ["mirrorZ"],
+"models": {
+    "star_podium.scad": {
+        "transformation": ["mirrorZ"]
+    }
+},
 "camera_position": [81, 129, 45],
 "settings": {
     "mold_enabled": "True"

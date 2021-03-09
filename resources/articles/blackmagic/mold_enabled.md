@@ -4,13 +4,13 @@ Instead of printing the model itself, this feature causes the printer to create 
 
 <!--screenshot {
 "image_path": "mold_enabled_shell.png",
-"model_path": "stature.scad",
+"models": {"stature.scad": {}},
 "camera_position": [-78, 160, 228],
 "layer": -1
 }-->
 <!--screenshot {
 "image_path": "mold_enabled_mould.png",
-"model_path": "stature.scad",
+"models": {"stature.scad": {}},
 "camera_position": [-78, 160, 228],
 "settings": {
     "mold_enabled": "True"

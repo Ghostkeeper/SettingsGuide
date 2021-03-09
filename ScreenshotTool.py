@@ -87,25 +87,26 @@ def call_with_args(command, **kwargs) -> None:
 	UM.Logger.Logger.info("Subprocess: " + " ".join(args))
 	subprocess.call(args)
 
-ScreenshotInstruction = collections.namedtuple("ScreenshotInstruction", ["image_path", "model_path", "transformation", "camera_position", "camera_lookat", "layer", "line", "settings", "colours", "delay"])
+ScreenshotInstruction = collections.namedtuple("ScreenshotInstruction", ["image_path", "models", "camera_position", "camera_lookat", "layer", "line", "settings", "colours", "delay"])
+ModelInstruction = collections.namedtuple("ModelInstruction", ["script_path", "scad_params", "transformation", "object_settings"])
 """
 All the information needed to take a screenshot.
 * image_path: The filename of the image to refresh in the articles/images folder.
-* model_path: The filename of the 3D model in the models folder.
-* transformation: List of transformations to apply to the model, in order. Implemented transformations are:
-  - mirrorX()
-  - mirrorY()
-  - mirrorZ()
-  - scale(ratio)
-  - rotateX(angle)
-  - rotateY(angle)
-  - rotateZ(angle)
+* models: The 3D models to showcase. This is a dictionary with as keys the filenames of the 3D models in the models
+  folder. The values are dictionaries with the following options:
+  - scad_params: A list of OpenSCAD parameters to generate the model with. Each should be of the form key=value and in a
+    separate string in the list. Only applicable for OpenSCAD scripts.
+  - transformation: A list of transformations to apply to the model, in order. Implemented transformations are:
+    mirrorX(), mirrorY(), mirrorZ(), scale(ratio), rotateX(angle), rotateY(angle) and rotateZ(angle)
+  - object_settings: A dictionary of setting keys and values to slice this object with. These can only be per-object
+    settings.
 * camera_position: The X, Y and Z position of the camera (as list).
 * camera_lookat: The X, Y and Z position of the camera focus centre. If not specified, look at the centre of the scene.
 * layer: The layer number to look at. Use layer -1 to not use layer view. Use a list to define an animation.
 * line: The number of lines to show on the current layer. Use 0 to view the entire layer. Use a list to define an
   animation.
-* settings: A dictionary of setting keys and values to slice the object with.
+* settings: A dictionary of setting keys and values to slice the object with. These can be global or per-extruder
+  settings. Per-extruder settings are applied to all extruders.
 * colours: The colour depth of the resulting image. Reduce colours to reduce file size. Max 256.
 * delay: If this is an animation, the delay between consecutive images in milliseconds.
 """
@@ -125,8 +126,9 @@ def refresh_screenshots(article_text, refreshed_set) -> None:
 			continue  # Has already been refreshed. Don't refresh again.
 
 		setup_printer(screenshot_instruction.settings)
-		stl_path = convert_model(screenshot_instruction.model_path)
-		load_model(stl_path, screenshot_instruction.transformation)
+		for model in screenshot_instruction.models:
+			stl_path = convert_model(model.script_path, model.scad_params)
+			load_model(stl_path, model.transformation, model.object_settings)
 
 		layers = screenshot_instruction.layer
 		if type(layers) != list:  # To simplify processing, always use lists for the layer and line, pretending it's always an animation.
@@ -194,8 +196,12 @@ def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, No
 				json_document = json.loads(json_serialised)
 				yield ScreenshotInstruction(
 					image_path=json_document["image_path"],
-					model_path=json_document["model_path"],
-					transformation=json_document.get("transformation", []),
+					models=[ModelInstruction(
+						script_path=script_path,
+						scad_params=model.get("scad_params", []),
+						transformation=model.get("transformation", []),
+						object_settings=model.get("object_settings", {})
+					) for script_path, model in json_document["models"].items()],
 					camera_position=json_document["camera_position"],
 					camera_lookat=json_document.get("camera_lookat"),  # If None, look at the centre of the scene.
 					layer=json_document.get("layer", 99999),
@@ -261,12 +267,13 @@ def setup_printer(settings) -> None:
 			printer.extruderList[extruder_nr].userChanges.setProperty(key, "value", value)
 		printer.userChanges.setProperty(key, "value", value)
 
-def convert_model(script_path) -> str:
+def convert_model(script_path, scad_params) -> str:
 	"""
 	Use an OpenSCAD or Python script to generate a 3D model.
 
 	The STL model will be saved in a temporary file.
-	:param scad_path: A path to an OpenSCAD model file.
+	:param script_path: A path to an OpenSCAD model file.
+	:param scad_params: A list of parameters to pass to OpenSCAD scripts, of the form "key=value".
 	:return: A path to an STL model file.
 	"""
 	script_path = os.path.join(os.path.dirname(__file__), "resources", "models", script_path)
@@ -274,22 +281,33 @@ def convert_model(script_path) -> str:
 	stl_dir = os.path.join(UM.Resources.Resources.getDataStoragePath(), "settings_guide_screenshots")
 	if not os.path.exists(stl_dir):
 		os.mkdir(stl_dir)
-	stl_path = os.path.join(stl_dir, file_name + ".stl")
+	stl_path = os.path.join(stl_dir, ",".join([file_name] + scad_params) + ".stl")
 	if not os.path.exists(stl_path):
 		extension = os.path.splitext(script_path)[1]
 		if extension == ".scad":
-			call_with_args("openscad", input=script_path, output=stl_path)
+			if not scad_params:
+				call_with_args("openscad", input=script_path, output=stl_path)
+			else:  # Insert OpenSCAD parameters in the command.
+				args = []
+				for arg in commands["openscad"]:
+					args.append(arg.format(input=script_path, output=stl_path))
+				for param in scad_params:
+					args.insert(-1, "-D")
+					args.insert(-1, param)
+				UM.Logger.Logger.info("Subprocess: " + " ".join(args))
+				subprocess.call(args)
 		elif extension == ".py":
 			spec = importlib.util.spec_from_file_location(file_name, script_path)
 			generator = spec.loader.load_module(file_name)
 			generator.generate(stl_path)
 	return stl_path
 
-def load_model(stl_path, transformations) -> None:
+def load_model(stl_path, transformations, object_settings) -> None:
 	"""
 	Load a 3D model into the scene to take a screenshot of.
 	:param stl_path: A path to an STL model to load.
 	:param transformations: A list of transformation commands to apply to the model.
+	:param object_settings: A dictionary of key-value pairs for per-object settings to apply to the model.
 	"""
 	application = cura.CuraApplication.CuraApplication.getInstance()
 	application._currently_loading_files.append(stl_path)
