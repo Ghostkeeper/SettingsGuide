@@ -29,7 +29,7 @@ When printing with multiple extruders, the inactive extruders sometimes still ha
     "line_width": 0.6
 },
 "colour_scheme": "material_colour",
-"colours": 32
+"colours": 64
 }-->
 ![The ooze shield gets printed with the first extruder of a layer, causing an alternating pattern if printing with two extruders](../images/ooze_shield.png)
 ![Some parameters can be adjusted for the ooze shield](../images/ooze_shield.svg)
