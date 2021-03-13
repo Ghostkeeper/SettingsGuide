@@ -30,6 +30,7 @@ import UM.Mesh.ReadMeshJob  # To load STL files to slice or take pictures of.
 import UM.Operations.MirrorOperation  # Mirroring objects after loading them.
 import UM.Operations.RotateOperation  # Rotating objects after loading them.
 import UM.Operations.ScaleOperation  # Scaling objects after loading them.
+import UM.Operations.TranslateOperation  # Moving objects after loading them.
 import UM.Operations.SetTransformOperation  # Resetting objects' transformations after loading them.
 import UM.Resources  # To store converted OpenSCAD documents long-term.
 import UM.Scene.Iterator.DepthFirstIterator  # To find the layer view data and meshes to transform.
@@ -101,7 +102,8 @@ All the information needed to take a screenshot.
   - scad_params: A list of OpenSCAD parameters to generate the model with. Each should be of the form key=value and in a
     separate string in the list. Only applicable for OpenSCAD scripts.
   - transformation: A list of transformations to apply to the model, in order. Implemented transformations are:
-    mirrorX(), mirrorY(), mirrorZ(), scale(ratio), rotateX(angle), rotateY(angle) and rotateZ(angle)
+    mirrorX(), mirrorY(), mirrorZ(), scale(ratio), rotateX(angle), rotateY(angle), rotateZ(angle), translateX(dist),
+    translateY(dist), translateZ(dist)
   - object_settings: A dictionary of setting keys and values to slice this object with. These can only be per-object
     settings.
 * camera_position: The X, Y and Z position of the camera (as list).
@@ -362,6 +364,15 @@ def load_model(stl_path, transformations, object_settings) -> None:
 				angle = float(transformation[len("rotatez("):-len(")")])
 				rotation = UM.Math.Quaternion.Quaternion.fromAngleAxis(angle, UM.Math.Vector.Vector.Unit_Y)
 				operation = UM.Operations.RotateOperation.RotateOperation(node, rotation, rotate_around_point=node.getPosition())
+			elif transformation.startswith("translatex(") and transformation.endswith(")"):
+				distance = float(transformation[len("translatex("):-len(")")])
+				operation = UM.Operations.TranslateOperation.TranslateOperation(node, UM.Math.Vector.Vector(distance, 0, 0))
+			elif transformation.startswith("translatey(") and transformation.endswith(")"):
+				distance = float(transformation[len("translatey("):-len(")")])
+				operation = UM.Operations.TranslateOperation.TranslateOperation(node, UM.Math.Vector.Vector(0, 0, distance))
+			elif transformation.startswith("translatez(") and transformation.endswith(")"):
+				distance = float(transformation[len("translatez("):-len(")")])
+				operation = UM.Operations.TranslateOperation.TranslateOperation(node, UM.Math.Vector.Vector(0, distance, 0))
 			else:
 				continue  # Unknown transformation.
 			operation.push()
