@@ -10,19 +10,23 @@ When printing with multiple extruders, the inactive extruders sometimes still ha
         "scad_params": ["extruder=0"],
         "object_settings": {
             "extruder_nr": 0
-        }
+        },
+        "transformation": ["scale(0.5)"]
     },
     {
         "script": "rocket_dual.scad",
         "scad_params": ["extruder=1"],
         "object_settings": {
             "extruder_nr": 1
-        }
+        },
+        "transformation": ["scale(0.5)"]
     }
 ],
-"camera_position": [-124, 204, 148],
+"camera_position": [-62, 102, 87],
 "settings": {
-    "ooze_shield_enabled": true
+    "ooze_shield_enabled": true,
+    "layer_height": 0.2,
+    "line_width": 0.6
 },
 "colour_scheme": "material_colour",
 "colours": 32
