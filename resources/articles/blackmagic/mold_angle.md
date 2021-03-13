@@ -9,7 +9,7 @@ Similar to the [Make Overhang Printable](../experimental/conical_overhang_enable
         "script": "star_podium.scad",
         "transformation": ["mirrorZ"]
     }
-},
+],
 "camera_position": [81, 129, 45],
 "settings": {
     "mold_enabled": "True"
