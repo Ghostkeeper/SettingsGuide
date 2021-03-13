@@ -28,8 +28,7 @@ The prime tower brim is an additional brim, similar to the brim option in the [B
     "prime_tower_position_y": 600,
     "adhesion_type": "skirt"
 },
-"colour_scheme": "material_colour",
-"colours": 32
+"colours": 16
 }-->
 ![The adhesion is set to skirt, but there is still a brim around the prime tower](../images/prime_tower_brim_enable.png)
 

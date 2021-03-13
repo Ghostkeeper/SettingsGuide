@@ -2,6 +2,31 @@ Circular Prime Tower
 ====
 If this setting is enabled, the prime tower will get the shape of a cylinder. If it's disabled, the prime tower will be square.
 
+<!--screenshot {
+"image_path": "prime_tower_circular_enabled.png",
+"models": [
+    {
+        "script": "cube.scad",
+        "object_settings": {
+            "extruder_nr": 0
+        }
+    },
+    {
+        "script": "cube.scad",
+        "object_settings": {
+            "extruder_nr": 1
+        },
+        "transformation": ["translateX(40)"]
+    }
+],
+"camera_position": [470, -384, 150],
+"camera_lookat": [470, -470, 5],
+"settings": {
+    "prime_tower_enable": true,
+    "prime_tower_min_volume": 3
+},
+"colours": 16
+}-->
 ![Square prime tower](../images/prime_tower_circular_disabled.png)
 ![Circular prime tower](../images/prime_tower_circular_enabled.png)
 
