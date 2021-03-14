@@ -2,6 +2,29 @@ Adaptive Layers Variation Step Size
 ====
 If the desired layer thickness of one layer is very different from an adjacent layer, there will be a large difference in the flow rate out the nozzle which can cause overextrusion or underextrusion. This setting makes sure that the difference in layer thickness is a gradual change, to prevent that. With this setting you can specify the maximum change in layer thickness between two adjacent layers.
 
+<!--screenshot {
+"image_path": "adaptive_layer_height_variation_step_0_05.png",
+"models": [{"script": "barn.scad"}],
+"camera_position": [-108, -229, 118],
+"settings": {
+    "adaptive_layer_height_enabled": true,
+    "adaptive_layer_height_variation_step": 0.05,
+    "layer_height": 0.2
+},
+"colour_scheme": "layer_thickness",
+"colours": 128
+}-->
+<!--screenshot {
+"image_path": "adaptive_layer_height_enabled.png",
+"models": [{"script": "barn.scad"}],
+"camera_position": [-108, -229, 118],
+"settings": {
+    "adaptive_layer_height_enabled": true,
+    "layer_height": 0.2
+},
+"colour_scheme": "layer_thickness",
+"colours": 128
+}-->
 ![A large step size allows very sudden changes in layer thickness](../images/adaptive_layer_height_variation_step_0_05.png)
 ![A small step size requires changes in layer thickness to be smoother](../images/adaptive_layer_height_enabled.png)
 
