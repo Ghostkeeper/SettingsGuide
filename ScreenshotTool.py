@@ -434,7 +434,7 @@ def navigate_layer_view(layer_nr, line_nr) -> None:
 	:param line_nr: The line to show on the screenshot. Use 0 to show the entire layer.
 	"""
 	layer_view_plugin = cura.CuraApplication.CuraApplication.getInstance().getPluginRegistry().getPluginObject("SimulationView")
-	layer_view_plugin.setLayer(layer_nr)
+	layer_view_plugin.setLayer(layer_nr - 1)
 	layer_view_plugin.setMinimumLayer(0)
 	if line_nr > 0:
 		layer_view_plugin.setPath(line_nr)
