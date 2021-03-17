@@ -2,6 +2,32 @@ Enable Bridge Settings
 ====
 When your model has some overhang that is supported on both sides, Cura will detect this and modify the skin area that is overhanging in order to print better. If this setting is enabled, you can tune the detection of these bridging areas and the resulting behaviour so that it bridge better.
 
+<!--screenshot {
+"image_path": "bridge_settings_enabled_default.png",
+"models": [
+    {
+        "script": "rack_straight.scad",
+        "scad_params": ["length=40"]
+    }
+],
+"camera_position": [0, 74, -137],
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "bridge_settings_enabled_enabled.png",
+"models": [
+    {
+        "script": "stairwell.scad",
+        "scad_params": ["steps=4", "width=10", "height=20"]
+    }
+],
+"layer": 275,
+"settings": {
+    "bridge_settings_enabled": true
+},
+"camera_position": [-12, 28, 63],
+"colours": 64
+}-->
 ![When a bridge is detected, the skin lines are oriented to bridge the gap as best it can](../images/bridge_settings_enabled_default.png)
 ![With bridge settings enabled, the bridging lines are printed with different settings](../images/bridge_settings_enabled_enabled.png)
 
