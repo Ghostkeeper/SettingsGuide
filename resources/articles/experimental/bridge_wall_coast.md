@@ -4,7 +4,20 @@ When bridging with wall lines, just before a bridge is printed, the material fee
 
 After the bridge is complete, the material that was not extruded will be expunged anyway. The total amount of material extrusion will remain the same. This restores the pressure on the nozzle, which prevents underextrusion.
 
-![No extrusion on one side of the bridge, and extra extrusion on the other](../images/bridge_wall_coast.png)
+<!--screenshot {
+"image_path": "bridge_skin_density_100.png",
+"models": [{"script": "bridge.scad"}],
+"layer": 80,
+"settings": {
+    "bridge_settings_enabled": true,
+    "bridge_skin_density": 100,
+    "bridge_skin_material_flow": 100,
+    "bridge_wall_material_flow": 100
+},
+"camera_position": [0, 18, 79],
+"colours": 64
+}-->
+![No extrusion on one side of the bridge, and extra extrusion on the other](../images/bridge_skin_density_100.png)
 
 The unit of this setting is not meant to be intuitive. The distance ahead of the bridge at which the material will stop flowing depends on a number of factors:
 * The length of the wall so far, up until the bridge. The longer the wall, the more it can coast.
