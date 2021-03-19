@@ -91,7 +91,7 @@ def call_with_args(command, **kwargs) -> None:
 	UM.Logger.Logger.info("Subprocess: " + " ".join(args))
 	subprocess.call(args)
 
-ScreenshotInstruction = collections.namedtuple("ScreenshotInstruction", ["image_path", "models", "camera_position", "camera_lookat", "layer", "line", "colour_scheme", "structures", "settings", "colours", "delay"])
+ScreenshotInstruction = collections.namedtuple("ScreenshotInstruction", ["image_path", "models", "camera_position", "camera_lookat", "minimum_layer", "layer", "line", "colour_scheme", "structures", "settings", "colours", "delay"])
 ModelInstruction = collections.namedtuple("ModelInstruction", ["script", "scad_params", "transformation", "object_settings"])
 """
 All the information needed to take a screenshot.
@@ -108,6 +108,8 @@ All the information needed to take a screenshot.
     settings.
 * camera_position: The X, Y and Z position of the camera (as list).
 * camera_lookat: The X, Y and Z position of the camera focus centre. If not specified, look at the centre of the scene.
+* minimum_layer: The lowest layer number to display. The bottom part of the range. Can be used to cut off the first
+  layer to aid in how the image is cut if the travel moves are included.
 * layer: The layer number to look at. Use layer -1 to not use layer view. Use a list to define an animation.
 * line: The number of lines to show on the current layer. Use 0 to view the entire layer. Use a list to define an
   animation.
@@ -163,7 +165,7 @@ def refresh_screenshots(article_text, refreshed_set) -> None:
 			is_layer_view = layer >= 0
 			if is_layer_view:
 				switch_to_layer_view(screenshot_instruction.colour_scheme, screenshot_instruction.structures)
-				navigate_layer_view(layer, line)
+				navigate_layer_view(screenshot_instruction.minimum_layer, layer, line)
 			else:  # Need to show the model itself.
 				switch_to_solid_view()
 			screenshot = take_snapshot(screenshot_instruction.camera_position, screenshot_instruction.camera_lookat, is_layer_view)
@@ -213,6 +215,7 @@ def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, No
 					) for model in json_document["models"]],
 					camera_position=json_document["camera_position"],
 					camera_lookat=json_document.get("camera_lookat"),  # If None, look at the centre of the scene.
+					minimum_layer=json_document.get("minimum_layer", 0),
 					layer=json_document.get("layer", 99999),
 					line=json_document.get("line", 0),
 					colour_scheme=json_document.get("colour_scheme", "line_type"),
@@ -436,15 +439,16 @@ def switch_to_layer_view(colour_scheme, visible_structures) -> None:
 				layer_view_completed = True
 		time.sleep(0.2)
 
-def navigate_layer_view(layer_nr, line_nr) -> None:
+def navigate_layer_view(minimum_layer_nr, layer_nr, line_nr) -> None:
 	"""
 	Set the layer slider and line slider to the correct positions for the screenshot.
+	:param minimum_layer_nr: The lower range of the layer number to show on the screenshot.
 	:param layer_nr: The layer number to show on the screenshot.
 	:param line_nr: The line to show on the screenshot. Use 0 to show the entire layer.
 	"""
 	layer_view_plugin = cura.CuraApplication.CuraApplication.getInstance().getPluginRegistry().getPluginObject("SimulationView")
 	layer_view_plugin.setLayer(layer_nr - 1)
-	layer_view_plugin.setMinimumLayer(0)
+	layer_view_plugin.setMinimumLayer(minimum_layer_nr)
 	if line_nr > 0:
 		layer_view_plugin.setPath(line_nr)
 		layer_view_plugin.setMinimumPath(0)
