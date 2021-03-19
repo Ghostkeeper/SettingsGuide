@@ -9,7 +9,8 @@ If this setting is enabled, the nozzle will stop extruding material slightly bef
 "minimum_layer": 1,
 "structures": ["travels", "helpers", "shell", "infill", "starts"],
 "settings": {
-    "coasting_enable": true
+    "coasting_enable": true,
+    "coasting_volume": 0.06,
 },
 "colours": 32
 }-->
