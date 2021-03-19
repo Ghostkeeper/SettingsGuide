@@ -2,6 +2,25 @@ Make Overhang Printable
 ====
 This setting will transform your model such that it doesn't have any overhang any more. It will place extra material underneath any overhang and print that as if it were part of the model.
 
+<!--screenshot {
+"image_path": "conical_overhang_enabled_disabled.png",
+"models": [{"script": "castle.scad"}],
+"camera_position": [0, 189, 25],
+"settings": {
+    "conical_overhang_enabled": false
+},
+"colours": 8
+}-->
+<!--screenshot {
+"image_path": "conical_overhang_enabled_enabled.png",
+"models": [{"script": "castle.scad"}],
+"camera_position": [0, 189, 25],
+"settings": {
+    "conical_overhang_enabled": true,
+    "conical_overhang_angle": 50
+},
+"colours": 8
+}-->
 ![A tower with some overhanging pieces](../images/conical_overhang_enabled_disabled.png)
 ![The overhang is made printable](../images/conical_overhang_enabled_enabled.png)
 
