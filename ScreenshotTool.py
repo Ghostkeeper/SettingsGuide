@@ -24,7 +24,7 @@ import cura.XRayPass  # To render solid objects with their X-ray mode.
 import UM.Backend.Backend  # To know when the slice has finished.
 import UM.Logger
 import UM.Math.AxisAlignedBox  # To calculate the centre of the scene for the camera to look at.
-import UM.Math.Quaternion  # Rotating objects after loading them.
+import UM.Math.Quaternion  # Rotating objects after loading them, correcting the camera orientation.
 import UM.Math.Vector  # To move the camera and apply transformations.
 import UM.Mesh.ReadMeshJob  # To load STL files to slice or take pictures of.
 import UM.Operations.MirrorOperation  # Mirroring objects after loading them.
@@ -487,6 +487,12 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 	else:
 		camera_lookat = UM.Math.Vector.Vector(camera_lookat[0], camera_lookat[2], camera_lookat[1])
 	camera.lookAt(camera_lookat)
+	if camera.getPosition().x - camera_lookat.x < 0.01 and camera.getPosition().z - camera_lookat.z < 0.01:  # Looking straight up or straight down.
+		# Make sure the yaw of the camera is consistent regardless of previous position.
+		if camera.getPosition().y > camera_lookat.y:
+			camera.setOrientation(UM.Math.Quaternion.Quaternion(-2, 0, 0, 2))
+		else:
+			camera.setOrientation(UM.Math.Quaternion.Quaternion(2, 0, 0, 2))
 	time.sleep(1)  # Some time to update the scene nodes. Don't know if this is necessary but it feels safer.
 
 	# Use a transparent background.
