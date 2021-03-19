@@ -2,6 +2,17 @@ Enable Coasting
 ====
 If this setting is enabled, the nozzle will stop extruding material slightly before closing up a wall contour. The idea is that the nozzle chamber can then empty itself on the last bit of line there, which reduces the pressure on the nozzle and allows it to be blocked by the start of the contour. This then produces less of a seam where the contour is started and reduces stringing in the subsequent travel move.
 
+<!--screenshot {
+"image_path": "coasting_enable.png",
+"models": [{"script": "phone_holder.scad"}],
+"camera_position": [0, -215, 117],
+"minimum_layer": 1,
+"structures": ["travels", "helpers", "shell", "infill", "starts"],
+"settings": {
+    "coasting_enable": true
+},
+"colours": 32
+}-->
 ![In layer view, the seam is easy to see if coasting is enabled, because there is a travel move there then](../images/coasting_enable.png)
 
 Enabling coasting is intended to reduce the visibility of the seam in the walls. If you normally have big fat seams, enabling this can reduce that effect. It is basically the opposite of what the [Outer Wall Wipe Distance](../shell/wall_0_wipe_dist.md) does, so it is a good idea to try reducing the wipe first before attempting coasting.
