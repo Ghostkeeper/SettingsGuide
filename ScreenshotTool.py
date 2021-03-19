@@ -105,7 +105,7 @@ All the information needed to take a screenshot.
     mirrorX(), mirrorY(), mirrorZ(), scale(ratio), rotateX(angle), rotateY(angle), rotateZ(angle), translateX(dist),
     translateY(dist), translateZ(dist)
   - object_settings: A dictionary of setting keys and values to slice this object with. These can only be per-object
-    settings.
+    settings. String setting values can use the key "{root}" to use the path to the plug-in directory.
 * camera_position: The X, Y and Z position of the camera (as list).
 * camera_lookat: The X, Y and Z position of the camera focus centre. If not specified, look at the centre of the scene.
 * minimum_layer: The lowest layer number to display. The bottom part of the range. Can be used to cut off the first
@@ -117,7 +117,8 @@ All the information needed to take a screenshot.
   line_width.
 * structures: List of structures which are visible in layer view. Choose from: travels, helpers, shell, infill, starts.
 * settings: A dictionary of setting keys and values to slice the object with. These can be global or per-extruder
-  settings. Per-extruder settings are applied to all extruders.
+  settings. Per-extruder settings are applied to all extruders. String setting values can use the key "{root}" to use
+  the path to the plug-in directory.
 * colours: The colour depth of the resulting image. Reduce colours to reduce file size. Max 256.
 * delay: If this is an animation, the delay between consecutive images in milliseconds.
 """
@@ -278,6 +279,8 @@ def setup_printer(settings) -> None:
 
 	# Set the settings that we want to override for this slice.
 	for key, value in settings.items():
+		if type(value) is str:
+			value = value.format(root=os.path.dirname(__file__))
 		# Just set it anywhere without really checking whether it's per-extruder or whatever.
 		for extruder_nr in range(4):
 			printer.extruderList[extruder_nr].userChanges.setProperty(key, "value", value)
@@ -393,6 +396,8 @@ def load_model(stl_path, transformations, object_settings) -> None:
 			container = stack.getTop()
 			definition = stack.getSettingDefinition(key)
 			new_instance = UM.Settings.SettingInstance.SettingInstance(definition, container)
+			if type(value) is str:
+				value = value.format(root=os.path.dirname(__file__))
 			new_instance.setProperty("value", value)
 			container.addInstance(new_instance)
 
