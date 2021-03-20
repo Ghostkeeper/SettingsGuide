@@ -2,6 +2,15 @@ Enable Draft Shield
 ====
 When this setting is enabled, the printer will construct a shell around your print that protects the print against air currents from the environment.
 
+<!--screenshot {
+"image_path": "draft_shield_enabled.png",
+"models": [{"script": "headphone_hook.scad"}],
+"camera_position": [-56, 139, 305],
+"settings": {
+    "draft_shield_enabled": true
+},
+"colours": 32
+}-->
 ![A draft shield is printed around the model](../images/draft_shield_enabled.png)
 
 Some printers and printing materials are very sensitive to the environment they are printing in. Printing in different locations on the build plate might lead to different results because they are more susceptible to air currents from outside. If the print is left running overnight and the room becomes colder, this could impact a print significantly. The draft shield is meant to reduce that effect by creating a small, isolated volume around the print. This serves as a makeshift "heated chamber" to keep the print warm and protect it against cold air draughts from outside.

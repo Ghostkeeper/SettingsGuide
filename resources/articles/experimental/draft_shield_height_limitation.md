@@ -2,6 +2,26 @@ Draft Shield Limitation
 ====
 The draft shield can be printed either towards the full height of the model or only up to a specific height. This setting allows you to choose how high the draft shield goes.
 
+<!--screenshot {
+"image_path": "draft_shield_enabled.png",
+"models": [{"script": "headphone_hook.scad"}],
+"camera_position": [-56, 139, 305],
+"settings": {
+    "draft_shield_enabled": true
+},
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "draft_shield_height_limitation.png",
+"models": [{"script": "headphone_hook.scad"}],
+"camera_position": [-56, 139, 305],
+"settings": {
+    "draft_shield_enabled": true,
+    "draft_shield_height_limitation": "limited",
+    "draft_shield_height": 20
+},
+"colours": 32
+}-->
 ![The draft shield is equally high as the model](../images/draft_shield_enabled.png)
 ![The draft shield is limited to 20mm high](../images/draft_shield_height_limitation.png)
 

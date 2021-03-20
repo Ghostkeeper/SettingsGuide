@@ -2,6 +2,28 @@ Cross 3D Pocket Size
 ====
 The Cross 3D [infill pattern](../infill/infill_pattern.md) was made to facilitate flexible prints. The pattern contains 4-way crossings though that are very rigid. This setting causes the pattern to avoid the crossing in order to avoid being too rigid in certain places. It will make the pattern leave a pocket of air in the crossing. This setting determines the size of the pocket.
 
+<!--screenshot {
+"image_path": "infill_pattern_cross_3d.png",
+"models": [{"script": "hexagonal_prism.scad"}],
+"camera_position": [0, 0, 180],
+"settings": {
+    "top_layers": 0,
+    "infill_pattern": "cross_3d",
+    "cross_infill_pocket_size": 2
+},
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "cross_infill_pocket_size_0_5.png",
+"models": [{"script": "hexagonal_prism.scad"}],
+"camera_position": [0, 0, 180],
+"settings": {
+    "top_layers": 0,
+    "infill_pattern": "cross_3d",
+    "cross_infill_pocket_size": 0.5
+},
+"colours": 32
+}-->
 ![The default pocket size of 2mm](../images/infill_pattern_cross_3d.png)
 ![A pocket size of 0.5mm](../images/cross_infill_pocket_size_0_5.png)
 

@@ -2,6 +2,19 @@ Cross Fill Density Image for Support
 ====
 In this setting, you can provide an image that specifies the density in various places across the support. The support density will vary in certain places depending on the brightness of the image. This only works for the [Cross pattern](../support/support_pattern.md), since that pattern is able to adjust its density without chopping up lines, which would result in interrupted flow and reduced strength.
 
+<!--screenshot {
+"image_path": "cross_support_density_image.png",
+"models": [{"script": "wide_bridge.scad"}],
+"camera_position": [0, 0, 120],
+"layer": 79,
+"settings": {
+    "support_enable": true,
+    "support_pattern": "cross",
+    "support_infill_rate": 100,
+    "cross_support_density_image": "{root}/resources/articles/images/cross_support_density_image_mask.png"
+},
+"colours": 32
+}-->
 ![The support density is greater at the sides](../images/cross_support_density_image.png)
 ![The image file used to create that pattern](../images/cross_support_density_image_mask.png)
 
