@@ -487,7 +487,7 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 	else:
 		camera_lookat = UM.Math.Vector.Vector(camera_lookat[0], camera_lookat[2], camera_lookat[1])
 	camera.lookAt(camera_lookat)
-	if camera.getPosition().x - camera_lookat.x < 0.01 and camera.getPosition().z - camera_lookat.z < 0.01:  # Looking straight up or straight down.
+	if abs(camera.getPosition().x - camera_lookat.x) < 0.01 and abs(camera.getPosition().z - camera_lookat.z) < 0.01:  # Looking straight up or straight down.
 		# Make sure the yaw of the camera is consistent regardless of previous position.
 		if camera.getPosition().y > camera_lookat.y:
 			camera.setOrientation(UM.Math.Quaternion.Quaternion(-2, 0, 0, 2))
