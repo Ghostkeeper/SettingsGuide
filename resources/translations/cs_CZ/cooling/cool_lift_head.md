@@ -4,7 +4,7 @@ Po dosažení [minimálního času vrstvy](cool_min_layer_time.md) se tisková h
 
 Pokud je toto nastavení povoleno a tisková hlava se musí pohybovat pomaleji než je minimální rychlost, aby se zachoval minimální čas vrstvy, pak se tisková hlava po tisku vrstvy bude pohybovat mírně nahoru. Potom bude chvíli počkat, dokud nebude dosaženo minimálního času vrstvy, než začne další vrstva. Nebude se pohybovat pomaleji než minimální rychlostí.
 
-Pokud je tento parametr zakázán, bude tisková hlava čekat na konci vrstvy, přičemž se tryska dotkne tisku.
+Pokud je toto nastavení zakázáno, tiskárna bude okamžitě pokračovat další vrstvou. Nebude čekat na minimální čas vrstvy, takže vrstvy budou vytištěny na vrstvy, které ještě možná úplně neztuhly.
 
 ![Po dosažení minimálního času vrstvy se může hlava zvednout](../images/cool_fan_speed_cs.svg)
 

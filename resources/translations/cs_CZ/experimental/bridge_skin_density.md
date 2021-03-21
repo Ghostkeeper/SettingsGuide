@@ -9,7 +9,7 @@ Při ladění tohoto nastavení jsou při hře dva hlavní efekty: přilnavost m
 
 Při rozmístění linií pláště přímo vedle sebe se ty k sobě přilepí. Díky tomu bude spodní strana přemostěné mezery vypadat lépe, protože povrch bude místo pruhování, spojitý. Kromě toho může druhá linie při přemostění trochu spočívat na první linii, což mírně snižuje prověšení přemostění.
 
-Existuje však další efekt, a to chlazení. Když jsou linie rozmístěny dále od sebe, budou se moci rychleji ochladit a pak se ani neklesnou. To samozřejmě platí pouze při zapnutém ventilátoru, takže u materiálů s vysokou teplotou tato strategie nefunguje.
+Existuje však další efekt: chlazení. Když jsou linie rozmístěny dále od sebe, budou se moci rychleji ochladit a pak se ani neklesnou. To samozřejmě platí pouze při zapnutém ventilátoru, takže u materiálů s vysokou teplotou tato strategie nefunguje.
 
 Který z těchto vlivu je silnější, závisí na viskozitě materiálu, rychlosti tuhnutí a rychlosti ventilátoru. Vždy je třeba provést určité úpravy.
 
