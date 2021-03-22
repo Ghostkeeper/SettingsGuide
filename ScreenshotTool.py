@@ -503,7 +503,15 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 	if is_layer_view:
 		render_pass = plugin_registry.getPluginObject("SimulationView").getSimulationPass()
 		render_pass.render()
-		return render_pass.getOutput()
+		screenshot = render_pass.getOutput()
+
+		# Remove alpha channel from this picture. We don't want the semi-transparent support since we don't draw the object outline here.
+		# Sadly, QImage.convertToFormat has only 2 formats with boolean alpha and they both premultiply. So we'll go the hard way: Through Numpy.
+		pixel_bits = screenshot.bits().asarray(screenshot.byteCount())
+		pixels = numpy.frombuffer(pixel_bits, dtype=numpy.uint8).reshape([screenshot.height(), screenshot.width(), 4])
+		opaque = numpy.nonzero(pixels[:, :, 0])
+		pixels[opaque[0], opaque[1], 3] = 255
+		return PyQt5.QtGui.QImage(pixels.data, pixels.shape[1], pixels.shape[0], PyQt5.QtGui.QImage.Format_ARGB32)
 	else:  # Render the objects themselves! Going to be quite complex here since the render is highly specialised in what it shows and what it doesn't.
 		view = plugin_registry.getPluginObject("SolidView")
 		view._checkSetup()
