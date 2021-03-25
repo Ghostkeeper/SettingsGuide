@@ -6,4 +6,4 @@ Tento parametr určuje vzdálenost, kterou musí ochranný štít udržet (minim
 
 Umistěte ochranný štít co nejblíže k modelu, aniž byste ho zasáhli. Čím blíže je štít k vašemu modelu, tím méně času je mezi štítem a modelem, aby tryska mohla vytékat.
 
-Někdy bude štít dále od modelu, protože štít musí také udržovat určitý úhel převisu, aby se nerozpadl.
+Někdy bude štít dále od modelu, protože štít musí také udržovat určitý [úhel převisu](ooze_shield_angle.md), aby se nerozpadl.

@@ -14,3 +14,5 @@ Tento postup otírání sestává z několika kroků:
 7. Tisk se na [určitou dobu](wipe_pause.md) zastaví.
 
 Účelem tohoto postupu je pravidelné čištění trysky od všech nečistot. Některé materiály mají tendenci stoupat směrem k trysce kapilárním působením kvůli vysokému povrchovému napětí. Tyto materiály se mohou infiltrovat a hromadit se v tiskové hlavě, což může způsobit zlomení tiskové hlavy. Jiné materiály obsahující vlákna nebo jiné náplně mohou způsobit, že se náplň během tisku nastříká na trysku. Tato akce tento materiál otře.
+
+Postup očištění však nyní není příliš konfigurovatelný. Vždy se otírá ve směru X a udržuje pozici Y na poslední pozici v tisku. To znamená, že tiskárna se štětcem v rohu nebude s touto funkcí fungovat dobře. Budete potřebovat štětec po celé straně objemu tisku.
