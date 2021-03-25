@@ -4,7 +4,28 @@ Infill lines are usually directed at a 45 degree angle as much as possible. At t
 
 With this setting, you can adjust this angle. You can specialise it to create greater strength for your specific model, or achieve greater acceleration for your specific gantry system (such as for delta printers).
 
-![Lines infill with default angles of 45 and 135 degrees](../images/infill_angles_45_135.png)
+<!--screenshot {
+"image_path": "infill_pattern_lines.png",
+"models": [{"script": "hexagonal_prism.scad"}],
+"camera_position": [0, 0, 180],
+"settings": {
+    "top_layers": 0,
+    "infill_pattern": "lines"
+},
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "infill_angles_0_30.png",
+"models": [{"script": "hexagonal_prism.scad"}],
+"camera_position": [0, 0, 180],
+"settings": {
+    "top_layers": 0,
+    "infill_pattern": "lines",
+    "infill_angles": [0, 30]
+},
+"colours": 32
+}-->
+![Lines infill with default angles of 45 and 135 degrees](../images/infill_pattern_lines.png)
 ![Lines infill with customised angles of 0 and 30 degrees](../images/infill_angles_0_30.png)
 
 The value of this setting needs to be a comma-separated list of angles with brackets around it. An angle of 0 degrees will result in a line parallel with the Y axis. The list of angles will be alternated over the layers.

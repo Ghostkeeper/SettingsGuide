@@ -4,7 +4,7 @@ Les lignes de remplissage sont généralement orientées à un angle de 45 degr�
 
 Ce réglage permet d'ajuster cet angle. Vous pouvez le spécialiser pour créer une plus grande force pour votre modèle spécifique, ou obtenir une plus grande accélération pour votre système de portique spécifique (comme pour les imprimantes delta).
 
-![Remplissage des lignes avec des angles par défaut de 45 et 135 degrés](../../../articles/images/infill_angles_45_135.png)
+![Remplissage des lignes avec des angles par défaut de 45 et 135 degrés](../../../articles/images/infill_pattern_lines.png)
 ![Remplissage des lignes avec des angles personnalisés de 0 et 30 degrés](../../../articles/images/infill_angles_0_30.png)
 
 La valeur de ce paramètre doit être une liste d'angles séparés par des virgules et entourés de crochets. Un angle de 0 degré donnera une ligne parallèle à l'axe Y. La liste des angles sera alternée sur les couches.

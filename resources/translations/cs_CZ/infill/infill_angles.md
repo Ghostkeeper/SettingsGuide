@@ -4,7 +4,7 @@ Linie výplně jsou obvykle orientovány v úhlu 45 stupňů, pokud je to možn�
 
 Toto nastavení umožňuje tento úhel upravit. Můžete ho specializovat, abyste vytvořili větší sílu pro váš konkrétní model nebo získali větší akceleraci pro váš konkrétní portálový systém (např. pro tiskárny delta).
 
-![Linie výplně s výchozími úhly 45 a 135 stupňů](../../../articles/images/infill_angles_45_135.png)
+![Linie výplně s výchozími úhly 45 a 135 stupňů](../../../articles/images/infill_pattern_lines.png)
 ![Linie výplně s vlastními úhly 0 a 30 stupňů](../../../articles/images/infill_angles_0_30.png)
 
 Hodnota tohoto parametru musí být seznam úhlů oddělených čárkami a uzavřený hranatými závorkami. Úhel 0 stupňů poskytne linii rovnoběžnou s osou Y. Seznam úhlů se bude ve vrstvách střídat.
