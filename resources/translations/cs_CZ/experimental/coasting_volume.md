@@ -2,8 +2,8 @@ Objem doběhu
 ====
 Tento parametr určuje, jak daleko před koncem obrysu podavač zastaví podávání materiálu. Délka vlákna je však konfigurována jako objem materiálu. Úzce souvisí s objemem uvnitř tryskové komory.
 
-![Dokování materiálu 0,2 mm³](../../../articles/images/coasting_enable.png)
-![Dokování materiálu 0,1 mm³](../../../articles/images/coasting_volume_0_1.png)
+![Dokování materiálu 0,06 mm³](../../../articles/images/coasting_enable.png)
+![Dokování materiálu 0,03 mm³](../../../articles/images/coasting_volume_0_03.png)
 
 Zvýšení doběhového objemu způsobí, že se tryska přestane vytlačovat dále, než dokončí obrys. Výsledkem je, že ke konci bude více pod-extruzí. Funkcí doběhu je kompenzovat kapku, když je kontura propojena, takže zvyšování objemu doběhu může kompenzovat větší kapky.
 

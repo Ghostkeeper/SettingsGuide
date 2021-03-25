@@ -4,7 +4,7 @@ Při přemostění liniemi stěn těsně před tiskem mostu se na okamžik zasta
 
 Jakmile je most hotový, materiál, který nebyl extrudován, bude stejně vytlačen. Celkové množství vytlačovaného materiálu zůstane stejné. Tím se obnoví tlak na trysku, což zabraňuje podtlaku.
 
-![Žádné vytlačování na jedné straně mostu a další vytlačování na druhé straně](../../../articles/images/bridge_wall_coast.png)
+![Žádné vytlačování na jedné straně mostu a další vytlačování na druhé straně](../../../articles/images/bridge_skin_density_100.png)
 
 Jednotka tohoto nastavení nemá být intuitivní. Vzdálenost před mostem, po které se materiál zastaví, závisí na řadě faktorů:
 * Délka stěny k mostu. Čím delší je stěna, tím větší může být doběh.
