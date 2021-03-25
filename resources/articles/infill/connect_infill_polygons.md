@@ -7,6 +7,32 @@ This setting is only available when the infill consists of loops that are adjace
 * The infill lines are [multiplied](infill_multiplier.md) to an even number.
 * There are at least 2 [extra walls around the infill](infill_wall_line_count.md).
 
+<!--screenshot {
+"image_path": "connect_infill_polygons_disabled.png",
+"models": [{"script": "hexagonal_prism.scad"}],
+"camera_position": [0, 0, 180],
+"settings": {
+    "top_layers": 0,
+    "infill_pattern": "triangles",
+    "infill_multiplier": 2,
+    "zig_zaggify_infill": true,
+    "connect_infill_polygons": false
+},
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "connect_infill_polygons_enabled.png",
+"models": [{"script": "hexagonal_prism.scad"}],
+"camera_position": [0, 0, 180],
+"settings": {
+    "top_layers": 0,
+    "infill_pattern": "triangles",
+    "infill_multiplier": 2,
+    "zig_zaggify_infill": true,
+    "connect_infill_polygons": true
+},
+"colours": 32
+}-->
 ![With multiplied infill lines, there are lots of loops in this infill pattern](../images/connect_infill_polygons_disabled.png)
 ![Enabling this setting fuses the loops together](../images/connect_infill_polygons_enabled.png)
 

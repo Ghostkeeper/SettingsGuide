@@ -21,6 +21,17 @@ Since the support will usually be large and wide, an [infill pattern](support_pa
 
 Tree
 ----
+<!--screenshot {
+"image_path": "support_structure_tree.png",
+"models": [{"script": "duct.scad"}],
+"camera_position": [33, 140, 19],
+"settings": {
+    "support_enable": true,
+    "support_structure": "tree",
+    "support_tree_collision_resolution": 0.05
+},
+"colours": 32
+}-->
 ![Tree support](../images/support_structure_tree.png)
 
 With tree support, the support structure will start out small on the build plate, and will grow branches towards the parts of the print that need supporting.
