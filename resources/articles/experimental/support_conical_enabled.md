@@ -2,6 +2,38 @@ Enable Conical Support
 ====
 If this setting is enabled, the support structure will no longer be completely vertical on the sides. The support will get a conical shape, getting either smaller or larger towards the bottom.
 
+<!--screenshot {
+"image_path": "support_conical_enabled.png",
+"models": [
+    {
+        "script": "wide_overhang.scad",
+        "transformation": ["scale(0.5)"]
+    }
+],
+"camera_position": [91, -95, 19],
+"settings": {
+    "support_enable": true,
+    "support_conical_enabled": true,
+    "support_conical_angle": 30
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "support_conical_angle_neg10.png",
+"models": [
+    {
+        "script": "wide_overhang.scad",
+        "transformation": ["scale(0.5)"]
+    }
+],
+"camera_position": [91, -95, 19],
+"settings": {
+    "support_enable": true,
+    "support_conical_enabled": true,
+    "support_conical_angle": -10
+},
+"colours": 64
+}-->
 ![The support gets smaller towards the bottom](../images/support_conical_enabled.png)
 ![The support gets larger towards the bottom](../images/support_conical_angle_neg10.png)
 
