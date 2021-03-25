@@ -2,6 +2,54 @@ Conical Support Angle
 ====
 This setting determines the angle of the slope at which the conical support gets printed.
 
+<!--screenshot {
+"image_path": "support_conical_enabled.png",
+"models": [
+    {
+        "script": "wide_overhang.scad",
+        "transformation": ["scale(0.5)"]
+    }
+],
+"camera_position": [91, -95, 19],
+"settings": {
+    "support_enable": true,
+    "support_conical_enabled": true,
+    "support_conical_angle": 30
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "support_conical_angle_10.png",
+"models": [
+    {
+        "script": "wide_overhang.scad",
+        "transformation": ["scale(0.5)"]
+    }
+],
+"camera_position": [91, -95, 19],
+"settings": {
+    "support_enable": true,
+    "support_conical_enabled": true,
+    "support_conical_angle": 10
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "support_conical_angle_neg10.png",
+"models": [
+    {
+        "script": "wide_overhang.scad",
+        "transformation": ["scale(0.5)"]
+    }
+],
+"camera_position": [91, -95, 19],
+"settings": {
+    "support_enable": true,
+    "support_conical_enabled": true,
+    "support_conical_angle": -10
+},
+"colours": 64
+}-->
 ![An angle of 30 degrees](../images/support_conical_enabled.png)
 ![An angle of 10 degrees](../images/support_conical_angle_10.png)
 ![An angle of -10 degrees, causing the base to be wider](../images/support_conical_angle_neg10.png)
