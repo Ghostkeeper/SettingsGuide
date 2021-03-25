@@ -509,6 +509,7 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 	if is_layer_view:
 		render_pass = plugin_registry.getPluginObject("SimulationView").getSimulationPass()
 		render_pass.render()
+		time.sleep(0.2)
 		screenshot = render_pass.getOutput()
 
 		# Remove alpha channel from this picture. We don't want the semi-transparent support since we don't draw the object outline here.
@@ -517,7 +518,7 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 		pixels = numpy.frombuffer(pixel_bits, dtype=numpy.uint8).reshape([screenshot.height(), screenshot.width(), 4])
 		opaque = numpy.nonzero(pixels[:, :, 0])
 		pixels[opaque[0], opaque[1], 3] = 255
-		return PyQt5.QtGui.QImage(pixels.data, pixels.shape[1], pixels.shape[0], PyQt5.QtGui.QImage.Format_ARGB32)
+		return PyQt5.QtGui.QImage(pixels.data, pixels.shape[1], pixels.shape[0], PyQt5.QtGui.QImage.Format_ARGB32).copy()  # Make a copy because the pixel data will go out of scope for Numpy, so that would be invalid memory.
 	else:  # Render the objects themselves! Going to be quite complex here since the render is highly specialised in what it shows and what it doesn't.
 		view = plugin_registry.getPluginObject("SolidView")
 		view._checkSetup()
@@ -587,7 +588,7 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 		composite_pixels[:, :, 0:3] -= composite_pixels[:, :, 0:3] * xray_pixels  # Don't use the normal colour for x-rayed pixels.
 		composite_pixels[:, :, 0:3] += (rotated_hue * xray_pixels).astype("uint8")  # Use the rotated colour instead.
 		composite_pixels[:, :, 3][alpha > 0.1] = 255
-		return PyQt5.QtGui.QImage(composite_pixels.data, composite_pixels.shape[1], composite_pixels.shape[0], PyQt5.QtGui.QImage.Format_ARGB32)
+		return PyQt5.QtGui.QImage(composite_pixels.data, composite_pixels.shape[1], composite_pixels.shape[0], PyQt5.QtGui.QImage.Format_ARGB32).copy()  # Make a copy because the pixel data will go out of scope for Numpy, so that would be invalid memory.
 
 def crop_images(images) -> typing.List[typing.Tuple[PyQt5.QtGui.QImage, str]]:
 	"""
@@ -620,8 +621,7 @@ def crop_images(images) -> typing.List[typing.Tuple[PyQt5.QtGui.QImage, str]]:
 	# Crop each image to the same dimensions.
 	result = []
 	for image, filename in images:
-		image = image.copy(min_x, min_y, max_x - min_x, max_y - min_y)
-		result.append((image, filename))
+		result.append((image.copy(min_x, min_y, max_x - min_x, max_y - min_y), filename))
 
 	return result
 
