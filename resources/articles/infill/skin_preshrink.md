@@ -4,6 +4,30 @@ This setting will remove very thin strips of skin, replacing them with infill in
 
 The skin will only be removed if there is infill next to it, so it won't remove the skin at the very top or bottom of your print, even if that is very thin.
 
+<!--screenshot {
+"image_path": "skin_preshrink_original.png",
+"models": [{"script": "stature_symmetrical.scad"}],
+"camera_position": [104, -7, 4],
+"settings": {
+    "wall_line_count": 0,
+    "infill_wall_line_count": 1,
+    "bottom_skin_preshrink": 0,
+    "top_skin_preshrink": 0
+},
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "skin_preshrink_shrunk.png",
+"models": [{"script": "stature_symmetrical.scad"}],
+"camera_position": [104, -7, 4],
+"settings": {
+    "wall_line_count": 0,
+    "infill_wall_line_count": 1,
+    "bottom_skin_preshrink": 1,
+    "top_skin_preshrink": 1
+},
+"colours": 32
+}-->
 ![Not removing any skin](../images/skin_preshrink_original.png)
 ![Thin strips are removed](../images/skin_preshrink_shrunk.png)
 
@@ -13,5 +37,15 @@ For most prints, setting this to 1 or 2 line widths is helpful to reduce the pri
 
 If the setting is increased too much, gaps can appear in the top and bottom surface where infill gets exposed. In particular, take good care with models that have thin ledges that should get a thin strip of skin.
 
+<!--screenshot {
+"image_path": "skin_preshrink_problem_screenshot.png",
+"models": [{"script": "thin_ridge.scad"}],
+"camera_position": [64, 0, 100],
+"settings": {
+    "wall_line_count": 3,
+    "top_skin_preshrink": 2
+},
+"colours": 64
+}-->
 ![These pieces of skin are removed, exposing infill](../images/skin_preshrink_problem.svg)
 ![The infill can be seen in layer view too](../images/skin_preshrink_problem_screenshot.png)

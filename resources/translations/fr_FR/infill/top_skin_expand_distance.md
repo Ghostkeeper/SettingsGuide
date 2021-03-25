@@ -2,7 +2,7 @@ Distance d'expansion de la couche extérieure supérieure
 ====
 Élargissez ou réduisez les couches solides sur le dessus de votre impression dans le sens horizontal. Normalement, les couches solides ne sont générées qu'en dessous des parties où il y a du vide, mais avec ce réglage, vous pouvez l'élargir horizontalement un peu plus, ce qui améliore la résistance en faisant en sorte que la peau s'attache mieux aux murs adjacents et en fermant les interstices de la peau.
 
-![Comment les peaux (les parties jaunes) sont normalement définies](../../../articles/images/expand_skins_expand_distance_original.png)
+![Comment les peaux (les parties jaunes) sont normalement définies](../../../articles/images/skin_preshrink_original.png)
 ![Peaux agrandies de 1mm](../../../articles/images/expand_skins_expand_distance_1mm.png)
 
 * Si vous avez de petits trous dans les couches supérieures de la peau (trous qui sont remplis avec le motif de remplissage), le fait de régler ce paramètre un peu plus haut les fermera. Cela permet à l'imprimante d'imprimer en continu les lignes du bas, ce qui améliore considérablement la résistance.
