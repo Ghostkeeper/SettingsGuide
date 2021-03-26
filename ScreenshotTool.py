@@ -111,7 +111,7 @@ All the information needed to take a screenshot.
 * minimum_layer: The lowest layer number to display. The bottom part of the range. Can be used to cut off the first
   layer to aid in how the image is cut if the travel moves are included.
 * layer: The layer number to look at. Use layer -1 to not use layer view. Use a list to define an animation.
-* line: The number of lines to show on the current layer. Use 0 to view the entire layer. Use a list to define an
+* line: The number of lines to show on the current layer. Use -1 to view the entire layer. Use a list to define an
   animation.
 * colour_scheme: The layer view colour scheme to use. Choose from: line_type, material_colour, speed, layer_thickness,
   line_width.
@@ -224,7 +224,7 @@ def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, No
 					camera_lookat=json_document.get("camera_lookat"),  # If None, look at the centre of the scene.
 					minimum_layer=json_document.get("minimum_layer", 0),
 					layer=json_document.get("layer", 99999),
-					line=json_document.get("line", 0),
+					line=json_document.get("line", -1),
 					colour_scheme=json_document.get("colour_scheme", "line_type"),
 					structures=json_document.get("structures", ["helpers", "shell", "infill", "starts"]),
 					settings=json_document.get("settings", {}),
@@ -460,7 +460,7 @@ def navigate_layer_view(minimum_layer_nr, layer_nr, line_nr) -> None:
 	layer_view_plugin = cura.CuraApplication.CuraApplication.getInstance().getPluginRegistry().getPluginObject("SimulationView")
 	layer_view_plugin.setLayer(layer_nr - 1)
 	layer_view_plugin.setMinimumLayer(minimum_layer_nr)
-	if line_nr > 0:
+	if line_nr >= 0:
 		layer_view_plugin.setPath(line_nr)
 		layer_view_plugin.setMinimumPath(0)
 
