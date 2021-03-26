@@ -120,7 +120,7 @@ All the information needed to take a screenshot.
   settings. Per-extruder settings are applied to all extruders. String setting values can use the key "{root}" to use
   the path to the plug-in directory.
 * colours: The colour depth of the resulting image. Reduce colours to reduce file size. Max 256.
-* delay: If this is an animation, the delay between consecutive images in milliseconds.
+* delay: If this is an animation, the delay between consecutive images in milliseconds. Default 500.
 """
 
 def refresh_screenshots(article_text, refreshed_set) -> None:
