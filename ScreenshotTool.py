@@ -507,7 +507,13 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 	gl_bindings.glClear(gl_bindings.GL_COLOR_BUFFER_BIT | gl_bindings.GL_DEPTH_BUFFER_BIT)
 
 	if is_layer_view:
-		render_pass = plugin_registry.getPluginObject("SimulationView").getSimulationPass()
+		# Remove any nozzle node. It can get in the way of what we want to see and influence cropping of the image badly.
+		simulation_view_plugin = plugin_registry.getPluginObject("SimulationView")
+		for node in UM.Scene.Iterator.DepthFirstIterator.DepthFirstIterator(application.getController().getScene().getRoot()):
+			if hasattr(node, "_createNozzleMesh"):  # This node is a NozzleNode (the actual class is not exposed to us outside the plug-in).
+				node.getParent().removeChild(node)
+
+		render_pass = simulation_view_plugin.getSimulationPass()
 		render_pass.render()
 		time.sleep(0.2)
 		screenshot = render_pass.getOutput()
