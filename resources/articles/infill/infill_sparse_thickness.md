@@ -4,6 +4,21 @@ Since the layer height of the infill is not important for visual quality, you ca
 
 In layer view, it will look as if the infill lines have become much wider. When actually printed, the infill lines will drop down further instead of spreading out horizontally.
 
+<!--screenshot {
+"image_path": "infill_sparse_thickness.png",
+"models": [{"script": "cooking_utensil_hook.scad"}],
+"camera_position": [-33, 33, 9],
+"camera_lookat": [0, 0, 7],
+"settings": {
+    "layer_height": 0.2,
+    "wall_line_count": 0,
+    "infill_pattern": "zigzag",
+    "fill_perimeter_gaps": "nowhere",
+    "infill_sparse_thickness": 0.6
+},
+"layer": 19,
+"colours": 64
+}-->
 ![Infill Layer Thickness is set to three times the layer height](../images/infill_sparse_thickness.png)
 
 The infill layer thickness must be a multiple of the ordinary layer height. If it is not, it will be rounded to the closest layer height.
