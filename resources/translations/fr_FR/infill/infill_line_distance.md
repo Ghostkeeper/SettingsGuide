@@ -4,7 +4,7 @@ Au lieu de définir la [Densité de remplissage](infill_sparse_density.md) en po
 
 La distance entre les lignes de remplissage est une façon différente de considérer cette propriété que la densité. La distance entre les lignes de remplissage donne une indication de la distance que les lignes de surface supérieure doivent parcourir d'une ligne de remplissage à l'autre. La réduction de la distance entre les lignes de remplissage permet donc de réduire la distance de pontage et d'améliorer la qualité des surfaces supérieures.
 
-![4mm de distance entre les lignes, ce qui donne une densité de 20%](../../../articles/images/infill_sparse_density_high.png)
+![4mm de distance entre les lignes, ce qui donne une densité de 20%](../../../articles/images/infill_pattern_grid.png)
 ![8mm de distance entre les lignes, ce qui donne une densité de 10%](../../../articles/images/infill_sparse_density_low.png)
 
 Normalement, la distance de la ligne de remplissage est calculée à partir de la densité de remplissage souhaitée, en fonction du modèle de remplissage sélectionné et de la largeur de la ligne. La distance de la ligne de remplissage est en tête.

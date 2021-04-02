@@ -2,7 +2,7 @@ Densité du remplissage
 ====
 Ce paramètre configure la densité du volume à l'intérieur de l'impression, qui est un facteur majeur de la solidité de l'impression finale ainsi que de la qualité de la surface supérieure. Plus la densité de remplissage est élevée, plus les lignes de remplissage seront rapprochées. Vous pouvez même dépasser la densité de 100 %, mais cela entraînera une surextrusion.
 
-![20% de densité](../../../articles/images/infill_sparse_density_high.png)
+![20% de densité](../../../articles/images/infill_pattern_grid.png)
 ![10% de densité](../../../articles/images/infill_sparse_density_low.png)
 
 Des densités différentes fonctionnent mieux avec des modèles de remplissage différents. Les modèles de remplissage avec beaucoup de coins et de croisements ne fonctionneront pas bien avec de grandes densités de remplissage. Les coins posent un problème car le filament a tendance à traîner avec le coin, créant des poches d'air à l'extérieur du coin où le matériau aurait dû être déposé. Les croisements sont un problème encore plus important, car lorsqu'une ligne en croise une autre, son flux est interrompu, ce qui provoque une sous-extrusion juste après le croisement.

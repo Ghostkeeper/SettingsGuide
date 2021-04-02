@@ -4,7 +4,7 @@ Místo nastavení parametru [Hustota výplně](infill_sparse_density.md) v proce
 
 Vzdálenost mezi liniemi výplně je jiný způsob pohledu na tuto vlastnost než hustota. Vzdálenost mezi liniemi výplně udává vzdálenost, kterou musí horní povrchové linie cestovat z jedné linie výplně do druhé. Zmenšení vzdálenosti mezi liniemi výplně proto snižuje překlenovací vzdálenost a zlepšuje kvalitu horních povrchů.
 
-![Vzdálenost mezi liniemi 4 mm, což vede k hustotě 20%](../../../articles/images/infill_sparse_density_high.png)
+![Vzdálenost mezi liniemi 4 mm, což vede k hustotě 20%](../../../articles/images/infill_pattern_grid.png)
 ![Vzdálenost mezi liniemi 8 mm, což vede k hustotě 10%](../../../articles/images/infill_sparse_density_low.png)
 
 Obvykle se vzdálenost linií výplně počítá z požadované hustoty výplně v závislosti na vybraném vzoru výplně a šířce linie. Vzdálenost linií výplně je vedoucí.
