@@ -7,7 +7,7 @@ In layer view, it will look as if the infill lines have become much wider. When 
 <!--screenshot {
 "image_path": "infill_sparse_thickness.png",
 "models": [{"script": "cooking_utensil_hook.scad"}],
-"camera_position": [-33, 33, 9],
+"camera_position": [6, 51, 27],
 "camera_lookat": [0, 0, 7],
 "settings": {
     "layer_height": 0.2,
