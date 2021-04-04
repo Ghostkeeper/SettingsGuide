@@ -2,7 +2,28 @@ Connect Infill Lines
 ====
 This setting connects the endpoints of the infill pattern, where the infill meets the inner wall or skin, using a line that follows the edge of the infill area.
 
-![No connected infill lines](../images/zig_zaggify_infill_disabled.png)
+<!--screenshot {
+"image_path": "infill_pattern_grid.png",
+"models": [{"script": "hexagonal_prism.scad"}],
+"camera_position": [0, 0, 180],
+"settings": {
+    "top_layers": 0,
+    "infill_pattern": "grid"
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "zig_zaggify_infill_enabled.png",
+"models": [{"script": "hexagonal_prism.scad"}],
+"camera_position": [0, 0, 180],
+"settings": {
+    "top_layers": 0,
+    "infill_pattern": "grid",
+    "zig_zaggify_infill": true
+},
+"colours": 64
+}-->
+![No connected infill lines](../images/infill_pattern_grid.png)
 ![Connected infill lines](../images/zig_zaggify_infill_enabled.png)
 
 This converts the entire infill pattern into a single or very few lines. Converting it into a single line is not always possible. The starting point of this line is arbitrary, so it might not be the same for every layer, especially if the shape that the infill is contained in is different from layer to layer.

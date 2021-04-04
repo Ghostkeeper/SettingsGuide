@@ -476,6 +476,7 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 	Take a snapshot of the current scene.
 	:param camera_position: The position of the camera to take the snapshot with.
 	:param camera_lookat: The position of the focal point of the camera.
+	:param is_layer_view: Whether we're looking at layer view or the model itself.
 	:return: A screenshot of the current scene.
 	"""
 	application = cura.CuraApplication.CuraApplication.getInstance()

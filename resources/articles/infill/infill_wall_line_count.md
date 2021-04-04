@@ -4,6 +4,17 @@ This setting adds a number of contours around the infill areas. This is similar 
 
 These walls are printed with the infill settings.
 
+<!--screenshot {
+"image_path": "infill_wall_line_count.png",
+"models": [{"script": "hexasphericon.scad"}],
+"camera_position": [0, 40, 136],
+"settings": {
+    "infill_wall_line_count": 2,
+    "skin_outline_count": 0
+},
+"layer": 546,
+"colours": 64
+}-->
 ![Two extra walls around the infill](../images/infill_wall_line_count.png)
 
 Compared to adding extra walls around the skin, this setting greatly increases strength of the model and reduces the visibility of infill through the skin, but also increases printing time and material usage. Whereas extra skin walls will replace material that would've been printed as skin anyway, this setting actually adds material unless the infill density is already 100%.

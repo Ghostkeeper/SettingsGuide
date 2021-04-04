@@ -2,6 +2,40 @@ Cubic Subdivision Shell
 ====
 This setting makes the Cubic Subdivision infill pattern start reducing infill a bit more towards the inside, to improve the strength of the print.
 
+<!--screenshot {
+"image_path": "sub_div_rad_add_small.png",
+"models": [
+    {
+        "script": "cylinder.scad",
+        "transformation": ["scale(3)"]
+    }
+],
+"camera_position": [0, 0, 275],
+"settings": {
+    "infill_sparse_density": 70,
+    "infill_pattern": "cubicsubdiv",
+    "sub_div_rad_add": 0
+},
+"layer": 500,
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "sub_div_rad_add_large.png",
+"models": [
+    {
+        "script": "cylinder.scad",
+        "transformation": ["scale(3)"]
+    }
+],
+"camera_position": [0, 0, 275],
+"settings": {
+    "infill_sparse_density": 70,
+    "infill_pattern": "cubicsubdiv",
+    "sub_div_rad_add": 5
+},
+"layer": 500,
+"colours": 32
+}-->
 ![Cubic Subdivision with no additional shell](../images/sub_div_rad_add_small.png)
 ![Additional shell of 5mm](../images/sub_div_rad_add_large.png)
 

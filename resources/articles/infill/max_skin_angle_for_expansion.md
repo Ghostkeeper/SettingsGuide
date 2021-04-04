@@ -2,6 +2,30 @@ Maximum Skin Angle for Expansion
 ====
 Since skin is present throughout the model, it is unnecessary to expand all of those areas. Rather, only the areas where the angle between the skin's surface and the horizon is less than this setting will get expanded. In that way, flat surfaces with protruding elements will be strengthened, without needlessly increasing printing time for the rest of the model.
 
+<!--screenshot {
+"image_path": "max_skin_angle_for_expansion_90.png",
+"models": [{"script": "stamp.scad"}],
+"camera_position": [0, 200, 30],
+"settings": {
+    "wall_line_count": 0,
+    "infill_wall_line_count": 1,
+    "expand_skins_expand_distance": 3,
+    "max_skin_angle_for_expansion": 90
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "max_skin_angle_for_expansion_45.png",
+"models": [{"script": "stamp.scad"}],
+"camera_position": [0, 200, 30],
+"settings": {
+    "wall_line_count": 0,
+    "infill_wall_line_count": 1,
+    "expand_skins_expand_distance": 3,
+    "max_skin_angle_for_expansion": 45
+},
+"colours": 64
+}-->
 ![Set to 90 degrees, all skin is expanded with the Skin Expand Distance setting](../images/max_skin_angle_for_expansion_90.png)
 ![Set to 45 degrees, only the flat areas are expanded](../images/max_skin_angle_for_expansion_45.png)
 

@@ -2,7 +2,7 @@ Propojit linie výplně
 ==
 Tato volba umožňuje přidat linie, které spojují koncové body vzoru výplně, kde výplň narazí na vnitřní stěnu nebo na plášť, použitím linií, které sledují hrany oblasti výplně.
 
-![Není propojena žádná linie výplně](../../../articles/images/zig_zaggify_infill_disabled.png)
+![Není propojena žádná linie výplně](../../../articles/images/infill_pattern_grid.png)
 ![Propojené linie výplně](../../../articles/images/zig_zaggify_infill_enabled.png)
 
 Tím se celý vzor výplně převede na jednu nebo na velmi málo linií. Převod na jednu linii není vždy možný. Počáteční bod této linie je libovolný, takže nemusí být stejný pro každou vrstvu, zejména pokud se tvar výplně od jedné vrstvy k druhé liší.

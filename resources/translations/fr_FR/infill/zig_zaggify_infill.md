@@ -2,7 +2,7 @@ Relier les lignes de remplissage
 ==
 Cette option permet de rajouter une trajectoire qui relie les points d'extrémité du modèle de remplissage, où le remplissage rencontre la paroi intérieure ou la peau, à l'aide d'une ligne qui suit le bord de la zone de remplissage.
 
-![Aucune ligne de remplissage connectée](../../../articles/images/zig_zaggify_infill_disabled.png)
+![Aucune ligne de remplissage connectée](../../../articles/images/infill_pattern_grid.png)
 ![Lignes de remplissage connectées](../../../articles/images/zig_zaggify_infill_enabled.png)
 
 Cela permet de convertir l'ensemble du schéma de remplissage en une seule ligne ou en très peu de lignes. La conversion en une seule ligne n'est pas toujours possible. Le point de départ de cette ligne est arbitraire, il peut donc ne pas être le même pour chaque couche, surtout si la forme du remplissage est différente d'une couche à l'autre.
