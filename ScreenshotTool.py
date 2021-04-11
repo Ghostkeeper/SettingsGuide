@@ -584,8 +584,8 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 		xray_pixels = numpy.frombuffer(xray_data, dtype=numpy.uint8).reshape([xray_shading.height(), xray_shading.width(), 4])
 		xray_pixels = numpy.mod(xray_pixels[:, :, 0:3], 10) // 5  # The X-ray shader creates increments of 5 for some reason. If there are an odd number of increments (not divisible by 10) then it must be highlighted.
 		hue_shift = ((alpha - 0.333) * 6.2831853)
-		cos_shift = numpy.repeat(numpy.expand_dims(numpy.cos(hue_shift), axis=2), 3, axis=2)
-		sin_shift = numpy.repeat(numpy.expand_dims(numpy.sin(hue_shift), axis=2), 3, axis=2)
+		cos_shift = numpy.repeat(numpy.expand_dims(numpy.cos(-hue_shift), axis=2), 3, axis=2)
+		sin_shift = numpy.repeat(numpy.expand_dims(numpy.sin(-hue_shift), axis=2), 3, axis=2)
 		k = numpy.array([0.57735, 0.57735, 0.57735])  # 1/sqrt(3), resulting in a diagonal unit vector around which we rotate the channels.
 		cross_colour = numpy.cross(colours, k) * -1
 		dot_colour = numpy.repeat(numpy.expand_dims(numpy.dot(colours, k), axis=2), 3, axis=2)
