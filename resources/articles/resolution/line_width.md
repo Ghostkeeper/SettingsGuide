@@ -2,6 +2,20 @@ Line Width
 ====
 This is the horizontal width of the lines that the printer will place down. Normally the diameter of the nozzle opening determines how wide your lines will be, but by extruding more or less material, the printer can vary a little bit in how wide the lines will become.
 
+<!--screenshot {
+"image_path": "line_width_small.png",
+"models": [{"script": "holes_cutout.scad"}],
+"camera_position": [17, 39, 61],
+"settings": {"line_width": 0.2},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "line_width_large.png",
+"models": [{"script": "holes_cutout.scad"}],
+"camera_position": [17, 39, 61],
+"settings": {"line_width": 0.6},
+"colours": 32
+}-->
 ![Very thin lines](../images/line_width_small.png)
 ![Very wide lines](../images/line_width_large.png)
 
@@ -22,6 +36,42 @@ When printing mechanical objects that need to be thin but strong, you'll regular
 
 Producing clean contours with even lines can make the print stronger and look better. A hallmark skill of any expert Cura user is to be able to tweak the line width such that the desired number of contours fill the print.
 
+<!--screenshot {
+"image_path": "line_width_fit_bad.png",
+"models": [{"script": "paper_stand.scad"}],
+"camera_position": [-128, 46, 73],
+"camera_lookat": [-120, 38, 0],
+"settings": {
+    "wall_line_count": 99,
+    "line_width": 0.46
+},
+"layer": 161,
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "line_width_fit_good_small.png",
+"models": [{"script": "paper_stand.scad"}],
+"camera_position": [-128, 46, 73],
+"camera_lookat": [-120, 38, 0],
+"settings": {
+    "wall_line_count": 99,
+    "line_width": 0.258
+},
+"layer": 161,
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "line_width_fit_good_large.png",
+"models": [{"script": "paper_stand.scad"}],
+"camera_position": [-128, 46, 73],
+"camera_lookat": [-120, 38, 0],
+"settings": {
+    "wall_line_count": 99,
+    "line_width": 0.515
+},
+"layer": 161,
+"colours": 64
+}-->
 ![Default line width, where the contours don't fit and some lines are thicker than others](../images/line_width_fit_bad.png)
 ![Reducing the line width makes it fit evenly](../images/line_width_fit_good_small.png)
 ![Increasing the line width also works](../images/line_width_fit_good_large.png)
