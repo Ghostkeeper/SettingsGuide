@@ -4,10 +4,9 @@
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
-import json  # To modify the theme file.
 import os  # To find the article files and other resources.
 import urllib.parse  # For unquote_plus to create preference keys for forms.
-from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl  # To expose data to the GUI.
+from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QSizeF, QObject, QUrl  # To expose data to the GUI and adjust the size of setting tooltips.
 import re  # To get images from the descriptions.
 import shutil  # To copy the theme.
 import threading  # Screenshot refresh is done on a separate thread.
@@ -19,6 +18,7 @@ from UM.Logger import Logger
 from UM.Job import Job  # To load articles as a background task.
 from UM.JobQueue import JobQueue  # To load articles as a background task.
 from UM.PluginRegistry import PluginRegistry  # To find the path of the resources.
+from UM.Qt.Bindings.PointingRectangle import PointingRectangle  # To adjust the width of setting tooltips.
 from UM.Resources import Resources  # To find the themes in order to adjust them.
 from UM.Settings.ContainerRegistry import ContainerRegistry  # To register the non-setting entries.
 from UM.Settings.ContainerStack import ContainerStack  # To get the names of non-setting entries.
@@ -83,44 +83,42 @@ class CuraSettingsGuide(Extension, QObject):
 
 		self.adjust_theme()
 		application.initializationFinished.connect(self.load_all_in_background)
+		application.initializationFinished.connect(self.widen_tooltips)
 
 	def adjust_theme(self):
 		"""
 		Makes the tooltips wider, if displaying articles in the tooltips.
 		"""
+		# Previous versions of the Settings Guide may create a theme, which may become outdated in newer versions.
+		# We need to remove it and widen the tooltips in a different way.
 		application = CuraApplication.getInstance()
 		preferences = application.getPreferences()
-		if preferences.getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
-			preferences.addPreference("general/theme", application.default_theme)
-			theme_name = preferences.getValue("general/theme")
-			if theme_name.endswith("_settingsguideadjust"):
-				return  # Already adjusted.
-			theme_path = Resources.getPath(Resources.Themes, theme_name)
+		preferences.addPreference("general/theme", application.default_theme)  # May not exist yet at this point.
+		current_theme = preferences.getValue("general/theme")
+		if current_theme and current_theme.endswith("_settingsguideadjust"):
+			preferences.setValue("general/theme", current_theme[:-len("_settingsguideadjust")])
+		# Look for Settings Guide adjusted themes in the resources folder.
+		theme_path = os.path.dirname(Resources.getStoragePath(Resources.Themes, ""))
+		try:
+			for theme_folder in os.listdir(theme_path):
+				if theme_folder.endswith("_settingsguideadjust"):
+					shutil.rmtree(os.path.join(theme_path, theme_folder))
+		except EnvironmentError as e:
+			# Perhaps no rights? Well, just leave the extra theme in then. Nothing to be done about it.
+			Logger.error("Unable to remove Settings Guide deprecated theme: {err}".format(err=str(e)))
 
-			# Create a new theme where we can adjust the tooltip.
-			new_theme_name = theme_name + "_settingsguideadjust"
-			new_theme_path = Resources.getStoragePath(Resources.Themes, new_theme_name)
-			try:
-				shutil.copytree(theme_path, new_theme_path)
-			except OSError:  # Already exists. Happens when the user manually adjusted the theme back in the preferences screen.
-				try:
-					os.removedirs(new_theme_path)
-					shutil.copytree(theme_path, new_theme_path)
-				except OSError:
-					pass  # Perhaps no rights?
+	def widen_tooltips(self):
+		"""
+		Make tooltips wider, so that they are easier to read.
 
-			# Adjust the tooltip width.
-			with open(os.path.join(theme_path, "theme.json")) as f:
-				adjusted_theme = json.load(f)
-			if "sizes" not in adjusted_theme:
-				adjusted_theme["sizes"] = {}
-			adjusted_theme["sizes"]["tooltip"] = [50.0, 10.0]
-			with open(os.path.join(new_theme_path, "theme.json"), "w") as f:
-				json.dump(adjusted_theme, f)
-
-			# Enable the new theme.
-			preferences.setValue("general/theme", new_theme_name)
-			application.default_theme = new_theme_name
+		This really only works in Qt 5.14 and higher, so only Cura 4.9 and up can enjoy the wider tooltips.
+		"""
+		application = CuraApplication.getInstance()
+		if application.getPreferences().getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
+			main_window = application._qml_engine.rootObjects()[0]
+			tooltips = main_window.findChildren(PointingRectangle)  # There are multiple instances of this (currently 3). It's indistinguishable which is the setting tooltip. Collateral damage!
+			for tooltip in tooltips:
+				tooltip.setWidth(tooltip.width() * 2.5)
 
 	def load_all_in_background(self):
 		"""
