@@ -2,6 +2,25 @@ Maximum Resolution
 ====
 While high resolution input may seem better at first, quite often the printer doesn't deal with high resolution g-code very well. Therefore Cura will reduce the resolution of its input during the slicing process. This setting determines the resolution that Cura will hold as maximum.
 
+<!--screenshot {
+"image_path": "meshfix_maximum_resolution_0.05.png",
+"models": [{"script": "cylinder.scad"}],
+"camera_position": [40, -20, 116],
+"settings": {
+    "meshfix_maximum_resolution": 0.05
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "meshfix_maximum_resolution_1.png",
+"models": [{"script": "cylinder.scad"}],
+"camera_position": [40, -20, 116],
+"settings": {
+    "meshfix_maximum_resolution": 4,
+    "meshfix_maximum_deviation": 0.5
+},
+"colours": 64
+}-->
 ![Before reducing resolution](../images/meshfix_maximum_resolution_0.05.png)
 ![After reducing resolution (ad extremum)](../images/meshfix_maximum_resolution_1.png)
 
