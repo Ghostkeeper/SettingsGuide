@@ -2,6 +2,28 @@ Raft Smoothing
 ====
 With this setting, inside corners of the raft can be made smoother. The setting specifies the radius of an arc. All inside corners that are sharper than the specified arc radius will get smoothed to have the arc radius.
 
+<!--screenshot {
+"image_path": "raft_smoothing_0mm.png",
+"models": [{"script": "question_stick_clip.scad"}],
+"camera_position": [0, 97, 191],
+"settings": {
+    "adhesion_type": "raft",
+    "raft_smoothing": 0
+},
+"layer": 509,
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "raft_smoothing_5mm.png",
+"models": [{"script": "question_stick_clip.scad"}],
+"camera_position": [0, 97, 191],
+"settings": {
+    "adhesion_type": "raft",
+    "raft_smoothing": 5
+},
+"layer": 509,
+"colours": 64
+}-->
 ![No smoothing](../images/raft_smoothing_0mm.png)
 ![Radius of 5mm](../images/raft_smoothing_5mm.png)
 
