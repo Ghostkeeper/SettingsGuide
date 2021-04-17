@@ -117,8 +117,8 @@ All the information needed to take a screenshot.
   line_width.
 * structures: List of structures which are visible in layer view. Choose from: travels, helpers, shell, infill, starts.
 * settings: A dictionary of setting keys and values to slice the object with. These can be global or per-extruder
-  settings. Per-extruder settings are applied to all extruders. String setting values can use the key "{root}" to use
-  the path to the plug-in directory.
+  settings. Per-extruder settings are applied to all extruders, unless they are prefixed with "[#]", the extruder number
+  in brackets. String setting values can use the key "{root}" to use the path to the plug-in directory.
 * colours: The colour depth of the resulting image. Reduce colours to reduce file size. Max 256.
 * delay: If this is an animation, the delay between consecutive images in milliseconds. Default 500.
 """
@@ -284,13 +284,20 @@ def setup_printer(settings) -> None:
 	printer.userChanges.setProperty("z_seam_position", "value", "backleft")  # In case of axis-aligned models (which is pretty common) this puts the seam in a corner rather than spreading it out over a side.
 
 	# Set the settings that we want to override for this slice.
+	specific_extruder_setting = re.compile(r"\[(\d)](.+)")
 	for key, value in settings.items():
 		if type(value) is str:
 			value = value.format(root=os.path.dirname(__file__))
-		# Just set it anywhere without really checking whether it's per-extruder or whatever.
-		for extruder_nr in range(4):
-			printer.extruderList[extruder_nr].userChanges.setProperty(key, "value", value)
-		printer.userChanges.setProperty(key, "value", value)
+		is_specific_extruder = re.match(specific_extruder_setting, key)
+		if is_specific_extruder:
+			extruder_nr = int(is_specific_extruder.group(1))
+			actual_key = is_specific_extruder.group(2)
+			printer.extruderList[extruder_nr].userChanges.setProperty(actual_key, "value", value)
+		else:
+			# Just set it anywhere without really checking whether it's per-extruder or whatever.
+			for extruder_nr in range(4):
+				printer.extruderList[extruder_nr].userChanges.setProperty(key, "value", value)
+			printer.userChanges.setProperty(key, "value", value)
 
 def convert_model(script_path, scad_params) -> str:
 	"""
