@@ -109,7 +109,7 @@ All the information needed to take a screenshot.
 * camera_position: The X, Y and Z position of the camera (as list).
 * camera_lookat: The X, Y and Z position of the camera focus centre. If not specified, look at the centre of the scene.
 * minimum_layer: The lowest layer number to display. The bottom part of the range. Can be used to cut off the first
-  layer to aid in how the image is cut if the travel moves are included.
+  layer to aid in how the image is cut if the travel moves are included. Use a list to define an animation.
 * layer: The layer number to look at. Use layer -1 to not use layer view. Use a list to define an animation.
 * line: The number of lines to show on the current layer. Use -1 to view the entire layer. Use a list to define an
   animation.
@@ -143,21 +143,28 @@ def refresh_screenshots(article_text, refreshed_set) -> None:
 			load_model(stl_path, model.transformation, model.object_settings)
 
 		layers = screenshot_instruction.layer
-		if type(layers) != list:  # To simplify processing, always use lists for the layer and line, pretending it's always an animation.
+		if type(layers) != list:  # To simplify processing, always use lists for the layer, line and minimum layer, pretending it's always an animation.
 			layers = [layers]
 		lines = screenshot_instruction.line
 		if type(lines) != list:
 			lines = [lines]
-		if len(lines) < len(layers):  # Make the lines and layers equally long by repeating some of them.
-			while len(lines) < len(layers):
-				lines *= 2
-			while len(lines) > len(layers):
-				lines.pop()
-		elif len(layers) < len(lines):
-			while len(layers) < len(lines):
-				layers *= 2
-			while len(layers) > len(lines):
-				layers.pop()
+		minimum_layers = screenshot_instruction.minimum_layer
+		if type(minimum_layers) != list:
+			minimum_layers = [minimum_layers]
+		num_screenshots = max(len(layers), len(lines), len(minimum_layers))
+		# Make the lines, layers and minimum layers equally long by repeating some of them.
+		while len(layers) < num_screenshots:
+			layers *= 2
+		while len(layers) > num_screenshots:
+			layers.pop()
+		while len(lines) < num_screenshots:
+			lines *= 2
+		while len(lines) > num_screenshots:
+			lines.pop()
+		while len(minimum_layers) < num_screenshots:
+			minimum_layers *= 2
+		while len(minimum_layers) > num_screenshots:
+			minimum_layers.pop()
 
 		is_animation = len(layers) > 1
 		if layers[0] >= 0:
@@ -168,11 +175,11 @@ def refresh_screenshots(article_text, refreshed_set) -> None:
 		# Track saved images in case we're making multiple that need to be combined into a GIF later.
 		saved_images = []
 		index = 0
-		for layer, line in zip(layers, lines):
+		for layer, line, minimum_layer in zip(layers, lines, minimum_layers):
 			is_layer_view = layer >= 0
 			if is_layer_view:
 				switch_to_layer_view(screenshot_instruction.colour_scheme, screenshot_instruction.structures)
-				navigate_layer_view(screenshot_instruction.minimum_layer, layer, line)
+				navigate_layer_view(minimum_layer, layer, line)
 			else:  # Need to show the model itself.
 				switch_to_solid_view()
 			screenshot = take_snapshot(screenshot_instruction.camera_position, screenshot_instruction.camera_lookat, is_layer_view)
