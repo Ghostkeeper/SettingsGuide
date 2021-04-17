@@ -2,6 +2,16 @@ Inner Wall(s) Line Width
 ====
 The line width for the inner walls can be adjusted separately from the outer wall. This setting indicates how wide the individual inner wall lines will be.
 
+<!--screenshot {
+"image_path": "wall_line_width_x.png",
+"models": [{"script": "hive.scad"}],
+"camera_position": [-31, -31, 147],
+"settings": {
+    "wall_line_count": 3,
+    "wall_line_width_x": 0.8
+},
+"colours": 64
+}-->
 ![The lines for the inner walls are much wider than the rest](../images/wall_line_width_x.png)
 
 Reducing the inner walls to a line width slightly below the nozzle size is known to be beneficial for strength. The nozzle will extrude slightly less material but its opening will overlap with the adjacent wall lines. This causes the material to be pushed aside by the previously-placed wall into its proper location. But that will also cause the plastic to fuse better to the adjacent walls. This allows the walls to fuse better together so that they can combine their strength. This greatly improves the strength of the walls.
