@@ -44,10 +44,23 @@ MouseArea {
 	function code_to_language(code) {
 		var language_mapping = {
 			"cs_CZ": "Čeština",
+			"de_DE": "Deutcsch",
+			"en_7S": "Pirate",
 			"en_US": "English",
+			"es_ES": "Español",
+			"fi_FI": "Suomi",
 			"fr_FR": "Français",
+			"it_IT": "Italiano",
+			"ja_JP": "日本語",
+			"ko_KR": "한국어",
 			"nl_NL": "Nederlands",
-			"ru_RU": "Русский"
+			"pl_PL": "Polski",
+			"pt_BR": "Português do Brasil",
+			"pt_PT": "Português",
+			"ru_RU": "Русский",
+			"tr_TR": "Türkçe",
+			"zh_CN": "简体中文",
+			"zh_TW": "正體字"
 		};
 		return language_mapping[code];
 	}
