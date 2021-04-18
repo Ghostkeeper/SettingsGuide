@@ -2,6 +2,16 @@ Top Thickness
 ====
 This setting configures how thick the solid top side of the print will be. This solid layer is printed instead of the sparse infill. It is intended to close the top side.
 
+<!--screenshot {
+"image_path": "top_bottom_thickness_0.8.png",
+"models": [{"script": "stamp.scad"}],
+"camera_position": [0, 203, 30],
+"settings": {
+    "wall_line_count": 0,
+    "top_bottom_thickness": 0.8
+},
+"colours": 64
+}-->
 ![Ordinary top thickness](../images/top_bottom_thickness_0.8.png)
 ![Greatly increased thickness](../images/top_thickness.png)
 

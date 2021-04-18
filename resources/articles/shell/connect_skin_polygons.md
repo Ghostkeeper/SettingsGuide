@@ -2,6 +2,36 @@ Connect Top/Bottom Polygons
 ====
 When using a concentric top/bottom pattern (a pattern consisting of closed contours, otherwise known as polygons), connect all contours together such that they form one single path.
 
+<!--screenshot {
+"image_path": "connect_skin_polygons_original.png",
+"models": [
+    {
+        "script": "web.scad",
+        "scad_params": ["stakes=1", "line_width=4"]
+    }
+],
+"camera_position": [10, 5, 111],
+"settings": {
+    "top_bottom_pattern": "concentric",
+    "connect_skin_polygons": false
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "connect_skin_polygons_enabled.png",
+"models": [
+    {
+        "script": "web.scad",
+        "scad_params": ["stakes=1", "line_width=4"]
+    }
+],
+"camera_position": [10, 5, 111],
+"settings": {
+    "top_bottom_pattern": "concentric",
+    "connect_skin_polygons": true
+},
+"colours": 64
+}-->
 ![The concentric pattern creates separate contours](../images/connect_skin_polygons_original.png)
 ![All contours get connected to form one curve](../images/connect_skin_polygons_enabled.png)
 

@@ -2,6 +2,26 @@ Top/Bottom Thickness
 ====
 With the Top/Bottom Thickness you can adjust how thick of a solid skin is created on the top and bottom sides of your print.
 
+<!--screenshot {
+"image_path": "top_bottom_thickness_0.8.png",
+"models": [{"script": "stamp.scad"}],
+"camera_position": [0, 203, 30],
+"settings": {
+    "wall_line_count": 0,
+    "top_bottom_thickness": 0.8
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "top_bottom_thickness_3.png",
+"models": [{"script": "stamp.scad"}],
+"camera_position": [0, 203, 30],
+"settings": {
+    "wall_line_count": 0,
+    "top_bottom_thickness": 3
+},
+"colours": 64
+}-->
 ![Ordinary top/bottom thickness](../images/top_bottom_thickness_0.8.png)
 ![Much thicker top and bottom sides](../images/top_bottom_thickness_3.png)
 

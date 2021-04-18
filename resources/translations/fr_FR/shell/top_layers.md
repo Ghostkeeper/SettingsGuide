@@ -2,7 +2,7 @@ Couches supérieures
 ====
 Ce paramètre permet de configurer le nombre de couches solides imprimées sur la face supérieure de l'impression. Ces couches solides sont imprimées à la place du remplissage. Elles sont destinées à fermer la face supérieure.
 
-![12 couches supérieures](../../../articles/images/top_bottom_thickness_0.8.png)
+![14 couches supérieures](../../../articles/images/top_bottom_thickness_0.8.png)
 ![50 couches supérieures](../../../articles/images/top_thickness.png)
 
 Un plus grand nombre de couches supérieures aura plusieurs effets, bénéfiques pour la qualité de la surface supérieure mais préjudiciables à la productivité.

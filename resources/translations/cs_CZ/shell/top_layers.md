@@ -2,7 +2,7 @@ Horní vrstvy
 ====
 Tento parametr se používá ke konfiguraci počtu pevných vrstev vytištěných na horní straně tisku. Tyto pevné vrstvy se tisknou místo výplně. Jsou určeny k uzavření horní strany.
 
-![12 horních vrstev](../../../articles/images/top_bottom_thickness_0.8.png)
+![14 horních vrstev](../../../articles/images/top_bottom_thickness_0.8.png)
 ![50 horních vrstev](../../../articles/images/top_thickness.png)
 
 Větší počet horních vrstev bude mít několik vlivů, prospěšných pro kvalitu horního povrchu, ale škodlivých pro produktivitu.
