@@ -102,8 +102,8 @@ All the information needed to take a screenshot.
   - scad_params: A list of OpenSCAD parameters to generate the model with. Each should be of the form key=value and in a
     separate string in the list. Only applicable for OpenSCAD scripts.
   - transformation: A list of transformations to apply to the model, in order. Implemented transformations are:
-    mirrorX(), mirrorY(), mirrorZ(), scale(ratio), rotateX(angle), rotateY(angle), rotateZ(angle), translateX(dist),
-    translateY(dist), translateZ(dist)
+    mirrorX(), mirrorY(), mirrorZ(), scale(ratio), scaleX(ratio), scaleY(ratio), scaleZ(ratio), rotateX(angle),
+    rotateY(angle), rotateZ(angle), translateX(dist), translateY(dist), translateZ(dist).
   - object_settings: A dictionary of setting keys and values to slice this object with. These can only be per-object
     settings. String setting values can use the key "{root}" to use the path to the plug-in directory.
 * camera_position: The X, Y and Z position of the camera (as list).
@@ -380,6 +380,15 @@ def load_model(stl_path, transformations, object_settings) -> None:
 			elif transformation.startswith("scale(") and transformation.endswith(")"):
 				scale_factor = float(transformation[len("scale("):-len(")")])
 				operation = UM.Operations.ScaleOperation.ScaleOperation(node, UM.Math.Vector.Vector(scale_factor, scale_factor, scale_factor))
+			elif transformation.startswith("scalex(") and transformation.endswith(")"):
+				scale_factor = float(transformation[len("scalex("):-len(")")])
+				operation = UM.Operations.ScaleOperation.ScaleOperation(node, UM.Math.Vector.Vector(scale_factor, 1, 1))
+			elif transformation.startswith("scaley(") and transformation.endswith(")"):
+				scale_factor = float(transformation[len("scaley("):-len(")")])
+				operation = UM.Operations.ScaleOperation.ScaleOperation(node, UM.Math.Vector.Vector(1, 1, scale_factor))
+			elif transformation.startswith("scalez(") and transformation.endswith(")"):
+				scale_factor = float(transformation[len("scalez("):-len(")")])
+				operation = UM.Operations.ScaleOperation.ScaleOperation(node, UM.Math.Vector.Vector(1, scale_factor, 1))
 			elif transformation.startswith("rotatex(") and transformation.endswith(")"):
 				angle = float(transformation[len("rotatex("):-len(")")]) / 180 * math.pi
 				rotation = UM.Math.Quaternion.Quaternion.fromAngleAxis(angle, UM.Math.Vector.Vector.Unit_X)
