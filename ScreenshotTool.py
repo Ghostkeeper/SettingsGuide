@@ -72,10 +72,10 @@ on the landing page that will re-create ALL images. This takes a long time!
 # These are several system commands we can execute to perform various tasks using external tools.
 commands = {
 	"openscad": ["openscad", "-o", "{output}", "{input}"],  # Compile an OpenSCAD file.
-	"reduce_palette": ["convert", "-colors", "{colours}", "+dither", "{input}", "png:{output}"],  # Reduce colour palette of an image.
+	"reduce_palette": ["convert", "-colors", "{colours}", "+dither", "{input}", "{output}"],  # Reduce colour palette of an image.
 	"optimise_png1": ["optipng", "-o7", "-strip", "all", "-snip", "-out", "{output}", "{input}"],
 	"optimise_png2": ["ect", "-9", "-strip", "--pal_sort=16", "--allfilters", "{output}"],  # Reduce file size of PNG images.
-	"merge_gif": ["convert", "-colors", "{colours}", "+dither", "-delay", "{delay}", "-loop", "0", "-dispose", "previous", "{inputs}", "{output}"],  # Merge multiple images into a GIF.
+	"merge_gif": ["convert", "-delay", "{delay}", "-loop", "0", "-background", "white", "-alpha", "remove", "-layers", "Optimize", "{inputs}", "{output}"],  # Merge multiple images into a GIF.
 	"optimise_gif": ["flexigif", "-f", "{input}", "{output}"]  # Reduce file size of GIF images.
 }
 
@@ -667,9 +667,10 @@ def combine_animation(frames, image_path, colours, delay) -> None:
 		if arg == "{inputs}":
 			args.extend(frames)  # Frames need to be supplied as individual arguments.
 		else:
-			args.append(arg.format(colours=colours, delay=round(delay / 10.0), output=image_path))
+			args.append(arg.format(delay=round(delay / 10.0), output=image_path))
 	UM.Logger.Logger.info("Subprocess: " + " ".join(args))
 	subprocess.call(args)
+	reduce_colours(image_path, colours)
 
 def optimise_gif(image_path) -> None:
 	"""
@@ -688,9 +689,9 @@ def optimise_gif(image_path) -> None:
 
 def reduce_colours(image_path, colours) -> None:
 	"""
-	Reduce the colour palette of a PNG image.
-	:param image_path: A path to the PNG image to reduce the colour palette of.
-	:param colours: The desired number of colours to use in the palette of the PNG file.
+	Reduce the colour palette of an image.
+	:param image_path: A path to the image to reduce the colour palette of.
+	:param colours: The desired number of colours to use in the palette of the file.
 	"""
 	call_with_args("reduce_palette", input=image_path, output=image_path, colours=colours)
 
