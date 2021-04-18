@@ -381,15 +381,15 @@ def load_model(stl_path, transformations, object_settings) -> None:
 				scale_factor = float(transformation[len("scale("):-len(")")])
 				operation = UM.Operations.ScaleOperation.ScaleOperation(node, UM.Math.Vector.Vector(scale_factor, scale_factor, scale_factor))
 			elif transformation.startswith("rotatex(") and transformation.endswith(")"):
-				angle = float(transformation[len("rotatex("):-len(")")])
+				angle = float(transformation[len("rotatex("):-len(")")]) / 180 * math.pi
 				rotation = UM.Math.Quaternion.Quaternion.fromAngleAxis(angle, UM.Math.Vector.Vector.Unit_X)
 				operation = UM.Operations.RotateOperation.RotateOperation(node, rotation, rotate_around_point=node.getPosition())
 			elif transformation.startswith("rotatey(") and transformation.endswith(")"):
-				angle = float(transformation[len("rotatey("):-len(")")])
+				angle = float(transformation[len("rotatey("):-len(")")]) / 180 * math.pi
 				rotation = UM.Math.Quaternion.Quaternion.fromAngleAxis(angle, UM.Math.Vector.Vector.Unit_Z)
 				operation = UM.Operations.RotateOperation.RotateOperation(node, rotation, rotate_around_point=node.getPosition())
 			elif transformation.startswith("rotatez(") and transformation.endswith(")"):
-				angle = float(transformation[len("rotatez("):-len(")")])
+				angle = float(transformation[len("rotatez("):-len(")")]) / 180 * math.pi
 				rotation = UM.Math.Quaternion.Quaternion.fromAngleAxis(angle, UM.Math.Vector.Vector.Unit_Y)
 				operation = UM.Operations.RotateOperation.RotateOperation(node, rotation, rotate_around_point=node.getPosition())
 			elif transformation.startswith("translatex(") and transformation.endswith(")"):
