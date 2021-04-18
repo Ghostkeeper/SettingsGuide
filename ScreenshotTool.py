@@ -273,10 +273,10 @@ def setup_printer(settings) -> None:
 	printer = machine_manager.activeMachine
 	blue_pla = registry.findInstanceContainers(id="ultimaker_pla_blue")[0]
 	red_pla = registry.findInstanceContainers(id="ultimaker_pla_red")[0]
-	silver_pla = registry.findInstanceContainers(id="ultimaker_pla_silver-metallic")[0]
+	white_pla = registry.findInstanceContainers(id="ultimaker_pla_white")[0]
 	printer.extruderList[1].setMaterial(blue_pla)
 	printer.extruderList[2].setMaterial(red_pla)
-	printer.extruderList[3].setMaterial(silver_pla)
+	printer.extruderList[3].setMaterial(white_pla)
 	printer.definitionChanges.setProperty("machine_width", "value", "1000")
 	printer.definitionChanges.setProperty("machine_height", "value", "1000")
 	printer.definitionChanges.setProperty("machine_depth", "value", "1000")
