@@ -4,6 +4,36 @@ The overhang angle influences how much material is placed down to support the pr
 
 **Reducing the value of this setting generates more support.**
 
+<!--screenshot {
+"image_path": "support_angle_low.png",
+"models": [{"script": "duct.scad"}],
+"camera_position": [136, 10, 10],
+"camera_lookat": [0, 10, 10],
+"settings": {
+    "support_enable": true,
+    "support_join_distance": 0.1,
+    "support_angle": 40
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "support_angle_high.png",
+"models": [{"script": "duct.scad"}],
+"camera_position": [136, 10, 10],
+"camera_lookat": [0, 10, 10],
+"settings": {
+    "support_enable": true,
+    "support_join_distance": 0.1,
+    "support_angle": 75
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "support_angle_prepare_mode.png",
+"models": [{"script": "duct.scad"}],
+"camera_position": [113, 77, 0],
+"layer": -1
+}-->
 ![A low overhang angle generates more support](../images/support_angle_low.png)
 ![A high overhang angle generates less support](../images/support_angle_high.png)
 ![The supported areas are indicated in red](../images/support_angle_prepare_mode.png)
