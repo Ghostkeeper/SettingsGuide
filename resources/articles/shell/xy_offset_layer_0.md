@@ -2,6 +2,32 @@ Initial Layer Horizontal Expansion
 ====
 This setting expands only the initial layer that rests on the build plate (or on the raft). Similarly to [Horizontal Expansion](xy_offset.md), a positive value will make the initial layer wider while a negative value will shrink the initial layer.
 
+<!--screenshot {
+"image_path": "xy_offset_layer_0_original.png",
+"models": [
+    {
+        "script": "d1.scad",
+        "transformation": ["scale(0.5)"]
+    }
+],
+"camera_position": [0, 30, 0],
+"camera_lookat": [0, 0, 0],
+"settings": {"xy_offset_layer_0": 0},
+"colours": 16
+}-->
+<!--screenshot {
+"image_path": "xy_offset_layer_0_enabled.png",
+"models": [
+    {
+        "script": "d1.scad",
+        "transformation": ["scale(0.5)"]
+    }
+],
+"camera_position": [0, 30, 0],
+"camera_lookat": [0, 0, 0],
+"settings": {"xy_offset_layer_0": -0.6},
+"colours": 16
+}-->
 ![The original model](../images/xy_offset_layer_0_original.png)
 ![The intial layer is shrunk](../images/xy_offset_layer_0_enabled.png)
 

@@ -2,6 +2,36 @@ Wall Line Count
 ====
 This setting determines how many contours will be drawn around the print on every layer.
 
+<!--screenshot {
+"image_path": "wall_thickness_0.8.png",
+"models": [
+    {
+        "script": "rotary_tumbler_lid.scad",
+        "transformation": ["scale(0.4)"]
+    }
+],
+"camera_position": [50, 50, 124],
+"settings": {
+    "skin_outline_count": 0,
+    "wall_line_count": 2
+},
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "wall_thickness_1.6.png",
+"models": [
+    {
+        "script": "rotary_tumbler_lid.scad",
+        "transformation": ["scale(0.4)"]
+    }
+],
+"camera_position": [50, 50, 124],
+"settings": {
+    "skin_outline_count": 0,
+    "wall_line_count": 4
+},
+"colours": 32
+}-->
 ![Two walls](../images/wall_thickness_0.8.png)
 ![Four walls](../images/wall_thickness_1.6.png)
 

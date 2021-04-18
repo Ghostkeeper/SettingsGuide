@@ -2,7 +2,7 @@ Extrudér pro vnější stěnu
 ====
 Pokud má vaše tiskárna více extruderů, můžete si vybrat tisknout pouze vnější stěnu pomocí jiného extruderu.
 
-![Stěny jsou vytištěny modře, ale zbytek oranžově](../../../articles/images/wall_0_extruder_nr.png)
+![Stěny jsou vytištěny modře, ale zbytek žlutě](../../../articles/images/wall_0_extruder_nr.png)
 
 Tisk vnější stěny jiným extrudérem může mít několik účelů:
 * Jednoduchý vizuální efekt potištěním vnější stěny jinou barvou.

@@ -2,7 +2,7 @@ Extrudeuse de paroi
 ====
 Si votre imprimante dispose de plusieurs extrudeuses, vous pouvez choisir de n'imprimer que les murs avec une autre extrudeuse.
 
-![Les murs sont imprimés en bleu, mais le reste en orange](../../../articles/images/wall_extruder_nr.png)
+![Les murs sont imprimés en bleu, mais le reste en jaune](../../../articles/images/wall_extruder_nr.png)
 
 L'impression des murs avec une autre extrudeuse peut avoir plusieurs objectifs :
 * Un simple effet visuel en imprimant la paroi extérieure avec une couleur différente.

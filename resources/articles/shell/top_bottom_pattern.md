@@ -4,6 +4,13 @@ This setting allows you to choose how the top and bottom surfaces get filled up 
 
 Lines
 ---
+<!--screenshot {
+"image_path": "top_bottom_pattern_lines.png",
+"models": [{"script": "ring_5mm.scad"}],
+"camera_position": [0, 0, 100],
+"settings": {"top_bottom_pattern": "lines"},
+"colours": 64
+}-->
 ![Lines](../images/top_bottom_pattern_lines.png)
 
 The basic lines pattern draws straight lines across the surface. These lines are oriented by default such that they are well supported by the infill and support. The direction of the lines alternates between layers.
@@ -13,6 +20,13 @@ The basic lines pattern draws straight lines across the surface. These lines are
 
 Concentric
 ----
+<!--screenshot {
+"image_path": "top_bottom_pattern_concentric.png",
+"models": [{"script": "ring_5mm.scad"}],
+"camera_position": [0, 0, 100],
+"settings": {"top_bottom_pattern": "concentric"},
+"colours": 64
+}-->
 ![Concentric](../images/top_bottom_pattern_concentric.png)
 
 The concentric pattern continues drawing contours towards the inside of the model.
@@ -24,6 +38,13 @@ The concentric pattern continues drawing contours towards the inside of the mode
 
 Zigzag
 ---
+<!--screenshot {
+"image_path": "top_bottom_pattern_zigzag.png",
+"models": [{"script": "ring_5mm.scad"}],
+"camera_position": [0, 0, 100],
+"settings": {"top_bottom_pattern": "zigzag"},
+"colours": 64
+}-->
 ![Zigzag](../images/top_bottom_pattern_zigzag.png)
 
 The zigzag pattern is very similar to the lines pattern, but instead of ending the lines in the walls it will continue extruding towards the next skin line.

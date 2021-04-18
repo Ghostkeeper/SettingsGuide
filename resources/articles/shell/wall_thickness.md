@@ -2,6 +2,36 @@ Wall Thickness
 ====
 This setting determines how thick the wall around the print will be. Ultimately it adjusts the number of inner walls to achieve the desired thickness.
 
+<!--screenshot {
+"image_path": "wall_thickness_0.8.png",
+"models": [
+    {
+        "script": "rotary_tumbler_lid.scad",
+        "transformation": ["scale(0.4)"]
+    }
+],
+"camera_position": [50, 50, 124],
+"settings": {
+    "skin_outline_count": 0,
+    "wall_line_count": 2
+},
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "wall_thickness_1.6.png",
+"models": [
+    {
+        "script": "rotary_tumbler_lid.scad",
+        "transformation": ["scale(0.4)"]
+    }
+],
+"camera_position": [50, 50, 124],
+"settings": {
+    "skin_outline_count": 0,
+    "wall_line_count": 4
+},
+"colours": 32
+}-->
 ![0.8mm thick walls](../images/wall_thickness_0.8.png)
 ![1.6mm thick walls](../images/wall_thickness_1.6.png)
 

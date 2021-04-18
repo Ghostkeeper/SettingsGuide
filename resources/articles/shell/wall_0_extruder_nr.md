@@ -2,7 +2,15 @@ Outer Wall Extruder
 ====
 If your printer has multiple extruders, you can choose to print just the outer wall with a different extruder.
 
-![The outer wall is printed in blue, but the rest in orange](../images/wall_0_extruder_nr.png)
+<!--screenshot {
+"image_path": "wall_0_extruder_nr.png",
+"models": [{"script": "headphone_hook.scad"}],
+"camera_position": [140, 140, 206],
+"settings": {"wall_0_extruder_nr": 1},
+"colour_scheme": "material_colour",
+"colours": 32
+}-->
+![The outer wall is printed in blue, but the rest in yellow](../images/wall_0_extruder_nr.png)
 
 Printing the outer wall with a different extruder can have various purposes:
 * Just a visual effect by printing the outer wall with a different colour.

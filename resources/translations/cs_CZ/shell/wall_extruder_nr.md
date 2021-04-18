@@ -2,7 +2,7 @@ Extrudér pro stěnu
 ====
 Pokud má vaše tiskárna více extrudérů, můžete si vybrat tisknout jen stěny pomocí jiného extrudéru.
 
-![Stěny jsou vytištěny modře, ale zbytek oranžově](../../../articles/images/wall_extruder_nr.png)
+![Stěny jsou vytištěny modře, ale zbytek žlutě](../../../articles/images/wall_extruder_nr.png)
 
 Tisk stěn jiným extruderem může mít několik účelů:
 * Jednoduchý vizuální efekt potištěním vnější stěny jinou barvou.

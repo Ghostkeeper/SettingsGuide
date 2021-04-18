@@ -4,6 +4,26 @@ This setting makes the skin overlap a bit with the adjacent structures. This mak
 
 The overlap in this setting is expressed as a percentage of the average line width between the skin lines and the innermost wall lines.
 
+<!--screenshot {
+"image_path": "skin_overlap_none.png",
+"models": [{"script": "mounting_plate.scad"}],
+"camera_position": [0, 0, 84],
+"settings": {
+    "skin_outline_count": 0,
+    "skin_overlap": 0
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "skin_overlap_20.png",
+"models": [{"script": "mounting_plate.scad"}],
+"camera_position": [0, 0, 84],
+"settings": {
+    "skin_outline_count": 0,
+    "skin_overlap": 40
+},
+"colours": 64
+}-->
 ![No overlap](../images/skin_overlap_none.png)
 ![Some overlap](../images/skin_overlap_20.png)
 

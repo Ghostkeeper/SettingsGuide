@@ -2,6 +2,36 @@ Z Seam X
 ====
 If the location of the seam is set to "User Specified" in the [Z Seam Alignment](z_seam_type.md) setting, the seam is placed close to the location specified with the Z Seam X and [Z Seam Y](z_seam_y.md) settings.
 
+<!--screenshot {
+"image_path": "z_seam_x_left.png",
+"models": [
+    {
+        "script": "rod_holder.scad",
+        "transformation": ["rotateZ(-90)"]
+    }
+],
+"camera_position": [-55, 128, 40],
+"settings": {
+    "z_seam_type": "back",
+    "z_seam_position": "left"
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "z_seam_x_right.png",
+"models": [
+    {
+        "script": "rod_holder.scad",
+        "transformation": ["rotateZ(-90)"]
+    }
+],
+"camera_position": [55, 128, 40],
+"settings": {
+    "z_seam_type": "back",
+    "z_seam_position": "right"
+},
+"colours": 64
+}-->
 ![The seam is located on the left side](../images/z_seam_x_left.png)
 ![The seam is located on the right side](../images/z_seam_x_right.png)
 

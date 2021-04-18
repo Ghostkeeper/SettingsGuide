@@ -2,6 +2,36 @@ No Skin In Z Gaps
 ====
 If your model has a small horizontal slit, smaller than the top/bottom skin thickness, this setting doesn't bother filling the top and bottom above/below that completely with skin. This saves on slicing and printing time, but might expose infill to the air.
 
+<!--screenshot {
+"image_path": "skin_no_small_gaps_heuristic_disabled.png",
+"models": [
+    {
+        "script": "small_z_gap.scad",
+        "scad_params": ["gap_size=0.06"]
+    }
+],
+"camera_position": [-21, -62, 25],
+"settings": {
+    "wall_line_count": 0,
+    "skin_no_small_gaps_heuristic": false
+},
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "skin_no_small_gaps_heuristic_enabled.png",
+"models": [
+    {
+        "script": "small_z_gap.scad",
+        "scad_params": ["gap_size=0.06"]
+    }
+],
+"camera_position": [-21, -62, 25],
+"settings": {
+    "wall_line_count": 0,
+    "skin_no_small_gaps_heuristic": true
+},
+"colours": 32
+}-->
 ![Normally there is skin around the small horizontal slit](../images/skin_no_small_gaps_heuristic_disabled.png)
 ![If this is enabled, it doesn't properly close the skin](../images/skin_no_small_gaps_heuristic_enabled.png)
 
