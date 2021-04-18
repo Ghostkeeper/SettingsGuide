@@ -475,6 +475,9 @@ def navigate_layer_view(minimum_layer_nr, layer_nr, line_nr) -> None:
 	layer_view_plugin.setLayer(layer_nr - 1)
 	layer_view_plugin.setMinimumLayer(minimum_layer_nr)
 	if line_nr >= 0:
+		if line_nr == 0:
+			layer_view_plugin.setPath(1)  # Due to a bug in layer view, setting the line to 0 sometimes makes it display the entire layer.
+			time.sleep(0.2)
 		layer_view_plugin.setPath(line_nr)
 		layer_view_plugin.setMinimumPath(0)
 
