@@ -2,8 +2,6 @@ Top/Bottom Pattern
 ====
 This setting allows you to choose how the top and bottom surfaces get filled up with material. Several different printing patterns are available, but the patterns here are more limited than for infill. Only patterns that create solid layers are available.
 
-Lines
----
 <!--screenshot {
 "image_path": "top_bottom_pattern_lines.png",
 "models": [{"script": "ring_5mm.scad"}],
@@ -11,6 +9,8 @@ Lines
 "settings": {"top_bottom_pattern": "lines"},
 "colours": 64
 }-->
+Lines
+----
 ![Lines](../images/top_bottom_pattern_lines.png)
 
 The basic lines pattern draws straight lines across the surface. These lines are oriented by default such that they are well supported by the infill and support. The direction of the lines alternates between layers.
@@ -18,8 +18,6 @@ The basic lines pattern draws straight lines across the surface. These lines are
 * Very rigid in the directions that the lines are drawn.
 * Adheres strongly to the walls, creating relatively strong parts.
 
-Concentric
-----
 <!--screenshot {
 "image_path": "top_bottom_pattern_concentric.png",
 "models": [{"script": "ring_5mm.scad"}],
@@ -27,6 +25,8 @@ Concentric
 "settings": {"top_bottom_pattern": "concentric"},
 "colours": 64
 }-->
+Concentric
+----
 ![Concentric](../images/top_bottom_pattern_concentric.png)
 
 The concentric pattern continues drawing contours towards the inside of the model.
@@ -36,8 +36,6 @@ The concentric pattern continues drawing contours towards the inside of the mode
 * If the part is circular, this can create a nasty spot in the centre where the contours converge.
 * Surface quality is less than ideal.
 
-Zigzag
----
 <!--screenshot {
 "image_path": "top_bottom_pattern_zigzag.png",
 "models": [{"script": "ring_5mm.scad"}],
@@ -45,6 +43,8 @@ Zigzag
 "settings": {"top_bottom_pattern": "zigzag"},
 "colours": 64
 }-->
+Zigzag
+----
 ![Zigzag](../images/top_bottom_pattern_zigzag.png)
 
 The zigzag pattern is very similar to the lines pattern, but instead of ending the lines in the walls it will continue extruding towards the next skin line.

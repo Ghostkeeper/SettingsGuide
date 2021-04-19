@@ -5,7 +5,7 @@ Tree support offers an alternative approach to supporting the model than the ord
 <!--screenshot {
 "image_path": "support_structure_tree.png",
 "models": [{"script": "duct.scad"}],
-"camera_position": [33, 140, 19],
+"camera_position": [56, 127, 60],
 "settings": {
     "support_enable": true,
     "support_structure": "tree",
