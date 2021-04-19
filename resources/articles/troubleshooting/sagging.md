@@ -54,6 +54,18 @@ Adjusting the model
 ----
 If you have the freedom to adjust the model that gets printed, that may result in a much cleaner result than trying to bridge the overhangs or support them. Instead of letting the material sag in the overhangs, design and orient your model such that there are no overhangs.
 
+<!--screenshot {
+"image_path": "support_minimise_overhang.png",
+"models": [
+    {
+        "script": "dowel.scad",
+        "transformation": ["rotateY(127)"]
+    }
+],
+"settings": {"support_angle": 55},
+"camera_position": [21, -104, -30],
+"layer": -1
+}-->
 ![This orientation allows printing the object with very little support](../images/support_minimise_overhang.png)
 
 The most basic trick to apply this is to rotate the model. If your printer is capable of printing 45 degree angles without sagging, you can rotate a model with a vertical and a horizontal piece such that they are two 45 degree slopes, slightly reducing quality of the vertical wall, but preventing sagging in the horizontal part. Be careful though to not make the contact area with the build plate too small, or the print might detach from the build plate and be ruined still.
