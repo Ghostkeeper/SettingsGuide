@@ -26,6 +26,13 @@ When configuring bridging to reduce sagging, consider the following adjustments:
 * Increase the [fan speed](../cooling/cool_fan_speed.md) to cool the material faster. This solidifies the material faster, preventing it from drooping down.
 * Print the walls from [inside to out](../shell/outer_inset_first.md). This will allow the outer wall to lean on top of the adjacent inner wall, which prevents it from falling down. This is most effective with a small [line width](../resolution/wall_line_width_0.md).
 
+<!--screenshot {
+"image_path": "support_enable.png",
+"models": [{"script": "pipe_corner.scad"}],
+"camera_position": [77, 197, 40],
+"settings": {"support_enable": true},
+"colours": 64
+}-->
 Support
 ----
 ![A support structure supports the model](../images/support_enable.png)
