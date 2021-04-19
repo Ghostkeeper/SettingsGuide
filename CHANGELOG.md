@@ -1,3 +1,27 @@
+2.6.0 - Robot Overlords
+====
+In this update, all images have been re-made using an automated method that allows updating the images more easily in the future. Many articles have been expanded with additional details.
+
+New Features
+----
+* Most screenshots are now automatically generated, making it easier to keep them up to date in the future.
+* The guide is now loaded in the setting tooltips by default, allowing users to find it more easily.
+
+Bug Fixes
+----
+* The translation menu of the guide is no longer empty if modified with additional translations (for all of Cura's own languages).
+* The Settings Guide no longer creates its own theme, causing mix-ups with the original theme and bugs in Cura's interface if it is outdated.
+
+Articles
+----
+* Almost all screenshots have been updated to how they look in Cura 4.9.
+* Most screenshots have improved resolution. Some are changed to show the result better.
+* Added articles for new settings in Cura 4.9.
+* Updated dozens of articles with more information and corrections.
+* Updated French translations.
+* Updated Czech translations.
+* Improved linking between different articles.
+
 2.5.0 - In the Background
 ====
 This is a maintenance update to document the new features of Cura 4.8, with just some minor adjustments.
