@@ -21,7 +21,6 @@ from UM.PluginRegistry import PluginRegistry  # To find the path of the resource
 from UM.Qt.Bindings.PointingRectangle import PointingRectangle  # To adjust the width of setting tooltips.
 from UM.Resources import Resources  # To find the themes in order to adjust them.
 from UM.Settings.ContainerRegistry import ContainerRegistry  # To register the non-setting entries.
-from UM.Settings.ContainerStack import ContainerStack  # To get the names of non-setting entries.
 from UM.Settings.DefinitionContainer import DefinitionContainer  # To register the non-setting entries.
 
 from . import MenuItemHandler  # To register the context menu item in the settings list.
