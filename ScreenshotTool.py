@@ -355,7 +355,7 @@ def load_model(stl_path, transformations, object_settings) -> None:
 	job.run()  # Don't plan it in on the job queue or anything. Actually run it on this thread.
 	mesh_data = [node.getMeshData() for node in job.getResult()]  # Find the nodes by finding their mesh data in the scene after _readMeshFinished is done with them, since that re-creates the nodes.
 	application._readMeshFinished(job)  # Abuse CuraApplication's implementation to properly put the model on the build plate.
-	time.sleep(1)  # Wait for scene node update triggers to be processed.
+	time.sleep(2)  # Wait for scene node update triggers to be processed.
 
 	# Apply transformations and per-object settings to the resulting mesh.
 	for node in UM.Scene.Iterator.DepthFirstIterator.DepthFirstIterator(application.getController().getScene().getRoot()):
@@ -432,22 +432,29 @@ def load_model(stl_path, transformations, object_settings) -> None:
 			container.addInstance(new_instance)
 
 	UM.Scene.Selection.Selection.clear()  # If the preference was enabled to auto-select objects, clear selection.
-	time.sleep(1)  # Wait for scene node update triggers to be processed.
+	time.sleep(2)  # Wait for scene node update triggers to be processed.
 
 def slice_scene() -> None:
 	"""
 	Trigger a slice, so that we can show layer view in the screenshot.
 	"""
-
 	application = cura.CuraApplication.CuraApplication.getInstance()
 	backend = application.getBackend()
-	backend.slice()
-	time.sleep(1)  # Give stuff some time to spin up.
 
-	# Now do a spinloop, blocking this thread until the slice is completed.
-	while backend._process:
-		time.sleep(0.1)
-	time.sleep(1)  # Give stuff some time to wind down.
+	while True:
+		print("------------- (re)starting engine for slice")
+		backend.slice()
+		time.sleep(2)  # Give stuff some time to spin up.
+
+		# Now do a spinloop, blocking this thread until the slice is completed.
+		while backend._process:
+			time.sleep(1.2)
+			if backend._backend_state == UM.Backend.Backend.BackendState.Error:
+				break  # Restart the slice.
+		else:
+			break
+
+	time.sleep(2)  # Give stuff some time to wind down.
 
 
 def switch_to_layer_view(colour_scheme, visible_structures) -> None:
@@ -472,7 +479,7 @@ def switch_to_layer_view(colour_scheme, visible_structures) -> None:
 		for node in UM.Scene.Iterator.DepthFirstIterator.DepthFirstIterator(cura.CuraApplication.CuraApplication.getInstance().getController().getScene().getRoot()):
 			if node.callDecoration("getLayerData"):
 				layer_view_completed = True
-		time.sleep(0.2)
+		time.sleep(1.2)
 
 def navigate_layer_view(minimum_layer_nr, layer_nr, line_nr) -> None:
 	"""
@@ -486,7 +493,7 @@ def navigate_layer_view(minimum_layer_nr, layer_nr, line_nr) -> None:
 	layer_view_plugin.setMinimumLayer(minimum_layer_nr)
 	if line_nr >= 0:
 		layer_view_plugin.setPath(1)  # Due to a bug in layer view, setting the line sometimes makes it display the entire layer.
-		time.sleep(0.2)
+		time.sleep(1.2)
 		layer_view_plugin.setPath(line_nr)
 		layer_view_plugin.setMinimumPath(0)
 
@@ -526,7 +533,7 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 			camera.setOrientation(UM.Math.Quaternion.Quaternion(-2, 0, 0, 2))
 		else:
 			camera.setOrientation(UM.Math.Quaternion.Quaternion(2, 0, 0, 2))
-	time.sleep(1)  # Some time to update the scene nodes. Don't know if this is necessary but it feels safer.
+	time.sleep(2)  # Some time to update the scene nodes. Don't know if this is necessary but it feels safer.
 
 	# Use a transparent background.
 	gl_bindings = UM.View.GL.OpenGL.OpenGL.getInstance().getBindingsObject()
@@ -542,8 +549,14 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 
 		render_pass = simulation_view_plugin.getSimulationPass()
 		render_pass.render()
-		time.sleep(0.2)
+		time.sleep(1.2)
 		screenshot = render_pass.getOutput()
+		while screenshot.width() != 2524 or screenshot.height() != 1376:  # These are hard-coded to the screen size on half of my screen for now.
+			print("---- render output not correct size!")
+			gl_bindings.glClearColor(0.0, 0.0, 0.0, 0.0)
+			gl_bindings.glClear(gl_bindings.GL_COLOR_BUFFER_BIT | gl_bindings.GL_DEPTH_BUFFER_BIT)
+			time.sleep(1.5)
+			screenshot = render_pass.getOutput()
 
 		# Remove alpha channel from this picture. We don't want the semi-transparent support since we don't draw the object outline here.
 		# Sadly, QImage.convertToFormat has only 2 formats with boolean alpha and they both premultiply. So we'll go the hard way: Through Numpy.
@@ -593,12 +606,12 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 
 		default_pass = renderer.getRenderPass("default")
 		default_pass.render()
-		time.sleep(0.2)
+		time.sleep(1.2)
 		normal_shading = default_pass.getOutput()
 		xray_pass = renderer.getRenderPass("xray")
 		renderer.addRenderPass(xray_pass)
 		xray_pass.render()
-		time.sleep(0.2)
+		time.sleep(1.2)
 		xray_shading = xray_pass.getOutput()
 
 		# Manually composite these shadings. Because the composite shader also adds a background colour.
