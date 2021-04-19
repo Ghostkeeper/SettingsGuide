@@ -2,6 +2,28 @@ Support Join Distance
 ====
 Thin pieces of support are generally not desirable. They are prone to topple over, which can ruin the print. When multiple pieces of support are adjacent to one another, they can be joined together, forming one piece of support that is much sturdier.
 
+<!--screenshot {
+"image_path": "support_join_distance_low.png",
+"models": [{"script": "clamp.scad"}],
+"camera_position": [-8, 150, 75],
+"settings": {
+    "support_enable": true,
+    "support_interface_enable": true,
+    "support_join_distance": 0.1
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "support_join_distance_high.png",
+"models": [{"script": "clamp.scad"}],
+"camera_position": [-8, 150, 75],
+"settings": {
+    "support_enable": true,
+    "support_interface_enable": true,
+    "support_join_distance": 2
+},
+"colours": 64
+}-->
 ![Two pieces of support are close together](../images/support_join_distance_low.png)
 ![With sufficient join distance, they are merged together](../images/support_join_distance_high.png)
 

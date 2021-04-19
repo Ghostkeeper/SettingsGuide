@@ -2,6 +2,16 @@ Support Z Distance
 ====
 This setting indicates the vertical clearance that must be kept between the support and the model, both at the top of the support and the bottom.
 
+<!--screenshot {
+"image_path": "support_z_distance.png",
+"models": [{"script": "rack.scad"}],
+"camera_position": [0, 129, 11],
+"settings": {
+    "support_enable": true,
+    "support_z_distance": 1
+},
+"colours": 32
+}-->
 ![Z distance determines both the top and the bottom sides of support](../images/support_top_bottom_distance.svg)
 ![A vertical distance between model and support (exaggerated)](../images/support_z_distance.png)
 

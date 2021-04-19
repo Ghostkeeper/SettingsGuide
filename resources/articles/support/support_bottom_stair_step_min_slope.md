@@ -2,6 +2,32 @@ Support Stair Step Minimum Slope Angle
 ====
 With this setting you can disable stair stepping on the very bottom of the support, up until the slope of the model has a certain angle.
 
+<!--screenshot {
+"image_path": "support_bottom_stair_step_min_slope_10.png",
+"models": [{"script": "standing_ring.scad"}],
+"camera_position": [0, 82, 10],
+"camera_lookat": [0, 0, 10],
+"settings": {
+    "support_enable": true,
+    "support_bottom_stair_step_height": 1,
+    "support_bottom_stair_step_min_slope": 10
+},
+"layer": 250,
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "support_bottom_stair_step_min_slope_30.png",
+"models": [{"script": "standing_ring.scad"}],
+"camera_position": [0, 82, 10],
+"camera_lookat": [0, 0, 10],
+"settings": {
+    "support_enable": true,
+    "support_bottom_stair_step_height": 1,
+    "support_bottom_stair_step_min_slope": 30
+},
+"layer": 250,
+"colours": 64
+}-->
 ![Stair stepping disabled until the slope is 10°](../images/support_bottom_stair_step_min_slope_10.png)
 ![Stair stepping disabled until the slope is 30°](../images/support_bottom_stair_step_min_slope_30.png)
 

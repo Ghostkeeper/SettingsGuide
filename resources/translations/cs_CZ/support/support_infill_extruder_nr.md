@@ -2,7 +2,7 @@ Extrudér pro výplň podpěry
 ====
 Pokud má tiskárna více než jeden extrudér, lze hlavní tělo podpěry vytisknout jiným extrudérem, než rozhraní podpěry. Tento parametr umožňuje zvolit, který extrudér se použije pro hlavní část podpěry.
 
-![Tělo podpěry je vytištěno oranžově, ale rozhraní je bílé](../../../articles/images/support_infill_extruder_nr.png)
+![Tělo podpěry je vytištěno červeně, ale rozhraní je bílé](../../../articles/images/support_infill_extruder_nr.png)
 
 Některé materiály jsou pro tisková média vhodnější než jiné, ale tyto materiály mohou být také dražší nebo pomalejší. Tisk pouze rozhraní s drahým materiálem, ale většinu těla levnějším materiálem může ušetřit spoustu času a peněz. Rozhraní bude vždy vytištěno drahým materiálem, takže část, která se dotýká modelu, bude vypadat dobře nebo se bude snáze oddělovat, ale většina podpěry bude vytištěna levnějšími materiály.
 

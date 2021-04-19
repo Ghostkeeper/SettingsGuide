@@ -2,6 +2,32 @@ Support Wall Line Count
 ====
 This setting adds a number of walls around the perimeter of the support.
 
+<!--screenshot {
+"image_path": "support_wall_count_0.png",
+"models": [{"script": "plug.scad"}],
+"camera_position": [0, 66, 169],
+"settings": {
+    "support_enable": true,
+    "support_pattern": "lines",
+    "support_offset": 0.2,
+    "support_wall_count": 0
+},
+"layer": 236,
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "support_wall_count_3.png",
+"models": [{"script": "plug.scad"}],
+"camera_position": [0, 66, 169],
+"settings": {
+    "support_enable": true,
+    "support_pattern": "lines",
+    "support_offset": 0.2,
+    "support_wall_count": 3
+},
+"layer": 236,
+"colours": 64
+}-->
 ![No extra walls](../images/support_wall_count_0.png)
 ![3 extra walls](../images/support_wall_count_3.png)
 

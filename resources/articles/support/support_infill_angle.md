@@ -2,6 +2,28 @@ Support Infill Line Direction
 ====
 The support pattern is normally oriented such that the lines are perpendicular to most things it supports. This way, the distance that the supported material has to bridge is minimised. With this setting, the orientation of the support lines can be customised.
 
+<!--screenshot {
+"image_path": "support_infill_angle_0.png",
+"models": [{"script": "umbrella_square_rounded.scad"}],
+"camera_position": [0, 0, 180],
+"settings": {
+    "support_enable": true,
+    "support_infill_angles": [0]
+},
+"layer": 160,
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "support_infill_angle_30.png",
+"models": [{"script": "umbrella_square_rounded.scad"}],
+"camera_position": [0, 0, 180],
+"settings": {
+    "support_enable": true,
+    "support_infill_angles": [30]
+},
+"layer": 160,
+"colours": 64
+}-->
 ![An angle of 0°](../images/support_infill_angle_0.png)
 ![An angle of 30°](../images/support_infill_angle_30.png)
 

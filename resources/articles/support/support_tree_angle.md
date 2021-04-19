@@ -2,6 +2,30 @@ Tree Support Branch Angle
 ====
 This setting determines the maximum overhang angle that the branches of tree support are allowed to make. If the angle is increased, the branches can be printed more horizontally, allowing them to reach farther.
 
+<!--screenshot {
+"image_path": "support_tree_angle_20.png",
+"models": [{"script": "over_t.scad"}],
+"camera_position": [-23, 124, 45],
+"settings": {
+    "support_enable": true,
+    "support_structure": "tree",
+    "support_tree_collision_resolution": 0.02,
+    "support_tree_angle": 20
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "support_tree_angle_40.png",
+"models": [{"script": "over_t.scad"}],
+"camera_position": [-23, 124, 45],
+"settings": {
+    "support_enable": true,
+    "support_structure": "tree",
+    "support_tree_collision_resolution": 0.02,
+    "support_tree_angle": 40
+},
+"colours": 64
+}-->
 ![A branch angle of 20°](../images/support_tree_angle_20.png)
 ![A branch angle of 40°](../images/support_tree_angle_40.png)
 

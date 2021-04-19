@@ -4,6 +4,19 @@ Generate Support
 
 This setting enables creating support structures to support the object while it's being printed. Cura won't enable this support by default, but it will mark the surface of the model red if it thinks that the material there could sag a lot if support is not enabled.
 
+<!--screenshot {
+"image_path": "support_enable_prepare_mode.png",
+"models": [{"script": "pipe_corner.scad"}],
+"camera_position": [77, 197, 40],
+"layer": -1
+}-->
+<!--screenshot {
+"image_path": "support_enable.png",
+"models": [{"script": "pipe_corner.scad"}],
+"camera_position": [77, 197, 40],
+"settings": {"support_enable": true},
+"colours": 64
+}-->
 ![Marking the model red where support is needed](../images/support_enable_prepare_mode.png)
 ![Support structure (in cyan) to support the model during printing](../images/support_enable.png)
 

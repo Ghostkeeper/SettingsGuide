@@ -2,6 +2,32 @@ Tree Support Branch Diameter Angle
 ====
 The branches of tree support are wider towards the bottom than they are at the top. This ensures that the branches remain stable no matter how tall the support gets. With this setting, you can control the rate at which the support gets wider.
 
+<!--screenshot {
+"image_path": "support_tree_branch_diameter_1_4mm_5.png",
+"models": [{"script": "lantern.scad"}],
+"camera_position": [0, 70, 13],
+"settings": {
+    "support_enable": true,
+    "support_structure": "tree",
+    "support_tree_branch_diameter": 1.4,
+    "support_tree_branch_diameter_angle": 5
+},
+"structures": ["helpers"],
+"colours": 16
+}-->
+<!--screenshot {
+"image_path": "support_tree_branch_diameter_angle_10.png",
+"models": [{"script": "lantern.scad"}],
+"camera_position": [0, 70, 13],
+"settings": {
+    "support_enable": true,
+    "support_structure": "tree",
+    "support_tree_branch_diameter": 1.4,
+    "support_tree_branch_diameter_angle": 10
+},
+"structures": ["helpers"],
+"colours": 16
+}-->
 ![The shape of a branch with a diameter angle of 5°](../images/support_tree_branch_diameter_1_4mm_5.png)
 ![The shape of a branch with a diameter angle of 10°](../images/support_tree_branch_diameter_angle_10.png)
 

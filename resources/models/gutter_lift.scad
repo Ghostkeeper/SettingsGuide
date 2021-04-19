@@ -132,16 +132,16 @@ module gutter_lift() {
 					cube([gutter_width - lane_wall_thickness * 2, distance_to_launcher + 0.1, top_height - lane_wall_thickness - lane_chamfer_radius + 0.1]);
 				}
 				translate([lane_chamfer_radius, 0, 0]) {
-					cube([gutter_width - lane_wall_thickness * 2 - lane_chamfer_radius * 2, distance_to_launcher + 0.1, top_height - lane_wall_thickness]);
+					cube([gutter_width - lane_wall_thickness * 2 - lane_chamfer_radius * 2, distance_to_launcher + 0.1, top_height - lane_wall_thickness + printing_play]);
 				}
-				translate([lane_chamfer_radius, 0, top_height - lane_wall_thickness - lane_chamfer_radius]) {
-					rotate([-90, 0, 0]) {
-						cylinder(r=lane_chamfer_radius, h=distance_to_launcher + 0.1);
+				translate([lane_chamfer_radius + printing_play, 0, top_height - lane_wall_thickness - lane_chamfer_radius]) {
+					rotate([-90, 90, 0]) {
+						cylinder(r=lane_chamfer_radius + printing_play, h=distance_to_launcher + 0.1);
 					}
 				}
-				translate([gutter_width - lane_wall_thickness * 2 - lane_chamfer_radius, 0, top_height - lane_wall_thickness - lane_chamfer_radius]) {
+				translate([gutter_width - lane_wall_thickness * 2 - lane_chamfer_radius - printing_play, 0, top_height - lane_wall_thickness - lane_chamfer_radius]) {
 					rotate([-90, 0, 0]) {
-						cylinder(r=lane_chamfer_radius, h=distance_to_launcher + 0.1);
+						cylinder(r=lane_chamfer_radius + printing_play, h=distance_to_launcher + 0.1);
 					}
 				}
 			}

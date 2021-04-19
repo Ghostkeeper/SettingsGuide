@@ -2,6 +2,34 @@ Connect Support Lines
 ====
 With some support patterns, the support can become very unstable when thin strips of support are needed. This setting will cause the endpoints of the support lines to be connected together. This gives them more stability. It also makes the support print with more continuous flow. Fewer travel moves will be necessary.
 
+<!--screenshot {
+"image_path": "zig_zaggify_support_disabled.png",
+"models": [{"script": "plug.scad"}],
+"camera_position": [71, 71, 147],
+"settings": {
+    "support_enable": true,
+    "support_pattern": "triangles",
+    "support_wall_count": 0,
+    "support_offset": 0.2,
+    "zig_zaggify_support": false
+},
+"layer": 236,
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "zig_zaggify_support_enabled.png",
+"models": [{"script": "plug.scad"}],
+"camera_position": [71, 71, 147],
+"settings": {
+    "support_enable": true,
+    "support_pattern": "triangles",
+    "support_wall_count": 0,
+    "support_offset": 0.2,
+    "zig_zaggify_support": true
+},
+"layer": 236,
+"colours": 64
+}-->
 ![Disconnected support lines](../images/zig_zaggify_support_disabled.png)
 ![Connected support lines](../images/zig_zaggify_support_enabled.png)
 

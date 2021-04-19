@@ -2,6 +2,17 @@ Initial Layer Support Line Distance
 ====
 The density of the pattern that the first layer of support is printed with can be adjusted separately from the density of the rest of the support. This setting configures the distance between two adjacent lines where the support rests on the build plate.
 
+<!--screenshot {
+"image_path": "support_initial_layer_line_distance.png",
+"models": [{"script": "umbrella_square_rounded.scad"}],
+"camera_position": [0, 64, 125],
+"settings": {
+    "support_enable": true,
+    "support_initial_layer_line_distance": 1.333
+},
+"layer": 160,
+"colours": 64
+}-->
 ![The pattern of the first layer is twice as dense as the rest of the support](../images/support_initial_layer_line_distance.png)
 
 This setting is useful to improve the adhesion between support and the build plate. Making the support pattern denser in the first layer will increase the contact area between the support and the build plate, making it stick better. The subsequent layers can then be placed on top of a material that they stick better to.

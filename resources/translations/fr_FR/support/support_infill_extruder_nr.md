@@ -2,7 +2,7 @@ Extrudeuse de remplissage du support
 ====
 Si votre imprimante possède plusieurs extrudeuses, le corps principal du support peut être imprimé avec une extrudeuse différente de celle de l'interface du support. Ce paramètre vous permet de choisir quelle extrudeuse est utilisée pour le corps principal du support.
 
-![Le corps du support est imprimé en orange, mais l'interface en blanc](../../../articles/images/support_infill_extruder_nr.png)
+![Le corps du support est imprimé en rouge, mais l'interface en blanc](../../../articles/images/support_infill_extruder_nr.png)
 
 Certains matériaux sont mieux adaptés que d'autres aux supports d'impression, mais ces matériaux peuvent également être plus chers ou plus lents à imprimer. Imprimer uniquement l'interface avec le matériau coûteux, mais la majeure partie du corps avec un matériau moins cher peut permettre d'économiser beaucoup de temps et d'argent. L'interface sera toujours imprimée avec le matériau coûteux, de sorte que la partie qui touche le modèle aura belle allure ou sera plus facile à détacher, mais la majeure partie du support sera imprimée avec des matériaux moins chers.
 

@@ -2,6 +2,28 @@ Support Density
 ====
 This setting defines the rate at which the support structures are filled with material. At great infill rates, the support lines will be placed very close together. At low infill rates, the lines will be placed further apart.
 
+<!--screenshot {
+"image_path": "support_infill_rate_low.png",
+"models": [{"script": "spiral_stair.scad"}],
+"camera_position": [-95, 18, 116],
+"settings": {
+    "support_enable": true,
+    "support_infill_rate": 10
+},
+"layer": 256,
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "support_infill_rate_high.png",
+"models": [{"script": "spiral_stair.scad"}],
+"camera_position": [-95, 18, 116],
+"settings": {
+    "support_enable": true,
+    "support_infill_rate": 20
+},
+"layer": 256,
+"colours": 64
+}-->
 ![Low support density](../images/support_infill_rate_low.png)
 ![High support density](../images/support_infill_rate_high.png)
 

@@ -2,6 +2,16 @@ Support Top Distance
 ====
 This setting configures how much distance is kept between the top of the support and the overhung surface of the model.
 
+<!--screenshot {
+"image_path": "support_z_distance.png",
+"models": [{"script": "rack.scad"}],
+"camera_position": [0, 129, 11],
+"settings": {
+    "support_enable": true,
+    "support_z_distance": 1
+},
+"colours": 32
+}-->
 ![The top distance between the dark blue model and the light blue support](../images/support_top_bottom_distance.svg)
 ![A vertical distance is kept between the model and the support](../images/support_z_distance.png)
 

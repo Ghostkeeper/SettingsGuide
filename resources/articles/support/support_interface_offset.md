@@ -2,6 +2,18 @@ Support Interface Horizontal Expansion
 ====
 This setting causes the support interface to be expanded in all directions horizontally into the rest of the support.
 
+<!--screenshot {
+"image_path": "support_interface_offset.png",
+"models": [{"script": "f.scad"}],
+"camera_position": [45, 45, 133],
+"settings": {
+    "support_enable": true,
+    "support_interface_enable": true,
+    "support_offset": 2,
+    "support_interface_offset": 1
+},
+"colours": 64
+}-->
 ![The support interface is expanded into the support](../images/support_interface_offset.png)
 
 There are two use cases for this mechanism.

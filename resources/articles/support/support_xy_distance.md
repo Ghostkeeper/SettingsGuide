@@ -2,6 +2,17 @@ Support X/Y Distance
 ====
 This indicates how much distance must be kept horizontally between the support and the model.
 
+<!--screenshot {
+"image_path": "support_xy_distance.png",
+"models": [{"script": "clamp.scad"}],
+"camera_position": [-8, 185, 42],
+"settings": {
+    "support_enable": true,
+    "support_xy_overrides_z": true,
+    "support_xy_distance": 2
+},
+"colours": 64
+}-->
 ![A horizontal gap between the support and the model](../images/support_xy_distance.png)
 
 The horizontal distance is meant to prevent the support from hitting the model, where it would leave a scar on the surface. However, this also creates a larger distance between the model and the support structure where the overhang is, leaving smaller overhangs unsupported.

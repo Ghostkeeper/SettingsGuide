@@ -2,6 +2,26 @@ Support Placement
 ====
 This setting allows you to choose what support can be placed on top of.
 
+<!--screenshot {
+"image_path": "support_type_everywhere.png",
+"models": [{"script": "duct.scad"}],
+"camera_position": [56, 127, 60],
+"settings": {
+    "support_enable": true,
+    "support_type": "everywhere"
+},
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "support_type_touching_buildplate.png",
+"models": [{"script": "duct.scad"}],
+"camera_position": [56, 127, 60],
+"settings": {
+    "support_enable": true,
+    "support_type": "buildplate"
+},
+"colours": 32
+}-->
 ![Support is generated for all overhanging surfaces](../images/support_type_everywhere.png)
 ![Support is only generated where it can rest on the build plate](../images/support_type_touching_buildplate.png)
 
