@@ -25,7 +25,11 @@ from UM.Settings.DefinitionContainer import DefinitionContainer  # To register t
 
 from . import MenuItemHandler  # To register the context menu item in the settings list.
 from . import QtMarkdownRenderer  # To match Mistune's output to Qt's supported HTML subset.
-from . import ScreenshotTool  # To refresh screenshots using the Cura client.
+try:
+	from . import ScreenshotTool  # To refresh screenshots using the Cura client.
+	has_screenshot_tool = True
+except ImportError:
+	has_screenshot_tool = False
 from .Mistune import mistune  # To parse the Markdown files.
 
 class CuraSettingsGuide(Extension, QObject):
@@ -458,6 +462,9 @@ class CuraSettingsGuide(Extension, QObject):
 
 		This starts the process outlined in the ScreenshotTool class.
 		"""
+		if not has_screenshot_tool:
+			Logger.error("The screenshot tool is not installed in this version of the Settings Guide. Please use the version from the source repository.")
+			return
 		if self.selectedArticleId:  # Refresh a particular article.
 			refresh_job = threading.Thread(target=ScreenshotTool.refresh_screenshots, kwargs={"article_text": self.selectedArticle, "refreshed_set": set()})
 			refresh_job.start()
