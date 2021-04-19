@@ -2,6 +2,32 @@ Avoid Printed Parts When Traveling
 ====
 By enabling this setting, the print head will try to avoid hitting other objects when travelling around the build volume. It will take a small detour instead. If a detour is possible that doesn't hit any other objects, no retraction is triggered unless the length of the path exceeds the [Max Comb Distance With No Retract](retraction_combing_max_distance.md) setting.
 
+<!--screenshot {
+"image_path": "travel_avoid_other_parts_disabled.png",
+"models": [{"script": "spike_curve.scad"}],
+"camera_position": [0, 0, 116],
+"structures": ["travels", "helpers", "shell", "infill", "starts"],
+"settings": {
+    "retraction_enable": false,
+    "travel_avoid_other_parts": false
+},
+"minimum_layer": 549,
+"layer": 550,
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "travel_avoid_other_parts_enabled.png",
+"models": [{"script": "spike_curve.scad"}],
+"camera_position": [0, 0, 116],
+"structures": ["travels", "helpers", "shell", "infill", "starts"],
+"settings": {
+    "retraction_enable": false,
+    "travel_avoid_other_parts": true
+},
+"minimum_layer": 549,
+"layer": 550,
+"colours": 64
+}-->
 ![When disabled, travel moves can cross through other parts](../images/travel_avoid_other_parts_disabled.png)
 ![When enabled, travel moves will avoid other parts](../images/travel_avoid_other_parts_enabled.png)
 

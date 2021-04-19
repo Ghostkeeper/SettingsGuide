@@ -4,6 +4,34 @@ Combing is the practice of avoiding crossing the walls of the print when travell
 
 Combing alone just causes the nozzle to avoid the walls when travelling through the inside of the mesh. However it also allows for the [Avoid Printed Parts While Traveling](travel_avoid_other_parts.md) feature, which makes the nozzle avoid objects while outside of the volume as well.
 
+<!--screenshot {
+"image_path": "retraction_combing_off.png",
+"models": [
+    {
+        "script": "safety_lock.scad",
+        "scad_params": ["length=40"]
+    }
+],
+"camera_position": [0, 0, 120],
+"structures": ["travels", "helpers", "shell", "infill", "starts"],
+"settings": {"retraction_combing": "off"},
+"minimum_layer": 2,
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "retraction_combing_on.png",
+"models": [
+    {
+        "script": "safety_lock.scad",
+        "scad_params": ["length=40"]
+    }
+],
+"camera_position": [0, 0, 120],
+"structures": ["travels", "helpers", "shell", "infill", "starts"],
+"settings": {"retraction_combing": "all"},
+"minimum_layer": 2,
+"colours": 64
+}-->
 ![Combing disabled, the travel move crosses the walls of the print](../images/retraction_combing_off.png)
 ![Combing enabled, a detour is made to avoid crossing the walls](../images/retraction_combing_on.png)
 
