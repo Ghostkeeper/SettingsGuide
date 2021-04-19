@@ -31,7 +31,7 @@ When your model has some overhang that is supported on both sides, Cura will det
 ![When a bridge is detected, the skin lines are oriented to bridge the gap as best it can](../images/bridge_settings_enabled_default.png)
 ![With bridge settings enabled, the bridging lines are printed with different settings](../images/bridge_settings_enabled_enabled.png)
 
-Normally Cura will use a fairly rudimentary bridging technique. Cura will detect overhanging areas of skin that are supported on multiple sides. The [direction of those skin lines](../shell/skin_angles.md) is adjusted to bridge those areas automatically. This ensures that the greatest possible part of the overhanging area is supported on multiple sides and improves print quality.
+Normally Cura will use a fairly rudimentary bridging technique. Cura will detect overhanging areas of skin that are supported on multiple sides. The [direction of those skin lines](../top_bottom/skin_angles.md) is adjusted to bridge those areas automatically. This ensures that the greatest possible part of the overhanging area is supported on multiple sides and improves print quality.
 
 When this setting is enabled though, you can tune that behaviour more precisely according to your requirements. This allows you to tweak:
 * printing speed

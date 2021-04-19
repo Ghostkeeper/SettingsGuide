@@ -21,7 +21,7 @@ De même, si un radeau est utilisé, vous pouvez augmenter l'adhérence en augme
 Prévention du gauchissement
 ----
 Si votre impression souffre de déformation, la zone de contact entre l'impression et le plateau est fortement réduite. Pour éviter cela, consultez l'article sur [le décollement](warping.md). En résumé, voici quelques ajustements à apporter pour éviter le gauchissement.
-* Réglez la [Couche initiale du motif du dessous](../shell/top_bottom_pattern_0.md) sur concentrique.
+* Réglez la [Couche initiale du motif du dessous](../top_bottom/top_bottom_pattern_0.md) sur concentrique.
 * Réduisez la [température du plateau](../material/material_bed_temperature.md) et augmentez la [température du volume de construction](../material/build_volume_temperature.md).
 * Ajustez le modèle de manière à ce qu'il y ait moins de coins extérieurs tranchants sur la première couche.
 

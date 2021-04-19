@@ -4,7 +4,6 @@ Cura doit savoir où se trouve l'intérieur du modèle afin de le remplir de mat
 
 Un cas fréquent de modèle non multiple est celui où une pièce supplémentaire du modèle est fixée à une partie par ailleurs fermée. Ce cas est fréquent lorsque l'on édite des maillages avec un logiciel de CAO qui n'a pas été conçu pour la fabrication (mais seulement pour le rendu numérique) comme Blender ou SketchUp. Vous pouvez en voir un exemple dans les images ci-dessous.
 
-![Le maillage semble normal à l'extérieur](../../../articles/images/meshfix_extensive_stitching_shell.png)
 ![La vue aux rayons X révèle une surface supplémentaire à l'intérieur](../../../articles/images/meshfix_extensive_stitching_xray.png)
 ![Avec ce paramètre désactivé, seul le volume correctement fermé est imprimé](../../../articles/images/meshfix_extensive_stitching_disabled.png)
 ![Avec ce paramètre activé, la pièce supplémentaire est attachée correctement](../../../articles/images/meshfix_extensive_stitching_enabled.png)

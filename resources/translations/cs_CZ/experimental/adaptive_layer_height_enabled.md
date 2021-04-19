@@ -15,10 +15,10 @@ Adaptivní vrstvy mohou výrazně zkrátit dobu tisku, aniž by došlo ke ztrát
 Tato funkce však může také přinést i řadu problémů.
 * Změnou výšky vrstev je obecně nutné upravit další parametry, jako je například teplota trysky. Adaptivní vrstvy tyto další parametry automaticky neupravují. To může způsobit, že tisk nebude optimální např. převisy, které by lépe fungovaly při nižší tiskové teplotě.
 * Pokud se výška vrstvy změní po celé vrstvě pro malý prvek umístěný někde v malé části vrstvy, bude ve zbývající vrstvě viditelný pruh.
-* S tím jsou také neúmyslně upraveny vertikální vzdálenosti. To může mít negativní vliv na kvalitu tisku. Například [Tloušťka horní/dolní strany](../shell/top_bottom_thickness.md) bude obecně tenčí, protože Cura ponechá parametr [Horní vrstvy](../shell/top_layers.md) jako true a vrstvy budou tenčí. To může způsobit polštářový efekt. Mezi ovlivněná nastavení, která již nemusí být správná, patří:
-* [Horní tloušťka](../shell/top_thickness.md)
-* [Dolní tloušťka](../shell/bottom_thickness.md)
-* [Maximální úhel pláště pro rozšíření](../infill/max_skin_angle_for_expansion.md)
+* S tím jsou také neúmyslně upraveny vertikální vzdálenosti. To může mít negativní vliv na kvalitu tisku. Například [Tloušťka horní/dolní strany](../shell/top_bottom_thickness.md) bude obecně tenčí, protože Cura ponechá parametr [Horní vrstvy](../top_bottom/top_layers.md) jako true a vrstvy budou tenčí. To může způsobit polštářový efekt. Mezi ovlivněná nastavení, která již nemusí být správná, patří:
+* [Horní tloušťka](../top_bottom/top_thickness.md)
+* [Dolní tloušťka](../top_bottom/bottom_thickness.md)
+* [Maximální úhel pláště pro rozšíření](../top_bottom/max_skin_angle_for_expansion.md)
 * [Výška kroku postupné výplně](../infill/gradual_infill_step_height.md)
 * [Výška kroku postupné výplně podpěry](../support/gradual_support_infill_step_height.md)
 * [Tloušťka vrstvy výplně](../infill/infill_sparse_thickness.md)

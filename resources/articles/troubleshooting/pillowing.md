@@ -17,7 +17,7 @@ The pillowing effect tends to bulge up rather than down. While both up and down 
 Prevention
 ----
 There are several methods to prevent pillowing in Cura:
-* Increasing the [Top Thickness](../shell/top_thickness.md) is the most effective way to prevent pillowing. With more [top layers](../shell/top_layers.md), the higher layers are able to rest on the partially closed gaps of the previous layers. This gives them a better chance to close the gaps and form a strong top layer that doesn't pillow. In general, the thinner your layers are, the more top layers you will need since these layers are not as strong.
+* Increasing the [Top Thickness](../top_bottom/top_thickness.md) is the most effective way to prevent pillowing. With more [top layers](../top_bottom/top_layers.md), the higher layers are able to rest on the partially closed gaps of the previous layers. This gives them a better chance to close the gaps and form a strong top layer that doesn't pillow. In general, the thinner your layers are, the more top layers you will need since these layers are not as strong.
 * Increasing the [Infill Density](../infill/infill_sparse_density.md) reduces the size of the gaps that need to be bridged by the top skin. This makes it easier to close those gaps. If you combine this with [gradual infill](../infill/gradual_infill_steps.md), most of the infill density can remain the same. Only the top will have a greater density to prevent pillowing.
 * Printing at a lower [temperature](../material/material_print_temperature.md) improves bridging and warping in general, also with the top skin, which reduces the pillowing effect.
 * Similarly, make sure to increase the [cooling](../cooling/cool_fan_speed.md) to improve the bridging as well.

@@ -10,7 +10,7 @@ Brim
 ----
 Sometimes the elephant's foot is really just a part of the brim that wasn't removed properly. If you've torn off the brim by hand, you can tell because the brim line is completely adjacent to the normal wall line, and the normal wall line is directly underneath the rest of the wall. To remove the brim completely, it's best to use a sharp knife to carve along the bottom side of your print.
 
-If the model doesn't have a big bottom side, consider setting the [adhesion method](../platform_adhesion/adhesion_type.md) to a skirt instead. If this gives too much problems with bed adhesion, you can try alternative methods of improving adhesion, such as setting the [Initial Layer Bottom Pattern](../shell/top_bottom_pattern_0.md) to "concentric".
+If the model doesn't have a big bottom side, consider setting the [adhesion method](../platform_adhesion/adhesion_type.md) to a skirt instead. If this gives too much problems with bed adhesion, you can try alternative methods of improving adhesion, such as setting the [Initial Layer Bottom Pattern](../top_bottom/top_bottom_pattern_0.md) to "concentric".
 
 Warping
 ----
@@ -22,7 +22,7 @@ Perhaps the most common cause of an actual elephant's foot is warping. As the ma
 To prevent warping, take a look at the [troubleshooting article](warping.md) about it. Specifically for this type of warping, here are a few things you can try:
 * Increase the [wall thickness](../shell/wall_thickness.md) to prevent the walls next to the infill from shrinking.
 * Reduce the [build plate temperature](../material/material_bed_temperature.md) to allow the first layer to shrink just as much as the other layers. If the bed temperature was very high, it can also allow the material to sag a bit, which makes it wider at the bottom. This effect is usually small, but this will also be prevented by reducing the bed temperature.
-* Increase the [bottom thickness](../shell/bottom_thickness.md) to more gradually transition to a shrunken size. You can even consider printing the model completely solidly (preferably by setting the bottom thickness extremely high) to get rid of the difference in shrinkage completely.
+* Increase the [bottom thickness](../top_bottom/bottom_thickness.md) to more gradually transition to a shrunken size. You can even consider printing the model completely solidly (preferably by setting the bottom thickness extremely high) to get rid of the difference in shrinkage completely.
 
 Build plate adjustments
 ----

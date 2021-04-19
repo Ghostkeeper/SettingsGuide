@@ -10,7 +10,7 @@ Bordure
 ----
 Parfois, la patte de l'éléphant n'est en fait qu'une partie du bord qui n'a pas été enlevée correctement. Si vous avez arraché le rebord à la main, vous pouvez le voir parce que la ligne du rebord est complètement adjacente à la ligne normale du mur, et la ligne normale du mur est directement sous le reste du mur. Pour enlever complètement le bord, il est préférable d'utiliser un couteau bien aiguisé pour ébavurer le bas de votre empreinte.
 
-Si le modèle n'a pas un grand côté inférieur, envisagez plutôt de définir le [type d'adhérence](../platform_adhesion/adhesion_type.md) sur une jupe. Si cela pose trop de problèmes d'adhérence au lit, vous pouvez essayer d'autres méthodes pour améliorer l'adhérence, par exemple en réglant la [méthode d'adhérence de la couche initiale du fond](../shell/top_bottom_pattern_0.md) sur "concentrique".
+Si le modèle n'a pas un grand côté inférieur, envisagez plutôt de définir le [type d'adhérence](../platform_adhesion/adhesion_type.md) sur une jupe. Si cela pose trop de problèmes d'adhérence au lit, vous pouvez essayer d'autres méthodes pour améliorer l'adhérence, par exemple en réglant la [méthode d'adhérence de la couche initiale du fond](../top_bottom/top_bottom_pattern_0.md) sur "concentrique".
 
 Gauchissement
 ----
@@ -22,7 +22,7 @@ La cause la plus fréquente de la patte d'un éléphant est souvent le gauchisse
 Pour éviter le gauchissement, jetez un coup d'œil à l'[article de dépannage](warping.md) à ce sujet. Pour ce type de déformation, voici quelques exemples de ce que vous pouvez essayer :
 * Augmenter l'[épaisseur de la paroi](../shell/wall_thickness.md) pour empêcher les parois à côté du remplissage de rétrécir.
 * Réduire la [température de la plaque de construction](../material/material_bed_temperature.md) pour permettre à la première couche de se rétracter autant que les autres couches. Si la température du lit était très élevée, cela peut aussi permettre au matériau de s'affaisser un peu, ce qui le rend plus large au fond. Cet effet est généralement faible, mais il sera également évité en réduisant la température du lit.
-* Augmenter l'[épaisseur du fond](../shell/bottom_thickness.md) pour passer plus progressivement à une taille plus réduite. Vous pouvez même envisager d'imprimer le modèle de façon complètement solide (de préférence en fixant l'épaisseur du fond à un niveau extrêmement élevé) pour éliminer complètement la différence de rétrécissement.
+* Augmenter l'[épaisseur du fond](../top_bottom/bottom_thickness.md) pour passer plus progressivement à une taille plus réduite. Vous pouvez même envisager d'imprimer le modèle de façon complètement solide (de préférence en fixant l'épaisseur du fond à un niveau extrêmement élevé) pour éliminer complètement la différence de rétrécissement.
 
 Ajustement du plateau d'impression 
 ----

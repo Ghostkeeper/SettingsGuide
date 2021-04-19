@@ -1,6 +1,6 @@
 Směr linií horního povrchu pláště
 ====
-Tento parametr umožňuje zvolit různé směry pro vzor v nejvyšších vrstvách označených parametrem [Vrstvy horního povrchu pláště](../shell/roofing_layer_count.md), než pro zbytek horní a dolní plochy.
+Tento parametr umožňuje zvolit různé směry pro vzor v nejvyšších vrstvách označených parametrem [Vrstvy horního povrchu pláště](../top_bottom/roofing_layer_count.md), než pro zbytek horní a dolní plochy.
 
 V těchto směrech bude nakreslena pouze horní vrstva pláště. Hodnota tohoto parametru je seznam úhlů ve stupních oddělených čárkami. Pokyny uvedené v tomto seznamu se budou střídat z jedné vrstvy na druhou.
 

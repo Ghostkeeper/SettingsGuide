@@ -1,6 +1,6 @@
 Počet dalších stěn výplně
 ====
-Toto nastavení přidá několik obrysů kolem oblastí výplně. To znamená zvýšení [počtu stěn](../shell/wall_line_count.md), ale kontury nejdou kolem pláště a stěny budou také mezi pláštěm a výplní. Je to podobné přidávání [dalších stěn pláště](../shell/skin_outline_count.md), ale kolem výplně místo kolem pláště.
+Toto nastavení přidá několik obrysů kolem oblastí výplně. To znamená zvýšení [počtu stěn](../shell/wall_line_count.md), ale kontury nejdou kolem pláště a stěny budou také mezi pláštěm a výplní. Je to podobné přidávání [dalších stěn pláště](../top_bottom/skin_outline_count.md), ale kolem výplně místo kolem pláště.
 
 Tyto stěny jsou vytištěny s parametry výplně.
 

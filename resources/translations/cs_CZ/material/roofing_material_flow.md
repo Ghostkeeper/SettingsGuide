@@ -6,4 +6,4 @@ Toto nastavení upravuje tok pouze pro horní povrch. Tok horního povrchu můž
 
 Pokud je problém s rychlostí vytlačování pouze při tisku na horní povrch, je nejlepší se podívat společně na [teplotu tisku](material_print_temperature.md), [šířku linie](../experimental/roofing_line_width.md) a [rychlost tisku](../speed/speed_roofing.md), pro získání spolehlivého toku na výstupu z trysky.
 
-Pokud horní povrch není hladký, stojí za vyzkoušení funkci [žehlení](../shell/ironing_enabled.md), ale nastavení parametru [Šířka linie horního povrchu pláště](../experimental/roofing_line_width.md) je také účinnější způsob, jak upravit hladkost horního povrchu.
+Pokud horní povrch není hladký, stojí za vyzkoušení funkci [žehlení](../top_bottom/ironing_enabled.md), ale nastavení parametru [Šířka linie horního povrchu pláště](../experimental/roofing_line_width.md) je také účinnější způsob, jak upravit hladkost horního povrchu.

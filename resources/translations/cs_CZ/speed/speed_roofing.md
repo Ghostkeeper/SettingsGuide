@@ -1,6 +1,6 @@
 Rychlost horního povrchu pláště
 ====
-Tento parametr upravuje rychlost tisku povrchových vrstev, pokud existují vrstvy pláště horního povrchu konfigurované parametrem [Vrstvy horního povrchu pláště](../shell/roofing_layer_count.md).
+Tento parametr upravuje rychlost tisku povrchových vrstev, pokud existují vrstvy pláště horního povrchu konfigurované parametrem [Vrstvy horního povrchu pláště](../top_bottom/roofing_layer_count.md).
 
 ![Různé struktury tištěné různými rychlostmi](../../../articles/images/speed_difference.png)
 

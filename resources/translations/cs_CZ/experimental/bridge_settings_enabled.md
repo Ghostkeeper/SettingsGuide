@@ -5,7 +5,7 @@ Pokud má váš model určitý převis, který je podporován na obou stranách,
 ![Když je detekováno přemostění, jsou linie pláště orientovány tak, aby překlenuly mezeru tak, jak je to nejlépe možné](../../../articles/images/bridge_settings_enabled_default.png)
 ![Při aktivovaném nastavení přemostění jsou přemosťovací linie vytištěny s různými parametry](../../../articles/images/bridge_settings_enabled_enabled.png)
 
-Běžně bude Cura používat techniku přemostění. Cura detekuje převislé oblasti pláště, které jsou podpírány na více stranách. [Směr těchto linií pláště](../shell/skin_angles.md) je upraven tak, aby tyto oblasti automaticky propojil. Tím je zajištěno, že největší možná část převislé oblasti je podporována na více stranách a zvyšuje se kvalita tisku.
+Běžně bude Cura používat techniku přemostění. Cura detekuje převislé oblasti pláště, které jsou podpírány na více stranách. [Směr těchto linií pláště](../top_bottom/skin_angles.md) je upraven tak, aby tyto oblasti automaticky propojil. Tím je zajištěno, že největší možná část převislé oblasti je podporována na více stranách a zvyšuje se kvalita tisku.
 
 Pokud je však toto nastavení povoleno, můžete toto chování doladit tak, aby vyhovovalo vašim potřebám. To vám umožní provádět změny:
 * rychlost tisku

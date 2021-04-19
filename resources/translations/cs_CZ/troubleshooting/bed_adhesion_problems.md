@@ -21,7 +21,7 @@ Podobně, pokud se používá raft, můžete zvýšit přilnavost zvýšením [�
 Prevence deformace
 ----
 Pokud je váš tisk deformovaný, je kontaktní plocha mezi tiskem a montážní deskou výrazně zmenšena. Chcete-li tomu zabránit, přečtěte si článek o [deformacích](warping.md). Stručně řečeno, je zde několik úprav, aby k deformaci nedošlo.
-* Nastavte [vzor dolní počáteční vrstvy](../shell/top_bottom_pattern_0.md) na soustředný.
+* Nastavte [vzor dolní počáteční vrstvy](../top_bottom/top_bottom_pattern_0.md) na soustředný.
 * Snižte hodnotu [teploty tiskové podložky](../material/material_bed_temperature.md) a zvyšte hodnotu [teploty prostoru objemu tisku](../material/build_volume_temperature.md).
 * Upravte model tak, aby na první vrstvě bylo méně ostrých vnějších rohů.
 

@@ -5,7 +5,7 @@ Lorsque votre modèle présente un certain surplomb qui est soutenu des deux cô
 ![Lorsqu'un pont est détecté, les lignes de peau sont orientées de manière à combler l'écart le mieux possible](../../../articles/images/bridge_settings_enabled_default.png)
 ![Avec les paramètres de pont activés, les lignes de pont sont imprimées avec des paramètres différents](../../../articles/images/bridge_settings_enabled_enabled.png)
 
-Normalement, Cura utilisera une technique de transition assez rudimentaire. Cura détectera les zones de peau en surplomb qui sont soutenues sur plusieurs côtés. La [direction de ces lignes de peau](../shell/skin_angles.md) est ajustée pour couvrir ces zones automatiquement. Cela permet de s'assurer que la plus grande partie possible de la zone en surplomb est supportée sur plusieurs côtés et d'améliorer la qualité d'impression.
+Normalement, Cura utilisera une technique de transition assez rudimentaire. Cura détectera les zones de peau en surplomb qui sont soutenues sur plusieurs côtés. La [direction de ces lignes de peau](../top_bottom/skin_angles.md) est ajustée pour couvrir ces zones automatiquement. Cela permet de s'assurer que la plus grande partie possible de la zone en surplomb est supportée sur plusieurs côtés et d'améliorer la qualité d'impression.
 
 Lorsque ce paramètre est activé, vous pouvez toutefois régler ce comportement de manière plus précise en fonction de vos besoins. Cela vous permet d'apporter des modifications :
 * vitesse d'impression

@@ -21,7 +21,7 @@ Similarly, if a raft is being used, you can increase the adhesion further by inc
 Preventing warping
 ----
 If your print suffers from warping, the contact area between the print and the build plate is greatly reduced. To prevent this, refer to the article on [warping](warping.md). To summarise, these are a few adjustments to make to prevent warping.
-* Set the [Initial Layer Bottom Pattern](../shell/top_bottom_pattern_0.md) to concentric.
+* Set the [Initial Layer Bottom Pattern](../top_bottom/top_bottom_pattern_0.md) to concentric.
 * Reduce the [Build Plate Temperature](../material/material_bed_temperature.md) and increase the [Build Volume Temperature](../material/build_volume_temperature.md).
 * Adjust the model such that there are fewer sharp outer corners on the first layer.
 

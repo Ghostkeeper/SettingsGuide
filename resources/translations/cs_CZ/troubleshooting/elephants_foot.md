@@ -10,7 +10,7 @@ Krempa
 ----
 Sloní noha je někdy jen část krempy, která nebyla řádně odstraněna. Pokud jste odtrhli krempu ručně, můžete to říci, protože čára okraje zcela sousedí s normální linií stěny a normální linie stěny je přímo pod zbytkem zdi. Chcete-li krempu úplně odstranit, je nejlepší použít ostrý nůž k odřezávání podél spodní strany tisku..
 
-Pokud model nemá velkou spodní stranu, zvažte místo toho nastavení [metody přilnavosti](../platform_adhesion/adhesion_type.md) na sukénku. Pokud to způsobí příliš mnoho problémů s přilnavostí k lůžku, můžete vyzkoušet jiné metody ke zlepšení přilnavosti, například úpravou [vzoru počáteční vrstvy](../shell/top_bottom_pattern_0.md) na "soustředný".
+Pokud model nemá velkou spodní stranu, zvažte místo toho nastavení [metody přilnavosti](../platform_adhesion/adhesion_type.md) na sukénku. Pokud to způsobí příliš mnoho problémů s přilnavostí k lůžku, můžete vyzkoušet jiné metody ke zlepšení přilnavosti, například úpravou [vzoru počáteční vrstvy](../top_bottom/top_bottom_pattern_0.md) na "soustředný".
 
 Deformace
 ----
@@ -22,7 +22,7 @@ Snad nejčastější příčinou sloní nohy je deformace. Když se materiál oc
 Chcete-li se vyhnout deformaci, podívejte se na [článek o odstraňování problémů](warping.md). Pro tento typ deformace uvádíme několik příkladů toho, co můžete vyzkoušet:
 * Zvětšete [tloušťku stěny](../shell/wall_thickness.md), abyste zabránili zmenšení stěn vedle výplně.
 * Snižte teplotu [podložky tisku](../material/material_bed_temperature.md), aby se první vrstva mohla smrštit stejně jako ostatní vrstvy. Pokud bylo teplota lože velmi vysoká, může to také umožnit, aby se materiál trochu prohnul, čímž je na dně širší. Tento efekt je obecně slabý, ale dá se mu také zabránit snížením teploty lože.
-* Zvětšete [tloušťku spodní vrstvy](../shell/bottom_thickness.md) a postupně přecházejte na zmenšenou velikost. Můžete dokonce zvážit tisk modelu zcela plného (nejlépe nastavením tloušťky spodní strany na extrémně vysokou úroveň), abyste zcela eliminovali rozdíl ve smršťování.
+* Zvětšete [tloušťku spodní vrstvy](../top_bottom/bottom_thickness.md) a postupně přecházejte na zmenšenou velikost. Můžete dokonce zvážit tisk modelu zcela plného (nejlépe nastavením tloušťky spodní strany na extrémně vysokou úroveň), abyste zcela eliminovali rozdíl ve smršťování.
 
 Nastavení podložky tisku
 ----
