@@ -218,6 +218,7 @@ def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, No
 		if part[0] == "rich_text":
 			for match in re.finditer(screenshot_regex, part[1]):
 				json_serialised = match.group(1)
+				print("--------- SCREENSHOT -----------\n" + json_serialised + "\n--------------------------------")
 				json_document = json.loads(json_serialised)
 				yield ScreenshotInstruction(
 					image_path=json_document["image_path"],
