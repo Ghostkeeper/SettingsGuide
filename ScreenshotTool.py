@@ -694,10 +694,7 @@ def optimise_gif(image_path) -> None:
 		os.remove(image_path)
 		os.rename(image_path + ".opt.gif", image_path)
 	thread = threading.Thread(target=optimise_threaded)
-	# We'll use a rudimentary global thread pool here just by counting the number of active threads.
-	while threading.active_count() > 50:  # Cura normally uses around 30 threads on my computer. Let's allow for 20 more for active optimisation.
-		time.sleep(0.5)
-	thread.start()  # Fire and forget. It terminates eventually and our thread pool implementation can then start a new one.
+	thread.start()  # Fire and forget.
 
 def reduce_colours(image_path, colours) -> None:
 	"""
@@ -716,7 +713,4 @@ def optimise_png(image_path) -> None:
 		call_with_args("optimise_png1", input=image_path, output=image_path)
 		call_with_args("optimise_png2", output=image_path)
 	thread = threading.Thread(target=optimise_threaded)
-	# We'll use a rudimentary global thread pool here just by counting the number of active threads.
-	while threading.active_count() > 50:  # Cura normally uses around 30 threads on my computer. Let's allow for 20 more for active optimisation.
-		time.sleep(0.5)
-	thread.start()  # Fire and forget. It terminates eventually and our thread pool implementation can then start a new one.
+	thread.start()  # Fire and forget.
