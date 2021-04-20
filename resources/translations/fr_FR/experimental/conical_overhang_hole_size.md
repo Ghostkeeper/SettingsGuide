@@ -4,8 +4,8 @@ Surface maximale des trous en porte-à-faux
 
 Pour éviter cet effet, ce paramètre permet au surplomb de rester ouvert s'il est fermé de tous les côtés et plus petit qu'une certaine surface. Cela ne s'applique qu'aux trous. Les surplombs réguliers sur l'extérieur du modèle sont toujours étendus vers le bas pour conserver un angle raisonnablement imprimable.
 
-![Un petit point en haut est autorisé à rester en surplomb, afin que ce trou ne soit pas rempli](../images/conical_overhang_hole_size.png)
+![Un petit point en haut est autorisé à rester en surplomb, afin que ce trou ne soit pas rempli](../../../articles/images/conical_overhang_hole_size.png)
 
 Il est assez sûr de régler ce paramètre à plusieurs dizaines de millimètres carrés pour la plupart des modèles. S'il est réglé trop bas, le modèle sera modifié davantage, pour supporter des surplombs qui sont vraiment trop petits pour nécessiter un quelconque support. En revanche, s'il est réglé trop haut, il y aura des zones de surplomb importantes qui pourraient être difficiles à combler.
 
-S'il y a de grandes zones de surplomb en raison de ce paramètre, il est préférable de commencer par [régler le pontage] (bridge_settings_enabled.md) avant d'essayer de modifier le modèle pour supprimer le surplomb.
+S'il y a de grandes zones de surplomb en raison de ce paramètre, il est préférable de commencer par [régler le pontage](bridge_settings_enabled.md) avant d'essayer de modifier le modèle pour supprimer le surplomb.
