@@ -1,6 +1,6 @@
 Surface maximale des trous en porte-à-faux
 ====
-Étant donné que [Rendre le surplomb imprimable](conical_overhang_enabled.md) supprime tout type de surplomb, tous les ponts seront automatiquement abaissés, fermant le surplomb en dessous. Cependant, si le surplomb est fermé de tous les côtés, il continuera à être abaissé jusqu'à ce que le surplomb fermé soit complètement rempli. En effet, tous les trous orientés vers le bas seront complètement remplis, même si le surplomb qui doit être retiré n'est qu'un petit point tout en haut.
+Étant donné que [Rendre le porte-à-faux imprimable](conical_overhang_enabled.md) supprime tout type de surplomb, tous les ponts seront automatiquement abaissés, fermant le surplomb en dessous. Cependant, si le surplomb est fermé de tous les côtés, il continuera à être abaissé jusqu'à ce que le surplomb fermé soit complètement rempli. En effet, tous les trous orientés vers le bas seront complètement remplis, même si le surplomb qui doit être retiré n'est qu'un petit point tout en haut.
 
 Pour éviter cet effet, ce paramètre permet au surplomb de rester ouvert s'il est fermé de tous les côtés et plus petit qu'une certaine surface. Cela ne s'applique qu'aux trous. Les surplombs réguliers sur l'extérieur du modèle sont toujours étendus vers le bas pour conserver un angle raisonnablement imprimable.
 
