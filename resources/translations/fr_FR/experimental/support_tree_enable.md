@@ -20,4 +20,5 @@ Cependant, cela présente également quelques inconvénients :
 * Le support arborescent ne fonctionne pas très bien pour supporter certains modèles mécaniques. En particulier, il a tendance à placer trop peu de branches pour supporter des surplombs plats et inclinés.
 
 **Note sur les versions antérieures à Cura 4.8**
+
 Bien que le support arborescent puisse être activé en même temps que le support ordinaire, ce n'est généralement pas souhaitable. Les deux types de support se croiseront et provoqueront une surextrusion.
