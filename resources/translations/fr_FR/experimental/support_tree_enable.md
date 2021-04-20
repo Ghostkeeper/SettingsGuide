@@ -21,4 +21,4 @@ Cependant, cela présente également quelques inconvénients :
 
 **Note sur les versions antérieures à Cura 4.8**
 
-Bien que le support arborescent puisse être activé en même temps que le support ordinaire, ce n'est généralement pas souhaitable. Les deux types de support se croiseront et provoqueront une surextrusion.
+Bien que le support arborescent puisse être activé en même temps que le support ordinaire sur les anciennes versions, ce n'est généralement pas souhaitable. Les deux types de support se croiseront et provoqueront une surextrusion.
