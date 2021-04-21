@@ -19,6 +19,4 @@ Cependant, cela présente également quelques inconvénients :
 * Il y a beaucoup d'interruptions dans le flux lorsque les plus petites branches sont imprimées, ce qui rend le support arborescent impropre à l'impression avec des matériaux difficiles à extruder, comme le PVA ou les matériaux flexibles.
 * Le support arborescent ne fonctionne pas très bien pour supporter certains modèles mécaniques. En particulier, il a tendance à placer trop peu de branches pour supporter des surplombs plats et inclinés.
 
-**Note sur les versions antérieures à Cura 4.8**
-
-Bien que le support arborescent puisse être activé en même temps que le support ordinaire sur les anciennes versions, ce n'est généralement pas souhaitable. Les deux types de support se croiseront et provoqueront une surextrusion.
+Bien que le support arborescent puisse être activé en même temps que le support ordinaire, ce n'est généralement pas souhaitable. Les deux types de support se croiseront et provoqueront une surextrusion.
