@@ -1,6 +1,6 @@
 Filtrer les très petits trous
 ====
-Le remplissage des espaces entre les murs introduit des déplacements supplémentaires. Si les espaces sont extrêmement petits, le matériau n'aura généralement pas assez de temps pour s'écouler très bien de la buse. Si ce paramètre est activé, l'imprimante ne prendra pas la peine de remplir certains des plus petits espaces.
+Le remplissage des espaces entre les parois introduit des déplacements supplémentaires. Si les espaces sont extrêmement petits, le matériau n'aura généralement pas assez de temps pour s'écouler très bien de la buse. Si ce paramètre est activé, l'imprimante ne prendra pas la peine de remplir certains des plus petits espaces.
 
 ![De minuscules espaces au bout des dents sont comblés](../../../articles/images/filter_out_tiny_gaps_disabled.png)
 ![Les petits espaces sont filtrés, ce qui fait qu'ils ne sont pas remplis](../../../articles/images/filter_out_tiny_gaps_enabled.png)

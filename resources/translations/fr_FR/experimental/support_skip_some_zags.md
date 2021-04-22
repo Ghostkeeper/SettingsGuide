@@ -8,4 +8,4 @@ En cassant le support en morceaux, il est plus facile de le détacher, car vous 
 
 Ce réglage empêche également de retirer tout le support en une seule pièce. S'il y a plusieurs supports, il faut les enlever individuellement. Si le support se détache assez facilement, ce réglage peut en fait rendre l'enlèvement du support plus difficile (bien que cela puisse être plus facile).
 
-Ce paramètre ne se combine pas bien avec [Nombre de lignes de la paroi du support](../support/support_wall_count.md). Si le support est entouré d'un mur supplémentaire, ce mur reliera à nouveau les morceaux, ce qui rendra plus difficile le détachement des morceaux.
+Ce paramètre ne se combine pas bien avec [Nombre de lignes de la paroi du support](../support/support_wall_count.md). Si le support est entouré d'une paroi supplémentaire, cette paroi reliera à nouveau les morceaux, ce qui rendra plus difficile le détachement des morceaux.

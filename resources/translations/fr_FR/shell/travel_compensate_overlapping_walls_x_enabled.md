@@ -5,7 +5,7 @@ Lors de l'impression de pièces fines, les parois opposées peuvent se rapproche
 ![Toutes les lignes sont extrudées avec leur pleine largeur, créant ainsi une pièce qui sera trop large](../../../articles/images/travel_compensate_overlapping_walls_x_enabled_disabled.png)
 ![La moitié des lignes ont réduit leur largeur, ce qui permet une impression plus précise](../../../articles/images/travel_compensate_overlapping_walls_x_enabled_enabled.png)
 
-Ce réglage ne s'applique qu'aux murs intérieurs. La compensation du chevauchement dans les parois intérieures est moins visible à l'extérieur, car moins d'artefacts des changements de débit seront visibles, mais elle contribuera néanmoins tout autant à réduire l'effet de la surextrusion, puisque les parois intérieures seront moins poussées vers l'extérieur.
+Ce réglage ne s'applique qu'aux parois intérieurs. La compensation du chevauchement dans les parois intérieures est moins visible à l'extérieur, car moins d'artefacts des changements de débit seront visibles, mais elle contribuera néanmoins tout autant à réduire l'effet de la surextrusion, puisque les parois intérieures seront moins poussées vers l'extérieur.
 
 La largeur de la ligne de la paroi qui chevauche une autre paroi est réduite par la zone de chevauchement. Cela permet de compenser la surextrusion.
 

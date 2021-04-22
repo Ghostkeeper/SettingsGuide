@@ -33,8 +33,8 @@ Le déplacement se fait à travers les murs
 Bien que Cura évite généralement de traverser le mur extérieur autant que possible, cela est parfois inévitable. Si la buse transporte une matière suintante alors qu'elle traverse une paroi extérieure, cette matière peut être essuyée à cet endroit, laissant une tache.
 
 Il est possible d'éviter cette cause de bavure en réglant les paramètres suivants :
-* Assurez-vous que la fonction [Mode de détours](../travel/retraction_combing.md) est activée. Cela permet à la buse de contourner les murs autant que possible, au lieu de les traverser.
-* Activer le [Rétract en Z](../travel/retraction_hop_enabled.md). Si les murs sont franchis, la buse se déplacera un peu vers le haut, pour passer par-dessus les murs au lieu de les traverser. Le matériau suintant ne sera probablement pas essuyé sur la paroi, mais à l'endroit où la buse atterrit après le déplacement. Cura essaiera toujours de se poser dans le remblai ou la peau si possible.
+* Assurez-vous que la fonction [Mode de détours](../travel/retraction_combing.md) est activée. Cela permet à la buse de contourner les parois autant que possible, au lieu de les traverser.
+* Activer le [Rétract en Z](../travel/retraction_hop_enabled.md). Si les murs sont franchis, la buse se déplacera un peu vers le haut, pour passer par-dessus les murs au lieu de les traverser. Le matériau suintant ne sera probablement pas essuyé sur la paroi, mais à l'endroit où la buse atterrit après le déplacement. Cura essaiera toujours d'accoster dans le remplissage ou la peau si possible.
 * Assurez-vous que [l'ordre d'impression des murs est optimisé](../shell/optimize_wall_printing_order.md). Cela réduit le nombre de mouvements effectués lors de l'impression des murs, ce qui permet des mouvements plus efficaces et réduit le risque que certains de ces mouvements doivent passer à travers un mur extérieur.
 
 Une pression accrue

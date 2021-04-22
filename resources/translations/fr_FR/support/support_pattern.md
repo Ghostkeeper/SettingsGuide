@@ -37,7 +37,7 @@ Le motif concentrique fait que le support est constitué d'anneaux concentriques
 * Les lignes sont rapprochées les unes des autres, ce qui permet de bien soutenir les zones en surplomb pour obtenir une surface lisse, si les lignes sont orientées perpendiculairement.
 * Assez solide, car les boucles ont individuellement une grande largeur pour se tenir debout.
 * Facile à enlever, car la structure de support se plie facilement vers l'intérieur.
-* Souvent, elle finit par être parallèle aux murs qu'elle doit soutenir. Cela entraîne une détérioration de la qualité du porte-à-faux, car certains murs ne sont pas du tout soutenus.
+* Souvent, elle finit par être parallèle aux parois qu'elle doit soutenir. Cela entraîne une détérioration de la qualité du porte-à-faux, car certaines parois ne sont pas du tout soutenues.
 * Parfois, le support est suspendu en l'air.
 
 Zigzag

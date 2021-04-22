@@ -9,7 +9,7 @@ Lignes
 Le schéma de base trace des lignes droites sur la surface. Ces lignes sont orientées par défaut de telle sorte qu'elles soient bien soutenues par le remplissage et le support. La direction des lignes alterne entre les couches.
 * Fournit une belle qualité de surface.
 * Très rigide dans les directions où les lignes sont tracées.
-* Adhère fortement aux murs, créant des parties relativement solides.
+* Adhère fortement aux parois, créant des parties relativement solides.
 
 Concentrique
 ----
@@ -26,10 +26,10 @@ Zigzag
 ---
 ![Zigzag](../../../articles/images/top_bottom_pattern_zigzag.png)
 
-Le motif en zigzag est très similaire au motif des lignes, mais au lieu de terminer les lignes dans les murs, il continuera à s'extruder vers la ligne de peau suivante.
+Le motif en zigzag est très similaire au motif des lignes, mais au lieu de terminer les lignes dans les parois, il continuera à s'extruder vers la ligne de peau suivante.
 * Fournit une grande qualité de surface.
 * Très rigide dans les directions où les lignes sont tracées.
 * Garde le taux d'extrusion plus constant, ce qui améliore la consistance de la surface pour les matériaux qui s'extrudent plus difficilement.
-* Ne colle pas aussi bien aux murs que le dessin des lignes. L'effet du [pourcentage de chevauchement de la couche extérieure](skin_overlap.md) est réduit. Cela rend la pièce plus faible et réduit la qualité des débordements.
+* Ne colle pas aussi bien aux parois que le dessin des lignes. L'effet du [pourcentage de chevauchement de la couche extérieure](skin_overlap.md) est réduit. Cela rend la pièce plus faible et réduit la qualité des débordements.
 
 
