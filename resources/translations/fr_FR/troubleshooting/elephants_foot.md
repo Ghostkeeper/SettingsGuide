@@ -8,7 +8,7 @@ Il existe plusieurs effets que les gens appellent "pied d'éléphant", dont les 
 
 Bordure
 ----
-Parfois, la patte de l'éléphant n'est en fait qu'une partie du bord qui n'a pas été enlevée correctement. Si vous avez arraché le rebord à la main, vous pouvez le voir parce que la ligne du rebord est complètement adjacente à la ligne normale du mur, et la ligne normale du mur est directement sous le reste du mur. Pour enlever complètement le bord, il est préférable d'utiliser un couteau bien aiguisé pour ébavurer le bas de votre empreinte.
+Parfois, la patte de l'éléphant n'est en fait qu'une partie de la bordure qui n'a pas été enlevée correctement. Si vous avez arraché la bordure à la main, vous pouvez le voir parce que la ligne du rebord est complètement adjacente à la ligne normale de la paroi, et la ligne normale de la paroi est directement sous le reste de la paroi. Pour enlever complètement le bord, il est préférable d'utiliser un couteau bien aiguisé pour ébavurer le bas de votre empreinte.
 
 Si le modèle n'a pas un grand côté inférieur, envisagez plutôt de définir le [type d'adhérence](../platform_adhesion/adhesion_type.md) sur une jupe. Si cela pose trop de problèmes d'adhérence au lit, vous pouvez essayer d'autres méthodes pour améliorer l'adhérence, par exemple en réglant la [méthode d'adhérence de la couche initiale du fond](../top_bottom/top_bottom_pattern_0.md) sur "concentrique".
 
