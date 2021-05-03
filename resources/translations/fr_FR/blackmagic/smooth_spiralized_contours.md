@@ -8,6 +8,6 @@ Si [Spiraliser le contour extérieur](magic_spiralize.md) est activé, ce param�
 
 En revanche, la couche est déplacé vers le haut ou vers le bas d'une demi-hauteur de couche. C'est moins précis. Il peut avoir un effet de flou sur les détails fins de l'impression.
 
-Ce paramètre n'est pas efficace pour supprimer les coutures s'il y a plusieurs contours à imprimer sur un calque. Il faudra encore arrêter l'extrusion après le contour pour passer à la prochaine pièce imprimée. Cela laisse une couture de toute façon.
+Ce paramètre n'est pas efficace pour supprimer les coutures s'il y a plusieurs contours à imprimer sur une couche. Il faudra encore arrêter l'extrusion après le contour pour passer à la prochaine pièce imprimée. Cela laisse une couture de toute façon.
 
 **Cet effet n'est pas visible dans la vue des couches en raison des limitations de rendu.**
