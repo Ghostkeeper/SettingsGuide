@@ -12,7 +12,7 @@ La tête d'impression se déplace toujours de 3 mm vers le haut. Il n'y a pas de
 
 Compromis
 ----
-Il y a un compromis à faire lorsque l'on ralentit la buse pour permettre à la couche de mieux se refroidir. Le temps de couche minimum est destiné à donner un certain temps au matériau pour se refroidir en ralentissant le mouvement de la tête d'impression. Pendant ce temps, les ventilateurs souffleront à leur puissance maximale pour le refroidir plus rapidement, mais la buse chaude est également toujours sur le plastique. Pour les très petites pièces, la buse chaude peut transférer plus de chaleur dans l'impression que ce que les ventilateurs peuvent évacuer. Cela fait fondre le plastique encore plus que si vous n'aviez pas de temps de calque minimum.
+Il y a un compromis à faire lorsque l'on ralentit la buse pour permettre à la couche de mieux se refroidir. Le temps de couche minimum est destiné à donner un certain temps au matériau pour se refroidir en ralentissant le mouvement de la tête d'impression. Pendant ce temps, les ventilateurs souffleront à leur puissance maximale pour le refroidir plus rapidement, mais la buse chaude est également toujours sur le plastique. Pour les très petites pièces, la buse chaude peut transférer plus de chaleur dans l'impression que ce que les ventilateurs peuvent évacuer. Cela fait fondre le plastique encore plus que si vous n'aviez pas de temps de couche minimum.
 
 Avec Relever la tête, ce problème est résolu. Vous pouvez toujours ralentir jusqu'à un certain point, mais pour les très petites couches, la buse chaude s'éloignera, de sorte qu'elle ne transférera plus de chaleur dans la pièce. La tête est maintenue suffisamment près pour que les ventilateurs de la tête continuent à souffler sur l'impression.
 

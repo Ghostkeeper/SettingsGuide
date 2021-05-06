@@ -58,12 +58,12 @@ Le modèle de subdivision cubique crée des cubes, un modèle tridimensionnel. L
 
 Ce motif peut produire des densités de remplissage inférieures à celles souhaitées. Il est conseillé d'augmenter considérablement la densité de remplissage lors de l'utilisation de ce modèle. L'optimisation fonctionne mieux à des taux de remplissage élevés.
 
-Algorithmiquement, ce modèle est généré en créant un cube géant autour du volume entier, puis en subdivisant ce cube en 8 sous-cubes lorsqu'il touche un mur quelconque. Cette opération est ensuite répétée, de sorte que les sous-cubes qui touchent un mur quelconque sont subdivisés encore et encore. Cela se répète jusqu'à ce que la distance de la ligne de remplissage soit atteinte.
+Algorithmiquement, ce modèle est généré en créant un cube géant autour du volume entier, puis en subdivisant ce cube en 8 sous-cubes lorsqu'il touche une paroi quelconque. Cette opération est ensuite répétée, de sorte que les sous-cubes qui touchent une paroi quelconque sont subdivisés encore et encore. Cela se répète jusqu'à ce que la distance de la ligne de remplissage soit atteinte.
 * Le motif le plus fort en fonction du poids et du temps d'impression.
 * La force est à peu près égale dans toutes les directions, y compris la direction verticale.
 * Concentre le remplissage en fines pièces.
 * L'effet de l'oreiller est réduit, car il ne produit pas de longues poches verticales d'air chaud.
-* Si l'on utilise une densité de remplissage accrue, le remplissage ne brille pas beaucoup à travers les murs, ce qui produit une meilleure qualité de surface pour un temps d'impression égal.
+* Si l'on utilise une densité de remplissage accrue, le remplissage ne brille pas beaucoup à travers les parois, ce qui produit une meilleure qualité de surface pour un temps d'impression égal.
 * Introduit des rétractions, ce qui ne fonctionne pas bien avec des matériaux flexibles ou coulants.
 * Prend plus de temps à découper.
 

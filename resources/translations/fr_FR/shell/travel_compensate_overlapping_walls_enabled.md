@@ -6,7 +6,7 @@ Lors de l'impression de pièces fines, les parois opposées peuvent se rapproche
 ![Toutes les lignes sont extrudées sur toute leur largeur, ce qui crée une partie trop large](../../../articles/images/travel_compensate_overlapping_walls_enabled_disabled.png)
 ![La moitié des lignes ont réduit leur largeur, ce qui permet une impression plus précise](../../../articles/images/travel_compensate_overlapping_walls_enabled_enabled.png)
 
-La largeur de la ligne du mur qui chevauche un autre mur est réduite par la zone de chevauchement. Cela permet de compenser la surextrusion.
+La largeur de la ligne de la paroi qui chevauche une autre paroi est réduite par la zone de chevauchement. Cela permet de compenser la surextrusion.
 
 Comme décrit ci-dessus, cette caractéristique tend à améliorer la précision dimensionnelle. Toutefois, l'inconvénient est que le débit devient moins régulier, ce qui entraîne une sous-extrusion à certains endroits et une sur-extrusion à d'autres. De plus, le débit peut être réduit en dessous du débit minimum de la buse et de l'extrudeuse, ce qui entraîne un flux et un bourrelet irréguliers. Pour réduire cet effet, vous pouvez définir le [Débit minimal de la paroi](wall_min_flow.md) qui transformera certaines des parois les plus fines en mouvements de translation au détriment de la précision dimensionnelle.
 

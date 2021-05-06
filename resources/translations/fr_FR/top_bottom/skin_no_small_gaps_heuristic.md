@@ -9,4 +9,4 @@ L'objectif principal de ce réglage est de réduire le temps de tranchage. Ce r�
 
 Si le modèle ne présente pas d'interstices horizontaux plus petits que l'épaisseur de la peau, le seul effet sera une réduction du temps de tranchage.
 
-Si le modèle présente de tels espaces horizontaux, le remplissage sera exposé dans l'espace. Cependant, si l'espace est suffisamment petit, le surplomb fera s'affaisser les murs au point de ne plus être visible.
+Si le modèle présente de tels espaces horizontaux, le remplissage sera exposé dans l'espace. Cependant, si l'espace est suffisamment petit, le surplomb fera s'affaisser les parois au point de ne plus être visible.

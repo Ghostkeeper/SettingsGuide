@@ -17,7 +17,7 @@ Cette page explique certains des termes utilisés par Cura dans l'industrie. Cur
 * **Combler les trous :** (Gap filling) Technique utilisée par Cura pour remplir de petits espaces dans l'impression avec du matériau utilisant de très petits segments de ligne.
 * **Commutateur d'extrudeuse :** (Extruder switch) En général, une seule des extrudeuses est active à la fois. Le passage d'une extrudeuse à l'autre se fait en changeant l'extrudeuse active d'une extrudeuse à l'autre.
 * **Coordonnées de l'origine :** (Coordinate origin) L'emplacement sur le plateau d'impression où une buse se déplacerait si on lui demandait de se déplacer vers les coordonnées [0, 0, 0].
-* **Coquille :** (Shell) Ensemble des murs et de la peau.
+* **Coquille :** (Shell) Ensemble des parois et de la peau.
 * **Couche :** (Layer) L'impression en 3D se fait sur de fines couches de matériau. Ces couches sont des formes 2D d'une certaine épaisseur qui, lorsqu'elles sont empilées verticalement, forment une impression 3D.
 * **Couches adaptatives :** (Adaptive layers) Une technique qui fait varier la hauteur de la couche sur l'impression afin de réduire la visibilité de la topologie tout en imprimant assez rapidement.
 * **Couture :** (Seam) L'endroit où une boucle fermée commence et s'arrête. Ce point est généralement visible sur l'impression finale, vous souhaitez donc le placer à un endroit peu visible.
@@ -29,7 +29,7 @@ Cette page explique certains des termes utilisés par Cura dans l'industrie. Cur
 * **Découpage :** (Slicing) Le processus de conversion d'un modèle 3D en instructions pour qu'une imprimante 3D puisse l'imprimer. Dans le contexte de Cura Engine, ce processus est aussi parfois utilisé pour la création de coupes transversales du modèle, qui est l'une des étapes du processus de découpage complet.
 * **Déplacement :** (Travel , move) Déplacer la buse d'un endroit à l'autre sans extruder de matière.
 * **Dessus/dessous :** (Top/bottom) Les faces supérieure et inférieure de l'impression. Ils sont toujours imprimés à 100 % de densité, généralement avec le motif des lignes. Synonyme de "peau".
-* **Détour :** (Combing) Un mouvement qui tente d'éviter de traverser les murs lors des déplacements, pour éviter de créer une cicatrice visible à l'extérieur de l'empreinte.
+* **Détour :** (Combing) Un mouvement qui tente d'éviter de traverser les paroirs lors des déplacements, pour éviter de créer une cicatrice visible à l'extérieur de l'empreinte.
 * **Dureté :** (Hardness) Mesure d'une impression par rapport à sa capacité de résistance à la déformation élastique ou à la perforation.
 * **En attente :** (Stand-by) Lorsque l'impression se fait avec plusieurs extrudeuses, une seule d'entre elles est généralement active à la fois. Les autres extrudeuses sont en attente.
 * **Épaisseur :** (Thickness) La taille d'une structure dans la direction verticale (Z). Comparer avec "largeur".
@@ -66,11 +66,11 @@ Cette page explique certains des termes utilisés par Cura dans l'industrie. Cur
 * **Mode spirale :** (Spiralise mode) Un mode permettant d'imprimer uniquement le contour des modèles, généralement en augmentant progressivement la coordonnée Z dans toute la couche pour éliminer le joint Z en imprimant le modèle en une grande spirale. En dehors de Cura, ce mode est également connu sous le nom de "mode vase".
 * **Mode Vase :** (Vase mode) Un mode permettant d'imprimer uniquement le contour des modèles, généralement en augmentant progressivement la coordonnée Z sur toute la couche pour éliminer la couture Z. Cura appelle toujours ce mode "spiralisé".
 * **Motif :** (Pattern) Technique consistant à remplir un volume de matière, mais pas nécessairement à 100% de densité. Cura permet de choisir entre plusieurs motifs tels que lignes, grille, concentrique, tétraédrique, etc.
-* **Murs :** (Walls) Les côtés de l'impression. Ils s'enroulent autour du modèle horizontalement.
-* **Mur extérieur :** (Outer wall) Le mur le plus extérieur. Il n'y a qu'un seul mur extérieur par partie et par couche.
-* **Murs intérieurs :** (Inner walls) Tous les murs sauf le mur extérieur. Si une partie d'une couche n'a qu'une seule paroi extérieure, elle peut avoir un nombre quelconque de parois intérieures.
 * **Objet :** (Object) Un modèle 3D chargé dans la scène 3D de Cura (avant le découpage). Synonyme de "modèle".
 * **Oscillation :** (Ringing) Un défaut d'impression où la surface vacille en raison d'une extrusion incohérente ou d'une oscillation de la buse. Cela se produit généralement après avoir fait des angles vifs trop rapidement.
+* **Parois :** (Walls) Les côtés de l'impression. Ils s'enroulent autour du modèle horizontalement.
+* **Paroi extérieur :** (Outer wall) La paroi la plus extérieur. Il n'y a qu'une seule paroi extérieur par pièce et par couche.
+* **Parois intérieurs :** (Inner walls) Toutes les parois sauf la paroi extérieur. Si une partie d'une couche n'a qu'une seule paroi extérieure, elle peut avoir un nombre quelconque de parois intérieures.
 * **Parquage :** (Parking) Le fait de mettre l'impression en pause pendant un moment alors que la buse est éloignée de l'impression, pour laisser le temps au matériau de refroidir.
 * **Peau :** (Skin) Les faces supérieure et inférieure de l'impression. Ils sont toujours imprimés à 100 % de densité, généralement avec le motif des lignes. Synonyme de "haut/bas".
 * **Pièce :** (Part) Une forme continue (polygone) sur une seule couche. Un modèle unique peut se diviser en plusieurs parties sur certaines couches, lorsqu'il est tranché.

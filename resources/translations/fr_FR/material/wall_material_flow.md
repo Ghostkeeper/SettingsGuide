@@ -1,6 +1,6 @@
 Débit de paroi
 ====
-Ce réglage permet d'ajuster le débit pour les murs uniquement. Le débit pour les murs peut être réglé séparément du débit du reste de l'impression.
+Ce réglage permet d'ajuster le débit pour les parois uniquement. Le débit pour les parois peut être réglé séparément du débit du reste de l'impression.
 
 Le réglage du débit pendant les parois est une méthode d'arrêt de l'espace pour régler les problèmes de vitesse d'extrusion ou de précision dimensionnelle.
 

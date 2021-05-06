@@ -7,8 +7,8 @@ Une fois le pont terminé, le matériau qui n'a pas été extrudé sera de toute
 ![Pas d'extrusion d'un côté du pont, et extrusion supplémentaire de l'autre](../../../articles/images/bridge_skin_density_100.png)
 
 L'unité de ce réglage n'est pas censée être intuitive. La distance devant le pont à laquelle le matériau s'arrêtera de couler dépend d'un certain nombre de facteurs :
-* La longueur du mur jusqu'au pont. Plus le mur est long, plus il peut se déplacer en roue libre.
-* Le débit de la buse pendant la paroi normale, qui dépend de la [vitesse](../speed/speed_wall.md), [largeur de ligne](../resolution/wall_line_width.md), [débit](../material/wall_material_flow.md) et [hauteur_couche](../resolution/layer_height.md) de ces parois. Plus le débit est important dans les murs normaux, plus la distance parcourue est longue.
+* La longueur de la paroi jusqu'au pont. Plus la paroi est longue, plus la buse peut se déplacer en roue libre.
+* Le débit de la buse pendant la paroi normale, qui dépend de la [vitesse](../speed/speed_wall.md), [largeur de ligne](../resolution/wall_line_width.md), [débit](../material/wall_material_flow.md) et [hauteur_couche](../resolution/layer_height.md) de ces parois. Plus le débit est important dans les parois normales, plus la distance parcourue est longue.
 * Le débit de sortie de la buse pendant la paroi en pont, qui dépend de la [vitesse](bridge_wall_speed.md) et du [débit](bridge_wall_material_flow.md) de ces parois. Plus le débit est important dans les parois pontées, plus la distance de franchissement est courte.
 
 Ce paramètre est un facteur multiplicateur de la longueur finale.

@@ -8,4 +8,4 @@ Normalement, le remplissage commence par la ligne qui est la plus proche de la p
 
 Toutefois, cela augmente légèrement le temps de parcours et entraîne une augmentation du suintement à l'intérieur du modèle, puisque la distance jusqu'au point de départ du remplissage n'est plus réduite.
 
-**Bien que l'emplacement de départ soit réparti de manière aléatoire, il reste déterministe. Répéter la même tranche deux fois devrait aboutir aux mêmes emplacements de départ.**
+**Bien que l'emplacement de départ soit réparti de manière aléatoire, il reste déterministe. Répéter le même calcul deux fois devrait aboutir aux mêmes emplacements de départ.**

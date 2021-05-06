@@ -9,4 +9,4 @@ Dans la vue des couches, on aura l'impression que les lignes de remplissage sont
 L'épaisseur de la couche de remplissage doit être un multiple de la hauteur de la couche ordinaire. Si elle ne l'est pas, elle sera arrondie à la hauteur de couche la plus proche.
 
 * Attention à ne pas trop l'augmenter. Lors du passage à la couche de remplissage et inversement, le débit à travers la buse doit accélérer et décélérer de manière significative. Il y a un certain retard sur ce point, de sorte qu'il y aura trop peu d'extrusion au début du remplissage et trop d'extrusion après la fin du remplissage.
-* Dans les couches intermédiaires, il imprimera toujours un remplissage avec une épaisseur de couche plus faible là où il n'y a pas de remplissage dans les couches autour de lui. Cela peut entraîner l'impression de petites lignes de remplissage le long des murs en pente.
+* Dans les couches intermédiaires, il imprimera toujours un remplissage avec une épaisseur de couche plus faible là où il n'y a pas de remplissage dans les couches autour de lui. Cela peut entraîner l'impression de petites lignes de remplissage le long des parois en pente.

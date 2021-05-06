@@ -20,13 +20,13 @@ Calibrage de l'extrudeuse
 ----
 Parfois, le problème réside dans le fait que la matière ne correspond pas aux attentes du microprogramme. Si le moteur de l'extrudeuse est un moteur pas à pas (ce qui est courant dans les imprimantes 3D), le microprogramme doit savoir combien de pas du moteur entraîneront le déplacement d'une certaine distance. Le microprogramme a un paramètre pour cela, mesurant la précision de l'alimentation en pas par millimètre. Si ce paramètre est mal configuré, le chargeur peut se déplacer trop rapidement ou trop lentement. Il est préférable d'ajuster ce paramètre dans le microprogramme si vous le pouvez. Cependant, si cela est impossible, le [débit](../material/material_flow.md) dans Cura peut être ajusté pour compenser. Vous devez également compenser toutes les [distances de rétraction](../travel/retraction_amount.md) et les [vitesses](../travel/retraction_speed.md).
 
-Chevauchement des murs
+Chevauchement des parois
 ----
-Cura se contente normalement de dessiner les contours de l'impression avec une certaine largeur de trait. Si les murs se rapprochent à certains endroits de l'empreinte, cela entraînera un chevauchement des lignes. Ces lignes deviennent épaisses et produisent des taches car il peut y avoir jusqu'à deux fois plus de matière que nécessaire. Lorsqu'il y a beaucoup de chevauchement, la deuxième ligne ne peut pas s'extruder, et la pression à l'intérieur de la chambre de la buse augmente jusqu'à ce qu'elle soit expulsée et produise un blob.
+Cura se contente normalement de dessiner les contours de l'impression avec une certaine largeur de trait. Si les parois se rapprochent à certains endroits de l'empreinte, cela entraînera un chevauchement des lignes. Ces lignes deviennent épaisses et produisent des taches car il peut y avoir jusqu'à deux fois plus de matière que nécessaire. Lorsqu'il y a beaucoup de chevauchement, la deuxième ligne ne peut pas s'extruder, et la pression à l'intérieur de la chambre de la buse augmente jusqu'à ce qu'elle soit expulsée et produise un blob.
 
-Cela peut être évité en activant la [compensation pour les parois qui se chevauchent](../shell/travel_compensate_overlapping_walls_enabled.md). L'extrusion de la deuxième ligne sera réduite de telle sorte qu'elle extrude autant de matériau que nécessaire pour remplir l'espace restant du mur, ce qui empêche la surextrusion.
+Cela peut être évité en activant la [compensation pour les parois qui se chevauchent](../shell/travel_compensate_overlapping_walls_enabled.md). L'extrusion de la deuxième ligne sera réduite de telle sorte qu'elle extrude autant de matériau que nécessaire pour remplir l'espace restant de la paroi, ce qui empêche la surextrusion.
 
-Si les murs se chevauchent en raison de l'[Insert de paroi externe](../shell/wall_0_inset.md), vous pouvez essayer de réduire ce décalage pour éviter la surextrusion. Vous pouvez également essayer d'imprimer le [mur extérieur d'abord](../shell/outer_inset_first.md). L'excès de matériau sera alors poussé vers l'intérieur du modèle, où il est invisible.
+Si les parois se chevauchent en raison de l'[Insert de paroi externe](../shell/wall_0_inset.md), vous pouvez essayer de réduire ce décalage pour éviter la surextrusion. Vous pouvez également essayer d'imprimer la [paroi extérieur d'abord](../shell/outer_inset_first.md). L'excès de matériau sera alors poussé vers l'intérieur du modèle, où il est invisible.
 
 Réglage direct du débit
 ----
