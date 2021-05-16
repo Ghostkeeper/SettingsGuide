@@ -1,6 +1,6 @@
-Vitesse de chauffe
+Vitesse de chauffage
 ====
-Ce réglage indique à Cura à quelle vitesse votre imprimante peut chauffer cette buse. Il sert à prédire quand il faut commencer à préchauffer la buse avant de changer d'extrudeuse.
+Ce réglage indique à Cura à quelle vitesse votre imprimante peut chauffer une buse. Il sert à prédire quand il faut commencer à préchauffer la buse avant de changer d'extrudeuse.
 
 ![Les buses commencent à chauffer à l'avance avant de changer d'extrudeuse](../images/temperature_regulation_fr.svg)
 
