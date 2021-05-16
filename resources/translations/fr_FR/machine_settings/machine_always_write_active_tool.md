@@ -1,4 +1,4 @@
-Toujours écrire l'outil actif
+Toujours écrire l''outil actif
 ====
 Ce paramètre indique comment certaines commandes G-Code avec un paramètre d'outil sont interprétées par l'imprimante. Certaines commandes G-Code peuvent inclure un paramètre pour indiquer à quelle extrudeuse il s'applique. Certains microprogrammes interprètent ce paramètre comme une commande permettant de passer à cet outil et d'exécuter ensuite le G-Code, tandis que d'autres interprètent ce paramètre comme une commande permettant d'appliquer le G-Code à une extrudeuse différente de celle qui est actuellement active.
 
