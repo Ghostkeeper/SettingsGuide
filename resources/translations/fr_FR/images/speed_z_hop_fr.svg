@@ -29,6 +29,6 @@
 	<!-- Labels. -->
 	<g font-family="sans-serif" font-size="60px">
 		<text x="1000" y="120" text-anchor="middle">Vitesse déplacement</text>
-		<text x="500" y="80" text-anchor="end">Vitesse du décalage en Z</text>
+		<text x="530" y="80" text-anchor="end">Vitesse du décalage en Z</text>
 	</g>
 </svg>
