@@ -31,6 +31,6 @@
 		<text x="1000" y="120" text-anchor="middle">Vitesse déplacement</text>
 	</g>
 	<g font-family="sans-serif" font-size="48px">
-		<text x="540" y="80" text-anchor="end">Vitesse du décalage en Z</text>
+		<text x="540" y="85" text-anchor="end">Vitesse du décalage en Z</text>
 	</g>
 </svg>
