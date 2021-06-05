@@ -252,11 +252,6 @@ Item {
 					articleList.currentIndex = -1;
 				}
 			}
-
-			UM.SettingPropertyProvider {
-				id: provider
-				containerStackId: Cura.MachineManager.activeMachineId
-			}
 		}
 	}
 
