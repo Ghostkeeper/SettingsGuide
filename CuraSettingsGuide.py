@@ -138,6 +138,7 @@ class CuraSettingsGuide(Extension, QObject):
 				:param guide: The CuraSettingsGuide object which has the
 				function to call.
 				"""
+				super().__init__()
 				self.guide = guide
 
 			def run(self):
