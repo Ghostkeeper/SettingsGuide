@@ -68,6 +68,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self.load_definitions()
 		self.article_locations = self.find_articles()
 		self._selected_article_id = ""  # Which article is currently shown for the user. Empty string indicates it's the welcome screen.
+		self.completed_loading = False  # Only after loading is completed can we set the tooltips.
 
 		# Add context menu item to the settings list to open the guide for that setting.
 		application = CuraApplication.getInstance()
@@ -87,6 +88,7 @@ class CuraSettingsGuide(Extension, QObject):
 		self.adjust_theme()
 		application.initializationFinished.connect(self.load_all_in_background)
 		application.initializationFinished.connect(self.widen_tooltips)
+		application.globalContainerStackChanged.connect(self.set_tooltips)
 
 	def adjust_theme(self):
 		"""
@@ -162,6 +164,7 @@ class CuraSettingsGuide(Extension, QObject):
 		for article_id in self.article_locations:
 			for language in self.article_locations[article_id]:
 				self._getArticle(article_id, language)  # Load articles one by one.
+		self.completed_loading = True
 		self.set_tooltips()
 		Logger.log("i", "Finished loading Settings Guide articles.")
 
@@ -187,6 +190,8 @@ class CuraSettingsGuide(Extension, QObject):
 		Set the tooltips to the contents of the articles in the current
 		language.
 		"""
+		if not self.completed_loading:
+			return  # This got triggered via the global stack changed signal before all articles completed loading. It will trigger again when loading is complete.
 		if not CuraApplication.getInstance().getPreferences().getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
 			return  # User doesn't want tooltips changed.
 		language = CuraApplication.getInstance().getPreferences().getValue("settings_guide/language")
