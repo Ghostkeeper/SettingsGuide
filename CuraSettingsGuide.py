@@ -6,11 +6,11 @@
 
 import os  # To find the article files and other resources.
 import urllib.parse  # For unquote_plus to create preference keys for forms.
-from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QSizeF, QObject, QUrl  # To expose data to the GUI and adjust the size of setting tooltips.
+from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl  # To expose data to the GUI and adjust the size of setting tooltips.
 import re  # To get images from the descriptions.
 import shutil  # To copy the theme.
 import threading  # Screenshot refresh is done on a separate thread.
-from typing import Dict, List, Optional
+from typing import Dict, List
 
 from cura.CuraApplication import CuraApplication  # To get the setting version to load the correct definition file, and to create QML components.
 from UM.Extension import Extension  # We're implementing a Cura extension.
