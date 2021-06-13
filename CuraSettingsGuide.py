@@ -149,7 +149,6 @@ class CuraSettingsGuide(Extension, QObject):
 				self.guide.load_all()
 		JobQueue.getInstance().add(ArticleLoadJob(self))
 
-
 	def load_all(self):
 		"""
 		Pre-cache all articles in all languages.
@@ -162,8 +161,7 @@ class CuraSettingsGuide(Extension, QObject):
 		for article_id in self.article_locations:
 			for language in self.article_locations[article_id]:
 				self._getArticle(article_id, language)  # Load articles one by one.
-		if CuraApplication.getInstance().getPreferences().getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
-			self.set_tooltips()
+		self.set_tooltips()
 		Logger.log("i", "Finished loading Settings Guide articles.")
 
 	def load_definitions(self):
@@ -188,6 +186,8 @@ class CuraSettingsGuide(Extension, QObject):
 		Set the tooltips to the contents of the articles in the current
 		language.
 		"""
+		if not CuraApplication.getInstance().getPreferences().getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
+			return  # User doesn't want tooltips changed.
 		language = CuraApplication.getInstance().getPreferences().getValue("settings_guide/language")
 		global_stack = CuraApplication.getInstance().getGlobalContainerStack()
 		if not global_stack:
