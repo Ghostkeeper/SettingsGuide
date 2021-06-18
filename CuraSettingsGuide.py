@@ -120,10 +120,13 @@ class CuraSettingsGuide(Extension, QObject):
 		"""
 		application = CuraApplication.getInstance()
 		if application.getPreferences().getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
-			main_window = application._qml_engine.rootObjects()[0]
-			tooltips = main_window.findChildren(PointingRectangle)  # There are multiple instances of this (currently 3). It's indistinguishable which is the setting tooltip. Collateral damage!
-			for tooltip in tooltips:
-				tooltip.setWidth(tooltip.width() * 2.5)
+			try:
+				main_window = application._qml_engine.rootObjects()[0]
+				tooltips = main_window.findChildren(PointingRectangle)  # There are multiple instances of this (currently 3). It's indistinguishable which is the setting tooltip. Collateral damage!
+				for tooltip in tooltips:
+					tooltip.setWidth(tooltip.width() * 2.5)
+			except IndexError:  # rootObjects() returned an empty list, meaning the main window failed to load.
+				pass  # Let's skip widening the tooltips then.
 
 	def load_all_in_background(self):
 		"""
