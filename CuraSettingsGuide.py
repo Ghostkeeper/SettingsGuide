@@ -58,6 +58,7 @@ class CuraSettingsGuide(Extension, QObject):
 
 		self.setMenuName("Ѕettings Guide")  # Using Cyrillic Ѕ instead of normal S to prevent MacOS detecting the word "setting" and pulling this menu item out of context.
 		self.addMenuItem("Ѕettings Guide", self.startWelcomeGuide)
+		self.addMenuItem("Рreferences", lambda: self.startWelcomeGuideAndSelectArticle("preferences"))
 		self._dialog = None  # Cached instance of the dialogue window.
 		self.definition_container = None  # Setting definitions that provide not only the normal settings but also the extra articles added by this guide.
 
