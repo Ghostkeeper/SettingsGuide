@@ -7,7 +7,7 @@ Ce paramètre détermine l'épaisseur des parois autour de l'impression. Enfin, 
 
 L'épaisseur de la paroi doit être un multiple de la largeur de la ligne de paroi. Si elle ne l'est pas, elle sera arrondie pour être un multiple exact. Gardez cependant à l'esprit qu'une des parois sera une paroi extérieure, et le reste sera une paroi intérieure. Ces parois peuvent avoir des largeurs de ligne différentes.
 
-L'épaisseur des parois est un facteur important dans la force de l'impression. Comme les parois sont adjacentes, elles peuvent se renforcer mutuellement, ce qui donne une partie plus solide. Pour des empreintes plus grandes, cela peut être un moyen beaucoup plus efficace d'obtenir un objet fort que d'ajuster le remplissage, en fonction de la forme.
+L'épaisseur des parois est un facteur important dans la résistance de l'impression. Comme les parois sont adjacentes, elles peuvent se renforcer mutuellement, ce qui donne une partie plus solide. Pour des empreintes plus grandes, cela peut être un moyen beaucoup plus efficace d'obtenir un objet résistant que d'ajuster le remplissage, en fonction de la forme.
 
 Augmenter l'épaisseur de la paroi le fera :
 * Augmenter considérablement la résistance de l'impression.

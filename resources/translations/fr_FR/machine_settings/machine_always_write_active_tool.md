@@ -17,3 +17,5 @@ En raison de la stratégie de régulation de la température de Cura, il n'est j
 `T0`
 
 Elle sait essentiellement que l'imprimante passera à la deuxième extrudeuse en raison de cette commande, et qu'elle doit donc repasser à la première extrudeuse pour continuer à imprimer.
+
+**Comme il s'agit d'un paramètre machine, il ne figurera pas dans la liste standard des paramètres.**
