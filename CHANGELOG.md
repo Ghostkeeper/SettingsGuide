@@ -1,3 +1,21 @@
+2.7.0 - An Update for Ants
+====
+A small maintenance update to fix a few bugs and address some pain points.
+
+New Features
+----
+* A new menu entry under the Extensions menu navigates directly to the preferences.
+
+Bug Fixes
+----
+* The articles are now correctly displayed in the tooltips after switching printer types.
+* If Cura's main window doesn't get created for some reason, the Settings Guide won't cause it to also crash any more.
+
+Articles
+----
+* The diagrams for Slicing Tolerance are made more clear to understand.
+* Updated French translations.
+
 2.6.0 - Robot Overlords
 ====
 In this update, all images have been re-made using an automated method that allows updating the images more easily in the future. Many articles have been expanded with additional details.
