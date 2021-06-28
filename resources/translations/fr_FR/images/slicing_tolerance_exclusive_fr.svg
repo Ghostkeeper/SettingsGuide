@@ -68,7 +68,7 @@
 	<line stroke="skyblue" stroke-width="50" x1="720" y1="100" x2="780" y2="100" />
 	<line stroke="red" stroke-width="50" opacity="0.4" x1="720" y1="150" x2="780" y2="150" />
 	<g font-family="sans-serif" font-size="30px">
-		<text x="800" y="110">Model</text>
-		<text x="800" y="160">Layers</text>
+		<text x="800" y="110">Modèle</text>
+		<text x="800" y="160">Couches</text>
 	</g>
 </svg>
