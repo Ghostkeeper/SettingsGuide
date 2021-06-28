@@ -17,3 +17,5 @@ Due to the temperature regulation strategy of Cura, it never needs to execute th
 `T0`
 
 Essentially, it knows that the printer will switch to the second extruder due to that command, and so it must switch back to the first extruder to continue printing there.
+
+**Since this is a machine setting, it will not normally be listed in the normal list of settings.**
