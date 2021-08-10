@@ -1,8 +1,8 @@
-Largeur de la bordure du support
+Largeur de la bordure
 ====
-Ce réglage permet d'ajuster la largeur du bord du support. Avec un bord de soutien plus large, plus de contours seront dessinés à l'intérieur de la zone de soutien pour donner une meilleure adhérence.
+Ce réglage permet d'ajuster la largeur de la bordure du support. Avec une bordure de support plus large, plus de contours seront dessinés à l'intérieur de la zone de support pour donner une meilleure adhérence.
 
 ![2mm de largeur](../../../articles/images/support_brim_2mm.png)
 ![4mm de largeur](../../../articles/images/support_brim_4mm.png)
 
-Un bord plus large augmentera l'adhérence du support au plateau d'impression et réduira le gauchissement du support. Par conséquent, le support sera plus solide, ce qui améliorera la fiabilité de l'impression.
+Une bordure plus large augmentera l'adhérence du support au plateau d'impression et réduira le gauchissement du support. Par conséquent, le support sera plus solide, ce qui améliorera la fiabilité de l'impression.
