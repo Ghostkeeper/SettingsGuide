@@ -207,8 +207,7 @@ class CuraSettingsGuide(Extension, QObject):
 				definition = global_stack.definition.findDefinitions(key=article_id)[0]
 				if language in self.articles_rich_text[article_id]:
 					definition._SettingDefinition__property_values["description"] = self.preprocess_tooltips(self.articles_rich_text[article_id][language])
-				else:
-					# English should always exist if there is a translation.
+				elif "en_US" in self.articles_rich_text[article_id]:  # Fall back to English. Or don't change it if the article doesn't exist.
 					definition._SettingDefinition__property_values["description"] = self.preprocess_tooltips(self.articles_rich_text[article_id]["en_US"])
 
 	def preprocess_tooltips(self, original_text):
