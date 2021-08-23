@@ -1,6 +1,6 @@
 Épaisseur du dessus
 ====
-Ce paramètre permet de configurer l'épaisseur de la face supérieure pleine de l'impression. Cette couche solide est imprimée à la place du remplissage clairsemé. Elle est destinée à fermer la face supérieure.
+Ce paramètre permet de configurer l'épaisseur de la face supérieure pleine de l'impression. Cette couche pleine est imprimée à la place du remplissage clairsemé. Elle est destinée à fermer la face supérieure.
 
 ![Épaisseur supérieure ordinaire](../../../articles/images/top_bottom_thickness_0.8.png)
 ![Épaisseur fortement augmentée](../../../articles/images/top_thickness.png)
