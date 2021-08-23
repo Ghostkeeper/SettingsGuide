@@ -1,6 +1,6 @@
 Motif du dessus/dessous
 ====
-Ce paramètre vous permet de choisir comment les surfaces supérieure et inférieure se remplissent de matériau. Plusieurs motifs d'impression différents sont disponibles, mais les motifs sont ici plus limités que pour le remplissage. Seuls les motifs qui créent des couches solides sont disponibles.
+Ce paramètre vous permet de choisir comment les surfaces supérieure et inférieure se remplissent de matériau. Plusieurs motifs d'impression différents sont disponibles, mais les motifs sont ici plus limités que pour le remplissage. Seuls les motifs qui créent des couches pleines sont disponibles.
 
 Lignes
 ---
