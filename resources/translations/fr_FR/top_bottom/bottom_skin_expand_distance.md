@@ -1,6 +1,6 @@
 Distance d'expansion de la couche extérieure inférieure
 ====
-Élargissez ou réduisez les couches pleines du fond de votre impression dans le sens horizontal. Normalement, les couches pleines ne sont générées qu'au-dessus des parties où il y a de l'air en dessous, mais avec ce réglage, vous pouvez l'élargir horizontalement un peu plus, ce qui améliore la résistance en faisant en sorte que la peau s'attache mieux aux parois adjacentes et en fermant les interstices de la peau.
+Élargissez ou réduisez les couches pleines du fond de votre impression dans le sens horizontal. Normalement, les couches pleines ne sont générées qu'au-dessus des parties où il y a du vide en dessous, mais avec ce réglage, vous pouvez l'élargir horizontalement un peu plus, ce qui améliore la résistance en faisant en sorte que la peau s'attache mieux aux parois adjacentes et en fermant les interstices de la peau.
 
 ![Comment les peaux (les parties jaunes) ont normalement l'air](../../../articles/images/skin_preshrink_original.png)
 ![Peaux agrandies de 1mm](../../../articles/images/expand_skins_expand_distance_1mm.png)
