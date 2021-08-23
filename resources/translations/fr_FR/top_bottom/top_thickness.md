@@ -6,7 +6,7 @@ Ce paramètre permet de configurer l'épaisseur de la face supérieure pleine de
 ![Épaisseur fortement augmentée](../../../articles/images/top_thickness.png)
 
 Une face supérieure plus épaisse aura plusieurs effets, bénéfiques pour la qualité de la surface supérieure mais préjudiciables à la productivité.
-* Votre pièce sera plus solide. Une face supérieure plus épaisse signifie qu'une partie plus petite de votre impression sera remplie par le motif de remplissage épars. Au lieu de cela, elle sera rendue complètement solide.
+* Votre pièce sera plus solide. Une face supérieure plus épaisse signifie qu'une partie plus petite de votre impression sera remplie par le motif de remplissage épars. Au lieu de cela, elle sera créée complètement remplie.
 * La surface supérieure sera plus lisse. L'effet de matelassage et les affaissements de la peau supérieure seront aplanis dans les couches supplémentaires.
 * Il est plus probable que votre modèle soit étanche. Une face supérieure plus épaisse fournira plus de couches pour empêcher l'eau ou d'autres fluides de pénétrer, puisque plus de couches sont remplies complètement.
 * Votre impression utilisera plus de matière, car plus de couches sont remplies complètement.
