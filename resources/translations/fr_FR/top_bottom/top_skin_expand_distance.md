@@ -6,7 +6,7 @@ Distance d'expansion de la couche extérieure supérieure
 ![Peaux agrandies de 1mm](../../../articles/images/expand_skins_expand_distance_1mm.png)
 
 * Si vous avez de petits trous dans les couches supérieures de la peau (trous qui sont remplis avec le motif de remplissage), le fait de régler ce paramètre un peu plus haut les fermera. Cela permet à l'imprimante d'imprimer en continu les lignes du bas, ce qui améliore considérablement la résistance.
-* Si la face inférieure de votre impression n'est pas plate, augmenter ce réglage entraînera l'impression de la peau au-delà de la zone qui se trouve directement au-dessus de l'air, au-dessus des parois. Cela améliorera l'adhérence entre la peau et les parois, ce qui améliorera encore la résistance.
+* Si la face inférieure de votre impression n'est pas plate, augmenter ce réglage entraînera l'impression de la peau au-delà de la zone qui se trouve directement au-dessus du vide, au-dessus des parois. Cela améliorera l'adhérence entre la peau et les parois, ce qui améliorera encore la résistance.
 * Si vous réglez ce paramètre sur une valeur négative, la largeur des couches inférieures sera réduite et remplacée par un remplissage. Cela peut permettre de gagner du temps d'impression, au détriment de la résistance.
 
 **En raison de limitations techniques, vous ne pouvez pas réduire ce paramètre en dessous de la valeur de [Largeur de retrait de la couche extérieure supérieure](top_skin_preshrink.md). Augmentez le paramètre Top Skin Removal Width afin d'enlever plus de peau.**
