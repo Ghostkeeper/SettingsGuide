@@ -50,3 +50,6 @@ When printing top/bottom lines, the lines usually overlap a bit with the lines n
 The monotonic order will slightly increase the length of travel moves, but this effect is very minimal. It only has a visual effect on the print. There are no mechanical advantages to the monotonic ordering.
 
 To achieve a smooth surface, consider pairing this setting with setting the [Combing Mode](../travel/retraction_combing.md) to avoid skin, and perhaps to enable [Z Hops](../travel/retraction_hop.md). Alternatively you could also enable [ironing](ironing_enabled.md), but that completely overrides the usefulness of this setting. Ironing has its own [monotonic option](ironing_monotonic.md).
+
+![The shimmer is different when lines are printed in inconsistent order](../images/skin_monotonic_disabled.jpg)
+![With monotonic order, the shimmer is the same everywhere](../images/skin_monotonic_enabled.jpg)
