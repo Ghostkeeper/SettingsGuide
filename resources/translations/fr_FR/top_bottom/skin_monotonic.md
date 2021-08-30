@@ -1,8 +1,8 @@
-Monotonic Top/Bottom Order
+Ordre monotonique haut/bas
 ====
-Normally, Cura orders top/bottom lines such that the travel distance between them is small. If this setting is enabled, it will order the top/bottom lines such that adjacent lines are always printed overlapping in the same direction.
+Normalement, Cura ordonne les lignes haut/bas de telle sorte que la distance de déplacement entre elles soit faible. Si ce paramètre est activé, il ordonnera les lignes haut/bas de telle sorte que les lignes adjacentes soient toujours imprimées en se chevauchant dans la même direction.
 
-When printing top/bottom lines, the lines usually overlap a bit with the lines next to them, because the shape of a line is not a perfect rectangle. This overlap gives the lines a slight slope, causing them to reflect light differently in different directions. If adjacent lines overlap differently, this reflection changes. You can see this in the final result. It gives different areas of the surface a different shine. Printing in a monotonic order ensures that the overlap is the same on the entire surface, so there is no difference in how it reflects light. This makes the surface look more consistent and smooth.
+Lors de l'impression des lignes supérieures/inférieures, les lignes se chevauchent généralement un peu avec les lignes voisines, car la forme d'une ligne n'est pas un rectangle parfait. Ce chevauchement donne aux lignes une légère inclinaison, ce qui fait qu'elles réfléchissent la lumière différemment dans différentes directions. Si les lignes adjacentes se chevauchent différemment, cette réflexion change. Vous pouvez le voir dans le résultat final. Il donne à différentes zones de la surface une brillance différente. L'impression dans un ordre monotone garantit que le chevauchement est le même sur toute la surface, de sorte qu'il n'y a pas de différence dans la façon dont elle reflète la lumière. La surface paraît ainsi plus homogène et plus lisse.
 
 <!--screenshot {
 "image_path": "skin_monotonic_disabled.gif",
