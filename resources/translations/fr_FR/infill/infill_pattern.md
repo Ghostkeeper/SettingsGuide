@@ -139,7 +139,8 @@ Gyroïde
 
 Le motif de remplissage gyroïde produit un motif ondulé qui alterne les directions.
 * Produit un volume qui est complètement perméable aux fluides, ce qui en fait un modèle utile pour les matériaux dissolvables.
-* Egalement fort dans toutes les directions, mais pas trop. Cela le rend utile pour les matériaux souples, mais le résultat sera un peu plus dur, moins écrasant, que les motifs de remplissage en croix (3D).
+* Résistance égale dans toutes les directions, mais pas très rigide. Cela le rend utile pour les matériaux flexibles, mais le résultat sera un peu plus dur, moins spongieux, que les motifs de remplissage en croix (3D).
+* Il n'y a pas de lignes qui se chevauchent dans ce motif, ce qui permet d'imprimer plus facilement avec des matériaux ayant une tension de surface plus élevée et rend le remplissage très fiable et cohérent.
 * Résistant au cisaillement.
 * Prend beaucoup de temps à découper et produit de gros fichiers g-code. Pour certaines imprimantes, il peut être difficile de suivre les nombreuses commandes g-code par seconde, et il peut être difficile de suivre une connexion en série à faible débit en bauds.
 
