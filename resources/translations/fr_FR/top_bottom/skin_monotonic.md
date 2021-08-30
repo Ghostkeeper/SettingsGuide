@@ -1,0 +1,55 @@
+Monotonic Top/Bottom Order
+====
+Normally, Cura orders top/bottom lines such that the travel distance between them is small. If this setting is enabled, it will order the top/bottom lines such that adjacent lines are always printed overlapping in the same direction.
+
+When printing top/bottom lines, the lines usually overlap a bit with the lines next to them, because the shape of a line is not a perfect rectangle. This overlap gives the lines a slight slope, causing them to reflect light differently in different directions. If adjacent lines overlap differently, this reflection changes. You can see this in the final result. It gives different areas of the surface a different shine. Printing in a monotonic order ensures that the overlap is the same on the entire surface, so there is no difference in how it reflects light. This makes the surface look more consistent and smooth.
+
+<!--screenshot {
+"image_path": "skin_monotonic_disabled.gif",
+"models": [
+    {
+        "script": "yen.scad",
+        "transformation": ["scale(0.5)"]
+    }
+],
+"camera_position": [0, 0, 130],
+"settings": {
+    "wall_line_count": 1,
+    "skin_outline_count": 0,
+    "travel_compensate_overlapping_walls_enabled": false,
+    "skin_monotonic": false
+},
+"layer": 1,
+"line": [29, 45, 61, 77, 93, 109, 125, 141, 157, 161, 177, 193, 199, 211, 231, 246, 262, 280, 296, 312, 326, 342, 358, 374, 397, 417, 433, 449, 464, 480, 499],
+"delay": 125,
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "skin_monotonic_enabled.gif",
+"models": [
+    {
+        "script": "yen.scad",
+        "transformation": ["scale(0.5)"]
+    }
+],
+"camera_position": [0, 0, 130],
+"settings": {
+    "wall_line_count": 1,
+    "skin_outline_count": 0,
+    "travel_compensate_overlapping_walls_enabled": false,
+    "skin_monotonic": true
+},
+"layer": 1,
+"line": [31, 47, 63, 77, 93, 109, 115, 131, 147, 163, 181, 197, 213, 229, 244, 263, 281, 296, 319, 340, 356, 372, 379, 395, 411, 427, 443, 459, 475, 491, 507, 511],
+"delay": 125,
+"colours": 32
+}-->
+![Pas un ordre monotone](../../../articles/images/skin_monotonic_disabled.gif)
+![Ordre monotone, toujours à partir du coin inférieur droit](../../../articles/images/skin_monotonic_enabled.gif)
+
+L'ordre monotone augmente légèrement la longueur des déplacements, mais cet effet est très minime. Il n'a qu'un effet visuel sur l'impression. L'ordre monotone ne présente aucun avantage mécanique.
+
+Pour obtenir une surface lisse, envisagez de combiner ce paramètre avec le paramètre [Mode de détours](../travel/retraction_combing.md) pour éviter les peaux, et peut-être d'activer la [Hauteur du décalage en Z](../travel/retraction_hop.md). Vous pouvez également activer l'[étirage](ironing_enabled.md), mais cela annule complètement l'utilité de ce paramètre. Le repassage a sa propre [option monotone](ironing_monotonic.md).
+
+![La brillance est différent lorsque les lignes sont imprimées dans un ordre incohérent.](../../../articles//images/skin_monotonic_disabled.jpg)
+![Avec un ordre monotone, la brillance est la même partout.](../../../articles//images/skin_monotonic_enabled.jpg)
