@@ -1,3 +1,5 @@
+git config --global core.excludesfile /home/5axes/.gitignore
+
 #Compiled and generated things.
 *.pyc
 __pycache__
