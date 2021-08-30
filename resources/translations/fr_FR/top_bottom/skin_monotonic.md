@@ -52,4 +52,4 @@ L'ordre monotone augmente légèrement la longueur des déplacements, mais cet e
 Pour obtenir une surface lisse, envisagez de combiner ce paramètre avec le paramètre [Mode de détours](../travel/retraction_combing.md) pour éviter les peaux, et peut-être d'activer la [Hauteur du décalage en Z](../travel/retraction_hop.md). Vous pouvez également activer l'[étirage](ironing_enabled.md), mais cela annule complètement l'utilité de ce paramètre. Le repassage a sa propre [option monotone](ironing_monotonic.md).
 
 ![La brillance est différent lorsque les lignes sont imprimées dans un ordre incohérent.](../../../articles//images/skin_monotonic_disabled.jpg)
-![Avec un ordre monotone, la brillance est la même partout.](../../../articles//images/skin_monotonic_enabled.jpg)
+![Avec un ordre monotone, la brillance est la même partout.](../../../articles/images/skin_monotonic_enabled.jpg)
