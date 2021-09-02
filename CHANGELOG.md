@@ -1,3 +1,17 @@
+2.7.1 - Bees' Knees
+====
+A maintenance update supporting Cura 4.11.
+
+Bug Fixes
+----
+* Fixed a rare crash if trying to load custom articles for which no English translation exists.
+
+Articles
+----
+* Added articles for the new Monotonic Order settings.
+* Expanded the Alternate Extra Wall article.
+* Updated French translations.
+
 2.7.0 - An Update for Ants
 ====
 A small maintenance update to fix a few bugs and address some pain points.
