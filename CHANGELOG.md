@@ -1,7 +1,5 @@
-2.7.1 - Bees' Knees
+2.7.1
 ====
-A maintenance update supporting Cura 4.11.
-
 Bug Fixes
 ----
 * Fixed a rare crash if trying to load custom articles for which no English translation exists.
