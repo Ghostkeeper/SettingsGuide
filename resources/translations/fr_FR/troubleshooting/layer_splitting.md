@@ -1,6 +1,6 @@
 Séparation des couches
 ====
-L'adhésion entre les couches est souvent le principal point faible de la structure des objets imprimés en 3D. Si l'adhérence entre les couches diminue pendant ou peu après l'impression, on parle de séparation des couches, de séparation des couches ou de délamination.
+L'adhésion entre les couches est souvent le principal point faible de la structure des objets imprimés en 3D. Si l'adhérence entre les couches diminue pendant ou peu après l'impression, on parle de séparation des couches, de décollement des couches ou de délamination.
 
 ![Les couches se sont séparées sur le côté de ce conteneur](../../../articles/images/layer_splitting.jpg)
 
