@@ -1,0 +1,9 @@
+Grenzwert für Normaldrehzahl/Maximaldrehzahl des Lüfters
+====
+Diese Einstellung legt die Druckzeit der Schicht fest, bei der sie so kurz ist, dass die Lüfterdrehzahl in Richtung der [Maximaldrehzahl des Lüfters](cool_fan_speed_max.md) ansteigt. Für Schichten, die länger zum Drucken brauchen, wird die [Normaldrehzahl des Lüfters](cool_fan_speed_min.md) verwendet. Bei Schichten, deren Druckdauer kürzer ist, wird die Lüfterdrehzahl zwischen der normal und der maximalen Lüfterdrehzahl interpoliert, bis zur [Mindestzeit für Schicht](cool_min_layer_time.md), wo die Lüfterdrehzahl die maximale Lüfterdrehzahl erreicht.
+
+![Welche Lüfterdrehzahl wird wo verwendet](../images/cool_fan_speed.svg)
+
+Eine Verringerung dieses Schwellenwerts (in Richtung kürzerer Schichten) führt dazu, dass sich der Lüfter häufiger mit der Normaldrehzal des Lüfters dreht. Eine Erhöhung dieses Schwellenwerts führt dazu, dass der Lüfter häufiger mit höheren Drehzahlen läuft, auch wenn die Schichten nicht sehr klein sind.
+
+Es ist ratsam, einen gewissen Abstand zwischen der minimalen Schichtzeit und dem Schwellenwert für die reguläre/maximale Lüfterdrehzahl einzuhalten. Wenn der Schwellenwert auf die minimale Schichtzeit eingestellt ist, wird der Lüfter abrupt gestoppt, wenn die Schichten etwas unter den Schwellenwert fallen. Dies führt zu einer sichtbaren Streifenbildung auf der Oberfläche des Drucks, da an der Stelle, an der das Gebläse plötzlich aussetzt, eine harte Grenze entsteht. Wenn stattdessen ein gewisser Unterschied zwischen den beiden Einstellungen besteht, erfolgt die Änderung der Lüfterdrehzahl allmählicher, und die Streifenbildung wird im Druck nicht sichtbar sein.
