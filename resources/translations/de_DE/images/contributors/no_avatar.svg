@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
+	<g fill="grey">
+		<circle cx="500" cy="220" r="220" /> <!-- Head. -->
+		<path d="M100,1000 c0,-800 800,-800 800,0" /> <!-- Body. -->
+	</g>
+</svg>

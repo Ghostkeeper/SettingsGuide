@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1000">
+	<defs>
+		<linearGradient id="left" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" stop-color="deepskyblue" stop-opacity="0" />
+			<stop offset="100%" stop-color="deepskyblue" stop-opacity="1" />
+		</linearGradient>
+		<linearGradient id="right" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" stop-color="deepskyblue" stop-opacity="1" />
+			<stop offset="100%" stop-color="deepskyblue" stop-opacity="0" />
+		</linearGradient>
+	</defs>
+
+	<!-- The model. -->
+	<g stroke="black" stroke-width="10">
+		<g fill="url('#left')">
+			<path d="M0,100 h800 v250 h-800" />
+			<path d="M0,550 h800 v250 h-800" />
+		</g>
+		<g fill="url('#right')">
+			<path d="M2000,100 h-800 v250 h800" />
+			<path d="M2000,550 h-800 v250 h800" />
+		</g>
+	</g>
+
+	<!-- Travel moves. -->
+	<path d="M810,95 h350 v-20 l30,30 l-30,30 v-20 h-350 z" fill="midnightblue" />
+	<path d="M785,540 v-100 h430 v70 h20 l-30,30 l-30,-30 h20 v-50 h-390 v80 z" fill="midnightblue" />
+
+	<!-- Labels. -->
+	<path d="M760,540 l-20,-20 h15 v-60 h-15 l20,-20 l20,20 h-15 v60 h15 z" />
+	<g font-family="sans-serif" font-size="80px">
+		<text x="1000" y="70" text-anchor="middle">No hop</text>
+		<text x="1000" y="530" text-anchor="middle">Hop</text>
+		<text x="730" y="520" text-anchor="end">Z Hop Height</text>
+	</g>
+</svg>
