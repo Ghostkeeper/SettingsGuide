@@ -44,7 +44,7 @@ MouseArea {
 	function code_to_language(code) {
 		var language_mapping = {
 			"cs_CZ": "Čeština",
-			"de_DE": "Deutcsch",
+			"de_DE": "Deutsch",
 			"en_7S": "Pirate",
 			"en_US": "English",
 			"es_ES": "Español",
