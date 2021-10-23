@@ -43,5 +43,11 @@ Through the same syntax as references to settings, some auxiliary information is
 * `{date}` refers to the date it was sliced.
 * `{day}` refers to the day of the week on which it was sliced.
 * `{initial_extruder_nr}` refers to the extruder that the print will start with.
+<!--if cura_version>=4.12-->
+* `{material_id}` refers to a unique identifier of the active material. Specify the extruder similarly to other settings.
+* `{material_name}` refers to the name of the active material. This is usually the name you'd see on a website selling that material.
+* `{material_type}` refers to the class of material that is active, like PLA or ABS.
+* `{material_brand}` refers to the manufacturer of the active material.
+<!--endif-->
 
 **This setting is a machine setting, so it will not appear in the normal list of settings. It can be changed by going to the list of printers in the preferences screen and clicking on "Machine Settings".**
