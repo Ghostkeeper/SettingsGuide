@@ -43,5 +43,11 @@ Par la même syntaxe que les références aux paramètres, certaines information
 * `{date}` fait référence à la date à laquelle il a été découpé.
 * `{day}` se réfère au jour de la semaine où il a été découpé.
 * `{initial_extruder_nr}` fait référence à l'extrudeuse avec laquelle l'impression commencera.
+<!--if cura_version>=4.12-->
+* `{material_id}` fait référence à un identifiant unique du matériau actif. Spécifiez l'extrudeur de la même manière que les autres paramètres.
+* `{material_name}` fait référence au nom de la matière active. Il s'agit généralement du nom que vous verrez sur un site Web vendant cette matière.
+* `{material_type}` fait référence à la classe de matériau actif, comme PLA ou ABS.
+* `{material_brand}` fait référence au fabricant de la matière active.
+<!--endif-->
 
 *Ce paramètre est un paramètre de machine, il n'apparaîtra donc pas dans la liste normale des paramètres. Il peut être modifié en allant dans la liste des imprimantes dans l'écran des préférences et en cliquant sur "Paramètres machine".*
