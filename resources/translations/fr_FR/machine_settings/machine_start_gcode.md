@@ -8,7 +8,7 @@ Voici quelques exemples de choses qui sont généralement exécutées dans le g-
 * Chauffage de la (des) buse(s).
 * S'assurer que la bonne extrudeuse est sélectionnée.
 * Configurer les ventilateurs, les accélérations ou les saccades.
-* Mise à niveau automatique du lit.
+* Mise à niveau automatique du plateau.
 * Configurer l'avance linéaire.
 
 Pour une liste assez complète des g-codes disponibles que vous pouvez écrire ici, consultez le [RepRap Wiki](https://reprap.org/wiki/G-code).
@@ -47,10 +47,16 @@ Par la même syntaxe que les références aux paramètres, certaines information
 * `{date}` fait référence à la date à laquelle il a été découpé.
 * `{day}` se réfère au jour de la semaine où il a été découpé.
 * `{initial_extruder_nr}` fait référence à l'extrudeuse avec laquelle l'impression commencera.
+<!--if cura_version>=4.12-->
+* `{material_id}` fait référence à un identifiant unique du matériau actif. Spécifiez l'extrudeur de la même manière que les autres paramètres.
+* `{material_name}` fait référence au nom de la matière active. Il s'agit généralement du nom que vous verrez sur un site Web vendant cette matière.
+* `{material_type}` fait référence à la classe de matériau actif, comme PLA ou ABS.
+* `{material_brand}` fait référence au fabricant de la matière active.
+<!--endif-->
 
-Chauffage avant le démarrage g-code
+Chauffage avant le démarrage G-Code
 ----
-Cura émettra automatiquement des commandes de chauffage avant que votre code g de démarrage ne commence. De cette façon, votre code g de démarrage ne doit pas tenir compte du fait que la buse doit chauffer. Vous pouvez immédiatement commencer à amorcer la buse. Si votre code g de démarrage contient une référence à une température quelconque (pour la buse ou le lit), celle-ci sera désactivée (pour la buse ou le lit, respectivement).
+Cura émettra automatiquement des commandes de chauffage avant que votre G-Code de démarrage ne commence. De cette façon, votre G-Code de démarrage ne doit pas tenir compte du fait que la buse doit chauffer. Vous pouvez immédiatement commencer à amorcer la buse. Si votre  G-Code de démarrage contient une référence à une température quelconque (pour la buse ou le plateau), celle-ci sera désactivée (pour la buse ou le plateau, respectivement).
 
 *Ce réglage est un réglage machine, il n'apparaîtra donc pas dans la liste normale des réglages. Il peut être modifié en allant dans la liste des imprimantes dans l'écran des préférences et en cliquant sur "Réglages machine".*
 
