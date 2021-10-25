@@ -78,6 +78,8 @@ commands = {
 	"merge_gif": ["convert", "-delay", "{delay}", "-loop", "0", "-background", "white", "-alpha", "remove", "-layers", "Optimize", "{inputs}", "{output}"],  # Merge multiple images into a GIF.
 	"optimise_gif": ["flexigif", "-f", "{input}", "{output}"]  # Reduce file size of GIF images.
 }
+render_width = 2524
+render_height = 1376
 
 def call_with_args(command, **kwargs) -> None:
 	"""
@@ -182,7 +184,10 @@ def refresh_screenshots(article_text, refreshed_set) -> None:
 				navigate_layer_view(minimum_layer, layer, line)
 			else:  # Need to show the model itself.
 				switch_to_solid_view()
-			screenshot = take_snapshot(screenshot_instruction.camera_position, screenshot_instruction.camera_lookat, is_layer_view)
+			screenshot = None
+			while screenshot is None:
+				screenshot = take_snapshot(screenshot_instruction.camera_position, screenshot_instruction.camera_lookat, is_layer_view)
+				time.sleep(1.5)
 			if not is_animation:
 				target_file = full_image_path
 			else:
@@ -504,7 +509,7 @@ def switch_to_solid_view() -> None:
 	cura.CuraApplication.CuraApplication.getInstance().getController().setActiveStage("PrepareStage")
 
 @cura.Utils.Threading.call_on_qt_thread  # Must be called from the Qt thread because the OpenGL bindings don't support multi-threading.
-def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.QImage:
+def take_snapshot(camera_position, camera_lookat, is_layer_view) -> typing.Optional[PyQt5.QtGui.QImage]:
 	"""
 	Take a snapshot of the current scene.
 	:param camera_position: The position of the camera to take the snapshot with.
@@ -551,12 +556,15 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 		render_pass.render()
 		time.sleep(1.2)
 		screenshot = render_pass.getOutput()
-		while screenshot.width() != 2524 or screenshot.height() != 1376:  # These are hard-coded to the screen size on half of my screen for now.
-			print("---- render output not correct size!")
-			gl_bindings.glClearColor(0.0, 0.0, 0.0, 0.0)
-			gl_bindings.glClear(gl_bindings.GL_COLOR_BUFFER_BIT | gl_bindings.GL_DEPTH_BUFFER_BIT)
-			time.sleep(1.5)
-			screenshot = render_pass.getOutput()
+		print("---- screenshot size:", screenshot.width(), "x", screenshot.height())
+		if screenshot.width() != render_width or screenshot.height() != render_height:
+			print("---- render output not correct size! Resizing window to compensate.")
+			main_window = application.getMainWindow()
+			delta_width = render_width - screenshot.width()
+			delta_height = render_height - screenshot.height()
+			main_window.setWidth(main_window.width() + delta_width)
+			main_window.setHeight(main_window.height() + delta_height)
+			return None  # Failed to render. Try again after waiting outside of Qt thread.
 
 		# Remove alpha channel from this picture. We don't want the semi-transparent support since we don't draw the object outline here.
 		# Sadly, QImage.convertToFormat has only 2 formats with boolean alpha and they both premultiply. So we'll go the hard way: Through Numpy.

@@ -37,7 +37,7 @@ Lines
 ![Lines](../images/infill_pattern_lines.png)
 
 The lines pattern creates parallel lines. By default, the lines pattern alternates its direction perpendicularly from layer to layer, which makes it look like the grid pattern at first glance. However this can be altered with the [Infill Line Directions](infill_angles.md) setting.
-* The best pattern for a smooth top surface together with zigzag, since the distance between the lines is smallest.
+<!--if cura_version<4.12:* The best pattern for a smooth top surface together with zigzag, since the distance between the lines is smallest.-->
 * Tends to be weak in the vertical direction, because the layers only have small points in which they bond together.
 * Will be extremely weak in the horizontal direction, except in the one direction that the lines are oriented. But even in that direction, it is not resistant to shear so it will fail fairly quickly under load.
 
@@ -277,3 +277,37 @@ The gyroid infill pattern produces a wavy pattern that alternates directions.
 * There are no overlapping lines in this pattern, which allows printing with materials with higher surface tension more easily and makes the infill very reliable and consistent.
 * Resistant to shearing.
 * Takes a long time to slice and produces large g-code files. For some printers it may be hard to keep up with the many g-code commands per second, and it may be hard to keep up with over serial connection on low baud rates.
+
+<!--screenshot {
+"image_path": "infill_pattern_lightning.png",
+"models": [{"script": "hexagonal_prism.scad"}],
+"camera_position": [0, 0, 180],
+"settings": {
+    "top_layers": 0,
+    "infill_pattern": "lightning"
+},
+"colours": 64
+}-->
+<!--screenshot {
+"image_path": "infill_pattern_lightning_side.png",
+"models": [{"script": "dimple_big.scad"}],
+"camera_position": [-120, 52, 59],
+"settings": {
+    "top_layers": 0,
+    "wall_line_count": 0,
+    "infill_pattern": "lightning"
+},
+"colours": 32
+}-->
+<!--if cura_version>=4.12-->
+Lightning
+----
+![Lightning](../images/infill_pattern_lightning.png)
+![The lightning pattern builds up from the sides](../images/infill_pattern_lightning_side.png)
+
+The lightning infill pattern is a jagged minimal pattern that only aims to support the top surface. The infill density specified will only be reached right underneath the top side of the infill volume.
+* Saves a massive amount of time and material by only producing infill underneath the surface.
+* Increasing the infill density leads to the best top surface quality of all patterns while not taking any more time and material.
+* Prevents infill from shining through the walls in many places, by simply not having infill.
+* Does not add to the strength of the part in any significant way.
+<!--endif-->
