@@ -290,12 +290,13 @@ The gyroid infill pattern produces a wavy pattern that alternates directions.
 }-->
 <!--screenshot {
 "image_path": "infill_pattern_lightning_side.png",
-"models": [{"script": "dimple_big.scad"}],
-"camera_position": [-120, 52, 59],
+"models": [{"script": "three_cylinders.scad"}],
+"camera_position": [148, 23, 126],
 "settings": {
     "top_layers": 0,
     "wall_line_count": 0,
-    "infill_pattern": "lightning"
+    "infill_pattern": "lightning",
+    "infill_sparse_density": 30
 },
 "colours": 32
 }-->
