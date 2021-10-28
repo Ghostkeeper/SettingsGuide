@@ -1,0 +1,7 @@
+Erste untere Schichten
+====
+Diese Einstellung bestimmt die Anzahl der Schichten auf der Unterseite des Drucks, wo der Druck auf der Bauplatte aufliegt.
+
+Die Unterseite des Drucks hat eine dreifache Funktion: Sie macht den Druck wasserdicht, verbirgt die Füllung vor den Augen des Betrachters und sorgt für Festigkeit. Eine Außenhaut, die auf der Bauplatte aufliegt, ist sehr stabil, so dass es sehr einfach ist, sie wasserdicht zu machen und die Füllung zu verbergen. In der Regel ist die Außenhaut bereits nach einer Schicht wasserdicht, und die Füllung wird je nach Lichtdurchlässigkeit des Materials versteckt, aber oft schon nach ein oder zwei Schichten. Wenn die Festigkeit keine Rolle spielt, ist es sinnvoll, die Anzahl der unteren Schichten, in denen der Druck auf der Bauplatte aufliegt, zu reduzieren. Das spart eine Menge Zeit. Die zusätzliche Dicke der Unterseite ist nur dann erforderlich, wenn ein Überhang vorhanden ist oder auf einem Support gedruckt wird.
+
+Die Verringerung der Anzahl der unteren Schichten, in denen der Druck auf der Bauplatte aufliegt, spart eine Menge Druckzeit und Material, insbesondere bei großen flachen drucken. Allerdings wird die Festigkeit des Drucks dadurch stark beeinträchtigt.
