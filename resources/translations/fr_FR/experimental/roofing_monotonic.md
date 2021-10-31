@@ -44,8 +44,8 @@ Lors de l'impression des lignes de la surface supérieure, les lignes se chevauc
 "delay": 125,
 "colours": 32
 }-->
-![Pas un ordre monotone](../../../articles/images/skin_monotonic_disabled.gif)
-![Ordre monotonique, toujours à partir du coin inférieur droit](../../../articles/images/skin_monotonic_enabled.gif)
+![Ordre non monotone](../../../articles/images/skin_monotonic_disabled.gif)
+![Ordre monotone, toujours à partir du coin inférieur droit](../../../articles/images/skin_monotonic_enabled.gif)
 
 L'ordre monote augmente légèrement la longueur des déplacements, mais cet effet est très minime. Il n'a qu'un effet visuel sur l'impression. L'ordre monote ne présente aucun avantage mécanique.
 

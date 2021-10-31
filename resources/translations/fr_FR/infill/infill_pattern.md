@@ -145,3 +145,15 @@ Le motif de remplissage gyroïde produit un motif ondulé qui alterne les direct
 * Prend beaucoup de temps à découper et produit de gros fichiers g-code. Pour certaines imprimantes, il peut être difficile de suivre les nombreuses commandes g-code par seconde, et il peut être difficile de suivre une connexion en série à faible débit en bauds.
 
 
+<!--if cura_version>=4.12-->
+Eclair
+----
+![Eclair](../../../articles/images/infill_pattern_lightning.png)
+![Le motif de l'éclair construit à partir des côtés.](../../../articles/images/infill_pattern_lightning_side.png)
+
+Le motif de remplissage de type éclair est un motif minimal en dents de scie qui vise uniquement à soutenir la surface supérieure. La densité de remplissage spécifiée ne sera atteinte que juste en dessous de la face supérieure du volume de remplissage.
+* La densité de remplissage spécifiée ne sera atteinte que sous la face supérieure du volume de remplissage.
+* L'augmentation de la densité de remplissage permet d'obtenir la meilleure qualité de surface de tous les motifs, sans nécessiter plus de temps ni de matière.
+* Empêche les remplissages de transparaitre à travers les murs à de nombreux endroits, simplement en n'ayant pas de remplissages.
+* N'augmente pas la résistance de la pièce de manière significative.
+<!--endif-->
