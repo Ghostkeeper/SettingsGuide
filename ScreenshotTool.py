@@ -215,35 +215,33 @@ def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, No
 	"""
 	Finds the screenshot instructions and parses them to ScreenshotInstruction instances, so that the rest of the
 	module may more easily process them and refresh screenshots.
-	:param article_text: The article to find screenshots in, HTML-formatted.
+	:param article_text: The article to find screenshots in, Markdown-formatted.
 	:return: A sequence of ScreenshotInstruction instances.
 	"""
 	screenshot_regex = re.compile(r"<!--screenshot\s*({.*?})\s*-->", re.DOTALL)
-	for part in article_text:
-		if part[0] == "rich_text":
-			for match in re.finditer(screenshot_regex, part[1]):
-				json_serialised = match.group(1)
-				print("--------- SCREENSHOT -----------\n" + json_serialised + "\n--------------------------------")
-				json_document = json.loads(json_serialised)
-				yield ScreenshotInstruction(
-					image_path=json_document["image_path"],
-					models=[ModelInstruction(
-						script=model["script"],
-						scad_params=model.get("scad_params", []),
-						transformation=model.get("transformation", []),
-						object_settings=model.get("object_settings", {})
-					) for model in json_document["models"]],
-					camera_position=json_document["camera_position"],
-					camera_lookat=json_document.get("camera_lookat"),  # If None, look at the centre of the scene.
-					minimum_layer=json_document.get("minimum_layer", 0),
-					layer=json_document.get("layer", 99999),
-					line=json_document.get("line", -1),
-					colour_scheme=json_document.get("colour_scheme", "line_type"),
-					structures=json_document.get("structures", ["helpers", "shell", "infill", "starts"]),
-					settings=json_document.get("settings", {}),
-					colours=json_document.get("colours", 256),
-					delay=json_document.get("delay", 500)
-				)
+	for match in re.finditer(screenshot_regex, article_text):
+		json_serialised = match.group(1)
+		print("--------- SCREENSHOT -----------\n" + json_serialised + "\n--------------------------------")
+		json_document = json.loads(json_serialised)
+		yield ScreenshotInstruction(
+			image_path=json_document["image_path"],
+			models=[ModelInstruction(
+				script=model["script"],
+				scad_params=model.get("scad_params", []),
+				transformation=model.get("transformation", []),
+				object_settings=model.get("object_settings", {})
+			) for model in json_document["models"]],
+			camera_position=json_document["camera_position"],
+			camera_lookat=json_document.get("camera_lookat"),  # If None, look at the centre of the scene.
+			minimum_layer=json_document.get("minimum_layer", 0),
+			layer=json_document.get("layer", 99999),
+			line=json_document.get("line", -1),
+			colour_scheme=json_document.get("colour_scheme", "line_type"),
+			structures=json_document.get("structures", ["helpers", "shell", "infill", "starts"]),
+			settings=json_document.get("settings", {}),
+			colours=json_document.get("colours", 256),
+			delay=json_document.get("delay", 500)
+		)
 	return
 
 @cura.Utils.Threading.call_on_qt_thread  # Must be called from the Qt thread because it creates QML objects (the global stack).
