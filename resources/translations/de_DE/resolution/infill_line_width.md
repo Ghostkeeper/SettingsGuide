@@ -14,4 +14,4 @@ Die Breite jeder gezeichneten Fülllinie. Die Breite einer Linie kann von der D�
 
 Wenn Sie die Fülllinien breiter machen, kann Ihr Druck stabiler werden und auch die Druckzeit verkürzen. Eine zu starke Vergrößerung kann jedoch zu großen Extrusionsschwankungen führen. Dies führt zu einer Unterextrusion beim Druck der Füllung und zu einer Überextrusion beim Druck dessen, was nach der Füllung kommt, da sich der Fluss durch die Düse nicht schnell genug anpassen kann.
 
-**Die tatsächlichen Fülllinien können breiter ausfallen als in dieser Einstellung angegeben, wenn Sie die Einstellung [Füllschichtdicke] (../infill/infill_sparse_thickness.md) angepasst haben.**
+**Die tatsächlichen Fülllinien können breiter ausfallen als in dieser Einstellung angegeben, wenn Sie die Einstellung [Füllschichtdicke](../infill/infill_sparse_thickness.md) angepasst haben.**
