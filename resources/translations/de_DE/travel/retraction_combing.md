@@ -1,6 +1,6 @@
 Combing-Modus
 ====
-Beim Combing wird vermieden, die Wände des Drucks zu überqueren, wenn man von einer Stelle zur anderen fährt. Das Überqueren der Wände hinterlässt in der Regel eine Narbe auf der Oberfläche, wenn die heiße Düse aus dem Druck austritt oder eintritt, was im Allgemeinen unerwünscht ist.
+Beim Combing wird vermieden, die Wände des Drucks zu überqueren, wenn der Drucker von einer Stelle zur anderen fährt. Das Überqueren der Wände hinterlässt in der Regel eine Narbe auf der Oberfläche, wenn die heiße Düse aus dem Druck austritt oder eintritt, was im Allgemeinen unerwünscht ist.
 
 Das Combing allein bewirkt nur, dass die Düse die Wände vermeidet, wenn sie durch das Innere des Meshes fährt. Die Funktion [Gedruckte Teile bei Bewegung umgehen](travel_avoid_other_parts.md) sorgt jedoch dafür, dass die Düse auch Objekte außerhalb des Bereichs meidet.
 
