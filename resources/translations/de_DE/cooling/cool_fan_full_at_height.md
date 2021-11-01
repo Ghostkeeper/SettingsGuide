@@ -8,5 +8,5 @@ Normalerweise wird die anfängliche Lüfterdrehzahl deutlich verringert, da die 
 
 Eine einfache Verringerung der Geschwindigkeit des Lüfters während der ersten Schichten würde zu einer starken Änderung der Lüfterdrehzahl führen, die sich in der Oberflächenqualität des endgültigen Drucks bemerkbar machen würde. Dies führt zu Streifenbildung. Stattdessen wird die Lüfterdrehzahl allmählich in Richtung der normalen Lüfterdrehzahl verändert.
 
-* Eine Erhöhung dieser Einstellung kann die [Druckplattenhaftung] verbessern (../troubleshooting/bed_adhesion_problems.md).
+* Eine Erhöhung dieser Einstellung kann die [Druckplattenhaftung](../troubleshooting/bed_adhesion_problems.md) verbessern .
 * Wenn Ihre Druckplatte auf eine hohe Temperatur erhitzt wird, müssen Sie diese Einstellung möglicherweise verringern, um das Entstehen vom [Elephant's foot](../troubleshooting/elephants_foot.md) oder Oozing zu vermeiden.
