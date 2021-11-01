@@ -1,4 +1,4 @@
-Prime Tower Y Position
+Y-Position des Einzugsturm
 ====
 Mit dieser Einstellung können Sie den Einzugsturm neu positionieren. Sie gibt die Y-Koordinate einer Ecke des Einzugsturm an.
 

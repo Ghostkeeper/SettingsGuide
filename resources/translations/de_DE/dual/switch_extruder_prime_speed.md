@@ -1,4 +1,4 @@
-Düsenschalter Einzugsgeschwindigkeit(Zurückschieben)
+Düsenschalter Einzugsgeschwindigkeit (Zurückschieben)
 ====
 Während sich eine Düse im Standby-Modus befindet, wird das Material aus der Heizzone herausgezogen, um es vor Zersetzung zu schützen.Diese Einstellung legt fest, wie schnell das Material nach dem Umschalten der Extruder in die Düsenkammer zurückgeschoben wird.
 

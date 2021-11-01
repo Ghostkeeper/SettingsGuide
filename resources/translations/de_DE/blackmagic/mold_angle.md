@@ -1,4 +1,4 @@
-FormWinkel
+Formwinkel
 ====
 Ähnlich wie bei der Funktion [Überhänge druckbar machen](../experimental/conical_overhang_enabled.md) wird mit dieser Einstellung die Form so verändert, dass sie ohne Unterstützung gedruckt werden kann. Es wird nur die äußere Kontur der Form verändert, so dass die Form Ihres Gusses nicht beeinträchtigt wird.
 

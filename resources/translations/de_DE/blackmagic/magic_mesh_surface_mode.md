@@ -31,7 +31,7 @@ Diese Einstellung steuert, was mit diesen nicht geschlossenen Schleifen geschehe
 },
 "colours": 32
 }-->
-![Normaler Modus lässt die einzelne nicht geschlossene Fläche rechts weg](../images/magic_mesh_surface_mode_normal.png)
+![Normaler Modus lässt die einzelne nicht geschlossene Fläche rechts weg](../../../articles/images/magic_mesh_surface_mode_normal.png)
 ![Oberflächenmodus druckt nur die Oberflächen, ohne sie als geschlossene Volumen zu behandeln](../images/magic_mesh_surface_mode_surface.png)
 ![Druckt sowohl die Volumen als auch die zusätzliche nicht geschlossene Fläche rechts](../images/magic_mesh_surface_mode_both.png)
 
