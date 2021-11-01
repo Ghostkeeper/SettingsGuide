@@ -1,6 +1,6 @@
-Maximum Skin Angle for Expansion
+Maximaler Winkel Außenhaut für Expansion
 ====
-Since skin is present throughout the model, it is unnecessary to expand all of those areas. Rather, only the areas where the angle between the skin's surface and the horizon is less than this setting will get expanded. In that way, flat surfaces with protruding elements will be strengthened, without needlessly increasing printing time for the rest of the model.
+Da die Außenhaut im gesamten Modell vorhanden ist, ist es nicht notwendig, alle diese Bereiche zu erweitern. Vielmehr werden nur die Bereiche erweitert, in denen der Winkel zwischen der Oberfläche der Außenhaut und dem horizontalen Rand kleiner als diese Einstellung ist. Auf diese Weise werden flache Oberflächen mit hervorstehenden Elementen verstärkt, ohne die Druckzeit für den Rest des Modells unnötig zu verlängern.
 
 <!--screenshot {
 "image_path": "max_skin_angle_for_expansion_90.png",
@@ -26,9 +26,9 @@ Since skin is present throughout the model, it is unnecessary to expand all of t
 },
 "colours": 64
 }-->
-![Set to 90 degrees, all skin is expanded with the Skin Expand Distance setting](../images/max_skin_angle_for_expansion_90.png)
-![Set to 45 degrees, only the flat areas are expanded](../images/max_skin_angle_for_expansion_45.png)
+![Bei einer Einstellung von 90 Grad wird die gesamte Außenhaut mit der Einstellung "Expansionsdistanz Außenhaut" erweitert.](../images/max_skin_angle_for_expansion_90.png)
+![Bei einer Einstellung von 45 Grad werden nur die flachen Bereiche erweitert.](../images/max_skin_angle_for_expansion_45.png)
 
-Expanding the skin is useful for strengthening the connection between the top or bottom of the print and the walls on the sides. However it can also greatly increase the printing time and material usage. This setting allows you to filter out the material from the sides of the print where it is less useful for strengthening the connection between walls and skin.
+Die Erweiterung der Außenhaut ist nützlich, um die Verbindung zwischen der Ober- oder Unterseite des Drucks und den Wänden an den Seiten zu verstärken. Es kann jedoch auch die Druckzeit und den Materialverbrauch stark erhöhen. Mit dieser Einstellung können Sie das Material an den Seiten des Drucks weglassen, wo es für die Verstärkung der Verbindung zwischen Wänden und Außenhaut weniger nützlich ist.
 
-For this setting, 0° is horizontal. If set to 0°, no skin gets expanded. 90° is vertical, and causes all skin areas to be expanded.
+Bei dieser Einstellung ist 0° horizontal. Bei einer Einstellung von 0° wird keine Außenhaut erweitert. Bei 90°, werden alle Bereiche der Außenhaut erweitert.

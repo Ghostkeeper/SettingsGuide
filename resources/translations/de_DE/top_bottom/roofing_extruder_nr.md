@@ -1,6 +1,6 @@
-Top Surface Skin Extruder
+Oberfläche Außenhaut Extruder
 ====
-For printers that have multiple extruders, this selects the extruder that will be used to print the top surface.
+Bei Druckern mit mehreren Extrudern wird hier der Extruder ausgewählt, der für den Druck der Oberfläche verwendet werden soll.
 
 <!--screenshot {
 "image_path": "roofing_extruder_nr.png",
@@ -20,13 +20,13 @@ For printers that have multiple extruders, this selects the extruder that will b
 "colour_scheme": "material_colour",
 "colours": 32
 }-->
-![This model will be printed with only the top surface layers in a different colour](../images/roofing_extruder_nr.png)
+![Dieses Modell wird nur mit den obersten Schichten in einer anderen Farbe gedruckt](../images/roofing_extruder_nr.png)
 
-This way you can give the top surface a different colour or material. Keep in mind that the extruder of the walls is not adjusted by this setting, so there will still be a rim around the top surface.
+Auf diese Weise können Sie der Oberfläche eine andere Farbe oder ein anderes Material geben. Beachten Sie, dass der Extruder für die Wände durch diese Einstellung nicht verändert wird, so dass um die Oberseite herum immer noch ein Rand zu sehen sein wird.
 
-Other than giving the top surface a different colour, you could also use this to print the top surface with a different material. This can give a variety of effects:
-* Print the top surface and outer wall in PLA while printing the rest with a more rigid material to get a strong object that also looks good.
-* Print the top surface with TPU but the rest with a harder material to achieve a soft, high-friction gripping surface.
-* Print the top surface with a material that is more slippery than the stronger material you need for the insides of the model, if something needs to slide over the surface.
+Abgesehen davon, dass Sie der Oberseite eine andere Farbe geben können, können Sie die Oberseite auch mit einem anderen Material bedrucken. Damit lassen sich verschiedene Effekte erzielen:
+* Drucken Sie die Oberseite und die Außenwand aus PLA, während Sie den Rest mit einem steiferen Material drucken, um ein stabiles Objekt zu erhalten, das auch gut aussieht.
+* Die Oberseite wird mit TPU gedruckt, der Rest mit einem härteren Material, um eine weiche, griffige Oberfläche zu erhalten.
+* Drucken Sie die Oberseite mit einem Material, das glatter ist als das stärkere Material, das Sie für das Innere des Modells benötigen, wenn etwas über die Oberfläche gleiten soll.
 
-**If the material for the top surface doesn't stick well to the material below it, it tends to let go after printing. Be especially careful with materials with high shrinkage ratios.**
+**Wenn das Material für die Oberseite nicht gut auf dem darunter liegenden Material haftet, neigt es dazu, sich nach dem Druck zu lösen. Seien Sie besonders vorsichtig bei Materialien mit hohem Schrumpfungsverhältnis.**

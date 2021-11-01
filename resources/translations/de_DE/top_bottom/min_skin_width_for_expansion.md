@@ -1,6 +1,6 @@
-Minimum Skin Width for Expansion
+Mindestbreite Außenhaut für Expansion
 ====
-Since skin is present throughout the model, it is unnecessary to expand all of those areas. Rather, only the skin angles that are already wider than this setting will get expanded. In that way, flat surfaces with protruding elements will be strengthened, without needlessly increasing printing time for the rest of the model.
+Da die Außenhaut im gesamten Modell vorhanden ist, ist es nicht notwendig, alle diese Bereiche zu erweitern. Vielmehr werden nur die Winkel der Außenhaut erweitert, die bereits breiter als diese Einstellung sind. Auf diese Weise werden flache Oberflächen mit hervorstehenden Elementen verstärkt, ohne dass sich die Druckzeit für den Rest des Modells unnötig verlängert.
 
 <!--screenshot {
 "image_path": "max_skin_angle_for_expansion_90.png",
@@ -26,9 +26,9 @@ Since skin is present throughout the model, it is unnecessary to expand all of t
 },
 "colours": 64
 }-->
-![Set to 0mm, all skin is expanded with the Skin Expand Distance setting](../images/max_skin_angle_for_expansion_90.png)
-![Set to 0.8mm, only the flat areas are expanded](../images/max_skin_angle_for_expansion_45.png)
+![Bei einer Einstellung von 0 mm wird die gesamte Außenhaut mit der Einstellung "Expansionsdistanz Außenhaut" erweitert.](../images/max_skin_angle_for_expansion_90.png)
+![Bei einer Einstellung von 0,8 mm werden nur die flachen Bereiche erweitert.](../images/max_skin_angle_for_expansion_45.png)
 
-Expanding the skin is useful for strengthening the connection between the top or bottom of the print and the walls on the sides. However it can also greatly increase the printing time and material usage. This setting allows you to filter out the material from the sides of the print where it is less useful for strengthening the connection between walls and skin.
+Die Erweiterung der Außenhaut ist nützlich, um die Verbindung zwischen der Ober- oder Unterseite des Drucks und den Wänden an den Seiten zu verstärken. Es kann jedoch auch die Druckzeit und den Materialverbrauch stark erhöhen. Mit dieser Einstellung können Sie das Material an den Seiten des Drucks weglassen, wo es für die Verstärkung der Verbindung zwischen Wänden und Außenhaut weniger nützlich ist.
 
-You can also configure this setting with the [Maximum Skin Angle for Expansion](max_skin_angle_for_expansion.md) setting. If that setting is changed, this setting will automatically change along. This setting is the one that is actually used for slicing.
+Sie können diese Einstellung auch mit der Einstellung [Maximaler Winkel Außenhaut für Expansion](max_skin_angle_for_expansion.md) konfigurieren. Wenn diese Einstellung geändert wird, ändert sich diese Einstellung automatisch mit. Diese Einstellung ist diejenige, die tatsächlich für das Slicing verwendet wird.

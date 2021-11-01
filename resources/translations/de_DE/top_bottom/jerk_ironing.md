@@ -1,5 +1,5 @@
-Ironing Jerk
+Ruckfunktion glätten
 ====
-This setting adjusts the jerk only during the parts where the printer is ironing.
+Mit dieser Einstellung wird der Ruck nur in den Bereichen angepasst, in denen geglättet wird.
 
-Similar to the [Top/Bottom Jerk](../speed/jerk_topbottom.md) setting, you can reduce the jerk for ironing in order to achieve a better top surface quality. If the jerk is too high, vibrations in the printer's frame may cause the build plate to move up and down (depending on the printer's design) which causes ringing.
+Ähnlich wie bei der Einstellung [Ruckfunktion obere/untere Schicht](../speed/jerk_topbottom.md) können Sie den Ruck beim Glätten verringern, um eine bessere Qualität der oberen Schicht zu erzielen. Wenn der Ruck zu hoch ist, können Vibrationen im Druckerrahmen dazu führen, dass sich die Bauplatte auf- und abbewegt (je nach Konstruktion des Druckers), was ein "ringing" verursacht.
