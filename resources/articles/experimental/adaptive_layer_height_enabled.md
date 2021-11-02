@@ -26,7 +26,7 @@ Adaptive Layers can considerably reduce the printing time without suffering a lo
 However this feature can introduce a number of problems as well.
 * With changing the layer height, some other settings typically need to be adjusted as well, such as the nozzle temperature. Adaptive Layers will not automatically adjust those as well. This can make the print sub-optimal for e.g. overhangs that would fare better at a lower printing temperature.
 * If the layer height is changed over the entire layer for a small feature somewhere in a small part of the layer, banding will be visible in the rest of the layer.
-* Vertical distances are unintentionally adjusted with this as well. This may have a negative effect on the print quality. For instance, the [Top/Bottom Thickness](../shell/top_bottom_thickness.md) will typically become lower because Cura will hold the [Top Layers](../top_bottom/top_layers.md) setting as truth, and the layers become thinner. This can cause pillowing. Affected settings that may no longer be correct include:
+* Vertical distances are unintentionally adjusted with this as well. This may have a negative effect on the print quality. For instance, the [Top/Bottom Thickness](../top_bottom/top_bottom_thickness.md) will typically become lower because Cura will hold the [Top Layers](../top_bottom/top_layers.md) setting as truth, and the layers become thinner. This can cause pillowing. Affected settings that may no longer be correct include:
   * [Top Thickness](../top_bottom/top_thickness.md)
   * [Bottom Thickness](../top_bottom/bottom_thickness.md)
   * [Maximum Skin Angle for Expansion](../top_bottom/max_skin_angle_for_expansion.md)

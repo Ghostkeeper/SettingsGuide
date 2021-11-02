@@ -21,7 +21,7 @@ class TestLinks(unittest.TestCase):
 
 	The capture group is the URL in the link. The text itself is ignored.
 	"""
-	find_links = re.compile(r"\[.*\]\(([^\)]*)\)")
+	find_links = re.compile(r"\[.*?\]\(([^\)]*)\)")
 
 	def all_articles(self):
 		"""
