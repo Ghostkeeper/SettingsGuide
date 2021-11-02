@@ -1,6 +1,6 @@
 Umgehungsabstand Bewegung
 ====
-Wenn Sie [Gedruckte Teile bei Bewegung umgehen] (travel_avoid_other_parts.md), definiert diese Einstellung, wie viel Abstand die Düse zu den anderen Objekten hält, die sie umgehen muss.
+Wenn Sie [Gedruckte Teile bei Bewegung umgehen](travel_avoid_other_parts.md), definiert diese Einstellung, wie viel Abstand die Düse zu den anderen Objekten hält, die sie umgehen muss.
 
 Beachten Sie, dass damit der Abstand zwischen den anderen Objekten und der Mittellinie des Fahrwegs definiert wird. Der Fahrweg hat keine Dicke. Es ist ratsam, einen Wert für diese Einstellung zu wählen, der mindestens so groß ist, dass die Düsenspitze nicht mit den anderen Teilen zusammenstößt.
 
