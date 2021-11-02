@@ -46,6 +46,12 @@
 					"type": "str",
 					"default_value": ""
 				},
+				"layer_splitting": {
+					"label": "Layer Splitting",
+					"description": "Layers don't stick to each other and split open.",
+					"type": "str",
+					"default_value": ""
+				},
 				"missing_parts": {
 					"label": "Missing Parts",
 					"description": "Some parts of the model are missing from the final print.",
