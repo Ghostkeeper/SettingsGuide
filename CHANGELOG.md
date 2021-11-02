@@ -1,3 +1,23 @@
+2.8.0
+====
+New Features
+----
+* New German translations are available for 148 articles.
+
+Bug Fixes
+----
+* Fixed some articles not displaying proper formatting in the setting tooltips.
+
+Articles
+----
+* Added articles for Lightning Infill settings.
+* Expanded shrinkage troubleshooting article.
+* Added layer splitting article.
+* Added explanation of new combing mode in Cura 4.12
+* Added new g-code replacement keys in Cura 4.12.
+* Updated French translations.
+* Fixed a bunch of broken links between articles.
+
 2.7.1
 ====
 Bug Fixes
