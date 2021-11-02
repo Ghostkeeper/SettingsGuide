@@ -28,13 +28,13 @@ Some settings can greatly improve the quality of the top surface of the print, b
 
 Settings that can be adjusted for the top surface are:
 * [Top Surface Skin Extruder](roofing_extruder_nr.md)
-* [Top Surface Skin Flow](../material/roofing_material_flow.md)
-* [Top Surface Skin Speed](../speed/speed_roofing.md)
-* [Top Surface Skin Acceleration](../speed/acceleration_roofing.md)
-* [Top Surface Skin Jerk](../speed/jerk_roofing.md)
-* [Top Surface Skin Line Width](../experimental/roofing_line_width.md)
-* [Top Surface Skin Pattern](../experimental/roofing_pattern.md)
-* [Top Surface Skin Line Directions](../experimental/roofing_angles.md)
+* [Top Surface Skin Flow](../../../articles/material/roofing_material_flow.md)
+* [Top Surface Skin Speed](../../../articles/speed/speed_roofing.md)
+* [Top Surface Skin Acceleration](../../../articles/speed/acceleration_roofing.md)
+* [Top Surface Skin Jerk](../../../articles/speed/jerk_roofing.md)
+* [Top Surface Skin Line Width](../../../articles/experimental/roofing_line_width.md)
+* [Top Surface Skin Pattern](../../../articles/experimental/roofing_pattern.md)
+* [Top Surface Skin Line Directions](../../../articles/experimental/roofing_angles.md)
 
 To achieve a nicer top surface, try reducing the speed and increasing the jerk.
 

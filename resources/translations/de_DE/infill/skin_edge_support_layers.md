@@ -10,4 +10,4 @@ Die Erhöhung hat im Allgemeinen folgende Auswirkungen auf den Druck:
 * Der Rand der Außenhaut wird besser unterstützt, was zu einer glatteren Oberseite führt, da die Außenhaut vollständig von einer Seite zur anderen überbrückt werden kann.
 * Der Druckvorgang dauert etwas länger und es wird mehr Material verbraucht.
 
-Wenn die Füllrate hoch ist, hat diese Einstellung kaum Auswirkungen auf die Oberseite und kann zu [Überextrusion](../troubleshooting/overextrusion.md) in der Füllung führen. Am besten belassen Sie es dann bei 0 Schichten.
+Wenn die Füllrate hoch ist, hat diese Einstellung kaum Auswirkungen auf die Oberseite und kann zu [Überextrusion](../../../articles/troubleshooting/overextrusion.md) in der Füllung führen. Am besten belassen Sie es dann bei 0 Schichten.
