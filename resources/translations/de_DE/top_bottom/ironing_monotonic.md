@@ -1,0 +1,11 @@
+Gleichmäßige Glättungs Reihenfolge
+====
+Normalerweise ordnet Cura die Glättungslinien so an, dass der Abstand zwischen ihnen gering ist. Wenn diese Einstellung aktiviert ist, werden die Glättungslinien so angeordnet, dass benachbarte Linien immer überlappend in dieselbe Richtung gedruckt werden.
+
+Glättungslinien sind standardmäßig viel dünner als die Düse, mit der sie gedruckt werden, so dass sich die Linien stark mit den benachbarten Linien überlappen. Durch diese Überlappung erhalten die Linien eine leichte Neigung, wodurch sie das Licht unterschiedlich in verschiedene Richtungen reflektieren. Wenn sich benachbarte Linien unterschiedlich überlappen, ändert sich diese Reflexion. Sie können dies im Endergebnis sehen. Es verleiht verschiedenen Bereichen der Oberfläche einen unterschiedlichen Glanz. Durch das Drucken in einer gleichmäßigen Reihenfolge wird sichergestellt, dass die Überlappung auf der gesamten Oberfläche gleich ist, so dass es keine Unterschiede bei der Lichtreflexion gibt. Dadurch wirkt die Oberfläche gleichmäßiger und glatter.
+
+Im Gegensatz zu [dem Äquivalent für obere/untere Linien] (skin_monotonic.md) wird dieser Effekt beim Glätten jedoch durch einen anderen Effekt überlagert. Beim Glätten ist die Fließgeschwindigkeit so gering, dass die Fließveränderung, die beim normalen Drucken entsteht, sehr groß ist. Dadurch wird die zu glättende Schicht zu Beginn des Druckvorgangs dicker und hinterlässt an den Stellen, an denen der Druckvorgang unterbrochen wurde, immer noch einen deutlichen Rand. Ein gleichmäßiger Verlauf wird diese Ränder nicht beseitigen. Die Oberfläche sieht zwar etwas glatter aus, aber in der Praxis ist das Drucken der Glättungslinien in gleichmäßiger Reihenfolge weitgehend unwirksam, es sei denn, Ihr Drucker hat eine sehr genaue Kontrolle über die Durchflussrate.
+
+Die gleichmäßige Reihenfolge erhöht die Länge der Fahrwege geringfügig, aber dieser Effekt ist sehr minimal.
+
+Um eine glatte Oberfläche zu erzielen, sollten Sie diese mit der [Combing Mode](../travel/retraction_combing.md) Einstellung kombinieren und eventuell [Z-Sprung](../travel/retraction_hop.md) aktivieren.

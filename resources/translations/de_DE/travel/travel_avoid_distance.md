@@ -1,0 +1,7 @@
+Umgehungsabstand Bewegung
+====
+Wenn Sie [Gedruckte Teile bei Bewegung umgehen] (travel_avoid_other_parts.md), definiert diese Einstellung, wie viel Abstand die Düse zu den anderen Objekten hält, die sie umgehen muss.
+
+Beachten Sie, dass damit der Abstand zwischen den anderen Objekten und der Mittellinie des Fahrwegs definiert wird. Der Fahrweg hat keine Dicke. Es ist ratsam, einen Wert für diese Einstellung zu wählen, der mindestens so groß ist, dass die Düsenspitze nicht mit den anderen Teilen zusammenstößt.
+
+Wenn Sie den Wert dieser Einstellung erhöhen, verringert sich die Wahrscheinlichkeit, dass die Düse auf bereits gedruckte Objekte trifft, wenn sie um diese herumfährt. Eine Erhöhung des Wertes dieser Einstellung führt jedoch auch zu einer geringfügigen Verlängerung der Fahrwege, da die Düse einen größeren Umweg nehmen muss. Dadurch erhöht sich die Druckzeit und die Menge des Tropfens leicht. Schwerwiegender ist vielleicht, dass dadurch die Chance verringert wird, einen gültigen Weg zu finden, der nicht zu nahe an bereits gedruckte Teile herankommt. Wenn kein gültiger Weg gefunden wird, wird die Düse (vielleicht) eingezogen und fährt stattdessen in einer geraden Linie, wobei sie sich damit abfindet, dass die anderen Teile trotzdem getroffen werden. Eine zu starke Erhöhung dieser Einstellung kann sich also auch nachteilig auf die Oberflächenqualität auswirken.
