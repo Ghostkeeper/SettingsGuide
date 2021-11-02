@@ -14,14 +14,14 @@ Cura bietet mehrere Methoden, um die Betthaftung zu verbessern. Sie können zwis
 
 Brim und Raft sind die effektivsten Techniken, um die Haftung zu erhöhen, da sie speziell für diesen Zweck entwickelt wurden. Die meisten Drucke von vernünftiger Größe werden eine dieser beiden Techniken benötigen.
 
-Wenn Brim verwendet wird, können Sie die Haftung weiter erhöhen, indem Sie die [Breite des Brim-Elements] erhöhen (../platform_adhesion/brim_width.md). Sie können auch eine Krempe an der [Innenseite der Stützen](../stütze/stütze_krempe_aktivieren.md) und dem [Primärturm](../dual/prime_tower_krempe_aktivieren.md) sowie zwischen [Modell und Stütze](../plattform_haftung/krempe_ersetzt_stütze.md) und den [Innenlöchern](../plattform_haftung/krempe_außen_nur.md) des Modells hinzufügen.
+Wenn Brim verwendet wird, können Sie die Haftung weiter erhöhen, indem Sie die [Breite des Brim-Elements](../platform_adhesion/brim_width.md) erhöhen. Sie können auch eine Krempe an der [Innenseite der Stützen](../stütze/stütze_krempe_aktivieren.md) und dem [Primärturm](../dual/prime_tower_krempe_aktivieren.md) sowie zwischen [Modell und Stütze](../plattform_haftung/krempe_ersetzt_stütze.md) und den [Innenlöchern](../plattform_haftung/krempe_außen_nur.md) des Modells hinzufügen.
 
 Wenn Raft verwendet wird, können Sie die Haftung weiter erhöhen, indem Sie die [Breite des Raft](../platform_adhesion/raft_margin.md) erhöhen. Das Raft wird aber immer unterhalb von allem gedruckt, da die Schichten zueinander passen müssen. Wenn die Haftung zwischen dem Modell und dem Raft ein Problem darstellt, sollten Sie erwägen, den [Luftspalt für Raft](../platform_adhesion/raft_airgap.md) zwischen dem Raft und dem Modell zu verringern. Außerdem können Sie in Erwägung ziehen, die [Raft-Basislinienbreite](../platform_adhesion/raft_base_line_width.md) zu erhöhen.
 
 Verhindern von Verwerfungen
 ----
 Wenn Ihr Druck unter Verzug leidet, ist die Kontaktfläche zwischen dem Druck und der Bauplatte stark reduziert. Um dies zu verhindern, lesen Sie den Artikel über [Verziehen](warping.md). Zusammengefasst sind dies einige Einstellungen, die Sie vornehmen können, um Verzug zu verhindern.
-* Stellen Sie das [Unteres Muster für erste Schicht](../shell/top_bottom_pattern_0.md) auf konzentrisch.
+* Stellen Sie das [Unteres Muster für erste Schicht](../top_bottom/top_bottom_pattern_0.md) auf konzentrisch.
 * Reduzieren Sie die [Temperatur Druckplatte](../material/material_bed_temperature.md) und erhöhen Sie die [Temperatur Druckplatte](../material/build_volume_temperature.md).
 * Passen Sie das Modell so an, dass es weniger scharfe Außenecken auf der ersten Schicht gibt.
 
