@@ -2,7 +2,7 @@ Mindestvolumen Einzugsturm
 ====
 Dies gibt an, wie viel Material bei jedem Wechsel des Extruders gepurged werden muss. Die Idee dahinter ist, dass ein bestimmtes Volumen aus der Düse geflossen ist, während sie im Standby-Modus war. Das mit dieser Einstellung angegebene Volumen soll dies ausgleichen.
 
-![Das extrudierte Volumen ist grün hervorgehoben.](../images/prime_tower.svg)
+![Das extrudierte Volumen ist grün hervorgehoben.](../../../articles/images/prime_tower.svg)
 
 Diese Einstellung gibt die Mindestmenge an Material an, die abgelassen werden muss. Die Konturen des Einzugsturm werden jedoch vollständig fertiggestellt, so dass mehr Material ausgegeben werden kann, je nachdem, wie gut das Volumen mit dem Volumen einer Kontur übereinstimmt.
 

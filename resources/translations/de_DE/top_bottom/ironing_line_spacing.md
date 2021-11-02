@@ -33,8 +33,8 @@ Mit dieser Einstellung wird der Abstand zwischen den einzelnen Glättungslinien 
 },
 "colours": 64
 }-->
-![Normale Linienabstände](../images/ironing_enabled_enabled.png)
-![Linienabstand auf 0,3 mm erhöht](../images/ironing_line_spacing.png)
+![Normale Linienabstände](../../../articles/images/ironing_enabled_enabled.png)
+![Linienabstand auf 0,3 mm erhöht](../../../articles/images/ironing_line_spacing.png)
 
 * Eine Vergrößerung des Linienabstands führt zu einer Verkürzung der Druckzeit.
 * Eine Verringerung des Linienabstands verbessert jedoch die Qualität der Oberfläche.

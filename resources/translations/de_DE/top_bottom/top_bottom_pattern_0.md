@@ -15,7 +15,7 @@ This setting configures which pattern will be used for the bottom side of the mo
 "layer": [1, 2, 3],
 "colours": 64
 }-->
-![The initial layer is printed with a concentric pattern, but the rest is the lines pattern](../images/top_bottom_pattern_0.gif)
+![The initial layer is printed with a concentric pattern, but the rest is the lines pattern](../../../articles/images/top_bottom_pattern_0.gif)
 
 The concentric pattern tends to adhere much better to the build plate than other patterns, because the tension in the lines when they are shrinking is spread out in all directions. This prevents warping and improves the reliability of the print. Other patterns contract all in one direction.
 

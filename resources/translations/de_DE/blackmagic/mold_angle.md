@@ -16,7 +16,7 @@ Formwinkel
 },
 "colours": 48
 }-->
-![Bei einem Winkel von 40 Grad kann die Unterseite dieser Form ohne Unterstützung gedruckt werden](../images/mold_angle.png)
+![Bei einem Winkel von 40 Grad kann die Unterseite dieser Form ohne Unterstützung gedruckt werden](../../../articles/images/mold_angle.png)
 
 Wenn Sie diesen Winkel verkleinern, werden die extremen Überhänge reduziert. Dadurch wird der Druck zuverlässiger. Allerdings wird dadurch auch die Basis des Drucks breiter, was die Dauer des Drucks erheblich verlängert und den Materialverbrauch erhöht.
 
@@ -31,4 +31,4 @@ Bei einigen Formen reicht es nicht aus, die äußere Form zu verändern, um sie 
 },
 "colours": 32
 }-->
-![Diese Form braucht noch Unterstützung](../images/mold_needs_support.png)
+![Diese Form braucht noch Unterstützung](../../../articles/images/mold_needs_support.png)

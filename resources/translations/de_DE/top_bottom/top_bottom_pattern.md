@@ -11,7 +11,7 @@ This setting allows you to choose how the top and bottom surfaces get filled up 
 }-->
 Lines
 ----
-![Lines](../images/top_bottom_pattern_lines.png)
+![Lines](../../../articles/images/top_bottom_pattern_lines.png)
 
 The basic lines pattern draws straight lines across the surface. These lines are oriented by default such that they are well supported by the infill and support. The direction of the lines alternates between layers.
 * Provides a nice surface quality.
@@ -27,7 +27,7 @@ The basic lines pattern draws straight lines across the surface. These lines are
 }-->
 Concentric
 ----
-![Concentric](../images/top_bottom_pattern_concentric.png)
+![Concentric](../../../articles/images/top_bottom_pattern_concentric.png)
 
 The concentric pattern continues drawing contours towards the inside of the model.
 * Equally strong in all directions.
@@ -45,7 +45,7 @@ The concentric pattern continues drawing contours towards the inside of the mode
 }-->
 Zigzag
 ----
-![Zigzag](../images/top_bottom_pattern_zigzag.png)
+![Zigzag](../../../articles/images/top_bottom_pattern_zigzag.png)
 
 The zigzag pattern is very similar to the lines pattern, but instead of ending the lines in the walls it will continue extruding towards the next skin line.
 * Provides a great surface quality.

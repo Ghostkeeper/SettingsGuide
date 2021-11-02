@@ -4,7 +4,7 @@ Das Feederrad muss in das Filament greifen, um es richtig zu bewegen. Das Einzie
 
 Die Einstellung gibt an, wie oft das Filament während der in der Einstellung [Fenster „Minimaler Extrusionsabstand“](retraction_extrusion_window.md) angegebenen Filamentlänge eingezogen werden darf. Alle weiteren Einzüge während dieses Zeitraums werden nicht eingezogen, sondern verlaufen einfach ohne Einzug.
 
-![Visualisierung des Einziehens des Filaments über eine bestimmte Länge](../images/retraction_count_max.svg)
+![Visualisierung des Einziehens des Filaments über eine bestimmte Länge](../../../articles/images/retraction_count_max.svg)
 
 Die Länge des Filamentes, bei der die Anzahl der Einzüge begrenzt ist, ist ein dehnbares Fenster. Bei einer Fensterlänge von 3 mm und einer maximalen Anzahl von Rückzügen von 10 bedeutet dies, dass ein neuer Rückzug erlaubt ist, sobald der 10. vorherige Rückzug weiter als 3 mm zurück auf dem Filament erfolgt ist.
 

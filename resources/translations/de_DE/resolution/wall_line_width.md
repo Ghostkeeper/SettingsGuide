@@ -12,7 +12,7 @@ Die Breite der Wandlinien kann getrennt vom Rest des Drucks eingestellt werden. 
 },
 "colours": 64
 }-->
-![Die Wandlinien sind viel breiter als der Rest](../images/wall_line_width.png)
+![Die Wandlinien sind viel breiter als der Rest](../../../articles/images/wall_line_width.png)
 
 Die Reduzierung der Wandlinienbreite, ein klein wenig unterhalb der Düsengröße, ist bekanntermaßen vorteilhaft für die Festigkeit. Die Düse wird etwas weniger Material extrudieren, aber ihre Öffnung wird sich mit den angrenzenden Wandlinien überlappen. Dies führt dazu, dass das Material von der zuvor platzierten Wand an die gewünschte Stelle gedrückt wird. Das führt aber auch dazu, dass der Kunststoff besser mit den angrenzenden Wänden verschmilzt. Dadurch können die Wände besser miteinander verschmelzen, so dass sie ihre Stärke verbinden können. Dadurch wird die Festigkeit der Wände erheblich verbessert.
 

@@ -16,8 +16,8 @@ Dies ist die horizontale Breite der Linien, die der Drucker aufträgt. Normalerw
 "settings": {"line_width": 0.6},
 "colours": 32
 }-->
-![Sehr dünne Linien](../images/line_width_small.png)
-![Sehr breite Linien](../images/line_width_large.png)
+![Sehr dünne Linien](../../../articles/images/line_width_small.png)
+![Sehr breite Linien](../../../articles/images/line_width_large.png)
 
 Die Verringerung der Linienbreite ermöglicht es dem Drucker, mehr Details zu drucken. Insbesondere ermöglicht es dem Drucker auch, dünne Teile zu drucken. Die Linienbreite ist eine der einflussreichsten Einstellungen für Ihren Druck. Hier sind einige der Auswirkungen:
 * Wenn Sie dünnere Linien drucken, können dünnere Teile gedruckt werden, da eine Linie auch in die dünnsten Stellen passen kann.
@@ -72,9 +72,9 @@ Die Herstellung sauberer Konturen mit gleichmäßigen Linien kann den Druck stä
 "layer": 161,
 "colours": 64
 }-->
-![Voreingestellte Linienbreite, bei der die Konturen nicht passen und einige Linien dicker als andere sind](../images/line_width_fit_bad.png)
-![Verringerung der Linienbreite für eine gleichmäßige Anpassung](../images/line_width_fit_good_small.png)
-![Eine Vergrößerung der Linienbreite funktioniert ebenfalls](../images/line_width_fit_good_large.png)
+![Voreingestellte Linienbreite, bei der die Konturen nicht passen und einige Linien dicker als andere sind](../../../articles/images/line_width_fit_bad.png)
+![Verringerung der Linienbreite für eine gleichmäßige Anpassung](../../../articles/images/line_width_fit_good_small.png)
+![Eine Vergrößerung der Linienbreite funktioniert ebenfalls](../../../articles/images/line_width_fit_good_large.png)
 
 Den Fluss konstant halten
 ----

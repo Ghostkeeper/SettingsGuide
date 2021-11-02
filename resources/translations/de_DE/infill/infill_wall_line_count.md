@@ -4,7 +4,7 @@ Diese Einstellung fügt eine Reihe von Konturen um die Füllbereiche hinzu. Dies
 
 Diese Wände werden mit den Füllungseinstellungen gedruckt.
 
-![Zwei zusätzliche Wände um die Füllung](../images/infill_wall_line_count.png)
+![Zwei zusätzliche Wände um die Füllung](../../../articles/images/infill_wall_line_count.png)
 
 Im Vergleich zum Hinzufügen zusätzlicher Wände um die Außenhaut erhöht diese Einstellung die Festigkeit des Modells und verringert die Sichtbarkeit der Füllung durch die Außenhaut, erhöht aber auch die Druckzeit und den Materialverbrauch. Während zusätzliche Wände der Außenhaut Material ersetzen, das ohnehin als Haut gedruckt worden wäre, wird mit dieser Einstellung tatsächlich Material hinzugefügt, es sei denn, die Dichte der Füllung beträgt bereits 100%.
 

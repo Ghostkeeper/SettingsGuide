@@ -2,8 +2,8 @@ Expansionsdistanz Außenhaut oben
 ====
 Verbreitert oder verkleinert die festen Schichten auf der Oberseite des Drucks in horizontaler Richtung. Normalerweise werden die festen Schichten nur unterhalb von Teilen erzeugt, unter denen sich Luft befindet. Mit dieser Einstellung können Sie sie jedoch horizontal etwas weiter ausdehnen und so die Festigkeit verbessern, indem die Außenhaut besser an den angrenzenden Wänden haftet und Lücken in der Haut geschlossen werden.
 
-![Wie Außenhäute (die gelben Teile) normalerweise aussehen](../images/expand_skins_expand_distance_original.png)
-![Außenhäute um 1 mm erweitert](../images/expand_skins_expand_distance_1mm.png)
+![Wie Außenhäute (die gelben Teile) normalerweise aussehen](../../../articles/images/skin_preshrink_original.png)
+![Außenhäute um 1 mm erweitert](../../../articles/images/expand_skins_expand_distance_1mm.png)
 
 * Wenn Sie kleine Löcher in den oberen Schichten der Außenhaut haben (Löcher, die mit dem Füllmuster gefüllt werden), können Sie diese mit einem etwas höheren Wert schließen. Dadurch kann der Drucker kontinuierlich untere Linien drucken, was die Festigkeit erheblich verbessert.
 * Wenn die Unterseite Ihres Drucks nicht flach ist, bewirkt eine höhere Einstellung, dass die Außenhaut über den Bereich hinaus gedruckt wird, der sich direkt über den Wänden befindet. Dadurch wird die Haftung zwischen der Außenhaut und den Wänden verbessert, was wiederum die Festigkeit erhöht.

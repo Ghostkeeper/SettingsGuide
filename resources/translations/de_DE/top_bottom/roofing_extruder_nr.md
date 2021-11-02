@@ -20,7 +20,7 @@ Bei Druckern mit mehreren Extrudern wird hier der Extruder ausgewählt, der für
 "colour_scheme": "material_colour",
 "colours": 32
 }-->
-![Dieses Modell wird nur mit den obersten Schichten in einer anderen Farbe gedruckt](../images/roofing_extruder_nr.png)
+![Dieses Modell wird nur mit den obersten Schichten in einer anderen Farbe gedruckt](../../../articles/images/roofing_extruder_nr.png)
 
 Auf diese Weise können Sie der Oberfläche eine andere Farbe oder ein anderes Material geben. Beachten Sie, dass der Extruder für die Wände durch diese Einstellung nicht verändert wird, so dass um die Oberseite herum immer noch ein Rand zu sehen sein wird.
 

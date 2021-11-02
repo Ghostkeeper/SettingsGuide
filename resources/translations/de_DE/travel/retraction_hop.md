@@ -2,7 +2,7 @@ Z-Sprung Höhe
 ====
 Wenn ein Z-Sprung durchgeführt wird, bestimmt diese Einstellung, wie weit sich die Düse nach oben bewegt, bevor sie zum Ziel fährt.
 
-![Ein Z-Sprung mit einer bestimmten Höhe](../images/retraction_hop_enabled.svg)
+![Ein Z-Sprung mit einer bestimmten Höhe](../../../articles/images/retraction_hop_enabled.svg)
 
 Da die Z-Geschwindigkeit um bis zu 2 Größenordnungen langsamer ist als die X/Y-Geschwindigkeit, können Z-Sprünge zeitaufwendig sein.
 

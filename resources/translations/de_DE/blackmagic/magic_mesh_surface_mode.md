@@ -32,8 +32,8 @@ Diese Einstellung steuert, was mit diesen nicht geschlossenen Schleifen geschehe
 "colours": 32
 }-->
 ![Normaler Modus lässt die einzelne nicht geschlossene Fläche rechts weg](../../../articles/images/magic_mesh_surface_mode_normal.png)
-![Oberflächenmodus druckt nur die Oberflächen, ohne sie als geschlossene Volumen zu behandeln](../images/magic_mesh_surface_mode_surface.png)
-![Druckt sowohl die Volumen als auch die zusätzliche nicht geschlossene Fläche rechts](../images/magic_mesh_surface_mode_both.png)
+![Oberflächenmodus druckt nur die Oberflächen, ohne sie als geschlossene Volumen zu behandeln](../../../articles/images/magic_mesh_surface_mode_surface.png)
+![Druckt sowohl die Volumen als auch die zusätzliche nicht geschlossene Fläche rechts](../../../articles/images/magic_mesh_surface_mode_both.png)
 
 Die zusätzlichen Flächen, die gedruckt werden, umfassen nur die vertikalen Flächen als einzelne Linien. Für horizontale Flächen gibt es keine Fülltechnik, da die Flächen keine geschlossenen Polygone sind. Sie können nicht gefüllt werden, da es kein Innenleben gibt. Es kann keine Oberseiten, Unterseiten, Füllungen oder Stützen geben. Nur einzelne Linien.
 

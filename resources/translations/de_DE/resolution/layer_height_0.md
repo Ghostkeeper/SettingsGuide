@@ -14,7 +14,7 @@ Mit dieser Einstellung wird die Dicke der ersten Schicht Ihres Drucks festgelegt
 "settings": {"layer_height_0": 0.3},
 "colours": 32
 }-->
-![Die erste Schicht ist dicker als die übrigen Schichten](../images/layer_height_0.png)
+![Die erste Schicht ist dicker als die übrigen Schichten](../../../articles/images/layer_height_0.png)
 
 Wenn die Dicke der ersten Schicht erhöht wird, muss die Düse mehr Material über die gleiche Strecke extrudieren. Dies erfordert zusätzliche Kraft, da sich das Material zu den Seiten hin ausbreitet, um die gesamte Linienbreite zu füllen. Diese zusätzliche Kraft bewirkt, dass das Material besser an der Bauplatte haftet. Außerdem fängt die dickere Schicht alle Unregelmäßigkeiten in der Oberfläche auf. Wenn die Bauplatte leicht gebogen ist, wird die Unebenheit durch die Dicke der ersten Schicht aufgefangen, während die Düse sie sonst in der zweiten Schicht abkratzen könnte.
 

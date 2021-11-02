@@ -28,8 +28,8 @@ Wenn Sie diese Einstellung aktivieren, vermeidet der Druckkopf bei seiner Bewegu
 "layer": 550,
 "colours": 64
 }-->
-![Wenn deaktiviert, können Fahrwege durch andere Teile führen](../images/travel_avoid_other_parts_disabled.png)
-![Wenn aktiviert, umgehen die Fahrwege andere Teile](../images/travel_avoid_other_parts_enabled.png)
+![Wenn deaktiviert, können Fahrwege durch andere Teile führen](../../../articles/images/travel_avoid_other_parts_disabled.png)
+![Wenn aktiviert, umgehen die Fahrwege andere Teile](../../../articles/images/travel_avoid_other_parts_enabled.png)
 
 Abgesehen davon, dass sie andere Teile meiden, versuchen die Fahrwege auch, so kurz wie möglich in der Nähe der Wände zu bleiben. Das bedeutet, dass die Düse beim Austritt aus oder Eintritt in ein Teil durch eine Wand senkrecht zur Wand austritt oder eintritt.
 

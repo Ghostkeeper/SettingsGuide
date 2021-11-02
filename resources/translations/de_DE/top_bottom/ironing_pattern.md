@@ -20,7 +20,7 @@ Das Ziel des Musters ist es, eine glatte, durchgehende Oberfläche zu schaffen. 
 }-->
 Zigzag
 ----
-![Zigzag Glättungsmuster](../images/ironing_enabled_enabled.png)
+![Zigzag Glättungsmuster](../../../articles/images/ironing_enabled_enabled.png)
 
 Dadurch wird die Düse über die Oberfläche hin- und herbewegt. Das funktioniert bei den meisten Oberflächen gut und zuverlässig, verursacht aber etwas mehr Ränder als nötig.
 
@@ -42,6 +42,6 @@ Dadurch wird die Düse über die Oberfläche hin- und herbewegt. Das funktionier
 }-->
 Konzentrisch
 ----
-![Konzentrisches Glättungsmuster](../images/ironing_pattern.png)
+![Konzentrisches Glättungsmuster](../../../articles/images/ironing_pattern.png)
 
 Dadurch erzeugt die Düse Kreise von innen nach außen. Dadurch werden die Ränder auf ein Minimum reduziert, wenn aber die konzentrischen Ringe in der Mitte sehr klein werden, wird sich die Qualität verschlechtern, weil die Düse zu lange an der gleichen Stelle verweilt. Dies hinterlässt einen sichtbaren Makel auf der Oberfläche. Daher funktioniert dies am besten bei langen und dünnen Flächen und nicht bei Flächen, die ebenso breit wie hoch sind.

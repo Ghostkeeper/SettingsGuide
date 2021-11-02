@@ -22,8 +22,8 @@ Mit dieser Einstellung können Sie die Dicke der festen unteren Schichten des Dr
 },
 "colours": 64
 }-->
-![Normale Bodendicke](../images/top_bottom_thickness_0.8.png)
-![Wesentlich dickere Unterseite](../images/bottom_thickness.png)
+![Normale Bodendicke](../../../articles/images/top_bottom_thickness_0.8.png)
+![Wesentlich dickere Unterseite](../../../articles/images/bottom_thickness.png)
 
 * Erhöhen, um die Festigkeit zu verbessern.
 * Erhöhen, um Lücken auf der Unterseite des Drucks zu schließen.

@@ -10,7 +10,7 @@ The top and bottom side of the object can be printed with a different extruder t
 "colour_scheme": "material_colour",
 "colours": 32
 }-->
-![The top and bottom of this object are printed in red](../images/top_bottom_extruder_nr.png)
+![The top and bottom of this object are printed in red](../../../articles/images/top_bottom_extruder_nr.png)
 
 This setting does not influence the walls, which are printed next to the top and bottom and will be visible from the top and bottom of your print.
 

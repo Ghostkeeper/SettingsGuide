@@ -6,7 +6,7 @@ Wenn diese Einstellung aktiviert ist und der Druckkopf sich langsamer als die Mi
 
 Wenn diese Einstellung deaktiviert ist, fährt der Drucker sofort mit der nächsten Schicht fort. Er wartet nicht auf die Mindestschichtzeit, so dass Schichten über Schichten gedruckt werden, die möglicherweise noch nicht vollständig ausgehärtet sind.
 
-![Wenn die Mindestschichtzeit erreicht ist, kann sich der Kopf anheben](../images/cool_fan_speed.svg)
+![Wenn die Mindestschichtzeit erreicht ist, kann sich der Kopf anheben](../../../articles/images/cool_fan_speed.svg)
 
 Der Druckkopf wird immer um 3 mm angehoben. Zurzeit gibt es keine Möglichkeit um dies zu konfigurieren.
 

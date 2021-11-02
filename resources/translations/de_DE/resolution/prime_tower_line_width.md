@@ -21,6 +21,6 @@ Diese Einstellung bestimmt die Breite der Linien, mit denen der Einzugsturm gedr
 "colour_scheme": "material_colour",
 "colours": 64
 }-->
-![Das blaue Material hat eine größere Linienbreite als das gelbe Material](../images/prime_tower_line_width.png)
+![Das blaue Material hat eine größere Linienbreite als das gelbe Material](../../../articles/images/prime_tower_line_width.png)
 
 Die Wahl einer dickeren Linienbreite führt manchmal dazu, dass der Einzugsturm schneller gedruckt wird. Wenn das Volumen, das durch eine Kontur extrudiert wird, ausreichend groß ist, macht eine Erhöhung der Linienbreite eine weitere Runde überflüssig. Wird die Linienbreite jedoch zu stark erhöht, kann der Einzugsturm schwächer werden, da nicht genügend Material schnell genug extrudiert werden kann.

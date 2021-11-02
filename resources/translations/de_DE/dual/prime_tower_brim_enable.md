@@ -30,7 +30,7 @@ Der Einzugsturm Brim ist ein zusätzlicher Brim, ähnlich der Brim-Option in der
 },
 "colours": 16
 }-->
-![Die Haftung ist auf "skirt" eingestellt, aber es gibt immer noch einen Rand um den Einzugsturm](../images/prime_tower_brim_enable.png)
+![Die Haftung ist auf "skirt" eingestellt, aber es gibt immer noch einen Rand um den Einzugsturm](../../../articles/images/prime_tower_brim_enable.png)
 
 Durch das Aktivieren des Einzugsturm-Brim erhält der Einzugsturm mehr Oberfläche, um sich mit der Bauplatte zu verbinden. Da der Einzugsturm ziemlich hoch und schlank werden kann, kann er bei sehr hohen Drucken umkippen. Der Einzugsturm-Brim soll dies verhindern, was allerdings einen geringen Aufwand an Druckzeit, Material und Platz auf der Bauplatte bedeutet.
 

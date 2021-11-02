@@ -22,8 +22,8 @@ Mit dieser Einstellung können Sie die Anzahl der festen unteren Schichten des D
 },
 "colours": 64
 }-->
-![14 Untere Schichten](../images/top_bottom_thickness_0.8.png)
-![50 bottom layers](../images/bottom_thickness.png)
+![14 Untere Schichten](../../../articles/images/top_bottom_thickness_0.8.png)
+![50 bottom layers](../../../articles/images/bottom_thickness.png)
 
 * Erhöhen, um die Festigkeit zu verbessern.
 * Erhöhen, um Lücken auf der Unterseite des Drucks zu schließen.

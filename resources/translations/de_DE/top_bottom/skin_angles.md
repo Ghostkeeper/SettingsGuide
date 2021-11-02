@@ -15,7 +15,7 @@ This setting allows you to change the direction in which the lines of the top an
 "layer": [76, 77, 78],
 "colours": 128
 }-->
-![Lines pattern with 0°, 60° and 120° angles alternating](../images/skin_angles.gif)
+![Lines pattern with 0°, 60° and 120° angles alternating](../../../articles/images/skin_angles.gif)
 
 By default, the lines pattern prints in the two diagonal directions. For Cartesian gantry systems this is the most accurate, because the printer can use both the X and Y motors to accelerate the nozzle when turning around for the next line.
 

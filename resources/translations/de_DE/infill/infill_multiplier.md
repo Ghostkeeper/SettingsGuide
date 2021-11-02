@@ -2,7 +2,7 @@ Fülllinie multiplizieren
 ====
 Wenn Sie diese Einstellung erhöhen, wird Cura mehr Fülllinien direkt neben den anderen Fülllinien platzieren.
 
-![Multipliziert mit 3](../images/infill_multiplier.png)
+![Multipliziert mit 3](../../../articles/images/infill_multiplier.png)
 
 Dadurch wird die Fülldichte über die in der Einstellung [Fülldichte](infill_sparse_density.md) angegebene Dichte hinaus erhöht, aber anstatt die Fülllinien gleichmäßig zu verteilen, werden sie direkt nebeneinander platziert. Im Vergleich zu einer einfachen Erhöhung der Fülldichte kann dies die Stabilität der Füllung erhöhen, da sich die Fülllinien aneinander anlehnen können, um zusätzliche Stabilität zu erhalten.
 

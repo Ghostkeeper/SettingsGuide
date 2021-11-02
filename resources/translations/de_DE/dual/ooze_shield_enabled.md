@@ -31,8 +31,8 @@ Wenn mit mehreren Extrudern gedruckt wird, befindet sich in den inaktiven Extrud
 "colour_scheme": "material_colour",
 "colours": 64
 }-->
-![Der Sickerschutz wird mit dem ersten Extruder einer Schicht gedruckt, was bei zwei Extrudern zu einem alternierenden Muster führt](../images/ooze_shield.png)
-![Einige Parameter können für den Sickerschutz angepasst werden](../images/ooze_shield.svg)
+![Der Sickerschutz wird mit dem ersten Extruder einer Schicht gedruckt, was bei zwei Extrudern zu einem alternierenden Muster führt](../../../articles/images/ooze_shield.png)
+![Einige Parameter können für den Sickerschutz angepasst werden](../../../articles/images/ooze_shield.svg)
 
 Der Sickerschutz druckt bis zur Höhe des höchsten Extruderschalters. Oberhalb dieser Höhe wird keine Düse in den Druck bewegt, nachdem sie sich im Standby-Modus befunden hat, so dass der Druck eines Sickerschutz unnötig ist. Der Sickerschutz wird mit dem Extruder gedruckt, der auf einer Schicht beginnt. Dieser Extruder wechselt jede Schicht, was eine Gefahr darstellt, wenn man mit zwei verschiedenen Materialien arbeitet, die nicht gut aneinander haften. Wird er jedoch später gedruckt, wenn der andere Extruder aktiviert wird, wird der Effekt der Sickerschutz weitgehend zerstört.
 

@@ -22,8 +22,8 @@ This setting makes the skin overlap a bit with the adjacent structures. This mak
 },
 "colours": 64
 }-->
-![No overlap](../images/skin_overlap_none.png)
-![Some overlap](../images/skin_overlap_20.png)
+![No overlap](../../../articles/images/skin_overlap_none.png)
+![Some overlap](../../../articles/images/skin_overlap_20.png)
 
 This overlap technically produces overextrusion, but the amount of overextrusion is small enough that it won't be visible. It will have a significant influence on the strength though, because the skin can adhere better to the walls and infill. After all, these structures only add to the strength of the model if they have something to hold on to.
 

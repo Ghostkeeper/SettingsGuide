@@ -28,8 +28,8 @@ Ein häufiger Fall, in dem das Modell nicht vollständig ist, ist, wenn ein zus�
 },
 "colours": 32
 }-->
-![Die Röntgenaufnahme zeigt eine zusätzliche Oberfläche auf der Innenseite](../images/meshfix_extensive_stitching_xray.png)
-![Wenn diese Einstellung ausgeschaltet ist, wird nur der vollständig geschlossene Objekt gedruckt.](../images/meshfix_extensive_stitching_disabled.png)
-![Wenn diese Einstellung aktiviert ist, wird das zusätzliche Stück entsprechend hinzugefügt.](../images/meshfix_extensive_stitching_enabled.png)
+![Die Röntgenaufnahme zeigt eine zusätzliche Oberfläche auf der Innenseite](../../../articles/images/meshfix_extensive_stitching_xray.png)
+![Wenn diese Einstellung ausgeschaltet ist, wird nur der vollständig geschlossene Objekt gedruckt.](../../../articles/images/meshfix_extensive_stitching_disabled.png)
+![Wenn diese Einstellung aktiviert ist, wird das zusätzliche Stück entsprechend hinzugefügt.](../../../articles/images/meshfix_extensive_stitching_enabled.png)
 
 Diese Einstellung bewirkt, dass Cura versucht, Lücken im Netz besser zu schließen, wenn es nicht vollständig geschlossen ist. Dies erhöht die Chancen auf einen guten Druck, verlängert aber die Slicing-Zeit und kann manchmal falsche Oberflächen miteinander verbinden.

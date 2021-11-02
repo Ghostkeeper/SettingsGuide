@@ -33,7 +33,7 @@ Beim Glätten werden zusätzliche Linien in die Oberfläche eingebracht, was tec
 },
 "colours": 64
 }-->
-![10% fluss](../images/ironing_enabled_enabled.png)
-![20% fluss](../images/ironing_flow.png)
+![10% fluss](../../../articles/images/ironing_enabled_enabled.png)
+![20% fluss](../../../articles/images/ironing_flow.png)
 
 Sie sollten diese Einstellung hoch genug wählen, um den Druck auf die Düse aufrechtzuerhalten. Dieser Druck muss die Lücken auf der Oberseite ausfüllen. Wenn Sie eine sehr raue Oberfläche haben (aufgrund des Pillow-Effekts oder zu schnellem drucken), müssen Sie diese Einstellung möglicherweise erhöhen.

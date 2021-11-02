@@ -18,6 +18,6 @@ Wenn diese Einstellung aktiviert ist, wird das Glätten nur auf die oberste Schi
 },
 "colours": 64
 }-->
-![Der Halbkreis in der unteren Schicht wird nicht geglättet.](../images/ironing_only_highest_layer.png)
+![Der Halbkreis in der unteren Schicht wird nicht geglättet.](../../../articles/images/ironing_only_highest_layer.png)
 
 **Wenn mehrere Objekte in einem Druck vorhanden sind, wird die oberste Schicht jedes Objekts geglättet. Dies gilt auch für alle Teile eines Mehrfachextrusionsdrucks.**

@@ -32,8 +32,8 @@ Bei der Verwendung eines konzentrischen Oben/Unten-Musters (ein Muster, das aus 
 },
 "colours": 64
 }-->
-![Das konzentrische Muster erzeugt separate Konturen](../images/connect_skin_polygons_original.png)
-![Alle Konturen werden zu einer einzigen Kurve verbunden](../images/connect_skin_polygons_enabled.png)
+![Das konzentrische Muster erzeugt separate Konturen](../../../articles/images/connect_skin_polygons_original.png)
+![Alle Konturen werden zu einer einzigen Kurve verbunden](../../../articles/images/connect_skin_polygons_enabled.png)
 
 Dadurch werden Fahrwege größtenteils vermieden. Allerdings entstehen dadurch neue scharfe Ecken, in denen die Düse stark beschleunigen und abbremsen muss, was den Gewinn an Druckzeit wieder zunichte macht. Das verschnörkelte Muster wird auch auf der Außenseite sichtbar sein, was einen interessanten optischen Effekt ergibt.
 

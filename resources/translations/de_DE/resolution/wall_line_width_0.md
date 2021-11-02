@@ -12,7 +12,7 @@ Die Breite der äußeren Wandlinien kann getrennt von den inneren Wandlinien ein
 },
 "colours": 64
 }-->
-![Die Kontur der Außenwand ist viel breiter als der Rest](../images/wall_line_width_0.png)
+![Die Kontur der Außenwand ist viel breiter als der Rest](../../../articles/images/wall_line_width_0.png)
 
 Die Reduzierung der äußeren Wandlinienbreite, ein klein wenig unterhalb der Düsengröße, ist bekanntermaßen vorteilhaft für die Festigkeit. Die Düse wird etwas weniger Material extrudieren, aber ihre Öffnung wird sich mit den angrenzenden Wandlinien überlappen. Dies führt dazu, dass das Material von der zuvor platzierten Wand an die gewünschte Stelle gedrückt wird. Das führt aber auch dazu, dass der Kunststoff besser mit den angrenzenden Wänden verschmilzt. Dadurch können die Wände besser miteinander verschmelzen, so dass sie ihre Stärke verbinden können. Dadurch wird die Festigkeit der Wände erheblich verbessert.
 

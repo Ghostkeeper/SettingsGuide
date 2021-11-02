@@ -18,6 +18,6 @@ Die Breite der Stützstrukturlinien, kann sich von der Linienbreite des restlich
 "layer": 350,
 "colours": 128
 }-->
-![Die Stützstrukturlinien sind breiter als der Rest der Linien](../images/support_line_width.png)
+![Die Stützstrukturlinien sind breiter als der Rest der Linien](../../../articles/images/support_line_width.png)
 
 Der Stützstruktur muss in der Regel nicht exakt gedruckt werden, so dass sie mit einer größeren Linienbreite gedruckt werden kann, um Zeit zu sparen, ohne die Stärke der Stützstruktur zu beeinträchtigen. Um jedoch die gleiche Dichte für den Stützstruktur zu erreichen, werden die Linien in einem größeren Abstand voneinander gedruckt. Dies beeinträchtigt die Qualität der überhängenden Flächen Ihres Drucks.

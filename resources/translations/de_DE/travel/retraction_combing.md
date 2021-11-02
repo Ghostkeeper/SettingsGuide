@@ -32,8 +32,8 @@ Das Combing allein bewirkt nur, dass die Düse die Wände vermeidet, wenn sie du
 "minimum_layer": 2,
 "colours": 64
 }-->
-![Combing deaktiviert, der Fahrweg führt über die Wände des Drucks](../images/retraction_combing_off.png)
-![Das Combing wurde aktiviert, und es wird ein Umweg gemacht, um das Überqueren der Wände zu vermeiden.](../images/retraction_combing_on.png)
+![Combing deaktiviert, der Fahrweg führt über die Wände des Drucks](../../../articles/images/retraction_combing_off.png)
+![Das Combing wurde aktiviert, und es wird ein Umweg gemacht, um das Überqueren der Wände zu vermeiden.](../../../articles/images/retraction_combing_on.png)
 
 Wenn es einen Weg vom Start- zum Endpunkt gibt, der durch das Objekt führt, ohne auf Wände zu stoßen, wird dieser Weg genommen, ohne einen Einzug vorzunehmen. Liegen Start- und Endpunkt auf völlig getrennten Wegen, bewegt sich die Düse zunächst zu der Position, an der die beiden Teile am nächsten beieinander liegen, zieht dann optional ein (wenn [Einzug aktiviert ist](retraction_enable.md)), fährt zum Zielweg, schiebt optional zurück und bewegt sich dann durch den neuen Teil zu seinem endgültigen Ziel. In beiden Teilen wird vermieden, die Wände zu berühren, während er durch das Innere fährt. Bei der Bewegung von Teil zu Teil werden Teile nur vermieden, wenn die Einstellung [Gedruckte Teile bei Bewegung umgehen](travel_avoid_other_parts.md) aktiviert ist.
 

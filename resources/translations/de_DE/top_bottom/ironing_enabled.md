@@ -32,8 +32,8 @@ Durch das Glätten wird der Drucker veranlasst, einen weiteren Durchgang über d
 },
 "colours": 64
 }-->
-![Ein normaler Druck, von der Oberseite aus gesehen](../images/ironing_enabled_disabled.png)
-![Beachten Sie die dünnen Linien auf der Oberseite, wenn Glätten aktiviert ist..](../images/ironing_enabled_enabled.png)
+![Ein normaler Druck, von der Oberseite aus gesehen](../../../articles/images/ironing_enabled_disabled.png)
+![Beachten Sie die dünnen Linien auf der Oberseite, wenn Glätten aktiviert ist..](../../../articles/images/ironing_enabled_enabled.png)
 
 
 Durch das Glätten wird ein Linienmuster auf die Oberseite des Drucks gedruckt. Dies hat zwei wesentliche positive Auswirkungen:

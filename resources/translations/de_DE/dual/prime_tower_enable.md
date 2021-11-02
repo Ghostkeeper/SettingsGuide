@@ -2,7 +2,7 @@ Einzugsturm aktivieren
 ====
 Damit wird ein Turm aus einer Mischung von Materialien auf Ihre Bauplatte gedruckt. Der Turm ist dazu gedacht, entsorgt zu werden, aber er dient dazu, das Material nach jedem Extruderwechsel vorzubereiten.
 
-![Wie ein Einzugsturm aussieht und welche Abmessungen er hat](../images/prime_tower.svg)
+![Wie ein Einzugsturm aussieht und welche Abmessungen er hat](../../../articles/images/prime_tower.svg)
 
 Während andere Extruder drucken, kann es vorkommen, dass aus einer Düse etwas Material austritt, so dass die Düsenkammer leer ist. Das anschließende Vorbereiten des Materials ist unerlässlich, da das Material sonst zu Beginn noch nicht richtig fließt.
 

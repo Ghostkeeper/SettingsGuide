@@ -7,8 +7,8 @@ Diese Einstellung ist nur verfügbar, wenn die Füllung aus angrenzenden Linien 
 * Die Fülllinien sind mit einer geraden Zahl [multipliziert](infill_multiplier.md) .
 * Es gibt mindestens 2 [zusätzliche Wände um die Füllung](infill_wall_line_count.md).
 
-![Mit mehrfachen Fülllinien gibt es viele Schleifen in diesem Füllmuster.](../images/connect_infill_polygons_disabled.png)
-![Aktivieren Sie diese Einstellung, um die Schleifen miteinander zu verbinden.](../images/connect_infill_polygons_enabled.png)
+![Mit mehrfachen Fülllinien gibt es viele Schleifen in diesem Füllmuster.](../../../articles/images/connect_infill_polygons_disabled.png)
+![Aktivieren Sie diese Einstellung, um die Schleifen miteinander zu verbinden.](../../../articles/images/connect_infill_polygons_enabled.png)
 
 Das Ziel dieser Funktion ist es, Fahrwege zu verhindern. Die endgültige Linie besteht aus einer einzigen Schleife für jedes verbundene Teil der Füllung, so dass es keine Fahrwege geben wird. Dies erleichtert die Arbeit mit flexiblen Filamenten, da diese sich schwerer einziehen lassen und am besten funktionieren, wenn sie weiterhin durch die Düse fließen können.
 

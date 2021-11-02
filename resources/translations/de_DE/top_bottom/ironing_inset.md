@@ -33,8 +33,8 @@ Normalerweise wird beim Glätten nicht bis zur Außenkante geglättet. Wenn dies
 },
 "colours": 64
 }-->
-![Voreingestellter Einsatz von einer halben Zeilenbreite](../images/ironing_enabled_enabled.png)
-![Ein größerer Einsatz von 1,2 mm](../images/ironing_inset.png)
+![Voreingestellter Einsatz von einer halben Zeilenbreite](../../../articles/images/ironing_enabled_enabled.png)
+![Ein größerer Einsatz von 1,2 mm](../../../articles/images/ironing_inset.png)
 
 Es gibt zwei Hauptanwendungsfälle für diese Einstellung:
 * Um sicherzustellen, dass sich das Material nicht über den Rand hinaus verteilt.

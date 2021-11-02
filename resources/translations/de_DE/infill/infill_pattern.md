@@ -4,7 +4,7 @@ Das Füllmuster definiert eine Struktur, mit der das Objekt ausgefüllt wird. Es
 
 Gitter
 ----
-![Gitter](../images/infill_pattern_grid.png)
+![Gitter](../../../articles/images/infill_pattern_grid.png)
 
 Das Gitter-Füllmuster erzeugt zwei senkrecht zueinander stehende Linien. Zusammen bilden sie ein Muster aus Quadraten.
 * Stärkstes Muster in der vertikalen Richtung.
@@ -14,7 +14,7 @@ Das Gitter-Füllmuster erzeugt zwei senkrecht zueinander stehende Linien. Zusamm
 
 Linien
 ----
-![Linien](../images/infill_pattern_lines.png)
+![Linien](../../../articles/images/infill_pattern_lines.png)
 
 Das Linienmuster erzeugt parallele Linien. Standardmäßig wechselt das Linienmuster seine Richtung senkrecht von Schicht zu Schicht, so dass es auf den ersten Blick wie das Gittermuster aussieht. Dies kann jedoch mit der Einstellung [Linienrichtungen Füllung](infill_angles.md) geändert werden.
 * Das beste Muster für eine glatte Oberfläche zusammen mit Zickzack, da der Abstand zwischen den Linien am geringsten ist.
@@ -23,7 +23,7 @@ Das Linienmuster erzeugt parallele Linien. Standardmäßig wechselt das Linienmu
 
 Dreiecke
 ----
-![Dreiecke](../images/infill_pattern_triangles.png)
+![Dreiecke](../../../articles/images/infill_pattern_triangles.png)
 
 Mit dem Dreiecksmuster werden drei Sätze von Linien in drei verschiedenen Richtungen erzeugt. Zusammen bilden sie ein Muster aus Dreiecken.
 * Sehr widerstandsfähig gegen Scherung.
@@ -33,7 +33,7 @@ Mit dem Dreiecksmuster werden drei Sätze von Linien in drei verschiedenen Richt
 
 Tri-Hexagon
 ----
-![Tri-Hexagon](../images/infill_pattern_trihexagon.png)
+![Tri-Hexagon](../../../articles/images/infill_pattern_trihexagon.png)
 
 Das Tri-Hexagon-Muster erzeugt drei Sätze von Linien in drei verschiedenen Richtungen, genau wie das Dreiecksmuster, aber versetzt zueinander, so dass sie sich nicht alle an der gleichen Stelle schneiden.
 * Stärkstes Muster in der horizontalen Richtung.
@@ -43,7 +43,7 @@ Das Tri-Hexagon-Muster erzeugt drei Sätze von Linien in drei verschiedenen Rich
 
 Würfel
 ----
-![Würfel](../images/infill_pattern_cubic.png)
+![Würfel](../../../articles/images/infill_pattern_cubic.png)
 
 Das Muster erzeugt Würfel, ein 3-dimensionales Muster. Die Würfel werden an einer Ecke stehend ausgerichtet, so dass sie ohne überhängende Innenflächen gedruckt werden können.
 * Ungefähr gleiche Stärke in jeder Richtung, auch in der vertikalen Richtung.
@@ -52,7 +52,7 @@ Das Muster erzeugt Würfel, ein 3-dimensionales Muster. Die Würfel werden an ei
 
 Würfel-Unterbereich
 ----
-![Würfel-Unterbereich](../images/infill_pattern_cubic_subdivision.png)
+![Würfel-Unterbereich](../../../articles/images/infill_pattern_cubic_subdivision.png)
 
 Das Würfel-Unterbereichmuster erzeugt Würfel, ein 3-dimensionales Muster. Die Würfel werden an einer Ecke stehend ausgerichtet, so dass sie ohne überhängende Innenflächen gedruckt werden können. Allerdings erzeugt dieses Muster größere Würfel im Inneren des Volumens, was Material spart. Es lässt die Fülllinien dort weg, wo sie am wenigsten nützlich sind.
 
@@ -69,7 +69,7 @@ Dieses Muster wird algorithmisch erzeugt, indem ein riesiger Würfel um das gesa
 
 Octet
 ----
-![Octet](../images/infill_pattern_octet.png)
+![Octet](../../../articles/images/infill_pattern_octet.png)
 
 Das Octetmuster erzeugt eine Kombination aus regelmäßigen Vierecken und Würfeln, ein 3-dimensionales Muster. In regelmäßigen Abständen werden mehrere Fülllinien nebeneinander platziert.
 * Dadurch entsteht ein starker innerer Rahmen, in dem sich mehrere parallele Linien berühren. Die Last wird schnell in Richtung dieses inneren Rahmens abgeleitet.
@@ -79,7 +79,7 @@ Das Octetmuster erzeugt eine Kombination aus regelmäßigen Vierecken und Würfe
 
 Viertelwürfel
 ----
-![Viertelwürfel](../images/infill_pattern_quarter_cubic.png)
+![Viertelwürfel](../../../articles/images/infill_pattern_quarter_cubic.png)
 
 Das Viertelwürfel Muster erzeugt eine dreidimensionale Mosaikstruktur, die aus Vierecken und abgeschnittenen Vierecken besteht. Gelegentlich werden mehrere Fülllinien nebeneinander platziert.
 * Es entstehen zwei getrennte innere Rahmen, ähnlich einem Octet, in denen sich mehrere parallele Linien berühren. Die Last wird schnell in Richtung dieses inneren Rahmens abgeleitet. Die Rahmen sind in zwei verschiedene Richtungen ausgerichtet, was sie einzeln schwächer macht, aber den Abstand zur Verteilung der Last auf diese Rahmen verringert.
@@ -89,7 +89,7 @@ Das Viertelwürfel Muster erzeugt eine dreidimensionale Mosaikstruktur, die aus 
 
 Konzentrisch
 ----
-![Konzentrisch](../images/infill_pattern_concentric.png)
+![Konzentrisch](../../../articles/images/infill_pattern_concentric.png)
 
 Das konzentrische Muster erzeugt Ringe parallel zu den Wänden.
 * Das stärkste Füllmuster bei Verwendung von 100 % Füllung, da sich nicht nur keine Linien überschneiden, sondern die Linien auch so ausgerichtet sind, dass die nicht isotrope Stärke der Linien die Last gleichmäßig verteilt.
@@ -101,7 +101,7 @@ Das konzentrische Muster erzeugt Ringe parallel zu den Wänden.
 
 Zickzack
 ----
-![Zickzack](../images/infill_pattern_zigzag.png)
+![Zickzack](../../../articles/images/infill_pattern_zigzag.png)
 
 Das Zickzack-Füllmuster bewirkt, dass die Düse Linien in einem Zickzackmuster zeichnet. Dies ist ähnlich wie bei den Linien, aber die Linien sind in einer langen Linie miteinander verbunden, was Unterbrechungen des Flusses verhindert.
 * Das zweitstärkste Füllmuster bei Verwendung von 100 % Füllung. Es druckt aber zuverlässiger als das konzentrische Füllmuster bei runden Formen.
@@ -111,7 +111,7 @@ Das Zickzack-Füllmuster bewirkt, dass die Düse Linien in einem Zickzackmuster 
 
 Kreuz
 ----
-![Kreuz](../images/infill_pattern_cross.png)
+![Kreuz](../../../articles/images/infill_pattern_cross.png)
 
 Das Kreuz-Füllmuster erzeugt eine raumfüllende Form, die an der Innenseite des Körpers wie Kreuze aussehen.
 * Es ist in allen horizontalen Richtungen gleichmäßig geschmeidig und eignet sich daher für den Druck weicher und flexibler Objekte.
@@ -123,7 +123,7 @@ Das Kreuz-Füllmuster erzeugt eine raumfüllende Form, die an der Innenseite des
 
 Kreuz 3D
 ----
-![Kreuz 3D](../images/infill_pattern_cross_3d.png)
+![Kreuz 3D](../../../articles/images/infill_pattern_cross_3d.png)
 
 Das Füllmuster "Kreuz 3D" erzeugt eine raumfüllende Form, die an der Innenseite des Volumens wie Kreuze aussieht. Dieses Muster verläuft entlang der Z-Achse, damit es in der vertikalen Richtung schwächer wird.
 * Ungefähr gleichmäßig biegsam in allen Richtungen, horizontal und vertikal, was dieses Muster zum Drucken weicher und flexibler Objekte am besten geeignet macht.
@@ -134,7 +134,7 @@ Das Füllmuster "Kreuz 3D" erzeugt eine raumfüllende Form, die an der Innenseit
 
 Gyroid
 ----
-![Gyroid](../images/infill_pattern_gyroid.png)
+![Gyroid](../../../articles/images/infill_pattern_gyroid.png)
 
 Das gyroide Füllmuster erzeugt ein wellenförmiges Muster, das die Richtungen wechselt.
 * Dieses Muster erzeugt ein Volumen, das vollständig durchlässig für Flüssigkeiten ist, was es zu einem nützlichen Muster für auflösbare Materialien macht.

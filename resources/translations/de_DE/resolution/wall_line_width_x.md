@@ -12,7 +12,7 @@ Die Linienbreite für die Innenwände kann getrennt von der Außenwand eingestel
 },
 "colours": 64
 }-->
-![Die Linien für die Innenwände sind viel breiter als der Rest](../images/wall_line_width_x.png)
+![Die Linien für die Innenwände sind viel breiter als der Rest](../../../articles/images/wall_line_width_x.png)
 
 Die Reduzierung der inneren Wandlinienbreite, ein klein wenig unterhalb der Düsengröße, ist bekanntermaßen vorteilhaft für die Festigkeit. Die Düse wird etwas weniger Material extrudieren, aber ihre Öffnung wird sich mit den angrenzenden Wandlinien überlappen. Dies führt dazu, dass das Material von der zuvor platzierten Wand an die gewünschte Stelle gedrückt wird. Das führt aber auch dazu, dass der Kunststoff besser mit den angrenzenden Wänden verschmilzt. Dadurch können die Wände besser miteinander verschmelzen, so dass sie ihre Stärke verbinden können. Dadurch wird die Festigkeit der Wände erheblich verbessert.
 

@@ -4,8 +4,8 @@ Anstatt die [Fülldichte](infill_sparse_density.md) als Prozentsatz anzugeben, i
 
 Der Abstand zwischen den Fülllinien ist eine andere Art, diese Eigenschaft zu betrachten als die Fülldichte. Der Abstand zwischen den Fülllinien gibt den Abstand an, den die Linien der jeweiligen Oberfläche von einer Fülllinie zur nächsten zurücklegen müssen. Eine Verringerung des Fülllinienabstands verringert also den überbrückten Abstand und verbessert die Qualität der Oberflächen.
 
-![4mm Abstand zwischen den Linien, was eine Fülldichte von 20% ergibt](../images/infill_sparse_density_high.png)
-![8mm Abstand zwischen den Linien, was eine Fülldichte von 10% ergibt](../images/infill_sparse_density_low.png)
+![4mm Abstand zwischen den Linien, was eine Fülldichte von 20% ergibt](../../../articles/images/infill_pattern_grid.png)
+![8mm Abstand zwischen den Linien, was eine Fülldichte von 10% ergibt](../../../articles/images/infill_sparse_density_low.png)
 
 Normalerweise wird der Fülllinienabstand aus der gewünschten Fülldichte berechnet, abhängig von dem gewählten Füllmuster und der Linienbreite. Der Fülllinienabstand hat Priorität.
 

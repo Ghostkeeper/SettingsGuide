@@ -21,8 +21,8 @@ Während Eingaben mit hoher Auflösung auf den ersten Blick besser erscheinen m�
 },
 "colours": 64
 }-->
-![Vor der Reduzierung der Auflösung](../images/meshfix_maximum_resolution_0.05.png)
-![Nach Reduzierung der Auflösung (ad extremum)](../images/meshfix_maximum_resolution_1.png)
+![Vor der Reduzierung der Auflösung](../../../articles/images/meshfix_maximum_resolution_0.05.png)
+![Nach Reduzierung der Auflösung (ad extremum)](../../../articles/images/meshfix_maximum_resolution_1.png)
 
 Der Drucker muss den G-Code verarbeiten, während er ausgeführt wird. Wenn der G-Code viele kleine Zeilensegmente enthält, kann der Druckkopf so schnell durch die Bewegung rasen, dass der Prozessor des 3D-Druckers nicht mithalten kann. Dies hat zur Folge, dass der Druckkopf sporadisch langsamer wird, damit die CPU aufholen kann oder einfach nur auf den nächsten Bewegungsbefehl wartet. Dies führt dazu, dass die Oberfläche sehr rau wird oder sogar kleine Kleckse aufweist, weil die Flussrate aus der Düse nicht perfekt mit der sporadischen Bewegung der Düse übereinstimmt. Manchmal führt eine niedrigere Auflösung zu einer besseren Druckqualität.
 
