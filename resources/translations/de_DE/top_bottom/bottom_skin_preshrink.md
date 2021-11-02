@@ -4,31 +4,6 @@ Entfernt dünne Teile von vollständig gefüllten unteren Schichten und druckt s
 
 Bei schrägen Oberflächen werden die unteren Schichten oft sehr dünn. Sie sind aber nicht notwendig, da die horizontale Festigkeit der Wände mehr als ausreichend ist, wenn die Oberfläche fast vollständig senkrecht ist.
 
-<!--screenshot {
-"image_path": "skin_preshrink_original.png",
-"models": [{"script": "stature_symmetrical.scad"}],
-"camera_position": [104, -7, 4],
-"settings": {
-    "wall_line_count": 0,
-    "infill_wall_line_count": 1,
-    "bottom_skin_preshrink": 0,
-    "top_skin_preshrink": 0
-},
-"colours": 32
-}-->
-<!--screenshot {
-"image_path": "skin_preshrink_shrunk.png",
-"models": [{"script": "stature_symmetrical.scad"}],
-"camera_position": [104, -7, 4],
-"settings": {
-    "wall_line_count": 0,
-    "infill_wall_line_count": 1,
-    "bottom_skin_preshrink": 1,
-    "top_skin_preshrink": 1
-},
-"colours": 32
-}-->
-
 ![Vor dem Entfernen](../images/skin_preshrink_original.png)
 ![Nach dem Entfernen](../images/skin_preshrink_shrunk.png)
 
