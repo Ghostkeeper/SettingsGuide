@@ -21,7 +21,7 @@ Wenn Raft verwendet wird, können Sie die Haftung weiter erhöhen, indem Sie die
 Verhindern von Verwerfungen
 ----
 Wenn Ihr Druck unter Verzug leidet, ist die Kontaktfläche zwischen dem Druck und der Bauplatte stark reduziert. Um dies zu verhindern, lesen Sie den Artikel über [Verziehen](../../../articles/troubleshooting/warping.md). Zusammengefasst sind dies einige Einstellungen, die Sie vornehmen können, um Verzug zu verhindern.
-* Stellen Sie das [Unteres Muster für erste Schicht](../top_bottom/top_bottom_pattern_0.md) auf konzentrisch.
+* Stellen Sie das [Unteres Muster für erste Schicht](../../../articles/top_bottom/top_bottom_pattern_0.md) auf konzentrisch.
 * Reduzieren Sie die [Temperatur Druckplatte](../../../articles/material/material_bed_temperature.md) und erhöhen Sie die [Temperatur Druckplatte](../../../articles/material/build_volume_temperature.md).
 * Passen Sie das Modell so an, dass es weniger scharfe Außenecken auf der ersten Schicht gibt.
 

@@ -37,4 +37,4 @@ Bei der Verwendung eines konzentrischen Oben/Unten-Musters (ein Muster, das aus 
 
 Dadurch werden Fahrwege größtenteils vermieden. Allerdings entstehen dadurch neue scharfe Ecken, in denen die Düse stark beschleunigen und abbremsen muss, was den Gewinn an Druckzeit wieder zunichte macht. Das verschnörkelte Muster wird auch auf der Außenseite sichtbar sein, was einen interessanten optischen Effekt ergibt.
 
-Die durch [Linienanzahl der zusätzlichen Außenhaut](skin_outline_count.md) erzeugten Konturen sind nicht miteinander verbunden.
+Die durch [Linienanzahl der zusätzlichen Außenhaut](../../../articles/top_bottom/skin_outline_count.md) erzeugten Konturen sind nicht miteinander verbunden.

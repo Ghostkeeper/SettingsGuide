@@ -1,6 +1,6 @@
 Zusätzliche Füllung Wandlinien
 ====
-Diese Einstellung fügt eine Reihe von Konturen um die Füllbereiche hinzu. Dies ist vergleichbar mit der Erhöhung der [Anzahl der Wandlinien](../shell/wall_line_count.md), aber die Konturen gehen nicht um die Außenhaut herum und die Wände befinden sich auch zwischen der Außenhaut und der Füllung. Es ist auch ähnlich wie beim Hinzufügen von [Linienanzahl der zusätzlichen Außenhaut](../top_bottom/skin_outline_count.md), aber um die Füllung herum und nicht um die Außenhaut.
+Diese Einstellung fügt eine Reihe von Konturen um die Füllbereiche hinzu. Dies ist vergleichbar mit der Erhöhung der [Anzahl der Wandlinien](../../../articles/shell/wall_line_count.md), aber die Konturen gehen nicht um die Außenhaut herum und die Wände befinden sich auch zwischen der Außenhaut und der Füllung. Es ist auch ähnlich wie beim Hinzufügen von [Linienanzahl der zusätzlichen Außenhaut](../../../articles/top_bottom/skin_outline_count.md), aber um die Füllung herum und nicht um die Außenhaut.
 
 Diese Wände werden mit den Füllungseinstellungen gedruckt.
 
