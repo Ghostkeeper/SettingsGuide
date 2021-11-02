@@ -10,4 +10,4 @@ Normalerweise sollte diese Einstellung immer aktiviert sein, um zu verhindern, d
 
 Wenn [Stützstrukturen generieren aktiviert ist](../support/support_enable.md), reicht die Unterstützung bis zur Bauplatte, so dass die ersten Schichten nicht mehr leer sind. Es werden keine Schichten entfernt und der Druck bewegt sich nicht nach unten.
 
-Wenn die Einstellung [Slicing-Toleranz](../experimental/slicing_tolerance.md) auf " Exklusiv" gesetzt ist, wird die erste Schicht immer leer sein. Wenn diese Einstellung nicht aktiviert ist, ist die erste Schicht leer, und der Druck schlägt höchstwahrscheinlich fehl.
+Wenn die Einstellung [Slicing-Toleranz](../experimental/slicing_tolerance.md) auf "Exklusiv" gesetzt ist, wird die erste Schicht immer leer sein. Wenn diese Einstellung nicht aktiviert ist, ist die erste Schicht leer, und der Druck schlägt höchstwahrscheinlich fehl.
