@@ -21,6 +21,7 @@ Translations
 ![Goodfeat - Russian](../images/contributors/Goodfeat.png)
 ![Laurent Lalliard - French](../images/contributors/5axes.png)
 ![Vb138 - Czech](../images/contributors/Vb138.png)
+![Sekisback - German](../images/contributors/Sekisback.jpg)
 
 Sponsors
 ----
