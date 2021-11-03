@@ -1,4 +1,4 @@
-Angle de surplomb du remplissage éclair
+Angle de porte_à-faux du remplissage éclair
 ====
 Le remplissage de type Eclair ne soutiendra que la face supérieure du modèle depuis l'intérieur où elle est dans le vide. Ce paramètre détermine l'angle du surplomb qui est soutenu par le remplissage Eclair depuis l'intérieur du modèle.
 
