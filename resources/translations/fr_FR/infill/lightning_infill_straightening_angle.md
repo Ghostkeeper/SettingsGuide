@@ -1,6 +1,6 @@
 Angle de redressement du remplissage Eclair
 ====
-Ce paramètre détermine la pente du motif de remplissage de l'éclair qui peut déborder à l'intérieur.
+Ce paramètre détermine la pente du motif de remplissage Eclair qui peut déborder à l'intérieur.
 
 Le remplissage Eclair produit des lignes en zigzag ressemblant à des éclairs là où il doit soutenir le haut de l'impression, mais ces lignes prennent beaucoup de temps à imprimer en raison de leurs angles aigus. Ainsi, en bas, il tentera de redresser ces lignes en dents de scie, afin de réduire le temps d'impression. Ce redressement entraîne des dépouilles. Le paramètre détermine la quantité de dépouille autorisée.
 
