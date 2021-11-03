@@ -1,15 +1,15 @@
-Lightning Infill Prune Angle
+Angle d'élagage du remplissage éclair
 ====
-The Lightning infill pattern produces a tree-like structure on the inside of the print which starts small, but branches out to reach all the parts of the top of the print that need to be supported from the inside. This setting indicates how far the tree's branches can overhang at the endpoints.
+Le motif de remplissage Eclair produit une structure arborescente à l'intérieur de l'impression, qui commence petit, mais se ramifie pour atteindre toutes les parties du haut de l'impression qui doivent être soutenues de l'intérieur. Ce paramètre indique dans quelle mesure les branches de l'arbre peuvent déborder aux extrémités.
 
-![At 40° the Lightning infill is pretty stable](../../../articles/images/lightning_infill_prune_angle_40.png)
-![At 70° the branches overhang quite steeply](../../../articles/images/lightning_infill_prune_angle_70.png)
+![A 40°, le remplissage Eclair est assez stable.](../../../articles/images/lightning_infill_prune_angle_40.png)
+![A 70°, les branches débordent assez fortement.](../../../articles/images/lightning_infill_prune_angle_70.png)
 
-Increasing the prune angle means that the infill will be able to start smaller at the bottom while still reaching all of the top surface. In many cases it doesn't even need to start at the bottom any more but can simply hang on to the sides. The prominent effects of increasing this angle are:
+En augmentant l'angle d'élagage, le remplissage pourra commencer plus petit en bas tout en atteignant la totalité de la surface supérieure. Dans de nombreux cas, il n'est même plus nécessaire de commencer par le bas, il suffit de s'accrocher aux côtés. Les principaux effets de l'augmentation de cet angle sont les suivants :
 
-* Reduced printing time and material usage.
-* Smoother walls, because there will not be as much infill touching the walls from the inside.
-* Slightly reduced strength.
-* More chance of print failure. If the overhang is too steep, there will be a significant overhang on the end of each line, which will sag and could get loose.
+* Réduction du temps d'impression et de l'utilisation des matériaux.
+* Des murs plus lisses, parce qu'il n'y aura pas autant de remplissage touchant les murs de l'intérieur..
+* Résistance légèrement réduite.
+* Plus de risques de défaillance de l'impression. Si le surplomb est trop important, il y aura un surplomb significatif à l'extrémité de chaque ligne, qui s'affaissera et pourrait se détacher.
 
-In practice, the prune angle can be higher than normal overhang angles or the other Lightning infill overhang angles. Since the lines are supported well on the layer below, having some more overhang isn't really a problem.
+En pratique, l'angle d'élagage peut être plus élevé que les angles de surplomb normaux ou que les autres [angles de surplomb du remplissage Eclair](lightning_infill_overhang_angle). Comme les lignes sont bien soutenues sur la couche inférieure, avoir un peu plus de surplomb n'est pas vraiment un problème.
