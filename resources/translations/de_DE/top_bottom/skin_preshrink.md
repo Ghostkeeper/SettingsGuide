@@ -1,8 +1,8 @@
-Skin Removal Width
+Breite für das Entfernen der Außenhaut
 ====
-This setting will remove very thin strips of skin, replacing them with infill instead.
+Mit dieser Einstellung werden sehr dünne Streifen der Außenhaut entfernt und stattdessen durch Füllmaterial ersetzt.
 
-The skin will only be removed if there is infill next to it, so it won't remove the skin at the very top or bottom of your print, even if that is very thin.
+Die Außenhaut wird nur dann entfernt, wenn sich daneben Füllmaterial befindet. Es wird also nicht die Außenhaut ganz oben oder unten im Druck entfernt, selbst wenn diese sehr dünn ist.
 
 <!--screenshot {
 "image_path": "skin_preshrink_original.png",
@@ -28,14 +28,14 @@ The skin will only be removed if there is infill next to it, so it won't remove 
 },
 "colours": 32
 }-->
-![Not removing any skin](../images/skin_preshrink_original.png)
-![Thin strips are removed](../images/skin_preshrink_shrunk.png)
+![Keine Entfernung der Außenhaut](../images/skin_preshrink_original.png)
+![Dünne Streifen werden entfernt](../images/skin_preshrink_shrunk.png)
 
-Skin will normally get generated anywhere that is vertically close to the top or bottom of the object. This is not necessary everywhere. Vertical walls are usually strong enough, so while there should normally be skin next to vertical the vertical walls, this setting allows you to omit that. This saves on printing time and material.
+Die Außenhaut wird normalerweise überall dort erzeugt, wo sie sich vertikal in der Nähe des oberen oder unteren Randes des Objekts befindet. Das ist nicht überall notwendig. Senkrechte Wände sind in der Regel stark genug, so dass die Außenhaut zwar normalerweise an den Eckpunkten der senkrechten Wände angebracht werden sollte, aber mit dieser Einstellung können Sie dies umgehen. Dies spart Druckzeit und Material.
 
-For most prints, setting this to 1 or 2 line widths is helpful to reduce the printing time. Additionally, if the skin becomes too thin to print, Cura will leave a gap where the skin ought to have been (but was too small). The infill won't connect properly to the walls. If [Fill Gaps Between Walls](../shell/fill_perimeter_gaps.md) is enabled, these gaps will be filled up, but that method of filling takes more time to print than ordinary skin does. Setting this setting to at least the [Top/Bottom Line Width](../resolution/skin_line_width.md) prevents that from happening.
+Für die meisten Drucke ist die Einstellung auf 1 oder 2 Linienbreiten hilfreich, um die Druckzeit zu verkürzen. Wenn die Außenhaut zu dünn für den Druck wird, hinterlässt Cura eine Lücke an der Stelle, an der die Außenhaut hätte sein sollen (aber zu klein war). Die Füllung wird dann nicht richtig mit den Wänden verbunden. Wenn [Lücken zwischen Wänden füllen](../shell/fill_perimeter_gaps.md) aktiviert ist, werden diese Lücken aufgefüllt, aber diese Methode des Füllens benötigt mehr Zeit zum Drucken als die normale Außenhaut. Dies wird verhindert, wenn Sie diese Einstellung mindestens auf die [Breite der oberen/unteren Linie](../resolution/skin_line_width.md) einstellen.
 
-If the setting is increased too much, gaps can appear in the top and bottom surface where infill gets exposed. In particular, take good care with models that have thin ledges that should get a thin strip of skin.
+Wenn die Einstellung zu stark erhöht wird, können an der Ober- und Unterseite Lücken entstehen, in denen die Füllung sichtbar wird. Seien Sie vor allem bei Modellen mit dünnen Leisten vorsichtig, die einen dünnen Streifen Außenhaut erhalten sollten.
 
 <!--screenshot {
 "image_path": "skin_preshrink_problem_screenshot.png",
@@ -47,5 +47,5 @@ If the setting is increased too much, gaps can appear in the top and bottom surf
 },
 "colours": 64
 }-->
-![These pieces of skin are removed, exposing infill](../images/skin_preshrink_problem.svg)
-![The infill can be seen in layer view too](../images/skin_preshrink_problem_screenshot.png)
+![Diese Teile der Außenhaut werden entfernt und die Füllung wird sichtbar.](../images/skin_preshrink_problem.svg)
+![Die Füllung ist auch in der Schichtansicht zu sehen](../images/skin_preshrink_problem_screenshot.png)

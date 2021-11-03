@@ -1,5 +1,5 @@
-Ironing Speed
+Glättungsgeschwindigkeit
 ====
-Since ironing behaves widely different with different materials, this setting allows you to control how fast the nozzle moves during ironing.
+Da sich das Glätten bei verschiedenen Materialien sehr unterschiedlich verhält, können Sie mit dieser Einstellung steuern, wie schnell sich die Düse beim Glätten bewegt.
 
-The ironing speed is normally significantly slower than the speed at which the skin is printed. This allows the top surface lines to fuse together. However it will also increase the total printing time quite significantly, especially if the line width of ironing is low.
+Die Glättungsgeschwindigkeit ist normalerweise deutlich langsamer als die Geschwindigkeit, mit der die Außenhaut bedruckt wird. Dadurch können die Linien der Oberseite miteinander verschmelzen. Allerdings verlängert sich dadurch auch die Gesamtdruckzeit beträchtlich, insbesondere wenn die Linienbreite des Glättens gering ist.

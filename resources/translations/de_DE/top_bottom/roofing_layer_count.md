@@ -1,6 +1,6 @@
-Top Surface Skin Layers
+Oberfläche Außenhaut Schichten
 ====
-Part of the top of the print can be separated out and printed with different settings. This setting determines how big of a part to separate out. How many layers of the top of the print will get separate settings?
+Ein Teil des oberen Teils des Drucks kann separiert und mit verschiedenen Einstellungen gedruckt werden. Diese Einstellung bestimmt, wie groß der Bereich ist, der separiert wird. Für wie viele Schichten des oberen Teils des Drucks werden separate Einstellungen vorgenommen?
 
 <!--screenshot {
 "image_path": "roofing_layer_count.png",
@@ -22,20 +22,20 @@ Part of the top of the print can be separated out and printed with different set
 "colour_scheme": "speed",
 "colours": 32
 }-->
-![The highest layer of the top is printed slower (blue) than the rest of the skin (green)](../images/roofing_layer_count.png)
+![Die oberste Schicht der Außenhaut wird langsamer gedruckt (blau) als der Rest der Außenhaut (grün)](../images/roofing_layer_count.png)
 
-Some settings can greatly improve the quality of the top surface of the print, but they can make the print take much longer as they are applied to all skin layers at the top. A similar effect can be achieved by adjusting those settings only for the very top layer or two, but printing the rest of the skin layers faster. This will not have as big a negative effect on the printing time then.
+Einige Einstellungen können die Qualität der Oberseite des Drucks erheblich verbessern, sie können aber dazu führen, dass der Druck viel länger dauert, da sie auf alle Schichten der Außenhaut angewendet werden. Ein ähnlicher Effekt lässt sich erzielen, wenn diese Einstellungen nur für die oberste Schicht oder zwei Schichten vorgenommen, die restlichen Schichten der Außenhaut aber schneller gedruckt werden. Dies hat dann keine so großen negativen Auswirkungen auf die Druckzeit.
 
-Settings that can be adjusted for the top surface are:
-* [Top Surface Skin Extruder](roofing_extruder_nr.md)
-* [Top Surface Skin Flow](../material/roofing_material_flow.md)
-* [Top Surface Skin Speed](../speed/speed_roofing.md)
-* [Top Surface Skin Acceleration](../speed/acceleration_roofing.md)
-* [Top Surface Skin Jerk](../speed/jerk_roofing.md)
-* [Top Surface Skin Line Width](../experimental/roofing_line_width.md)
-* [Top Surface Skin Pattern](../experimental/roofing_pattern.md)
-* [Top Surface Skin Line Directions](../experimental/roofing_angles.md)
+Folgende Einstellungen können für die Oberseite vorgenommen werden:
+* [Oberfläche Außenhaut Extruder](roofing_extruder_nr.md)
+* [Fluss Oberfläche Außenhaut](../material/roofing_material_flow.md)
+* [Oberfläche Außenhaut Geschwindigkeit](../speed/speed_roofing.md)
+* [Beschleunigung Oberfläche Außenhaut](../speed/acceleration_roofing.md)
+* [Justierung der Oberfläche Außenhaut](../speed/jerk_roofing.md)
+* [Oberfläche Außenhaut Linienbreite](../experimental/roofing_line_width.md)
+* [Oberfläche Außenhaut Muster](../experimental/roofing_pattern.md)
+* [Linienrichtungen der Oberfläche Außenhaut](../experimental/roofing_angles.md)
 
-To achieve a nicer top surface, try reducing the speed and increasing the jerk.
+Um eine schönere Oberfläche zu erhalten, versuchen Sie, die Geschwindigkeit zu verringern und den Ruck (Jerk) zu erhöhen.
 
-When printing the top surface in a different colour (using the [Top Surface Skin Extruder](roofing_extruder_nr.md) setting), it is often necessary to print more than one layer in the other colour. Otherwise the original colour will still bleed through.
+Wenn Sie die Außenhaut in einer anderen Farbe drucken (unter Verwendung der Einstellung [Oberfläche Außenhaut Extruder](roofing_extruder_nr.md)), ist es oft notwendig, mehr als eine Schicht in der anderen Farbe zu drucken. Andernfalls würde die ursprüngliche Farbe noch durchscheinen.

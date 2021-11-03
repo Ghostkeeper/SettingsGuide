@@ -1,6 +1,6 @@
-Top/Bottom Thickness
+Obere/untere Dicke
 ====
-With the Top/Bottom Thickness you can adjust how thick of a solid skin is created on the top and bottom sides of your print.
+Mit der Dicke oben/unten können Sie einstellen, wie dick die Außenhaut an der Ober- und Unterseite Ihres Drucks sein soll.
 
 <!--screenshot {
 "image_path": "top_bottom_thickness_0.8.png",
@@ -22,16 +22,16 @@ With the Top/Bottom Thickness you can adjust how thick of a solid skin is create
 },
 "colours": 64
 }-->
-![Ordinary top/bottom thickness](../images/top_bottom_thickness_0.8.png)
-![Much thicker top and bottom sides](../images/top_bottom_thickness_3.png)
+![Normale Dicke oben/unten](../images/top_bottom_thickness_0.8.png)
+![Deutlich dickere Ober- und Unterseiten](../images/top_bottom_thickness_3.png)
 
-This affects both the top and bottom sides of the print. The top and bottom can also be configured individually with the [Top Thickness](top_thickness.md) and [Bottom Thickness](bottom_thickness.md) settings.
+Dies betrifft sowohl die Ober- als auch die Unterseite des Drucks. Die Ober- und Unterseite können auch einzeln mit den Einstellungen [Obere Dicke](top_thickness.md) und [Untere Dicke](bottom_thickness.md) konfiguriert werden.
 
-If this setting is not a multiple of the layer height, it will get rounded to the nearest multiple. This setting only determines how many top and bottom layers will be generated.
+Wenn diese Einstellung nicht dem Vielfachen der Höhe der Schicht entspricht, wird sie auf das nächste Vielfache gerundet. Diese Einstellung bestimmt nur, wie viele Schichten oben und unten erzeugt werden.
 
-Greater top and bottom thickness will have several effects, beneficial for total quality but detrimental to productivity.
-* Your part will be stronger. Greater top and bottom thickness will mean that a smaller part of your print will get filled with the sparse infill pattern. Instead it gets made completely solid.
-* The top surface will be smoother. Any pillowing and sagging in the top skin will get smoothed out in the layers put on top.
-* It's more likely that your model will be water tight. Both on the top and bottom sides there will be more layers to block water or other fluids from getting in, and to recover from sagging overhangs.
-* Your print will use more material, since more layers are filled completely.
-* Your print will take longer, since more material must be placed down and these layers are normally printed more slowly than the infill.
+Eine größere Dicke an der Ober- und Unterseite hat mehrere Auswirkungen, die sich positiv auf die Gesamtqualität, aber negativ auf die Produktivität auswirken.
+* Ihr Teil wird stabiler sein. Mehr obere Schichten bedeuten, dass ein kleinerer Teil Ihres Drucks mit wenig Füllung gefüllt wird. Stattdessen wird er vollständig ausgefüllt.
+* Die Oberseite wird glatter sein. Eventuelle Unebenheiten in der Außenhaut werden durch die darüber liegenden Schichten geglättet.
+* Es ist wahrscheinlicher, dass Ihr Modell wasserdicht ist. Sowohl auf der Ober- als auch auf der Unterseite befinden sich mehr Schichten, um das Eindringen von Wasser oder anderen Flüssigkeiten zu verhindern und um Überhänge auszugleichen.
+* Ihr Druck wird mehr Material verbrauchen, da mehr Schichten vollständig gefüllt werden.
+* Der Druck dauert länger, da mehr Material aufgetragen werden muss und diese Schichten normalerweise langsamer gedruckt werden als die Füllung.

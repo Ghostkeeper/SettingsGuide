@@ -1,6 +1,6 @@
-Top Skin Expand Distance
+Expansionsdistanz Außenhaut oben
 ====
-Make the solid layers on the top of your print wider or thinner in a horizontal direction. Normally the solid layers are only generated below parts where there is air beneath them, but with this setting you can expand it horizontally a bit further, improving strength by making the skin attach better to adjacent walls and closing gaps in the skin.
+Verbreitern oder verringern Sie die festen Schichten auf der Oberseite Ihres Drucks in horizontaler Richtung. Normalerweise werden die festen Schichten nur unterhalb von Teilen erzeugt, unter denen sich Luft befindet. Mit dieser Einstellung können Sie sie jedoch horizontal etwas weiter ausdehnen und so die Festigkeit verbessern, indem Sie die Außenhaut besser an den angrenzenden Wänden befestigen und Lücken in der Haut schließen.
 
 <!--screenshot {
 "image_path": "skin_preshrink_original.png",
@@ -28,11 +28,11 @@ Make the solid layers on the top of your print wider or thinner in a horizontal 
 },
 "colours": 32
 }-->
-![How skins (the yellow parts) normally look](../images/skin_preshrink_original.png)
-![Skins expanded by 1mm](../images/expand_skins_expand_distance_1mm.png)
+![Wie Außenhäute (die gelben Teile) normalerweise aussehen](../images/skin_preshrink_original.png)
+![Außenhäute um 1 mm erweitert](../images/expand_skins_expand_distance_1mm.png)
 
-* If you have small holes in the top layers of the skin (holes that are filled with the infill pattern), setting this a bit higher will close them. This allows the printer to continuously print bottom lines, greatly improving strength.
-* If the bottom side of your print is not flat, increasing this setting will cause the skin to be printed beyond the area that is directly above air, above the walls. This will improve adhesion between the skin and the walls, improving strength again.
-* Setting this setting to a negative value will reduce the width of the bottom layers, replacing it with infill. This can save some printing time, at the cost of strength.
+* Wenn Sie kleine Löcher in den oberen Schichten der Außenhaut haben (Löcher, die mit dem Füllmuster gefüllt werden), können Sie diese mit einem etwas höheren Wert schließen. Dadurch kann der Drucker kontinuierlich untere Linien drucken, was die Festigkeit erheblich verbessert.
+* Wenn die Unterseite Ihres Drucks nicht flach ist, bewirkt eine höhere Einstellung, dass die Außenhaut über den Bereich hinaus gedruckt wird, der sich in der Luft direkt über den Wänden befindet. Dadurch wird die Haftung zwischen der Außenhaut und den Wänden verbessert, was wiederum die Festigkeit erhöht.
+* Wenn Sie diese Einstellung auf einen negativen Wert setzen, wird die Breite der unteren Schichten verringert und durch Füllmaterial ersetzt. Dies kann eine gewisse Zeitersparnis beim Drucken bedeuten, geht aber auf Kosten der Festigkeit.
 
-**Due to technical limitations, you can't reduce this setting negatively below the value of [Top Skin Removal Width](top_skin_preshrink.md). Increase the Top Skin Removal Width setting in order to remove more skin.**
+**Aufgrund technischer Beschränkungen können Sie diese Einstellung nicht unter den Wert von [Breite für das Entfernen der Außenhaut oben](top_skin_preshrink.md) verringern. Erhöhen Sie die Einstellung für die "Breite für das Entfernen der Außenhaut oben", um mehr Außenhaut zu entfernen.**

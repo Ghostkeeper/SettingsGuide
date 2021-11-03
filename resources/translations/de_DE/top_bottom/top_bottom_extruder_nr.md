@@ -1,6 +1,6 @@
-Top/Bottom Extruder
+Extruder Oben/Unten
 ====
-The top and bottom side of the object can be printed with a different extruder than the rest of the model, if desired. With this setting you can choose which extruder will be used for the top and bottom sides.
+Die Ober- und Unterseite des Objekts kann, falls gewünscht, mit einem anderen Extruder als der Rest des Modells gedruckt werden. Mit dieser Einstellung können Sie wählen, welcher Extruder für die Ober- und Unterseite verwendet werden soll.
 
 <!--screenshot {
 "image_path": "top_bottom_extruder_nr.png",
@@ -10,12 +10,12 @@ The top and bottom side of the object can be printed with a different extruder t
 "colour_scheme": "material_colour",
 "colours": 32
 }-->
-![The top and bottom of this object are printed in red](../images/top_bottom_extruder_nr.png)
+![Die Ober- und Unterseite dieses Objekts sind in rot gedruckt](../images/top_bottom_extruder_nr.png)
 
-This setting does not influence the walls, which are printed next to the top and bottom and will be visible from the top and bottom of your print.
+Diese Einstellung hat keinen Einfluss auf die Wände, die neben der Ober- und Unterseite gedruckt werden und von der Ober- und Unterseite Ihres Drucks aus zu sehen sein werden.
 
-Example use cases of printing the top and bottom with a different extruder include:
-* Printing them in a different colour for a visual effect.
-* Printing them with a softer material, which gives the model a soft touch and increases friction so that you can hold on to it more easily.
-* Printing them with a hard material to give the model more horizontal strength while still retaining the nice visual quality of your other material on the walls.
-* Printing them with a material with a low friction coefficient so that other objects may slide more easily over the surface, when moving parts are involved in your final design.
+Anwendungsbeispiele für das Drucken des oberen und unteren Teils mit einem anderen Extruder sind
+* Druck in einer anderen Farbe für einen visuellen Effekt.
+* Sie werden mit einem weicheren Material gedruckt, wodurch sich das Modell weich anfühlt und die Reibung erhöht wird, so dass man es leichter festhalten kann.
+* Drucken mit einem harten Material, um dem Modell mehr horizontale Festigkeit zu verleihen, wobei die schöne optische Qualität des anderen Materials an den Wänden erhalten bleibt.
+* Drucken mit einem Material mit niedrigem Reibungskoeffizienten, damit andere Objekte leichter über die Oberfläche gleiten können, wenn bewegliche Teile in Ihrem endgültigen Modell enthalten sind.

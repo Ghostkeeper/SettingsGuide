@@ -1,6 +1,6 @@
-Extra Skin Wall Count
+Linienanzahl der zusätzlichen Außenhaut
 ====
-When printing the top and bottom with the lines pattern, the outer rim of the skin areas can still be printed with a few concentric lines. This is different than printing an extra wall, because the extra skin wall also gets put between the skin and the infill.
+Wenn Sie die Ober- und Unterseite mit dem Linienmuster drucken, kann der äußere Rand der Außenhautbereiche noch mit einigen konzentrischen Linien gedruckt werden. Das ist etwas anderes als das Drucken einer zusätzlichen Wand, denn die zusätzliche Wand der Außenhaut wird auch zwischen die Außenhaut und die Füllung gelegt.
 
 <!--screenshot {
 "image_path": "skin_outline_count_0.png",
@@ -28,7 +28,7 @@ When printing the top and bottom with the lines pattern, the outer rim of the sk
 "layer": 115,
 "colours": 64
 }-->
-![No extra skin outlines](../images/skin_outline_count_0.png)
-![Two extra skin outlines](../images/skin_outline_count_2.png)
+![Keine zusätzlichen Außenhautkonturen.](../images/skin_outline_count_0.png)
+![Zwei zusätzliche Außenhautkonturen](../images/skin_outline_count_2.png)
 
-Normally the skin lines can end inside the sparse infill. Their endpoints will sag a little bit then. If there are any extra skin walls, the printer will print a perimeter around the skin first that the normal skin lines can attach to. The skin won't sag as much in the end points then. In the end, this tends to improve the quality of top surfaces a bit.
+Normalerweise können die Linien der Außenhaut innerhalb der dünnen Füllung enden. Ihre Endpunkte hängen dann ein wenig durch. Wenn es zusätzliche Wände der Außenhaut gibt, druckt der Drucker zunächst einen Rand um die Außenhaut, an dem die normalen Außenhautlinien ansetzen können. Die Außenhaut hängt dann an den Endpunkten nicht so stark durch. Letztendlich wird dadurch die Qualität der Oberseiten etwas verbessert.

@@ -1,6 +1,6 @@
-Top/Bottom Pattern
+Unteres/oberes Muster
 ====
-This setting allows you to choose how the top and bottom surfaces get filled up with material. Several different printing patterns are available, but the patterns here are more limited than for infill. Only patterns that create solid layers are available.
+Mit dieser Einstellung können Sie festlegen, wie die Ober- und Unterseite mit Material gefüllt werden soll. Es stehen mehrere verschiedene Druckmuster zur Verfügung, die Muster sind hier aber begrenzter als bei der Füllung. Es sind nur Muster verfügbar, die feste Schichten erzeugen.
 
 <!--screenshot {
 "image_path": "top_bottom_pattern_lines.png",
@@ -9,14 +9,14 @@ This setting allows you to choose how the top and bottom surfaces get filled up 
 "settings": {"top_bottom_pattern": "lines"},
 "colours": 64
 }-->
-Lines
+Linien
 ----
-![Lines](../images/top_bottom_pattern_lines.png)
+![Linien](../images/top_bottom_pattern_lines.png)
 
-The basic lines pattern draws straight lines across the surface. These lines are oriented by default such that they are well supported by the infill and support. The direction of the lines alternates between layers.
-* Provides a nice surface quality.
-* Very rigid in the directions that the lines are drawn.
-* Adheres strongly to the walls, creating relatively strong parts.
+Das Basismuster Linien zeichnet gerade Linien über die Oberfläche. Diese Linien sind standardmäßig so ausgerichtet, dass sie von der Füllung und dem Support gut unterstützt werden. Die Richtung der Linien wechselt zwischen den Schichten.
+* Bietet eine schöne Oberflächenqualität.
+* Sehr starr in den Richtungen, in die die Linien gezogen werden.
+* Haftet stark an den Wänden, wodurch relativ starke Teile entstehen.
 
 <!--screenshot {
 "image_path": "top_bottom_pattern_concentric.png",
@@ -25,16 +25,16 @@ The basic lines pattern draws straight lines across the surface. These lines are
 "settings": {"top_bottom_pattern": "concentric"},
 "colours": 64
 }-->
-Concentric
+Konzentrisch
 ----
-![Concentric](../images/top_bottom_pattern_concentric.png)
+![Konzentrisch](../images/top_bottom_pattern_concentric.png)
 
-The concentric pattern continues drawing contours towards the inside of the model.
-* Equally strong in all directions.
-* Prevents creating air pockets and gaps. It's easier to create water-tight objects with this pattern.
-* Great overhang quality, because the lines tend to bridge very well.
-* If the part is circular, this can create a nasty spot in the centre where the contours converge.
-* Surface quality is less than ideal.
+Das konzentrische Muster setzt sich im Inneren des Modells fort und zeichnet Konturen.
+* Gleichmäßig stark in alle Richtungen.
+* Verhindert das Entstehen von Lufteinschlüssen und Lücken. Es ist einfacher, mit diesem Muster wasserdichte Objekte zu erstellen.
+* Hervorragende Überhangqualität, da sich die Linien sehr gut überbrücken lassen.
+* Wenn das Teil kreisförmig ist, kann in der Mitte, wo die Konturen zusammenlaufen, eine unschöne Stelle entstehen.
+* Die Oberflächenqualität ist nicht ideal.
 
 <!--screenshot {
 "image_path": "top_bottom_pattern_zigzag.png",
@@ -47,8 +47,8 @@ Zigzag
 ----
 ![Zigzag](../images/top_bottom_pattern_zigzag.png)
 
-The zigzag pattern is very similar to the lines pattern, but instead of ending the lines in the walls it will continue extruding towards the next skin line.
-* Provides a great surface quality.
-* Very rigid in the directions that the lines are drawn.
-* Keeps the extrusion rate more constant, which improves the consistency of the surface for materials that extrude more difficultly.
-* Doesn't stick as well to the walls as the lines pattern. The effect of the [Skin Overlap](skin_overlap.md) is reduced. This makes the part weaker and reduces the quality of overhangs.
+Das Zickzack-Muster ist dem Linienmuster sehr ähnlich, aber anstatt die Linien in den Wänden enden zu lassen, werden sie in Richtung der nächsten Außenhaut weiter extrudiert.
+* Bietet eine großartige Oberflächenqualität.
+* Sehr starr in den Richtungen, in die die Linien gezogen werden.
+* Hält die Extrusionsrate konstanter, was die Konsistenz der Oberfläche bei Materialien verbessert, die schwieriger zu extrudieren sind.
+* Haftet nicht so gut an den Wänden wie das Linienmuster. Der Effekt [Außenhaut überlappen](skin_overlap.md) wird reduziert. Dadurch wird das Teil schwächer und die Qualität der Überhänge verringert sich.

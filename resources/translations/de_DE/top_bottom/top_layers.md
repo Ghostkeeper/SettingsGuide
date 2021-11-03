@@ -1,6 +1,6 @@
-Top Layers
+Obere Schichten
 ====
-This setting configures how many solid layers are printed at the top side of the print. These solid layers are printed instead of the infill. They are intended to close the top side.
+Mit dieser Einstellung wird festgelegt, wie viele feste Schichten an der Oberseite des Drucks gedruckt werden. Diese festen Schichten werden anstelle der Füllung gedruckt. Sie sind dazu gedacht, die Oberseite zu schließen.
 
 <!--screenshot {
 "image_path": "top_bottom_thickness_0.8.png",
@@ -22,12 +22,12 @@ This setting configures how many solid layers are printed at the top side of the
 },
 "colours": 64
 }-->
-![14 top layers](../images/top_bottom_thickness_0.8.png)
-![50 top layers](../images/top_thickness.png)
+![14 Obere Schichten](../images/top_bottom_thickness_0.8.png)
+![50 Obere Schichten](../images/top_thickness.png)
 
-More top layers will have several effects, beneficial for the quality of the top surface but detrimental to productivity.
-* Your part will be stronger. Having more top layers will mean that a smaller part of your print will get filled with the sparse infill pattern. Instead it gets made completely solid.
-* The top surface will be smoother. Any pillowing and sagging in the top skin will get smoothed out in the layers put on top.
-* It's more likely that your model will be water tight. More layers on the top side will be able to block water or other fluids from getting in, since more layers are filled completely.
-* Your print will use more material, since more layers are filled completely.
-* Your print will take longer, since more material must be placed down and these layers are normally printed more slowly than the infill.
+Mehr Schichten haben mehrere Auswirkungen, die sich positiv auf die Qualität der Oberfläche auswirken, aber negativ auf die Produktivität.
+* Ihr Teil wird stabiler sein. Mehr obere Schichten bedeuten, dass ein kleinerer Teil Ihres Drucks mit wenig Füllung gefüllt wird. Stattdessen wird er vollständig ausgefüllt.
+* Die Oberseite wird glatter sein. Eventuelle Unebenheiten in der Außenhaut werden durch die darüber liegenden Schichten geglättet.
+* Es ist wahrscheinlicher, dass Ihr Modell wasserdicht ist. Mehr Schichten auf der Oberseite können das Eindringen von Wasser oder anderen Flüssigkeiten verhindern, da mehr Schichten vollständig gefüllt sind.
+* Ihr Druck wird mehr Material verbrauchen, da mehr Schichten vollständig gefüllt sind.
+* Ihr Druck dauert länger, da mehr Material nach unten gelegt werden muss und diese Schichten normalerweise langsamer gedruckt werden als die Füllung.

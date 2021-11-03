@@ -1,6 +1,6 @@
-Top/Bottom Line Directions
+Richtungen der oberen/unteren Linie
 ====
-This setting allows you to change the direction in which the lines of the top and bottom are printed. You can specify a comma-separated list of angles (in degrees), and the lines will alternate directions per layer.
+Mit dieser Einstellung können Sie die Richtung ändern, in der die Linien des oberen und unteren Bereichs gedruckt werden. Sie können eine durch Komma getrennte Liste von Winkeln (in Grad) angeben, und die Linien werden pro Schicht in eine andere Richtung gedruckt.
 
 <!--screenshot {
 "image_path": "skin_angles.gif",
@@ -15,14 +15,14 @@ This setting allows you to change the direction in which the lines of the top an
 "layer": [76, 77, 78],
 "colours": 128
 }-->
-![Lines pattern with 0°, 60° and 120° angles alternating](../images/skin_angles.gif)
+![Linienmuster mit abwechselnden Winkeln von 0°, 60° und 120°](../images/skin_angles.gif)
 
-By default, the lines pattern prints in the two diagonal directions. For Cartesian gantry systems this is the most accurate, because the printer can use both the X and Y motors to accelerate the nozzle when turning around for the next line.
+Standardmäßig wird das Linienmuster in den beiden diagonalen Richtungen gedruckt. Bei kartesischen Gantry-Systemen ist dies am genauesten, da der Drucker sowohl den X- als auch den Y-Motor verwenden kann, um die Düse zu beschleunigen, wenn er für die nächste Linie umkehrt.
 
-There can be several reasons to change these directions:
-* To achieve an optical effect.
-* To optimise strength. The print will normally be tougher when subjected to push and pull parallel to the skin (and infill) lines.
-* To reduce overhang. If a print is very thin in one direction, making the skin bridge that direction can be an effective way to save material on infill. No infill will be necessary to bridge the gap. Similarly, you can also choose a direction that is perpendicular to the infill in order to minimise overhang over infill. This can achieve a better top surface quality.
-* To optimise accuracy if your printer does not have one motor for the X direction and one for the Y direction, such as a printer with an H-bridge gantry or a delta printer.
+Es kann mehrere Gründe geben, diese Richtungen zu ändern:
+* Um einen optischen Effekt zu erzielen.
+* Um die Festigkeit zu optimieren. Der Druck ist normalerweise stabiler, wenn er parallel zu den Linien der Außenhaut (und der Füllung) gedrückt und gezogen wird.
+* Um den Überhang zu reduzieren. Wenn ein Druck in einer Richtung sehr dünn ist, kann die Außenhaut diese Richtung überbrücken, um Material für die Füllung zu sparen. Zur Überbrückung der Lücke wird keine Füllung benötigt. In ähnlicher Weise können Sie auch eine Richtung wählen, die senkrecht zur Füllung verläuft, um den Überhang über die Füllung zu minimieren. Auf diese Weise können Sie eine bessere Qualität der Oberfläche erzielen.
+* Zur Optimierung der Genauigkeit, wenn Ihr Drucker nicht über einen Motor für die X-Richtung und einen für die Y-Richtung verfügt, wie z. B. bei einem Drucker mit einem H-Brücken-Portal oder einem Delta-Drucker.
 
-Multiple numbers can be entered to change the direction in each layer. For example, entering `[0, 30, 60]` makes it alternate between 0 degrees away from the X axis, 30 degrees away and 60 degrees away.
+Wenn Sie beispielsweise `[0, 30, 60]` eingeben, wechselt die Richtung zwischen 0 Grad ausgehend von der X-Achse, 30 Grad ausgehend und 60 Grad ausgehend.

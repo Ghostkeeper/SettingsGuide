@@ -1,6 +1,6 @@
-Top Thickness
+Obere Dicke
 ====
-This setting configures how thick the solid top side of the print will be. This solid layer is printed instead of the sparse infill. It is intended to close the top side.
+Mit dieser Einstellung wird festgelegt, wie dick die feste Oberseite des Drucks sein soll. Diese feste Schicht wird anstelle der geringen Füllung gedruckt. Sie dient dazu, die Oberseite zu schließen.
 
 <!--screenshot {
 "image_path": "top_bottom_thickness_0.8.png",
@@ -12,12 +12,12 @@ This setting configures how thick the solid top side of the print will be. This 
 },
 "colours": 64
 }-->
-![Ordinary top thickness](../images/top_bottom_thickness_0.8.png)
-![Greatly increased thickness](../images/top_thickness.png)
+![Gewöhnliche Dicke der Oberseite](../images/top_bottom_thickness_0.8.png)
+![Deutlich erhöhte Dicke](../images/top_thickness.png)
 
-A thicker top side will have several effects, beneficial for the quality of the top surface but detrimental to productivity.
-* Your part will be stronger. Having a thicker top side will mean that a smaller part of your print will get filled with the sparse infill pattern. Instead it gets made completely solid.
-* The top surface will be smoother. Any pillowing and sagging in the top skin will get smoothed out in the additional layers.
-* It's more likely that your model will be water tight. A thicker top side top side will provide more layers to block water or other fluids from getting in, since more layers are filled completely.
-* Your print will use more material, since more layers are filled completely.
-* Your print will take longer, since more material must be placed down and these layers are normally printed more slowly than the infill.
+Eine dickere Oberseite hat mehrere Auswirkungen, die sich positiv auf die Qualität der Oberfläche auswirken, aber nachteilig auf die Produktivität.
+* Ihr Teil wird stabiler sein. Eine dickere Oberseite bedeutet, dass ein kleinerer Teil Ihres Drucks mit weniger Füllung gefüllt wird. Stattdessen wird er vollständig ausgefüllt.
+* Die Oberseite wird glatter sein. Eventuelle Unebenheiten in der Außenhaut werden durch die zusätzlichen Schichten geglättet.
+* Es ist wahrscheinlicher, dass Ihr Modell wasserdicht ist. Eine dickere Oberseite bietet mehr Schichten, die das Eindringen von Wasser oder anderen Flüssigkeiten verhindern, da mehr Schichten vollständig gefüllt sind.
+* Ihr Druck wird mehr Material verbrauchen, da mehr Schichten vollständig gefüllt sind.
+* Der Druck dauert länger, da mehr Material aufgetragen werden muss und diese Schichten normalerweise langsamer gedruckt werden als die Füllung.

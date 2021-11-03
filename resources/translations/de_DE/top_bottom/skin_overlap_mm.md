@@ -1,6 +1,6 @@
-Skin Overlap
+Außenhaut überlappen
 ====
-This setting makes the skin overlap a bit with the adjacent structures. This makes the skin adhere better to those structures.
+Bei dieser Einstellung überlappt die Außenhaut ein wenig mit den angrenzenden Strukturen. Dadurch haftet die Außenhaut besser an diesen Strukturen.
 
 <!--screenshot {
 "image_path": "skin_overlap_none.png",
@@ -22,9 +22,9 @@ This setting makes the skin overlap a bit with the adjacent structures. This mak
 },
 "colours": 64
 }-->
-![No overlap](../images/skin_overlap_none.png)
-![Some overlap](../images/skin_overlap_20.png)
+![Keine Überlappung.](../images/skin_overlap_none.png)
+![Geringe Überlappung](../images/skin_overlap_20.png)
 
-This overlap technically produces overextrusion, but the amount of overextrusion is small enough that it won't be visible. It will have a significant influence on the strength though, because the skin can adhere better to the walls and infill. After all, these structures only add to the strength of the model if they have something to hold on to.
+Diese Überlappung führt technisch gesehen zu einer Überextrusion, die jedoch so gering ist, dass man sie nicht sehen kann. Sie hat jedoch einen erheblichen Einfluss auf die Festigkeit, da die Außenhaut besser an den Wänden und der Füllung haften kann. Schließlich tragen diese Strukturen nur dann zur Festigkeit des Modells bei, wenn sie etwas haben, an dem sie sich festhalten können.
 
-Having a bit of overlap can also help to reduce the occurrence of gaps in the skin.
+Eine gewisse Überlappung kann auch dazu beitragen, das Auftreten von Lücken in der Außenhaut zu verringern.

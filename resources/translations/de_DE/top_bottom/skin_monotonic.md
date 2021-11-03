@@ -1,8 +1,8 @@
-Monotonic Top/Bottom Order
+Gleichmäßige Reihenfolge oben/unten
 ====
-Normally, Cura orders top/bottom lines such that the travel distance between them is small. If this setting is enabled, it will order the top/bottom lines such that adjacent lines are always printed overlapping in the same direction.
+Normalerweise ordnet Cura die oberen/unteren Linien so an, dass der Abstand zwischen ihnen gering ist. Wenn diese Einstellung aktiviert ist, werden die oberen/unteren Linien so angeordnet, dass benachbarte Linien immer überlappend in dieselbe Richtung gedruckt werden.
 
-When printing top/bottom lines, the lines usually overlap a bit with the lines next to them, because the shape of a line is not a perfect rectangle. This overlap gives the lines a slight slope, causing them to reflect light differently in different directions. If adjacent lines overlap differently, this reflection changes. You can see this in the final result. It gives different areas of the surface a different shine. Printing in a monotonic order ensures that the overlap is the same on the entire surface, so there is no difference in how it reflects light. This makes the surface look more consistent and smooth.
+Beim Drucken von oberen/unteren Linien überlappen die Linien normalerweise ein wenig mit den benachbarten Linien, da die Form einer Linie kein perfektes Rechteck ist. Durch diese Überlappung erhalten die Linien eine leichte Neigung, wodurch sie das Licht unterschiedlich in verschiedene Richtungen reflektieren. Wenn sich benachbarte Linien unterschiedlich überlappen, ändert sich diese Reflexion. Sie können dies im Endergebnis sehen. Es verleiht verschiedenen Bereichen der Oberfläche einen unterschiedlichen Glanz. Durch das Drucken in einer monotonen Reihenfolge wird sichergestellt, dass die Überlappung auf der gesamten Oberfläche gleich ist, so dass es keine Unterschiede bei der Lichtreflexion gibt. Dadurch wirkt die Oberfläche gleichmäßiger und glatter.
 
 <!--screenshot {
 "image_path": "skin_monotonic_disabled.gif",
@@ -44,12 +44,12 @@ When printing top/bottom lines, the lines usually overlap a bit with the lines n
 "delay": 125,
 "colours": 32
 }-->
-![Not a monotonic order](../images/skin_monotonic_disabled.gif)
-![Monotonic order, always from the bottom-right corner](../images/skin_monotonic_enabled.gif)
+![Keine gleichmäßige Reihenfolge](../images/skin_monotonic_disabled.gif)
+![Gleichmäßige Reihenfolge, immer von der rechten unteren Ecke aus](../images/skin_monotonic_enabled.gif)
 
-The monotonic order will slightly increase the length of travel moves, but this effect is very minimal. It only has a visual effect on the print. There are no mechanical advantages to the monotonic ordering.
+Die gleichmäßige Reihenfolge erhöht die Länge der Fahrwege geringfügig, aber dieser Effekt ist sehr gering. Sie wirkt sich nur optisch auf den Druck aus. Die gleichmäßige Reihenfolge bringt keine mechanischen Verbesserungen mit sich.
 
-To achieve a smooth surface, consider pairing this setting with setting the [Combing Mode](../travel/retraction_combing.md) to avoid skin, and perhaps to enable [Z Hops](../travel/retraction_hop.md). Alternatively you could also enable [ironing](ironing_enabled.md), but that completely overrides the usefulness of this setting. Ironing has its own [monotonic option](ironing_monotonic.md).
+Um eine glatte Oberfläche zu erzielen, sollten Sie diese Einstellung mit der Einstellung [Combing-Modus (Nicht in Außenhaut)](../travel/retraction_combing.md) kombinieren, und vielleicht auch [Z-Sprung](../travel/retraction_hop.md) aktivieren. Alternativ könnten Sie auch [Glätten](ironing_enabled.md) aktivieren, aber das macht den Vorteil dieser Einstellung komplett zunichte. Glätten hat seine eigene [Gleichmäßige Reihenfolge](ironing_monotonic.md).
 
-![The shimmer is different when lines are printed in inconsistent order](../images/skin_monotonic_disabled.jpg)
-![With monotonic order, the shimmer is the same everywhere](../images/skin_monotonic_enabled.jpg)
+![Der Schein ist unterschiedlich, wenn die Zeilen in ungleichmäßiger Reihenfolge gedruckt werden](../images/skin_monotonic_disabled.jpg)
+![Bei gleichmäßiger Reihenfolge ist der Schein überall derselbe](../images/skin_monotonic_enabled.jpg)
