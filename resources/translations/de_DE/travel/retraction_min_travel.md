@@ -13,7 +13,7 @@ Diese Einstellung verhindert, dass das Material bei sehr kurzen Fahrwegen eingez
 "line": 337,
 "colours": 64
 }-->
-![Beim kurzen Fahrweg in der Mitte wird nicht eingezogen.](../images/retraction_min_travel.png)
+![Beim kurzen Fahrweg in der Mitte wird nicht eingezogen.](../../../articles/images/retraction_min_travel.png)
 
 Das Einziehen des Materials soll ein Stringing verhindern. Sehr kurze Fahrwege führen nicht zu Stringing, da das Material noch nicht aus der Düse fließen konnte. Bei extrem kurzen Fahrwegen von etwa einer Linienbreite überlagern sich die Linien sogar vollständig, so dass für ein Stringing kein Platz mehr ist. Beim Einziehen hingegen steht die Düse kurzzeitig still, während das Material in Bewegung ist. Dadurch kann etwas Material fließen und es entsteht ein Klecks. Aus diesen Gründen ist es besser, bei kurzen Strecken nicht einzuziehen, auch wenn sich diese Wege auf sichtbaren Teilen des Modells befinden.
 

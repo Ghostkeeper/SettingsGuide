@@ -112,5 +112,6 @@ There are a few things to pay attention to though:
 * When linking to other articles, use relative links to the translated article of the same name, if such an article exists. If the linked article is not (yet) translated, link to the English article.
 * You will generally not need to translate images, but all images containing text should be SVG images, which are text-based and should be easy to translate. Do not copy any images you're not translating.
 * Do not translate the preferences file. While the helper text won't cause any harm, translating the labels of the preferences will cause them to stop working.
+* You will encounter HTML comments with conditional content (e.g. `if cura_version > 4.11`). Those should be preserved and their contents translated. You will also encounter HTML comments with screenshot instructions. They can be discarded, but don't hurt if left in either.
 
 Don't be afraid to ask for help with translations. I have experience handling Cura's translations and did a lot of translating in my spare time.

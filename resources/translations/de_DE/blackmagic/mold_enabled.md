@@ -17,8 +17,8 @@ Anstatt das Modell selbst zu drucken, erzeugt der Drucker mit dieser Funktion ei
 },
 "colours": 32
 }-->
-![Ein Modell, das Sie casten möchten](../images/mold_enabled_shell.png)
-![Die Form für dieses Modell](../images/mold_enabled_mould.png)
+![Ein Modell, das Sie casten möchten](../../../articles/images/mold_enabled_shell.png)
+![Die Form für dieses Modell](../../../articles/images/mold_enabled_mould.png)
 
 Curas Formgenerierung erzeugt einen Hohlkörper mit der genauen Form, die Sie gießen möchten. Um diesen Hohlraum wird eine Schalung mit einer bestimmten Breite erzeugt, die über die Einstellung [Mindestbreite der Form](mold_width.md) konfigurierbar ist. Oberhalb und unterhalb der Form wird eine Schicht mit einer bestimmten Höhe erzeugt, die über die Einstellung [Dachhöhe der Form](mold_roof_height.md) eingestellt werden kann. Damit Sie das Gussmaterial einfüllen können wird diese Schicht nicht an der Oberseite des Modells erzeugt. Sie wird auch nicht an der Unterseite des Modells erzeugt. Sie soll auf der Druckplatte bleiben, während das Modell gegossen wird.
 

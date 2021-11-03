@@ -202,3 +202,15 @@ class QtMarkdownRenderer(mistune.Renderer):
 					result += part
 
 		return result
+
+	@classmethod
+	def preprocess_comments(cls, markdown):
+		"""
+		Removes remaining comments from the Markdown code.
+
+		They should not be shown, but they may interfere with Mistune's Markdown parsing.
+		:param markdown: Markdown code with comments.
+		:return: Markdown code without comments.
+		"""
+		comment_pattern = r"<!--.*?-->"
+		return re.sub(comment_pattern, "", markdown, flags=re.DOTALL)

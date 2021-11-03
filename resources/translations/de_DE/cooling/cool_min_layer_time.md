@@ -4,7 +4,7 @@ Mit der Mindestzeit für die Schicht wird die kürzeste zulässige Druckdauer f�
 
 Dies ist notwendig, damit die vorherige Schicht abkühlen kann, bevor die nächste Schicht darauf gelegt wird. Dadurch wird sichergestellt, dass die vorherige Schicht vollständig ausgehärtet ist, um ein Absacken zu verhindern.
 
-![Welche Lüfterdrehzahl wird wo verwendet](../images/cool_fan_speed.svg)
+![Welche Lüfterdrehzahl wird wo verwendet](../../../articles/images/cool_fan_speed.svg)
 
 Diese Einstellung hat drei Auswirkungen:
 * Wenn eine Schicht schneller druckt, als es die Einstellung [Grenzwert für Normaldrehzahl/Maximaldrehzahl des Lüfters](cool_min_layer_time_fan_speed_max.md) angibt, wird die Lüfterdrehzahl in Richtung der [Maximaldrehzahl des Lüfters](cool_fan_speed_max.md) erhöht. Sobald eine Schicht so klein ist, dass sie die minimale Schichtzeit zum Drucken benötigt, wird die maximale Lüfterdrehzahl verwendet. Die Lüfterdrehzahl wird zwischen diesen beiden Werten interpoliert.

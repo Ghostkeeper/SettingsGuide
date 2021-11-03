@@ -2,7 +2,7 @@ Start Layers with the Same Part
 ====
 Originally, this setting caused the printer to start each layer with the object nearest to the position specified in the [Layer Start X](layer_start_x.md) and [Layer Start Y](layer_start_y.md) settings, instead of with the object that was printed last in the previous layer.
 
-**The setting was hidden in Cura 2.4 and never properly removed, which is why this setting still exists in this list. However, it has no effect on the print.**
+**The setting was hidden in Cura 2.4, but not properly removed, which is why this setting still exists in this list. However, it has no effect on the print.**
 
 The alternative behaviour was no longer possible after multi-threaded slicing was implemented, so the setting was hidden.
 

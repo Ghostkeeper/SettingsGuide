@@ -19,7 +19,7 @@ Die Breiten der Stützstruktur Schnittstellen Linien können getrennt von den Br
 "layer": 192,
 "colours": 64
 }-->
-![Die Stützstruktur Schnittstelle Linien sind breiter als der Rest der Unterstützungslinien](../images/support_roof_line_width.png)
+![Die Stützstruktur Schnittstelle Linien sind breiter als der Rest der Unterstützungslinien](../../../articles/images/support_roof_line_width.png)
 
 Das Drucken der Stützstruktur Schnittstelle mit etwas dünneren Linien ist oft vorteilhaft für die Qualität der überhängenden Oberfläche, die sie stützt, da die Oberfläche über der Stützstruktur Schnittstelle glatter ist. Allerdings wird dadurch nicht unbedingt die Haftung zwischen der Stützstruktur Schnittstelle und dem Modell erhöht, so dass die Stützstruktur nicht unbedingt schwieriger zu entfernen ist.
 

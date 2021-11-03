@@ -16,8 +16,8 @@ Der 3D-Drucker trägt den Kunststoff in Schichten auf. Die Schichtdicke ist die 
 "settings": {"layer_height": 0.3},
 "colours": 32
 }-->
-![0.1mm Schichtdicke](../images/layer_height_0.1.png)
-![0.3mm Schichtdicke](../images/layer_height_0.3.png)
+![0.1mm Schichtdicke](../../../articles/images/layer_height_0.1.png)
+![0.3mm Schichtdicke](../../../articles/images/layer_height_0.3.png)
 
 Die Schichtdicke ist die wichtigste Einstellung, die die Gesamtqualität und umgekehrt die Druckzeit beeinflusst. Dies sind nur einige der Auswirkungen:
 * Dünnere Schichten erhöhen die visuelle Qualität des Drucks. Da die Schichten dünner sind, wird der Treppeneffekt an den Rändern der Schichten verringert. Außerdem liegen die Schichten dichter beieinander, so dass die Rillen zwischen den Schichten kleiner sind, was insgesamt zu einem glatteren Ergebnis führt.

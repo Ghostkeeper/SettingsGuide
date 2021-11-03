@@ -20,8 +20,8 @@ Wenn ein 3D-Drucker den Materialdruck stoppt, wird das Material nicht sofort auf
 "minimum_layer": 2,
 "colours": 64
 }-->
-![Einziehen deaktiviert](../images/retraction_enable_disabled.png)
-![Eingezogene Fahrwege werden in einem helleren Blau angezeigt.](../images/retraction_enable_enabled.png)
+![Einziehen deaktiviert](../../../articles/images/retraction_enable_disabled.png)
+![Eingezogene Fahrwege werden in einem helleren Blau angezeigt.](../../../articles/images/retraction_enable_enabled.png)
 
 Das Einziehen erfolgt bei Fahrwegen, die besonders empfindlich auf Stringing reagieren. Fahrwege, die nur durch die Füllung verlaufen oder von Support zu Support führen, werden normalerweise nicht eingezogen. Es gibt auch eine Grenze dafür, wie oft das Material eingezogen werden darf, und zwar durch die Einstellungen [Maximale Anzahl von Einzügen](retraction_count_max.md) und [Fenster „Minimaler Extrusionsabstand“](retraction_extrusion_window.md).
 

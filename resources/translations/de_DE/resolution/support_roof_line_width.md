@@ -19,7 +19,7 @@ Die breite der Stützlinien des Daches kann getrennt von der Breite der übrigen
 "layer": 192,
 "colours": 64
 }-->
-![Die Stützdachlinie sind breiter als der Rest der Stützen](../images/support_roof_line_width.png)
+![Die Stützdachlinie sind breiter als der Rest der Stützen](../../../articles/images/support_roof_line_width.png)
 
 Das Drucken des Stützdaches mit etwas dünneren Linien ist oft vorteilhaft für die Qualität der überhängenden Oberfläche, die es stützt, da die Oberfläche über der Stützstrukturschnittstelle glatter ist. Allerdings wird dadurch nicht unbedingt die Haftung zwischen der Stützstrukturfläche und dem Modell erhöht, so dass die Stützstrukturfläche nicht unbedingt schwerer zu entfernen ist.
 

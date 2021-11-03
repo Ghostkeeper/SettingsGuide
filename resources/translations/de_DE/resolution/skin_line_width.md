@@ -15,8 +15,8 @@ Die Breite der Linie auf der Ober- und Unterseite. Die Breite einer Linie kann v
 "layer": 300,
 "colours": 64
 }-->
-![Die oberen/unteren Linie sind deutlich breiter als der Rest](../images/skin_line_width.png)
+![Die oberen/unteren Linie sind deutlich breiter als der Rest](../../../articles/images/skin_line_width.png)
 
 Die oberen/unteren Linie breiter zu machen, ist eine einfache Möglichkeit, die Druckzeit zu verkürzen, da weniger Linien erforderlich sind, um die Ober- und Unterseite des Objekts zu drucken. Eine zu starke Vergrößerung kann jedoch zu großen Extrusionsschwankungen führen. Dies führt zu einer Unterextrusion beim Druck der oberen/unteren Linie und einer Überextrusion beim Druck des nächsten Teils, da sich der Fluss durch die Düse nicht schnell genug anpassen kann. Wenn Sie die Breite der oberen/unteren Linie erhöhen, erhöht sich auch die Wahrscheinlichkeit, dass Löcher in der Oberfläche entstehen, was nicht schön ist und verhindert, dass sie wasserdicht ist.
 
-Eine Verringerung der Breite der oberen/unteren Linie führt in der Regel zu einer schöneren Oberseite, allerdings auf Kosten der Druckzeit. Es ist oft effektiver, eine andere Technik wie [Glätten](../top_bottom/ironing_enabled.md) zu verwenden oder nur die [Oberfläche Außenhaut Linien](../experimental/roofing_line_width.md) anzupassen.
+Eine Verringerung der Breite der oberen/unteren Linie führt in der Regel zu einer schöneren Oberseite, allerdings auf Kosten der Druckzeit. Es ist oft effektiver, eine andere Technik wie [Glätten](../top_bottom/ironing_enabled.md) zu verwenden oder nur die [Oberfläche Außenhaut Linien](../../../articles/experimental/roofing_line_width.md) anzupassen.

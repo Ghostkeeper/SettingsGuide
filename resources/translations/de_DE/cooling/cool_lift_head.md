@@ -6,7 +6,7 @@ Wenn diese Einstellung aktiviert ist und der Druckkopf sich langsamer als die Mi
 
 Wenn diese Einstellung deaktiviert ist, fährt der Drucker sofort mit der nächsten Schicht fort. Er wartet nicht auf die Mindestschichtzeit, so dass Schichten über Schichten gedruckt werden, die möglicherweise noch nicht vollständig ausgehärtet sind.
 
-![Wenn die Mindestschichtzeit erreicht ist, kann sich der Kopf anheben](../images/cool_fan_speed.svg)
+![Wenn die Mindestschichtzeit erreicht ist, kann sich der Kopf anheben](../../../articles/images/cool_fan_speed.svg)
 
 Der Druckkopf wird immer um 3 mm angehoben. Zurzeit gibt es keine Möglichkeit um dies zu konfigurieren.
 
@@ -16,4 +16,4 @@ Es gibt einen Kompromiss, wenn die Düse verlangsamt wird, damit die Schicht bes
 
 Mit Druckkopf anheben wird dieser Kompromiss gelöst. Sie können immer noch bis zu einem gewissen Punkt verlangsamen, aber bei sehr kleinen Schichten wird die heiße Düse wegbewegt, so dass sie keine Wärme mehr in den Druck überträgt. Der Druckkopf bleibt dabei so nah, dass etwaige Lüfter am Druckkopf weiterhin auf den Druck blasen.
 
-Der Nachteil dieses Verfahrens ist, dass es effektiv einen [Z-Sprung](../travel/retraction_hop.md) ausführt, was wiederum zu [stringing](../troubleshooting/stringing.md) führt. Das Anheben des Kopfes kann es zwar das Durchhängen und das Blobing verbessern, verursacht aber eine andere Art von Problemen. Ein wenig manuelle Nachbearbeitung mit einem Messer kann die dadurch verursachten Fäden beseitigen.
+Der Nachteil dieses Verfahrens ist, dass es effektiv einen [Z-Sprung](../travel/retraction_hop.md) ausführt, was wiederum zu [stringing](../../../articles/troubleshooting/stringing.md) führt. Das Anheben des Kopfes kann es zwar das Durchhängen und das Blobing verbessern, verursacht aber eine andere Art von Problemen. Ein wenig manuelle Nachbearbeitung mit einem Messer kann die dadurch verursachten Fäden beseitigen.

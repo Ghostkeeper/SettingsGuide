@@ -20,6 +20,6 @@ Mit dieser Einstellung wird die Breite der Linien an der Unterseite der Stützst
 "layer": 65,
 "colours": 64
 }-->
-![Der Boden der Stützstruktur (dunkelblau) ist mit breiteren Linien gedruckt als der Rest der Stützstruktur](../images/support_bottom_line_width.png)
+![Der Boden der Stützstruktur (dunkelblau) ist mit breiteren Linien gedruckt als der Rest der Stützstruktur](../../../articles/images/support_bottom_line_width.png)
 
 Durch das Drucken dünnerer Linien wird die Haftung an den Stellen, an denen die Stützstruktur auf dem Modell aufliegt, verringert. Allerdings wird dadurch auch die Haftung konstanter und zuverlässiger. Im Allgemeinen lässt sich der Stützstruktur dadurch leichter entfernen und hinterlässt weniger Spuren auf dem Objekt. Das Drucken dünnerer Linien erfordert natürlich auch mehr Druckzeit.

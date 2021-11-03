@@ -66,6 +66,7 @@ class CuraSettingsGuide(Extension, QObject):
 
 		self.articles = {}  # type: Dict[str, Dict[str, List[List[str]]]]  # All of the articles by key and language. Key: article ID, value: Dict with language as key and lists of items in each article as value.
 		self.articles_rich_text = {}  # type: Dict[str, Dict[str, str]]  # For each article and language, the complete Rich Text that should get shown in the tooltip.
+		self.articles_source = {}  # type: Dict[str, Dict[str, str]]  # For each article and language, the original Markdown source the article is derived from.
 		self.load_definitions()
 		self.article_locations = self.find_articles()
 		self._selected_article_id = ""  # Which article is currently shown for the user. Empty string indicates it's the welcome screen.
@@ -333,6 +334,11 @@ class CuraSettingsGuide(Extension, QObject):
 			else:
 				markdown_str = "There is no article on this topic."
 
+		# Store this unparsed for later.
+		if language not in self.articles_source:
+			self.articles_source[language] = {}
+		self.articles_source[language][article_id] = markdown_str
+
 		if images_path not in self._markdown_per_folder:
 			renderer = QtMarkdownRenderer.QtMarkdownRenderer(images_path)
 			self._markdown_per_folder[images_path] = mistune.Markdown(renderer=renderer)  # Renders the Markdown articles into the subset of HTML supported by Qt.
@@ -353,6 +359,7 @@ class CuraSettingsGuide(Extension, QObject):
 						if index2 % 2 == 0:
 							if part_between_checkboxes:
 								part_between_checkboxes = QtMarkdownRenderer.QtMarkdownRenderer.preprocess_conditionals(part_between_checkboxes)
+								part_between_checkboxes = QtMarkdownRenderer.QtMarkdownRenderer.preprocess_comments(part_between_checkboxes)
 								rich_text = self._markdown_per_folder[images_path](part_between_checkboxes)
 								parts.append(["rich_text", rich_text])
 						else:  # if index2 == 1:
@@ -374,6 +381,7 @@ class CuraSettingsGuide(Extension, QObject):
 		if article_id not in self.articles_rich_text:
 			self.articles_rich_text[article_id] = {}
 		markdown_str = QtMarkdownRenderer.QtMarkdownRenderer.preprocess_conditionals(markdown_str)
+		markdown_str = QtMarkdownRenderer.QtMarkdownRenderer.preprocess_comments(markdown_str)
 		self.articles_rich_text[article_id][language] = self._markdown_per_folder[images_path](markdown_str)
 
 		return self.articles[article_id][language]
@@ -475,12 +483,17 @@ class CuraSettingsGuide(Extension, QObject):
 			Logger.error("The screenshot tool is not installed in this version of the Settings Guide. Please use the version from the source repository.")
 			return
 		if self.selectedArticleId:  # Refresh a particular article.
-			refresh_job = threading.Thread(target=ScreenshotTool.refresh_screenshots, kwargs={"article_text": self.selectedArticle, "refreshed_set": set()})
+			preferences = CuraApplication.getInstance().getPreferences()
+			language = preferences.getValue("settings_guide/language")
+			if language == "cura_default":
+				language = preferences.getValue("general/language")
+			refresh_job = threading.Thread(target=ScreenshotTool.refresh_screenshots, kwargs={"article_text": self.articles_source[language][self.selectedArticleId], "refreshed_set": set()})
 			refresh_job.start()
 		else:  # Refresh everything.
 			refreshed_set = set()  # Don't refresh the same image multiple times. Share the same set among all calls.
 			def refresh_everything():
-				for article_per_language in self.articles.values():
+				Logger.info("Refreshing ALL screenshots.")
+				for article_per_language in self.articles_source.values():
 					for article in article_per_language.values():
 						ScreenshotTool.refresh_screenshots(article_text=article, refreshed_set=refreshed_set)
 			refresh_job = threading.Thread(target=refresh_everything)

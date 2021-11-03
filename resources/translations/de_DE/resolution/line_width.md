@@ -16,8 +16,8 @@ Dies ist die horizontale Breite der Linien, die der Drucker aufträgt. Normalerw
 "settings": {"line_width": 0.6},
 "colours": 32
 }-->
-![Sehr dünne Linien](../images/line_width_small.png)
-![Sehr breite Linien](../images/line_width_large.png)
+![Sehr dünne Linien](../../../articles/images/line_width_small.png)
+![Sehr breite Linien](../../../articles/images/line_width_large.png)
 
 Die Verringerung der Linienbreite ermöglicht es dem Drucker, mehr Details zu drucken. Insbesondere ermöglicht es dem Drucker auch, dünne Teile zu drucken. Die Linienbreite ist eine der einflussreichsten Einstellungen für Ihren Druck. Hier sind einige der Auswirkungen:
 * Wenn Sie dünnere Linien drucken, können dünnere Teile gedruckt werden, da eine Linie auch in die dünnsten Stellen passen kann.
@@ -32,7 +32,7 @@ Die Verringerung der Linienbreite ermöglicht es dem Drucker, mehr Details zu dr
 
 Anpassen der Linienbreiten für ausreichende Wandstärken
 ----
-Wenn man mechanische Objekte druckt, die dünn, aber stabil sein müssen, stößt man regelmäßig auf das Problem, dass das Teil nicht ein sauberes, gerades Vielfaches der Linienbreite ist. Wenn es sich nicht um ein gerades Vielfaches handelt, wird Cura normalerweise den Durchfluss einiger Linien aufgrund der Einstellung [Wandüberlappungen ausgleichen](../shell/travel_compensate_overlapping_walls_enabled.md) reduzieren. Dadurch ändert sich die Durchflussrate durch die Düse, was der visuellen Qualität abträglich ist. Wenn es sich um ein sauberes Vielfaches der Linienbreite, aber nicht um eine gerade Zahl handelt, wird eine der Wände auf 0 reduziert.
+Wenn man mechanische Objekte druckt, die dünn, aber stabil sein müssen, stößt man regelmäßig auf das Problem, dass das Teil nicht ein sauberes, gerades Vielfaches der Linienbreite ist. Wenn es sich nicht um ein gerades Vielfaches handelt, wird Cura normalerweise den Durchfluss einiger Linien aufgrund der Einstellung [Wandüberlappungen ausgleichen](../../../articles/shell/travel_compensate_overlapping_walls_enabled.md) reduzieren. Dadurch ändert sich die Durchflussrate durch die Düse, was der visuellen Qualität abträglich ist. Wenn es sich um ein sauberes Vielfaches der Linienbreite, aber nicht um eine gerade Zahl handelt, wird eine der Wände auf 0 reduziert.
 
 Die Herstellung sauberer Konturen mit gleichmäßigen Linien kann den Druck stärker und besser aussehen lassen. Die Fähigkeit, die Linienbreite so einzustellen, dass die gewünschte Anzahl von Konturen den Druck ausfüllt, ist ein Markenzeichen eines erfahrenen Cura-Anwenders.
 
@@ -72,9 +72,9 @@ Die Herstellung sauberer Konturen mit gleichmäßigen Linien kann den Druck stä
 "layer": 161,
 "colours": 64
 }-->
-![Voreingestellte Linienbreite, bei der die Konturen nicht passen und einige Linien dicker als andere sind](../images/line_width_fit_bad.png)
-![Verringerung der Linienbreite für eine gleichmäßige Anpassung](../images/line_width_fit_good_small.png)
-![Eine Vergrößerung der Linienbreite funktioniert ebenfalls](../images/line_width_fit_good_large.png)
+![Voreingestellte Linienbreite, bei der die Konturen nicht passen und einige Linien dicker als andere sind](../../../articles/images/line_width_fit_bad.png)
+![Verringerung der Linienbreite für eine gleichmäßige Anpassung](../../../articles/images/line_width_fit_good_small.png)
+![Eine Vergrößerung der Linienbreite funktioniert ebenfalls](../../../articles/images/line_width_fit_good_large.png)
 
 Den Fluss konstant halten
 ----

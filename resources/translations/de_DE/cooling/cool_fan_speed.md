@@ -2,7 +2,7 @@ Lüfterdrehzahl
 ====
 Die Geschwindigkeit, mit der sich die Lüfter am Druckkopf während des größten Teils des Druckvorgangs drehen. Dies ist ein Prozentsatz der maximalen Leistung der Lüfter.
 
-![Welche Lüfterdrehzahl wird wo verwendet](../images/cool_fan_speed.svg)
+![Welche Lüfterdrehzahl wird wo verwendet](../../../articles/images/cool_fan_speed.svg)
 
 * Eine höhere Geschwindigkeit ermöglicht eine bessere Kühlung. Dadurch wird das Oozing und Stringing reduziert.
 * Eine höhere Geschwindigkeit führt zu besseren Überhängen und reduziert den Pillow-Effekt.

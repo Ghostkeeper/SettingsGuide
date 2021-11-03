@@ -2,11 +2,11 @@ Probleme mit der (Druck-)Betthaftung
 ====
 Eine der häufigsten Fehlerarten bei 3D-Drucken ist, dass sich der Druck von der Bauplatte löst, während er noch gedruckt wird. Dieser Artikel befasst sich mit einigen Einstellungen, die Sie vornehmen können, um dies zu verhindern.
 
-Wenn sich der Druck von der Bauplatte gelöst hat, werden Sie in der Regel eine Menge loser Drähte überall auf der Bauplatte sehen. Wenn Sie mehr Glück haben, kann es sich auch nur als [Ebenenverschiebung](layer_shift.md) manifestieren (und es gibt weniger zu bereinigen). So oder so, der Druck ist ruiniert.
+Wenn sich der Druck von der Bauplatte gelöst hat, werden Sie in der Regel eine Menge loser Drähte überall auf der Bauplatte sehen. Wenn Sie mehr Glück haben, kann es sich auch nur als [Ebenenverschiebung](../../../articles/troubleshooting/layer_shift.md) manifestieren (und es gibt weniger zu bereinigen). So oder so, der Druck ist ruiniert.
 
 Methoden der Betthaftung
 ----
-Cura bietet mehrere Methoden, um die Betthaftung zu verbessern. Sie können zwischen diesen Methoden mit der Einstellung [Druckplattenhaftungstyp](../platform_adhesion/adhesion_type.md) wählen. Die folgenden Optionen sind verfügbar.
+Cura bietet mehrere Methoden, um die Betthaftung zu verbessern. Sie können zwischen diesen Methoden mit der Einstellung [Druckplattenhaftungstyp](../../../articles/platform_adhesion/adhesion_type.md) wählen. Die folgenden Optionen sind verfügbar.
 * Brim, die häufigste Technik, fügt einen Rand um die Unterseite des Drucks hinzu, der die Oberfläche vergrößert, so dass der Druck besser auf der Bauplatte haftet.
 * Ein Raft ist eine Platte unter dem gesamten Druck. Diese Platte erhält ebenfalls eine größere Oberfläche, so dass sie gut haftet. Wenn das Raft mit einem Material bedruckt ist, das gut am Druck haftet (z. B. mit dem gleichen Material), dann bleibt der Druck auf diese Weise an seinem Platz.
 * Eine Schürze (Skirt) wird nicht am Druck befestigt, sondern umschließt ihn nur. Diese Linie stellt sicher, dass das Material fließt, bevor der eigentliche Druck beginnt, so dass es keine Unterextrusion in der ersten Schicht gibt, die die Haftung ruinieren könnte.
@@ -14,15 +14,15 @@ Cura bietet mehrere Methoden, um die Betthaftung zu verbessern. Sie können zwis
 
 Brim und Raft sind die effektivsten Techniken, um die Haftung zu erhöhen, da sie speziell für diesen Zweck entwickelt wurden. Die meisten Drucke von vernünftiger Größe werden eine dieser beiden Techniken benötigen.
 
-Wenn Brim verwendet wird, können Sie die Haftung weiter erhöhen, indem Sie die [Breite des Brim-Elements] erhöhen (../platform_adhesion/brim_width.md). Sie können auch eine Krempe an der [Innenseite der Stützen](../stütze/stütze_krempe_aktivieren.md) und dem [Primärturm](../dual/prime_tower_krempe_aktivieren.md) sowie zwischen [Modell und Stütze](../plattform_haftung/krempe_ersetzt_stütze.md) und den [Innenlöchern](../plattform_haftung/krempe_außen_nur.md) des Modells hinzufügen.
+Wenn Brim verwendet wird, können Sie die Haftung weiter erhöhen, indem Sie die [Breite des Brim-Elements](../../../articles/platform_adhesion/brim_width.md) erhöhen. Sie können auch eine Krempe an der [Innenseite der Stützen](../../../articles/support/support_brim_enable.md) und dem [Primärturm](../../../articles/dual/prime_tower_brim_enable.md) sowie zwischen [Modell und Stütze](../../../articles/platform_adhesion/brim_replaces_support.md) und den [Innenlöchern](../../../articles/platform_adhesion/brim_outside_only.md) des Modells hinzufügen.
 
-Wenn Raft verwendet wird, können Sie die Haftung weiter erhöhen, indem Sie die [Breite des Raft](../platform_adhesion/raft_margin.md) erhöhen. Das Raft wird aber immer unterhalb von allem gedruckt, da die Schichten zueinander passen müssen. Wenn die Haftung zwischen dem Modell und dem Raft ein Problem darstellt, sollten Sie erwägen, den [Luftspalt für Raft](../platform_adhesion/raft_airgap.md) zwischen dem Raft und dem Modell zu verringern. Außerdem können Sie in Erwägung ziehen, die [Raft-Basislinienbreite](../platform_adhesion/raft_base_line_width.md) zu erhöhen.
+Wenn Raft verwendet wird, können Sie die Haftung weiter erhöhen, indem Sie die [Breite des Raft](../../../articles/platform_adhesion/raft_margin.md) erhöhen. Das Raft wird aber immer unterhalb von allem gedruckt, da die Schichten zueinander passen müssen. Wenn die Haftung zwischen dem Modell und dem Raft ein Problem darstellt, sollten Sie erwägen, den [Luftspalt für Raft](../../../articles/platform_adhesion/raft_airgap.md) zwischen dem Raft und dem Modell zu verringern. Außerdem können Sie in Erwägung ziehen, die [Raft-Basislinienbreite](../../../articles/platform_adhesion/raft_base_line_width.md) zu erhöhen.
 
 Verhindern von Verwerfungen
 ----
-Wenn Ihr Druck unter Verzug leidet, ist die Kontaktfläche zwischen dem Druck und der Bauplatte stark reduziert. Um dies zu verhindern, lesen Sie den Artikel über [Verziehen](warping.md). Zusammengefasst sind dies einige Einstellungen, die Sie vornehmen können, um Verzug zu verhindern.
-* Stellen Sie das [Unteres Muster für erste Schicht](../shell/top_bottom_pattern_0.md) auf konzentrisch.
-* Reduzieren Sie die [Temperatur Druckplatte](../material/material_bed_temperature.md) und erhöhen Sie die [Temperatur Druckplatte](../material/build_volume_temperature.md).
+Wenn Ihr Druck unter Verzug leidet, ist die Kontaktfläche zwischen dem Druck und der Bauplatte stark reduziert. Um dies zu verhindern, lesen Sie den Artikel über [Verziehen](../../../articles/troubleshooting/warping.md). Zusammengefasst sind dies einige Einstellungen, die Sie vornehmen können, um Verzug zu verhindern.
+* Stellen Sie das [Unteres Muster für erste Schicht](../top_bottom/top_bottom_pattern_0.md) auf konzentrisch.
+* Reduzieren Sie die [Temperatur Druckplatte](../../../articles/material/material_bed_temperature.md) und erhöhen Sie die [Temperatur Druckplatte](../../../articles/material/build_volume_temperature.md).
 * Passen Sie das Modell so an, dass es weniger scharfe Außenecken auf der ersten Schicht gibt.
 
 Verschiedene Anpassungen
@@ -30,10 +30,10 @@ Verschiedene Anpassungen
 Diese Einstellungen können auch angepasst werden, wenn die normalen Bett-Haftungsmethoden nicht ausreichen.
 * Erhöhen Sie die [Initiale Schichthöhe](../resolution/layer_height_0.md). Dies bietet ein wenig mehr Spielraum für Fehler, wenn die Bauplatte nicht perfekt eben ist. Es erhöht auch die Kraft, mit der das Material aus der Düse und auf die Bauplatte gedrückt wird.
 * Erhöhen Sie die [Dicke der ertsen Schicht](../resolution/initial_layer_line_width_factor.md). Dadurch wird das Material ebenfalls mit mehr Kraft herausgedrückt und bleibt gut auf der Bauplatte haften.
-* Das Erhöhen der [Drucktemperatur erste Schicht](../material/material_print_temperature_layer_0.md) lässt das Material mehr auf die Bauplatte ausfließen und vergrößert die Kontaktfläche.
+* Das Erhöhen der [Drucktemperatur erste Schicht](../../../articles/material/material_print_temperature_layer_0.md) lässt das Material mehr auf die Bauplatte ausfließen und vergrößert die Kontaktfläche.
 * Wie bei der Erhöhung der Temperatur können Sie auch die [Anfängliche Lüfterdrehzahl](../cooling/cool_fan_speed_0.md) reduzieren oder die [Normaldrehzahl bei Höhe](../cooling/cool_fan_full_at_height.md) erhöhen, um das Material länger flüssig zu halten.
-* Verringern Sie in ähnlicher Weise die [Geschwindigkeit erste Schicht](../speed/speed_layer_0.md). Eine Reduzierung der [Druckgeschwindigkeit für die erste Schicht](../speed/speed_print_layer_0.md) lässt das Material wieder mehr ausfließen, da das Material durch die heiße Düse länger flüssig gehalten wird. Eine Verringerung der [Bewegungsgeschwindigkeit für die erste Schicht](../speed/speed_travel_layer_0.md) verringert die Wahrscheinlichkeit, dass eine Verfahrbewegung zuvor gedruckte Linien von der Bauplatte abzieht. Ebenso sollten Sie die [Druckbeschleunigung für die erste Schicht](../speed/acceleration_layer_0.md) und [Rückfunktion der ersten Schicht](../speed/jerk_layer_0.md) anpassen. 
-* Erhöhen Sie die [Anzahl der langsameren Schichten](../speed/speed_slowdown_layers.md). Dies verringert die Wahrscheinlichkeit, dass schnelle Bewegungen die vorherigen Schichten abziehen.
+* Verringern Sie in ähnlicher Weise die [Geschwindigkeit erste Schicht](../../../articles/speed/speed_layer_0.md). Eine Reduzierung der [Druckgeschwindigkeit für die erste Schicht](../../../articles/speed/speed_print_layer_0.md) lässt das Material wieder mehr ausfließen, da das Material durch die heiße Düse länger flüssig gehalten wird. Eine Verringerung der [Bewegungsgeschwindigkeit für die erste Schicht](../../../articles/speed/speed_travel_layer_0.md) verringert die Wahrscheinlichkeit, dass eine Verfahrbewegung zuvor gedruckte Linien von der Bauplatte abzieht. Ebenso sollten Sie die [Druckbeschleunigung für die erste Schicht](../../../articles/speed/acceleration_layer_0.md) und [Rückfunktion der ersten Schicht](../../../articles/speed/jerk_layer_0.md) anpassen.
+* Erhöhen Sie die [Anzahl der langsameren Schichten](../../../articles/speed/speed_slowdown_layers.md). Dies verringert die Wahrscheinlichkeit, dass schnelle Bewegungen die vorherigen Schichten abziehen.
 
 Platten bauen
 ----

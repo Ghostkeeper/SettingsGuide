@@ -4,7 +4,7 @@ Bei der schrittweisen Füllung wird die Menge der Füllung reduziert, indem die 
 
 Diese Einstellung gibt an, in wie vielen Schritten die Fülldichte reduziert wird. Bei jedem Schritt wird die Fülldichte halbiert. Wenn Sie z. B. mit einem Füllgrad von 20 % und zwei schrittweisen Füllungen beginnen, beträgt die Fülldichte der unteren Teile 10 % bzw. 5 %.
 
-![Normale Füllung](../images/gradual_infill_disabled.png)
-![Füllung in 2 Schritten](../images/gradual_infill_step_height_large.png)
+![Normale Füllung](../../../articles/images/gradual_infill_disabled.png)
+![Füllung in 2 Schritten](../../../articles/images/gradual_infill_step_height_large.png)
 
 **Das Häkchen bei "Stufenweise Füllungsschritte" im empfohlenen Modus setzt diese Einstellung auf 5 Stufen und erhöht die Fülldichte auf 90 %. Dies führt zu einer sehr hohen Dichte am oberen Rand (90 %) und einer sehr niedrigen Dichte am unteren Rand des Drucks (2,8 %).**

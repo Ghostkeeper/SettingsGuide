@@ -12,7 +12,7 @@ Dadurch werden die Linien der ersten Schicht in einem bestimmten Verhältnis bre
 },
 "colours": 32
 }-->
-![Die Linien in der ersten Schicht sind doppelt so breit wie der Rest](../images/initial_layer_line_width_factor.png)
+![Die Linien in der ersten Schicht sind doppelt so breit wie der Rest](../../../articles/images/initial_layer_line_width_factor.png)
 
 Das Ziel dieser Einstellung ist es, die Haftung auf der Bauplatte zu verbessern. Um breitere Linien zu drucken, muss die Düse mehr Material extrudieren und dieses Material muss weiter nach außen fließen. Dadurch drückt die Düse das Material stärker auf die Bauplatte, was die Haftung zwischen dem Filament und der Bauplatte erhöht.
 * Die Linien werden nicht nur breiter oder schmaler, sondern auch um den gleichen Faktor weiter auseinander oder näher beieinander liegen, so dass es nicht zu einer Über- oder Unterextrusion kommt.

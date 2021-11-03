@@ -78,6 +78,8 @@ commands = {
 	"merge_gif": ["convert", "-delay", "{delay}", "-loop", "0", "-background", "white", "-alpha", "remove", "-layers", "Optimize", "{inputs}", "{output}"],  # Merge multiple images into a GIF.
 	"optimise_gif": ["flexigif", "-f", "{input}", "{output}"]  # Reduce file size of GIF images.
 }
+render_width = 2524
+render_height = 1376
 
 def call_with_args(command, **kwargs) -> None:
 	"""
@@ -182,7 +184,10 @@ def refresh_screenshots(article_text, refreshed_set) -> None:
 				navigate_layer_view(minimum_layer, layer, line)
 			else:  # Need to show the model itself.
 				switch_to_solid_view()
-			screenshot = take_snapshot(screenshot_instruction.camera_position, screenshot_instruction.camera_lookat, is_layer_view)
+			screenshot = None
+			while screenshot is None:
+				screenshot = take_snapshot(screenshot_instruction.camera_position, screenshot_instruction.camera_lookat, is_layer_view)
+				time.sleep(1.5)
 			if not is_animation:
 				target_file = full_image_path
 			else:
@@ -210,35 +215,33 @@ def find_screenshots(article_text) -> typing.Generator[ScreenshotInstruction, No
 	"""
 	Finds the screenshot instructions and parses them to ScreenshotInstruction instances, so that the rest of the
 	module may more easily process them and refresh screenshots.
-	:param article_text: The article to find screenshots in, HTML-formatted.
+	:param article_text: The article to find screenshots in, Markdown-formatted.
 	:return: A sequence of ScreenshotInstruction instances.
 	"""
 	screenshot_regex = re.compile(r"<!--screenshot\s*({.*?})\s*-->", re.DOTALL)
-	for part in article_text:
-		if part[0] == "rich_text":
-			for match in re.finditer(screenshot_regex, part[1]):
-				json_serialised = match.group(1)
-				print("--------- SCREENSHOT -----------\n" + json_serialised + "\n--------------------------------")
-				json_document = json.loads(json_serialised)
-				yield ScreenshotInstruction(
-					image_path=json_document["image_path"],
-					models=[ModelInstruction(
-						script=model["script"],
-						scad_params=model.get("scad_params", []),
-						transformation=model.get("transformation", []),
-						object_settings=model.get("object_settings", {})
-					) for model in json_document["models"]],
-					camera_position=json_document["camera_position"],
-					camera_lookat=json_document.get("camera_lookat"),  # If None, look at the centre of the scene.
-					minimum_layer=json_document.get("minimum_layer", 0),
-					layer=json_document.get("layer", 99999),
-					line=json_document.get("line", -1),
-					colour_scheme=json_document.get("colour_scheme", "line_type"),
-					structures=json_document.get("structures", ["helpers", "shell", "infill", "starts"]),
-					settings=json_document.get("settings", {}),
-					colours=json_document.get("colours", 256),
-					delay=json_document.get("delay", 500)
-				)
+	for match in re.finditer(screenshot_regex, article_text):
+		json_serialised = match.group(1)
+		print("--------- SCREENSHOT -----------\n" + json_serialised + "\n--------------------------------")
+		json_document = json.loads(json_serialised)
+		yield ScreenshotInstruction(
+			image_path=json_document["image_path"],
+			models=[ModelInstruction(
+				script=model["script"],
+				scad_params=model.get("scad_params", []),
+				transformation=model.get("transformation", []),
+				object_settings=model.get("object_settings", {})
+			) for model in json_document["models"]],
+			camera_position=json_document["camera_position"],
+			camera_lookat=json_document.get("camera_lookat"),  # If None, look at the centre of the scene.
+			minimum_layer=json_document.get("minimum_layer", 0),
+			layer=json_document.get("layer", 99999),
+			line=json_document.get("line", -1),
+			colour_scheme=json_document.get("colour_scheme", "line_type"),
+			structures=json_document.get("structures", ["helpers", "shell", "infill", "starts"]),
+			settings=json_document.get("settings", {}),
+			colours=json_document.get("colours", 256),
+			delay=json_document.get("delay", 500)
+		)
 	return
 
 @cura.Utils.Threading.call_on_qt_thread  # Must be called from the Qt thread because it creates QML objects (the global stack).
@@ -504,7 +507,7 @@ def switch_to_solid_view() -> None:
 	cura.CuraApplication.CuraApplication.getInstance().getController().setActiveStage("PrepareStage")
 
 @cura.Utils.Threading.call_on_qt_thread  # Must be called from the Qt thread because the OpenGL bindings don't support multi-threading.
-def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.QImage:
+def take_snapshot(camera_position, camera_lookat, is_layer_view) -> typing.Optional[PyQt5.QtGui.QImage]:
 	"""
 	Take a snapshot of the current scene.
 	:param camera_position: The position of the camera to take the snapshot with.
@@ -551,12 +554,15 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> PyQt5.QtGui.
 		render_pass.render()
 		time.sleep(1.2)
 		screenshot = render_pass.getOutput()
-		while screenshot.width() != 2524 or screenshot.height() != 1376:  # These are hard-coded to the screen size on half of my screen for now.
-			print("---- render output not correct size!")
-			gl_bindings.glClearColor(0.0, 0.0, 0.0, 0.0)
-			gl_bindings.glClear(gl_bindings.GL_COLOR_BUFFER_BIT | gl_bindings.GL_DEPTH_BUFFER_BIT)
-			time.sleep(1.5)
-			screenshot = render_pass.getOutput()
+		print("---- screenshot size:", screenshot.width(), "x", screenshot.height())
+		if screenshot.width() != render_width or screenshot.height() != render_height:
+			print("---- render output not correct size! Resizing window to compensate.")
+			main_window = application.getMainWindow()
+			delta_width = render_width - screenshot.width()
+			delta_height = render_height - screenshot.height()
+			main_window.setWidth(main_window.width() + delta_width)
+			main_window.setHeight(main_window.height() + delta_height)
+			return None  # Failed to render. Try again after waiting outside of Qt thread.
 
 		# Remove alpha channel from this picture. We don't want the semi-transparent support since we don't draw the object outline here.
 		# Sadly, QImage.convertToFormat has only 2 formats with boolean alpha and they both premultiply. So we'll go the hard way: Through Numpy.

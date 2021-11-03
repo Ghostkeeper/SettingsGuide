@@ -2,8 +2,8 @@ Füllungslinien verbinden
 ====
 Diese Einstellung verbindet die Endpunkte des Füllmusters, an denen die Füllung auf die Innenwand oder Außenhaut trifft, durch eine Linie, die dem Rand des Füllbereichs folgt.
 
-![Keine verbundenen Fülllinien](../images/zig_zaggify_infill_disabled.png)
-![Zusammenhängende Fülllinien](../images/zig_zaggify_infill_enabled.png)
+![Keine verbundenen Fülllinien](../../../articles/images/infill_pattern_grid.png)
+![Zusammenhängende Fülllinien](../../../articles/images/zig_zaggify_infill_enabled.png)
 
 Damit wird das gesamte Füllmuster in eine einzige oder sehr wenige Linien umgewandelt. Die Umwandlung in eine einzige Linie ist nicht immer möglich. Der Anfangspunkt dieser Linie ist willkürlich, so dass er möglicherweise nicht für jede Schicht derselbe ist, insbesondere wenn die Form, in der die Füllung enthalten ist, sich von Schicht zu Schicht unterscheidet.
 

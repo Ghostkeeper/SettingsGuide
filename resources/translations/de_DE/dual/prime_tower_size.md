@@ -2,7 +2,7 @@ Größe Einzugsturm
 ====
 Mit dieser Einstellung wird die Breite des Einzugsturm angepasst.
 
-![Die Breite des Einzugsturm](../images/prime_tower.svg)
+![Die Breite des Einzugsturm](../../../articles/images/prime_tower.svg)
 
 Wenn Sie den Einzugsturm breiter machen, wird er stabiler. Dies erhöht die Zuverlässigkeit Ihres Drucks.
 

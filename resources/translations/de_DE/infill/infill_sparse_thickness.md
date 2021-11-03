@@ -4,7 +4,7 @@ Da die Schichthöhe der Füllung für die optische Qualität nicht wichtig ist, 
 
 In der Schichtansicht sieht es so aus, als ob die Fülllinien viel breiter geworden sind. Beim tatsächlichen Druck werden die Fülllinien nach unten fallen, anstatt sich horizontal auszubreiten.
 
-![Die Dicke der Füllschicht ist auf das Dreifache der Höhe der Schicht eingestellt.](../images/infill_sparse_thickness.png)
+![Die Dicke der Füllschicht ist auf das Dreifache der Höhe der Schicht eingestellt.](../../../articles/images/infill_sparse_thickness.png)
 
 Die Dicke der Füllschicht muss ein Vielfaches der Höhe der normalen Schicht sein. Ist dies nicht der Fall, wird sie auf die nächsthöhere Schicht gerundet.
 

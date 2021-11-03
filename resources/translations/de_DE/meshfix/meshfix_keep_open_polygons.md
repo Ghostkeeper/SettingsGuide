@@ -28,8 +28,8 @@ Wenn diese Einstellung aktiviert ist, werden Schichten, deren Umfang nicht richt
 },
 "colours": 64
 }-->
-![Bei diesem Würfel fehlt eine Ecke](../images/meshfix_keep_open_polygons_shell.png)
-![Normalerweise werden die nicht geschlossenen Schichten nicht gedruckt.](../images/meshfix_keep_open_polygons_disabled.png)
-![Wenn diese Einstellung aktiviert ist, wird die Form künstlich geschlossen.](../images/meshfix_keep_open_polygons_enabled.png)
+![Bei diesem Würfel fehlt eine Ecke](../../../articles/images/meshfix_keep_open_polygons_shell.png)
+![Normalerweise werden die nicht geschlossenen Schichten nicht gedruckt.](../../../articles/images/meshfix_keep_open_polygons_disabled.png)
+![Wenn diese Einstellung aktiviert ist, wird die Form künstlich geschlossen.](../../../articles/images/meshfix_keep_open_polygons_enabled.png)
 
 In der Röntgenansicht werden Lücken, die mit dieser Einstellung geschlossen werden können, rot dargestellt.
