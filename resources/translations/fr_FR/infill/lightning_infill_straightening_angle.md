@@ -1,4 +1,4 @@
-Angle de redressement du remplissage de Eclair
+Angle de redressement du remplissage Eclair
 ====
 Ce paramètre détermine la pente du motif de remplissage de l'éclair qui peut déborder à l'intérieur.
 
