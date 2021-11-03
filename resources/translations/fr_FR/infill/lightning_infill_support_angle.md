@@ -1,4 +1,4 @@
-Angle Support du remplissage Eclair
+Angle support du remplissage Eclair
 ====
 Le motif de remplissage Eclair est uniquement destiné à soutenir l'impression des zones internes. Ce paramètre détermine l'angle maximal de surplomb, non seulement des surfaces qu'il supportera, mais aussi de l'intérieur du remplissage lui-même. Si vous réduisez ce paramètre, le remplissage sera plus important. En l'augmentant, vous réduisez la quantité de remplissage.
 
