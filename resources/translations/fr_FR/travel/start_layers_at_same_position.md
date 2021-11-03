@@ -1,4 +1,4 @@
-Démarrer les couches avec la même partie
+Démarrer les couches avec la même position
 ====
 À l'origine, ce paramètre faisait que l'imprimante commençait chaque couche avec l'objet le plus proche de la position spécifiée dans les paramètres [X début couche](layer_start_x.md) et [Y début couche](layer_start_y.md), au lieu de l'objet qui avait été imprimé en dernier dans la couche précédente.
 
