@@ -1,4 +1,4 @@
-Angle de ramification du remplissage Eclair
+Angle d'élagage du remplissage Eclair
 ====
 Le motif de remplissage Eclair produit une structure arborescente à l'intérieur de l'impression, très réduite au départ, mais se ramifie pour atteindre toutes les parties du haut de l'impression qui doivent être soutenues de l'intérieur. Ce paramètre indique dans quelle mesure les branches de l'arbre peuvent etre créées avec une certaine dépouille.
 
@@ -12,4 +12,4 @@ En augmentant l'angle de ramification, le remplissage pourra commencer plus peti
 * Résistance légèrement réduite.
 * Plus de risques de défaillance de l'impression. Si le surplomb est trop important, il y aura un surplomb significatif à l'extrémité de chaque ligne, qui s'affaissera et pourrait se détacher.
 
-En pratique, l'angle de ramification peut être plus élevé que les angles de surplomb normaux ou que les autres [angles de porte-à-faux du remplissage Eclair](lightning_infill_overhang_angle.md). Comme les lignes sont bien soutenues sur la couche inférieure, avoir un peu plus de dépouille n'est pas vraiment un problème.
+En pratique, l'angle de ramification peut être plus élevé que les angles de surplomb normaux ou que les autres [angles de saillie du remplissage Eclair](lightning_infill_overhang_angle.md). Comme les lignes sont bien soutenues sur la couche inférieure, avoir un peu plus de dépouille n'est pas vraiment un problème.
