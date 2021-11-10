@@ -1,0 +1,7 @@
+Stützstruktur-Fluss
+====
+Mit dieser Einstellung wird die Durchflussrate nur für den Support angepasst. Die Durchflussrate für den Support kann getrennt von der Durchflussrate für den Rest des Drucks eingestellt werden.
+
+Die Anpassung der Flussrate während des Supports ist eine Notlösung, um Probleme mit der Extrusionsrate oder der Haftung zwischen Support und Druck zu beheben. Der gleiche Effekt lässt sich durch die Anpassung der [Linienbreite](../resolution/support_line_width.md) oder des [Linienabstands](../support/support_line_distance.md) des Supports erzielen, aber die Anpassung des Flusses ist möglicherweise intuitiver.
+
+Wenn es ein Problem mit der Extrusionsrate oder der Festigkeit nur beim Support gibt, ist es besser, sich die [Druckgeschwindigkeiten](../speed/speed_support.md) und die [Temperatur](material_print_temperature.md) anzusehen. Vielleicht ist der Unterschied in der Flussrate zwischen dem Support und den anderen Strukturen zu groß, um richtig zu extrudieren. Ein weiteres häufiges Problem mit der Flussrate des Supports ist, dass es zu viele Kreuzungen im [Muster der Stützstruktur](../support/support_pattern.md) gibt. Es könnte helfen, ein Muster zu wählen, das sich nicht selbst kreuzt, wie z. B. Gyroid oder Zigzag.

@@ -1,0 +1,5 @@
+Skirt/Brim-Fluss
+====
+Mit dieser Einstellung wird die Durchflussmenge nur für den Skirt oder den Brim eingestellt. Die Durchflussrate für Skirt oder Brim kann getrennt von der Durchflussrate für den Rest des Drucks eingestellt werden.
+
+Wenn Sie die Durchflussrate für den Skirt oder den Brim erhöhen, kann das Material besser auf der Bauplatte haften, da es mit mehr Kraft auf die Bauplatte gedrückt wird. Es muss jedoch darauf geachtet werden, dass nicht zu viel überextrudiert wird. Wenn das Material über den Brim hinausragt, kann die Düse es von der Bauplatte abreißen, wenn ein Fahrweg den Brim überquert. Wenn sich die Linien des Skirt oder des Brim zu sehr überlappen, können einige Linien die Bauplatte nicht erreichen, weil sie durch zu breite Nachbarlinien blockiert werden. Dies kann sich nachteilig auf die Haftung auf der Bauplatte auswirken. Stattdessen kann die [Skirt-/Brim-Linienbreite](../resolution/skirt_brim_line_width.md) den gleichen Effekt erzielen, indem sie stärker auf die Bauplatte drückt, aber die Linien auch weiter auseinander hält, so dass sie alle auf der Bauplatte haften können.

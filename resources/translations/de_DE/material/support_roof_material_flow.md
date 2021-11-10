@@ -1,0 +1,9 @@
+Stützdachfluss
+====
+Mit dieser Einstellung wird die Durchflussrate nur für das Support-Dach angepasst. Die Durchflussrate für das Support-Dach kann getrennt von der Durchflussrate für den Rest des Supports eingestellt werden.
+
+Die Anpassung der Durchflussrate beim Support-Dach ist eine Notlösung, um Probleme mit der Extrusionsrate oder der Haftung zwischen Modell und Support zu beheben. Der gleiche Effekt kann durch die Anpassung der [Linienbreite](../Auflösung/Support_roof_line_width.md) oder des [Linienabstands](../support/support_roof_line_distance.md) des Support-Dachs erzielt werden, aber die Anpassung der Durchflussrate ist möglicherweise intuitiver.
+
+Wenn es ein Problem mit der Extrusionsrate gibt, ist es besser, sich die [Druckgeschwindigkeiten](../speed/speed_support_roof.md), [Temperatur](material_print_temperature.md) und [Linienbreite](../resolution/support_roof_line_width.md) anzusehen. Vielleicht ist der Unterschied zwischen der Durchflussrate des Support-Dachs und den anderen Strukturen in der Schicht zu groß. Möglicherweise ist die Linienbreite zu dünn, um richtig zu extrudieren. Wenn die Schnittstelle mit einem [anderen Material](../support/support_interface_extruder_nr.md) gedruckt wird, besteht ein häufiges Problem darin, dass das Material, mit dem die Schnittstelle gedruckt wird, nicht genug Zeit bekommt, um richtig zu fließen. Dies kann durch die Verwendung eines [Einzugsturm](../dual/prime_tower_enable.md) oder die Vergrößerung der [Horizontale Erweiterung Stützstrukturdach](../support/support_roof_offset.md) behoben werden.
+
+Wenn der Support zu gut am Modell haftet, ist eine Anpassung der [Linienbreite](../resolution/support_roof_line_width.md) in der Regel effektiver, da die Linien dann auch enger beieinander liegen, um die gleiche Stützstruktur-Füllungsdichte zu erreichen.

@@ -1,0 +1,7 @@
+Drucktemperatur
+====
+Dies bezieht sich auf die Temperatur der Düse während des Drucks. Die Drucktemperatur ist eine der einflussreichsten Einstellungen, die dass Verhalten des Materials während des Drucks beeinflusst. Selbst ein kleiner Temperaturunterschied kann einen großen Einfluss darauf haben, wie der Kunststoff fließt.
+
+Jedes Filament hat einen bestimmten Temperaturbereich, in dem es gedruckt werden kann. Dieser ist in der Regel auf der Verpackung und auf dem technischen Datenblatt angegeben. Durch eine Erhöhung der Temperatur werden Thermoplaste im Allgemeinen flüssiger. Dadurch kann der Drucker das Material schneller extrudieren, da die innere Reibung geringer ist. Beim Drucken mit großen Schichthöhen, breiten Linien, großem Durchfluss oder hohen Geschwindigkeiten muss die Temperatur am oberen Ende des Temperaturbereichs liegen. Ein heißerer Druck erschwert jedoch auch die Abkühlung des Materials, so dass der Überhang stärker durchhängt (was mehr Support erfordert) und ein stärkeres Stringing verursacht.
+
+Eine zu hohe Temperatur führt dazu, dass sich das Material während des Drucks zersetzt. Dadurch kann die Düse verstopfen und der Drucker möglicherweise beschädigt werden. Wenn die Temperatur zu niedrig eingestellt ist, schleift die Zuführung am Material, so dass es nicht mehr extrudiert wird.

@@ -1,0 +1,9 @@
+Stützbodenfluss
+====
+Mit dieser Einstellung wird die Durchflussmenge nur für den Support-Boden angepasst. Die Durchflussmenge für den Support-Boden kann separat von der Durchflussmenge für den Rest des Supports eingestellt werden.
+
+Die Anpassung der Flussrate während des Support-Bodens ist eine Notlösung, um Probleme mit der Extrusionsrate oder der Haftung zwischen dem Modell und dem Support zu beheben. Der gleiche Effekt kann durch die Anpassung der [Linienbreite](../resolution/support_bottom_line_width.md) oder des [Linienabstands](../support/support_bottom_line_distance.md) des Support-Bodens erzielt werden, aber die Anpassung der Flussrate ist vielleicht intuitiver.
+
+Wenn es ein Problem mit der Extrusionsrate gibt, ist es besser, sich die [Druckgeschwindigkeiten](../speed/speed_support_bottom.md), [Temperatur](material_print_temperature.md) und [Linienbreite](../resolution/support_bottom_line_width.md) anzusehen. Vielleicht ist der Unterschied zwischen der Durchflussrate des Support-Bodens und den anderen Strukturen in der Schicht zu groß. Möglicherweise ist die Linienbreite zu dünn, um richtig zu extrudieren. Wenn die Schnittstelle mit einem [anderen Material](../support/support_interface_extruder_nr.md) gedruckt wird, besteht ein häufiges Problem darin, dass das Material, mit dem die Schnittstelle gedruckt wird, nicht genügend Zeit bekommt, um richtig zu fließen. Dies kann durch die Verwendung eines [Einzugsturm](../dual/prime_tower_enable.md) oder die Vergrößerung der [Horizontalen Erweiterung des Stützstrukturboden](../support/support_bottom_offset.md) behoben werden.
+
+Wenn der Support zu gut am Modell haftet, ist eine Anpassung der [Linienbreite](../resolution/support_bottom_line_width.md) in der Regel effektiver, da die Linien dann auch enger beieinander liegen, um die gleiche Fülldichte des Supports zu erreichen.
