@@ -1,4 +1,4 @@
-Maximum Feedrate
+Maximum Speed E
 ====
 This setting indicates the highest speed that your feeder can move the filament at.
 
