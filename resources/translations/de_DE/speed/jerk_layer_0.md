@@ -1,0 +1,9 @@
+Ruckfunktion der ersten Schicht
+====
+Diese Einstellung bestimmt die Geschwindigkeit, mit der die Düse durch die Ecken fahren kann, während die erste Schicht gedruckt wird. Diese Einstellung kann getrennt von den übrigen Schichten vorgenommen werden.
+
+Wenn Sie mit hoher Geschwindigkeit durch scharfe Ecken drucken, vibriert nicht nur der Druckkopf in horizontaler Richtung. Es kann auch dazu führen, dass die Bauplatte vertikal vibriert. Dies wirkt sich negativ auf die Haftung des Druckbetts aus. Wenn Sie während der ersten Schicht etwas vorsichtiger durch die Ecken fahren, können Sie eine gleichmäßigere Haftung des Druckbetts erreichen, aber es dauert länger, bis der Druckvorgang abgeschlossen ist.
+
+Außerdem führt eine Verringerung des Rucks normalerweise dazu, dass der Drucker in scharfen Ecken mehr Material ablagert, weil die Düse langsamer wird und der Materialfluss eine gewisse Verzögerung aufweist, wenn der Fluss verringert wird. Diese scharfen Ecken sind häufig die Stellen, an denen sich der Druck aufgrund von Verformungen zuerst von der Bauplatte löst. Es ist daher von Vorteil, in diesen Ecken etwas mehr Material aufzutragen, da die Ecken dann besser haften.
+
+Die einzelnen Strukturen des Drucks können alle unterschiedliche Ruckwerte haben. Es gibt separate Einstellungen für die Füllung, die Unterseite, die Außen- und Innenwände, den Support und den Einzugsturm. Diese Einstellung hat Vorrang vor all diesen Einstellungen. Nur die Einstellung [Ruckfunktion Skirt/Brim](jerk_skirt_brim.md) setzt diesen Ruck außer Kraft, da Skirt und Brim nur in der ersten Schicht auftreten können.

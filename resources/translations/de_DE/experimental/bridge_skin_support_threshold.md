@@ -1,0 +1,9 @@
+Schwellenwert Stützstruktur Brücken-Außenhaut
+====
+Mit dieser Einstellung können Sie festlegen, wie empfindlich die Erkennung von Überbrückungsbereichen sein soll. Überbrückungsbereiche werden anhand des Anteils der Außenhaut erkannt, der von etwas in der vorherigen Schicht unterstützt wird.
+
+Für jede unzusammenhängende Region der Außenhaut wird geprüft, wie viel von dieser Außenhaut durch etwas in der darunter liegenden Schicht unterstützt wird. Wenn die Region zu wenig unterstützt wird, wird die Brückentechnik auf die Regionen der Außenhaut angewendet, die nicht unterstützt werden.
+
+Die Anwendung der Brückentechnik auf die Außenhaut führt zu Änderungen der Fließgeschwindigkeit und der Druckgeschwindigkeit. Damit wird versucht, die Geschwindigkeit, mit der das Material aus der Düse fließt, anzupassen, aber das ist in der Regel schwer zu ändern. Infolgedessen kommt es in einigen Teilen des Drucks zu einer Überextrusion und in anderen Teilen zu einer Unterextrusion, da die Fließgeschwindigkeit versucht, sich anzupassen. Wenn Sie also die Fließgeschwindigkeit für einen sehr kleinen Überhang einstellen, wird sich die Druckqualität höchstwahrscheinlich verschlechtern, anstatt sie zu verbessern.
+
+Eine Erhöhung dieser Einstellung führt dazu, dass die Überbrückungstechnik auf weitere kleinere Teile des Überhangs angewendet wird, bei denen die Überbrückung weniger effektiv ist, die Fließgeschwindigkeit aber immer noch unterbrochen wird. Eine Verringerung dieser Einstellung führt dazu, dass die Überbrückungstechnik nur in sehr großen überhängenden Bereichen angewendet wird. Dies führt zu weniger Strömungsänderungen, kann aber die Qualität des Überhangs in kleineren Überhangbereichen verringern.

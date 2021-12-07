@@ -1,0 +1,7 @@
+Herunterfallen des Dachs bei Drucken mit Drahtstruktur
+====
+Beim Drucken des Daches eines Drahtrahmens im Drahtdruckmodus werden einige Linien in der Luft schweben. Diese Linien neigen dazu, nach unten zu fallen und ihre geschmolzene Materie durchzuhängen, bevor sie sich schließlich an Ort und Stelle verfestigt. Mit dieser Einstellung können Sie diesen Durchhang im Dach der Struktur kompensieren. Die Linien, die in der Luft hängen würden, werden etwas höher gedruckt, so dass sie ungefähr an der Stelle erstarren, an der sie enden sollen.
+
+Nur die Scheitelpunkte, die in der Luft gedruckt werden, werden nach oben verschoben. Das verbindende sägezahnförmige Muster zwischen den einzelnen konzentrischen Kreisen wird mit der Hälfte seiner Ecken an dem konzentrischen Ring befestigt, der vor ihm gedruckt wurde, so dass diese Ecken nicht nach oben verschoben werden. Nur die Ecken auf der Innenseite des Sägezahnmusters werden nach oben verschoben.
+
+Diese Einstellung hängt sehr stark von der Drucktemperatur und dem verwendeten Material ab. Einige Materialien, wie z. B. PLA, verfestigen sich sehr schnell, während andere länger brauchen. Wenn Sie auf der kalten Seite drucken, verfestigt es sich schneller. Auch die Raumtemperatur hat einen großen Einfluss auf das Ausmaß des Durchhängens.

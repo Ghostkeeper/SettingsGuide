@@ -1,6 +1,6 @@
 Formwinkel
 ====
-Ähnlich wie bei der Funktion [Überhänge druckbar machen](../../../articles/experimental/conical_overhang_enabled.md) wird mit dieser Einstellung die Form so verändert, dass sie ohne Unterstützung gedruckt werden kann. Es wird nur die äußere Kontur der Form verändert, so dass die Form Ihres Gusses nicht beeinträchtigt wird.
+Ähnlich wie bei der Funktion [Überhänge druckbar machen](../experimental/conical_overhang_enabled.md) wird mit dieser Einstellung die Form so verändert, dass sie ohne Unterstützung gedruckt werden kann. Es wird nur die äußere Kontur der Form verändert, so dass die Form Ihres Gusses nicht beeinträchtigt wird.
 
 <!--screenshot {
 "image_path": "mold_angle.png",
@@ -20,7 +20,7 @@ Formwinkel
 
 Wenn Sie diesen Winkel verkleinern, werden die extremen Überhänge reduziert. Dadurch wird der Druck zuverlässiger. Allerdings wird dadurch auch die Basis des Drucks breiter, was die Dauer des Drucks erheblich verlängert und den Materialverbrauch erhöht.
 
-Bei einigen Formen reicht es nicht aus, die äußere Form zu verändern, um sie richtig zu drucken. Sie muss immer noch gestützt werden. Sie können einen ähnlichen Effekt erzielen, indem Sie die [Konische Stützstruktur](../../../articles/experimental/support_conical_enabled.md) aktivieren.
+Bei einigen Formen reicht es nicht aus, die äußere Form zu verändern, um sie richtig zu drucken. Sie muss immer noch gestützt werden. Sie können einen ähnlichen Effekt erzielen, indem Sie die [Konische Stützstruktur](../experimental/support_conical_enabled.md) aktivieren.
 
 <!--screenshot {
 "image_path": "mold_needs_support.png",

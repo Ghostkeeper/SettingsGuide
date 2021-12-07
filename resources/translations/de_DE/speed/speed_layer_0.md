@@ -1,0 +1,7 @@
+Geschwindigkeit der ersten Schicht
+====
+Mit dieser Einstellung wird die Geschwindigkeit eingestellt, mit der die unterste Schicht des Modells gedruckt wird.
+
+Die gesamte erste Schicht wird normalerweise mit dieser Geschwindigkeit gedruckt, auch wenn die Wände, die Außenhaut und der Support normalerweise mit separaten Geschwindigkeiten gedruckt werden können. Nicht so bei der ersten Schicht! Für die erste Schicht kann die [Druckgeschwindigkeit](speed_print_layer_0.md) getrennt von der [Bewegungsgeschwindigkeit](speed_travel_layer_0.md) eingestellt werden. Die Geschwindigkeit, mit der der [Brim und der Skirt](skirt_brim_speed.md) gedruckt wird, kann ebenfalls angepasst werden. In der Standardeinstellung wirkt sich diese Einstellung auf alle diese Schichten aus. Die [Druckgeschwindigkeit für Raft-Basis](../platform_adhesion/raft_base_speed.md) wird jedoch nicht beeinflusst.
+
+Wenn Sie die Geschwindigkeit der ersten Schicht verringern, verbessert sich die Haftung zwischen Modell und Bauplatte. Dies liegt daran, dass das Material länger heiß bleibt und dann länger ausfließen kann. Dadurch werden die inneren Spannungen im Material verringert und die Kontaktfläche vergrößert, beides erhöht die Haftung.

@@ -1,0 +1,5 @@
+Beschleunigung Bodenstruktur
+====
+Diese Einstellung steuert, wie schnell die Düse beim Drucken des Support-Bodens in verschiedene Richtungen beschleunigt. Die Beschleunigung beim Support-Boden kann auf eine andere Geschwindigkeit als beim Support-Dach eingestellt werden.
+
+Während die Genauigkeit der Stützenschnittstelle für eine gute Qualität des Überhangs wichtig ist und auch dafür, wie gut die Stütze am Modell haftet und wie viel Spuren sie hinterlässt, ist die Qualität des Überhangs für den Stützenboden kein Thema. Es kann von Vorteil sein, die Beschleunigung des Support-Bodens etwas höher zu halten als die des Support-Daches, um ein wenig Druckzeit zu sparen. Eine zu hohe Beschleunigung kann jedoch zu zusätzlicher Narbenbildung führen und die Stabilität des darauf ruhenden Supports beeinträchtigen.

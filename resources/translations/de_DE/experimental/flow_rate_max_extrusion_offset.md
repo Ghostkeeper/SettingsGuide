@@ -1,0 +1,7 @@
+Ausgleich Durchflussrate max. Extrusionswirkung
+====
+Der Ausgleich der Durchflussrate ist ein Experiment, das der Funktion [Linear Advance](http://marlinfw.org/docs/features/lin_advance.html) von Marlin ähnelt. Der Zweck des Durchflussausgleichs besteht darin, Unter- und Überextrusion zu kompensieren, wenn sich die Durchflussrate des Materials aus der Düse ändert. Diese Einstellung legt eine Grenze für die Strecke fest, um die das Material zurückgezogen oder vorgeschoben wird, um Flussänderungen zu kompensieren.
+
+Durch den Ausgleichsfaktor der Durchflussrate wird das Filament während des Druckens weiter von seiner ursprünglichen Position nach vorne oder nach hinten bewegt. Diese Einstellung begrenzt, wie weit sich das Filament von seiner Ausgangsposition entfernen darf.
+
+Die Kompensation führt zu zusätzlichen Filamentbewegungen während des Drucks. Dies führt dazu, dass der Druckkopf von Zeit zu Zeit langsamer wird, um das Filament zu bewegen. Um diesen Effekt zu verringern, können Sie die Entfernung, über die sich das Filament bewegt, begrenzen. Dadurch wird verhindert, dass der Druckkopf langsamer werden muss, damit die Zuführung mithalten kann. Allerdings wird dadurch die Kompensation der Flussrate weniger effektiv.

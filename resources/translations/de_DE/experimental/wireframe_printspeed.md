@@ -1,0 +1,5 @@
+Geschwindigkeit beim Drucken mit Drahtstruktur
+====
+Diese Einstellung konfiguriert die Gesamtbewegungsgeschwindigkeit des Druckkopfs in jeder Phase des Drahtdruckprozesses. Die Geschwindigkeit kann separat für die Bewegungen [aufwärts](wireframe_printspeed_up.md), [abwärts](wireframe_printspeed_down.md) und [horizontal](wireframe_printspeed_flat.md) sowie für die horizontalen Bewegungen auf der [ersten Schicht](wireframe_printspeed_bottom.md) eingestellt werden. Diese Einstellung beeinflusst (standardmäßig) alle diese Geschwindigkeiten.
+
+Wenn Sie die Druckgeschwindigkeit erhöhen, dauert der Druck weniger lang. Allerdings werden dadurch auch die Vibrationen erhöht und die Genauigkeit der Düsenbewegungen verringert. Die Zuverlässigkeit des Drahtdrucks hängt hauptsächlich von der Stärke der Verbindungen ab. Je höher die Geschwindigkeit, desto geringer ist die Wahrscheinlichkeit, dass zwei Punkte im Rahmen richtig miteinander verbunden werden.

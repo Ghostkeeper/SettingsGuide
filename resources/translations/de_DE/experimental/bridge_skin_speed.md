@@ -1,0 +1,9 @@
+Brücken-Außenhautgeschwindigkeit
+====
+Diese Einstellung steuert die Geschwindigkeit, mit der die unteren Linien der Außenhaut gedruckt werden, während ein Spalt überbrückt wird.
+
+Bei Materialien, bei denen der Lüfter eingeschaltet und hoch aufgedreht werden muss (z. B. PLA), ist es im Allgemeinen besser, die Brücken sehr langsam zu drucken. So können die Lüfter viel Luft über das Material blasen, was dazu führt, dass es sich sehr schnell verfestigt. Das Material hat dann nicht so viel Gelegenheit, sich zu verformen. Dies ist weniger effektiv bei Materialien, bei denen sich der Lüfter nicht so schnell drehen muss, oder bei Druckern, die nicht über einen sehr starken Lüfter verfügen.
+
+Das langsame Drucken führt jedoch auch zu einer großen Veränderung der Geschwindigkeit, mit der das Material aus der Düsenöffnung extrudiert werden muss. Während sich der Druckkopf im Allgemeinen sehr schnell verlangsamen kann, fließt das Material in der Düsenkammer aufgrund des latenten Drucks in der Düsenkammer noch eine Weile weiter. Wenn der Druckkopf also langsamer wird, kommt es am Anfang der Überbrückungslinie zu einer gewissen Überextrusion. Wenn der Druckkopf danach wieder schneller wird, kommt es zu einer gewissen Unterextrusion. Wenn Sie die Geschwindigkeit näher an der normalen [Geschwindigkeit obere/untere Schicht](../speed/speed_topbottom.md) halten, wird dies vermieden.
+
+Im Allgemeinen ist es besser, die überbrückenden Linien der Außenhaut sehr langsam mit Materialien zu drucken, die bei kalten Temperaturen gedruckt werden, wie z. B. PLA. Bei Materialien, die bei hohen Temperaturen gedruckt werden, wie z. B. Polycarbonat, ist es besser, die Linien der überbrückenden Außenhaut mit der gleichen Geschwindigkeit zu drucken wie die normale Geschwindigkeit für die obere/untere Schicht.

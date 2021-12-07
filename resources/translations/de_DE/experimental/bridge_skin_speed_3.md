@@ -1,0 +1,9 @@
+Geschwindigkeit Brücke, dritte Außenhaut
+====
+Diese Einstellung steuert die Druckgeschwindigkeit der Außenhautlinien in der dritten Schicht oberhalb der Brücke.
+
+Bei Materialien, bei denen der Lüfter eingeschaltet und hoch aufgedreht werden muss (z. B. PLA), ist es im Allgemeinen besser, die Brücken sehr langsam zu drucken. So können die Lüfter viel Luft über das Material blasen, was dazu führt, dass es sich sehr schnell verfestigt. Das Material hat dann weniger Gelegenheit, durchzusacken, was dazu führen würde, dass es sich auf die erste und zweite überbrückende Schicht stützt und diese stärker durchhängt. Dies ist weniger effektiv bei Materialien, bei denen der Lüfter nicht so schnell drehen muss, oder bei Druckern, die nicht über einen sehr starken Lüfter verfügen.
+
+Wird langsamer gedruckt, ändert sich auch die Geschwindigkeit, mit der das Material aus der Düsenöffnung extrudiert werden muss, erheblich. Diese Änderung der Durchflussrate braucht einige Zeit, was zu einer Überextrusion führt, wenn der Druckkopf für die Brücke langsamer wird, und zu einer Unterextrusion danach. Da die dritte Schicht für die Qualität des Überhangs weniger kritisch ist als die ersten beiden Überbrückungsschichten, ist es besser, die dritte Schicht mit einer Geschwindigkeit zu drucken, die näher an der normalen [Druckgeschwindigkeit] liegt (../speed/speed_topbottom.md), um Über- und Unterextrusion zu vermeiden.
+
+Im Allgemeinen ist es besser, die überbrückenden Außenhäute langsam mit Materialien zu drucken, die bei kalten Temperaturen gedruckt werden, wie z. B. PLA.  Bei Materialien, die bei hohen Temperaturen gedruckt werden, wie z. B. Polycarbonat, ist es besser, die Linien der überbrückenden Außenhaut mit der gleichen Geschwindigkeit zu drucken wie die normale Geschwindigkeit für die obere/untere Schicht.

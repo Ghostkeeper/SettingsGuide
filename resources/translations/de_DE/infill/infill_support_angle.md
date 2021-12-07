@@ -1,6 +1,6 @@
 Füllung für Überhänge Stützstruktur
 ====
-Bei Verwendung von Füllstruktur bestimmt diese Einstellung den minimalen Überhangwinkel der Oberfläche, die unterstützt werden muss. Dies ist vergleichbar mit der Einstellung [Überhangswinkel](../../../articles/support/support_angle.md) für gewöhnliche Supports.
+Bei Verwendung von Füllstruktur bestimmt diese Einstellung den minimalen Überhangwinkel der Oberfläche, die unterstützt werden muss. Dies ist vergleichbar mit der Einstellung [Überhangswinkel](../support/support_angle.md) für gewöhnliche Supports.
 
 ![Ein niedriger Winkel führt zu mehr Support](../../../articles/images/infill_support_angle_low.png)
 ![Ein hoher Winkel führt zu weniger Support](../../../articles/images/infill_support_angle_high.png)

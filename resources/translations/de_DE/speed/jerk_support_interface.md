@@ -1,0 +1,5 @@
+Ruckfunktion Stützstruktur-Schnittstelle
+====
+Diese Einstellung bestimmt die Geschwindigkeit, mit der die Düse beim Drucken der Support-Schnittstelle durch die Ecken fahren kann. Dies kann separat vom Hauptteil des Supports konfiguriert werden.
+
+Normalerweise kann die Support-Schnittstelle mit ziemlich großen Ruck-Werten gedruckt werden, da es keine Rolle spielt, ob es in der Schnittstelle ein ringing gibt oder ob die Extrusionsrate inkonsistent ist. Die Support-Schnittstelle wird jedoch ziemlich nah am eigentlichen Druck platziert und bestimmt, wie der Support am Objekt befestigt ist. Wenn die Schnittstelle aufgrund von Vibrationen ungenau gedruckt wird, kann dies zu Narbenbildung führen, weil der Support zu gut am Druck haftet, oder zu schlechten Überhängen, wenn zwischen Support und Modell ein zu großer Spalt besteht. Dies kann ein Grund dafür sein, den Ruck im Bereich der Support-Schnittstelle etwas geringer einzustellen als im restlichen Support.

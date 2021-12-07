@@ -1,0 +1,7 @@
+Ruckfunktion Druck für die erste Schicht
+====
+Diese Einstellung legt die Geschwindigkeit fest, mit der die Düse durch Ecken fahren kann, während die erste Schicht extrudiert wird. Dies kann getrennt von den Fahrbewegungen während der ersten Schicht konfiguriert werden.
+
+Eine Verringerung des Rucks führt dazu, dass der Drucker in scharfen Ecken mehr Material abgibt, da die Düse langsamer wird, während der Materialfluss eine gewisse Verzögerung aufweist, wenn der Fluss verringert wird. Diese scharfen Ecken sind häufig die Stellen, an denen sich der Druck aufgrund von Verformungen zuerst von der Bauplatte löst. Das Auftragen von zusätzlichem Material in diesen Ecken ist dann von Vorteil, da es dafür sorgt, dass die Ecken besser haften. Dieser Effekt tritt während der Fahrbewegungen der ersten Schicht nicht auf. Aus diesem Grund ist der Ruck während der Extrusion der ersten Schicht normalerweise etwas geringer als der Ruck während der Fahrbewegungen der ersten Schicht.
+
+Die einzelnen Strukturen des Drucks können alle unterschiedliche Ruckwerte haben. Es gibt separate Einstellungen für die Füllung, die Unterseite, die Außen- und Innenwände, den Support und den Einzugsturm. Diese Einstellung hat Vorrang vor all diesen Einstellungen. Nur die Einstellung [Ruckfunktion Skirt/Brim](jerk_skirt_brim.md) setzt diesen Ruck außer Kraft, da Skirt und Brim nur in der ersten Schicht auftreten können.

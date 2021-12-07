@@ -1,0 +1,9 @@
+Brückenwandgeschwindigkeit
+====
+Diese Einstellung steuert die Geschwindigkeit, mit der die Wandlinien gedruckt werden, während ein Spalt überbrückt wird.
+
+Bei Materialien, bei denen der Lüfter eingeschaltet und hoch aufgedreht werden muss (wie z. B. PLA), ist es im Allgemeinen besser, Brücken sehr langsam zu drucken. So können die Lüfter viel Luft über das Material blasen, wodurch es sich sehr schnell verfestigt. Das Material hat dann nicht so viel Gelegenheit, sich zu verformen. Bei Materialien, bei denen sich der Lüfter nicht so schnell drehen muss, oder bei Druckern, die nicht über einen sehr starken Lüfter verfügen, ist dies weniger effektiv.
+
+Das langsame Drucken führt jedoch auch zu einer großen Veränderung der Geschwindigkeit, mit der das Material aus der Düsenöffnung extrudiert werden muss. Während sich der Druckkopf im Allgemeinen sehr schnell verlangsamen kann, fließt das Material in der Düsenkammer aufgrund des latenten Drucks in der Düsenkammer noch eine Weile weiter. Wenn der Druckkopf also langsamer wird, kommt es am Anfang der Überbrückungslinie zu einer gewissen Überextrusion. Wenn der Druckkopf danach wieder schneller wird, kommt es zu einer gewissen Unterextrusion. Wenn Sie die Geschwindigkeit näher an der normalen [Wandgeschwindigkeit](../speed/speed_wall.md) halten, wird dies verhindert.
+
+Im Allgemeinen ist es bei Materialien, die bei kalten Temperaturen gedruckt werden, wie z. B. PLA, besser, die Überbrückungswände sehr langsam zu drucken. Beim Drucken von Hochtemperaturmaterialien wie Polycarbonat ist es besser, die Überbrückungswände mit der gleichen Geschwindigkeit zu drucken wie die normale Wandgeschwindigkeit.

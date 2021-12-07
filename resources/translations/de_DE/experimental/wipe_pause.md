@@ -1,0 +1,7 @@
+bwischen pausieren
+====
+Mit dieser Einstellung kann die Düse nach dem Abwischen eine kurze Pause einlegen.
+
+Der Abwischvorgang ist für eine Fahrbewegung recht lang. Die Düse fährt ganz an den Rand des Bauvolumens und bewegt sich dort hin und her und muss dann zurück zum Druck fahren. Während dieser Zeit kommt es zu einer Menge Oozing und einem längeren [Einzugsabstand für das Abwischen](wipe_retraction_amount.md), der notwendig sein kann. Nach dem Zurückziehen gibt es eine Zeit, in der der Fluss aus der Düse noch in Gang kommen muss. Diese Pause ermöglicht es der Düsenkammer, wieder unter Druck zu kommen, wenn das Material wieder zurückgezogen wird, so dass die erste Linie richtig gedruckt werden kann, ohne dass es zu einer signifikanten Unterextrusion kommt.
+
+Eine zu lange Pause führt dazu, dass an der Stelle, an der die Düse landet, ein Blob entsteht. Je nach [Druckreihenfolge](../infill/infill_before_walls.md) ist dies möglicherweise nicht von Bedeutung, da der Klecks auf der Innenseite des Drucks erscheinen kann, wo er nicht sichtbar ist. Allerdings wird das für diesen Blob verwendete Material nicht für die nachfolgenden gedruckten Linien verwendet, so dass es auch dort zu Unterextrusion kommt. Diese Einstellung erfordert eine sorgfältige Abstimmung.

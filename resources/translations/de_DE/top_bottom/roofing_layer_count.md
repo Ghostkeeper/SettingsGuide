@@ -29,13 +29,13 @@ Einige Einstellungen können die Qualität der Oberseite des Drucks erheblich ve
 
 Folgende Einstellungen können für die Oberseite vorgenommen werden:
 * [Oberfläche Außenhaut Extruder](roofing_extruder_nr.md)
-* [Fluss Oberfläche Außenhaut](../../../articles/material/roofing_material_flow.md)
-* [Oberfläche Außenhaut Geschwindigkeit](../../../articles/speed/speed_roofing.md)
-* [Beschleunigung Oberfläche Außenhaut](../../../articles/speed/acceleration_roofing.md)
-* [Justierung der Oberfläche Außenhaut](../../../articles/speed/jerk_roofing.md)
-* [Oberfläche Außenhaut Linienbreite](../../../articles/experimental/roofing_line_width.md)
-* [Oberfläche Außenhaut Muster](../../../articles/experimental/roofing_pattern.md)
-* [Linienrichtungen der Oberfläche Außenhaut](../../../articles/experimental/roofing_angles.md)
+* [Fluss Oberfläche Außenhaut](../material/roofing_material_flow.md)
+* [Oberfläche Außenhaut Geschwindigkeit](../speed/speed_roofing.md)
+* [Beschleunigung Oberfläche Außenhaut](../speed/acceleration_roofing.md)
+* [Justierung der Oberfläche Außenhaut](../speed/jerk_roofing.md)
+* [Oberfläche Außenhaut Linienbreite](../experimental/roofing_line_width.md)
+* [Oberfläche Außenhaut Muster](../experimental/roofing_pattern.md)
+* [Linienrichtungen der Oberfläche Außenhaut](../experimental/roofing_angles.md)
 
 Um eine schönere Oberfläche zu erhalten, versuchen Sie, die Geschwindigkeit zu verringern und den Ruck (Jerk) zu erhöhen.
 

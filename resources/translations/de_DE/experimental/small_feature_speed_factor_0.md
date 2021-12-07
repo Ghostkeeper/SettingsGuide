@@ -1,0 +1,7 @@
+Geschwindigkeit der ersten Schicht von Details
+====
+Konturen, die kürzer als die [Max. Detaillänge](small_feature_max_length.md) sind, können mit einer reduzierten Geschwindigkeit gedruckt werden. Mit dieser Einstellung können Sie die Geschwindigkeit angeben, mit der diese Konturen auf der ersten Schicht gedruckt werden sollen, und zwar als Faktor ihrer [normalen Wandgeschwindigkeit](../speed/speed_wall.md). Dies kann getrennt von der Druckgeschwindigkeit kleiner Features auf den [restlichen Schichten](small_feature_speed_factor.md) konfiguriert werden .
+
+Kleine Konturen haben nicht viel Oberfläche, um auf der Bauplatte zu haften. Besonders beim [Drucken der Wände vor der Füllung](../infill/infill_before_walls.md) sind die Wände für kleine Löcher oft nur winzige Kreise, die auf der Bauplatte liegen. Wenn die Düse später in einer Fahrbewegung an ihnen vorbeifährt, können sie von der Bauplatte abgerissen werden. Aus diesem Grund kann die Druckgeschwindigkeit für diese kleinen Konturen im Vergleich zu den anderen Konturen reduziert werden. Dadurch kann das Material besser ausfließen und mit der Bauplatte verschmelzen, so dass die Gefahr, dass sie von der Bauplatte abgerissen werden, geringer ist.
+
+Eine Verringerung der Druckgeschwindigkeit für diese kleinen Konturen hat nur einen sehr geringen negativen Einfluss auf die Druckgeschwindigkeit. Da diese Konturen per Definition klein sind und es sich nur um die erste Schicht handelt, ist die zusätzliche Druckzeit glücklicherweise nicht signifikant.

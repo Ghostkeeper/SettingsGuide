@@ -1,0 +1,7 @@
+Druckbeschleunigung für die erste Schicht
+====
+Diese Einstellung steuert, wie schnell die Düse beim Extrudieren in der ersten Schicht in verschiedene Richtungen beschleunigt. Die Beschleunigung während der ersten Schicht kann auf eine andere Geschwindigkeit als der Rest des Drucks eingestellt werden und die Beschleunigung während der Extrusionsbewegungen kann auf eine andere Geschwindigkeit als die Beschleunigung während der Fahrbewegungen eingestellt werden.
+
+Während die Wände, die Plattformhaftung, die Böden, der Support und die Füllung alle unterschiedliche Beschleunigungsraten haben können, werden sie in der ersten Schicht mit derselben Beschleunigung ausgeführt. Die Beschleunigungsrate der ersten Schicht setzt die Beschleunigungsraten der einzelnen Strukturen außer Kraft. Die Einstellung [Beschleunigung Skirt/Brim](acceleration_skirt_brim.md) setzt die Druckbeschleunigung der ersten Schicht wieder außer Kraft.
+
+Wenn Sie mit hoher Beschleunigung drucken, kann dies zu Vibrationen führen, die durch den Drucker übertragen werden. Diese Vibrationen können insbesondere dazu führen, dass die Bauplatte auf- und abschwingt, was sich nachteilig auf die Haftung des Drucks auf der Bauplatte auswirkt. Die Verringerung der Beschleunigung für die erste Schicht kann die Vibrationen in diesem kritischen Teil des Druckvorgangs reduzieren. Das Drucken dauert jedoch länger, und eine zu starke Verringerung der Beschleunigungsraten kann zu einer ungleichmäßigen Extrusion in den Ecken führen, was sich ebenfalls negativ auf die Haftung der Bauplatte auswirkt.

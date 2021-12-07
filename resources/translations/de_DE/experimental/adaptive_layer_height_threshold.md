@@ -1,0 +1,9 @@
+Topographische Größe der Anpassschichten
+====
+Mit dieser Einstellung wird festgelegt, wie weit (horizontal) die Ränder der Schichten auf einer beliebigen Neigung voneinander entfernt sein sollen. Die Höhe der Schichten wird so angepasst, dass die gewünschte Verschiebung erreicht wird. Wenn Sie versuchen, den [Topographie-Effekt](../troubleshooting/topography.md) zu verhindern, wird mit dieser Einstellung im Wesentlichen festgelegt, wie weit die topographischen Konturen voneinander entfernt sind.
+
+Wenn Sie diese Einstellung verringern, werden die Schichten insgesamt dünner, da die horizontalen Kanten der Schichten näher beieinander liegen müssen. Wenn Sie diese Einstellung erhöhen, werden die Schichten dicker, weil die Kanten der Schichten weiter auseinander liegen können. Die Dicke der Schichten bleibt jedoch innerhalb des Bereichs, der durch die Einstellungen [Schichtdicke](../resolution/layer_height.md) und [Maximale Abweichung für Anpassschichten](adaptive_layer_height_variation.md) definiert ist.
+
+Verringern Sie diese Einstellung, um den Topographieeffekt auf der Ober- oder Unterseite Ihres Drucks zu verringern. Dadurch wird der Druck allerdings länger dauern. Erhöhen Sie diese Einstellung, um die Druckzeit zu verkürzen.
+
+Es ist fast immer besser, die Einstellung für die Schichthöhe anstelle dieser Einstellung anzupassen und die übrigen Einstellungen entsprechend zu ändern. Gehen Sie von einem Profil aus, das eine Schichthöhe hat, die Sie benötigen, um den Topographieeffekt auf ein akzeptables Maß zu reduzieren. Lassen Sie dann mit den Anpassschichten eine gewisse Variation um diese Schichtdicke zu. Dadurch wird sichergestellt, dass die übrigen Druckeinstellungen auf die Schichtdicke abgestimmt sind, mit der Sie tatsächlich drucken werden. Mit dieser Einstellung können Sie Adaptive Schichten leicht gewichten, um mehr vom unteren oder oberen Rand des zulässigen Bereichs zu wählen.

@@ -1,0 +1,14 @@
+Narbenbildung
+====
+Wenn ein Druck eine große flache Oberseite hat, besteht die Gefahr von Narben. Dies ist der Fall, wenn sich auf der Oberseite des Drucks eine deutlich sichtbare Linie befindet, die nicht zum normalen Muster gehört. Diese Linie beeinträchtigt die ansonsten glatte Oberseite des Drucks.
+
+![Eine diagonale Narbe auf der Oberfläche](../../../articles/images/scarring.jpg)
+
+Die Narben entstehen durch Fahrbewegungen, die über die Oberfläche führen. Die heiße Düse kratzt über die Oberfläche, schneidet etwas Kunststoff weg, schmilzt anderen Kunststoff leicht an und lässt möglicherweise etwas zusätzliches Material in die Ritzen sickern. Die Narbe ist rein optisch. Es gibt keinen signifikanten Unterschied in der Stärke oder Genauigkeit des Drucks. Wenn jedoch eine Narbe auf der ersten Schicht entsteht, könnte sich die Schicht durch das Kratzen von der Bauplatte lösen.
+
+Vorbeugung
+----
+Um Narben zu vermeiden, müssen Sie verhindern, dass die Düse über die obere Fläche kratzt. Sie können die Oberseite entweder horizontal (Combing-Modus) oder vertikal (Z-Sprung) vermeiden oder die Fahrbewegung überhaupt nicht durchführen.
+* Wenn Sie den [Kamm-Modus](../travel/retraction_combing.md) auf "Nicht in der Außenhaut" setzen, vermeidet die Düse bei einer Fahrbewegung das Auftreffen auf die Außenhaut. Wenn sie durch ein Modell fährt, darf sie nur durch die Füllung und die Wände fahren. Da sie nicht durch die Außenhaut fährt, sollten Sie keine Narben erhalten. Wenn die Fahrbewegung jedoch in der Außenhaut beginnt oder endet oder wenn es keinen verfügbaren Weg gibt, ohne eine Außenhaut zu treffen, wird die Fahrbewegung gerade sein, ohne etwas zu treffen, und sich vorzugsweise auch zurückziehen.
+* Aktivieren Sie [Z-Sprung](../travel/retraction_hop_enabled.md), damit sich die Düse leicht anhebt, bevor sie über die Oberfläche fährt. Dadurch wird ein gewisser Abstand zwischen der Düse und der Oberfläche eingehalten, so dass die Düse nicht kratzt. Dadurch wird auch die Narbe vermieden. Beim Combing-Modus versucht die Düse zunächst, die Außenhaut waagerecht zu umfahren. Wenn es keinen Weg gibt, dann zieht das Filament ein und macht dann einen Z-Sprung.
+* Manchmal ist es möglich, die Notwendigkeit einer Fahrbewegung zu verhindern oder eine Fahrbewegung nur durch einen Teil der Außenhaut fahren zu lassen, der noch nicht gedruckt wurde, indem man einfach den [Winkel der Außenhaut](../top_bottom/skin_angles.md) anpasst. Cura ordnet die Linien so an, dass die Fahrbewegung minimiert wird, ermöglicht aber nicht viel Kontrolle über diese Anordnung. Wenn man die Linien der Außenhaut dreht, oder das Modell dreht, werden alle Linien anders angeordnet, die Druckreihenfolge wird anders sein und das führt zu anderen Fahrbewegungen. Es kann sein, dass eine Fahrbewegung gar nicht mehr nötig ist. Dies ist jedoch ein Prozess, bei dem man viel ausprobieren muss.

@@ -1,0 +1,5 @@
+Justierung der Oberfläche Außenhaut
+====
+Diese Einstellung bestimmt die Geschwindigkeit, mit der die Düse beim Drucken der Oberseiten durch die Ecken fahren kann. Dies kann separat vom Rest der Oberseite konfiguriert werden.
+
+Wenn Sie den Ruck für diesen Teil des Drucks erhöhen, wird verhindert, dass die Düse in den Ecken zwischen benachbarten Oberseitenlinien zum Stillstand kommt. Dadurch wird die Linienbreite insgesamt gleichmäßiger. Dies hat eine größere Auswirkung, wenn die Linienbreite viel kleiner als die Düsengröße ist, was ein häufiger Anwendungsfall für die Oberseite ist. Eine zu starke Erhöhung des Rucks kann jedoch dazu führen, dass die Bauplatte vibriert und eine ungleichmäßige Oberfläche entsteht. Es könnte sogar dazu führen, dass die Motoren Schritte verlieren, was eine Schichtverschiebung zur Folge hätte.

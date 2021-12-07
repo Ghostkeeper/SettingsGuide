@@ -1,6 +1,6 @@
 Brim Einzugsturm
 ====
-Der Einzugsturm Brim ist ein zusätzlicher Brim, ähnlich der Brim-Option in der Einstellung [Druckplattenhaftungstyp](../../../articles/platform_adhesion/adhesion_type.md). Diese Umrandung kann getrennt von der normalen Haftung aktiviert und deaktiviert werden. Wenn sie aktiviert ist, wird ein zusätzlicher Rand um den Einzugsturm gedruckt. Bei diesem Rand handelt es sich um eine flache Schicht um den Einzugsturm, die die Haftung des Einzugsturm auf der Bauplatte verbessert.
+Der Einzugsturm Brim ist ein zusätzlicher Brim, ähnlich der Brim-Option in der Einstellung [Druckplattenhaftungstyp](../platform_adhesion/adhesion_type.md). Diese Umrandung kann getrennt von der normalen Haftung aktiviert und deaktiviert werden. Wenn sie aktiviert ist, wird ein zusätzlicher Rand um den Einzugsturm gedruckt. Bei diesem Rand handelt es sich um eine flache Schicht um den Einzugsturm, die die Haftung des Einzugsturm auf der Bauplatte verbessert.
 
 <!--screenshot {
 "image_path": "prime_tower_brim_enable.png",
@@ -34,6 +34,6 @@ Der Einzugsturm Brim ist ein zusätzlicher Brim, ähnlich der Brim-Option in der
 
 Durch das Aktivieren des Einzugsturm-Brim erhält der Einzugsturm mehr Oberfläche, um sich mit der Bauplatte zu verbinden. Da der Einzugsturm ziemlich hoch und schlank werden kann, kann er bei sehr hohen Drucken umkippen. Der Einzugsturm-Brim soll dies verhindern, was allerdings einen geringen Aufwand an Druckzeit, Material und Platz auf der Bauplatte bedeutet.
 
-Der Einzugsturm erhält die Breite, die in der Einstellung [Breite des Brim-Elements](../../../articles/platform_adhesion/brim_width.md) definiert ist. Wenn der "Druckplattenhaftungstyp" auf "Brim" eingestellt ist, verdoppelt diese Einstellung effektiv die Breite des Randes um den Einzugsturm.
+Der Einzugsturm erhält die Breite, die in der Einstellung [Breite des Brim-Elements](../platform_adhesion/brim_width.md) definiert ist. Wenn der "Druckplattenhaftungstyp" auf "Brim" eingestellt ist, verdoppelt diese Einstellung effektiv die Breite des Randes um den Einzugsturm.
 
 Der Rand des Einzugsturm kann nicht mit einem "Raft" kombiniert werden.

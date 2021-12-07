@@ -1,0 +1,5 @@
+Beschleunigung Oben/Unten
+====
+Diese Einstellung steuert, wie schnell die Düse beim Drucken der Ober- und Unterseite des Objekts in verschiedene Richtungen beschleunigt. Die Beschleunigung für die Ober- und Unterseite kann auf eine andere Geschwindigkeit eingestellt werden als für den Rest des Drucks.
+
+Eine Erhöhung der Beschleunigung im Vergleich zum Rest des Druckvorgangs kann Zeit sparen. Da die Ober- und Unterseite in der Regel aus langen geraden Linien besteht, kann die Düse dort große Geschwindigkeiten erreichen. Die Düse muss auch scharfe Ecken mit dem für die Außenhaut typischen Linienmuster erzeugen, was eine hohe Beschleunigung erfordert. Allerdings führt eine höhere Beschleunigung auch dazu, dass der Drucker stärker vibriert, aber die Genauigkeit der Ober- und Unterseite ist normalerweise kein Hindernis, da sie von Wänden umgeben sind.

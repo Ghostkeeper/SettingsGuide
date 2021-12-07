@@ -1,0 +1,7 @@
+Maximaler Spaghetti-Füllungswinkel
+====
+Diese Einstellung konfiguriert den maximalen Überhangwinkel, den das Material erreicht, wenn das Füllmaterial daneben abgelegt wird. Wenn eine Stelle aufgrund dieser Grenze nicht mit der richtigen Dichte gefüllt wird, werden zusätzliche [Stufen](spaghetti_infill_stepped.md) entlang der Höhe des Infill-Volumens eingefügt, um sicherzustellen, dass diese Stellen richtig erreicht werden.
+
+Wenn die Spaghetti-Füllung als flexible Füllung verwendet werden soll, sollte diese Einstellung wahrscheinlich ziemlich hoch gewählt werden. Wenn Sie diese Einstellung erhöhen, werden mehr Stufen erforderlich sein, um unter flache Dächer zu gelangen. Da sich die Spaghetti-Füllung in der Regel nicht sehr weit in horizontaler Richtung ausdehnt, hilft das Hinzufügen zusätzlicher Stufen dabei, das Material unter diese flachen Dächer zu schieben.
+
+Wenn die Spaghetti-Füllung zusammen mit einem gegossenen Material verwendet werden soll, kann diese Einstellung deutlich herabgesetzt werden. Da das gegossene Material flüssig ist, kann es sehr weit unter Oberflächen gelangen. Stellen Sie sie jedoch noch nicht auf 0° ein, da die meisten Gussmaterialien eine gewisse Viskosität aufweisen. Möglicherweise möchten Sie trotzdem unter einigen flachen Dächern gießen, um sicherzustellen, dass der Guss vollständig der Form folgt. 

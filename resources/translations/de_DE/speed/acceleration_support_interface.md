@@ -1,0 +1,5 @@
+Beschleunigung Stützstrukturschnittstelle
+====
+Diese Einstellung steuert, wie schnell die Düse beim Drucken der Support-Schnittstelle in verschiedene Richtungen beschleunigt. Die Beschleunigung während der Support-Schnittstelle kann auf eine andere Geschwindigkeit als für den Rest des Supports eingestellt werden.
+
+Wenn der Drucker stark vibriert, weil die Düse während des Druckens der Support-Schnittstelle in verschiedene Richtungen beschleunigt, folgt die Schnittstelle möglicherweise nicht sehr genau der Form des Modells. Dies kann dazu führen, dass sich der Support an einigen Stellen stärker mit dem Druck verbindet und eine Narbe oder eine Delle im Druck hinterlässt. An anderen Stellen stützt der Support das Modell möglicherweise nicht so gut ab, was zu einem unschönen Überhang führt. Eine Verringerung der Beschleunigung kann bei diesem Problem helfen, verlängert aber die Druckzeit.

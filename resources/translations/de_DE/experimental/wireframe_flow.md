@@ -1,0 +1,9 @@
+Fluss für Drucken mit Drahtstruktur
+====
+Mit dieser Einstellung kann die Durchflussrate beim Drucken mit der Drahtdrucktechnik angepasst werden. Sie dient lediglich als Multiplikator für die Linienbreite und Schichthöhe. Sie bestimmt direkt, wie viel Material für den Drahtdruck verwendet wird.
+
+Mit dieser Einstellung wird der Fluss für den gesamten Druck angepasst, aber der Fluss kann auch separat für die [horizontalen Teile](wireframe_flow_flat.md) oder die [Verbindungen](wireframe_flow_connection.md) angepasst werden.
+
+Beim Drucken von Drähten wird der Abstand zwischen den Linien und Schichten nicht über die Linienbreite oder die Höhe der Schicht bestimmt. Es werden nur die [Höhe](wireframe_height.md) und der [Einfügeabstand](wireframe_roof_inset.md) verwendet. Anstatt also den Fluss des Drahtdrucks anzupassen, können Sie genauso gut die Einstellungen [Schichthöhe](../resolution/layer_height.md) oder [Linienbreite](../resolution/line_width.md) oder den [Fluss](../material/material_flow.md) anpassen. Dies hat den gleichen Effekt. Diese Einstellungen dienen jedoch dazu, ein Druckprofil zu erstellen, das den korrekten Fluss für den Drahtdruck aufweist, ohne die Druckqualität normaler Drucke, die den Drahtdruck nicht nutzen, zu beeinflussen.
+
+Eine Erhöhung des Flusses macht die Drähte dicker. Dadurch wird der Rahmen steifer, wenn er erstarrt ist. Allerdings erhöht sich dadurch auch die Wärmemenge des Rahmens, so dass es länger dauert, die Drähte zu verfestigen. Dies führt dazu, dass die Drähte durchhängen und die Zuverlässigkeit des Drucks verringert wird, da die Drähte dann möglicherweise nicht mehr richtig verbunden sind.

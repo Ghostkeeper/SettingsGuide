@@ -1,0 +1,7 @@
+Zusätzliche Zurückschiebemenge nach Einzug für Abwischen
+====
+Wenn [Einzug während des Abwischens](wipe_retraction_enable.md) aktiviert ist, wird das Material nach Abschluss des Abwischens wieder zurückgeschoben. Wenn dies geschieht, möchten Sie vielleicht, dass das Material etwas weiter als die ursprüngliche [Einzugsdistanz](wipe_retraction_amount.md) geschoben wird, um das Material, das trotz des Einzugs verloren ging, auszugleichen. Dies kann getrennt von der [Zusätzlichen Zurückschiebemenge nach Einzug](../travel/retraction_extra_prime_amount.md) konfiguriert werden.
+
+Beim Abwischen fährt die Düse ganz an die Seite des Druckers, bewegt sich dort hin und her und fährt dann wieder ganz zurück. Dies ist im Wesentlichen eine sehr lange Fahrbewegung. Da diese Fahrbewegung länger ist als die durchschnittlichen Fahrbewegungen während des gesamten Drucks, kann mehr Material durch Sickern verloren gegangen sein. Um dies zu kompensieren, müssen Sie nach dem Abwischen möglicherweise mehr Material vorbereiten als nach normalen Fahrbewegungen.
+
+Wenn zu viel zusätzliches Material vorbereitet wird, kommt es zu einer gewissen Überextrusion. Dies äußert sich in Form eines Blob an der Stelle, an der die Düse nach dem Abwischen landet.

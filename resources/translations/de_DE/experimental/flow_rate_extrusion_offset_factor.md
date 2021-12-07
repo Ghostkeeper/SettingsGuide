@@ -1,0 +1,14 @@
+Ausgleichsfaktor Durchflussrate
+====
+Der Ausgleich der Durchflussrate ist ein Experiment, das der Funktion [Linear Advance](http://marlinfw.org/docs/features/lin_advance.html) von Marlin ähnelt. Der Zweck des Durchflussausgleichs besteht darin, Unter- und Überextrusion zu kompensieren, wenn sich die Durchflussrate des Materials aus der Düse ändert. Mit dieser Einstellung wird das Ausmaß des Effekts konfiguriert.
+
+Der Ausgleichsfaktor der Durchflussrate bewegt das Filament bei jeder Bewegung um das zusätzliche Material vorwärts, das in der nächsten Sekunde benötigt wird. Zwischen jeder Bewegung gibt es drei mögliche Szenarien.
+* Wenn die beiden benachbarten Bewegungsbefehle die gleiche Flussrate haben (weil ihre Linienbreite, Schichthöhe und Geschwindigkeit gleich sind), dann ist auch der Vorschub gleich. Das Filament wird zwischen diesen Linien in keine Richtung bewegt.
+* Erhöht sich die Durchflussrate mit der nächsten Linie, wird das Filament während der zweiten Linie weiter nach vorne bewegt. Dadurch erhöht sich der Druck in der Düsenkammer, so dass das Material beim Drucken der Zeile und der folgenden Zeilen schneller extrudiert werden kann.
+* Verringert sich die Durchflussrate bei der nächsten Zeile, wird das Filament während der zweiten Zeile zurückbewegt. Dadurch verringert sich der Druck in der Düsenkammer, so dass das Material beim Drucken der zweiten Zeile und der nachfolgenden Zeilen langsamer wird.
+
+Der Abstand, um den das Filament bewegt wird, entspricht der Materialmenge, die pro Sekunde während der Linie extrudiert würde (wenn die Linie lang genug wäre, um eine volle Sekunde zu drucken). Mit dieser Einstellung kann dieser Abstand jedoch angepasst werden. Wenn Sie den Faktor erhöhen, wird der Kompensationseffekt stärker. Wird er verringert, wird der Kompensationseffekt schwächer. Bei höheren Faktoren dauert das Drucken auch länger, da das Filament mehr auf und ab bewegt werden muss.
+
+Wenn diese Durchflusskompensation aktiviert ist, sollte der Druck in der Düsenkammer besser auf die kommende Durchflussrate abgestimmt sein. Dadurch kann sowohl die Unterextrusion als auch die Überextrusion verringert werden und das Objekt erhält genauere Abmessungen.
+
+Die Kompensation wird jedoch während einer einzigen Linie vorgenommen. Dies kann manchmal eine kurze Linie sein, in der sich das Filament sehr schnell bewegen muss. Der Druckkopf muss unter Umständen langsamer werden, damit die Zuführung mithalten kann, was zu einem Klecks führt. Manchmal kann es sich auch um eine lange Linie handeln, was die Stärke des Effekts verringert. Dies macht die gesamte Funktion der Kompensation der Extrusionsraten unzuverlässig und ist der Grund, warum diese Einstellung noch experimentell ist.

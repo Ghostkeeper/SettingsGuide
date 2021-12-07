@@ -1,0 +1,9 @@
+Winkel für überhängende Wände
+====
+Diese Einstellung gibt den Schwellenwert an, ab dem eine Wand als "überhängende Wand" markiert wird. Diese überhängenden Wände können mit einer anderen Geschwindigkeit gedruckt werden, indem Sie die Einstellung [Geschwindigkeit für überhängende Wände](wall_overhang_speed_factor.md) verwenden.
+
+Wenn diese Einstellung auf 0° gesetzt ist, werden alle Wände als überhängende Wände behandelt. Wenn diese Einstellung auf 90° gesetzt wird, werden keine Wände als überhängende Wände behandelt. Auch Wände, die auf einem Support ruhen, werden nicht als überhängende Wände behandelt.
+
+Das Ziel dieser Funktion ist es, bessere Überhangqualitäten für Bereiche zu bieten, die fast von einer [Stützstruktur](../support/support_enable.md) unterstützt werden müssten, aber nicht ganz. Anstatt zusätzliche Zeit und Material für Support zu verwenden und die Oberfläche beim Entfernen des Supports zu beschädigen, können Sie diese überhängenden Wände etwas langsamer drucken und den [Winkel für die überhängende Stützstruktur](../support/support_angle.md) etwas höher einstellen. Dadurch wird erreicht, dass das Drucken von zunehmenden Überhangwinkeln besser gestaffelt wird.
+
+Wenn Sie diese Einstellung höher als den Support-Überhangswinkel setzen, wird die Wirkung dieser Funktion stark reduziert, da Wände, die über dem Support liegen, nicht als überhängende Wände definiert werden, so dass alle Wände, die mit einem Überhangswinkel gedruckt werden, der als überhängende Wand gelten würde, auch unterstützt und nicht mit unterschiedlichen Geschwindigkeiten gedruckt werden. Diese Funktion wirkt sich jedoch auch dann aus, wenn der Support deaktiviert ist oder für Teile des Überhangs, die aus anderen Gründen nicht unterstützt werden, wie z.B. [Mindestbereich Stützstruktur](../support/minimum_support_area.md).

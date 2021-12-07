@@ -1,0 +1,7 @@
+Bewegungsoptimierung Füllung
+====
+Wenn Sie diese Einstellung aktivieren, kann sich die Verfahrzeit Ihres Drucks leicht verkürzen. Durch die Verkürzung der Fahrbewegungen wird der Druck etwas schneller, und die Düse wird auch etwas weniger auslaufen. Allerdings dauert es dann auch länger, das Modell zu slicen.
+
+Normalerweise optimiert Cura die Reihenfolge, in der die Füllungslinien gezeichnet werden, eher naiv. Nach jeder Linie sucht Cura die nächstgelegene Linie, die gezeichnet werden soll, und zeichnet diese. Bei einigen ungewöhnlichen, komplizierten Formen kann der Weg zu dieser nächsten Füllung jedoch ziemlich lang sein, weil die Düse aufgrund des [Combing-Modus](../travel/retraction_combing.md) einen Umweg machen muss. Naiverweise unterschätzt Cura dann die Entfernung und wählt möglicherweise eine längere Fahrbewegung statt einer kürzeren. Wenn diese Einstellung aktiviert ist, wird die Entfernung genau berechnet, so dass eine bessere Wahl getroffen werden kann.
+
+Diese Einstellung hat normalerweise nur geringe Auswirkungen auf die Slicing-Zeit. Bei komplizierten Drucken mit vielen kleinen Teilen (wo sie am nützlichsten ist) kann sie jedoch die Slicing-Zeit um Größenordnungen verlängern.
