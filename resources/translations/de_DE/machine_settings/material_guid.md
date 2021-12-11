@@ -1,0 +1,9 @@
+Material GUID
+====
+Diese Einstellung enthält eine eindeutige Kennung für das Material, das sich auf der aktuell in den Drucker eingelegten Spule befindet. Damit wird der Kunststoff, der dem Drucker zugeführt wird, eindeutig identifiziert, einschließlich Hersteller und Farbe. Sie ist jedoch bei verschiedenen Spulen desselben Materials gleich. Im Grunde genommen würde jeder Artikel, den Sie in einem Online-Shop sehen, einen eindeutigen Bezeichner erhalten. Cura verwendet diese eindeutige Kennung für zwei Zwecke: um die Konfiguration mit der Ihres Druckers zu synchronisieren (wenn Ihr Drucker mit Cura verbunden ist) und um Profile zu gruppieren, die zum selben Material gehören.
+
+Wenn ein Ultimaker-Drucker über das Netzwerk oder das Internet mit Cura verbunden ist, stellt der Drucker Cura eine Liste von GUIDs für die Materialien zur Verfügung, die derzeit in den Drucker geladen sind. Cura gleicht diese GUIDs mit den GUIDs in seinen Profilen ab, wodurch es weiß, welche Profile dem Benutzer angezeigt werden sollen.
+
+Es wird auch verwendet, um die verfügbaren Qualitätsstufen für ein bestimmtes Material zu gruppieren. Das Profilsystem von Cura ist sehr komplex, und dies ist eine seiner Eigenheiten: Normalerweise zeigt Cura alle Qualitätsprofile an, die für den aktuellen Materialtyp verfügbar sind. Das heißt, wenn ein bestimmter Hersteller angibt, dass sein Material ein PLA-Typ ist, werden alle Qualitätsprofile für PLA verfügbar sein. Wenn es jedoch ein Qualitätsprofil gibt, das das aktuelle Material durch die GUID spezifiziert, dann wird nur dieses Qualitätsprofil verfügbar sein. Dies bedeutet im Wesentlichen, dass es Profile gibt, die speziell auf dieses Filament zugeschnitten sind, und dass die allgemeinen Profile nicht mehr angezeigt werden sollten.
+
+**Da es sich um eine Maschineneinstellung handelt, ist diese Einstellung normalerweise nicht in der Einstellungsliste sichtbar.**
