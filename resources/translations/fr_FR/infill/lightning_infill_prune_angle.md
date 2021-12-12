@@ -2,8 +2,8 @@ Angle d'élagage du remplissage Eclair
 ====
 Le motif de remplissage Eclair produit une structure arborescente à l'intérieur de l'impression, très réduite au départ, mais se ramifie pour atteindre toutes les parties du haut de l'impression qui doivent être soutenues de l'intérieur. Ce paramètre indique dans quelle mesure les branches de l'arbre peuvent etre créées avec une certaine dépouille.
 
-![A 40°, le remplissage Eclair est assez stable.](../../../articles/images/lightning_infill_prune_angle_40.png)
-![A 70°, les branches débordent assez fortement.](../../../articles/images/lightning_infill_prune_angle_70.png)
+![A 40°, le remplissage Eclair est assez stable](../../../articles/images/lightning_infill_prune_angle_40.png)
+![A 70°, les branches débordent assez fortement](../../../articles/images/lightning_infill_prune_angle_70.png)
 
 En augmentant l'angle de ramification, le remplissage pourra commencer plus petit en bas tout en atteignant la totalité de la surface supérieure. Dans de nombreux cas, il n'est même plus nécessaire de commencer par le bas, il suffit de s'accrocher aux côtés. Les principaux effets de l'augmentation de cet angle sont les suivants :
 
