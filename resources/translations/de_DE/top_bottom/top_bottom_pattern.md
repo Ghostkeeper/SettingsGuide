@@ -11,9 +11,7 @@ Mit dieser Einstellung können Sie festlegen, wie die Ober- und Unterseite mit M
 }-->
 Linien
 ----
-
 ![Linien](../../../articles/images/top_bottom_pattern_lines.png)
-=======
 
 Das Basismuster Linien zeichnet gerade Linien über die Oberfläche. Diese Linien sind standardmäßig so ausgerichtet, dass sie von der Füllung und dem Support gut unterstützt werden. Die Richtung der Linien wechselt zwischen den Schichten.
 * Bietet eine schöne Oberflächenqualität.

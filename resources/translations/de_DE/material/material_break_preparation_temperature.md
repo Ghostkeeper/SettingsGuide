@@ -2,7 +2,7 @@ Temperatur für Bruchvorbereitung
 ====
 Bei einigen Druckern muss das Material beim Einziehen für einen Filament-Wechsel sauber abgebrochen werden, damit es ohne Verwicklungen durch die Zuführung bewegt werden kann. Diese Einstellung konfiguriert einen Teil des Verfahrens, um es sauber abzubrechen.
 
-This setting adjusts the temperature of the nozzle while the material is retracted towards the second position to stretch the material to a thin thread. This thin thread stretches out of the heated zone in the nozzle, allowing it to cool down and solidify. The thin, hard strand of material can then be broken off in the next stage of the retraction.
+Mit dieser Einstellung wird die Temperatur der Düse angepasst, während das Material in die zweite Position zurückgezogen wird, um das Material zu einem dünnen Faden zu dehnen. Dieser dünne Faden streckt sich aus der beheizten Zone in der Düse heraus, damit er abkühlen und sich verfestigen kann. Der dünne, harte Materialstrang kann dann in der nächsten Stufe des Rückzugs abgebrochen werden.
 
 ![Zunächst wird das Material eingezogen, um das Sickern zu reduzieren.](../../../articles/images/filament_switch_anti_ooze.svg)
 ![Zweitens wird das Filament langsam eingezogen, um einen dünnen Faden zu ziehen, der leicht zu trennen ist, und diesen Faden erstarren zu lassen.](../../../articles/images/filament_switch_break_preparation.svg)
