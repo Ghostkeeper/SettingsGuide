@@ -28,6 +28,7 @@ Wenn Ihr Modell einen Überhang hat, der auf beiden Seiten unterstützt wird, wi
 "camera_position": [-12, 28, 63],
 "colours": 64
 }-->
+
 ![Wenn eine Brücke erkannt wird, werden die Linien der Außenhaut so ausgerichtet, dass sie die Lücke so gut wie möglich überbrücken.](../../../articles/images/bridge_settings_enabled_default.png)
 ![Wenn die Brückeneinstellungen aktiviert sind, werden die Brückenlinien mit unterschiedlichen Einstellungen gedruckt](../../../articles/images/bridge_settings_enabled_enabled.png)
 

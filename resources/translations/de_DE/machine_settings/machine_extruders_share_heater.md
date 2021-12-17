@@ -1,0 +1,9 @@
+Extruder teilen sich Heizelement
+====
+Mit dieser Einstellung können Sie festlegen, dass alle Düsen in diesem Drucker eine einzige Heizung nutzen. Cura kühlt die Düsen für bestimmte Extruder dann nicht ab, wenn sie inaktiv sind. Da sie sich eine Heizung teilen, wird davon ausgegangen, dass der Extruder warm bleiben muss, damit ein anderer Extruder weiter extrudieren kann.
+
+Am häufigsten ist dies bei Mischdüsen erforderlich, bei denen mehrere Filamente in dieselbe Düse eingespeist werden. Diese Düse hat nur eine Heizung, die das Filament aufheizt, das sich gerade in der Düse befindet. Wenn Cura die Heizung für jedes Filament separat steuern würde, würde es gleichzeitig versuchen, die Düse für das aktive Filament heiß zu halten, während es für die anderen Filamente auf die [Standby-Temperatur](../material/material_standby_temperature.md) herunterkühlt. Das ist nicht möglich und führt dazu, dass entweder nur das erste Filament aufgeheizt wird oder permanent auf Standby-Temperatur gedruckt wird, wenn die Firmware die Heizbefehle nur auf die eine Düse anwendet, unabhängig davon, auf welches Werkzeug sie gerichtet sind. Wenn man Cura mitteilt, dass die Extruder sich eine Heizung teilen, wird dieses Problem vermieden. Cura lässt die Düse nicht mehr auf die Standby-Temperatur gehen und wendet keinen Heizbefehl mehr auf einen bestimmten Extruder an.
+
+Cura geht nicht unbedingt davon aus, dass die Extruder, die sich eine Heizung teilen, auch eine Düse teilen. Dafür gibt es eine separate Einstellung, die angibt, dass sich die [Extruder eine Düse teilen](machine_extruders_share_nozzle.md).
+
+**Da es sich hierbei um eine Geräteeinstellung handelt, wird sie normalerweise nicht in der normalen Liste der Einstellungen aufgeführt. Es gibt jedoch ein Kontrollkästchen für diese Einstellung im Dialogfeld "Druckereinstellungen", das Sie in der Liste der hinzugefügten Drucker im Dialogfeld "Einstellungen" finden.**

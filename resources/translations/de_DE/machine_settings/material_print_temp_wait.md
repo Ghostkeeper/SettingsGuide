@@ -1,0 +1,7 @@
+Warten auf Aufheizen der Düse
+====
+Die erste Schicht kann eine andere [Düsentemperatur](../material/material_print_temperature_layer_0.md) haben als die [Düsentemperatur des restlichen Drucks](../material/material_print_temperature.md). Wenn diese Einstellung aktiviert ist, wartet der Drucker, bis diese Temperatur erreicht ist, bevor er den Druck fortsetzt.
+
+Er wartet, bis die Temperatur auf die entsprechende Temperatur aufgeheizt oder abgekühlt ist. Auf dem Bezeichner dieser Einstellung steht zwar, dass auf das Aufheizen gewartet wird, aber es wird auch abgekühlt. Die Düse wartet nicht auf andere Temperaturänderungen, wie z. B. auf die [Anfängliche Drucktemperatur](../material/material_initial_print_temperature.md), die [Endgültige Drucktemperatur](../material/material_final_print_temperature.md) oder die [Standby-Temperatur](../material/material_standby_temperature.md). Wenn Sie im [Nacheinander-Mode](../blackmagic/print_sequence.md) drucken, wartet die Düse auch, bis die Temperatur der ersten Schicht erreicht ist, wenn sie für die nächsten Objekte zur ersten Schicht zurückkehren muss.
+
+**Da es sich um eine Maschineneinstellung handelt, ist diese Einstellung normalerweise nicht in der Einstellungsliste sichtbar.**

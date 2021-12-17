@@ -15,7 +15,7 @@ Einige Materialien sind aufgrund ihrer Kristallinität anfälliger für Schrumpf
 * ABS: 0.70%
 * TPU: 0.63%
 * HIPS: 0.64%
-* PETG and CPE: 0.45%
+* PETG und CPE: 0.45%
 * Nylon: 0.62%
 * PC: 0.70%
 * PP: 1.2%

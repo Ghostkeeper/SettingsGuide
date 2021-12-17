@@ -15,11 +15,9 @@ Mit dieser Einstellung können Sie die Richtung ändern, in der die Linien des o
 "layer": [76, 77, 78],
 "colours": 128
 }-->
-<<<<<<< HEAD
+
 ![Linienmuster mit abwechselnden Winkeln von 0°, 60° und 120°](../../../articles/images/skin_angles.gif)
-=======
 ![Lines pattern with 0°, 60° and 120° angles alternating](../../../articles/images/skin_angles.gif)
->>>>>>> 81fa0f51d7618b9d3f60fde3106ce1588817a5df
 
 Standardmäßig wird das Linienmuster in den beiden diagonalen Richtungen gedruckt. Bei kartesischen Gantry-Systemen ist dies am genauesten, da der Drucker sowohl den X- als auch den Y-Motor verwenden kann, um die Düse zu beschleunigen, wenn er für die nächste Linie umkehrt.
 
