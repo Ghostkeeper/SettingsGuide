@@ -1,4 +1,4 @@
-Realitvwert der Z-Naht
+Relativwert der Z-Naht
 ====
 Wenn die Naht gemäß der Einstellung [Justierung der Z-Naht](z_seam_type.md) an einer benutzerdefinierten Stelle platziert wird, können Sie Koordinaten für die Position der Naht eingeben. Normalerweise geben diese Koordinaten eine Stelle auf der Bauplatte an, z. B. die Rückseite des Druckers. Wenn diese Einstellung aktiviert ist, werden diese Koordinaten relativ zur Position des Modells genommen.
 

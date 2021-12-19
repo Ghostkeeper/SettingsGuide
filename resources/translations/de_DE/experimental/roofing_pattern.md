@@ -1,6 +1,6 @@
 Oberfläche Außenhaut Muster
 ====
-Mit dieser Einstellung können Sie für die obersten Schichten der Außenhaut, die durch die Einstellung ["Oberfläche Außenhaut Schichten"](../top_bottom/roofing_layer_count.md) angegeben sind, ein anderes Muster wählen als für den Rest der Ober- und Unterseite.
+Mit dieser Einstellung können Sie für die obersten Schichten der Außenhaut, die durch die Einstellung [Oberfläche Außenhaut Schichten](../top_bottom/roofing_layer_count.md) angegeben sind, ein anderes Muster wählen als für den Rest der Ober- und Unterseite.
 
 Nur die oberste(n) Schicht(en) der Außenhaut wird/werden in diesem Muster gezeichnet.
 

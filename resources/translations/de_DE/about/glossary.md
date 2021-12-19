@@ -2,7 +2,7 @@ Lexikon
 ====
 Auf dieser Seite werden einige der von Cura verwendeten Fachbegriffe erklärt. Cura ist nicht immer konsequent, wenn es um die Verwendung von Begriffen geht, daher sind einige Begriffe Synonyme.
 
-* **Adaptive Schichten:** Eine Technik, bei der die Schichthöhe über den gesamten Druck variiert wird, um die Sichtbarkeit der Struktur zu verringern und trotzdem relativ schnell zu drucken.
+* **Anpassschichten:** Eine Technik, bei der die Schichthöhe über den gesamten Druck variiert wird, um die Sichtbarkeit der Struktur zu verringern und trotzdem relativ schnell zu drucken.
 * **Aliasing:** Ein Druckfehler, bei dem die Auflösungsgrenze der Schrittmotoren an der Außenseite des Drucks sichtbar ist.
 * **Anti-overhang mesh:** Ein Modell, das verhindert, dass eine Stützstruktur zur Unterstützung eines Überhangs erzeugt wird, mit dem sich das Modell überschneidet. Synonym für "Stützstrukturblocker".
 * **Bead:** Ein Filamentstrangs, der vom Extruder abgelegt worden ist. Der Begriff "bead" wird in der Wissenschaft verwendet, wo es wichtig ist, die tatsächliche Beschaffenheit des Fadenstrangs nach seiner Aushärtung zu betrachten. Ähnlich wie "Linie".

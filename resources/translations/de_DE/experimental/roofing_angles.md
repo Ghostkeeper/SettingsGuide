@@ -1,6 +1,6 @@
 Linienrichtungen der Oberfläche Außenhaut
 ====
-Mit dieser Einstellung können Sie für die obersten Schichten der Außenhaut, die durch die Einstellung ["Oberfläche Außenhaut Schichten"](../top_bottom/roofing_layer_count.md) angegeben sind, andere Richtungen für das Muster wählen als für den Rest der Ober- und Unterseite.
+Mit dieser Einstellung können Sie für die obersten Schichten der Außenhaut, die durch die Einstellung [Oberfläche Außenhaut Schichten](../top_bottom/roofing_layer_count.md) angegeben sind, andere Richtungen für das Muster wählen als für den Rest der Ober- und Unterseite.
 
 Nur die oberste(n) Schicht(en) der Außenhaut wird/werden in diese Richtungen gezeichnet. Der Wert für diese Einstellung ist eine durch Kommata getrennte Liste von Winkeln in Grad. Die in dieser Liste angegebenen Richtungen werden abwechselnd von Schicht zu Schicht verwendet.
 

@@ -32,7 +32,7 @@ Da die Vibrationen durch die Beschleunigung des Druckkopfes verursacht werden, z
 
 Durch diese Anpassungen dauert der Druckvorgang länger. Sie können das Ringing aber auch auf andere Weise verhindern, indem Sie die Art der Bewegungen, die es verursachen, unterbinden:
 * Deaktivieren Sie die Methode [Lücken füllen](../shell/fill_perimeter_gaps.md) und drucken Sie keine [dünnen Wände](../shell/fill_outline_gaps.md), da diese Methoden manchmal sehr kleine Liniensegmente und zusätzliche Fahrbewegungen verwenden. Wenn anschließend eine Wand gedruckt wird, vibriert der Drucker noch ein wenig.
-* Wenn Ihr Drucker nicht den Druckkopf, sondern die Bauplatte auf und ab bewegt, sollten Sie keinen [Z-Sprung] verwenden (../travel/retraction_hop_enabled.md). Diese bewirken, dass die Bauplatte noch lange nach Abschluss des Sprungs auf- und abschwingt.
+* Wenn Ihr Drucker nicht den Druckkopf, sondern die Bauplatte auf und ab bewegt, sollten Sie keinen [Z-Sprung](../travel/retraction_hop_enabled.md)verwenden. Diese bewirken, dass die Bauplatte noch lange nach Abschluss des Sprungs auf- und abschwingt.
 
 Sie können auch die [Innenwände vor der Außenwand](../shell/outer_inset_first.md) drucken. Da der Druck der Wände in der Regel nicht so viele Vibrationen verursacht wie andere Teile, kann der Drucker so aufhören zu vibrieren, bevor die wichtige Außenwand gedruckt wird.
 

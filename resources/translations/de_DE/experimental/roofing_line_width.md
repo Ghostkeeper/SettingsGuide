@@ -1,6 +1,6 @@
 Oberfläche Außenhaut Linienbreite
 ====
-Mit der Einstellung ["Oberfläche Außenhaut Schichten"](../top_bottom/roofing_layer_count.md) können einige Schichten ganz oben eine andere Strichstärke erhalten als die tieferen Schichten der Außenhaut.
+Mit der Einstellung [Oberfläche Außenhaut Schichten](../top_bottom/roofing_layer_count.md) können einige Schichten ganz oben eine andere Strichstärke erhalten als die tieferen Schichten der Außenhaut.
 
 Die Außenhaut auf der Oberseite des gedruckten Teils erfüllt mehrere Funktionen. Vor allem muss sie die Löcher auf der Oberseite schließen, die durch die Füllung entstanden sind, und sie verleiht dem Teil eine große Festigkeit. Abgesehen davon sollte sie im Idealfall noch schön glatt aussehen. Das Verringern der [Breite der oberen/unteren Linie](../resolution/skin_line_width.md) kann dazu dienen, eine glattere Oberfläche zu erzeugen, führt aber dazu, dass das Drucken viel mehr Zeit benötigt. Mit dieser Einstellung lässt sich eine glatte Oberfläche mit sehr dünnen Linien erzeugen, ohne dass der Rest der Ober- und Unterseite mit der gleichen Linienbreite gedruckt werden muss. Dadurch wird die Druckzeit weniger stark beeinträchtigt.
 

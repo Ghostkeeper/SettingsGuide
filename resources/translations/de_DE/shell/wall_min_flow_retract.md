@@ -1,6 +1,6 @@
 Einziehen bevorzugt
 ====
-Compensating for overlaps in wall lines will reduce the flow rate of some of the walls. If this flow rate gets below the value of the [Durch die Kompensation von Überschneidungen in Wandlinien wird die Durchflussrate einiger Wände reduziert. Wenn diese Flussrate unter den Wert der Einstellung [Mindestwandfluss](wall_min_flow.md) fällt, wird ein Fahrweg anstelle der Wandlinie ausgeführt.
+Durch die Kompensation von Überschneidungen in Wandlinien wird die Durchflussrate einiger Wände reduziert. Wenn diese Flussrate unter den Wert der Einstellung [Mindestwandfluss](wall_min_flow.md) fällt, wird eine Fahrbewegung anstelle der Wandlinie durchgeführt.
 
 Wenn diese Einstellung aktiviert ist, wird das Filament während dieses Fahrwegs eingezogen.
 

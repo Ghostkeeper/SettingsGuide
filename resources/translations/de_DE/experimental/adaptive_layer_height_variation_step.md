@@ -35,4 +35,4 @@ Wenn Sie diese Einstellung verringern, wird die Schichtdicke allmählicher über
 * An Stellen im Modell, an denen ein scharfer Winkel einen plötzlichen Übergang zu dünneren Schichten verursachen sollte, tritt der Topographieeffekt wieder auf. Das liegt daran, dass die Schichtdicke nicht so schnell angepasst werden kann, so dass für flache Oberflächen dickere Schichten verwendet werden müssen.
 * Ähnlich verhält es sich, wenn das Modell einen scharfen Winkel aufweist, der einen plötzlichen Übergang zu dickeren Schichten bewirken sollte: Der Drucker erzeugt unnötig dünne Schichten und verschwendet damit Druckzeit, wo dies nicht nötig ist.
 
-Aufgrund der Implementierung des Algorithmus für adaptive Schichten erfolgt der allmähliche Übergang zu einer anderen Schichtdicke immer *oberhalb* des Winkels im Modell, der den Übergang verursacht.
+Aufgrund der Implementierung des Algorithmus für Anpassschichten erfolgt der allmähliche Übergang zu einer anderen Schichtdicke immer *oberhalb* des Winkels im Modell, der den Übergang verursacht.
