@@ -32,7 +32,7 @@ Diese G-Code-Variante ist für die Ultimaker 2-Familie gedacht. Die Firmware die
 * Im G-Code wird es keine Befehle für die Temperatur des Bauvolumens geben.
 * Es wird angenommen, dass ersten Düse die [Drucktemperatur für die erste Schicht](../material/material_print_temperature_layer_0.md) hat, wenn der Druck beginnt.
 * Es wird angenommen, dass die Bauplatte die [Temperatur der ersten Schicht](../material/material_bed_temperature_layer_0.md) hat, wenn der Druck beginnt.
-* Der Parameter `E`" des Befehls `G1` wird in Kubikmillimetern berechnet, dem Volumen des zugeführten Kunststoffs, und nicht der Länge des Filaments, das während dieser Bewegung zugeführt wird.
+* Der Parameter `E` des Befehls `G1` wird in Kubikmillimetern berechnet, dem Volumen des zugeführten Kunststoffs, und nicht der Länge des Filaments, das während dieser Bewegung zugeführt wird.
 * In der Statistik am Anfang des G-Codes wird das verwendete Filament in Kubikmillimetern angegeben.
 
 

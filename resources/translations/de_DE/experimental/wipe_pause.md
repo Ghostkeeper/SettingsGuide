@@ -1,4 +1,4 @@
-bwischen pausieren
+Abwischen pausieren
 ====
 Mit dieser Einstellung kann die Düse nach dem Abwischen eine kurze Pause einlegen.
 
