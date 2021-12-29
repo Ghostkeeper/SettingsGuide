@@ -30,4 +30,4 @@ Wenn sich die Wände aufgrund der Einstellung [Einfügung Außenwand](../shell/w
 
 Durchflussmenge direkt einstellen
 ----
-Wenn die Ursache für die Überextrusion nicht bekannt ist, können Sie auch direkt die [Flussrate] anpassen (../material/material_flow.md). Verringern Sie die Flussrate, bis Ihre Oberfläche wieder glatt erscheint. Dies kann einige unbekannte Faktoren direkt kompensieren.
+Wenn die Ursache für die Überextrusion nicht bekannt ist, können Sie auch direkt die [Flussrate](../material/material_flow.md) anpassen. Verringern Sie die Flussrate, bis Ihre Oberfläche wieder glatt erscheint. Dies kann einige unbekannte Faktoren direkt kompensieren.
