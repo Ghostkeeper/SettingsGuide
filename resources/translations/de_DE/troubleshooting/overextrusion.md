@@ -24,7 +24,7 @@ Wandüberlappungen
 ----
 Normalerweise zeichnet Cura nur die Konturen des Drucks mit einer bestimmten Linienbreite. Wenn die Wände an bestimmten Stellen Ihres Drucks dicht beieinander liegen, führt dies zu überlappenden Linien. Diese Linien werden dick und erzeugen Blobs, weil dort bis zu doppelt so viel Material wie nötig aufgetragen werden kann. Bei einer großen Überlappung wird die zweite Linie am Extrudieren gehindert, so dass der Druck in der Düsenkammer ansteigt, bis sie ausgestoßen wird und einen Blob erzeugt.
 
-Dies kann verhindert werden, indem die [Wandüberlappungen ausgleichen] aktiviert wird (../shell/travel_compensate_overlapping_walls_enabled.md). Die Extrusion der zweiten Linie wird so reduziert, dass nur so viel Material extrudiert wird, wie nötig ist, um den verbleibenden Raum der Wand auszufüllen, was eine Überextrusion verhindert.
+Dies kann verhindert werden, indem [Wandüberlappungen ausgleichen](../shell/travel_compensate_overlapping_walls_enabled.md) aktiviert wird . Die Extrusion der zweiten Linie wird so reduziert, dass nur so viel Material extrudiert wird, wie nötig ist, um den verbleibenden Raum der Wand auszufüllen, was eine Überextrusion verhindert.
 
 Wenn sich die Wände aufgrund der Einstellung [Einfügung Außenwand](../shell/wall_0_inset.md) überlappen, können Sie versuchen, diesen Parameter zu reduzieren, um eine Überlappung zu verhindern. Sie können auch versuchen, die [Außenwand zuerst](../shell/outer_inset_first.md) zu drucken. Das überschüssige Material wird dann in das Innere des Modells geschoben, wo es unsichtbar ist.
 
