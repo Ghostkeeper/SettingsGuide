@@ -30,30 +30,34 @@ class TestMarkdownSyntax(unittest.TestCase):
 						continue  # Not an article. Ignore this.
 					yield os.path.join(root, filename)
 
-	def test_space_within_link(self):
+	def test_split_up_link(self):
 		"""
 		Search for broken links due to a space in the middle of the link
 		syntax.
 
-		Example:
+		Examples:
 
 		```
-		This is a [hyperlink] (some_article.md).
+		This is a [hyperlink] (some_article.md) to another article.
+		This is a [hyperlink] to (some_article.md) another article.
 		```
 
-		Most likely, the author intended that to be a hyper link, like this:
+		Most likely, the author intended that to be a hyperlink, like this:
 
 		```
-		This is a [hyperlink](some_article.md).
+		This is a [hyperlink](some_article.md) to another article.
 		```
 		"""
-		find_space_within_link = re.compile(r"\[.*\]\s+\(.*\)")
+		# We want to match on square brackets, followed by something, and then round brackets.
+		# It's only considered a problem if the round brackets are in the same line/paragraph. This prevents matching on e.g. list properties in screenshot instructions.
+		# We also only want to match if there's 3 or more characters in the square brackets. This prevents matching on [ ] checkbox options in the preferences.
+		find_space_within_link = re.compile(r"\[.{2}.+\][^\n(]+\(.*\)")
 		for filename in self.all_articles():
 			with self.subTest(filename=filename):
 				with open(filename) as f:
 					contents = f.read()
 				for broken_link in find_space_within_link.findall(contents):
-					assert False, "Article {filename} contains a space within a link: {broken_link}".format(filename=filename, broken_link=broken_link)
+					assert False, "Article {filename} contains a split-up link: {broken_link}".format(filename=filename, broken_link=broken_link)
 
 	def test_simplest_link(self):
 		"""
