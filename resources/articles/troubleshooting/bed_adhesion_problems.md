@@ -25,15 +25,23 @@ If your print suffers from warping, the contact area between the print and the b
 * Reduce the [Build Plate Temperature](../material/material_bed_temperature.md) and increase the [Build Volume Temperature](../material/build_volume_temperature.md).
 * Adjust the model such that there are fewer sharp outer corners on the first layer.
 
+Level build plate
+----
+Another common source of adhesion problems is that the build plate is not level. Cura will assume that the nozzle touches the build plate when moving to the Z coordinate 0, but this is rarely the case. Build plates tilt, get moved up and down, and even bend. If the build plate is not at coordinate 0 everywhere, Cura will extrude more material than fits the space between the nozzle and the build plate, and you'll get either overextrusion or underextrusion. When the bed is too close, the overextrusion can lead to blobs, which can cause the nozzle to rip the print off the build plate in a travel move. When the bed is too far, the underextrusion prevents the material from getting pushed onto the build plate, which prevents it from properly connecting to it. In either case, the print is not reliable.
+
+Some printers have sensors in them that can measure where the build plate is, and compensate for it in firmware. For those printers, moving the nozzle to Z coordinate 0 will indeed make the nozzle touch the bed. However this has the disadvantage that this then warps the model. To compensate for a tilted build plate, you would get a tilted bottom side, or the entire print can tilt, get rotated or warped. If your printer is incapable of compensating for a bed that is not level, there are a few things that can be done from Cura's side too:
+* Increase the [Initial Layer Height](../resolution/layer_height_0.md). This offers a bit more room for error. It also increases the force with which the material is pushed out of the nozzle and onto the build plate.
+* Reduce the [Initial Layer Travel Speed](../speed/speed_layer_0.md). This reduces the chance that a travel move pulls previously printed lines off the build plate.
+* Likewise, consider adjusting the [Initial Layer Acceleration](../speed/acceleration_layer_0.md) and [Initial Layer Jerk](../speed/jerk_layer_0.md) as well. These reduce vibrations, which can cause periodic underextrusion and overextrusion.
+* Increase the [Number of Slower Layers](../speed/speed_slowdown_layers.md). This reduces the chance that fast movements pull off the previous layers.
+
 Miscellaneous adjustments
 ----
 These settings can also be adjusted if the normal bed adhesion methods are not sufficient.
-* Increase the [Initial Layer Height](../resolution/layer_height_0.md). This offers a bit more room for error, if the build plate is not perfectly level. It also increases the force with which the material is pushed out of the nozzle and onto the build plate.
-* Increase the [Initial Layer Line Width](../resolution/initial_layer_line_width_factor.md). Similarly, this pushes the material out with more force, sticking it well to the build plate.
+* Increase the [Initial Layer Line Width](../resolution/initial_layer_line_width_factor.md). This pushes the material out with more force, sticking it well to the build plate.
 * Increasing the [Printing Temperature Initial Layer](../material/material_print_temperature_layer_0.md) makes the material flow out more onto the build plate, increasing contact area.
 * Like increasing the temperature, you can also reduce the [Initial Layer Fan Speed](../cooling/cool_fan_speed_0.md) or increase the [duration of that setting](../cooling/cool_fan_full_at_height.md) to keep the material fluid for longer.
-* Similarly, reduce the [Initial Layer Speed](../speed/speed_layer_0.md). Reducing the [Initial Layer Print Speed](../speed/speed_print_layer_0.md) makes the material flow out more again, as the material is kept fluid for longer by the hot nozzle. Reducing the [Initial Layer Travel Speed](../speed/speed_travel_layer_0.md) reduces the chance that a travel move pulls previously printed lines off the build plate. Likewise, consider adjusting the [Initial Layer Acceleration](../speed/acceleration_layer_0.md) and [Initial Layer Jerk](../speed/jerk_layer_0.md) as well. 
-* Increase the [Number of Slower Layers](../speed/speed_slowdown_layers.md). This reduces the chance that fast movements pull off the previous layers.
+* Similarly, reduce the [Initial Layer Speed](../speed/speed_layer_0.md). Reducing the [Initial Layer Print Speed](../speed/speed_print_layer_0.md) makes the material flow out more again, as the material is kept fluid for longer by the hot nozzle.
 
 Build plates
 ----
