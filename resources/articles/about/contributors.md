@@ -22,7 +22,3 @@ Translations
 ![Laurent Lalliard - French](../images/contributors/5axes.png)
 ![Vb138 - Czech](../images/contributors/Vb138.png)
 ![Sekisback - German](../images/contributors/Sekisback.jpg)
-
-Sponsors
-----
-![Eskeyaar - Thank you very much!](../images/contributors/Eskeyaar.png)
