@@ -1,3 +1,11 @@
+2.8.1
+====
+Articles
+----
+* The German translations have been completed.
+* Added some information on the position of the build plate to the adhesion article.
+* Updated name of Maximum Feedrate article.
+
 2.8.0
 ====
 New Features
