@@ -22,7 +22,3 @@ Artikel
 ![Laurent Lalliard - Französisch](../../../articles/images/contributors/5axes.png)
 ![Vb138 - Tschechisch](../../../articles/images/contributors/Vb138.png)
 ![SekIsBack - Deutsch](../../../articles/images/contributors/Sekisback.jpg)
-
-Sponsoren
-----
-![Eskeyaar - Vielen Dank!](../../../articles/images/contributors/Eskeyaar.png)
