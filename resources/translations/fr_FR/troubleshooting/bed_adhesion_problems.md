@@ -35,7 +35,7 @@ Si votre imprimante n'est pas en mesure de compenser un plateau qui n'est pas de
 * Augmentez la [hauteur initiale de la première couche](../resolution/layer_height_0.md). Cela offre un peu plus de marge d'erreur. Cela augmente également la force avec laquelle le matériau est poussé hors de la buse et sur le plateau d'impression.
 * Réduisez la [vitesse de la couche initiale](../speed/speed_layer_0.md). Vous éviterez ainsi qu'un déplacement n'entraîne des lignes déjà imprimées sur le plateau d'impression.
 * De même, pensez à ajuster [l'accélération de la couche initiale](../speed/acceleration_layer_0.md) et les [saccades de la couche initiale](../speed/jerk_layer_0.md). Cela permet de réduire les vibrations, qui peuvent provoquer une sous-extrusion et une surextrusion périodiques.
-* Augmentez le [nombre de couches plus lentes](../speed/speed_slowdown_layers.md). Cela réduit le risque que des mouvements rapides arrachent les couches précédentes.
+* Augmentez le [nombre de couches plus lentes](../speed/speed_slowdown_layers.md). Cela réduit le risque que des mouvements rapides n'arrachent les couches précédentes.
 
 Ajustements divers
 ----
