@@ -5,8 +5,8 @@ Si cette fonction est activée, l'imprimante essuie la buse précédente après 
 L'ordre des événements sera le suivant si cette option est activée :
 1. L'imprimante passe à la nouvelle extrudeuse.
 2. La nouvelle extrudeuse est amorcée par l'impression d'une tour d'amorçage.
-3. La buse qui était active avant le passage à l'extrudeuse est essuyée sur la tour d'amorçage.
-4. L'imprimeur continue d'imprimer la pièce avec la nouvelle extrudeuse.
+3. La buse qui était active avant le passage à la nouvelle extrudeuse est essuyée sur la tour d'amorçage.
+4. L'imprimante continue d'imprimer la pièce avec la nouvelle extrudeuse.
 
 Notez que l'imprimante essuie alors la buse qui était active avant la mise en marche de l'extrudeuse, et non la buse actuellement active. Si votre imprimante possède plusieurs buses avec une certaine distance entre elles, vous pouvez voir un déplacement en vue de la couche qui semble inutile. En effet, le mouvement vers cet endroit fait que la buse précédente se déplace au-dessus de la tour d'amorçage (qui n'est pas représentée en vue en couches).
 
