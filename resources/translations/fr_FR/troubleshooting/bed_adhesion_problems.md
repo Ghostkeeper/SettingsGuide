@@ -25,6 +25,18 @@ Si votre impression souffre de déformation, la zone de contact entre l'impressi
 * Réduisez la [température du plateau](../material/material_bed_temperature.md) et augmentez la [température du volume de construction](../material/build_volume_temperature.md).
 * Ajustez le modèle de manière à ce qu'il y ait moins de coins extérieurs tranchants sur la première couche.
 
+Réglage du plateau d'impression
+----
+Une autre source fréquente de problèmes d'adhérence est que le plateau d'impression n'est pas de niveau. Cura suppose que la buse touche le plateau lors du déplacement vers la coordonnée Z 0, mais c'est rarement le cas. Les plateaux d'impression s'inclinent, sont déplacées vers le haut et vers le bas, et peuvent même se plier. Si le plateau d'impression n'est pas partout à la coordonnée 0, Cura extrudera plus de matière que ne le permet l'espace entre la buse et le plateau, et vous obtiendrez soit une surextrusion, soit une sous-extrusion. Lorsque le plateau est trop proche, la surextrusion peut entraîner la formation de bulles, ce qui peut amener la buse à arracher l'impression du  plateau d'impression lors d'un déplacement. Lorsque le plateau est trop éloigné, la sous-extrusion empêche le matériau d'être poussé sur le plateau d'impression, ce qui l'empêche de s'y coller correctement. Dans les deux cas, l'impression n'est pas fiable.
+
+Certaines imprimantes sont équipées de capteurs capables de mesurer la position du plateau d'impression et de la compenser dans le micrologiciel. Pour ces imprimantes, déplacer la buse à la coordonnée Z 0 fera en sorte que la buse touche le plateau. Cependant, cela présente l'inconvénient de déformer le modèle. Pour compenser un plateau d'impression incliné, vous aurez un côté inférieur incliné, ou l'impression entière peut s'incliner, être tournée ou déformée. 
+
+Si votre imprimante n'est pas en mesure de compenser un plateau qui n'est pas de niveau, des réglages peuvent être faits du côté de Cura aussi :
+* Augmentez la [hauteur initiale de la première couche](../resolution/layer_height_0.md). Cela offre un peu plus de marge d'erreur. Cela augmente également la force avec laquelle le matériau est poussé hors de la buse et sur le plateau d'impression.
+* Réduisez la [vitesse de la couche initiale](../speed/speed_layer_0.md). Vous éviterez ainsi qu'un déplacement n'entraîne des lignes déjà imprimées sur le plateau d'impression.
+* De même, pensez à ajuster [l'accélération de la couche initiale](../speed/acceleration_layer_0.md) et les [saccades de la couche initiale](../speed/jerk_layer_0.md). Cela permet de réduire les vibrations, qui peuvent provoquer une sous-extrusion et une surextrusion périodiques.
+* Augmentez le [nombre de couches plus lentes](../speed/speed_slowdown_layers.md). Cela réduit le risque que des mouvements rapides n'arrachent les couches précédentes.
+
 Ajustements divers
 ----
 Ces paramètres peuvent également être ajustés si les méthodes normales d'adhérence au plateau ne sont pas suffisantes.
@@ -33,18 +45,18 @@ Ces paramètres peuvent également être ajustés si les méthodes normales d'ad
 * L'augmentation de la [couche initiale de la température d'impression](../material/material_print_temperature_layer_0.md) permet au matériau de s'écouler davantage sur la plaque de montage, ce qui augmente la surface de contact.
 * Comme pour l'augmentation de la température, vous pouvez également réduire la [vitesse du ventilateur de la couche initiale](../cooling/cool_fan_speed_0.md) pour garder le matériau fluide plus longtemps.
 * De même, réduisez la [vitesse de la couche initiale](../speed/speed_print_layer_0.md). La réduction de la [vitesse d'impression de la couche initiale](../speed/speed_print_layer_0.md) permet au matériau de s'écouler à nouveau davantage, car le matériau est maintenu fluide plus longtemps par la buse chaude. La réduction de la [vitesse de déplacement de la couche initiale](../speed/speed_travel_layer_0.md) réduit le risque qu'un mouvement de déplacement arrache les lignes précédemment imprimées du plateau. De même, il faut envisager d'ajuster les paramètres [Accélération de la couche initiale](../speed/acceleration_layer_0.md) et [Saccade de la couche initiale](../speed/jerk_layer_0.md). 
-* Augmenter le [nombre de couches plus lentes](../speed/speed_slowdown_layers.md). Cela réduit les risques que des mouvements rapides ne fassent disparaître les couches précédentes.
+* Augmenter le [nombre de couches plus lentes](../speed/speed_slowdown_layers.md). Cela réduit les risques que des mouvements rapides n'arrachent les couches précédentes.
 
-Plateau de construction
+Plateau d'impression
 ----
-En plus d'une bonne impression, une bonne plaque de construction est également importante pour l'adhérence. Un bon plateau d'impression devrait être :
-* ...propre ! Il est très important que le plateau ne contienne pas de graisse (comme celle de vos doigts) et pas de poussière. Il est très efficace de la nettoyer sous un robinet chaud. L'idéal est d'utiliser de l'alcool à friction et un chiffon en microfibre.
+En plus d'une bonne impression, un bon plateau d'impression est également important pour l'adhérence. Un bon plateau d'impression devrait être :
+* ...propre ! Il est très important que le plateau ne contienne pas de graisse (comme celle de vos doigts) et pas de poussière. Il est très efficace de la nettoyer sous un robinet chaud. L'idéal est d'utiliser de l'alcool isopropylique et un chiffon en microfibre.
 * ...de niveau ! Si le plateau est trop proche, le flux sortant de la buse sera irrégulier, ce qui entraînera des bosses que la buse arrachera lors de sa prochaine utilisation. Si le plateau est trop loin, le matériau n'est pas bien plaqué sur le plateau, ce qui réduit considérablement la surface. La plupart des imprimantes permettent d'ajuster le plateau d'impression à l'aide de quelques vis à molettes, il faut donc s'assurer qu'elle est parfaitement de niveau et correctement espacée de la buse.
 * ...rugeux ! Avec un plateau légèrement rugueux,la surface de contact sur le plateau et l'impression est considérablement augmentée, contrairement à un plateau parfaitement lisse. Pour cette raison, certaines imprimantes sont équipées de verre dépoli ou de métal anodisé.
 
-Le matériau de la plaque de montage a également un impact important sur les propriétés adhésives. Celles-ci peuvent varier considérablement en fonction des matériaux d'impression. Les matériaux les plus courants sont le verre, l'acrylique, l'aluminium, l'acier ou l'aluminium anodisé. Chacun d'eux adhère à des matériaux différents. Les plaques de montage en plastique peuvent adhérer chimiquement à votre matériau. D'autres matériaux se caractérisent par une surface rugueuse qui augmente la surface de contact.
+Le matériau du plateau d'impression a également un impact important sur les propriétés adhésives. Celles-ci peuvent varier considérablement en fonction des matériaux d'impression. Les matériaux les plus courants sont le verre, l'acrylique, l'aluminium, l'acier ou l'aluminium anodisé. Chacun d'eux adhère à des matériaux différents. Les plateaux d'impression en plastique peuvent adhérer chimiquement à votre matériau. D'autres matériaux se caractérisent par une surface rugueuse qui augmente la surface de contact.
 
-Il existe également des méthodes d'adhérence par couche supplémentaire que vous pouvez appliquer à n'importe quelle plaque de construction :
+Il existe également des méthodes d'adhérence par couche supplémentaire que vous pouvez appliquer à n'importe quel plateau d'impression :
 * Les bâtons de colle à papier génériques fonctionnent très bien. Bien que la colle sèche rapidement, elle produit une surface rugueuse avec une surface accrue pour que l'impression y adhère.
 * Le ruban de masquage a un effet similaire, puisqu'il a une surface rugueuse faite de papier, mais contrairement au papier, il reste parfaitement plat sur la plaque de montage. Les types de rubans de masquage plus épais, conçus pour une utilisation extérieure, sont les plus efficaces.
 * La laque pour cheveux fonctionne de la même manière que la colle, en ce sens qu'elle laisse une surface rugueuse à grain fin sur le plateau. Il est très facile de l'appliquer uniformément.
