@@ -15,6 +15,7 @@ Articles
 ![Christerbeke - Article about Adaptive Layer Height](../images/contributors/Christerbeke.jpg)
 ![Laurent Lalliard - Minor corrections](../images/contributors/5axes.png)
 ![Sophist - Minor corrections](../images/contributors/Sophist.jpg)
+![Yohan Pereira - Minor corrections](../images/contributors/yohan-pereira.png)
 
 Translations
 ----
