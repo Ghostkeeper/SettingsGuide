@@ -25,15 +25,23 @@ Pokud je váš tisk deformovaný, je kontaktní plocha mezi tiskem a montážní
 * Snižte hodnotu [teploty tiskové podložky](../material/material_bed_temperature.md) a zvyšte hodnotu [teploty prostoru objemu tisku](../material/build_volume_temperature.md).
 * Upravte model tak, aby na první vrstvě bylo méně ostrých vnějších rohů.
 
+Vyrovnání tiskové plochy
+----
+Dalším častým zdrojem problémů s přilnavostí je nerovnost tiskové plochy. Cura předpokládá, že se tryska při pohybu na souřadnici Z 0 dotýká tiskové plochy, ale to se stává jen zřídka. Podložky tisku se naklánějí, pohybují se nahoru a dolů, a dokonce se ohýbají. Pokud není tisková plocha všude na souřadnici 0, bude Cura vytlačovat více materiálu, než se vejde do prostoru mezi tryskou a tiskovou plochou, a dojde buď k nadměrnému, nebo nedostatečnému vytlačování. Pokud je podklad příliš blízko, může nadměrná extruze vést k tvorbě kapek, které mohou způsobit, že tryska při pojezdu odtrhne výtisk od popdložky. Když je podložka příliš daleko, nederextruze zabraňuje vytlačení materiálu na tiskovou plochu, což brání jeho správnému spojení s ní. V obou případech není tisk spolehlivý.
+
+Některé tiskárny mají senzory, které dokáží měřit polohu tiskovéplochy a kompenzovat ji ve firmwaru. U těchto tiskáren přesunutí trysky na souřadnici Z 0 skutečně způsobí, že se tryska dotkne tiskové plochy. To má však tu nevýhodu, že se tím model deformuje. Chcete-li kompenzovat nakloněnou podložku tisku, získáte nakloněnou spodní stranu, nebo se může celý tisk naklonit, pootočit nebo zdeformovat. Pokud vaše tiskárna není schopna kompenzovat nerovnou plochu tisku, je několik věcí, které lze udělat i ze strany Cury:
+* Zvyšení [výšky počáteční vrstvy](../resolution/layer_height_0.md). To nabízí o něco větší prostor pro chyby. Zvyšuje také sílu, kterou je materiál vytlačován z trysky na tiskovou plochu.
+* Snížení [rychlosti přesunu počáteční vrstvy](../speed/speed_layer_0.md). Tím se sníží pravděpodobnost, že pohyby pojezdu vytáhnou dříve vytištěné linie z podložky tisku.
+* Stejně tak zvažte úpravu parametrů [zrychlení počáteční vrstvy](../speed/acceleration_layer_0.md) a ryv (jerk) počáteční vrstvy](../speed/jerk_layer_0.md). Ty snižují vibrace, které mohou způsobit periodické podextruze a nadextruze.
+* Zvyšte [počet pomalejších vrstev](../speed/speed_slowdown_layers.md). Snížíte tak pravděpodobnost, že rychlé pohyby strhnou předchozí vrstvy.
+
 Různé úpravy
 ----
 Tyto parametry lze také upravit, pokud normální metody adheze k lůžku nejsou dostatečné.
-* Zvyšte [výšku počáteční vrstvy](../resolution/layer_height_0.md). To nabízí trochu více prostoru pro chyby, pokud není montážní deska dokonale vodorovná. Také zvyšuje sílu, s níž je materiál tlačen z trysky a na tiskovou podložku.
-* Zvětšete [šířku linie počáteční vrstvy](../resolution/initial_layer_line_width_factor.md). Podobně to tlačí materiál s větší silou a dobře ho přilepuje k montážní desce.
+* Zvětšete [šířku linie počáteční vrstvy](../resolution/initial_layer_line_width_factor.md). To tlačí materiál s větší silou a dobře ho přilepuje k tiskové ploše.
 * Zvýšení [teploty tisku počáteční vrstvy](../material/material_print_temperature_layer_0.md) způsobuje, že materiál více vytéká na tiskovou podložku, čímž se zvětšuje kontaktní plocha.
 * Stejně jako zvýšení teploty, můžete také snížit [rychlost ventilátoru počáteční vrstvy](../cooling/cool_fan_speed_0.md) nebo zvýšit [trvání tohoto nastavení](../cooling/cool_fan_full_at_height.md), abyste materiál udrželi déle tekutý.
-* Podobně snižte [rychlost počáteční vrstvy](../speed/speed_layer_0.md). Snížení [rychlost tisku počáteční vrstvy](../speed/speed_print_layer_0.md) způsobí, že materiál znovu více vytéká, protože materiál je horkou tryskou udržován déle tekutý. Snížení [rychlosti přesunu počáteční vrstvy](../speed/speed_travel_layer_0.md) snižuje pravděpodobnost, že pohyb přesunu vytáhne dříve vytištěné linie z podložky tisku. Stejně tak zvažte úpravu [zrychlení počáteční vrstvy](../speed/acceleration_layer_0.md) a [ryv (jerk) vrstvy](../speed/jerk_layer_0.md).
-* Zvyšte [počet pomalejších vrstev](../speed/speed_slowdown_layers.md). Tím se snižuje riziko rychlých pohybů, které způsobí, že stáhnou předchozí vrstvy.
+* Podobně snižte [rychlost počáteční vrstvy](../speed/speed_layer_0.md). Snížení [rychlosti tisku počáteční vrstvy](../speed/speed_print_layer_0.md) způsobí, že materiál znovu více vytéká, protože materiál je horkou tryskou udržován déle tekutý.
 
 Tiskové plochy
 ----

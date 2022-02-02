@@ -2,7 +2,7 @@ Zahájit vrstvy se stejnou součástí
 ====
 Původně tento parametr způsobil, že tiskárna zahájila každou vrstvu s objektem nejblíže poloze určené v parametrech [X začátku vrstvy](layer_start_x.md) a [Y začátku vrstvy](layer_start_y.md), místo objektu, který byl naposledy vytištěn v předchozí vrstvě.
 
-**Parametr byl v Cura 2.4 skryt a nikdy nebyl správně odstraněn, proto tento parametr v tomto seznamu stále existuje. Nemá to však žádný vliv na tisk.**
+**Parametr byl v Cura 2.4 skryt, ale nebyl správně odstraněn, proto tento parametr v tomto seznamu stále existuje. Nemá to však žádný vliv na tisk.**
 
 Po implementaci vícezávitových řezů již nebylo možné alternativní chování, takže nastavení bylo skryto.
 

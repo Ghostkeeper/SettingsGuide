@@ -7,3 +7,5 @@ Postup otírání podporuje pouze otírání ve směru X. To znamená, že otír
 Otírací kartáč může být v záporném směru X nebo v kladném směru X. Je-li použit kladný směr X, budete pravděpodobně potřebovat, aby se tryska posunula za limit objemu tisku. Pokud je kartáč v záporném směru X, musí být tato souřadnice pravděpodobně záporná.
 
 Tryska se nikdy nepohne za tento bod pro otírání. Samotné otírání se provádí od tohoto bodu k modelu. Tento bod nepřekročí.
+
+Tato souřadnice je v souřadnicovém systému g-kódu, který se liší od souřadnic, které Cura zobrazuje v nástroji pro přesun při umísťování objektů.

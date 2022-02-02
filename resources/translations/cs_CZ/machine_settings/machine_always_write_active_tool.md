@@ -17,3 +17,5 @@ Vzhledem ke strategii regulace teploty Cury, nemusí nikdy provádět druhou int
 `T0`
 
 V podstatě ví, že tiskárna se přepne na druhý extrudér kvůli tomuto příkazu, a proto musí přepnout zpět na první extruder, aby tam pokračovala v tisku.
+
+**Protože se jedná o nastavení stroje, není toto nastavení normálně v seznamu nastavení viditelné.**

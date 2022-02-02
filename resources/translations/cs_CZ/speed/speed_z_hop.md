@@ -4,6 +4,8 @@ Tento parametr konfiguruje rychlost pohybu, při které jsou prováděny vertik�
 
 ![Svislý pohyb se provádí rychlostí Z-skoku](../images/speed_z_hop_cs.svg)
 
+<!--if cura_version >= 4.2-->Rychlost Z skoku se používá také jako rychlost pohybu mezi vrstvami. V praxi na této rychlosti záleží jen velmi málo, protože pohyb o tloušťce jedné vrstvy je tak krátký, že je téměř vždy omezen zrychlením, nikoli maximální pojezdovou rychlostí.<!--endif-->
+
 Pro většinu tiskáren je osa Z postavena jako robustní, ale pomalá. Zvýšení rychlosti skoku v ose Z otestuje mez pohybu osy Z, což může způsobit, že motor osy Z přeskočí určité kroky. V důsledku toho může tryska skončit v jiné výšce po Z-skoku. Snížení této rychlosti snižuje šance, že k tomu dojde.
 
 Na druhé straně, vyšší rychlost Z-skoku způsobí, že se tryska rychleji vzdálí od tištěného povrchu. To může zmenšit velikost kapek.

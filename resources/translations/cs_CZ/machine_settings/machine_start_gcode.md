@@ -47,6 +47,12 @@ Stejnou syntaxí jako odkazy na nastavení jsou k dispozici také některé pomo
 * `{date}` označuje datum slicování.
 * `{day}` označuje den v týdnu slicování.
 * `{initial_extruder_nr}` odkazuje na extrudér, se kterým začne tisk.
+<!--if cura_version>=4.12-->
+* `{material_id}` odkazuje na jedinečný identifikátor aktivního materiálu. Extruder zadejte podobně jako u ostatních nastavení.
+* `{material_name}` odkazuje na název aktivního materiálu. Obvykle se jedná o název, který je uveden na webových stránkách prodávajících tento materiál.
+* `{material_type}` označuje třídu aktivního materiálu, jako je PLA nebo ABS.
+* `{material_brand}` odkazuje na výrobce aktivního materiálu.
+<!--endif-->
 
 Zahřívání před spuštěním g-kódu
 ----

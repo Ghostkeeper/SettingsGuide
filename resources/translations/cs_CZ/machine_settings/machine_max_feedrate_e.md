@@ -1,4 +1,4 @@
-Maximální rychlost podavače
+Maximální rychlost E
 ====
 Toto nastavení označuje nejvyšší rychlost, při které může podavač pohybovat vláknem.
 

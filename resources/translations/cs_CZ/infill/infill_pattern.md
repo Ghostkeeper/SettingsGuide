@@ -17,7 +17,7 @@ Lineární
 ![Lineární](../../../articles/images/infill_pattern_lines.png)
 
 Lineární vzor vytváří rovnoběžné linie. Ve výchozím nastavení vzorec linií mění svůj směr kolmo z jedné vrstvy na druhou, takže na první pohled vypadá jako vzor mřížky. Tento vzhled je však možné upravit pomocí parametru [Směr linií výplně](infill_angles.md).
-* Nejlepší vzor pro hladký horní povrch stejně jako vzor cikcak, protože vzdálenost mezi liniemi je nejmenší.
+<!--if cura_version<4.12:* Nejlepší vzor pro hladký horní povrch stejně jako vzor cikcak, protože vzdálenost mezi liniemi je nejmenší.-->
 * Ve svislém směru bývá slabý, protože vrstvy mají mezi sebou pouze malé spojovací body.
 * Bude extrémně slabý v horizontálním směru, s výjimkou jediného směru, kde jsou orientovány linie. Ale ani v tomto směru není odolný vůči střihu, takže při zatížení poměrně rychle selže.
 
@@ -139,6 +139,20 @@ Gyroid
 
 Vzor výplně Gyroid vytváří vlnitý vzor, který mění směr.
 * Vytváří objem, který je zcela propustný pro kapaliny, což z něj činí užitečný model pro rozpustné materiály.
-* Stejně silný ve všech směrech, ale ne příliš. To je užitečné pro flexibilní materiály, ale výsledek bude o něco těžší, méně zvlněný, než vzory (3D) křížové výplně.
+* Stejně silný ve všech směrech, ale ne příliš tuhý. To je užitečné pro flexibilní materiály, ale výsledek bude o něco těžší, méně zvlněný, než vzory (3D) křížové výplně.
+* V tomto vzoru nejsou žádné překrývající se linie, což umožňuje snadnější tisk s materiály s vyšším povrchovým napětím a díky tomu je výplň velmi spolehlivá a konzistentní.
 * Odolný proti střihu.
 * Slicování trvá dlouho a vytváří velké soubory g-kódu. U některých tiskáren může být obtížné sledovat mnoho příkazů g-kódu za sekundu a může být obtížné držet krok přes sériové připojení při nízkých přenosových rychlostech.
+
+<!--if cura_version>=4.12-->
+Blesk
+----
+![Blesk](../../../articles/images/infill_pattern_lightning.png)
+![Vzor blesku se vytváří ze stran](../../../articles/images/infill_pattern_lightning_side.png)
+
+Vzor bleskové výplně je členitý minimální vzor, který má za cíl podepřít pouze horní povrch. Zadané hustoty výplně bude dosaženo pouze těsně pod horní stranou objemu výplně.
+* Šetří obrovské množství času a materiálu tím, že vyrábí výplň pouze pod povrchem.
+* Zvýšení hustoty výplně vede k nejlepší kvalitě horního povrchu ze všech vzorů, aniž by to vyžadovalo více času a materiálu.
+* Na mnoha místech zabraňuje prosvítání výplně skrz stěny tím, že prostě nemá výplň.
+* Žádným významným způsobem nezvyšuje pevnost dílu.
+<!--endif-->
