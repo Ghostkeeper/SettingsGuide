@@ -2,7 +2,7 @@ Horizontální rozšíření otvoru
 ====
 Toto je kompenzační opatření pro tiskařský efekt, kde mají otvory tendenci skončit menším tiskem, než bylo zamýšleno. S tímto nastavením můžete zvětšit velikost svislých otvorů v tisku. Podobně jako u běžného nastavení parametru [Horizontální rozšíření](xy_offset.md) se otvory vašeho tisku rozšíří ve všech směrech.
 
-![Otvory v tomto tisku musí odpovídat šroubům a osám, ale jsou vytištěny příliš malé](../images/hole_xy_offset_0.png)
+![Otvory v tomto tisku musí odpovídat šroubům a osám, ale jsou vytištěny příliš malé](../../../articles/images/hole_xy_offset_0.png)
 ![Otvory byly zvětšeny, ale zbytek tvaru se nezměnil](../../../articles/images/hole_xy_offset.png)
 
 V důsledku viskozity materiálu má plast při tisku linie plastu v křivce tendenci se táhnout spolu s tryskou v křivce. To způsobí, že křivka je o něco menší, než bylo zamýšleno, když se struna vtáhne dovnitř křivky. Normálně to není opravdu viditelné, ale při tisku položek, které se musí velmi přesně přizpůsobit nebo při tisku položek s velmi malými svislými otvory, se stává přesnost vašeho tisku zničující. Šrouby se už víc nehodí, díly do sebe úhledně nezapadají a tak dále.
