@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000">
+	<defs>
+		<marker id="arrow" markerWidth="3" markerHeight="3" refX="0" refY="1.5" orient="auto">
+			<polygon points="0,3 0,0 3,1.5" />
+		</marker>
+	</defs>
+
+	<!-- Shapes. -->
+	<path stroke="black" stroke-width="20" fill="grey" d="
+		M500,20 l-480,200 100,760 700,-250 160,-600 Z
+		M850,200 l-100,450 -450,150 -100,-500 300,-150 Z
+		M500,350 l-100,100 20,150 200,-50 50,-200 Z" />
+
+	<!-- Arrows. -->
+	<g stroke-width="10" stroke="black" marker-end="url(#arrow)">
+		<line x1="50" y1="500" x2="150" y2="500" />
+		<line x1="240" y1="500" x2="340" y2="500" />
+		<line x1="400" y1="500" x2="500" y2="500" />
+
+		<line x1="550" y1="40" x2="550" y2="120" />
+		<line x1="550" y1="160" x2="550" y2="260" />
+		<line x1="550" y1="350" x2="550" y2="450" />
+	</g>
+
+	<!-- Labels. -->
+	<g font-family="sans-serif" font-size="35">
+		<text x="70" y="480">Inside</text>
+		<text x="250" y="480" stroke="white" stroke-width="5">Outside</text>
+		<text x="250" y="480">Outside</text>
+		<text x="420" y="480">Inside</text>
+
+		<text x="570" y="50" transform="rotate(90, 570, 50)">Inside</text>
+		<text x="570" y="180" transform="rotate(90, 570, 180)" stroke="white" stroke-width="5">Outside</text>
+		<text x="570" y="180" transform="rotate(90, 570, 180)">Outside</text>
+		<text x="570" y="360" transform="rotate(90, 570, 360)">Inside</text>
+	</g>
+</svg>
