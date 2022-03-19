@@ -2,6 +2,8 @@ Hole Horizontal Expansion
 ====
 This is a compensation measure for a printing effect where holes tend to end up being printed smaller than intended. With this setting you can expand the size of vertical holes in your print. Similar to the ordinary [Horizontal Expansion](xy_offset.md) setting, your print's holes will be expanded in all directions.
 
+Because the hole is expanded in all directions, this setting's value effectively applies to the radius of holes, not to their diameter.
+
 <!--screenshot {
 "image_path": "hole_xy_offset_0.png",
 "models": [{"script": "rotary_tumbler_motor_lid.scad"}],
