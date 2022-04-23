@@ -52,6 +52,10 @@ Andere Informationen
 * `{material_name}` bezieht sich auf den Namen des aktiven Materials. Dies ist in der Regel der Name, den Sie auf einer Website finden, auf der das Material verkauft wird.
 * `{material_type}` bezieht sich auf die Klasse des aktiven Materials, wie PLA oder ABS.
 * `{material_brand}` verweist auf den Hersteller des Materials.
+* `{print_time}` bezieht sich auf die geschätzte Dauer des Drucks (formatiert nach ISO-8601).
+* `{filament_amount}` bezieht sich auf die Länge des verwendeten Filaments in Metern, für jeden Extruder separat. Dies wird als Liste mit eckigen Klammern formatiert.
+* `{filament_weight}` bezieht sich auf das Gewicht des verwendeten Filaments in Gramm, für jeden Extruder separat, formatiert als Liste mit eckigen Klammern. Wenn das Spulengewicht unbekannt ist, ist dies 0.
+* `{filament_cost}` bezieht sich auf die Kosten des verwendeten Filaments, für jeden Extruder getrennt. Die Einheit der Kosten ist die gleiche, die auf der Materialverwaltungsseite in den Einstellungen angegeben ist. Wenn die Einheit unbekannt ist, wird sie auf 0 gesetzt.
 <!--endif-->
 
 Heizen vor dem Start G-Code

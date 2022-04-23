@@ -2,6 +2,9 @@ Horizontalloch-Erweiterung
 ====
 Dies ist eine Korrekturmaßnahme für einen Druckeffekt, bei dem Löcher tendenziell kleiner gedruckt werden als beabsichtigt. Mit dieser Einstellung können Sie die Größe der vertikalen Löcher in Ihrem Druck vergrößern. Ähnlich wie bei der Einstellung [Horizontale Erweiterung](xy_offset.md) werden die Löcher im Druck in alle Richtungen erweitert.
 
+
+Da das Loch in alle Richtungen erweitert wird, bezieht sich der Wert dieser Einstellung auf den Radius der Löcher und nicht auf ihren Durchmesser.
+
 <!--screenshot {
 "image_path": "hole_xy_offset_0.png",
 "models": [{"script": "rotary_tumbler_motor_lid.scad"}],
