@@ -25,6 +25,7 @@ from UM.Qt.Bindings.PointingRectangle import PointingRectangle  # To adjust the 
 from UM.Resources import Resources  # To find the themes in order to adjust them.
 from UM.Settings.ContainerRegistry import ContainerRegistry  # To register the non-setting entries.
 from UM.Settings.DefinitionContainer import DefinitionContainer  # To register the non-setting entries.
+from UM.Version import Version  # To parse Cura's version number.
 
 from . import MenuItemHandler  # To register the context menu item in the settings list.
 from . import QtMarkdownRenderer  # To match Mistune's output to Qt's supported HTML subset.
@@ -277,8 +278,13 @@ class CuraSettingsGuide(Extension, QObject):
 		plugin_path = PluginRegistry.getInstance().getPluginPath(self.getPluginId())
 		if plugin_path is None:
 			plugin_path = os.path.dirname(__file__)
-		path = os.path.join(plugin_path, "resources", "qml", "SettingsGuide.qml")
-		self._dialog = CuraApplication.getInstance().createQmlComponent(path, {"manager": self})
+		application = CuraApplication.getInstance()
+		version = Version(application.getVersion())
+		if application.getVersion() != "source" and version.getMajor() <= 4:
+			path = os.path.join(plugin_path, "resources", "qml_cura4", "SettingsGuide.qml")
+		else:  # In Cura 5+ the QML interface changed significantly, and the settings layout too. We use a different set of QML files to use the new interface and to mimic the new look.
+			path = os.path.join(plugin_path, "resources", "qml", "SettingsGuide.qml")
+		self._dialog = application.createQmlComponent(path, {"manager": self})
 		if not self._dialog:
 			Logger.log("e", "Unable to create settings guide dialogue.")
 
