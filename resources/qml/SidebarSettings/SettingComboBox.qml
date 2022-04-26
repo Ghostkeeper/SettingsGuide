@@ -7,16 +7,16 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.0
 
-import UM 1.2 as UM
+import UM 1.5 as UM
 
 SettingItem {
-	contents: Rectangle {
+	contents: UM.UnderlineBackground {
 		anchors.fill: parent
-		color: UM.Theme.getColor("setting_control_disabled")
-		border.width: UM.Theme.getSize("default_lining").width
-		border.color: UM.Theme.getColor("setting_control_disabled_border")
 
-		UM.RecolorImage {
+		liningColor: UM.Theme.getColor("text_field_border_disabled")
+		color: UM.Theme.getColor("text_field")
+
+		UM.ColorImage {
 			id: downArrow
 			anchors {
 				right: parent.right
@@ -24,11 +24,9 @@ SettingItem {
 				verticalCenter: parent.verticalCenter
 			}
 
-			source: UM.Theme.getIcon("arrow_bottom")
+			source: UM.Theme.getIcon("ChevronSingleDown")
 			width: UM.Theme.getSize("standard_arrow").width
 			height: UM.Theme.getSize("standard_arrow").height
-			sourceSize.width: width + 5 * screenScaleFactor
-			sourceSize.height: width + 5 * screenScaleFactor
 
 			color: UM.Theme.getColor("setting_control_button")
 		}
