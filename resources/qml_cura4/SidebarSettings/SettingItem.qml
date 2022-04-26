@@ -13,15 +13,14 @@ import Cura 1.0 as Cura
 
 Item {
 	id: base
-	anchors.left: parent.left
-	anchors.right: parent.right
-	height: UM.Theme.getSize("section").height + UM.Theme.getSize("narrow_margin").height
+
+	height: UM.Theme.getSize("section").height
 
 	property alias contents: controlContainer.children
 
 	Connections {
 		target: manager
-		function onSelectedArticleChanged(index) {
+		onSelectedArticleChanged: {
 			if(manager.selectedArticleId == definition.key) {
 				articleList.currentIndex = index;
 			}
@@ -38,7 +37,6 @@ Item {
 	MouseArea {
 		id: mouse
 		anchors.fill: parent
-
 		acceptedButtons: Qt.LeftButton
 		hoverEnabled: true
 		onClicked: {
@@ -61,25 +59,24 @@ Item {
 		}
 
 		Label {
-			anchors {
-				left: parent.left
-				leftMargin: Math.round(UM.Theme.getSize("thin_margin").width + ((definition.depth - 1) * UM.Theme.getSize("default_margin").width))
-				right: controlContainer.left
-				verticalCenter: parent.verticalCenter
-			}
+			anchors.left: parent.left
+			anchors.leftMargin: Math.round((UM.Theme.getSize("section_icon_column").width + 5) + ((definition.depth - 1) * UM.Theme.getSize("setting_control_depth_margin").width))
+			anchors.verticalCenter: parent.verticalCenter
 
 			text: definition.label
 			elide: Text.ElideMiddle
 			renderType: Text.NativeRendering
-			textFormat: Text.PlainText
-			font: UM.Theme.getFont("default")
+
 			color: UM.Theme.getColor("setting_control_text")
+			opacity: (definition.visible) ? 1 : 0.5
+			font: UM.Theme.getFont("default")
 		}
 
 		Item {
 			id: controlContainer
 
 			anchors.right: parent.right
+			anchors.rightMargin: UM.Theme.getSize("default_margin").width
 			anchors.verticalCenter: parent.verticalCenter
 			width: UM.Theme.getSize("setting_control").width
 			height: UM.Theme.getSize("setting_control").height

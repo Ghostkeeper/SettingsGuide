@@ -8,7 +8,7 @@ import QtQuick 2.7
 import QtQuick.Window 2.2
 import QtQuick.Controls 2.3
 
-import UM 1.5 as UM
+import UM 1.2 as UM
 import Cura 1.0 as Cura
 
 Window {
@@ -186,7 +186,7 @@ Window {
 			ToolTip.timeout: 5000
 			ToolTip.text: qsTr("Refresh screenshots of this article. Tool for maintainers of the Settings Guide!")
 
-			UM.ColorImage {
+			UM.RecolorImage {
 				color: UM.Theme.getColor("text")
 				source: Qt.resolvedUrl("../icons/camera.svg")
 				anchors.centerIn: parent

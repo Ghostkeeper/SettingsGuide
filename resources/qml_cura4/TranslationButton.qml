@@ -19,7 +19,7 @@ MouseArea {
 	ToolTip.timeout: 5000
 	ToolTip.text: qsTr("Translations are available.")
 
-	UM.ColorImage {
+	UM.RecolorImage {
 		color: UM.Theme.getColor("text")
 		source: Qt.resolvedUrl("../icons/translations.svg")
 		anchors.centerIn: parent
