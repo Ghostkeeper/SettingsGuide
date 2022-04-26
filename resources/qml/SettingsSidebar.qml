@@ -28,7 +28,6 @@ Item {
 			id: filter
 			height: parent.height
 			width: parent.width
-			topPadding: height / 4
 			leftPadding: searchIcon.width + UM.Theme.getSize("default_margin").width * 2
 			placeholderText: catalog.i18nc("@label:textbox", "Search settings")
 			font.italic: true
