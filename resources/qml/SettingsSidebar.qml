@@ -216,7 +216,7 @@ Item {
 					case "enum":
 						return Qt.resolvedUrl("SidebarSettings/SettingComboBox.qml");
 					case "extruder":
-						return Qt.resolvedUrl("SidebarSettings/SettingExtruder.qml");
+						return Qt.resolvedUrl("SidebarSettings/SettingComboBox.qml");
 					case "bool":
 						return Qt.resolvedUrl("SidebarSettings/SettingCheckBox.qml");
 					case "str":
@@ -224,7 +224,7 @@ Item {
 					case "category":
 						return Qt.resolvedUrl("SidebarSettings/SettingCategory.qml");
 					case "optional_extruder":
-						return Qt.resolvedUrl("SidebarSettings/SettingExtruder.qml");
+						return Qt.resolvedUrl("SidebarSettings/SettingComboBox.qml");
 					default:
 						return Qt.resolvedUrl("SidebarSettings/SettingTextField.qml");
 				}
