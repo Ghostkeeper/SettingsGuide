@@ -1,12 +1,15 @@
 #Copyright (C) 2018 Aleksei Sasin
-#Copyright (C) 2021 Ghostkeeper
+#Copyright (C) 2022 Ghostkeeper
 #This plug-in is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
 import os  # To find the article files and other resources.
 import urllib.parse  # For unquote_plus to create preference keys for forms.
-from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl  # To expose data to the GUI and adjust the size of setting tooltips.
+try:
+	from PyQt6.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl  # To expose data to the GUI and adjust the size of setting tooltips.
+except ImportError:  # Older version of Cura.
+	from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl  # In Cura 4.x, use Qt5 instead of Qt6.
 import re  # To get images from the descriptions.
 import shutil  # To copy the theme.
 import threading  # Screenshot refresh is done on a separate thread.
