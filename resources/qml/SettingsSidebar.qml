@@ -103,7 +103,7 @@ Item {
 			UM.ColorImage {
 				id: highlightArrow
 				height: parent.height
-				width: parent.width
+				width: height
 				source: Qt.resolvedUrl("../icons/arrow.svg")
 				color: UM.Theme.getColor("primary")
 			}
