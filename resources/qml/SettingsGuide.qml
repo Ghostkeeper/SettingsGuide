@@ -18,7 +18,7 @@ Window {
 	modality: UM.Preferences.getValue("settings_guide/window+always+in+front") ? Qt.ApplicationModal : Qt.NonModal
 	Connections {
 		target: UM.Preferences
-		function onPreferenceChanged() {
+		function onPreferenceChanged(preference) {
 			//Update modality if preference changes.
 			if(preference !== "settings_guide/window+always+in+front") {
 				return;
