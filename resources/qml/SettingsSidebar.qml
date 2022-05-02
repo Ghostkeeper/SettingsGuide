@@ -42,7 +42,7 @@ Item {
 				height: UM.Theme.getSize("small_button_icon").height
 				width: height
 
-				source: UM.Theme.getIcon("search")
+				source: UM.Theme.getIcon("Magnifier")
 				color: UM.Theme.getColor("text")
 			}
 
