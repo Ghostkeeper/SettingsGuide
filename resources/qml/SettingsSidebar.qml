@@ -180,7 +180,7 @@ Item {
 
 		Connections {
 			target: manager
-			onCurrentArticleReset: {
+			function onCurrentArticleReset() {
 				articleList.currentIndex = -1;
 			}
 		}

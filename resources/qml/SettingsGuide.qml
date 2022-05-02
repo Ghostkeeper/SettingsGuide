@@ -18,7 +18,7 @@ Window {
 	modality: UM.Preferences.getValue("settings_guide/window+always+in+front") ? Qt.ApplicationModal : Qt.NonModal
 	Connections {
 		target: UM.Preferences
-		onPreferenceChanged: {
+		function onPreferenceChanged() {
 			//Update modality if preference changes.
 			if(preference !== "settings_guide/window+always+in+front") {
 				return;
@@ -222,7 +222,7 @@ Window {
 
 			Connections {
 				target: manager
-				onSelectedArticleChanged: {
+				function onSelectedArticleChanged() {
 					settingsGuideBase.zoomed_image = ""; //Zoom out any zoomed images.
 					article_scroll.contentItem.contentY = 0; //Scroll back to the top of the article.
 				}
