@@ -166,7 +166,7 @@ Item {
 		delegate: Loader {
 			id: articleLoader
 			x: UM.Theme.getSize("section_icon").height //Leave room for the highlight arrow.
-			width: parent.width - (scrollBar.width + UM.Theme.getSize("narrow_margin").width) - x
+			width: parent ? (parent.width - (scrollBar.width + UM.Theme.getSize("narrow_margin").width) - x) : 0
 
 			property var definition: model
 			property var articleDefinitionsModel: definitionsModel
