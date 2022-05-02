@@ -98,39 +98,8 @@ Item {
 		keyNavigationEnabled: true
 		highlightMoveDuration: 100
 		highlightMoveVelocity: -1
-		highlight: Item {
-			UM.ColorImage {
-				id: highlightArrow
-				height: parent.height
-				width: height
-				source: Qt.resolvedUrl("../icons/arrow.svg")
-				color: UM.Theme.getColor("primary")
-			}
-			Rectangle {
-				anchors {
-					left: highlightArrow.right
-					top: parent.top
-					bottom: parent.bottom
-					right: parent.right
-					rightMargin: UM.Theme.getSize("default_margin").width
-				}
+		highlight: highlightArrow
 
-				color: UM.Theme.getColor("primary")
-				opacity: 0.1
-			}
-			Rectangle { //Another rectangle without the opacity, for the border.
-				anchors {
-					left: highlightArrow.right
-					top: parent.top
-					bottom: parent.bottom
-					right: parent.right
-					rightMargin: UM.Theme.getSize("default_margin").width
-				}
-
-				border.color: UM.Theme.getColor("action_button_active_border")
-				border.width: UM.Theme.getSize("default_lining").width
-			}
-		}
 		onCurrentIndexChanged: { //If index changed due to keyboard navigation.
 			if(currentIndex < 0 || !currentItem) {
 				manager.selectedArticleId = "";
@@ -196,7 +165,8 @@ Item {
 
 		delegate: Loader {
 			id: articleLoader
-			width: parent.width - (scrollBar.width + UM.Theme.getSize("narrow_margin").width)
+			x: UM.Theme.getSize("section_icon").height //Leave room for the highlight arrow.
+			width: parent.width - (scrollBar.width + UM.Theme.getSize("narrow_margin").width) - x
 
 			property var definition: model
 			property var articleDefinitionsModel: definitionsModel
@@ -227,6 +197,43 @@ Item {
 					default:
 						return Qt.resolvedUrl("SidebarSettings/SettingTextField.qml");
 				}
+			}
+		}
+	}
+
+	Component {
+		id: highlightArrow
+		Item {
+			UM.ColorImage {
+				id: highlightArrowImage
+				height: UM.Theme.getSize("section_icon").height
+				width: height
+				anchors.left: parent.left
+				anchors.verticalCenter: parent.verticalCenter
+
+				source: Qt.resolvedUrl("../icons/arrow.svg")
+				color: UM.Theme.getColor("primary")
+			}
+			Rectangle {
+				anchors.fill: highlightBorder
+
+				color: UM.Theme.getColor("primary")
+				opacity: 0.1
+			}
+			Rectangle { //Another rectangle without the opacity, for the border.
+				id: highlightBorder
+				anchors {
+					left: parent.left
+					leftMargin: highlightArrowImage.width
+					right: parent.right
+					rightMargin: -highlightArrowImage.width - border.width
+					top: parent.top
+					bottom: parent.bottom
+				}
+
+				color: "transparent"
+				border.color: UM.Theme.getColor("setting_control_border")
+				border.width: UM.Theme.getSize("default_lining").width
 			}
 		}
 	}

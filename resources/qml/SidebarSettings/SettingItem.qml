@@ -49,14 +49,7 @@ Item {
 			visible: mouse.containsMouse
 			color: UM.Theme.getColor("primary")
 			opacity: 0.1
-			anchors {
-				left: parent.left
-				leftMargin: parent.height //Leave room for the marker icon.
-				right: parent.right
-				rightMargin: UM.Theme.getSize("default_margin").width
-				top: parent.top
-				bottom: parent.bottom
-			}
+			anchors.fill: parent
 		}
 
 		Label {
