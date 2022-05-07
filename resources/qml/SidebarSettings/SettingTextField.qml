@@ -13,7 +13,7 @@ SettingItem {
 		anchors.fill: parent
 
 		liningColor: UM.Theme.getColor("text_field_border_disabled")
-		color: UM.Theme.getColor("text_field")
+		color: UM.Theme.getColor("setting_control_disabled")
 
 		UM.Label {
 			anchors {
