@@ -24,3 +24,5 @@ The transition area between different numbers of walls always has some slight pr
 However, a short transition also causes the nozzle to take some very sharp turns to quickly fill that gap. This results in more ringing, in particular if this occurs for the printing of the outer wall. Making the transition longer reduces accelerations in the nozzle, in particular if this reduces them below the [jerk](../speed/jerk_print.md) limit.
 
 Setting this length to one or two times the line width is a reasonable place to start. Printers with weaker frames or heavier print heads may need to increase it, while printers that can accelerate quickly without ringing can affort to shorten the transition to improve visual quality.
+
+**This setting doesn't just apply to normal walls, but also to extra skin walls, support walls, infill walls and concentric patterns.**
