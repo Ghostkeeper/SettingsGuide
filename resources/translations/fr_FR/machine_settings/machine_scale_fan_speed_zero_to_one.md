@@ -1,8 +1,8 @@
-Scale Fan Speed To 0-1
+Échelle de vitesse du ventilateur à 0-1
 ====
-To control the speed at which the fans of the printer spin, Cura puts commands in the g-code with a parameter that controls the speed. Normally this parameter is a number between 0 and 255. However some printers accept a number between 0 and 1 as well, and interpret it differently then. This setting causes Cura to write fan speeds as a number between 0 and 1, instead of between 0 and 255.
+Pour contrôler la vitesse à laquelle les ventilateurs de l'imprimante tournent, Cura place des commandes dans le g-code avec un paramètre qui contrôle la vitesse. Normalement, ce paramètre est un nombre compris entre 0 et 255. Cependant, certaines imprimantes acceptent également un nombre entre 0 et 1, et l'interprètent alors différemment. Ce paramètre fait en sorte que Cura écrive les vitesses des ventilateurs comme un nombre entre 0 et 1, au lieu de 0 et 255.
 
-There are 3 types of behaviours of firmware in various printers on the market.
-* Most printers accept fan speeds only as a number between 0 and 255. This setting should be disabled then, or otherwise the fan will never really spin.
-* Some printers (particularly RepRapFirmware) accept numbers between 0 and 255, but if it's 1 or lower, interpret it as a number between 0 and 1. This setting should be enabled then, or otherwise there could be a rare case where Cura attempts to set the fan speed to like 0.4% (1 out of 255), but the printer sets it to 100% instead.
-* Some printers only accept numbers between 0 and 1. This setting should also be enabled then, or the fan will always be either completely off or completely on.
+Il existe 3 types de comportements du micrologiciel dans les différentes imprimantes du marché.
+* La plupart des imprimantes acceptent la vitesse du ventilateur uniquement sous la forme d'un nombre compris entre 0 et 255. Ce paramètre doit alors être désactivé, sinon le ventilateur ne tournera jamais vraiment.
+* Certaines imprimantes (en particulier RepRapFirmware) acceptent les nombres entre 0 et 255, mais s'ils sont inférieurs ou égaux à 1, ils les interprètent comme des nombres entre 0 et 1. Ce paramètre devrait être activé dans ce cas, sinon il pourrait y avoir un cas rare où Cura tente de régler la vitesse du ventilateur à 0,4% (1 sur 255), mais l'imprimante le règle à 100% à la place.
+* Certaines imprimantes n'acceptent que les chiffres compris entre 0 et 1. Ce paramètre doit également être activé dans ce cas, sinon le ventilateur sera toujours soit complètement éteint, soit complètement allumé.

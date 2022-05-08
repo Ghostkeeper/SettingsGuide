@@ -1,4 +1,4 @@
-Wall Distribution Count
+Nombre de distribution des Murs
 ====
 Cura peut ajuster la largeur des lignes des murs pour mieux s'adapter à la forme que vous imprimez, mais il n'est pas obligé d'ajuster chaque mur de la même manière. Il préfère modifier la largeur des murs plus vers l'intérieur du modèle. Ce paramètre détermine le nombre de murs, en comptant de l'intérieur vers l'extérieur, qui sont ajustés pour s'adapter à l'espace disponible.
 
