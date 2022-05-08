@@ -49,6 +49,6 @@ Proces odlévání
 ----
 Odlévání pomocí 3D tištěné formy je do značné míry stejné jako u jakékoli jiné formy a bude velmi záviset na použitých materiálech. Je tu však několik zvláštních pozorností, pokud jde o 3D tištěné formy.
 
-Termoplast, kterým jste vytiskli svou formu, má nízkou tepelnou kapacitu a může mít poměrně nízkou teplotu skelného přechodu. To znamená, že po vylití formy je rozhodující čas. Pokud materiál chladne příliš pomalu, může forma změknout. To může způsobit její deformaci a ztížení uvolnění výsledku z formy. Chcete-li urychlit nastavení odlévání, můžete ji například vložit do ledubath.
+Termoplast, kterým jste vytiskli svou formu, má nízkou tepelnou kapacitu a může mít poměrně nízkou teplotu skelného přechodu. To znamená, že po vylití formy je rozhodující čas. Pokud materiál chladne příliš pomalu, může forma změknout. To může způsobit její deformaci a ztížení uvolnění výsledku z formy. Chcete-li urychlit nastavení odlévání, můžete ji například vložit do ledové lázně.
 
 3D tištěné formy také mají více zvrásnění podél jejich stran kvůli hranicím mezi vrstvami. To ztěžuje uvolnění odlitku z formy. Používáte-li mezi formou a odlitkem separační prostředek, použijte něco, co tyto mezery zaplní. Tenká maziva nestačí. Vhodnějšími vrstvami pro rozhraní jsou vosková nebo plnější maziva.

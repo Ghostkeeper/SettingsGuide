@@ -1,4 +1,4 @@
-Enable Retractions
+Enable Retraction
 ====
 If a 3D printer would stop pushing material, the material won't immediately stop flowing from the end of the nozzle. There is some residual material in the nozzle and it'll be pressurised, so it keeps flowing for a while longer. To actually stop the material from flowing, the printer needs to retract the material out of the nozzle opening. This is necessary to make clean travel moves without stringing.
 

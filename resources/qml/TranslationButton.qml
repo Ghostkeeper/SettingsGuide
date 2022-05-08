@@ -19,7 +19,7 @@ MouseArea {
 	ToolTip.timeout: 5000
 	ToolTip.text: qsTr("Translations are available.")
 
-	UM.RecolorImage {
+	UM.ColorImage {
 		color: UM.Theme.getColor("text")
 		source: Qt.resolvedUrl("../icons/translations.svg")
 		anchors.centerIn: parent
@@ -36,8 +36,8 @@ MouseArea {
 				text: code_to_language(modelData.toString())
 				onTriggered: manager.set_language(modelData.toString())
 			}
-			onObjectAdded: languagesMenu.insertItem(index, object)
-			onObjectRemoved: languagesMenu.removeItem(object)
+			onObjectAdded: function(index, object) { languagesMenu.insertItem(index, object); }
+			onObjectRemoved: function(index, object) { languagesMenu.removeItem(object); }
 		}
 	}
 

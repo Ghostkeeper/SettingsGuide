@@ -12,7 +12,13 @@ GridLayout {
 	columns: 6
 	columnSpacing: UM.Theme.getSize("default_margin").width
 	rowSpacing: UM.Theme.getSize("default_margin").height
-	height: 200 * screenScaleFactor + Math.floor((article_data.length - 1) / 3) * 200 * screenScaleFactor + Math.max(Math.floor((article_data.length - 1) / 3), 0) * rowSpacing
+	height: {
+		if(article_data) { //Don't evaluate before it's been given the article data.
+			return 200 * screenScaleFactor + Math.floor((article_data.length - 1) / 3) * 200 * screenScaleFactor + Math.max(Math.floor((article_data.length - 1) / 3), 0) * rowSpacing;
+		} else {
+			return 0;
+		}
+	}
 
 	property var article_data
 

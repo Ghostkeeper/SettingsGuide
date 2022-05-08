@@ -1,12 +1,15 @@
 #Copyright (C) 2018 Aleksei Sasin
-#Copyright (C) 2021 Ghostkeeper
+#Copyright (C) 2022 Ghostkeeper
 #This plug-in is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 #This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 #You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
 
 import os  # To find the article files and other resources.
 import urllib.parse  # For unquote_plus to create preference keys for forms.
-from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl  # To expose data to the GUI and adjust the size of setting tooltips.
+try:
+	from PyQt6.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl  # To expose data to the GUI and adjust the size of setting tooltips.
+except ImportError:  # Older version of Cura.
+	from PyQt5.QtCore import pyqtSlot, pyqtProperty, pyqtSignal, QObject, QUrl  # In Cura 4.x, use Qt5 instead of Qt6.
 import re  # To get images from the descriptions.
 import shutil  # To copy the theme.
 import threading  # Screenshot refresh is done on a separate thread.
@@ -22,6 +25,7 @@ from UM.Qt.Bindings.PointingRectangle import PointingRectangle  # To adjust the 
 from UM.Resources import Resources  # To find the themes in order to adjust them.
 from UM.Settings.ContainerRegistry import ContainerRegistry  # To register the non-setting entries.
 from UM.Settings.DefinitionContainer import DefinitionContainer  # To register the non-setting entries.
+from UM.Version import Version  # To parse Cura's version number.
 
 from . import MenuItemHandler  # To register the context menu item in the settings list.
 from . import QtMarkdownRenderer  # To match Mistune's output to Qt's supported HTML subset.
@@ -124,9 +128,10 @@ class CuraSettingsGuide(Extension, QObject):
 		if application.getPreferences().getValue("settings_guide/show+articles+in+setting+tooltips+%28requires+restart%29"):
 			try:
 				main_window = application._qml_engine.rootObjects()[0]
-				tooltips = main_window.findChildren(PointingRectangle)  # There are multiple instances of this (currently 3). It's indistinguishable which is the setting tooltip. Collateral damage!
-				for tooltip in tooltips:
-					tooltip.setWidth(tooltip.width() * 2.5)
+				if main_window is not None:
+					tooltips = main_window.findChildren(PointingRectangle)  # There are multiple instances of this (currently 3). It's indistinguishable which is the setting tooltip. Collateral damage!
+					for tooltip in tooltips:
+						tooltip.setWidth(tooltip.width() * 2.5)
 			except IndexError:  # rootObjects() returned an empty list, meaning the main window failed to load.
 				pass  # Let's skip widening the tooltips then.
 
@@ -273,8 +278,13 @@ class CuraSettingsGuide(Extension, QObject):
 		plugin_path = PluginRegistry.getInstance().getPluginPath(self.getPluginId())
 		if plugin_path is None:
 			plugin_path = os.path.dirname(__file__)
-		path = os.path.join(plugin_path, "resources", "qml", "SettingsGuide.qml")
-		self._dialog = CuraApplication.getInstance().createQmlComponent(path, {"manager": self})
+		application = CuraApplication.getInstance()
+		version = Version(application.getVersion())
+		if application.getVersion() != "source" and version.getMajor() <= 4:
+			path = os.path.join(plugin_path, "resources", "qml_cura4", "SettingsGuide.qml")
+		else:  # In Cura 5+ the QML interface changed significantly, and the settings layout too. We use a different set of QML files to use the new interface and to mimic the new look.
+			path = os.path.join(plugin_path, "resources", "qml", "SettingsGuide.qml")
+		self._dialog = application.createQmlComponent(path, {"manager": self})
 		if not self._dialog:
 			Logger.log("e", "Unable to create settings guide dialogue.")
 

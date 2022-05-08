@@ -10,7 +10,7 @@ Deformace je způsobena kombinací vlivů, ale hlavně vnitřním napětím v d�
 
 Druhým efektem, který způsobuje deformaci, je smrštění materiálu, když se ochladí. Většina materiálů má tendenci se zmenšovat, když chladnou. Pokud objekt vychladne nerovnoměrně, některé části tisku se zmenšují více než jiné, což objekt zkresluje. Jak objekt pokračuje v chládnutí, tuhne více, což ho trvale deformuje.
 
-Některé materiály jsou citlivější na smršťování než jiné. Zde jsou uvedeny některé koeficienty smrštění pro běžné materiály pro 3D tisk. To je přibližně množství smrštění každého typu materiálu, který se ochlazuje ze svého skelného přechodu na teplotu okolí. Mezi směsmi dochází k určité odchylce. Větší smrštění způsobí větší deformaci.
+Některé materiály jsou citlivější na smršťování než jiné, vzhledem k jejich přirozené krystalinitě. Zde jsou uvedeny některé koeficienty smrštění pro běžné materiály pro 3D tisk. To je přibližně množství smrštění každého typu materiálu, který se ochlazuje ze svého skelného přechodu na teplotu okolí. Mezi směsmi dochází k určité odchylce. Větší smrštění způsobí větší deformaci.
 * PLA: 0,21%.
 * ABS: 0,70%.
 * TPU: 0,63%.

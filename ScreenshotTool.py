@@ -1,4 +1,4 @@
-# Copyright (C) 2021 Ghostkeeper
+# Copyright (C) 2022 Ghostkeeper
 # This plug-in is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 # This plug-in is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
 # You should have received a copy of the GNU Affero General Public License along with this plug-in. If not, see <https://gnu.org/licenses/>.
@@ -15,7 +15,10 @@ import subprocess  # To call external applications to do conversions and optimis
 import threading  # To multi-thread optimisation of the optimisation calls (which take a long time and are not always multi-threaded applications).
 import time  # Crude way to make asynchronous calls synchronous: Spinlock until we get a signal that the asynchronous method is completed.
 import typing
-import PyQt5.QtGui  # For QImage, the result of the renders.
+try:
+	from PyQt6.QtGui import QImage  # For QImage, the result of the renders.
+except ImportError:  # Older Cura versions use Qt5.
+	from PyQt5.QtGui import QImage
 
 import cura.CuraApplication  # To change the settings before slicing.
 import cura.Utils.Threading  # To render on the Qt thread.
@@ -507,7 +510,7 @@ def switch_to_solid_view() -> None:
 	cura.CuraApplication.CuraApplication.getInstance().getController().setActiveStage("PrepareStage")
 
 @cura.Utils.Threading.call_on_qt_thread  # Must be called from the Qt thread because the OpenGL bindings don't support multi-threading.
-def take_snapshot(camera_position, camera_lookat, is_layer_view) -> typing.Optional[PyQt5.QtGui.QImage]:
+def take_snapshot(camera_position, camera_lookat, is_layer_view) -> typing.Optional[QImage]:
 	"""
 	Take a snapshot of the current scene.
 	:param camera_position: The position of the camera to take the snapshot with.
@@ -543,6 +546,11 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> typing.Optio
 	gl_bindings.glClearColor(0.0, 0.0, 0.0, 0.0)
 	gl_bindings.glClear(gl_bindings.GL_COLOR_BUFFER_BIT | gl_bindings.GL_DEPTH_BUFFER_BIT)
 
+	try:  # In Qt6 it's an enum, in Qt5 it's a field of QImage.
+		colour_format = QImage.Format.Format_ARGB32  # For Qt6.
+	except AttributeError:
+		colour_format = QImage.Format_ARGB32  # For Qt5.
+
 	if is_layer_view:
 		# Remove any nozzle node. It can get in the way of what we want to see and influence cropping of the image badly.
 		simulation_view_plugin = plugin_registry.getPluginObject("SimulationView")
@@ -566,11 +574,11 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> typing.Optio
 
 		# Remove alpha channel from this picture. We don't want the semi-transparent support since we don't draw the object outline here.
 		# Sadly, QImage.convertToFormat has only 2 formats with boolean alpha and they both premultiply. So we'll go the hard way: Through Numpy.
-		pixel_bits = screenshot.bits().asarray(screenshot.byteCount())
+		pixel_bits = screenshot.bits().asarray(screenshot.sizeInBytes())
 		pixels = numpy.frombuffer(pixel_bits, dtype=numpy.uint8).reshape([screenshot.height(), screenshot.width(), 4])
 		opaque = numpy.nonzero(pixels[:, :, 0])
 		pixels[opaque[0], opaque[1], 3] = 255
-		return PyQt5.QtGui.QImage(pixels.data, pixels.shape[1], pixels.shape[0], PyQt5.QtGui.QImage.Format_ARGB32).copy()  # Make a copy because the pixel data will go out of scope for Numpy, so that would be invalid memory.
+		return QImage(pixels.data, pixels.shape[1], pixels.shape[0], colour_format).copy()  # Make a copy because the pixel data will go out of scope for Numpy, so that would be invalid memory.
 	else:  # Render the objects themselves! Going to be quite complex here since the render is highly specialised in what it shows and what it doesn't.
 		view = plugin_registry.getPluginObject("SolidView")
 		view._checkSetup()
@@ -621,11 +629,11 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> typing.Optio
 		xray_shading = xray_pass.getOutput()
 
 		# Manually composite these shadings. Because the composite shader also adds a background colour.
-		normal_data = normal_shading.bits().asarray(normal_shading.byteCount())
+		normal_data = normal_shading.bits().asarray(normal_shading.sizeInBytes())
 		composite_pixels = numpy.frombuffer(normal_data, dtype=numpy.uint8).reshape([normal_shading.height(), normal_shading.width(), 4])  # Start from the normal image.
 		colours = numpy.true_divide(composite_pixels[:, :, 0:3], 255)  # Scaled to [0, 1].
 		alpha = numpy.true_divide(composite_pixels[:, :, 3], 255)
-		xray_data = xray_shading.bits().asarray(xray_shading.byteCount())
+		xray_data = xray_shading.bits().asarray(xray_shading.sizeInBytes())
 		xray_pixels = numpy.frombuffer(xray_data, dtype=numpy.uint8).reshape([xray_shading.height(), xray_shading.width(), 4])
 		xray_pixels = numpy.mod(xray_pixels[:, :, 0:3], 10) // 5  # The X-ray shader creates increments of 5 for some reason. If there are an odd number of increments (not divisible by 10) then it must be highlighted.
 		hue_shift = ((alpha - 0.333) * 6.2831853)
@@ -640,9 +648,9 @@ def take_snapshot(camera_position, camera_lookat, is_layer_view) -> typing.Optio
 		composite_pixels[:, :, 0:3] -= composite_pixels[:, :, 0:3] * xray_pixels  # Don't use the normal colour for x-rayed pixels.
 		composite_pixels[:, :, 0:3] += (rotated_hue * xray_pixels).astype("uint8")  # Use the rotated colour instead.
 		composite_pixels[:, :, 3][alpha > 0.1] = 255
-		return PyQt5.QtGui.QImage(composite_pixels.data, composite_pixels.shape[1], composite_pixels.shape[0], PyQt5.QtGui.QImage.Format_ARGB32).copy()  # Make a copy because the pixel data will go out of scope for Numpy, so that would be invalid memory.
+		return QImage(composite_pixels.data, composite_pixels.shape[1], composite_pixels.shape[0], colour_format).copy()  # Make a copy because the pixel data will go out of scope for Numpy, so that would be invalid memory.
 
-def crop_images(images) -> typing.List[typing.Tuple[PyQt5.QtGui.QImage, str]]:
+def crop_images(images) -> typing.List[typing.Tuple[QImage, str]]:
 	"""
 	Crop a list of images to eliminate any transparent borders.
 
@@ -660,7 +668,7 @@ def crop_images(images) -> typing.List[typing.Tuple[PyQt5.QtGui.QImage, str]]:
 
 	# Find the cropping dimensions that work for all images.
 	for image, _ in images:
-		pixel_data = image.bits().asarray(image.byteCount())
+		pixel_data = image.bits().asarray(image.sizeInBytes())
 		numpy_pixels = numpy.frombuffer(pixel_data, dtype=numpy.uint8).reshape([image.height(), image.width(), 4])
 		opaque_pixels = numpy.nonzero(numpy_pixels)
 		image_min_y, image_min_x, _ = numpy.amin(opaque_pixels, axis=1)

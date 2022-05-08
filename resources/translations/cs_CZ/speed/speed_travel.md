@@ -11,4 +11,4 @@ Rychlost přesunu je obecně mnohem vyšší než jakékoli jiné nastavení ryc
 * Zvýšení rychlosti zvyšuje riziko převrácení tisku, zejména pokud je deaktivováno [objíždění](../travel/retraction_combing.md).
 * Když dosáhnou extrémních rychlostí, mohou motory tiskárny také ztratit určité kroky, což způsobí posun vrstev.
 
-**Rychlost přesunu má na celkový čas tisku menší vliv, než si většina lidí myslí. Čas přesunu je obvykle jen malý zlomek celkové doby tisku a dosažení vysokých rychlostí trvá dlouho, což je omezeno hlavně zrychlením než maximální rychlostí.
+**Rychlost přesunu má na celkový čas tisku menší vliv, než si většina lidí myslí. Čas přesunu je obvykle jen malý zlomek celkové doby tisku a dosažení vysokých rychlostí trvá dlouho, což je omezeno hlavně zrychlením než maximální rychlostí.**

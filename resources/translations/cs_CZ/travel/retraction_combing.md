@@ -11,8 +11,10 @@ Pokud je objektem od začátku do konce cesta, aniž by narazila na jakoukoli st
 
 Cílem režimu objížďky je zabránit průchodu stěnami předmětu a snížením množství jizev na povrchu. Rovněž sníží strunování viditelné z vnějšku, protože během přesunu bude materiál stále vytékat, ale tento tisk je umístěn uvnitř modelu. Režim objížďky však také prodlouží délku přesunu. Někdy musí provést velkou objížďku.
 
-V rozbalovací nabídce tohoto nastavení jsou čtyři možnosti:
+Toto jsou možnosti v rozbalovacím seznamu pro toto nastavení:
 * **Zakázáno**: Režim objížďky je deaktivován. Pojezd bude vždy přímo do místa určení. Pokud se nedotkne žádné stěny, nebude retrahovat.
 * **Vše**: Tryska se nedotýká žádné stěny, když se pohybuje uvnitř dutiny, jak je popsáno výše.
-* **Ne v plášti**: Pokud je to možné, tryska se také vyhne dotyku s pláštěm. To může snížit zjizvení na horní straně tisku tím, že tryska bude běžet podél stěn, místo prořezávání se pláštěm. V některých případech však tryska nebude schopna uniknout a bude se muset retrahovat, jinak by došlo k poškození pláště.
+<!--if cura_version >= 4.12-->* **Ne na vnějším povrchu**: Kromě objíždění stěn se tryska vyhne i nejvyšší a nejnižší vrstvě pláště. Jedná se o viditelné vrstvy, na jejichž povrchu by mohla být vidět jizva, pokud by přes ně tryska přejela. Pokud není možné se povrchu vyhnout, provede se zatažení.
+* **Ne v plášti**: Tryska se pokud možno vyhne zasažení pláště. Tato možnost je sice stále dostupná ze starších verzí programu Cura, ale ve srovnání s možností Ne na vnějším povrchu způsobuje zbytečné retrakce a delší pojezdy, protože se vyhýbá vrstvám pláště, i když by jizva nebyla navenek vidět.<!--endif-->
+<!--if cura_version < 4.12:* **Ne v plášti**: Pokud je to možné, tryska se vyhne i zásahu do pláště. To může snížit jizvy na horní straně výtisku tím, že tryska projíždí podél stěn a neprořezává plášť. V některých případech však tryska nebude moci uniknout a bude muset provést retrakci tam, kde by jinak prořízla plášť.-->
 * **Uvnitř výplně**: Nejpřísnější režim ze všech, který umožňuje objížďku pouze skrze výplň. Tím se zabrání označení vnitřních i vnějších stěn a také se vyhne označení pláště. Pokud se tryska dotkne vnitřních stěn, může to být někdy viditelné zvnějšku, protože její vnější poloměr může být širší než šířka stěny. Tím se tomuto efektu vyhnete. Bude však nutné provést ještě více retrakcí, protože často nebude k dispozici žádná cesta.

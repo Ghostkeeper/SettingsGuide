@@ -52,6 +52,10 @@ Through the same syntax as references to settings, some auxiliary information is
 * `{material_name}` refers to the name of the active material. This is usually the name you'd see on a website selling that material.
 * `{material_type}` refers to the class of material that is active, like PLA or ABS.
 * `{material_brand}` refers to the manufacturer of the active material.
+* `{print_time}` refers to the estimated duration of the print (formatted according to ISO-8601).
+* `{filament_amount}` refers to the length of filament used, in metres, for each extruder separately. This gets formatted as a list with square brackets around them.
+* `{filament_weight}` refers to the weight of the filament used, in grams, for each extruder separately, formatted as a list with square brackets. If the spool weight is unknown, this will be 0.
+* `{filament_cost}` refers to the cost of the filament used, for each extruder separately. The unit of the cost is the same as listed in the material management page in the preferences. If it is unknown, this will be 0.
 <!--endif-->
 
 Heating before the start g-code
