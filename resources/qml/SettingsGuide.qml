@@ -100,7 +100,7 @@ Window {
 			}
 		}
 
-		ScrollView {
+		Cura.ScrollView {
 			id: article_scroll
 			anchors {
 				left: parent.left
@@ -108,7 +108,9 @@ Window {
 				top: parent.top
 				bottom: parent.bottom
 			}
+
 			visible: manager.selectedArticleId !== ""
+			clip: false
 
 			Column {
 				id: content_column
