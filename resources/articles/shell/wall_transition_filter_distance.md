@@ -33,4 +33,4 @@ This filter aims to solve a common problem with thin parts using low resolution 
 
 Increasing the distance prevents creating small line segments in some cases. This is quicker to print and can make the surface look smoother. However it also causes more of the print to have extreme line widths, which may not extrude well out of your nozzle. When printing low-resolution models with thin pieces, increasing the distance may help to improve quality. With difficult materials, it's better to stay on the safe side.
 
-**This setting is currently not visible to the user. The filter can only be adjusted using the [Wall Transitioning Filter Margin](wall_transition_filter_deviation.md).**
+**This setting is currently not visible to the user. The filter can only be adjusted using the [Wall Transitioning Filter Margin](wall_transition_filter_deviation.md). It affects not just the normal walls, but also extra skin walls, support walls, infill walls and concentric patterns.**
