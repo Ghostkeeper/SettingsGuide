@@ -1,4 +1,4 @@
-ORdre des parois
+Ordre des parois
 ====
 Ce paramètre détermine quels parois sont imprimées en premier, les parois extérieurs ou les parois intérieurs.
 
