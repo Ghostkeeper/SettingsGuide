@@ -29,3 +29,5 @@ However it also has some disadvantages:
 In practice, it's good to make this angle large enough to reduce the size of the gaps in sharp corners, as can be seen in layer view, but as small as possible otherwise. A smaller angle generally makes the surface look smoother.
 
 It's not possible to reduce the angle to 0° to get rid of variable line widths altogether. Parallel opposite walls will always get their line width adjusted to fit the space.
+
+**This setting doesn't just apply to normal walls, but also to extra skin walls, support walls, infill walls and concentric patterns.**
