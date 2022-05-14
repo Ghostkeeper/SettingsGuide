@@ -29,3 +29,5 @@ Cependant, elle présente également certains inconvénients:
 Dans la pratique, il est bon de faire en sorte que cet angle soit suffisamment grand pour réduire la taille des espaces dans les angles aigus, comme on peut le voir dans la vue en plan, mais aussi petit que possible par ailleurs. Un angle plus petit donne généralement à la surface un aspect plus lisse.
 
 Il n'est pas possible de réduire l'angle à 0° pour éliminer complètement les largeurs de ligne variables. Les murs parallèles opposés verront toujours leur largeur de ligne ajustée pour s'adapter à l'espace.
+
+**Ce paramètre ne s'applique pas seulement aux parois normales, mais aussi aux parois à contour supplémentaire, aux parois de soutien, aux parois de remplissage et aux motifs concentriques.**
