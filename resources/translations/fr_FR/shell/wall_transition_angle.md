@@ -1,4 +1,4 @@
-Angle du seuil de transition des cordons
+Angle du seuil de transition de la paroi
 ====
 Cet angle indique l'angle à partir duquel Cura commence à créer des transitions pour remplir correctement l'espace. Tous les angles qui sont plus aigus que cet angle seront remplis de lignes de largeur variable.
 
