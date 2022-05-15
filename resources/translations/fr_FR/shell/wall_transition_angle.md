@@ -16,12 +16,12 @@ Cet angle indique l'angle à partir duquel Cura commence à créer des transitio
 
 Ce paramètre permet d'activer ou de désactiver la largeur variable des lignes pour certains angles. Si deux parois opposés sont presque parallèles, plus petits que l'angle spécifié dans ce paramètre, l'espace entre eux est rempli de lignes dont la largeur peut varier. S'ils forment un angle plus grand l'un par rapport à l'autre, l'espace entre eux est rempli de cordons de largeur constante.
 
-Comme toujours, il s'agit d'un compromis. L'utilisation d'une largeur variable présente certains avantages, tels que:
+Comme toujours, il s'agit d'un compromis. L'utilisation d'une largeur variable présente certains avantages, tels que :
 * Il ne laisse aucun vide entre les lignes.
 * Il ne remplit pas le même espace plusieurs fois.
 * Les dimensions de l'impression seront plus précises à cet endroit.
 
-Cependant, elle présente également certains inconvénients:
+Cependant, elle présente également certains inconvénients :
 * Il introduit des coins dans les pièces fines qui peuvent apparaître comme des ondulations à la surface.
 * Cela crée des déplacements supplémentaires.
 * L'imprimante peut ne pas modifier avec précision la largeur de la ligne en succession rapide.
