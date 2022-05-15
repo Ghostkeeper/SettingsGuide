@@ -1,6 +1,6 @@
 Seuil de ligne médiane fractionnée
 ====
-Lors de l'impression de pièces fines, Cura ajuste la largeur des lignes de parois pour s'adapter à la largeur exacte du modèle. Cura peut également décider d'utiliser moins de lignes de paroi à la place. Ce paramètre est le seuil à partir duquel Cura scinde une ligne centrale unique en deux, lorsque la largeur de la pièce augmente. Il peut être réglé séparément du [seuil auquel une nouvelle ligne centrale est ajoutée] (wall_add_middle_threshold.md).
+Lors de l'impression de pièces fines, Cura ajuste la largeur des lignes de parois pour s'adapter à la largeur exacte du modèle. Cura peut également décider d'utiliser moins de lignes de paroi à la place. Ce paramètre est le seuil à partir duquel Cura scinde une ligne centrale unique en deux, lorsque la largeur de la pièce augmente. Il peut être réglé séparément du [seuil auquel une nouvelle ligne centrale est ajoutée](wall_add_middle_threshold.md).
 
 Ce paramètre est identique au paramètre [Largeur minimale de la ligne de paroi paire](min_even_wall_line_width.md), mais utilise une unité différente. L'unité de ce paramètre est exprimée en fractions de largeur de ligne que la largeur d'une pièce doit augmenter pour diviser la ligne centrale en deux. Comme la différence de largeur est répartie sur les deux lignes du milieu après la division, une largeur minimale de ligne de parois paire plus petite équivaut à un seuil de ligne du milieu divisé beaucoup plus petit que dans le cas de la suppression d'un cordon impair.
 
