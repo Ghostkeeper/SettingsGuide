@@ -1,6 +1,6 @@
 Ajouter un seuil de ligne médiane
 ====
-Lors de l'impression de pièces fines, Cura ajuste la largeur des lignes de parois pour s'adapter à la largeur exacte du modèle. Cura peut également décider d'utiliser moins de lignes de parois à la place. Ce paramètre est le seuil à partir duquel Cura ajoutera une ligne au centre. Il peut être réglé séparément du [seuil auquel les deux lignes du milieu se combinent] (wall_split_middle_threshold.md).
+Lors de l'impression de pièces fines, Cura ajuste la largeur des lignes de parois pour s'adapter à la largeur exacte du modèle. Cura peut également décider d'utiliser moins de lignes de parois à la place. Ce paramètre est le seuil à partir duquel Cura ajoutera une ligne au centre. Il peut être réglé séparément du [seuil auquel les deux lignes du milieu se combinent](wall_split_middle_threshold.md).
 
 Ce paramètre est identique au paramètre [Minimum Odd Wall Line Width] (min_odd_wall_line_width.md), mais utilise une unité différente. L'unité de ce paramètre est exprimée en fractions de largeur de ligne que la largeur d'une pièce doit augmenter pour ajouter une nouvelle ligne centrale.
 
