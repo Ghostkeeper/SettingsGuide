@@ -6,4 +6,4 @@ Les détails qui sont plus petits que la taille de la buse ne sont pas susceptib
 
 Réduire la taille minimale de l'élément permet à l'imprimante d'imprimer des détails plus petits de l'impression. En fonction de la [largeur minimale de la ligne de paroi fine](min_bead_width.md), ces petits détails peuvent être imprimés en extrudant très peu (ce qui provoque une [sous-extrusion](../troubleshooting/underextrusion.md)), ou en extrudant des largeurs de ligne plus raisonnables mais en les imprimant surdimensionnées. En mettant cette valeur à 0, l'imprimante va jusqu'au bout de chaque angle vif.
 
-En augmentant la taille minimale de l'image, l'imprimante ne se préoccupe pas des petits détails qui, de toute façon, ne seraient pas bien rendus. Cela permet de gagner un peu de temps et de rendre l'impression plus propre.
+En augmentant la taille minimale des entités, l'imprimante ne se préoccupe pas des petits détails qui, de toute façon, ne seraient pas bien rendus. Cela permet de gagner un peu de temps et de rendre l'impression plus propre.
