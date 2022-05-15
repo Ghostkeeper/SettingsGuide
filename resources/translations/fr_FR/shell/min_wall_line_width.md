@@ -1,6 +1,6 @@
 Largeur minimale de la ligne de paroi
 ====
-Lors de l'impression de pièces fines, Cura ajuste la largeur des lignes murales pour s'adapter à la largeur exacte du modèle. Cura peut également décider d'utiliser moins de lignes de murs à la place. Ce paramètre détermine le seuil à partir duquel Cura décide de supprimer une paroi au lieu de rendre les parois existantes plus fines.
+Lors de l'impression de pièces fines, Cura ajuste la largeur des lignes des parois pour s'adapter à la largeur exacte du modèle. Cura peut également décider d'utiliser moins de lignes de parois à la place. Ce paramètre détermine le seuil à partir duquel Cura décide de supprimer une paroi au lieu de rendre les parois existantes plus fines.
 
 <!--screenshot {
 "image_path": "min_wall_line_width_0_34.png",
@@ -29,17 +29,17 @@ Lors de l'impression de pièces fines, Cura ajuste la largeur des lignes murales
 ![Normalement, les lignes sont plus larges pour s'adapter](../../../articles/images/min_wall_line_width_0_34.png)
 ![En réduisant la largeur minimale des lignes, il choisit d'utiliser davantage de lignes.](../../../articles/images/min_wall_line_width_0_1.png)
 
-Différents nombres de murs
+Différents nombres de lignes
 ----
 S'il y a une seule ligne centrale et que le [Nombre de distributions des parois](wall_distribution_count.md) est réglé sur 1, ce paramètre fonctionne exactement comme il le dit. Si la ligne centrale devient plus fine qu'une certaine largeur, elle est supprimée au profit de l'élargissement d'autres lignes. Dans les autres cas, le calcul est plus complexe.
 
-The precise calculation of this is complex, but an intuitive understanding can be useful. Effectively, you can simply divide the total width of the model by the [ordinary line width](../resolution/wall_line_width.md) to arrive at a certain number of walls. This can be a fraction though (such as 5.3 wall line widths). The Minimum Wall Line Width takes just that fractional part (0.3 line widths) and adds an extra wall if it exceeds the Minimum Wall Line width. With the number of walls known, it then determines the width of each of the lines according to the Wall Distribution Count.
+Le calcul précis de cette valeur est complexe, mais une compréhension intuitive peut être utile. En fait, vous pouvez simplement diviser la largeur totale du modèle par la [largeur de ligne de la paroi](../resolution/wall_line_width.md) pour obtenir un certain nombre de cordons. Il peut s'agir d'une fraction (par exemple, 5,3 largeurs de ligne de paroi). La largeur minimale de ligne de paroi prend juste cette fraction (0,3 largeur de ligne) et ajoute un cordon supplémentaire s'il dépasse la largeur minimale de ligne de paroi. Le nombre de cordons étant connu, il détermine ensuite la largeur de chacune des lignes en fonction du compte de distribution des cordons.
 
 ![Comment la largeur minimale des lignes de parois affecte le nombre de cordons](../images/min_wall_line_width.svg)
 
-En fait, cela signifie que si plusieurs lignes voient leur largeur ajustée, la largeur de la ligne ne sera jamais aussi extrême que la largeur minimale de la ligne murale le permettrait. Par exemple, si les deux lignes du milieu sont ajustées, la largeur de la ligne ne tombera pas en dessous de la moyenne de la largeur normale de la ligne et de la largeur minimale de la ligne du mur.
+En fait, cela signifie que si plusieurs lignes voient leur largeur ajustée, la largeur de la ligne ne sera jamais aussi extrême que la largeur minimale de la ligne de paroi le permettrait. Par exemple, si les deux lignes du milieu sont ajustées, la largeur de la ligne ne tombera pas en dessous de la moyenne de la largeur normale de la ligne et de la largeur minimale de la ligne de paroi.
 
-Ce paramètre peut être réglé séparément pour un nombre de murs [pair](min_even_wall_line_width.md) et [impair](min_odd_wall_line_width.md). Le fait de n'avoir aucun mur est également un cas distinct, qui peut être réglé à l'aide du paramètre [Minimum Feature Size](min_feature_size.md).
+Ce paramètre peut être réglé séparément pour un nombre de cordons [pair](min_even_wall_line_width.md) et [impair](min_odd_wall_line_width.md). Le fait de n'avoir aucun cordon est également un cas distinct, qui peut être réglé à l'aide du paramètre [Minimum Feature Size](min_feature_size.md).
 
 Réglage
 ----
