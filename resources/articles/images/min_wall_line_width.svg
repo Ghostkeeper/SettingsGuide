@@ -45,15 +45,7 @@
 	</g>
 
 	<!-- Indicator of minimum wall line width. -->
-	<defs>
-		<marker id="arrow" markerWidth="3" markerHeight="2" refX="0" refY="1" orient="auto">
-			<polygon points="0,0 3,1 0,2" />
-		</marker>
-		<marker id="arrowback" markerWidth="3" markerHeight="2" refX="3" refY="1" orient="auto">
-			<polygon points="3,0 3,2 0,1" />
-		</marker>
-	</defs>
-	<line x1="415" y1="400" x2="497.5" y2="400" stroke="black" stroke-width="5" marker-start="url(#arrowback)" marker-end="url(#arrow)"/>
+	<polygon points="400,400 415,395 415,397.5 497.5,397.5 497.5,395 512.5,400 497.5,405 497.5,402.5 415,402.5 415,405" />
 
 	<!-- Labels. -->
 	<g font-family="sans-serif" font-size="50px" text-anchor="middle">

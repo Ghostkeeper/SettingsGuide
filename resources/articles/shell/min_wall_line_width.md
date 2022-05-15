@@ -35,7 +35,7 @@ If there is a single central line and the [Wall Distribution Count](wall_distrib
 
 The precise calculation of this is complex, but an intuitive understanding can be useful. Effectively, you can simply divide the total width of the model by the [ordinary line width](../resolution/wall_line_width.md) to arrive at a certain number of walls. This can be a fraction though (such as 5.3 wall line widths). The Minimum Wall Line Width takes just that fractional part (0.3 line widths) and adds an extra wall if it exceeds the Minimum Wall Line width. With the number of walls known, it then determines the width of each of the lines according to the Wall Distribution Count.
 
-![How Minimum Wall Line Width affects the number of walls](../images/min_wall_line_width.svg)
+![Minimum Wall Line Width shifts the threshold of adding a new line left or right](../images/min_wall_line_width.svg)
 
 Effectively this means that if there are more lines that get their width adjusted, the line width will never be as extreme as the Minimum Wall Line Width would allow. For example, if the middle two lines are adjusted, the line width will not drop below the average of the normal line width and the Minimum Wall Line Width.
 
@@ -45,4 +45,6 @@ Tuning
 ----
 In theory, setting this to 50% of the line width ensures that the line width stays closest to the ordinary line width. However it's better to stay a bit above that. It's easier for a printer to print lines wider than the nozzle size than it is to print thinner lines, and having fewer lines also means that the print will be faster.
 
-With very viscous materials or when printing faster, the Minimum Wall Line Width should be decreased to prevent creating lines that are too wide. These are hard to print if the material doesn't get the time to flow out to the sides enough. If the Minimum Wall Line Width is too high, the walls don't stick well together which makes the print fragile. 
+With very viscous materials or when printing faster, the Minimum Wall Line Width should be decreased to prevent creating lines that are too wide. These are hard to print if the material doesn't get the time to flow out to the sides enough. If the Minimum Wall Line Width is too high, the walls don't stick well together which makes the print fragile.
+
+**This setting doesn't just apply to normal walls, but also to extra skin walls, support walls, infill walls and concentric patterns.**
