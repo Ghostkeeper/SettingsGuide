@@ -39,7 +39,7 @@ Le calcul précis de cette valeur est complexe, mais une compréhension intuitiv
 
 En fait, cela signifie que si plusieurs lignes voient leur largeur ajustée, la largeur de la ligne ne sera jamais aussi extrême que la largeur minimale de la ligne de paroi le permettrait. Par exemple, si les deux lignes du milieu sont ajustées, la largeur de la ligne ne tombera pas en dessous de la moyenne de la largeur normale de la ligne et de la largeur minimale de la ligne de paroi.
 
-Ce paramètre peut être réglé séparément pour un nombre de cordons [pair](min_even_wall_line_width.md) et [impair](min_odd_wall_line_width.md). Le fait de n'avoir aucun cordon est également un cas distinct, qui peut être réglé à l'aide du paramètre [Minimum Feature Size](min_feature_size.md).
+Ce paramètre peut être réglé séparément pour un nombre de cordons [pair](min_even_wall_line_width.md) et [impair](min_odd_wall_line_width.md). Le fait de n'avoir aucun cordon est également un cas distinct, qui peut être réglé à l'aide du paramètre réglant la [taille minimale des entités](min_feature_size.md).
 
 Réglage
 ----
