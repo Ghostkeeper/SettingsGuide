@@ -1,9 +1,49 @@
-Seuil d'ajout de la ligne médiane
+Ajouter un seuil de ligne médiane
 ====
+Lors de l'impression de pièces fines, Cura ajuste la largeur des lignes de parois pour s'adapter à la largeur exacte du modèle. Cura peut également décider d'utiliser moins de lignes de parois à la place. Ce paramètre est le seuil à partir duquel Cura ajoutera une ligne au centre. Il peut être réglé séparément du [seuil auquel les deux lignes du milieu se combinent] (wall_split_middle_threshold.md).
 
-La plus petite largeur de ligne, en tant que facteur de la largeur de ligne normale, au-dessus de laquelle une ligne centrale (s'il n'y en avait pas déjà une) sera ajoutée. 
+Ce paramètre est identique au paramètre [Minimum Odd Wall Line Width] (min_odd_wall_line_width.md), mais utilise une unité différente. L'unité de ce paramètre est exprimée en fractions de largeur de ligne que la largeur d'une pièce doit augmenter pour ajouter une nouvelle ligne centrale.
 
-Réduisez ce paramètre pour utiliser des lignes plus nombreuses et plus fines. Augmentez-le pour utiliser des lignes moins nombreuses et plus larges. 
+<!--screenshot {
+"image_path": "min_wall_line_width_0_34.png",
+"models": [{"script": "moon_sickle.scad"}],
+"camera_position": [0, 0, 63],
+"settings": {
+	"min_wall_line_width": 0.34,
+	"wall_line_count": 3,
+	"wall_transition_angle": 20
+},
+"layer": 14,
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "min_wall_line_width_odd_0_1.png",
+"models": [{"script": "moon_sickle.scad"}],
+"camera_position": [0, 0, 63],
+"settings": {
+	"min_odd_wall_line_width": 0.1,
+	"min_wall_line_width": 0.34,
+	"wall_line_count": 3,
+	"wall_transition_angle": 20
+},
+"layer": 14,
+"colours": 32
+}-->
+![Lorsque la ligne centrale est trop petite, les deux lignes qui l'entourent sont élargies.](../../../articles/images/min_wall_line_width_0_34.png)
+![En réduisant ce réglage, la ligne centrale commence et finit beaucoup plus petit](../../../articles/images/min_wall_line_width_odd_0_1.png)
 
-**Notez que ceci s'applique *comme si* la forme entière devait être remplie de parois, donc le milieu ici se réfère au milieu de l'objet entre deux bords extérieurs de la forme, même s'il y a réellement du remplissage ou une (autre) peau dans l'impression au lieu du mur.**
- 
+Nombre de lignes paires ou impaires
+----
+Ce paramètre permet d'ajuster le seuil d'ajout de lignes spécifiquement lorsqu'il devient un nombre impair de lignes. C'est-à-dire lorsqu'il y a une seule ligne au centre plutôt que deux. Il détermine quand une nouvelle ligne est ajoutée entre les deux lignes centrales.
+
+Le seuil pour l'ajout d'une ligne centrale peut être différent du seuil pour la division de la ligne centrale en deux, en raison de leur mode de transition. Lorsqu'une ligne impaire est ajoutée, elle ne commence que lorsque les deux lignes environnantes lui ont fait de la place. Pendant la transition, il y a un petit espace où les lignes environnantes n'ont pas encore fait assez de place. C'est différent de ce qui se passe lorsqu'il y a un nombre pair de cordons : La ligne du milieu se sépare alors en deux, et ces deux lignes se chevauchent légèrement jusqu'à ce qu'elles soient suffisamment éloignées. Réduire le seuil d'ajout de ligne médiane réduit la taille de l'écart aux transitions entre les lignes paires et impaires. Réduire le seuil de séparation de la ligne médiane réduit la surextrusion aux transitions entre les lignes paires et impaires.
+
+Les vides laissés au début d'une ligne impaire sont plus visibles dans le résultat final qu'un peu de surextrusion au niveau d'un joint. Il pourrait donc être utile de définir le seuil d'ajout de ligne médiane un peu plus bas que le seuil de séparation de ligne médiane.
+
+La réduction de ce paramètre conduit à:
+* Espaces plus petits lorsqu'une ligne centrale se termine.
+* Largeur maximale réduite d'une paire de lignes centrales paires.
+* Des lignes plus fines, qui risquent de ne pas bien s'extruder.
+* Des lignes plus longues, qui prennent plus de temps à imprimer.
+
+**Ce paramètre ne s'applique pas seulement aux parois normales, mais aussi aux parois à contour supplémentaire, aux parois de soutien, aux parois de remplissage et aux motifs concentriques.**

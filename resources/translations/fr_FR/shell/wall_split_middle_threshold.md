@@ -1,6 +1,49 @@
-Seuil de division de la ligne médiane
+Seuil de ligne médiane fractionnée
 ====
+Lors de l'impression de pièces fines, Cura ajuste la largeur des lignes de parois pour s'adapter à la largeur exacte du modèle. Cura peut également décider d'utiliser moins de lignes de paroi à la place. Ce paramètre est le seuil à partir duquel Cura scinde une ligne centrale unique en deux, lorsque la largeur de la pièce augmente. Il peut être réglé séparément du [seuil auquel une nouvelle ligne centrale est ajoutée] (wall_add_middle_threshold.md).
 
-La plus petite largeur de ligne, en tant que facteur de la largeur de ligne normale, au-delà de laquelle la ligne centrale (s'il y en a une) sera divisée en deux. Réduisez ce paramètre pour utiliser des lignes plus nombreuses et plus fines. Augmentez-le pour utiliser des lignes moins nombreuses et plus larges. 
+Ce paramètre est identique au paramètre [Largeur minimale de la ligne de paroi paire](min_even_wall_line_width.md), mais utilise une unité différente. L'unité de ce paramètre est exprimée en fractions de largeur de ligne que la largeur d'une pièce doit augmenter pour diviser la ligne centrale en deux. Comme la différence de largeur est répartie sur les deux lignes du milieu après la division, une largeur minimale de ligne de parois paire plus petite équivaut à un seuil de ligne du milieu divisé beaucoup plus petit que dans le cas de la suppression d'un cordon impair.
 
-**Notez que ceci s'applique -comme si- la forme entière devait être remplie de mur, donc le milieu ici se réfère au milieu de l'objet entre deux bords extérieurs de la forme, même s'il y a réellement du remplissage ou une (autre) peau dans l'impression au lieu du mur.**
+<!--screenshot {
+"image_path": "min_wall_line_width_0_34.png",
+"models": [{"script": "moon_sickle.scad"}],
+"camera_position": [0, 0, 63],
+"settings": {
+	"min_wall_line_width": 0.34,
+	"wall_line_count": 3,
+	"wall_transition_angle": 20
+},
+"layer": 14,
+"colours": 32
+}-->
+<!--screenshot {
+"image_path": "min_wall_line_width_even_0_1.png",
+"models": [{"script": "moon_sickle.scad"}],
+"camera_position": [0, 0, 63],
+"settings": {
+	"min_even_wall_line_width": 0.1,
+	"min_wall_line_width": 0.34,
+	"wall_line_count": 3,
+	"wall_transition_angle": 20
+},
+"layer": 14,
+"colours": 32
+}-->
+![La ligne centrale est élargie pour s'adapter](../../../articles/images/min_wall_line_width_0_34.png)
+![En réduisant ce paramètre, il utilise plutôt deux lignes](../../../articles/images/min_wall_line_width_even_0_1.png)
+
+Nombre de lignes paires ou impaires
+----
+Ce paramètre permet d'ajuster le seuil d'ajout de lignes spécifiquement lorsqu'il devient un nombre pair de lignes. C'est le cas lorsqu'il y a deux lignes au centre plutôt qu'une seule ligne. Il détermine le moment où une ligne au centre se divise en deux lignes.
+
+Le seuil de séparation d'une ligne médiane peut être différent du seuil d'ajout d'une ligne centrale en raison de la manière dont elles se rejoignent. Les lignes paires se rejoignent à leurs extrémités en faisant en sorte que les extrémités se rapprochent. Il y a un certain chevauchement avec ces lignes à cet endroit, ce qui entraîne une surextrusion. Ceci est différent de la situation où il y a un nombre impair de cordons : La ligne du milieu s'arrête alors tout simplement, laissant un vide dans l'impression. La réduction du seuil de séparation de la ligne centrale réduit la surextrusion aux transitions entre les lignes paires et impaires. La réduction du seuil d'ajout de ligne médiane réduit la taille de l'écart aux transitions entre les lignes paires et impaires.
+
+Les vides laissés lors de l'ajout d'une ligne médiane sont plus visibles dans le résultat final qu'un peu de surextrusion au niveau d'un joint, il pourrait donc être utile de définir le Seuil de la ligne médiane divisée un peu plus haut que le Seuil de la ligne médiane ajoutée.
+
+La réduction de ce paramètre conduit à:
+* Réduction de la zone de chevauchement où deux lignes se rejoignent pour se fondre en une seule ligne.
+* Réduction de la largeur maximale des lignes centrales uniques.
+* Des lignes plus fines, qui peuvent ne pas bien s'extruder.
+* Plus de lignes, qui prennent plus de temps à imprimer.
+
+**Ce paramètre ne s'applique pas seulement aux parois normales, mais aussi aux parois à contour supplémentaire, aux parois de soutien, aux parois de remplissage et aux motifs concentriques.**
