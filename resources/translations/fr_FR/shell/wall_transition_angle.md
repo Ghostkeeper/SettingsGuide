@@ -14,17 +14,17 @@ Cet angle indique l'angle à partir duquel Cura commence à créer des transitio
 }-->
 ![Plus large que 10°, il ne crée plus de transitions](../../../articles/images/wall_transition_angle.png)
 
-Ce paramètre permet d'activer ou de désactiver la largeur variable des lignes pour certains angles. Si deux murs opposés sont presque parallèles, plus petits que l'angle spécifié dans ce paramètre, l'espace entre eux est rempli de lignes dont la largeur peut varier. S'ils forment un angle plus grand l'un par rapport à l'autre, l'espace entre eux est rempli de murs de largeur constante.
+Ce paramètre permet d'activer ou de désactiver la largeur variable des lignes pour certains angles. Si deux parois opposés sont presque parallèles, plus petits que l'angle spécifié dans ce paramètre, l'espace entre eux est rempli de lignes dont la largeur peut varier. S'ils forment un angle plus grand l'un par rapport à l'autre, l'espace entre eux est rempli de cordons de largeur constante.
 
 Comme toujours, il s'agit d'un compromis. L'utilisation d'une largeur variable présente certains avantages, tels que:
 * Il ne laisse aucun vide entre les lignes.
 * Il ne remplit pas le même espace plusieurs fois.
-* Les dimensions de l'impression seront plus précises à cet endroit..
+* Les dimensions de l'impression seront plus précises à cet endroit.
 
 Cependant, elle présente également certains inconvénients:
-* Il introduit des coins dans les pièces fines qui peuvent apparaître comme des ondulations à la surface..
+* Il introduit des coins dans les pièces fines qui peuvent apparaître comme des ondulations à la surface.
 * Cela crée des déplacements supplémentaires.
-* L'imprimante peut ne pas modifier avec précision la largeur de la ligne en succession rapide..
+* L'imprimante peut ne pas modifier avec précision la largeur de la ligne en succession rapide.
 
 Dans la pratique, il est bon de faire en sorte que cet angle soit suffisamment grand pour réduire la taille des espaces dans les angles aigus, comme on peut le voir dans la vue en plan, mais aussi petit que possible par ailleurs. Un angle plus petit donne généralement à la surface un aspect plus lisse.
 
