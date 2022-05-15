@@ -36,10 +36,12 @@ This setting allows adjusting the threshold for removing lines specifically when
 
 The minimum even wall line width might be different from the minimum odd wall line width because of the way they join together. Even lines join at their ends by making the ends come closer together. There is some overlap with these lines there, leading to overextrusion. This is different from when there is an odd number of walls: The line in the middle then just stops, leaving a gap in the print. Reducing the minimum even wall line width reduces the overextrusion at the transitions from even to odd lines. Reducing the minimum odd wall line width reduces the size of the gap at the transitions from odd to even lines.
 
-The gaps left when an odd line ends is more visible in the end result than a bit of overextrusion at a joint, so it could help to set the Minimum Even Wall Line Width a bit higher than the Minimum Odd Wall Line Width.
+The gaps left when an odd line ends are more visible in the end result than a bit of overextrusion at a joint, so it could help to set the Minimum Even Wall Line Width a bit higher than the Minimum Odd Wall Line Width.
 
 Reducing this setting leads to:
 * Reduced area of overlap where two lines join together to merge into one line.
 * Reduced maximum width of single centre lines.
 * Thinner lines, which may not extrude well.
 * More lines, which take longer to print.
+
+**This setting doesn't just apply to normal walls, but also to extra skin walls, support walls, infill walls and concentric patterns.**
