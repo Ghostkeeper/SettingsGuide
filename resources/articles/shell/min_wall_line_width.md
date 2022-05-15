@@ -45,4 +45,6 @@ Tuning
 ----
 In theory, setting this to 50% of the line width ensures that the line width stays closest to the ordinary line width. However it's better to stay a bit above that. It's easier for a printer to print lines wider than the nozzle size than it is to print thinner lines, and having fewer lines also means that the print will be faster.
 
-With very viscous materials or when printing faster, the Minimum Wall Line Width should be decreased to prevent creating lines that are too wide. These are hard to print if the material doesn't get the time to flow out to the sides enough. If the Minimum Wall Line Width is too high, the walls don't stick well together which makes the print fragile. 
+With very viscous materials or when printing faster, the Minimum Wall Line Width should be decreased to prevent creating lines that are too wide. These are hard to print if the material doesn't get the time to flow out to the sides enough. If the Minimum Wall Line Width is too high, the walls don't stick well together which makes the print fragile.
+
+**This setting doesn't just apply to normal walls, but also to extra skin walls, support walls, infill walls and concentric patterns.**
