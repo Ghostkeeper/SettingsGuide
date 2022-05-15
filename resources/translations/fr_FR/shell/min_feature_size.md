@@ -1,9 +1,9 @@
-Minimum Feature Size
+Taille minimale des entités
 ====
-This setting controls the minimum width of details of the model that will be printed. Anything thinner than this will not get printed.
+Ce paramètre contrôle la largeur minimale des détails du modèle qui seront imprimés. Tout ce qui est plus fin que cela ne sera pas imprimé.
 
-Details that are smaller than the nozzle size are not likely to print well. This is a limitation of the printer. However Cura can still attempt to print them, accepting that it will not have a nice extrusion rate, or that the details will end up thicker than modelled.
+Les détails qui sont plus petits que la taille de la buse ne sont pas susceptibles d'être imprimés correctement. Il s'agit d'une limitation de l'imprimante. Cependant, Cura peut toujours tenter de les imprimer, en acceptant de ne pas avoir une bonne vitesse d'extrusion, ou que les détails finissent par être plus épais que modélisés.
 
-Reducing the Minimum Feature Size makes the printer print smaller details of the print. Depending on the [Minimum Thin Wall Line Width](min_bead_width.md), these tiny details may be printed by extruding very little (causing [underextrusion](../troubleshooting/underextrusion.md)), or by extruding more reasonable line widths but printing them over-sized. Setting this value to 0 makes the printer go all the way into the very tips of every sharp corner.
+Réduire la taille minimale de l'élément permet à l'imprimante d'imprimer des détails plus petits de l'impression. En fonction de la [largeur minimale de la ligne de paroi fine](min_bead_width.md), ces petits détails peuvent être imprimés en extrudant très peu (ce qui provoque une [sous-extrusion](../troubleshooting/underextrusion.md)), ou en extrudant des largeurs de ligne plus raisonnables mais en les imprimant surdimensionnées. En mettant cette valeur à 0, l'imprimante va jusqu'au bout de chaque angle vif.
 
-Increasing the Minimum Feature Size makes the printer not bother with small details that wouldn't come out nicely anyway. This saves a bit of time and could make the print come out cleaner.
+En augmentant la taille minimale de l'image, l'imprimante ne se préoccupe pas des petits détails qui, de toute façon, ne seraient pas bien rendus. Cela permet de gagner un peu de temps et de rendre l'impression plus propre.
