@@ -51,10 +51,10 @@
 	<!-- Legend texts. -->
 	<g font-family="sans-serif">
 		<g font-size="50px">
-			<text x="1475" y="100" fill="midnightblue">Couches du modèle</text>
-			<text x="60" y="490" fill="red">Couche supérieures</text>
+			<text x="1475" y="100" fill="midnightblue">Couche du modèle</text>
+			<text x="10" y="500" fill="red">Couche supérieure</text>
 			<text x="1590" y="730" fill="blue">Couche intermédiaire</text>
-			<text x="50" y="910">Couche de base</text>
+			<text x="30" y="910">Couche de base</text>
 		</g>
 	</g>
 </svg>

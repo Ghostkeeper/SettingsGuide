@@ -35,7 +35,7 @@ S'il y a une seule ligne centrale et que le [Nombre de distributions des parois]
 
 Le calcul précis de cette valeur est complexe, mais une compréhension intuitive peut être utile. En fait, vous pouvez simplement diviser la largeur totale du modèle par la [largeur de ligne ordinaire](../resolution/wall_line_width.md) pour obtenir un certain nombre de cordons. Il peut s'agir d'une fraction (par exemple, 5,3 largeurs de ligne de paroi). La largeur minimale de ligne de paroi prend juste cette fraction (0,3 largeur de ligne) et ajoute un cordon supplémentaire s'il dépasse la largeur minimale de ligne de paroi. Le nombre de cordons étant connu, il détermine ensuite la largeur de chacune des lignes en fonction du compte de distribution des cordons.
 
-![Largeur minimale de la ligne de paroi déplace le seuil d'ajout d'une nouvelle ligne à gauche ou à droite](../images/min_wall_line_width.svg)
+![Largeur minimale de la ligne de paroi déplace le seuil d'ajout d'une nouvelle ligne à gauche ou à droite](../images/min_wall_line_width_fr.svg)
 
 En fait, cela signifie que si plusieurs lignes voient leur largeur ajustée, la largeur de la ligne ne sera jamais aussi extrême que la largeur minimale de la ligne de paroi le permettrait. Par exemple, si les deux lignes du milieu sont ajustées, la largeur de la ligne ne tombera pas en dessous de la moyenne de la largeur normale de la ligne et de la largeur minimale de la ligne de paroi.
 
