@@ -12,7 +12,6 @@ Bei dieser Einstellung fährt die Düse am Ende jeder Außenwand etwas weiter, o
 ],
 "camera_position": [0, 0, 50],
 "settings": {
-    "wall_min_flow": 50,
     "wall_0_wipe_dist": 4
 },
 "structures": ["travels", "helpers", "shell", "infill", "starts"],

@@ -2,26 +2,6 @@ Lücken zwischen Wänden füllen
 ====
 Viele Drucke enthalten Teile, die dünner sind als die gewünschte Wandstärke. In den meisten Fällen ist das in Ordnung, aber bei einigen Drucken würde dies eine Lücke zwischen den Wänden hinterlassen. Wenn diese Einstellung aktiviert ist, werden die Lücken zwischen den Wänden mit einem Klecks zusätzlichen Materials aufgefüllt.
 
-<!--screenshot {
-"image_path": "fill_perimeter_gaps_disabled.png",
-"models": [{"script": "spherical_cap.scad"}],
-"camera_position": [0, 0, 117],
-"settings": {
-    "wall_line_count": 3,
-    "fill_perimeter_gaps": "nowhere"
-},
-"colours": 64
-}-->
-<!--screenshot {
-"image_path": "fill_perimeter_gaps_enabled.png",
-"models": [{"script": "spherical_cap.scad"}],
-"camera_position": [0, 0, 117],
-"settings": {
-    "wall_line_count": 3,
-    "fill_perimeter_gaps": "everywhere"
-},
-"colours": 64
-}-->
 ![Auf der linken und rechten Seite des Bildes ist ein langer, dünner Spalt zwischen gegenüberliegenden Wänden zu sehen](../../../articles/images/fill_perimeter_gaps_disabled.png)
 ![Die Lücken zwischen den Wänden werden mit Material gefüllt](../../../articles/images/fill_perimeter_gaps_enabled.png)
 

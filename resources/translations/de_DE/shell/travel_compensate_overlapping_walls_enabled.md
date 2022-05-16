@@ -2,32 +2,6 @@ Wandüberlappungen ausgleichen
 ====
 Beim Druck von sehr dünnen Teilen können die gegenüberliegenden Wände so nahe beieinander liegen, dass sie sich überlappen. Würden beide Wände mit ihrer normalen Linienbreite gedruckt, würden sie überextrudieren. Diese Einstellung verhindert diese Überextrusion, indem sie die Breite einer der Linien reduziert, wodurch diese Überextrusion verhindert und eine bessere Maßgenauigkeit erreicht wird.
 
-<!--screenshot {
-"image_path": "travel_compensate_overlapping_walls_enabled_disabled.png",
-"models": [
-    {
-        "script": "text.scad",
-        "scad_params": ["content=\"Part\""],
-        "transformation": ["scale(0.5)"]
-    }
-],
-"camera_position": [0, 0, 20],
-"settings": {"travel_compensate_overlapping_walls_0_enabled": false},
-"colours": 16
-}-->
-<!--screenshot {
-"image_path": "travel_compensate_overlapping_walls_enabled_enabled.png",
-"models": [
-    {
-        "script": "text.scad",
-        "scad_params": ["content=\"Part\""],
-        "transformation": ["scale(0.5)"]
-    }
-],
-"camera_position": [0, 0, 20],
-"settings": {"travel_compensate_overlapping_walls_0_enabled": true},
-"colours": 16
-}-->
 ![Wo die Linienbreite reduziert wird](../../../articles/images/travel_compensate_overlapping_walls_enabled_schematic.svg)
 ![Alle Linien werden mit ihrer vollen Breite extrudiert, wodurch ein zu breites Teil entsteht.](../../../articles/images/travel_compensate_overlapping_walls_enabled_disabled.png)
 ![Die Hälfte der Linien wurde in ihrer Breite reduziert, was zu einem genaueren Druck führt.](../../../articles/images/travel_compensate_overlapping_walls_enabled_enabled.png)

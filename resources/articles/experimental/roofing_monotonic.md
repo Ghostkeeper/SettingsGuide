@@ -16,7 +16,6 @@ When printing top surface lines, the lines usually overlap a bit with the lines 
 "settings": {
     "wall_line_count": 1,
     "skin_outline_count": 0,
-    "travel_compensate_overlapping_walls_enabled": false,
     "skin_monotonic": false
 },
 "layer": 1,
@@ -36,7 +35,6 @@ When printing top surface lines, the lines usually overlap a bit with the lines 
 "settings": {
     "wall_line_count": 1,
     "skin_outline_count": 0,
-    "travel_compensate_overlapping_walls_enabled": false,
     "skin_monotonic": true
 },
 "layer": 1,

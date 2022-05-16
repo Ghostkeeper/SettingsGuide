@@ -4,42 +4,6 @@ Compensating for overlaps in wall lines will reduce the flow rate of some of the
 
 This setting will turn those lines with extremely low flow rate into travel moves, effectively snapping their flow rate to 0%. Material will still ooze out as with normal travel moves, but will not form beads.
 
-<!--screenshot {
-"image_path": "wall_min_flow_0.png",
-"models": [
-    {
-        "script": "sprocket.scad",
-        "transformation": ["scale(0.4)"]
-    }
-],
-"camera_position": [0, 0, 50],
-"settings": {
-    "z_seam_type": "shortest",
-    "wall_min_flow": 0
-},
-"structures": ["travels", "helpers", "shell", "infill", "starts"],
-"minimum_layer": 2,
-"layer": 2,
-"colours": 32
-}-->
-<!--screenshot {
-"image_path": "wall_min_flow_50.png",
-"models": [
-    {
-        "script": "sprocket.scad",
-        "transformation": ["scale(0.4)"]
-    }
-],
-"camera_position": [0, 0, 50],
-"settings": {
-    "z_seam_type": "shortest",
-    "wall_min_flow": 50
-},
-"structures": ["travels", "helpers", "shell", "infill", "starts"],
-"minimum_layer": 2,
-"layer": 2,
-"colours": 32
-}-->
 ![Overlaps between walls are compensated normally](../images/wall_min_flow_0.png)
 ![Walls with less than 50% extrusion are turned into travel moves](../images/wall_min_flow_50.png)
 
