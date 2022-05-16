@@ -4,6 +4,20 @@ Comme la hauteur de la couche de remplissage n'est pas importante pour la qualit
 
 Dans la vue des couches, on aura l'impression que les lignes de remplissage sont devenues beaucoup plus larges. Lorsqu'elles sont imprimées, les lignes de remplissage s'abaissent davantage au lieu de s'étendre horizontalement.
 
+<!--screenshot {
+"image_path": "infill_sparse_thickness.png",
+"models": [{"script": "cooking_utensil_hook.scad"}],
+"camera_position": [6, 51, 27],
+"camera_lookat": [0, 0, 7],
+"settings": {
+    "layer_height": 0.2,
+    "wall_line_count": 0,
+    "infill_pattern": "zigzag",
+    "infill_sparse_thickness": 0.6
+},
+"layer": 19,
+"colours": 64
+}-->
 ![L'épaisseur de la couche de remplissage est fixée à trois fois la hauteur de la couche](../../../articles/images/infill_sparse_thickness.png)
 
 L'épaisseur de la couche de remplissage doit être un multiple de la hauteur de la couche ordinaire. Si elle ne l'est pas, elle sera arrondie à la hauteur de couche la plus proche.
