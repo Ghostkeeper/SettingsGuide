@@ -4,4 +4,4 @@ Ce paramètre met automatiquement le modèle à l'échelle avant le tranchage, d
 
 La mise à l'échelle dans le sens vertical pose moins de problèmes que dans le sens horizontal, car il y a moins de contraintes internes dans le sens vertical. Il n'y a pas de lignes imprimées verticalement, et la contraction après impression sera donc presque entièrement horizontale. Le matériau lui-même se contracte en raison du refroidissement, mais cet effet est très faible, surtout avec le PLA.
 
-Un facteur de 100 % n'entraîne aucune mise à l'échelle. Un facteur d'échelle légèrement supérieur à 100 % est approprié pour certains matériaux à haute température comme le polycarbonate. Un facteur d'échelle inférieur à 100 % indiquerait que le matériau croît lors du refroidissement, comme une mousse peut-être.
+Un facteur de 100 % n'entraîne aucune mise à l'échelle. Un facteur d'échelle légèrement supérieur à 100 % est approprié pour certains matériaux à haute température comme le polycarbonate. Un facteur d'échelle inférieur à 100 % indiquerait que le matériau s'expanse lors du refroidissement, comme une mousse peut-être.
