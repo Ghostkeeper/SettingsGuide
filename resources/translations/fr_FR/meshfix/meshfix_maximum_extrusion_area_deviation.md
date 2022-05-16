@@ -1,6 +1,6 @@
 Écart maximal de la surface d'extrusion
 ====
-Lors de l'impression de lignes de différentes largeurs, il est courant d'avoir une ligne qui doit s'amincir progressivement vers l'une de ses extrémités. Ce paramètre détermine la taille de l'étape à laquelle ces lignes s'amincissent ou s'élargissent, en contrôlant la proximité des lignes par rapport à la zone qu'elles devraient idéalement couvrir.
+Lors de l'impression de lignes de différentes largeurs, il est courant d'avoir une ligne qui doit s'amincir progressivement vers l'une de ses extrémités. Ce paramètre détermine la taille des pas à laquelle ces lignes s'amincissent ou s'élargissent, en contrôlant la proximité des lignes par rapport à la zone qu'elles devraient idéalement couvrir.
 
 <!--screenshot {
 "image_path": "meshfix_maximum_extrusion_area_deviation_high.png",
