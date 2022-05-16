@@ -12,7 +12,6 @@ With this setting, at the end of every outer wall, the nozzle will travel slight
 ],
 "camera_position": [0, 0, 50],
 "settings": {
-    "wall_min_flow": 50,
     "wall_0_wipe_dist": 4
 },
 "structures": ["travels", "helpers", "shell", "infill", "starts"],

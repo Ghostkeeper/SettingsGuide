@@ -2,26 +2,6 @@ Fill Gaps Between Walls
 ====
 Many prints contain pieces that are thinner than the desired wall thickness. In most cases that is fine, but for some prints this would leave a gap between the walls. If this setting is enabled, gaps between the walls will be filled up with a spot of extra material.
 
-<!--screenshot {
-"image_path": "fill_perimeter_gaps_disabled.png",
-"models": [{"script": "spherical_cap.scad"}],
-"camera_position": [0, 0, 117],
-"settings": {
-    "wall_line_count": 3,
-    "fill_perimeter_gaps": "nowhere"
-},
-"colours": 64
-}-->
-<!--screenshot {
-"image_path": "fill_perimeter_gaps_enabled.png",
-"models": [{"script": "spherical_cap.scad"}],
-"camera_position": [0, 0, 117],
-"settings": {
-    "wall_line_count": 3,
-    "fill_perimeter_gaps": "everywhere"
-},
-"colours": 64
-}-->
 ![A long, thin gap between opposite walls is shown on the left and right side of the image](../images/fill_perimeter_gaps_disabled.png)
 ![The gaps between walls are filled with material](../images/fill_perimeter_gaps_enabled.png)
 

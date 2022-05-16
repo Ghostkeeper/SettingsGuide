@@ -2,32 +2,6 @@ Compensate Outer Wall Overlaps
 ====
 When printing very thin parts, opposite outer walls may come close enough together that they overlap. When printing both walls with their normal line width they would overextrude. This setting prevents that overextrusion by reducing the width of one of the lines, preventing this overextrusion and achieving a better dimensional accuracy.
 
-<!--screenshot {
-"image_path": "travel_compensate_overlapping_walls_enabled_disabled.png",
-"models": [
-    {
-        "script": "text.scad",
-        "scad_params": ["content=\"Part\""],
-        "transformation": ["scale(0.5)"]
-    }
-],
-"camera_position": [0, 0, 20],
-"settings": {"travel_compensate_overlapping_walls_0_enabled": false},
-"colours": 16
-}-->
-<!--screenshot {
-"image_path": "travel_compensate_overlapping_walls_enabled_enabled.png",
-"models": [
-    {
-        "script": "text.scad",
-        "scad_params": ["content=\"Part\""],
-        "transformation": ["scale(0.5)"]
-    }
-],
-"camera_position": [0, 0, 20],
-"settings": {"travel_compensate_overlapping_walls_0_enabled": true},
-"colours": 16
-}-->
 ![Where the line width gets reduced](../images/travel_compensate_overlapping_walls_enabled_schematic.svg)
 ![All lines are extruded with their full width, creating a part that will be too wide](../images/travel_compensate_overlapping_walls_enabled_disabled.png)
 ![Half of the lines have reduced their width, resulting in a more accurate print](../images/travel_compensate_overlapping_walls_enabled_enabled.png)

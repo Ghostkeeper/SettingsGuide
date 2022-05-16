@@ -13,7 +13,6 @@ In layer view, it will look as if the infill lines have become much wider. When 
     "layer_height": 0.2,
     "wall_line_count": 0,
     "infill_pattern": "zigzag",
-    "fill_perimeter_gaps": "nowhere",
     "infill_sparse_thickness": 0.6
 },
 "layer": 19,
