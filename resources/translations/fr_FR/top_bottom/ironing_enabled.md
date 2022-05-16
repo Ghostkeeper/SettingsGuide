@@ -11,7 +11,7 @@ L'étirage permet d'imprimer un motif linéaire sur la surface supérieure de vo
 
 Cependant, l'étirage présente également quelques inconvénients :
 * Il augmente considérablement le temps d'impression.
-* Si le motif de l'étirage présente des interruptions (parce qu'il doit se déplacer vers différentes parties), il laissera une ligne visible entre la partie qui a été repassée plus tôt et la partie qui a été repassée plus tard. Cela peut parfois être évité en réglant le [Motif d'étirage](ironing_pattern.md) sur un motif différent, par exemple Concentré.
+* Si le motif de l'étirage présente des interruptions (parce qu'il doit se déplacer vers différentes parties), il laissera une ligne visible entre la partie qui a été repassée plus tôt et la partie qui a été repassée plus tard. Cela peut parfois être évité en réglant le [Motif d'étirage](ironing_pattern.md) sur un motif différent, par exemple Concentrique.
 * Les surfaces inclinées, ou les surfaces supérieures avec beaucoup de détails, peuvent également être repassées, ce qui augmente l'effet de topographie. Les frontières entre les couches deviennent plus prononcées. Cela peut être évité en activant [N'étirer que la couche supérieure](ironing_only_highest_layer.md).
 
 
