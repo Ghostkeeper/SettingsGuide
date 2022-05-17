@@ -5,7 +5,10 @@
 
 from .Mistune import mistune  # Extending from this library's renderer.
 import os.path  # To fix the source paths for images.
-import PyQt5.QtCore  # To fix the source paths for images using QUrl.
+try:
+	import PyQt6.QtCore as QtCore  # To fix the source paths for images using QUrl.
+except ImportError:
+	import PyQt5.QtCore as QtCore
 import re  # To find parts of the conditional syntax.
 import UM.Application  # To get the application version.
 import UM.Logger  # To log warnings if parsing went wrong.
@@ -84,7 +87,7 @@ class QtMarkdownRenderer(mistune.Renderer):
 		:return: HTML for Qt's Rich Text to display the image.
 		"""
 		image_full_path = os.path.join(self._images_path, src)
-		image_url = PyQt5.QtCore.QUrl.fromLocalFile(image_full_path).url()
+		image_url = QtCore.QUrl.fromLocalFile(image_full_path).url()
 		margin = UM.Qt.Bindings.Theme.Theme.getInstance().getSize("default_margin").width()
 		width = UM.Qt.Bindings.Theme.Theme.getInstance().getSize("tooltip").width() * 2.5 / 3 - margin * 2  # Fit 3 images in the width.
 		return "<img src=\"{image_url}\" width=\"{width}\" />".format(image_url=image_url, width=width)

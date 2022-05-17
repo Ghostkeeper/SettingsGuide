@@ -50,6 +50,7 @@ set(installed_files
 )
 set(installed_files_resources_icons
 	arrow.svg
+	camera.svg
 	icon.svg
 	play.svg
 	translations.svg
@@ -66,6 +67,21 @@ set(installed_files_resources_qml
 	TranslationButton.qml
 )
 set(installed_files_resources_qml_SidebarSettings
+	SettingCategory.qml
+	SettingCheckBox.qml
+	SettingComboBox.qml
+	SettingItem.qml
+	SettingTextField.qml
+)
+set(installed_files_resources_qml_cura4
+	ArticleCheckbox.qml
+	ArticleImages.qml
+	ArticleText.qml
+	SettingsGuide.qml
+	SettingsSidebar.qml
+	TranslationButton.qml
+)
+set(installed_files_resources_qml_cura4_SidebarSettings
 	SettingCategory.qml
 	SettingCheckBox.qml
 	SettingComboBox.qml
@@ -94,6 +110,14 @@ set(installed_paths_resources_qml_SidebarSettings "")
 foreach(f IN LISTS installed_files_resources_qml_SidebarSettings)
 	list(APPEND installed_paths_resources_qml_SidebarSettings ${CMAKE_CURRENT_SOURCE_DIR}/resources/qml/SidebarSettings/${f})
 endforeach()
+set(installed_paths_resources_qml_cura4 "")
+foreach(f IN LISTS installed_files_resources_qml_cura4)
+	list(APPEND installed_paths_resources_qml_cura4 ${CMAKE_CURRENT_SOURCE_DIR}/resources/qml_cura4/${f})
+endforeach()
+set(installed_paths_resources_qml_cura4_SidebarSettings "")
+foreach(f IN LISTS installed_files_resources_qml_cura4_SidebarSettings)
+	list(APPEND installed_paths_resources_qml_cura4_SidebarSettings ${CMAKE_CURRENT_SOURCE_DIR}/resources/qml_cura4/SidebarSettings/${f})
+endforeach()
 
 #Find out where to install this thing.
 if(WIN32)
@@ -121,6 +145,8 @@ install(FILES ${installed_paths_resources} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID
 install(FILES ${installed_paths_resources_icons} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/icons)
 install(FILES ${installed_paths_resources_qml} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml)
 install(FILES ${installed_paths_resources_qml_SidebarSettings} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings)
+install(FILES ${installed_paths_resources_qml_cura4} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml_cura4)
+install(FILES ${installed_paths_resources_qml_cura4_SidebarSettings} DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources/qml_cura4/SidebarSettings)
 install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/resources/articles" DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources)
 install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/resources/translations" DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/resources)
 install(FILES "${CMAKE_CURRENT_BINARY_DIR}/Mistune-prefix/src/Mistune/mistune.py" DESTINATION ${SETTINGSGUIDE_PLUGIN_ID}/Mistune)
@@ -146,6 +172,10 @@ foreach(sdk_version ${SETTINGSGUIDE_SUPPORTED_SDKS})
 		COMMAND ${CMAKE_COMMAND} -E copy_if_different ${installed_paths_resources_qml} files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml
 		COMMAND ${CMAKE_COMMAND} -E make_directory files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings
 		COMMAND ${CMAKE_COMMAND} -E copy_if_different ${installed_paths_resources_qml_SidebarSettings} files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml/SidebarSettings
+		COMMAND ${CMAKE_COMMAND} -E make_directory files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml_cura4
+		COMMAND ${CMAKE_COMMAND} -E copy_if_different ${installed_paths_resources_qml_cura4} files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml_cura4
+		COMMAND ${CMAKE_COMMAND} -E make_directory files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml_cura4/SidebarSettings
+		COMMAND ${CMAKE_COMMAND} -E copy_if_different ${installed_paths_resources_qml_cura4_SidebarSettings} files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/qml_cura4/SidebarSettings
 		COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/resources/articles" files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/articles
 		COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/resources/translations" files/plugins/${SETTINGSGUIDE_PLUGIN_ID}/resources/translations
 		COMMAND ${CMAKE_COMMAND} -E copy_if_different "${CMAKE_CURRENT_SOURCE_DIR}/cmake/[Content_Types].xml" .
