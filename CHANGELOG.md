@@ -1,3 +1,28 @@
+2.9.0 - Spider's Reference
+====
+This update supports Cura 5.0. The interface is updated to mimic the new look, and articles are updated with Cura's new functionality. Also added a Czech translation.
+
+New Features
+----
+* The interface when using Cura 5.0 now reflects the new look of the settings list.
+* Added a Czech translation.
+
+Bug Fixes
+----
+* The Settings Guide now loads in Cura 5.0.
+* Fixed a parsing error when using conditional to conditionally show images.
+* No longer use deprecated items in Cura 5.0 (except the category icons).
+* Fixed crash if Cura's own QML fails to load.
+
+Articles
+----
+* Added a lot of new articles for the new settings in Cura 5.0.
+* Updated existing articles to reflect the new behaviour in Cura 5.0.
+* Added missing replacement keys in the start g-code article.
+* Updated almost all layer view renders with renders of Cura 5.0 (also when viewed from older Cura versions).
+* Updated French translations.
+* Updated German translations.
+
 2.8.1
 ====
 Articles
@@ -6,7 +31,7 @@ Articles
 * Added some information on the position of the build plate to the adhesion article.
 * Updated name of Maximum Feedrate article.
 
-2.8.0
+2.8.0 - Thank you Sekisback
 ====
 New Features
 ----
