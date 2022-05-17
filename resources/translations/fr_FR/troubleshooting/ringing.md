@@ -32,7 +32,7 @@ Comme les vibrations sont causées par l'accélération de la tête d'impression
 
 Ces ajustements feront que votre impression prendra plus de temps. Mais vous pouvez aussi éviter les ondulations d'autres façons, en empêchant le type de mouvements qui les provoquent :
 * Désactivez la technique de [remplissage des espaces](../shell/fill_perimeter_gaps.md) et n'[imprimez pas de parois fines](../shell/fill_outline_gaps.md), car ces techniques utilisent parfois de très petits segments de ligne et des déplacements supplémentaires. Si une paroi est imprimée par la suite, l'imprimante vibrera encore un peu.
-* Si votre imprimante déplace la plaque de construction de haut en bas plutôt que la tête d'impression, n'utilisez pas de [Retrait en Z](../travel/retraction_hop_enabled.md). Cela fait vibrer la plaque de montage de haut en bas longtemps après que le saut ait été effectué.
+* Si votre imprimante déplace le plateau d'impression de haut en bas plutôt que la tête d'impression, n'utilisez pas de [Retrait en Z](../travel/retraction_hop_enabled.md). Cela fait vibrer le plateau d'impression de haut en bas longtemps après que le saut ait été effectué.
 
 Vous pouvez également imprimer les [parois intérieures avant la paroi extérieure](../shell/outer_inset_first.md). Comme l'impression des parois ne provoque généralement pas autant de vibrations que les autres parties, cela permet à l'imprimante de cesser de vibrer avant que la paroi extérieure, si importante, ne soit imprimée.
 

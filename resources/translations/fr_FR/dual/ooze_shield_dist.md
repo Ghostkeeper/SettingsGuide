@@ -1,6 +1,6 @@
 Distance du bouclier de suintage
 ====
-Ce paramètre détermine la distance que le bouclier anti-fuite doit garder (au minimum) par rapport à votre objet. Une petite distance doit être respectée pour éviter que la plaque de suintement ou les taches qu'elle porte ne collent à votre modèle.
+Ce paramètre détermine la distance que le bouclier anti-fuite doit garder (au minimum) par rapport à votre objet. Une petite distance doit être respectée pour éviter que le bouclier de suintage ou les taches qu'elle porte ne collent à votre modèle.
 
 ![Une distance horizontale est maintenue entre le bouclier et le modèle](../images/ooze_shield_fr.svg)
 

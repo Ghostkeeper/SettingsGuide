@@ -7,7 +7,7 @@ Lignes
 ![Lignes](../../../articles/images/support_pattern_lines.png)
 
 Le schéma des lignes trace des lignes droites. Les lignes sont orientées de telle sorte qu'elles ne sont jamais perpendiculaires aux lignes de la peau qu'elle doit supporter (par défaut).
-* Le plus facile à supprimer du modèle de tous les motifs. Ceci est très utile s'il y a une zone en surplomb qui est proche de la plaque de construction. Un couteau peut être utilisé pour couper les restes si nécessaire.
+* Le plus facile à supprimer du modèle de tous les motifs. Ceci est très utile s'il y a une zone en surplomb qui est proche du plateau d'impression. Un couteau peut être utilisé pour couper les restes si nécessaire.
 * Offre la meilleure qualité de surplomb de tous les modèles avec le zigzag. Les lignes sont très proches les unes des autres et orientées de telle sorte qu'elles ne sont pas perpendiculaires à la peau.
 * Les lignes ont tendance à être instables, car elles ont tendance à basculer.
 

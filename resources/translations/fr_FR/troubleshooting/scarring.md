@@ -4,7 +4,7 @@ Lorsqu'une empreinte a une grande face supérieure plate, il y a un risque de ci
 
 ![Une cicatrice diagonale sur la surface](../../../articles/images/scarring.jpg)
 
-Les cicatrices sont créées par les mouvements de déplacement qui traversent la surface supérieure. La buse chaude racle la surface, coupant une partie du plastique, faisant légèrement fondre d'autres plastiques et éventuellement suintant un peu plus de matière dans les crevasses. La cicatrice est purement visuelle. Il n'y a pas de différence significative dans la force ou la précision de l'impression. Cependant, si une cicatrice est créée sur la première couche, le frottement pourrait détacher votre couche de la plaque de construction.
+Les cicatrices sont créées par les mouvements de déplacement qui traversent la surface supérieure. La buse chaude racle la surface, coupant une partie du plastique, faisant légèrement fondre d'autres plastiques et éventuellement suintant un peu plus de matière dans les crevasses. La cicatrice est purement visuelle. Il n'y a pas de différence significative dans la force ou la précision de l'impression. Cependant, si une cicatrice est créée sur la première couche, le frottement pourrait détacher votre couche du plateau d'impression.
 
 Prévention
 ----

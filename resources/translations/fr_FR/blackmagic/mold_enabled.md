@@ -5,7 +5,7 @@ Au lieu d'imprimer le modèle lui-même, cette fonction amène l'imprimante à c
 ![Un modèle que vous voudriez mouler](../../../articles/images/mold_enabled_shell.png)
 ![Le moule pour ce modèle](../../../articles/images/mold_enabled_mould.png)
 
-La génération de moules de Cura créera un creux ayant la forme exacte que vous voulez mouler. Autour de ce creux, une coquille sera générée avec une certaine largeur, configurable grâce au paramètre [Largeur minimal de moule](mold_width.md). Au-dessus et en dessous du moule, une peau sera générée avec une certaine hauteur, configurable grâce au paramètre [Hauteur du plafond de moule](mold_roof_height.md). Toutefois, cette peau ne sera pas générée tout en haut du modèle afin que vous puissiez y verser le matériau de moulage. Elle ne sera pas non plus générée tout en bas du modèle. Vous devez la garder sur la plaque de construction pendant le moulage.
+La génération de moules de Cura créera un creux ayant la forme exacte que vous voulez mouler. Autour de ce creux, une coquille sera générée avec une certaine largeur, configurable grâce au paramètre [Largeur minimal de moule](mold_width.md). Au-dessus et en dessous du moule, une peau sera générée avec une certaine hauteur, configurable grâce au paramètre [Hauteur du plafond de moule](mold_roof_height.md). Toutefois, cette peau ne sera pas générée tout en haut du modèle afin que vous puissiez y verser le matériau de moulage. Elle ne sera pas non plus générée tout en bas du modèle. Vous devez la garder sur le plateau d'impression pendant le moulage.
 
 Conception de votre moule
 ----

@@ -16,7 +16,7 @@ Bordure
 ----
 Uns bordure est une zone plane à une seule couche autour de la base de votre modèle. Son but est de maintenir les bords de votre impression vers le bas et d'agrandir la zone de contact entre votre impression et le plateau d'impression.
 * La plus grande surface permet à votre empreinte de mieux adhérer au plateau d'impression. Cela est utile pour pratiquement toutes les impressions de plus de quelques centimètres.
-* Ce bord permet également de garder les bords de votre empreinte vers le bas. Les matériaux qui rétrécissent beaucoup en refroidissant (comme l'ABS) ont tendance à se déformer beaucoup pendant l'impression. Un bord suffisamment large permet de maintenir les coins en place et d'éviter ce gauchissement.
+* Ce bord permet également de garder les bords de votre empreinte vers le bas. Les matériaux qui rétrécissent beaucoup en refroidissant (comme l'ABS) ont tendance à se déformer beaucoup pendant l'impression. Une bordure suffisamment large permet de maintenir les coins en place et d'éviter ce gauchissement.
 
 Radeau
 ----

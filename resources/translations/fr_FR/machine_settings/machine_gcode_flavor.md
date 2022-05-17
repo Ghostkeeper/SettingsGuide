@@ -28,10 +28,10 @@ Ultimaker 2
 ----
 Ce format de G-Code est destiné à la famille Ultimaker 2. Le microprogramme de cette famille avait l'étrange idée de laisser l'imprimante contrôler les réglages liés au matériel plutôt que le trancheur. Ce sont les exceptions :
 * Il n'y aura pas de commande de température d'impression dans le g-code.
-* Il n'y aura pas de commande de température de la plaque d'impression dans le code g.
+* Il n'y aura pas de commande de température de le plateau d'impression dans le code g.
 * Il n'y aura pas de commande de température de volume de construction dans le code g.
 * La première buse est supposée avoir la [température d'impression de la couche initiale](../material/material_print_temperature_layer_0.md) lorsque l'impression commence.
-* La plaque de montage est supposée avoir la [température de la plaque de montage de la couche initiale](../material/material_bed_temperature_layer_0.md) lorsque l'impression commence.
+* le plateau d'impression est supposée avoir la [température de le plateau d'impression de la couche initiale](../material/material_bed_temperature_layer_0.md) lorsque l'impression commence.
 * Le paramètre "E" de la commande "G1" est calculé en millimètres cubes, le volume du plastique alimenté, plutôt que la longueur du filament à alimenter pendant ce mouvement.
 * Les statistiques au début du code g mentionnent le filament utilisé en millimètres cubes.
 
@@ -41,7 +41,7 @@ Il s'agit de la version G-Code des imprimantes Ultimaker modernes, l'Ultimaker 3
 * Il y a un grand en-tête au début du g-code contenant des informations sur les métadonnées telles que la durée de l'impression, le nom du travail d'impression et quelques informations pratiques telles que la température de départ et le cadre de l'impression.
 * Il n'y aura pas de commandes de température de volume de construction dans le G-Code.
 * La première buse est supposée avoir la [température d'impression de la couche initiale](../material/material_print_temperature_layer_0.md) lorsque l'impression commence.
-* La plaque de montage est supposée avoir la [température de la plaque de montage de la couche initiale](../material/material_bed_temperature_layer_0.md) lorsque l'impression commence.
+* le plateau d'impression est supposée avoir la [température de le plateau d'impression de la couche initiale](../material/material_bed_temperature_layer_0.md) lorsque l'impression commence.
 * L'imprimante n'est pas supposée démarrer sur la première extrudeuse, donc elle passera toujours à l'extrudeuse de départ au début de l'impression en utilisant une commande `T`.
 * Une goutte d'amorce est imprimée avec `G280` pour chaque extrudeuse lorsqu'elle commence l'impression, au lieu d'un retrait.
 

@@ -1,6 +1,6 @@
 A un plateau chauffé
 ====
-Ce paramètre indique si l'imprimante est équipée d'un plateau d'impression permettant de contrôler la température. Ces types de plateau sont installés dans de nombreuses imprimantes 3D pour améliorer l'adhérence entre l'impression et la plaque de montage.
+Ce paramètre indique si l'imprimante est équipée d'un plateau d'impression permettant de contrôler la température. Ces types de plateau sont installés dans de nombreuses imprimantes 3D pour améliorer l'adhérence entre l'impression et le plateau d'impression.
 
 Si l'imprimante n'a pas de plateau chauffant, le paramètre [température du plateau par défaut](../material/material_bed_temperature.md) et ses paramètres associés ne seront pas affichés à l'utilisateur. Cura n'enverra pas non plus de commande de température du plateau d'impression de l'imprimante.
 

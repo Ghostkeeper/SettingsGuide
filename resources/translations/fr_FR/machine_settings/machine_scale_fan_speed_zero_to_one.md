@@ -1,0 +1,8 @@
+Échelle de vitesse du ventilateur à 0-1
+====
+Pour contrôler la vitesse à laquelle les ventilateurs de l'imprimante tournent, Cura place des commandes dans le g-code avec un paramètre qui contrôle la vitesse. Normalement, ce paramètre est un nombre compris entre 0 et 255. Cependant, certaines imprimantes acceptent également un nombre entre 0 et 1, et l'interprètent alors différemment. Ce paramètre fait en sorte que Cura écrive les vitesses des ventilateurs comme un nombre entre 0 et 1, au lieu de 0 et 255.
+
+Il existe 3 types de comportements du micrologiciel dans les différentes imprimantes du marché.
+* La plupart des imprimantes acceptent la vitesse du ventilateur uniquement sous la forme d'un nombre compris entre 0 et 255. Ce paramètre doit alors être désactivé, sinon le ventilateur ne tournera jamais vraiment.
+* Certaines imprimantes (en particulier RepRapFirmware) acceptent les nombres entre 0 et 255, mais s'ils sont inférieurs ou égaux à 1, ils les interprètent comme des nombres entre 0 et 1. Ce paramètre devrait être activé dans ce cas, sinon il pourrait y avoir un cas rare où Cura tente de régler la vitesse du ventilateur à 0,4% (1 sur 255), mais l'imprimante le règle à 100% à la place.
+* Certaines imprimantes n'acceptent que les chiffres compris entre 0 et 1. Ce paramètre doit également être activé dans ce cas, sinon le ventilateur sera toujours soit complètement éteint, soit complètement allumé.

@@ -52,6 +52,10 @@ Par la même syntaxe que les références aux paramètres, certaines information
 * `{material_name}` fait référence au nom de la matière active. Il s'agit généralement du nom que vous verrez sur un site Web vendant cette matière.
 * `{material_type}` fait référence à la classe de matériau actif, comme PLA ou ABS.
 * `{material_brand}` fait référence au fabricant de la matière active.
+* `{print_time}` fait référence à la durée estimée de l'impression (formaté selon ISO-8601).
+* `{filament_amount}` fait référence à la longueur du filament utilisé, en mètres, pour chaque extrudeur séparément. Elle est formatée sous forme de liste avec des crochets autour.
+* `{filament_weight}` désigne le poids du filament utilisé, en grammes, pour chaque extrudeur séparément, formaté comme une liste avec des crochets. Si le poids de la bobine est inconnu, la valeur sera 0.
+* `{filament_cost}` fait référence au coût du filament utilisé, pour chaque extrudeur séparément. L'unité du coût est la même que celle indiquée dans la page de gestion des matériaux dans les préférences. Si elle est inconnue, elle sera égale à 0.
 <!--endif-->
 
 Chauffage avant le démarrage G-Code

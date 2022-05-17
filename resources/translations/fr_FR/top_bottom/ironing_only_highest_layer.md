@@ -4,4 +4,4 @@ Si ce paramètre est activé, le repassage ne sera appliqué que sur la couche l
 
 ![Le demi-cercle de la couche inférieure ne sera pas repassé](../../../articles/images/ironing_only_highest_layer.png)
 
-**Si une impression comporte plusieurs objets, la couche la plus élevée de chaque objet sera repassée. Cela inclut chaque partie d'une impression à plusieurs extrusions.**
+**Si une impression comporte plusieurs objets, la couche la plus élevée de chaque objet sera étirée. Cela inclut chaque partie d'une impression à plusieurs zones.**

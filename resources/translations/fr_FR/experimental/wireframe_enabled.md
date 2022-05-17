@@ -7,7 +7,7 @@ Cette technique présente un certain nombre d'avantages :
 * Elle n'utilise qu'une fraction de la matière utilisée par l'impression normale.
 * Elle a un aspect spécial, comme si elle était construite manuellement avec un stylo d'impression 3D.
 
-L'objet qui en résulte n'est cependant pas fonctionnel. Il aura à peu près la bonne taille, ce qui le rend utile pour prototyper la sensation d'échelle de l'impression, bien que la taille ne soit pas très précise non plus. L'objet obtenu est extrêmement fragile, non seulement pendant l'impression, mais aussi après. Il est difficile de l'enlever de la plaque de montage sans l'endommager. Le modèle perdra également la plupart de ses détails.
+L'objet qui en résulte n'est cependant pas fonctionnel. Il aura à peu près la bonne taille, ce qui le rend utile pour prototyper la sensation d'échelle de l'impression, bien que la taille ne soit pas très précise non plus. L'objet obtenu est extrêmement fragile, non seulement pendant l'impression, mais aussi après. Il est difficile de l'enlever de le plateau d'impression sans l'endommager. Le modèle perdra également la plupart de ses détails.
 
 L'impression au fil de fer consiste à déposer des anneaux de matériau avec un espacement vertical assez important de plusieurs millimètres. Entre ces anneaux, elle dessine une forme en dents de scie qui permet à l'anneau suivant de reposer sur le précédent. Lorsque la surface du modèle est horizontale, une technique similaire est utilisée pour fermer le sommet. Dans le toit, il y a des anneaux concentriques maintenus ensemble par une forme en dents de scie, soigneusement suspendue en l'air par un bâtiment de l'extérieur (où elle peut reposer sur une paroi) vers l'intérieur.
 
