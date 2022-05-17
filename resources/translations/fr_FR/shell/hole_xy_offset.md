@@ -1,6 +1,6 @@
 Expansion horizontale des trous
 ====
-Il s'agit d'une mesure de compensation dans le cas où les trous ont tendance à être imprimés plus petits que prévu. Grâce à ce paramètre, vous pouvez augmenter la taille des trous verticaux de votre impression. Comme pour le réglage ordinaire [Expansion horizontale](xy_offset.md), les trous de votre impression seront agrandis dans toutes les directions.
+Il s'agit d'une mesure de compensation dans le cas où les trous ont tendance à être imprimés plus petits que prévu. Grâce à ce paramètre, vous pouvez augmenter la taille des trous verticaux de votre impression. Comme pour le réglage de base [Expansion horizontale](xy_offset.md), les trous de votre impression seront agrandis dans toutes les directions.
 
 Comme le trou est élargi dans toutes les directions, la valeur de ce paramètre s'applique effectivement au rayon des trous, et non à leur diamètre.
 
