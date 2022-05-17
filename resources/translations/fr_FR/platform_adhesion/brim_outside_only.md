@@ -1,6 +1,6 @@
 Bordure uniquement sur l'extérieur
 ====
-Si votre modèle comporte des trous dans la couche initiale du plateau d'impression, ce réglage empêchera l'impression d'un bord le long de l'intérieur du trou.
+Si votre modèle comporte des trous dans la couche initiale du plateau d'impression, ce réglage empêchera l'impression d'une bordure à l'intérieur du trou.
 
 ![Bord imprimé partout](../../../articles/images/brim_outside_only_original.png)
 ![Bord seulement à l'extérieur](../../../articles/images/brim_outside_only_enabled.png)

@@ -1,6 +1,6 @@
 La bordure remplace le support
 ====
-Si ce paramètre est activé, le bord continuera à suivre le modèle sous le support, au lieu de contourner le support. Le support sera alors imprimé sur le dessus du bord, dans la couche suivante. Il y aura également toujours un bord autour du support.
+Si ce paramètre est activé, le bord continuera à suivre le modèle sous le support, au lieu de contourner le support. Le support sera alors imprimé sur le dessus du bord, dans la couche suivante. Il y aura également toujours une bordure autour du support.
 
 ![Désactivé, le bord fait le tour du support](../../../articles/images/brim_replaces_support_disabled.png)
 ![Activé, le rebord passe sous le support](../../../articles/images/brim_replaces_support_enabled.png)
