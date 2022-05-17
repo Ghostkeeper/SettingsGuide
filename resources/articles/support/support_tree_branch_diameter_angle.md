@@ -10,7 +10,8 @@ The branches of tree support are wider towards the bottom than they are at the t
     "support_enable": true,
     "support_structure": "tree",
     "support_tree_branch_diameter": 1.4,
-    "support_tree_branch_diameter_angle": 5
+    "support_tree_branch_diameter_angle": 5,
+    "support_angle": 80
 },
 "structures": ["helpers"],
 "colours": 16
@@ -23,7 +24,8 @@ The branches of tree support are wider towards the bottom than they are at the t
     "support_enable": true,
     "support_structure": "tree",
     "support_tree_branch_diameter": 1.4,
-    "support_tree_branch_diameter_angle": 10
+    "support_tree_branch_diameter_angle": 10,
+    "support_angle": 80
 },
 "structures": ["helpers"],
 "colours": 16

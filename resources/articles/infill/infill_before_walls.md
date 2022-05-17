@@ -16,7 +16,7 @@ This affects the order in which things are printed. With this setting enabled, t
     "infill_before_walls": false
 },
 "layer": 162,
-"line": [0, 1, 2, 3, 4, 6, 7, 8, 9, 12, 16, 20, 24, 28, 32],
+"line": [0, 1, 2, 3, 4, 7, 8, 9, 10, 12, 15, 18, 21, 24, 27],
 "colours": 32,
 "delay": 250
 }-->
@@ -34,7 +34,7 @@ This affects the order in which things are printed. With this setting enabled, t
     "infill_before_walls": true
 },
 "layer": 162,
-"line": [0, 1, 5, 9, 13, 17, 21, 26, 27, 28, 29, 31, 32, 33, 34],
+"line": [0, 1, 4, 7, 10, 13, 16, 20, 21, 22, 23, 26, 27, 28, 29],
 "colours": 32,
 "delay": 250
 }-->

@@ -8,7 +8,7 @@ This setting causes the support to become slightly wider, expanding horizontally
 "camera_position": [47, 72, 128],
 "settings": {
     "support_enable": true,
-    "support_offset": 1.8
+    "support_offset": 1.6
 },
 "colours": 64
 }-->

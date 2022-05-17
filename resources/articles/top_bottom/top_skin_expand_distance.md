@@ -12,7 +12,8 @@ Make the solid layers on the top of your print wider or thinner in a horizontal 
     "bottom_skin_preshrink": 0,
     "top_skin_preshrink": 0,
     "bottom_skin_expand_distance": 0,
-    "top_skin_expand_distance": 0
+    "top_skin_expand_distance": 0,
+    "max_skin_angle_for_expansion": 89
 },
 "colours": 32
 }-->
@@ -24,7 +25,8 @@ Make the solid layers on the top of your print wider or thinner in a horizontal 
     "wall_line_count": 0,
     "infill_wall_line_count": 1,
     "bottom_skin_expand_distance": 1,
-    "top_skin_expand_distance": 1
+    "top_skin_expand_distance": 1,
+    "max_skin_angle_for_expansion": 89
 },
 "colours": 32
 }-->

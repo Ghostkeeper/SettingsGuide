@@ -10,7 +10,8 @@ This setting determines how far before the end of the contour the feeder will st
 "structures": ["travels", "helpers", "shell", "infill", "starts"],
 "settings": {
     "coasting_enable": true,
-    "coasting_volume": 0.06
+    "coasting_volume": 0.06,
+    "z_seam_position": "backright"
 },
 "colours": 32
 }-->
@@ -22,7 +23,8 @@ This setting determines how far before the end of the contour the feeder will st
 "structures": ["travels", "helpers", "shell", "infill", "starts"],
 "settings": {
     "coasting_enable": true,
-    "coasting_volume": 0.03
+    "coasting_volume": 0.03,
+    "z_seam_position": "backright"
 },
 "colours": 32
 }-->

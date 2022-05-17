@@ -12,7 +12,8 @@ With steep surfaces the bottom layers will often become very thin. They are not 
     "wall_line_count": 0,
     "infill_wall_line_count": 1,
     "bottom_skin_preshrink": 0,
-    "top_skin_preshrink": 0
+    "top_skin_preshrink": 0,
+    "max_skin_angle_for_expansion": 89
 },
 "colours": 32
 }-->
@@ -24,7 +25,8 @@ With steep surfaces the bottom layers will often become very thin. They are not 
     "wall_line_count": 0,
     "infill_wall_line_count": 1,
     "bottom_skin_preshrink": 1,
-    "top_skin_preshrink": 1
+    "top_skin_preshrink": 1,
+    "max_skin_angle_for_expansion": 89
 },
 "colours": 32
 }-->

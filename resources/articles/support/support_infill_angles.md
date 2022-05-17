@@ -36,6 +36,7 @@ The support pattern is normally oriented such that the lines are perpendicular t
 "colours": 64
 }-->
 ![An angle of 0°](../images/support_infill_angle_0.png)
+![An angle of 30°](../images/support_infill_angle_30.png)
 ![Alternating between 30° and 60°](../images/support_infill_angles.png)
 
 This setting allows multiple angles to be entered, separated by commas. When multiple angles are entered, Cura will alternate between these angles over the layers.
