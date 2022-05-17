@@ -16,7 +16,7 @@ To combat this, look at the following settings:
 * Equalise the speed for the [outer wall](../speed/speed_wall_0.md) such that it's the same as whatever is printed before it (like the [inner walls](../speed/speed_wall_x.md) or [infill](../speed/speed_infill.md)). There will not be a slowdown then.
 * Increase the [jerk rate during the outer wall](../speed/jerk_wall_0.md). This will prevent the nozzle from slowing down in corners.
 * Reduce the [resolution](../meshfix/meshfix_maximum_resolution.md) and increase the [deviation](../meshfix/meshfix_maximum_deviation.md) to prevent the motion controller from slowing down the nozzle in order to keep up with the g-codes it needs to process.
-* Disable the [Compensate Outer Wall Overlaps](../shell/travel_compensate_overlapping_walls_0_enabled.md) setting. This setting can create new movement commands with different feed rates. Disabling that feature reduces the number of movement commands in the wall.
+<!--if cura_version<5.0:* Disable the [Compensate Outer Wall Overlaps](../shell/travel_compensate_overlapping_walls_0_enabled.md) setting. This setting can create new movement commands with different feed rates. Disabling that feature reduces the number of movement commands in the wall.-->
 
 Nozzle stands still
 ----
@@ -25,7 +25,7 @@ If the nozzle makes small pauses during the printing of the outer wall, it's mos
 To prevent that, you need to reduce the resolution of the g-code.
 * Increase the [Maximum Resolution](../meshfix/meshfix_maximum_resolution.md) setting, which makes Cura output longer line segments.
 * Increase the [Maximum Deviation](../meshfix/meshfix_maximum_deviation.md) setting, which allows Cura to reduce the resolution further by deviating further from the original path.
-* Disable the [Compensate Outer Wall Overlaps](../shell/travel_compensate_overlapping_walls_0_enabled.md) setting. If the outer wall overlaps with other outer walls, it would give part of the wall a different line width, but that needs an extra motion command. To reduce the motion commands, you can disable this. However this might also cause overextrusion in those walls, which causes blobs too.
+<!--if cura_version<5.0:* Disable the [Compensate Outer Wall Overlaps](../shell/travel_compensate_overlapping_walls_0_enabled.md) setting. If the outer wall overlaps with other outer walls, it would give part of the wall a different line width, but that needs an extra motion command. To reduce the motion commands, you can disable this. However this might also cause overextrusion in those walls, which causes blobs too.-->
 * Reduce the [printing speed of the outer wall](../speed/speed_wall_0.md). This reduces the rate the movement commands need to be executed, allowing the CPU to catch up.
 
 Travel moves through walls

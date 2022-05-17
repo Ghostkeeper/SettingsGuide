@@ -1,6 +1,7 @@
 Raft Middle Thickness
 ====
-This setting adjusts the vertical thickness of the middle layer of the raft.
+<!--if cura_version<5.0:This setting adjusts the vertical thickness of the middle layer of the raft.-->
+<!--if cura_version>=5.0-->This setting adjusts the vertical thickness of the middle layers of the raft. This is just the height of one layer, so the total height of the middle layers will be this setting multiplied by the value of the [Raft Middle Layers](raft_interface_layers.md) setting.<!--endif-->
 
 ![Dimensions related to the raft](../images/raft_dimensions.svg)
 

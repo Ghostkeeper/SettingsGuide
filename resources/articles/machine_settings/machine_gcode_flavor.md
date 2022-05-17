@@ -39,7 +39,7 @@ Griffin
 ----
 This is the g-code flavour for modern Ultimaker printers, the Ultimaker 3 and newer. These printers require a bunch of metadata in a certain format at the start of the g-code. The differences in this g-code flavour are:
 * There is a large header at the start of the g-code containing metadata information such as the duration of the print, the name of the print job, and some practical information such as the starting temperature and the bounding box of the print.
-* THere will be no build volume temperature commands in the g-code.
+* There will be no build volume temperature commands in the g-code.
 * The first nozzle is assumed to have the [initial layer printing temperature](../material/material_print_temperature_layer_0.md) when the print starts.
 * The build plate is assumed to have the [initial layer build plate temperature](../material/material_bed_temperature_layer_0.md) when the print starts.
 * The printer is not assumed to start on the first extruder, so it will always switch to the starting extruder at the start of the print using a `T` command.

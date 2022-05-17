@@ -1,4 +1,4 @@
-Raft Middle Print Jerk
+Raft Print Jerk
 ====
 This setting configures the speed at which the nozzle can go through corners while printing the raft.
 

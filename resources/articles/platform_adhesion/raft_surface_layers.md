@@ -1,6 +1,7 @@
 Raft Top Layers
 ====
-This is the number of layers in the top portion of the raft. There will always be one base layer and one middle layer, but there may be any number of top layers. These top layers are normally very dense, as to produce a smooth surface to print the model on.
+<!--if cura_version<5.0:This is the number of layers in the top portion of the raft. There will always be one base layer and one middle layer, but there may be any number of top layers. These top layers are normally very dense, as to produce a smooth surface to print the model on.-->
+<!--if cura_version>=5.0-->This is the number of layers in the top portion of the raft. There will always be one base layer, but there may be any number of [middle layers](raft_interface_layers.md) and top layers. These top layers are normally very dense, as to produce a smooth surface to print the model on.<!--endif-->
 
 ![Where the top layers are located in the raft](../images/raft_dimensions_simplified.svg)
 

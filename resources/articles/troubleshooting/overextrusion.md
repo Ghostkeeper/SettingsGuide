@@ -20,13 +20,14 @@ Extruder calibration
 ----
 Sometimes the problem lies in the hardware not matching up with the expectations of the firmware. If the extruder motor is a stepper motor (which is common in 3D printers) then the firmware needs to know how many steps of the motor will result in a certain distance to be moved. The firmware has a setting for this, measuring the accuracy of the feeder in steps per millimetre. If this setting is configured wrongly, the feeder may move too fast or too slow. It is best to adjust this in the firmware if you can. However if that is impossible, the [flow rate](../material/material_flow.md) in Cura can be adjusted to compensate. You should also compensate all of the [retraction distances](../travel/retraction_amount.md) and [speeds](../travel/retraction_speed.md) then.
 
+<!--if cura_version<5.0:
 Overlapping walls
 ----
 Cura would normally just draw the contours of the print with a certain line width. If the walls come close together in certain places of your print, this would lead to overlapping lines. These lines become thick and produce blobs because it may put up to twice as much material as necessary there. Where there is a lot of overlap, the second line will be prevented from extruding, and so the pressure inside the nozzle chamber rises until it is expunged and produces a blob.
 
 This can be prevented by enabling the [compensation for overlapping walls](../shell/travel_compensate_overlapping_walls_enabled.md). The extrusion of the second line will be reduced such that it extrudes just as much material as necessary to fill up the remaining space of the wall, which prevents overextrusion.
 
-If the walls are overlapping due to the [Outer Wall Inset](../shell/wall_0_inset.md), you can try reducing that inset to prevent overextrusion. You can also try printing the [outer wall first](../shell/outer_inset_first.md). The excess material will then get pushed towards the inside of the model, where it is invisible.
+If the walls are overlapping due to the [Outer Wall Inset](../shell/wall_0_inset.md), you can try reducing that inset to prevent overextrusion. You can also try printing the [outer wall first](../shell/outer_inset_first.md). The excess material will then get pushed towards the inside of the model, where it is invisible.-->
 
 Directly adjusting flow rate
 ----

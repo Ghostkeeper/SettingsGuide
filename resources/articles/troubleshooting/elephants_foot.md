@@ -23,6 +23,7 @@ To prevent warping, take a look at the [troubleshooting article](warping.md) abo
 * Increase the [wall thickness](../shell/wall_thickness.md) to prevent the walls next to the infill from shrinking.
 * Reduce the [build plate temperature](../material/material_bed_temperature.md) to allow the first layer to shrink just as much as the other layers. If the bed temperature was very high, it can also allow the material to sag a bit, which makes it wider at the bottom. This effect is usually small, but this will also be prevented by reducing the bed temperature.
 * Increase the [bottom thickness](../top_bottom/bottom_thickness.md) to more gradually transition to a shrunken size. You can even consider printing the model completely solidly (preferably by setting the bottom thickness extremely high) to get rid of the difference in shrinkage completely.
+<!--if cura_version>=5.0-->* [Alternate the wall directions](../experimental/material_alternate_walls.md) to reduce internal stresses in the model.<!--endif-->
 
 Build plate adjustments
 ----

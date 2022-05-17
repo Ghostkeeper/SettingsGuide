@@ -101,6 +101,7 @@ This page explains some of the industry terms employed by Cura. Cura is not alwa
 * **Top surface:** The highest part of the top skin. Rarely more than 1 layer, this top surface can be printed with separate settings to achieve greater quality without costing a lot of extra printing time.
 * **Topography:** The effect where the limited layer height turns an almost-flat surface into something that resembles a geographical height map with rings where the layers end.
 * **Toughness:** A measure of a print as to how much it can resist plastic deformation.
+* **Transition (of walls):** The place where different number of walls come together to make the part thinner or thicker using a different number of walls in some parts than in others.
 * **Travel (move):** Moving the nozzle from one place to another without extruding material.
 * **Underextrusion:** Extruding too little material to properly fill a volume or to properly create strong and continuous beads.
 * **Underpressure:** While retracted, the nozzle chamber is kept at a negative pressure, to suck the material inside, preventing oozing.
