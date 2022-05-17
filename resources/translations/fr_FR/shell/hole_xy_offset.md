@@ -4,20 +4,7 @@ Il s'agit d'une mesure de compensation dans le cas où les trous ont tendance à
 
 Comme le trou est élargi dans toutes les directions, la valeur de ce paramètre s'applique effectivement au rayon des trous, et non à leur diamètre.
 
-<!--screenshot {
-"image_path": "hole_xy_offset_0.png",
-"models": [{"script": "rotary_tumbler_motor_lid.scad"}],
-"camera_position": [-30, 30, 111],
-"settings": {"hole_xy_offset": 0},
-"colours": 64
-}-->
-<!--screenshot {
-"image_path": "hole_xy_offset.png",
-"models": [{"script": "rotary_tumbler_motor_lid.scad"}],
-"camera_position": [-30, 30, 111],
-"settings": {"hole_xy_offset": 0.8},
-"colours": 64
-}-->
+
 ![Les trous de cette impression doivent être adaptés aux vis et aux axes, mais ils sont trop petits.](../../../articles/images/hole_xy_offset_0.png)
 ![Les trous ont été agrandis, mais le reste de la forme n'a pas changé.](../../../articles/images/hole_xy_offset.png)
 

@@ -5,23 +5,6 @@ Ce paramètre ajoute une paroi supplémentaire une couche sur deux. De cette fa�
 
 Par exemple, si vous réglez le nombre de lignes de paroi à deux parois et que vous activez l'option "Alterner les parois supplémentaires", deux parois seront imprimés sur les couches paires et trois parois sur les couches impaires.
 
-<!--screenshot {
-"image_path": "alternate_extra_perimeter.gif",
-"models": [
-    {
-        "script": "gear.scad",
-        "transformation": ["scale(0.7)"]
-    }
-],
-"camera_position": [0, 30, 123],
-"settings": {
-    "zig_zaggify_infill": true,
-    "alternate_extra_perimeter": true
-},
-"layer": [15, 16, 17, 18],
-"minimum_layer": [15, 16, 17, 18],
-"colours": 32
-}-->
 ![Cette image montre les parois affectés lorsque vous modifiez ce paramètre.](../../../articles/images/alternate_extra_perimeter.gif)
 
 L'activation de ce paramètre prendra plus de temps, environ la moitié de ce que prendrait l'ajout d'une paroi supplémentaire. D'une certaine manière, cette parois supplémentaire alternée est presque aussi bon qu'une paroi supplémentaire complete, et d'une autre manière, il ne l'est pas :

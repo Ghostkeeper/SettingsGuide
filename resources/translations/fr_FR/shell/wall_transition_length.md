@@ -2,20 +2,6 @@ Longeur de transition de la paroi
 ====
 Dans les pièces minces, toutes les parois ne rentrent pas à l'intérieur de la forme. Si la pièce est plus fine à certains endroits qu'à d'autres, Cura doit utiliser un nombre différent de cordons à certains endroits. Ce paramètre contrôle la largeur de la zone de transition où l'on ajoute ou supprime l'un des cordons.
 
-<!--screenshot {
-"image_path": "wall_transition_length_0_2.png",
-"models": [{"script": "wedge.scad"}],
-"camera_position": [-7, 0, 75],
-"settings": {"wall_transition_length": 0.2},
-"colours": 64
-}-->
-<!--screenshot {
-"image_path": "wall_transition_length_1_5.png",
-"models": [{"script": "wedge.scad"}],
-"camera_position": [-7, 0, 75],
-"settings": {"wall_transition_length": 1.5},
-"colours": 64
-}-->
 ![Une transition très courte](../../../articles/images/wall_transition_length_0_2.png)
 ![Une transition plus longue](../../../articles/images/wall_transition_length_1_5.png)
 

@@ -2,16 +2,6 @@ Angle du seuil de transition de la paroi
 ====
 Cet angle indique l'angle à partir duquel Cura commence à créer des transitions pour remplir correctement l'espace. Tous les angles qui sont plus aigus que cet angle seront remplis de lignes de largeur variable.
 
-<!--screenshot {
-"image_path": "wall_transition_angle.png",
-"models": [{"script": "sharpening_corners.scad"}],
-"camera_position": [0, 11, 106],
-"settings": {
-	"wall_transition_angle": 11,
-	"wall_line_count": 4
-},
-"colours": 64
-}-->
 ![Plus large que 10°, il ne crée plus de transitions](../../../articles/images/wall_transition_angle.png)
 
 Ce paramètre permet d'activer ou de désactiver la largeur variable des lignes pour certains angles. Si deux parois opposés sont presque parallèles, plus petits que l'angle spécifié dans ce paramètre, l'espace entre eux est rempli de lignes dont la largeur peut varier. S'ils forment un angle plus grand l'un par rapport à l'autre, l'espace entre eux est rempli de cordons de largeur constante.

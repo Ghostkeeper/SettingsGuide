@@ -2,38 +2,6 @@ Nombre de distributions des parois
 ====
 Cura peut ajuster la largeur des lignes des parois pour mieux s'adapter à la forme que vous imprimez, mais il n'est pas obligé d'ajuster chaque cordon de la même manière. Il préfère modifier la largeur des cordons plus vers l'intérieur du modèle. Ce paramètre détermine le nombre de cordons, en comptant de l'intérieur vers l'extérieur, qui sont ajustés pour s'adapter à l'espace disponible.
 
-<!--screenshot {
-"image_path": "wall_distribution_count_1.png",
-"models": [
-	{
-		"script": "misaligned_ring.scad",
-		"transformation": ["scale(2)"]
-	}
-],
-"camera_position": [-11, 0, 111],
-"settings": {
-	"wall_line_count": 5,
-	"wall_distribution_count": 1
-},
-"colour_scheme": "line_width",
-"colours": 128
-}-->
-<!--screenshot {
-"image_path": "wall_distribution_count_5.png",
-"models": [
-	{
-		"script": "misaligned_ring.scad",
-		"transformation": ["scale(2)"]
-	}
-],
-"camera_position": [-11, 0, 111],
-"settings": {
-	"wall_line_count": 5,
-	"wall_distribution_count": 5
-},
-"colour_scheme": "line_width",
-"colours": 128
-}-->
 ![Concentré au milieu, avec de grandes variations dans les largeurs de ligne à cet endroit.](../../../articles/images/wall_distribution_count_1.png)
 ![Répartis sur plusieurs cordons](../../../articles/images/wall_distribution_count_5.png)
 

@@ -2,28 +2,6 @@
 ====
 Lors de l'impression de lignes de différentes largeurs, il est courant d'avoir une ligne qui doit s'amincir progressivement vers l'une de ses extrémités. Ce paramètre détermine la taille des pas à laquelle ces lignes s'amincissent ou s'élargissent, en contrôlant la proximité des lignes par rapport à la zone qu'elles devraient idéalement couvrir.
 
-<!--screenshot {
-"image_path": "meshfix_maximum_extrusion_area_deviation_high.png",
-"models": [{"script": "twisted_triangular_hole.scad"}],
-"camera_position": [0, 0, 60],
-"settings": {
-	"meshfix_maximum_resolution": 0.5,
-	"meshfix_maximum_extrusion_area_deviation": 2000
-},
-"colour_scheme": "line_width",
-"colours": 128
-}-->
-<!--screenshot {
-"image_path": "meshfix_maximum_extrusion_area_deviation_low.png",
-"models": [{"script": "twisted_triangular_hole.scad"}],
-"camera_position": [0, 0, 60],
-"settings": {
-	"meshfix_maximum_resolution": 0.05,
-	"meshfix_maximum_extrusion_area_deviation": 20
-},
-"colour_scheme": "line_width",
-"colours": 128
-}-->
 ![Résolution plus faible en cas de déviation élevée](../../../articles/images/meshfix_maximum_extrusion_area_deviation_high.png)
 ![Largeur de ligne lisse lorsque la déviation est faible](../../../articles/images/meshfix_maximum_extrusion_area_deviation_low.png)
 

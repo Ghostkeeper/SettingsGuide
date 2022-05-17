@@ -2,32 +2,6 @@ Ordre des parois
 ====
 Ce paramètre détermine quels parois sont imprimées en premier, de l'extérieur vers l'intérieur ou de l'intérieur vers l'extérieur.
 
-<!--screenshot {
-"image_path": "outer_inset_first_disabled.gif",
-"models": [{"script": "calendar_holder.scad"}],
-"camera_position": [0, 0, 120],
-"settings": {
-    "skin_outline_count": 0,
-    "outer_inset_first": false
-},
-"layer": 2,
-"line": [0, 1, 2, 3, 4, 5, 6, 7, 8, 17, 23, 29, 35, 45, 51, 57, 63, 67, 68, 69, 70, 71, 72, 73, 74, 84, 90, 96, 102, 113, 119, 125, 131],
-"delay": 125,
-"colours": 32
-}-->
-<!--screenshot {
-"image_path": "outer_inset_first_enabled.gif",
-"models": [{"script": "calendar_holder.scad"}],
-"camera_position": [0, 0, 120],
-"settings": {
-    "skin_outline_count": 0,
-    "outer_inset_first": true
-},
-"layer": 2,
-"line": [0, 1, 2, 3, 4, 5, 6, 7, 8, 18, 24, 30, 36, 47, 53, 59, 65, 70, 71, 72, 73, 74, 75, 76, 77, 86, 92, 98, 104, 114, 120, 126, 132],
-"delay": 125,
-"colours": 32
-}-->
 ![La paroi intérieure est imprimée en premier](../../../articles/images/outer_inset_first_disabled.gif)
 ![La paroi extérieure est imprimée en premier](../../../articles/images/outer_inset_first_enabled.gif)
 

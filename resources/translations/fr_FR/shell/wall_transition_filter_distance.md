@@ -2,28 +2,6 @@ Distance du filtre de transition des parois
 ====
 Certains modèles comportent des pièces minces qui se trouvent sur le seuil où différents nombres de cordons sont utilisés. Cela peut faire alterner le nombre de cordons d'avant en arrière, même si la largeur réelle de la pièce ne varie pas beaucoup. Cette altération nuit à la qualité de l'impression, nécessitant de nombreux changements de flux et ajoutant plus de déplacements. Grâce à cette fonctionnalité, si des transitions en avant et en arrière sont effectuées sur une certaine distance, ces transitions sont supprimées.
 
-<!--screenshot {
-"image_path": "wall_transition_filter_off.png",
-"models": [{"script": "signet.scad"}],
-"camera_position": [0, 11, 106],
-"settings": {
-	"wall_transition_filter_distance": 0,
-	"wall_transition_filter_margin": 0,
-	"wall_line_count": 3
-},
-"colours": 64
-}-->
-<!--screenshot {
-"image_path": "wall_transition_filter_on.png",
-"models": [{"script": "signet.scad"}],
-"camera_position": [0, 11, 106],
-"settings": {
-	"wall_transition_filter_distance": 100,
-	"wall_transition_filter_margin": 0.2,
-	"wall_line_count": 3
-},
-"colours": 64
-}-->
 ![Sans filtre, il alterne entre 2 et 3 cordons.](../../../articles/images/wall_transition_filter_off.png)
 ![Avec le filtre, il n'alterne plus](../../../articles/images/wall_transition_filter_on.png)
 

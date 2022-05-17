@@ -2,36 +2,6 @@ Activer l'étirage
 ====
 L'étirage oblige l'imprimante à effectuer un nouveau passage sur la surface supérieure afin de la rendre encore plus lisse. Ce passage supplémentaire a une très faible largeur de ligne et imprime très lentement.
 
-<!--screenshot {
-"image_path": "ironing_enabled_disabled.png",
-"models": [
-    {
-        "script": "dial_brace.scad",
-        "transformation": ["scale(0.5)"]
-    }
-],
-"camera_position": [0, 14, 83],
-"settings": {
-    "layer_height": 0.2,
-    "ironing_enabled": false
-},
-"colours": 64
-}-->
-<!--screenshot {
-"image_path": "ironing_enabled_enabled.png",
-"models": [
-    {
-        "script": "dial_brace.scad",
-        "transformation": ["scale(0.5)"]
-    }
-],
-"camera_position": [0, 14, 83],
-"settings": {
-    "layer_height": 0.2,
-    "ironing_enabled": true
-},
-"colours": 64
-}-->
 ![Une impression normale, vue de la face supérieure](../../../articles/images/ironing_enabled_disabled.png)
 ![Avec l'étirage activé, remarquez les fines lignes sur le dessus.](../../../articles/images/ironing_enabled_enabled.png)
 

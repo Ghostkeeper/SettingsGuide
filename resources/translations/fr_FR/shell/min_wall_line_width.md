@@ -2,30 +2,6 @@ Largeur minimale de la ligne de paroi
 ====
 Lors de l'impression de pièces fines, Cura ajuste la largeur des lignes de parois pour s'adapter à la largeur exacte du modèle. Cura peut également décider d'utiliser moins de lignes de parois à la place. Ce paramètre détermine le seuil à partir duquel Cura décide de supprimer une paroi au lieu de rendre les parois existantes plus fines.
 
-<!--screenshot {
-"image_path": "min_wall_line_width_0_34.png",
-"models": [{"script": "moon_sickle.scad"}],
-"camera_position": [0, 0, 63],
-"settings": {
-	"min_wall_line_width": 0.34,
-	"wall_line_count": 3,
-	"wall_transition_angle": 20
-},
-"layer": 14,
-"colours": 32
-}-->
-<!--screenshot {
-"image_path": "min_wall_line_width_0_1.png",
-"models": [{"script": "moon_sickle.scad"}],
-"camera_position": [0, 0, 63],
-"settings": {
-	"min_wall_line_width": 0.1,
-	"wall_line_count": 3,
-	"wall_transition_angle": 20
-},
-"layer": 14,
-"colours": 32
-}-->
 ![Normalement, les lignes sont plus larges pour s'adapter](../../../articles/images/min_wall_line_width_0_34.png)
 ![En réduisant la largeur minimale des lignes, il choisit d'utiliser davantage de lignes.](../../../articles/images/min_wall_line_width_0_1.png)
 
