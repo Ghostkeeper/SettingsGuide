@@ -8,10 +8,10 @@ This setting determines which walls are printed first, printing them from the ou
 "camera_position": [0, 0, 120],
 "settings": {
     "skin_outline_count": 0,
-    "outer_inset_first": false
+    "inset_direction": "inside_out"
 },
 "layer": 2,
-"line": [0, 1, 2, 3, 4, 5, 6, 7, 8, 17, 23, 29, 35, 45, 51, 57, 63, 67, 68, 69, 70, 71, 72, 73, 74, 84, 90, 96, 102, 113, 119, 125, 131],
+"line": [0, 6, 12, 18, 25, 35, 41, 47, 54, 57, 61, 64, 65, 68, 72, 74, 77, 79, 80, 82, 86, 96, 102, 108, 114, 125, 131, 137, 144],
 "delay": 125,
 "colours": 32
 }-->
@@ -21,10 +21,10 @@ This setting determines which walls are printed first, printing them from the ou
 "camera_position": [0, 0, 120],
 "settings": {
     "skin_outline_count": 0,
-    "outer_inset_first": true
+    "inset_direction": "outside_in"
 },
 "layer": 2,
-"line": [0, 1, 2, 3, 4, 5, 6, 7, 8, 18, 24, 30, 36, 47, 53, 59, 65, 70, 71, 72, 73, 74, 75, 76, 77, 86, 92, 98, 104, 114, 120, 126, 132],
+"line": [0, 6, 12, 18, 25, 35, 41, 47, 54, 58, 61, 63, 64, 66, 70, 72, 76, 79, 80, 83, 88, 97, 103, 109, 116, 125, 131, 137, 144],
 "delay": 125,
 "colours": 32
 }-->

@@ -10,7 +10,7 @@ Since skin is present throughout the model, it is unnecessary to expand all of t
     "wall_line_count": 0,
     "infill_wall_line_count": 1,
     "expand_skins_expand_distance": 3,
-    "max_skin_angle_for_expansion": 90
+    "max_skin_angle_for_expansion": 89
 },
 "colours": 64
 }-->

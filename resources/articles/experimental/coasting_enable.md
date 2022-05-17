@@ -10,7 +10,8 @@ If this setting is enabled, the nozzle will stop extruding material slightly bef
 "structures": ["travels", "helpers", "shell", "infill", "starts"],
 "settings": {
     "coasting_enable": true,
-    "coasting_volume": 0.06
+    "coasting_volume": 0.06,
+    "z_seam_position": "backright"
 },
 "colours": 32
 }-->

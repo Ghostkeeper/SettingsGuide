@@ -10,7 +10,7 @@ This setting prevents the material from retracting for very short travel moves. 
 "settings": {"retraction_min_travel": 12},
 "minimum_layer": 303,
 "layer": 550,
-"line": 337,
+"line": 334,
 "colours": 64
 }-->
 ![The shortest travel move in the middle is not retracted](../images/retraction_min_travel.png)

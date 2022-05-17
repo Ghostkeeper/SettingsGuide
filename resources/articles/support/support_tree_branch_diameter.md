@@ -10,7 +10,8 @@ This setting allows you to adjust the width of the tree support's branches. The 
     "support_enable": true,
     "support_structure": "tree",
     "support_tree_branch_diameter": 1.4,
-    "support_tree_branch_diameter_angle": 5
+    "support_tree_branch_diameter_angle": 5,
+    "support_angle": 80
 },
 "structures": ["helpers"],
 "colours": 16
@@ -23,7 +24,8 @@ This setting allows you to adjust the width of the tree support's branches. The 
     "support_enable": true,
     "support_structure": "tree",
     "support_tree_branch_diameter": 5,
-    "support_tree_branch_diameter_angle": 5
+    "support_tree_branch_diameter_angle": 5,
+    "support_angle": 80
 },
 "structures": ["helpers"],
 "colours": 16

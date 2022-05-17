@@ -28,54 +28,21 @@ Reducing the line width allows the printer to print more details. In particular 
 * Printing lines that are too small will also lead to underextrusion. If the material doesn't flow fast enough through the nozzle, the surface tension of the material will cause it to coagulate into small droplets, making the extrusion uneven and leaving gaps in between the droplets.
 * Printing thinner lines will considerably increase the printing time.
 
-*It's not advisable to reduce the line width below 60% of the nozzle size or above 150%. Both may fail to extrude enough material.*
+It's not advisable to reduce the line width below 60% of the nozzle size or above 150%. Both may fail to extrude enough material.
 
+<!--if cura_version>=5.0-->In thin parts, the line width will automatically be adjusted to make it fit the local width of the part there. There is no need to ensure that the part's width is a multiple of the line width. The [Wall Transitioning Threshold Angle](../shell/wall_transition_angle.md) determines where the line width automatically gets adjusted in sharp corners. The [Minimum Wall Line Width](../shell/min_wall_line_width.md) determines how far they can get adjusted in each direction.<!--endif-->
+
+<!--if cura_version<5.0:
 Adjusting line widths to fit enough walls
 ----
 When printing mechanical objects that need to be thin but strong, you'll regularly run into the problem that your piece is not a clean even multiple of the line width. If it's not an even multiple, Cura will normally reduce the flow of some of the lines due to the [Compensate Wall Overlaps](../shell/travel_compensate_overlapping_walls_enabled.md) setting. This changes the flow rate through the nozzle which is detrimental to visual quality. If it is a clean multiple of the line width but not an even number, one of the walls will get reduced to 0.
 
 Producing clean contours with even lines can make the print stronger and look better. A hallmark skill of any expert Cura user is to be able to tweak the line width such that the desired number of contours fill the print.
 
-<!--screenshot {
-"image_path": "line_width_fit_bad.png",
-"models": [{"script": "paper_stand.scad"}],
-"camera_position": [-128, 46, 73],
-"camera_lookat": [-120, 38, 0],
-"settings": {
-    "wall_line_count": 99,
-    "line_width": 0.46
-},
-"layer": 161,
-"colours": 64
-}-->
-<!--screenshot {
-"image_path": "line_width_fit_good_small.png",
-"models": [{"script": "paper_stand.scad"}],
-"camera_position": [-128, 46, 73],
-"camera_lookat": [-120, 38, 0],
-"settings": {
-    "wall_line_count": 99,
-    "line_width": 0.258
-},
-"layer": 161,
-"colours": 32
-}-->
-<!--screenshot {
-"image_path": "line_width_fit_good_large.png",
-"models": [{"script": "paper_stand.scad"}],
-"camera_position": [-128, 46, 73],
-"camera_lookat": [-120, 38, 0],
-"settings": {
-    "wall_line_count": 99,
-    "line_width": 0.515
-},
-"layer": 161,
-"colours": 64
-}-->
 ![Default line width, where the contours don't fit and some lines are thicker than others](../images/line_width_fit_bad.png)
 ![Reducing the line width makes it fit evenly](../images/line_width_fit_good_small.png)
 ![Increasing the line width also works](../images/line_width_fit_good_large.png)
-
+-->
 Keeping the flow constant
 ----
 Great fluctuations in flow are sometimes problematic for FDM printers. The nozzle chamber keeps some material under pressure, which causes the actual flow rate out the nozzle to be delayed. It'll take a while for the flow rate to increase or decrease. Printers with a Bowden system to feed the filament also have springiness in the Bowden tube, which makes the effect much worse. As a result of this, you'll get underextrusion when switching to a higher flow rate and overextrusion when switching to a lower flow rate. Therefore it is a good idea to keep the flow rate as constant as possible.

@@ -12,7 +12,8 @@ The skin will only be removed if there is infill next to it, so it won't remove 
     "wall_line_count": 0,
     "infill_wall_line_count": 1,
     "bottom_skin_preshrink": 0,
-    "top_skin_preshrink": 0
+    "top_skin_preshrink": 0,
+    "max_skin_angle_for_expansion": 89
 },
 "colours": 32
 }-->
@@ -24,7 +25,8 @@ The skin will only be removed if there is infill next to it, so it won't remove 
     "wall_line_count": 0,
     "infill_wall_line_count": 1,
     "bottom_skin_preshrink": 1,
-    "top_skin_preshrink": 1
+    "top_skin_preshrink": 1,
+    "max_skin_angle_for_expansion": 89
 },
 "colours": 32
 }-->
@@ -43,7 +45,7 @@ If the setting is increased too much, gaps can appear in the top and bottom surf
 "camera_position": [64, 0, 100],
 "settings": {
     "wall_line_count": 3,
-    "top_skin_preshrink": 2
+    "top_skin_preshrink": 5
 },
 "colours": 64
 }-->

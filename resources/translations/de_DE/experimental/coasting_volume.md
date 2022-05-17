@@ -10,7 +10,8 @@ Diese Einstellung legt fest, wie weit vor dem Ende der Kontur der Förderer die 
 "structures": ["travels", "helpers", "shell", "infill", "starts"],
 "settings": {
     "coasting_enable": true,
-    "coasting_volume": 0.06
+    "coasting_volume": 0.06,
+    "z_seam_position": "backright"
 },
 "colours": 32
 }-->
@@ -22,7 +23,8 @@ Diese Einstellung legt fest, wie weit vor dem Ende der Kontur der Förderer die 
 "structures": ["travels", "helpers", "shell", "infill", "starts"],
 "settings": {
     "coasting_enable": true,
-    "coasting_volume": 0.03
+    "coasting_volume": 0.03,
+    "z_seam_position": "backright"
 },
 "colours": 32
 }-->
