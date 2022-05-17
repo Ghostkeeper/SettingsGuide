@@ -4,7 +4,7 @@ Lorsque ce paramètre est activé, l'imprimante construit autour de votre impres
 
 ![Un paravent est imprimé autour du modèle](../../../articles/images/draft_shield_enabled.png)
 
-Certaines imprimantes et certains matériaux d'impression sont très sensibles à l'environnement dans lequel ils sont imprimés. Imprimer à différents endroits de la plaque de construction peut conduire à des résultats différents car ils sont plus sensibles aux courants d'air venant de l'extérieur. Si l'impression est laissée en marche pendant la nuit et que la pièce se refroidit, cela peut avoir un impact important sur l'impression. Le paravent vise à réduire cet effet en créant un petit volume isolé autour de l'impression. Celui-ci sert de "chambre chauffée" de fortune pour garder l'impression au chaud et la protéger des courants d'air froid venant de l'extérieur.
+Certaines imprimantes et certains matériaux d'impression sont très sensibles à l'environnement dans lequel ils sont imprimés. Imprimer à différents endroits du plateau d'impression peut conduire à des résultats différents car ils sont plus sensibles aux courants d'air venant de l'extérieur. Si l'impression est laissée en marche pendant la nuit et que la pièce se refroidit, cela peut avoir un impact important sur l'impression. Le paravent vise à réduire cet effet en créant un petit volume isolé autour de l'impression. Celui-ci sert de "chambre chauffée" de fortune pour garder l'impression au chaud et la protéger des courants d'air froid venant de l'extérieur.
 
 Le paravent est imprimé sur place au fur et à mesure de l'impression du modèle. Si plusieurs extrudeuses sont impliquées dans l'impression, le paravent sera imprimé en utilisant l'extrudeuse qui démarre la couche. Celle-ci alternera d'une couche à l'autre.
 

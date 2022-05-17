@@ -21,14 +21,14 @@ La cause la plus fréquente de la patte d'un éléphant est souvent le gauchisse
 
 Pour éviter le gauchissement, jetez un coup d'œil à l'[article de dépannage](warping.md) à ce sujet. Pour ce type de déformation, voici quelques exemples de ce que vous pouvez essayer :
 * Augmenter l'[épaisseur de la paroi](../shell/wall_thickness.md) pour empêcher les parois à côté du remplissage de rétrécir.
-* Réduire la [température de la plaque de construction](../material/material_bed_temperature.md) pour permettre à la première couche de se rétracter autant que les autres couches. Si la température du lit était très élevée, cela peut aussi permettre au matériau de s'affaisser un peu, ce qui le rend plus large au fond. Cet effet est généralement faible, mais il sera également évité en réduisant la température du lit.
+* Réduire la [température du plateau d'impression](../material/material_bed_temperature.md) pour permettre à la première couche de se rétracter autant que les autres couches. Si la température du lit était très élevée, cela peut aussi permettre au matériau de s'affaisser un peu, ce qui le rend plus large au fond. Cet effet est généralement faible, mais il sera également évité en réduisant la température du lit.
 * Augmenter l'[épaisseur du fond](../top_bottom/bottom_thickness.md) pour passer plus progressivement à une taille plus réduite. Vous pouvez même envisager d'imprimer le modèle de façon complètement solide (de préférence en fixant l'épaisseur du fond à un niveau extrêmement élevé) pour éliminer complètement la différence de rétrécissement.
 
 Ajustement du plateau d'impression 
 ----
 La patte d'éléphant peut également être causée par le fait que le plateau d'impression est trop proche de la buse alors que la première couche est imprimée. Cela entraîne une surextrusion, qui pousse la première couche vers l'extérieur.
 
-Pour ajuster la plaque de montage, consultez le manuel de votre imprimante 3D. La plupart des imprimantes sont équipées de vis de réglage pour le plateau d'impression ou sur le portique pour ajuster la différence de hauteur du plateau d'impression pendant la première couche. Ajustez la plaque le plateau d'impression pendant l'impression (de préférence pendant la réalisation de la bordure, de la jupe ou du radeau) jusqu'à ce que la première couche soit bien lisse et pas plus fine que les autres.
+Pour ajuster le plateau d'impression, consultez le manuel de votre imprimante 3D. La plupart des imprimantes sont équipées de vis de réglage pour le plateau d'impression ou sur le portique pour ajuster la différence de hauteur du plateau d'impression pendant la première couche. Ajustez le plateau d'impression pendant l'impression (de préférence pendant la réalisation de la bordure, de la jupe ou du radeau) jusqu'à ce que la première couche soit bien lisse et pas plus fine que les autres.
 
 Vous pouvez également ajuster directement le [Débit de la première couche](../material/material_flow_layer_0.md) dans Cura pour compenser toute surextrusion. Une autre solution consiste à réduire la [Largeur de la ligne de la couche initiale](../resolution/initial_layer_line_width_factor.md) pour normaliser suffisamment l'extrusion afin d'éviter la patte d'éléphant.
 

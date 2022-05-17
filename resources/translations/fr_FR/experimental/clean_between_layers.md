@@ -6,7 +6,7 @@ Ce réglage permet d'exécuter une procédure à la fin de chaque couche pour es
 
 Cette procédure d'effacement comprend un certain nombre d'étapes :
 1. Si [rétraction est activée](wipe_retraction_enable.md), le matériau est rétracté.
-2. Si le [saut en Z est activé](wipe_hop_enable.md), la buse est déplacée vers le haut ou la plaque de montage vers le bas.
+2. Si le [saut en Z est activé](wipe_hop_enable.md), la buse est déplacée vers le haut ou le plateau d'impression vers le bas.
 3. La buse est déplacée au-delà de la [position de la brosse](wipe_brush_pos_x.md).
 4. La buse est essuyée [un certain nombre de fois](wipe_repeat_count.md) sur la brosse.
 5. La buse est ramenée à sa position initiale.

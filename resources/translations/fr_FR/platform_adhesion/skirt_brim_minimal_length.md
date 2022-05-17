@@ -4,4 +4,4 @@ Ce réglage permet de s'assurer que la buse est suffisamment amorcée avant de c
 
 Le but de ce réglage est de s'assurer que le matériau est suffisamment amorcé avant de commencer l'impression. La valeur de ce réglage doit être réglée de telle sorte que le volume extrudé par cette longueur minimale soit juste suffisant pour amorcer la buse avant une impression.
 
-**Les zones interdites autour de la plaque de montage ne peuvent pas prendre en compte ce réglage car son effet n'est pas connu avant le découpage. Placer de minuscules objets sur le bord de votre imprimante lorsque ce réglage est élevé peut amener l'imprimante à se déplacer en dehors des limites du volume d'impression.**
+**Les zones interdites autour de le plateau d'impression ne peuvent pas prendre en compte ce réglage car son effet n'est pas connu avant le découpage. Placer de minuscules objets sur le bord de votre imprimante lorsque ce réglage est élevé peut amener l'imprimante à se déplacer en dehors des limites du volume d'impression.**

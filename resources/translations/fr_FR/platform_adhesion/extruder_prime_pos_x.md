@@ -4,4 +4,4 @@ Certaines imprimantes peuvent amorcer le processus d'extrusion avant l'impressio
 
 Ces coordonnées se trouvent dans le système de coordonnées g-code, qui est différent du système de coordonnées que Cura utilise pour montrer le placement des objets.
 
-Cura indiquera l'endroit où l'amorçage aura lieu avec un petit cercle sur la plaque de montage. Vous n'êtes pas autorisé à imprimer des objets à cet endroit.
+Cura indiquera l'endroit où l'amorçage aura lieu avec un petit cercle sur le plateau d'impression. Vous n'êtes pas autorisé à imprimer des objets à cet endroit.

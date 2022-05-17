@@ -4,4 +4,4 @@ Ce paramètre définit la température du plateau de fabrication pendant le proc
 
 Le réglage est utilisé pour la [Température du plateau](material_bed_temperature.md) ordinaire et le paramètre [Température du plateau couche initiale](material_bed_temperature_layer_0.md).
 
-Lors de l'impression avec plusieurs matériaux différents, la température de la plaque de fabrication sera réglée sur la plus élevée de ces matériaux.
+Lors de l'impression avec plusieurs matériaux différents, la température de le plateau d'impression sera réglée sur la plus élevée de ces matériaux.

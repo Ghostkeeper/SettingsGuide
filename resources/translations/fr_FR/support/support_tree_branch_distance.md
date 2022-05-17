@@ -1,6 +1,6 @@
 Distance des branches de support arborescent
 ====
-Ce réglage détermine la distance entre deux branches adjacentes lorsque les branches touchent la plaque de construction.
+Ce réglage détermine la distance entre deux branches adjacentes lorsque les branches touchent le plateau d'impression.
 
 ![Branches placées à 1,4 mm l'une de l'autre](../../../articles/images/support_tree_branch_distance_1_4.png)
 ![Branches placées à 5mm d'intervalle](../../../articles/images/support_tree_branch_distance_5.png)
