@@ -1,0 +1,11 @@
+Schrumpfungskompensation für horizontalen Skalierungsfaktor
+====
+Diese Einstellung skaliert das Modell vor dem Slicen automatisch in horizontaler Richtung. Ziel ist es, eine eventuelle Schrumpfung auszugleichen, die beim Abkühlen des Drucks auf Raumtemperatur auftritt. Indem Sie den Druck etwas größer als erwünscht machen, kann das Endergebnis den ursprünglichen Abmessungen des Eingabemodells besser entsprechen. Dieser Skalierungsfaktor wird nur auf die X- und Y-Richtung angewendet.
+
+Die Skalierung in den horizontalen Richtungen ist wichtiger, da in dieser Richtung die inneren Spannungen des Drucks am größten sind. Normalerweise ist die horizontale Schrumpfung größer als die vertikale Schrumpfung. Da die Zeilen horizontal gedruckt werden, ziehen sich die Linien in der horizontalen Richtung stärker zusammen als in der vertikalen Richtung.
+
+Die gesamte Szene wird von der Mitte aus skaliert. Wenn Sie mehrere Modelle drucken, werden sie alle vom gleichen Ausgangspunkt aus skaliert. Auf diese Weise können Sie die Modelle sehr nahe beieinander positionieren, ohne dass sie sich im endgültigen Druck überlappen. Die Kollisionsbereiche der Modelle werden mitskaliert, so dass Sie genau sehen können, wo Ihr Druck am Ende landen wird. Dadurch wird auch verhindert, dass Sie Modelle in der Szene an Stellen platzieren, an denen sie mit Merkmalen des Drucks oder des Druckers kollidieren würden, z. B. mit dem Einzugsturm oder den Clips der Bauplatte.
+
+Ein Faktor von 100% bewirkt keine Skalierung. Ein Faktor von etwas mehr als 100% ist für viele technische Materialien wie ABS oder Polypropylen besser geeignet. Ein Skalierungsfaktor von weniger als 100 % würde darauf hindeuten, dass das Material beim Abkühlen wächst, etwa wie ein Schaumstoff.
+
+Rein chemische Daten darüber, wie stark ein Material zwischen Drucktemperatur und Raumtemperatur schrumpft, reichen nicht aus, um einen guten Wert für diese Einstellung vorherzusagen, da auch der Druckprozess die Schrumpfung beeinflusst. Wenn der Kunststoff in einer Linie extrudiert wird, wird er in Richtung der Länge der Linie gedehnt und schrumpft stärker in dieser Achse.

@@ -1,0 +1,11 @@
+Abwechselnde Wandrichtungen
+====
+Wenn diese Einstellung aktiviert ist, werden die Wände abwechselnd im Uhrzeigersinn und gegen den Uhrzeigersinn gedruckt.
+
+Die erste Innenwand wird in der entgegengesetzten Richtung wie die Außenwand gedruckt, die zweite Innenwand wiederum in der entgegengesetzten Richtung. Darüber hinaus beginnt die nächste Schicht ebenfalls in entgegengesetzter Richtung, so dass auch die übereinander gestapelten Wände abwechselnd gedruckt werden.
+
+Durch das Wechseln der Druckrichtung wird die Wirkung der inneren Spannungen im Modell reduziert, wodurch die Wirkung von [Warping](../troubleshooting/warping.md) verringert wird. Während des Druckens einer beliebigen Linie zieht die Düse ziemlich stark am Faden des geschmolzenen Materials, wodurch der Kunststoff gedehnt wird. Während der Aushärtung kann diese Spannung das Modell deformieren. Wenn die benachbarte Linie in die entgegengesetzte Richtung gedruckt werden, wird dieser Spannung ausgeglichen, indem die benachbarten Linien in die entgegengesetzte Richtung gezogen werden. Die Kraft der Spannung wird durch eine Spannung in die entgegengesetzte Richtung kompensiert.
+
+Der Nachteil des Wechselns der Wandrichtungen ergibt sich aus der Hysterese des Druckerportals. Wenn die Achsen oder Rollen des Druckers Spiel haben, werden die diagonalen Linien beim Drucken in der entgegengesetzten Richtung an einer etwas anderen Stelle angebracht. Dies hat zur Folge, dass die Wand weniger glatt wird und die Druckmaße weniger genau sind. Bei einem gut eingestellten Drucker tritt dieser Effekt nicht auf. Wenn der Drucker also über fest angezogene Riemen, Riemenscheiben und präzise Komponenten verfügt, bringt das Wechseln der Wandrichtungen wahrscheinlich nur Vorteile.
+
+Beim [Drucken von innen nach außen](../shell/inset_direction.md) macht diese Einstellung die Naht der Wand sichtbarer und verursacht ein gewisses Ringing, weil die Düse kurz vor dem Beginn der Außenwand eine komplette 180°-Drehung macht, was Vibrationen verursacht. Beim Drucken von außen nach innen ist dieser Effekt nicht so auffällig.
