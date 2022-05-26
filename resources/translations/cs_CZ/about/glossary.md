@@ -101,6 +101,7 @@ Tato stránka vysvětluje některé industriální výrazy používané společn
 * **Top surface (horní povrch):** Nejvyšší část horního pláště. Zřídka může být tento horní povrch vytištěn více než 1 vrstvou se samostatným nastavením, aby se dosáhlo vyšší kvality, aniž by to stálo spoustu času navíc.
 * **Topography (topografie):** Efekt, kdy omezená výška vrstvy změní téměř rovnou plochu na něco, co se podobá geografické výškové mapě s kruhy, kde končí vrstvy.
 * **Toughness (tuhost):** Měření výtisku, jak moc dokáže odolat plastické deformaci.
+* **Transition (of walls) (Přechod (stěn)):** Místo, kde se stýkají různé počty stěn, aby byl díl tenčí nebo silnější a v některých částech byl použit jiný počet stěn než v jiných.
 * **Travel (move) (pojezd (přesun)):** Přesouvání trysky z jednoho místa na druhé bez vytlačování materiálu.
 * **Underextrusion (pod-extruze):** Vytlačování příliš málo materiálu, pro řádné vyplnění objemu nebo správné vytvoření silných a souvislých korálků.
 * **Underpressure (podtlak):** Při retrakci je komora trysky udržována v  podtlaku, aby nasávala materiál dovnitř, aby se zabránilo výtoku.

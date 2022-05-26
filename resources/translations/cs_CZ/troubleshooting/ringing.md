@@ -30,8 +30,8 @@ Protože vibrace jsou způsobeny zrychlením tiskové hlavy, jsou nejdůležitě
 * Snížení hodnoty [zrychlení](../speed/acceleration_print.md) přímo snižuje zrychlení a sníží sílu vibrací.
 * Ve 3D tisku je [ryv (jerk)](../speed/jerk_print.md) průmyslový pojem, který označuje okamžité změny rychlosti v rozích. To znamená, že se v podstatě snaží nekonečně zrychlovat, aby v každém rohu nemusel příliš zpomalit. To způsobuje velmi vysoké zrychlení na krátkou dobu v každém rohu. Snížení ryvu (jerku) pak může také pomoci snížit vibrace. Místo krátkého a silného zrychlení zrychluje pomaleji a déle, což snižuje vysokofrekvenční vibrace, ale zvyšuje nízkofrekvenční vibrace.
 
-Díky těmto úpravám bude tisk trvat déle. Můžete se však také vyhnout vlnění jinými způsoby tím, že zamezíte typům pohybů, které to způsobují.
-* Zakažte techniku ​​[vyplňování mezer](../shell/fill_perimeter_gaps.md) a ne [tisk tenkých stěn](../shell/fill_outline_gaps.md), protože tyto techniky někdy používají velmi malé segmenty linií a další přesuny. Pokud je stěna vytištěna později, tiskárna trochu vibruje.
+Díky těmto úpravám bude tisk trvat déle. Můžete se však také vyhnout vlnění jinými způsoby tím, že zamezíte typům pohybů, které to způsobují:
+<!--if cura_version<5.0:* Zakažte techniku ​​[vyplňování mezer](../shell/fill_perimeter_gaps.md) a ne [tisk tenkých stěn](../shell/fill_outline_gaps.md), protože tyto techniky někdy používají velmi malé segmenty linií a další přesuny. Pokud je stěna vytištěna později, tiskárna trochu vibruje.  >
 * Pokud vaše tiskárna přesunuje tiskovou podložku spíše nahoru a dolů a ne tiskovou hlavu, nepoužívejte [Z-skoky](../travel/retraction_hop_enabled.md). To způsobí vibraci tiskové plochy nahoru a dolů dlouho po provedení skoku.
 
 Můžete také vytisknout [vnitřní stěny před vnější stěnou](../shell/outer_inset_first.md). Protože tisk stěn obecně nezpůsobuje tolik vibrací jako ostatní části, umožňuje to tiskárně zastavit vibrace před tím, než je vytištěna vnější stěna, která je tak důležitá.

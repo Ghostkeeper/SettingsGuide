@@ -23,6 +23,7 @@ Chcete-li se vyhnout deformaci, podívejte se na [článek o odstraňování pro
 * Zvětšete [tloušťku stěny](../shell/wall_thickness.md), abyste zabránili zmenšení stěn vedle výplně.
 * Snižte teplotu [podložky tisku](../material/material_bed_temperature.md), aby se první vrstva mohla smrštit stejně jako ostatní vrstvy. Pokud bylo teplota lože velmi vysoká, může to také umožnit, aby se materiál trochu prohnul, čímž je na dně širší. Tento efekt je obecně slabý, ale dá se mu také zabránit snížením teploty lože.
 * Zvětšete [tloušťku spodní vrstvy](../top_bottom/bottom_thickness.md) a postupně přecházejte na zmenšenou velikost. Můžete dokonce zvážit tisk modelu zcela plného (nejlépe nastavením tloušťky spodní strany na extrémně vysokou úroveň), abyste zcela eliminovali rozdíl ve smršťování.
+<!--if cura_version>=5.0-->* [Střídejte směry stěn](../experimental/material_alternate_walls.md), abyste snížili vnitřní napětí v modelu.<!--endif-->
 
 Nastavení podložky tisku
 ----

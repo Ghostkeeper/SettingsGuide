@@ -1,4 +1,4 @@
-Aktivovat retrakci
+Aktivovat retrakce
 ====
 Pokud 3D tiskárna přestane vytlačovat materiál, materiál nezastaví okamžitě tok z trysky. V trysce jsou zbytky materiálu a je pod tlakem, takže i nadále nějakou dobu vytéká. Aby se zabránilo výtoku materiálu, musí ho tiskárna vyjmout z otvoru trysky. To je nezbytné pro provádění čistých přesunů bez strunování.
 

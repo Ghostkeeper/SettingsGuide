@@ -26,7 +26,8 @@ Tenké části
 Pokud má model má velmi jemné detaily, ne všechno lze nakreslit tlustými liniemi vycházejícími z vaší 3D tiskárny. Cura upraví linie uvnitř tvaru definovaného vaší sítí. Pokud to není možné, nic se nevytiskne. V takovém případě se může zdát, že některé části tisku chybí.
 
 Tento problém lze vyřešit několika způsoby:
+<!--if cura_version>=5.0-->* Aktivujte nastavení [Tisk tenkých stěn](../shell/fill_outline_gaps.md). To umožní tiskárně použít tenčí linie pro tisk velmi tenkých dílů, ačkoli mohou být širší, než je záměr modelu.<!--endif-->
 * Snižte [šířku linií](../resolution/line_width.md). Pokud tisknete něco, co má tenké stěny nebo pásky, ujistěte se, že šířka linie je o něco menší než minimální šířka této části. Nadměrné snížení šířky linií však může vést k [pod-extruzi](underextrusion.md) v důsledku nedostatečného toku. Abyste mohli dále zmenšovat šířku linie, budete muset použít menší trysku.
 * K tisku přidejte trochu [horizontálního rozšíření](../shell/xy_offset.md). Díky tomu je celý model širší na všech stranách, včetně tenkých linií. Tímto způsobem jsou tenčí, takže je lze nyní tisknout. Samozřejmě to také zničí rozměrovou přesnost a detaily tisku, protože vše zesílí.
-* Aktivujte parametr [Tisk tenkých stěn](../shell/fill_outline_gaps.md). Ten se pokusí vyplnit tenké části velmi malými liniemi, aniž by se zmenšily šířky linií zbytku modelu. To však způsobuje velké změny v toku materiálu a nemusí vždy vyplňovat stěny pěknými pravidelnými liniemi.
+<!--if cura_version<5.0:* Aktivujte parametr [Tisk tenkých stěn](../shell/fill_outline_gaps.md). Ten se pokusí vyplnit tenké části velmi malými liniemi, aniž by se zmenšily šířky linií zbytku modelu. To však způsobuje velké změny v toku materiálu a nemusí vždy vyplňovat stěny pěknými pravidelnými liniemi.-->
 * Nezapomeňte přizpůsobit model tisku tak, aby byl každý kus nejméně tak silný jako je šířka linie.

@@ -16,7 +16,7 @@ Chcete-li bojovat proti tomuto jevu, podívejte se na následující nastavení:
 * Vyrovnejte rychlost [vnější stěny](../speed/speed_wall_0.md) tak, aby byla identická s rychlostí toho, co je před ní vytištěno (jako [vnitřní stěny](../speed/speed_wall_x.md) nebo [výplň](../speed/speed_infill.md). Pak nedojde ke zpomalení.
 * Zvyšte hodnotu [ryvu (jerku) vnější stěny](../speed/jerk_wall_0.md). To zabrání zpomalení trysky v rozích.
 * Můžete snížit hodnotu [rozlišení](../meshfix/meshfix_maximum_resolution.md) a zvýšit [odchylku](../meshfix/meshfix_maximum_deviation.md), abyste zabránili ovladači pohybu zpomalit trysku, abyste udrželi krok s g-kódy, které musí zpracovat.
-* Deaktivujte parametr [Kompenzovat překrytí vnější stěny](../shell/travel_compensate_overlapping_walls_0_enabled.md). Tento parametr se používá k vytvoření nových pohybových příkazů s různými rychlostmi posuvu. Deaktivace této funkce snižuje počet příkazů pohybu ve stěně.
+<!--if cura_version<5.0:* Deaktivujte parametr [Kompenzovat překrytí vnější stěny](../shell/travel_compensate_overlapping_walls_0_enabled.md). Tento parametr se používá k vytvoření nových pohybových příkazů s různými rychlostmi posuvu. Deaktivace této funkce snižuje počet příkazů pohybu ve stěně.-->
 
 Tryska se zastaví
 ----
@@ -25,7 +25,7 @@ Pokud se tryska zastaví během tisku vnější stěny, je velmi pravděpodobné
 Chcete-li tomu zabránit, měli byste snížit rozlišení g-kódu.
 * Zvyšte parametr [Maximální rozlišení](../meshfix/meshfix_maximum_resolution.md), který umožňuje aplikaci Cura produkovat delší segmenty linií.
 * Zvyšte parametr [Maximální odchylka](../meshfix/meshfix_maximum_deviation.md), což umožňuje aplikaci Cura dále snížit rozlišení odchylkou od původní cesty.
-* Deaktivujte parametr [Kompenzovat překrytí vnější stěny](../shell/travel_compensate_overlapping_walls_0_enabled.md). Pokud se vnější stěna překrývá s ostatními vnějšími stěnami, bylo by to části stěny odlišné šířky linií, ale to vyžaduje další příkaz k pohybu. Chcete-li omezit ovládání pohybu, můžete toto nastavení vypnout. To však může také způsobit nad-extruzi do těchto stěn, což také způsobuje kapky.
+<!--if cura_version<5.0:* Deaktivujte parametr [Kompenzovat překrytí vnější stěny](../shell/travel_compensate_overlapping_walls_0_enabled.md). Pokud se vnější stěna překrývá s ostatními vnějšími stěnami, bylo by to části stěny odlišné šířky linií, ale to vyžaduje další příkaz k pohybu. Chcete-li omezit ovládání pohybu, můžete toto nastavení vypnout. To však může také způsobit nad-extruzi do těchto stěn, což také způsobuje kapky.-->
 * Snižte [rychlost tisku vnější stěny](../speed/speed_wall_0.md). Tím se snižuje rychlost provádění příkazů pro přesun, což umožňuje CPU dohnat.
 
 Přesuny prochází stěnami

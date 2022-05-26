@@ -39,7 +39,7 @@ Griffin
 ----
 Toto je varianta g-kódu pro moderní tiskárny Ultimaker, Ultimaker 3 a novější. Tyto tiskárny vyžadují spoustu metadat v určitém formátu na začátku g-kódu. Rozdíly v této variantě g-kódu jsou:
 * Na začátku g-kódu je velké záhlaví obsahující informace o metadatech, jako je délka tisku, název tiskové úlohy a některé praktické informace, jako je počáteční teplota a ohraničující rámeček tisku.
-* V g-kódu nebudou žádné příkazy pro sestavení teploty objemu tisku.
+* V g-kódu nebudou žádné příkazy pro nastavení teploty objemu tisku.
 * U první trysky se předpokládá, že při zahájení tisku bude mít [teplotu tisku počáteční vrstvy](../material/material_print_temperature_layer_0.md).
 * Při spuštění tisku se předpokládá, že teplota tiskové podložky má hodnotu [teploty pro tisk počáteční vrstvy](../material/material_bed_temperature_layer_0.md).
 * Předpokládá se, že tiskárna nespustí první extrudér, takže se vždy přepne na počáteční extruder na začátku tisku pomocí příkazu `T`.
