@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<svg width="1000" height="750" xmlns="http://www.w3.org/2000/svg">
+<svg width="1050" height="750" xmlns="http://www.w3.org/2000/svg">
 	<defs>
 		<!-- Can't use <marker> since Qt's SVG renderer doesn't support that. -->
 		<polygon id="arrow" stroke-width="0" points="0,5 20,0 0,-5" />
@@ -56,7 +56,7 @@
 	</g>
 
 	<g font-size="40" font-family="sans-serif"> <!-- Actual legend. Mythology and all. -->
-		<text x="970" y="600" transform="rotate(-90, 970, 600)">Hauteur du portique</text>
+		<text x="970" y="650" transform="rotate(-90, 970, 600)">Hauteur du portique</text>
 		<text x="5" y="650">Diamètre de la buse</text>
 		<text x="5" y="720" font-size="30">Diamètre extérieur de la buse</text>
 		<text x="560" y="575">Longueur de la buse</text>
