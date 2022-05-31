@@ -12,7 +12,7 @@ Pour y remédier, vous devez réduire progressivement votre température. Examin
 
 Diamètre du filament
 ----
-Il existe plusieurs normes pour le diamètre des filaments. Les plus courants sont 1,75 mm et 2,85 mm, mais 3,00 mm est également toujours possible. En dehors de cela, tous les fabricants ne produisent pas leur filament avec un diamètre constant. Si votre filament est plus large que ce que Cura attend, vous extruderez trop de matière, car Cura donne l'ordre à l'imprimeur d'extruder une certaine longueur de filament qui aura alors un volume trop important.
+Il existe plusieurs normes pour le diamètre des filaments. Les plus courants sont 1,75 mm et 2,85 mm, mais 3,00 mm est également toujours possible. En dehors de cela, tous les fabricants ne produisent pas leur filament avec un diamètre constant. Si votre filament est plus large que ce que Cura attend, vous extruderez trop de matière, car Cura donne l'ordre à l'imprimante d'extruder une certaine longueur de filament qui aura alors un volume trop important.
 
 Pour remédier à ce problème, mesurez d'abord le diamètre réel du filament à l'aide d'un pied à coulisse. Il est préférable de le mesurer à plusieurs endroits, au cas où il varierait, et à différents angles autour de la circonférence. Faites la moyenne de ces mesures. Cette moyenne peut être renseignée dans Cura dans la page Gestion de la matière, en tant que propriété de la matière. Si le diamètre ne peut pas être modifié parce qu'il s'agit d'un matériau intégré, vous devrez peut-être d'abord dupliquer le matériau. Cela devrait ensuite vous permettre d'éditer le diamètre.
 
