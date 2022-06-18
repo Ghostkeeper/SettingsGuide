@@ -1,4 +1,4 @@
-Šírka linie stěny
+Šířka linie stěny
 ====
 Šířku linií stěny lze nastavit odděleně od zbytku tisku. Toto nastavení označuje šířku jednotlivých linií stěny.
 
@@ -10,6 +10,9 @@ Zmenšení šířky linií stěny také umožňuje, aby tryska tiskla jemnějš�
 
 Zvětšení šířky linie stěny může zkrátit dobu tisku. Budete potřebovat méně linií stěn, abyste získali díly podobné síly. Pevnost však bude poněkud snížena, protože sousední stěny se nebudou spolu tolik spojovat.
 
+<!--if cura_version>=5.0-->U tenkých dílů se šířka linie automaticky upraví tak, aby odpovídala šířce místního dílu. Není třeba zajišťovat, aby šířka dílu byla násobkem šířky linie. Parametr [Prahový úhel přechodu mezi stěnami](../shell/wall_transition_angle.md) určuje, kde se šířka linie automaticky v ostrých rozích upraví. Parametr [Minimální šířka linie stěny](../shell/min_wall_line_width.md) určuje, jak daleko se mohou v každém směru upravit.<!--endif-->
+
+<!--if cura_version<5.0:
 Přizpůsobení linií
 ----
 Při tisku jemných součástí je nastavení šířky linie stěny důležitým nástrojem pro získání přesných a pevných dílů. Cura nakreslí pouze celé obrysy, takže pokud se obrys nevejde, vloží se do stěny mezera, což výrazně snižuje odolnost a přesnost součásti.
@@ -18,4 +21,4 @@ Cura se pokusí vyplnit tyto mezery mezi stěnami, pokud je povolena možnost [V
 
 Pro ideální uložení musí být díl přesným násobkem šířky linie stěny tak, aby stěny přesně zapadaly do součásti. Pokud znáte šířku svého dílu, lze to snadno provést úpravou šířky stěn. Nejprve uvidíte, kolik obrysů chcete upravit tak, aby linie byly stále přiměřené šířky. Pak uvidíte, o kolik musíte upravit šířku linií stěny, aby linie správně zapadly. Mějte na paměti, že můžete upravit [šířku linie vnější stěny](wall_line_width_0.md) a [šířku linie vnitřní stěny](wall_line_width_x.md) samostatně. Pečlivě spočítejte, kolikrát bude nakreslen každý typ stěny, aby bylo možno předpovědět účinek změny šířky linie stěny.
 
-Přizpůsobení linií stěn je důležitou dovedností pro 3D tisk, který odlišuje odborné operátory 3D tiskáren od ostatních. Je nutná určitá praxe.
+Přizpůsobení linií stěn je důležitou dovedností pro 3D tisk, který odlišuje odborné operátory 3D tiskáren od ostatních. Je nutná určitá praxe.-->

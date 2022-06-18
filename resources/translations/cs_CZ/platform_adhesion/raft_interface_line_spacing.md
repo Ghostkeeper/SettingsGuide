@@ -1,6 +1,6 @@
 Rozteč středových linií raftu
 ====
-Toto nastavení upravuje vzdálenost mezi sousedními liniemi ve střední vrstvě raftu. Je to podobné nastavení parametru [Vzdálenost linií výplně](../infill/infill_line_distance.md). Hlavním cílem je upravit tuhost raftu a kvalitu podpěry horní vrstvy.
+Toto nastavení upravuje vzdálenost mezi sousedními liniemi ve střední <!--if cura_version<5.0:vrstvě--><!--if cura_version>=5.0-->vrstvách<!--endif--> raftu. Je to podobné nastavení parametru [Vzdálenost linií výplně](../infill/infill_line_distance.md). Hlavním cílem je upravit tuhost raftu a kvalitu podpěry horní vrstvy.
 
 ![Rozměry související s raftem](../images/raft_dimensions_cs.svg)
 

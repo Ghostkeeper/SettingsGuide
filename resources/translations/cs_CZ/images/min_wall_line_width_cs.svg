@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000">
+	<!-- Grid background. -->
+	<g stroke-width="5" stroke="black" opacity="0.2">
+		<line x1="250" y1="900" x2="250" y2="0" />
+		<line x1="400" y1="900" x2="400" y2="0" />
+		<line x1="550" y1="900" x2="550" y2="0" />
+		<line x1="700" y1="900" x2="700" y2="0" />
+		<line x1="850" y1="900" x2="850" y2="0" />
+
+		<line x1="100" y1="750" x2="1000" y2="750" />
+		<line x1="100" y1="600" x2="1000" y2="600" />
+		<line x1="100" y1="450" x2="1000" y2="450" />
+		<line x1="100" y1="300" x2="1000" y2="300" />
+		<line x1="100" y1="150" x2="1000" y2="150" />
+	</g>
+
+	<!-- Legend background. -->
+	<rect x="700" y="680" width="296" height="140" fill="white" stroke="black" stroke-width="5" />
+
+	<!-- Graphed lines. -->
+	<g stroke-width="14" fill="none">
+		<line stroke="blue" x1="100" y1="900" x2="1000" y2="0" />
+		<path stroke="red" d="M100,900 h112.5 v-150 h150 v-150 h150 v-150 h150 v-150 h150 v-150 h150 v-150 h150" />
+
+		<!-- For the legend. -->
+		<line stroke="blue" x1="720" y1="720" x2="780" y2="720" />
+		<line stroke="red" x1="720" y1="780" x2="780" y2="780" />
+	</g>
+
+	<!-- Axis system -->
+	<path d="M100,0 v900 h900" stroke-width="10" stroke="black" fill="none" />
+	<g stroke-width="10" stroke="black">
+		<line x1="250" y1="900" x2="250" y2="875" />
+		<line x1="400" y1="900" x2="400" y2="875" />
+		<line x1="550" y1="900" x2="550" y2="875" />
+		<line x1="700" y1="900" x2="700" y2="875" />
+		<line x1="850" y1="900" x2="850" y2="875" />
+
+		<line x1="100" y1="750" x2="125" y2="750" />
+		<line x1="100" y1="600" x2="125" y2="600" />
+		<line x1="100" y1="450" x2="125" y2="450" />
+		<line x1="100" y1="300" x2="125" y2="300" />
+		<line x1="100" y1="150" x2="125" y2="150" />
+	</g>
+
+	<!-- Indicator of minimum wall line width. -->
+	<polygon points="400,400 415,395 415,397.5 497.5,397.5 497.5,395 512.5,400 497.5,405 497.5,402.5 415,402.5 415,405" />
+
+	<!-- Labels. -->
+	<g font-family="sans-serif" font-size="50px" text-anchor="middle">
+		<!-- Axes. -->
+		<text x="40" y="500" transform="rotate(-90, 40, 500)">Počet stěn</text>
+		<text x="500" y="995">Šířka (mm)</text>
+		<text x="75" y="770">1</text>
+		<text x="75" y="620">2</text>
+		<text x="75" y="470">3</text>
+		<text x="75" y="320">4</text>
+		<text x="75" y="170">5</text>
+		<text x="250" y="950">0.4</text>
+		<text x="400" y="950">0.8</text>
+		<text x="550" y="950">1.2</text>
+		<text x="700" y="950">1.6</text>
+		<text x="850" y="950">2.0</text>
+
+		<!-- Legend. -->
+		<g text-anchor="start">
+			<text x="800" y="740">Ideální</text>
+			<text x="800" y="800">Aktuální</text>
+		</g>
+
+		<text x="448.75" y="330">Minimální šířka</text>
+		<text x="448.75" y="380">linie stěny</text>
+	</g>
+</svg>

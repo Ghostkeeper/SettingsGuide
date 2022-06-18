@@ -3,6 +3,7 @@ Směr linií výplně podpěry
 Vzor podpěry je obvykle orientován tak, že linie jsou kolmé k většině věcí, které podpírá. Tímto způsobem je vzdálenost, kterou musí podpíraný materiál procházet, snížena na minimum. S tímto nastavením lze přizpůsobit orientaci linií podpěry.
 
 ![Úhel 0°](../../../articles/images/support_infill_angle_0.png)
+![Úhel 30°](../../../articles/images/support_infill_angle_30.png)
 ![Střídání mezi 30° a 60°](../../../articles/images/support_infill_angles.png)
 
 Tento parametr umožňuje zadat více úhlů oddělených čárkami. Když zadáte více úhlů, Cura bude střídat mezi těmito úhly ve vrstvách.

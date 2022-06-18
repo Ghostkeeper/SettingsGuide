@@ -52,6 +52,10 @@ Stejnou syntaxí jako odkazy na nastavení jsou k dispozici také některé pomo
 * `{material_name}` odkazuje na název aktivního materiálu. Obvykle se jedná o název, který je uveden na webových stránkách prodávajících tento materiál.
 * `{material_type}` označuje třídu aktivního materiálu, jako je PLA nebo ABS.
 * `{material_brand}` odkazuje na výrobce aktivního materiálu.
+* `{print_time}` označuje předpokládanou dobu trvání tisku (ve formátu podle ISO-8601).
+* `{filament_amount}` označuje délku použitého vlákna v metrech pro každý extrudér zvlášť. Tyto údaje se formátují jako seznam s hranatými závorkami.
+* `{filament_weight}` označuje hmotnost použitého vlákna v gramech pro každý extrudér zvlášť, ve formátu seznamu s hranatými závorkami. Pokud není hmotnost cívky známa, bude tato hodnota 0.
+* `{filament_cost}` označuje náklady na použité vlákno, a to pro každý extrudér zvlášť. Jednotka nákladů je stejná, jako je uvedena na stránce správy materiálu v předvolbách. Pokud není známa, bude mít hodnotu 0.
 <!--endif-->
 
 Zahřívání před spuštěním g-kódu

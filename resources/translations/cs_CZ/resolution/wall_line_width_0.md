@@ -10,6 +10,9 @@ Zmenšení šířky linie na vnější stěně také umožňuje, aby tryska tisk
 
 Zvětšení šířky linie vnější stěny může zkrátit dobu tisku. Můžete získat stěnu podobné tloušťky s menším počtem vnitřních stěn. Pevnost však bude poněkud snížena, protože vnější stěna se nebude slučovat s vnitřními stěnami.
 
+<!--if cura_version>=5.0-->U tenkých dílů se šířka linie automaticky upraví tak, aby odpovídala šířce místního dílu. Není třeba zajišťovat, aby šířka dílu byla násobkem šířky linie. Parametr [Prahový úhel přechodu mezi stěnami](../shell/wall_transition_angle.md) určuje, kde se šířka linie automaticky v ostrých rozích upraví. Parametr [Minimální šířka linie stěny](../shell/min_wall_line_width.md) určuje, jak daleko se mohou v každém směru upravit.<!--endif-->
+
+<!--if cura_version<5.0:
 Přizpůsobení linií
 ----
 Při tisku jemných částí je důležitým nástrojem pro získání přesných a pevných dílů úprava šířky linií stěn. Cura nakreslí pouze celé obrysy, takže pokud se obrys nevejde, vloží se do stěn mezera, což značně zhorší pevnost a přesnost součásti.
@@ -18,4 +21,4 @@ Pokud je aktivována funkce [Vyplnit mezery mezi stěnami](../shell/fill_perimet
 
 Pro ideální uložení musí být díl přesným násobkem šířky linie stěny tak, aby stěny do součásti přesně zapadaly. Pokud znáte šířku svého dílu, lze to snadno provést úpravou šířky stěn. Nejprve uvidíte, kolik obrysů chcete upravit tak, aby byly linie stále přiměřené šířky. Pak uvidíte, o kolik musíte upravit šířku linií stěny, aby linie správně zapadly. Mějte na paměti, že můžete upravit šířku linie vnější stěny a [šířku linie vnitřní stěny](wall_line_width_x.md) samostatně. Pečlivě spočítejte, kolikrát bude nakreslen každý typ stěny, aby bylo možné předpovědět účinek změny šířky linie stěny.
 
-Přizpůsobení linií stěn je důležitou dovedností pro 3D tisk, který odlišuje odborné operátory 3D tiskáren od ostatních. Je nutná určitá praxe.
+Přizpůsobení linií stěn je důležitou dovedností pro 3D tisk, který odlišuje odborné operátory 3D tiskáren od ostatních. Je nutná určitá praxe.-->

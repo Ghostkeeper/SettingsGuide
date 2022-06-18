@@ -1,6 +1,7 @@
 Tloušťka střední vrstvy raftu
 ====
-Toto nastavení umožňuje upravit vertikální tloušťku střední vrstvy raftu.
+<!--if cura_version<5.0:Toto nastavení umožňuje upravit vertikální tloušťku střední vrstvy raftu.-->
+<!--if cura_version>=5.0-->Toto nastavení upravuje svislou tloušťku středních vrstev raftu. Jedná se pouze o výšku jedné vrstvy, takže celková výška středních vrstev bude odpovídat tomuto nastavení vynásobenému hodnotou parametru [Střední vrstvy raftu](raft_interface_layers.md) setting.<!--endif-->
 
 ![Rozměry související s raftem](../images/raft_dimensions_cs.svg)
 

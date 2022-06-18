@@ -1,6 +1,7 @@
 Šířka středové linie raftu
 ====
-Tento parametr konfiguruje šířku linií ve střední vrstvě raftu.
+<!--if cura_version<5.0:Tento parametr konfiguruje šířku linií ve střední vrstvě raftu.-->
+<!--if cura_version>=5.0-->Toto nastavení konfiguruje šířku linií ve středních vrstvách raftu.<!--endif-->
 
 ![Rozměry související s raftem](../images/raft_dimensions_cs.svg)
 
