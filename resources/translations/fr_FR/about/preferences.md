@@ -1,11 +1,11 @@
 [//]: # (Do not translate this file! While translating the main text doesn't cause any harm, translating the labels of the preferences here will cause them to stop working.)
-Preferences
+Préférences
 ====
-In this page you can change the behaviour of the settings guide.
+Dans cette page, vous pouvez modifier le comportement du guide des paramètres.
 
 [ ] Show articles in setting tooltips (requires restart)
 [ ] Window always in front
 
-Language
+Langue
 ----
-The language can be changed by clicking on the letter symbol in the top-right corner of any article.
+La langue peut être changée en cliquant sur le symbole de la lettre dans le coin supérieur droit de n'importe quel article.
