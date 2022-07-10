@@ -62,5 +62,5 @@ Chauffage avant le démarrage G-Code
 ----
 Cura émettra automatiquement des commandes de chauffage avant que votre G-Code de démarrage ne commence. De cette façon, votre G-Code de démarrage ne doit pas tenir compte du fait que la buse doit chauffer. Vous pouvez immédiatement commencer à amorcer la buse. Si votre  G-Code de démarrage contient une référence à une température quelconque (pour la buse ou le plateau), celle-ci sera désactivée (pour la buse ou le plateau, respectivement).
 
-*Ce réglage est un réglage machine, il n'apparaîtra donc pas dans la liste normale des réglages. Il peut être modifié en allant dans la liste des imprimantes dans l'écran des préférences et en cliquant sur "Réglages machine".*
+*Ce réglage est un réglage machine, il n'apparaîtra donc pas dans la liste normale des réglages. Il peut être modifié en allant dans la liste des imprimantes dans l'écran des préférences et en cliquant sur "Paramètres de la machine".*
 
