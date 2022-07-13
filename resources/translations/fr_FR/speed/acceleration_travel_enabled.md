@@ -2,7 +2,7 @@ Activer l'accélération de déplacement
 ====
 Si ce paramètre est activé, les déplacements ont leur propre taux d'accélération. Le paramètre [Accélération de déplacement](acceleration_travel.md) contrôle alors le taux d'accélération pendant les déplacements.
 
-La valeur de l'accélération pendant le déplacement prendra la valeur de la ligne qui sera imprimée à la destination du déplacement. Par exemple, lorsqu'il se déplace vers le remplissage, l'accélération pendant le déplacement est l'[Accélération de remplissage](acceleration_infill.md). Lorsqu'il se dirige vers le mur extérieur, l'accélération sera l'[Accélération du mur extérieur](acceleration_wall_0.md). De cette façon, il s'approchera effectivement des structures plus sensibles avec un peu plus de précaution que les autres structures.
+La valeur de l'accélération pendant le déplacement prendra la valeur de la ligne qui sera imprimée à la destination du déplacement. Par exemple, lorsqu'il se déplace vers le remplissage, l'accélération pendant le déplacement est l'[Accélération de remplissage](acceleration_infill.md). Lorsqu'il se dirige vers la paroi extérieure, l'accélération sera l'[Accélération de la paroi extérieure](acceleration_wall_0.md). De cette façon, il s'approchera effectivement des structures plus sensibles avec un peu plus de précaution que les autres structures.
 
 Ce paramètre est activé par défaut, ce qui permet de contrôler l'accélération pendant les déplacements. C'est une bonne chose dans la plupart des situations, car une accélération accrue du voyage peut faire gagner du temps, tandis qu'une accélération aussi élevée provoquerait des [vibrations](../troubleshooting/ringing.md) lorsqu'elle est utilisée pour l'impression elle-même.
 
