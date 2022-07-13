@@ -8,7 +8,7 @@ Ce paramètre est activé par défaut, ce qui permet de contrôler l'accélérat
 
 Cependant, il y a deux raisons pour lesquelles vous pourriez vouloir la désactiver :
 
-* Pour modifier le taux d'accélération pour les déplacements, Cura change l'accélération dans les deux sens très souvent. Il passe fréquemment de l'extrusion au déplacement, en particulier avec certains motifs de remplissage et avec les petits détails des murs. Le microprogramme doit traiter ces commandes et peut ne pas être en mesure de suivre les calculs nécessaires. La désactivation des accélérations de déplacement réduit ce problème.
+* Pour modifier le taux d'accélération pour les déplacements, Cura change l'accélération dans les deux sens très souvent. Il passe fréquemment de l'extrusion au déplacement, en particulier avec certains motifs de remplissage et avec les petits détails des parois. Le controleur doit traiter ces commandes et peut ne pas être en mesure de suivre les calculs nécessaires. La désactivation des accélérations de déplacement réduit ce problème.
 * L'augmentation des accélérations de déplacement fait beaucoup vibrer l'imprimante. Ces vibrations ne sont pas encore tout à fait arrêtées à la fin du déplacement lorsque l'impression doit commencer. Cela peut également entraîner une ondulation à la fin d'un déplacement. En désactivant l'accélération du déplacement, la buse s'approchera des structures sensibles de l'impression (comme la paroi extérieure) avec plus de précaution que des structures moins sensibles (comme le remplissage).
 
 
