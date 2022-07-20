@@ -1,3 +1,12 @@
+2.9.1
+====
+Articles
+----
+* Added articles for Enable Travel Acceleration and Jerk.
+* Updated French translations.
+* Updated Czech translations.
+* Updated German translations.
+
 2.9.0 - Spider's Reference
 ====
 This update supports Cura 5.0. The interface is updated to mimic the new look, and articles are updated with Cura's new functionality. Also added a Czech translation.
