@@ -1,0 +1,11 @@
+Temperatura de la placa de impresión
+====
+Algunas impresoras tienen una placa de impresión calentada. Este ajuste determina el grado de calentamiento de la placa de impresión.
+
+El calentamiento de la placa de impresión mantendrá el material ligeramente fluido y pegajoso. Algunos materiales forman cristales al congelarse, lo que hace que el material se encoja significativamente al congelarse. El lecho calentado mantiene el material justo por encima de la temperatura de congelación para evitar este encogimiento y mantener la pegajosidad del plástico líquido. Todo esto tiene por objeto mejorar la adhesión de la impresión a la placa de impresión.
+
+Sin embargo, si la placa de impresión se mantiene demasiado caliente, la impresión será muy fluida donde toca la placa de impresión. Esto hace que el material se hunda un poco, causando [pata de elefante](../troubleshooting/elephants_foot.md) en la parte inferior de la impresión. Esto se puede compensar con el ajuste [Initial Layer Horizontal Expansion](../shell/xy_offset_layer_0.md), pero afecta a la precisión dimensional. El calentamiento de la placa de construcción también creará una diferencia de temperatura entre el material que está en reposo en la placa de construcción, y el material más arriba en el modelo, lo que causa [warping](../troubleshooting/warping.md) cuando el material más arriba comienza a encogerse.
+
+Si este ajuste se establece en 0 grados, Cura no emitirá ningún comando para cambiar la temperatura de la placa de construcción, lo que podría confundir al firmware si no hay placa de construcción.
+
+**Cuando se ajusta la temperatura de la placa de impresión en un perfil de material, esto ajustará la configuración de [Default Build Plate Temperature](default_material_bed_temperature.md). Normalmente la temperatura de la placa de impresión será igual a la temperatura de la placa de impresión por defecto, pero a veces la elección de una calidad diferente puede hacer ligeros ajustes a la temperatura de la placa de impresión. Este ajuste de la temperatura de la placa de construcción es el que realmente se utiliza para la impresión.**

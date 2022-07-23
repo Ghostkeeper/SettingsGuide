@@ -1,0 +1,7 @@
+Temperatura de impresión
+====
+Se refiere a la temperatura de la boquilla durante la impresión. La temperatura de impresión es uno de los ajustes más influyentes, porque afecta al comportamiento del material durante la impresión. Incluso una pequeña diferencia en la temperatura puede tener un gran efecto en cómo fluye el plástico.
+
+Cada tipo de filamento tiene un rango de temperaturas al que se puede imprimir. Suele aparecer en la caja y en la ficha técnica. Aumentar la temperatura generalmente hace que los termoplásticos sean más fluidos. Esto permite que la impresora extruya el material más rápidamente, porque la fricción interna se reduce. Cuando se imprime con grandes alturas de capa, líneas anchas, gran flujo o grandes velocidades, la temperatura debe estar hacia el extremo superior del rango de temperatura. Sin embargo, una impresión más caliente también hace que el material sea más difícil de enfriar, por lo que esto hace que el voladizo se hunda más (requiriendo más apoyo) y provoca más encordamiento.
+
+Ajustar la temperatura demasiado alta hace que el material se degrade durante la impresión. Esto puede obstruir su boquilla y potencialmente dañar su impresora. Ajustar la temperatura demasiado baja hace que el alimentador rechace el material, haciendo que deje de extruir.

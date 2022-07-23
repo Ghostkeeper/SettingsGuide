@@ -1,0 +1,7 @@
+Flujo de relleno
+====
+Esta configuración ajusta el caudal sólo para el relleno. El caudal del relleno puede ajustarse por separado del caudal del resto de la impresión.
+
+Ajustar el caudal durante el relleno es un método provisional para solucionar problemas de velocidad de extrusión o de resistencia. Se puede conseguir el mismo efecto ajustando la [distancia entre líneas](../infill/infill_line_distance.md) y el [ancho de línea](../resolution/infill_line_width.md) del relleno, pero este ajuste puede ser más intuitivo.
+
+Los problemas con la velocidad de extrusión o la fuerza del relleno suelen ser causados por una de estas dos cosas: Cruces en el patrón de relleno, o demasiado cambio en la velocidad de flujo entre el relleno y otras estructuras. En lugar de ajustar este caudal, puede ser más eficaz ajustar el [patrón de relleno](../infill/infill_pattern.md) o el [ancho de línea](../resolution/infill_line_width.md). Elija un patrón de relleno que no se cruce, como el zigzag, y elija un ancho de línea que esté más cerca de la tasa de extrusión de las paredes y la piel. Si el ancho de la línea necesita ser aumentado para la fuerza pero está limitado en la tasa de flujo, es una buena idea utilizar el [multiplicador de relleno](../infill/infill_multiplier.md) en lugar de aumentar el flujo.
