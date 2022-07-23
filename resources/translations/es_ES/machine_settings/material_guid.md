@@ -1,0 +1,9 @@
+Material GUID
+====
+Este ajuste contiene un identificador único para el material que está en la bobina actualmente cargada en la impresora. Esto identifica de manera única el plástico que se alimenta en la impresora, incluyendo su fabricante y color. Sin embargo, será el mismo entre diferentes bobinas del mismo material. Básicamente, cada artículo diferente que verías en una tienda online tendría un identificador único. Cura utiliza este identificador único para dos propósitos: para sincronizar la configuración con lo que está en su impresora (si su impresora está conectada a Cura) y para agrupar los perfiles que pertenecen al mismo material.
+
+Cuando una impresora Ultimaker se conecta a Cura a través de la red o de Internet, la impresora proporciona a Cura una lista de GUIDs para los materiales que están actualmente cargados en la impresora. Cura hace coincidir estos GUIDs con los GUIDs de sus perfiles, por lo que sabe qué perfiles mostrar al usuario.
+
+También se utiliza para agrupar los niveles de calidad disponibles para un determinado material. El sistema de perfiles de Cura es muy complejo, y esta es una de sus peculiaridades: Normalmente Cura mostrará todos los perfiles de calidad disponibles para el tipo de material actual. Es decir, si un determinado fabricante indica que su material es un tipo de PLA, todos los perfiles de calidad para PLA estarán disponibles. Sin embargo, cuando haya algún perfil de calidad que especifique el material actual por GUID, entonces sólo estará disponible ese perfil de calidad. Esto significa esencialmente que hay perfiles específicamente adaptados para este filamento, y los perfiles genéricos ya no deberían mostrarse.
+
+**Puesto que se trata de un ajuste de la máquina, este ajuste no suele ser visible en la lista de ajustes.**
