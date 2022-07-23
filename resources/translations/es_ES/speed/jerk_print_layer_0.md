@@ -1,0 +1,7 @@
+Capa inicial de impresión de impulsos
+====
+Este ajuste determina la velocidad a la que la boquilla puede pasar por las esquinas mientras se extruye la capa inicial. Esto se puede configurar por separado de los movimientos de desplazamiento durante la capa inicial.
+
+Reducir el impulso hará que la impresora deposite más material en las esquinas afiladas porque la boquilla se ralentiza mientras el flujo de material tiene un cierto retraso en cuando el flujo se reduce. Estas esquinas afiladas son a menudo donde la impresión se suelta primero de la placa de construcción debido a la deformación. Depositar algo de material extra en esas esquinas es ventajoso entonces, ya que hará que las esquinas se adhieran mejor. Este efecto no se produce durante los movimientos de desplazamiento de la capa inicial. Por esta razón, el impulso durante la extrusión de la primera capa es normalmente un poco menor que el impulso durante los movimientos de desplazamiento de la primera capa.
+
+Las estructuras individuales de la impresión pueden tener diferentes valores de impulso. Hay ajustes separados para el relleno, la parte inferior, las paredes exteriores e interiores, el soporte y la torre de imprimación. Este ajuste anulará todos ellos. Sólo el ajuste Impulso en falda/borde](jerk_skirt_brim.md) anulará este impulso, ya que la falda y el borde sólo pueden ocurrir en la primera capa.

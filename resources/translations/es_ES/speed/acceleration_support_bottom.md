@@ -1,0 +1,5 @@
+Aceleración del piso de apoyo
+====
+Este ajuste controla la velocidad con la que la boquilla acelera en diferentes direcciones mientras se imprime el piso de apoyo. La aceleración durante el fondo de soporte puede ajustarse a una velocidad diferente a la del techo de soporte.
+
+Mientras que la precisión para la interfaz del soporte es importante para una buena calidad del voladizo, así como para lo bien que se adhiere el soporte al modelo y la cantidad de cicatrices que deja, la calidad del voladizo no es un problema para el suelo del soporte. Puede ser ventajoso dejar la aceleración del piso de apoyo ligeramente más alta que la del techo de apoyo, para ahorrar un poco en el tiempo de impresión. Sin embargo, aumentar demasiado la aceleración puede introducir cicatrices adicionales y puede comprometer la estabilidad del soporte que se apoya en él.

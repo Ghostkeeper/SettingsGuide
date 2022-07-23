@@ -1,0 +1,5 @@
+Apoyo a la aceleración de la interfaz
+====
+Este ajuste controla la velocidad con la que la boquilla se acelera en diferentes direcciones mientras se imprime la interfaz de soporte. La aceleración durante la interfaz de soporte puede ajustarse a una velocidad diferente a la del resto del soporte.
+
+Si la impresora vibra mucho debido a la aceleración de la boquilla en diferentes direcciones durante la impresión de la interfaz de soporte, la interfaz puede no seguir la forma del modelo con mucha precisión. Esto puede hacer que el soporte se adhiera más a la impresión en algunos lugares, dejando una cicatriz o una abolladura en la impresión. En otros lugares, el soporte puede no apoyar el modelo tan bien, causando un voladizo feo. Reducir la aceleración puede ayudar con este problema, pero aumentará el tiempo de impresión.

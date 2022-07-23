@@ -1,0 +1,5 @@
+Aceleración superior/inferior
+====
+Este ajuste controla la velocidad con la que la boquilla acelera en diferentes direcciones mientras se imprimen las caras superior e inferior del objeto. La aceleración durante las caras superior e inferior puede ajustarse a una velocidad diferente a la del resto de la impresión.
+
+Aumentar la tasa de aceleración en comparación con el resto puede ahorrar algo de tiempo. Como las caras superior e inferior suelen consistir en largas líneas rectas, la boquilla puede alcanzar grandes velocidades allí. La boquilla también debe hacer esquinas afiladas con el patrón de líneas típico de la piel, lo que requiere una gran aceleración. Sin embargo, el aumento de la aceleración hará que la impresora tiemble más, pero la precisión de los lados superior e inferior no suele ser una limitación porque están rodeados de paredes.

@@ -1,0 +1,7 @@
+Aceleración de la impresión de la capa inicial
+====
+Este ajuste controla la velocidad con la que la boquilla acelera en diferentes direcciones mientras se extruye en la primera capa. La aceleración durante la primera capa puede ajustarse a una tasa diferente a la del resto de la impresión y la aceleración durante los movimientos de extrusión puede ajustarse a una tasa diferente a la aceleración durante los movimientos de desplazamiento.
+
+Mientras que las paredes, la adhesión de la plataforma, los fondos, el soporte y el relleno pueden tener todos diferentes tasas de aceleración, durante la primera capa se harán iguales. La tasa de aceleración de la capa inicial anulará las tasas de aceleración de las estructuras individuales. El ajuste [Aceleración de falda/borde](acceleration_skirt_brim.md) anula de nuevo la aceleración de impresión de la capa inicial.
+
+La impresión a altas tasas de aceleración puede causar vibraciones que reverberan a través de la impresora. En particular, estas vibraciones pueden hacer que la placa de impresión se agite hacia arriba y hacia abajo, lo que es perjudicial para la adhesión de la impresión en la placa de impresión. Reducir la aceleración de la primera capa puede reducir las vibraciones durante esta parte crítica del proceso de impresión. Sin embargo, tomará más tiempo para imprimir, y la reducción de las tasas de aceleración demasiado puede causar la extrusión inconsistente en las esquinas que también es perjudicial para la adhesión de la placa de construcción.

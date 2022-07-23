@@ -1,0 +1,5 @@
+Impulso de desplazamiento en capa inicial
+====
+Este ajuste determina la velocidad a la que la boquilla puede pasar por las esquinas mientras se desplaza por la placa de impresión durante la capa inicial. Se puede configurar por separado de los movimientos de extrusión durante la capa inicial.
+
+Durante los movimientos de desplazamiento, la adhesión entre la impresión y la placa de impresión no se ve afectada por las vibraciones. Sin embargo, si la placa de impresión vibra demasiado, la boquilla puede arrancar la impresión de la placa de impresión. Por esta razón, el impulso durante los movimientos de desplazamiento de la capa inicial puede ser algo más alto que el impulso durante los movimientos de extrusión, pero todavía más bajo que el impulso durante los movimientos de desplazamiento en las diferentes capas.

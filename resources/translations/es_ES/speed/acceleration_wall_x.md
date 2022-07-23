@@ -1,0 +1,7 @@
+Aceleración de la pared interior
+====
+Este ajuste controla la velocidad con la que la boquilla acelera en diferentes direcciones durante la impresión de las paredes interiores. La aceleración durante las paredes interiores puede ser ajustada a una velocidad diferente a la de las paredes exteriores.
+
+El ajuste de la aceleración aquí afectará a la precisión dimensional y a la suavidad general de la impresión. Altas tasas de aceleración causan ondas de choque en toda la impresora. Estas ondas de choque pueden verse en la impresión cuando la boquilla o la placa de impresión vibran. Las paredes interiores no son visibles desde el exterior, excepto en la parte superior e inferior, pero si se imprimen antes que las paredes exteriores, éstas son empujadas más hacia el exterior donde las paredes interiores se imprimieron de forma inexacta. Si las paredes exteriores se imprimieron primero, el efecto de la aceleración de las paredes interiores es menos visible, pero sigue estando presente debido a la refundición de la pared exterior cuando la boquilla pasa por encima.
+
+Es habitual que las paredes interiores se impriman con una tasa de aceleración mayor que las exteriores, para ahorrar tiempo de impresión, pero con una tasa de aceleración menor que el resto de la impresión.

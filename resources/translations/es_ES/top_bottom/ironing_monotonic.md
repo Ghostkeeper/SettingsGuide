@@ -1,0 +1,11 @@
+Orden de alisado monótona
+====
+Normalmente, Cura ordena las líneas de alisado de forma que la distancia de recorrido entre ellas sea pequeña. Si esta opción está activada, ordenará las líneas de alisado de forma que las líneas adyacentes se impriman siempre solapadas en la misma dirección.
+
+Las líneas de alisado son por defecto mucho más finas que la boquilla con la que se imprimen, por lo que las líneas se solaparán mucho con las líneas contiguas. Este solapamiento da a las líneas una ligera inclinación, lo que hace que reflejen la luz de forma diferente en distintas direcciones. Si las líneas adyacentes se superponen de forma diferente, este reflejo cambia. Esto se puede ver en el resultado final. Da a las distintas zonas de la superficie un brillo diferente. La impresión en un orden monótono garantiza que el solapamiento sea el mismo en toda la superficie, por lo que no hay diferencias en la forma de reflejar la luz. Esto hace que la superficie tenga un aspecto más consistente y suave.
+
+Sin embargo, al contrario que [el equivalente para las líneas superiores/inferiores](skin_monotonic.md), este efecto es para el alisado es abrumado por un efecto diferente. El alisado tiene una velocidad de flujo tan baja que el cambio de flujo procedente de la impresión ordinaria es muy grande. Esto hace que la capa de alisado sea más gruesa cuando se empieza a imprimir, y sigue dejando un borde perceptible donde se interrumpió la impresión. Una orden monótona no eliminará estos bordes. Aunque la superficie puede parecer ligeramente más suave, en la práctica imprimir las líneas de alisado en orden monotónico es en gran medida ineficaz, a menos que su impresora tenga un control muy preciso del caudal.
+
+El orden monotónico aumentará ligeramente la longitud de los movimientos de desplazamiento, pero este efecto es muy mínimo.
+
+Para conseguir una superficie lisa, considere la posibilidad de combinar este ajuste con la configuración del [Modo de peinada](../travel/retraction_combing.md) para evitar el forro, y tal vez para activar [Z Hops](../travel/retraction_hop.md).
