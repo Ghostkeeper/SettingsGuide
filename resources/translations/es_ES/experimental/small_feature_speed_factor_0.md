@@ -1,0 +1,7 @@
+Velocidad de la capa inicial de partes pequeñas
+====
+Los contornos que son más cortos que la [Longitud máxima de partes pequeñas](small_feature_max_length.md) pueden imprimirse a una velocidad reducida. Con este ajuste, puede indicar la velocidad a la que estos contornos deben imprimirse en la primera capa, como un factor de su [velocidad de impresión normal](../speed/speed_wall.md). Esto puede configurarse por separado de la velocidad de impresión de los rasgos pequeños en el [resto de las capas](small_feature_speed_factor.md).
+
+Los contornos pequeños no tienen mucha superficie para pegarse a la placa de construcción. Especialmente cuando se [imprimen las paredes antes del relleno](../infill/infill_before_walls.md), las paredes de los agujeros pequeños son a menudo sólo pequeños círculos colocados en la placa de construcción. Si la boquilla pasa por encima de ellos en un movimiento de desplazamiento posterior, podrían arrancarse de la placa de impresión. Por esta razón, la velocidad de impresión de estos pequeños contornos puede reducirse en comparación con los demás contornos. Esto permite que el material fluya más y se fusione mejor con la placa de impresión, reduciendo la posibilidad de que se desprendan de la placa de impresión.
+
+La reducción de la velocidad de impresión de estos pequeños contornos tiene un impacto negativo muy pequeño en la velocidad de impresión. Por suerte, dado que estos contornos son pequeños por definición y sólo afecta a la primera capa, el tiempo total de impresión añadido no es significativo.

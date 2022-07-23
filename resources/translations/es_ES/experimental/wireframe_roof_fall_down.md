@@ -1,0 +1,7 @@
+Caída del techo en IA
+====
+Mientras se imprime el techo de una estructura de alambre para el modo de impresión de alambre, algunas líneas quedarán suspendidas en el aire. Estas líneas tienden a caer, hundiendo su materia fundida antes de que finalmente se solidifique en su lugar. Este ajuste le permite compensar este pandeo en el techo de la estructura. Esas líneas que estarían colgando en el aire se imprimen ligeramente más altas para que se solidifiquen aproximadamente en el lugar en el que debían terminar.
+
+Sólo los vértices que se imprimirían en el aire se desplazan hacia arriba. El patrón de dientes de sierra de conexión entre cada círculo concéntrico tendrá la mitad de sus vértices unidos al anillo concéntrico que se imprimió antes, por lo que esos vértices no se moverán hacia arriba. Sólo se moverán hacia arriba las esquinas del interior del patrón de dientes de sierra.
+
+El ajuste de esta configuración es muy sensible a la temperatura de impresión y al material utilizado. Algunos materiales, como el PLA, se solidifican muy rápidamente, mientras que otros tardan más. Imprimir en el lado frío hace que se solidifique más rápido. Incluso la temperatura ambiente de la habitación influye mucho en la cantidad de hundimiento.

@@ -1,0 +1,9 @@
+Ángulo de voladizo de pared
+====
+Este ajuste indica el ángulo umbral a partir del cual un muro se marcará como "muro saliente". Estos muros en voladizo pueden imprimirse a una velocidad diferente utilizando el ajuste [Velocidad de voladizo de pared](wall_overhang_speed_factor.md).
+
+Si este ajuste se establece en 0°, todos los muros se tratarán como muros en voladizo. Si este ajuste se establece en 90°, ningún muro se tratará como muro en voladizo. Los muros que se apoyan en un soporte tampoco se tratan como muros en voladizo.
+
+El objetivo de esta característica es proporcionar mejores cualidades de voladizo para las áreas que casi necesitarían ser apoyadas por [support](../support/support_enable.md), pero no del todo. En lugar de gastar tiempo y material extra en el soporte y marcar la superficie al quitar ese soporte, puede optar por imprimir estos muros salientes un poco más lento y establecer el [Ángulo de soporte saliente](../support/support_angle.md) algo más alto. De este modo se consigue un enfoque más escalonado para imprimir mejor los ángulos de voladizo crecientes.
+
+Establecer este ajuste más alto que el Ángulo de voladizo del soporte reduce el efecto de esta característica en gran medida, ya que los muros en la parte superior del soporte no se marcan como muros en voladizo, y por lo tanto cualquier muro que se imprime en un ángulo de voladizo que se consideraría un muro en voladizo también sería apoyado y no se imprimiría a diferentes velocidades. Sin embargo, esta característica sigue teniendo efecto si el soporte está deshabilitado o para las partes del voladizo que no son soportadas por otras razones, como [Minimum Support Area](../support/minimum_support_area.md).
