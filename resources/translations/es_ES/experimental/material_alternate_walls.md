@@ -1,0 +1,11 @@
+Direcciones alternativas de la pared
+====
+Si está activada, esta opción hace que la dirección de enrollamiento de las paredes alterne entre las agujas del reloj y las agujas contrarias.
+
+La primera pared interior se imprimirá en la dirección opuesta a la pared exterior, y la segunda pared interior se imprimirá de nuevo en la dirección opuesta. Es más, en la siguiente capa también empezará en sentido contrario, de modo que las paredes que se apilan unas sobre otras también se alternan.
+
+Alternando la dirección de impresión se reduce el efecto de las tensiones internas dentro del modelo, reduciendo el efecto de [warping](../troubleshooting/warping.md). Durante la impresión de cualquier línea, la boquilla tira con bastante fuerza de la cadena de material fundido, lo que estira el plástico. Durante la solidificación, esta tensión puede deformar el modelo. Si la línea adyacente se imprime en sentido contrario, esta tensión se contrarresta con las líneas adyacentes que tiran en sentido contrario. La fuerza de la tensión se contrarresta con la tensión en la dirección opuesta.
+
+La desventaja de alternar las direcciones de las paredes proviene de la histéresis en el pórtico de la impresora. Si hay alguna holgura en los ejes o las poleas de la impresora, las líneas diagonales se colocarán en un punto ligeramente diferente al imprimir en la dirección opuesta. Como resultado, la pared se vuelve menos suave y las dimensiones de la impresión son menos precisas. Una impresora bien ajustada no mostrará este efecto, por lo que si la impresora tiene correas, poleas y componentes precisos ajustados, alternar las direcciones de la pared probablemente sólo dará ventajas.
+
+Cuando se [imprime de adentro hacia afuera](../shell/inset_direction.md), este ajuste hace que la costura de la pared sea más visible y causa algo de timbre, porque la boquilla hace un giro completo de 180° justo antes del comienzo de la pared exterior, lo que causa vibraciones. Esto no es un efecto destacado cuando se imprime desde el exterior hacia el interior.

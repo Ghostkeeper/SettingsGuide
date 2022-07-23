@@ -1,0 +1,14 @@
+Factor de compensación del caudal
+====
+La compensación de caudal es un experimento similar a la funcionalidad [Avance Lineal](http://marlinfw.org/docs/features/lin_advance.html) de Marlin. El propósito de la compensación de caudal es compensar la subextrusión y la sobreextrusión cuando el caudal de material que sale de la boquilla cambia. Este ajuste configura la magnitud del efecto.
+
+La compensación de caudal mueve el filamento hacia adelante por el material extra que se necesita en el siguiente segundo, durante cada movimiento. Entre cada movimiento, hay tres posibles escenarios.
+* Si los dos comandos de movimiento adyacentes tienen el mismo caudal (porque su ancho de línea, altura de capa y velocidad son iguales), entonces el avance también será el mismo. El filamento no se moverá en ninguna dirección entre estas líneas.
+* Si el caudal aumenta con la siguiente línea, el filamento se mueve más adelante durante la segunda línea. Esto aumenta la presión en la cámara de la boquilla, de tal manera que el material puede extruirse más rápido durante la impresión de la línea y las líneas siguientes.
+* Si el caudal se reduce con la siguiente línea, el filamento se desplaza hacia atrás durante la segunda línea. Esto reduce la presión en la cámara de la boquilla, de manera que el material se ralentizará durante la impresión de la segunda línea y las líneas siguientes.
+
+La distancia que se mueve el filamento es igual a la cantidad de material que se extruiría cada segundo durante la línea (si la línea fuera lo suficientemente larga para imprimir un segundo completo). Sin embargo, utilizando este ajuste, esta distancia puede ser ajustada. Aumentar el factor hará que el efecto de compensación sea más fuerte. Reducirlo hará que el efecto de compensación sea más débil. Factores más altos también tomarán más tiempo para imprimir, ya que el filamento necesita moverse más hacia arriba y hacia abajo.
+
+Si se activa esta compensación de caudal, la presión dentro de la cámara de boquillas debería estar mejor equipada para manejar el caudal que se avecina. Esto puede reducir tanto la subextrusión como la sobreextrusión y dará al objeto unas dimensiones más precisas.
+
+Sin embargo, la compensación se aplica durante una sola línea. A veces puede ser una línea corta, durante la cual el filamento tiene que moverse muy rápidamente. El cabezal de impresión puede tener que reducir la velocidad para que el alimentador pueda seguir el ritmo, lo que provocará la aparición de una mancha. A veces puede tratarse de una línea larga, lo que reduce la fuerza del efecto. Esto hace que toda la función de compensación de las tasas de extrusión no sea fiable, y es la razón por la que este ajuste es todavía experimental.
