@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg width="2000" height="1000" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<rect id="layer0" width="240" height="190" rx="45" ry="45" fill="dodgerblue" stroke="black" stroke-width="10" />
+		<rect id="layer1" width="190" height="165" rx="45" ry="45" fill="deepskyblue" stroke="blue" stroke-width="10" />
+		<rect id="layer2" width="140" height="140" rx="45" ry="45" fill="skyblue" stroke="red" stroke-width="10" />
+		<g id="build0">
+			<circle r="75" fill="midnightblue" />
+			<path d="M64.95,-37.5 a75,75 0 0 0 -129.9,0 z" fill="skyblue" />
+		</g>
+	</defs>
+
+	<!-- Build plate. -->
+	<rect x="0" y="990" width="2000" height="10" fill="grey" />
+
+	<!-- Base layer. -->
+	<use href="#layer0" x="430" y="795" />
+	<use href="#layer0" x="730" y="795" />
+	<use href="#layer0" x="1030" y="795" />
+	<use href="#layer0" x="1330" y="795" />
+
+	<!-- Middle layer. -->
+	<use href="#layer1" x="430" y="620" />
+	<use href="#layer1" x="667.5" y="620" />
+	<use href="#layer1" x="905" y="620" />
+	<use href="#layer1" x="1142.5" y="620" />
+	<use href="#layer1" x="1380" y="620" />
+
+	<!-- Top layers. -->
+	<rect x="430" y="470" width="1140" height="140" rx="45" ry="45" fill="skyblue" stroke="red" stroke-width="10" />
+	<use href="#layer2" x="430" y="320" />
+	<use href="#layer2" x="596.67" y="320" />
+	<use href="#layer2" x="763.33" y="320" />
+	<use href="#layer2" x="930" y="320" />
+	<use href="#layer2" x="1096.67" y="320" />
+	<use href="#layer2" x="1263.33" y="320" />
+	<use href="#layer2" x="1430" y="320" />
+
+	<!-- Second and third layers. Needs to be below initial layer in order to show the overlap. -->
+	<rect x="550" y="12.5" width="900" height="150" rx="75" ry="75" fill="midnightblue" />
+	<rect x="550" y="-137.5" width="900" height="150" rx="75" ry="75" fill="midnightblue" />
+
+	<!-- Initial layer. -->
+	<use href="#build0" x="625" y="200" />
+	<use href="#build0" x="775" y="200" />
+	<use href="#build0" x="925" y="200" />
+	<use href="#build0" x="1075" y="200" />
+	<use href="#build0" x="1225" y="200" />
+	<use href="#build0" x="1375" y="200" />
+
+	<!-- Legend texts. -->
+	<g font-family="sans-serif">
+		<g font-size="70px">
+			<text x="1450" y="100" fill="midnightblue">Capas de modelo</text>
+			<text x="60" y="450" fill="red">Capas</text>
+			<text x="60" y="530" fill="red">superiores</text>
+			<text x="1590" y="730" fill="blue">Capa central</text>
+			<text x="50" y="910">Capa base</text>
+		</g>
+	</g>
+</svg>

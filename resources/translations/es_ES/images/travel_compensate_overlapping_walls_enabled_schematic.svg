@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg width="2000" height="1000" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<g id="printed" stroke-width="50" fill="none" stroke-linejoin="round" stroke-linecap="round">
+			<path d="M250,900 q200,-200 0,-400 a160,160 0 1 1 220,0 q-200,200 0,400" stroke="red" />
+			<path d="M360,559 q-23,-40 -74,-94 a110,110 0 1 1 148,0 q-43,43 -74 94 z" stroke="lime" />
+			<line x1="305" y1="360" x2="337" y2="328" stroke="gold" />
+			<line x1="314" y1="422" x2="398" y2="338" stroke="gold" />
+			<line x1="348" y1="459" x2="420" y2="387" stroke="gold" />
+		</g>
+		<rect id="legend_box" stroke-width="5" stroke="black" x="0" y="0" width="100" height="100" />
+	</defs>
+	<use href="#printed" x="0" y="0" />
+	<use href="#printed" x="500" y="0" />
+
+	<path d="M360,782 q-27,-82 0,-164 q27,82 0,164" fill="maroon" /> <!-- Overlapped area. -->
+	<path d="M860,612 q28,82 0,176" stroke="white" stroke-width="4" fill="none" /> <!-- Separate if compensating. -->
+
+	<path d="M250,900 q200,-200 0,-400" stroke="black" stroke-width="4" fill="none" /> <!-- Direction up 1. -->
+	<polygon points="250,520 270,500 242,490" />
+	<path d="M470,500 q-200,200 0,400" stroke="black" stroke-width="4" fill="none" /> <!-- Direction down 1. -->
+	<polygon points="470,880 450,900 478,908" />
+	<path d="M750,900 q200,-200 0,-400" stroke="black" stroke-width="4" fill="none" /> <!-- Direction up 2. -->
+	<polygon points="750,520 770,500 742,490" />
+	<path d="M970,500 q-200,200 0,400" stroke="black" stroke-width="4" fill="none" stroke-dasharray="145 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 1000" /> <!-- Direction down 2. -->
+	<polygon points="970,880 950,900 978,908" />
+
+	<use href="#legend_box" x="1200" y="200" fill="red" />
+	<use href="#legend_box" x="1200" y="350" fill="lime" />
+	<use href="#legend_box" x="1200" y="500" fill="gold" />
+	<use href="#legend_box" x="1200" y="650" fill="maroon" />
+	<g font-family="sans-serif" font-size="80pt">
+		<text x="1320" y="290">Pared externa</text>
+		<text x="1320" y="440">Pared interna</text>
+		<text x="1320" y="590">Relleno</text>
+		<text x="1320" y="740">Sobreextruído</text>
+	</g>
+</svg>

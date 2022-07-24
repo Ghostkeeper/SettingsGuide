@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="500">
+	<!-- The model to print. -->
+	<path d="M790,-510 l300,960 h600 l300,-960" fill="none" stroke="black" stroke-width="20" />
+	<!-- The build plate. -->
+	<line x1="0" y1="480" x2="2000" y2="480" stroke="lightgrey" stroke-width="40" />
+
+	<g font-family="sans-serif" font-size="40px" text-anchor="end">
+		<!-- Setting labels. -->
+		<text x="600" y="450" font-size="35px">Velocidad de impresión en capa inicial</text>
+		<text x="600" y="250">Interpolación lineal</text>
+		<text x="600" y="50">Velocidad de impresión normal</text>
+		<!-- Layer labels. -->
+		<g fill="dodgerblue">
+			<text x="860" y="450">20 mm/s</text>
+			<text x="860" y="350">27,5 mm/s</text>
+			<text x="860" y="250">35 mm/s</text>
+			<text x="860" y="150">42,5 mm/s</text>
+			<text x="860" y="50">50 mm/s</text>
+		</g>
+	</g>
+	<line x1="620" y1="110" x2="620" y2="350" stroke="dodgerblue" stroke-width="5" />
+	<!-- Lines between the layer labels. -->
+	<g stroke="black" stroke-width="5">
+		<line x1="850" y1="405" x2="850" y2="360" />
+		<line x1="850" y1="305" x2="850" y2="260" />
+		<line x1="850" y1="205" x2="850" y2="160" />
+		<line x1="850" y1="105" x2="850" y2="60" />
+	</g>
+	<!-- Lines from layers to layer labels. -->
+	<g stroke="black" stroke-width="5" stroke-dasharray="20 10">
+		<line x1="1090" y1="450" x2="870" y2="430" />
+		<line x1="1077.5" y1="410" x2="870" y2="330" />
+		<line x1="1065" y1="370" x2="870" y2="230" />
+		<line x1="1052.5" y1="330" x2="870" y2="130" />
+		<line x1="1040" y1="290" x2="870" y2="30" />
+	</g>
+
+	<!-- The layers printed. -->
+	<g stroke="dodgerblue" stroke-width="18">
+		<line x1="1090" y1="450" x2="1690" y2="450" />
+		<line x1="1077.5" y1="410" x2="1702.5" y2="410" />
+		<line x1="1065" y1="370" x2="1715" y2="370" />
+		<line x1="1052.5" y1="330" x2="1727.5" y2="330" />
+		<line x1="1040" y1="290" x2="1740" y2="290" />
+	</g>
+</svg>
