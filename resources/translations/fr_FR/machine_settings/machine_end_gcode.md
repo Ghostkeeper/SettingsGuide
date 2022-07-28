@@ -50,4 +50,4 @@ Par la même syntaxe que les références aux paramètres, certaines information
 * `{material_brand}` fait référence au fabricant de la matière active.
 <!--endif-->
 
-*Ce paramètre est un paramètre de machine, il n'apparaîtra donc pas dans la liste normale des paramètres. Il peut être modifié en allant dans la liste des imprimantes dans l'écran des préférences et en cliquant sur "Paramètres machine".*
+*Ce paramètre est un paramètre de machine, il n'apparaîtra donc pas dans la liste normale des paramètres. Il peut être modifié en allant dans la liste des imprimantes dans l'écran des préférences et en cliquant sur "Paramètres de la machine".*

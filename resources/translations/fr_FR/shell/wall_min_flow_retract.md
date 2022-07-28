@@ -1,4 +1,4 @@
-Préférer la rétractation
+Préférer la rétraction
 ====
 La compensation des chevauchements des lignes de paroi réduira le débit de certaines des parois. Si ce débit devient inférieur à la valeur du paramètre [Débit minimal de la paroi](wall_min_flow.md), un déplacement est effectué à la place de la ligne de paroi.
 
