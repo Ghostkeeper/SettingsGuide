@@ -1,7 +1,7 @@
 Raft Middle Print Acceleration
 ====
-<!--if cura_version<5.0:This setting configures the acceleration rate of the print head while the middle layer of the raft is printed. The acceleration during the middle layer of the raft can be configured separately from the base and top layers.-->
-<!--if cura_version>=5.0-->This setting configures the acceleration rate of the print head while the middle layers of the raft are printed. The acceleration during the middle layers of the raft can be configured separately from the base and top layers.<!--endif-->
+<!--if cura_version<5.0:This setting configures the acceleration rate of the print head while the middle layer of the raft is printed. The acceleration for the base, middle and top layers of the raft can be configured independently.-->
+<!--if cura_version>=5.0-->This setting configures the acceleration rate of the print head while the middle layers of the raft are printed. The acceleration for the base, middle and top layers of the raft can be configured independently.<!--endif-->
 
 ![Where the middle layer is located in the raft](../images/raft_dimensions_simplified.svg)
 
