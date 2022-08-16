@@ -16,6 +16,7 @@ Articles
 ![Laurent Lalliard - Minor corrections](../images/contributors/5axes.png)
 ![Sophist - Minor corrections](../images/contributors/Sophist.jpg)
 ![Yohan Pereira - Minor corrections](../images/contributors/yohan-pereira.png)
+![DigitalFrost - Minor corrections](../images/contributors/DigitalFrost.jpg)
 
 Translations
 ----
