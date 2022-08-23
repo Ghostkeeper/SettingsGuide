@@ -104,7 +104,7 @@ Translating
 ----
 Translating this guide is no small task and not something that the maintainer can do, so all help is welcome.
 
-To translate articles, put translations in the `resources/languages` folder, in a subfolder named with the language code of the language you're translating into. Inside this folder, please keep the folder structure of the English folder (which sorts the articles by their category). This helps to keep articles easy to find online and while developing.
+To translate articles, put translations in the `resources/translations` folder, in a subfolder named with the language code of the language you're translating into. Inside this folder, please keep the folder structure of the English folder (which sorts the articles by their category). This helps to keep articles easy to find online and while developing.
 
 There are a few things to pay attention to though:
 * Automatic (machine) translations are not allowed.
