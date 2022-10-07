@@ -6,4 +6,4 @@
 
 Rozšíření linií pláště je snadný způsob, jak zkrátit dobu tisku, protože k tisku horního a dolního povrchu objektu bude zapotřebí méně linií. Pokud ji však příliš zvýšíte, riskujete velké výkyvy vytlačování. To způsobí podextruzi při tisku pláště a nadextruzi, když se tiskne to, co bude následovat, protože tok přes trysku se nemůže dostatečně rychle přizpůsobit. Zvětšení šířky linie pláště také zvýší riziko výskytu otvorů na povrchu, což není hezké a zabraňuje vodotěsnosti předmětu.
 
-Zmenšení šířky linií pláště má tendenci vytvářet krásnější horní povrch, ale při vysokých nákladech na tisk. Často je účinnější použít jinou techniku, jako je [žehlení](../top_bottom/ironing_enabled.md) nebo upravit pouze parametr [Šířka linie horního povrchu pláště](../experimental/roofing_line_width.md).
+Zmenšení šířky linií pláště má tendenci vytvářet krásnější horní povrch, ale při vysokých nákladech na tisk. Často je účinnější použít jinou techniku, jako je [žehlení](../top_bottom/ironing_enabled.md) nebo upravit pouze parametr [Šířka linie horního povrchu pláště](../top_bottom/roofing_line_width.md).

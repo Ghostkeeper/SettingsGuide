@@ -14,9 +14,9 @@
 * [Скорость верхней оболочки](../../../articles/speed/speed_roofing.md)
 * [Ускорение верхней оболочки](../../../articles/speed/acceleration_roofing.md)
 * [Рывок верхней оболочки](../../../articles/speed/jerk_roofing.md)
-* [Ширина линии крыши](../../../articles/experimental/roofing_line_width.md)
-* [Шаблон верхней оболочки](../../../articles/experimental/roofing_pattern.md)
-* [Направление линий верхней оболочки](../../../articles/experimental/roofing_angles.md)
+* [Ширина линии крыши](../../../articles/top_bottom/roofing_line_width.md)
+* [Шаблон верхней оболочки](../../../articles/top_bottom/roofing_pattern.md)
+* [Направление линий верхней оболочки](../../../articles/top_bottom/roofing_angles.md)
 
 Чтобы добиться лучшего результата верхних оболочек, попробуйти уменьшить скорость и увеличить рывок.
 

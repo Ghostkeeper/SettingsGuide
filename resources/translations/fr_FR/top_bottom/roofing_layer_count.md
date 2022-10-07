@@ -12,9 +12,9 @@ Les paramètres qui peuvent être ajustés pour la surface supérieure sont les 
 * [Vitesse de la couche extérieure de la surface supérieure](../speed/speed_roofing.md)
 * [Accélération de couche extérieure de surface supérieure](../speed/acceleration_roofing.md)
 * [Saccade de couches extérieures de la surface supérieure](../speed/jerk_roofing.md)
-* [Largeur de ligne de couche extérieure de la surface supérieure](../experimental/roofing_line_width.md)
-* [Motif de couche extérieure de surface supérieure](../experimental/roofing_pattern.md)
-* [Sens de lignes de couche extérieure de surface supérieure](../experimental/roofing_angles.md)
+* [Largeur de ligne de couche extérieure de la surface supérieure](roofing_line_width.md)
+* [Motif de couche extérieure de surface supérieure](roofing_pattern.md)
+* [Sens de lignes de couche extérieure de surface supérieure](roofing_angles.md)
 
 Pour obtenir une surface supérieure plus agréable, essayez de réduire la vitesse et d'augmenter la secousse.
 

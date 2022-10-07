@@ -32,9 +32,9 @@ Settings that can be adjusted for the top surface are:
 * [Top Surface Skin Speed](../speed/speed_roofing.md)
 * [Top Surface Skin Acceleration](../speed/acceleration_roofing.md)
 * [Top Surface Skin Jerk](../speed/jerk_roofing.md)
-* [Top Surface Skin Line Width](../experimental/roofing_line_width.md)
-* [Top Surface Skin Pattern](../experimental/roofing_pattern.md)
-* [Top Surface Skin Line Directions](../experimental/roofing_angles.md)
+* [Top Surface Skin Line Width](roofing_line_width.md)
+* [Top Surface Skin Pattern](roofing_pattern.md)
+* [Top Surface Skin Line Directions](roofing_angles.md)
 
 To achieve a nicer top surface, try reducing the speed and increasing the jerk.
 

@@ -12,9 +12,9 @@ Parametry, které lze nastavit pro horní povrch, jsou následující:
 * [Rychlost horního povrchu pláště](../speed/speed_roofing.md)
 * [Zrychlení horního povrchu pláště](../speed/acceleration_roofing.md)
 * [Ryv (jerk) horního povrchu pláště](../speed/jerk_roofing.md)
-* [Šířka linie horního povrchu pláště](../experimental/roofing_line_width.md)
-* [Vzor horního povrchu pláště](../experimental/roofing_pattern.md)
-* [Směr linií horního povrchu pláště](../experimental/roofing_angles.md)
+* [Šířka linie horního povrchu pláště](roofing_line_width.md)
+* [Vzor horního povrchu pláště](roofing_pattern.md)
+* [Směr linií horního povrchu pláště](roofing_angles.md)
 
 Chcete-li získat hezčí horní povrch, zkuste snížit rychlost a zvýšit ryv (jerk).
 

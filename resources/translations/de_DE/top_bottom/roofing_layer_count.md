@@ -33,9 +33,9 @@ Folgende Einstellungen können für die Oberseite vorgenommen werden:
 * [Oberfläche Außenhaut Geschwindigkeit](../speed/speed_roofing.md)
 * [Beschleunigung Oberfläche Außenhaut](../speed/acceleration_roofing.md)
 * [Justierung der Oberfläche Außenhaut](../speed/jerk_roofing.md)
-* [Oberfläche Außenhaut Linienbreite](../experimental/roofing_line_width.md)
-* [Oberfläche Außenhaut Muster](../experimental/roofing_pattern.md)
-* [Linienrichtungen der Oberfläche Außenhaut](../experimental/roofing_angles.md)
+* [Oberfläche Außenhaut Linienbreite](roofing_line_width.md)
+* [Oberfläche Außenhaut Muster](roofing_pattern.md)
+* [Linienrichtungen der Oberfläche Außenhaut](roofing_angles.md)
 
 Um eine schönere Oberfläche zu erhalten, versuchen Sie, die Geschwindigkeit zu verringern und den Ruck (Jerk) zu erhöhen.
 
