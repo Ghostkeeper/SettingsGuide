@@ -129,8 +129,10 @@ class CuraSettingsGuide(Extension, QObject):
 			try:
 				main_window = application._qml_engine.rootObjects()[0]
 				if main_window is not None:
-					tooltips = main_window.findChildren(PointingRectangle)  # There are multiple instances of this (currently 3). It's indistinguishable which is the setting tooltip. Collateral damage!
+					tooltips = main_window.findChildren(PointingRectangle)  # There are multiple instances of this. We can distinguish them by the meta class name.
 					for tooltip in tooltips:
+						if not tooltip.metaObject().className().startswith("PrintSetupTooltip"):
+							continue
 						tooltip.setWidth(tooltip.width() * 2.5)
 			except IndexError:  # rootObjects() returned an empty list, meaning the main window failed to load.
 				pass  # Let's skip widening the tooltips then.
