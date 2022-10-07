@@ -6,6 +6,6 @@ Semblable à la fonction [Rendre le porte-à-faux imprimable](../experimental/co
 
 La réduction de cet angle permettra de réduire l'extrémité des porte-à-faux. Cela rendra l'impression plus fiable. Cependant, cela rendra également la base de l'impression plus large, ce qui augmentera considérablement la durée de l'impression et la quantité de matériau utilisée.
 
-Pour certaines formes, il ne suffit pas de modifier la forme extérieure du moule pour qu'il s'imprime correctement. Il faudra quand même lui apporter un soutien. Vous pouvez obtenir un effet similaire en activant [Activer les supports coniques](../experimental/support_conical_enabled.md).
+Pour certaines formes, il ne suffit pas de modifier la forme extérieure du moule pour qu'il s'imprime correctement. Il faudra quand même lui apporter un soutien. Vous pouvez obtenir un effet similaire en activant [Activer les supports coniques](../support/support_conical_enabled.md).
 
 ![Ce moule a encore besoin de soutien](../../../articles/images/mold_needs_support.png)

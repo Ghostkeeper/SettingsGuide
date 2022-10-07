@@ -20,7 +20,7 @@ Formwinkel
 
 Wenn Sie diesen Winkel verkleinern, werden die extremen Überhänge reduziert. Dadurch wird der Druck zuverlässiger. Allerdings wird dadurch auch die Basis des Drucks breiter, was die Dauer des Drucks erheblich verlängert und den Materialverbrauch erhöht.
 
-Bei einigen Formen reicht es nicht aus, die äußere Form zu verändern, um sie richtig zu drucken. Sie muss immer noch gestützt werden. Sie können einen ähnlichen Effekt erzielen, indem Sie die [Konische Stützstruktur](../experimental/support_conical_enabled.md) aktivieren.
+Bei einigen Formen reicht es nicht aus, die äußere Form zu verändern, um sie richtig zu drucken. Sie muss immer noch gestützt werden. Sie können einen ähnlichen Effekt erzielen, indem Sie die [Konische Stützstruktur](../support/support_conical_enabled.md) aktivieren.
 
 <!--screenshot {
 "image_path": "mold_needs_support.png",

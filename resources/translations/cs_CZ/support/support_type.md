@@ -9,4 +9,4 @@ Umístění podpěr kdekoliv je spolehlivější pro podpěru. Jakékoli převis
 
 Naopak umístění podpěry pouze v případě, že se dotkne podložky tisku, zabrání podpěře spočívat na modelu. Některé části vašeho modelu však nemusí být podpírány.
 
-**Jako trik pro použití podpěry pouze na tiskové podložce, zkuste [aktivaci kónické podpěry](../experimental/support_conical_enabled.md) a zadejte parametru [Úhel kónické podpěry](../experimental/support_conical_angle.md) zápornou hodnotu. To umožňuje, aby se podpěra rozvinula kolem modelu a zároveň podpírala většinu sítě, aniž by spočívala na modelu. Alternativně zkuste stromovou podpěru.**
+**Jako trik pro použití podpěry pouze na tiskové podložce, zkuste [aktivaci kónické podpěry](support_conical_enabled.md) a zadejte parametru [Úhel kónické podpěry](support_conical_angle.md) zápornou hodnotu. To umožňuje, aby se podpěra rozvinula kolem modelu a zároveň podpírala většinu sítě, aniž by spočívala na modelu. Alternativně zkuste stromovou podpěru.**
