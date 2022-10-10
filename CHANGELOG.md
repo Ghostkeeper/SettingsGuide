@@ -1,3 +1,15 @@
+2.9.2
+====
+Articles
+----
+* Added articles for new initial layer flow settings in Cura 5.2.
+* Added articles for Tree Support Trunk Diameter.
+* Updated French translations.
+
+Bug Fixes
+----
+* The Settings Guide no longer alters the width of other pointing rectangles in Cura's interface, only the setting tooltip.
+
 2.9.1
 ====
 Articles
