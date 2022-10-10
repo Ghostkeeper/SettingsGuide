@@ -11,7 +11,7 @@ set(SETTINGSGUIDE_PLUGIN_NAME "Settings Guide" CACHE STRING "The name of the plu
 set(SETTINGSGUIDE_PLUGIN_ID "SettingsGuide2" CACHE STRING "The plug-in ID of the installation in Cura.") #Needs to be '2' because the original plug-in ID was reserved by Asasin for his original version.
 set(SETTINGSGUIDE_VERSION_MAJOR 2 CACHE STRING "The major version number, incremented when there is a significant rewrite.")
 set(SETTINGSGUIDE_VERSION_MINOR 9 CACHE STRING "The minor version number, incremented when there are new features.")
-set(SETTINGSGUIDE_VERSION_PATCH 1 CACHE STRING "The patch version number, incremented if there are only bug fixes and article changes.")
+set(SETTINGSGUIDE_VERSION_PATCH 2 CACHE STRING "The patch version number, incremented if there are only bug fixes and article changes.")
 set(SETTINGSGUIDE_SUPPORTED_SDKS "6.0.0;7.0.0;8.0.0" CACHE STRING "List of supported Cura SDK versions.")
 
 #Make sure we have Mistune.
