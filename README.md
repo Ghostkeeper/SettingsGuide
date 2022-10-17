@@ -1,3 +1,7 @@
+Maintenance Status
+====
+The Settings Guide is looking for a new maintainer. See https://github.com/Ghostkeeper/SettingsGuide/issues/110 for more details.
+
 Settings Guide
 ====
 This Cura plug-in provides additional explanations with pictures and animations for many Cura settings.
