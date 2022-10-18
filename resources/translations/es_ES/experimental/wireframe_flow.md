@@ -1,0 +1,9 @@
+Flujo en IA
+====
+Con este ajuste, la velocidad de flujo se puede ajustar mientras se imprime con la técnica de impresión de alambre. Esto sirve simplemente como multiplicador del ancho de línea y de la altura de la capa. Determina directamente la cantidad de material que se utiliza para la impresión por hilo.
+
+Esta configuración ajusta el flujo para toda la impresión, pero el flujo también se puede ajustar por separado para las [partes horizontales](wireframe_flow_flat.md) o las [conexiones](wireframe_flow_connection.md).
+
+La impresión de alambre no utiliza la anchura de la línea o la altura de la capa para determinar la distancia entre las líneas y las capas. Sólo utiliza la [altura](wireframe_height.md) y la [distancia de inserción](wireframe_roof_inset.md). Así que en lugar de ajustar el flujo de la Impresión de alambre, también podría ajustar la configuración de [Altura de la capa](../resolución/capa_altura.md) o [Ancho de línea](../resolución/ancho_de_línea.md), o el [Flujo ordinario](../material/material_flow.md). Esto tendrá el mismo efecto. Sin embargo, estos ajustes existen para que se pueda crear un perfil de impresión que tenga el flujo correcto para la impresión por cable sin influir en la calidad de impresión de las impresiones normales que no hacen uso de la impresión por cable.
+
+Aumentar el flujo hace que los alambres sean más gruesos. Esto hace que la estructura sea más rígida una vez solidificada. Sin embargo, también aumenta la masa térmica de la estructura, lo que hace que se tarde más en solidificar los alambres. Esto hace que los alambres se caigan y reduce la fiabilidad de la impresión, ya que entonces los alambres pueden no conectarse correctamente.

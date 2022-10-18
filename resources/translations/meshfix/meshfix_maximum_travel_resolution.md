@@ -1,0 +1,9 @@
+Resolución de desplazamiento máximo
+====
+Si el modelo tiene una resolución muy alta, Cura reducirá la resolución de manera que el procesador de la impresora sea capaz de seguir el ritmo de procesamiento de los comandos de g-code a medida que se ejecutan. La resolución máxima de los movimientos de desplazamiento se puede determinar por separado de la [resolución máxima](meshfix_maximum_resolution.md) mientras se imprime.
+
+Dado que los movimientos de desplazamiento se ejecutan significativamente más rápido que los movimientos de impresión, el cabezal de impresión pasará por los segmentos de línea de desplazamiento mucho más rápido que otros segmentos de línea. La CPU tendría que procesar esos segmentos de línea mucho más rápido para poder seguir el ritmo de la boquilla. Por eso la resolución de los movimientos de desplazamiento debe ser menor que la resolución de los movimientos de extrusión más lentos.
+
+La resolución del movimiento durante los movimientos de desplazamiento tampoco suele ser importante para la calidad de la impresión. Al no estar extruyendo, no hay superficie que se vuelva borrosa o angular. Por esta razón, reducir la resolución de los movimientos de desplazamiento no tiene un impacto significativo en la calidad de impresión.
+
+La mayoría de los movimientos de desplazamiento de Cura son líneas rectas. Son los movimientos más rápidos y producen menos vibraciones. Sin embargo, si Cura quiere evitar colisiones, tiende a seguir la superficie que intenta evitar. El movimiento de desplazamiento alrededor de esta superficie tendrá entonces una resolución similar a la de la superficie que está evitando. Como resultado, este ajuste sólo puede tener realmente un efecto si la [peinada](../travel/retraction_combing.md) está activada.

@@ -1,0 +1,5 @@
+Impulso de interfaz de soporte
+====
+Este ajuste determina la velocidad a la que la boquilla puede pasar por las esquinas mientras se imprime la interfaz del soporte. Se puede configurar por separado de la parte principal del soporte.
+
+Normalmente la interfaz de soporte puede imprimirse con valores de impulso bastante grandes, porque no importa si hay algún anillo en la interfaz o si la velocidad de extrusión es inconsistente. Sin embargo, la interfaz del soporte se coloca bastante cerca de la impresión real y determina cómo se adhiere el soporte al objeto. Si la interfaz se imprime de forma inexacta debido a las vibraciones, esto puede dar lugar a cicatrices porque el soporte se adhiere demasiado bien a la impresión, o a malos voladizos si hay demasiado espacio entre el soporte y el modelo. Esto puede ser una razón para ajustar el impulso durante la interfaz del soporte ligeramente más bajo que durante el resto del soporte.

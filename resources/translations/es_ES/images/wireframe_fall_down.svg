@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1000">
+	<g stroke="deepskyblue" stroke-width="30" fill="none">
+		<path stroke-linejoin="bevel" d="M-300,100 l600,700 v-700 l600,700 v-700 l600,700 v-700 l600,700 v-700" /> <!-- Connecting zigzaggy lines. -->
+		<path d="M300,200 v-100 l84,100 h516 v-100 l84,100 h516 v-100 l84,100" /> <!-- Sharp line joints at the top, but not the bottom. -->
+	</g>
+	<g stroke="darkblue" stroke-width="50" fill="none">
+		<!-- Horizontal "layer" lines. -->
+		<line x1="0" y1="800" x2="2000" y2="800" />
+		<line x1="0" y1="200" x2="2000" y2="200" />
+	</g>
+
+	<!-- Legend. -->
+	<polygon points="900,175 920,155 910,155 910,85 920,85 900,65 880,85 890,85 890,155 880,155" />
+	<text x="880" y="130" text-anchor="end" font-family="sans-serif" font-size="50px">Compensación por caída</text>
+</svg>

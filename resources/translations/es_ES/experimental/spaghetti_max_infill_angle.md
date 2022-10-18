@@ -1,0 +1,7 @@
+Ángulo máximo de relleno de los espaguetis
+====
+Este ajuste configura el ángulo máximo de voladizo que alcanzará el material cuando se deposite el material de relleno junto a él. Si un lugar no se rellena con la densidad adecuada debido a este límite, se introducirán [pasos] adicionales (spaghetti_infill_stepped.md) a lo largo de la altura del volumen de relleno para asegurarse de que esos lugares se alcanzan correctamente.
+
+Si el relleno de espaguetis está destinado a ser utilizado como relleno flexible, este ajuste probablemente debería ser bastante alto. Aumentar este ajuste hará que se introduzcan más escalones para llegar bajo techos poco profundos. Dado que el relleno de espagueti no tiende a expandirse mucho en direcciones horizontales, la adición de pasos adicionales ayuda a empujar el material por debajo de esos techos poco profundos.
+
+Si el relleno de espagueti está destinado a utilizarse con un material fundido, este ajuste puede reducirse considerablemente. Como el material fundido es líquido, puede llegar muy lejos por debajo de las superficies. Sin embargo, no lo ajuste a 0°, ya que la mayoría de los materiales de fundición tienen cierta viscosidad. Es posible que aún quiera fundir debajo de algunos techos poco profundos para asegurarse de que el material de fundición sigue completamente su caparazón. 

@@ -1,0 +1,5 @@
+Velocidad de IA
+====
+Este ajuste configura la velocidad de movimiento global del cabezal de impresión en cada etapa del proceso de impresión de alambre. La velocidad puede ajustarse por separado para los movimientos [hacia arriba](wireframe_printspeed_up.md), [hacia abajo](wireframe_printspeed_down.md) y [horizontal](wireframe_printspeed_flat.md), así como los movimientos horizontales en la [primera capa](wireframe_printspeed_bottom.md). Este ajuste (por defecto) influye en todas esas velocidades.
+
+Aumentar la velocidad de impresión hace que la impresión tome menos tiempo. Sin embargo, también aumentará las vibraciones y reducirá la precisión de los movimientos de la boquilla. La fiabilidad de la impresión por hilo depende sobre todo de la fuerza de las conexiones. Aumentar la velocidad reduce la posibilidad de que dos puntos de la estructura se conecten correctamente.

@@ -1,0 +1,9 @@
+Velocidad del muro del puente
+====
+Este ajuste controla la velocidad a la que se imprimen las líneas de pared mientras se hace el puente.
+
+Para los materiales que requieren que el ventilador se encienda y se ponga en alto (como el PLA), generalmente es mejor imprimir los puentes muy lentamente. Esto permite que los ventiladores soplen mucho aire sobre el material, lo que hace que se solidifiquen muy rápidamente. El material no tiene tanta oportunidad de combarse entonces. Esto es menos efectivo para materiales que no necesitan que el ventilador gire tan rápido o para impresoras que no tienen un ventilador muy potente.
+
+Sin embargo, la impresión lenta también creará un gran cambio en la velocidad a la que el material tiene que ser extruido de la abertura de la boquilla. Mientras que el cabezal de impresión puede frenar muy rápidamente, el material en la cámara de la boquilla seguirá fluyendo durante un tiempo más debido a la presión latente dentro de la cámara de la boquilla. Por lo tanto, cuando el cabezal de impresión se ralentiza, habrá un poco de sobreextrusión en el comienzo de la línea de puente. A medida que el cabezal de impresión se acelera de nuevo, habrá algo de subextrusión. Mantener la velocidad más cercana a la normal [velocidad de impresión de las paredes](../velocidad/velocidad_pared.md) evita que esto ocurra.
+
+En general es mejor imprimir las paredes puente muy lentamente con materiales que se imprimen a temperaturas frías, como el PLA. Es mejor imprimir las paredes puente alrededor de la misma velocidad que la velocidad de la pared ordinaria cuando se imprime con materiales de alta temperatura como el policarbonato.

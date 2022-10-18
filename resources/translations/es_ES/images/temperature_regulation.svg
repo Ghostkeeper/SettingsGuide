@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg width="2000" height="1000" xmlns="http://www.w3.org/2000/svg">
+	<!-- Background colours. -->
+	<g opacity="0.2" height="800">
+		<rect x="100" width="450" height="800" fill="red" />
+		<rect x="550" width="1000" height="800" fill="blue" />
+		<rect x="1550" width="450" height="800" fill="red" />
+	</g>
+
+	<!-- Temperature graphs. -->
+	<path d="M100,200 h400 l600,500 h200 l300,-500 h500" fill="none" stroke="red" stroke-width="20" />
+	<path d="M100,700 h100 l400,-600 h900 l500,600 h1" fill="none" stroke="blue" stroke-width="20" />
+
+	<!-- Timestamps. -->
+	<g stroke-width="10" stroke-dasharray="20">
+		<g stroke="red">
+			<line x1="500" y1="200" x2="500" y2="800" />
+			<line x1="1300" y1="700" x2="1300" y2="800" />
+		</g>
+		<g stroke="blue">
+			<line x1="200" y1="700" x2="200" y2="800" />
+			<line x1="1500" y1="100" x2="1500" y2="800" />
+		</g>
+		<g stroke="black">
+			<line x1="550" y1="0" x2="550" y2="800" />
+			<line x1="1550" y1="0" x2="1550" y2="800" />
+		</g>
+	</g>
+
+	<!-- Axes and axis arrows. -->
+	<path d="M100,0 v800 h1900" fill="none" stroke="black" stroke-width="10" />
+	<path d="M75,0 l10,10 h-7 v300 h-6 v-300 h-7 z" />
+	<path d="M2000,825 l-10,10 v-7 h-130 v-6 h130 v-7 z" />
+
+	<!-- Axis labels. -->
+	<g font-family="sans-serif" font-size="40px">
+		<text transform="rotate(-90, 60, 300)" x="60" y="300">Temperatura</text>
+		<text x="1870" y="875">Tiempo</text>
+		<text transform="rotate(45, 180, 830)" x="180" y="830" fill="blue">Precalentado</text>
+		<text transform="rotate(45, 480, 830)" x="480" y="830" fill="red">Preenfriado</text>
+		<text transform="rotate(45, 530, 830)" x="530" y="830">Cambio</text>
+		<text transform="rotate(45, 1280, 830)" x="1280" y="830" fill="red">Precalentado</text>
+		<text transform="rotate(45, 1480, 830)" x="1480" y="830" fill="blue">Preenfriado</text>
+		<text transform="rotate(45, 1530, 830)" x="1530" y="830">Cambio</text>
+	</g>
+</svg>

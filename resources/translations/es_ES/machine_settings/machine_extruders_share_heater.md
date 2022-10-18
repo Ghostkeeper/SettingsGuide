@@ -1,0 +1,9 @@
+Extrusores comparten calentador
+====
+Con este ajuste, puede indicar que todas las boquillas de esta impresora compartan un único calentador. Cura no enfriará las boquillas de determinados extrusores cuando estén inactivas. Como comparten un calentador, se asume que el extrusor debe permanecer caliente para que otro extrusor siga extruyendo.
+
+Lo más común es que esto sea necesario para las boquillas de mezcla, donde se introducen múltiples filamentos en la misma boquilla. Esta boquilla sólo tiene un calentador que calienta cualquier filamento que esté dentro de la boquilla en ese momento. Si Cura controlara el calentamiento de cada filamento por separado, trataría de mantener simultáneamente la boquilla caliente para el filamento activo, mientras la enfría hasta la [temperatura de espera](../material/material_standby_temperature.md) para los otros filamentos. Esto es imposible, y resulta en un calentamiento sólo para el primer filamento, o en una impresión permanente en la temperatura de espera si el firmware sólo aplica los comandos de calentamiento a la única boquilla, independientemente de la herramienta a la que estén dirigidos. Indicando a Cura que los extrusores comparten un calentador se evita este problema. Cura ya no dejará que la boquilla pase a la temperatura de espera y ya no aplicará un comando de calentamiento a ningún extrusor específico.
+
+Cura no asumirá necesariamente que si los extrusores comparten un calentador también comparten una boquilla. Para ello, hay un ajuste separado para indicar que [los extrusores comparten una boquilla] (machine_extruders_share_nozzle.md).
+
+**Dado que se trata de un ajuste de la máquina, normalmente no aparecerá en la lista normal de ajustes. Sin embargo, hay una casilla de verificación para este ajuste en el diálogo de configuración de la impresora, que se puede encontrar en la lista de impresoras añadidas en el diálogo de preferencias.**

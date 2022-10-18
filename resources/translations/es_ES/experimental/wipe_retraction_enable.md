@@ -1,0 +1,9 @@
+Habilitación de retracción de limpieza
+====
+Si este ajuste está habilitado, el material se retraerá durante todo el procedimiento de limpieza. Esto se puede configurar por separado de las [retracciones normales] (../travel/retraction_enable.md).
+
+El procedimiento de barrido hace que la boquilla vaya hasta el lado de la impresora, se mueva hacia adelante y hacia atrás allí, y luego se mueva todo el camino de vuelta. Esto es esencialmente un movimiento de desplazamiento muy largo. Dado que este movimiento de desplazamiento es más largo que el promedio de movimientos de desplazamiento a lo largo de la impresión, es posible que desee tener el material retraído durante este procedimiento, incluso si las retracciones están normalmente desactivadas.
+
+Tener el material retraído reducirá la cantidad de material que rezuma durante el procedimiento de limpieza. El material que rezuma durante el procedimiento de limpieza será normalmente eliminado por el cepillo. Sin embargo, este material se pierde. Como resultado, habrá un poco de subextrusión justo después de que la limpieza se haya completado, ya que este material ha rezumado en lugar de ser colocado en su lugar apropiado.
+
+Por otra parte, la retracción puede llevar algún tiempo y provocar un desgaste innecesario del filamento. Si la subextrusión no es un problema, desactivar la retracción puede ahorrar algo de tiempo y mejorar la fiabilidad. Esto puede funcionar bien si, por ejemplo, el [relleno se imprime antes de las paredes] (../infill/infill_before_walls.md), porque algo de subextrusión durante el relleno no es realmente un problema. 

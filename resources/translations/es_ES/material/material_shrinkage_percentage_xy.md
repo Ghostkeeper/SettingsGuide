@@ -1,0 +1,11 @@
+Compensación de la contracción del factor de escala horizontal
+====
+Este ajuste escala el modelo automáticamente antes del corte, en la dirección horizontal. El objetivo es compensar cualquier encogimiento que se produzca cuando la impresión se enfríe a temperatura ambiente. Haciendo la impresión ligeramente más grande de lo deseable, el resultado final podría ser más preciso a las dimensiones originales del modelo de entrada. Este factor de escala se aplica sólo a las direcciones X e Y.
+
+El escalado en las direcciones horizontales es más importante porque es la dirección en la que las tensiones internas de la impresión son mayores. Normalmente la contracción horizontal es mayor que la vertical. Las líneas que se imprimen horizontalmente hacen que las líneas se contraigan más en la dirección horizontal que en la vertical.
+
+Toda la escena se escalará desde su centro. Cuando se imprimen varios modelos, todos ellos se escalan desde el mismo punto de origen. Esto permite colocar esos modelos muy juntos, sin que se superpongan en la impresión final. Las áreas de colisión de los modelos se escalan a lo largo, para que puedas ver exactamente dónde terminará tu impresión. Esto también evitará que coloques los modelos en la escena en lugares donde colisionarían con características de la impresión o de la impresora, como la torre de imprimación o los clips de la placa de construcción.
+
+Un factor del 100% no causará ningún escalado. Un factor ligeramente superior al 100% es más apropiado para muchos materiales de ingeniería como el ABS o el polipropileno. Un factor de escalado inferior al 100% indicaría que el material crece al enfriarse, como una espuma quizás.
+
+Los datos puramente químicos sobre cuánto se encoge un material entre la temperatura de impresión y la temperatura ambiente no son suficientes para predecir un buen valor para este ajuste, porque el proceso de impresión también influye en la contracción. Cuando se extruye en una línea, el plástico se estira en la dirección de la longitud de la línea, y se encoge más en ese eje.

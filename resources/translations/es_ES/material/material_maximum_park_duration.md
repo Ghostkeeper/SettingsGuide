@@ -1,0 +1,7 @@
+Duración máxima de aparcamiento
+====
+Aunque una impresora tenga un almacenamiento en seco, puede presentar el material listo en la boquilla durante un tiempo después de terminar la impresión anterior, o después de cargar el material, porque es probable que el usuario haga una nueva impresión pronto. Este ajuste configura el tiempo máximo que el material está fuera del almacenamiento en seco, listo para imprimir. Si está fuera durante más tiempo, comenzará a degradarse debido a la humedad del aire.
+
+Reducir este ajuste hace que las impresoras vuelvan a colocar el filamento en el almacenamiento en seco más rápidamente, lo que es menos conveniente para el usuario. Sin embargo, si el material está aparcado durante demasiado tiempo, la humedad absorbida del aire degradará el material. Esto puede aumentar la fricción en el tren de extrusión, lo que provocará que se produzcan molestias cuando la impresora comience a imprimir de nuevo. También puede hacer que el material sea más frágil, dando lugar a piezas más débiles o a la rotura del filamento. La rotura del filamento resulta en impresiones fallidas, o en fallos de retracción si la impresora tiene un tubo Bowden.
+
+**Este ajuste no es visible actualmente en la interfaz de Cura. Sólo se puede establecer por los perfiles. Tampoco es utilizado por Cura durante el corte. Sin embargo, las impresoras que entienden el formato de archivo de material de Cura pueden utilizarlo para decidir cuánto tiempo mantener el filamento fuera del almacenamiento en seco.**

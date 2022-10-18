@@ -1,0 +1,5 @@
+Impulsos del forro de la superficie superior
+====
+Este ajuste determina la velocidad a la que la boquilla puede pasar por las esquinas al imprimir las superficies superiores. Esto se puede configurar por separado del resto de la superficie superior.
+
+Aumentar el impulso para esta parte de la impresión evitará que la boquilla se detenga en las esquinas entre las líneas adyacentes de la superficie superior. Esto permitirá que el ancho de la línea sea más consistente en general. Esto tiene un mayor efecto si el ancho de la línea es mucho menor que el tamaño de la boquilla, que es un caso de uso común para la superficie superior. Aumentar el impulso demasiado puede hacer que la placa de construcción vibre, creando una superficie irregular. Incluso puede hacer que los motores pierdan pasos, lo que provocaría un desplazamiento de la capa.

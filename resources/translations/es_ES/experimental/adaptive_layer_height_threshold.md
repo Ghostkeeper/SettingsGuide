@@ -1,0 +1,9 @@
+Capas adaptativas Tamaño de la topografía
+====
+Este ajuste configura la distancia (horizontal) que deben tener los bordes de las capas en cualquier pendiente. La altura de las capas se ajusta de forma que se alcance el desplazamiento deseado. Cuando se trata de evitar el [efecto topografía] (../troubleshooting/topography.md), este ajuste configura esencialmente la distancia entre los contornos topográficos.
+
+Si se reduce este ajuste, las capas serán más finas en general, porque los bordes horizontales de las capas tienen que estar más juntos. Aumentar este ajuste hará que las capas sean más gruesas, porque los bordes de las capas pueden estar más separados. Sin embargo, el grosor de las capas se mantendrá dentro del rango definido por los ajustes [Layer Height](../resolution/layer_height.md) y [Variation](adaptive_layer_height_variation.md).
+
+Reduzca esta configuración para reducir el efecto de topografía en los lados superiores o inferiores de su impresión. Sin embargo, esto hará que la impresión tarde más tiempo. Aumente esta configuración para reducir el tiempo de impresión.
+
+Casi siempre es mejor ajustar la altura de la capa en lugar de este ajuste y ajustar el resto de los ajustes en consecuencia. Empiece con un perfil que tenga una altura de capa que necesite para reducir el efecto de topografía a niveles aceptables. A continuación, permita alguna variación en torno a ese grosor de capa con Capas adaptables. Esto asegura que el resto de los ajustes de impresión se ajustan correctamente para el espesor de la capa que realmente va a ser impreso en. Con esta configuración puede ponderar ligeramente Capas adaptables para elegir más de la parte inferior o superior del rango permitido.

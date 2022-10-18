@@ -1,0 +1,7 @@
+Distancia para evitar al desplazarse
+====
+Al [evitar colisiones con otros objetos](travel_avoid_other_parts.md), este ajuste define la distancia que la boquilla mantiene con los otros objetos que debe evitar.
+
+Tenga en cuenta que esto define la distancia entre los otros objetos y la línea central del movimiento de desplazamiento. El movimiento de desplazamiento no tiene espesor. Es aconsejable dar un valor a este ajuste que sea al menos lo suficientemente grande para que la punta de la boquilla no golpee las otras piezas.
+
+Aumentando el valor de este ajuste se reduce la posibilidad de que la boquilla golpee los objetos previamente impresos al desplazarse alrededor de ellos. Sin embargo, aumentar el valor de este ajuste también aumentará ligeramente la longitud de los movimientos de desplazamiento, ya que la boquilla debe dar un mayor rodeo. Esto aumenta ligeramente el tiempo de impresión y la cantidad de rezuma. Más apremiante quizás es que esto reduce la posibilidad de que se encuentre una trayectoria válida que no se acerque demasiado a ninguna pieza previamente impresa. Si no se encuentra una trayectoria válida, la boquilla (quizás) se retraerá y viajará en línea recta en su lugar, resignándose a que las otras partes sean golpeadas de todos modos. Por lo tanto, aumentar demasiado este ajuste también puede ser perjudicial para la calidad de la superficie.

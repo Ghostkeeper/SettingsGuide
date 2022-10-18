@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="1000">
+	<!-- Different structures in the print. -->
+	<g fill="red">
+		<rect x="10" y="400" width="50" height="590" /> <!-- Lower left wall. -->
+		<rect x="100" y="10" width="50" height="395" /> <!-- Upper left wall. -->
+		<rect x="350" y="10" width="50" height="395" /> <!-- Upper right wall. -->
+		<rect x="440" y="400" width="50" height="590" /> <!-- Lower right wall. -->
+	</g>
+	<g fill="yellow">
+		<rect x="60" y="940" width="380" height="50" /> <!-- Bottom skin. -->
+		<rect x="150" y="10" width="200" height="50" /> <!-- Top skin. -->
+	</g>
+	<g fill="none" stroke="saddlebrown" stroke-width="10" stroke-dasharray="10">
+		<rect x="65" y="410" width="80" height="40" /> <!-- Left removed skin. -->
+		<rect x="355" y="410" width="80" height="40" /> <!-- Right removed skin. -->
+	</g>
+
+	<!-- The model outline. -->
+	<polygon fill="none" stroke="black" stroke-width="10" points="10,990 10,400 100,400 100,10 400,10 400,400 490,400 490,990" />
+
+	<!-- Legend. -->
+	<g stroke="black" stroke-width="5">
+		<line x1="105" y1="430" x2="240" y2="700" />
+		<line x1="395" y1="430" x2="260" y2="700" />
+	</g>
+	<g font-family="sans-serif" font-size="50" text-anchor="middle">
+		<text x="250" y="750">Forro retirado</text>
+	</g>
+</svg>

@@ -1,0 +1,9 @@
+Velocidad de la segunda piel del puente
+====
+Este ajuste controla la velocidad de impresión de las líneas de piel en la segunda capa por encima del puente.
+
+Para los materiales que requieren que el ventilador se encienda y se ponga en alto (como el PLA), generalmente es mejor imprimir los puentes muy lentamente. Esto permite que los ventiladores soplen mucho aire sobre el material, lo que hace que se solidifiquen muy rápidamente. El material no tiene tanta oportunidad de combarse entonces, lo que haría que se apoyaran en la primera capa de puente y que ésta se combara más. Esto es menos efectivo para materiales que no necesitan que el ventilador gire tan rápido o para impresoras que no tienen un ventilador muy potente.
+
+Imprimir más lentamente también creará un gran cambio en la velocidad a la que el material necesita ser extruido desde la abertura de la boquilla. Este cambio en la velocidad de flujo lleva algún tiempo, lo que da lugar a una sobreextrusión cuando el cabezal de impresión se ralentiza para el puente y a una subextrusión después. Dado que la segunda capa es menos crítica para la calidad del voladizo que la capa de puente normal, es mejor hacer imprimir la segunda capa a una velocidad más cercana a la [velocidad de impresión] ordinaria (../velocidad/velocidad_topbottom.md) para evitar la sobreextrusión y la subextrusión.
+
+En general, es mejor imprimir las líneas de piel de puente lentamente con materiales que se imprimen a temperaturas frías, como el PLA. Es mejor imprimir las líneas de piel de puente alrededor de la misma velocidad que la velocidad ordinaria de arriba/abajo cuando se imprime con materiales de alta temperatura como el policarbonato.

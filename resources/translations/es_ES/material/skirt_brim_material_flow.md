@@ -1,0 +1,5 @@
+Flujo de falda/borde
+====
+Esta configuración ajusta el caudal sólo para la falda o el borde. El caudal de la falda o el borde puede ajustarse por separado del caudal del resto de la impresión.
+
+Aumentar el caudal de la falda o el borde puede hacer que se adhiera mejor a la placa de impresión, ya que el material se presiona sobre la placa de impresión con más fuerza. Sin embargo, hay que tener cuidado de no sobreextruir demasiado. Si el material sobresale por encima del borde, la boquilla puede arrancarlo de la placa de impresión cuando un movimiento de desplazamiento cruce el borde. Además, si las líneas del faldón o del borde se solapan demasiado, algunas líneas no podrán llegar a la placa de impresión porque están bloqueadas por líneas adyacentes demasiado anchas. Esto puede ser perjudicial para la adhesión a la placa de impresión. En su lugar, el [Ancho de línea de falda/borde](../resolution/skirt_brim_line_width.md) puede conseguir el mismo efecto de empujar más hacia abajo la placa de impresión, pero espaciando las líneas también para que todas puedan adherirse a la placa de impresión.

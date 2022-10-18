@@ -1,0 +1,7 @@
+Optimización del desplazamientos del relleno
+====
+Activar este ajuste puede reducir ligeramente el tiempo de desplazamiento en su impresión. Al acortar la longitud de los movimientos de desplazamiento, la impresión será ligeramente más rápida y la boquilla también rezumará un poco menos. Sin embargo, también tardará más tiempo en cortar el modelo.
+
+Normalmente Cura optimiza el orden en que se dibujan las líneas de relleno de forma bastante ingenua. Después de cada línea, Cura buscará la siguiente línea más cercana y la dibujará. Sin embargo, para algunas formas inusuales e intrincadas, el camino hasta la siguiente línea de relleno puede ser bastante largo porque la boquilla tiene que dar un rodeo debido al [peinado](../travel/retraction_combing.md). Ingenuamente, Cura subestima la distancia entonces y puede elegir un movimiento de desplazamiento más largo en lugar de uno más corto. Cuando esta configuración está activada, la distancia se calcula con precisión para que se pueda hacer una mejor elección.
+
+Este ajuste suele tener poco impacto en el tiempo de corte. Sin embargo, para impresiones complejas con muchas piezas pequeñas (donde es más útil) puede aumentar el tiempo de corte en órdenes de magnitud.

@@ -1,0 +1,9 @@
+Flujo de suelo de soporte
+====
+Esta configuración ajusta el caudal sólo para el piso de apoyo. El caudal del fondo de apoyo puede ajustarse por separado del caudal del resto del soporte.
+
+Ajustar el caudal durante el fondo del soporte es un método de parada para solucionar problemas de velocidad de extrusión o de adherencia entre el modelo y el soporte. Se puede conseguir el mismo efecto ajustando el [ancho de línea](../resolution/support_bottom_line_width.md) o el [espacio entre líneas](../support/support_bottom_line_distance.md) del fondo del soporte, pero ajustar el caudal puede ser más intuitivo.
+
+Si hay un problema con la tasa de extrusión, es mejor mirar las [velocidades de impresión](../speed/speed_support_bottom.md), [temperatura](material_print_temperature.md) y [ancho de línea](../resolution/support_bottom_line_width.md). Tal vez haya una diferencia demasiado grande entre la velocidad de flujo del fondo de apoyo y las demás estructuras de la capa. Quizás el ancho de la línea es demasiado fino para extruirse correctamente. Si la interfaz se imprime con un [material diferente](../support/support_interface_extruder_nr.md), un problema común es que el material con el que se imprime la interfaz no tiene suficiente tiempo para empezar a fluir correctamente. Esto se puede arreglar utilizando una [torre auxiliar](../dual/prime_tower_enable.md) o aumentando el [área del suelo del soporte](../support/support_bottom_offset.md).
+
+Si el soporte se pega demasiado al modelo, ajustar el [ancho de línea](../resolution/support_bottom_line_width.md) suele ser más eficaz, ya que también hace que las líneas estén más juntas para conseguir la misma densidad de relleno del soporte.

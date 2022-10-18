@@ -1,0 +1,7 @@
+Pausa de limpieza
+====
+Con este ajuste, se puede hacer que la boquilla se detenga brevemente justo después de que el procedimiento de limpieza haya terminado.
+
+El procedimiento de limpieza es bastante largo, para un movimiento de desplazamiento. La boquilla se mueve hasta el lado del volumen de construcción y se mueve hacia adelante y hacia atrás allí, y luego tiene que viajar de nuevo a la impresión. Durante este tiempo habrá una gran cantidad de rezuma y una [retracción más larga](wipe_retraction_amount.md) puede ser necesaria. Después de la desretracción, habrá un periodo en el que el flujo que sale de la boquilla necesita ponerse en marcha todavía. Esta pausa permite que la cámara de la boquilla vuelva a tener presión cuando el material se desretraiga de nuevo, permitiendo que la primera línea se imprima correctamente sin una subextrusión significativa.
+
+Una pausa demasiado larga provoca la aparición de una mancha en el lugar donde cae la boquilla. Dependiendo del [orden de impresión] (../infill/infill_before_walls.md), esto puede no ser significativo ya que la mancha puede aparecer en el interior de la impresión donde no es visible. Sin embargo, el material utilizado para esta mancha no se utilizará para las siguientes líneas impresas, lo que provocará una subextrusión. Esta configuración requiere un ajuste cuidadoso.

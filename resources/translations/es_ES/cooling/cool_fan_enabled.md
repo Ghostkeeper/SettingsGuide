@@ -1,0 +1,9 @@
+Activar la refrigeración de la impresión
+====
+Este ajuste activará o desactivará los ventiladores del cabezal de impresión durante la impresión. Los ventiladores están destinados a enfriar el material mientras se imprime, para que se solidifique más rápido.
+
+Los materiales con un rango de temperatura de transición vítrea bajo, como el PLA, necesitarán ser enfriados durante la impresión. Los ventiladores ayudan a hacerlo soplando aire más frío del entorno sobre el material caliente que acaba de salir de la boquilla. De lo contrario, empezará a [combarse] (../troubleshooting/sagging.md) por el calor, lo que provoca deformaciones e incluso puede fallar la impresión por completo. En los lugares en los que el material cuelga en el aire, como por ejemplo donde hay un voladizo, no hay nada que detenga el pandeo, por lo que es fundamental que el material se enfríe inmediatamente.
+
+En el caso de materiales con un rango de temperatura de transición vítrea más alto, como el ABS, se sigue recomendando encender los ventiladores, pero pueden girar a una velocidad menor durante ciertas partes de la impresión. La mayoría de las impresoras permiten un control preciso sobre la velocidad del ventilador, por lo que no es sólo un interruptor de encendido/apagado. Normalmente se puede controlar la velocidad precisa del ventilador (cool_fan_speed.md).
+
+Sólo en el caso de materiales con una temperatura de transición vítrea muy alta deberías desactivar completamente los ventiladores. Si los ventiladores están habilitados entonces, podría dar problemas de extrusión y hacer que la impresión final sea frágil.

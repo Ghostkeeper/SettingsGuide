@@ -1,0 +1,7 @@
+Cantidad extra de cebado en la retracción de limpieza
+====
+Si se [retrae durante el procedimiento de barrido](wipe_retraction_enable.md), el material se retraerá una vez finalizado el procedimiento de barrido. Cuando esto ocurra, es posible que desee que el material sea empujado un poco más allá de la [distancia de retracción](wipe_retraction_amount.md) original para compensar cualquier material que se haya perdido a pesar de la retracción. Esto puede configurarse por separado de la [cantidad normal de imprimación extra](../travel/retraction_extra_prime_amount.md).
+
+El procedimiento de limpieza hace que la boquilla vaya hasta el lado de la impresora, se mueva hacia adelante y hacia atrás allí, y luego se mueva todo el camino de vuelta. Esto es esencialmente un movimiento de desplazamiento muy largo. Como este movimiento de desplazamiento es más largo que el promedio de los movimientos de desplazamiento a lo largo de la impresión, se puede perder más material debido a la exudación. Para compensar esto, es posible que tenga que imprimar más después del procedimiento de barrido que después de los movimientos de desplazamiento normales.
+
+Si se ceba demasiado material, habrá una sobreextrusión. Esto se manifiesta como una mancha en el lugar donde cae la boquilla después del procedimiento de limpieza.
