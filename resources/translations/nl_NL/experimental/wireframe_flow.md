@@ -1,0 +1,9 @@
+Doorvoer Draadprinten
+====
+Met deze instelling kan nozzle worden aangepast bij het printen met de draadprinttechniek. Het dient alleen als een vermenigvuldiger voor de lijnbreedte en laaghoogte. Het bepaalt direct hoeveel materiaal er wordt gebruikt voor draadprinten.
+
+Met deze instelling wordt de doorvoer voor de hele print aangepast, maar de doorvoer kan ook apart worden aangepast voor de [Doorvoer Platte Lijn Draadprinten](wireframe_flow_flat.md) of de [Verbindingsdoorvoer Draadprinten](wireframe_flow_connection.md).
+
+Bij het printen van draden wordt de afstand tussen lijnen en lagen niet bepaald door lijnbreedte of laaghoogte. Alleen de [Verbindingeshoogte Draadprinten](wireframe_height.md) en de [Afstand Dakuitsparingen Draadprinten](wireframe_roof_inset.md) worden gebruikt. Dus in plaats van de draadprintdoorvoer aan te passen, kunt u net zo goed de [laaghoogte](../resolution/layer_height.md) of [Lijnbreedte Vulling](../resolution/line_width.md) instellingen of de [Doorvoer](../material/material_flow.md). Dit heeft hetzelfde effect. Deze instellingen worden echter gebruikt om een ​​printprofiel te maken met de juiste doorvoer voor draadprinten zonder de printkwaliteit te beïnvloeden van normale printen waarbij geen draadprint wordt gebruikt.
+
+Door de flux te verhogen, worden de draden dikker. Dit maakt het frame stijver als het eenmaal is gestold. Dit verhoogt echter ook de hoeveelheid warmte in het frame, waardoor het langer duurt om de draden te laten stollen. Hierdoor gaan de draden doorhangen en neemt de betrouwbaarheid van de print af, omdat de draden mogelijk niet goed zijn aangesloten.

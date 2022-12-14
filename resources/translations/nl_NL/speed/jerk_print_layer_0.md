@@ -1,0 +1,7 @@
+Printschok Eerste Laag
+====
+Deze instelling regelt de snelheid waarmee nozzle door hoeken kan gaan terwijl de eerste laag wordt geëxtrudeerd. Dit kan apart van de verplaatsingen tijdens de eerste laag worden geconfigureerd.
+
+Het verminderen van de schok zal ervoor zorgen dat de printer meer materiaal in scherpe hoeken afgeeft naarmate de nozzle langzamer gaat, terwijl wanneer de doorvoer wordt verminderd, er enige vertraging in de materiaaldoorvoer zal zijn. Deze scherpe hoeken zijn vaak de plaatsen waar de print door vervorming voor het eerst loslaat van de platvorm. Het is dan gunstig om in deze hoeken extra materiaal aan te brengen omdat het ervoor zorgt dat de hoeken beter hechten. Dit effect treedt niet op tijdens de bewegingen van de eerste laag. Om deze reden is de schok tijdens het extruderen van de eerste laag meestal iets minder dan de ruk tijdens de verplaatsingsbewegingen van de eerste laag.
+
+De afzonderlijke printstructuren kunnen allemaal verschillende schokwaarden hebben. Er zijn aparte instellingen voor de invulling, bodem, buiten- en binnenwanden, support en primepijler. Deze instelling heeft voorrang op al deze instellingen. Alleen de instelling [Schok Skirt/Brim](jerk_skirt_brim.md) overschrijft deze jerk, aangezien skirt en brim alleen in de eerste laag kunnen voorkomen.

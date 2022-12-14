@@ -1,0 +1,15 @@
+Mimimumvolume primepijler
+====
+Dit geeft aan hoeveel materiaal er moet worden gespoeld elke keer dat de extruder wordt vervangen. Het idee hierachter is dat er een bepaald volume uit de nozzle stroomde terwijl deze in de standby-modus stond. Het met deze instelling gespecificeerde volume is bedoeld om dit te compenseren.
+
+![Het geëxtrudeerde volume is groen gemarkeerd.](../../../articles/images/prime_tower.svg)
+
+Deze instelling specificeert de minimale hoeveelheid materiaal die moet worden gestort. De contouren van de primepijler zijn echter volledig afgewerkt, waardoor er meer materiaal kan worden afgegeven, afhankelijk van hoe goed het volume overeenkomt met het volume van een contour.
+
+Sommige printers hebben meerdere afzonderlijke nozzles, terwijl andere meerdere materialen in één nozzle voeren. Een goede waarde voor deze instelling is voor beide heel verschillend.
+* Als uw printer meerdere nozzles heeft, is de enige vereiste voor het geprimed volume om te compenseren voor het materiaal dat verloren is gegaan terwijl de andere nozzle actief was. Er is wat materiaal gelekt en de benodigde druk in de nozzlekamer is weggevallen. Een kleine hoeveelheid materiaal is voldoende om de druk in de nozzlekamer te herstellen. Meer stroombare materialen zoals PETG vereisen typisch een groter minimumvolume. Als het minimale volume van de inlaattoren te laag is, zal [Onder-extrusie](../troubleshooting/underextrusion.md) optreden aan het begin van het extrusiepad na de extruderwissel.
+* Als uw printer meerdere filamenten in hetzelfde nozzle duwt, moet de primepijler ook het resterende materiaal uit nozzle spoelen. Bij het terugtrekken van het vorige filament zal er altijd een klein kloddertje in nozzle achterblijven, aangezien het materiaal daar onder de verwarmingszone vloeibaar was en niet met de rest van het filament wordt meegetrokken. Het minimale volume van de primepijler moet daarom minimaal het volume van de gehele hete zone van de nozzle zijn. In de praktijk is er veel meer nodig, want als het nieuwe filament erin wordt geduwd, vermengt het zich met het oude filament en duwt het opzij. Er is veel meer materiaal nodig als buffer om al het oude materiaal eruit te krijgen, zodat het niet verontreinigd raakt. Dit alles overtreft het probleem van het herstel van de nozzledruk als gevolg van sijpelen, dus het sijpelen is dan geen probleem meer. In dit geval, als het minimale volume van de primepijler te laag is, zullen de materialen mengen, zodat de kleuren meer lopen of u krijgt putjes in uw print na het oplossen van het wateroplosbare supporsmateriaal.
+
+Het te hoog instellen van het minimale volume van de primepijler is relatief onschadelijk, maar zal resulteren in langere printtijden en meer verspilling van materiaal. Het volume wordt beperkt door de [Formaat Primepijler](prime_tower_size.md). Het volume kan hoger worden ingesteld dan het totale volume van de primepijler op die laag, maar wanneer de primepijler volledig is ingepland, heeft dit geen invloed meer op de print.
+
+Het volume kan voor elke extruder anders zijn, dus de uiteindelijke toren kan voor elk van de extruders een ander aantal contouren hebben.

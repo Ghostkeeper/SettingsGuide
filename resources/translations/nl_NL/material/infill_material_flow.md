@@ -1,0 +1,7 @@
+Doorvoer vulling
+====
+Met deze instelling wordt het doorvoer alleen voor vullen aangepast. Het doorvoer voor de vulling kan apart van het doorvoer voor de rest van de print worden ingesteld.
+
+Het aanpassen van de doorvoersnelheid is een noodmaatregel om problemen met de extrusiesnelheid of dikte op te lossen. Hetzelfde effect kan worden bereikt door de [Lijnafstand Vulling](../infill/infill_line_distance.md) en [Lijnbreedte Vulling](../resolution/infill_line_width.md) van de vulling aan te passen, maar deze instelling kan intuïtiever zijn .
+
+Problemen met de extrusiesnelheid of vulling-sterkte worden meestal veroorzaakt door een van twee dingen: overlappende vulling-patronen of een te grote verandering in de doorvoersnelheid tussen de vulling en andere structuren. In plaats van de doorvoersnelheid aan te passen, kan het effectiever zijn om het [Vulpatroon](../infill/infill_pattern.md) of [Lijnbreedte Vulling](../resolution/infill_line_width.md) aan te passen. Kies een opvulpatroon dat zichzelf niet kruist, zoals B. Zigzag, en kies een lijnbreedte die dichter bij de extrusiesnelheid van de wanden en de skin ligt. Als de lijndikte moet worden vergroot voor sterkte, maar de doorvoersnelheid is beperkt, wordt aanbevolen om [Vermenigvuldiging Vullijn](../infill/infill_multiplier.md) te wijzigen.

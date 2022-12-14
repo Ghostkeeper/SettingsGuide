@@ -1,24 +1,38 @@
-Laaghoogte
+Laag Hoogte
 ====
-De 3D printer legt plastic neer in laagjes. De laaghoogte bepaalt hoe dik deze lagen zijn, in millimeter. Het is de belangrijkste factor voor zowel de visuele kwaliteit van de uiteindelijke print als de printtijd.
+De 3D-printer brengt het plastic in lagen aan. De laaghoogte is de hoogte van deze lagen in millimeters. Het is de belangrijkste factor in zowel de visuele kwaliteit van de uiteindelijke print als de printtijd.
 
-![0,1mm laaghoogte](../../../articles/images/layer_height_0.1.png)
-![0,3mm laaghoogte](../../../articles/images/layer_height_0.3.png)
+<!--screenshot {
+"image_path": "layer_height_0.1.png",
+"modellen": [{"script": "plunger_stop.scad"}],
+"camerapositie": [25, 100, 50],
+"instellingen": {"layer_height": 0.1},
+"kleuren": 32
+}-->
+<!--screenshot {
+"image_path": "layer_height_0.3.png",
+"modellen": [{"script": "plunger_stop.scad"}],
+"camerapositie": [25, 100, 50],
+"instellingen": {"layer_height": 0.3},
+"kleuren": 32
+}-->
+![0,1 mm laaghoogte](../../../articles/images/layer_height_0.1.png)
+![0.3mm laaghoogte](../../../articles/images/layer_height_0.3.png)
 
-De laaghoogte is de allerbelangrijkste instelling om de afweging te bepalen tussen de algemene kwaliteit en de printtijd. Het heeft verregaande effecten op de print. Hier zijn enkele effecten:
-* Dunnere laagjes geven een betere visuele kwaliteit voor de print. Omdat de laagjes dunner zijn wordt het topografieeffect minder zichtbaar. Tevens zijn de laagjes dichter bij elkaar, waardoor het oppervlakte gladder wordt.
-* Met dunnere laagjes kan de printer meer details aanbrengen aan de boven- en onderkant van de print.
-* Dikkere lagen zorgt dat de print sterker wordt, tot op zekere hoogte. Er zijn minder grensvlakken tussen de lagen, en dat is vaak een zwaktepunt van de print. Dikkere laagjes schuiven niet zo veel.
-* Hoe dikker de lagen, hoe minder lagen geprint hoeven te worden en hoe korter de print tijd. De nozzle hoeft minder horizontaal te bewegen.
+laaghoogte is de belangrijkste instelling die van invloed is op de algehele kwaliteit en, omgekeerd, op de printtijd. Dit zijn slechts enkele van de effecten:
+* Dunnere lagen verhogen de visuele kwaliteit van de print. Omdat de lagen dunner zijn, wordt de rafeling aan de randen van de lagen verminderd. Ook liggen de lagen dichter bij elkaar, waardoor de groeven tussen de lagen kleiner zijn, wat resulteert in een globaal gladder resultaat.
+* Dunnere lagen zorgen ervoor dat de printer meer details kan creëren aan de boven- en onderkant van de print.
+* Dikkere lagen maken de print tot op zekere hoogte stabieler. Er zijn minder randen tussen lagen, wat meestal een zwak punt is. De dikkere lagen schuiven niet zo veel af.
+* Dikkere lagen verkorten de printtijd omdat de nozzle minder horizontale bewegingen hoeft te maken.
 
-Laaghoogte vs. profielen
+laaghoogte vs. profielen
 ----
-Veel instellingen zijn afhankelijk van de laaghoogte. Omdat de laaghoogte veel invloed heeft op hoe snel het materiaal uit de nozzle moet stromen, verandert er veel aan het printproces. Dit is erg ingewikkeld. Als bijvoorbeeld de laaghoogte wordt verhoogd, moet ook de printtemperatuur worden verhoogd om te compenseren voor het extra verlies van warmte aan de grotere hoeveelheid materiaal. Deze temperatuur beïnvloedt vervolgens de vloeibaarheid van het materiaal en daarmee hoe scherp de hoekjes worden, hoe veel koeling er nodig is, enzovoorts. Het is altijd verstandig om te beginnen vanuit een voorgemaakt profiel als er profielen zijn voor jouw printer en set-up. Begin vanuit het profiel met de laaghoogte die het dichtst ligt bij wat je nodig hebt.
+Veel instellingen zijn afhankelijk van de laaghoogte. Omdat de laaghoogte de doorvoer van het materiaal door de nozzle aanzienlijk beïnvloedt, veranderen veel parameters van het printproces. Dit is erg ingewikkeld. Als je bijvoorbeeld de laaghoogte vergroot, moet je waarschijnlijk ook de printtemperatuur iets verhogen om het extra warmteverlies te compenseren. De temperatuur heeft dan invloed op de vloeibaarheid van het materiaal, wat weer van invloed is op hoe scherp de hoeken zullen zijn en welke koeling nodig is etc. Het is altijd aan te raden om te beginnen met een vooraf ontworpen kwaliteitsprofiel dat beschikbaar is voor uw printer en een laaghoogte die aan uw eisen voldoet.
 
-Je kan de gewenste laaghoogte kiezen in de Aangepaste modus, maar voorgemaakte profielen zijn ook beschikbaar met diverse laaghoogtes. Je kan kiezen uit profielen met diverse laaghoogtes in Aanbevolen modus met de schuifbalkjes, of met een drop-down in Aangepaste modus. Omdat deze profielen ook andere instellingen aanpassen dan enkel de laaghoogte, krijg je waarschijnlijk een betere kwaliteit op deze manier.
+Met de aangepaste modus kunt u de gewenste laaghoogte kiezen, maar er zijn ook vooraf ontworpen profielen met verschillende laaghoogtes beschikbaar. U kunt kiezen uit profielen voor verschillende laaghoogtes in de aanbevolen modus met een schuifregelaar of in de aangepaste modus met behulp van de vervolgkeuzewidget. Aangezien deze profielen ook enkele parameters wijzigen die afhankelijk zijn van de laaghoogte, krijgt u op deze manier waarschijnlijk een betere kwaliteit.
 
-Overige tips
+Extra informatie
 ----
-Op zeer kleine laaghoogtes kom je misschien tegen het resolutielimiet aan van de Z-as van de printer. Zoek op wat de stapgrootte is van de printer's Z as en zorg dat de laaghoogte een meervoud daarvan is. Als het niet goed past, zullen sommige laagjes iets dikker worden en sommige laagjes iets dunner. Dit geeft een bandeneffect.
+Met zeer kleine laaghoogtes zou je de grenzen van de resolutie van je Z-as kunnen bereiken. Zoek de toename van de Z-as van uw printer op en zorg ervoor dat de laaghoogte een veelvoud daarvan is. Als dit niet het geval is, zullen sommige lagen dikker zijn dan andere, waardoor strepen ontstaan.
 
-*De laaghoogte bepaalt niet de dikte van de eerste laag of de raftlagen. Deze hebben hun eigen instellingen om de laagdikte apart in te stellen. Als adaptieve lagen gebruikt worden, is deze laaghoogteinstelling een gemiddelde dikte, maar in werkelijkheid is er wat variatie in de dikte van de lagen.*
+**Merk op dat de instelling van de laaghoogte niet van toepassing is op de eerste laag van de print of op de raftlagen, aangezien deze hun eigen instellingen hebben om de laaghoogte afzonderlijk aan te passen. Bij gebruik van adaptieve lagen wordt deze instelling voor de laaghoogte als basislijn gebruikt, maar de werkelijke laaghoogte kan enigszins variëren.**

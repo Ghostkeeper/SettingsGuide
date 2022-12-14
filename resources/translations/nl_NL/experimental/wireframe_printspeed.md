@@ -1,0 +1,5 @@
+Snelheid Draadprinten
+====
+Deze instelling configureert de algehele verplaatsingssnelheid van de printkop in elke fase van het draadprintproces. De snelheid kan afzonderlijk worden ingesteld voor de [Opwaardse Printsnelheid Draadprinten](wireframe_printspeed_up.md), [Neerwaardse Printsnelheid Draadprinten](wireframe_printspeed_down.md) en [Hhorizontale Printsnelheid Draadprinten](wireframe_printspeed_flat.md) bewegingen, evenals voor de horizontale bewegingen op de [Printsnelheid Bodem Draadprinten]( wireframe_printspeed_bottom.md). Deze instelling heeft (standaard) invloed op al deze snelheden.
+
+Als u de printsnelheid verhoogt, kost het minder tijd om printen. Dit verhoogt echter ook de trillingen en vermindert de nauwkeurigheid van de nozzlebewegingen. De betrouwbaarheid van draadprinten hangt vooral af van de sterkte van de verbindingen. Hoe hoger de snelheid, hoe minder kans er is om twee punten in het frame goed met elkaar te verbinden.

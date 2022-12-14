@@ -1,0 +1,156 @@
+{
+	"name": "Settings Guide",
+	"version": 2,
+	"inherits": "fdmprinter",
+	"metadata": {
+		"type": "machine",
+		"author": "Ghostkeeper",
+		"manufacturer": "Ghostkeeper",
+		"visible": false,
+		"position": 0
+	},
+	"settings": {
+		"troubleshooting": {
+			"label": "Troubleshooting",
+			"type": "category",
+			"description": "Various ways in which a print could fail and how to remedy them using Cura settings.",
+			"icon": "warning",
+			"children": {
+				"aliasing": {
+					"label": "Aliasing",
+					"description": "Limited stepper resolution is producing a jagged pattern in straight walls.",
+					"type": "str",
+					"default_value": ""
+				},
+				"bed_adhesion_problems": {
+					"label": "Problemen met (print)bed hechting",
+					"description": "The print got loose from the build plate while the print was still going on.",
+					"type": "str",
+					"default_value": ""
+				},
+				"blobs": {
+					"label": "Klodders",
+					"description": "Small specs on the walls.",
+					"type": "str",
+					"default_value": ""
+				},
+				"elephants_foot": {
+					"label": "Olifant voet",
+					"description": "The bottom layer(s) of the print is a bit wider than the rest.",
+					"type": "str",
+					"default_value": ""
+				},
+				"layer_shift": {
+					"label": "Laagverschuiving",
+					"description": "Layers are not properly stacked on top of each other.",
+					"type": "str",
+					"default_value": ""
+				},
+				"layer_splitting": {
+					"label": "Laag Splitsing",
+					"description": "Layers don't stick to each other and split open.",
+					"type": "str",
+					"default_value": ""
+				},
+				"missing_parts": {
+					"label": "Missende onderdelen",
+					"description": "Some parts of the model are missing from the final print.",
+					"type": "str",
+					"default_value": ""
+				},
+				"overextrusion": {
+					"label": "Over-extrusie",
+					"description": "Too much material is being extruded, causing the surface to become irregular and rough.",
+					"type": "str",
+					"default_value": ""
+				},
+				"pillowing": {
+					"label": "Pillowing",
+					"description": "The top side is showing bulges or holes in between the infill lines.",
+					"type": "str",
+					"default_value": ""
+				},
+				"ringing": {
+					"label": "Rimpellen",
+					"description": "There is a ripple effect on flat surfaces next to small details.",
+					"type": "str",
+					"default_value": ""
+				},
+				"sagging": {
+					"label": "Verzakking",
+					"description": "Overhanging areas droop down.",
+					"type": "str",
+					"default_value": ""
+				},
+				"scarring": {
+					"label": "Lidtekens",
+					"description": "There are visible lines on the top or bottom side that don't belong to the top/bottom pattern.",
+					"type": "str",
+					"default_value": ""
+				},
+				"seam": {
+					"label": "Naden",
+					"description": "A surface defect where the contour is started and closed.",
+					"type": "str",
+					"default_value": ""
+				},
+				"stringing": {
+					"label": "Stringing",
+					"description": "There are strings of plastic in places where the nozzle travels from one place to another.",
+					"type": "str",
+					"default_value": ""
+				},
+				"topography": {
+					"label": "Topografie",
+					"description": "The borders between the layers are visible on the top or bottom side.",
+					"type": "str",
+					"default_value": ""
+				},
+				"underextrusion": {
+					"label": "Onder-extrussie",
+					"description": "The printer is not extrusing enough material to make a strong, solid object.",
+					"type": "str",
+					"default_value": ""
+				},
+				"unfinished_print": {
+					"label": "Onvoltooide Print",
+					"description": "The print is only partly completed.",
+					"type": "str",
+					"default_value": ""
+				},
+				"warping": {
+					"label": "Kromtrekken",
+					"description": "The print curls up due to shrinkage when it cools down.",
+					"type": "str",
+					"default_value": ""
+				}
+			}
+		},
+		"about": {
+			"label": "About",
+			"type": "category",
+			"description": "About this plug-in",
+			"icon": "info",
+			"children": {
+				"glossary": {
+					"label": "Glossary",
+					"description": "Terminology used by Cura.",
+					"type": "str",
+					"default_value": ""
+				},
+				"preferences": {
+					"label": "Preferences",
+					"description": "Adjust the behaviour of this plug-in.",
+					"type": "str",
+					"default_value": ""
+				},
+				"contributors": {
+					"label": "Contributors",
+					"description": "Everyone that helped in creating this plug-in.",
+					"type": "str",
+					"default_value": ""
+				}
+			}
+		}
+	}
+}

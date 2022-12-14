@@ -1,0 +1,5 @@
+Acceleratie Boven-/Onderkant
+====
+Deze instelling bepaalt hoe snel nozzle in verschillende richtingen versnelt bij het printen van de boven- en onderkant van het object. De acceleratie voor de boven- en onderkant kan op een andere snelheid worden ingesteld dan de rest van de print.
+
+Het verhogen van de acceleratie ten opzichte van de rest van het printproces kan tijd besparen. Omdat de boven- en onderkant meestal uit lange rechte lijnen bestaan, kan de nozzle daar grote snelheden bereiken. nozzle moet ook scherpe hoeken produceren met het lijnpatroon dat typerend is voor de skin, wat een hoge acceleratie vereist. Een hogere acceleratie zorgt er echter ook voor dat de printer meer trilt, maar de nauwkeurigheid van de boven- en onderkant is meestal geen obstakel omdat ze omgeven zijn door wanden.

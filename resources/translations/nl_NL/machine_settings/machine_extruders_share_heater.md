@@ -1,0 +1,9 @@
+Extruders delen verwarming
+====
+Met deze instelling kunt u ervoor zorgen dat alle nozzlejes in deze printer een enkele verwarming gebruiken. Cura zal de nozzles van bepaalde extruders niet afkoelen wanneer ze inactief zijn. Omdat ze een verwarming delen, is de veronderstelling dat de extruder warm moet blijven voordat een andere extruder kan blijven extruderen.
+
+Meestal is dit vereist bij mengnozzleken waarbij meerdere filamenten in hetzelfde nozzle worden gevoerd. Deze nozzle heeft maar één heater die het filament dat zich op dat moment in de nozzle bevindt opwarmt. Tegelijkertijd zou Cura, als Cura de verwarming voor elk filament afzonderlijk regelde, proberen nozzle warm te houden voor het actieve filament terwijl het afkoelde tot de [Stand-bytemperatuur](../material/material_standby_temperature.md) voor de andere filamenten . Dit is niet mogelijk en resulteert in ofwel alleen het eerste filament opwarmen of permanent printen tot stand-bytemperatuur als de firmware alleen de warmteopdrachten toepast op één nozzle, ongeacht op welk gereedschap ze zijn gericht. Door Cura te vertellen dat de extruders een verwarming delen, wordt dit probleem vermeden.
+
+Cura gaat er niet per se van uit dat de extruders die een verwarming delen ook een matrijs delen. Er is hiervoor een aparte instelling die specificeert dat de [Extruders delen nozzle](machine_extruders_share_nozzle.md).
+
+**Omdat dit een apparaatinstelling is, wordt deze normaal gesproken niet vermeld in de normale lijst met instellingen. Er is echter een selectievakje voor deze instelling in het dialoogvenster Printerinstellingen, dat u kunt vinden in de lijst met toegevoegde printers in het dialoogvenster Instellingen.**

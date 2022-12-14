@@ -1,0 +1,9 @@
+Materiaal-GUID
+====
+Deze instelling bevat een unieke identificatie voor het materiaal dat zich op de spoel bevindt die momenteel in de printer is geladen. Dit identificeert op unieke wijze het plastic dat de printer binnenkomt, inclusief fabrikant en kleur. Het is echter hetzelfde voor verschillende coils van hetzelfde materiaal. Kortom, elk item dat u in een online winkel ziet, krijgt een unieke ID. Cura gebruikt deze unieke identifier voor twee doeleinden: om de configuratie te synchroniseren met die van je printer (als je printer is aangesloten op Cura) en om profielen te groeperen die bij hetzelfde materiaal horen.
+
+Wanneer een Ultimaker-printer via het netwerk of internet met Cura is verbonden, geeft de printer Cura een lijst met GUID's voor de materialen die momenteel in de printer zijn geladen. Cura koppelt deze GUID's aan de GUID's in zijn profielen, waardoor het weet welke profielen de gebruiker moet tonen.
+
+Het wordt ook gebruikt om de beschikbare kwaliteitsniveaus voor een bepaald materiaal te groeperen. Het profielsysteem van Cura is zeer complex, en dit is een van de eigenaardigheden: Normaal gesproken toont Cura alle kwaliteitsprofielen die beschikbaar zijn voor de skinige materiaalsoort. Dat wil zeggen, als een specifieke fabrikant aangeeft dat hun materiaal een PLA-type is, zijn alle kwaliteitsprofielen voor PLA beschikbaar. Als er echter een kwaliteitsprofiel is dat het skinige materiaal per GUID specificeert, dan is alleen dat kwaliteitsprofiel beschikbaar. Dit betekent in wezen dat er profielen zijn die speciaal voor dit filament zijn gemaakt en dat de algemene profielen niet meer mogen verschijnen.
+
+**Omdat dit een machine-instelling is, is deze instelling normaal gesproken niet zichtbaar in de instellingenlijst.**

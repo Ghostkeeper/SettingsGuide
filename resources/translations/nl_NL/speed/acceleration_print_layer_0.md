@@ -1,0 +1,7 @@
+Printacceleratie Eerste Laag
+====
+Deze instelling regelt hoe snel nozzle versnelt in verschillende richtingen bij het extruderen in de eerste laag. De acceleratie tijdens de eerste laag kan op een andere snelheid worden ingesteld dan de rest van de print en de acceleratie tijdens de extrusiebewegingen kan op een andere snelheid worden ingesteld dan de acceleratie tijdens de verplaatsingsbewegingen.
+
+Terwijl de wanden, platformgrip, vloeren, support en opvulling allemaal verschillende acceleratiesnelheden kunnen hebben, lopen ze in de eerste laag allemaal met dezelfde acceleratie. De acceleratiesnelheid van de eerste laag heft de acceleratiesnelheden van de afzonderlijke structuren op. De instelling [Acceleratie Skirt/Brim](acceleration_skirt_brim.md) overschrijft de printacceleratie van de eerste laag.
+
+Als u met hoge acceleratie print, kunnen trillingen via de printer worden doorgegeven. Deze trillingen kunnen er met name voor zorgen dat de platvorm op en neer gaat oscilleren, wat de hechting van de print aan de platvorm nadelig beïnvloedt. Het verminderen van de acceleratie voor de eerste laag kan trillingen in dit kritieke deel van het printproces verminderen. Het printen duurt echter langer en het te veel verminderen van de acceleratiesnelheden kan resulteren in ongelijkmatige extrusie in de hoeken, wat ook een negatieve invloed heeft op de hechting van de platvorm.

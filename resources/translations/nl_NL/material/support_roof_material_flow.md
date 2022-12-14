@@ -1,0 +1,9 @@
+Doorvoer supportdak 
+====
+Met deze instelling wordt de doorvoer alleen voor de supportdak aangepast. De doorvoer voor het supportdak kan apart worden ingesteld van de doorvoer voor de rest van de support.
+
+Het aanpassen van de doorvoersnelheid op het supportdak is een noodmaatregel om problemen met de extrusiesnelheid of de hechting van model aan support op te lossen. Hetzelfde effect kan worden bereikt door de [Lijnbreedte supportdak](../resolutie/support_roof_line_width.md) of [Lijnafstand supportdak](../support/support_roof_line_distance.md) van het supportdak aan te passen, maar het aanpassen van de doorvoersnelheid kan intuïtiever.
+
+Als er een probleem is met de extrusiesnelheid, is het beter om te kijken naar de [Snelheid Supportdak](../speed/speed_support_roof.md), [Printtemperature](material_print_temperature.md) en [Lijnbreedte Vulling](../resolution /support_roof_line_width.md ) om te bekijken. Misschien is het verschil tussen het doorvoer van het supportdak en de andere constructies in de laag te groot. Misschien is de lijndikte te dun om goed te extruderen. Wanneer de structuur wordt geprint met een [Extruder Verbindingsstructuur](../support/support_interface_extruder_nr.md) is een veelvoorkomend probleem dat het materiaal waarmee de structuur wordt geprint niet genoeg tijd krijgt om goed te stromen. Dit kan door gebruik te maken van een [Primepijlerinschakelen](../dual/prime_tower_enable.md) of door het [Supportdak horizontale uitbreiding](../support/support_roof_offset.md)
+
+Als de support te goed aan het model blijft plakken, is het aanpassen van de [lijnbreedte suppotdak](../resolution/support_roof_line_width.md) meestal effectiever, omdat hierdoor ook de lijnen dichter bij elkaar komen om dezelfde opvuldichtheid van de support te bereiken.
