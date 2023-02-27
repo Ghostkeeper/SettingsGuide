@@ -4,7 +4,7 @@ Met de Slicetolerantie kunt u instellen hoe u omgaat met de onnauwkeurigheid van
 
 Centrum
 ----
-!Centrum](../../../articles/images/slicing_tolerance_middle.svg)
+![Centrum](../../../articles/images/slicing_tolerance_middle.svg)
 
 Bij gebruik van middle blijven de lagen zo dicht mogelijk bij het oorspronkelijke oppervlak. Dit betekent dat de lagen soms boven het oorspronkelijke oppervlak uitsteken en soms in het oorspronkelijke oppervlak zakken. Over het algemeen zal het volume van de lagen zeer dicht bij het volume van de originele mesh liggen.
 
