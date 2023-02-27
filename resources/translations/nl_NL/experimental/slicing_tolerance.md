@@ -6,7 +6,7 @@ Centrum
 ----
 ![Centrum](../../../articles/images/slicing_tolerance_middle.svg)
 
-Bij gebruik van middle blijven de lagen zo dicht mogelijk bij het oorspronkelijke oppervlak. Dit betekent dat de lagen soms boven het oorspronkelijke oppervlak uitsteken en soms in het oorspronkelijke oppervlak zakken. Over het algemeen zal het volume van de lagen zeer dicht bij het volume van de originele mesh liggen.
+Bij gebruik van centrum blijven de lagen zo dicht mogelijk bij het oorspronkelijke oppervlak. Dit betekent dat de lagen soms boven het oorspronkelijke oppervlak uitsteken en soms in het oorspronkelijke oppervlak zakken. Over het algemeen zal het volume van de lagen zeer dicht bij het volume van de originele mesh liggen.
 
 Om de gemiddelde tolerantie te krijgen, berekent Cura een doorsnede door de helft van de dikte van elke laag. Alles wat binnen de doorsnede ligt, wordt onderdeel van de laag.
 
