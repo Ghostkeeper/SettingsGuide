@@ -1,0 +1,7 @@
+Printtemperatuur
+====
+Dit verwijst naar de temperatuur van de nozzle tijdens het printen.De printtemperatuur is een van de meest invloedrijke instellingen die invloed hebben op hoe het materiaal zich tijdens het printen gedraagt. Zelfs een klein temperatuurverschil kan een grote impact hebben op hoe het plastic vloeit.
+
+Elk filament heeft een specifiek temperatuurbereik waarin het kan worden geprint. Dit staat meestal aangegeven op de verpakking en op het technische gegevensblad. Over het algemeen maakt het verhogen van de temperatuur thermoplasten vloeibaarder. Hierdoor kan de printer het materiaal sneller extruderen omdat er minder interne wrijving is. Bij het printen met grote laaghoogtes, brede lijnen, grote stroomsnelheden of hoge snelheden, moet de temperatuur zich aan de hoge kant van het temperatuurbereik bevinden. Een warmere print maakt het echter ook moeilijker voor het materiaal om af te koelen, waardoor de overhang meer doorhangt (meer support nodig) en meer stringing veroorzaakt.
+
+Een te hoge temperatuur zorgt ervoor dat het materiaal degradeert tijdens het printen. Dit kan nozzle verstoppen en mogelijk de printer beschadigen. Als de temperatuur te laag is ingesteld, zal de feeder tegen het materiaal wrijven, waardoor het niet kan extruderen.

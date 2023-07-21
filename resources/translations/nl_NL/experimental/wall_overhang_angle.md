@@ -1,0 +1,9 @@
+Hoek Overhangende Wand
+====
+Deze instelling specificeert de drempel waarboven een wand wordt gemarkeerd als een "overhangende wand". Deze overhangende wanden kunnen met een andere snelheid worden geprint door de instelling [Snelheid Overhangende Wand](wall_overhang_speed_factor.md) te gebruiken.
+
+Als deze voorkeur op 0° staat, worden alle wanden als overhangende wanden behandeld. Als deze voorkeur op 90° staat, worden geen wanden als overhangende wanden behandeld. Ook worden wanden die op een drager rusten niet als overhangende wanden behandeld.
+
+Het doel van deze functie is om betere overhangkwaliteiten te bieden voor gebieden die bijna moeten worden support door een [Support genereren](../support/support_enable.md), maar niet helemaal. In plaats van extra tijd en materiaal te besteden aan support en het oppervlak te beschadigen bij het verwijderen van de support, kunt u deze overhangende wanden iets langzamer printen en de [Overhanghoek Supportstructuur](../support/support_angle.md) iets hoger instellen. Hiermee wordt bereikt dat het printen van toenemende overhanghoeken beter gespreid kan worden.
+
+Als u deze instelling hoger instelt dan de Overhanghoek van de support, wordt het effect van deze functie aanzienlijk verminderd, aangezien wanden die zich boven de support bevinden niet worden gedefinieerd als overhangende wanden, dus wanden die zijn geprint met een overhanghoek die is gedefinieerd als overhangende wand, worden ook ondersteund en niet geprint met verschillende snelheden. Deze functie heeft echter ook effect wanneer support is uitgeschakeld of voor delen van de overhang die om andere redenen niet worden ondersteund, zoals [Minimumgebied supportstructuur](../support/minimum_support_area.md).

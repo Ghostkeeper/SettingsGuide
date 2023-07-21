@@ -1,0 +1,5 @@
+Schok Verbindingstructuur
+====
+Deze instelling bepaalt de snelheid waarmee nozzle door de hoeken kan bewegen bij het printen van de supportstructuur. Dit kan afzonderlijk van het hoofddeel van de support worden geconfigureerd.
+
+Meestal kan de supportstructuur worden geprint met vrij grote schokwaarden, omdat het niet uitmaakt of er een beltoon in de interface is of dat de extrusiesnelheid inconsistent is. De supportinterface wordt echter redelijk dicht bij de daadwerkelijke print geplaatst en bepaalt hoe de support aan het object wordt bevestigd. Als de interface door trillingen onnauwkeurig wordt geprint, kan dit leiden tot littekens omdat de support te goed aan de print hecht, of slechte overhangen als er te veel ruimte is tussen de support en het model. Dit kan een reden zijn om de schok in het supportinterfacegebied iets lager in te stellen dan in de rest van de support.

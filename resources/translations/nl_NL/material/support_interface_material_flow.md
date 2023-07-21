@@ -1,0 +1,9 @@
+Doorvoer supportinterface
+====
+Met deze instelling wordt de doorvoer alleen voor de supportstructuur aangepast. Het doorvoer voor de supportstructuur kan afzonderlijk van het doorvoer van de rest van de support worden ingesteld.
+
+Het aanpassen van de doorvoer op de supportstructuur is een noodmaatregel om problemen met de extrusiesnelheid of adhesie van model tot support op te lossen. Hetzelfde effect kan worden verkregen door de [Lijnbreedte Verbindingsstructuur](../resolution/support_interface_line_width.md) of [Lijnafstand supportdak](../support/support_roof_line_distance.md) van de supportstructuur aan te passen, maar het aanpassen van de doorvoer kan intuïtiever.
+
+Als er een probleem is met de extrusiesnelheid, is het beter om te kijken naar de [Vulsnelheid Verbindingsstructuur](../speed/speed_support_interface.md), [Printtemperature](material_print_temperature.md) en [Lijnbreedte Verbindingsstructuur](../resolution /support_interface_line_width.md) om te bekijken. Er kan een te groot verschil zijn tussen de doorvoer van de supportstructuur en de andere structuren op de laag. Misschien is de lijndikte te dun om goed te extruderen. Wanneer de structuur wordt geprint met een [Extruder Verbindingsstructuur](../support/support_interface_extruder_nr.md) is een veelvoorkomend probleem dat het materiaal waarmee de structuur wordt geprint niet genoeg tijd krijgt om goed te stromen. Dit kan gedaan worden door een [Primepijler inschakelen](../dual/prime_tower_enable.md)
+
+Als de support te goed aan het model blijft plakken, is het aanpassen van de [Lijnbreedte supportvloer](../resolution/support_bottom_line_width.md) meestal effectiever omdat de lijnen ook dichter bij elkaar komen om dezelfde opvuldichtheid van de support te bereiken.

@@ -1,0 +1,7 @@
+Mijdafstand Tijdens Bewegingen
+====
+Als u [Geprinte delen mijden tijdens bewegingen](travel_avoid_other_parts.md), definieert deze instelling hoe ver de nozzle wegblijft van de andere objecten die het moet vermijden.
+
+Merk op dat dit de afstand definieert tussen de andere objecten en de lijn van de verplaatsing. De lijn heeft geen dikte. Het is aan te raden om voor deze instelling een waarde te kiezen die in ieder geval groot genoeg is om te voorkomen dat de nozzlepunt tegen de andere onderdelen botst.
+
+Het verhogen van de waarde van deze instelling verkleint de kans dat nozzle reeds geprinte objecten raakt wanneer er omheen wordt genavigeerd. Het verhogen van de waarde van deze instelling resulteert echter ook in een lichte toename van de verplaatsafstanden, omdat de nozzle een grotere omweg moet maken. Dit verhoogt de printtijd en de hoeveelheid druppelen enigszins. Misschien nog ernstiger, dit verkleint de kans op het vinden van een geldig pad dat niet te dicht in de buurt komt van delen die al zijn geprint. Als er geen geldig pad wordt gevonden, trekt nozzle (misschien) zich terug en reist in plaats daarvan in een rechte lijn, waarbij hij zich neerlegt bij het raken van de andere delen.

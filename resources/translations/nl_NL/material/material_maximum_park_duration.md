@@ -1,0 +1,7 @@
+Maximale parkeerduur
+====
+Zelfs als een printer een droogkamer heeft, kan deze het materiaal nog een tijdje bij de nozzle houden nadat de laatste print is voltooid of het materiaal is geladen, omdat de gebruiker waarschijnlijk binnenkort een nieuwe print zal maken. Deze instelling bepaalt de maximale hoeveelheid tijd die materiaal beschikbaar is om buiten de uithardingskamer te printen. Als het langer buiten blijft, wordt het beschadigd door het vocht in de lucht.
+
+Het verlagen van deze instelling dwingt printers om filament sneller terug te recyclen naar de droge opslag, wat minder handig is voor de gebruiker. Als het materiaal echter te lang wordt geparkeerd, zal het vocht dat uit de lucht wordt opgenomen ervoor zorgen dat het materiaal verslechtert. Dit kan de wrijving in de extrudertrein verhogen, wat resulteert in knarsende geluiden wanneer de printer weer begint te printen. Ook kan het materiaal brozer worden, wat resulteert in zwakkere onderdelen of gebroken filament. Gebroken filament zal resulteren in mislukte printen of niet-invoer als de printer een bowden-buis heeft.
+
+**Deze instelling is momenteel niet zichtbaar in de interface van Cura. Het kan alleen worden ingesteld door de profielen. Het wordt ook niet gebruikt door Cura bij het snijden. Drukkers die het materiaalbestandsformaat van Cura begrijpen, kunnen het echter gebruiken om te beslissen hoe lang het filament uit droge opslag moet worden bewaard.**

@@ -1,0 +1,9 @@
+Doorvoer supportvloer
+====
+Met deze instelling wordt het doorvoer alleen voor de supportvloer aangepast. Het doorvoer voor de supportvloer kan apart van het doorvoer voor de rest van de support worden ingesteld.
+
+Het aanpassen van de doorvoer tijdens supportgrond is een noodmaatregel om problemen met de extrusiesnelheid of hechting tussen het model en de support op te lossen. Hetzelfde effect kan worden bereikt door de [Lijnbreedte supportvloer](../resolution/support_bottom_line_width.md) of [Lijnafstand supportvloer](../support/support_bottom_line_distance.md) van de supportbodem aan te passen, maar het aanpassen van de doorvoer is misschien intuïtiever.
+
+Als er een probleem is met de extrusiesnelheid, is het beter om te kijken naar de [Snelheid supportvloer](../speed/speed_support_bottom.md), [Printtemperatuur](material_print_temperature.md) en [Lijnbreedte Vulling](../resolution /support_bottom_line_width.md ) om te bekijken. Misschien is het verschil tussen het doorvoer van de supportvloer en de andere structuren in de laag te groot. Misschien is de lijndikte te dun om goed te extruderen. Wanneer de structuur wordt geprint met een [Extruder Verbindingsstructuur](../support/support_interface_extruder_nr.md) is een veelvoorkomend probleem dat het materiaal waarmee de structuur wordt geprint niet genoeg tijd krijgt om goed te stromen. Dit kan gedaan worden door een [Primepijler inschakelen](../dual/prime_tower_enable.md)
+
+Als de support te goed aan het model blijft plakken, is het aanpassen van de [Lijnbreedte supportvloer](../resolution/support_bottom_line_width.md) meestal effectiever omdat de lijnen ook dichter bij elkaar komen om dezelfde opvuldichtheid van de support te bereiken.

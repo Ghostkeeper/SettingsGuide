@@ -1,0 +1,5 @@
+Doorvoer Skirt-/Brim
+====
+Met deze instelling wordt de doorvoer alleen voor de skirt of de brim aangepast. Het doorvoer voor de skirt of brim kan apart van het doorvoer voor de rest van de print worden ingesteld.
+
+Door de stroomsnelheid van de skirt of brim te verhogen, kan deze beter aan het platform hechten, omdat het materiaal met meer kracht op het platform wordt gedrukt. Er moet echter voor worden gezorgd dat er niet te veel wordt geëxtrudeerd. Als het materiaal boven de brim uitsteekt, kan het nozzle het van het platform scheuren wanneer een beweging de brim kruist. Bovendien, als de skirt- of brimlijnen te veel overlappen, zullen sommige lijnen het platform niet kunnen bereiken omdat ze worden geblokkeerd door te brede aangrenzende lijnen. Dit kan nadelig zijn voor de hechting aan het platform. In plaats daarvan kan de [Skirt/Brim Line Width](../resolution/skirt_brim_line_width.md) hetzelfde effect krijgen door harder op het platform te drukken, maar de lijnen worden ook verder verdeeld zodat ze allemaal aan de het platform hechten.
