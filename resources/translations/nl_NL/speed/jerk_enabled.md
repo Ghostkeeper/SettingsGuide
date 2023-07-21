@@ -4,7 +4,7 @@ De jerk bepaalt de snelheid waarmee de nozzle door de bochten kan. Wanneer jerk 
 
 ![De relatie tussen snelheid, acceleratie en schok](../../../articles/images/velocity_acceleration_jerk.svg)
 
-**Een schok in 3D-printen is niet hetzelfde als een schok in de natuurkunde.** De term 'schok (jerk)' is geïntroduceerd door Marlin. Het werd daar ontwikkeld als een remedie voor het inherente probleem om een ​​traject perfect te volgen. Aangezien nozzle (theoretisch) niet van het pad mag afwijken, zou het in elke hoek moeten vertragen tot 0 mm/s. Dit zou uw print verpesten, omdat vertragen tot 0 mm/s een klodder in elke hoek zou veroorzaken. nozzle mag niet buigen om hoeken af ​​te snijden of doorschieten. In plaats daarvan laat Marlin de snelheidsvector onmiddellijk veranderen op elke hoek. De grootte van deze verandering in snelheidsvector wordt "schok" genoemd.
+**Een schok in 3D-printen is niet hetzelfde als een schok in de natuurkunde.** De term 'schok (jerk)' is geïntroduceerd door Marlin. Het werd daar ontwikkeld als een remedie voor het inherente probleem om een traject perfect te volgen. Aangezien nozzle (theoretisch) niet van het pad mag afwijken, zou het in elke hoek moeten vertragen tot 0 mm/s. Dit zou uw print verpesten, omdat vertragen tot 0 mm/s een klodder in elke hoek zou veroorzaken. nozzle mag niet buigen om hoeken af te snijden of doorschieten. In plaats daarvan laat Marlin de snelheidsvector onmiddellijk veranderen op elke hoek. De grootte van deze verandering in snelheidsvector wordt "schok" genoemd.
 
 Dus de schok is de maximale momentane verandering in snelheid die optreedt bij elke hoek van de beweging.
 

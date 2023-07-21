@@ -22,8 +22,8 @@ Lijnen
 ----
 ![Lijnen](../../../articles/images/support_pattern_lines.png)
 
-Het lijnenpatroon tekent rechte lijnen. De lijnen zijn zo uitgelijnd dat ze nooit loodrecht staan ​​op de lijnen van de skin die deze moet ondersupporten (standaard).
-* Van alle patronen is deze het makkelijkst te verwijderen uit het model. Dit is erg handig wanneer er een overhangend gebied is dat zich dicht bij de platvorm bevindt. Indien nodig kunnen de resten met een mes worden weggesneden.
+Het lijnenpatroon tekent rechte lijnen. De lijnen zijn zo uitgelijnd dat ze nooit loodrecht staan op de lijnen van de skin die deze moet supporten (standaard).
+* Van alle patronen is deze het makkelijkst te verwijderen uit het model. Dit is erg handig wanneer er een overhangend gebied is dat zich dicht bij de platformbevindt. Indien nodig kunnen de resten met een mes worden weggesneden.
 * Biedt de beste overhangkwaliteit van elk patroon, samen met zigzag. De lijnen liggen zeer dicht bij elkaar en zijn zo uitgelijnd dat ze niet loodrecht op de skin staan.
 * Heeft de neiging onstabiel te zijn omdat de lijnen de neiging hebben om te kantelen.
 

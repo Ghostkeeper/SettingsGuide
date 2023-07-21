@@ -1,6 +1,6 @@
 Tussenruimte strijklijnen
 ====
-Deze instelling wijzigt de afstand tussen elke strijk lijn. De strijklijnen liggen meestal veel dichter bij elkaar dan de eigenlijke printlijnen, wat aanzienlijk bijdraagt ​​aan de effectiviteit.
+Deze instelling wijzigt de afstand tussen elke strijk lijn. De strijklijnen liggen meestal veel dichter bij elkaar dan de eigenlijke printlijnen, wat aanzienlijk bijdraagt aan de effectiviteit.
 
 <!--screenshot {
 "image_path": "ironing_enabled_enabled.png",

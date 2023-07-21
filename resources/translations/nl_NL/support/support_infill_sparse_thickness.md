@@ -26,6 +26,6 @@ De dikte van de supportvulling moet een veelvoud zijn van de hoogte van de norma
 
 Deze instelling is niet van toepassing op het dak of de vloer van de support, alleen op de hoofdconstructie.
 
-Deze instelling is vooral handig wanneer de support wordt geprint met een ander materiaal dan de rest van de print, en nog meer wanneer dat materiaal moeilijk te extruderen is, zoals plastic. BPVA. Doordat de drager niet in elke laag wordt geëxtrudeerd, hoeft de printer niet zo vaak van extruder te wisselen, wat veel tijd bespaart. Naarmate er meer materiaal op de geprinte lagen wordt geëxtrudeerd, worden materialen die een bepaalde tijd nodig hebben om te vloeien, betrouwbaarder geprint.
+Deze instelling is vooral handig wanneer de support wordt geprint met een ander materiaal dan de rest van de print, en nog meer wanneer dat materiaal moeilijk te extruderen is, zoals plastic. Doordat de drager niet in elke laag wordt geëxtrudeerd, hoeft de printer niet zo vaak van extruder te wisselen, wat veel tijd bespaart. Naarmate er meer materiaal op de geprinte lagen wordt geëxtrudeerd, worden materialen die een bepaalde tijd nodig hebben om te vloeien, betrouwbaarder geprint.
 
 Zorg ervoor dat u deze waarde niet te veel verhoogt. Bij het wisselen van en naar de support moet de doorvoer door de nozzle aanzienlijk worden versneld en vertraagd. Dit gebeurt met enige vertraging, dus er is sprake van onder-extruderen wanneer de support begint en over-extruderen wanneer de support eindigt.

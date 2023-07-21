@@ -1,6 +1,6 @@
 Geleidelijke supportvulling traptreden
 ====
-Getrapte support vermindert de hoeveelheid gebruikt supportmateriaal door de supportdichtheid in de onderste lagen te verlagen. Dit bespaart printtijd en materiaal zonder dat dit ten koste gaat van de kwaliteit van de overhang. Het hoofddoel van de support is het ondersupporten van overhangende gebieden. Deze functie stemt de support alleen voor dat doel af.
+Geleidelijke support vermindert de hoeveelheid gebruikt supportmateriaal door de supportdichtheid in de onderste lagen te verlagen. Dit bespaart printtijd en materiaal zonder dat dit ten koste gaat van de kwaliteit van de overhang. Het hoofddoel van de support is het ondersupporten van overhangende gebieden. Deze functie stemt de support alleen voor dat doel af.
 
 Deze instelling specificeert in hoeveel stappen de supportdichtheid wordt verminderd. Bij elke stap wordt de dichtheid van de support gehalveerd. Met bijvoorbeeld een dichtheid van 20% en twee niveaus, is de supportdichtheid in de lagere gebieden respectievelijk 10% en 5%.
 

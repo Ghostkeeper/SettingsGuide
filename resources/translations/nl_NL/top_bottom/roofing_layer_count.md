@@ -37,6 +37,6 @@ Voor de bovenkant zijn de volgende instellingen mogelijk:
 * [Patroon bovenskin](../experimental/roofing_pattern.md)
 * [Lijnrichting bovenskin](../experimental/roofing_angles.md)
 
-Om een ​​mooier oppervlak te krijgen, probeer de snelheid te verminderen en de schok te vergroten.
+Om een mooier oppervlak te krijgen, probeer de snelheid te verminderen en de schok te vergroten.
 
 Bij het printen van de skin in een andere kleur (met behulp van de [Extruder bovenskin](roofing_extruder_nr.md) instelling), is het vaak nodig om meer dan één laag in de andere kleur printen. Anders zou de originele kleur nog doorschijnen.

@@ -1,6 +1,6 @@
 Minimale diameter
 ====
-Deze instelling is een drempel voor de diameter van een overhang, waarbij kan worden gekozen tussen normale support en supportpijlers. Als het stuk dunner is dan deze drempel, wordt het ondersupportd door een [Pijler](support_use_towers.md). Als het breder is dan deze drempel, wordt het ondersupportd door normale supportstructuren.
+Deze instelling is een drempel voor de diameter van een overhang, waarbij kan worden gekozen tussen normale support en supportpijlers. Als het stuk dunner is dan deze drempel, wordt het ondersupport door een [Pijler](support_use_towers.md). Als het breder is dan deze drempel, wordt het ondersupport door normale supportstructuren.
 
 ![Het zwaard heeft een overhangoppervlak dat kleiner is dan de minimale diameter](../../../articles/images/support_use_towers.svg)
 

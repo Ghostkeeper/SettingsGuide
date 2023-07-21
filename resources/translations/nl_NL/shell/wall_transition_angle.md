@@ -23,7 +23,7 @@ Zoals altijd is dit een compromis. Het gebruik van een variabele breedte heeft e
 
 Het heeft echter ook enkele nadelen:
 * Hoeken verschijnen in dunne delen, die kunnen verschijnen als rimpels op het oppervlak.
-* Er zijn extra rijbewegingen.
+* Er zijn extra verplaatsbewegingen.
 * De printer kan de lijnbreedte niet snel achter elkaar nauwkeurig wijzigen.
 
 In de praktijk is het goed om deze hoek groot genoeg te kiezen om de openingen in scherpe hoeken zoals te zien in de slice-weergave te verkleinen, maar verder zo klein mogelijk. Een kleinere hoek zorgt er over het algemeen voor dat het oppervlak er gladder uitziet.

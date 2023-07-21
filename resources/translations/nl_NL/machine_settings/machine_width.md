@@ -6,6 +6,6 @@ Dit is niet de werkelijke breedte van uw printer op het schap. De eigenlijke pri
 
 ![De afmetingen van het bouwvolume](../../../articles/images/build_volume_dimensions.svg)
 
-Als er meerdere nozzleken zijn, kunnen mogelijk niet alle nozzleken het volledige bouwvolume bereiken. Bij sommige printers reiken sommige nozzlejes mogelijk niet tot aan één kant van het bouwvolume als de printer meerdere nozzlejes heeft die ten opzichte van elkaar zijn verschoven. Deze instelling geeft eenvoudigweg de som van de volumes weer die alle sproeiers kunnen bereiken.
+Als er meerdere nozzleken zijn, kunnen mogelijk niet alle nozzleken het volledige bouwvolume bereiken. Bij sommige printers reiken sommige nozzles mogelijk niet tot aan één kant van het bouwvolume als de printer meerdere nozzles heeft die ten opzichte van elkaar zijn verschoven. Deze instelling geeft eenvoudigweg de som van de volumes weer die alle nozzles kunnen bereiken.
 
 **Omdat dit een apparaatinstelling is, wordt deze normaal gesproken niet vermeld in de normale lijst met instellingen. De breedte kan worden gewijzigd in het dialoogvenster Printerinstellingen in de lijst met toegevoegde printers in het dialoogvenster Instellingen.**

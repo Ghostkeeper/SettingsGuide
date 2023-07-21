@@ -1,6 +1,6 @@
 Maximale lengte klein kenmerk
 ====
-Kleine details van de print zijn vaak erg maatgevend. Deze instelling zorgt ervoor dat kleine gaatjes in de print langzamer worden geprint om een ​​grotere nauwkeurigheid te bereiken.
+Kleine details van de print zijn vaak erg maatgevend. Deze instelling zorgt ervoor dat kleine gaatjes in de print langzamer worden geprint om een grotere nauwkeurigheid te bereiken.
 
 Als een gat in de print een kleinere omtrek heeft dan gespecificeerd door deze instelling, wordt de snelheid waarmee de omtrek van dat gat wordt geprint vermenigvuldigd (meestal verminderd) met een factor [Kleine kenmerksnelheid](small_feature_speed_factor.md). Deze instelling is een andere manier om de [Maximale grootte kleine gaten](small_hole_max_size.md), wat algemener is dan alleen voor ronde gaten.
 

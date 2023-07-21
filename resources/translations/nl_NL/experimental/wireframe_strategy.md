@@ -10,7 +10,7 @@ Er zijn twee compensatiefactoren beschikbaar: een die het zaagtandpatroon alleen
 
 Knooppunt
 ----
-Wanneer deze strategie wordt gekozen, wordt er een kleine heen en weer beweging gemaakt aan de bovenkant van elke zaagtand om daar een "knoop" van materiaal te vormen. Het doel van de knoop is om de horizontale ring boven een gebied te geven om te verbinden met het zaagtandpatroon. De knoop zal van kant tot kant een beetje variëren, dus als de horizontale ring niet erg nauwkeurig is geplaatst, is de kans groter dat ze aan elkaar knopen. Ook trekt de knoop de lijn iets verder omhoog, zodat de horizontale ring eroverheen schuift. En tot slot zal de knoop ook enige lekkage veroorzaken vanwege het ontbreken van inkepingen in deze reisbeweging. Dit creëert een blob
+Wanneer deze strategie wordt gekozen, wordt er een kleine heen en weer beweging gemaakt aan de bovenkant van elke zaagtand om daar een "knoop" van materiaal te vormen. Het doel van de knoop is om de horizontale ring boven een gebied te geven om te verbinden met het zaagtandpatroon. De knoop zal van kant tot kant een beetje variëren, dus als de horizontale ring niet erg nauwkeurig is geplaatst, is de kans groter dat ze aan elkaar knopen. Ook trekt de knoop de lijn iets verder omhoog, zodat de horizontale ring eroverheen schuift. En tot slot zal de knoop ook enige lekkage veroorzaken vanwege het ontbreken van inkepingen in deze verplaatsbewegingen. Dit creëert een blob
 
 ![Waar de knoop is geprint en hoe groot deze is](../../../articles/images/wireframe_top_jump.svg)
 

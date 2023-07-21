@@ -2,7 +2,7 @@ Strijkpatroon
 ====
 Bij het gladstrijken krijgt de bovenkant een patroon. Deze instelling bepaalt welk patroon wordt gebruikt om de bovenkant glad te maken.
 
-Het doel van het patroon is om een ​​glad, doorlopend oppervlak te creëren. Wanneer het patroon wordt verbroken, verschijnt er een zichtbare rand op het oppervlak. Er zijn twee patronen beschikbaar.
+Het doel van het patroon is om een glad, doorlopend oppervlak te creëren. Wanneer het patroon wordt verbroken, verschijnt er een zichtbare rand op het oppervlak. Er zijn twee patronen beschikbaar.
 <!--screenshot {
 "image_path": "ironing_enabled_enabled.png",
 "modellen": [

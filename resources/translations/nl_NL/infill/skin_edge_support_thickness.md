@@ -1,4 +1,4 @@
-Dikte skinrandsupport
+Dikte skinrandondersteuning
 ====
 Indien concave vormen worden geprint ontstaat er een buitenskin die ergens in het midden van de vulling eindigt. Deze instelling voegt een extra lijn toe door de vulling om de rand van de skin te ondersupporten, zodat deze iets minder doorhangt.
 

@@ -1,6 +1,6 @@
 Boven-/onderkant Polygonen verbinden
 ====
-Wanneer u een boven-/onderconcentrisch patroon gebruikt (een patroon dat bestaat uit gesloten contouren, ook wel polygonen genoemd), verbindt u alle contouren met elkaar om een ​​enkel pad te vormen.
+Wanneer u een boven-/onderconcentrisch patroon gebruikt (een patroon dat bestaat uit gesloten contouren, ook wel polygonen genoemd), verbindt u alle contouren met elkaar om een enkel pad te vormen.
 
 <!--screenshot {
 "image_path": "connect_skin_polygons_original.png",
@@ -35,6 +35,6 @@ Wanneer u een boven-/onderconcentrisch patroon gebruikt (een patroon dat bestaat
 ![Het concentrische patroon creëert aparte contouren](../../../articles/images/connect_skin_polygons_original.png)
 ![Alle contouren zijn verbonden met een enkele curve](../../../articles/images/connect_skin_polygons_enabled.png)
 
-Hierdoor worden nozzle verplaatsingen gereduceert. Hierdoor ontstaan ​​echter nieuwe scherpe hoeken waarin de nozzle sterk moet accelereren en vertragen, wat de winst in printtijd teniet doet. Het kronkelende patroon zal ook aan de buitenkant zichtbaar zijn, wat een interessant visueel effect geeft.
+Hierdoor worden nozzle verplaatsingen gereduceert. Hierdoor ontstaan echter nieuwe scherpe hoeken waarin de nozzle sterk moet accelereren en vertragen, wat de winst in printtijd teniet doet. Het kronkelende patroon zal ook aan de buitenkant zichtbaar zijn, wat een interessant visueel effect geeft.
 
 De contouren gegenereerd door [Aantal Extra Wandlijnen Rond Skin](../top_bottom/skin_outline_count.md) zijn niet met elkaar verbonden.

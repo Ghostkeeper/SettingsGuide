@@ -20,7 +20,7 @@ Aangepast
 
 Met deze optie kunt u handmatig een locatie selecteren. De naad wordt in de hoek geplaatst die zich het dichtst bij de geselecteerde positie bevindt. Hierdoor liggen de hoeken meestal heel dicht bij elkaar, waardoor de naad makkelijk weg te knippen is. Bovendien kan de positie van de naad nauwkeurig worden bepaald.
 
-Standaard is een locatie aan de achterkant van de printer geselecteerd. Het idee is dat gebruikers de voorkant van hun modellen naar de voorkant van de printer hebben gericht, zodat een positie op de achterkant de naad beter verbergt.
+Standaard is een locatie aan de achterkant van de print geselecteerd. Het idee is dat gebruikers de voorkant van hun modellen naar de voorkant van de printer hebben gericht, zodat een positie op de achterkant de naad beter verbergt.
 
 <!--screenshot {
 "image_path": "z_seam_type_shortest.png",
@@ -38,7 +38,7 @@ Kortste
 
 Deze optie minimaliseert eenvoudig de verplaats bewegingen naar de naad zonder de naad op een specifieke locatie te plaatsen. Omdat de route korter is, bespaar je wat tijd op de routes. De naad wordt ook iets kleiner omdat er minder slib wordt geplaatst waar de nozzle op de contour terechtkomt.
 
-De gewenste hoek heeft toch de voorkeur door een hoek dicht bij de nozzle te kiezen. Het kiest niet de dichtstbijzijnde hoek, maar gebruikt een berekende voorkeur om de verplaats bewegingen een beetje te minimaliseren, maar ook om een ​​geschikte hoek te gebruiken voor de [Voorkeur vannaad en hoek](z_seam_corner.md) instelling.
+De gewenste hoek heeft toch de voorkeur door een hoek dicht bij de nozzle te kiezen. Het kiest niet de dichtstbijzijnde hoek, maar gebruikt een berekende voorkeur om de verplaats bewegingen een beetje te minimaliseren, maar ook om een geschikte hoek te gebruiken voor de [Voorkeur van naad en hoek](z_seam_corner.md) instelling.
 
 <!--screenshot {
 "image_path": "z_seam_type_random.png",

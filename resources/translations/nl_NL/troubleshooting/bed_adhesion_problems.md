@@ -4,7 +4,7 @@ Een van de meest voorkomende soorten fouten bij 3D-printen is dat de print losra
 
 Als de print van de platform is verdwenen, zie je meestal veel losse draden over de hele platform. Als je geluk hebt, kan het zich gewoon manifesteren als [Laagverschuivingt](layer_shift.md) (en er is minder op te ruimen). Hoe dan ook, de print is verpest.
 
-Methoden van bedadhesie
+Methoden van bed hechting
 ----
 Cura biedt verschillende methoden om de bedhechting te verbeteren. U kunt tussen deze methoden kiezen met de instelling [Type Hechting aan Platform](../platform_adhesion/adhesion_type.md). De volgende opties zijn beschikbaar.
 * Brim, de meest gebruikte techniek, voegt een brim toe rond de onderkant van de print, waardoor het oppervlak groter wordt zodat de print beter hecht aan de platform.
@@ -37,7 +37,7 @@ Deze instellingen kunnen ook worden aangepast wanneer normale bedadhesiemethoden
 
 Panelen bouwen
 ----
-Naast een goede print is een goede platform ook belangrijk voor de hechting. Een goede platform moet zijn:
+Naast een goede print is een goed platform ook belangrijk voor de hechting. Een goed platform moet zijn:
 * ...schoon zijn! Het is erg belangrijk dat de platform geen vet (bijvoorbeeld van uw vingers) en stof bevat. Reinigen onder een hete kraan is zeer effectief. Het gebruik van wat ontsmettingsalcohol, isopropanol en een microvezeldoek is ideaal.
 * ...ook al! Als de platform te dicht bij nozzle staat, zal de filamentstroom uit nozzle ongelijkmatig zijn, wat resulteert in hobbels die nozzle de volgende keer zal afscheuren. Als de platform te ver van nozzle staat, wordt het materiaal niet goed op de platform geduwd, waardoor het oppervlak aanzienlijk wordt verkleind. Op de meeste printers kan de platform worden aangepast met een paar duimschroeven. Zorg er dus voor dat deze perfect waterpas staat en op de juiste afstand van nozzle.
 * ...ruw! Met een licht opgeruwde platform is het contactoppervlak tussen de platform en de print enorm vergroot in vergelijking met een perfect gladde platform. Om deze reden zijn sommige printers uitgerust met mat glas of geanodiseerd metaal.

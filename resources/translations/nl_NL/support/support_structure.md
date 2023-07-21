@@ -16,7 +16,7 @@ Normale supportstructuur
 ----
 ![Normale supportstructuur](../../../articles/images/support_type_everywhere.png)
 
-Dit is de traditionele supportstructuur die de meeste mensen gewend zijn. De structuur wordt onder de overhangen gemaakt en is meestal gevuld met een patroon dat de overshang direct ondersteund. Van daaruit valt het recht naar beneden totdat het de platvorm bereikt of een deel van het model dat het ondersteund.
+Dit is de traditionele supportstructuur die de meeste mensen gewend zijn. De structuur wordt onder de overhangen gemaakt en is meestal gevuld met een patroon dat de overshang direct ondersteund. Van daaruit valt het recht naar beneden totdat het de platform bereikt of een deel van het model dat het ondersteund.
 
 Normale supportconstructie is de standaard geweest voor het grootste deel van de geschiedenis van 3D-printen en werkt op dezelfde manier in alle slicers. Dit is de gouden standaard, en niet zonder reden:
 * Door zijn stabiele structuur met grote contactvlakken op het model en het platform is hij zeer betrouwbaar. Het kompenseerd heel goed slechte instellingen of een slecht afgestelde printer.
@@ -44,15 +44,15 @@ Boom ondersteunde structuur
 ----
 ![boom ondersupportende structuur](../../../articles/images/support_structure_tree.png)
 
-Met boomsupport begint de supportstructuur klein op de platvorm en groeit vervolgens naar de delen van de print die support nodig hebben.
+Met boomsupport begint de supportstructuur klein op de platformen groeit vervolgens naar de delen van de print die support nodig hebben.
 
-De boomsupportsstructuur kan obstakels vermijden als deze naar de overhangende gebieden groeit, omdat de supportstructuur niet recht naar beneden hoeft te vallen. Waar mogelijk zal de support alleen op de platvorm rusten om beschadiging van het oppervlak waarop de support rust te voorkomen. Als er geen pad is van de platvorm naar de overhang, zal de support op een oppervlak zo dicht mogelijk bij de overhang rusten om het materiaalverbruik te minimaliseren. De takken van de support van de boom worden beperkt door de [Hoek van takken van boomsupportstructuur](support_tree_angle.md) zodat ze niet te steil overhangen. Dit beperkt het vermogen om rond obstakels te groeien en bepaalt ook de hoogte waarop stammen beginnen te vertakken.
+De boomsupportsstructuur kan obstakels vermijden als deze naar de overhangende gebieden groeit, omdat de supportstructuur niet recht naar beneden hoeft te vallen. Waar mogelijk zal de support alleen op de platform rusten om beschadiging van het oppervlak waarop de support rust te voorkomen. Als er geen pad is van de platform naar de overhang, zal de support op een oppervlak zo dicht mogelijk bij de overhang rusten om het materiaalverbruik te minimaliseren. De takken van de support van de boom worden beperkt door de [Hoek van takken van boomsupportstructuur](support_tree_angle.md) zodat ze niet te steil overhangen. Dit beperkt het vermogen om rond obstakels te groeien en bepaalt ook de hoogte waarop stammen beginnen te vertakken.
 
 De boomdraagconstructie heeft een aantal grote voordelen ten opzichte van de normale draagconstructie:
 * De boomdraagconstructie verbruikt vaak veel minder materiaal dan de normale draagconstructie. Tussen 25% en 50% van het materiaalverbruik is gebruikelijk. Dit bespaart veel tijd en verlaagt de printkosten.
 * Door het kleine contactoppervlak ziet de overhang er vaak beter uit bij gebruik van de boomdraagstructuur.
 * Door het kleine contactoppervlak is de support ook makkelijker te verwijderen.
-* Het laat minder littekens achter op het oppervlak dan normale support, omdat het vanaf de platvorm rond het model naar de overhang kan grijpen.
+* Het laat minder littekens achter op het oppervlak dan normale support, omdat het vanaf de platformrond het model naar de overhang kan grijpen.
 
 De belangrijkste nadelen zijn echter:
 * Slicen duurt aanzienlijk langer dan normale support. Geduld is vereist, vooral bij grote modellen.

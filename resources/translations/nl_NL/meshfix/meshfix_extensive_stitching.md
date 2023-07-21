@@ -32,4 +32,4 @@ Een veelvoorkomend geval waarin het model incompleet is, is wanneer een extra st
 ![Als deze instelling uit staat, wordt alleen het volledig gesloten object geprint.](../../../articles/images/meshfix_extensive_stitching_disabled.png)
 ![Als deze instelling is ingeschakeld, wordt het extra stuk dienovereenkomstig toegevoegd.](../../../articles/images/meshfix_extensive_stitching_enabled.png)
 
-Deze instelling zorgt ervoor dat Cura de gaten in de mesh beter probeert te dichten wanneer deze niet volledig is gesloten. Dit vergroot de kans op een goede print, maar verlengt de snijtijd en kan soms verkeerde oppervlakken aan elkaar hechten
+Deze instelling zorgt ervoor dat Cura de gaten in de mesh beter probeert te dichten wanneer deze niet volledig is gesloten. Dit vergroot de kans op een goede print, maar verlengt de slicetijd en kan soms verkeerde oppervlakken aan elkaar hechten

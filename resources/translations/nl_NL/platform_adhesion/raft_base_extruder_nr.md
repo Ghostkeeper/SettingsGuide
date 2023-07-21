@@ -4,4 +4,4 @@ Deze instelling selecteert de extruder die wordt gebruikt voor de basislaag van 
 
 ![Waar de onderste laag in het raft zit](../../../articles/images/raft_dimensions_simplified.svg)
 
-De basislaag is de laag die bovenop de platvorm zit. Het moet voor voldoende hechting op de platvorm zorgen, dus het is goed om een ​​materiaal te kiezen dat goed hecht op de platvorm en niet krimpt.
+De basislaag is de laag die bovenop de platform zit. Het moet voor voldoende hechting op de platform zorgen, dus het is goed om een materiaal te kiezen dat goed hecht op de platform en niet krimpt.

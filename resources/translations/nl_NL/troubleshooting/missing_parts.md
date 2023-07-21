@@ -14,8 +14,8 @@ Meshes die zulke ontbrekende vlakken of extra delen hebben, worden non-manifold 
 ![In de röntgenweergave worden niet-gesloten mazen weergegeven met rode delen.](../../../articles/images/x_ray.png)
 
 Hoewel Cura er meestal van uitgaat dat de mesh divers is, kan het in sommige gevallen het model corrigeren. Dit zijn enkele dingen die u kunt proberen:
-* Uitgebreid Hechten](../meshfix/meshfix_extensive_stitching.md) kan beter omgaan met gevallen waarin extra geometrie aan de buitenkant van een model is bevestigd, hoewel het wat meer tijd kost om te snijden.
-* Oderbroken Oppervlakken Behouden](../meshfix/meshfix_keep_open_polygons.md) sluit alle open lussen met een rechte lijn. Hierdoor worden kleine openingen zeer goed gesloten. Dit kan er echter ook voor zorgen dat het model er heel vreemd uitziet als het grote gaten bevat.
+* [Uitgebreid Hechten](../meshfix/meshfix_extensive_stitching.md) kan beter omgaan met gevallen waarin extra geometrie aan de buitenkant van een model is bevestigd, hoewel het wat meer tijd kost om te snijden.
+* [Oderbroken Oppervlakken Behouden](../meshfix/meshfix_keep_open_polygons.md) sluit alle open lussen met een rechte lijn. Hierdoor worden kleine openingen zeer goed gesloten. Dit kan er echter ook voor zorgen dat het model er heel vreemd uitziet als het grote gaten bevat.
 * Als laatste redmiddel kan [Oppervlaktemodus](../blackmagic/magic_mesh_surface_mode.md) worden gebruikt om delen met gaten te printen, net als een enkele wand, zonder enige inhoud. Omdat het niet bekend is waar de binnenkant van dit deel is, zal er geen vulling of skin zijn, maar de omtrek kan in ieder geval worden geprint. In sommige gevallen kan dit ertoe leiden dat de print er nog redelijk uitziet.
 
 Als deze opties niet de gewenste print opleveren, moet u deze handmatig corrigeren met behulp van 3D-modelleringstoepassingen.

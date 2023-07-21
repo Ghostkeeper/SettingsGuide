@@ -8,4 +8,4 @@ De eerste laag die de brug oversteekt, heeft verreweg de grootste invloed op het
 * Het verlagen van de printsnelheid heeft een soortgelijk effect als het verhogen van de ventilatorsnelheid, omdat de ventilatoren het materiaal harder kunnen blazen.
 * Het verminderen van de doorvoer kan het gewicht van het materiaal verminderen en de koelingseffectiviteit verbeteren.
 
-Er zijn echter ook andere implicaties, dus elk van deze instellingen is een ballans. Het inschakelen van de 2e en 3e laag override-instellingen zorgt voor een nauwkeurigere afstemming, maar vereist ook meer experimenten om een ​​goed resultaat te krijgen.
+Er zijn echter ook andere implicaties, dus elk van deze instellingen is een ballans. Het inschakelen van de 2e en 3e laag override-instellingen zorgt voor een nauwkeurigere afstemming, maar vereist ook meer experimenten om een goed resultaat te krijgen.

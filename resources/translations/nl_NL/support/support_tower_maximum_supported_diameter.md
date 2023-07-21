@@ -1,4 +1,4 @@
-Maximale pijler-ondersupportde diameter
+Maximale pijler-ondersupport diameter
 ====
 Deze instelling is een drempel voor de diameter van een overhang, waarbij kan worden gekozen tussen normale support en supportpjler. Als het stuk dunner is dan deze drempel, wordt het ondersteund door een [Pijlers Gebruiken](support_use_towers.md). Als het breder is dan deze drempel, wordt het ondersteund door normale supportsstructuren.
 

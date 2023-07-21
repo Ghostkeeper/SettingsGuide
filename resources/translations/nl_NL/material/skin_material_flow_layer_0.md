@@ -1,4 +1,4 @@
-Initiële laag bodemstroom
+Initiële laag onderste lijn
 ====
 De stroom van de eerste laag kan worden gewijzigd met de parameter [Doorvoer eerste laag](material_flow_layer_0.md), maar deze parameter maakt het mogelijk om de fijnere details van de eerste laag te regelen door alleen de stroom van de skin van de eerste laag te wijzigen.
 

@@ -4,4 +4,4 @@ Deze instelling zorgt ervoor dat nozzle voldoende is geprimed voordat wordt gepr
 
 Het doel van deze instelling is ervoor te zorgen dat het materiaal voldoende is voorbereid voordat de print wordt gestart. De waarde van deze instelling moet zo worden gekozen dat het volume dat door deze minimale lengte wordt geëxtrudeerd, net genoeg is om de nozzle voor het printen te vullen.
 
-**De verboden gebieden rond de platvorm zijn niet geschikt voor deze instelling, omdat de effecten niet bekend zijn vóór het snijden. Als u met deze instelling kleine voorwerpen aan de brim van de printer plaatst, kan de printer buiten de grenzen van het printvolume komen.**
+**De verboden gebieden rond de platform zijn niet geschikt voor deze instelling, omdat de effecten niet bekend zijn vóór het slicen. Als u met deze instelling kleine voorwerpen aan de brim van de printer plaatst, kan de printer buiten de grenzen van het printvolume komen.**

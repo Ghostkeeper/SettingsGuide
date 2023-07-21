@@ -1,6 +1,6 @@
-Circulaire Prime Tower
+Ronde Primepijler
 ====
-Als deze instelling is ingeschakeld, krijgt de prime-toren de vorm van een cilinder. Als het is uitgeschakeld, is de hoofdtoren vierkant.
+Als deze instelling is ingeschakeld, krijgt de prime-pijler de vorm van een cilinder. Als het is uitgeschakeld, is de hoofdtoren vierkant.
 
 <!--screenshot {
 "image_path": "prime_tower_circular_enabled.png",
@@ -32,6 +32,6 @@ Als deze instelling is ingeschakeld, krijgt de prime-toren de vorm van een cilin
 
 In beide gevallen is de hoofdtoren nog steeds hol. De ronde prime-toren is strikt kleiner dan de vierkante prime-toren (omdat de hoeken zijn afgesneden). Het [Minimumvolume primepijler](prime_tower_min_volume.md) zal nog steeds correct zijn.
 
-Als het materiaal de neiging heeft om te kromtrekken, heeft de vierkante prime-toren vier hoeken die los kunnen komen van de platvorm. Hierdoor is de kans groter dat hij omvalt, in vergelijking met de ronde prime-toren. Er zijn ook grotere versnellingen betrokken bij het printen van een vierkante prime-toren. Deze versnellingen maken de doorvoer inconsistent, en dat is niet wat je zou willen om het materiaal te primen.
+Als het materiaal de neiging heeft om te kromtrekken, heeft de vierkante prime-toren vier hoeken die los kunnen komen van de platform. Hierdoor is de kans groter dat hij omvalt, in vergelijking met de ronde prime-toren. Er zijn ook grotere versnellingen betrokken bij het printen van een vierkante prime-toren. Deze versnellingen maken de doorvoer inconsistent, en dat is niet wat je zou willen om het materiaal te primen.
 
 De ronde prime-toren is in bijna elk aspect beter. Daarom wordt de instelling verwijderd in nieuwere versies van Cura. Die versies zullen altijd een ronde prime-toren hebben.

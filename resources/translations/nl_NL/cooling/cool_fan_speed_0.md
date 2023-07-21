@@ -4,4 +4,4 @@ De snelheid waarmee de ventilatoren op de printkop draaien aan het begin van het
 
 ![Welke ventilatorsnelheid wordt waar gebruikt](../../../articles/images/cool_fan_speed.svg)
 
-De ventilatorsnelheid is meestal lager aan het begin van het printproces dan tijdens de rest van het printproces. Hierdoor koelt het materiaal langzamer af en hecht het beter aan de platvorm, wat de hechting verbetert.
+De ventilatorsnelheid is meestal lager aan het begin van het printproces dan tijdens de rest van het printproces. Hierdoor koelt het materiaal langzamer af en hecht het beter aan de platform, wat de hechting verbetert.

@@ -22,7 +22,7 @@ Nadat de brug is voltooid, wordt het niet-geëxtrudeerde materiaal nog steeds ui
 De eenheid van deze instelling is niet intuïtief te begrijpen. De afstand tot de brug waarop het materiaal stopt met stromen, is afhankelijk van een aantal factoren:
 * De lengte van de vorige wand tot aan de brug. Hoe langer de wand, hoe meer hij kan lekken.
 * De doorvoer uit de nozzle tijdens de normale wand, bepaald door de [Wandsnelheid](../speed/speed_wall.md), de [Lijnbreedte Wand](../resolution/wall_line_width.md), de [Wanddoorvoer](../material/wall_material_flow.md) en de [Laaghoogte](../resolution/layer_height.md) van deze wanden. Hoe groter de doorvoer in normale wanden, hoe langer de uitloopafstand.
-* De filament doorvoer tijdensprinten van de overbrugde wand hangt af van de [Snelheid brugwand](bridge_wall_speed.md) en [Doorvoer brugwand](bridge_wall_material_flow.md) van die wanden. Hoe groter de doorvoer in overbrugde wanden, hoe *korter* de uitloopafstand.
+* De filament doorvoer tijdens printen van de overbrugde wand hangt af van de [Snelheid brugwand](bridge_wall_speed.md) en [Doorvoer brugwand](bridge_wall_material_flow.md) van die wanden. Hoe groter de doorvoer in overbrugde wanden, hoe *korter* de uitloopafstand.
 
 Deze instelling is een vermenigvuldigingsfactor voor de uiteindelijke lengte.
 

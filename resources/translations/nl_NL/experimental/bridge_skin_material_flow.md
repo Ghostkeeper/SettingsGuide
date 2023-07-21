@@ -33,4 +33,4 @@ Deze instelling regelt de hoeveelheid materiaal die wordt geëxtrudeerd om de on
 
 Het verminderen van de hoeveelheid materiaal vermindert effectief de lijnbreedte aan de onderkant en overbrugt een opening. Met een kleinere lijnbreedte is de verhouding tussen oppervlakte en massa van de lijnen groter, waardoor ze sneller kunnen afkoelen en minder doorzakken.
 
-Het te veel verlagen van de doorvoer zal echter resulteren in een grote verandering in de doorvoer, vooral in combinatie met een [Snelheid brugskin](bridge_skin_speed.md). In werkelijkheid kan het materiaal zijn doorvoer niet erg snel veranderen, waardoor de leidingen iets dikker zijn dan bedoeld wanneer de doorvoer wordt vertraagd en iets dunner dan bedoeld wanneer de doorvoer wordt verhoogd.
+Het te veel verlagen van de doorvoer zal echter resulteren in een grote verandering in de doorvoer, vooral in combinatie met een [Snelheid brugskin](bridge_skin_speed.md). In werkelijkheid kan het materiaal zijn doorvoer niet erg snel veranderen, waardoor de lijnen iets dikker zijn dan bedoeld wanneer de doorvoer wordt vertraagd en iets dunner dan bedoeld wanneer de doorvoer wordt verhoogd.

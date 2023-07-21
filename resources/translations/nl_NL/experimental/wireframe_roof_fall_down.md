@@ -1,6 +1,6 @@
 Valafstand Dak Draadprinten
 ====
-Bij het printen van het dak van een draadframe in draadprintmodus, zullen sommige lijnen in de lucht zweven. Deze lijnen hebben de neiging om naar beneden te vallen, waardoor hun gesmolten materie zakt voordat ze uiteindelijk op hun plaats stollen. Met deze aanpassing kunt u deze doorzakking in het dak van de constructie compenseren. De lijnen die in de lucht zouden hangen, zijn iets hoger geprint, zodat ze ongeveer bevriezen waar ze zouden moeten eindigen.
+Bij het printen van het dak van een draadframe in draadprintmodus, zullen sommige lijnen in de lucht zweven. Deze lijnen hebben de neiging om naar beneden te vallen, waardoor hun gesmolten materie zakt voordat ze uiteindelijk op hun plaats stollen. Met deze aanpassing kunt u deze doorzakking in het dak van de constructie compenseren. De lijnen die in de lucht zouden hangen, zijn iets hoger geprint, zodat ze ongeveer stollen waar ze zouden moeten eindigen.
 
 Alleen de hoekpunten die in de lucht zijn geprint, worden omhoog geduwd. Het verbindende zaagtandvormige patroon tussen elke concentrische cirkel is met de helft van zijn hoeken bevestigd aan de concentrische ring die ervoor is geprint, zodat die hoeken niet naar boven worden verschoven. Alleen de hoeken aan de binnenkant van het zaagtandpatroon worden naar boven verplaatst.
 

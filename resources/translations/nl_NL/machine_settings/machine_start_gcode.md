@@ -4,7 +4,7 @@ Met deze instelling kan een stukje G-code worden geschreven om aan het begin van
 
 Enkele voorbeelden van dingen die vaak worden gedaan in de opstart-g-code zijn:
 * Prime de nozzle(en).
-* Opwarmen van de platvorm.
+* Opwarmen van de platform.
 * Opwarmen van de nozzle(s).
 * Zorg ervoor dat de juiste extruder is geselecteerd.
 * Configureer ventilatoren, acceleratie of schok.

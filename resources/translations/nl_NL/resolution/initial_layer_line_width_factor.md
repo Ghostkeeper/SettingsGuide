@@ -14,6 +14,6 @@ Hierdoor worden de lijnen van de eerste laag in een bepaalde verhouding breder o
 }-->
 ![De lijnen in de eerste laag zijn twee keer zo breed als de rest](../../../articles/images/initial_layer_line_width_factor.png)
 
-Het doel van deze instelling is om de hechting aan de platvorm te verbeteren. Om bredere lijnen te printen, moet de nozzle meer materiaal extruderen, en dat materiaal moet verder naar buiten stromen. Hierdoor duwt de nozzle het materiaal harder op de platvorm, waardoor de hechting tussen het filament en de platvorm toeneemt.
+Het doel van deze instelling is om de hechting aan de platform te verbeteren. Om bredere lijnen te printen, moet de nozzle meer materiaal extruderen, en dat materiaal moet verder naar buiten stromen. Hierdoor duwt de nozzle het materiaal harder op de platform, waardoor de hechting tussen het filament en de platform toeneemt.
 * De lijnen worden niet alleen breder of smaller, maar met dezelfde factor ook verder uit elkaar of dichter bij elkaar, zodat er geen sprake is van over- of onder-extrusie.
 * Deze instelling is van invloed op alle lijndiktes: skin, wanden, hechting, draagstructuur, primepijler, enzovoort. Ze worden in dezelfde verhouding breder of smaller gemaakt.

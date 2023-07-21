@@ -1,6 +1,6 @@
 Extruder Eerste Laag van Support
 ====
-Als uw printer is uitgerust met meerdere extruders, kan de supportlaag die op de platvorm rust, worden geprint met een andere extruder dan de rest van de support. Met deze instelling kunt u kiezen welke extruder u wilt gebruiken voor de eerste supportlaag.
+Als uw printer is uitgerust met meerdere extruders, kan de supportlaag die op de platformrust, worden geprint met een andere extruder dan de rest van de support. Met deze instelling kunt u kiezen welke extruder u wilt gebruiken voor de eerste supportlaag.
 
 <!--screenshot {
 "image_path": "support_extruder_nr_layer_0.png",
@@ -24,4 +24,4 @@ Als uw printer is uitgerust met meerdere extruders, kan de supportlaag die op de
 }-->
 ![De eerste supportlaag is in rood geprint, de rest in wit.](../../../articles/images/support_extruder_nr_layer_0.png)
 
-Sommige materialen zijn beter geschikt voor printsupport dan andere. Dit zijn vaak inerte materialen die niet goed hechten aan andere materialen en daardoor makkelijker te verwijderen zijn. Deze eigenschap is echter niet wenselijk voor de hechting op de platvorm. Voor de eerste laag kan dan een materiaal worden gebruikt dat beter hecht op de platvorm en waar het normale supportmateriaal beter op kan hechten dan op glas of aluminium.
+Sommige materialen zijn beter geschikt voor printsupport dan andere. Dit zijn vaak inerte materialen die niet goed hechten aan andere materialen en daardoor makkelijker te verwijderen zijn. Deze eigenschap is echter niet wenselijk voor de hechting op de platform. Voor de eerste laag kan dan een materiaal worden gebruikt dat beter hecht op de platformen waar het normale supportmateriaal beter op kan hechten dan op glas of aluminium.

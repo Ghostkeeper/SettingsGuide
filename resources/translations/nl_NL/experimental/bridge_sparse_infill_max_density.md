@@ -1,6 +1,6 @@
 Maximale dichtheid van dunne vulling brugskin
 ====
-Als u printt met een zeer lage opvuldichtheid, zal de skin de neiging hebben om door te hangen, wat resulteert in [Pillowing](../troubleshooting/pillowing.md) en algemene onregelmatige oppervlakken aan de bovenkant van de print. Eventueel kunnen de overbruggingstechnieken ook op de buitenskin worden toegepast. Deze instelling bepaalt vanaf welke vulling de overbruggingstechniek moet worden toegepast.
+Als u print met een zeer lage opvuldichtheid, zal de skin de neiging hebben om door te hangen, wat resulteert in [Pillowing](../troubleshooting/pillowing.md) en algemene onregelmatige oppervlakken aan de bovenkant van de print. Eventueel kunnen de overbruggingstechnieken ook op de buitenskin worden toegepast. Deze instelling bepaalt vanaf welke vulling de overbruggingstechniek moet worden toegepast.
 
 <!--screenshot {
 "image_path": "bridge_sparse_infill_max_density.png",

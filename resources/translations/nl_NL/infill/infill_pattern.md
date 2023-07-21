@@ -2,9 +2,9 @@ Vulpatroon
 ====
 Het vulpatroon definieert een structuur waarmee het object wordt gevuld. Er zijn verschillende patronen beschikbaar, elk met zijn eigen voordelen. Sommige zijn bedoeld voor zeer specifieke toepassingen.
 
-Rooster
+Raster
 ----
-![Rooster](../../../articles/images/infill_pattern_grid.png)
+![Raster](../../../articles/images/infill_pattern_grid.png)
 
 Het rasteropvulpatroon creëert twee loodrechte lijnen. Samen vormen ze een patroon van vierkanten.
 * Sterkste patroon in verticale richting.
@@ -28,7 +28,7 @@ Driehoeken
 Het driehoekspatroon creëert drie reeksen lijnen in drie verschillende richtingen. Samen vormen ze een patroon van driehoeken.
 * Zeer goed bestand tegen afschuiving.
 * Ongeveer gelijke sterkte in elke horizontale richting.
-* De bovenlijnen moeten zeer lang overbruggen, wat veel skinlagen nodig heeft om een ​​egaal oppervlak te krijgen.
+* De bovenlijnen moeten zeer lang overbruggen, wat veel skinlagen nodig heeft om een egaal oppervlak te krijgen.
 * De doorvoerbeweging wordt ernstig verstoord op kruispunten, wat resulteert in een relatief lage sterkte bij hoge vulsnelheden.
 
 Drie zeshoek
@@ -39,7 +39,7 @@ Het Drie zeshoek-patroon creëert drie reeksen lijnen in drie verschillende rich
 * Sterkste patroon in horizontale richting.
 * Ongeveer gelijke sterkte in elke horizontale richting.
 * Zeer goed bestand tegen afschuiving.
-* De bovenlijnen moeten zeer lang overbruggen, wat veel skinlagen nodig heeft om een ​​egaal oppervlak te krijgen.
+* De bovenlijnen moeten zeer lang overbruggen, wat veel skinlagen nodig heeft om een egaal oppervlak te krijgen.
 
 Kubus
 ----
@@ -82,7 +82,7 @@ Kwart kubus
 ![Kwart kubus](../../../articles/images/infill_pattern_quarter_cubic.png)
 
 Het kwart-kubuspatroon creëert een driedimensionale mozaïekstructuur die bestaat uit vierkanten en afgeknotte vierkanten. Soms worden meerdere vullijnen naast elkaar geplaatst.
-* Er ontstaan ​​twee aparte binnenframes, vergelijkbaar met een octet, waarin meerdere parallelle lijnen elkaar raken. De belasting wordt snel afgevoerd naar dit binnenframe. De frames zijn in twee verschillende richtingen georiënteerd, waardoor ze afzonderlijk zwakker zijn, maar de afstand om de belasting over deze frames te verdelen, wordt verkleind.
+* Er ontstaan twee aparte binnenframes, vergelijkbaar met een octet, waarin meerdere parallelle lijnen elkaar raken. De belasting wordt snel afgevoerd naar dit binnenframe. De frames zijn in twee verschillende richtingen georiënteerd, waardoor ze afzonderlijk zwakker zijn, maar de afstand om de belasting over deze frames te verdelen, wordt verkleind.
 * Sterk op modellen met een geringe dikte van enkele millimeters.
 * Vermindert het kusseneffect omdat er geen lange holtes zijn gevuld met hete lucht.
 * Leidt tot een zeer lange overbruggingsafstand voor de skin, wat de kwaliteit van de afwerking beïnvloedt.
@@ -118,7 +118,7 @@ Het kruisvulpatroon creëert een ruimtevullende vorm die eruitziet als kruisen a
 * Creëert geen lange rechte lijnen in horizontale richting, dus het is gelijkmatig squishy langs de hele omtrek. Er zijn geen sterke punten.
 * Springt helemaal niet in, waardoor het gemakkelijker wordt om op flexibele materialen te printen.
 * Is sterker in de hoekpunten dan in horizontale richting.
-* Snijden duurt lang.
+* Het slice-proces duurt langer.
 * Zeer zacht in horizontale richtingen.
 
 Kruis 3D
@@ -129,7 +129,7 @@ Het Kruis 3D-vulpatroon creëert een ruimtevullende vorm die eruitziet als kruis
 * Ongeveer gelijkmatig plooibaar in alle richtingen, horizontaal en verticaal, waardoor dit patroon het meest geschikt is voor het printen van zachte en flexibele objecten.
 * Creëert geen lange rechte lijnen, waardoor het gelijkmatig zacht wordt over het hele oppervlak.
 * Springt helemaal niet in, waardoor het gemakkelijker is om met flexibele materialen te printen.
-* Snijden duurt lang.
+* Het slice-proces duurt langer.
 * Zal in alle richtingen erg zacht zijn.
 
 Gyroïde
@@ -140,7 +140,7 @@ Het gyroïde-vulpatroon creëert een golvend patroon dat van richting verandert.
 * Dit patroon creëert een volume dat volledig doorlaatbaar is voor vloeistoffen, waardoor het een bruikbaar patroon is voor oplosbare materialen.
 * Gelijke kracht in alle richtingen maar niet erg sterk. Dit maakt het geschikt voor flexibele materialen, maar het resultaat zal iets harder en minder vergevingsgezind zijn dan de Cross (3D) opvulpatronen.
 * Bestand tegen afschuiving.
-* Snijden duurt lang en creëert grote G-code-bestanden. Sommige printers kunnen moeite hebben met het bijhouden van de vele G-code-commando's per seconde, en kunnen moeilijk bij te houden zijn via een seriële verbinding bij lage
+* Het slice-proces duurt langer en creëert grote G-code-bestanden. Sommige printers kunnen moeite hebben met het bijhouden van de vele G-code-commando's per seconde, en kunnen moeilijk bij te houden zijn via een seriële verbinding met lage baud rates.  
 <!--if cura_version>=4.12-->
 Bliksem
 ----

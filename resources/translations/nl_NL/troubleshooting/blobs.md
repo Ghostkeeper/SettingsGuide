@@ -13,9 +13,9 @@ Als de nozzle in een bepaalde baan langzamer beweegt dan andere, kan daar meer m
 Dit zou waarschijnlijk de materiaaltoevoer moeten verminderen. Maar zelfs als de feeder langzamer beweegt, kan het enkele seconden duren voordat de doorvoer uit de nozzleopening dienovereenkomstig is verminderd. Gedurende deze tijd wordt er teveel materiaal geëxtrudeerd, wat resulteert in klodders.
 
 Om dit te voorkomen, dient u de volgende instellingen te maken:
-* Pas de snelheid aan voor de [Snelheid Buitenwand](../speed/speed_wall_0.md) zodat deze hetzelfde is als wat ervoor staat (zoals de [bSnelheid Binnenwand](../speed/speed_wall_x.md) of [Vulsnelheid](../speed/speed_infill.md)). Dan is er geen vertraging.
+* Pas de snelheid aan voor de [Snelheid Buitenwand](../speed/speed_wall_0.md) zodat deze hetzelfde is als wat ervoor staat (zoals de [Snelheid Binnenwand](../speed/speed_wall_x.md) of [Vulsnelheid](../speed/speed_infill.md)). Dan is er geen vertraging.
 * Verhoog de [Schok Buitenwand](../speed/jerk_wall_0.md). Dit voorkomt dat nozzle in bochten vertraagt.
-* Verlaag de [Maximale resolutie](../meshfix/meshfix_maximum_resolution.md) en verhoog de [Maximale afwijking](../meshfix/meshfix_maximum_deviation.md) om te voorkomen dat de bewegingsbesturing nozzle vertraagt ​​om gelijke tred te houden met de te verwerken g-codes.
+* Verlaag de [Maximale resolutie](../meshfix/meshfix_maximum_resolution.md) en verhoog de [Maximale afwijking](../meshfix/meshfix_maximum_deviation.md) om te voorkomen dat de bewegingsbesturing nozzle vertraagt om gelijke tred te houden met de te verwerken g-codes.
 * Schakel de instelling [Gelijkmatige overlappingen van buitenwanden](../shell/travel_compensate_overlapping_walls_0_enabled.md) uit. Deze instelling kan nieuwe bewegingscommando's met verschillende voedingen genereren. Het uitschakelen van deze functie vermindert het aantal bewegingscommando's in de wand.
 
 Nozzle staat stil
@@ -30,7 +30,7 @@ Om dit te voorkomen, moet u de resolutie van de G-code verlagen.
 
 Nozzle verplaatsingen gaan door wanden
 ----
-Hoewel Cura over het algemeen zomin mogelijk de buitenwand oversteekt, is het soms onvermijdelijk. Als nozzle wat doorgesijpeld materiaal draagt ​​terwijl het een buitenwand doorkruist, kan dat materiaal daar worden weggeveegd, waardoor een klodder achterblijft.
+Hoewel Cura over het algemeen zomin mogelijk de buitenwand oversteekt, is het soms onvermijdelijk. Als nozzle wat doorgesijpeld materiaal draagt terwijl het een buitenwand doorkruist, kan dat materiaal daar worden weggeveegd, waardoor een klodder achterblijft.
 
 Deze oorzaak van klodders kan worden voorkomen door de volgende instellingen:
 * Zorg ervoor dat [Combing-modus](../travel/retraction_combing.md) is aangevinkt. Hierdoor gaat nozzle zoveel mogelijk om wanden heen in plaats van erdoorheen.

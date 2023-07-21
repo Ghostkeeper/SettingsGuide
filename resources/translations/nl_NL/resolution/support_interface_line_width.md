@@ -1,4 +1,4 @@
-Lijnbreedte supportstructuur
+Lijnbreedte Verbindingsstructuur
 ====
 De breedtes van de supportstructuurlijnen kunnen afzonderlijk van de breedtes van de overige supportlijnen worden geconfigureerd.
 

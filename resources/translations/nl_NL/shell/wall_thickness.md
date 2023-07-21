@@ -37,9 +37,9 @@ Deze instelling bepaalt hoe dik de wand rond de print wordt. Uiteindelijk wordt 
 
 De wanddikte moet een veelvoud zijn van de wandlijnbreedte. Indien dit niet het geval is, wordt er afgerond op een exact veelvoud. Houd er echter rekening mee dat een van de wanden een buitenwand zal zijn en de rest van de wanden een binnenwand. Deze wanden kunnen verschillende lijndiktes hebben.
 
-De dikte van de wanden is een belangrijke factor in hoe sterk de print zal zijn. Doordat de wanden naast elkaar staan, kunnen ze elkaar versterken, wat resulteert in een sterker onderdeel. Voor grotere printen kan dit een veel effectievere manier zijn om een ​​sterk object te krijgen dan de vulling aan te passen aan de vorm.
+De dikte van de wanden is een belangrijke factor in hoe sterk de print zal zijn. Doordat de wanden naast elkaar staan, kunnen ze elkaar versterken, wat resulteert in een sterker onderdeel. Voor grotere printen kan dit een veel effectievere manier zijn om een sterk object te krijgen dan de vulling aan te passen aan de vorm.
 
-Het vergroten van de wanddikte wordt:
+Bij het vergroten van de wanddikte wordt:
 * De sterkte van de print wordt aanzienlijk vergroot.
 * Verminderde doorschijning waar het vulpatroon van buitenaf zichtbaar is.
 * Verbeterde overhangen omdat wandlijnen meestal meer uitgelijnd zijn met het dichtstbijzijnde supportpunt.

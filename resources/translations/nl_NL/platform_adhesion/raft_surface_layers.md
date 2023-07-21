@@ -1,6 +1,6 @@
 Bovenlagen Raft
 ====
-Dit is het aantal lagen in het bovenste deel van het raft. Er is altijd een basislaag en een middenlaag, maar er kan een willekeurig aantal toplagen zijn. Deze toplagen zijn meestal erg dicht om een ​​glad oppervlak te creëren waarop het model kan worden geprint.
+Dit is het aantal lagen in het bovenste deel van het raft. Er is altijd een basislaag en een middenlaag, maar er kan een willekeurig aantal toplagen zijn. Deze toplagen zijn meestal erg dicht om een glad oppervlak te creëren waarop het model kan worden geprint.
 
 ![Afmetingen gerelateerd aan het raft](../../../articles/images/raft_dimensions.svg)
 

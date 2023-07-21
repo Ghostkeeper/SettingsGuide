@@ -1,8 +1,8 @@
 Lijnrichting vulling
 ====
-De vullijnen worden indien mogelijk meestal onder een hoek van 45 graden uitgelijnd. Onder deze hoek werken zowel de X- als de Y-motor samen om een ​​maximale acceleratie van de printkop te bereiken bij gebruik van een printer met het gebruikelijke Cartesiaanse portaalmechanisme.
+De vullijnen worden indien mogelijk meestal onder een hoek van 45 graden uitgelijnd. Onder deze hoek werken zowel de X- als de Y-motor samen om een maximale acceleratie van de printkop te bereiken bij gebruik van een printer met het gebruikelijke Cartesiaanse portaalmechanisme.
 
-Met deze instelling kunt u die hoek aanpassen. U kunt het aanpassen om meer kracht te produceren voor uw specifieke model of om een ​​grotere acceleratie te bereiken voor uw specifieke portaalsysteem (bijvoorbeeld voor Delta-printers).
+Met deze instelling kunt u die hoek aanpassen. U kunt het aanpassen om meer kracht te produceren voor uw specifieke model of om een grotere acceleratie te bereiken voor uw specifieke portaalsysteem (bijvoorbeeld voor Delta-printers).
 
 ![Vulling-lijnen met standaard hoeken van 45 en 135 graden](../../../articles/images/infill_pattern_lines.png)
 ![Vulling-lijnen met aangepaste hoeken van 0 en 30 graden](../../../articles/images/infill_angles_0_30.png)

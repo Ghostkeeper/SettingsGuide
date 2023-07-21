@@ -32,7 +32,7 @@ Deze instelling bepaalt wat er moet gebeuren met deze niet-gesloten lussen. Als 
 "kleuren": 32
 }-->
 ![Normale modus laat het enkele niet-gesloten oppervlak aan de rechterkant weg](../../../articles/images/magic_mesh_surface_mode_normal.png)
-![Surface-modus drukt alleen de oppervlakken af ​​zonder ze als gesloten volumes te behandelen](../../../articles/images/magic_mesh_surface_mode_surface.png)
+![Surface-modus drukt alleen de oppervlakken af zonder ze als gesloten volumes te behandelen](../../../articles/images/magic_mesh_surface_mode_surface.png)
 ![Print zowel de volumes als het extra niet-gesloten oppervlak aan de rechterkant](../../../articles/images/magic_mesh_surface_mode_both.png)
 
 De extra vlakken die worden geprint, bevatten alleen de verticale vlakken als enkele lijnen. Er is geen opvultechniek voor horizontale vlakken aangezien de vlakken geen gesloten polygonen zijn. Ze kunnen niet worden gevuld omdat er geen innerlijke werking is. Er mogen geen toppen, bodems, vullingen of supporten zijn. Alleen enkele lijnen.

@@ -1,6 +1,6 @@
 Coasting-snelheid
 ====
-Tijdens coasting komt er niets meer uit de nozzle. Het gedraagt ​​zich echter niet helemaal als een beweging. De nozzle beweegt nog steeds met ongeveer dezelfde snelheid. Met deze instelling kan de exacte snelheid waarmee de nozzle blijft bewegen worden geconfigureerd.
+Tijdens coasting komt er niets meer uit de nozzle. Het gedraagt zich echter niet helemaal als een beweging. De nozzle beweegt nog steeds met ongeveer dezelfde snelheid. Met deze instelling kan de exacte snelheid waarmee de nozzle blijft bewegen worden geconfigureerd.
 
 De snelheid van coasting wordt geconfigureerd in verhouding tot de normale printsnelheid. Dit betekent dat als de [Snelheid Buitenwand](../speed/speed_wall_0.md) en [Snelheid Binnenwand](../speed/speed_wall_x.md) verschillende snelheden hebben, ze ook met verschillende snelheden zullen coasten. Meestal wordt het coasten gedaan met een iets lagere snelheid dan de normale printsnelheid, om onder-extrusie tegen te gaan.
 

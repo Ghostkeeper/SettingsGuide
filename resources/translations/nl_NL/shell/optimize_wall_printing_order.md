@@ -40,4 +40,4 @@ Als dit is ingeschakeld, besteedt Cura wat extra slicing tijd om de volgorde waa
 ![Optimalisatie uitgeschakeld](../../../articles/images/optimize_wall_printing_order_disabled.gif)
 ![optimalisatie ingeschakeld](../../../articles/images/optimize_wall_printing_order_enabled.gif)
 
-Als deze optimalisatie is ingeschakeld, zal de nozzle eerst alle wanden rond een onderdeel printen voordat het naar het volgende onderdeel gaat, in plaats van eerst alle binnenwanden af ​​te printen voordat de buitenwanden worden geprint. Optimalisatie is over het algemeen positief, maar kan de maatnauwkeurigheid voor sommige onderdelen beïnvloeden, omdat de vorige wand nog niet is gestold wanneer de volgende wand ernaast wordt neergezet.
+Als deze optimalisatie is ingeschakeld, zal de nozzle eerst alle wanden rond een onderdeel printen voordat het naar het volgende onderdeel gaat, in plaats van eerst alle binnenwanden te printen voordat de buitenwanden worden geprint. Optimalisatie is over het algemeen positief, maar kan de maatnauwkeurigheid voor sommige onderdelen beïnvloeden, omdat de vorige wand nog niet is gestold wanneer de volgende wand ernaast wordt neergezet.

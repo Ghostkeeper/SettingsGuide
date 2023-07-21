@@ -6,6 +6,6 @@ Een bredere stam is steviger omdat het meer oppervlak heeft om verbinding te mak
 
 * Het neemt meer ruimte in beslag op het printbed.
 * Het past niet door de nauwe openingen in de print, waardoor de tak verdwijnt of op het model rust.
-* Soms is er meer materiaal nodig om af te printen. In sommige gevallen kan het ook de hoeveelheid materiaal verminderen, omdat de takken sneller kunnen samensmelten.
+* Soms is er meer materiaal nodig om te printen. In sommige gevallen kan het ook de hoeveelheid materiaal verminderen, omdat de takken sneller kunnen samensmelten.
 
-Door de instelling stamdiameter van boomsupportstructuur te verkleinen, wordt de betrouwbaarheid opgeofferd, maar wat nog belangrijker is, wordt de afdrukgrootte verkleind, waardoor het gemakkelijker wordt om zeer grote objecten af ​​te printen.
+Door de instelling stamdiameter van boomsupportstructuur te verkleinen, wordt de betrouwbaarheid opgeofferd, maar wat nog belangrijker is, wordt de printmaat verkleind, waardoor het gemakkelijker wordt om zeer grote objecten te printen.

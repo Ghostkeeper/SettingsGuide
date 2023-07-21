@@ -29,4 +29,4 @@ Met deze instelling wordt de breedte van de supportbrim aangepast. Een bredere s
 ![2mm breedte](../../../articles/images/support_brim_2mm.png)
 ![4mm breedte](../../../articles/images/support_brim_4mm.png)
 
-Een bredere brim verhoogt de hechting van de support aan de platvorm en vermindert de vervorming van de support. Dit maakt de support stabieler, wat de betrouwbaarheid van de print verbetert.
+Een bredere brim verhoogt de hechting van de support aan de platformen vermindert de vervorming van de support. Dit maakt de support stabieler, wat de betrouwbaarheid van de print verbetert.

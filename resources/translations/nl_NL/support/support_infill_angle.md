@@ -1,6 +1,6 @@
 Lijnrichting Vulling Supportstructuur
 ====
-Het supportpatroon is meestal zo georiënteerd dat de lijnen loodrecht staan ​​op de meeste dingen die het ondersteund. Dit minimaliseert de afstand die het ondersteunde materiaal moet overbruggen. Met deze instelling kan de oriëntatie van de supportlijnen individueel worden aangepast.
+Het supportpatroon is meestal zo georiënteerd dat de lijnen loodrecht staan op de meeste dingen die het ondersteund. Dit minimaliseert de afstand die het ondersteunde materiaal moet overbruggen. Met deze instelling kan de oriëntatie van de supportlijnen individueel worden aangepast.
 
 <!--screenshot {
 "image_path": "support_infill_angle_0.png",

@@ -1,4 +1,4 @@
-Lijnrichtingen bovenskin
+  Lijnrichtingen bovenskin
 ====
 Met deze instelling kunt u andere richtingen kiezen voor het patroon voor de bovenste lagen van de skin, gespecificeerd door de instelling [Bovenste skinlagen](../top_bottom/roofing_layer_count.md) dan voor de rest van de boven- en onderkant.
 

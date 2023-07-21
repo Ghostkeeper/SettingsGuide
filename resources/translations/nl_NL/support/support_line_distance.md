@@ -1,6 +1,6 @@
 Lijnafstand van de Supportstructuur
 ====
-Deze instelling definieert de afstand tussen twee aangrenzende lijnen in het supportpatroon. Dit type supportdichtheidsaanpassing is misschien intuïtiever dan supportdichtheidsaanpassing, omdat het direct de afstand aanpast die de ondersupportde lijnen moeten overspannen.
+Deze instelling definieert de afstand tussen twee aangrenzende lijnen in het supportpatroon. Dit type supportdichtheidsaanpassing is misschien intuïtiever dan supportdichtheidsaanpassing, omdat het direct de afstand aanpast die de ondersupporten lijnen moeten overspannen.
 
 <!--screenshot {
 "image_path": "support_infill_rate_low.png",

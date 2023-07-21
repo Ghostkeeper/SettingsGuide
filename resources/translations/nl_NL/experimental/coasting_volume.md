@@ -1,6 +1,6 @@
 Coasting-volume
 ====
-Deze instelling bepaalt hoe ver voor het einde van de contour de transporteur stopt met het doorvoer van materiaal. De lengte van de uitloop is echter geconfigureerd in een materiaalvolume. Het hangt nauwer samen met het volume in de nozzlekamer.
+Deze instelling bepaalt hoe ver voor het einde van de contour de feder stopt met het doorvoer van materiaal. De lengte van de uitloop is echter geconfigureerd in een materiaalvolume. Het hangt nauwer samen met het volume in de nozzlekamer.
 
 <!--screenshot {
 "image_path": "coasting_enable.png",

@@ -43,4 +43,4 @@ Het supportdak wordt meestal zo loodrecht mogelijk georiënteerd op het model hi
 
 Voor deze instelling kunnen meerdere hoeken, gescheiden door komma's, worden ingevoerd. Cura zal deze hoeken afwisselend gebruiken in de lagen.
 
-De supportdaklijnen zijn ideaal uitgelijnd zodat ze loodrecht staan ​​op de supportlijnen waarop ze rusten en de modellijnen waarop ze rusten. Bij een loodrechte oriëntatie wordt de afstand die deze lijnen moeten overspannen kleiner, waardoor de doorbuiging wordt verminderd en de kwaliteit van de overhangen wordt verbeterd. Dit is vooral van belang wanneer de support niet helemaal gesloten is.
+De supportdaklijnen zijn ideaal uitgelijnd zodat ze loodrecht staan op de supportlijnen waarop ze rusten en de modellijnen waarop ze rusten. Bij een loodrechte oriëntatie wordt de afstand die deze lijnen moeten overspannen kleiner, waardoor de doorbuiging wordt verminderd en de kwaliteit van de overhangen wordt verbeterd. Dit is vooral van belang wanneer de support niet helemaal gesloten is.

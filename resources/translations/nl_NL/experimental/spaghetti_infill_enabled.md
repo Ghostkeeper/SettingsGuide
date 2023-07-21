@@ -4,9 +4,9 @@ Als deze instelling is geactiveerd, zal Cura alle vullingen van meerdere lagen t
 
 Deze functie is niet geschikt voor normale materialen. Meestal wilt u ofwel de stevigheid van normale opvulpatronen, of u laat de opvulling helemaal weg. Er zijn echter twee use-cases voor deze functie.
 
-gebruiksgevallen
+Gebruiks gevallen
 ----
-Met flexibele materialen kan deze techniek zeer zachte texturen produceren. Spaghettivulling zorgt meestal voor losse ringen die niet goed aan elkaar plakken. Deze ringen zijn in alle richtingen even zacht. Om dit effect te bereiken mag de dichtheid van de vulling echter niet te laag zijn, anders komt alle spaghetti op de onderkant van de print terecht. Het is raadzaam om een ​​[spaghettistroom](spaghetti_flow.md) tussen 30% en 60% te gebruiken, afhankelijk van de lijnbreedte en laaghoogte. Het resultaat is een vulling die in alle richtingen even stijf en redelijk zacht is.
+Met flexibele materialen kan deze techniek zeer zachte texturen produceren. Spaghettivulling zorgt meestal voor losse ringen die niet goed aan elkaar plakken. Deze ringen zijn in alle richtingen even zacht. Om dit effect te bereiken mag de dichtheid van de vulling echter niet te laag zijn, anders komt alle spaghetti op de onderkant van de print terecht. Het is raadzaam om een [spaghettistroom](spaghetti_flow.md) tussen 30% en 60% te gebruiken, afhankelijk van de lijnbreedte en laaghoogte. Het resultaat is een vulling die in alle richtingen even stijf en redelijk zacht is.
 
 Het andere gebruik voor de spaghettivulling is gieten. Als u een printer heeft met een puntstorthulpmiddel, kunt u deze functie gebruiken om uw model redelijk gelijkmatig te vullen met gecontroleerde afzettingen van materiaal. In dit geval moet de [vloeidichtheid](spaghetti_flow.md) waarschijnlijk rond de 100% liggen, afhankelijk van de krimp/expansieverhouding van het gietmateriaal.
 

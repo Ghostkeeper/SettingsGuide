@@ -26,8 +26,8 @@ Normaal gesproken, wanneer een model meerdere lichamen bevat die elkaar kruisen,
 "kleuren": 64
 }-->
 ![Een mesh met twee elkaar kruisende kubussen](../../../articles/images/meshfix_union_all_shell.png)
-![Niet alle volumes verenigd](../../../articles/images/meshfix_union_all_disabled.png)
-![Union heeft het gat verwijderd](../../../articles/images/meshfix_union_all_enabled.png)
+![Niet alle volumes samengevoegd](../../../articles/images/meshfix_union_all_disabled.png)
+![Samenvoegen heeft het gat verwijderd](../../../articles/images/meshfix_union_all_enabled.png)
 
 Technisch gezien verandert deze instelling de regel van [Even-Oneven](https://en.wikipedia.org/wiki/Even%E2%80%93odd_rule) in [Nonzero](https://en.wikipedia.org/wiki/Nonzero-rule). Normaal gesproken wordt een volume gevuld wanneer het wordt omgeven door een oneven aantal lagen. Als deze instelling is ingeschakeld, wordt deze gevuld als deze wordt omgeven door een niet-nul aantal lagen.
 

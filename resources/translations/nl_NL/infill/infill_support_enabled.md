@@ -1,6 +1,6 @@
 Supportvulling
 ====
-Als deze functie is geactiveerd, wordt de vulling behandeld als support. De vulling wordt dan alleen gemaakt waar nodig om het bovenoppervlak te ondersteunen. Het gedraagt ​​zich alsof het model hol is en binnenin support creëert, maar die support wordt gecreëerd met behulp van de vulinstellingen.
+Als deze functie is geactiveerd, wordt de vulling behandeld als support. De vulling wordt dan alleen gemaakt waar nodig om het bovenoppervlak te ondersteunen. Het gedraagt zich alsof het model hol is en binnenin support creëert, maar die support wordt gecreëerd met behulp van de vulinstellingen.
 
 ![Normale invulling](../../../articles/images/infill_support_enabled_disabled.png)
 ![Vulling-structuur ingeschakeld](../../../articles/images/infill_support_angle_low.png)

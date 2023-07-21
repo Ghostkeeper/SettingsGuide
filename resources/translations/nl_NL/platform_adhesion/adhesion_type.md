@@ -44,7 +44,7 @@ Er zijn drie soorten hechting van platformen: skirt, brim en raft. U kunt de soo
 
 Skirt
 ----
-Een skirt is een enkele lijn die je print omringt. Het draagt ​​niet direct bij aan een betere plaathechting. Als u de andere methoden echter niet wilt gebruiken, heeft deze methode twee functies.
+Een skirt is een enkele lijn die je print omringt. Het draagt niet direct bij aan een betere plaathechting. Als u de andere methoden echter niet wilt gebruiken, heeft deze methode twee functies.
 * Het zorgt ervoor dat uw nozzle wordt gevuld voordat uw werkelijke model wordt geprint om ervoor te zorgen dat het materiaal goed stroomt.
 * Hiermee kunt u zien of uw platform goed is geleveld.
 

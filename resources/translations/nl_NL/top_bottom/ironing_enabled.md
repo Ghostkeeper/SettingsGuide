@@ -1,6 +1,6 @@
 Strijken inschakelen
 ====
-Gladmaken zorgt ervoor dat de printer nog een keer over de bovenkant gaat om het extra glad te maken. Deze extra stap heeft een zeer kleine lijnbreedte en print bijzonder langzaam.
+Strijken zorgt ervoor dat de printer nog een keer over de bovenkant gaat om het extra glad te maken. Deze extra stap heeft een zeer kleine lijnbreedte en print bijzonder langzaam.
 
 <!--screenshot {
 "image_path": "ironing_enabled_disabled.png",
@@ -33,7 +33,7 @@ Gladmaken zorgt ervoor dat de printer nog een keer over de bovenkant gaat om het
 "kleuren": 64
 }-->
 ![Een normale print van bovenaf gezien](../../../articles/images/ironing_enabled_disabled.png)
-![Let op de dunne lijnen bovenaan wanneer vloeiend maken is ingeschakeld..](../../../articles/images/ironing_enabled_enabled.png)
+![Let op de dunne lijnen bovenaan wanneer strijken is ingeschakeld..](../../../articles/images/ironing_enabled_enabled.png)
 
 
 Strijken print een lijnenpatroon af op de bovenkant van de print. Dit heeft twee belangrijke positieve effecten:

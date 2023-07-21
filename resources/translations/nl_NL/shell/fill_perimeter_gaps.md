@@ -9,4 +9,4 @@ Er zijn twee veelvoorkomende gevallen waarin het opvullen van gaten zinvol is:
 * Tussen twee tegenover elkaar liggende wanden in dunne prints (zoals in de afbeeldingen hierboven). Het opvullen van deze openingen verhoogt de sterkte van het onderdeel op deze locaties omdat de twee tegenover elkaar liggende wanden niet langer afzonderlijk kunnen bewegen.
 * In zeer scherpe hoeken is er een spleet in de buitenwand waar de binnenwand te dik is om de hoek te bereiken. Het opvullen van deze gaten verhoogt de sterkte, maar zorgt er ook voor dat de buitenwand er consistenter uitziet.
 
-**Het is aan te raden goed op te letten welke rijwegen nodig zijn wanneer deze geactiveerd is. Het opvullen van de gaten wordt gedaan nadat de wanden zijn geprint.**
+**Het is aan te raden goed op te letten welke verplaatsingen nodig zijn wanneer deze geactiveerd is. Het opvullen van de gaten wordt gedaan nadat de wanden zijn geprint.**

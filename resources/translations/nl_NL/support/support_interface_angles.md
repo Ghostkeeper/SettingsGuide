@@ -43,4 +43,4 @@ De supportstructuur is typisch zo loodrecht mogelijk op het model en het omringe
 
 Voor deze instelling kunnen meerdere hoeken, gescheiden door komma's, worden ingevoerd. Cura zal deze hoeken tussen de lagen afwisselen.
 
-De supportstructuurlijnen zijn ideaal uitgelijnd zodat ze loodrecht staan ​​op de lijnen waarop ze rusten en de lijnen waarop ze rusten. Door ze loodrecht uit te lijnen, verkleint u de afstand die deze lijnen moeten overbruggen, waardoor de doorbuiging wordt verminderd en de kwaliteit van de overhangen wordt verbeterd. Dit is vooral van belang wanneer de support niet helemaal gesloten is.
+De supportstructuurlijnen zijn ideaal uitgelijnd zodat ze loodrecht staan op de lijnen waarop ze rusten en de lijnen waarop ze rusten. Door ze loodrecht uit te lijnen, verkleint u de afstand die deze lijnen moeten overbruggen, waardoor de doorbuiging wordt verminderd en de kwaliteit van de overhangen wordt verbeterd. Dit is vooral van belang wanneer de support niet helemaal gesloten is.

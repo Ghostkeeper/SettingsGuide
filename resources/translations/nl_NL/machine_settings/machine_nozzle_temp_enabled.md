@@ -1,6 +1,6 @@
 Regulering van de nozzletemperatuur inschakelen
 ====
-Als deze instelling is uitgeschakeld, geeft Cura geen temperatuurcommando's aan de G-code. In plaats daarvan laat Cura de firmware van de printer de nozzlejes opwarmen voordat ze gaan printen.
+Als deze instelling is uitgeschakeld, geeft Cura geen temperatuurcommando's aan de G-code. In plaats daarvan laat Cura de firmware van de printer de nozzle opwarmen voordat ze gaan printen.
 
 De functionaliteit is vergelijkbaar met [Heeft verwarmd platform](machine_heated_bed.md). Als deze instelling is uitgeschakeld, zijn de instellingen voor temperatuurregeling zoals [Printtemperatuur](../material/material_print_temperature.md) niet zichtbaar voor de gebruiker.
 

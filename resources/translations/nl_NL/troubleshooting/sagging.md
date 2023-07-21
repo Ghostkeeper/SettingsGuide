@@ -10,7 +10,7 @@ Oorzaken
 ----
 Verzakking wordt eigenlijk niet of nauwelijks veroorzaakt door de zwaartekracht. Het wordt voornamelijk veroorzaakt door de kracht van het materiaal dat uit nozzle wordt geduwd. Daarom doet dit fenomeen zich ook voor bij printers die ondersteboven worden geplaatst of in gewichtloosheid printen. De druk die wordt gebruikt om het materiaal te extruderen, duwt het materiaal naar beneden omdat nozzle (meestal) naar beneden wijst.
 
-Normaal gesproken is de druk in de nozzlekamer nodig om het (stroperig) materiaal naar buiten te duwen en het plat te maken tot een brede en vlakke lijn materiaal door tussen nozzle en de vorige laag of platvorm te knijpen. Als er echter geen materiaal in de vorige laag zat, is er geen tegendruk om de strook plat te maken. In plaats daarvan wordt het te ver naar beneden geduwd.
+Normaal gesproken is de druk in de nozzlekamer nodig om het (stroperig) materiaal naar buiten te duwen en het plat te maken tot een brede en vlakke lijn materiaal door tussen nozzle en de vorige laag of platform te knijpen. Als er echter geen materiaal in de vorige laag zat, is er geen tegendruk om de strook plat te maken. In plaats daarvan wordt het te ver naar beneden geduwd.
 
 Overbrugging
 ----
@@ -68,7 +68,7 @@ De vrijheid hebben om het model dat wordt geprint aan te passen, kan een veel sc
 }-->
 ![Deze oriëntatie maakt het mogelijk om het object printen met zeer weinig support](../../../articles/images/support_minimise_overhang.png)
 
-De eenvoudigste truc om dit te bereiken is door het model te draaien. Als uw printer in staat is om hoeken van 45 graden te printen zonder te verzakken, kunt u een model met een verticaal en een horizontaal deel roteren zodat ze twee schuine delen van 45 graden vormen, wat de kwaliteit van de verticale wand iets zal verminderen, maar doorhangen voorkomt in het horizontale deel. Zorg er echter voor dat het contactoppervlak met de platvorm niet te klein is, anders kan de print loskomen van de platvorm en beschadigd raken.
+De eenvoudigste truc om dit te bereiken is door het model te draaien. Als uw printer in staat is om hoeken van 45 graden te printen zonder te verzakken, kunt u een model met een verticaal en een horizontaal deel roteren zodat ze twee schuine delen van 45 graden vormen, wat de kwaliteit van de verticale wand iets zal verminderen, maar doorhangen voorkomt in het horizontale deel. Zorg er echter voor dat het contactoppervlak met de platform niet te klein is, anders kan de print loskomen van de platform en beschadigd raken.
 
 Het toevoegen van afschuiningen kan ook helpen het aantal overhangen in het model te verminderen met relatief weinig extra materiaal. Cura biedt een automatische methode om afschuiningen aan uw model toe te voegen via de voorkeur [Overhang Printbaar Maken](../experimental/conical_overhang_enabled.md). Het toevoegen van afschuiningen voegt een supportstructuur toe aan het eigenlijke model. Ze worden dan naadloos in het model geprint, wat er mooier uitziet. Bovendien wordt materiaal bespaard in vergelijking met printsupport, omdat het supportmateriaal de krachten snel overdraagt ​​op de rest van het model. En uiteindelijk zal je object sterker zijn.
 

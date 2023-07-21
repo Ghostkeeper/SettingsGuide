@@ -21,14 +21,14 @@ RepRap
 Dit is een variant gericht op het ondersupporten van printers en is voortgekomen uit het [RepRap-project](https://reprap.org/wiki/RepRap). Ze heeft een aantal opmerkelijke uitzonderingen:
 * Vermeld altijd de extruder bij het instellen van de begintemperatuur van de laag, ook als er maar één extruder is.
 * Keer terug naar relatieve extrusie na het printen.
-* Verander de acceleratie met behulp van de `P` en `T` parameters van de `M204` opdracht, voor respectievelijk druk en rijversnelling, in plaats van de `S` parameter.
+* Verander de acceleratie met behulp van de `P` en `T` parameters van de `M204` opdracht, voor respectievelijk druk en verplaatsversnelling, in plaats van de `S` parameter.
 * Verander jerk met commando `M566` in plaats van commando `M205`.
 
 Ultimaker 2
 ----
 Deze G-code variant is bedoeld voor de Ultimaker 2 familie. De firmware van deze familie had het vreemde idee dat de printer de materiaalgerelateerde instellingen moest regelen en niet de slicer. Dit zijn de uitzonderingen:
 * Er zullen geen printtemperatuurcommando's zijn in de G-code.
-* Er zijn geen g-code temperatuuropdrachten voor de platvorm.
+* Er zijn geen g-code temperatuuropdrachten voor de platform.
 * Er zullen geen commando's voor de temperatuur van het bouwvolume zijn in de G-code.
 * Aangenomen wordt dat de eerste nozzle de [printtemperatuur voor de eerste laag](../material/material_print_temperature_layer_0.md) heeft wanneer het printen begint.
 * Er wordt aangenomen dat het bouwvel op [Temperatuur eerste laag](../material/material_bed_temperature_layer_0.md) is wanneer het printen begint.

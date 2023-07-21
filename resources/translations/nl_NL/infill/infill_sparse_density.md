@@ -9,7 +9,7 @@ Verschillende vulling-dichtheden werken beter met verschillende vulling-patronen
 
 Het verhogen van de opvuldichtheid (door het verkleinen van de regelafstand) heeft grote effecten op uw print, namelijk:
 * Uw print wordt stabieler.
-* De bovenkant wordt beter ondersupportd, waardoor deze gladder en waterdichter is.
+* De bovenkant wordt beter ondersupport, waardoor deze gladder en waterdichter is.
 * De kusseneffecten worden verminderd omdat de warmtezakken kleiner zijn.
 * Je print heeft meer materiaal nodig en is dus zwaarder.
 * Het duurt langer om het printen te voltooien.

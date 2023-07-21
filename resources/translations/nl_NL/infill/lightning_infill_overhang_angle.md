@@ -30,6 +30,6 @@ De Bliksem-infill ondersteund alleen de bovenkant van het model van binnenuit wa
 ![Overhang tot 30° wordt niet ondersteund](../../../articles/images/lightning_infill_support_angle_30.png)
 ![Tot 70° wordt niet ondersupportd, dus alleen het bovenste deel van de bol wordt ondersteund.](../../../articles/images/lightning_infill_overhang_angle_70.png)
 
-Door de hoek te vergroten, wordt de geproduceerde hoeveelheid vulling verminderd. De top wordt minder ondersupportd, tenzij het een zeer steile overhang is. Dit bespaart tijd en materiaal, maar kan er ook voor zorgen dat het blad op sommige plaatsen doorzakt. Het resultaat kan [Pillowing](../troubleshooting/pillowing.md) of een over het algemeen ruwer oppervlak zijn.
+Door de hoek te vergroten, wordt de geproduceerde hoeveelheid vulling verminderd. De top wordt minder ondersupport, tenzij het een zeer steile overhang is. Dit bespaart tijd en materiaal, maar kan er ook voor zorgen dat het blad op sommige plaatsen doorzakt. Het resultaat kan [Pillowing](../troubleshooting/pillowing.md) of een over het algemeen ruwer oppervlak zijn.
 
 In tegenstelling tot de bovenliggende instelling [Hoek supportstructuur bliksemvulling](lightning_infill_support_angle.md) heeft deze instelling geen invloed op de overhang in het vulpatroon zelf.

@@ -25,7 +25,7 @@ Voor printers met meerdere extruders wordt hier de extruder geselecteerd die moe
 Zo kun je het oppervlak een andere kleur of materiaal geven. Merk op dat de extruder voor de wanden niet wordt gewijzigd door deze instelling, dus er zal nog steeds een rand rond de bovenkant zijn.
 
 Behalve dat je de top een andere kleur geeft, kun je de top ook met een ander materiaal printen. Hiermee kunnen verschillende effecten worden bereikt:
-* Print de boven- en buitenwand in PLA en print de rest met een stijver materiaal om een ​​stevig object te krijgen dat er ook nog eens goed uitziet.
+* Print de boven- en buitenwand in PLA en print de rest met een stijver materiaal om een stevig object te krijgen dat er ook nog eens goed uitziet.
 * De bovenkant is geprint met TPU, de rest met een harder materiaal voor een zacht, gripvast oppervlak.
 * Druk de bovenkant af met een materiaal dat gladder is dan het zwaardere materiaal dat je nodig hebt voor de binnenkant van het model als je iets over het oppervlak wilt laten glijden.
 

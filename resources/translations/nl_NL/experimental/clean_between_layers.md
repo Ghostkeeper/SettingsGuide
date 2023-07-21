@@ -6,7 +6,7 @@ Met deze instelling kan aan het einde van elke laag een procedure worden uitgevo
 
 Deze wisprocedure bestaat uit een reeks stappen:
 1. Als [Intrekken voor afvegen ingeschakelen](wipe_retraction_enable.md), wordt het materiaal ingetrokken.
-2. Als [Z-Sprong afvegen](wipe_hop_enable.md) is ingeschakeld, gaat nozzle omhoog of gaat de platvorm omlaag.
+2. Als [Z-Sprong afvegen](wipe_hop_enable.md) is ingeschakeld, gaat nozzle omhoog of gaat de platform omlaag.
 3. nozzle beweegt voorbij de [X-positie afveegborstel](wipe_brush_pos_x.md).
 4. nozzle wordt [Aaantal afveegbewegingen](wipe_repeat_count.md) op de borstel afgeveegd.
 5. nozzle wordt teruggezet in zijn oorspronkelijke positie.

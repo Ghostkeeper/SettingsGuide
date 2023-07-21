@@ -2,7 +2,7 @@ Supportintrekkingen beperken
 ====
 Deze instelling zorgt ervoor dat het intrekken van het materiaal stopt als het van de ene plaats naar de andere gaat om een support printen, en in plaats daarvan gewoon direct beweegt zonder intrekken.
 
-Als deze optie is geactiveerd, wordt het materiaal niet meer ingetrokken wanneer u in een recht pad van support naar support gaat. Bij het verplaatsen van of naar de eigenlijke print of op een omweg, wordt het materiaal verder naar binnen getrokken om een ​​botsing met de eigenlijke print te voorkomen.
+Als deze optie is geactiveerd, wordt het materiaal niet meer ingetrokken wanneer u in een recht pad van support naar support gaat. Bij het verplaatsen van of naar de eigenlijke print of op een omweg, wordt het materiaal verder naar binnen getrokken om een botsing met de eigenlijke print te voorkomen.
 
 Enkele effecten van deze instelling in de praktijk:
 * Het bespaart wat printtijd, vooral bij zachte materialen die moeilijk in te trekken zijn.

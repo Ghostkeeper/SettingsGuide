@@ -50,7 +50,7 @@ Bij het printen van boven-/onderlijnen overlappen de lijnen meestal een beetje m
 
 Door de gelijkmatige volgorde neemt de nozzle verplaatsing iets toe, maar dit effect is erg klein. Het heeft alleen een optisch effect op de print. De gelijkmatige volgorde brengt geen mechanische verbeteringen.
 
-Om een ​​glad oppervlak te krijgen, moet u deze instelling combineren met de instelling [Combing-modus](../travel/retraction_combing.md) en misschien ook [Hoogte Z-sprong](../travel/enable retraction_hop .md). Als alternatief kunt u ook [Strijken inschakelen](ironing_enabled.md) inschakelen, maar dat doet het voordeel van deze instelling volledig teniet. Strijken heeft zijn eigen [Monotone strijkvolgorde](ironing_monotonic.md).
+Om een glad oppervlak te krijgen, moet u deze instelling combineren met de instelling [Combing-modus](../travel/retraction_combing.md) en misschien ook [Hoogte Z-sprong](../travel/enable retraction_hop .md). Als alternatief kunt u ook [Strijken inschakelen](ironing_enabled.md) inschakelen, maar dat doet het voordeel van deze instelling volledig teniet. Strijken heeft zijn eigen [Monotone strijkvolgorde](ironing_monotonic.md).
 
 ![De gloed is anders als de lijnen in een ongelijke volgorde worden geprint](../../../articles/images/skin_monotonic_disabled.jpg)
 ![Als de volgorde gelijk is, is de gloed overal hetzelfde](../../../articles/images/skin_monotonic_enabled.jpg)

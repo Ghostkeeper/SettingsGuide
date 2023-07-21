@@ -24,7 +24,7 @@ Door de lijnbreedte te verkleinen, kan de printer meer details printen. In het b
 * Door de lijnbreedte aan te passen aan een even veelvoud van de dikte van je print kan het object dikker worden en het materiaal beter vloeien.
 * Een kleinere lijndikte zorgt ervoor dat het oppervlak er gladder uitziet.
 * Printlijnen die iets kleiner zijn dan de grootte van de nozzle verbetert de sterkte. Hierdoor kan het nozzle aangrenzende lijnen samenvoegen terwijl het een tweede passage iets over de vorige lijn maakt.
-* Er treedt onder-extrusie op als u te brede lijnen print. De printer probeert meer materiaal te extruderen om de gewenste breedte van de lijn te vullen. Het materiaal zal in alle mogelijke richtingen proberen te stromen. Op een gegeven moment wordt de tegendruk echter te groot waardoor het materiaal niet meer naar de rand van de zeer brede lijnen kan stromen. Hierdoor ontstaan ​​er gaten tussen de lijnen.
+* Er treedt onder-extrusie op als u te brede lijnen print. De printer probeert meer materiaal te extruderen om de gewenste breedte van de lijn te vullen. Het materiaal zal in alle mogelijke richtingen proberen te stromen. Op een gegeven moment wordt de tegendruk echter te groot waardoor het materiaal niet meer naar de rand van de zeer brede lijnen kan stromen. Hierdoor ontstaan er gaten tussen de lijnen.
 * Te kleine drukleidingen leiden ook tot onder-extrusie. Als het materiaal niet snel genoeg door het nozzle stroomt, zal de oppervlaktespanning van het materiaal ervoor zorgen dat het coaguleert in kleine druppeltjes, waardoor ongelijkmatige extrusie ontstaat en openingen tussen de druppeltjes ontstaan.
 * Het printen van dunnere lijnen verlengt de printtijd aanzienlijk.
 

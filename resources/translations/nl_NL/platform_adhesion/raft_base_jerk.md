@@ -6,4 +6,4 @@ Deze instelling configureert de snelheid waarmee nozzle door hoeken kan gaan ter
 
 Omdat het raft meestal uit lange stukken lijn bestaat, heeft het verhogen van de schoksnelheid meestal weinig invloed op de printtijd. Het verhogen van de schoksnelheid zal echter wat tijd besparen bij het nemen van bochten aan het einde van de lijnen.
 
-Als u de schoksnelheid verhoogt, gaat de printer meer trillen bij het printen van de onderste laag van het raft. Dit verhoogt enigszins het risico dat het raft losraakt van de platvorm.
+Als u de schoksnelheid verhoogt, gaat de printer meer trillen bij het printen van de onderste laag van het raft. Dit verhoogt enigszins het risico dat het raft losraakt van de platform.

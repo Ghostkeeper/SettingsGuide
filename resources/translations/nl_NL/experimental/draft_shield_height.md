@@ -15,6 +15,6 @@ Als de [Beperking Tochtscherm](draft_shield_height_limitation.md) instelling is 
 }-->
 ![Het tochtscherm is beperkt tot een hoogte van 20 mm.](../../../articles/images/draft_shield_height_limitation.png)
 
-De onderkant van de print is meestal het meest gevoelig voor temperatuurwisselingen. Als de ruimte koud is, vindt hier de meeste vervorming plaats, waardoor de print los kan komen van de platvorm. Met deze instelling kunt u de hoogte van het tochtscherm tot een bepaalde hoogte beperken. Dit kan u wat tijd en materiaal besparen. Het tochtscherm beschermt dan nog steeds de onderkant van de print en blokkeert ook de luchtstroom van de opstijgende warme lucht (tot op zekere hoogte).
+De onderkant van de print is meestal het meest gevoelig voor temperatuurwisselingen. Als de ruimte koud is, vindt hier de meeste vervorming plaats, waardoor de print los kan komen van de platform. Met deze instelling kunt u de hoogte van het tochtscherm tot een bepaalde hoogte beperken. Dit kan u wat tijd en materiaal besparen. Het tochtscherm beschermt dan nog steeds de onderkant van de print en blokkeert ook de luchtstroom van de opstijgende warme lucht (tot op zekere hoogte).
 
 Het tochtscherm kan nooit hoger geprint worden dan het object zelf.

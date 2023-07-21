@@ -2,7 +2,7 @@ Lijnbreedte bovenskin
 ====
 Met de instelling [Bovenste skinlagen](../top_bottom/roofing_layer_count.md) kunnen sommige lagen bovenaan een andere lijndikte hebben dan de dieper gelegen skinlagen.
 
-De buitenskin bovenop het geprinte deel heeft meerdere functies. Bovenal moet het de gaten aan de bovenkant sluiten die door de vulling zijn gemaakt en het geeft het onderdeel veel sterkte. Afgezien daarvan moet het er idealiter nog steeds mooi en glad uitzien. Het verkleinen van de [Lijnbreedte Boven-/onderkant](../resolution/skin_line_width.md) kan dienen om een ​​gladder oppervlak te creëren, maar zal resulteren in veel meer tijd om printen. Deze instelling kan worden gebruikt om een ​​glad oppervlak met zeer dunne lijnen te creëren zonder dat de rest van de boven- en onderkant met dezelfde lijnbreedte hoeft te worden geprint. Hierdoor wordt de printtijd minder beïnvloed.
+De buitenskin bovenop het geprinte deel heeft meerdere functies. Bovenal moet het de gaten aan de bovenkant sluiten die door de vulling zijn gemaakt en het geeft het onderdeel veel sterkte. Afgezien daarvan moet het er idealiter nog steeds mooi en glad uitzien. Het verkleinen van de [Lijnbreedte Boven-/onderkant](../resolution/skin_line_width.md) kan dienen om een gladder oppervlak te creëren, maar zal resulteren in veel meer tijd om printen. Deze instelling kan worden gebruikt om een glad oppervlak met zeer dunne lijnen te creëren zonder dat de rest van de boven- en onderkant met dezelfde lijnbreedte hoeft te worden geprint. Hierdoor wordt de printtijd minder beïnvloed.
 
 Verklein de lijndikte van de skin aan de bovenkant voor een gladder oppervlak aan de bovenkant van uw print. Dit zal echter wat langer duren om printen.
 

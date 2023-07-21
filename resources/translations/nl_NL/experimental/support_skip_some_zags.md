@@ -20,4 +20,4 @@ Door de support in stukken te breken, is het gemakkelijker om de support af te b
 
 Deze instelling voorkomt ook dat de hele support in één stuk wordt losgetrokken. Als er veel supporten zijn, moeten deze afzonderlijk worden verwijderd. Als de support anders gemakkelijk genoeg is om los te trekken, kan deze instelling het zelfs moeilijker maken (hoewel het nog steeds gemakkelijker kan zijn) om de support uit te trekken.
 
-Deze instelling gaat slecht samen met het [Aantal wandlijnen supportstructuur](../support/support_wall_count.md). Als de support een extra wand om zich heen heeft, verbindt die wand de stukken opnieuw, waardoor het moeilijker wordt om stukken af ​​te breken.
+Deze instelling gaat slecht samen met het [Aantal wandlijnen supportstructuur](../support/support_wall_count.md). Als de support een extra wand om zich heen heeft, verbindt die wand de stukken opnieuw, waardoor het moeilijker wordt om stukken af te breken.

@@ -1,4 +1,4 @@
-Rechtbuighoek bliksem vulling
+Rechtbuighoek bliksemvulling
 ====
 Deze instelling bepaalt hoe steil het bliksempatroon naar binnen mag uitsteken.
 

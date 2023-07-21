@@ -1,6 +1,6 @@
 Takafstand van boomsupportsstructuur
 ====
-Deze instelling bepaalt de afstand tussen twee aangrenzende takken waarop de takken de platvorm raken.
+Deze instelling bepaalt de afstand tussen twee aangrenzende takken waarop de takken het platform raken.
 
 <!--screenshot {
 "image_path": "support_tree_branch_distance_1_4.png",

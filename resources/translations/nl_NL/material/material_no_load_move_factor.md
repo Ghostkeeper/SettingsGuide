@@ -8,4 +8,4 @@ Deze instelling vertelt de printer hoe ver het filament moet worden verplaatst o
 
 Materialen die makkelijker comprimeren, zoals TPU of Polypropyleen, hebben een lagere factor dan stijve materialen zoals PLA.
 
-**Deze instelling is momenteel niet zichtbaar in de interface van Cura. Het kan alleen worden ingesteld door de profielen. Het wordt ook niet gebruikt door Cura bij het snijden. Drukkers die het materiaalbestandsformaat van Cura begrijpen, kunnen het echter gebruiken om te bepalen hoe het filament tussen de feeder en de nozzle moet worden verplaatst.**
+**Deze instelling is momenteel niet zichtbaar in de interface van Cura. Het kan alleen worden ingesteld door de profielen. Het wordt ook niet gebruikt door Cura bij het snijden. Printers die het materiaalbestandsformaat van Cura begrijpen, kunnen het echter gebruiken om te bepalen hoe het filament tussen de feeder en de nozzle moet worden verplaatst.**

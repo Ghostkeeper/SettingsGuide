@@ -4,7 +4,7 @@ Deze instelling vertelt Cura hoe snel uw printer dat nozzle kan opwarmen. Het wo
 
 ![De nozzles worden verwarmd voordat de extruder wordt omgeschakeld.](../../../articles/images/temperature_regulation.svg)
 
-Bij het wisselen van nozzles zal Cura de volgende nozzle voorverwarmen voordat deze moet worden gebruikt, zodat deze klaar is voor gebruik wanneer de andere extruder net klaar is. Het doet dit door het verschil tussen de skinige nozzletemperatuur en de doelnozzletemperatuur te nemen en dit te delen door de verwarmingssnelheid om een ​​tijdsduur te krijgen voor het voorverwarmen van nozzle.
+Bij het wisselen van nozzles zal Cura de volgende nozzle voorverwarmen voordat deze moet worden gebruikt, zodat deze klaar is voor gebruik wanneer de andere extruder net klaar is. Het doet dit door het verschil tussen de skinige nozzletemperatuur en de doelnozzletemperatuur te nemen en dit te delen door de verwarmingssnelheid om een tijdsduur te krijgen voor het voorverwarmen van nozzle.
 
 Als de nozzle inderdaad sneller opwarmt dan deze instelling aangeeft, zal de nozzle enige tijd op de doeltemperatuur zijn voordat de andere extruder klaar is met printen. Gedurende deze tijd zal er wat materiaal uitlekken en kan het plastic een beetje in de nozzle degraderen, wat resulteert in [Onder-extrusie](../troubleshooting/underextrusion.md).
 

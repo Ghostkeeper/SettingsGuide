@@ -7,7 +7,7 @@ Deze techniek heeft een aantal voordelen:
 * Het gebruikt slechts een fractie van het materiaal dat bij normaal printen zou worden gebruikt.
 * Het lijkt alsof het met de hand is gemaakt met een 3D-printpen.
 
-Het resulterende object is echter niet functioneel. Het is ongeveer de juiste maat, wat het handig maakt voor prototyping om een ​​idee te krijgen van de schaal van de print, hoewel de maat ook niet erg nauwkeurig is. Het resulterende object is uiterst kwetsbaar, niet alleen tijdens het printen maar ook daarna. Het is moeilijk om het van de platvorm te halen zonder het te beschadigen. Ook verliest het model de meeste details.
+Het resulterende object is echter niet functioneel. Het is ongeveer de juiste maat, wat het handig maakt voor prototyping om een idee te krijgen van de schaal van de print, hoewel de maat ook niet erg nauwkeurig is. Het resulterende object is uiterst kwetsbaar, niet alleen tijdens het printen maar ook daarna. Het is moeilijk om het van de platform te halen zonder het te beschadigen. Ook verliest het model de meeste details.
 
 Bij het printen met draadstructuur worden ringen van materiaal aangebracht met een relatief grote verticale afstand van enkele millimeters. Tussen deze ringen wordt een zaagtandvorm geprint, waardoor de volgende ring op de vorige kan rusten. Waar het oppervlak van het model horizontaal is, wordt een vergelijkbare techniek gebruikt om de bovenkant te sluiten. Binnen het dak bevinden zich concentrische ringen die bij elkaar worden gehouden door een zaagtandvorm die zorgvuldig in de lucht wordt opgehangen door van buitenaf (waar het tegen een wand kan stoten) naar binnen te bouwen.
 

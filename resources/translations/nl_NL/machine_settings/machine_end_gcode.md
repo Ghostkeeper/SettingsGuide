@@ -6,7 +6,7 @@ Enkele voorbeelden van dingen die vaak worden gedaan in de eind-g-code zijn:
 
 * Intrekken van het materiaal.
 * Koeling van de nozzle(s).
-* Koeling van de platvorm.
+* Koeling van de platform.
 * Zet de ventilatoren uit.
 
 Voor een redelijk uitgebreide lijst van beschikbare g-codes om hier te schrijven, zie de [RepRap Wiki](https://reprap.org/wiki/G-code).

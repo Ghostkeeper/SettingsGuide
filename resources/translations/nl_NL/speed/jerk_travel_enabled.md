@@ -1,6 +1,6 @@
 Bewegingsschok inschakelen
 ====
-Als deze instelling is ingeschakeld, hebben verplaatsingsbewegingen hun eigen accadesnelheid. De parameter [Bewegindsschok](jerk_travel.md) bepaalt vervolgens hoe snel de verplaatsingen om de beurt kunnen zijn.
+Als deze instelling is ingeschakeld, hebben verplaatsingsbewegingen hun eigen acceleratienelheid. De parameter [Bewegindsschok](jerk_travel.md) bepaalt vervolgens hoe snel de verplaatsingen om de beurt kunnen zijn.
 
 De waarde van de schok tijdens de verplaatsing zal de waarde aannemen van de lijn die zal worden geprint op de bestemming van de verplaatsing. Als u bijvoorbeeld naar vulling beweegt, is de schok tijdens het verplaatsen de [Vulschok](jerk_infill.md). Wanneer het naar de buitenwand beweegt, zal de schok de [Schok Buitenwand](jerk_wall_0.md) zijn. Op deze manier zal het gevoeligere structuren met een beetje meer voorzichtigheid benaderen dan andere structuren.
 

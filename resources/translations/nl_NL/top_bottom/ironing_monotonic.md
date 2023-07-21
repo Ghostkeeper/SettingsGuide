@@ -8,4 +8,4 @@ In tegenstelling tot [Monotone volgorde van boven naar beneden](../top_bottom/sk
 
 Door de monotone volgorde neemt de nozzle verplaatsingen iets toe, maar dit effect is zeer minimaal.
 
-Om een ​​glad oppervlak te krijgen, moet u dit combineren met de instelling [Combing-modus](../travel/retraction_combing.md) en eventueel [Hoogte Z-sprong](../travel/retraction_hop.md) activeren.
+Om een glad oppervlak te krijgen, moet u dit combineren met de instelling [Combing-modus](../travel/retraction_combing.md) en eventueel [Hoogte Z-sprong](../travel/retraction_hop.md) activeren.

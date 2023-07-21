@@ -1,6 +1,6 @@
 Brim Alleen aan Buitenkant
 ====
-Als uw model gaten heeft in de eerste laag op de platvorm, voorkomt deze instelling dat er een brim aan de binnenkant van het gat wordt geprint.
+Als uw model gaten heeft in de eerste laag op de platform, voorkomt deze instelling dat er een brim aan de binnenkant van het gat wordt geprint.
 
 <!--screenshot {
 "image_path": "brim_outside_only_original.png",
@@ -29,6 +29,6 @@ Als uw model gaten heeft in de eerste laag op de platvorm, voorkomt deze instell
 ![Brim overal geprint.](../../../articles/images/brim_outside_only_original.png)
 ![Alleen brim buiten](../../../articles/images/brim_outside_only_enabled.png)
 
-De brim aan de binnenkant voegt meestal weinig extra hechting toe tussen de print en de platvorm en heeft geen effect op het voorkomen van krimp. Het verwijderen van de brim aan de binnenkant kan je wat tijd besparen na het printen omdat je de brim niet uit de binnenste gaten hoeft te halen.
+De brim aan de binnenkant voegt meestal weinig extra hechting toe tussen de print en de platform en heeft geen effect op het voorkomen van krimp. Het verwijderen van de brim aan de binnenkant kan je wat tijd besparen na het printen omdat je de brim niet uit de binnenste gaten hoeft te halen.
 
 **Als er een ander object in het gat zit, kan de brim om technische redenen niet worden verwijderd.**

@@ -5,4 +5,4 @@ Normaal gesproken zijn de opvulpatronen gecentreerd in het midden van het 3D-mod
 ![Vulling is gecentreerd](../../../articles/images/infill_offset_xy_0.png)
 ![Vulling is 2mm naar boven verplaatst](../../../articles/images/infill_offset_y_2.png)
 
-Wanneer u printt met een lage vuldichtheid, kunt u de vulling zeer nauwkeurig positioneren, waarbij elke vullijn wordt geplaatst waar de sterkte het meest nodig is.
+Wanneer u print met een lage vuldichtheid, kunt u de vulling zeer nauwkeurig positioneren, waarbij elke vullijn wordt geplaatst waar de sterkte het meest nodig is.

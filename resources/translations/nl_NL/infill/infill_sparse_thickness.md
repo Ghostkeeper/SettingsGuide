@@ -8,5 +8,5 @@ In de laagweergave lijkt het alsof de vullijnen veel breder zijn geworden. Wanne
 
 De dikte van de opvullaag moet een veelvoud zijn van de hoogte van de normale laag. Indien dit niet het geval is, wordt naar boven afgerond op de eerstvolgende hogere laag.
 
-* Wees voorzichtig voordat u de laaghoogte te veel vergroot. Bij het overschakelen van en naar de vulling moet nozzle door de sproeier sterk worden versneld en vertraagd. Dit gebeurt met een zekere vertraging, zodat er aan het begin van de vulling te weinig wordt geëxtrudeerd en aan het einde van de vulling te veel.
+* Wees voorzichtig voordat u de laaghoogte te veel vergroot. Bij het overschakelen van en naar de vulling moet fillament door de nozzle sterk worden versneld en vertraagd. Dit gebeurt met een zekere vertraging, zodat er aan het begin van de vulling te weinig wordt geëxtrudeerd en aan het einde van de vulling te veel.
 * Opvulmateriaal wordt nog steeds geprint in de tussenlagen met een kleinere laaghoogte als er geen opvulmateriaal in de omringende lagen is. Dit kan ertoe leiden dat op schuine wanden kleine lijnen vulling worden geprint.

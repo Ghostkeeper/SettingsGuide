@@ -10,7 +10,7 @@ Het rimpellen wordt veroorzaakt door trillingen in uw 3D-printer. Het rimpellen 
 
 Duurdere 3D-printers proberen dit fenomeen meestal te voorkomen door een stijver frame te gebruiken dat minder trilt. Ze hebben een sterker portaal met gehard stalen staven en staven of een volledig gesloten frame van zeer stijf materiaal. Dit is echter duur, dus goedkope 3D-printers hebben niet de middelen om rimpellen te voorkomen. Het rimpellen is ook niet zo ernstig bij printers die zijn uitgerust met een Bowden-kabel, aangezien de printkop veel lichter is dan een printkop met directe aandrijving (omdat de zware invoermotor bovenop de printkop rust).
 
-Hoewel het rimpellen horizontaal waarneembaar is, zijn de trillingen niet altijd horizontaal. Het oscilleren van de platvorm ten opzichte van nozzle is ook een zeer belangrijk effect, omdat het plastic wordt geplet en breder wordt naarmate de platvorm dichterbij oscilleert, of dunner naarmate het verder oscilleert.
+Hoewel het rimpellen horizontaal waarneembaar is, zijn de trillingen niet altijd horizontaal. Het oscilleren van de platform ten opzichte van nozzle is ook een zeer belangrijk effect, omdat het plastic wordt geplet en breder wordt naarmate de platform dichterbij oscilleert, of dunner naarmate het verder oscilleert.
 
 Hardware-oplossingen
 ----
@@ -32,7 +32,7 @@ Aangezien de trillingen worden veroorzaakt door de acceleratie van de printkop, 
 
 Door deze aanpassingen duurt het printproces langer. Maar er zijn andere manieren om het rinkelen te voorkomen, door de soorten bewegingen die het veroorzaken te stoppen:
 * Schakel de methode [Vul gaten tussen wanden](../shell/fill_perimeter_gaps.md) uit en druk [Dunne wanden printen](../shell/fill_outline_gaps.md) niet af, aangezien deze methoden soms zeer kleine lijnsegmenten en extra verplaatsingsbewegingen gebruiken. Als er vervolgens een wand wordt geprint, trilt de printer nog een beetje.
-* Als uw printer de platvorm op en neer beweegt in plaats van de printkop, moet u [Z-sprong wanneer ingetrokken](../travel/retraction_hop_enabled.md) niet gebruiken. Deze zorgen ervoor dat de platvorm lang nadat de sprong is voltooid op en neer blijft oscilleren.
+* Als uw printer de platform op en neer beweegt in plaats van de printkop, moet u [Z-sprong wanneer ingetrokken](../travel/retraction_hop_enabled.md) niet gebruiken. Deze zorgen ervoor dat de platform lang nadat de sprong is voltooid op en neer blijft oscilleren.
 
 Je kunt ook de [Wandvolgorde](../shell/outer_inset_first.md) printen. Omdat het printen van de wanden meestal niet zoveel trillingen veroorzaakt als andere onderdelen, kan de printer stoppen met trillen voordat de zo belangrijke buitenwand wordt geprint.
 

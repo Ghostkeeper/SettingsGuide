@@ -1,6 +1,6 @@
 Primepijler Inschakelen
 ====
-Hiermee wordt een toren van een mix van materialen op je platvorm geprint. De toren is bedoeld om weggegooid te worden, maar dient om het materiaal voor te bereiden na elke extruderwissel.
+Hiermee wordt een toren van een mix van materialen op je platform geprint. De toren is bedoeld om weggegooid te worden, maar dient om het materiaal voor te bereiden na elke extruderwissel.
 
 ![Hoe een Primepijler eruit ziet en wat de afmetingen zijn](../../../articles/images/prime_tower.svg)
 
@@ -12,4 +12,4 @@ Het materiaal dat voor de buitenschaal is gekozen, is het materiaal met de groot
 
 Naast het primen maakt nozzle ook een beweging in de toren om materiaal van nozzle weg te vegen dat zich tijdens de standby-modus heeft opgehoopt. Dit voorkomt dat het slib aan het geprinte materiaal blijft kleven. Om deze reden wordt de primepijler ook wel eens *veegtoren* genoemd.
 
-De nadelen van de primepijler zijn dat het extra tijd kost om te printen en wat ruimte in beslag neemt op de platvorm.
+De nadelen van de primepijler zijn dat het extra tijd kost om te printen en wat ruimte in beslag neemt op de platform.

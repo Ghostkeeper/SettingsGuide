@@ -31,4 +31,4 @@ Meer lagen hebben meerdere effecten, die een positieve invloed hebben op de oppe
 * De bovenkant wordt gladder. Alle oneffenheden in de buitenste skin worden gladgestreken door de lagen erboven.
 * Uw model is waarschijnlijk waterdicht. Meer lagen aan de bovenkant kunnen voorkomen dat water of andere vloeistoffen binnendringen omdat meer lagen volledig gevuld zijn.
 * Je print zal meer materiaal gebruiken naarmate meer lagen volledig gevuld zijn.
-*Uw print duurt langer omdat er meer materiaal is om te leggen en deze lagen printen meestal langzamer dan de vulling.
+* Uw print duurt langer omdat er meer materiaal is om te leggen en deze lagen printen meestal langzamer dan de vulling.

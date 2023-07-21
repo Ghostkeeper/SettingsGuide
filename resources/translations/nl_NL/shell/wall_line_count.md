@@ -37,9 +37,9 @@ Deze instelling bepaalt hoeveel contouren er in elke laag rond de print moeten w
 
 Slechts één van de wanden is een buitenwand en wordt geprint met de instellingen voor de buitenwand. De overige wanden worden geprint met de instellingen voor de binnenwanden.
 
-Het aantal wanden is een belangrijke factor in hoe sterk de print zal zijn. Doordat de wanden naast elkaar staan, kunnen ze elkaar versterken, wat resulteert in een sterker onderdeel. Voor grotere printen kan dit, afhankelijk van de vorm, een veel effectievere manier zijn om een ​​sterk object te krijgen dan de vulling aan te passen.
+Het aantal wanden is een belangrijke factor in hoe sterk de print zal zijn. Doordat de wanden naast elkaar staan, kunnen ze elkaar versterken, wat resulteert in een sterker onderdeel. Voor grotere printen kan dit, afhankelijk van de vorm, een veel effectievere manier zijn om een sterk object te krijgen dan de vulling aan te passen.
 
-Het aantal wanden vergroten wordt:
+Bij het aantal wanden vergroten wordt:
 * De sterkte van de print wordt aanzienlijk vergroot.
 * Verminderde doorschijning waar het vulpatroon van buitenaf zichtbaar is.
 * Verbeterde overhangen omdat wandlijnen meestal meer uitgelijnd zijn met het dichtstbijzijnde supportpunt.

@@ -29,4 +29,4 @@ Deze instelling regelt het aantal contouren dat binnen het supportgebied voor de
 ![5 randlijnen](../../../articles/images/support_brim_2mm.png)
 ![10 randlijnen](../../../articles/images/support_brim_4mm.png)
 
-Meer brimlijnen verhogen de hechting van de support aan de platvorm en verminderen de doorbuiging van de support. Hierdoor staat de drager stabieler, wat de betrouwbaarheid van de print ten goede komt.
+Meer brimlijnen verhogen de hechting van de support aan de platformen verminderen de doorbuiging van de support. Hierdoor staat de drager stabieler, wat de betrouwbaarheid van de print ten goede komt.

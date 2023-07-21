@@ -24,8 +24,8 @@ Overeenkomende lagen zijn streng beperkt om de printkwaliteit te verbeteren. De 
 Met adaptieve lagen kan de printtijd aanzienlijk worden verkort zonder dat dit ten koste gaat van de printkwaliteit, in sommige gevallen zelfs met verbeterde kwaliteit. De effecten van het aanpassen van de laaghoogte zijn immens. In de meeste gevallen zal het gebruik van dikkere lagen op plaatsen waar het model verticaal staat de printtijd aanzienlijk verkorten. De [Topografie](../troubleshooting/topography.md) wordt ook verminderd omdat de lagen horizontaal dichter bij elkaar liggen.
 
 Deze functie kan echter ook met een aantal problemen gepaard gaan.
-* Bij het wijzigen van de laaghoogte moeten meestal ook enkele andere instellingen worden aangepast, b.v. de nozzletemperatuur. Aanpassingslagen passen deze niet automatisch aan. Dit kan leiden tot b.v. B. Overhangen die beter zouden printen bij een lagere printtemperatuur worden niet optimaal geprint.
-* Als de slice-hoogte wordt gewijzigd voor een klein kenmerk ergens in een klein deel van de slice in de slice, zijn strepen zichtbaar in de rest van de slice.
+* Bij het wijzigen van de laaghoogte moeten meestal ook enkele andere instellingen worden aangepast, b.v. de nozzletemperatuur. Aanpassingslagen passen deze niet automatisch aan. Dit kan leiden tot b.v. Overhangen die beter zouden printen bij een lagere printtemperatuur worden niet optimaal geprint.
+* Als de laaghoogte over de hele laag wordt gewijzigd voor een klein element ergens in een klein deel van de laag, zullen er strepen zichtbaar zijn in de rest van de laag.
 * Hiermee worden ook onbedoeld de verticale afstanden aangepast. Dit kan de printkwaliteit negatief beïnvloeden. De [Dikte Boven-/Onderkant](../top_bottom/top_bottom_thickness.md) wordt bijvoorbeeld meestal lager omdat Cura de instelling [Bovenlagen](../top_bottom/top_layers.md) als true aanneemt en de lagen dunner worden. Dit kan leiden tot pillowing. Getroffen instellingen die mogelijk niet langer correct zijn, zijn onder meer:
   * [Dikte Bovenkant](../top_bottom/top_thickness.md)
   * [Bodemdikte](../top_bottom/bottom_thickness.md)
