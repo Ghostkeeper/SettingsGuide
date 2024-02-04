@@ -1,0 +1,7 @@
+Impressão Jerk da camada inicial
+====
+Essa configuração determina a velocidade na qual o bico pode passar nos cantos durante a extrusão da camada inicial.Essa velocidade pode ser configurada separadamente dos movimentos de movimento durante a camada inicial.
+
+A redução do choque fará com que a impressora depósito mais material em cantos nítidos, porque o bico diminui enquanto o fluxo de material é atrasado na redução do fluxo.Esses ângulos animados são frequentemente aqueles em que a impressão se destaca do conjunto de impressão primeiro por causa da esquerda.É então vantajoso colocar um pouco mais de material nesses cantos, pois permite que eles fiquem melhor presos.Este efeito não está presente ao viajar a camada inicial.É por isso que o efeito trêmulo ao extrair a primeira camada é normalmente um pouco menor que o efeito de choque ao viajar da primeira camada.
+
+Estruturas de impressão individuais podem ter valores de choque diferentes.Existem configurações separadas para preenchimento, parte inferior, paredes externas e interiores, suporte e torre básica.Esse ajuste tem prioridade em todos os outros.Somente o parâmetro [sacada da saia/borda](jerk_skirt_brim.md) cancelará esse choque, porque a saia e a borda só podem ocorrer na primeira camada.

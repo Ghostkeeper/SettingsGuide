@@ -1,0 +1,7 @@
+Duração máxima do parque
+====
+Mesmo que uma impressora seja armazenada seca, ela pode apresentar o material pronto para o bico por um tempo depois de terminar a impressão anterior ou depois de carregar o material, porque o usuário provavelmente causará uma nova impressão em breve.Este parâmetro configura a duração máxima durante a qual o material está fora de armazenamento seco, pronto para a impressão.Se ele ficar do lado de fora, ele começará a se deteriorar devido à umidade do ar.
+
+Ao reduzir esse parâmetro, as impressoras devem retrair o filamento para colocá -lo de volta em armazenamento seco mais rápido, o que é menos prático para o usuário.No entanto, se o material estiver estacionado por muito tempo, a umidade absorvida pelo ar o degradará.Isso pode aumentar o atrito no trem da extrusora, o que causa a moagem quando a impressora começa a imprimir.Isso também pode tornar o material mais frágil, resultando em partes inferiores ou filamentos quebrados.Os filamentos quebrados causam impressões falhadas ou não se retraem se a impressora estiver equipada com um tubo Bowden.
+
+** Atualmente, este parâmetro nunca está visível na interface da cura.Só pode ser definido por perfis.Nem é usado por Cura durante o fatiamento.No entanto, as impressoras que incluem o formato do arquivo de material cura podem usá -lo para decidir o prazo de validade do filamento fora do armazenamento seco. **

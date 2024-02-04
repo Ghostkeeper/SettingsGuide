@@ -1,0 +1,13 @@
+Ângulo de suporte de enchimento do Eclair
+====
+O padrão de enchimento do Eclair destina -se apenas a apoiar a impressão de áreas internas.Este parâmetro determina o ângulo máximo de saliência, não apenas as superfícies que ele suportará, mas também do interior do próprio recheio.Se você reduzir esse parâmetro, o recheio será mais importante.Ao aumentar, você reduz a quantidade de enchimento.
+
+O motivo suporta o lado superior da impressão interior, para todas as faces que estão se abaixando além desse ângulo.O padrão também inclui ramificações criadas com um certo ângulo para criar uma estrutura de árvore ramificada.As faces laterais dessa estrutura ramificada também têm um corpo de corpo para alcançar certas áreas.Esses três aspectos da saliência também podem ser controlados individualmente com os parâmetros [ângulo de preenchimento do eclair](Lightning_infill_overhang_angle.md), [ângulo de enchimento eclair](Lightning_infill_prun_angled.md) e [do enchimento Eclair](Lightning_infill_straming_.
+
+O motivo suporta o lado superior da impressão interior, para todas as faces que estão se abaixando além desse ângulo.O padrão também inclui ramificações criadas com um certo ângulo para criar uma estrutura de árvore ramificada.As faces laterais dessa estrutura ramificada também têm um corpo de corpo para alcançar certas áreas.Esses três aspectos da saliência também podem ser controlados individualmente com os parâmetros [ângulo de preenchimento do eclair](Lightning_infill_overhang_angle.md), [ângulo de enchimento eclair](Lightning_infill_prun_angled.md) e [do enchimento Eclair](Lightning_infill_straming_.
+
+![Com um ângulo fraco de salto, é necessário um suporte significativo](../../../articles/images/lightning_infill_support_angle_30.png)
+
+![Com um alto ângulo de saliência e saliência íngreme são permitidas](../../../articles/images/lightning_infill_support_angle_60.png)
+
+Ao aumentar esse parâmetro, você reduzirá consideravelmente a quantidade de material necessária e o tempo de impressão.No entanto, isso também leva a uma subsidência.Esta queda está dentro do modelo, por isso não é imediatamente visível.No entanto, se a [espessura do topo](../top_bottom/top_thickness.md) não for suficiente, poderá levar a [colchão](../solucionar problemas/travestia.md).Como os ângulos de enchimento internos também podem transbordar mais, é provável que o preenchimento comece mais alto ao longo das paredes.

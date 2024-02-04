@@ -1,0 +1,5 @@
+Saia/fluxo de fronteira
+====
+Essa configuração permite ajustar o fluxo apenas para a saia ou a borda.A vazão da saia ou da borda pode ser ajustada separadamente do fluxo do restante da impressão.
+
+Aumentar a saia ou o fluxo de borda pode permitir que você grude melhor na bandeja de impressão, porque o material está com pressa na bandeja de impressão com mais força.No entanto, deve -se tomar cuidado para não extrudar muito.Se o material se projetar da borda, o bico poderá rasgá -lo da bandeja de impressão quando um movimento de tradução cruza a borda.Além disso, se as linhas da saia ou borda se sobreporem demais, certas linhas não poderão alcançar a plataforma de impressão porque elas são bloqueadas por linhas adjacentes excessivamente grandes.Isso pode afetar a adesão à placa de impressão.Em vez disso, a [largura da linha de fronteira](../Resolução/SKIRT_BRIM_LINE_WIDTH.MD) pode obter o mesmo efeito pressionando o conjunto de impressão, mas espaçando as linhas mais para que todas possam se juntar à bandeja de impressão.

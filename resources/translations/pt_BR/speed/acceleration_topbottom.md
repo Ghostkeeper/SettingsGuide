@@ -1,0 +1,5 @@
+Aceleração do topo/abaixo
+====
+Esse ajuste controla a velocidade na qual o bico acelera em direções diferentes enquanto imprimia as faces superior e inferior do objeto.A aceleração durante as faces superior e inferior pode ser ajustada para uma velocidade diferente da restante da impressão.
+
+O aumento da velocidade de aceleração em comparação com o restante da impressão pode economizar tempo.Como as faces superior e inferior geralmente são compostas por linhas retas longas, o bico pode atingir altas velocidades.O bico também deve fazer ângulos claros com o padrão de linhas típicas para a pele, o que requer grande aceleração.No entanto, o aumento da aceleração também fará com que a impressora tremer, mas a precisão das faces superior e inferior normalmente não é uma restrição, porque elas estão cercadas por paredes.

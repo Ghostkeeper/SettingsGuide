@@ -1,0 +1,5 @@
+Comprimento mínimo da parede da ponte
+====
+Este parâmetro permite especificar um comprimento mínimo para as paredes com punção ao detectar quais partes da sua impressão estão lixadas.Qualquer parede mais curta do que esse comprimento mínimo não é considerada uma ponte, mas simplesmente como uma parede pendente, e é impressa usando os parâmetros normais para a impressão dessas paredes.As paredes que não são suportadas por uma longa distância são consideradas pontes.
+
+Pontagem de pequenas linhas de linha é frequentemente ineficaz.Essas linhas não serão muito balançando de qualquer maneira, porque devem formar apenas uma ponte a uma curta distância.No entanto, se a técnica de ponte for usada, o [débito](Bridge_Wall_Material_Flow.MD) e [Speed](Bridge_Wall_Speed.MD) também serão ajustados.Isso modificará a velocidade na qual o bico flui para fora do bico, produzindo uma superextrusão em certas partes e uma subestusão em outras.Ao filtrar pedaços de paredes muito curtos, o fluxo não será interrompido para elas, mas a qualidade das saliências sempre será melhor para os locais onde é importante ajustar o fluxo.

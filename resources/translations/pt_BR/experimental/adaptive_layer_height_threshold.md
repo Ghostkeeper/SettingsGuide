@@ -1,0 +1,9 @@
+Tamanho da topografia de camadas adaptativas
+====
+Este parâmetro configura a distância (horizontal) entre as bordas das camadas em qualquer inclinação.A altura das camadas é ajustada para obter o deslocamento desejado.Para evitar [efeito topográfico](../distúrbios/topografia.md), esse parâmetro configura essencialmente a distância entre os contornos topográficos.
+
+Ao reduzir essa configuração, as camadas serão globalmente mais finas, pois as bordas horizontais das camadas devem ser colocadas mais próximas uma da outra.Ao aumentar esse parâmetro, as camadas serão mais espessas, pois as bordas das camadas podem estar mais distantes uma da outra.A espessura das camadas permanecerá na praia definida pelos parâmetros [altura da camada](../resolução/camada_height.md) e [variação máxima de camadas adaptativas](adaptive_layer_height_variation.md).
+
+Reduza este parâmetro para reduzir o efeito da topografia nas faces superior ou inferior da sua impressão.A impressão levará mais tempo.Aumente este parâmetro para reduzir a duração da impressão.
+
+É quase sempre preferível ajustar o parâmetro de altura da camada (altura da camada) em vez desse parâmetro e ajustar o restante dos parâmetros de acordo.Vá de um perfil cuja altura da camada é necessária para reduzir o efeito da topografia para níveis aceitáveis.Em seguida, permita uma certa variação em torno dessa espessura da camada com camadas adaptativas.Isso torna possível garantir que o restante das configurações de impressão seja ajustado corretamente para a espessura da camada para a qual você realmente será impresso.Com esse ajuste, você pode ponderar ligeiramente as camadas adaptativas para escolher mais na parte inferior ou na parte superior do intervalo autorizado.

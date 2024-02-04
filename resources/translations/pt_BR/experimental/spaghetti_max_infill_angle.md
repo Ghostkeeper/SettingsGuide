@@ -1,0 +1,7 @@
+Ângulo de preenchimento de espaguete máximo
+====
+Este parâmetro configura o ângulo máximo de saliência que o material atingirá quando o material de enchimento será depositado ao lado dele.Se um local não puder ser preenchido com a densidade apropriada devido a esse limite, [etapas adicionais](spaghetti_infill_stepped.md) serão introduzidas ao longo da altura do volume de enchimento para garantir que esses locais sejam adequadamente afetados.
+
+Se o enchimento de espaguete deve ser usado como um enchimento flexível, esse parâmetro provavelmente deve ser fixado em um nível bastante alto.Se você aumentar essa configuração, será necessário introduzir mais etapas para alcançar os telhados rasos.Como o recheio de espaguete não tende a se estender muito nas direções horizontais, a adição de etapas adicionais ajuda a empurrar o material sob esses telhados rasos.
+
+Se o espaguete de enchimento deve ser usado com um material fluido, essa configuração poderá ser consideravelmente reduzida.Como o material que flui é líquido, ele pode atingir distâncias muito longas sob as superfícies.No entanto, ainda não o ajuste a 0 °, porque a maioria dos materiais de fundição tem uma certa viscosidade.Você sempre pode fluir sob certos telhados rasos para garantir que o material fluido siga completamente sua concha.

@@ -1,0 +1,9 @@
+Fluxo de teto de suporte
+====
+Esse ajuste permite ajustar a taxa de fluxo apenas para o teto de suporte.O fluxo do telhado do portador pode ser ajustado separadamente do restante do restante do suporte.
+
+O ajuste do fluxo durante o teto de suporte é um método de interromper o espaço para resolver problemas de extrusão ou taxa de adesão entre o modelo e o suporte.O mesmo efeito pode ser obtido ajustando a [largura da linha](../resolução/support_roof_line_width.md) ou [distância da linha](../support/support_roof_line_distance.md) do teto de suporte, mas o fluxo de ajuste pode ser mais intuitivo.
+
+No caso de um problema de velocidade de extrusão, é preferível examinar [velocidades de impressão](../speed/speed_support_roof.md), [temperatura](material_print_temperature.md) e [largura da linha](./resolution/support_roof_line_widthth. md).Pode haver muita diferença entre o fluxo do teto de suporte e as outras estruturas da camada.Talvez a largura da linha seja boa demais para ser extrudada corretamente.Se a interface for impressa com um [material diferente](../support/support_interface_ extruder_nr.md), um problema atual é que o material com o qual a interface é impresso não tiver tempo suficiente para começar a fluir corretamente.Esse problema pode ser resolvido usando uma [Start Tower](../dual/prime_tower_enable.md) ou aumentando a [superfície do telhado de suporte](../support/support_roof_offset.md).
+
+Se o suporte permanecer muito bem no modelo, o ajuste da [largura da linha](../Resolução/Support_ROOF_LINE_WIDTH.M) geralmente será mais eficaz porque também permite que as linhas mais próximas obtenham a mesma densidade de preenchimento do suporte.

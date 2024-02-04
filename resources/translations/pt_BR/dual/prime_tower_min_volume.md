@@ -1,0 +1,15 @@
+Volume mínimo da torre de priming
+====
+Isso indica a quantidade de material a ser eliminada a cada alteração da extrusora.A idéia é que um certo volume tenha sido usado no bico quando estava em espera.O volume de priming indicado por essa configuração deve compensar isso.
+
+![O volume de extrusão é destacado em verde](../images/prime_tower.svg)
+
+Este parâmetro indica a quantidade mínima de material a ser purgada.No entanto, os contornos da torre principal serão completamente finalizados, para que mais material possa ser eliminado, dependendo de como o volume se alinha com o volume de um contorno.
+
+Algumas impressoras têm vários bicos separados, enquanto outros alimentam vários materiais em um único bico.Um bom valor para essa configuração é muito diferente entre os dois.
+* Se sua impressora tiver vários bicos, a única necessidade do volume iniciada é recuperar o material perdido enquanto o outro bico estava ativo.Ela terá uma pequena questão, e a pressão no bico foi perdida.Uma pequena quantidade de material é suficiente para colocar a sala do bico de pressão.Mais materiais de corrida, como o PETG, geralmente requerem maior volume de priming.Se o volume mínimo da torre de priming estiver muito baixo, você obterá [subestrião](../Disordershooting/Undextrusion.md) no início da viagem de extrusão após a mudança da extrusora.
+* Se a sua impressora extrudir vários filamentos no mesmo bico, a torre de priming também deve limpar o material restante do bico.Ao retrair o filamento anterior, uma pequena gota sempre permanecerá no bico porque o material havia líquido sob a zona de calor e não é treinado com o restante do filamento.O volume mínimo da torre de priming deve, portanto, ser pelo menos igual ao volume de toda a área quente do bico.Na prática, é preciso muito mais do que isso, porque quando o novo filamento é empurrado, ele se mistura com o antigo filamento e o esmaga.É preciso muito mais material como um buffer para destacar todo o material antigo, a fim de evitar a contaminação.Tudo isso é muito mais do que a preocupação de recuperar a pressão do bico por causa da escorregem, portanto, a escorregem não é mais um problema.Se o volume mínimo da torre de priming estiver muito baixo, os materiais se misturam neste caso, para que as cores babarem mais, ou você terá marcas na impressão depois de dissolver o material de suporte solúvel em água.
+
+Um volume mínimo muito alto é relativamente inofensivo, mas prolonga a duração da impressão e o desperdício mais material.O volume será limitado pelo [tamanho da torre de priming](prime_tower_size.md).O volume pode ser fixado em um nível superior ao volume total da torre principal nessa camada, mas se a torre de priming estiver planejada, isso não terá mais efeito na impressão.
+
+O volume pode ser diferente para cada extrusora, para que a torre final possa ter um número diferente de contornos para cada extrusores.

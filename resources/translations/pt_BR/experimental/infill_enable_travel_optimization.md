@@ -1,0 +1,7 @@
+Otimização do deslocamento de preenchimento
+====
+A ativação deste parâmetro pode reduzir ligeiramente a duração da viagem à sua impressão.Ao reduzir a duração das viagens, a impressão será um pouco mais rápida e o bico também terá sucesso um pouco menos.No entanto, também levará mais tempo para cortar o modelo.
+
+Normalmente, o Cura otimiza a ordem em que as linhas de enchimento são rastreadas de uma maneira bastante ingênua.Após cada linha, a Cura procurará a linha a seguir mais próxima para desenhar e desenhá -la.No entanto, para certas formas incomuns e complexas, o caminho para a próxima linha de enchimento pode ser bastante longo, porque o bico deve fazer um desvio devido ao [modo de desvio](../Travel/Retaction_Combing.md).Basicamente, a cura subestima a distância e pode escolher um movimento mais longo, em vez de um movimento mais curto.Quando esse parâmetro é ativado, a distância é calculada com precisão para que uma escolha melhor possa ser feita.
+
+Essa configuração geralmente terá pouco impacto no tempo de corte.No entanto, para impressões complexas com muitas áreas pequenas (onde é mais útil), pode aumentar o tempo de corte por ordens de magnitude de (não avaliado para ser adicionado).

@@ -1,0 +1,9 @@
+Fluxo de interface de suporte
+====
+Este parâmetro ajusta a taxa de fluxo apenas para a interface de suporte.O suporte da interface de suporte pode ser ajustado separadamente do fluxo do restante do suporte.
+
+O ajuste do fluxo durante a interface de suporte é um método de interromper o espaço para resolver problemas de extrusão ou taxa de adesão entre o modelo e o suporte.O mesmo efeito pode ser obtido ajustando a [largura da linha](../resolução/support_interface_line_width.md) ou [espaçamento de linha](../support/support_roof_line_distance.md) da interface de suporte, mas o ajuste 'da flor pode ser mais intuitivo.
+
+No caso de um problema de velocidade de extrusão, é preferível examinar [velocidades de impressão](../speed/speed_support_interface.md), [temperatura](material_print_temperature.md) e [largura da linha](./resolution/support_interface_line_width. md).Pode haver muita diferença entre o fluxo da interface de suporte e as outras estruturas da camada.Talvez a largura da linha seja boa demais para ser extrudada corretamente.Se a interface for impressa com um [material diferente](../support/support_interface_ extruder_nr.md), um problema atual é que o material com o qual a interface é impresso não tiver tempo suficiente para começar a fluir corretamente.Esse problema pode ser resolvido usando uma [torre principal](../dual/prime_tower_enable.md) ou aumentando a [superfície da interface de suporte](../support/support_interface_offset.md).
+
+Se o suporte permanecer muito bem ao modelo, o ajuste da [largura da linha](../Resolução/Support_Interface_Line_Width.md) será geralmente mais eficaz porque também permite que as linhas mais próximas obtenham a mesma densidade de preenchimento do suporte.

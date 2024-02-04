@@ -1,0 +1,7 @@
+Distância de prevenção de deslocamento
+====
+Quando [Evite as peças impressas durante a viagem](Travel_avoid_Other_Parts.md) estiver ativo, esse parâmetro define o espaço livre que o bico mantém em comparação com os outros objetos que deve evitar.
+
+Lembre -se de que este parâmetro define a distância entre outros objetos e o eixo do movimento translacional.O movimento do movimento não tem espessura.É aconselhável dar valor a esse parâmetro, que é pelo menos grande o suficiente para o final do bico, não toca nas outras partes.
+
+Ao aumentar o valor desse ajuste, reduzimos o risco de o bico não afetar os objetos já impressos quando os ignora.No entanto, aumentar o valor desse ajuste também aumentará ligeiramente o comprimento dos movimentos do movimento, pois o bico deve fazer um desvio maior.Isso aumenta o tempo de impressão e a quantidade de vazamento ligeiramente.O que talvez seja mais importante é que ele reduz as chances de encontrar um caminho válido que não se aproxime das peças impressas anteriormente.Se nenhum caminho válido for encontrado, o bico se retrairá (talvez) e se moverá em uma linha reta no lugar, renunciando -se às outras partes para serem afetadas de qualquer maneira.Um aumento excessivo nessa configuração também pode afetar a qualidade da superfície.

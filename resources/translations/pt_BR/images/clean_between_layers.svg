@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg width="2000" height="1000" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<!-- Bristles for the brush. -->
+		<path id="bristle1" d="M0,0 q0,-60 30,-90" />
+		<path id="bristle2" d="M0,0 q0,-60 -30,-88" />
+		<path id="bristle3" d="M0,0 q10,-60 -10,-91" />
+		<path id="bristle4" d="M0,0 q-25,-40 13,-85" />
+	</defs>
+
+	<!-- The partially printed model. -->
+	<polygon fill="deepskyblue" points="0,1000 800,1000 500,400 600,200 200,200 300,400" />
+
+	<!-- A brush to wipe on. -->
+	<path d="M1860,300 h40 l10,-50 h-60 z" />
+	<g stroke="black" stroke-width="3" fill="none">
+		<use href="#bristle1" x="1851" y="250" />
+		<use href="#bristle1" x="1855" y="250" />
+		<use href="#bristle1" x="1863" y="250" />
+		<use href="#bristle1" x="1865" y="250" />
+		<use href="#bristle1" x="1872" y="250" />
+		<use href="#bristle1" x="1879" y="250" />
+		<use href="#bristle1" x="1888" y="250" />
+		<use href="#bristle1" x="1892" y="250" />
+		<use href="#bristle1" x="1897" y="250" />
+		<use href="#bristle1" x="1905" y="250" />
+		<use href="#bristle1" x="1909" y="250" />
+		<use href="#bristle2" x="1856" y="250" />
+		<use href="#bristle2" x="1858" y="250" />
+		<use href="#bristle2" x="1868" y="250" />
+		<use href="#bristle2" x="1874" y="250" />
+		<use href="#bristle2" x="1880" y="250" />
+		<use href="#bristle2" x="1886" y="250" />
+		<use href="#bristle2" x="1890" y="250" />
+		<use href="#bristle2" x="1894" y="250" />
+		<use href="#bristle2" x="1899" y="250" />
+		<use href="#bristle2" x="1902" y="250" />
+		<use href="#bristle2" x="1907" y="250" />
+		<use href="#bristle2" x="1909" y="250" />
+		<use href="#bristle3" x="1851" y="250" />
+		<use href="#bristle3" x="1859" y="250" />
+		<use href="#bristle3" x="1864" y="250" />
+		<use href="#bristle3" x="1869" y="250" />
+		<use href="#bristle3" x="1883" y="250" />
+		<use href="#bristle3" x="1891" y="250" />
+		<use href="#bristle3" x="1898" y="250" />
+		<use href="#bristle3" x="1904" y="250" />
+		<use href="#bristle4" x="1862" y="250" />
+		<use href="#bristle4" x="1866" y="250" />
+		<use href="#bristle4" x="1872" y="250" />
+		<use href="#bristle4" x="1878" y="250" />
+		<use href="#bristle4" x="1887" y="250" />
+		<use href="#bristle4" x="1895" y="250" />
+		<use href="#bristle4" x="1901" y="250" />
+		<use href="#bristle4" x="1907" y="250" />
+		<use href="#bristle4" x="1909" y="250" />
+	</g>
+
+	<!-- The path of the wipe movement. -->
+	<path d="M550,200 h20 v-50 h1400 v10 l20,-20 l-20,-20 v10 h-1420 v70 z" />
+	<path fill="red" d="M1976,120 v7 l14,-14 l-14,-14 v7 h-200 v-7 l-14,14 l14,14 v-7 z" />
+
+	<!-- Labels. -->
+	<g font-family="sans-serif" font-size="50px">
+		<text x="1000" y="110">Move to wiping brush</text>
+		<text x="1820" y="80">Wipe</text>
+	</g>
+</svg>
