@@ -1,0 +1,5 @@
+Sacada da interface de suporte
+====
+Esse ajuste determina a velocidade na qual o bico pode passar nos cantos durante a impressão da interface de suporte.Ele pode ser configurado separadamente da parte principal do suporte.
+
+Normalmente, a interface de suporte pode ser impressa com valores bastante grandes, porque não há importantes que haja vibrações na interface ou que a velocidade de extrusão seja irregular.No entanto, a interface de suporte é colocada próxima o suficiente para a impressão real e determina a maneira como o suporte se conecta ao objeto.Se a interface estiver impressionada impressionada devido a vibrações, isso pode causar cicatrizes, porque o suporte se concentra muito bem na impressão ou inúmeras salientes se houver muita lacuna entre o suporte e o modelo.Esse pode ser um motivo para ajustar a instabilidade durante o suporte do suporte um pouco menor do que durante o restante do suporte.

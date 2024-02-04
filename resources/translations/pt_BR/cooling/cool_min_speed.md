@@ -1,0 +1,9 @@
+Velocidade mínima
+====
+Se uma camada levar muito pouco tempo para imprimir, a velocidade de impressão será reduzida para que a camada ainda tome a [duração mínima de uma camada](cool_min_layer_time.md) para imprimir.No entanto, não será reduzido abaixo dessa velocidade mínima.Se a impressão da camada na velocidade mínima levar menos tempo que o tempo mínimo da camada, a impressora esperará no final da camada que o tempo mínimo da camada será vendido.
+
+É importante respeitar o tempo mínimo da camada para permitir que a camada anterior solidifique antes de colocar a próxima camada sobre ela.Reduzir a velocidade de impressão é útil porque os ventiladores da cabeça de impressão podem soprar o filamento por mais tempo.Por outro lado, uma redução excessiva na velocidade de impressão é prejudicial porque o calor do bico pode se espalhar para as camadas inferiores e as paredes adjacentes.Isso pode tornar a superfície muito suja e causar um colapso localizado.É por isso que há também uma velocidade mínima.No final da camada, a cabeça da impressão normalmente se move um pouco para cima (a menos que o parâmetro [levante a cabeça](cool_lift_head.md), que permite que o ventilador sopra no filamento um pouco mais até a camada mínima da camada passou.A impressora vai para a próxima camada.
+
+![Que velocidade do ventilador é usada](../images/cool_fan_speed.svg)
+
+Por exemplo, uma sala muito pequena pode ter uma camada que leva 3 segundos para ser impressa a uma velocidade normal de 30 mm/s, mas a configuração de tempo da camada mínima é fixada em 10 segundos.A impressora reduziria sua velocidade para 9 mm/s.No entanto, se a velocidade mínima for ajustada em 10 mm/s, a impressora imprimirá essa camada a 10 mm/se terminará após 9 segundos.Se [Levante a cabeça](Cool_lift_head.md) for ativado, a impressora esperará 1 segundo no final da camada antes de iniciar a próxima (e, caso contrário, continuará imediatamente sem demora).

@@ -1,0 +1,7 @@
+Preenchimento
+====
+Esse ajuste ajusta o fluxo apenas para o recheio.O fluxo de recarga pode ser ajustado separadamente do restante do restante da impressão.
+
+O ajuste do fluxo durante o enchimento é um método de interromper o espaço para resolver os problemas da velocidade de extrusão ou resistência.O mesmo efeito pode ser obtido ajustando a [Distância entre as linhas](../preenchimento/refill_line_distance.md) e a [largura da linha](../Resolução/Infill_line_width.md) do preenchimento, mas esse ajuste pode ser mais intuitivo.
+
+Os problemas de extrusão ou resistência do enchimento geralmente são devidos a uma das duas causas a seguir das travessias no modelo de preenchimento ou muita mudança de fluxo entre enchimento e outras estruturas.Em vez de ajustar esse fluxo, pode ser mais eficaz para ajustar o [diagrama de preenchimento](../preenchimento/preenchimento_pattern.md) ou [width_ligne](../Resolução/Infill_line_width.md).Escolha um padrão de enchimento que não se encontre, como o Zigzag e escolha uma largura de linha mais próxima da taxa de extrusão das paredes e da pele.Se a largura da linha deve ser aumentada por razões de resistência, mas o fluxo for limitado, é aconselhável usar o [multiplicador de enchimento](../preenchimento/refill_multiplipil) em vez de aumentar a taxa de fluxo.

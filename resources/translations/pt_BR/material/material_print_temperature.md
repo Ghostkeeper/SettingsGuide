@@ -1,0 +1,7 @@
+Temperatura de impressão
+====
+Esta é a temperatura do bico durante a impressão.A temperatura de impressão é um dos parâmetros mais influentes, pois afeta o comportamento do material durante a impressão.Mesmo uma pequena diferença de temperatura pode ter um efeito importante sobre como os fluxos plásticos.
+
+Cada tipo de filamento possui uma faixa de temperatura na qual pode ser impressa.Esta praia é geralmente indicada na caixa original e na folha técnica.O aumento da temperatura geralmente torna os termoplásticos mais fluidos.Isso permite que a impressora extrate o material mais rapidamente, porque o atrito interno é reduzido.Quando impressões com grandes camadas de camadas, linhas grandes, um fluxo grande ou alta velocidade, a temperatura deve estar localizada na extremidade superior da faixa de temperatura.No entanto, uma impressão mais quente também torna o material mais difícil de esfriar, o que leva a uma maior flacidez de saliência (exigindo mais suporte) e causa mais fios.
+
+Se a temperatura estiver muito alta, o material degrada durante a impressão.Isso pode conectar seu bico e potencialmente danificar sua impressora.Se você ajustar a temperatura muito baixa, a extrusora corroe o material, o que o impede de extrudar.

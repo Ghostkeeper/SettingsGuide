@@ -1,0 +1,7 @@
+Aceleração de imprimir a camada inicial
+====
+Esse ajuste controla a velocidade na qual o bico acelera em diferentes direções durante a extrusão da primeira camada.A aceleração durante a primeira camada pode ser definida para uma taxa diferente da restante da impressão e aceleração durante os movimentos de extrusão pode ser definida como uma taxa diferente da aceleração durante os movimentos de movimento.
+
+Enquanto as paredes, a adesão da plataforma, os fundos, o suporte e o recheio podem ter taxas de aceleração diferentes, durante a primeira camada, elas serão idênticas.A taxa de aceleração da primeira camada será precedência sobre as taxas de aceleração das estruturas individuais.O parâmetro [aceleração da saia/borda](aceleração_skirt_bim.md) novamente cancela a aceleração da impressão da camada inicial.
+
+A impressão a altas taxas de aceleração pode causar vibrações que têm repercussões na impressora.Em particular, essas vibrações podem fazer com que a bandeja de impressão tremer de cima para baixo, o que é prejudicial à adesão da impressão no conjunto de impressão.A redução da aceleração para a primeira camada pode reduzir as vibrações durante essa parte crítica do processo de impressão.No entanto, a impressão levará mais tempo e uma redução excessiva nas taxas de aceleração pode causar extrusão irregular nos cantos, o que também prejudica a bandeja de impressão.

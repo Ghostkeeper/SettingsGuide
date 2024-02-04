@@ -1,0 +1,9 @@
+Ângulo da parede de porty
+====
+Esse ajuste indica o ângulo do limiar, após o qual uma parede será marcada como "parede pendente".Essas paredes salientes podem ser impressas em uma velocidade diferente usando o parâmetro [observando a velocidade da parede](Wall_overhang_speed_factor.md).
+
+Se este parâmetro for definido acima de 0 °, todas as paredes serão processadas como paredes pendentes.Se este parâmetro for definido em 90 °, nenhuma parede será tratada como uma parede pendente.As paredes baseadas em um suporte não são tratadas como paredes pendentes.
+
+O objetivo desta função é fornecer melhores qualidades de saliência para áreas que quase precisariam ser suportadas por [suporte](../support/support_nable.md), mas não exatamente.Em vez de gastar mais tempo e material no suporte e marcar a superfície removendo esse suporte, você pode optar por imprimir essas paredes sobrecarregando um pouco mais lentamente e ajustar o [ângulo de saliência do suporte](../support/support_angle. md) um pouco mais alto.Isso possibilita obter uma abordagem mais progressiva para a impressão, aumentando melhor os ângulos de saliência.
+
+O fato de ajustar esse parâmetro maior que o ângulo de saliência do suporte reduz consideravelmente o efeito dessa função, porque as paredes acima do suporte não são marcadas como paredes salientes e, portanto, todas as paredes que são impressas em um ângulo de saliência que seria considerado como um parons pendente também seria suportado e não impresso em velocidades diferentes.No entanto, essa característica sempre tem um efeito se o suporte for desativado ou para as peças salientes que não são suportadas por outros motivos, como [superfície mínima de suporte](../suporte/minimum_support_area.md).

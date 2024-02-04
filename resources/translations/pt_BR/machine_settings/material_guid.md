@@ -1,0 +1,9 @@
+Alça de material
+====
+Este parâmetro contém um identificador exclusivo para o material na bobina atualmente carregado na impressora.Ele identifica exclusivamente plástico que é introduzido na impressora, incluindo seu fabricante e cor.No entanto, será idêntico entre as diferentes bobinas do mesmo material.Basicamente, cada artigo diferente que você verá em uma loja on -line receberá um identificador exclusivo.O Cura usa esse identificador exclusivo em dois objetivos: para sincronizar a configuração com o que está na sua impressora (se sua impressora estiver conectada à cura) e agrupar os perfis que pertencem ao mesmo material.
+
+Quando uma impressora ultimaker está conectada à Cura através da rede ou da Internet, a impressora fornece uma lista de GUIDs Cura A para materiais que estão atualmente carregados na impressora.Cura faz com que esses GUIDs correspondam aos Guids de seus perfis, o que lhe permite saber quais perfis ao usuário.
+
+Também é usado para agrupar os níveis de qualidade disponíveis para um determinado material.O sistema de perfil de cura é muito complexo e é uma de suas peculiaridades: normalmente, o Cura exibe todos os perfis de qualidade disponíveis para o tipo atual de material.Ou seja, se um determinado fabricante indicar que seu material é um tipo de PLA, todos os perfis de qualidade para o PLA estarão disponíveis.No entanto, quando um perfil de qualidade especifica o material atual da GUID, apenas esse perfil de qualidade estará disponível.Isso significa essencialmente que existem perfis especificamente adaptados a esse filamento e que os perfis genéricos não devem mais ser indicados.
+
+*Como é uma configuração da máquina, esse ajuste normalmente não é visível na lista de configurações.*

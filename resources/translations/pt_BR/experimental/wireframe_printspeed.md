@@ -1,0 +1,5 @@
+Impressão com fio
+====
+Este parâmetro permite configurar a velocidade geral de movimento da cabeça de impressão em cada estágio do processo de impressão de arame.A velocidade pode ser ajustada separadamente para movimentos [UP](Wireframe_printspeed_up.md), [Down](Wireframe_printspeed_down.md) e [Horizontal](Wireframe_printspeed_flat.md), assim como para os movimentos horizontot em [Layer](sfame_sfame_PRATE_PR), assim como para os movimentos horizontoms. .Este parâmetro (padrão) influencia todas essas velocidades.
+
+Ao aumentar a velocidade de impressão, a impressão leva menos tempo.No entanto, isso também aumentará as vibrações e reduzirá a precisão dos movimentos do bico.A confiabilidade da impressão por fio depende principalmente da solidez das conexões.Aumentar a velocidade reduz as chances de que dois pontos do quadro se conectem corretamente.

@@ -1,0 +1,9 @@
+Extrusores compartilham aquecimento
+====
+Com essa configuração, você pode indicar que todos os bicos desta impressora compartilham um único elemento de aquecimento.Não vai aquecer e não esfriar seus bicos individualmente depois, porque alguns bicos estão ativando e se tornando inativos novamente, mas é contente mantê -los quentes.
+
+Na maioria das vezes, isso é necessário para misturar bicos, onde vários filamentos são introduzidos no mesmo bico.Este bico tem apenas um elemento de aquecimento que aquece o filamento que está dentro do bico naquele momento.Se o Cura controlasse o aquecimento de cada filamento separadamente, ele tentaria simultaneamente manter o bico quente para o filamento ativo, enquanto o resfria na [temperatura em espera](../material/material_standby_temperature.md) para os outros filamentos.É impossível, e o resultado é aquecer apenas o primeiro filamento ou imprimir permanentemente a temperatura de espera se o microprograma aplicar os controles de aquecimento a um único bico, independentemente da ferramenta que eles se destinam.Indicando à cura que as extrusoras compartilham o aquecimento evita esse problema.O Cura não permitirá mais que o bico atinja a temperatura em espera e não aplique mais controle de aquecimento a uma extrusora específica.
+
+O Cura não assumirá necessariamente que, se as extrusoras compartilharem aquecimento, também compartilharão um bico.Para isso, existe um parâmetro separado para indicar que [os extrusores compartilham um bico](MACHINE_ extrushers_share_nozle.md).
+
+*Como é uma configuração da máquina, normalmente não será listada na lista normal de configurações.No entanto, existe uma caixa de seleção para esse ajuste na caixa de diálogo Parâmetros da impressora, que está na lista de impressoras adicionadas na caixa de diálogo Preferência.*
